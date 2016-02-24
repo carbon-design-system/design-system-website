@@ -1,12 +1,13 @@
 {
-  "name": "Bluemix Design System Website",
+  "name": "bluemix-design-system",
   "version": "1.0.0",
   "description": "Bluemix Design System Website",
   "homepage": "http://github.ibm.com/bluemix/design-system-website",
   "main": "README.md",
   "scripts": {
-    "gulp": "gulp",
+    "dev": "gulp serve",
     "bower": "bower",
+    "dev": "gulp serve",
     "prestart": "npm install",
     "build": "npm install && gulp",
     "start": "gulp --dev",
