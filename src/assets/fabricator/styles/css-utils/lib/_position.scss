@@ -1,0 +1,16 @@
+.pos-r {
+	position: relative !important;
+}
+
+.pos-s {
+	position: static !important;
+}
+
+.pos-a {
+	position: absolute !important;
+}
+
+.pos-f {
+	position: fixed !important;
+	backface-visibility: hidden;
+}

@@ -1,0 +1,25 @@
+# Hide package manager
+node_modules
+bower_components
+
+# Ignore built files and static folder
+*.css
+dev/*
+!dev/*.scss
+*.css.map
+static
+
+# OSX
+.DS_Store
+
+# Debug
+npm-debug.log
+
+# Editors
+project.sublime-project
+project.sublime-workspace
+jsconfig.json
+.vscode
+
+# Test reports
+tests/coverage

@@ -1,0 +1,14 @@
+<div class="f-item-group" id="{{@key}}">
+
+{{#if items}}
+
+	{{#each items}}
+		<div class="f-item-group" id="{{@key}}">
+            {{> f-item-content this}}
+		</div>
+	{{/each}}
+{{else}}
+	{{> f-item-content this}}
+{{/if}}
+
+</div>

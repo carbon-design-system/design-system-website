@@ -1,0 +1,62 @@
+<h1 id="detail-page-header">Detail Page Header</h1>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8659/20b8e8f8-c93f-11e5-8f9d-bcead0902eca.png" alt="detail-page-header"></p>
+<h2 id="dependencies-">Dependencies:</h2>
+<pre><code class="lang-scss">// Path to bower_components
+// (edit according to your file structure)
+$path: &#39;bower_components/bluemix-components&#39;;
+
+// Global
+@import &#39;#{path}/global/global&#39;;         // variables
+
+// Components
+@import &#39;#{path}/components/tabs-nav/tabs-nav&#39;;
+@import &#39;#{path}/components/detail-page-header/detail-page-header&#39;;
+</code></pre>
+<h2 id="variations">Variations</h2>
+<h3 id="no-tabs">no-tabs</h3>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8660/fd0f4662-c93f-11e5-89f8-421902330d21.png" alt="no-tabs"></p>
+<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--no-tabs&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;detail-page-header--no-tabs__link-wrapper&quot;&gt;
+    &lt;svg class=&quot;arrow&quot;&gt;
+      &lt;use xlink:href=&quot;../../images/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+  &lt;/a&gt;
+  &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+<h3 id="with-tabs">With Tabs</h3>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8844/1f1fb48c-c9c0-11e5-909b-7ad7c9186249.png" alt="xs-small"></p>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8846/5aaf85ea-c9c0-11e5-86f5-2f30b1c92e65.png" alt="small"></p>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8845/5aaf890a-c9c0-11e5-8433-8880ec8d6bde.png" alt="tabs-expanded"></p>
+<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--with-tabs&quot;&gt;
+  &lt;div class=&quot;detail-page-header--with-tabs__container&quot;&gt;
+    &lt;div class=&quot;detail-page-header--with-tabs__breadcrumb&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;link-wrapper&quot;&gt;
+        &lt;svg class=&quot;arrow&quot;&gt;
+          &lt;use xlink:href=&quot;../../images/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;p class=&quot;breadcrumb-title&quot;&gt;breadcrumb title&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;detail-page-header--with-tabs__info&quot;&gt;
+      &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;detail-page-header--with-tabs__tabs-container&quot;&gt;
+    &lt;nav class=&quot;tabs&quot;&gt;
+      &lt;div class=&quot;tabs__trigger&quot;&gt;&lt;p class=&quot;trigger__text&quot;&gt;&lt;/p&gt;
+        &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+        &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 7.5 3.8&quot; enable-background=&quot;new 0 0 7.5 3.8&quot; xml:space=&quot;preserve&quot;&gt;
+          &lt;polygon points=&quot;0,0 7.5,0 3.8,3.8&quot;/&gt;
+        &lt;/svg&gt;
+        &lt;/div&gt;
+      &lt;ul class=&quot;tabs__nav tabs--hidden&quot;&gt;
+        &lt;li class=&quot;nav__item selected&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Containers Files&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Connected Objects&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Manage&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>

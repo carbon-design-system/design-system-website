@@ -1,0 +1,50 @@
+<h1 id="toolbars">Toolbars</h1>
+<h2 id="toolbar-style-icons">Toolbar style: Icons</h2>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9454/c85087bc-cbfe-11e5-9136-f7f17976210c.png" alt="Toolbar: Icons"></p>
+<h4 id="after-clicking-the-search-icon">After clicking the search icon</h4>
+<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9477/a8901c8c-cc10-11e5-9807-3eb5cb107cba.gif" alt="toolbar-search-2"></p>
+<h3 id="configuration">Configuration</h3>
+<p>Each icon can also exist by itself, so if you only need for example the search and grid icon you can remove/comment out the code for the sort icon. See example below:</p>
+<p><img width="120" alt="screen shot 2016-02-05 at 1 53 39 pm" src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9473/ee0d5a5a-cc0f-11e5-8cb7-d6e62c0fb24b.png"></p>
+<pre><code class="lang-markup">&lt;div class=&quot;toolbar-icons&quot;&gt;
+
+  &lt;!-- Slide out search field --&gt;
+  &lt;div class=&quot;slide-out-search&quot;&gt;
+    &lt;input type=&quot;search&quot; class=&quot;search-field&quot; data-list-icons-search-field placeholder=&quot;Start typing to filter results..&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Icon list --&gt;
+  &lt;ul class=&quot;toolbar-icons__icons&quot;&gt;
+    &lt;li data-list-icons-search-action-target=&quot;[data-list-icons-search-field]&quot; data-id=&quot;search-action&quot; class=&quot;icons__tool&quot;&gt;
+      &lt;svg class=&quot;tool-icon&quot;&gt;
+        &lt;use xlink:href=&quot;../../images/sprite.svg#common--search&quot;&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+    &lt;/li&gt;
+    &lt;!-- Comment out a list item if it&#39;s not needed
+    &lt;li data-id=&quot;sort-action&quot; class=&quot;icons__tool&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;svg class=&quot;tool-icon&quot;&gt;
+          &lt;use xlink:href=&quot;../../images/sprite.svg#common--arrows&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    --&gt;
+    &lt;li class=&quot;icons__tool&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;svg class=&quot;tool-icon&quot;&gt;
+          &lt;use xlink:href=&quot;../../images/sprite.svg#common--grid&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;/div&gt;
+</code></pre>
+<h4 id="testing-the-slide-out-search-field">Testing the slide out search field</h4>
+<p>In order to test the slide out search field on the overview page of <code>bluemix-components</code>, make sure you uncomment the first line of the class <code>toolbar-icons</code>:</p>
+<pre><code class="lang-css">.toolbar-icons {
+  // Uncomment the line below to test the slide-out search field
+  // margin-left: 25em;
+  display: flex;
+}
+</code></pre>

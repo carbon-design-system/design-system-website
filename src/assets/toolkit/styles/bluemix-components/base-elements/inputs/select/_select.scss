@@ -1,0 +1,16 @@
+@import '_partials/extends';
+
+.select {
+  @extend %select__caret;
+  @include type(1rem);
+  position: relative;
+  width: 100%;
+  min-width: 9.375em;
+  padding: .5em 0 .5em 1em;
+  margin: .25em 0;
+  color: $color__white;
+  background-color: $color__navy-gray-4;
+  border: none;
+  border-radius: 0;
+  appearance: none;
+}

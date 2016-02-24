@@ -1,0 +1,9 @@
+@mixin type($size) {
+  @if map-has-key($typescale-map, $size) {
+    font-size: map-get($typescale-map, $size);
+  }
+
+  @else {
+    font-size: $size;
+  }
+}

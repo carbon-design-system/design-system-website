@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "authors": [
+    "Mari Johannessen <mjohannessen@us.ibm.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "css-utils": "~0.1.4",
+    "bluemix-components": "~4.6.1-alpha"
+  }
+}

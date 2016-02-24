@@ -1,0 +1,37 @@
+<h1 id="modules">Modules</h1>
+<p>Basic usage</p>
+<!-- ![Module](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8757/eeb59346-c999-11e5-93cc-8bc145bb0b09.png) -->
+<ul>
+<li>create modules within a <code>module-section</code></li>
+</ul>
+<pre><code class="lang-markup">&lt;section class=&quot;module-section&quot;&gt;
+  &lt;div class=&quot;module--full&quot;&gt;
+    &lt;div class=&quot;module__body&quot;&gt;Basic module&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+<p>Classes for base module containers:</p>
+<ul>
+<li><code>module--one-third</code></li>
+<li><code>module--two-third</code></li>
+<li><code>module--half</code></li>
+<li><code>module--full</code></li>
+</ul>
+<p>Classes for internal modules (within the containing ones):</p>
+<ul>
+<li><code>.full</code></li>
+<li><code>.half</code></li>
+</ul>
+<!-- ![Module Options](https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0521/71f81f2a-d19d-11e5-8cfe-145d2c712a9c.png) -->
+<p>Header and footer blocks are optional:</p>
+<!-- ![With header and footer](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8756/9ca8d82e-c999-11e5-985f-f1d93a70bbd9.png) -->
+<pre><code class="lang-markup">&lt;div class=&quot;module--half&quot;&gt;
+  &lt;div class=&quot;module__header&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;module__body&quot;&gt;Panel Body&lt;/div&gt;
+  &lt;div class=&quot;module__footer&quot;&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h1 id="components-required">Components required</h1>
+<pre><code class="lang-css">@import &#39;bluemix-components/core/colors/colors&#39;;
+@import &#39;bluemix-components/components/modules/modules&#39;;
+</code></pre>

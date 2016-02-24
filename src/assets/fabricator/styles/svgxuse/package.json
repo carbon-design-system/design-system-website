@@ -1,0 +1,28 @@
+{
+  "name": "svgxuse",
+  "version": "1.1.7",
+  "description": "A polyfill that fetches external SVGs referenced in use elements when the browser itself fails to do so.",
+  "main": "svgxuse.js",
+  "files": [
+    "svgxuse.js",
+    "svgxuse.min.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyamoon/svgxuse.git"
+  },
+  "keywords": [
+    "svg",
+    "inline",
+    "svg",
+    "xlink:href",
+    "polyfill",
+    "external"
+  ],
+  "author": "Keyamoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Keyamoon/svgxuse/issues"
+  },
+  "homepage": "https://github.com/Keyamoon/svgxuse#readme"
+}
