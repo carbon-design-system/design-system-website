@@ -8,36 +8,26 @@
 
 	<title>{{title}}</title>
 
-	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
-
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
-
-    <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/styles.css">
+    <link rel="stylesheet" href="{{baseurl}}/assets/bluemix-design-system/styles/styles.css">
+	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/bluemix-design-system/styles/main.css">{{/if}}
 
 </head>
 <body>
 
 	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
+		{{> icons}}
+		{{> menu}}
+		<div class="container">
+			{{> control-bar}}
 	{{/if}}
 
+    {% body %}
 
-	{% body %}
-
-
-	{{#if fabricator}}
+    {{#if fabricator}}
 		</div>
-	<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
-	{{/if}}
 
-	<!-- toolkit scripts -->
-	<script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
+    <script src="{{baseurl}}/assets/bluemix-design-system/scripts/main.js"></script>
+	{{/if}}
 
 </body>
 </html>

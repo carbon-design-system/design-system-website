@@ -29,24 +29,20 @@ var config = {
 	src: {
 		scripts: {
 			fabricator: [
-				'src/assets/fabricator/scripts/prism.js',
-				'src/assets/fabricator/scripts/fabricator.js'
+				'src/assets/bluemix-design-system/scripts/fabricator.js'
 			],
 			vendor: [
-				'src/assets/fabricator/scripts/prism.js'
-			],
-			toolkit: './src/assets/toolkit/scripts/toolkit.js'
-		},
+				'src/assets/bluemix-design-system/scripts/prism.js'
+			]
+        },
 		styles: {
-			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			toolkit: 'src/assets/toolkit/styles/toolkit.scss',
-            bluemix: 'src/assets/fabricator/styles/bluemix-components/styles.scss'
+			main: 'src/assets/bluemix-design-system/styles/main.scss',
+            bluemixComponents: 'bower_components/bluemix-components/styles.scss'
 		},
-		images: 'src/assets/toolkit/images/**/*',
-		views: 'src/toolkit/views/*.html',
+		views: 'src/views/*.html',
         bluemix: {
-            compMarkdown: 'src/assets/fabricator/styles/bluemix-components/components/**/**/*.md',
-            baseMarkdown: 'src/assets/fabricator/styles/bluemix-components/base-elements/**/**/*.md'
+            compMarkdown: 'bower_components/bluemix-components/components/**/**/*.md',
+            baseMarkdown: 'bower_components/bluemix-components/base-elements/**/**/*.md'
         }
 	},
 	dest: 'dist'
@@ -59,91 +55,39 @@ gulp.task('clean', function (cb) {
 });
 
 // styles
-gulp.task('styles:fabricator', function () {
-	return gulp.src(config.src.styles.fabricator)
+gulp.task('styles:main', function () {
+	return gulp.src(config.src.styles.main)
 		.pipe(sass({
 			errLogToConsole: true
 		}))
 		.pipe(prefix('last 1 version'))
 		.pipe(gulpif(!config.dev, csso()))
-		.pipe(rename('f.css'))
-		.pipe(gulp.dest(config.dest + '/assets/fabricator/styles'))
+		.pipe(rename('main.css'))
+		.pipe(gulp.dest(config.dest + '/assets/bluemix-design-system/styles'))
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles:toolkit', function () {
-	return gulp.src(config.src.styles.toolkit)
-		.pipe(sass({
-			errLogToConsole: true
-		}))
-		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
-		.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
-		.pipe(gulpif(config.dev, reload({stream:true})));
-});
-
-gulp.task('styles:bluemix', function() {
-    return gulp.src(config.src.styles.bluemix)
+gulp.task('styles:bluemixComponents', function() {
+    return gulp.src(config.src.styles.bluemixComponents)
         .pipe(sass({
             errLogToConsole: true
         }))
         .pipe(gulpif(!config.dev, csso()))
-        .pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+        .pipe(gulp.dest(config.dest + '/assets/bluemix-design-system/styles'))
         .pipe(gulpif(config.dev, reload({stream:true})));
 })
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit', 'styles:bluemix']);
-
+gulp.task('styles', ['styles:main', 'styles:bluemixComponents']);
 
 // scripts
-gulp.task('scripts:fabricator', function () {
+gulp.task('scripts', function () {
 	return gulp.src(config.src.scripts.fabricator)
-		.pipe(concat('f.js'))
+		.pipe(concat('main.js'))
 		.pipe(gulpif(!config.dev, uglify()))
-		.pipe(gulp.dest(config.dest + '/assets/fabricator/scripts'));
+		.pipe(gulp.dest(config.dest + '/assets/bluemix-design-system/scripts'));
 });
 
-gulp.task('scripts:toolkit', function() {
-
-	var toolkit = function() {
-		return browserify(config.src.scripts.toolkit).bundle()
-			.on('error', function(error) {
-				gutil.log(gutil.colors.red(error));
-				this.emit('end');
-			})
-			.pipe(source('toolkit.js'));
-	};
-
-	var vendor = function() {
-		return gulp.src(config.src.scripts.vendor)
-			.pipe(concat('vendor.js'));
-	};
-
-	return streamqueue({
-			objectMode: true
-		}, vendor(), toolkit())
-		.pipe(streamify(concat('toolkit.js')))
-		.pipe(gulpif(!config.dev, streamify(uglify())))
-		.pipe(gulp.dest(config.dest + '/assets/toolkit/scripts'));
-
-});
-
-gulp.task('scripts', ['scripts:fabricator', 'scripts:toolkit']);
-
-
-// images
-gulp.task('images', ['favicon'], function () {
-	return gulp.src(config.src.images)
-		.pipe(imagemin())
-		.pipe(gulp.dest(config.dest + '/assets/toolkit/images'));
-});
-
-gulp.task('favicon', function () {
-	return gulp.src('./src/favicon.ico')
-		.pipe(gulp.dest(config.dest));
-});
-
-// copy
+// markdown to html
 
 gulp.task('markdown:components', function() {
     return gulp.src(config.src.bluemix.compMarkdown)
@@ -194,7 +138,7 @@ gulp.task('assemble', function(done) {
 
 
 // server
-gulp.task('serve', function () {
+gulp.task('serve', ['default'], function () {
 
 	var reload = browserSync.reload;
 
@@ -207,10 +151,8 @@ gulp.task('serve', function () {
 	});
 
 	gulp.watch('src/materials/**/**/**/*.{html,md,json,yml}', ['assemble']).on('change', reload);
-	gulp.watch('src/assets/fabricator/styles/**/*.scss', ['styles:fabricator']);
-	gulp.watch('src/assets/toolkit/styles/**/*.scss', ['styles:toolkit']);
-	gulp.watch('src/assets/fabricator/scripts/**/*.js', ['scripts:fabricator']).on('change', reload);
-	gulp.watch('src/assets/toolkit/scripts/**/*.js', ['scripts:toolkit']).on('change', reload);
+	gulp.watch('src/assets/bluemix-design-system/styles/**/*.scss', ['styles:main']).on('change', reload);
+	gulp.watch('src/assets/bluemix-design-system/scripts/**/*.js', ['scripts']).on('change', reload);
 	gulp.watch(config.src.images, ['images']).on('change', reload);
 });
 
@@ -223,7 +165,6 @@ gulp.task('default', ['clean'], function () {
         'markdown',
 		'styles',
 		'scripts',
-		'images',
 		'assemble'
 	];
 

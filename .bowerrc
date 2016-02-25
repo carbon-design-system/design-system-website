@@ -1,3 +1,2 @@
-{ "registry": "http://x1showcase.emmlabs.ibm.com:5678/",
-  "directory": "src/assets/fabricator/styles"
+{ "registry": "http://x1showcase.emmlabs.ibm.com:5678/"
 }

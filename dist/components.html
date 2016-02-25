@@ -8,68 +8,53 @@
 
 	<title></title>
 
-	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
-
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
-
-    <link rel="stylesheet" href="/assets/toolkit/styles/styles.css">
+    <link rel="stylesheet" href="/assets/bluemix-design-system/styles/styles.css">
+	<link rel="stylesheet" href="/assets/bluemix-design-system/styles/main.css">
 
 </head>
 <body>
 
 		<!-- fabricator icons -->
 		<svg style="display: none;">
-			<symbol id="f-icon-code" viewBox="0 0 512 512">
+			<symbol id="icon-code" viewBox="0 0 512 512">
 				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
 			</symbol>
-			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+			<symbol id="icon-notes" viewBox="0 0 512 512">
 				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
 			</symbol>
-			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+			<symbol id="icon-labels" viewBox="0 0 512 512">
 				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
 			</symbol>
-			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+			<symbol id="icon-menu" viewBox="0 0 512 512">
 				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
 			</symbol>
-			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+			<symbol id="icon-settings" viewBox="0 0 512 512">
 				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
 			</symbol>
 		</svg>
 		<!-- /fabricator icons -->
 		<!-- fabricator menu -->
-		<div class="f-menu">
+		<div class="menu">
 		
-			<div class="f-controls">
-				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
-					<svg>
-						<use xlink:href="#f-icon-labels" />
-					</svg>
-				</div>
-				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
-					<svg>
-						<use xlink:href="#f-icon-notes" />
-					</svg>
-				</div>
-				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
-					<svg>
-						<use xlink:href="#f-icon-code" />
-					</svg>
-				</div>
-			</div>
+		    <p>IBM <span>Bluemix</span> Design System</p>
 		
 			<ul>
 		
 				<li>
-					<a href="index.html" class="f-menu__heading">Overview</a>
+					<a href="index.html" class="menu__heading">Overview</a>
 				</li>
 		
 				<li>
-					<a href="base-elements.html" class="f-menu__heading">Base Elements</a>
+					<a href="base-elements.html" class="menu__heading">Base Elements</a>
 					<ul>
 						<li>
+							<a href="base-elements.html#buttons">Buttons</a>
+						</li>
+						<li>
 							<a href="base-elements.html#checkbox">Checkbox</a>
+						</li>
+						<li>
+							<a href="base-elements.html#file">File</a>
 						</li>
 						<li>
 							<a href="base-elements.html#footer">Footer</a>
@@ -78,21 +63,45 @@
 							<a href="base-elements.html#form-footer">Form Footer</a>
 						</li>
 						<li>
+							<a href="base-elements.html#links">Links</a>
+						</li>
+						<li>
+							<a href="base-elements.html#lists">Lists</a>
+						</li>
+						<li>
 							<a href="base-elements.html#radio-buttons">Radio Buttons</a>
+						</li>
+						<li>
+							<a href="base-elements.html#search">Search</a>
+						</li>
+						<li>
+							<a href="base-elements.html#select">Select</a>
 						</li>
 						<li>
 							<a href="base-elements.html#tables">Tables</a>
 						</li>
+						<li>
+							<a href="base-elements.html#text-field">Text Field</a>
+						</li>
+						<li>
+							<a href="base-elements.html#toggle">Toggle</a>
+						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="components.html" class="f-menu__heading">Components</a>
+					<a href="components.html" class="menu__heading">Components</a>
 					<ul>
+						<li>
+							<a href="components.html#README">Readme</a>
+						</li>
 						<li>
 							<a href="components.html#alerts">Alerts</a>
 						</li>
 						<li>
 							<a href="components.html#card">Card</a>
+						</li>
+						<li>
+							<a href="components.html#content-switcher">Content Switcher</a>
 						</li>
 						<li>
 							<a href="components.html#data-module">Data Module</a>
@@ -101,36 +110,52 @@
 							<a href="components.html#detail-page-header">Detail Page Header</a>
 						</li>
 						<li>
+							<a href="components.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="components.html#floating-action-button">Floating Action Button</a>
+						</li>
+						<li>
+							<a href="components.html#floating-action-button-label">Floating Action Button Label</a>
+						</li>
+						<li>
+							<a href="components.html#global-profile">Global Profile</a>
+						</li>
+						<li>
 							<a href="components.html#header">Header</a>
 						</li>
 						<li>
 							<a href="components.html#item-list">Item List</a>
 						</li>
 						<li>
+							<a href="components.html#modals">Modals</a>
+						</li>
+						<li>
 							<a href="components.html#modules">Modules</a>
 						</li>
 						<li>
-							<a href="components.html#new-component">New Component</a>
+							<a href="components.html#overflow-menu">Overflow Menu</a>
 						</li>
 						<li>
-							<a href="components.html#taxonomy-items">Taxonomy Items</a>
+							<a href="components.html#spinner">Spinner</a>
+						</li>
+						<li>
+							<a href="components.html#tabs-navigation">Tabs Navigation</a>
+						</li>
+						<li>
+							<a href="components.html#taxonomy-item">Taxonomy Item</a>
 						</li>
 						<li>
 							<a href="components.html#toolbars">Toolbars</a>
 						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="structures.html" class="f-menu__heading">Structures</a>
-					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="components.html#tooltips">Tooltips</a>
 						</li>
 					</ul>
 				</li>
 		
 				<li>
-					<a href="pages.html" class="f-menu__heading">Pages</a>
+					<a href="pages.html" class="menu__heading">Pages</a>
 					<ul>
 						<li>
 							<a href="pages/home.html" target="_blank">Home</a>
@@ -139,7 +164,7 @@
 				</li>
 		
 				<li>
-					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<a href="docs.html" class="menu__heading">Docs</a>
 					<ul>
 						<li>
 							<a href="docs.html#javascript">Javascript</a>
@@ -152,675 +177,22 @@
 		
 		</div>
 		<!-- /fabricator menu -->
-		<div class="f-container">
-			<div class="f-control-bar">
-				<div class="f-control f-menu-toggle">
+		<div class="container">
+			<div class="control-bar">
+				<div class="control menu-toggle">
 					<svg>
-						<use xlink:href="#f-icon-menu" />
+						<use xlink:href="#icon-menu" />
 					</svg>
 				</div>
 			</div>
 
-
-	
-<h1 data-f-toggle="labels">Components</h1>
-
-
-<div class="f-item-group" id="alerts">
-
-	<div class="f-item-preview">
-		<h1 id="alerts">Alerts</h1>
-	<h2 id="types-of-alerts">Types of Alerts</h2>
-	<h2 id="example">Example</h2>
-	<div class="alert" role="alert">
-		<div class="alert--danger">
-			<div class="alert__title">&#39;App Name&#39; is stopped</div>
-			<div class="alert__subtitle">Your application was stopped.</div>
-			<!-- <div class="alert__body">August 1st 2015 11:50pm - August 2nd 2015 1:30am</div> -->
-			<div class="alert__caption">10:47 AM</div>
-		</div>
-		<button class="alert__close" type="button">
-	        <span aria-label="close">
-	          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	             width="22px" height="22px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-	          <g>
-	            <polygon points="20.293,10.293 16,14.586 11.707,10.293 10.293,11.707 14.586,16 10.293,20.293 11.707,21.707 16,17.414
-	              20.293,21.707 21.707,20.293 17.414,16 21.707,11.707   "/>
-	            <path d="M16,2C8.269,2,2,8.269,2,16s6.269,14,14,14s14-6.269,14-14S23.731,2,16,2z M16,28C9.383,28,4,22.617,4,16S9.383,4,16,4
-	              s12,5.383,12,12S22.617,28,16,28z"/>
-	          </g>
-	          </svg>
-	        </span>
-	    </button>
-	</div>
-	
-	<pre><code class="lang-markup">&lt;div class=&quot;alert&quot; role=&quot;alert&quot;&gt;
-	    &lt;div class=&quot;alert--danger&quot;&gt;
-	        &lt;div class=&quot;alert__title&quot;&gt;&#39;App Name&#39; is stopped&lt;/div&gt;
-	        &lt;div class=&quot;alert__subtitle&quot;&gt;Your application was stopped.&lt;/div&gt;
-	        &lt;!-- &lt;div class=&quot;alert__body&quot;&gt;August 1st 2015 11:50pm - August 2nd 2015 1:30am&lt;/div&gt; --&gt;
-	        &lt;div class=&quot;alert__caption&quot;&gt;10:47 AM&lt;/div&gt;
-	    &lt;/div&gt;
-	    &lt;button class=&quot;alert__close&quot; type=&quot;button&quot;&gt;
-	        &lt;span aria-label=&quot;close&quot;&gt;
-	          &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-	          &lt;!DOCTYPE svg PUBLIC &quot;-//W3C//DTD SVG 1.1//EN&quot; &quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&quot;&gt;
-	          &lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
-	             width=&quot;22px&quot; height=&quot;22px&quot; viewBox=&quot;0 0 32 32&quot; enable-background=&quot;new 0 0 32 32&quot; xml:space=&quot;preserve&quot;&gt;
-	          &lt;g&gt;
-	            &lt;polygon points=&quot;20.293,10.293 16,14.586 11.707,10.293 10.293,11.707 14.586,16 10.293,20.293 11.707,21.707 16,17.414
-	              20.293,21.707 21.707,20.293 17.414,16 21.707,11.707   &quot;/&gt;
-	            &lt;path d=&quot;M16,2C8.269,2,2,8.269,2,16s6.269,14,14,14s14-6.269,14-14S23.731,2,16,2z M16,28C9.383,28,4,22.617,4,16S9.383,4,16,4
-	              s12,5.383,12,12S22.617,28,16,28z&quot;/&gt;
-	          &lt;/g&gt;
-	          &lt;/svg&gt;
-	        &lt;/span&gt;
-	    &lt;/button&gt;
-	&lt;/div&gt;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;alerts&quot;&gt;Alerts&lt;/h1&gt;
-	&lt;h2 id=&quot;types-of-alerts&quot;&gt;Types of Alerts&lt;/h2&gt;
-	&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
-	&lt;div class=&quot;alert&quot; role=&quot;alert&quot;&gt;
-		&lt;div class=&quot;alert--danger&quot;&gt;
-			&lt;div class=&quot;alert__title&quot;&gt;&amp;#39;App Name&amp;#39; is stopped&lt;/div&gt;
-			&lt;div class=&quot;alert__subtitle&quot;&gt;Your application was stopped.&lt;/div&gt;
-			&lt;!-- &lt;div class=&quot;alert__body&quot;&gt;August 1st 2015 11:50pm - August 2nd 2015 1:30am&lt;/div&gt; --&gt;
-			&lt;div class=&quot;alert__caption&quot;&gt;10:47 AM&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;button class=&quot;alert__close&quot; type=&quot;button&quot;&gt;
-	        &lt;span aria-label=&quot;close&quot;&gt;
-	          &lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
-	             width=&quot;22px&quot; height=&quot;22px&quot; viewBox=&quot;0 0 32 32&quot; enable-background=&quot;new 0 0 32 32&quot; xml:space=&quot;preserve&quot;&gt;
-	          &lt;g&gt;
-	            &lt;polygon points=&quot;20.293,10.293 16,14.586 11.707,10.293 10.293,11.707 14.586,16 10.293,20.293 11.707,21.707 16,17.414
-	              20.293,21.707 21.707,20.293 17.414,16 21.707,11.707   &quot;/&gt;
-	            &lt;path d=&quot;M16,2C8.269,2,2,8.269,2,16s6.269,14,14,14s14-6.269,14-14S23.731,2,16,2z M16,28C9.383,28,4,22.617,4,16S9.383,4,16,4
-	              s12,5.383,12,12S22.617,28,16,28z&quot;/&gt;
-	          &lt;/g&gt;
-	          &lt;/svg&gt;
-	        &lt;/span&gt;
-	    &lt;/button&gt;
-	&lt;/div&gt;
-	
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;div class=&amp;quot;alert&amp;quot; role=&amp;quot;alert&amp;quot;&amp;gt;
-	    &amp;lt;div class=&amp;quot;alert--danger&amp;quot;&amp;gt;
-	        &amp;lt;div class=&amp;quot;alert__title&amp;quot;&amp;gt;&amp;#39;App Name&amp;#39; is stopped&amp;lt;/div&amp;gt;
-	        &amp;lt;div class=&amp;quot;alert__subtitle&amp;quot;&amp;gt;Your application was stopped.&amp;lt;/div&amp;gt;
-	        &amp;lt;!-- &amp;lt;div class=&amp;quot;alert__body&amp;quot;&amp;gt;August 1st 2015 11:50pm - August 2nd 2015 1:30am&amp;lt;/div&amp;gt; --&amp;gt;
-	        &amp;lt;div class=&amp;quot;alert__caption&amp;quot;&amp;gt;10:47 AM&amp;lt;/div&amp;gt;
-	    &amp;lt;/div&amp;gt;
-	    &amp;lt;button class=&amp;quot;alert__close&amp;quot; type=&amp;quot;button&amp;quot;&amp;gt;
-	        &amp;lt;span aria-label=&amp;quot;close&amp;quot;&amp;gt;
-	          &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
-	          &amp;lt;!DOCTYPE svg PUBLIC &amp;quot;-//W3C//DTD SVG 1.1//EN&amp;quot; &amp;quot;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&amp;quot;&amp;gt;
-	          &amp;lt;svg version=&amp;quot;1.1&amp;quot; id=&amp;quot;Layer_1&amp;quot; xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; x=&amp;quot;0px&amp;quot; y=&amp;quot;0px&amp;quot;
-	             width=&amp;quot;22px&amp;quot; height=&amp;quot;22px&amp;quot; viewBox=&amp;quot;0 0 32 32&amp;quot; enable-background=&amp;quot;new 0 0 32 32&amp;quot; xml:space=&amp;quot;preserve&amp;quot;&amp;gt;
-	          &amp;lt;g&amp;gt;
-	            &amp;lt;polygon points=&amp;quot;20.293,10.293 16,14.586 11.707,10.293 10.293,11.707 14.586,16 10.293,20.293 11.707,21.707 16,17.414
-	              20.293,21.707 21.707,20.293 17.414,16 21.707,11.707   &amp;quot;/&amp;gt;
-	            &amp;lt;path d=&amp;quot;M16,2C8.269,2,2,8.269,2,16s6.269,14,14,14s14-6.269,14-14S23.731,2,16,2z M16,28C9.383,28,4,22.617,4,16S9.383,4,16,4
-	              s12,5.383,12,12S22.617,28,16,28z&amp;quot;/&amp;gt;
-	          &amp;lt;/g&amp;gt;
-	          &amp;lt;/svg&amp;gt;
-	        &amp;lt;/span&amp;gt;
-	    &amp;lt;/button&amp;gt;
-	&amp;lt;/div&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
+    
+<h1 data-f-toggle="labels" class="page-heading">Components</h1>
 
 
-<div class="f-item-group" id="card">
+<div class="item-group" id="README">
 
-	<div class="f-item-preview">
-		<h1 id="card">Card</h1>
-	<h2 id="card-styles">Card Styles</h2>
-	<h3 id="card-base-">Card (base)</h3>
-	<ul>
-		<li>Use this as a base card to build your own custom card</li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7892/bc96f910-c43d-11e5-9a64-f9f12d8af4a9.png" alt="card"></p>
-	<h3 id="app">App</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7894/bc9a57a4-c43d-11e5-8c3b-6c9b7c4518d0.png" alt="app"></p>
-	<h3 id="container">Container</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7889/bc785d8e-c43d-11e5-8bb5-f4dd0b6d47ca.png" alt="container"></p>
-	<h3 id="quota">Quota</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7891/bc95bb90-c43d-11e5-9cd8-f5b3e2732a9e.png" alt="quota"></p>
-	<h3 id="service">Service</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7890/bc94a322-c43d-11e5-89af-6e82d4a2874b.png" alt="service"></p>
-	<h3 id="virtual-server">Virtual Server</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7893/bc97536a-c43d-11e5-9038-58fdb6740be3.png" alt="virtual-server"></p>
-	<h2 id="configuration">Configuration</h2>
-	<h3 id="change-status-in-footer">Change Status in Footer</h3>
-	<p>When there&#39;s a card that shows status in its footer,
-		<strong>toggle the <code>active</code> classname to show the appropriate status.</strong></p>
-	<pre><code class="lang-markup">&lt;!-- app status --&gt;
-	&lt;div class=&quot;card-footer__app-status&quot;&gt;
-	  &lt;div class=&quot;card-footer__app-status--running active&quot;&gt;
-	    Running
-	  &lt;/div&gt;
-	  &lt;div class=&quot;card-footer__app-status--not-running&quot;&gt;
-	    Not Running
-	  &lt;/div&gt;
-	  &lt;div class=&quot;card-footer__app-status--stopped&quot;&gt;
-	    Stopped
-	  &lt;/div&gt;
-	  &lt;div class=&quot;card-footer__app-status--limited&quot;&gt;
-	    Limited
-	  &lt;/div&gt;
-	&lt;/div&gt;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;card&quot;&gt;Card&lt;/h1&gt;
-	&lt;h2 id=&quot;card-styles&quot;&gt;Card Styles&lt;/h2&gt;
-	&lt;h3 id=&quot;card-base-&quot;&gt;Card (base)&lt;/h3&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Use this as a base card to build your own custom card&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7892/bc96f910-c43d-11e5-9a64-f9f12d8af4a9.png&quot; alt=&quot;card&quot;&gt;&lt;/p&gt;
-	&lt;h3 id=&quot;app&quot;&gt;App&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7894/bc9a57a4-c43d-11e5-8c3b-6c9b7c4518d0.png&quot; alt=&quot;app&quot;&gt;&lt;/p&gt;
-	&lt;h3 id=&quot;container&quot;&gt;Container&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7889/bc785d8e-c43d-11e5-8bb5-f4dd0b6d47ca.png&quot; alt=&quot;container&quot;&gt;&lt;/p&gt;
-	&lt;h3 id=&quot;quota&quot;&gt;Quota&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7891/bc95bb90-c43d-11e5-9cd8-f5b3e2732a9e.png&quot; alt=&quot;quota&quot;&gt;&lt;/p&gt;
-	&lt;h3 id=&quot;service&quot;&gt;Service&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7890/bc94a322-c43d-11e5-89af-6e82d4a2874b.png&quot; alt=&quot;service&quot;&gt;&lt;/p&gt;
-	&lt;h3 id=&quot;virtual-server&quot;&gt;Virtual Server&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7893/bc97536a-c43d-11e5-9038-58fdb6740be3.png&quot; alt=&quot;virtual-server&quot;&gt;&lt;/p&gt;
-	&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
-	&lt;h3 id=&quot;change-status-in-footer&quot;&gt;Change Status in Footer&lt;/h3&gt;
-	&lt;p&gt;When there&amp;#39;s a card that shows status in its footer,
-		&lt;strong&gt;toggle the &lt;code&gt;active&lt;/code&gt; classname to show the appropriate status.&lt;/strong&gt;&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;!-- app status --&amp;gt;
-	&amp;lt;div class=&amp;quot;card-footer__app-status&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;card-footer__app-status--running active&amp;quot;&amp;gt;
-	    Running
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;card-footer__app-status--not-running&amp;quot;&amp;gt;
-	    Not Running
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;card-footer__app-status--stopped&amp;quot;&amp;gt;
-	    Stopped
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;card-footer__app-status--limited&amp;quot;&amp;gt;
-	    Limited
-	  &amp;lt;/div&amp;gt;
-	&amp;lt;/div&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="data-module">
-
-	<div class="f-item-preview">
-		<h1 id="data-modules">Data Modules</h1>
-	<ul>
-		<li>create modules within a <code>module-section</code></li>
-	</ul>
-	<pre><code class="lang-html">&lt;section class=&quot;data-section&quot;&gt;
-	  &lt;div class=&quot;data-module--full&quot;&gt;
-	    //...
-	  &lt;/div&gt;
-	&lt;/section&gt;
-	</code></pre>
-	<p>Classes for base module containers:</p>
-	<ul>
-		<li><code>data--one-third</code></li>
-		<li><code>data--two-third</code></li>
-		<li><code>data--half</code></li>
-		<li><code>data--full</code></li>
-	</ul>
-	<p>Classes for internal modules (within the containing ones):</p>
-	<ul>
-		<li><code>.full</code></li>
-		<li><code>.half</code></li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0513/1ec9a934-d19a-11e5-8896-c826996c75cf.png" alt="screen shot 2016-02-12 at 3 02 07 pm">
-		<img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0514/21e4eb38-d19a-11e5-861c-f15185eed35d.png" alt="screen shot 2016-02-12 at 3 01 58 pm"></p>
-	<h1 id="components-required">Components required</h1>
-	<pre><code class="lang-scss">@import &#39;bluemix-components/core/colors/colors&#39;;
-	
-	@import &#39;bluemix-components/components/modules/modules&#39;;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;data-modules&quot;&gt;Data Modules&lt;/h1&gt;
-	&lt;ul&gt;
-		&lt;li&gt;create modules within a &lt;code&gt;module-section&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;section class=&amp;quot;data-section&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;data-module--full&amp;quot;&amp;gt;
-	    //...
-	  &amp;lt;/div&amp;gt;
-	&amp;lt;/section&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;p&gt;Classes for base module containers:&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;code&gt;data--one-third&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;data--two-third&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;data--half&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;data--full&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;Classes for internal modules (within the containing ones):&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;code&gt;.full&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;.half&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0513/1ec9a934-d19a-11e5-8896-c826996c75cf.png&quot; alt=&quot;screen shot 2016-02-12 at 3 02 07 pm&quot;&gt;
-		&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0514/21e4eb38-d19a-11e5-861c-f15185eed35d.png&quot; alt=&quot;screen shot 2016-02-12 at 3 01 58 pm&quot;&gt;&lt;/p&gt;
-	&lt;h1 id=&quot;components-required&quot;&gt;Components required&lt;/h1&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;@import &amp;#39;bluemix-components/core/colors/colors&amp;#39;;
-	
-	@import &amp;#39;bluemix-components/components/modules/modules&amp;#39;;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="detail-page-header">
-
-	<div class="f-item-preview">
-		<h1 id="detail-page-header">Detail Page Header</h1>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8659/20b8e8f8-c93f-11e5-8f9d-bcead0902eca.png" alt="detail-page-header"></p>
-	<h2 id="dependencies-">Dependencies:</h2>
-	<pre><code class="lang-scss">// Path to bower_components
-	// (edit according to your file structure)
-	$path: &#39;bower_components/bluemix-components&#39;;
-	
-	// Global
-	@import &#39;#{path}/global/global&#39;;         // variables
-	
-	// Components
-	@import &#39;#{path}/components/tabs-nav/tabs-nav&#39;;
-	@import &#39;#{path}/components/detail-page-header/detail-page-header&#39;;
-	</code></pre>
-	<h2 id="variations">Variations</h2>
-	<h3 id="no-tabs">no-tabs</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8660/fd0f4662-c93f-11e5-89f8-421902330d21.png" alt="no-tabs"></p>
-	<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--no-tabs&quot;&gt;
-	  &lt;a href=&quot;#&quot; class=&quot;detail-page-header--no-tabs__link-wrapper&quot;&gt;
-	    &lt;svg class=&quot;arrow&quot;&gt;
-	      &lt;use xlink:href=&quot;../../images/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
-	    &lt;/svg&gt;
-	  &lt;/a&gt;
-	  &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
-	&lt;/header&gt;
-	</code></pre>
-	<h3 id="with-tabs">With Tabs</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8844/1f1fb48c-c9c0-11e5-909b-7ad7c9186249.png" alt="xs-small"></p>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8846/5aaf85ea-c9c0-11e5-86f5-2f30b1c92e65.png" alt="small"></p>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8845/5aaf890a-c9c0-11e5-8433-8880ec8d6bde.png" alt="tabs-expanded"></p>
-	<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--with-tabs&quot;&gt;
-	  &lt;div class=&quot;detail-page-header--with-tabs__container&quot;&gt;
-	    &lt;div class=&quot;detail-page-header--with-tabs__breadcrumb&quot;&gt;
-	      &lt;a href=&quot;#&quot; class=&quot;link-wrapper&quot;&gt;
-	        &lt;svg class=&quot;arrow&quot;&gt;
-	          &lt;use xlink:href=&quot;../../images/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
-	        &lt;/svg&gt;
-	        &lt;p class=&quot;breadcrumb-title&quot;&gt;breadcrumb title&lt;/p&gt;
-	      &lt;/a&gt;
-	    &lt;/div&gt;
-	    &lt;div class=&quot;detail-page-header--with-tabs__info&quot;&gt;
-	      &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
-	    &lt;/div&gt;
-	  &lt;/div&gt;
-	  &lt;div class=&quot;detail-page-header--with-tabs__tabs-container&quot;&gt;
-	    &lt;nav class=&quot;tabs&quot;&gt;
-	      &lt;div class=&quot;tabs__trigger&quot;&gt;&lt;p class=&quot;trigger__text&quot;&gt;&lt;/p&gt;
-	        &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-	        &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 7.5 3.8&quot; enable-background=&quot;new 0 0 7.5 3.8&quot; xml:space=&quot;preserve&quot;&gt;
-	          &lt;polygon points=&quot;0,0 7.5,0 3.8,3.8&quot;/&gt;
-	        &lt;/svg&gt;
-	        &lt;/div&gt;
-	      &lt;ul class=&quot;tabs__nav tabs--hidden&quot;&gt;
-	        &lt;li class=&quot;nav__item selected&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Containers Files&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Connected Objects&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Manage&lt;/a&gt;&lt;/li&gt;
-	      &lt;/ul&gt;
-	    &lt;/nav&gt;
-	  &lt;/div&gt;
-	&lt;/header&gt;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;detail-page-header&quot;&gt;Detail Page Header&lt;/h1&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8659/20b8e8f8-c93f-11e5-8f9d-bcead0902eca.png&quot; alt=&quot;detail-page-header&quot;&gt;&lt;/p&gt;
-	&lt;h2 id=&quot;dependencies-&quot;&gt;Dependencies:&lt;/h2&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;// Path to bower_components
-	// (edit according to your file structure)
-	$path: &amp;#39;bower_components/bluemix-components&amp;#39;;
-	
-	// Global
-	@import &amp;#39;#{path}/global/global&amp;#39;;         // variables
-	
-	// Components
-	@import &amp;#39;#{path}/components/tabs-nav/tabs-nav&amp;#39;;
-	@import &amp;#39;#{path}/components/detail-page-header/detail-page-header&amp;#39;;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;h2 id=&quot;variations&quot;&gt;Variations&lt;/h2&gt;
-	&lt;h3 id=&quot;no-tabs&quot;&gt;no-tabs&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8660/fd0f4662-c93f-11e5-89f8-421902330d21.png&quot; alt=&quot;no-tabs&quot;&gt;&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;header class=&amp;quot;detail-page-header--no-tabs&amp;quot;&amp;gt;
-	  &amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;detail-page-header--no-tabs__link-wrapper&amp;quot;&amp;gt;
-	    &amp;lt;svg class=&amp;quot;arrow&amp;quot;&amp;gt;
-	      &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#service--back&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
-	    &amp;lt;/svg&amp;gt;
-	  &amp;lt;/a&amp;gt;
-	  &amp;lt;p class=&amp;quot;info-title&amp;quot;&amp;gt;Detail Page Header&amp;lt;/p&amp;gt;
-	&amp;lt;/header&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;h3 id=&quot;with-tabs&quot;&gt;With Tabs&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8844/1f1fb48c-c9c0-11e5-909b-7ad7c9186249.png&quot; alt=&quot;xs-small&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8846/5aaf85ea-c9c0-11e5-86f5-2f30b1c92e65.png&quot; alt=&quot;small&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8845/5aaf890a-c9c0-11e5-8433-8880ec8d6bde.png&quot; alt=&quot;tabs-expanded&quot;&gt;&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;header class=&amp;quot;detail-page-header--with-tabs&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__container&amp;quot;&amp;gt;
-	    &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__breadcrumb&amp;quot;&amp;gt;
-	      &amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;link-wrapper&amp;quot;&amp;gt;
-	        &amp;lt;svg class=&amp;quot;arrow&amp;quot;&amp;gt;
-	          &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#service--back&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
-	        &amp;lt;/svg&amp;gt;
-	        &amp;lt;p class=&amp;quot;breadcrumb-title&amp;quot;&amp;gt;breadcrumb title&amp;lt;/p&amp;gt;
-	      &amp;lt;/a&amp;gt;
-	    &amp;lt;/div&amp;gt;
-	    &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__info&amp;quot;&amp;gt;
-	      &amp;lt;p class=&amp;quot;info-title&amp;quot;&amp;gt;Detail Page Header&amp;lt;/p&amp;gt;
-	    &amp;lt;/div&amp;gt;
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__tabs-container&amp;quot;&amp;gt;
-	    &amp;lt;nav class=&amp;quot;tabs&amp;quot;&amp;gt;
-	      &amp;lt;div class=&amp;quot;tabs__trigger&amp;quot;&amp;gt;&amp;lt;p class=&amp;quot;trigger__text&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-	        &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
-	        &amp;lt;svg version=&amp;quot;1.1&amp;quot; xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; x=&amp;quot;0px&amp;quot; y=&amp;quot;0px&amp;quot; viewBox=&amp;quot;0 0 7.5 3.8&amp;quot; enable-background=&amp;quot;new 0 0 7.5 3.8&amp;quot; xml:space=&amp;quot;preserve&amp;quot;&amp;gt;
-	          &amp;lt;polygon points=&amp;quot;0,0 7.5,0 3.8,3.8&amp;quot;/&amp;gt;
-	        &amp;lt;/svg&amp;gt;
-	        &amp;lt;/div&amp;gt;
-	      &amp;lt;ul class=&amp;quot;tabs__nav tabs--hidden&amp;quot;&amp;gt;
-	        &amp;lt;li class=&amp;quot;nav__item selected&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Overview&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Containers Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Connected Objects&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Manage&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-	      &amp;lt;/ul&amp;gt;
-	    &amp;lt;/nav&amp;gt;
-	  &amp;lt;/div&amp;gt;
-	&amp;lt;/header&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="header">
-
-	<div class="f-item-preview">
-		<h1 id="header">Header</h1>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0908/0000/7745/a423e5c8-c3f2-11e5-985c-d49edfa1621d.gif" alt="header"></p>
-	<p>This component represents the composed header template. The actual header inside Bluemix.Common will populate the template with actual content, but this is the base skeleton. Has taxonomy menu that lets user switch different feature areas.</p>
-	<h1 id="components-required">Components required</h1>
-	<pre><code>@import &#39;bluemix-components/core/reset/reset&#39;;
-	@import &#39;bluemix-components/core/colors/colors&#39;;
-	@import &#39;bluemix-components/core/fonts/font-face&#39;;
-	@import &#39;bluemix-components/core/typography/typography&#39;;
-	@import &#39;bluemix-components/core/layout/grid&#39;;
-	@import &#39;bluemix-components/core/layout/z-index&#39;;
-	
-	@import &#39;bluemix-components/components/taxonomy-item/taxonomy-item&#39;;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0908/0000/7745/a423e5c8-c3f2-11e5-985c-d49edfa1621d.gif&quot; alt=&quot;header&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;This component represents the composed header template. The actual header inside Bluemix.Common will populate the template with actual content, but this is the base skeleton. Has taxonomy menu that lets user switch different feature areas.&lt;/p&gt;
-	&lt;h1 id=&quot;components-required&quot;&gt;Components required&lt;/h1&gt;
-	&lt;pre&gt;&lt;code&gt;@import &amp;#39;bluemix-components/core/reset/reset&amp;#39;;
-	@import &amp;#39;bluemix-components/core/colors/colors&amp;#39;;
-	@import &amp;#39;bluemix-components/core/fonts/font-face&amp;#39;;
-	@import &amp;#39;bluemix-components/core/typography/typography&amp;#39;;
-	@import &amp;#39;bluemix-components/core/layout/grid&amp;#39;;
-	@import &amp;#39;bluemix-components/core/layout/z-index&amp;#39;;
-	
-	@import &amp;#39;bluemix-components/components/taxonomy-item/taxonomy-item&amp;#39;;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="item-list">
-
-	<div class="f-item-preview">
-		<h1 id="item-list">Item List</h1>
-	<h2 id="catalog">Catalog</h2>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6906/182e051c-bb7d-11e5-9eb8-af8afe8ffc79.png" alt="catalog-item"></p>
-	<h2 id="summary">Summary</h2>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6905/182dd600-bb7d-11e5-9ef9-4104f28bb488.png" alt="summary-item"></p>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;item-list&quot;&gt;Item List&lt;/h1&gt;
-	&lt;h2 id=&quot;catalog&quot;&gt;Catalog&lt;/h2&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6906/182e051c-bb7d-11e5-9eb8-af8afe8ffc79.png&quot; alt=&quot;catalog-item&quot;&gt;&lt;/p&gt;
-	&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6905/182dd600-bb7d-11e5-9ef9-4104f28bb488.png&quot; alt=&quot;summary-item&quot;&gt;&lt;/p&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="modules">
-
-	<div class="f-item-preview">
-		<h1 id="modules">Modules</h1>
-	<p>Basic usage</p>
-	<!-- ![Module](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8757/eeb59346-c999-11e5-93cc-8bc145bb0b09.png) -->
-	<ul>
-		<li>create modules within a <code>module-section</code></li>
-	</ul>
-	<pre><code class="lang-markup">&lt;section class=&quot;module-section&quot;&gt;
-	  &lt;div class=&quot;module--full&quot;&gt;
-	    &lt;div class=&quot;module__body&quot;&gt;Basic module&lt;/div&gt;
-	  &lt;/div&gt;
-	&lt;/section&gt;
-	</code></pre>
-	<p>Classes for base module containers:</p>
-	<ul>
-		<li><code>module--one-third</code></li>
-		<li><code>module--two-third</code></li>
-		<li><code>module--half</code></li>
-		<li><code>module--full</code></li>
-	</ul>
-	<p>Classes for internal modules (within the containing ones):</p>
-	<ul>
-		<li><code>.full</code></li>
-		<li><code>.half</code></li>
-	</ul>
-	<!-- ![Module Options](https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0521/71f81f2a-d19d-11e5-8cfe-145d2c712a9c.png) -->
-	<p>Header and footer blocks are optional:</p>
-	<!-- ![With header and footer](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8756/9ca8d82e-c999-11e5-985f-f1d93a70bbd9.png) -->
-	<pre><code class="lang-markup">&lt;div class=&quot;module--half&quot;&gt;
-	  &lt;div class=&quot;module__header&quot;&gt;Header&lt;/div&gt;
-	  &lt;div class=&quot;module__body&quot;&gt;Panel Body&lt;/div&gt;
-	  &lt;div class=&quot;module__footer&quot;&gt;Footer&lt;/div&gt;
-	&lt;/div&gt;
-	</code></pre>
-	<h1 id="components-required">Components required</h1>
-	<pre><code class="lang-css">@import &#39;bluemix-components/core/colors/colors&#39;;
-	@import &#39;bluemix-components/components/modules/modules&#39;;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;modules&quot;&gt;Modules&lt;/h1&gt;
-	&lt;p&gt;Basic usage&lt;/p&gt;
-	&lt;!-- ![Module](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8757/eeb59346-c999-11e5-93cc-8bc145bb0b09.png) --&gt;
-	&lt;ul&gt;
-		&lt;li&gt;create modules within a &lt;code&gt;module-section&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;section class=&amp;quot;module-section&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;module--full&amp;quot;&amp;gt;
-	    &amp;lt;div class=&amp;quot;module__body&amp;quot;&amp;gt;Basic module&amp;lt;/div&amp;gt;
-	  &amp;lt;/div&amp;gt;
-	&amp;lt;/section&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;p&gt;Classes for base module containers:&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;code&gt;module--one-third&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;module--two-third&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;module--half&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;module--full&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;Classes for internal modules (within the containing ones):&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;&lt;code&gt;.full&lt;/code&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;code&gt;.half&lt;/code&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;!-- ![Module Options](https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0521/71f81f2a-d19d-11e5-8cfe-145d2c712a9c.png) --&gt;
-	&lt;p&gt;Header and footer blocks are optional:&lt;/p&gt;
-	&lt;!-- ![With header and footer](https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8756/9ca8d82e-c999-11e5-985f-f1d93a70bbd9.png) --&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;div class=&amp;quot;module--half&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;module__header&amp;quot;&amp;gt;Header&amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;module__body&amp;quot;&amp;gt;Panel Body&amp;lt;/div&amp;gt;
-	  &amp;lt;div class=&amp;quot;module__footer&amp;quot;&amp;gt;Footer&amp;lt;/div&amp;gt;
-	&amp;lt;/div&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;h1 id=&quot;components-required&quot;&gt;Components required&lt;/h1&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;@import &amp;#39;bluemix-components/core/colors/colors&amp;#39;;
-	@import &amp;#39;bluemix-components/components/modules/modules&amp;#39;;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="new-component">
-
-	<div class="f-item-preview">
-		<h1 id="new-component">New Component</h1>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;new-component&quot;&gt;New Component&lt;/h1&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="taxonomy-items">
-
-	<div class="f-item-preview">
-		<h1 id="taxonomy-item">Taxonomy Item</h1>
-	<h2 id="taxonomy-item-styles">Taxonomy Item Styles</h2>
-	<h3 id="global-dashboard">Global Dashboard</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8852/927dba40-c9c1-11e5-90f2-dbec9a4e8037.png" alt="Global Dashboard"></p>
-	<p>Create a global dashboard taxonomy item:</p>
-	<pre><code class="lang-markup">&lt;a href=&quot;&quot; class=&quot;taxonomy-item--global-dash is-empty&quot;&gt;
-	  &lt;div class=&quot;taxonomy-item__icon&quot;&gt;
-	    &lt;svg class=&quot;svg--taxonomy--compute-dims&quot;&gt;
-	      &lt;use xlink:href=&quot;../../images/sprite.svg#taxonomy--compute&quot;&gt;&lt;/use&gt;
-	    &lt;/svg&gt;
-	  &lt;/div&gt;
-	  &lt;p class=&quot;taxonomy-item__metric&quot;&gt;&lt;/p&gt;
-	  &lt;p class=&quot;taxonomy-item__label&quot;&gt;Compute&lt;/p&gt;
-	&lt;/a&gt;
-	</code></pre>
-	<h4 id="taxonomy-item-states">Taxonomy Item states</h4>
-	<ul>
-		<li>Empty state</li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8853/cfeb859c-c9c1-11e5-9cff-f85fbe6e64c8.png" alt="Empty state"></p>
-	<p>To create the empty state, add the class <code>is-empty</code>.</p>
-	<ul>
-		<li>Healthy state</li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8868/554dadcc-c9c3-11e5-9503-39928e2a5dd7.png" alt="Healhty state"></p>
-	<p>To create the healthy state, add the class <code>is-healthy</code>.</p>
-	<ul>
-		<li>Error state</li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8867/554ca206-c9c3-11e5-948e-807ce62aede0.png" alt="Error state"></p>
-	<p>To create the error state, add the class <code>is-error</code>.</p>
-	<ul>
-		<li>Stopped state</li>
-	</ul>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8866/554c8208-c9c3-11e5-8ec7-4db9fc247789.png" alt="Stopped state"></p>
-	<p>To create the stopped state, add the class <code>is-stopped</code>.</p>
-	<h3 id="taxonomy-menu">Taxonomy Menu</h3>
-	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8871/b47e2088-c9c3-11e5-8b67-b47196b3eae9.png" alt="Taxonomy Menu"></p>
-	<p>Create a taxonomy menu item:</p>
-	<pre><code class="lang-markup">&lt;a href=&quot;&quot; class=&quot;taxonomy-item--taxonomy-menu&quot;&gt;
-	  &lt;div class=&quot;taxonomy-item__icon&quot;&gt;
-	    &lt;svg class=&quot;svg--taxonomy--compute-dims&quot;&gt;
-	      &lt;use xlink:href=&quot;../../images/sprite.svg#taxonomy--compute&quot;&gt;&lt;/use&gt;
-	    &lt;/svg&gt;
-	  &lt;/div&gt;
-	  &lt;p class=&quot;taxonomy-item__label&quot;&gt;Compute&lt;/p&gt;
-	&lt;/a&gt;
-	</code></pre>
-	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
-		<pre><code class="language-markup">&lt;h1 id=&quot;taxonomy-item&quot;&gt;Taxonomy Item&lt;/h1&gt;
-	&lt;h2 id=&quot;taxonomy-item-styles&quot;&gt;Taxonomy Item Styles&lt;/h2&gt;
-	&lt;h3 id=&quot;global-dashboard&quot;&gt;Global Dashboard&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8852/927dba40-c9c1-11e5-90f2-dbec9a4e8037.png&quot; alt=&quot;Global Dashboard&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;Create a global dashboard taxonomy item:&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;taxonomy-item--global-dash is-empty&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;taxonomy-item__icon&amp;quot;&amp;gt;
-	    &amp;lt;svg class=&amp;quot;svg--taxonomy--compute-dims&amp;quot;&amp;gt;
-	      &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#taxonomy--compute&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
-	    &amp;lt;/svg&amp;gt;
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;p class=&amp;quot;taxonomy-item__metric&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
-	  &amp;lt;p class=&amp;quot;taxonomy-item__label&amp;quot;&amp;gt;Compute&amp;lt;/p&amp;gt;
-	&amp;lt;/a&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;
-	&lt;h4 id=&quot;taxonomy-item-states&quot;&gt;Taxonomy Item states&lt;/h4&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Empty state&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8853/cfeb859c-c9c1-11e5-9cff-f85fbe6e64c8.png&quot; alt=&quot;Empty state&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;To create the empty state, add the class &lt;code&gt;is-empty&lt;/code&gt;.&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Healthy state&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8868/554dadcc-c9c3-11e5-9503-39928e2a5dd7.png&quot; alt=&quot;Healhty state&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;To create the healthy state, add the class &lt;code&gt;is-healthy&lt;/code&gt;.&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Error state&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8867/554ca206-c9c3-11e5-948e-807ce62aede0.png&quot; alt=&quot;Error state&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;To create the error state, add the class &lt;code&gt;is-error&lt;/code&gt;.&lt;/p&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Stopped state&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8866/554c8208-c9c3-11e5-8ec7-4db9fc247789.png&quot; alt=&quot;Stopped state&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;To create the stopped state, add the class &lt;code&gt;is-stopped&lt;/code&gt;.&lt;/p&gt;
-	&lt;h3 id=&quot;taxonomy-menu&quot;&gt;Taxonomy Menu&lt;/h3&gt;
-	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8871/b47e2088-c9c3-11e5-8b67-b47196b3eae9.png&quot; alt=&quot;Taxonomy Menu&quot;&gt;&lt;/p&gt;
-	&lt;p&gt;Create a taxonomy menu item:&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;taxonomy-item--taxonomy-menu&amp;quot;&amp;gt;
-	  &amp;lt;div class=&amp;quot;taxonomy-item__icon&amp;quot;&amp;gt;
-	    &amp;lt;svg class=&amp;quot;svg--taxonomy--compute-dims&amp;quot;&amp;gt;
-	      &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#taxonomy--compute&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
-	    &amp;lt;/svg&amp;gt;
-	  &amp;lt;/div&amp;gt;
-	  &amp;lt;p class=&amp;quot;taxonomy-item__label&amp;quot;&amp;gt;Compute&amp;lt;/p&amp;gt;
-	&amp;lt;/a&amp;gt;
-	&lt;/code&gt;&lt;/pre&gt;</code></pre>
-	</div>
-
-</div>
-
-
-<div class="f-item-group" id="toolbars">
-
-	<div class="f-item-preview">
+	<div class="item-preview">
 		<h1 id="toolbars">Toolbars</h1>
 	<h2 id="toolbar-style-icons">Toolbar style: Icons</h2>
 	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9454/c85087bc-cbfe-11e5-9136-f7f17976210c.png" alt="Toolbar: Icons"></p>
@@ -829,7 +201,7 @@
 	<h3 id="configuration">Configuration</h3>
 	<p>Each icon can also exist by itself, so if you only need for example the search and grid icon you can remove/comment out the code for the sort icon. See example below:</p>
 	<p><img width="120" alt="screen shot 2016-02-05 at 1 53 39 pm" src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9473/ee0d5a5a-cc0f-11e5-8cb7-d6e62c0fb24b.png"></p>
-	<pre><code class="lang-markup">&lt;div class=&quot;toolbar-icons&quot;&gt;
+	<pre><code class="lang-html">&lt;div class=&quot;toolbar-icons&quot;&gt;
 	
 	  &lt;!-- Slide out search field --&gt;
 	  &lt;div class=&quot;slide-out-search&quot;&gt;
@@ -872,7 +244,7 @@
 	}
 	</code></pre>
 	</div>
-	<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<div class="item-code item-hidden" data-f-toggle="code">
 		<pre><code class="language-markup">&lt;h1 id=&quot;toolbars&quot;&gt;Toolbars&lt;/h1&gt;
 	&lt;h2 id=&quot;toolbar-style-icons&quot;&gt;Toolbar style: Icons&lt;/h2&gt;
 	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9454/c85087bc-cbfe-11e5-9136-f7f17976210c.png&quot; alt=&quot;Toolbar: Icons&quot;&gt;&lt;/p&gt;
@@ -881,7 +253,7 @@
 	&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
 	&lt;p&gt;Each icon can also exist by itself, so if you only need for example the search and grid icon you can remove/comment out the code for the sort icon. See example below:&lt;/p&gt;
 	&lt;p&gt;&lt;img width=&quot;120&quot; alt=&quot;screen shot 2016-02-05 at 1 53 39 pm&quot; src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9473/ee0d5a5a-cc0f-11e5-8cb7-d6e62c0fb24b.png&quot;&gt;&lt;/p&gt;
-	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;div class=&amp;quot;toolbar-icons&amp;quot;&amp;gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;div class=&amp;quot;toolbar-icons&amp;quot;&amp;gt;
 	
 	  &amp;lt;!-- Slide out search field --&amp;gt;
 	  &amp;lt;div class=&amp;quot;slide-out-search&amp;quot;&amp;gt;
@@ -928,14 +300,782 @@
 </div>
 
 
+<div class="item-group" id="alerts">
+
+	<div class="item-preview">
+		<h1 id="alerts">Alerts</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;alerts&quot;&gt;Alerts&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="card">
+
+	<div class="item-preview">
+		<h1 id="card">Card</h1>
+	<h2 id="card-styles">Card Styles</h2>
+	<h3 id="card-base-">Card (base)</h3>
+	<ul>
+		<li>Use this as a base card to build your own custom card</li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7892/bc96f910-c43d-11e5-9a64-f9f12d8af4a9.png" alt="card"></p>
+	<h3 id="app">App</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7894/bc9a57a4-c43d-11e5-8c3b-6c9b7c4518d0.png" alt="app"></p>
+	<h3 id="container">Container</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7889/bc785d8e-c43d-11e5-8bb5-f4dd0b6d47ca.png" alt="container"></p>
+	<h3 id="quota">Quota</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7891/bc95bb90-c43d-11e5-9cd8-f5b3e2732a9e.png" alt="quota"></p>
+	<h3 id="service">Service</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7890/bc94a322-c43d-11e5-89af-6e82d4a2874b.png" alt="service"></p>
+	<h3 id="virtual-server">Virtual Server</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7893/bc97536a-c43d-11e5-9038-58fdb6740be3.png" alt="virtual-server"></p>
+	<h2 id="configuration">Configuration</h2>
+	<h3 id="change-status-in-footer">Change Status in Footer</h3>
+	<p>When there&#39;s a card that shows status in its footer,
+		<strong>toggle the <code>active</code> classname to show the appropriate status.</strong></p>
+	<pre><code class="lang-markup">&lt;!-- app status --&gt;
+	&lt;div class=&quot;card-footer__app-status&quot;&gt;
+	  &lt;div class=&quot;card-footer__app-status--running active&quot;&gt;
+	    Running
+	  &lt;/div&gt;
+	  &lt;div class=&quot;card-footer__app-status--not-running&quot;&gt;
+	    Not Running
+	  &lt;/div&gt;
+	  &lt;div class=&quot;card-footer__app-status--stopped&quot;&gt;
+	    Stopped
+	  &lt;/div&gt;
+	  &lt;div class=&quot;card-footer__app-status--limited&quot;&gt;
+	    Limited
+	  &lt;/div&gt;
+	&lt;/div&gt;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;card&quot;&gt;Card&lt;/h1&gt;
+	&lt;h2 id=&quot;card-styles&quot;&gt;Card Styles&lt;/h2&gt;
+	&lt;h3 id=&quot;card-base-&quot;&gt;Card (base)&lt;/h3&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Use this as a base card to build your own custom card&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7892/bc96f910-c43d-11e5-9a64-f9f12d8af4a9.png&quot; alt=&quot;card&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;app&quot;&gt;App&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7894/bc9a57a4-c43d-11e5-8c3b-6c9b7c4518d0.png&quot; alt=&quot;app&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;container&quot;&gt;Container&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7889/bc785d8e-c43d-11e5-8bb5-f4dd0b6d47ca.png&quot; alt=&quot;container&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;quota&quot;&gt;Quota&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7891/bc95bb90-c43d-11e5-9cd8-f5b3e2732a9e.png&quot; alt=&quot;quota&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;service&quot;&gt;Service&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7890/bc94a322-c43d-11e5-89af-6e82d4a2874b.png&quot; alt=&quot;service&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;virtual-server&quot;&gt;Virtual Server&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/7893/bc97536a-c43d-11e5-9038-58fdb6740be3.png&quot; alt=&quot;virtual-server&quot;&gt;&lt;/p&gt;
+	&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
+	&lt;h3 id=&quot;change-status-in-footer&quot;&gt;Change Status in Footer&lt;/h3&gt;
+	&lt;p&gt;When there&amp;#39;s a card that shows status in its footer,
+		&lt;strong&gt;toggle the &lt;code&gt;active&lt;/code&gt; classname to show the appropriate status.&lt;/strong&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;!-- app status --&amp;gt;
+	&amp;lt;div class=&amp;quot;card-footer__app-status&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;card-footer__app-status--running active&amp;quot;&amp;gt;
+	    Running
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;card-footer__app-status--not-running&amp;quot;&amp;gt;
+	    Not Running
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;card-footer__app-status--stopped&amp;quot;&amp;gt;
+	    Stopped
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;card-footer__app-status--limited&amp;quot;&amp;gt;
+	    Limited
+	  &amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="content-switcher">
+
+	<div class="item-preview">
+		<h1 id="content-switcher">Content Switcher</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;content-switcher&quot;&gt;Content Switcher&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="data-module">
+
+	<div class="item-preview">
+		<h1 id="data-modules">Data Modules</h1>
+	<h3 id="deprecated-use-modules-https-github-ibm-com-bluemix-bluemix-components-tree-master-components-modules-instead-">Deprecated: Use <a href="https://github.ibm.com/Bluemix/bluemix-components/tree/master/components/modules">modules</a> instead.</h3>
+	<h3 id="usage">Usage</h3>
+	<p>Create modules within a <code>module-section</code></p>
+	<pre><code class="lang-html">&lt;section class=&quot;data-section&quot;&gt;
+	  &lt;div class=&quot;data-module--full&quot;&gt;
+	    &lt;!-- ... --&gt;
+	  &lt;/div&gt;
+	&lt;/section&gt;
+	</code></pre>
+	<p>Classes for base module containers:</p>
+	<ul>
+		<li><code>data--one-third</code></li>
+		<li><code>data--two-third</code></li>
+		<li><code>data--half</code></li>
+		<li><code>data--full</code></li>
+	</ul>
+	<p>Classes for internal modules (within the containing ones):</p>
+	<ul>
+		<li><code>.full</code></li>
+		<li><code>.half</code></li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0513/1ec9a934-d19a-11e5-8896-c826996c75cf.png" alt="screen shot 2016-02-12 at 3 02 07 pm">
+		<img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0514/21e4eb38-d19a-11e5-861c-f15185eed35d.png" alt="screen shot 2016-02-12 at 3 01 58 pm"></p>
+	<h1 id="required">Required</h1>
+	<pre><code class="lang-scss">@import &#39;bluemix-components/global/global&#39;;
+	
+	@import &#39;bluemix-components/components/data-module/data-module&#39;;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;data-modules&quot;&gt;Data Modules&lt;/h1&gt;
+	&lt;h3 id=&quot;deprecated-use-modules-https-github-ibm-com-bluemix-bluemix-components-tree-master-components-modules-instead-&quot;&gt;Deprecated: Use &lt;a href=&quot;https://github.ibm.com/Bluemix/bluemix-components/tree/master/components/modules&quot;&gt;modules&lt;/a&gt; instead.&lt;/h3&gt;
+	&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+	&lt;p&gt;Create modules within a &lt;code&gt;module-section&lt;/code&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;section class=&amp;quot;data-section&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;data-module--full&amp;quot;&amp;gt;
+	    &amp;lt;!-- ... --&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	&amp;lt;/section&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;p&gt;Classes for base module containers:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;code&gt;data--one-third&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;data--two-third&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;data--half&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;data--full&lt;/code&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Classes for internal modules (within the containing ones):&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;code&gt;.full&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;.half&lt;/code&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0513/1ec9a934-d19a-11e5-8896-c826996c75cf.png&quot; alt=&quot;screen shot 2016-02-12 at 3 02 07 pm&quot;&gt;
+		&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0514/21e4eb38-d19a-11e5-861c-f15185eed35d.png&quot; alt=&quot;screen shot 2016-02-12 at 3 01 58 pm&quot;&gt;&lt;/p&gt;
+	&lt;h1 id=&quot;required&quot;&gt;Required&lt;/h1&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;@import &amp;#39;bluemix-components/global/global&amp;#39;;
+	
+	@import &amp;#39;bluemix-components/components/data-module/data-module&amp;#39;;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="detail-page-header">
+
+	<div class="item-preview">
+		<h1 id="detail-page-header">Detail Page Header</h1>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8659/20b8e8f8-c93f-11e5-8f9d-bcead0902eca.png" alt="detail-page-header"></p>
+	<h2 id="dependencies-">Dependencies:</h2>
+	<pre><code class="lang-scss">// Path to bower_components
+	// (edit according to your file structure)
+	$path: &#39;bower_components/bluemix-components&#39;;
+	
+	// Global
+	@import &#39;#{path}/global/global&#39;;         // variables
+	
+	// Components
+	@import &#39;#{path}/components/tabs-nav/tabs-nav&#39;;
+	@import &#39;#{path}/components/detail-page-header/detail-page-header&#39;;
+	</code></pre>
+	<h2 id="variations">Variations</h2>
+	<h3 id="no-tabs">no-tabs</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8660/fd0f4662-c93f-11e5-89f8-421902330d21.png" alt="no-tabs"></p>
+	<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--no-tabs&quot;&gt;
+	  &lt;a href=&quot;#&quot; class=&quot;detail-page-header--no-tabs__link-wrapper&quot;&gt;
+	    &lt;svg class=&quot;arrow&quot;&gt;
+	      &lt;use xlink:href=&quot;https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
+	    &lt;/svg&gt;
+	  &lt;/a&gt;
+	  &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
+	&lt;/header&gt;
+	</code></pre>
+	<h3 id="with-tabs">With Tabs</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8844/1f1fb48c-c9c0-11e5-909b-7ad7c9186249.png" alt="xs-small"></p>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8846/5aaf85ea-c9c0-11e5-86f5-2f30b1c92e65.png" alt="small"></p>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8845/5aaf890a-c9c0-11e5-8433-8880ec8d6bde.png" alt="tabs-expanded"></p>
+	<pre><code class="lang-html">&lt;header class=&quot;detail-page-header--with-tabs&quot;&gt;
+	  &lt;div class=&quot;detail-page-header--with-tabs__container&quot;&gt;
+	    &lt;div class=&quot;detail-page-header--with-tabs__breadcrumb&quot;&gt;
+	      &lt;a href=&quot;#&quot; class=&quot;link-wrapper&quot;&gt;
+	        &lt;svg class=&quot;arrow&quot;&gt;
+	          &lt;use xlink:href=&quot;https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--back&quot;&gt;&lt;/use&gt;
+	        &lt;/svg&gt;
+	        &lt;p class=&quot;breadcrumb-title&quot;&gt;breadcrumb title&lt;/p&gt;
+	      &lt;/a&gt;
+	    &lt;/div&gt;
+	    &lt;div class=&quot;detail-page-header--with-tabs__info&quot;&gt;
+	      &lt;p class=&quot;info-title&quot;&gt;Detail Page Header&lt;/p&gt;
+	    &lt;/div&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;detail-page-header--with-tabs__tabs-container&quot;&gt;
+	    &lt;nav class=&quot;tabs&quot;&gt;
+	      &lt;div class=&quot;tabs__trigger&quot;&gt;&lt;p class=&quot;trigger__text&quot;&gt;&lt;/p&gt;
+	        &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+	        &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 7.5 3.8&quot; enable-background=&quot;new 0 0 7.5 3.8&quot; xml:space=&quot;preserve&quot;&gt;
+	          &lt;polygon points=&quot;0,0 7.5,0 3.8,3.8&quot;/&gt;
+	        &lt;/svg&gt;
+	        &lt;/div&gt;
+	      &lt;ul class=&quot;tabs__nav tabs--hidden&quot;&gt;
+	        &lt;li class=&quot;nav__item selected&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Containers Files&lt;/a&gt;&lt;/li&gt;
+	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Connected Objects&lt;/a&gt;&lt;/li&gt;
+	        &lt;li class=&quot;nav__item&quot;&gt;&lt;a class=&quot;item__link&quot; href=&quot;#&quot;&gt;Manage&lt;/a&gt;&lt;/li&gt;
+	      &lt;/ul&gt;
+	    &lt;/nav&gt;
+	  &lt;/div&gt;
+	&lt;/header&gt;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;detail-page-header&quot;&gt;Detail Page Header&lt;/h1&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8659/20b8e8f8-c93f-11e5-8f9d-bcead0902eca.png&quot; alt=&quot;detail-page-header&quot;&gt;&lt;/p&gt;
+	&lt;h2 id=&quot;dependencies-&quot;&gt;Dependencies:&lt;/h2&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;// Path to bower_components
+	// (edit according to your file structure)
+	$path: &amp;#39;bower_components/bluemix-components&amp;#39;;
+	
+	// Global
+	@import &amp;#39;#{path}/global/global&amp;#39;;         // variables
+	
+	// Components
+	@import &amp;#39;#{path}/components/tabs-nav/tabs-nav&amp;#39;;
+	@import &amp;#39;#{path}/components/detail-page-header/detail-page-header&amp;#39;;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;h2 id=&quot;variations&quot;&gt;Variations&lt;/h2&gt;
+	&lt;h3 id=&quot;no-tabs&quot;&gt;no-tabs&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8660/fd0f4662-c93f-11e5-89f8-421902330d21.png&quot; alt=&quot;no-tabs&quot;&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;header class=&amp;quot;detail-page-header--no-tabs&amp;quot;&amp;gt;
+	  &amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;detail-page-header--no-tabs__link-wrapper&amp;quot;&amp;gt;
+	    &amp;lt;svg class=&amp;quot;arrow&amp;quot;&amp;gt;
+	      &amp;lt;use xlink:href=&amp;quot;https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--back&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	    &amp;lt;/svg&amp;gt;
+	  &amp;lt;/a&amp;gt;
+	  &amp;lt;p class=&amp;quot;info-title&amp;quot;&amp;gt;Detail Page Header&amp;lt;/p&amp;gt;
+	&amp;lt;/header&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;h3 id=&quot;with-tabs&quot;&gt;With Tabs&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8844/1f1fb48c-c9c0-11e5-909b-7ad7c9186249.png&quot; alt=&quot;xs-small&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8846/5aaf85ea-c9c0-11e5-86f5-2f30b1c92e65.png&quot; alt=&quot;small&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/8845/5aaf890a-c9c0-11e5-8433-8880ec8d6bde.png&quot; alt=&quot;tabs-expanded&quot;&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;header class=&amp;quot;detail-page-header--with-tabs&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__container&amp;quot;&amp;gt;
+	    &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__breadcrumb&amp;quot;&amp;gt;
+	      &amp;lt;a href=&amp;quot;#&amp;quot; class=&amp;quot;link-wrapper&amp;quot;&amp;gt;
+	        &amp;lt;svg class=&amp;quot;arrow&amp;quot;&amp;gt;
+	          &amp;lt;use xlink:href=&amp;quot;https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--back&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	        &amp;lt;/svg&amp;gt;
+	        &amp;lt;p class=&amp;quot;breadcrumb-title&amp;quot;&amp;gt;breadcrumb title&amp;lt;/p&amp;gt;
+	      &amp;lt;/a&amp;gt;
+	    &amp;lt;/div&amp;gt;
+	    &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__info&amp;quot;&amp;gt;
+	      &amp;lt;p class=&amp;quot;info-title&amp;quot;&amp;gt;Detail Page Header&amp;lt;/p&amp;gt;
+	    &amp;lt;/div&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;detail-page-header--with-tabs__tabs-container&amp;quot;&amp;gt;
+	    &amp;lt;nav class=&amp;quot;tabs&amp;quot;&amp;gt;
+	      &amp;lt;div class=&amp;quot;tabs__trigger&amp;quot;&amp;gt;&amp;lt;p class=&amp;quot;trigger__text&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+	        &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+	        &amp;lt;svg version=&amp;quot;1.1&amp;quot; xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; x=&amp;quot;0px&amp;quot; y=&amp;quot;0px&amp;quot; viewBox=&amp;quot;0 0 7.5 3.8&amp;quot; enable-background=&amp;quot;new 0 0 7.5 3.8&amp;quot; xml:space=&amp;quot;preserve&amp;quot;&amp;gt;
+	          &amp;lt;polygon points=&amp;quot;0,0 7.5,0 3.8,3.8&amp;quot;/&amp;gt;
+	        &amp;lt;/svg&amp;gt;
+	        &amp;lt;/div&amp;gt;
+	      &amp;lt;ul class=&amp;quot;tabs__nav tabs--hidden&amp;quot;&amp;gt;
+	        &amp;lt;li class=&amp;quot;nav__item selected&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Overview&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Containers Files&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Connected Objects&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	        &amp;lt;li class=&amp;quot;nav__item&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;item__link&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;Manage&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+	      &amp;lt;/ul&amp;gt;
+	    &amp;lt;/nav&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	&amp;lt;/header&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="dropdown">
+
+	<div class="item-preview">
+		<h1 id="dropdown">Dropdown</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;dropdown&quot;&gt;Dropdown&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="floating-action-button">
+
+	<div class="item-preview">
+		<h1 id="floating-action-button">Floating Action Button</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;floating-action-button&quot;&gt;Floating Action Button&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="floating-action-button-label">
+
+	<div class="item-preview">
+		<h1 id="floating-action-button-label">Floating Action Button Label</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;floating-action-button-label&quot;&gt;Floating Action Button Label&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="global-profile">
+
+	<div class="item-preview">
+		<h1 id="global-profile">Global Profile</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;global-profile&quot;&gt;Global Profile&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="header">
+
+	<div class="item-preview">
+		<h1 id="header">Header</h1>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0908/0000/7745/a423e5c8-c3f2-11e5-985c-d49edfa1621d.gif" alt="header"></p>
+	<p>This component represents the composed header template. The actual header inside Bluemix.Common will populate the template with actual content, but this is the base skeleton. Has taxonomy menu that lets user switch different feature areas.</p>
+	<h1 id="components-required">Components required</h1>
+	<pre><code>@import &#39;bluemix-components/core/reset/reset&#39;;
+	@import &#39;bluemix-components/core/colors/colors&#39;;
+	@import &#39;bluemix-components/core/fonts/font-face&#39;;
+	@import &#39;bluemix-components/core/typography/typography&#39;;
+	@import &#39;bluemix-components/core/layout/grid&#39;;
+	@import &#39;bluemix-components/core/layout/z-index&#39;;
+	
+	@import &#39;bluemix-components/components/taxonomy-item/taxonomy-item&#39;;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;header&quot;&gt;Header&lt;/h1&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0908/0000/7745/a423e5c8-c3f2-11e5-985c-d49edfa1621d.gif&quot; alt=&quot;header&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;This component represents the composed header template. The actual header inside Bluemix.Common will populate the template with actual content, but this is the base skeleton. Has taxonomy menu that lets user switch different feature areas.&lt;/p&gt;
+	&lt;h1 id=&quot;components-required&quot;&gt;Components required&lt;/h1&gt;
+	&lt;pre&gt;&lt;code&gt;@import &amp;#39;bluemix-components/core/reset/reset&amp;#39;;
+	@import &amp;#39;bluemix-components/core/colors/colors&amp;#39;;
+	@import &amp;#39;bluemix-components/core/fonts/font-face&amp;#39;;
+	@import &amp;#39;bluemix-components/core/typography/typography&amp;#39;;
+	@import &amp;#39;bluemix-components/core/layout/grid&amp;#39;;
+	@import &amp;#39;bluemix-components/core/layout/z-index&amp;#39;;
+	
+	@import &amp;#39;bluemix-components/components/taxonomy-item/taxonomy-item&amp;#39;;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="item-list">
+
+	<div class="item-preview">
+		<h1 id="item-list">Item List</h1>
+	<h2 id="catalog">Catalog</h2>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6906/182e051c-bb7d-11e5-9eb8-af8afe8ffc79.png" alt="catalog-item"></p>
+	<h2 id="summary">Summary</h2>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6905/182dd600-bb7d-11e5-9ef9-4104f28bb488.png" alt="summary-item"></p>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;item-list&quot;&gt;Item List&lt;/h1&gt;
+	&lt;h2 id=&quot;catalog&quot;&gt;Catalog&lt;/h2&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6906/182e051c-bb7d-11e5-9eb8-af8afe8ffc79.png&quot; alt=&quot;catalog-item&quot;&gt;&lt;/p&gt;
+	&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0076/0000/6905/182dd600-bb7d-11e5-9ef9-4104f28bb488.png&quot; alt=&quot;summary-item&quot;&gt;&lt;/p&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="modals">
+
+	<div class="item-preview">
+		<h1 id="modals">Modals</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;modals&quot;&gt;Modals&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="modules">
+
+	<div class="item-preview">
+		<h1 id="modules">Modules</h1>
+	<h3 id="usage">Usage</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8757/eeb59346-c999-11e5-93cc-8bc145bb0b09.png" alt="Module"></p>
+	<p>Create modules within a <code>module-section</code></p>
+	<pre><code class="lang-html">&lt;section class=&quot;module-section&quot;&gt;
+	  &lt;div class=&quot;module--full&quot;&gt;
+	    &lt;div class=&quot;module__body&quot;&gt;Basic module&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/section&gt;
+	</code></pre>
+	<p>Classes for base module containers:</p>
+	<ul>
+		<li><code>module--one-third</code></li>
+		<li><code>module--two-third</code></li>
+		<li><code>module--half</code></li>
+		<li><code>module--full</code></li>
+	</ul>
+	<p>Classes for internal modules (within the containing ones):</p>
+	<ul>
+		<li><code>.full</code></li>
+		<li><code>.half</code></li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0521/71f81f2a-d19d-11e5-8cfe-145d2c712a9c.png" alt="Module Options"></p>
+	<p>Header and footer blocks are optional:</p>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8756/9ca8d82e-c999-11e5-985f-f1d93a70bbd9.png" alt="With header and footer"></p>
+	<pre><code class="lang-html">&lt;div class=&quot;module--half&quot;&gt;
+	  &lt;div class=&quot;module__header&quot;&gt;Header&lt;/div&gt;
+	  &lt;div class=&quot;module__body&quot;&gt;Panel Body&lt;/div&gt;
+	  &lt;div class=&quot;module__footer&quot;&gt;Footer&lt;/div&gt;
+	&lt;/div&gt;
+	</code></pre>
+	<h1 id="required">Required</h1>
+	<pre><code class="lang-scss">@import &#39;bluemix-components/global/global&#39;;
+	
+	@import &#39;bluemix-components/components/modules/modules&#39;;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;modules&quot;&gt;Modules&lt;/h1&gt;
+	&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8757/eeb59346-c999-11e5-93cc-8bc145bb0b09.png&quot; alt=&quot;Module&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Create modules within a &lt;code&gt;module-section&lt;/code&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;section class=&amp;quot;module-section&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;module--full&amp;quot;&amp;gt;
+	    &amp;lt;div class=&amp;quot;module__body&amp;quot;&amp;gt;Basic module&amp;lt;/div&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	&amp;lt;/section&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;p&gt;Classes for base module containers:&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;code&gt;module--one-third&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;module--two-third&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;module--half&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;module--full&lt;/code&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;Classes for internal modules (within the containing ones):&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;code&gt;.full&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;code&gt;.half&lt;/code&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/0078/0001/0521/71f81f2a-d19d-11e5-8cfe-145d2c712a9c.png&quot; alt=&quot;Module Options&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Header and footer blocks are optional:&lt;/p&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/1346/0000/8756/9ca8d82e-c999-11e5-985f-f1d93a70bbd9.png&quot; alt=&quot;With header and footer&quot;&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;div class=&amp;quot;module--half&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;module__header&amp;quot;&amp;gt;Header&amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;module__body&amp;quot;&amp;gt;Panel Body&amp;lt;/div&amp;gt;
+	  &amp;lt;div class=&amp;quot;module__footer&amp;quot;&amp;gt;Footer&amp;lt;/div&amp;gt;
+	&amp;lt;/div&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;h1 id=&quot;required&quot;&gt;Required&lt;/h1&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;@import &amp;#39;bluemix-components/global/global&amp;#39;;
+	
+	@import &amp;#39;bluemix-components/components/modules/modules&amp;#39;;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="overflow-menu">
+
+	<div class="item-preview">
+		<h1 id="overflow-menu">Overflow Menu</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;overflow-menu&quot;&gt;Overflow Menu&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="spinner">
+
+	<div class="item-preview">
+		<h1 id="spinner">Spinner</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;spinner&quot;&gt;Spinner&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="tabs-navigation">
+
+	<div class="item-preview">
+		<h1 id="tabs-navigation">Tabs Navigation</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;tabs-navigation&quot;&gt;Tabs Navigation&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="taxonomy-item">
+
+	<div class="item-preview">
+		<h1 id="taxonomy-item">Taxonomy Item</h1>
+	<h2 id="taxonomy-item-styles">Taxonomy Item Styles</h2>
+	<h3 id="global-dashboard">Global Dashboard</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8852/927dba40-c9c1-11e5-90f2-dbec9a4e8037.png" alt="Global Dashboard"></p>
+	<p>Create a global dashboard taxonomy item:</p>
+	<pre><code class="lang-html">&lt;a href=&quot;&quot; class=&quot;taxonomy-item--global-dash is-empty&quot;&gt;
+	  &lt;div class=&quot;taxonomy-item__icon&quot;&gt;
+	    &lt;svg class=&quot;svg--taxonomy--compute-dims&quot;&gt;
+	      &lt;use xlink:href=&quot;../../images/sprite.svg#taxonomy--compute&quot;&gt;&lt;/use&gt;
+	    &lt;/svg&gt;
+	  &lt;/div&gt;
+	  &lt;p class=&quot;taxonomy-item__metric&quot;&gt;&lt;/p&gt;
+	  &lt;p class=&quot;taxonomy-item__label&quot;&gt;Compute&lt;/p&gt;
+	&lt;/a&gt;
+	</code></pre>
+	<h4 id="taxonomy-item-states">Taxonomy Item states</h4>
+	<ul>
+		<li>Empty state</li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8853/cfeb859c-c9c1-11e5-9cff-f85fbe6e64c8.png" alt="Empty state"></p>
+	<p>To create the empty state, add the class <code>is-empty</code>.</p>
+	<ul>
+		<li>Healthy state</li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8868/554dadcc-c9c3-11e5-9503-39928e2a5dd7.png" alt="Healhty state"></p>
+	<p>To create the healthy state, add the class <code>is-healthy</code>.</p>
+	<ul>
+		<li>Error state</li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8867/554ca206-c9c3-11e5-948e-807ce62aede0.png" alt="Error state"></p>
+	<p>To create the error state, add the class <code>is-error</code>.</p>
+	<ul>
+		<li>Stopped state</li>
+	</ul>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8866/554c8208-c9c3-11e5-8ec7-4db9fc247789.png" alt="Stopped state"></p>
+	<p>To create the stopped state, add the class <code>is-stopped</code>.</p>
+	<h3 id="taxonomy-menu">Taxonomy Menu</h3>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8871/b47e2088-c9c3-11e5-8b67-b47196b3eae9.png" alt="Taxonomy Menu"></p>
+	<p>Create a taxonomy menu item:</p>
+	<pre><code class="lang-html">&lt;a href=&quot;&quot; class=&quot;taxonomy-item--taxonomy-menu&quot;&gt;
+	  &lt;div class=&quot;taxonomy-item__icon&quot;&gt;
+	    &lt;svg class=&quot;svg--taxonomy--compute-dims&quot;&gt;
+	      &lt;use xlink:href=&quot;../../images/sprite.svg#taxonomy--compute&quot;&gt;&lt;/use&gt;
+	    &lt;/svg&gt;
+	  &lt;/div&gt;
+	  &lt;p class=&quot;taxonomy-item__label&quot;&gt;Compute&lt;/p&gt;
+	&lt;/a&gt;
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;taxonomy-item&quot;&gt;Taxonomy Item&lt;/h1&gt;
+	&lt;h2 id=&quot;taxonomy-item-styles&quot;&gt;Taxonomy Item Styles&lt;/h2&gt;
+	&lt;h3 id=&quot;global-dashboard&quot;&gt;Global Dashboard&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8852/927dba40-c9c1-11e5-90f2-dbec9a4e8037.png&quot; alt=&quot;Global Dashboard&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Create a global dashboard taxonomy item:&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;taxonomy-item--global-dash is-empty&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;taxonomy-item__icon&amp;quot;&amp;gt;
+	    &amp;lt;svg class=&amp;quot;svg--taxonomy--compute-dims&amp;quot;&amp;gt;
+	      &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#taxonomy--compute&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	    &amp;lt;/svg&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;p class=&amp;quot;taxonomy-item__metric&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;
+	  &amp;lt;p class=&amp;quot;taxonomy-item__label&amp;quot;&amp;gt;Compute&amp;lt;/p&amp;gt;
+	&amp;lt;/a&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;h4 id=&quot;taxonomy-item-states&quot;&gt;Taxonomy Item states&lt;/h4&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Empty state&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8853/cfeb859c-c9c1-11e5-9cff-f85fbe6e64c8.png&quot; alt=&quot;Empty state&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;To create the empty state, add the class &lt;code&gt;is-empty&lt;/code&gt;.&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Healthy state&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8868/554dadcc-c9c3-11e5-9503-39928e2a5dd7.png&quot; alt=&quot;Healhty state&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;To create the healthy state, add the class &lt;code&gt;is-healthy&lt;/code&gt;.&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Error state&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8867/554ca206-c9c3-11e5-948e-807ce62aede0.png&quot; alt=&quot;Error state&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;To create the error state, add the class &lt;code&gt;is-error&lt;/code&gt;.&lt;/p&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Stopped state&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8866/554c8208-c9c3-11e5-8ec7-4db9fc247789.png&quot; alt=&quot;Stopped state&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;To create the stopped state, add the class &lt;code&gt;is-stopped&lt;/code&gt;.&lt;/p&gt;
+	&lt;h3 id=&quot;taxonomy-menu&quot;&gt;Taxonomy Menu&lt;/h3&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/8871/b47e2088-c9c3-11e5-8b67-b47196b3eae9.png&quot; alt=&quot;Taxonomy Menu&quot;&gt;&lt;/p&gt;
+	&lt;p&gt;Create a taxonomy menu item:&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;a href=&amp;quot;&amp;quot; class=&amp;quot;taxonomy-item--taxonomy-menu&amp;quot;&amp;gt;
+	  &amp;lt;div class=&amp;quot;taxonomy-item__icon&amp;quot;&amp;gt;
+	    &amp;lt;svg class=&amp;quot;svg--taxonomy--compute-dims&amp;quot;&amp;gt;
+	      &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#taxonomy--compute&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	    &amp;lt;/svg&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	  &amp;lt;p class=&amp;quot;taxonomy-item__label&amp;quot;&amp;gt;Compute&amp;lt;/p&amp;gt;
+	&amp;lt;/a&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="toolbars">
+
+	<div class="item-preview">
+		<h1 id="toolbars">Toolbars</h1>
+	<h2 id="toolbar-style-icons">Toolbar style: Icons</h2>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9454/c85087bc-cbfe-11e5-9136-f7f17976210c.png" alt="Toolbar: Icons"></p>
+	<h4 id="after-clicking-the-search-icon">After clicking the search icon</h4>
+	<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9477/a8901c8c-cc10-11e5-9807-3eb5cb107cba.gif" alt="toolbar-search-2"></p>
+	<h3 id="configuration">Configuration</h3>
+	<p>Each icon can also exist by itself, so if you only need for example the search and grid icon you can remove/comment out the code for the sort icon. See example below:</p>
+	<p><img width="120" alt="screen shot 2016-02-05 at 1 53 39 pm" src="https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9473/ee0d5a5a-cc0f-11e5-8cb7-d6e62c0fb24b.png"></p>
+	<pre><code class="lang-html">&lt;div class=&quot;toolbar-icons&quot;&gt;
+	
+	  &lt;!-- Slide out search field --&gt;
+	  &lt;div class=&quot;slide-out-search&quot;&gt;
+	    &lt;input type=&quot;search&quot; class=&quot;search-field&quot; data-list-icons-search-field placeholder=&quot;Start typing to filter results..&quot;&gt;
+	  &lt;/div&gt;
+	
+	  &lt;!-- Icon list --&gt;
+	  &lt;ul class=&quot;toolbar-icons__icons&quot;&gt;
+	    &lt;li data-list-icons-search-action-target=&quot;[data-list-icons-search-field]&quot; data-id=&quot;search-action&quot; class=&quot;icons__tool&quot;&gt;
+	      &lt;svg class=&quot;tool-icon&quot;&gt;
+	        &lt;use xlink:href=&quot;../../images/sprite.svg#common--search&quot;&gt;&lt;/use&gt;
+	      &lt;/svg&gt;
+	    &lt;/li&gt;
+	    &lt;!-- Comment out a list item if it&#39;s not needed
+	    &lt;li data-id=&quot;sort-action&quot; class=&quot;icons__tool&quot;&gt;
+	      &lt;a href=&quot;#&quot;&gt;
+	        &lt;svg class=&quot;tool-icon&quot;&gt;
+	          &lt;use xlink:href=&quot;../../images/sprite.svg#common--arrows&quot;&gt;&lt;/use&gt;
+	        &lt;/svg&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	    --&gt;
+	    &lt;li class=&quot;icons__tool&quot;&gt;
+	      &lt;a href=&quot;#&quot;&gt;
+	        &lt;svg class=&quot;tool-icon&quot;&gt;
+	          &lt;use xlink:href=&quot;../../images/sprite.svg#common--grid&quot;&gt;&lt;/use&gt;
+	        &lt;/svg&gt;
+	      &lt;/a&gt;
+	    &lt;/li&gt;
+	  &lt;/ul&gt;
+	
+	&lt;/div&gt;
+	</code></pre>
+	<h4 id="testing-the-slide-out-search-field">Testing the slide out search field</h4>
+	<p>In order to test the slide out search field on the overview page of <code>bluemix-components</code>, make sure you uncomment the first line of the class <code>toolbar-icons</code>:</p>
+	<pre><code class="lang-css">.toolbar-icons {
+	  // Uncomment the line below to test the slide-out search field
+	  // margin-left: 25em;
+	  display: flex;
+	}
+	</code></pre>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;toolbars&quot;&gt;Toolbars&lt;/h1&gt;
+	&lt;h2 id=&quot;toolbar-style-icons&quot;&gt;Toolbar style: Icons&lt;/h2&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9454/c85087bc-cbfe-11e5-9136-f7f17976210c.png&quot; alt=&quot;Toolbar: Icons&quot;&gt;&lt;/p&gt;
+	&lt;h4 id=&quot;after-clicking-the-search-icon&quot;&gt;After clicking the search icon&lt;/h4&gt;
+	&lt;p&gt;&lt;img src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9477/a8901c8c-cc10-11e5-9807-3eb5cb107cba.gif&quot; alt=&quot;toolbar-search-2&quot;&gt;&lt;/p&gt;
+	&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+	&lt;p&gt;Each icon can also exist by itself, so if you only need for example the search and grid icon you can remove/comment out the code for the sort icon. See example below:&lt;/p&gt;
+	&lt;p&gt;&lt;img width=&quot;120&quot; alt=&quot;screen shot 2016-02-05 at 1 53 39 pm&quot; src=&quot;https://uploads.github.ibm.com/github-enterprise-assets/0000/2212/0000/9473/ee0d5a5a-cc0f-11e5-8cb7-d6e62c0fb24b.png&quot;&gt;&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-html&quot;&gt;&amp;lt;div class=&amp;quot;toolbar-icons&amp;quot;&amp;gt;
+	
+	  &amp;lt;!-- Slide out search field --&amp;gt;
+	  &amp;lt;div class=&amp;quot;slide-out-search&amp;quot;&amp;gt;
+	    &amp;lt;input type=&amp;quot;search&amp;quot; class=&amp;quot;search-field&amp;quot; data-list-icons-search-field placeholder=&amp;quot;Start typing to filter results..&amp;quot;&amp;gt;
+	  &amp;lt;/div&amp;gt;
+	
+	  &amp;lt;!-- Icon list --&amp;gt;
+	  &amp;lt;ul class=&amp;quot;toolbar-icons__icons&amp;quot;&amp;gt;
+	    &amp;lt;li data-list-icons-search-action-target=&amp;quot;[data-list-icons-search-field]&amp;quot; data-id=&amp;quot;search-action&amp;quot; class=&amp;quot;icons__tool&amp;quot;&amp;gt;
+	      &amp;lt;svg class=&amp;quot;tool-icon&amp;quot;&amp;gt;
+	        &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#common--search&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	      &amp;lt;/svg&amp;gt;
+	    &amp;lt;/li&amp;gt;
+	    &amp;lt;!-- Comment out a list item if it&amp;#39;s not needed
+	    &amp;lt;li data-id=&amp;quot;sort-action&amp;quot; class=&amp;quot;icons__tool&amp;quot;&amp;gt;
+	      &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;
+	        &amp;lt;svg class=&amp;quot;tool-icon&amp;quot;&amp;gt;
+	          &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#common--arrows&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	        &amp;lt;/svg&amp;gt;
+	      &amp;lt;/a&amp;gt;
+	    &amp;lt;/li&amp;gt;
+	    --&amp;gt;
+	    &amp;lt;li class=&amp;quot;icons__tool&amp;quot;&amp;gt;
+	      &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;
+	        &amp;lt;svg class=&amp;quot;tool-icon&amp;quot;&amp;gt;
+	          &amp;lt;use xlink:href=&amp;quot;../../images/sprite.svg#common--grid&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
+	        &amp;lt;/svg&amp;gt;
+	      &amp;lt;/a&amp;gt;
+	    &amp;lt;/li&amp;gt;
+	  &amp;lt;/ul&amp;gt;
+	
+	&amp;lt;/div&amp;gt;
+	&lt;/code&gt;&lt;/pre&gt;
+	&lt;h4 id=&quot;testing-the-slide-out-search-field&quot;&gt;Testing the slide out search field&lt;/h4&gt;
+	&lt;p&gt;In order to test the slide out search field on the overview page of &lt;code&gt;bluemix-components&lt;/code&gt;, make sure you uncomment the first line of the class &lt;code&gt;toolbar-icons&lt;/code&gt;:&lt;/p&gt;
+	&lt;pre&gt;&lt;code class=&quot;lang-css&quot;&gt;.toolbar-icons {
+	  // Uncomment the line below to test the slide-out search field
+	  // margin-left: 25em;
+	  display: flex;
+	}
+	&lt;/code&gt;&lt;/pre&gt;</code></pre>
+	</div>
+
+</div>
+
+
+<div class="item-group" id="tooltips">
+
+	<div class="item-preview">
+		<h1 id="tooltips">Tooltips</h1>
+	</div>
+	<div class="item-code item-hidden" data-f-toggle="code">
+		<pre><code class="language-markup">&lt;h1 id=&quot;tooltips&quot;&gt;Tooltips&lt;/h1&gt;</code></pre>
+	</div>
+
+</div>
+
 
 
 		</div>
-	<script src="/assets/fabricator/scripts/f.js"></script>
 
-	<!-- toolkit scripts -->
-	<script src="/assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
+    <script src="/assets/bluemix-design-system/scripts/main.js"></script>
 
 </body>
 </html>

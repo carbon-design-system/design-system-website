@@ -1,0 +1,61 @@
+.controls {
+	@include clearfix;
+	@include border-box;
+
+	.control {
+		display: block;
+		float: left;
+		text-align: center;
+		width: percentage(1/3);
+		margin: 0;
+		padding: 1rem 0;
+
+		&.active {
+			box-shadow: inset 0 0.25rem 0 0 $icon-color;
+
+			use {
+				fill: $icon-color;
+			}
+		}
+
+		svg {
+			vertical-align: middle;
+		}
+	}
+}
+
+.control {
+	@include border-box;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 0.66rem;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	svg {
+		width: 0.875rem;
+		height: 0.875rem;
+
+		use {
+			fill: $icon-color;
+		}
+	}
+}
+
+.control-bar {
+	@include clearfix;
+	padding: 1rem 0;
+}
+
+.menu-toggle {
+	cursor: pointer;
+	vertical-align: middle;
+
+	svg {
+		display: block;
+		float: left;
+		margin-bottom: -1px;
+	}
+}

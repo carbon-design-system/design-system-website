@@ -1,0 +1,11 @@
+$base-colors: (
+	dark: #142934,
+	medium: #4B5B63,
+	light: #F4F4F4,
+	accent: #468EE5
+);
+
+$menu-background: map-get($base-colors, light);
+$icon-color: map-get($base-colors, light);
+$base-font-size: 16px;
+$menu-width: 18em;

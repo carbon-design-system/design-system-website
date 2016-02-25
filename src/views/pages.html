@@ -2,13 +2,13 @@
 fabricator: true
 ---
 
-<h1 data-f-toggle="labels">Pages</h1>
+<h1 data-f-toggle="labels" class="page-heading">Pages</h1>
 
 <ul>
 {{#each views.pages.items}}
 
 	<li>
-		<a href="pages/{{@key}}.html" class="f-item-heading" target="_blank">{{name}}</a>
+		<a href="pages/{{@key}}.html" class="item-heading" target="_blank">{{name}}</a>
 	</li>
 
 {{/each}}
