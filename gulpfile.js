@@ -33,8 +33,8 @@ var config = {
 	dev: gutil.env.dev,
 	src: {
 		scripts: {
-			fabricator: [
-				'src/assets/scripts/fabricator.js'
+			main: [
+				'src/assets/scripts/main.js'
 			],
 			vendor: [
 				'src/assets/scripts/prism.js'
@@ -110,7 +110,7 @@ gulp.task('styles', ['styles:main', 'styles:bluemixComponents']);
 ///////////////////////////////
 
 gulp.task('scripts', function () {
-	return gulp.src(config.src.scripts.fabricator)
+	return gulp.src(config.src.scripts.main)
 		.pipe(concat('main.js'))
 		.pipe(gulpif(!config.dev, uglify()))
 		.pipe(gulp.dest(config.dest + '/assets/scripts'));

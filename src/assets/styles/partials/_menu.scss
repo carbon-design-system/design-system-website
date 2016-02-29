@@ -1,11 +1,8 @@
 // menu
 .menu {
     background-color: $color__menu-bg;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: em(250px);
-	height: 100%;
+	width: 17em;
+	height: 100vh;
 	z-index: 1;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -55,7 +52,12 @@
 }
 
 .item__sub-nav {
+    display: none;
     padding-top: 1em;
+
+    &.open {
+        display: block;
+    }
 
     .sub-nav__item {
         text-transform: capitalize;
