@@ -1,0 +1,37 @@
+///////////////////////////////
+// Functions                 //
+///////////////////////////////
+
+@function rem($px) {
+  @return ($px / $base-font-size) * 1rem;
+}
+
+@function em($px) {
+  @return ($px / $base-font-size) * 1em;
+}
+
+
+///////////////////////////////
+// Mixins                    //
+///////////////////////////////
+@mixin clearfix {
+	&:after {
+		clear: both;
+	}
+
+	&:before,
+	&:after {
+		display: table;
+		content: ' ';
+	}
+}
+
+
+///////////////////////////////
+// Extends                   //
+///////////////////////////////
+
+%font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

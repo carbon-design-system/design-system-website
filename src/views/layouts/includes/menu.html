@@ -2,7 +2,7 @@
 
 <div class="menu">
 
-    <p class="menu__header">IBM Bluemix <span class="menu__header--bold">Design System</span></p>
+    <p class="menu__header">IBM Bluemix <br><span class="menu__header--bold">Design System</span></p>
 
 	<ul class="menu__main-nav">
 
@@ -14,10 +14,10 @@
         <!-- Guidelines -->
         <li class="main-nav__item">
             <a href="guidelines.html" class="item__heading">Guidelines</a>
-            <ul class="item__nav">
+            <ul class="item__sub-nav">
                 {{#each views.guidelines.items}}
-                <li class="nav__item">
-                    <a href="guidelines/{{@key}}.html" target="_blank">{{name}}</a>
+                <li class="sub-nav__item">
+                    <a href="guidelines/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
                 </li>
                 {{/each}}
             </ul>
@@ -27,10 +27,10 @@
 		{{#each materials}}
 		<li class="main-nav__item">
 			<a href="{{@key}}.html" class="item__heading">{{name}}</a>
-			<ul class="item__nav">
+			<ul class="item__sub-nav">
 				{{#each items}}
-				<li class="nav__item">
-					<a href="{{@../key}}.html#{{@key}}">{{name}}</a>
+				<li class="sub-nav__item">
+					<a href="{{@../key}}.html#{{@key}}" class="item__link">{{name}}</a>
 				</li>
 				{{/each}}
 			</ul>
@@ -40,10 +40,10 @@
         <!-- Templates -->
         <li class="main-nav__item">
             <a href="templates.html" class="item__heading">Templates</a>
-            <ul class="item__nav">
+            <ul class="item__sub-nav">
                 {{#each views.templates.items}}
-                <li class="nav__item">
-                    <a href="templates/{{@key}}.html" target="_blank">{{name}}</a>
+                <li class="sub-nav__item">
+                    <a href="templates/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
                 </li>
                 {{/each}}
             </ul>

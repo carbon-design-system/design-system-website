@@ -1,11 +1,16 @@
-$base-colors: (
-	dark: #142934,
-	medium: #4B5B63,
-	light: #F4F4F4,
-	accent: #468EE5
-);
+///////////////////////////////
+// Colors                    //
+///////////////////////////////
 
-$menu-background: map-get($base-colors, light);
-$icon-color: map-get($base-colors, light);
+$color__menu-bg: $color__blue-90;
+$color__section-bg: $color__blue-40;
+$color__border: $color__blue-20;
+$color__white: #fff;
+$color__text--light: $color__atlas-gray-1;
+$color__text--dark: #485760;
+
+///////////////////////////////
+// Typography                //
+///////////////////////////////
+
 $base-font-size: 16px;
-$menu-width: 18em;

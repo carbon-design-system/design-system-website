@@ -1,4 +1,6 @@
-// Functions
+///////////////////////////////
+// Functions                 //
+///////////////////////////////
 
 @function rem($px) {
   @return ($px / $base-font-size) * 1rem;
@@ -9,7 +11,9 @@
 }
 
 
-// Mixins
+///////////////////////////////
+// Mixins                    //
+///////////////////////////////
 @mixin clearfix {
 	&:after {
 		clear: both;
@@ -20,8 +24,4 @@
 		display: table;
 		content: ' ';
 	}
-}
-
-@mixin border-box {
-	box-sizing: border-box;
 }

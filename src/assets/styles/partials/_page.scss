@@ -1,0 +1,41 @@
+.page__header {
+    background-color: $color__section-bg;
+    margin: 0;
+    padding: 8em 8em 10em;
+    display: flex;
+    flex-direction: column;
+
+    .header__main-heading {
+        @extend %font-smoothing;
+        font-size: rem(64px);
+        font-weight: 200;
+        line-height: 1.1;
+        margin: 0;
+        padding: 0;
+
+        .main-heading--bolder {
+            font-weight: 600;
+        }
+    }
+
+    .header__desc {
+        @extend %font-smoothing;
+        width: 40%;
+        line-height: 1.5;
+        color: $color__dark-blue;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: 2.5em 0;
+    }
+
+    .download-btns__btn {
+        display: inline-block;
+        padding: 1.25em;
+        border: none;
+        background-color: $color__white;
+        color: $color__dark-blue;
+        font-weight: 600;
+        font-size: .8rem;
+        margin-right: .5em;
+    }
+}

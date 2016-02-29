@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    box-sizing: border-box;
 	margin: 0;
 	position: relative;
     background-color: #15293C !important;
@@ -40,7 +41,7 @@ body {
 
 .container {
 	@include clearfix;
-	@include border-box;
+
 	position: relative;
 	padding: 0 5em 0 1em;
 	z-index: 0;
@@ -48,10 +49,10 @@ body {
     margin-top: 1.5em;
 
 	.menu-active & {
-		transform: translate($menu-width, 0);
+		transform: translate(18em, 0);
 
 		@media (min-width: 60em) {
-			margin-left: $menu-width + 2em;
+			margin-left: 20em;
 			transform: translate(0, 0);
 		}
 	}

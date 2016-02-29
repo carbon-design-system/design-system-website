@@ -8,8 +8,8 @@
 
 	<title>{{title}}</title>
 
-    <link rel="stylesheet" href="{{baseurl}}/assets/bluemix-design-system/styles/styles.css">
-	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/bluemix-design-system/styles/main.css">{{/if}}
+    <link rel="stylesheet" href="{{baseurl}}/assets/styles/styles.css">
+	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/styles/main.css">{{/if}}
 
 </head>
 <body>
@@ -17,7 +17,6 @@
 	{{#if fabricator}}
 		{{> menu}}
 		<div class="container">
-			{{> control-bar}}
 	{{/if}}
 
     {% body %}
@@ -25,7 +24,7 @@
     {{#if fabricator}}
 		</div>
 
-    <script src="{{baseurl}}/assets/bluemix-design-system/scripts/main.js"></script>
+    <script src="{{baseurl}}/assets/scripts/main.js"></script>
 	{{/if}}
 
 </body>
