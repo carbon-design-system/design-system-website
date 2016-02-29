@@ -1,31 +1,35 @@
+<!-- Sidebar main navigation -->
+
 <div class="menu">
 
-    <p>IBM <span>Bluemix</span> Design System</p>
+    <p class="menu__header">IBM Bluemix <span class="menu__header--bold">Design System</span></p>
 
-	<ul>
-		<li>
-			<a href="index.html" class="menu__heading">Overview</a>
+	<ul class="menu__main-nav">
+
+        <!-- Overview -->
+		<li class="main-nav__item">
+			<a href="index.html" class="item__heading">Overview</a>
 		</li>
 
-        {{#each guidelines}}
-        <li>
-            <a href="{{@key}}.html" class="menu__heading">{{name}}</a>
-            <ul>
-                {{#each items}}
-                <li>
-                    <a href="{{@key}}.html" target="_blank">{{name}}</a>
+        <!-- Guidelines -->
+        <li class="main-nav__item">
+            <a href="guidelines.html" class="item__heading">Guidelines</a>
+            <ul class="item__nav">
+                {{#each views.guidelines.items}}
+                <li class="nav__item">
+                    <a href="guidelines/{{@key}}.html" target="_blank">{{name}}</a>
                 </li>
                 {{/each}}
             </ul>
         </li>
-        {{/each}}
 
+        <!-- Components and Base Elements -->
 		{{#each materials}}
-		<li>
-			<a href="{{@key}}.html" class="menu__heading">{{name}}</a>
-			<ul>
+		<li class="main-nav__item">
+			<a href="{{@key}}.html" class="item__heading">{{name}}</a>
+			<ul class="item__nav">
 				{{#each items}}
-				<li>
+				<li class="nav__item">
 					<a href="{{@../key}}.html#{{@key}}">{{name}}</a>
 				</li>
 				{{/each}}
@@ -33,19 +37,17 @@
 		</li>
 		{{/each}}
 
-		{{#each templates}}
-		<li>
-			<a href="{{@key}}.html" class="menu__heading">{{name}}</a>
-			<ul>
-				{{#each items}}
-				<li>
-					<a href="{{@../key}}/{{@key}}.html" target="_blank">{{name}}</a>
-				</li>
-				{{/each}}
-			</ul>
-		</li>
-		{{/each}}
+        <!-- Templates -->
+        <li class="main-nav__item">
+            <a href="templates.html" class="item__heading">Templates</a>
+            <ul class="item__nav">
+                {{#each views.templates.items}}
+                <li class="nav__item">
+                    <a href="templates/{{@key}}.html" target="_blank">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>
 	</ul>
-
 
 </div>

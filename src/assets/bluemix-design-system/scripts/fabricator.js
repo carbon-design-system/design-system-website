@@ -14,11 +14,6 @@ var fabricator = window.fabricator = {};
  * @type {Object}
  */
 fabricator.options = {
-	toggles: {
-		labels: true,
-		notes: true,
-		code: false
-	},
 	menu: false,
 	mq: '(min-width: 60em)'
 };
@@ -72,26 +67,7 @@ fabricator.getOptions = function () {
 
 
 /**
- * Build color chips
- */
-fabricator.buildColorChips = function () {
-
-	var chips = document.querySelectorAll('.color-chip'),
-		color;
-
-	for (var i = chips.length - 1; i >= 0; i--) {
-		color = chips[i].querySelector('.color-chip__color').innerHTML;
-		chips[i].style.borderTopColor = color;
-		chips[i].style.borderBottomColor = color;
-	}
-
-	return this;
-
-};
-
-
-/**
- * Add `f-active` class to active menu item
+ * Add `active` class to active menu item
  */
 fabricator.setActiveItem = function () {
 
@@ -186,125 +162,6 @@ fabricator.menuToggle = function () {
 
 
 /**
- * Handler for preview and code toggles
- * @return {Object} fabricator
- */
-fabricator.allItemsToggles = function () {
-
-	var items = {
-		labels: document.querySelectorAll('[data-f-toggle="labels"]'),
-		notes: document.querySelectorAll('[data-f-toggle="notes"]'),
-		code: document.querySelectorAll('[data-f-toggle="code"]')
-	};
-
-	var toggleAllControls = document.querySelectorAll('.controls [data-f-toggle-control]');
-
-	var options = fabricator.getOptions();
-
-	// toggle all
-	var toggleAllItems = function (type, value) {
-
-		var button = document.querySelector('.controls [data-f-toggle-control=' + type + ']'),
-			_items = items[type];
-
-		for (var i = 0; i < _items.length; i++) {
-			if (value) {
-				_items[i].classList.remove('item-hidden');
-			} else {
-				_items[i].classList.add('item-hidden');
-			}
-		}
-
-		// toggle styles
-		if (value) {
-			button.classList.add('active');
-		} else {
-			button.classList.remove('active');
-		}
-
-		// update options
-		options.toggles[type] = value;
-
-		if (fabricator.test.sessionStorage) {
-			sessionStorage.setItem('fabricator', JSON.stringify(options));
-		}
-
-	};
-
-	for (var i = 0; i < toggleAllControls.length; i++) {
-
-		toggleAllControls[i].addEventListener('click', function (e) {
-
-			// extract info from target node
-			var type = e.currentTarget.getAttribute('data-f-toggle-control'),
-				value = e.currentTarget.className.indexOf('active') < 0;
-
-			// toggle the items
-			toggleAllItems(type, value);
-
-		});
-
-	}
-
-	// persist toggle options from page to page
-	for (var toggle in options.toggles) {
-		if (options.toggles.hasOwnProperty(toggle)) {
-			toggleAllItems(toggle, options.toggles[toggle]);
-		}
-	}
-
-	return this;
-
-};
-
-
-/**
- * Handler for single item code toggling
- */
-fabricator.singleItemToggle = function () {
-
-	var itemToggleSingle = document.querySelectorAll('.item-group [data-f-toggle-control]');
-
-	// toggle single
-	var toggleSingleItemCode = function (e) {
-		var group = this.parentNode.parentNode.parentNode,
-			type = e.currentTarget.getAttribute('data-f-toggle-control');
-
-		group.querySelector('[data-f-toggle=' + type + ']').classList.toggle('item-hidden');
-	};
-
-	for (var i = 0; i < itemToggleSingle.length; i++) {
-		itemToggleSingle[i].addEventListener('click', toggleSingleItemCode);
-	}
-
-	return this;
-
-};
-
-
-/**
- * Automatically select code when code block is clicked
- */
-fabricator.bindCodeAutoSelect = function () {
-
-	var codeBlocks = document.querySelectorAll('.item-code');
-
-	var select = function (block) {
-		var selection = window.getSelection();
-		var range = document.createRange();
-		range.selectNodeContents(block.querySelector('code'));
-		selection.removeAllRanges();
-		selection.addRange(range);
-	};
-
-	for (var i = codeBlocks.length - 1; i >= 0; i--) {
-		codeBlocks[i].addEventListener('click', select.bind(this, codeBlocks[i]));
-	}
-
-};
-
-
-/**
  * Open/Close menu based on session var.
  * Also attach a media query listener to close the menu when resizing to smaller screen.
  */
@@ -345,10 +202,5 @@ fabricator.setInitialMenuState = function () {
 	fabricator
 		.setInitialMenuState()
 		.menuToggle()
-		.allItemsToggles()
-		.singleItemToggle()
-		.buildColorChips()
 		.setActiveItem()
-		.bindCodeAutoSelect();
-
 }());
