@@ -1,13 +1,24 @@
-<!-- fabricator menu -->
 <div class="menu">
 
     <p>IBM <span>Bluemix</span> Design System</p>
 
 	<ul>
-
 		<li>
 			<a href="index.html" class="menu__heading">Overview</a>
 		</li>
+
+        {{#each guidelines}}
+        <li>
+            <a href="{{@key}}.html" class="menu__heading">{{name}}</a>
+            <ul>
+                {{#each items}}
+                <li>
+                    <a href="{{@key}}.html" target="_blank">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>
+        {{/each}}
 
 		{{#each materials}}
 		<li>
@@ -22,7 +33,7 @@
 		</li>
 		{{/each}}
 
-		{{#each views}}
+		{{#each templates}}
 		<li>
 			<a href="{{@key}}.html" class="menu__heading">{{name}}</a>
 			<ul>
@@ -34,20 +45,7 @@
 			</ul>
 		</li>
 		{{/each}}
-
-		<li>
-			<a href="docs.html" class="menu__heading">Docs</a>
-			<ul>
-				{{#each docs}}
-				<li>
-					<a href="docs.html#{{@key}}">{{name}}</a>
-				</li>
-				{{/each}}
-			</ul>
-		</li>
-
 	</ul>
 
 
 </div>
-<!-- /fabricator menu -->

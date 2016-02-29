@@ -1,6 +1,8 @@
 'use strict';
 
-// modules
+///////////////////////////////
+// MODULES                   //
+///////////////////////////////
 var assemble = require('fabricator-assemble');
 var browserify = require('browserify');
 var browserSync = require('browser-sync');
@@ -23,7 +25,10 @@ var streamify = require('gulp-streamify');
 var uglify = require('gulp-uglify');
 
 
-// configuration
+///////////////////////////////
+// CONFIGURATION             //
+///////////////////////////////
+
 var config = {
 	dev: gutil.env.dev,
 	src: {
@@ -49,12 +54,20 @@ var config = {
 };
 
 
-// clean
+
+///////////////////////////////
+// CLEAN                     //
+///////////////////////////////
+
 gulp.task('clean', function (cb) {
 	del(['**'], { ignore: 'demo/**', cwd: config.dest }, cb);
 });
 
-// styles
+
+///////////////////////////////
+// STYLES                    //
+///////////////////////////////
+
 gulp.task('styles:main', function () {
 	return gulp.src(config.src.styles.main)
 		.pipe(sass({
@@ -79,7 +92,11 @@ gulp.task('styles:bluemixComponents', function() {
 
 gulp.task('styles', ['styles:main', 'styles:bluemixComponents']);
 
-// scripts
+
+///////////////////////////////
+// SCRIPTS                   //
+///////////////////////////////
+
 gulp.task('scripts', function () {
 	return gulp.src(config.src.scripts.fabricator)
 		.pipe(concat('main.js'))
@@ -87,7 +104,10 @@ gulp.task('scripts', function () {
 		.pipe(gulp.dest(config.dest + '/assets/bluemix-design-system/scripts'));
 });
 
-// markdown to html
+
+///////////////////////////////
+// MARKDOWN TO HTML          //
+///////////////////////////////
 
 gulp.task('markdown:components', function() {
     return gulp.src(config.src.bluemix.compMarkdown)
@@ -105,7 +125,11 @@ gulp.task('markdown:base-elements', function() {
 
 gulp.task('markdown', ['markdown:components', 'markdown:base-elements']);
 
-// assemble
+
+///////////////////////////////
+// ASSEMBLE                  //
+///////////////////////////////
+
 gulp.task('assemble', function(done) {
 	assemble({
 		helpers: {
@@ -137,7 +161,10 @@ gulp.task('assemble', function(done) {
 });
 
 
-// server
+///////////////////////////////
+// SERVE                     //
+///////////////////////////////
+
 gulp.task('serve', ['default'], function () {
 
 	var reload = browserSync.reload;
@@ -157,10 +184,12 @@ gulp.task('serve', ['default'], function () {
 });
 
 
-// default build task
+///////////////////////////////
+// DEFAULT BUILT TAS         //
+///////////////////////////////
+
 gulp.task('default', ['clean'], function () {
 
-	// define build tasks
 	var tasks = [
         'markdown',
 		'styles',
@@ -168,7 +197,6 @@ gulp.task('default', ['clean'], function () {
 		'assemble'
 	];
 
-	// run build
 	runSequence(tasks, function () {
 		if (config.dev) {
 			gulp.start('serve');

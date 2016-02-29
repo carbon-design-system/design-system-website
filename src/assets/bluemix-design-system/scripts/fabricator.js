@@ -105,7 +105,7 @@ fabricator.setActiveItem = function () {
 		    	hash = hash || '';
 		    	file = file || '';
 		    	return file + hash.split('.')[0];
-			}) || 'index.html',
+			}) || 'overview.html',
 			href;
 
 		// find the current section in the items array
