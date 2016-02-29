@@ -8,6 +8,7 @@
     .header__main-heading {
         @extend %font-smoothing;
         font-size: rem(64px);
+        color: $color__white;
         font-weight: 200;
         line-height: 1.1;
         margin: 0;
