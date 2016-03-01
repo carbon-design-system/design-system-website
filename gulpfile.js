@@ -30,27 +30,26 @@ var uglify = require('gulp-uglify');
 ///////////////////////////////
 
 var config = {
-	dev: gutil.env.dev,
-	src: {
-		scripts: {
-			main: [
-				'src/assets/scripts/main.js'
-			],
-			vendor: [
-				'src/assets/scripts/prism.js'
-			]
+    dev: gutil.env.dev,
+    src: {
+        scripts: {
+            main: [
+                'src/assets/scripts/main.js'
+            ],
+            vendor: [
+                'src/assets/scripts/prism.js'
+            ]
         },
 		styles: {
-			main: 'src/assets/styles/main.scss',
-            bluemixComponents: 'bower_components/bluemix-components/styles.scss'
+			main: 'src/assets/styles/main.scss'
 		},
 		views: 'src/views/*.html',
         bluemix: {
             compMarkdown: 'bower_components/bluemix-components/components/**/**/*.md',
             baseMarkdown: 'bower_components/bluemix-components/base-elements/**/**/*.md'
         }
-	},
-	dest: 'dist'
+    },
+    dest: 'dist'
 };
 
 
@@ -60,7 +59,7 @@ var config = {
 ///////////////////////////////
 
 gulp.task('clean', function (cb) {
-	del(['**'], { ignore: 'demo/**', cwd: config.dest }, cb);
+    del(['**'], { ignore: 'demo/**', cwd: config.dest }, cb);
 });
 
 
@@ -80,7 +79,7 @@ gulp.task('copy', function() {
 // STYLES                    //
 ///////////////////////////////
 
-gulp.task('styles:main', function () {
+gulp.task('styles', function () {
 	return gulp.src(config.src.styles.main)
 		.pipe(sass({
 			errLogToConsole: true
@@ -92,28 +91,16 @@ gulp.task('styles:main', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles:bluemixComponents', function() {
-    return gulp.src(config.src.styles.bluemixComponents)
-        .pipe(sass({
-            errLogToConsole: true
-        }))
-        .pipe(gulpif(!config.dev, csso()))
-        .pipe(gulp.dest(config.dest + '/assets/styles'))
-        .pipe(gulpif(config.dev, reload({stream:true})));
-})
-
-gulp.task('styles', ['styles:main', 'styles:bluemixComponents']);
-
 
 ///////////////////////////////
 // SCRIPTS                   //
 ///////////////////////////////
 
 gulp.task('scripts', function () {
-	return gulp.src(config.src.scripts.main)
-		.pipe(concat('main.js'))
-		.pipe(gulpif(!config.dev, uglify()))
-		.pipe(gulp.dest(config.dest + '/assets/scripts'));
+    return gulp.src(config.src.scripts.main)
+        .pipe(concat('main.js'))
+        .pipe(gulpif(!config.dev, uglify()))
+        .pipe(gulp.dest(config.dest + '/assets/scripts'));
 });
 
 
@@ -143,33 +130,33 @@ gulp.task('markdown', ['markdown:components', 'markdown:base-elements']);
 ///////////////////////////////
 
 gulp.task('assemble', function(done) {
-	assemble({
-		helpers: {
-			markdown: function (str, opts) {
-				if (typeof str === 'object') {
-					opts = str;
-					str = null;
-				}
-				str = str || opts.fn(this);
-				return require('markdown-it')()
-					.use(require('markdown-it-headinganchor'), {
-						linkify: true,
-						anchorClass: '',
-						slugify: function(str) {
-							return require('string')(str).slugify().s;
-						}
-					})
-					.render(str);
-			},
-			decode: function (val) {
-				return decodeURIComponent(val);
-			},
-			raw: function (options) {
-				return options.fn();
-			}
-		}
-	});
-	done();
+    assemble({
+        helpers: {
+            markdown: function (str, opts) {
+                if (typeof str === 'object') {
+                    opts = str;
+                    str = null;
+                }
+                str = str || opts.fn(this);
+                return require('markdown-it')()
+                    .use(require('markdown-it-headinganchor'), {
+                        linkify: true,
+                        anchorClass: '',
+                        slugify: function(str) {
+                            return require('string')(str).slugify().s;
+                        }
+                    })
+                    .render(str);
+            },
+            decode: function (val) {
+                return decodeURIComponent(val);
+            },
+            raw: function (options) {
+                return options.fn();
+            }
+        }
+    });
+    done();
 });
 
 
@@ -179,20 +166,20 @@ gulp.task('assemble', function(done) {
 
 gulp.task('serve', ['default'], function () {
 
-	var reload = browserSync.reload;
+    var reload = browserSync.reload;
 
-	browserSync({
-		server: {
-			baseDir: config.dest
-		},
-		notify: false,
-		logPrefix: 'BLUEMIX DESIGN SYSTEM'
-	});
+    browserSync({
+        server: {
+            baseDir: config.dest
+        },
+        notify: false,
+        logPrefix: 'BLUEMIX DESIGN SYSTEM'
+    });
 
-	gulp.watch('src/materials/**/**/**/*.{html,md,json,yml}', ['assemble']).on('change', reload);
-	gulp.watch('src/assets/styles/**/*.scss', ['styles:main']).on('change', reload);
-	gulp.watch('src/assets/scripts/**/*.js', ['scripts']).on('change', reload);
-	gulp.watch(config.src.images, ['images']).on('change', reload);
+    gulp.watch('src/materials/**/**/**/*.{html,md,json,yml}', ['assemble']).on('change', reload);
+    gulp.watch('src/assets/styles/**/*.scss', ['styles']).on('change', reload);
+    gulp.watch('src/assets/scripts/**/*.js', ['scripts']).on('change', reload);
+    gulp.watch(config.src.images, ['images']).on('change', reload);
 });
 
 
@@ -202,18 +189,18 @@ gulp.task('serve', ['default'], function () {
 
 gulp.task('default', ['clean'], function () {
 
-	var tasks = [
+    var tasks = [
         'copy',
         'markdown',
-		'styles',
-		'scripts',
-		'assemble'
-	];
+        'styles',
+        'scripts',
+        'assemble'
+    ];
 
-	runSequence(tasks, function () {
-		if (config.dev) {
-			gulp.start('serve');
-		}
-	});
+    runSequence(tasks, function () {
+        if (config.dev) {
+            gulp.start('serve');
+        }
+    });
 
 });
