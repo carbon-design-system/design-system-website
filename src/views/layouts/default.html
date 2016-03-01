@@ -2,29 +2,30 @@
 <html lang="">
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{{title}}</title>
+  <title>{{title}}</title>
 
-	<link rel="stylesheet" href="{{baseurl}}/assets/styles/main.css">
+  <link rel="stylesheet" href="{{baseurl}}/assets/styles/main.css">
 
 </head>
 <body>
 
-	{{#if fabricator}}
-		{{> menu}}
-		<div class="container">
-	{{/if}}
+  {{#if fabricator}}
+    {{> menu}}
+    <div class="container">
+  {{/if}}
 
     {% body %}
 
     {{#if fabricator}}
-		</div>
+    </div>
 
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script src="{{baseurl}}/assets/scripts/main.js"></script>
-	{{/if}}
+  {{/if}}
 
 </body>
 </html>
