@@ -1,1 +1,0 @@
-var itemHeadings=document.querySelectorAll(".item__heading");Array.prototype.forEach.call(itemHeadings,function(e){e.addEventListener("click",function(t){t.preventDefault();var n=e.nextSibling.nextElementSibling;n.classList.toggle("open")})});
