@@ -1,5 +1,5 @@
 node_modules
 bower_components
-.git
 .DS_Store
 npm-debug.log
+dist
