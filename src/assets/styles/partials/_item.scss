@@ -37,8 +37,58 @@
 	margin-top: 2rem;
 }
 
+// Styles for single Components and Base Elements
 .item-preview {
 	@include clearfix;
+    color: $color__dark-blue;
+    padding: 2em;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    ul {
+      border-left: 3px solid $color__blue-40;
+      margin: 2em 0;
+      padding-left: 1em;
+
+      li {
+          padding: .2em 0;
+
+        a {
+          color: $color__blue-40;
+          font-weight: 600;
+          font-size: rem(14px);
+        }
+      }
+    }
+
+    h2 {
+      font-size: rem(30px);
+    }
+
+
+
+    hr {
+      margin: 1em 0 2em;
+    }
+
+    pre {
+      margin: 1.5em 0 3em;
+      background-color: #f7f7f7;
+      padding: 2em 0 2em 2em;
+      font-size: .85rem;
+    }
+
+    &__example {
+      padding: 1em 0;
+    }
+
+    &__description {
+      line-height: 1.5;
+      padding-bottom: 2em;
+    }
+
 }
 
 .item-heading-group {

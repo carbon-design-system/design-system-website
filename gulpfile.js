@@ -44,8 +44,9 @@ var config = {
     },
     views: 'src/views/*.html',
     bluemix: {
-      compMarkdown: 'bower_components/bluemix-components/components/**/**/*.md',
-      baseMarkdown: 'bower_components/bluemix-components/base-elements/**/**/*.md'
+      compMarkdown: 'bower_components/bluemix-components/components/**/*.md',
+      baseMarkdown: 'bower_components/bluemix-components/base-elements/**/*.md',
+      templateMarkdown: 'src/markdown-template/*.md' // !temporary
     }
   },
   dest: 'dist'
@@ -113,7 +114,15 @@ gulp.task('markdown:base-elements', function() {
     .pipe(gulp.dest('src/materials/base-elements/'));
 });
 
-gulp.task('markdown', ['markdown:components', 'markdown:base-elements']);
+// !temporary
+gulp.task('markdown:template', function() {
+    return gulp.src(config.src.bluemix.templateMarkdown)
+      .pipe(rename({dirname: ''}))
+      .pipe(markdown())
+      .pipe(gulp.dest('src/materials/markdown-template/'));
+})
+
+gulp.task('markdown', ['markdown:components', 'markdown:base-elements', 'markdown:template']); // !temporary
 
 
 ///////////////////////////////
