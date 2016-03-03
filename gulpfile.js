@@ -100,29 +100,29 @@ gulp.task('scripts', function () {
 // MARKDOWN TO HTML          //
 ///////////////////////////////
 
-gulp.task('markdown:components', function() {
-  return gulp.src(config.src.bluemix.compMarkdown)
-    .pipe(rename({dirname: ''}))
-    .pipe(markdown())
-    .pipe(gulp.dest('src/materials/components/'));
-});
+// gulp.task('markdown:components', function() {
+//   return gulp.src(config.src.bluemix.compMarkdown)
+//     .pipe(rename({dirname: ''}))
+//     .pipe(markdown())
+//     .pipe(gulp.dest('src/materials/components/'));
+// });
+//
+// gulp.task('markdown:base-elements', function() {
+//   return gulp.src(config.src.bluemix.baseMarkdown)
+//     .pipe(rename({dirname: ''}))
+//     .pipe(markdown())
+//     .pipe(gulp.dest('src/materials/base-elements/'));
+// });
+//
+// // !temporary
+// gulp.task('markdown:template', function() {
+//     return gulp.src(config.src.bluemix.templateMarkdown)
+//       .pipe(rename({dirname: ''}))
+//       .pipe(markdown())
+//       .pipe(gulp.dest('src/materials/markdown-template/'));
+// })
 
-gulp.task('markdown:base-elements', function() {
-  return gulp.src(config.src.bluemix.baseMarkdown)
-    .pipe(rename({dirname: ''}))
-    .pipe(markdown())
-    .pipe(gulp.dest('src/materials/base-elements/'));
-});
-
-// !temporary
-gulp.task('markdown:template', function() {
-    return gulp.src(config.src.bluemix.templateMarkdown)
-      .pipe(rename({dirname: ''}))
-      .pipe(markdown())
-      .pipe(gulp.dest('src/materials/markdown-template/'));
-})
-
-gulp.task('markdown', ['markdown:components', 'markdown:base-elements', 'markdown:template']); // !temporary
+// gulp.task('markdown', ['markdown:components', 'markdown:base-elements', 'markdown:template']); // !temporary
 
 
 ///////////////////////////////
@@ -132,32 +132,41 @@ gulp.task('markdown', ['markdown:components', 'markdown:base-elements', 'markdow
 gulp.task('assemble', function(done) {
   assemble({
     helpers: {
-      markdown: function (str, opts) {
-        if (typeof str === 'object') {
-          opts = str;
-          str = null;
-        }
-        str = str || opts.fn(this);
-        return require('markdown-it')()
-          .use(require('markdown-it-headinganchor'), {
-              linkify: true,
-              anchorClass: '',
-              slugify: function(str) {
-                  return require('string')(str).slugify().s;
-              }
-          })
-          .render(str);
-      },
-      decode: function (val) {
-        return decodeURIComponent(val);
-      },
-      raw: function (options) {
-        return options.fn();
-      }
+      markdown: require('helper-markdown')
     }
   });
   done();
 });
+
+// gulp.task('assemble', function(done) {
+//   assemble({
+//     helpers: {
+//       markdown: function (str, opts) {
+//         if (typeof str === 'object') {
+//           opts = str;
+//           str = null;
+//         }
+//         str = str || opts.fn(this);
+//         return require('markdown-it')()
+//           .use(require('markdown-it-headinganchor'), {
+//               linkify: true,
+//               anchorClass: '',
+//               slugify: function(str) {
+//                   return require('string')(str).slugify().s;
+//               }
+//           })
+//           .render(str);
+//       },
+//       decode: function (val) {
+//         return decodeURIComponent(val);
+//       },
+//       raw: function (options) {
+//         return options.fn();
+//       }
+//     }
+//   });
+//   done();
+// });
 
 
 ///////////////////////////////
@@ -173,7 +182,8 @@ gulp.task('clean', function (cb) {
 // BUILD                     //
 ///////////////////////////////
 
-gulp.task('build', ['copy', 'markdown', 'styles', 'scripts', 'assemble']);
+// gulp.task('build', ['copy', 'markdown', 'styles', 'scripts', 'assemble']);
+gulp.task('build', ['copy', 'styles', 'scripts', 'assemble']);
 
 ///////////////////////////////
 // SERVE                     //

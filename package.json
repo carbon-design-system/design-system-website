@@ -38,5 +38,8 @@
     "markdown-it": "^4.1.0",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
     "string": "^3.3.0"
+  },
+  "dependencies": {
+    "helper-markdown": "0.2.1"
   }
 }
