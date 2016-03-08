@@ -4,9 +4,10 @@
 
 	{{#each items}}
 		<div class="item-group" id="{{@key}}">
-            {{> item-content this}}
+      {{> item-content this}}
 		</div>
 	{{/each}}
+
 {{else}}
 	{{> item-content this}}
 {{/if}}
