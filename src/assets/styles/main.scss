@@ -1,8 +1,13 @@
 ///////////////////////////////
-// Importing partials        //
+// MAIN.SCSS                 //
 ///////////////////////////////
 
+// VENDOR
 @import 'bower_components/bluemix-components/styles';
+@import 'bower_components/bluemix-components/utilities';
+@import 'vendor/prism';
+
+// PARTIALS
 @import 'partials/helpers';
 @import 'partials/variables';
 @import 'partials/code';

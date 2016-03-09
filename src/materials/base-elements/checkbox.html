@@ -1,8 +1,33 @@
-<h1 id="checkbox-with-label">Checkbox with label</h1>
-<p>Checkbox accessible styling depends on the current HTML structure.  To use this element without a label just remove the word from inside the <code>&lt;span class=&quot;checkbox__label&quot;&gt;&lt;/span&gt;</code>.</p>
-<pre><code class="lang-html">&lt;label class=&quot;checkbox&quot;&gt;
-  &lt;input class=&quot;checkbox__input&quot; type=&quot;checkbox&quot; value=&quot;None&quot; name=&quot;check&quot; id=&quot;checkbox&quot;&gt;
-  &lt;span class=&quot;checkbox__label&quot;&gt;&lt;/span&gt;
-&lt;/label&gt;
-</code></pre>
-<p><img src="https://uploads.github.ibm.com/github-enterprise-assets/0000/0081/0000/7905/c000ee14-c445-11e5-9639-6fcd706c7ccd.gif" alt="checkbox"></p>
+---
+fabricator: true
+---
+
+<h1 id="checkbox" class="item__main-heading">Checkbox</h1>
+
+<p class="item__main-desc">Description about checkbox in general.</p>
+
+<!-- <ul class="item__nav">
+  <li><a href="#primary">Primary Button</a></li>
+  <li><a href="#secondary">Secondary Button</a></li>
+  <li><a href="#danger">Danger Button</a></li>
+  <li><a href="#disabled">Disabled Button</a></li>
+  <li><a href="#button-with-icon">Button with Icon</a></li>
+</ul> -->
+
+<!-- PRIMARY -->
+
+<h2 id="primary" class="item__sub-heading">Checkbox</h2>
+
+<p class="item__sub-desc">This is a checkbox.</p>
+
+<br>
+
+{{> checkbox-raw}}
+
+{{#markdown}}
+
+```markup
+
+{{> checkbox-raw}}
+
+{{/markdown}}

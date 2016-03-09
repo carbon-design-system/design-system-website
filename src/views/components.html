@@ -2,10 +2,14 @@
 fabricator: true
 ---
 
-<h1 class="page-heading">Components</h1>
+<div class="page-container">
 
-{{#each materials.components.items}}
+  <h1 class="page-heading">Components</h1>
 
-{{> item this}}
+  {{#each materials.components.items}}
 
-{{/each}}
+  {{> item this}}
+
+  {{/each}}
+
+</div>

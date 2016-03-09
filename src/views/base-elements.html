@@ -1,11 +1,16 @@
 ---
 fabricator: true
+title: Base Elements
 ---
 
-<h1 class="page-heading">Base Elements</h1>
+<div class="page-container">
 
-{{#each materials.base-elements.items}}
+  <h1 class="page-heading">Base Elements</h1>
 
-{{> item this}}
+  {{#each materials.base-elements.items}}
 
-{{/each}}
+  {{> item this}}
+
+  {{/each}}
+
+</div>

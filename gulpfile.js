@@ -32,21 +32,20 @@ var config = {
   src: {
     scripts: {
       main: [
-        'src/assets/scripts/main.js'
-      ],
-      vendor: [
-        'src/assets/scripts/prism.js'
+        'src/assets/scripts/*.js'
       ]
     },
     styles: {
       main: 'src/assets/styles/main.scss',
-      partials: 'src/assets/styles/partials/**/*.scss'
     },
     views: 'src/views/*.html',
     bluemix: {
       compMarkdown: 'bower_components/bluemix-components/components/**/*.md',
       baseMarkdown: 'bower_components/bluemix-components/base-elements/**/*.md',
-      templateMarkdown: 'src/markdown-template/*.md' // !temporary
+    },
+    raw: {
+      components: 'bower_components/bluemix-components/components/**/*.html',
+      baseElements: 'bower_components/bluemix-components/base-elements/**/*.html'
     }
   },
   dest: 'dist'
@@ -57,12 +56,36 @@ var config = {
 // COPY                      //
 ///////////////////////////////
 
-gulp.task('copy', function() {
+gulp.task('copy:components-raw', function() {
+  var components = config.src.raw.components;
+
+  return gulp.src(components)
+    .pipe(rename({
+        dirname: '',
+        suffix: '-raw'
+      }))
+    .pipe(gulp.dest('src/materials/raw'));
+});
+
+gulp.task('copy:baseElements-raw', function() {
+  var baseElements = config.src.raw.baseElements;
+
+  return gulp.src(baseElements)
+    .pipe(rename({
+        dirname: '',
+        suffix: '-raw'
+      }))
+    .pipe(gulp.dest('src/materials/raw'));
+});
+
+gulp.task('copy:fonts', function() {
   var fonts = 'src/assets/fonts/*.{woff,woff2}';
 
   return gulp.src(fonts)
     .pipe(gulp.dest(config.dest + '/assets/styles'));
 });
+
+gulp.task('copy', ['copy:components-raw', 'copy:baseElements-raw', 'copy:fonts']);
 
 
 ///////////////////////////////
@@ -95,36 +118,6 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest(config.dest + '/assets/scripts'));
 });
 
-
-///////////////////////////////
-// MARKDOWN TO HTML          //
-///////////////////////////////
-
-// gulp.task('markdown:components', function() {
-//   return gulp.src(config.src.bluemix.compMarkdown)
-//     .pipe(rename({dirname: ''}))
-//     .pipe(markdown())
-//     .pipe(gulp.dest('src/materials/components/'));
-// });
-//
-// gulp.task('markdown:base-elements', function() {
-//   return gulp.src(config.src.bluemix.baseMarkdown)
-//     .pipe(rename({dirname: ''}))
-//     .pipe(markdown())
-//     .pipe(gulp.dest('src/materials/base-elements/'));
-// });
-//
-// // !temporary
-// gulp.task('markdown:template', function() {
-//     return gulp.src(config.src.bluemix.templateMarkdown)
-//       .pipe(rename({dirname: ''}))
-//       .pipe(markdown())
-//       .pipe(gulp.dest('src/materials/markdown-template/'));
-// })
-
-// gulp.task('markdown', ['markdown:components', 'markdown:base-elements', 'markdown:template']); // !temporary
-
-
 ///////////////////////////////
 // ASSEMBLE                  //
 ///////////////////////////////
@@ -132,41 +125,17 @@ gulp.task('scripts', function () {
 gulp.task('assemble', function(done) {
   assemble({
     helpers: {
-      markdown: require('helper-markdown')
-    }
+      markdown: require('helper-markdown'),
+      decode: function (val) {
+        return decodeURIComponent(val);
+      },
+      raw: function (options) {
+        return options.fn();
+      }
+  }
   });
   done();
 });
-
-// gulp.task('assemble', function(done) {
-//   assemble({
-//     helpers: {
-//       markdown: function (str, opts) {
-//         if (typeof str === 'object') {
-//           opts = str;
-//           str = null;
-//         }
-//         str = str || opts.fn(this);
-//         return require('markdown-it')()
-//           .use(require('markdown-it-headinganchor'), {
-//               linkify: true,
-//               anchorClass: '',
-//               slugify: function(str) {
-//                   return require('string')(str).slugify().s;
-//               }
-//           })
-//           .render(str);
-//       },
-//       decode: function (val) {
-//         return decodeURIComponent(val);
-//       },
-//       raw: function (options) {
-//         return options.fn();
-//       }
-//     }
-//   });
-//   done();
-// });
 
 
 ///////////////////////////////
@@ -182,7 +151,6 @@ gulp.task('clean', function (cb) {
 // BUILD                     //
 ///////////////////////////////
 
-// gulp.task('build', ['copy', 'markdown', 'styles', 'scripts', 'assemble']);
 gulp.task('build', ['copy', 'styles', 'scripts', 'assemble']);
 
 ///////////////////////////////

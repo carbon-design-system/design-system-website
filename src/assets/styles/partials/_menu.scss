@@ -1,79 +1,82 @@
 // menu
 .menu {
-    background-color: $color__menu-bg;
-	width: 15%;
-	height: auto;
-	z-index: 1;
-	overflow-x: hidden;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
-    padding: 2em;
+  background-color: $color__menu-bg;
+  min-width: 15em;
+  width: 15%;
+  height: auto;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 2em;
 
-    &__header {
-        @extend %font-smoothing;
-        font-size: rem(24px);
-        color: $color__blue-20;
-        font-weight: 200;
-        line-height: 1.2;
-        margin-bottom: 2em;
+  &__header {
+    @extend %font-smoothing;
+    font-size: rem(24px);
+    color: $color__blue-20;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 2em;
+    text-decoration: none;
 
-        &--bold {
-            color: $color__text--light;
-            font-weight: 600;
-        }
+    &--bold {
+      color: $color__text--light;
+      font-weight: 600;
     }
+  }
 
-    &__main-nav {
-        list-style: none;
-    }
+  &__main-nav {
+    list-style: none;
+    margin-top: 2em;
+  }
 }
 
 .main-nav {
 
-    &__item {
-        border-top: 1px solid $color__border;
-        padding: 1.5em 0;
+  &__item {
+    border-top: 1px solid $color__border;
+    padding: 1.5em 0;
 
-        .item__heading {
-            @extend %font-smoothing;
-            font-size: rem(14px);
-            color: $color__text--light;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 2px;
-            transition: .2s;
+    .item__heading {
+      @extend %font-smoothing;
+      font-size: rem(14px);
+      color: $color__text--light;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 2px;
+      transition: .2s;
 
-            &:hover {
-                color: $color__blue-40;
-            }
-        }
+      &:hover {
+        color: $color__blue-40;
+      }
     }
+  }
 }
 
 .item__sub-nav {
-    display: none;
-    padding-top: 1em;
+  display: none;
+  padding-top: 1em;
 
-    &.open {
-        display: block;
+  &.open {
+    display: block;
+  }
+
+  .sub-nav__item {
+    text-transform: capitalize;
+    margin-left: 0;
+    padding: .75em 0;
+
+    .item__link {
+      @extend %font-smoothing;
+      font-size: rem(14px);
+      color: $color__text--light;
+      text-decoration: none;
+      transition: .2s;
+
+      &:hover {
+          color: $color__blue-40;
+      }
     }
-
-    .sub-nav__item {
-        text-transform: capitalize;
-        margin-left: 0;
-        padding: .75em 0;
-
-        .item__link {
-            @extend %font-smoothing;
-            font-size: rem(14px);
-            color: $color__text--light;
-            text-decoration: none;
-            transition: .2s;
-
-            &:hover {
-                color: $color__blue-40;
-            }
-        }
-    }
+  }
 }
