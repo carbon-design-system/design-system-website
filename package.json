@@ -5,11 +5,13 @@
   "homepage": "http://github.ibm.com/bluemix/design-system-website",
   "main": "README.md",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "cf push",
+    "start": "node server.js",
     "prebuild": "gulp clean",
     "build": "gulp build",
     "predev": "npm run build",
     "dev": "gulp serve --env=dev",
-    "postinstall": "bower install",
     "test": "npm install && npm run build"
   },
   "repository": {
@@ -41,6 +43,7 @@
     "webpack": "1.12.14"
   },
   "dependencies": {
+    "express": "4.13.4",
     "helper-markdown": "0.2.1"
   }
 }

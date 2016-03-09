@@ -1,0 +1,10 @@
+applications:
+- host: design-system
+  name: design-system
+  command: npm start
+  path: .
+  domain: stage1.mybluemix.net
+  instances: 1
+  disk_quota: 1024M
+  memory: 128M
+  buildpack: sdk-for-nodejs
