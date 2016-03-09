@@ -1,17 +1,19 @@
 // menu
 .menu {
+  @extend %font-smoothing;
+  font-size: rem(14px);
   background-color: $color__menu-bg;
-  min-width: 15em;
-  width: 15%;
-  height: auto;
+  min-width: em(200px);
+  height: 100%;
   z-index: 1;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 2em;
+  position: fixed;
 
   &__header {
-    @extend %font-smoothing;
+    display: inline-block;
     font-size: rem(24px);
     color: $color__blue-20;
     font-weight: 200;
@@ -27,7 +29,6 @@
 
   &__main-nav {
     list-style: none;
-    margin-top: 2em;
   }
 }
 
@@ -38,8 +39,6 @@
     padding: 1.5em 0;
 
     .item__heading {
-      @extend %font-smoothing;
-      font-size: rem(14px);
       color: $color__text--light;
       text-transform: uppercase;
       text-decoration: none;
@@ -68,14 +67,12 @@
     padding: .75em 0;
 
     .item__link {
-      @extend %font-smoothing;
-      font-size: rem(14px);
       color: $color__text--light;
       text-decoration: none;
       transition: .2s;
 
       &:hover {
-          color: $color__blue-40;
+        color: $color__blue-40;
       }
     }
   }
