@@ -21,27 +21,26 @@
     "npm": ">=2.0.0"
   },
   "devDependencies": {
+    "babel-core": "6.7.0",
+    "babel-loader": "6.2.4",
     "browser-sync": "^2.5.3",
     "del": "^1.1.1",
     "fabricator-assemble": "^1.0.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.5.2",
     "gulp-csso": "^1.0.0",
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.2.1",
-    "gulp-markdown": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
-    "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
     "handlebars-helpers": "^0.5.8",
     "markdown-it": "^4.1.0",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
-    "string": "^3.3.0"
+    "string": "^3.3.0",
+    "webpack": "1.12.14"
   },
   "dependencies": {
-    "helper-markdown": "0.2.1",
-    "koa": "^1.2.0"
+    "helper-markdown": "0.2.1"
   }
 }

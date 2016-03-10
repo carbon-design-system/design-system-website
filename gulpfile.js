@@ -5,7 +5,6 @@
 ///////////////////////////////
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync').create();
-var concat = require('gulp-concat');
 var csso = require('gulp-csso');
 var del = require('del');
 var gulp = require('gulp');
@@ -14,9 +13,8 @@ var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
-var markdown = require('gulp-markdown');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
+var webpack = require('webpack');
 
 
 ///////////////////////////////
@@ -30,11 +28,7 @@ var env = gutil.env.env || undefined;
 
 var config = {
   src: {
-    scripts: {
-      main: [
-        'src/assets/scripts/*.js'
-      ]
-    },
+    scripts: 'src/assets/scripts/*.js',
     styles: {
       main: 'src/assets/styles/main.scss',
     },
@@ -111,11 +105,31 @@ gulp.task('styles', function () {
 // SCRIPTS                   //
 ///////////////////////////////
 
-gulp.task('scripts', function () {
-  return gulp.src(config.src.scripts.main)
-    .pipe(concat('main.js'))
-    .pipe(gulpif(env !== 'dev', uglify()))
-    .pipe(gulp.dest(config.dest + '/assets/scripts'));
+gulp.task('scripts', function (cb) {
+  webpack({
+    devtool: 'source-maps',
+    entry: './src/assets/scripts/main.js',
+    output: {
+      path: config.dest + '/assets/scripts',
+      filename: 'bundle.js'
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          exclude: [/node_modules/, /bower_components/],
+          loaders: ['babel-loader']
+        }
+      ]
+    }
+  }, function (err, stats) {
+    if (err) throw new gutil.PluginError('webpack', err);
+    gutil.log('[webpack]', stats.toString({
+      progress: true,
+      colors: true
+    }));
+    cb();
+  });
 });
 
 ///////////////////////////////
