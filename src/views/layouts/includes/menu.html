@@ -2,62 +2,48 @@
 
 <div class="menu">
 
-  <a class="menu__header" href="/index.html">IBM Bluemix <br><span class="menu__header--bold">Design System</span></a>
+  <!-- <p href="/" class="menu__header">IBM Bluemix <br><span class="menu__header--bold">Design System</span></p> -->
+  <a href="/" class="menu__header">IBM Bluemix <br><span class="menu__header--bold">Design System</span></a>
 
-	<ul class="menu__main-nav">
-
-      <!-- Overview -->
-		<li class="main-nav__item">
-			<a href="index.html" class="item__heading">Overview</a>
-		</li>
+  <ul class="menu__main-nav">
 
     <!-- Guidelines -->
     <li class="main-nav__item">
-        <a href="guidelines.html" class="item__heading">Guidelines</a>
-        <ul class="item__sub-nav">
-            {{#each views.guidelines.items}}
-            <li class="sub-nav__item">
-                <a href="guidelines/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
+      <a href="guidelines.html" class="item__heading">Guidelines</a>
+      <ul class="item__sub-nav">
+        {{#each views.guidelines.items}}
+        <li class="sub-nav__item">
+            <a href="guidelines/{{@key}}.html" class="item__link">{{name}}</a>
+        </li>
+        {{/each}}
+      </ul>
     </li>
 
-    <!-- Base Elements -->
+    <!-- Components and Base Elements -->
+    {{#each materials}}
     <li class="main-nav__item">
-        <a href="base-elements.html" class="item__heading">Base Elements</a>
-        <ul class="item__sub-nav">
-            {{#each materials.base-elements.items}}
-            <li class="sub-nav__item">
-                <a href="base-elements.html#{{@key}}" target="_blank" class="item__link">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
+      <a href="{{@key}}.html" class="item__heading">{{name}}</a>
+      <ul class="item__sub-nav">
+        {{#each items}}
+        <li class="sub-nav__item">
+          <a href="{{@../key}}.html#{{@key}}" class="item__link">{{name}}</a>
+        </li>
+        {{/each}}
+      </ul>
     </li>
-
-    <!-- Components -->
-    <li class="main-nav__item">
-        <a href="components.html" class="item__heading">Components</a>
-        <ul class="item__sub-nav">
-            {{#each materials.components.items}}
-            <li class="sub-nav__item">
-                <a href="components.html#{{@key}}" target="_blank" class="item__link">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
-    </li>
+    {{/each}}
 
     <!-- Templates -->
     <li class="main-nav__item">
-        <a href="templates.html" class="item__heading">Templates</a>
-        <ul class="item__sub-nav">
-            {{#each views.templates.items}}
-            <li class="sub-nav__item">
-                <a href="templates/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
-            </li>
-            {{/each}}
-        </ul>
+      <a href="templates.html" class="item__heading">Templates</a>
+      <ul class="item__sub-nav">
+        {{#each views.templates.items}}
+        <li class="sub-nav__item">
+          <a href="templates/{{@key}}.html" class="item__link">{{name}}</a>
+        </li>
+        {{/each}}
+      </ul>
     </li>
-	</ul>
+  </ul>
 
 </div>
