@@ -44,8 +44,14 @@ var config = {
       baseMarkdown: 'bower_components/bluemix-components/base-elements/**/*.md',
     },
     raw: {
-      components: 'bower_components/bluemix-components/components/**/*.html',
-      baseElements: 'bower_components/bluemix-components/base-elements/**/*.html'
+      html: {
+        components: 'bower_components/bluemix-components/components/**/*.html',
+        baseElements: 'bower_components/bluemix-components/base-elements/**/*.html'
+      },
+      js: {
+        baseJS: 'bower_components/bluemix-components/base-elements/**/*.js',
+        compJS: 'bower_components/bluemix-components/components/**/*.js'
+      }
     }
   },
   dest: 'dist'
@@ -57,25 +63,45 @@ var config = {
 ///////////////////////////////
 
 gulp.task('copy:components-raw', function() {
-  var components = config.src.raw.components;
+  var components = config.src.raw.html.components;
 
   return gulp.src(components)
     .pipe(rename({
         dirname: '',
         suffix: '-raw'
       }))
-    .pipe(gulp.dest('src/materials/raw'));
+    .pipe(gulp.dest('src/materials/raw--html'));
 });
 
 gulp.task('copy:baseElements-raw', function() {
-  var baseElements = config.src.raw.baseElements;
+  var baseElements = config.src.raw.html.baseElements;
 
   return gulp.src(baseElements)
     .pipe(rename({
         dirname: '',
         suffix: '-raw'
       }))
-    .pipe(gulp.dest('src/materials/raw'));
+    .pipe(gulp.dest('src/materials/raw--html'));
+});
+
+gulp.task('copy:comp-js', function() {
+  var compJS = config.src.raw.js.compJS;
+
+  return gulp.src(compJS)
+    .pipe(rename({
+      dirname: '',
+    }))
+    .pipe(gulp.dest('src/materials/raw--js'));
+});
+
+gulp.task('copy:base-js', function() {
+  var baseJS = config.src.raw.js.baseJS;
+
+  return gulp.src(baseJS)
+    .pipe(rename({
+      dirname: '',
+    }))
+    .pipe(gulp.dest('src/materials/raw--js'));
 });
 
 gulp.task('copy:fonts', function() {
@@ -85,7 +111,7 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(config.dest + '/assets/styles'));
 });
 
-gulp.task('copy', ['copy:components-raw', 'copy:baseElements-raw', 'copy:fonts']);
+gulp.task('copy', ['copy:components-raw', 'copy:baseElements-raw','copy:comp-js', 'copy:base-js', 'copy:fonts']);
 
 
 ///////////////////////////////
@@ -122,7 +148,7 @@ gulp.task('scripts', function () {
 // ASSEMBLE                  //
 ///////////////////////////////
 
-gulp.task('assemble', function(done) {
+gulp.task('assemble', ['copy'], function(done) {
   assemble({
     helpers: {
       markdown: require('helper-markdown'),
