@@ -4,12 +4,12 @@
 
   <a class="menu__header" href="/index.html">IBM Bluemix <br><span class="menu__header--bold">Design System</span></a>
 
-	<ul class="menu__main-nav">
+  <ul class="menu__main-nav">
 
-      <!-- Overview -->
-		<li class="main-nav__item">
-			<a href="index.html" class="item__heading">Overview</a>
-		</li>
+    <!-- Overview -->
+    <li class="main-nav__item">
+      <a href="/" class="item__heading">Overview</a>
+    </li>
 
     <!-- Guidelines -->
     <li class="main-nav__item">
@@ -17,7 +17,7 @@
         <ul class="item__sub-nav">
             {{#each views.guidelines.items}}
             <li class="sub-nav__item">
-                <a href="guidelines/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
+                <a href="guidelines/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -25,11 +25,11 @@
 
     <!-- Base Elements -->
     <li class="main-nav__item">
-        <a href="base-elements.html" class="item__heading">Base Elements</a>
+        <a class="item__heading">Base Elements</a>
         <ul class="item__sub-nav">
             {{#each materials.docs--base-elements.items}}
             <li class="sub-nav__item">
-                <a href="base-elements.html#{{@key}}" target="_blank" class="item__link">{{name}}</a>
+                <a href="../base-elements/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -37,11 +37,11 @@
 
     <!-- Components -->
     <li class="main-nav__item">
-        <a href="components.html" class="item__heading">Components</a>
+        <a class="item__heading">Components</a>
         <ul class="item__sub-nav">
             {{#each materials.docs--components.items}}
             <li class="sub-nav__item">
-                <a href="components.html#{{@key}}" target="_blank" class="item__link">{{name}}</a>
+                <a href="../components/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -49,15 +49,15 @@
 
     <!-- Templates -->
     <li class="main-nav__item">
-        <a href="templates.html" class="item__heading">Templates</a>
+        <a class="item__heading">Templates</a>
         <ul class="item__sub-nav">
             {{#each views.templates.items}}
             <li class="sub-nav__item">
-                <a href="templates/{{@key}}.html" target="_blank" class="item__link">{{name}}</a>
+                <a href="templates/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
     </li>
-	</ul>
+  </ul>
 
 </div>
