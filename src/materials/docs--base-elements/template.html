@@ -24,15 +24,36 @@ fabricator: true
 
 <div class="item__bg">
   <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
-  {{> card--app-raw}}
+  {{> floating-action-button-raw}}
 </div>
 
 {{#markdown}}
+<div class="snippet">
 
-```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+    <button class="snippet__btns--js">Javascript</button>
+  </div>
 
-<!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
-{{> button--danger-raw}}
+  <div class="snippet__html show-snippet">
 
-```
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+  {{> floating-action-button-raw}}
+
+  ```
+  </div>
+
+  <div class="snippet__js">
+
+  ```js <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> fab}}
+
+  ```
+  </div>
+
+</div>
+
 {{/markdown}}
