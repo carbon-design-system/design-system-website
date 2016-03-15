@@ -2,122 +2,54 @@
 fabricator: true
 ---
 
-<h1 id="buttons" class="item__main-heading">Buttons</h1>
+<div class="item__container">
 
-<p class="item__main-desc">Description about buttons in general.</p>
+  <h1 id="component-name" class="item__main-heading">Buttons</h1>
 
-<ul class="item__nav">
-  <li><a href="#primary">Primary Button</a></li>
-  <li><a href="#secondary">Secondary Button</a></li>
-  <li><a href="#danger">Danger Button</a></li>
-  <li><a href="#disabled">Disabled Button</a></li>
-  <li><a href="#button-with-icon">Button with Icon</a></li>
-</ul>
+  <p class="item__main-desc">Description about buttons.</p>
 
-<!-- PRIMARY -->
+  <ul class="item__nav">
+    <li><a href="#sub-section1">Sub Section 1</a></li>
+    <li><a href="#sub-section2">Sub Section 2</a></li>
+    <li><a href="#sub-section3">Sub Section 3</a></li>
+    <li><a href="#sub-section4">Sub Section 4</a></li>
+    <li><a href="#sub-section5">Sub Section 5</a></li>
+  </ul>
 
-<h2 id="primary" class="item__sub-heading">Primary Button</h2>
+  <!-- SUB SECTION 1 -->
 
-<p class="item__sub-desc">This is a primary button.</p>
+  <h2 id="primary" class="item__sub-heading">Sub Section 1</h2>
 
-<br>
+  <p class="item__sub-desc">This is text about sub section 1.</p>
 
-{{> button-raw}}
+  <br>
 
-{{#markdown}}
+  <div class="item__bg">
+    <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+    {{> button-raw}}
+  </div>
 
-  ```markup
+  {{#markdown}}
+  <div class="snippet">
 
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+    <button class="snippet__btns--js">Javascript</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
   {{> button-raw}}
 
   ```
 
-{{/markdown}}
+  </div>
 
-<!-- SECONDARY -->
+  </div>
 
-<h2 id="secondary" class="item__sub-heading">Secondary Button</h2>
+  {{/markdown}}
 
-<p class="item__sub-desc">This is a secondary button.</p>
-
-<br>
-
-{{> button--secondary-raw}}
-
-{{#markdown}}
-
-  ```markup
-
-  {{> button--secondary-raw}}
-
-  ```
-
-{{/markdown}}
-
-<!-- DANGER -->
-
-<h2 id="danger" class="item__sub-heading">Danger Button</h2>
-
-<p class="item__sub-desc">This is a danger button.</p>
-
-<br>
-
-{{> button--danger-raw}}
-
-{{#markdown}}
-
-  ```markup
-
-  {{> button--danger-raw}}
-
-  ```
-
-{{/markdown}}
-
-<!-- DISABLED -->
-
-<h2 id="disabled" class="item__sub-heading">Disabled Button</h2>
-
-<p class="item__sub-desc">This is a disabled button.</p>
-
-<br>
-
-{{> button--disabled-raw}}
-
-{{> button--secondary--disabled-raw}}
-
-{{> button--danger--disabled-raw}}
-
-{{#markdown}}
-
-  ```markup
-
-  {{> button--disabled-raw}}
-
-  {{> button--secondary--disabled-raw}}
-
-  {{> button--danger--disabled-raw}}
-
-  ```
-
-{{/markdown}}
-
-<!-- BUTTON WITH ICON -->
-
-<h2 id="button-with-icon" class="item__sub-heading">Button with icon</h2>
-
-<p class="item__sub-desc">This is a button with icon.</p>
-
-<br>
-
-{{> button--right-icon-raw}}
-
-{{#markdown}}
-
-```markup
-
-{{> button--right-icon-raw}}
-
-```
-
-{{/markdown}}
+</div>

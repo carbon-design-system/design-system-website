@@ -2,24 +2,54 @@
 fabricator: true
 ---
 
-<h1 id="checkbox" class="item__main-heading">Checkbox</h1>
+<div class="item__container">
 
-<p class="item__main-desc">Description about checkbox in general.</p>
+  <h1 id="component-name" class="item__main-heading">Checkbox</h1>
 
-<!-- PRIMARY -->
+  <p class="item__main-desc">Description about buttons.</p>
 
-<h2 id="primary" class="item__sub-heading">Checkbox</h2>
+  <ul class="item__nav">
+    <li><a href="#sub-section1">Sub Section 1</a></li>
+    <li><a href="#sub-section2">Sub Section 2</a></li>
+    <li><a href="#sub-section3">Sub Section 3</a></li>
+    <li><a href="#sub-section4">Sub Section 4</a></li>
+    <li><a href="#sub-section5">Sub Section 5</a></li>
+  </ul>
 
-<p class="item__sub-desc">This is a checkbox.</p>
+  <!-- SUB SECTION 1 -->
 
-<br>
+  <h2 id="primary" class="item__sub-heading">Sub Section 1</h2>
 
-{{> checkbox-raw}}
+  <p class="item__sub-desc">This is text about sub section 1.</p>
 
-{{#markdown}}
+  <br>
 
-```markup
+  <div class="item__bg">
+    <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+    {{> button-raw}}
+  </div>
 
-{{> checkbox-raw}}
+  {{#markdown}}
+  <div class="snippet">
 
-{{/markdown}}
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+    <button class="snippet__btns--js">Javascript</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+  {{> button-raw}}
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+</div>
