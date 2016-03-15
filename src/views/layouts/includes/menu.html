@@ -13,11 +13,11 @@
 
     <!-- Guidelines -->
     <li class="main-nav__item">
-        <a href="guidelines.html" class="item__heading">Guidelines</a>
+        <a class="item__heading">Guidelines</a>
         <ul class="item__sub-nav">
             {{#each views.guidelines.items}}
             <li class="sub-nav__item">
-                <a href="guidelines/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../guidelines/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -53,7 +53,7 @@
         <ul class="item__sub-nav">
             {{#each views.templates.items}}
             <li class="sub-nav__item">
-                <a href="templates/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../templates/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
