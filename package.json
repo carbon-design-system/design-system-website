@@ -11,7 +11,7 @@
     "prebuild": "gulp clean",
     "build": "gulp build",
     "predev": "npm run build",
-    "dev": "gulp serve --env=dev",
+    "dev": "nodemon server.js & gulp serve --env=dev",
     "test": "npm install && npm run build"
   },
   "repository": {

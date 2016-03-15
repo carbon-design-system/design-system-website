@@ -216,9 +216,7 @@ gulp.task('serve', function () {
   var reload = browserSync.reload;
 
   browserSync.init({
-    server: {
-      baseDir: config.dest
-    },
+    proxy: 'localhost:8080',
     notify: true,
     open: false,
     logPrefix: 'Bluemix Design System'
