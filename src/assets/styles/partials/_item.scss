@@ -2,6 +2,10 @@
 // Item group                //
 ///////////////////////////////
 
+.item__container {
+  padding: 4em;
+}
+
 .item-group {
   @include clearfix;
   width: 100%;
@@ -127,7 +131,7 @@
   pre {
     width: 100%;
     margin: 0;
-    padding-left: 0;
+    padding: 2em 2em 3em;
     background-color: $color__light-gray;
   }
 }

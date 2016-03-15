@@ -3,6 +3,7 @@ code,
 code[class*='language-'],
 pre[class*='language-'] {
   color: $code--black;
+  background: $color__snippet-bg;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -16,10 +17,10 @@ pre[class*='language-'] {
 }
 
 // code blocks
-pre[class*='language-'] {
+pre[class*='language-'],
+pre {
   overflow: auto;
   margin: 1em 0;
-  padding: 1.2em;
   border-radius: 3px;
   font-size: 85%;
 }

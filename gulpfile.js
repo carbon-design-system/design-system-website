@@ -105,7 +105,21 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(config.dest + '/assets/styles'));
 });
 
-gulp.task('copy', ['copy:components-raw', 'copy:baseElements-raw','copy:comp-js', 'copy:base-js', 'copy:fonts']);
+gulp.task('copy:base', function() {
+  var comps = 'src/materials/docs--base-elements/*.html';
+
+  return gulp.src(comps)
+    .pipe(gulp.dest('src/views/base-elements'))
+});
+
+gulp.task('copy:comps', function() {
+  var comps = 'src/materials/docs--components/*.html';
+
+  return gulp.src(comps)
+    .pipe(gulp.dest('src/views/components'))
+});
+
+gulp.task('copy', ['copy:components-raw', 'copy:baseElements-raw','copy:comp-js', 'copy:base-js', 'copy:fonts', 'copy:base', 'copy:comps']);
 
 
 ///////////////////////////////

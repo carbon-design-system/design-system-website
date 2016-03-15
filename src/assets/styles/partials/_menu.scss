@@ -3,7 +3,7 @@
   @extend %font-smoothing;
   font-size: rem(14px);
   background-color: $color__menu-bg;
-  min-width: em(200px);
+  min-width: $width__menu;
   height: 100%;
   z-index: 1;
   overflow-x: hidden;
@@ -39,6 +39,7 @@
     padding: 1.5em 0;
 
     .item__heading {
+      cursor: pointer;
       color: $color__text--light;
       text-transform: uppercase;
       text-decoration: none;
