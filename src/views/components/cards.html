@@ -1,14 +1,12 @@
 ---
 fabricator: true
-name: buttons
-description: this is a description about buttons
 ---
 
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <h1 id="component-name" class="item__main-heading">Cards</h1>
 
-  <p class="item__main-desc">{{description}}</p>
+  <p class="item__main-desc">Description about cards.</p>
 
   <ul class="item__nav">
     <li><a href="#sub-section1">Sub Section 1</a></li>
@@ -28,7 +26,7 @@ description: this is a description about buttons
 
   <div class="item__bg">
     <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
-    {{> button}}
+    {{> card}}
   </div>
 
   {{#markdown}}
@@ -44,7 +42,7 @@ description: this is a description about buttons
   ```markup <!--Very important to have an empty line between this line and the code snippet -->
 
   <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
-  {{> button}}
+  {{> card}}
 
   ```
 

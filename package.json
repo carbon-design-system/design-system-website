@@ -39,6 +39,7 @@
     "handlebars-helpers": "^0.5.8",
     "markdown-it": "^4.1.0",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
+    "merge-stream": "1.0.0",
     "string": "^3.3.0",
     "webpack": "1.12.14"
   },

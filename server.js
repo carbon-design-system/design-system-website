@@ -20,11 +20,13 @@ app.get('/', (req, res) => {
 });
 
 app.get('/base-elements', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/base-elements.html'));
+  // res.sendFile(path.join(__dirname + '/dist/base-elements.html'));
+  res.redirect('buttons.html');
 });
 
 app.get('/components', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/components.html'));
+  // res.sendFile(path.join(__dirname + '/dist/components.html'));
+  res.redirect('cards.html');
 });
 
 app.get('/guidelines', (req, res) => {
