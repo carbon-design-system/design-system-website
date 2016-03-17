@@ -1,7 +1,7 @@
 ---
 fabricator: true
 name: buttons
-description: this is a description about buttons
+description: Buttons use text and/or an icon to express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
 ---
 
 <div class="item__container">
@@ -11,23 +11,27 @@ description: this is a description about buttons
   <p class="item__main-desc">{{description}}</p>
 
   <ul class="item__nav">
-    <li><a href="#sub-section1">Sub Section 1</a></li>
-    <li><a href="#sub-section2">Sub Section 2</a></li>
-    <li><a href="#sub-section3">Sub Section 3</a></li>
-    <li><a href="#sub-section4">Sub Section 4</a></li>
-    <li><a href="#sub-section5">Sub Section 5</a></li>
+    <li><a href="#primary">Primary Buttons</a></li>
+    <li><a href="#secondary">Secondary Buttons</a></li>
+    <li><a href="#sets-of-buttons">Sets of Buttons</a></li>
+    <li><a href="#buttons-with-icons">Buttons with right icon</a></li>
+    <li><a href="#inline-buttons">Inline Buttons</a></li>
+    <li><a href="#disabled">Disabled Buttons</a></li>
+    <li><a href="#danger">Danger Buttons</a></li>
   </ul>
 
-  <!-- SUB SECTION 1 -->
+  <!-- PRIMARY BUTTONS -->
 
-  <h2 id="primary" class="item__sub-heading">Sub Section 1</h2>
+  <section class="item-section" id="primary">
 
-  <p class="item__sub-desc">This is text about sub section 1.</p>
+  <h2 class="item-section__heading">Primary Buttons</h2>
+
+  <p class="item-section__desc">Primary buttons should be used for the principal call to action on the page.
+    What is the most important action your user should take? Primary buttons should be three words or less.</p>
 
   <br>
 
-  <div class="item__bg">
-    <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+  <div class="item-section__example">
     {{> button}}
   </div>
 
@@ -36,14 +40,94 @@ description: this is a description about buttons
 
   <div class="snippet__btns">
     <button class="snippet__btns--html active-btn">HTML</button>
-    <button class="snippet__btns--js">Javascript</button>
   </div>
 
   <div class="snippet__html show-snippet">
 
   ```markup <!--Very important to have an empty line between this line and the code snippet -->
 
-  <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+  {{> button}}
+
+  ```
+
+  </div>
+
+  {{/markdown}}
+
+  </div>
+
+  </section>
+
+
+  <!-- SECONDARY BUTTONS -->
+
+  <section class="item-section" id="secondary">
+
+  <h2 class="item-section__heading">Secondary Buttons</h2>
+
+  <p class="item-section__desc">Secondary buttons will be used for secondary actions on each page. Secondary buttons should be three words or less.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    {{> button--secondary}}
+  </div>
+
+  {{#markdown}}
+
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> button--secondary}}
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+  </section>
+
+  <!-- SETS OF BUTTONS -->
+
+  <section class="item-section" id="sets-of-buttons">
+
+  <h2 class="item-section__heading">Sets of Buttons</h2>
+
+  <p class="item-section__desc">Sets of buttons are used when action required by the user may have more than one option.
+    Always use a positive action button paired with a negative action button.
+    Positive action buttons should be presented on the right. Negative action buttons will be on the left.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    {{> button--secondary}}
+    {{> button}}
+  </div>
+
+  {{#markdown}}
+
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> button--secondary}}
+
   {{> button}}
 
   ```
@@ -53,5 +137,161 @@ description: this is a description about buttons
   </div>
 
   {{/markdown}}
+
+  </section>
+
+
+  <!-- BUTTON WITH ICONS -->
+
+  <section class="item-section" id="buttons-with-icons">
+
+  <h2 class="item-section__heading">Button with icons</h2>
+
+  <p class="item-section__desc">This is text about buttons with right icons.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    {{> button--right-icon}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> button--right-icon}}
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+  </section>
+
+  <!-- INLINE BUTTONS -->
+
+  <section class="item-section" id="inline-buttons">
+
+  <h2 class="item-section__heading">Inline Buttons</h2>
+
+  <p class="item-section__desc">Inline buttons can be used when the action is directly related to the context of a form or text box. They should be one word only.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    Need example here
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  Need example here
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+  </section>
+
+
+  <!-- DISABLED BUTTONS -->
+
+  <section class="item-section" id="disabled">
+
+  <h2 class="item-section__heading">Disabled Buttons</h2>
+
+  <p class="item-section__desc">This is text about disabled buttons.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    {{> button--disabled}}
+    {{> button--secondary--disabled}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> button--disabled}}
+
+  {{> button--secondary--disabled}}
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+  </section>
+
+
+  <!-- DANGER BUTTONS -->
+
+  <section class="item-section" id="danger">
+
+  <h2 class="item-section__heading">Danger Button</h2>
+
+  <p class="item-section__desc">This is text about danger buttons.</p>
+
+  <br>
+
+  <div class="item-section__example">
+    {{> button--danger}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> button--danger}}
+
+  ```
+
+  </div>
+
+  </div>
+
+  {{/markdown}}
+
+  </section>
 
 </div>

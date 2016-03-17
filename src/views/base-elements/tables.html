@@ -1,0 +1,147 @@
+---
+fabricator: true
+name: tables
+description: Tables are used to present raw data sets. Their main purpose is to lend meaning to a set of data, while still making the data readable, scannable, and easily comparable.
+---
+
+<div class="item__container">
+
+  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+
+  <p class="item__main-desc">{{description}}</p>
+
+  <!-- FOUNDATION -->
+
+  <section class="item-section">
+
+  <h2 class="item-section__heading">Foundation</h2>
+
+  <div class="item-section__example">
+    {{> table}}
+    <br>
+    {{> table--detail}}
+    <br>
+    {{> table--list-view}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> table}}
+
+
+  {{> table--detail}}
+
+
+  {{> table--list-view}}
+
+  ```
+
+  </div>
+
+  {{/markdown}}
+
+  </div>
+
+  </section>
+
+
+  <!-- GUIDELINES -->
+
+  <section class="item-section" id="guidelines">
+
+  <h2 class="item-section__heading">Guidelines</h2>
+
+  <h3 class="item-section__sub-heading">Structure</h3>
+
+  <ul class="item-section__list">
+    <li>
+      <h4>Header Row</h4>
+      <p class="item-section__desc">
+        Headers guide users to the data that is presented below.
+        Use meaningful text to label the table data and provide clarity to the data below.
+        If necessary, use footnotes to clarify more detailed or technical information that would otherwise clutter the table.
+        Headers should be fixed on scroll if the table is longer than the viewport size.
+      </p>
+    </li>
+    <li>
+      <h4>Number of Columns</h4>
+      <p class="item-section__desc">
+        For large sets of data, it is preferred to use rows rather than columns, to guide the eye across the page.
+        Readers can scan quickly down a single row, but find it harder to scan across many columns to relate connected data.
+      </p>
+    </li>
+    <li>
+      <h4>Minimal</h4>
+      <p class="item-section__desc">
+        By following a minimal design structure of your table, it allows the user to focus on the content without any visual distractions.
+        Use clean, subtle grid lines along with a simple font/color style that contrasts nicely with the background.
+      </p>
+    </li>
+    <li>
+      <h4>Zebra Stripes</h4>
+      <p class="item-section__desc">
+        Alternating colors on rows increases readability, and helps the guide the users through the data in the table.
+      </p>
+    </li>
+  </ul>
+
+  <br>
+
+  <h3 class="item-section__sub-heading">Interactions</h3>
+
+  <ul class="item-section__list">
+    <li>
+      <h4>Filters/Sorting</h4>
+      <p class="item-section__desc">
+        Usability of your table will be greatly improved by making data sortable.
+        Sorting can be helpful when users are looking to compare adjacent information.
+        By making header labels clickable, it allows the user to easily filter the data to their liking.
+      </p>
+    </li>
+    <li>
+      <h4>Expandable Rows</h4>
+      <p class="item-section__desc">
+         Expanable rows allow for minimal information to be shown at a high level, and a more detailed description/action set hidden within the overflow of the row.
+      </p>
+    </li>
+    <li>
+      <h4>Editing</h4>
+      <ul class="list--unordered item-section__desc--list">
+        <li>Form Fields & inline editing</li>
+        <li>Error/success messages</li>
+      </ul>
+    </li>
+    <li>
+      <h4>Inline Actions</h4>
+      <ul class="list--unordered item-section__desc--list">
+        <li>Buttons</li>
+        <li>Confirmation</li>
+        <li>Links</li>
+      </ul>
+    </li>
+    <li>
+      <h4>Batch Actions</h4>
+      <ul class="list--unordered item-section__desc--list">
+        <li>Add</li>
+        <li>Delete</li>
+      </ul>
+    </li>
+    <li>
+      <h4>Continuous Scroll</h4>
+      <p class="item-section__desc">
+        Continuous scroll is used when presenting large amounts of data sets.
+        Instead of directing a user to a different page that contains additional content, a simple, "View More" link that loads more data is appropriate.
+      </p>
+    </li>
+  </ul>
+
+  </section>

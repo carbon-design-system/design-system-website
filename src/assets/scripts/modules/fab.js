@@ -1,5 +1,3 @@
-import eventMatches from '../../global/js/event-matches';
-
 export default class FabButton {
   constructor(element) {
     if (!element || element.nodeType !== Node.ELEMENT_NODE) {
@@ -13,10 +11,10 @@ export default class FabButton {
   }
 
   toggle(event) {
-    if (this.element.tagName === 'A') {
+    if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
       event.preventDefault();
     }
-    this.element.classList.toggle('is-closed');
+    this.element.classList.toggle('fab--close');
   }
 
   release() {
@@ -29,10 +27,3 @@ export default class FabButton {
 }
 
 FabButton.components = new WeakMap();
-
-document.addEventListener('click', (event) => {
-  const element = eventMatches(event, '[data-fab]');
-  if (element && !FabButton.components.has(element)) {
-    new FabButton(element).toggle(event);
-  }
-});

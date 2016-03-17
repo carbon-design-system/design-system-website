@@ -42,7 +42,7 @@ export default class HeaderNav {
     } else {
       return;
     }
-    if (event.currentTarget.tagName === 'A') {
+    if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
       event.preventDefault();
     }
 
@@ -122,6 +122,9 @@ export default class HeaderNav {
 
     ['keydown', 'click'].forEach((name) => {
       element.addEventListener(name, (event) => {
+        if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
+          event.preventDefault();
+        }
         navs.forEach((nav) => nav.toggleNav(event));
       });
     });
