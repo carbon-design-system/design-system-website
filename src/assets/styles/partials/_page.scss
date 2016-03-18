@@ -1,3 +1,12 @@
+.page__container {
+  padding: 4em;
+}
+
+.page__heading {
+  font-size: 2.5rem;
+  color: $color__text--dark;
+}
+
 .page__header {
   background-color: $color__section-bg;
   margin: 0;
@@ -40,8 +49,4 @@
     margin-right: .5em;
     text-decoration: none;
   }
-}
-
-.page-container {
-  padding: 2em;
 }
