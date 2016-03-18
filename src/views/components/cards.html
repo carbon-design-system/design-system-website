@@ -1,32 +1,33 @@
 ---
 fabricator: true
+name: cards
+description: Description about cards.
 ---
 
 <div class="item__container">
 
-  <h1 id="component-name" class="item__main-heading">Cards</h1>
+  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
 
-  <p class="item__main-desc">Description about cards.</p>
+  <p class="item__main-desc">{{description}}</p>
 
-  <ul class="item__nav">
-    <li><a href="#sub-section1">Sub Section 1</a></li>
-    <li><a href="#sub-section2">Sub Section 2</a></li>
-    <li><a href="#sub-section3">Sub Section 3</a></li>
-    <li><a href="#sub-section4">Sub Section 4</a></li>
-    <li><a href="#sub-section5">Sub Section 5</a></li>
-  </ul>
+  <!-- FOUNDATION -->
 
-  <!-- SUB SECTION 1 -->
+  <section class="item-section">
 
-  <h2 id="primary" class="item__sub-heading">Sub Section 1</h2>
+  <h2 class="item-section__heading">Foundation</h2>
 
-  <p class="item__sub-desc">This is text about sub section 1.</p>
-
-  <br>
-
-  <div class="item__bg">
-    <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
+  <div class="item-section__example">
     {{> card}}
+    <br>
+    {{> card--app}}
+    <br>
+    {{> card--container}}
+    <br>
+    {{> card--quota}}
+    <br>
+    {{> card--service}}
+    <br>
+    {{> card--virtual-server}}
   </div>
 
   {{#markdown}}
@@ -34,22 +35,35 @@ fabricator: true
 
   <div class="snippet__btns">
     <button class="snippet__btns--html active-btn">HTML</button>
-    <button class="snippet__btns--js">Javascript</button>
   </div>
 
   <div class="snippet__html show-snippet">
 
   ```markup <!--Very important to have an empty line between this line and the code snippet -->
 
-  <!-- Add the component/base-element partial found in 'materials/raw/**/*-raw.html' -->
   {{> card}}
+
+
+  {{> card--app}}
+
+
+  {{> card--container}}
+
+
+  {{> card--quota}}
+
+
+  {{> card--service}}
+
+  
+  {{> card--virtual-server}}
 
   ```
 
   </div>
 
-  </div>
-
   {{/markdown}}
 
-</div>
+  </div>
+
+  </section>

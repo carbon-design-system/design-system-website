@@ -69,7 +69,14 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(config.dest + '/assets/styles'));
 });
 
-gulp.task('copy', ['copy:materials', 'copy:js', 'copy:fonts']);
+gulp.task('copy:images', function() {
+  var images = 'src/assets/images/*.*';
+
+  return gulp.src(images)
+    .pipe(gulp.dest(config.dest + '/assets/images'));
+});
+
+gulp.task('copy', ['copy:materials', 'copy:js', 'copy:fonts', 'copy:images']);
 
 
 ///////////////////////////////
