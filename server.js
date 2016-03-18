@@ -30,7 +30,7 @@ app.get('/components', (req, res) => {
 });
 
 app.get('/guidelines', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/guidelines.html'));
+  res.redirect('front-end-best-practices.html');
 });
 
 app.get('/templates', (req, res) => {
