@@ -15,7 +15,7 @@ export default class Toolbars {
   handleActionClick(event) {
     const searchActionNode = event.currentTarget;
 
-    if (searchActionNode.tagName === 'A') {
+    if (searchActionNode.tagName === 'A' || searchActionNode.querySelector('a')) {
       event.preventDefault();
     }
 

@@ -1,53 +1,27 @@
 ///////////////////////////////
-// Item group                //
+// Item                      //
 ///////////////////////////////
 
-.item__container {
-  padding: 4em;
-}
+// Styles for an item (single Components and Base Elements)
 
-.item-group {
-  @include clearfix;
-  width: 100%;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 4em;
-
-  &:last-child {
-    border-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  & ~ & {
-    margin-top: 0;
-  }
-
-  & > & {
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 0;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-  }
-}
-
-// Styles for single Components and Base Elements
 .item {
   @include clearfix;
   color: $color__dark-blue;
   padding: 0 2em 0 0;
   width: 100%;
 
+  &__container {
+    padding: 4em;
+  }
+
   &__main-heading {
     font-size: 2.5rem;
+    color: $color__text--dark;
+  }
+
+  &__main-desc {
+    padding-bottom: 1.5em;
+    color: $color__text--dark;
   }
 
   &__nav {
@@ -56,7 +30,7 @@
     padding-left: 1em;
 
     li {
-        padding: .2em 0;
+      padding: .2em 0;
 
       a {
         color: $color__blue-40;
@@ -65,31 +39,48 @@
       }
     }
   }
+}
 
-  &__sub-heading {
+// Styles for variations within an item
+
+.item-section {
+  padding: 0 0 4em;
+  border-bottom: 1px solid $color__section-border;
+
+  &__heading {
     font-size: rem(30px);
+    color: $color__text--dark;
   }
 
-  hr {
-    margin: 1em 0 2em;
+  &__sub-heading {
+    font-size: rem(24px);
+    color: $color__text--dark;
+    padding: .5em 0;
+  }
+
+  &__desc {
+    line-height: 1.5;
+    padding-bottom: 1em;
+    color: $color__text--dark;
+
+    &--list {
+      list-style: disc;
+      color: $color__text--dark;
+    }
   }
 
   &__example {
-    padding: 1em 0;
-  }
-
-  &__sub-desc {
-    line-height: 1.5;
-    padding-bottom: 1em;
-  }
-
-  &__main-desc {
-    padding-bottom: 1.5em;
-  }
-
-  &__bg {
     padding: 2em;
     background-color: $color__item-preview-bg;
+  }
+
+  &__list {
+    color: $color__text--dark;
+
+    h4 {
+      font-size: rem(18px);
+      padding: 1em 0 .5em;
+    }
   }
 }
 

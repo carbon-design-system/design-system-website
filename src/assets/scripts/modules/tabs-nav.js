@@ -42,6 +42,9 @@ export default class Tab {
   }
 
   handleItemClick(event) {
+    if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
+      event.preventDefault();
+    }
     this.setActive(event);
     this.updateMenuState();
     this.updateTriggerText(event.currentTarget);

@@ -1,0 +1,84 @@
+---
+fabricator: true
+name: links
+description: Links are used primarily as a navigational element. Links may also change what or how data is displayed (view more, show all). If the action taken by the user will change or manipulate data, use a button.
+---
+
+<div class="item__container">
+
+  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+
+  <p class="item__main-desc">{{description}}</p>
+
+  <!-- FOUNDATION -->
+
+  <section class="item-section">
+
+  <h2 class="item-section__heading">Foundation</h2>
+
+  <div class="item-section__example">
+    {{> link}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> link}}
+
+  ```
+
+  </div>
+
+  {{/markdown}}
+
+  </div>
+
+  </section>
+
+  <!-- GUIDELINES -->
+
+  <section class="item-section" id="guidelines">
+
+  <h2 class="item-section__heading">Guidelines</h2>
+
+  <h3 class="item-section__sub-heading">Text</h3>
+
+  <p class="item-section__desc"></p>
+
+  <ul class="item-section__desc--list list--unordered">
+    <li>Using text for links is recommended rather than graphics or icons</li>
+    <li>Text should be consistent with the title of the intented destination</li>
+    <li>Use caution with links that are several words. It is recommended that links are long enough to be understood by the user, but short enough to prevent text wrapping</li>
+  </ul>
+
+  <br>
+
+  <h3 class="item-section__sub-heading">Visual styling</h3>
+
+  <ul class="item-section__desc--list list--unordered">
+    <li>Use consistent visual clickablility cues for links, such as underline, text color, or arrows</li>
+    <li>As a general rule, colors used for link text should be reserved for links</li>
+    <li>All static text should be a color that is different from the link</li>
+  </ul>
+
+  </section>
+
+  <!-- STATES -->
+
+  <section class="item-section" id="states">
+
+  <h2 class="item-section__heading">States</h2>
+
+  <h3 class="item-section__sub-heading">Hover</h3>
+
+  <p class="item-section__desc">When the user hovers over a link, a hand cursor should appear.</p>
+
+  </section>
