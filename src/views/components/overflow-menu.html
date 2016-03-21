@@ -1,0 +1,44 @@
+---
+fabricator: true
+name: overflow menu
+description: Description about overflow menu.
+---
+
+<div class="item__container">
+
+  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+
+  <p class="item__main-desc">{{description}}</p>
+
+  <!-- FOUNDATION -->
+
+  <section class="item-section">
+
+  <h2 class="item-section__heading">Foundation</h2>
+
+  <div class="item-section__example">
+    {{> overflow-menu}}
+  </div>
+
+  {{#markdown}}
+  <div class="snippet">
+
+  <div class="snippet__btns">
+    <button class="snippet__btns--html active-btn">HTML</button>
+  </div>
+
+  <div class="snippet__html show-snippet">
+
+  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+
+  {{> overflow-menu}}
+
+  ```
+
+  </div>
+
+  {{/markdown}}
+
+  </div>
+
+  </section>
