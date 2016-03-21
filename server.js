@@ -34,7 +34,7 @@ app.get('/guidelines', (req, res) => {
 });
 
 app.get('/templates', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/templates.html'));
+  res.redirect('add-menu.html');
 });
 
 app.listen(port, () => {
