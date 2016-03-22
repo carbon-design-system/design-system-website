@@ -1,13 +1,12 @@
-<!-- service card -->
 <div class="card">
 
-  <!-- card overview -->
   <div class="card__card-overview">
 
-    <!-- about the service -->
     <div class="card-overview__about">
       <div class="about__icon">
-        <img src="../../images/service-icon-example.png" class="about__icon--img" />
+        <svg class="about__icon--img">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--default"></use>
+        </svg>
       </div>
       <div class="about__title">
         <h3 class="about__title--name">Service Name 1</h3>
@@ -16,35 +15,25 @@
       </div>
     </div>
 
-    <!-- overflow menu begins -->
     <div data-overflow-menu class="overflow-menu">
-      <div class="overflow-menu__icon"></div>
+      <svg class="overflow-menu__icon">
+        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#app-actions--overflow_menu_icon"></use>
+      </svg>
       <ul class="overflow-menu__options">
-        <li>
-          <button type="button" class="overflow-menu__btn">Option 1</button>
-        </li>
-        <li>
-          <button type="button" class="overflow-menu__btn">Option 2</button>
-        </li>
-        <li>
-          <button type="button" class="overflow-menu__btn">Option 3</button>
-        </li>
-        <li>
-          <button type="button" class="overflow-menu__btn">Option 4</button>
-        </li>
+        <li><button type="button" class="overflow-menu__btn">Stop App</button></li>
+        <li><button type="button" class="overflow-menu__btn">Restart App</button></li>
+        <li><button type="button" class="overflow-menu__btn">Restart App</button></li>
+        <li><button type="button" class="overflow-menu__btn">Edit Routes and Access</button></li>
         <hr/>
-        <li>
-          <button type="button" class="overflow-menu__btn" data-state="delete">Option 5</button>
-        </li>
+        <li><button type="button" class="overflow-menu__btn" data-state="delete">Delete App</button></li>
       </ul>
     </div>
-    <!-- overflow menu ends -->
 
   </div>
 
-  <!-- card footer begins -->
   <div class="card__card-footer">
     <button class="card-footer__credentials-button">View Credentials</button>
     <a href="#" class="card-footer__docs-link">Docs</a>
   </div>
+  
 </div>

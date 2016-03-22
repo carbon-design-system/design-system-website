@@ -56,12 +56,6 @@ gulp.task('copy:materials', function() {
   return merge(baseElements, components);
 });
 
-gulp.task('copy:js', function() {
-  return gulp.src([`${path}/base-elements/**/*.js`, `${path}/components/**/*.js`])
-    .pipe(rename({ dirname: '' }))
-    .pipe(gulp.dest('src/assets/scripts/modules'));
-})
-
 gulp.task('copy:fonts', function() {
   var fonts = 'src/assets/fonts/*.{woff,woff2}';
 
@@ -69,14 +63,7 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(config.dest + '/assets/styles'));
 });
 
-gulp.task('copy:images', function() {
-  var images = 'src/assets/images/*.*';
-
-  return gulp.src(images)
-    .pipe(gulp.dest(config.dest + '/assets/images'));
-});
-
-gulp.task('copy', ['copy:materials', 'copy:js', 'copy:fonts', 'copy:images']);
+gulp.task('copy', ['copy:materials', 'copy:fonts']);
 
 
 ///////////////////////////////
