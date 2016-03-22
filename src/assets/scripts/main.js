@@ -27,13 +27,12 @@ import Modal from '../../../bower_components/bluemix-components/components/modal
 import OverflowMenu from '../../../bower_components/bluemix-components/components/overflow-menu/overflow-menu';
 import Tab from '../../../bower_components/bluemix-components/components/tabs-nav/tabs-nav';
 
-
-
 ////////////////////////////////////////////////////////////////////////
 // Site
 // -------------
 // Import specific scripts for controlling website behavior
 import { openItemHeadings } from './site/menu';
+import { tabsNavigation } from './site/tabs';
 // import snippets stuff here
 
 document.addEventListener('DOMContentLoaded', function(e) {
@@ -53,4 +52,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
   });
 
   openItemHeadings();
+  tabsNavigation();
 });

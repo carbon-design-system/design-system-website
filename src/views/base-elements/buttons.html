@@ -1,27 +1,37 @@
 ---
 fabricator: true
 name: buttons
-description: Buttons use text and/or an icon to express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
+category: base elements
 ---
 
+<!-- Item header -->
+<div class="item__header">
+  <div class="item__info">
+    <p class="item__category">{{category}}</p>
+    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  </div>
+  <ul class="item__tabs">
+    <li class="toggle-view--foundation is-selected">Foundation</li>
+    <li class="toggle-view--usage">Usage</li>
+    <li class="toggle-view--style">Style</li>
+  </ul>
+</div>
+<!-- Item header ends -->
+
+<!-- Item main container -->
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <!-- View: Foundation -->
+  <div class="view--foundation is-active">
 
-  <p class="item__main-desc">{{description}}</p>
+    <p class="item__main-desc">
+      <span class="highlight">{{capitalize name}}</span> use text and/or an icon to express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
+    </p>
 
-  <ul class="item__nav">
-    <li><a href="#primary">Primary Buttons</a></li>
-    <li><a href="#secondary">Secondary Buttons</a></li>
-    <li><a href="#sets-of-buttons">Sets of Buttons</a></li>
-    <li><a href="#buttons-with-icons">Buttons with right icon</a></li>
-    <li><a href="#inline-buttons">Inline Buttons</a></li>
-    <li><a href="#disabled">Disabled Buttons</a></li>
-    <li><a href="#danger">Danger Buttons</a></li>
-  </ul>
+  <h2 class="item-section__main-heading">Variations</h2>
+
 
   <!-- PRIMARY BUTTONS -->
-
   <section class="item-section" id="primary">
 
   <h2 class="item-section__heading">Primary Buttons</h2>
@@ -294,4 +304,20 @@ description: Buttons use text and/or an icon to express what action will occur w
 
   </section>
 
+  </div>
+  <!-- View: Foundation ends -->
+
+  <!-- View: Usage -->
+  <div class="view--usage">
+    <h1 class="item-section__heading">Usage</h1>
+  </div>
+  <!-- View: Usage ends -->
+
+  <!-- View: Usage -->
+  <div class="view--style">
+    <h1 class="item-section__heading">Style</h1>
+  </div>
+  <!-- View: Usage ends -->
+
 </div>
+<!-- Item main container ends -->
