@@ -44,6 +44,7 @@
 
   &__main-heading {
     @extend %font-smoothing;
+    @extend %type-constrain;
     font-size: rem(64px);
     color: $color__white;
     padding-top: .2em;
@@ -88,9 +89,11 @@
   }
 
   &__main-desc {
+    @extend %type-constrain;
     padding-bottom: 1.5em;
     color: $color__text--dark;
     font-weight: 600;
+    font-size: 1em;
     line-height: 1.5;
     font-size: rem(18px);
 
@@ -104,11 +107,35 @@
 
 .item-section {
   padding: 0 0 4em;
-  border-bottom: 1px solid $color__section-border;
+
+  &__main-heading {
+    @extend %font-smoothing;
+    color: $color__blue-30;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    margin: .5em 0 1.5em;
+  }
 
   &__heading {
-    font-size: rem(30px);
-    color: $color__text--dark;
+    @extend %font-smoothing;
+    font-size: rem(24px);
+    font-weight: 600;
+    color: $color__blue-30;
+    font-size: 1.5em;
+    position: relative;
+
+    &:before {
+      content: '';
+      width: 3em;
+      height: .2em;
+      display: block;
+      background-color: currentColor;
+      position: absolute;
+      top: -.5em;
+      left: 0;
+    }
   }
 
   &__sub-heading {
@@ -118,6 +145,8 @@
   }
 
   &__desc {
+    @extend %type-constrain;
+    font-size: 1em;
     line-height: 1.5;
     padding-bottom: 1em;
     color: $color__text--dark;
