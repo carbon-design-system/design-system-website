@@ -3,19 +3,20 @@
 ///////////////////////////////
 // MODULES                   //
 ///////////////////////////////
-var assemble = require('fabricator-assemble');
-var browserSync = require('browser-sync').create();
-var csso = require('gulp-csso');
-var del = require('del');
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var gulpif = require('gulp-if');
-var imagemin = require('gulp-imagemin');
-var prefix = require('gulp-autoprefixer');
-var rename = require('gulp-rename');
-var sass = require('gulp-sass');
-var webpack = require('webpack');
-var merge = require('merge-stream');
+const assemble = require('fabricator-assemble');
+const browserSync = require('browser-sync').create();
+const csso = require('gulp-csso');
+const del = require('del');
+const gulp = require('gulp');
+const gutil = require('gulp-util');
+const gulpif = require('gulp-if');
+const imagemin = require('gulp-imagemin');
+const prefix = require('gulp-autoprefixer');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass');
+const webpack = require('webpack');
+const merge = require('merge-stream');
+const path = require('path');
 
 
 ///////////////////////////////
@@ -25,45 +26,49 @@ var merge = require('merge-stream');
 // Set env with --env=$env flag
 // like this: gulp serve --env=dev
 // Source: http://ypereirareis.github.io/blog/2015/10/13/gulp-gulpfile-environment-variable/
-var env = gutil.env.env || undefined;
+const env = gutil.env.env || undefined;
 
-var config = {
+const config = {
+  bower: 'bower_components/bluemix-components',
   src: {
+    images: 'src/assets/images/*.*',
+    fonts: 'src/assets/fonts/*.{woff,woff2}',
     scripts: 'src/assets/scripts/*.js',
-    styles: {
-      main: 'src/assets/styles/main.scss',
-    },
+    styles: 'src/assets/styles/main.scss',
     views: 'src/views/*.html'
   },
   dest: 'dist'
 };
 
+///////////////////////////////
+// CLEAN                     //
+///////////////////////////////
+
+gulp.task('clean', function () {
+  return del(config.dest);
+});
+
 
 ///////////////////////////////
 // COPY                      //
 ///////////////////////////////
-const path = 'bower_components/bluemix-components';
 
-gulp.task('copy:materials', function() {
-  var baseElements = gulp.src(`${path}/base-elements/**/*html`)
-    .pipe(rename({ dirname: ''}))
-    .pipe(gulp.dest('src/materials/base-elements'));
+function copy(glob, dest) {
+  return gulp.src(glob)
+    .pipe(rename({ dirname: '' }))
+    .pipe(gulp.dest(dest));
+}
 
-  var components = gulp.src(`${path}/components/**/*html`)
-    .pipe(rename({ dirname: ''}))
-    .pipe(gulp.dest('src/materials/components'));
+gulp.task('copy', function() {
+  // Copy HTML for base-elements and components into src/materials for use as
+  // live code examples and snippets
+  const materials = 'src/materials';
+  copy(`${config.bower}/base-elements/**/*html`, `${materials}/base-elements`);
+  copy(`${config.bower}/components/**/*html`, `${materials}/components`);
 
-  return merge(baseElements, components);
+  // Copy font files from src to dist
+  copy(config.src.fonts, `${config.dest}/assets/styles`);
 });
-
-gulp.task('copy:fonts', function() {
-  var fonts = 'src/assets/fonts/*.{woff,woff2}';
-
-  return gulp.src(fonts)
-    .pipe(gulp.dest(config.dest + '/assets/styles'));
-});
-
-gulp.task('copy', ['copy:materials', 'copy:fonts']);
 
 
 ///////////////////////////////
@@ -71,7 +76,7 @@ gulp.task('copy', ['copy:materials', 'copy:fonts']);
 ///////////////////////////////
 
 gulp.task('styles', function () {
-  return gulp.src(config.src.styles.main)
+  return gulp.src(config.src.styles)
     .pipe(sass({
       errLogToConsole: true
     }))
@@ -80,7 +85,7 @@ gulp.task('styles', function () {
     }))
     .pipe(gulpif(env !== 'dev', csso()))
     .pipe(rename('main.css'))
-    .pipe(gulp.dest(config.dest + '/assets/styles'))
+    .pipe(gulp.dest(`${config.dest}/assets/styles`))
     .pipe(gulpif(env === 'dev', browserSync.stream()));
 });
 
@@ -94,15 +99,17 @@ gulp.task('scripts', function (cb) {
     devtool: 'source-maps',
     entry: './src/assets/scripts/main.js',
     output: {
-      path: config.dest + '/assets/scripts',
+      path: `${config.dest}/assets/scripts`,
       filename: 'bundle.js'
     },
     module: {
       loaders: [
         {
           test: /\.js$/,
-          exclude: [/node_modules/, /bower_components/],
-          loaders: ['babel-loader']
+          loader: 'babel-loader',
+          query: {
+            presets: ['es2015']
+          }
         }
       ]
     }
@@ -138,6 +145,9 @@ gulp.task('assemble', function() {
       capitalize: function() {
         return this.name.charAt(0).toUpperCase() + this.name.slice(1);
       },
+      dasherize: function() {
+        return this.name.trim().replace(/([A-Z])/g, '-$1').replace(/[-_\s]+/g, '-').toLowerCase();
+      },
       markdown: require('helper-markdown'),
       decode: function (val) {
         return decodeURIComponent(val);
@@ -153,15 +163,6 @@ gulp.task('assemble', function() {
 
 
 ///////////////////////////////
-// CLEAN                     //
-///////////////////////////////
-
-gulp.task('clean', function (cb) {
-  return del([config.dest]);
-});
-
-
-///////////////////////////////
 // BUILD                     //
 ///////////////////////////////
 
@@ -173,17 +174,16 @@ gulp.task('build', ['copy', 'styles', 'scripts', 'assemble']);
 
 gulp.task('serve', function () {
 
-  var reload = browserSync.reload;
+  const reload = browserSync.reload;
 
   browserSync.init({
-    proxy: 'localhost:8080',
+    proxy: 'localhost:3333',
     notify: true,
     open: false,
     logPrefix: 'Bluemix Design System'
   });
 
   gulp.watch('src/**/*.{html,md,json,yml}', ['assemble']).on('change', reload);
-  gulp.watch('src/**/*.scss', ['styles']);
-  gulp.watch('src/assets/scripts/**/*.js', ['scripts']).on('change', reload);
-  gulp.watch(config.src.images, ['images']).on('change', reload);
+  gulp.watch('src/**/*.scss', ['styles']).on('change', reload);
+  gulp.watch('src/assets/**/*.js', ['scripts']);
 });

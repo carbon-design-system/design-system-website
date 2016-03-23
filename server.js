@@ -3,14 +3,14 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3333;
 
 // Clean exit of server.js process
 // See: http://www.benjiegillam.com/2011/08/node-js-clean-restart-and-faster-development-with-nodemon/
-process.once('SIGUSR2', function() {
-  console.log(`\n---> Shutting down server.js process...\n`);
-  return process.kill(process.pid, 'SIGUSR2');
-});
+// process.once('SIGUSR2', function() {
+//   console.log(`\n---> Shutting down server.js process...\n`);
+//   return process.kill(process.pid, 'SIGUSR2');
+// });
 
 app.set('views', path.resolve(__dirname, 'dist'));
 app.use(express.static('dist'));
@@ -38,5 +38,5 @@ app.get('/templates', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`\n> Bluemix Design System is running: http://localhost:8080/\n`);
+  console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
 });
