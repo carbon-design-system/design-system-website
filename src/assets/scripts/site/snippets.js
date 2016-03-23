@@ -1,34 +1,39 @@
 'use strict';
 
-// Temporary:
-// Not seeing this used anywhere right now
-// Will modularize and import into main.js in next PR if needed
+export const codeSnippets = () => {
 
-const showHTMLbuttons = document.querySelectorAll('.snippet__btns--html');
-const showJSbuttons = document.querySelectorAll('.snippet__btns--js');
-const htmlSnippets = document.querySelectorAll('.snippet__html');
-const jsSnippets = document.querySelectorAll('.snippet__js');
+  const showFullCode = document.querySelectorAll('.code__show-full a');
+  const htmlCode = document.querySelector('.code__html');
+  const copyButton = document.querySelector('.code__copy button');
+  const jsCode = document.querySelector('.code__js');
+  const jsButton = document.querySelector('.tabs__js');
+  const htmlButton = document.querySelector('.tabs__html');
 
-if (showHTMLbuttons && showJSbuttons) {
-  Array.prototype.forEach.call(showHTMLbuttons, function(el) {
-    el.addEventListener('click', function(e) {
-      let currentHTMLsnippet = el.parentElement.nextSibling.nextElementSibling;
-      let currentJSsnippet = currentHTMLsnippet.nextSibling.nextElementSibling;
-      this.classList.add('active-btn');
-      this.nextSibling.nextElementSibling.classList.remove('active-btn');
-      currentHTMLsnippet.classList.add('show-snippet');
-      currentJSsnippet.classList.remove('show-snippet');
-    });
+  jsButton.addEventListener('click', function() {
+    jsCode.classList.add('is-active');
+    htmlCode.classList.remove('is-active');
+    jsButton.classList.add('is-selected');
+    htmlButton.classList.remove('is-selected');
   });
 
-  Array.prototype.forEach.call(showJSbuttons, function(el) {
+  htmlButton.addEventListener('click', function() {
+    htmlCode.classList.add('is-active');
+    jsCode.classList.remove('is-active');
+    htmlButton.classList.add('is-selected');
+    jsButton.classList.remove('is-selected');
+  });
+  
+  Array.prototype.forEach.call(showFullCode, function(el) {
     el.addEventListener('click', function(e) {
-      let currentHTMLsnippet = el.parentElement.nextSibling.nextElementSibling;
-      let currentJSsnippet = currentHTMLsnippet.nextSibling.nextElementSibling;
-      this.classList.add('active-btn');
-      this.previousSibling.previousElementSibling.classList.remove('active-btn');
-      currentJSsnippet.classList.add('show-snippet');
-      currentHTMLsnippet.classList.remove('show-snippet');
+      e.preventDefault();
+      let codeSnippet = el.parentNode.parentNode;
+      codeSnippet.classList.toggle('is-expanded');
+      if (this.innerHTML === 'Show full code <img src="../assets/images/icon--down-arrow.svg">') {
+        this.innerHTML = 'Show less code <img src="../assets/images/icon--up-arrow.svg">';
+      }
+      else {
+        this.innerHTML = 'Show full code <img src="../assets/images/icon--down-arrow.svg">';
+      }
     });
   });
-}
+};

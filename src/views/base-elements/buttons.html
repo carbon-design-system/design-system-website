@@ -42,29 +42,73 @@ category: base elements
   <br>
 
   <div class="item-section__example">
-    {{> button}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{> button}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <div class="rendered__view-full-size">
+    <a href="#">View full render</a>
   </div>
 
-  <div class="snippet__html show-snippet">
+  </div>
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <div class="example__code">
 
-  {{> button}}
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+    <li class="tabs__js">JS</li>
+  </ul>
+
+  <div class="code__html is-active">
+
+  <div class="code__copy">
+    <button id="copyButton">
+      <svg>
+        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+      </svg>
+    </button>
+  </div>
+
+  ```markup
+  {{> card}}
 
   ```
 
+  <div class="code__show-full">
+    <a href="#">Show full code <img src="../assets/images/icon--down-arrow.svg" /></a>
   </div>
 
+  </div>
+
+  <div class="code__js">
+
+  <div class="code__copy">
+    <button>
+      <svg>
+        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+      </svg>
+    </button>
+  </div>
+
+  ```js
+  {{> fab}}
+
+  ```
+
+  <div class="code__show-full">
+    <a href="#">Show full code <img src="../assets/images/icon--down-arrow.svg" /></a>
+  </div>
+
+  </div>
+
+
+  </div>
   {{/markdown}}
-
-  </div>
 
   </section>
 
@@ -318,3 +362,14 @@ category: base elements
   <!-- View: Usage ends -->
 
 </div>
+
+<!-- Item main container ends -->
+
+<script>
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+</script>
