@@ -48,6 +48,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
       });
     });
   }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-tabs] .item__link'), function (element) {
+    // Don't follow links in tab
+    element.addEventListener('click', function (event) {
+      event.preventDefault();
+    });
+  });
 });
 
 
