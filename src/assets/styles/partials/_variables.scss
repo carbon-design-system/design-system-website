@@ -13,7 +13,9 @@ $color__text--dark: #1d3649;
 $color__item-preview-bg: #0d3449;
 $color__snippet-bg: $color__light-gray;
 $color__section-border: $color__atlas-gray-1;
-
+$color__toggle-menu: $color__navy-gray-5;
+$color__toggle-menu--is-closed: $color__blue-90;
+$color__toggle-menu-icon: $color__white;
 
 ///////////////////////////////
 // Code                      //
@@ -34,5 +36,9 @@ $base-font-size: 16px;
 // SIZES                     //
 ///////////////////////////////
 
-$width__menu: em(200px);
+$width__menu: 17.5em;
 $height__header: em(300px);
+$width__screen-size--small: 50em;
+$width__screen-size--medium: 80em;
+
+$transition--slow: .5s;

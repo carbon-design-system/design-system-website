@@ -31,7 +31,6 @@
   .header__desc {
     @extend %font-smoothing;
     @extend %type-constrain;
-    width: 40%;
     line-height: 1.5;
     color: $color__dark-blue;
     font-weight: 600;
