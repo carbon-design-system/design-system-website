@@ -35,6 +35,7 @@ import Tab from '../../../bower_components/bluemix-components/components/tabs-na
 import { openItemHeadings } from './site/menu';
 import { toggleMenu } from './site/menu';
 import { activeMenuLink } from './site/menu';
+import { autoCloseMenu } from './site/menu';
 import { tabsNavigation } from './site/tabs';
 import { codeSnippets } from './site/snippets';
 // import snippets stuff here
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   openItemHeadings();
   toggleMenu();
   tabsNavigation();
+  autoCloseMenu();
   activeMenuLink();
   codeSnippets();
 });

@@ -14,6 +14,27 @@ export const toggleMenu = () => {
   });
 }
 
+export const autoCloseMenu = () => {
+  window.onresize = checkWindowSize;
+  window.onload = checkWindowSize;
+  function checkWindowSize() {
+    if (window.innerWidth < 1280) {
+      if (!(menu.classList.contains('is-hidden'))) {
+        menu.classList.add('is-hidden');
+        toggleButton.classList.remove('active');
+        container.classList.add('is-expanded');
+      }
+    }
+    else {
+      if (menu.classList.contains('is-hidden')) {
+        toggleButton.classList.add('active');
+        menu.classList.remove('is-hidden');
+        container.classList.remove('is-expanded');
+      }
+    }
+  }
+}
+
 export const activeMenuLink = () => {
   Array.prototype.forEach.call(itemLinks, function(element) {
     let itemPath = element.pathname.split('/')[2];
