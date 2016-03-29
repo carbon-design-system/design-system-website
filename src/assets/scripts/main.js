@@ -38,6 +38,7 @@ import { activeMenuLink } from './site/menu';
 import { autoCloseMenu } from './site/menu';
 import { tabsNavigation } from './site/tabs';
 import { codeSnippets } from './site/snippets';
+import { themeSwitcher } from './site/theme-switcher';
 // import snippets stuff here
 
 document.addEventListener('DOMContentLoaded', function(e) {
@@ -63,4 +64,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
   autoCloseMenu();
   activeMenuLink();
   codeSnippets();
+  themeSwitcher();
 });
