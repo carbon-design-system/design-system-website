@@ -22,7 +22,7 @@ export const codeSnippets = () => {
     htmlButton.classList.add('is-selected');
     jsButton.classList.remove('is-selected');
   });
-  
+
   Array.prototype.forEach.call(showFullCode, function(el) {
     el.addEventListener('click', function(e) {
       e.preventDefault();

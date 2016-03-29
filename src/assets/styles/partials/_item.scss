@@ -181,6 +181,16 @@
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 1em;
+    position: relative;
+    transition-duration: $transition--base;
+
+    &.light-ui {
+      background: white;
+
+      .btn--theme-switcher {
+        color: $color__navy-gray-5;
+      }
+    }
   }
 
   .rendered__item {
@@ -199,6 +209,18 @@
       font-size: rem(12px);
       padding: 1.5em;
     }
+  }
+
+  .btn--theme-switcher {
+    color: $color__navy-gray-7;
+    font-size: rem(12px);
+    border: none;
+    background: none;
+    text-decoration: underline;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    cursor: pointer;
   }
 
   .code__tabs {
