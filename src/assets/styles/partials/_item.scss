@@ -6,10 +6,9 @@
 .view--foundation, .view--usage, .view--style {
   display: none;
   opacity: 0;
-  position: absolute;
   padding-right: 9em;
   top: $height__header + em(50px);
-  width: 80%;
+  width: 100%;
   max-width: 72em; // nothing will do wider than this (72 is arbitrary for now)
 
   &.is-active {
@@ -17,6 +16,10 @@
     flex-direction: column;
     opacity: 1;
     transition: opacity .3s;
+  }
+
+  @media screen and (max-width: $width__screen-size--small) {
+    padding-right: 2em;
   }
 }
 
@@ -26,7 +29,19 @@
   &__container {
     @include clearfix;
     margin-left: 9em; // push away from sidebar
-    padding-right: 9em; // for the header style
+    padding: 4em 9em 4em 0;
+    transition: $transition--slow;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      padding-right: 4em;
+      padding-top: 4em;
+      margin-left: 9em;
+    }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding: 3em 1em 4em;
+      margin-left: 0;
+    }
   }
 
   &__header {
@@ -36,12 +51,34 @@
     flex-direction: column;
     height: $height__header;
     padding-left: 9em;
+    transition: $transition--slow;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      padding-left: 9em;
+    }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding-left: 1em;
+      height: 17.75em;
+      padding-right: 1em;
+    }
+
+    &.scrolled {
+      position: fixed;
+      height: 3.5em;
+      z-index: 2;
+      width: 100%;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
     padding-top: 6em;
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding-top: 5em;
+    }
   }
 
   &__main-heading {
@@ -52,26 +89,32 @@
     padding-top: .2em;
     margin: 0;
     font-weight: 200;
+
+    @media screen and (max-width: $width__screen-size--small) {
+      font-size: 3rem;
+    }
   }
 
   &__category {
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: em(2px);
+    letter-spacing: .2em;
   }
 
   &__tabs {
     display: flex;
 
     li {
+      @extend %font-smoothing;
       padding: 1em 0;
       margin: 0 1.5em;
-      font-size: rem(14px);
+      font-size: rem(16px);
       font-weight: 600;
       letter-spacing: em(.2px);
       border-bottom: 3px solid transparent;
       text-align: center;
       transition: .2s;
+      cursor: pointer;
 
       &:first-child {
         margin-left: 0;
@@ -92,15 +135,18 @@
 
   &__main-desc {
     @extend %type-constrain;
-    padding-bottom: 1.5em;
     color: $color__text--dark;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     font-size: rem(18px);
 
     .highlight {
       color: $color__blue-30;
+    }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      font-size: 1rem;
     }
   }
 }
@@ -112,25 +158,28 @@
 }
 
 .item-section {
-  padding: 0 0 4em;
+  padding: 0;
+  margin-bottom: 4em;
 
   &__main-heading {
     @extend %font-smoothing;
-    color: $color__blue-30;
+    color: $color__blue-40;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: .12em;
-    margin: .5em 0 1.5em;
+    margin: 3em 0 1em;
   }
 
   &__heading {
     @extend %font-smoothing;
     font-size: rem(24px);
     font-weight: 600;
-    color: $color__blue-30;
+    color: $color__blue-40;
     font-size: 1.5rem;
     position: relative;
+    padding-top: .5em;
+    padding-bottom: 1.5em;
 
     &:before {
       content: '';
@@ -142,12 +191,17 @@
       top: -.5em;
       left: 0;
     }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding-bottom: 1em;
+    }
   }
 
   &__sub-heading {
     font-size: rem(24px);
     color: $color__text--dark;
     padding: .5em 0;
+    font-weight: 600;
   }
 
   &__desc {
@@ -160,6 +214,10 @@
     &--list {
       list-style: disc;
       color: $color__text--dark;
+    }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding-bottom: 1em;
     }
   }
 
@@ -189,6 +247,13 @@
 .item-section__example {
   min-width: 100%;
   display: block;
+  margin-bottom: 5em;
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 100vw;
+    position: relative;
+    left: em(-16px);
+  }
 
   .example__rendered {
     background-color: $color__rendered-example;
@@ -271,6 +336,10 @@
   .code__js {
     @extend %code-snippet;
 
+    @media screen and (max-width: $width__screen-size--small) {
+      padding: 1em 0;
+    }
+
     &.is-expanded {
       transition-duration: $transition--code-snippet;
       max-height: 200em;
@@ -293,10 +362,22 @@
       right: 1em;
       top: 4.5em;
 
+      &:hover {
+        background-color: $color__blue-30;
+      }
+
       svg {
         fill: $color__white;
         width: 2em;
         height: 3.5em;
+      }
+
+      @media screen and (max-width: $width__screen-size--medium) {
+        right: 5em;
+      }
+
+      @media screen and (max-width: $width__screen-size--small) {
+        right: 1em;
       }
     }
 
@@ -322,6 +403,17 @@
       code {
         white-space: pre-wrap;
         word-wrap: break-word;
+      }
+
+      @media screen and (max-width: $width__screen-size--small) {
+        font-size: .7rem;
+      }
+    }
+
+    .line-numbers {
+
+      @media screen and (max-width: $width__screen-size--small) {
+        padding-left: 3.2em;
       }
     }
 
