@@ -9,6 +9,8 @@
   position: absolute;
   padding-right: 9em;
   top: $height__header + em(50px);
+  width: 80%;
+  max-width: 72em; // nothing will do wider than this (72 is arbitrary for now)
 
   &.is-active {
     display: flex;
@@ -23,8 +25,8 @@
 
   &__container {
     @include clearfix;
-    padding: 4em 9em;
-    width: 80%;
+    margin-left: 9em; // push away from sidebar
+    padding-right: 9em; // for the header style
   }
 
   &__header {
@@ -123,7 +125,7 @@
     font-size: rem(24px);
     font-weight: 600;
     color: $color__blue-30;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     position: relative;
 
     &:before {
@@ -146,7 +148,7 @@
 
   &__desc {
     @extend %type-constrain;
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     padding-bottom: 1em;
     color: $color__text--dark;
@@ -157,25 +159,131 @@
     }
   }
 
-  &__example {
-    padding: 2em;
-    background-color: $color__item-preview-bg;
-
-    &--light {
-      background-color: $color__white;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-
   &__list {
     color: $color__text--dark;
 
     h4 {
       font-size: rem(18px);
       padding: 1em 0 .5em;
+    }
+  }
+}
+
+// Styles for item example
+
+.item-section__example {
+  min-width: 100%;
+  display: block;
+
+  .example__rendered {
+    background-color: $color__rendered-example;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+  }
+
+  .rendered__item {
+    flex: 1;
+    text-align: center;
+    margin: 3.5em 0 2em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rendered__view-full-size {
+    text-align: right;
+
+    a {
+      color: $color__navy-gray-7;
+      font-size: rem(12px);
+      padding: 1.5em;
+    }
+  }
+
+  .code__tabs {
+    background-color: $color__code-tabs;
+    display: flex;
+
+    .tabs__html, .tabs__js {
+      padding: 1em 0;
+      margin: 0 1em;
+      font-size: rem(12px);
+      font-weight: 600;
+      letter-spacing: em(1px);
+      cursor: pointer;
+    }
+
+    .tabs__html {
+      margin-left: 2.5em;
+    }
+
+    .is-selected {
+      border-bottom: 3px solid $color__blue-30;
+    }
+  }
+
+  .code__html, .code__js {
+    background-color: $color__snippet-bg;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 12em;
+    transition: max-height .8s ease-out;
+    display: none;
+
+    &.is-expanded {
+      transition: max-height .8s ease-in;
+      max-height: 200em;
+    }
+
+    &.is-active {
+      display: flex;
+    }
+
+    .code__copy {
+      color: #000;
+      position: absolute;
+      right: em(160px);
+      z-index: 1;
+
+      button {
+        background-color: $color__blue-40;
+        border: none;
+        width: em(60px);
+        height: em(60px);
+        cursor: pointer;
+
+        svg {
+          fill: $color__white;
+          width: 2em;
+          height: 3.5em;
+        }
+      }
+    }
+
+    .code__show-full {
+      text-align: right;
+
+      a {
+        color: $color__navy-gray-7;
+        font-size: rem(12px);
+        text-decoration: none;
+      }
+
+      img {
+        padding-left: 1em;
+      }
+    }
+
+    pre[class*='language-'], pre {
+      margin: 0;
+      font-size: rem(12px);
+      overflow: hidden;
+    }
+
+    .line-numbers .line-numbers-rows {
+      border-right: none;
     }
   }
 }

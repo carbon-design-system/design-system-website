@@ -12,6 +12,7 @@ import 'svgxuse';
 // Import third-party scripts that could not be installed with npm.
 // These are not meant to be edited.
 import './vendor/prism';
+import Clipboard from './vendor/clipboard';
 
 ////////////////////////////////////////////////////////////////////////
 // Bluemix Components
@@ -35,9 +36,11 @@ import { openItemHeadings } from './site/menu';
 import { toggleMenu } from './site/menu';
 import { activeMenuLink } from './site/menu';
 import { tabsNavigation } from './site/tabs';
+import { codeSnippets } from './site/snippets';
 // import snippets stuff here
 
 document.addEventListener('DOMContentLoaded', function(e) {
+
   [... document.querySelectorAll('[data-file-input]')].forEach((element) => new FileUploader(element));
   [... document.querySelectorAll('[data-spinner]')].forEach((element) => {
     const spinner = new Spinner(element);
@@ -57,4 +60,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
   toggleMenu();
   tabsNavigation();
   activeMenuLink();
+  codeSnippets();
 });
