@@ -3,20 +3,24 @@
   @extend %font-smoothing;
   font-size: rem(14px);
   background-color: $color__menu-bg;
-  min-width: $width__menu;
+  width: $width__menu;
   height: 100%;
   z-index: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 2em;
+  padding: 1em 2em 2em 2em;
   position: fixed;
+  transition: $transition--slow;
+
+  &.is-hidden {
+    transform: translateX(-100%);
+  }
 
   &__header {
     display: inline-block;
-    font-size: rem(24px);
+    font-size: rem(20px);
     color: $color__blue-20;
     font-weight: 200;
     line-height: 1.2;
+    margin-top: 1.5em;
     margin-bottom: 2em;
     text-decoration: none;
 
@@ -28,6 +32,14 @@
 
   &__main-nav {
     list-style: none;
+  }
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 100%;
+
+    &.is-hidden {
+      transform: translateX(-100%);
+    }
   }
 }
 
@@ -64,16 +76,82 @@
   .sub-nav__item {
     text-transform: capitalize;
     margin-left: 0;
-    padding: .75em 0;
+    padding: .5em;
+    color: $color__text--light;
 
-    .item__link {
-      color: $color__text--light;
-      text-decoration: none;
-      transition: .2s;
+    &.active {
+      background-color: $color__blue-30;
+      color: $color__text--dark;
 
       &:hover {
-        color: $color__blue-40;
+        color: $color__text--dark;
       }
     }
+
+    &:hover {
+      color: $color__blue-30;
+    }
+
+    .item__link {
+      color: inherit;
+      text-decoration: none;
+      transition: .2s;
+      cursor: pointer;
+    }
+  }
+}
+
+.sidebar-toggle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 2;
+  padding: 2em;
+  cursor: pointer;
+  transition: $transition--slow;
+  transform: translate(5em);
+
+  &.active {
+    transform: translateX(0);
+
+    span {
+      background-color: transparent;
+    }
+
+    span:before,
+    span:after {
+      top: 0;
+    }
+
+    span:before {
+      transform: rotate(45deg);
+    }
+
+    span:after {
+      transform: rotate(-225deg);
+    }
+  }
+
+  span,
+  span:before,
+  span:after {
+    border-radius: 1px;
+    height: em(2px);
+    width: em(28px);
+    background: $color__white;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all $transition--slow ease-in-out;
+  }
+
+  span:before {
+    top: -6px;
+  }
+
+  span:after {
+    bottom: -6px;
   }
 }
