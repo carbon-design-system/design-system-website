@@ -73,7 +73,7 @@
   transition-duration: $transition--slow;
 
   &.open {
-    max-height: 80vh;
+    max-height: 30em;
   }
 
   .sub-nav__item {
