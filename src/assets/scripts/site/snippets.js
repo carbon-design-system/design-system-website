@@ -2,9 +2,9 @@
 
 export const codeSnippets = () => {
 
-  const showFullCode = document.querySelectorAll('.code__show-full a');
+  const showFullCode = document.querySelectorAll('.code__show-full');
   const htmlCode = document.querySelector('.code__html');
-  const copyButton = document.querySelector('.code__copy button');
+  const copyButton = document.querySelector('.code__copy');
   const jsCode = document.querySelector('.code__js');
   const jsButton = document.querySelector('.tabs__js');
   const htmlButton = document.querySelector('.tabs__html');
@@ -26,7 +26,7 @@ export const codeSnippets = () => {
   Array.prototype.forEach.call(showFullCode, function(el) {
     el.addEventListener('click', function(e) {
       e.preventDefault();
-      let codeSnippet = el.parentNode.parentNode;
+      let codeSnippet = el.parentNode;
       codeSnippet.classList.toggle('is-expanded');
       if (this.innerHTML === 'Show full code <img src="../assets/images/icon--down-arrow.svg">') {
         this.innerHTML = 'Show less code <img src="../assets/images/icon--up-arrow.svg">';

@@ -107,6 +107,10 @@
 
 // Styles for variations within an item
 
+.example__code {
+  position: relative;
+}
+
 .item-section {
   padding: 0 0 4em;
 
@@ -171,6 +175,17 @@
 
 // Styles for item example
 
+%code-snippet {
+  background-color: $color__snippet-bg;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 12em;
+  transition: max-height .8s ease-out;
+  display: none;
+  min-height: 7em;
+}
+
 .item-section__example {
   min-width: 100%;
   display: block;
@@ -199,16 +214,23 @@
     margin: 3.5em 0 2em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
+    div {
+      display: flex;
+      margin: 1em;
+      align-content: center;
+      justify-content: center;
+    }
   }
 
   .rendered__view-full-size {
-    text-align: right;
-
-    a {
-      color: $color__navy-gray-7;
-      font-size: rem(12px);
-      padding: 1.5em;
-    }
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: $color__navy-gray-7;
+    font-size: rem(12px);
+    padding: 1.5em;
   }
 
   .btn--theme-switcher {
@@ -245,14 +267,9 @@
     }
   }
 
-  .code__html, .code__js {
-    background-color: $color__snippet-bg;
-    padding: 1em;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 12em;
-    transition: max-height .8s ease-out;
-    display: none;
+  .code__html,
+  .code__js {
+    @extend %code-snippet;
 
     &.is-expanded {
       transition: max-height .8s ease-in;
@@ -268,34 +285,32 @@
       position: absolute;
       right: em(160px);
       z-index: 1;
+      background-color: $color__blue-40;
+      border: none;
+      width: em(60px);
+      height: em(60px);
+      cursor: pointer;
+      right: 1em;
+      top: 4.5em;
 
-      button {
-        background-color: $color__blue-40;
-        border: none;
-        width: em(60px);
-        height: em(60px);
-        cursor: pointer;
-
-        svg {
-          fill: $color__white;
-          width: 2em;
-          height: 3.5em;
-        }
+      svg {
+        fill: $color__white;
+        width: 2em;
+        height: 3.5em;
       }
     }
 
     .code__show-full {
       text-align: right;
-
-      a {
-        color: $color__navy-gray-7;
-        font-size: rem(12px);
-        text-decoration: none;
-      }
-
-      img {
-        padding-left: 1em;
-      }
+      background: none;
+      border: none;
+      color: $color__navy-gray-7;
+      font-size: rem(12px);
+      text-decoration: none;
+      position: absolute;
+      right: 0;
+      bottom: 1em;
+      padding: 1em;
     }
 
     pre[class*='language-'], pre {

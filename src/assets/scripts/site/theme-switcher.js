@@ -10,9 +10,9 @@ export const themeSwitcher = () => {
       parentBox.classList.toggle('light-ui');
 
       if (parentBox.classList.contains('light-ui')) {
-        element.innerHTML = "dark theme";
+        element.innerHTML = "Dark Theme";
       } else {
-        element.innerHTML = "light theme";
+        element.innerHTML = "Light Theme";
       }
     });
   })
