@@ -66,11 +66,12 @@
 }
 
 .item__sub-nav {
-  display: none;
-  padding-top: 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition-duration: $transition--slow;
 
   &.open {
-    display: block;
+    max-height: 80vh;
   }
 
   .sub-nav__item {
@@ -90,6 +91,10 @@
 
     &:hover {
       color: $color__blue-30;
+    }
+
+    &:first-child {
+      margin-top: 1em;
     }
 
     .item__link {
