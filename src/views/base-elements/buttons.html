@@ -5,7 +5,7 @@ category: base elements
 ---
 
 <!-- Item header -->
-<div class="item__header">
+<section class="item__header">
   <div class="item__info">
     <p class="item__category">{{category}}</p>
     <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
@@ -15,11 +15,11 @@ category: base elements
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
   </ul>
-</div>
+</section>
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<main class="item__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
@@ -51,11 +51,9 @@ category: base elements
 
   {{#markdown}}
 
-  <div class="rendered__view-full-size">
-    <a href="#">View full render</a>
-  </div>
+  <a class="rendered__view-full-size" href="#">View full render</a>
 
-  <button class="btn--theme-switcher">light theme</button>
+  <button class="btn--theme-switcher">Light Theme</button>
 
   </div>
 
@@ -66,50 +64,43 @@ category: base elements
     <li class="tabs__js">JS</li>
   </ul>
 
+  <!-- HTML Code -->
   <div class="code__html is-active">
-
-  <div class="code__copy">
-    <button id="copyButton">
-      <svg>
-        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-      </svg>
-    </button>
-  </div>
 
   ```markup
   {{> card}}
 
   ```
 
-  <div class="code__show-full">
-    <a href="#">Show full code <img src="../assets/images/icon--down-arrow.svg" /></a>
-  </div>
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
 
   </div>
 
+
+  <!-- JS Code -->
   <div class="code__js">
-
-  <div class="code__copy">
-    <button>
-      <svg>
-        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-      </svg>
-    </button>
-  </div>
 
   ```js
   {{> fab}}
 
   ```
 
-  <div class="code__show-full">
-    <a href="#">Show full code <img src="../assets/images/icon--down-arrow.svg" /></a>
+  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
+
 
   </div>
 
-
-  </div>
   {{/markdown}}
 
   </section>
@@ -117,7 +108,7 @@ category: base elements
 
   <!-- SECONDARY BUTTONS -->
 
-  <section class="item-section" id="secondary">
+  <section class="item-section" id="primary">
 
   <h2 class="item-section__heading">Secondary Buttons</h2>
 
@@ -126,26 +117,46 @@ category: base elements
   <br>
 
   <div class="item-section__example">
-    {{> button--secondary}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{> button--secondary}}
   </div>
 
   {{#markdown}}
 
-  <div class="snippet">
+  <a class="rendered__view-full-size" href="#">View full render</a>
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markup
   {{> button--secondary}}
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
+
 
   </div>
 
@@ -164,29 +175,50 @@ category: base elements
   <br>
 
   <div class="item-section__example">
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
     {{> button--secondary}}
+
     {{> button}}
   </div>
 
   {{#markdown}}
 
-  <div class="snippet">
+  <a class="rendered__view-full-size" href="#">View full render</a>
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markupm
   {{> button--secondary}}
 
   {{> button}}
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
+
 
   </div>
 
@@ -206,25 +238,45 @@ category: base elements
   <br>
 
   <div class="item-section__example">
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
     {{> button--right-icon}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markupm
   {{> button--right-icon}}
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
 
   </div>
 
@@ -243,25 +295,45 @@ category: base elements
   <br>
 
   <div class="item-section__example">
-    Need example here
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+    Need Example
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
-  Need example here
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markup
+  Need Example
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
 
   </div>
 
@@ -281,28 +353,49 @@ category: base elements
   <br>
 
   <div class="item-section__example">
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
     {{> button--disabled}}
+
     {{> button--secondary--disabled}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markup
   {{> button--disabled}}
 
   {{> button--secondary--disabled}}
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
 
   </div>
 
@@ -322,33 +415,51 @@ category: base elements
   <br>
 
   <div class="item-section__example">
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
     {{> button--danger}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <button class="btn--theme-switcher">Light Theme</button>
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+  </ul>
 
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markup
   {{> button--danger}}
 
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+  <!-- End of Code Snippets -->
 
   </div>
 
   {{/markdown}}
 
   </section>
-
-  </div>
   <!-- View: Foundation ends -->
 
   <!-- View: Usage -->
@@ -363,7 +474,7 @@ category: base elements
   </div>
   <!-- View: Usage ends -->
 
-</div>
+</main>
 
 <!-- Item main container ends -->
 
