@@ -181,7 +181,7 @@
   flex-direction: column;
   justify-content: space-between;
   max-height: 12em;
-  transition: max-height .8s ease-out;
+  transition-duration: $transition--slow;
   display: none;
   min-height: 7em;
 }
@@ -272,7 +272,7 @@
     @extend %code-snippet;
 
     &.is-expanded {
-      transition: max-height .8s ease-in;
+      transition-duration: $transition--code-snippet;
       max-height: 200em;
     }
 
@@ -316,7 +316,13 @@
     pre[class*='language-'], pre {
       margin: 0;
       font-size: rem(12px);
-      overflow: hidden;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      code {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
     }
 
     .line-numbers .line-numbers-rows {

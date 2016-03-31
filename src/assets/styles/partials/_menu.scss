@@ -8,10 +8,12 @@
   z-index: 1;
   padding: 1em 2em 2em 2em;
   position: fixed;
+  overflow: scroll;
   transition: $transition--slow;
 
   &.is-hidden {
     transform: translateX(-100%);
+    overflow: visible;
   }
 
   &__header {
@@ -71,7 +73,7 @@
   transition-duration: $transition--slow;
 
   &.open {
-    max-height: 80vh;
+    max-height: 30em;
   }
 
   .sub-nav__item {
