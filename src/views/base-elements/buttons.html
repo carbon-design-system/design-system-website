@@ -2,6 +2,31 @@
 fabricator: true
 name: buttons
 category: base elements
+iterations:
+  button--primary:
+    title: "Primary Button"
+    htmlFile: "base-elements/button.html"
+    jsFile: "js/fab.js"
+    desc: "Primary buttons should be used for the principal call to action on the page. What is the most important action your user should take? Primary buttons should be three words or less."
+  button--secondary:
+    title: "Secondary Button"
+    htmlFile: "base-elements/button--secondary.html"
+    desc: "Secondary buttons will be used for secondary actions on each page. Secondary buttons should be three words or less."
+  button--right-icon:
+    title: "Button With Icons"
+    htmlFile: "base-elements/button--right-icon.html"
+    desc: "When words are not enough, icons are used in buttons to better communicate what the button does. Icons are always paired with text."
+  button--disabled:
+    title: "Disabled Button"
+    htmlFile: "base-elements/button--disabled.html"
+    desc: "Disabled Buttons can be used when the user cannot proceed until input is collected."
+  button--danger:
+    title: "Danger Button"
+    htmlFile: "base-elements/button--danger.html"
+    desc: "Danger buttons are used when the action to be performed would cause a significant change to the user's data or cause other unanticipated consequences."
+  button-set:
+    title: "Sets of Buttons"
+    desc: "Sets of buttons are used when action required by the user may have more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left."
 ---
 
 <!-- Item header -->
@@ -30,23 +55,22 @@ category: base elements
 
   <h2 class="item-section__main-heading">Variations</h2>
 
+  <!-- Element Loop -->
+  {{#each iterations as |item|}}
+    <section class="item-section" id="{{dasherize item.title}}">
 
-  <!-- PRIMARY BUTTONS -->
-  <section class="item-section" id="primary">
+      <h2 class="item-section__heading">{{item.title}}</h2>
 
-  <h2 class="item-section__heading">Primary Buttons</h2>
+      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
-  <p class="item-section__desc">Primary buttons should be used for the principal call to action on the page.
-    What is the most important action your user should take? Primary buttons should be three words or less.</p>
-
-  <br>
+  {{#if item.htmlFile}}
 
   <div class="item-section__example">
 
   <div class="example__rendered">
 
   <div class="rendered__item">
-  {{> button}}
+  {{{findFile item.htmlFile}}}
   </div>
 
   {{#markdown}}
@@ -61,16 +85,16 @@ category: base elements
 
   <ul class="code__tabs">
     <li class="tabs__html is-selected">HTML</li>
-    <li class="tabs__js">JS</li>
+    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
   </ul>
 
   <!-- HTML Code -->
   <div class="code__html is-active">
 
   ```markup
-  {{> card}}
-
+  {{{findFile item.htmlFile}}}
   ```
+
 
   <button class="code__copy">
     <svg>
@@ -82,13 +106,13 @@ category: base elements
 
   </div>
 
-
+  {{#if item.jsFile}}
   <!-- JS Code -->
+
   <div class="code__js">
 
   ```js
-  {{> fab}}
-
+  {{{findFile item.jsFile}}}
   ```
 
   <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
@@ -100,366 +124,14 @@ category: base elements
 
 
   </div>
+  {{/if}}
 
   {{/markdown}}
 
+  {{/if}}
   </section>
+  {{/each}}
 
-
-  <!-- SECONDARY BUTTONS -->
-
-  <section class="item-section" id="primary">
-
-  <h2 class="item-section__heading">Secondary Buttons</h2>
-
-  <p class="item-section__desc">Secondary buttons will be used for secondary actions on each page. Secondary buttons should be three words or less.</p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-  {{> button--secondary}}
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{> button--secondary}}
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
-
-  <!-- SETS OF BUTTONS -->
-
-  <section class="item-section" id="sets-of-buttons">
-
-  <h2 class="item-section__heading">Sets of Buttons</h2>
-
-  <p class="item-section__desc">Sets of buttons are used when action required by the user may have more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left.</p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-    {{> button--secondary}}
-
-    {{> button}}
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{> button--secondary}}
-
-  {{> button}}
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
-
-
-  <!-- BUTTON WITH ICONS -->
-
-  <section class="item-section" id="buttons-with-icons">
-
-  <h2 class="item-section__heading">Button with icons</h2>
-
-  <p class="item-section__desc">When words are not enough, icons are used in buttons to better communicate what the button does. Icons are always paired with text.</p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-    {{> button--right-icon}}
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markupm
-  {{> button--right-icon}}
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
-
-  <!-- INLINE BUTTONS -->
-
-  <section class="item-section" id="inline-buttons">
-
-  <h2 class="item-section__heading">Inline Buttons</h2>
-
-  <p class="item-section__desc">Inline buttons can be used when the action is directly related to the context of a form or text box. They should be one word only. </p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-    Need Example
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  Need Example
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
-
-
-  <!-- DISABLED BUTTONS -->
-
-  <section class="item-section" id="disabled">
-
-  <h2 class="item-section__heading">Disabled Buttons</h2>
-
-  <p class="item-section__desc">Disabled Buttons can be used when the user cannot proceed until input is collected.</p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-    {{> button--disabled}}
-
-    {{> button--secondary--disabled}}
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{> button--disabled}}
-
-  {{> button--secondary--disabled}}
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
-
-
-  <!-- DANGER BUTTONS -->
-
-  <section class="item-section" id="danger">
-
-  <h2 class="item-section__heading">Danger Button</h2>
-
-  <p class="item-section__desc">Danger buttons are used when the action to be performed would cause a significant change to the user's data or cause other unanticipated consequences.</p>
-
-  <br>
-
-  <div class="item-section__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__item">
-    {{> button--danger}}
-  </div>
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <button class="btn--theme-switcher">Light Theme</button>
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{> button--danger}}
-
-  ```
-
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/markdown}}
-
-  </section>
   <!-- View: Foundation ends -->
   </div>
 
