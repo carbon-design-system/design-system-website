@@ -10,9 +10,19 @@
 .page__header {
   background-color: $color__section-bg;
   margin: 0;
-  padding: 8em 8em 10em;
+  padding: 8em 9em 10em;
   display: flex;
   flex-direction: column;
+  transition: $transition--slow;
+
+  @media screen and (max-width: $width__screen-size--medium) {
+    padding: 6em 9em 5em;
+  }
+
+  @media screen and (max-width: $width__screen-size--small) {
+    padding: 6em 2em 5em;
+    margin-bottom: 1em;
+  }
 
   .header__main-heading {
     @extend %font-smoothing;
@@ -26,6 +36,10 @@
     .main-heading--bolder {
       font-weight: 600;
     }
+
+    @media screen and (max-width: $width__screen-size--small) {
+      font-size: rem(36px);
+    }
   }
 
   .header__desc {
@@ -36,6 +50,11 @@
     font-weight: 600;
     font-size: 1.3rem;
     padding: 2.5em 0;
+
+    @media screen and (max-width: $width__screen-size--small) {
+      font-size: 1rem;
+      padding: 1.5em 0;
+    }
   }
 
   .download-btns__btn {
@@ -48,5 +67,10 @@
     font-size: .8rem;
     margin-right: .5em;
     text-decoration: none;
+    transition: $transition--base;
+
+    &:hover {
+      background-color: #C0E6FF; // make variable
+    }
   }
 }

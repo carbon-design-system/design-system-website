@@ -8,6 +8,7 @@ const itemLinks = document.querySelectorAll('.item__link');
 
 export const toggleMenu = () => {
   toggleButton.addEventListener('click', function(e) {
+    e.preventDefault();
     toggleButton.classList.toggle('active');
     menu.classList.toggle('is-hidden');
     container.classList.toggle('is-expanded');
@@ -18,7 +19,7 @@ export const autoCloseMenu = () => {
   window.onresize = checkWindowSize;
   window.onload = checkWindowSize;
   function checkWindowSize() {
-    if (window.innerWidth < 1280) {
+    if (window.innerWidth < 1440) {
       if (!(menu.classList.contains('is-hidden'))) {
         menu.classList.add('is-hidden');
         toggleButton.classList.remove('active');

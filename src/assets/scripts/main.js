@@ -12,7 +12,6 @@ import 'svgxuse';
 // Import third-party scripts that could not be installed with npm.
 // These are not meant to be edited.
 import './vendor/prism';
-import Clipboard from './vendor/clipboard';
 
 ////////////////////////////////////////////////////////////////////////
 // Bluemix Components

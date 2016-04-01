@@ -56,7 +56,7 @@ body {
     color: $color__text--dark;
   }
 
-  @media screen and (max-width: $width__screen-size--medium) {
+  @media screen and (max-width: $width__screen-size--small) {
     margin-left: 0;
   }
 }
