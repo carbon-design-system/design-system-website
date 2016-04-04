@@ -1,28 +1,13 @@
 ---
 fabricator: true
-name: Notifications
-category: components
-mainDesc: "are being used ..."
+name: file uploader
+category: base elements
+mainDesc: "is used when ..."
 iterations:
-  alert--danger:
-    title: "Alert: Danger"
-    htmlFile: "components/alert--danger.html"
-    desc: "Description here."
-  alert--info:
-    title: "Alert: Info"
-    htmlFile: "components/alert--info.html"
-    desc: "Description here."
-  alert--misc:
-    title: "Alert: Misc"
-    htmlFile: "components/alert--misc.html"
-    desc: "Description here."
-  alert--running:
-    title: "Alert: Running"
-    htmlFile: "components/alert--running.html"
-    desc: "Description here."
-  alert--warning:
-    title: "Alert: Warning"
-    htmlFile: "components/alert--warning.html"
+  checkbox:
+    title: "File Uploader"
+    htmlFile: "base-elements/file.html"
+    jsFile: "js/file.js"
     desc: "Description here."
 ---
 
@@ -47,10 +32,10 @@ iterations:
   <div class="view--foundation is-active">
 
     <p class="item__main-desc">
-      <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
+      <span class="highlight">{{capitalize name}} </span>{{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="item-section__main-heading">Foundation</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
@@ -133,7 +118,7 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="item-section__heading">Usage</h2>
+    <h1 class="item-section__heading">Usage</h1>
   </div>
   <!-- View: Usage ends -->
 

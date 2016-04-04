@@ -1,76 +1,145 @@
 ---
 fabricator: true
 name: radio buttons
-description: Radio buttons are used when the list of two or more options are mutually exclusive, meaning the user must select only one option.
+category: base elements
+mainDesc: "are used when the list of two or more options are mutually exclusive, meaning the user must select only one option."
+iterations:
+  radio-buttons:
+    title: "Radio Buttons"
+    htmlFile: "base-elements/radio.html"
+    desc: "Radio buttons are used when the list of two or more options are mutually exclusive, meaning the user must select only one option."
+  radio-buttons--disabled:
+    title: "Disabled Radio Buttons"
+    htmlFile: "base-elements/radio--disabled.html"
+    desc: "Description here."
 ---
 
+<!-- Item header -->
+<section class="item__header">
+  <div class="item__info">
+    <p class="item__category">{{category}}</p>
+    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  </div>
+  <ul class="item__tabs">
+    <li class="toggle-view--foundation is-selected">Foundation</li>
+    <li class="toggle-view--usage">Usage</li>
+    <li class="toggle-view--style">Style</li>
+  </ul>
+</section>
+<!-- Item header ends -->
+
+<!-- Item main container -->
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <!-- View: Foundation -->
+  <div class="view--foundation is-active">
 
-  <p class="item__main-desc">{{description}}</p>
+    <p class="item__main-desc">
+      <span class="highlight">{{capitalize name}} </span>{{mainDesc}}
+    </p>
 
-  <!-- FOUNDATION -->
+  <h2 class="item-section__main-heading">Variations</h2>
 
-  <section class="item-section">
+  <!-- Element Loop -->
+  {{#each iterations as |item|}}
+    <section class="item-section" id="{{dasherize item.title}}">
 
-  <h2 class="item-section__heading">Foundation</h2>
+      <h2 class="item-section__heading">{{item.title}}</h2>
+
+      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+
+  {{#if item.htmlFile}}
 
   <div class="item-section__example">
-    {{> radio}}
-    {{> radio--disabled}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{{findFile item.htmlFile}}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
+  </ul>
 
-  {{> radio}}
-  {{> radio--disabled}}
+  <!-- HTML Code -->
+  <div class="code__html is-active">
 
+  ```markup
+  {{{findFile item.htmlFile}}}
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+
+  {{#if item.jsFile}}
+  <!-- JS Code -->
+
+  <div class="code__js">
+
+  ```js
+  {{{findFile item.jsFile}}}
+  ```
+
+  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+  <!-- End of Code Snippets -->
+
+
+  </div>
+  {{/if}}
 
   {{/markdown}}
 
+  {{/if}}
+  </section>
+  {{/each}}
+
+  <!-- View: Foundation ends -->
   </div>
 
-  </section>
+  <!-- View: Usage -->
+  <div class="view--usage">
+    <h1 class="item-section__heading">Usage</h1>
+  </div>
+  <!-- View: Usage ends -->
 
-  <!-- GUIDELINES -->
+  <!-- View: Style -->
+  <div class="view--style">
+    <h1 class="item-section__heading">Style</h1>
+  </div>
+  <!-- View: Style ends -->
 
-  <section class="item-section" id="guidelines">
+</div>
 
-  <h2 class="item-section__heading">Guidelines</h2>
+<!-- Item main container ends -->
 
-  <h3 class="item-section__sub-heading">Title</h3>
-
-  <p class="item-section__desc">If necessary, a title may accompany a set of radio buttons to provide further clarity into what the user is making a selection on.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Labels</h3>
-
-  <p class="item-section__desc">A radio button should always be accompanied by a clear and concise label. Be explicit about the action that will follow if the radio button is selected. Labels appear to the right of radio buttons.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Default Selection</h3>
-
-  <p class="item-section__desc">A set of radio buttons should default to having exactly one option selected. Never display them without a default selection.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">"Other"</h3>
-
-  <p class="item-section__desc">If using the label "other" in a set of radio buttons, it's recommended to provide a text field for the user to input text to clarify their selection.</p>
-
-  </section>
+<script>
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+</script>

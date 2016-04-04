@@ -1,131 +1,144 @@
 ---
 fabricator: true
 name: text fields
-description: Text fields allow the user to interact with and input data. Use when the application requires long-form content from the user.
+category: base elements
+mainDesc: "allow the user to interact with and input data. Use when the application requires long-form content from the user."
+iterations:
+  text-field:
+    title: "Text Field"
+    htmlFile: "base-elements/text.html"
+    desc: "Single line text fields are used when the input anticipated by the user is a single line of text as opposed to a paragraph."
+  text-area:
+    title: "Text Area"
+    desc: "A text area should be used when you anticipate the user to input more than 1 sentence."
 ---
 
+<!-- Item header -->
+<section class="item__header">
+  <div class="item__info">
+    <p class="item__category">{{category}}</p>
+    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  </div>
+  <ul class="item__tabs">
+    <li class="toggle-view--foundation is-selected">Foundation</li>
+    <li class="toggle-view--usage">Usage</li>
+    <li class="toggle-view--style">Style</li>
+  </ul>
+</section>
+<!-- Item header ends -->
+
+<!-- Item main container -->
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <!-- View: Foundation -->
+  <div class="view--foundation is-active">
 
-  <p class="item__main-desc">{{description}}</p>
+    <p class="item__main-desc">
+      <span class="highlight">{{capitalize name}} </span>{{mainDesc}}
+    </p>
 
-  <!-- TEXT FIELD -->
+  <h2 class="item-section__main-heading">Variations</h2>
 
-  <section class="item-section">
+  <!-- Element Loop -->
+  {{#each iterations as |item|}}
+    <section class="item-section" id="{{dasherize item.title}}">
 
-  <h2 class="item-section__heading">Text Field</h2>
+      <h2 class="item-section__heading">{{item.title}}</h2>
 
-  <p class="item-section__desc">Single line text fields are used when the input anticipated by the user is a single line of text as opposed to a paragraph.</p>
+      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+
+  {{#if item.htmlFile}}
 
   <div class="item-section__example">
-    {{> text}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{{findFile item.htmlFile}}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
-  </div>
+  <a class="rendered__view-full-size" href="#">View full render</a>
 
-  <div class="snippet__html show-snippet">
-
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
-
-  {{> text}}
-
-  ```
+  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
 
   </div>
 
-  {{/markdown}}
+  <div class="example__code">
 
-  </div>
-
-  </section>
-
-  <!-- TEXT AREA -->
-
-  <section class="item-section">
-
-  <h2 class="item-section__heading">Text Area</h2>
-
-  <p class="item-section__desc">A text area should be used when you anticipate the user to input more than 1 sentence.</p>
-
-  <div class="item-section__example">
-    Need example
-  </div>
-
-  {{#markdown}}
-  <div class="snippet">
-
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
-  </div>
-
-  <div class="snippet__html show-snippet">
-
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
-
-  Need example here
-
-  ```
-
-  </div>
-
-  {{/markdown}}
-
-  </div>
-
-  </section>
-
-  <!-- GUIDELINES -->
-
-  <section class="item-section" id="guidelines">
-
-  <h2 class="item-section__heading">Guidelines</h2>
-
-  <h3 class="item-section__sub-heading">Labels</h3>
-
-  <p class="item-section__desc">
-    Labels are essential to usabililty of text fields.
-    They provide guidance to the user in reference to what data they should input.
-    Never place a label inside a text field. If further clarification is needed, use placeholder text.
-  </p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Placeholder text</h3>
-
-  <p class="item-section__desc">
-    Placeholder text is used to complement a field and provide additional assistance to the user.
-    Placeholder text should dissapear once the user has inputted data into the text field.
-  </p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Validation</h3>
-
-  <p class="item-section__desc">
-    Real time validation helps to streamline the process and keep data clean when the user is filling out data.
-    Including helper or error text before, during, or after a user interacts with a text field can aid the user in making correct decisions.
-  </p>
-
-  </section>
-
-  <!-- MOBILE -->
-
-  <section class="item-section" id="mobile">
-
-  <h2 class="item-section__heading">Mobile</h2>
-
-  <p class="item-section__desc">Text fields on mobile should typically be stacked vertically, with labels and or hints above each field. As mobile text fields increase in size (especially length), the limitation on space becomes less marked.</p>
-
-  <h3 class="item-section__sub-heading">Keyboard</h3>
-
-  <ul class="list--unordered item-section__desc--list">
-    <li>When the user touches an input field, a cursor is displayed and the keyboard is shown.</li>
-    <li>Provide the keyboard that's relevant to the data they are entering.</li>
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
   </ul>
+
+  <!-- HTML Code -->
+  <div class="code__html is-active">
+
+  ```markup
+  {{{findFile item.htmlFile}}}
+  ```
+
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+
+  {{#if item.jsFile}}
+  <!-- JS Code -->
+
+  <div class="code__js">
+
+  ```js
+  {{{findFile item.jsFile}}}
+  ```
+
+  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+  <!-- End of Code Snippets -->
+
+
+  </div>
+  {{/if}}
+
+  {{/markdown}}
+
+  {{/if}}
   </section>
+  {{/each}}
+
+  <!-- View: Foundation ends -->
+  </div>
+
+  <!-- View: Usage -->
+  <div class="view--usage">
+    <h1 class="item-section__heading">Usage</h1>
+  </div>
+  <!-- View: Usage ends -->
+
+  <!-- View: Style -->
+  <div class="view--style">
+    <h1 class="item-section__heading">Style</h1>
+  </div>
+  <!-- View: Style ends -->
+
+</div>
+
+<!-- Item main container ends -->
+
+<script>
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+</script>
