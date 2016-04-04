@@ -17,6 +17,7 @@ const sass = require('gulp-sass');
 const webpack = require('webpack');
 const merge = require('merge-stream');
 const path = require('path');
+const fs = require('fs');
 
 
 ///////////////////////////////
@@ -149,8 +150,8 @@ gulp.task('assemble', function() {
       capitalize: function() {
         return this.name.charAt(0).toUpperCase() + this.name.slice(1);
       },
-      dasherize: function() {
-        return this.name.trim().replace(/([A-Z])/g, '-$1').replace(/[-_\s]+/g, '-').toLowerCase();
+      dasherize: function(str) {
+        return str.toLowerCase().trim().replace(/[-_\s]+/g, '-');
       },
       markdown: require('helper-markdown'),
       decode: function (val) {
@@ -158,6 +159,9 @@ gulp.task('assemble', function() {
       },
       raw: function (options) {
         return options.fn();
+      },
+      findFile: function(fileName) {
+        return fs.readFileSync(`src/materials/${fileName}`, { 'encoding': 'utf8' });
       }
     }
   };
