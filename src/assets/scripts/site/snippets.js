@@ -9,12 +9,14 @@ export const codeSnippets = () => {
   const jsButton = document.querySelector('.tabs__js');
   const htmlButton = document.querySelector('.tabs__html');
 
-  jsButton.addEventListener('click', function() {
-    jsCode.classList.add('is-active');
-    htmlCode.classList.remove('is-active');
-    jsButton.classList.add('is-selected');
-    htmlButton.classList.remove('is-selected');
-  });
+  if (jsButton) {
+    jsButton.addEventListener('click', function() {
+      jsCode.classList.add('is-active');
+      htmlCode.classList.remove('is-active');
+      jsButton.classList.add('is-selected');
+      htmlButton.classList.remove('is-selected');
+    });
+  }
 
   htmlButton.addEventListener('click', function() {
     htmlCode.classList.add('is-active');

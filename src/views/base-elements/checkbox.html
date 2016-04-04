@@ -1,85 +1,145 @@
 ---
 fabricator: true
-name: checkboxes
-description: Checkboxes are used when there is a list of options, and the user may select multiple, including all or none.
+name: checkbox
+category: base elements
+mainDesc: "are used when there is a list of options, and the user may select multiple, including all or none."
+iterations:
+  checkbox:
+    title: "Checkbox"
+    htmlFile: "base-elements/checkbox.html"
+    desc: "Description here."
+  checkbox--disabled:
+    title: "Disabled Checkbox"
+    htmlFile: "base-elements/checkbox--disabled.html"
+    desc: "Description here."
 ---
 
+<!-- Item header -->
+<section class="item__header">
+  <div class="item__info">
+    <p class="item__category">{{category}}</p>
+    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  </div>
+  <ul class="item__tabs">
+    <li class="toggle-view--foundation is-selected">Foundation</li>
+    <li class="toggle-view--usage">Usage</li>
+    <li class="toggle-view--style">Style</li>
+  </ul>
+</section>
+<!-- Item header ends -->
+
+<!-- Item main container -->
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <!-- View: Foundation -->
+  <div class="view--foundation is-active">
 
-  <p class="item__main-desc">{{description}}</p>
+    <p class="item__main-desc">
+      <span class="highlight">{{capitalize name}} </span>{{mainDesc}}
+    </p>
 
-  <!-- FOUNDATION -->
+  <h2 class="item-section__main-heading">Variations</h2>
 
-  <section class="item-section">
+  <!-- Element Loop -->
+  {{#each iterations as |item|}}
+    <section class="item-section" id="{{dasherize item.title}}">
 
-  <h2 class="item-section__heading">Foundation</h2>
+      <h2 class="item-section__heading">{{item.title}}</h2>
+
+      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+
+  {{#if item.htmlFile}}
 
   <div class="item-section__example">
-    {{> checkbox}}
-    <br>
-    {{> checkbox--disabled}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{{findFile item.htmlFile}}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
+  </ul>
 
-  {{> checkbox}}
+  <!-- HTML Code -->
+  <div class="code__html is-active">
 
-  {{> checkbox--disabled}}
+  ```markup
+  {{{findFile item.htmlFile}}}
+  ```
+
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+
+  {{#if item.jsFile}}
+  <!-- JS Code -->
+
+  <div class="code__js">
+
+  ```js
+  {{{findFile item.jsFile}}}
+  ```
+
+  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+  <!-- End of Code Snippets -->
+
+
+  </div>
+  {{/if}}
 
   {{/markdown}}
 
+  {{/if}}
+  </section>
+  {{/each}}
+
+  <!-- View: Foundation ends -->
   </div>
 
+  <!-- View: Usage -->
+  <div class="view--usage">
+    <h2 class="item-section__heading">Usage</h2>
   </div>
+  <!-- View: Usage ends -->
 
-  </section>
-
-
-  <!-- GUIDELINES -->
-
-  <section class="item-section" id="guidelines">
-
-  <h2 class="item-section__heading">Usage</h2>
-
-  <h3 class="item-section__sub-heading">Title</h3>
-
-  <p class="item-section__desc">If necessary, a title may accompany a set of checkboxes to provide further clarity into what the user is making a selection on.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Labels</h3>
-
-  <p class="item-section__desc">A checkbox should always be accompanied by a clear and concise label. Be explicit about the action that will follow if the checkbox is selected. Labels appear to the right of the checkbox.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Click Target</h3>
-
-  <p class="item-section__desc">Users should be able to select the checkbox by clicking on the box directly or its label.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Tables</h3>
-
-  <p class="item-section__desc">See [Tables] section for guidance on how to use checkboxes within a table.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Default Selection</h3>
-
-  <p class="item-section__desc">A set of checkboxes should default to having none of the options selected.</p>
-
-  </section>
+  <!-- View: Style -->
+  <div class="view--style">
+    <h1 class="item-section__heading">Style</h1>
+  </div>
+  <!-- View: Style ends -->
 
 </div>
+
+<!-- Item main container ends -->
+
+<script>
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+</script>

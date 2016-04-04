@@ -1,146 +1,148 @@
 ---
 fabricator: true
 name: lists
-description: A list consists of multiple line items of related content grouped together and organized vertically.
+category: base elements
+mainDesc: "consists of multiple line items of related content grouped together and organized vertically."
+iterations:
+  list--unordered:
+    title: "Unordered List"
+    htmlFile: "base-elements/list--unordered.html"
+    desc: "Unordered or bulleted lists are commonly used to present content of equal status or value. They generally present items in a random order."
+  list--ordered:
+    title: "Ordered List"
+    htmlFile: "base-elements/list--ordered.html"
+    desc: "Ordered or numbered lists are used if a particular order to the items is warranted. They imply sequence and order, and are most commonly used when giving a set of instructions."
+  list--data:
+    title: "Data List"
+    desc: "Need example here."
 ---
 
+<!-- Item header -->
+<section class="item__header">
+  <div class="item__info">
+    <p class="item__category">{{category}}</p>
+    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  </div>
+  <ul class="item__tabs">
+    <li class="toggle-view--foundation is-selected">Foundation</li>
+    <li class="toggle-view--usage">Usage</li>
+    <li class="toggle-view--style">Style</li>
+  </ul>
+</section>
+<!-- Item header ends -->
+
+<!-- Item main container -->
 <div class="item__container">
 
-  <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+  <!-- View: Foundation -->
+  <div class="view--foundation is-active">
 
-  <p class="item__main-desc">{{description}}</p>
+    <p class="item__main-desc">
+      <span class="highlight">{{capitalize name}} </span>{{mainDesc}}
+    </p>
 
-  <!-- UNORDERED LIST -->
+  <h2 class="item-section__main-heading">Variations</h2>
 
-  <section class="item-section">
+  <!-- Element Loop -->
+  {{#each iterations as |item|}}
+    <section class="item-section" id="{{dasherize item.title}}">
 
-  <h2 class="item-section__heading">Unordered List</h2>
+      <h2 class="item-section__heading">{{item.title}}</h2>
 
-  <p class="item-section__desc">Unordered or bulleted lists are commonly used to present content of equal status or value. They generally present items in a random order.</p>
+      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+
+  {{#if item.htmlFile}}
 
   <div class="item-section__example">
-    {{> list--unordered}}
+
+  <div class="example__rendered">
+
+  <div class="rendered__item">
+  {{{findFile item.htmlFile}}}
   </div>
 
   {{#markdown}}
-  <div class="snippet">
 
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <a class="rendered__view-full-size" href="#">View full render</a>
+
+  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
+
   </div>
 
-  <div class="snippet__html show-snippet">
+  <div class="example__code">
 
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
+  <ul class="code__tabs">
+    <li class="tabs__html is-selected">HTML</li>
+    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
+  </ul>
 
-  {{> list--unordered}}
+  <!-- HTML Code -->
+  <div class="code__html is-active">
 
+  ```markup
+  {{{findFile item.htmlFile}}}
   ```
 
+  <button class="code__copy">
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+    </svg>
+  </button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
   </div>
+
+  {{#if item.jsFile}}
+  <!-- JS Code -->
+
+  <div class="code__js">
+
+  ```js
+  {{{findFile item.jsFile}}}
+  ```
+
+  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+
+  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
+
+  </div>
+  <!-- End of Code Snippets -->
+
+
+  </div>
+  {{/if}}
 
   {{/markdown}}
 
-  </div>
-
+  {{/if}}
   </section>
+  {{/each}}
 
-  <!-- ORDERED LIST -->
-
-  <section class="item-section">
-
-  <h2 class="item-section__heading">Ordered List</h2>
-
-  <p class="item-section__desc">Ordered or numbered lists are used if a particular order to the items is warranted. They imply sequence and order, and are most commonly used when giving a set of instructions.</p>
-
-  <div class="item-section__example">
-    {{> list--ordered}}
+  <!-- View: Foundation ends -->
   </div>
 
-  {{#markdown}}
-  <div class="snippet">
-
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
+  <!-- View: Usage -->
+  <div class="view--usage">
+    <h1 class="item-section__heading">Usage</h1>
   </div>
+  <!-- View: Usage ends -->
 
-  <div class="snippet__html show-snippet">
-
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
-
-  {{> list--ordered}}
-
-  ```
-
+  <!-- View: Style -->
+  <div class="view--style">
+    <h1 class="item-section__heading">Style</h1>
   </div>
+  <!-- View: Style ends -->
 
-  {{/markdown}}
+</div>
 
-  </div>
+<!-- Item main container ends -->
 
-  </section>
-
-  <!-- DATA LIST -->
-
-  <section class="item-section">
-
-  <h2 class="item-section__heading">Data List</h2>
-
-  <div class="item-section__example">
-    Need example here
-  </div>
-
-  {{#markdown}}
-  <div class="snippet">
-
-  <div class="snippet__btns">
-    <button class="snippet__btns--html active-btn">HTML</button>
-  </div>
-
-  <div class="snippet__html show-snippet">
-
-  ```markup <!--Very important to have an empty line between this line and the code snippet -->
-
-  Need example here
-
-  ```
-
-  </div>
-
-  {{/markdown}}
-
-  </div>
-
-  </section>
-
-  <!-- GUIDELINES -->
-
-  <section class="item-section" id="guidelines">
-
-  <h2 class="item-section__heading">Guidelines</h2>
-
-  <h3 class="item-section__sub-heading">Length</h3>
-
-  <p class="item-section__desc">Generally, lists should be used when there is a single line item of information per line. For larger or more complex sets of data, consider using a [table](#). Both lists and table may alternatively be displayed as a grid.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Scrolling</h3>
-
-  <p class="item-section__desc">Lists should only scroll vertically. If more horizontal space is needed, consider using a larger line height per item or adjusting to a grid view to accomodate the additional information.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Order</h3>
-
-  <p class="item-section__desc">The default order of a list should make sense given the context and facilitate the user's goal. For example, if the list is about resource use, perhaps the default order should be highest resource use to lowest and not alphabetically.</p>
-
-  <p class="item-section__desc">If there is no such meaningful default, alpabetical or numeric order should be used. Grouping items by categories into smaller, more specific lists may be more meaningful to users in some contexts.</p>
-
-  <br>
-
-  <h3 class="item-section__sub-heading">Filter & Sort</h3>
-
-  <p class="item-section__desc">Even with a meaningful default order, in many cases, lists should be filterable and sortable, allowing the user to manipulate and view the content as they see fit.</p>
-
-  </section>
+<script>
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+</script>
