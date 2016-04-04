@@ -3,6 +3,7 @@
   @extend %font-smoothing;
   font-size: rem(14px);
   background-color: $color__menu-bg;
+  border-right: 2px solid $color__border--menu;
   width: $width__menu;
   height: 100%;
   z-index: 1;

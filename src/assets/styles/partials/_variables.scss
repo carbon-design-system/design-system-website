@@ -2,14 +2,14 @@
 // Colors                    //
 ///////////////////////////////
 
-$color__menu-bg: $color__blue-90;
 $color__section-bg: $color__blue-30;
 $color__border: $color__blue-20;
 $color__white: #fff;
 $color__dark-blue: #1d3649;
+$color__menu-bg: $color__dark-blue;
 $color__light-gray: #f7f7f7;
 $color__text--light: $color__atlas-gray-1;
-$color__text--dark: #1d3649;
+$color__text--dark: #485760;
 $color__section-border: $color__atlas-gray-1;
 $color__toggle-menu: $color__navy-gray-5;
 $color__toggle-menu--is-closed: $color__blue-90;
@@ -17,6 +17,9 @@ $color__toggle-menu-icon: $color__white;
 $color__snippet-bg: #eff2f5;
 $color__rendered-example: $color__navy-gray-3;
 $color__code-tabs: $color__navy-gray-5;
+$color__light-btn--hover: #c0e6ff;
+$color__border--light: #dfe6eb;
+$color__border--menu: #2c4559;
 
 ///////////////////////////////
 // Code                      //
@@ -39,8 +42,9 @@ $base-font-size: 16px;
 
 $width__menu: 17.5em;
 $height__header: em(300px);
+$width__screen-size--x-small: 35em;
 $width__screen-size--small: 50em;
-$width__screen-size--medium: 90em;
+$width__screen-size--medium: 80em;
 
 ///////////////////////////////
 // Animation                 //
