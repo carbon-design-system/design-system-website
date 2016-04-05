@@ -12,9 +12,7 @@ iterations:
     title: "Ordered List"
     htmlFile: "base-elements/list--ordered.html"
     desc: "Ordered or numbered lists are used if a particular order to the items is warranted. They imply sequence and order, and are most commonly used when giving a set of instructions."
-  list--data:
-    title: "Data List"
-    desc: "Need example here."
+
 ---
 
 <!-- Item header -->
@@ -124,7 +122,21 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h1 class="item-section__heading">Usage</h1>
+    <h3>Length</h3>
+      <p class="item-section__desc">Generally, lists should be used when there is a single line item of information per line. For larger or more complex sets of data, consider using a
+        <a href="http://design-system.stage1.mybluemix.net/base-elements/tables.html">Table.</a> Both lists and tables may alternatively be displayed as a grid. </p>
+
+    <h3>Scrolling</h3>
+      <p class="item-section__desc">Lists should only scroll vertically. If more horizontal space is needed, consider using a larger line height per item or adjusting to a grid view to accomodate the additional information.</p>
+
+    <h3>Order</h3>
+      <p class="item-section__desc">The default order of a list should make sense given the context and facilitate the user's goal. For example, if the list is about resource use, perhaps the default order should be highest resource use to lowest and not alphabetically. <br>
+
+If there is no such meaningful default, alpabetical or numeric order should be used. Grouping items by categories into smaller, more specific lists may be more meaningful to users in some contexts.</p>
+
+    <h3>Filter & Sort</h3>
+        <p class="item-section__desc">Even with a meaningful default order, in many cases, lists can be filterable and sortable, allowing the user to manipulate and view the content as they see fit.</p>
+
   </div>
   <!-- View: Usage ends -->
 

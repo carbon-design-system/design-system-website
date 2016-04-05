@@ -28,6 +28,9 @@ iterations:
   button-set:
     title: "Sets of Buttons"
     desc: "Sets of buttons are used when action required by the user may have more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left."
+    button-inline:
+      title: "Inline Buttons"
+      desc: "Inline buttons can be used when the action is directly related to the context of a form or text box. They should be one word only. "
 ---
 
 <!-- Item header -->
@@ -95,7 +98,7 @@ iterations:
   ```markup
   {{{findFile item.htmlFile}}}
   ```
-  
+
   <button class="code__copy">
     <svg>
       <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
@@ -143,16 +146,16 @@ iterations:
       <h3 style="color:black">Icon Usage</h3>
       <br>
       <p class="item-section__desc">
-        <ul style="color:black">
-          <li>Use small icons (16px or less) within buttons </li>
-          <li>Small icons are distinguished by their solid shape and knocked-out details</li>
-          <li>Icons should always appear to the right of the text</li>
-          <li>Icons used in buttons must be directly related to the action that the user is taking</li>
-          <li>Icons must be the same color value as the text within a button</li>
+        <ul class="list--unordered">
+          <li class="list__item">Use small icons (16px or less) within buttons </li>
+          <li class="list__item">Small icons are distinguished by their solid shape and knocked-out details</li>
+          <li class="list__item">Icons should always appear to the right of the text</li>
+          <li class="list__item">Icons used in buttons must be directly related to the action that the user is taking</li>
+          <li class="list__item">Icons must be the same color value as the text within a button</li>
         </ul>
       </p><br>
       <h5 style="color:gray"><i>Example</i></h5><br>
-      <img src="../assets/images/button.png"</img>
+      <!--<img src="../assets/images/button.png"</img>-->
   </div>
   <!-- View: Usage ends -->
 
