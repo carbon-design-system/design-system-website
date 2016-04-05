@@ -2,28 +2,21 @@
 fabricator: true
 name: Notifications
 category: components
-mainDesc: "are being used ..."
+mainDesc: "are messages that communicate information to the user. "
 iterations:
   alert--danger:
-    title: "Alert: Danger"
+    title: "Generic Notifications"
     htmlFile: "components/alert--danger.html"
-    desc: "Description here."
+    desc: "Generic notifications are typically passive, meaning they won't affect the user's workflow if not addressed. These notifications can include real time updates, to notify the user of activities happening in the system. These can contain information about an app, service, or compute resource starting, stopping, or reaching a threshold."
   alert--info:
-    title: "Alert: Info"
+    title: "Inline Notifications"
     htmlFile: "components/alert--info.html"
-    desc: "Description here."
+    desc: "Inline notifications appear in-page, and are important to the context of what the user's workflow."
   alert--misc:
-    title: "Alert: Misc"
+    title: "Modal Notifications"
     htmlFile: "components/alert--misc.html"
-    desc: "Description here."
-  alert--running:
-    title: "Alert: Running"
-    htmlFile: "components/alert--running.html"
-    desc: "Description here."
-  alert--warning:
-    title: "Alert: Warning"
-    htmlFile: "components/alert--warning.html"
-    desc: "Description here."
+    desc: "This style of notification is highly discouraged, due to it's disruptive nature. Notifications should only appear within a modal if there is an action the user needs to address immediately. Modal notifications are persistent on screen. That is, they do not automatically go away after appearing. Users must either engage with or dismiss the notification."
+
 ---
 
 <!-- Item header -->
@@ -133,7 +126,49 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="item-section__heading">Usage</h2>
+    <h2 class="item-section__heading">Format</h2>
+      <h3>Size</h3>
+        <p class="item-section__desc">Generic notifications have a fixed width to maintain consistency, but their height can vary depending on content. <br>Inline notifications width and height may vary depending on the type of content presented.  </p>
+
+      <h3>Title</h3>
+        <p class="item-section__desc">All notifications should have titles to give users a quick means of understanding the content of the notification. Titles should match the notification color (see below for color meaning). App, service, and compute resource names should be bolded.</p>
+
+      <h3>Message</h3>
+        <p class="item-section__desc">The body or message of the notification must be contained within two lines. Be as descriptive as possible, and try to include troubleshooting actions or next steps. If you can communicate the main message of your notification to the user within the title, a secondary message may not be needed.  </p>
+
+      <h3>Date</h3>
+        <p class="item-section__desc">Every notification should be time-stamped.
+          <br>Use the following rules to display time:
+            <ul class="list--unordered">
+              <li class="list__item">Less than one hour: "30 minutes ago"</li>
+              <li class="list__item">Less than 24 hours ago: "3 hours ago"</li>
+              <li class="list__item">Less than a month ago: "12 days ago"</li>
+              <li class="list__item">Less than a year ago: "8 months ago"</li>
+              <li class="list__item">Over a year: Follow ISO 8601 Standards: "2016-01-19"</li>
+            </ul>
+          </p>
+<br>
+       <h3>Color</h3>
+            <h4>Green 30: Success</h4>
+            <h4>Yellow 30: Warning</h4>
+            <h4>Red 30: Error</h4>
+            <h4>Blue 20: Informational</h4>
+<br>
+
+        <h3>Icons</h3>
+          <p class="item-section__desc">Icons aren't used in generic notifications, due to the space constraints. When icons appear in inline or modal notifications, they are placed to the left of the title. See the Style tab for further specs about icons.</p>
+<br>
+
+    <h2 class="item-section__heading">Placement</h2>
+        <h3> Generic Notifications</h3>
+          <p class="item-section__desc">These should always appear in the top right corner, and slide in from off canvas. Actionable notifications do not appear on mobile screen widths.</p>
+
+        <h3>Inline Notifications</h3>
+          <p class="item-section__desc">These should appear close to the item that they are related to. </p>
+
+    <h2 class="item-section__heading">Dismissal</h2>
+          <p class="item-section__desc">All notifications must have one method of dismissal. Typically, it is a small "x" in the upper right hand corner.</p>
+
   </div>
   <!-- View: Usage ends -->
 

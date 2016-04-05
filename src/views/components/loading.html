@@ -2,13 +2,13 @@
 fabricator: true
 name: Loading
 category: components
-mainDesc: "is being used ..."
+mainDesc: "spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway."
 iterations:
   loading:
     title: "Loading"
     htmlFile: "components/spinner.html"
     jsFile: "js/spinner.js"
-    desc: "Description here."
+    desc: ""
 ---
 
 <!-- Item header -->
@@ -35,7 +35,7 @@ iterations:
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="item-section__main-heading">Foundation</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
@@ -118,7 +118,19 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="item-section__heading">Usage</h2>
+    <h2 class="item-section__heading">General</h2>
+      <p class="item-section__desc">
+        The waiting experience is a crucial design oppurtunity. Although the user may not be able to see what's happening in the back-end, we can communicate and provide reassurance that something is happening. It is best practice to use a loading spinner whenever the wait time is anticipated to be longer than 3 seconds.</p>
+        <p class="item-section__desc">
+      Adopted from the <a href="http://www.ibm.com/design/language/framework/animation/introduction">IBM Design Language</a> Animation Library: <br>
+    The rhythmic oscillations of tape reels in motion got us thinking about a user’s waiting experience. If a user watches search results load, showing the machine at work relays a sense of efficiency. The swift and even balance of the spinning circles indicates that progress is being made.</p>
+
+    <h3>Example</h3>
+      <br><br>
+    <h3>Size</h3>
+      <p class="item-section__desc">Loading spinners can be scaled down if the loading experience is contextual to a certain item on the page.
+</p>
+
   </div>
   <!-- View: Usage ends -->
 
