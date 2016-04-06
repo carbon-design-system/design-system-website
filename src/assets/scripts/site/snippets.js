@@ -18,12 +18,14 @@ export const codeSnippets = () => {
     });
   }
 
-  htmlButton.addEventListener('click', function() {
-    htmlCode.classList.add('is-active');
-    jsCode.classList.remove('is-active');
-    htmlButton.classList.add('is-selected');
-    jsButton.classList.remove('is-selected');
-  });
+  if (htmlButton) {
+    htmlButton.addEventListener('click', function() {
+      htmlCode.classList.add('is-active');
+      jsCode.classList.remove('is-active');
+      htmlButton.classList.add('is-selected');
+      jsButton.classList.remove('is-selected');
+    });
+  }
 
   Array.prototype.forEach.call(showFullCode, function(el) {
     el.addEventListener('click', function(e) {
