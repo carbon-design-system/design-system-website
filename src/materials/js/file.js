@@ -1,17 +1,21 @@
 export default class FileUploader {
-  constructor(element, options) {
+  constructor(element, options = {}) {
     if (!element || element.nodeType !== Node.ELEMENT_NODE) {
       throw new TypeError('DOM element should be given to initialize this widget.');
     }
 
     this.element = element;
 
-    const labelSelector = options && options.labelSelector || element.getAttribute('data-label');
+    const labelSelector = options.labelSelector || element.getAttribute('data-label');
     this.labelNode = element.parentNode.querySelector(labelSelector) || element.nextElementSibling;
 
-    FileUploader.components.set(this.element, this);
+    this.constructor.components.set(this.element, this);
 
     element.addEventListener('change', (event) => this.updateLabel(event));
+  }
+
+  static init(options) {
+    [... document.querySelectorAll('[data-file-input]')].forEach(element => this.create(element, options));
   }
 
   updateLabel(event) {
@@ -25,16 +29,16 @@ export default class FileUploader {
     }
 
     if (fileName) {
-      this.labelNode.innerHTML = fileName;
+      this.labelNode.textContent = fileName;
     }
   }
 
   release() {
-    FileUploader.components.delete(this.element);
+    this.constructor.components.delete(this.element);
   }
 
   static create(element, options) {
-    return FileUploader.components.get(element) || new FileUploader(element, options);
+    return this.components.get(element) || new this(element, options);
   }
 }
 

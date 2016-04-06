@@ -1,96 +1,40 @@
-import '../../../../global/js/custom-event';
+import eventMatches from '../polyfills/event-matches';
 
-import '../../../utils/es6-weak-map-global'; // For PhantomJS
+export default class FabButton {
+  constructor(element) {
+    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+      throw new TypeError('DOM element should be given to initialize this widget.');
+    }
+    this.element = element;
 
-import FabButton from '../../../../components/floating-action-button/fab';
+    this.constructor.components.set(this.element, this);
 
-describe('Test floating action button', function () {
-  describe('Constructor', function () {
-    it(`Should throw if root element is not given`, function () {
-      expect(() => {
-        new FabButton(); // eslint-disable-line no-new
-      }).to.throw;
-    });
+    element.addEventListener('click', (event) => this.toggle(event));
+  }
 
-    it(`Should throw if root element is not a DOM element`, function () {
-      expect(() => {
-        new FabButton(document.createTextNode('')); // eslint-disable-line no-new
-      }).to.throw;
-    });
-  });
-
-  describe('Toggling', function () {
-    let fab;
-    let element;
-
-    before(function () {
-      element = document.createElement('a');
-      fab = new FabButton(element);
-      document.body.appendChild(element);
-    });
-
-    it(`Should cancel the event for <a>`, function () {
-      // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
-      expect(element.dispatchEvent(new CustomEvent('click', { cancelable: true }))).to.be.false;
-    });
-
-    it(`Should turn to open state from closed state`, function () {
-      element.classList.add('fab--close');
-      element.dispatchEvent(new CustomEvent('click'));
-      expect(element.classList.contains('fab--close')).to.be.false;
-    });
-
-    it(`Should turn to closed state from open state`, function () {
-      element.dispatchEvent(new CustomEvent('click'));
-      expect(element.classList.contains('fab--close')).to.be.true;
-    });
-
-    afterEach(function () {
-      element.classList.remove('fab--close');
-    });
-
-    after(function () {
-      fab.release();
-      document.body.removeChild(element);
-    });
-  });
-
-  describe('Managing instances', function () {
-    let element;
-
-    before(function () {
-      element = document.createElement('a');
-    });
-
-    it('Should prevent creating duplicate instances', function () {
-      let first;
-      let second;
-      try {
-        first = FabButton.create(element);
-        second = FabButton.create(element);
-        expect(first).to.equal(second);
-      } finally {
-        first && first.release();
-        if (first !== second) {
-          second && second.release();
-        }
+  static init() {
+    document.addEventListener('click', (event) => {
+      const element = eventMatches(event, '[data-fab]');
+      if (element && !FabButton.components.has(element)) {
+        FabButton.create(element).toggle(event);
       }
     });
+  }
 
-    it('Should let create a new instance for an element if an earlier one has been released', function () {
-      let first;
-      let second;
-      try {
-        first = FabButton.create(element);
-        first.release();
-        second = FabButton.create(element);
-        expect(first).not.to.equal(second);
-      } finally {
-        first && first.release();
-        if (first !== second) {
-          second && second.release();
-        }
-      }
-    });
-  });
-});
+  toggle(event) {
+    if (this.element.tagName === 'A') {
+      event.preventDefault();
+    }
+    this.element.classList.toggle('is-closed');
+  }
+
+  release() {
+    this.constructor.components.delete(this.element);
+  }
+
+  static create(element) {
+    return this.components.get(element) || new this(element);
+  }
+}
+
+FabButton.components = new WeakMap();

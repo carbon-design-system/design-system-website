@@ -1,135 +1,80 @@
-import '../../../../global/js/custom-event';
-import Tab from '../../../../components/tabs-nav/tabs-nav';
+// This file was moved here as a dependancy of tab-nav.
+// It no longer has anything to do with content-switcher, so the name could
+// possibly be changed
+import '../polyfills/array-from';
+import '../polyfills/object-assign';
 
-describe('Test tabs', function () {
-  describe('Constructor', function () {
-    it(`Should set default options`, function () {
-      const stubUpdateTriggerText = sinon.stub(Tab.prototype, 'updateTriggerText');
-      try {
-        const tab = new Tab(document.createElement('div'));
-        expect(tab.options).to.deep.equal({
-          selectorMenu: '.tabs__nav',
-          selectorTrigger: '.tabs__trigger',
-          selectorTriggerText: '.trigger__text',
-          selectorButton: '.nav__item',
-          selectorButtonSelected: '.nav__item.selected',
-          classActive: 'selected',
-          classHidden: 'tabs--hidden',
-        });
-      } finally {
-        stubUpdateTriggerText.restore();
+function toggleClass(element, name, add) {
+  if (element.classList.contains(name) === !add) {
+    element.classList[add ? 'add' : 'remove'](name);
+  }
+}
+
+export default class Tab {
+  constructor(element, options = {}) {
+    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+      throw new TypeError('DOM element should be given to initialize this widget.');
+    }
+
+    this.element = element;
+
+    this.options = Object.assign({
+      selectorMenu: '.tabs__nav',
+      selectorTrigger: '.tabs__trigger',
+      selectorTriggerText: '.trigger__text',
+      selectorButton: '.nav__item',
+      selectorButtonSelected: '.nav__item.selected',
+      classActive: 'selected',
+      classHidden: 'tabs--hidden',
+    }, options);
+
+    this.constructor.components.set(this.element, this);
+
+    [... this.element.querySelectorAll(this.options.selectorButton)].forEach((button) => {
+      button.addEventListener('click', (event) => this.handleItemClick(event));
+    });
+
+    [... this.element.querySelectorAll(this.options.selectorTrigger)].forEach((trigger) => {
+      trigger.addEventListener('click', (event) => this.updateMenuState(event));
+    });
+
+    this.updateTriggerText(this.element.querySelector(this.options.selectorButtonSelected));
+  }
+
+  static init(options) {
+    [... document.querySelectorAll('[data-tabs]')].forEach(element => this.create(element, options));
+  }
+
+  handleItemClick(event) {
+    this.setActive(event);
+    this.updateMenuState();
+    this.updateTriggerText(event.currentTarget);
+  }
+
+  setActive(event) {
+    [... this.element.querySelectorAll(this.options.selectorButton)].forEach((button) => {
+      if (button !== event.currentTarget) {
+        toggleClass(button, this.options.classActive, false);
       }
     });
+    toggleClass(event.currentTarget, this.options.classActive, true);
+  }
 
-    it(`Should initialize currently selected tab item for narrow screen`, function () {
-      const triggerTextNode = document.createElement('div');
-      triggerTextNode.classList.add('trigger__text');
+  updateMenuState() {
+    this.element.querySelector(this.options.selectorMenu).classList.toggle(this.options.classHidden);
+  }
 
-      const element = document.createElement('div');
-      element.appendChild(triggerTextNode);
+  updateTriggerText(target) {
+    this.element.querySelector(this.options.selectorTriggerText).textContent = target.textContent;
+  }
 
-      [... new Array(2)].forEach((item, i) => {
-        const buttonNode = document.createElement('div');
-        buttonNode.classList.add('nav__item');
-        if (i === 0) {
-          buttonNode.classList.add('selected');
-        }
-        buttonNode.textContent = i;
-        element.appendChild(buttonNode);
-      });
+  release() {
+    this.constructor.components.delete(this.element);
+  }
 
-      new Tab(element); // eslint-disable-line no-new
-      expect(triggerTextNode.textContent).to.equal('0');
-    });
-  });
+  static create(element, options) {
+    return this.components.get(element) || new this(element, options);
+  }
+}
 
-  describe('Toggling drop down for narrow screen', function () {
-    let stubUpdateTriggerText;
-    let triggerNode;
-    let menuNode;
-
-    before(function () {
-      stubUpdateTriggerText = sinon.stub(Tab.prototype, 'updateTriggerText');
-
-      triggerNode = document.createElement('div');
-      triggerNode.classList.add('tabs__trigger');
-
-      menuNode = document.createElement('div');
-      menuNode.classList.add('tabs__nav');
-
-      const element = document.createElement('div');
-      element.appendChild(triggerNode);
-      element.appendChild(menuNode);
-
-      new Tab(element); // eslint-disable-line no-new
-    });
-
-    it(`Should show drop down upon hitting trigger button`, function () {
-      menuNode.classList.add('tabs--hidden');
-      triggerNode.dispatchEvent(new CustomEvent('click'));
-      expect(menuNode.classList.contains('tabs--hidden')).to.be.false;
-    });
-
-    it(`Should hide drop down upon hitting trigger button`, function () {
-      triggerNode.dispatchEvent(new CustomEvent('click'));
-      expect(menuNode.classList.contains('tabs--hidden')).to.be.true;
-    });
-
-    afterEach(function () {
-      menuNode.classList.remove('tabs--hidden');
-    });
-
-    after(function () {
-      stubUpdateTriggerText.restore();
-    });
-  });
-
-  describe('Setting active tab', function () {
-    let stubUpdateMenuState;
-    let buttonNodes;
-    let triggerTextNode;
-
-    before(function () {
-      stubUpdateMenuState = sinon.stub(Tab.prototype, 'updateMenuState');
-
-      triggerTextNode = document.createElement('div');
-      triggerTextNode.classList.add('trigger__text');
-
-      const element = document.createElement('div');
-      element.appendChild(triggerTextNode);
-
-      buttonNodes = [... new Array(2)].map((item, i) => {
-        const buttonNode = document.createElement('a');
-        buttonNode.classList.add('nav__item');
-        buttonNode.textContent = i;
-        if (i === 0) {
-          buttonNode.classList.add('selected');
-        }
-        return element.appendChild(buttonNode);
-      });
-
-      new Tab(element); // eslint-disable-line no-new
-    });
-
-    beforeEach(function () {
-      buttonNodes.forEach((buttonNode, i) => {
-        buttonNode.classList[i === 0 ? 'add' : 'remove']('selected');
-      });
-    });
-
-    it(`Should update active tab upon clicking`, function () {
-      buttonNodes[1].dispatchEvent(new CustomEvent('click'));
-      expect(buttonNodes[0].classList.contains('selected')).to.be.false;
-      expect(buttonNodes[1].classList.contains('selected')).to.be.true;
-    });
-
-    it(`Should update currently selected tab item for narrow screen`, function () {
-      buttonNodes[1].dispatchEvent(new CustomEvent('click'));
-      expect(triggerTextNode.textContent).to.equal(buttonNodes[1].textContent);
-    });
-
-    after(function () {
-      stubUpdateMenuState.restore();
-    });
-  });
-});
+Tab.components = new WeakMap();

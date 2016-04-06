@@ -1,159 +1,45 @@
-import '../../../../global/js/custom-event';
+import '../polyfills/array-from';
 
-import '../../../utils/es6-weak-map-global'; // For PhantomJS
+export default class OverflowMenu {
+  constructor(element) {
+    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+      throw new TypeError('DOM element should be given to initialize this widget.');
+    }
 
-import OverflowMenu from '../../../../components/overflow-menu/overflow-menu';
+    this.element = element;
 
-describe('Test Overflow menu', function () {
-  describe('Constructor', function () {
-    it(`Should throw if root element is not given`, function () {
-      expect(() => {
-        new OverflowMenu(); // eslint-disable-line no-new
-      }).to.throw;
-    });
+    this.constructor.components.set(this.element, this);
 
-    it(`Should throw if root element is not a DOM element`, function () {
-      expect(() => {
-        new OverflowMenu(document.createTextNode('')); // eslint-disable-line no-new
-      }).to.throw;
-    });
-  });
+    this.element.addEventListener('click', (event) => this.openMenu(event));
+  }
 
-  describe('Toggling a single overflow-menu', function () {
-    let menu;
-    let element;
-    before(function () {
-      element = document.createElement('a');
-      menu = new OverflowMenu(element);
-      document.body.appendChild(element);
-    });
+  static init() {
+    [... document.querySelectorAll('[data-overflow-menu]')].forEach(element => this.create(element));
+  }
 
-    it(`Instantiates without open class`, function () {
-      expect(element.classList.contains('open')).to.be.false;
-    });
+  openMenu(event) {
+    if (event.currentTarget.tagName === 'A') {
+      event.preventDefault();
+    }
 
-    it(`Prevents default behavior of anchor element on click event`, function () {
-      // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
-      expect(element.dispatchEvent(new CustomEvent('click', { cancelable: true }))).to.be.false;
-    });
+    if (this.element.classList.contains('open')) {
+      this.element.classList.remove('open');
+    } else {
+      [... this.element.ownerDocument.querySelectorAll('[data-overflow-menu].open')].forEach((element) => {
+        element.classList.remove('open');
+      });
 
-    it(`Adds open class on click event`, function () {
-      element.dispatchEvent(new CustomEvent('click'));
-      expect(element.classList.contains('open')).to.be.true;
-    });
+      this.element.classList.add('open');
+    }
+  }
 
-    it(`Removes open class on click event`, function () {
-      element.classList.add('open');
-      element.dispatchEvent(new CustomEvent('click'));
-      expect(element.classList.contains('open')).to.be.false;
-    });
+  release() {
+    this.constructor.components.delete(this.element);
+  }
 
-    it(`Adds open class then removes open class on click events`, function () {
-      element.dispatchEvent(new CustomEvent('click'));
-      element.dispatchEvent(new CustomEvent('click'));
-      expect(element.classList.contains('open')).to.be.false;
-    });
+  static create(element) {
+    return this.components.get(element) || new this(element);
+  }
+}
 
-    afterEach(function () {
-      element.classList.remove('open');
-    });
-
-    after(function () {
-      menu.release();
-      document.body.removeChild(element);
-    });
-  });
-
-  describe('Toggling multiple overflow-menus', function () {
-    let element1;
-    let element2;
-    let element3;
-
-    before(function () {
-      element1 = document.createElement('a');
-      element2 = document.createElement('a');
-      element3 = document.createElement('a');
-      element1.setAttribute('data-overflow-menu', '');
-      element2.setAttribute('data-overflow-menu', '');
-      element3.setAttribute('data-overflow-menu', '');
-      new OverflowMenu(element1); // eslint-disable-line no-new
-      new OverflowMenu(element2); // eslint-disable-line no-new
-      new OverflowMenu(element3); // eslint-disable-line no-new
-      document.body.appendChild(element1);
-      document.body.appendChild(element2);
-      document.body.appendChild(element3);
-    });
-
-    it('All overflow-menus should instatiate without an open class', function () {
-      expect(element1.classList.contains('open')).to.be.false;
-      expect(element2.classList.contains('open')).to.be.false;
-      expect(element3.classList.contains('open')).to.be.false;
-    });
-
-    it('One overflow-menu should open at a time on click event', function () {
-      element1.dispatchEvent(new CustomEvent('click'));
-      expect(element1.classList.contains('open')).to.be.true;
-      expect(element2.classList.contains('open')).to.be.false;
-      expect(element3.classList.contains('open')).to.be.false;
-    });
-
-    it('One overflow-menu should open at a time on multiple click events', function () {
-      element1.dispatchEvent(new CustomEvent('click'));
-      element2.dispatchEvent(new CustomEvent('click'));
-      expect(element1.classList.contains('open')).to.be.false;
-      expect(element2.classList.contains('open')).to.be.true;
-      expect(element3.classList.contains('open')).to.be.false;
-    });
-
-    afterEach(function () {
-      element1.classList.remove('open');
-      element2.classList.remove('open');
-      element3.classList.remove('open');
-    });
-
-    after(function () {
-      document.body.removeChild(element1);
-      document.body.removeChild(element2);
-      document.body.removeChild(element3);
-    });
-  });
-
-  describe('Managing instances', function () {
-    let element;
-
-    before(function () {
-      element = document.createElement('a');
-    });
-
-    it('Should prevent creating duplicate instances', function () {
-      let first;
-      let second;
-      try {
-        first = OverflowMenu.create(element);
-        second = OverflowMenu.create(element);
-        expect(first).to.equal(second);
-      } finally {
-        first && first.release();
-        if (first !== second) {
-          second && second.release();
-        }
-      }
-    });
-
-    it('Should let create a new instance for an element if an earlier one has been released', function () {
-      let first;
-      let second;
-      try {
-        first = OverflowMenu.create(element);
-        first.release();
-        second = OverflowMenu.create(element);
-        expect(first).not.to.equal(second);
-      } finally {
-        first && first.release();
-        if (first !== second) {
-          second && second.release();
-        }
-      }
-    });
-  });
-});
+OverflowMenu.components = new WeakMap();

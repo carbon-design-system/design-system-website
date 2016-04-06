@@ -19,13 +19,13 @@ import './vendor/prism';
 // Import all production JS (ES2015) files from bluemix-components
 
 // Base Elements
-import FileUploader from '../../../bower_components/bluemix-components/base-elements/inputs/file/file';
+import FileUploader from '../../../bower_components/bluemix-components/consumables/js/es2015/file';
 
 // Components
-import Spinner from '../../../bower_components/bluemix-components/components/spinner/spinner';
-import Modal from '../../../bower_components/bluemix-components/components/modals/modals';
-import OverflowMenu from '../../../bower_components/bluemix-components/components/overflow-menu/overflow-menu';
-import Tab from '../../../bower_components/bluemix-components/components/tabs-nav/tabs-nav';
+import Spinner from '../../../bower_components/bluemix-components/consumables/js/es2015/spinner';
+import Modal from '../../../bower_components/bluemix-components/consumables/js/es2015/modals';
+import OverflowMenu from '../../../bower_components/bluemix-components/consumables/js/es2015/overflow-menu';
+import Tab from '../../../bower_components/bluemix-components/consumables/js/es2015/tabs-nav';
 
 ////////////////////////////////////////////////////////////////////////
 // Site

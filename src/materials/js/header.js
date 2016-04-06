@@ -1,6 +1,6 @@
-import '../../global/js/array-from';
-import '../../global/js/object-assign';
-import '../../global/js/custom-event';
+import '../polyfills/array-from';
+import '../polyfills/object-assign';
+import '../polyfills/custom-event';
 
 export default class HeaderNav {
   constructor(element, options = {}) {
@@ -19,7 +19,7 @@ export default class HeaderNav {
       selectorLabel: '.taxonomy-item__label',
     }, options);
 
-    HeaderNav.components.set(this.element, this);
+    this.constructor.components.set(this.element, this);
 
     this.menuNode = this.element.querySelector(this.options.selectorMenu);
 
@@ -28,6 +28,10 @@ export default class HeaderNav {
     [... this.element.querySelectorAll(this.options.selectorItemLink)].forEach((item) => {
       item.addEventListener('click', (e) => this.select(e));
     });
+  }
+
+  static init(options) {
+    [... document.querySelectorAll('[data-nav-target]')].forEach(element => this.hook(element, options));
   }
 
   toggleNav(event) {
@@ -42,7 +46,7 @@ export default class HeaderNav {
     } else {
       return;
     }
-    if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
+    if (event.currentTarget.tagName === 'A') {
       event.preventDefault();
     }
 
@@ -104,11 +108,11 @@ export default class HeaderNav {
   }
 
   release() {
-    HeaderNav.components.delete(this.element);
+    this.constructor.components.delete(this.element);
   }
 
   static create(element, options) {
-    return HeaderNav.components.get(element) || new HeaderNav(element, options);
+    return this.components.get(element) || new this(element, options);
   }
 
   static hook(element, options) {
@@ -117,14 +121,11 @@ export default class HeaderNav {
     }
 
     const navs = [... element.ownerDocument.querySelectorAll(element.getAttribute('data-nav-target'))].map((target) => {
-      return HeaderNav.create(target, options);
+      return this.create(target, options);
     });
 
     ['keydown', 'click'].forEach((name) => {
       element.addEventListener(name, (event) => {
-        if (event.currentTarget.tagName === 'A' || event.currentTarget.querySelector('a')) {
-          event.preventDefault();
-        }
         navs.forEach((nav) => nav.toggleNav(event));
       });
     });

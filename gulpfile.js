@@ -64,8 +64,8 @@ gulp.task('copy', function() {
   // Copy HTML for base-elements and components into src/materials for use as
   // live code examples and snippets
   const materials = 'src/materials';
-  copy(`${config.bower}/base-elements/**/*html`, `${materials}/base-elements`);
-  copy(`${config.bower}/components/**/*html`, `${materials}/components`);
+  copy(`${config.bower}/html/base-elements/**/*html`, `${materials}/base-elements`);
+  copy(`${config.bower}/html/components/**/*html`, `${materials}/components`);
   copy(`${config.bower}/**/**/*js`, `${materials}/js`);
 
   // Copy font files from src to dist
