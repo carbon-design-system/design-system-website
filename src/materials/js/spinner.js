@@ -1,83 +1,65 @@
-import Spinner from '../../../../components/spinner/spinner';
+export default class Spinner {
+  constructor(element, options = { active: true }) {
+    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+      throw new TypeError('DOM element should be given to initialize this widget.');
+    }
 
-describe('Test spinner', function () {
-  describe('Constructor', function () {
-    it(`Should throw if root element is not given`, function () {
-      expect(() => {
-        new Spinner(); // eslint-disable-line no-new
-      }).to.throw;
-    });
+    this.element = element;
+    this.active = 'active' in options ? options.active : true;
 
-    it(`Should throw if root element is not a DOM element`, function () {
-      expect(() => {
-        new Spinner(document.createTextNode('')); // eslint-disable-line no-new
-      }).to.throw;
-    });
+    this.ie = false;
 
-    it(`Should default state to active`, function () {
-      const spinner = new Spinner(document.createElement('div'));
-      expect(spinner.isActive()).to.equal(true);
-    });
+    // check if browser is Internet Explorer
+    if (options.ie || window.ActiveXObject || 'ActiveXObject' in window) {
+      this.ie = true;
+      this.element.classList.add('is--ie');
+    }
 
-    it(`Should accept options`, function () {
-      const options = { active: false };
-      const spinner = new Spinner(document.createElement('div'), options);
-      expect(spinner.isActive()).to.equal(false);
-    });
-  });
+    this.constructor.components.set(this.element, this);
 
-  describe('set()', function () {
-    it('Should throw if boolean is not passed in', function () {
-      const spinner = new Spinner(document.createElement('div'));
-      expect(() => spinner.set()).to.throw;
-      expect(() => spinner.set('true')).to.throw;
-    });
+    // initialize spinner
+    this.set(this.active);
+  }
 
-    it('Should set state', function () {
-      const spinner = new Spinner(document.createElement('div'));
-      spinner.set(true);
-      expect(spinner.isActive()).to.equal(true);
-      spinner.set(false);
-      expect(spinner.isActive()).to.equal(false);
-    });
+  static init(options) {
+    [... document.querySelectorAll('[data-spinner]')].forEach(element => this.create(element, options));
+  }
 
-    it('Should return self after setting', function() {
-      const spinner = new Spinner(document.createElement('div'));
-      expect(spinner.set(true)).to.equal(spinner);
-    });
+  set(active) {
+    if (typeof active !== 'boolean') {
+      throw new TypeError('set expects a boolean.');
+    }
 
-    it('Should set class of DOM element', function() {
-      const spinner = new Spinner(document.createElement('div'));
-      spinner.set(true);
-      expect(spinner.element.className).to.equal('');
-      spinner.set(false);
-      expect(spinner.element.className).to.equal('is-stopping');
-    });
+    this.active = active;
 
-    it('Should set special class for IE', function() {
-      var options = { ie: true };
-      const spinner = new Spinner(document.createElement('div'), options);
-      spinner.set(true);
-      expect(spinner.element.className).to.equal('is--ie');
-      spinner.set(false);
-      expect(spinner.element.className).to.equal('is--ie is-stopping--ie');
-    });
-  });
+    if (this.active) {
+      this.element.classList.remove('is-stopping--ie', 'is-stopping');
+    } else {
+      if (this.ie) {
+        this.element.classList.add('is-stopping--ie');
+      } else {
+        this.element.classList.add('is-stopping');
+      }
+    }
 
-  describe('toggle()', function() {
-    it('Should toggle', function() {
-      const spinner = new Spinner(document.createElement('div'));
-      spinner.toggle();
-      expect(spinner.isActive()).to.equal(false);
-      spinner.toggle();
-      expect(spinner.isActive()).to.equal(true);
-    });
-  });
+    return this;
+  }
 
-  describe('isActive()', function() {
-    it('Should return spinner state', function() {
-      const spinner = new Spinner(document.createElement('div'));
-      expect(spinner.isActive()).to.equal(true);
-    });
-  });
-});
+  toggle() {
+    return this.set(!this.active);
+  }
+
+  isActive() {
+    return this.active;
+  }
+
+  release() {
+    this.constructor.components.delete(this.element);
+  }
+
+  static create(element) {
+    return this.components.get(element) || new this(element);
+  }
+}
+
+Spinner.components = new WeakMap();
