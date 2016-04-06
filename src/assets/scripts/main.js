@@ -39,6 +39,7 @@ import { tabsNavigation } from './site/tabs';
 import { codeSnippets } from './site/snippets';
 import { themeSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
+
 // import snippets stuff here
 
 document.addEventListener('DOMContentLoaded', function(e) {
@@ -66,4 +67,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
   codeSnippets();
   themeSwitcher();
   renderPopout();
+
+  const alertModalElement = document.querySelector('#under-construction');
+  const alertModal = Modal.create(alertModalElement);
+  alertModal.show();
+
 });
