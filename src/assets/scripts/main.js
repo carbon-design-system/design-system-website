@@ -69,7 +69,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
   renderPopout();
 
   const alertModalElement = document.querySelector('#under-construction');
-  const alertModal = Modal.create(alertModalElement);
-  alertModal.show();
+  if (alertModalElement) {
+    const alertModal = Modal.create(alertModalElement);
+    alertModal.show();
+  }
 
 });
