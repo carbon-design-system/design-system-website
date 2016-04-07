@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "cf push",
     "start": "node server.js",
-    "prebuild": "gulp clean",
+    "prebuild": "gulp clean && gulp copy",
     "build": "gulp build",
     "predev": "npm run build",
     "dev": "parallelshell 'nodemon server.js' 'gulp serve --env=dev'",
