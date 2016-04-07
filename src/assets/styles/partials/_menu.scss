@@ -52,6 +52,26 @@
       transform: translateX(-100%);
     }
   }
+
+  &__download-btns {
+    border-top: 1px solid $color__blue-20;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1em;
+      color: $color__blue-30;
+      border-color: $color__blue-30;
+
+      &:hover {
+        background-color: $color__blue-30;
+      }
+    }
+  }
 }
 
 .menu__header--mobile {
