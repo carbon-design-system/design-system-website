@@ -21,6 +21,23 @@
   @media screen and (max-width: $width__screen-size--small) {
     padding-right: 2em;
   }
+
+  a {
+    font-weight: bold;
+    color: $color__blue-40;
+    text-decoration: underline;
+    transition: $transition--link;
+
+    &:visited {
+      color: $color__blue-40;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: $color__blue-30;
+    }
+  }
 }
 
 // Styles for an item (single Components and Base Elements)
@@ -182,8 +199,13 @@
     color: $color__blue-40;
     font-size: 1.5rem;
     position: relative;
+    margin-top: 2.5em;
     padding-top: .5em;
     padding-bottom: 1.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     &:before {
       content: '';
@@ -208,6 +230,16 @@
     font-weight: 600;
   }
 
+  &__small-heading {
+    color: $color__blue-40;
+    font-weight: 600;
+    padding: 1em 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
   &__desc {
     @extend %type-constrain;
     font-size: 1rem;
@@ -216,13 +248,27 @@
     color: $color__text--dark;
 
     &--list {
+      @extend .bx--list--unordered;
       list-style: disc;
       color: $color__text--dark;
+      padding-bottom: 1em;
+
+      li {
+        @extend .bx--list--unordered__item;
+      }
     }
 
     @media screen and (max-width: $width__screen-size--small) {
       padding-bottom: 1em;
     }
+  }
+
+  &__example-heading {
+    color: $color__navy-gray-7;
+    font-size: rem(14px);
+    font-style: italic;
+    padding: 1em 0;
+    margin-top: 1.5em;
   }
 
   &__list {
