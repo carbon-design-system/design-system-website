@@ -174,7 +174,7 @@ gulp.task('assemble', function() {
 // BUILD                     //
 ///////////////////////////////
 
-gulp.task('build', ['copy', 'styles', 'scripts', 'assemble']);
+gulp.task('build', ['styles', 'scripts', 'assemble']);
 
 ///////////////////////////////
 // SERVE                     //
