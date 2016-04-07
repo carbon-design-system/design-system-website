@@ -42,6 +42,10 @@
       padding: 3em 1em 4em;
       margin-left: 0;
     }
+
+    a {
+      @extend .link;
+    }
   }
 
   &__header {
@@ -412,5 +416,12 @@
     .line-numbers .line-numbers-rows {
       border-right: none;
     }
+  }
+}
+
+.guidelines {
+
+  .item-section__main-heading {
+    margin-top: 0;
   }
 }
