@@ -64,15 +64,17 @@ gulp.task('copy', function() {
   // Copy HTML for base-elements and components into src/materials for use as
   // live code examples and snippets
   const materials = 'src/materials';
-  copy(`${config.bower}/html/base-elements/**/*html`, `${materials}/base-elements`);
-  copy(`${config.bower}/html/components/**/*html`, `${materials}/components`);
-  copy(`${config.bower}/**/**/*js`, `${materials}/js`);
+  const streams = [];
+  streams.push(copy(`${config.bower}/html/base-elements/**/*html`, `${materials}/base-elements`));
+  streams.push(copy(`${config.bower}/html/components/**/*html`, `${materials}/components`));
+  streams.push(copy(`${config.bower}/**/**/*js`, `${materials}/js`));
 
   // Copy font files from src to dist
-  copy(config.src.fonts, `${config.dest}/assets/styles`);
+  streams.push(copy(config.src.fonts, `${config.dest}/assets/styles`));
 
   // Copy images from src to dist
-  copy(config.src.images, `${config.dest}/assets/images`);
+  streams.push(copy(config.src.images, `${config.dest}/assets/images`));
+  return merge(streams);
 });
 
 
