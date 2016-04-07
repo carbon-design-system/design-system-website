@@ -64,6 +64,7 @@ iterations:
   <div class="rendered__item">
   {{{findFile item.htmlFile}}}
   </div>
+  <input type="text" value="" class="hiddenHTMLSnippet" />
 
   {{#markdown}}
 
@@ -87,10 +88,22 @@ iterations:
   {{{findFile item.htmlFile}}}
   ```
 
-  <button class="code__copy">
-    <svg>
-      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use>
+  <button class="code__copy code__copy--html">
+    Copy
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
+          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
+            <g id="code_32" transform="translate(50.000000, 12.000000)">
+                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
+                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
+            </g>
+          </g>
+        </g>
+      </g>
     </svg>
+    <span class="copyFeedback">Copied!</span>
   </button>
 
   <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
@@ -106,18 +119,39 @@ iterations:
   {{{findFile item.jsFile}}}
   ```
 
-  <button class="code__copy"><svg><use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--copy"></use></svg></button>
+  <button class="code__copy code__copy--js">
+    <div class="copyFeedback">Copied!</div>
+    Copy
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
+          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
+            <g id="code_32" transform="translate(50.000000, 12.000000)">
+                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
+                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </button>
 
   <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
 
   </div>
+
   <!-- End of Code Snippets -->
 
-
   </div>
+
   {{/if}}
 
   {{/markdown}}
+
+  {{#if item.jsFile}}
+  <input type="text" class="hiddenJSSnippet" value="{{{findFile item.jsFile}}}"/>
+  {{/if}}
 
   {{/if}}
   </section>
