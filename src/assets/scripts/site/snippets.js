@@ -4,10 +4,13 @@ export const codeSnippets = () => {
 
   const showFullCode = document.querySelectorAll('.code__show-full');
   const htmlCode = document.querySelector('.code__html');
-  const copyButton = document.querySelector('.code__copy');
+  const copyHtmlButtons = document.querySelectorAll('.code__copy--html');
+  const copyJSButtons = document.querySelectorAll('.code__copy--js');
   const jsCode = document.querySelector('.code__js');
   const jsButton = document.querySelector('.tabs__js');
   const htmlButton = document.querySelector('.tabs__html');
+  const code = document.querySelectorAll('.hiddenHTMLSnippet');
+  const copyJsCode = document.querySelectorAll('.hiddenJSSnippet');
 
   if (jsButton) {
     jsButton.addEventListener('click', function() {
@@ -40,4 +43,61 @@ export const codeSnippets = () => {
       }
     });
   });
+
+  Array.prototype.forEach.call(copyHtmlButtons, function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      let htmlElement = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.innerHTML;
+      let codeSnippet = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextSibling.nextElementSibling;
+      codeSnippet.value = htmlElement;
+      codeSnippet.focus();
+      codeSnippet.select();
+      copyCode(el, codeSnippet);
+    });
+  });
+
+  Array.prototype.forEach.call(copyJSButtons, function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      let codeSnippet = el.parentElement.parentElement.previousSibling.nextElementSibling.nextSibling.nextElementSibling;
+      let rex = /(<([^>]+)>)|(&lt;([^>]+)&gt;)/ig;
+      codeSnippet.value = codeSnippet.value.replace(rex, "");
+      copyCode(el, codeSnippet);
+    });
+  });
+
+  const copyCode = (el, codeSnippet) => {
+    codeSnippet.focus();
+    codeSnippet.select();
+    let copyFeedback = el.firstChild.nextElementSibling.nextElementSibling;
+    console.log(copyFeedback);
+    let isSupported = document.queryCommandSupported('copy');
+    if (isSupported) {
+      try {
+        document.execCommand('copy');
+        copyFeedback.style.visibility = "visible";
+        setTimeout(function() {
+          copyFeedback.style.visibility = "hidden";
+        }, 1000);
+      }
+      catch (err) {
+        copyFeedback.style.visibility = "visible";
+        copyFeedback.style.width = "20em";
+        copyFeedback.style.marginLeft = "-10em";
+        copyFeedback.innerHTML = "Please press CMD/Ctrl + C now to copy";
+        setTimeout(function() {
+          copyFeedback.style.visibility = "hidden";
+        }, 2000);
+      }
+    }
+    else {
+      copyFeedback.style.visibility = "visible";
+      copyFeedback.innerHTML = "Please press CMD/Ctrl + C now to copy";
+      copyFeedback.style.width = "20em";
+      copyFeedback.style.marginLeft = "-10em";
+      setTimeout(function() {
+        copyFeedback.style.visibility = "hidden";
+      }, 2000);
+    }
+  };
 };

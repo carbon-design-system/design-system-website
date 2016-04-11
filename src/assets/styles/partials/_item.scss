@@ -374,6 +374,14 @@
     }
   }
 
+  .hiddenHTMLSnippet {
+    opacity: 0;
+  }
+
+  .hiddenJSSnippet {
+    opacity: 0;
+  }
+
   .code__html,
   .code__js {
     @extend %code-snippet;
@@ -392,26 +400,62 @@
     }
 
     .code__copy {
-      color: #000;
       position: absolute;
-      right: em(160px);
-      z-index: 1;
-      background-color: $color__blue-40;
+      display: inline-block;
+      background-color: $color__atlas-gray-1;
       border: none;
-      width: em(60px);
-      height: em(60px);
+      color: $color__navy-gray-3;
       cursor: pointer;
-      right: 1em;
-      top: 4.5em;
+      padding: .75em;
+      right: .75em;
+      top: 4em;
+      font-weight: 700;
+      font-size: .8rem;
+      outline: none;
+      transition: background-color $transition--base;
 
-      &:hover {
-        background-color: $color__blue-30;
+      .copy-icon {
+        margin-left: .25em;
       }
 
-      svg {
-        fill: $color__white;
-        width: 2em;
-        height: 3.5em;
+      &:hover {
+        background-color: $color__white;
+        color: $color__blue-30;
+
+        .copy-icon g g {
+          fill: $color__blue-30;
+        }
+      }
+
+      .copyFeedback {
+        position: absolute;
+        z-index: 1;
+        background-color: $color__code-tabs;
+        color: $color__atlas-gray-1;
+        padding: .5em;
+        top: 100%;
+        left: 50%;
+        visibility: hidden;
+        font-size: rem(12px);
+        font-weight: 200;
+        width: 6em;
+        text-align: center;
+        margin-left: -3em;
+        margin-top: .5em;
+        transition: visibility $transition--base;
+
+        &:after {
+          content: '';
+          display: inline;
+          position: absolute;
+          width: 0;
+          height: 0;
+          top: -15%;
+          right: 50%;
+          border-left: em(6px) solid transparent;
+          border-right: em(6px) solid transparent;
+          border-bottom: em(6px) solid $color__code-tabs;
+        }
       }
 
       @media screen and (max-width: $width__screen-size--medium) {
@@ -434,6 +478,7 @@
       right: 0;
       bottom: 1em;
       padding: 1em;
+      cursor: pointer;
     }
 
     pre[class*='language-'], pre {
