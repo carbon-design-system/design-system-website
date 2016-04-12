@@ -256,6 +256,36 @@
       li {
         @extend .bx--list--unordered__item;
       }
+
+      &--ordered {
+        @extend .bx--list--ordered;
+        color: $color__text--dark;
+        padding-bottom: 1em;
+
+        li {
+          @extend .bx--list--ordered__item;
+        }
+      }
+
+      .green, .yellow, .red, .blue {
+        background-color: $color__navy-gray-2;
+      }
+
+      .green {
+        color: $color__green-30;
+      }
+
+      .yellow {
+        color: $color__yellow-30;
+      }
+
+      .red {
+        color: $color__red-40;
+      }
+
+      .blue {
+        color: $color__blue-20;
+      }
     }
 
     @media screen and (max-width: $width__screen-size--small) {
