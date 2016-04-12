@@ -3,7 +3,13 @@
 ///////////////////////////////
 
 // Views styles
-.view--foundation, .view--usage, .view--style {
+.view--foundation,
+.view--usage,
+.view--style,
+.view--typography,
+.view--color,
+.view--grid,
+.view--iconography {
   display: none;
   opacity: 0;
   padding-right: 9em;
