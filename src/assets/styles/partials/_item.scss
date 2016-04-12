@@ -133,6 +133,7 @@
 
     li {
       @extend %font-smoothing;
+      color: $color__text--dark;
       padding: 1em 0;
       margin: 0 1.5em;
       font-size: rem(16px);
@@ -148,10 +149,14 @@
       }
 
       &:hover,
+      &:focus {
+        color: $color__white;
+      }
+
+      &:hover,
       &:focus,
       &.is-selected {
         cursor: pointer;
-        color: $color__text--dark;
       }
 
       &.is-selected {
@@ -169,7 +174,7 @@
     font-size: rem(18px);
 
     .highlight {
-      color: $color__blue-30;
+      color: $color__blue-40;
     }
 
     @media screen and (max-width: $width__screen-size--small) {
@@ -237,6 +242,7 @@
   }
 
   &__small-heading {
+    font-size: 1.125rem;
     color: $color__blue-40;
     font-weight: 600;
     padding: 1em 0;
