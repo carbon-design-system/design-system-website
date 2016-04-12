@@ -55,23 +55,14 @@
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
 	document.addEventListener('DOMContentLoaded', function () {
-	  [].concat(_toConsumableArray(document.querySelectorAll('[data-file-input]'))).forEach(function (element) {
-	    return _js2.default.FileUploader.create(element);
-	  });
 	  [].concat(_toConsumableArray(document.querySelectorAll('[data-tabs]'))).forEach(function (element) {
-	    return _js2.default.Tab.create(element);
+	    return new _js2.default.Tab(element);
 	  });
-	  [].concat(_toConsumableArray(document.querySelectorAll('[data-nav-target]'))).forEach(function (element) {
-	    [].concat(_toConsumableArray(document.querySelectorAll(element.getAttribute('data-nav-target')))).forEach(function (target) {
-	      target.addEventListener('header-beingselected', function (e) {
-	        // In demo, don't follow the link in nav
-	        e.detail.initiatingEvent.preventDefault();
-	      });
+	  [].concat(_toConsumableArray(document.querySelectorAll('[data-tabs] .item__link'))).forEach(function (element) {
+	    // In demo, don't follow links in tab
+	    element.addEventListener('click', function (event) {
+	      event.preventDefault();
 	    });
-	    _js2.default.HeaderNav.hook(element);
-	  });
-	  [].concat(_toConsumableArray(document.querySelectorAll('[data-list-icons-search-action-target]'))).forEach(function (element) {
-	    return _js2.default.Toolbars.create(element);
 	  });
 	});
 
