@@ -18,6 +18,6 @@
   "dependencies": {
     "neat": "~1.7.2",
     "css-utils": "~0.1.4",
-    "bluemix-components": "^5.0.0-alpha"
+    "bluemix-components": "master"
   }
 }

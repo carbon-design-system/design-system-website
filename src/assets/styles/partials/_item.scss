@@ -25,7 +25,7 @@
   }
 
   @media screen and (max-width: $width__screen-size--small) {
-    padding-right: 2em;
+    padding-right: 1em;
   }
 
   a {
@@ -258,6 +258,10 @@
     line-height: 1.5;
     padding-bottom: 1em;
     color: $color__text--dark;
+
+    &--bold {
+      font-weight: 700;
+    }
 
     &--list {
       @extend .bx--list--unordered;
@@ -549,12 +553,5 @@
     .line-numbers .line-numbers-rows {
       border-right: none;
     }
-  }
-}
-
-.guidelines {
-
-  .item-section__main-heading {
-    margin-top: 0;
   }
 }
