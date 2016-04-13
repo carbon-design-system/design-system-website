@@ -67,7 +67,7 @@ gulp.task('copy', function() {
   const streams = [];
   streams.push(copy(`${config.bower}/html/base-elements/**/*html`, `${materials}/base-elements`));
   streams.push(copy(`${config.bower}/html/components/**/*html`, `${materials}/components`));
-  streams.push(copy(`${config.bower}/**/**/*js`, `${materials}/js`));
+  streams.push(copy(`${config.bower}/consumables/js/**/*js`, `${materials}/js`));
 
   // Copy font files from src to dist
   streams.push(copy(config.src.fonts, `${config.dest}/assets/styles`));
