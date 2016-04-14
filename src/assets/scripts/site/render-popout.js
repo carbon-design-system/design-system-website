@@ -32,7 +32,7 @@ export const renderPopout = () => {
     element.addEventListener('click', function(e) {
       e.preventDefault();
       const popup = open('', '_blank');
-      let renderedContent = element.parentElement.previousElementSibling.innerHTML;
+      let renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
 
       // pulling stylesheet into page head
       popup.document.head.innerHTML += styleLink;
