@@ -370,11 +370,10 @@
   }
 
   .rendered__item {
-    flex: 1;
     margin: 3.5em 0 2em;
+    padding: 0 1em;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .rendered__view-full-size {
