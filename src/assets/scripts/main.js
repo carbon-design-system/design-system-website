@@ -39,6 +39,7 @@ import { tabsNavigation } from './site/tabs';
 import { codeSnippets } from './site/snippets';
 import { themeSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
+import { copyHexValue } from './site/copy-hex';
 
 // import snippets stuff here
 
@@ -67,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   codeSnippets();
   themeSwitcher();
   renderPopout();
+  copyHexValue();
 
   const alertModalElement = document.querySelector('#under-construction');
   if (alertModalElement) {
