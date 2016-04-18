@@ -2,12 +2,12 @@
 fabricator: true
 title: Visual Design
 ---
-<div class="item__header">
-  <div class="item__info">
-    <p class="item__category">Guidelines</p>
-      <h1 class="item__main-heading">Visual Design</h1>
+<div class="page__header">
+  <div class="page__info">
+    <p class="page__category">Guidelines</p>
+      <h1 class="page__large-heading">Visual Design</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--typography">Typography</li>
     <li class="toggle-view--color">Color</li>
     <li class="toggle-view--grid is-selected">Grid</li>
@@ -16,24 +16,24 @@ title: Visual Design
 </div>
 
 
-<div class="item__container">
+<div class="page__container">
 
   <div class="view--typography">
-    <h1 class="item-section__heading">Typography</h1>
+    <h1 class="page__heading">Typography</h1>
   </div>
 
   <div class="view--color">
-    <h1 class="item-section__heading">Color</h1>
+    <h1 class="page__heading">Color</h1>
   </div>
 
   <!-- GRIDS -->
   <div class="view--grid is-active">
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">Grid systems</span> are used for creating page layouts through a series of rows and columns that house your content. The Bluemix designs use a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
     </p>
 
-    <h1 class="item-section__heading">Basic Structure</h1>
-    <ul class="view--grid__basic-examples">
+    <h1 class="page__heading">Basic Structure</h1>
+    <ul class="view--grid__grid-examples">
       <li>
         <p>1440 px</p>
         <a href="/assets/images/1440px-2x.png" target="_blank" class="overlay">
@@ -64,23 +64,23 @@ title: Visual Design
           <img srcset="/assets/images/320px-2x.png 2x" src="/assets/images/320px-1x.png" />
       </li>
     </ul>
-    <ul class="view--grid__basic-examples__keys">
+    <ul class="view--grid__grid-examples__keys">
       <p>Key:</p>
       <li>Columns</li>
       <li>/ Gutter</li>
       <li>/ Margins</li>
     </ul>
 
-    <h1 class="item-section__heading">How it works:</h1>
+    <h1 class="page__heading">How it works:</h1>
 
-    <h3 class="item-section__small-heading">Gutters</h3>
-    <p class="item-section__desc">
+    <h3 class="page__small-heading">Gutters</h3>
+    <p class="page__desc">
       Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on rows.
       In devices with a screen width of ≥768px, the column padding is 10px left, 10px right.
       This creates a gutter of 10px + 10px = 20px between column content. In devices with a screen width of < 768px, the column padding is 5px left, 5px right.
       This creates a gutter of 5px + 5px = 10px between column content.
       <br><br>
-      <span class="item-section__desc--bold">
+      <span class="page__desc--bold">
         ≥ 768px = 20px gutters <br>
         < 768px = 10px gutters
       </span>
@@ -88,29 +88,29 @@ title: Visual Design
 
     <br><br>
 
-    <h3 class="item-section__small-heading">Columns</h3>
-    <p class="item-section__desc">
+    <h3 class="page__small-heading">Columns</h3>
+    <p class="page__desc">
       Bluemix designs should be limited to twelve columns.
       If designers feel that they need fewer columns than this in their grid, they can specify the number of twelve available columns they wish to span.
       This can translate to percentages of the twelve columns. Using this method, a designer can create a folded, less granular grid.
       For example, if your component spans three equal columns, that is equal to 25% of twelve columns.
       <br><br>
-      <span class="item-section__desc--bold">
+      <span class="page__desc--bold">
         Base column count: 12
       </span>
     </p>
-    <img class="columns-img" srcset="/assets/images/column-spread_2x.png 2x" src="/assets/images/column-spread_1x.png" />
+    <img class="page__img" srcset="/assets/images/column-spread_2x.png 2x" src="/assets/images/column-spread_1x.png" />
     <p class="img-desc">@1440px - 12 Columns / 20px Gutters / 5% Margins</p>
 
     <br><br>
 
-    <h3 class="item-section__small-heading">Margins</h3>
-    <p class="item-section__desc">
+    <h3 class="page__small-heading">Margins</h3>
+    <p class="page__desc">
       The twelve column grid does not have a max width.
       It has a width of 100% with built in margins that create padding between column count and the edges of the viewport.
     </p>
-    <p class="item-section__desc">
-      <span class="item-section__desc--bold">
+    <p class="page__desc">
+      <span class="page__desc--bold">
         In devices with a screen width of ≥768px, the margins are 5% left, 5% right.
       </span><br>
       Example: Screen Width 768px<br>
@@ -119,8 +119,8 @@ title: Visual Design
       12 columns + gutters = 768px - 30px - 30px = 692px
     </p>
 
-    <p class="item-section__desc">
-      <span class="item-section__desc--bold">
+    <p class="page__desc">
+      <span class="page__desc--bold">
         In devices with a screen width of < 768px, the margins are 3% left, 3% right.
       </span><br>
       Example: Screen Width 320px<br>
@@ -131,11 +131,11 @@ title: Visual Design
 
     <br><br>
 
-    <h3 class="item-section__small-heading">Breakpoints</h3>
-    <ul class="breakpoints">
+    <h3 class="page__small-heading">Breakpoints</h3>
+    <ul class="text-boxes">
       <li>
-        <p class="item-section__desc">
-          <span class="item-section__desc--bold">
+        <p class="page__desc">
+          <span class="page__desc--bold">
             Extra small devices Phones (< 768px)
           </span><br>
           12 Equal Columns<br>
@@ -145,8 +145,8 @@ title: Visual Design
         </p>
       </li>
       <li>
-        <p class="item-section__desc">
-          <span class="item-section__desc--bold">
+        <p class="page__desc">
+          <span class="page__desc--bold">
             Small devices Tablets (≥ 768px)
           </span><br>
           12 Equal Columns<br>
@@ -156,8 +156,8 @@ title: Visual Design
         </p>
       </li>
       <li>
-        <p class="item-section__desc">
-          <span class="item-section__desc--bold">
+        <p class="page__desc">
+          <span class="page__desc--bold">
             Medium devices Desktops (≥ 992px)
           </span><br>
           12 Equal Columns<br>
@@ -167,8 +167,8 @@ title: Visual Design
         </p>
       </li>
       <li>
-        <p class="item-section__desc">
-          <span class="item-section__desc--bold">
+        <p class="page__desc">
+          <span class="page__desc--bold">
             Large devices Desktops (≥ 1200px)
           </span><br>
           12 Equal Columns<br>
@@ -179,14 +179,14 @@ title: Visual Design
       </li>
     </ul>
 
-    <h1 class="item-section__heading">Use the Grid</h1>
-    <p class="item-section__desc">Starter grid templates can be found in the design kit. Included example grids size are at 1440px, 768px and 320px.</p>
-    <a class="download-btn" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Design Kit <img src="/assets/images/download-icon.png" /></a>
+    <h1 class="page__heading">Use the Grid</h1>
+    <p class="page__desc">Starter grid templates can be found in the design kit. Included example grids size are at 1440px, 768px and 320px.</p>
+    <a class="bx--btn--right-icon download-btn" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Design Kit <img src="/assets/images/download-icon.png" /></a>
 
   </div>
 
   <div class="view--iconography">
-    <h1 class="item-section__heading">Iconography</h1>
+    <h1 class="page__heading">Iconography</h1>
   </div>
 
 </div>
