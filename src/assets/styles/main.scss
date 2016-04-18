@@ -8,14 +8,13 @@
 @import 'vendor/prism';
 
 // PARTIALS
-@import 'partials/helpers';
 @import 'partials/variables';
 @import 'partials/typography';
-@import 'partials/code';
-@import 'partials/item';
-@import 'partials/overview';
-@import 'partials/layout';
+@import 'partials/base';
 @import 'partials/menu';
+@import 'partials/page';
+@import 'partials/view';
 @import 'partials/guidelines';
+@import 'partials/overview';
 @import 'partials/snippet';
 @import 'partials/overwrites';
