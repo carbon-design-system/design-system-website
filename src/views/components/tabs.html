@@ -12,12 +12,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -26,32 +26,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -153,20 +153,20 @@ iterations:
   <!-- View: Usage -->
   <div class="view--usage">
 
-    <h3 class="item-section__small-heading">Text</h3>
-    <p class="item-section__desc">For the Service Details Page, Overview, Getting Started, and Connected Objects are required across all services. If custom UI is needed for your service, there are two options. </p>
+    <h3 class="page__small-heading">Text</h3>
+    <p class="page__desc">For the Service Details Page, Overview, Getting Started, and Connected Objects are required across all services. If custom UI is needed for your service, there are two options. </p>
 
-    <h3 class="item-section__small-heading">Required Tabs</h3>
-    <p class="item-section__desc">Each text title for a tab should appropriately describe its content and set user expectations. Titles should be as concise as possible: one, two, or if necessary, three words. Keep in mind that at mobile widths the character length of the title will impact the experience. Icons are not permitted in the tab titles.
-      <ol class="item-section__desc--list--ordered">
+    <h3 class="page__small-heading">Required Tabs</h3>
+    <p class="page__desc">Each text title for a tab should appropriately describe its content and set user expectations. Titles should be as concise as possible: one, two, or if necessary, three words. Keep in mind that at mobile widths the character length of the title will impact the experience. Icons are not permitted in the tab titles.
+      <ol class="page__desc--list--ordered">
         <li>Manage Tab<br>If you have minimal need for custom UI for your service, it can be contained within the Manage Tab.</li>
         <li>Custom Tabs<br>If your service has more advanced taxonomical needs, additional custom tabs may be included.</li>
       </ol>
     </p>
 
-    <h3 class="item-section__small-heading">Number of Tabs</h3>
-      <p class="item-section__desc">
-        <ul class="item-section__desc--list">
+    <h3 class="page__small-heading">Number of Tabs</h3>
+      <p class="page__desc">
+        <ul class="page__desc--list">
           <li>There is a maximum of six tabs displayed. This is to maintain an uncluttered UI and reduce cognitive load for users.</li>
           <li>If you require additional tabs, please see the <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html" target="_blank">Overflow Menu</a> component for further guidance.</li>
           <li>Tabs should be ordered from left to right by frequency or expected frequency of use by the user. Alternatively, if each tab is used equally, tabs should be placed in the order in which a user flows through each area of content.</li>
@@ -174,19 +174,19 @@ iterations:
         </ul>
       </p>
 
-    <h3 class="item-section__small-heading">Hierarchy</h3>
-    <p class="item-section__desc">Only one level of tabs is used. This is to ensure a consistent, simple, and easily navigable experience for users. An intuitive taxonomy and descriptive tab titles can go a long way toward a good user experience.</p>
+    <h3 class="page__small-heading">Hierarchy</h3>
+    <p class="page__desc">Only one level of tabs is used. This is to ensure a consistent, simple, and easily navigable experience for users. An intuitive taxonomy and descriptive tab titles can go a long way toward a good user experience.</p>
 
-    <h2 class="item-section__heading">Exceptions</h2>
-    <h3 class="item-section__small-heading">Secondary Level</h3>
-    <p class="item-section__desc">A secondary level of tabs is permitted in the case of displaying multiple sets or views of the same content, or switching between discrete, but related content. Therefore, the secondary level should be considered a Content Switcher rather than navigation. <br>The second level manipulates the view or the content within its parent tab, and thus is part of the active tab. It should look and feel like as such. Please see <a href="http://design-system.stage1.mybluemix.net/components/content-switcher.html">Content Switcher</a> for more detail.</p>
+    <h2 class="page__heading">Exceptions</h2>
+    <h3 class="page__small-heading">Secondary Level</h3>
+    <p class="page__desc">A secondary level of tabs is permitted in the case of displaying multiple sets or views of the same content, or switching between discrete, but related content. Therefore, the secondary level should be considered a Content Switcher rather than navigation. <br>The second level manipulates the view or the content within its parent tab, and thus is part of the active tab. It should look and feel like as such. Please see <a href="http://design-system.stage1.mybluemix.net/components/content-switcher.html">Content Switcher</a> for more detail.</p>
 
   </div>
   <!-- View: Usage ends -->
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 

@@ -12,12 +12,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -26,32 +26,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -152,17 +152,17 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h3 class="item-section__small-heading">Overflow menu in Detail Page Header</h3>
-      <p class="item-section__desc"> </p>
-      <h5 class="item-section__example-heading">Example:</h5>
+    <h3 class="page__small-heading">Overflow menu in Detail Page Header</h3>
+      <p class="page__desc"> </p>
+      <h5 class="page__example-heading">Example:</h5>
 
-      <h3 class="item-section__small-heading">Overflow menu in Cards</h3>
-      <p class="item-section__desc"> </p>
-      <h5 class="item-section__example-heading">Example:</h5>
+      <h3 class="page__small-heading">Overflow menu in Cards</h3>
+      <p class="page__desc"> </p>
+      <h5 class="page__example-heading">Example:</h5>
 
-      <h3 class="item-section__small-heading">Overflow menu text</h3>
-      <p class="item-section__desc">The text within an overflow menu should be direct so users can quickly decide on an action. <br> Actions that could cause a significant change to the user's data (Delete app, Delete Service, etc), should be separated by a horizontal rule and live below the primary set of actions.  </p>
-      <h5 class="item-section__example-heading">Example:</h5>
+      <h3 class="page__small-heading">Overflow menu text</h3>
+      <p class="page__desc">The text within an overflow menu should be direct so users can quickly decide on an action. <br> Actions that could cause a significant change to the user's data (Delete app, Delete Service, etc), should be separated by a horizontal rule and live below the primary set of actions.  </p>
+      <h5 class="page__example-heading">Example:</h5>
 
 
   </div>
@@ -170,7 +170,7 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 

@@ -11,12 +11,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -25,32 +25,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -151,17 +151,17 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h3 class="item-section__small-heading">Search Fields</h3>
-    <p class="item-section__desc">Search fields should include autocomplete and search history to aid the user in finding the correct query. Set users context for the search with helpful blank states of the search field ("Search Docs", "Search Bluemix").</p>
+    <h3 class="page__small-heading">Search Fields</h3>
+    <p class="page__desc">Search fields should include autocomplete and search history to aid the user in finding the correct query. Set users context for the search with helpful blank states of the search field ("Search Docs", "Search Bluemix").</p>
 
-    <h3 class="item-section__small-heading">Filtering</h3>
-    <p class="item-section__desc">If additional sorting is necessary, filtering can be used as a way to further narrow content based on the user's search query. </p>
-    <h5 class="item-section__example-heading">Example:</h5>
+    <h3 class="page__small-heading">Filtering</h3>
+    <p class="page__desc">If additional sorting is necessary, filtering can be used as a way to further narrow content based on the user's search query. </p>
+    <h5 class="page__example-heading">Example:</h5>
 
 
-    <h3 class="item-section__small-heading">Search Results</h3>
-    <p class="item-section__desc">
-      <ul class="item-section__desc--list">
+    <h3 class="page__small-heading">Search Results</h3>
+    <p class="page__desc">
+      <ul class="page__desc--list">
         <li>Clearly show which results are being displayed with labels or headers (i.e. “Results fo X”)</li>
         <li>Categorize the search results if they come from different areas of the site (eg. docs, services, apps, tutorials, blogs)</li>
         <li>Give the user control over their viewing options and ability to sort results (eg. relevancy, popularity, ratings, date</li>
@@ -172,17 +172,17 @@ iterations:
         <li>Highlight the search term in the results, where appropriate</li>
       </ul>
     </p>
-    <h5 class="item-section__example-heading">Example:</h5>
+    <h5 class="page__example-heading">Example:</h5>
 
 
-    <h3 class="item-section__small-heading">Mobile</h3>
-    <p class="item-section__desc">For Search as Primary intent, the search field will always be presented to the user but respond to the viewport size. <br> For Search as Help and Search as a Filter, it is acceptable to hide the search field until a user-initiated action. If the search field is hidden a user can reveal it by tapping on the standard Bluemix magnifying glass icon. Upon tapping the magnifying glass icon the search field should appear and enter the active state ready for text entry. </p>
+    <h3 class="page__small-heading">Mobile</h3>
+    <p class="page__desc">For Search as Primary intent, the search field will always be presented to the user but respond to the viewport size. <br> For Search as Help and Search as a Filter, it is acceptable to hide the search field until a user-initiated action. If the search field is hidden a user can reveal it by tapping on the standard Bluemix magnifying glass icon. Upon tapping the magnifying glass icon the search field should appear and enter the active state ready for text entry. </p>
   </div>
   <!-- View: Usage ends -->
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 
