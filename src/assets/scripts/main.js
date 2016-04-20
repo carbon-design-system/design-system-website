@@ -40,6 +40,7 @@ import { codeSnippets } from './site/snippets';
 import { themeSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
 import { copyHexValue } from './site/copy-hex';
+import { expandType } from './site/expand-type';
 
 // import snippets stuff here
 
@@ -69,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   themeSwitcher();
   renderPopout();
   copyHexValue();
+  expandType();
 
   const alertModalElement = document.querySelector('#under-construction');
   if (alertModalElement) {
