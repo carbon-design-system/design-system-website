@@ -81,6 +81,7 @@
     line-height: 1.5;
     padding-bottom: 1em;
     color: $color__text--dark;
+    word-wrap: break-word;
 
     &--bold {
       font-weight: 700;
