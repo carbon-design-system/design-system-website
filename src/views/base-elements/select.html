@@ -11,12 +11,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -25,32 +25,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -151,19 +151,19 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h3 class="item-section__small-heading">Styling select dropdowns</h3>
-    <p class="item-section__desc">It is strongly recommended not to style <code>select</code> dropdowns due to accessibility purposes.</p>
-    <p class="item-section__desc">One of the <a href="http://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is “Ensuring keyboard control for all functionality." CSS alternatives to <code>select</code> elements to not meet this requirement.
+    <h3 class="page__small-heading">Styling select dropdowns</h3>
+    <p class="page__desc">It is strongly recommended not to style <code>select</code> dropdowns due to accessibility purposes.</p>
+    <p class="page__desc">One of the <a href="http://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is “Ensuring keyboard control for all functionality." CSS alternatives to <code>select</code> elements to not meet this requirement.
     You can see examples below of how a browser-specific <code>select</code> element renders differently.</p>
-    <h5 class="item-section__example-heading">Example:</h5>
+    <h5 class="page__example-heading">Example:</h5>
 
-    <h3 class="item-section__small-heading">Order</h3>
-    <p class="item-section__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
-    <h5 class="item-section__example-heading">Example:</h5>
+    <h3 class="page__small-heading">Order</h3>
+    <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
+    <h5 class="page__example-heading">Example:</h5>
 
-    <h3 class="item-section__small-heading">Accessibility</h3>
-    <p class="item-section__desc">The default <code>select</code> element is completely usable either with a mouse or a keyboard, following this process:
-      <ol class="item-section__desc--list--ordered">
+    <h3 class="page__small-heading">Accessibility</h3>
+    <p class="page__desc">The default <code>select</code> element is completely usable either with a mouse or a keyboard, following this process:
+      <ol class="page__desc--list--ordered">
         <li>Mouse: move your cursor over the <code>select</code> element <br>
             Keyboard: use the tab key to focus the <code>select</code> element</li>
         <li>Mouse: click on the <code>select</code> element<br>
@@ -180,7 +180,7 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 

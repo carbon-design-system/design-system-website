@@ -20,12 +20,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -34,32 +34,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -160,21 +160,21 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="item-section__heading">Format</h2>
+    <h2 class="page__heading">Format</h2>
 
-    <h3 class="item-section__small-heading">Size</h3>
-    <p class="item-section__desc">Generic notifications have a fixed width to maintain consistency, but their height can vary depending on content.<br> Inline notifications width and height may vary depending on the type of content presented.</p>
+    <h3 class="page__small-heading">Size</h3>
+    <p class="page__desc">Generic notifications have a fixed width to maintain consistency, but their height can vary depending on content.<br> Inline notifications width and height may vary depending on the type of content presented.</p>
 
-    <h3 class="item-section__small-heading">Title</h3>
-    <p class="item-section__desc">All notifications should have titles to give users a quick means of understanding the content of the notification. Titles should match the notification color (see below for color meaning). App, service, and compute resource names should be bolded.</p>
+    <h3 class="page__small-heading">Title</h3>
+    <p class="page__desc">All notifications should have titles to give users a quick means of understanding the content of the notification. Titles should match the notification color (see below for color meaning). App, service, and compute resource names should be bolded.</p>
 
-    <h3 class="item-section__small-heading">Message</h3>
-    <p class="item-section__desc">The body or message of the notification must be contained within two lines. Be as descriptive as possible, and try to include troubleshooting actions or next steps. If you can communicate the main message of your notification to the user within the title, a secondary message may not be needed.</p>
+    <h3 class="page__small-heading">Message</h3>
+    <p class="page__desc">The body or message of the notification must be contained within two lines. Be as descriptive as possible, and try to include troubleshooting actions or next steps. If you can communicate the main message of your notification to the user within the title, a secondary message may not be needed.</p>
 
-    <h3 class="item-section__small-heading">Date</h3>
-    <p class="item-section__desc">Every notification should be time-stamped.
+    <h3 class="page__small-heading">Date</h3>
+    <p class="page__desc">Every notification should be time-stamped.
       <br>Use the following rules to display time:
-      <ul class="item-section__desc--list">
+      <ul class="page__desc--list">
         <li>Less than one hour: "30 minutes ago"</li>
         <li>Less than 24 hours ago: "3 hours ago"</li>
         <li>Less than a month ago: "12 days ago"</li>
@@ -183,34 +183,34 @@ iterations:
       </ul>
     </p>
 
-    <h3 class="item-section__small-heading">Color</h3>
-    <ul class="item-section__desc--list">
+    <h3 class="page__small-heading">Color</h3>
+    <ul class="page__desc--list">
       <li><span class="green">Green 30:</span> Success</li>
       <li><span class="yellow">Yellow 30:</span> Warning</li>
       <li><span class="red">Red 30:</span> Error</li>
       <li><span class="blue">Blue 20:</span> Informational</li>
     </ul>
 
-    <h3 class="item-section__small-heading">Icons</h3>
-    <p class="item-section__desc">Icons aren't used in generic notifications, due to the space constraints. When icons appear in inline or modal notifications, they are placed to the left of the title. See the Style tab for further specs about icons.</p>
+    <h3 class="page__small-heading">Icons</h3>
+    <p class="page__desc">Icons aren't used in generic notifications, due to the space constraints. When icons appear in inline or modal notifications, they are placed to the left of the title. See the Style tab for further specs about icons.</p>
 
-    <h2 class="item-section__heading">Placement</h2>
+    <h2 class="page__heading">Placement</h2>
 
-    <h3 class="item-section__small-heading"> Generic Notifications</h3>
-    <p class="item-section__desc">These should always appear in the top right corner, and slide in from off canvas. Actionable notifications do not appear on mobile screen widths.</p>
+    <h3 class="page__small-heading"> Generic Notifications</h3>
+    <p class="page__desc">These should always appear in the top right corner, and slide in from off canvas. Actionable notifications do not appear on mobile screen widths.</p>
 
-    <h3 class="item-section__small-heading">Inline Notifications</h3>
-    <p class="item-section__desc">These should appear close to the item that they are related to. </p>
+    <h3 class="page__small-heading">Inline Notifications</h3>
+    <p class="page__desc">These should appear close to the item that they are related to. </p>
 
-    <h2 class="item-section__heading">Dismissal</h2>
-    <p class="item-section__desc">All notifications must have one method of dismissal. Typically, it is a small "x" in the upper right hand corner.</p>
+    <h2 class="page__heading">Dismissal</h2>
+    <p class="page__desc">All notifications must have one method of dismissal. Typically, it is a small "x" in the upper right hand corner.</p>
 
   </div>
   <!-- View: Usage ends -->
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 

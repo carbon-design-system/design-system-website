@@ -32,12 +32,12 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="item__header">
-  <div class="item__info">
-    <p class="item__category">{{category}}</p>
-    <h1 id="{{name}}" class="item__main-heading">{{capitalize name}}</h1>
+<section class="page__header">
+  <div class="page__info">
+    <p class="page__category">{{category}}</p>
+    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
   </div>
-  <ul class="item__tabs">
+  <ul class="page__tabs">
     <li class="toggle-view--foundation is-selected">Foundation</li>
     <li class="toggle-view--usage">Usage</li>
     <li class="toggle-view--style">Style</li>
@@ -46,32 +46,32 @@ iterations:
 <!-- Item header ends -->
 
 <!-- Item main container -->
-<div class="item__container">
+<div class="page__container">
 
   <!-- View: Foundation -->
   <div class="view--foundation is-active">
 
-    <p class="item__main-desc">
+    <p class="page__main-desc">
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="item-section__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Variations</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
-    <section class="item-section" id="{{dasherize item.title}}">
+    <section class="page" id="{{dasherize item.title}}">
 
-      <h2 class="item-section__heading">{{item.title}}</h2>
+      <h2 class="page__heading">{{item.title}}</h2>
 
-      <p class="item-section__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
+      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
 
   {{#if item.htmlFile}}
 
-  <div class="item-section__example">
+  <div class="element__example">
 
   <div class="example__rendered">
 
-  <div class="rendered__item">
+  <div class="rendered__element">
   {{{findFile item.htmlFile}}}
   </div>
   <input type="text" value="" class="hiddenHTMLSnippet" />
@@ -173,30 +173,30 @@ iterations:
   <!-- View: Usage -->
   <div class="view--usage">
 
-    <h2 class="item-section__heading">Structure</h2>
-    <p class="item-section__desc">Cards can be as minimal as a title, icon and description, or as detailed as including a title, chart, several live metrics, and several pieces of metadata.</p>
+    <h2 class="page__heading">Structure</h2>
+    <p class="page__desc">Cards can be as minimal as a title, icon and description, or as detailed as including a title, chart, several live metrics, and several pieces of metadata.</p>
 
-    <h3 class="item-section__small-heading">Icon Usage</h3>
-    <p class="item-section__desc">Icons are commonly used in cards to give context to the content at a quick glance. </p>
+    <h3 class="page__small-heading">Icon Usage</h3>
+    <p class="page__desc">Icons are commonly used in cards to give context to the content at a quick glance. </p>
 
-    <h3 class="item-section__small-heading">Title</h3>
-    <p class="item-section__desc">Titles provide meaning to the data that the card is displaying.</p>
+    <h3 class="page__small-heading">Title</h3>
+    <p class="page__desc">Titles provide meaning to the data that the card is displaying.</p>
 
-    <h3 class="item-section__small-heading">Description</h3>
-    <p class="item-section__desc">The card's description section lives just below the title, and can be used to provide additional information (IP address, URL, instance name).</p>
+    <h3 class="page__small-heading">Description</h3>
+    <p class="page__desc">The card's description section lives just below the title, and can be used to provide additional information (IP address, URL, instance name).</p>
 
-    <h3 class="item-section__small-heading">Footer</h3>
-    <p class="item-section__desc">The footer is commonly used for interactive elements, which can be any of the following: secondary buttons, links, and action icons.<br> It can also contain additional informational content, such as plan name or app status.</p>
+    <h3 class="page__small-heading">Footer</h3>
+    <p class="page__desc">The footer is commonly used for interactive elements, which can be any of the following: secondary buttons, links, and action icons.<br> It can also contain additional informational content, such as plan name or app status.</p>
 
-    <h3 class="item-section__small-heading">Overflow Menu</h3>
-    <p class="item-section__desc">An overflow menu is a common pattern used within cards. It is used to present additional menu options that directly relate to the card. For more usage guidelines, see <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html">Overflow Menu.</a> </p>
+    <h3 class="page__small-heading">Overflow Menu</h3>
+    <p class="page__desc">An overflow menu is a common pattern used within cards. It is used to present additional menu options that directly relate to the card. For more usage guidelines, see <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html">Overflow Menu.</a> </p>
 
   </div>
   <!-- View: Usage ends -->
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="item-section__heading">Style</h1>
+    <h1 class="page__heading">Style</h1>
   </div>
   <!-- View: Style ends -->
 
