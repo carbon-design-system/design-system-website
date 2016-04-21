@@ -19,7 +19,7 @@ export const autoCloseMenu = () => {
   window.onresize = checkWindowSize;
   window.onload = checkWindowSize;
   function checkWindowSize() {
-    if (window.innerWidth < 1440) {
+    if (window.innerWidth < 1140) {
       if (!(menu.classList.contains('is-hidden'))) {
         menu.classList.add('is-hidden');
         toggleButton.classList.remove('active');

@@ -152,18 +152,18 @@
 
   &__container {
     margin-left: 9em; // push away from sidebar
+    margin-right: 9em;
     padding: 4em 9em 4em 0;
     transition: $transition--slow;
 
     @media screen and (max-width: $width__screen-size--medium) {
       padding-right: 4em;
-      padding-top: 4em;
-      margin-left: 9em;
     }
 
     @media screen and (max-width: $width__screen-size--small) {
       padding: 3em 1em 4em;
       margin-left: 0;
+      margin-right: 0;
     }
   }
 

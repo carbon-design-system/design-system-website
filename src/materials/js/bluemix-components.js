@@ -758,30 +758,24 @@ var BluemixComponents =
 	    }
 	
 	    this.element = element;
-	
+	    this.element.dataset.state = 'closed';
 	    this.constructor.components.set(this.element, this);
-	
-	    this.element.addEventListener('click', function (event) {
-	      return _this.openMenu(event);
+	    this.element.ownerDocument.addEventListener('click', function (event) {
+	      return _this.handleDocumentClick(event);
 	    });
 	  }
 	
 	  _createClass(OverflowMenu, [{
-	    key: 'openMenu',
-	    value: function openMenu(event) {
-	      if (event.currentTarget.tagName === 'A') {
+	    key: 'handleDocumentClick',
+	    value: function handleDocumentClick(event) {
+	      var isOfSelf = this.element.contains(event.target);
+	      var shouldBeOpen = isOfSelf && this.element.dataset.state !== 'open';
+	
+	      if (isOfSelf && this.element.tagName === 'A') {
 	        event.preventDefault();
 	      }
 	
-	      if (this.element.classList.contains('open')) {
-	        this.element.classList.remove('open');
-	      } else {
-	        [].concat(_toConsumableArray(this.element.ownerDocument.querySelectorAll('[data-overflow-menu].open'))).forEach(function (element) {
-	          element.classList.remove('open');
-	        });
-	
-	        this.element.classList.add('open');
-	      }
+	      this.element.dataset.state = shouldBeOpen ? 'open' : 'closed';
 	    }
 	  }, {
 	    key: 'release',
@@ -789,6 +783,11 @@ var BluemixComponents =
 	      this.constructor.components.delete(this.element);
 	    }
 	  }], [{
+	    key: 'create',
+	    value: function create(element) {
+	      return this.components.get(element) || new this(element);
+	    }
+	  }, {
 	    key: 'init',
 	    value: function init() {
 	      var _this2 = this;
@@ -805,11 +804,6 @@ var BluemixComponents =
 	          return _this2.create(element);
 	        });
 	      }
-	    }
-	  }, {
-	    key: 'create',
-	    value: function create(element) {
-	      return this.components.get(element) || new this(element);
 	    }
 	  }]);
 	
