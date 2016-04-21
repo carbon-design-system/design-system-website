@@ -32,7 +32,7 @@ const env = gutil.env.env || undefined;
 const config = {
   bower: 'bower_components/bluemix-components',
   src: {
-    images: 'src/assets/images/*.*',
+    images: 'src/assets/images/**/*.*',
     fonts: 'src/assets/fonts/*.{woff,woff2}',
     scripts: 'src/assets/scripts/*.js',
     styles: 'src/assets/styles/main.scss',

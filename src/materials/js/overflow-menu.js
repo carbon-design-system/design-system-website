@@ -7,10 +7,13 @@ export default class OverflowMenu {
     }
 
     this.element = element;
-
+    this.element.dataset.state = 'closed';
     this.constructor.components.set(this.element, this);
+    this.element.ownerDocument.addEventListener('click', (event) => this.handleDocumentClick(event));
+  }
 
-    this.element.addEventListener('click', (event) => this.openMenu(event));
+  static create(element) {
+    return this.components.get(element) || new this(element);
   }
 
   static init(target = document) {
@@ -24,28 +27,19 @@ export default class OverflowMenu {
     }
   }
 
-  openMenu(event) {
-    if (event.currentTarget.tagName === 'A') {
+  handleDocumentClick(event) {
+    const isOfSelf = this.element.contains(event.target);
+    const shouldBeOpen = isOfSelf && this.element.dataset.state !== 'open';
+
+    if (isOfSelf && this.element.tagName === 'A') {
       event.preventDefault();
     }
 
-    if (this.element.classList.contains('open')) {
-      this.element.classList.remove('open');
-    } else {
-      [... this.element.ownerDocument.querySelectorAll('[data-overflow-menu].open')].forEach((element) => {
-        element.classList.remove('open');
-      });
-
-      this.element.classList.add('open');
-    }
+    this.element.dataset.state = shouldBeOpen ? 'open' : 'closed';
   }
 
   release() {
     this.constructor.components.delete(this.element);
-  }
-
-  static create(element) {
-    return this.components.get(element) || new this(element);
   }
 }
 
