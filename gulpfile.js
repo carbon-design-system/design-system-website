@@ -65,9 +65,10 @@ gulp.task('copy', function() {
   // live code examples and snippets
   const materials = 'src/materials';
   const streams = [];
-  streams.push(copy(`${config.bower}/html/base-elements/**/*html`, `${materials}/base-elements`));
-  streams.push(copy(`${config.bower}/html/components/**/*html`, `${materials}/components`));
-  streams.push(copy(`${config.bower}/consumables/js/**/*js`, `${materials}/js`));
+  streams.push(copy(`${config.bower}/html/base-elements/**/*.html`, `${materials}/base-elements`));
+  streams.push(copy(`${config.bower}/html/components/**/*.html`, `${materials}/components`));
+  streams.push(copy(`${config.bower}/consumables/js/**/*.js`, `${materials}/js`));
+  streams.push(copy(`${config.bower}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist
   streams.push(copy(config.src.fonts, `${config.dest}/assets/styles`));
@@ -139,8 +140,9 @@ gulp.task('assemble', function() {
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: 'src/views/layouts/includes/*',
+    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/guidelines/partials/*'],
     views: ['src/views/**/*', '!src/views/+(layouts)/**'],
+    data: 'src/data/*.json',
     materials: 'src/materials/**/*',
     docs: 'src/docs/**/*.md',
     keys: {

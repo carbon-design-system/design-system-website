@@ -1,0 +1,156 @@
+<p class="page__main-desc">
+  <span class="highlight">Color</span> brings a design to life. Color is versatile; its used to express emotion and tone as well as place emphasis and create associations. Color should always be used in meaningful and intentional ways that create patterns and visual cues.
+</p>
+
+<h1 class="page__heading">UI Color Scheme</h1>
+<ul class="ui-colors">
+  {{#each colors.ui-colors}}
+  <li class="ui-colors__color">
+    {{#if this.white}}
+    <div class="color__example white">
+    {{else}}
+    <div class="color__example">
+    {{/if}}
+      <p>Copy HEX</p>
+    </div>
+    <p class="color__name">{{this.name}}</p>
+    <p class="color__hex-value">{{this.hex}}</p>
+    <p class="color__variable">{{this.scss}}</p>
+    <input class="color__hidden-input" type="text" value="" />
+  </li>
+  {{/each}}
+</ul>
+
+<h1 class="page__heading">Accent Colors</h1>
+<ul class="accent-colors">
+  {{#each colors.accent-colors}}
+  <li class="accent-colors__color">
+    <div class="color__example">
+      <p>Copy HEX</p>
+    </div>
+    <p class="color__name">{{this.name}}</p>
+    <p class="color__hex-value">{{this.hex}}</p>
+    <p class="color__variable">{{this.scss}}</p>
+    <input class="color__hidden-input" type="text" value="" />
+  </li>
+  {{/each}}
+</ul>
+
+<h1 class="page__heading">Color Contrast | 4.5 : 1 Ratio</h1>
+<p class="page__desc">All type color combinations on Bluemix must pass WCAG AA standards of 4.5 : 1. In the table below are approved color combinations.</p>
+<ul class="view--color__icon-explanations">
+  <li>
+    <img src="/assets/images/normal-text-icon.png" />
+    <p>Normal Text</p>
+  </li>
+  <li>
+    <img src="/assets/images/large-text-icon.png" />
+    <p>Large Text: <span>18px bold or larger</span></p>
+  </li>
+</ul>
+
+<ul class="view--color__contrast-examples">
+  <li class="contrast-examples">
+    <div class="bg-colors">
+      <h4 class="example-heading">Dark Background Colors:</h4>
+      <ul>
+        <li>
+          <img src="/assets/images/navy-gray-3-bg-example.png" />
+          <p>Navy-Gray 3 <br><span>#2d4f49</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/navy-gray-2-bg-example.png" />
+          <p>Navy-Gray 2 <br><span>#20343e</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/blue-90-bg-example.png" />
+          <p>IBM Blue 90<br><span>#152934</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/navy-gray-1-bg-example.png" />
+          <p>Navy-Gray 1 <br><span>#0f212e</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="type-colors">
+      <h4 class="example-heading">Type Colors:</h4>
+      <ul>
+        <li>
+          <div class="color"></div>
+          <p>White <br><span>#ffffff</span></p>
+        </li>
+        <li>
+          <div class="color"></div>
+          <p>Navy-Gray 8 <br><span>#dfe6eb</span></p>
+        </li>
+        <li>
+          <div class="color"></div>
+          <p>IBM Blue 20 <br><span>#7cc7ff</span></p>
+        </li>
+        <li>
+          <div class="color"></div>
+          <p>IBM Blue 30 <br><span>#5aaafa</span></p>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="contrast-examples">
+    <div class="bg-colors">
+      <h4 class="example-heading">Other Background Colors:</h4>
+      <ul>
+        <li>
+          <img src="/assets/images/white-bg-example.png" />
+          <p>White <br><span>#ffffff</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/light-gray-bg-example.png" />
+          <p>Navy-Gray 8 <br><span>#dfe6eb</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/blue-30-bg-example.png" />
+          <p>IBM Blue 30<br><span>#5aaafa</span></p>
+        </li>
+        <li>
+          <img src="/assets/images/blue-40-bg-example.png" />
+          <p>IBM Blue 40 <br><span>#5596e6</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="type-colors">
+      <h4 class="example-heading">Type Colors:</h4>
+      <ul>
+        <li>
+          <div class="color--other"></div>
+          <p>IBM Blue 90 <br><span>#152934</span></p>
+        </li>
+        <li>
+          <div class="color--other"></div>
+          <p>Navy-Gray 5 <br><span>#42535c</span></p>
+        </li>
+        <li>
+          <div class="color--other"></div>
+          <p>IBM Blue 40 <br><span>#5596e6</span></p>
+        </li>
+        <li>
+          <div class="color--other"></div>
+          <p>IBM Blue 50 <br><span>#4178be</span></p>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+<h1 class="page__heading">Additional Resources</h1>
+<ul class="view--color__resources">
+  <li>
+    <img src="/assets/images/link-icon.png" />
+    <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank">IBM Accessible Color Guide</a>
+    <a href="http://w3-03.ibm.com/able/devtest/quick/" target="_blank">IBM Accessibility Quick Guidance</a>
+    <a href="http://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a>
+    <a href="s: http://www.ibm.com/design/language/framework/visual/color" target="_blank">IBM Design Language Colors</a>
+  </li>
+  <li>
+    <img src="/assets/images/download-light-icon.png" />
+    <a href="#" target="_blank">Bluemix Swatch Palette</a>
+  </li>
+</ul>

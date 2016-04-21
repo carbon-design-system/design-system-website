@@ -318,6 +318,10 @@
     .ui-colors__color:nth-of-type(#{$i}) {
       .color__example {
         background-color: nth($ui-colors, $i);
+
+        p {
+          @include text-contrast(nth($ui-colors, $i));
+        }
       }
     }
   }
@@ -326,6 +330,10 @@
     .accent-colors__color:nth-of-type(#{$i}) {
       .color__example {
         background-color: nth($accent-colors, $i);
+
+        p {
+          @include text-contrast(nth($accent-colors, $i));
+        }
       }
     }
   }
@@ -353,17 +361,17 @@
 
       p {
         font-size: rem(12px);
-        color: $color__text--dark;
-        border: 2px solid $color__text--dark;
+        // color: $color__text--dark;
+        border: 2px solid currentColor;
         padding: .5em .75em;
         font-weight: 700;
         text-align: center;
         visibility: hidden;
-
-        &.light {
-          color: $color__white;
-          border: 2px solid $color__white;
-        }
+        //
+        // &.light {
+        //   color: $color__white;
+        //   border: 2px solid $color__white;
+        // }
       }
 
       &:hover {
