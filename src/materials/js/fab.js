@@ -38,12 +38,7 @@ export default class FabButton {
     if (this.element.tagName === 'A') {
       event.preventDefault();
     }
-
-    if (this.element.dataset.state === 'closed') {
-      this.element.dataset.state = 'open';
-    } else {
-      this.element.dataset.state = 'closed';
-    }
+    this.element.classList.toggle('is-closed');
   }
 
   release() {

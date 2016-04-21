@@ -50,13 +50,13 @@ var BluemixComponents =
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Loading = exports.Toolbars = exports.HeaderNav = exports.Modal = exports.OverflowMenu = exports.Tab = exports.FileUploader = exports.FabButton = exports.settings = undefined;
+	exports.Spinner = exports.Toolbars = exports.HeaderNav = exports.Modal = exports.OverflowMenu = exports.Tab = exports.FileUploader = exports.FabButton = exports.settings = undefined;
 	
 	__webpack_require__(1);
 	
-	var _fileUploader = __webpack_require__(2);
+	var _file = __webpack_require__(2);
 	
-	var _fileUploader2 = _interopRequireDefault(_fileUploader);
+	var _file2 = _interopRequireDefault(_file);
 	
 	var _fab = __webpack_require__(3);
 	
@@ -82,9 +82,9 @@ var BluemixComponents =
 	
 	var _toolbars2 = _interopRequireDefault(_toolbars);
 	
-	var _loading = __webpack_require__(13);
+	var _spinner = __webpack_require__(13);
 	
-	var _loading2 = _interopRequireDefault(_loading);
+	var _spinner2 = _interopRequireDefault(_spinner);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -113,25 +113,25 @@ var BluemixComponents =
 	// -------------
 	exports.settings = settings;
 	exports.FabButton = _fab2.default;
-	exports.FileUploader = _fileUploader2.default;
+	exports.FileUploader = _file2.default;
 	exports.Tab = _tabsNav2.default;
 	exports.OverflowMenu = _overflowMenu2.default;
 	exports.Modal = _modals2.default;
 	exports.HeaderNav = _header2.default;
 	exports.Toolbars = _toolbars2.default;
-	exports.Loading = _loading2.default;
+	exports.Spinner = _spinner2.default;
 	
 	
 	var init = function init() {
 	  if (!settings.disableAutoInit) {
 	    _fab2.default.init();
-	    _fileUploader2.default.init();
+	    _file2.default.init();
 	    _tabsNav2.default.init();
 	    _overflowMenu2.default.init();
 	    _modals2.default.init();
 	    _header2.default.init();
 	    _toolbars2.default.init();
-	    _loading2.default.init();
+	    _spinner2.default.init();
 	  }
 	};
 	
@@ -151,7 +151,7 @@ var BluemixComponents =
 	 * @copyright Copyright (c) 2016 IcoMoon.io
 	 * @license   Licensed under MIT license
 	 *            See https://github.com/Keyamoon/svgxuse
-	 * @version   1.1.16
+	 * @version   1.1.15
 	 */
 	/*jslint browser: true */
 	/*global XDomainRequest, MutationObserver, window */
@@ -242,7 +242,6 @@ var BluemixComponents =
 	                    x.innerHTML = xhr.responseText;
 	                    svg = x.getElementsByTagName('svg')[0];
 	                    if (svg) {
-	                        svg.setAttribute('aria-hidden', 'true');
 	                        svg.style.position = 'absolute';
 	                        svg.style.width = 0;
 	                        svg.style.height = 0;
@@ -405,7 +404,7 @@ var BluemixComponents =
 	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.fileInput !== undefined) {
 	        this.create(target, options);
 	      } else {
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-file-uploader]'))).forEach(function (element) {
+	        [].concat(_toConsumableArray(target.querySelectorAll('[data-file-input]'))).forEach(function (element) {
 	          return _this2.create(element, options);
 	        });
 	      }
@@ -471,12 +470,7 @@ var BluemixComponents =
 	      if (this.element.tagName === 'A') {
 	        event.preventDefault();
 	      }
-	
-	      if (this.element.dataset.state === 'closed') {
-	        this.element.dataset.state = 'open';
-	      } else {
-	        this.element.dataset.state = 'closed';
-	      }
+	      this.element.classList.toggle('is-closed');
 	    }
 	  }, {
 	    key: 'release',
@@ -1395,11 +1389,11 @@ var BluemixComponents =
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var Loading = function () {
-	  function Loading(element) {
+	var Spinner = function () {
+	  function Spinner(element) {
 	    var options = arguments.length <= 1 || arguments[1] === undefined ? { active: true } : arguments[1];
 	
-	    _classCallCheck(this, Loading);
+	    _classCallCheck(this, Spinner);
 	
 	    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
 	      throw new TypeError('DOM element should be given to initialize this widget.');
@@ -1407,14 +1401,13 @@ var BluemixComponents =
 	
 	    this.element = element;
 	    this.active = 'active' in options ? options.active : true;
+	
 	    this.ie = false;
 	
 	    // check if browser is Internet Explorer
 	    if (options.ie || window.ActiveXObject || 'ActiveXObject' in window) {
 	      this.ie = true;
-	      this.element.dataset.ie = 'yes';
-	    } else {
-	      this.element.dataset.ie = 'no';
+	      this.element.classList.add('is--ie');
 	    }
 	
 	    this.constructor.components.set(this.element, this);
@@ -1423,7 +1416,7 @@ var BluemixComponents =
 	    this.set(this.active);
 	  }
 	
-	  _createClass(Loading, [{
+	  _createClass(Spinner, [{
 	    key: 'set',
 	    value: function set(active) {
 	      if (typeof active !== 'boolean') {
@@ -1433,9 +1426,13 @@ var BluemixComponents =
 	      this.active = active;
 	
 	      if (this.active) {
-	        this.element.dataset.state = 'active';
+	        this.element.classList.remove('is-stopping--ie', 'is-stopping');
 	      } else {
-	        this.element.dataset.state = 'inactive';
+	        if (this.ie) {
+	          this.element.classList.add('is-stopping--ie');
+	        } else {
+	          this.element.classList.add('is-stopping');
+	        }
 	      }
 	
 	      return this;
@@ -1456,11 +1453,6 @@ var BluemixComponents =
 	      this.constructor.components.delete(this.element);
 	    }
 	  }], [{
-	    key: 'create',
-	    value: function create(element) {
-	      return this.components.get(element) || new this(element);
-	    }
-	  }, {
 	    key: 'init',
 	    value: function init() {
 	      var _this = this;
@@ -1471,23 +1463,28 @@ var BluemixComponents =
 	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
 	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
 	      }
-	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.loading !== undefined) {
+	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.spinner !== undefined) {
 	        this.create(target, options);
 	      } else {
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-loading]'))).forEach(function (element) {
+	        [].concat(_toConsumableArray(target.querySelectorAll('[data-spinner]'))).forEach(function (element) {
 	          return _this.create(element, options);
 	        });
 	      }
 	    }
+	  }, {
+	    key: 'create',
+	    value: function create(element) {
+	      return this.components.get(element) || new this(element);
+	    }
 	  }]);
 	
-	  return Loading;
+	  return Spinner;
 	}();
 	
-	exports.default = Loading;
+	exports.default = Spinner;
 	
 	
-	Loading.components = new WeakMap();
+	Spinner.components = new WeakMap();
 
 /***/ }
 /******/ ]);
