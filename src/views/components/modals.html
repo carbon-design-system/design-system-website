@@ -8,17 +8,17 @@ iterations:
     title: "Transactional Modals"
     htmlFile: "components/modal--transactional.html"
     jsFile: "js/modals.js"
-    desc: "Description here."
+    desc: "Transactional modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the modal requests either a 'yes' or 'no' response."
   modals--passive:
     title: "Passive Modals"
     htmlFile: "components/modal--passive.html"
     jsFile: "js/modals.js"
-    desc: "Description here."
+    desc: "This modal is used as a style of notifications. We  highly discourage the use of this, due to its disruptive nature. Passive modal notifications should only appear if there is an action the user needs to address immediately. Passive modal notifications are persistent on screen. That is, they do not automatically go away after appearing. Users must either engage with or dismiss the notification."
   modals--inputs:
     title: "Input Modals"
     htmlFile: "components/modal--inputs.html"
     jsFile: "js/modals.js"
-    desc: "Description here."
+    desc: "Input modals are used to follow up with previous user input. These modals should include areas for input that the user can interact with, such as forms, dropdowns, selectors, and links."
 ---
 
 <!-- Item header -->
@@ -162,7 +162,37 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="page__heading">Usage</h2>
+    <h2 class="page__heading">General</h2>
+    <p class="page__desc">
+    <ul class="page__desc--list">
+      <li>Modals should not contain scrolling content</li>
+      <li>If your modal contains informational content only, consider using a <a href="http://design-system.stage1.mybluemix.net/components/notifications.html">Notification</a> instead</li>
+    </ul>>
+  </p>
+    <h3 class="page__small-heading">Dismissal</h3>
+      <p class="page__desc">Modals can be dismissed in 3 ways:<br>
+        <ul class="page__desc--list">
+          <li>Using the "x" in the upper right hand corner of the modal</li>
+          <li>Pressing the <code>ESC</code> key</li>
+          <li>Clicking / touching outside of the modal area</li>
+        </ul>
+      </p>
+
+  <h2 class="page__heading">Structure</h2>
+    <h3 class="page__small-heading">Header</h3>
+    <p class="page__desc">Include a heading within the modal that mirrors the action or button that was clicked by the user. Headers include a close button ("x") in the upper right hand corner of the modal.  </p>
+    <h3 class="page__small-heading">Body</h3>
+    <p class="page__desc">The body content within a modal should be as minimal as possible. Some base elements that can be used in modals are: form fields, text area, select, and radio buttons.</p>
+    <h3 class="page__small-heading">Footer</h3>
+    <p class="page__desc">The footer area of a modal typically contains a set of buttons. Refer to <a href="http://design-system.stage1.mybluemix.net/base-elements/buttons.html">button</a> guidelines for usage.  </p>
+
+    <h2 class="page__heading">Examples</h2>
+      <h3 class="page__small-heading">Transactional Modals</h3>
+      <p class="page__desc">Typically, the modal requests either a "yes" or "no" response from the user. Use when secondary confirmation is needed.</p>
+
+      <h3 class="page__small-heading">Input Modal</h3>
+      <p class="page__desc">Modals used in this case should include areas for input that the user can interact with. These can include but are not limited to: forms, dropdowns, selectors, and links.</p>
+
   </div>
   <!-- View: Usage ends -->
 

@@ -18,14 +18,14 @@ import 'svgxuse';
 // - JavaScript classes for use with components and base-elements.
 // - The following statements import classes from actual locations to
 //   be consumed from this file instead of their actual locations.
-import FileUploader from './file';
+import FileUploader from './file-uploader';
 import FabButton from './fab';
 import Tab from './tabs-nav';
 import OverflowMenu from './overflow-menu';
 import Modal from './modals';
 import HeaderNav from './header';
 import Toolbars from './toolbars';
-import Spinner from './spinner';
+import Loading from './loading';
 
 const settings = {};
 
@@ -39,7 +39,7 @@ export {
   Modal,
   HeaderNav,
   Toolbars,
-  Spinner,
+  Loading,
 };
 
 const init = () => {
@@ -51,7 +51,7 @@ const init = () => {
     Modal.init();
     HeaderNav.init();
     Toolbars.init();
-    Spinner.init();
+    Loading.init();
   }
 };
 
