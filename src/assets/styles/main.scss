@@ -7,6 +7,9 @@
 @import 'bower_components/bluemix-components/consumables/scss/_utils';
 @import 'vendor/prism';
 
+// MIXINS
+@import 'mixins';
+
 // PARTIALS
 @import 'partials/variables';
 @import 'partials/typography';

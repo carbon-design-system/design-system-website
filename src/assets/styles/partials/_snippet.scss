@@ -184,7 +184,7 @@ pre[class*='language-'] {
     .code__copy {
       position: absolute;
       display: inline-block;
-      background-color: $color__atlas-gray-1;
+      background-color: $color__navy-gray-8;
       border: none;
       color: $color__navy-gray-3;
       cursor: pointer;
@@ -213,7 +213,7 @@ pre[class*='language-'] {
         position: absolute;
         z-index: 1;
         background-color: $color__code-tabs;
-        color: $color__atlas-gray-1;
+        color: $color__navy-gray-8;
         padding: .5em;
         top: 100%;
         left: 50%;

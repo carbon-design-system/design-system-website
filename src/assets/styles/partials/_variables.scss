@@ -8,9 +8,9 @@ $color__white: #fff;
 $color__dark-blue: #1d3649;
 $color__menu-bg: $color__dark-blue;
 $color__light-gray: #f7f7f7;
-$color__text--light: $color__atlas-gray-1;
+$color__text--light: $color__navy-gray-8;
 $color__text--dark: $color__blue-90;
-$color__section-border: $color__atlas-gray-1;
+$color__section-border: $color__navy-gray-8;
 $color__toggle-menu: $color__navy-gray-5;
 $color__toggle-menu--is-closed: $color__blue-90;
 $color__toggle-menu-icon: $color__white;
@@ -21,19 +21,6 @@ $color__light-btn--hover: #c0e6ff;
 $color__border--light: #dfe6eb;
 $color__border--menu: #2c4559;
 $color__magenta: #ff3ca0;
-
-// Colors that needs to be added to Bluemix Components
-$color__blue-50: #4178be;
-$color__navy-gray-9: #eff2f5;
-$color__navy-gray-8: #dfe6eb;
-$color__teal-20: #6eedd8;
-$color__teal-30: #41d6c3;
-$color__teal-40: #00b4a0;
-$color__green-30: #8cd211;
-$color__yellow-30: #efc100;
-$color__orange-30: #ff8932;
-$color__red-40: #ff5050;
-$color__purple-40: #af6ee8;
 
 $ui-colors: (
   $color__blue-20,
