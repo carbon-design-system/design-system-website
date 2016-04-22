@@ -5,10 +5,10 @@ category: components
 mainDesc: "appears when additonal options need to be presented to the user, but there is design concern for space."
 iterations:
   overflow-menu:
-    title: "Overflow in Cards"
+    title: "Overflow Menu"
     htmlFile: "components/overflow-menu.html"
     jsFile: "js/overflow-menu.js"
-    desc: "Due to the space constraints, it is often not possible to contain all relevent actions to manipulate an object within the card. An overflow menu may be used to present additional menu options that directly relate to the card."
+    desc: ""
 ---
 
 <!-- Item header -->
@@ -35,7 +35,7 @@ iterations:
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="page__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Foundation</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
@@ -152,18 +152,24 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h3 class="page__small-heading">Overflow menu in Detail Page Header</h3>
-      <p class="page__desc"> </p>
+    <h1 class="page__heading">General</h1>
+      <h3 class="page__small-heading">Text</h3>
+      <p class="page__desc">The text within an overflow menu should be direct so users can quickly decide on an action. <br> <br>Actions that could cause a significant change to the user's data (Delete app, Delete Service, etc), should be separated by a horizontal rule and live below the primary set of actions.  </p>
       <h5 class="page__example-heading">Example:</h5>
+      <h3 class="page__small-heading">Positioning</h3>
+      <p class="page__desc">Depending on where the overflow menu is appears within the UI, the caret/arrow can be left or right aligned so the overflow menu is clearly visible.</p>
+      <h5 class="page__example-heading">Left-aligned overflow menu:</h5>
+      <h5 class="page__example-heading">Right-aligned overflow menu:</h5>
 
-      <h3 class="page__small-heading">Overflow menu in Cards</h3>
-      <p class="page__desc"> </p>
-      <h5 class="page__example-heading">Example:</h5>
 
-      <h3 class="page__small-heading">Overflow menu text</h3>
-      <p class="page__desc">The text within an overflow menu should be direct so users can quickly decide on an action. <br> Actions that could cause a significant change to the user's data (Delete app, Delete Service, etc), should be separated by a horizontal rule and live below the primary set of actions.  </p>
-      <h5 class="page__example-heading">Example:</h5>
+      <h1 class="page__heading">Usage</h1>
+      <h3 class="page__small-heading">Overflow menu in Detail Page Header</h3>
+        <p class="page__desc"> </p>
+        <h5 class="page__example-heading">Example:</h5>
 
+        <h3 class="page__small-heading">Overflow menu in Cards</h3>
+        <p class="page__desc">Due to the space constraints, it is often not possible to contain all relevent actions to manipulate an object within the card. An overflow menu may be used to present additional menu options that directly relate to the card.</p>
+        <h5 class="page__example-heading">Example:</h5>
 
   </div>
   <!-- View: Usage ends -->
