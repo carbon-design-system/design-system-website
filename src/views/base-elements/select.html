@@ -34,7 +34,7 @@ iterations:
       <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
     </p>
 
-  <h2 class="page__main-heading">Variations</h2>
+  <h2 class="page__main-heading">Foundation</h2>
 
   <!-- Element Loop -->
   {{#each iterations as |item|}}
@@ -155,11 +155,17 @@ iterations:
     <p class="page__desc">It is strongly recommended not to style <code>select</code> dropdowns due to accessibility purposes.</p>
     <p class="page__desc">One of the <a href="http://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is “Ensuring keyboard control for all functionality." CSS alternatives to <code>select</code> elements to not meet this requirement.
     You can see examples below of how a browser-specific <code>select</code> element renders differently.</p>
-    <h5 class="page__example-heading">Example:</h5>
+    <h5 class="page__example-heading">Chrome:</h5>
+    <img class="page__img" src="/assets/images/select-example-chrome.png" />
+
+    <h5 class="page__example-heading">Firefox:</h5>
+    <img class="page__img" src="/assets/images/select-example-firefox.png" />
+
+    <h5 class="page__example-heading">Safari:</h5>
+    <img class="page__img" src="/assets/images/select-example-safari.png" />
 
     <h3 class="page__small-heading">Order</h3>
     <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
-    <h5 class="page__example-heading">Example:</h5>
 
     <h3 class="page__small-heading">Accessibility</h3>
     <p class="page__desc">The default <code>select</code> element is completely usable either with a mouse or a keyboard, following this process:
