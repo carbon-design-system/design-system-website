@@ -62,6 +62,11 @@
     }
   }
 
+  &__x-small-heading {
+    @extend .page__small-heading;
+    font-size: .889rem;
+  }
+
   &__img {
     width: 100%;
     padding: 1em;
@@ -157,6 +162,12 @@
 
     &--bold {
       font-weight: 700;
+      font-size: .9rem;
+    }
+
+    &--small {
+      @extend .page__desc;
+      font-size: rem(14px);
     }
 
     &--list {
@@ -226,7 +237,7 @@
   &__container {
     margin-left: 9em; // push away from sidebar
     margin-right: 9em;
-    padding: 4em 5em 4em 0;
+    padding: 4em 0 4em 0;
     transition: $transition--slow;
 
     @media screen and (max-width: $width__screen-size--medium) {
