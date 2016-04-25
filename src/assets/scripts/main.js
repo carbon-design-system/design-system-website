@@ -61,6 +61,12 @@ document.addEventListener('DOMContentLoaded', function(e) {
     });
   });
 
+  const alertModalElement = document.querySelector('#under-construction');
+  if (alertModalElement) {
+    const alertModal = Modal.create(alertModalElement);
+    alertModal.show();
+  }
+
   openItemHeadings();
   toggleMenu();
   tabsNavigation();
@@ -71,11 +77,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
   renderPopout();
   copyHexValue();
   expandType();
-
-  const alertModalElement = document.querySelector('#under-construction');
-  if (alertModalElement) {
-    const alertModal = Modal.create(alertModalElement);
-    alertModal.show();
-  }
 
 });
