@@ -172,7 +172,48 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">Toggles have two states: action on and action off. When an action state is on, the toggle button should be solid and on the right end of the toggle bar. <br><br>When an action state is off, the button should have a 2px border with no fill and be on the left end of the toggle bar.</p>
+        <p class="page__desc--small">The font for the unactive state should be lighter than the active state.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Toggle Button height & width: 24px / 2.5em</span><br>
+          <span class="page__desc--bold">Button Border: 2 px / .125 em</span><br>
+          <span class="page__desc--bold">Font size: 14px / .875 em</span><br>
+          <span class="page__desc--bold">Font weight: normal / 400</span><br>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Toggle_640_2px.png 2x, /assets/images/Toggle_640_1px.png 1x">
+          <img srcset="/assets/images/Toggle_640_2px(1).png 2x, /assets/images/Toggle_640_1px(1).png 1x">
+        </picture>
+        <h5 class="page__example-heading">Toggle | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Toggles can not have any element or text within 16 pixels / 1em of its borders.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">External Padding: 16px</span><br>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Toggle_With_Padding_640_2px.png 2x, /assets/images/Toggle_With_Padding_640_1px.png 1x">
+          <img srcset="/assets/images/Toggle_With_Padding_640_2px(1).png 2x, /assets/images/Toggle_With_Padding_640_1px(1).png 1x">
+        </picture>
+        <h5 class="page__example-heading">Toggle Padding | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Typography</h3>
+        <p class="page__desc--small">Toggle text should be set in title case with the first letter of each word capitalized. Toggle labels should not exceed more than 3 words. Toggle text should follow the Bluemix Typography font stack for sans-serif.</p>
+      </div>
+    </div>
   </div>
   <!-- View: Style ends -->
 

@@ -4,7 +4,7 @@
   padding-right: 0 9em 15em 0;
   top: $height__header + em(50px);
   width: 100%;
-  max-width: 72em; // nothing will do wider than this (72 is arbitrary for now)
+  max-width: 90em; // nothing will do wider than this (72 is arbitrary for now)
 
   &.is-active {
     display: flex;
@@ -101,4 +101,58 @@
 .view--style,
 .view--foundation {
   @extend %view;
+}
+
+/////////////////////////////////
+// VIEW: STYLE                 //
+/////////////////////////////////
+
+.view--style {
+
+  .page__heading {
+    margin-bottom: 1em;
+  }
+
+  &__section {
+    display: flex;
+    margin-bottom: 5em;
+
+    .page__example-heading {
+      margin-top: 0;
+      padding-bottom: 2em;
+    }
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      flex-direction: column;
+    }
+  }
+
+  &__right-column {
+    width: 60%;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      width: 100%;
+    }
+  }
+
+  &__left-column {
+    width: 40%;
+    padding-right: 5%;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__full-width {
+    width: 100%;
+  }
+
+  &__right-column {
+
+    img {
+      width: 100%;
+    }
+  }
 }

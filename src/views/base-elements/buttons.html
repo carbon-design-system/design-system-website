@@ -196,7 +196,129 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">Primary buttons are single colored filled buttons with a contrasting color the text of the label.</p>
+        <p class="page__desc--small">Secondary buttons have a 2px border with no fill. The text and border color on secondary buttons styles should be the same color.</p>
+        <p class="page__desc">
+          <span class="page__desc--bold"><br>
+            Button height: 40px / 2.5em<br>
+            Padding left and right of text: 16px / 1em<br>
+            Font size: 14px / .875 rem<br>
+            Font weight: bold / 700
+          </span>
+        </p>
+
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Buttons can not have any element or text within 16 pixels / 1 em of its borders.</p>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            External Padding: 16px
+          </span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Primary_Button_640_2px.png 2x, /assets/images/Primary_Button_640_1px.png 1x">
+          <img srcset="/assets/images/Primary_Button_640_2px(1).png 2x, /assets/images/Primary_Button_640_1px(1).png 1x" />
+        </picture>
+        <h5 class="page__example-heading">Primary Buttons | units in px / ems</h5>
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Secondary_Button_640_2px.png 2x, /assets/images/Secondary_Button_640_1px.png 1x">
+          <img srcset="/assets/images/Secondary_Button_640_2px(1).png 2x, /assets/images/Secondary_Button_640_1px(1).png 1x" />
+        </picture>
+        <h5 class="page__example-heading">Secondary Buttons | units in px / ems</h5>
+      </div>
+    </div>
+
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Groupings</h3>
+        <p class="page__desc--small">In button groups the primary button style is postitioned on the outside of the set. The secondary button is postioned on the inside of the set.</p>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            Space between buttons: 16px
+          </span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Groupings_640_2px.png 2x, /assets/images/Groupings_640_1px.png 1x">
+          <img srcset="/assets/images/Groupings_640_2px(1).png 2x, /assets/images/Groupings_640_1px(1).png 1x" />
+        </picture>
+      </div>
+    </div>
+
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Button with Icons</h3>
+        <p class="page__desc--small">
+          There must be 16 pixels / 1 em between the label text and the icon on the button.
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Button_with_icon_640_2px.png 2x, /assets/images/Button_with_icon_640_1px.png 1x">
+          <img srcset="/assets/images/Button_with_icon_640_2px(1).png 2x, /assets/images/Button_with_icon_640_1px(1).png 1x" />
+        </picture>
+      </div>
+    </div>
+
+    <h1 class="page__heading">States</h1>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Primary Style</h3>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Focused:</span>
+          Browser defined
+        </p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Hover:</span>
+          Filled and one shade lighter on the IBM Design Langauge color scale than normal color. Text stays the same color.
+        </p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Disabled:</span>
+          50% opacity
+        </p>
+        <h3 class="page__x-small-heading">Secondary Style</h3>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Focused:</span>
+          Browser defined
+        </p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Hover:</span>
+           Filled and the same color as the stroke in the normal state. Text should change to a contrast color.
+        </p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Disabled:</span>
+          50% opacity
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Button_States_640_2px(1).png 2x, /assets/images/Button_States_640_1px(1).png 1x">
+          <img srcset="/assets/images/Button_States_640_2px.png 2x, /assets/images/Button_States_640_1px.png 1x">
+        </picture>
+      </div>
+    </div>
+
+    <h1 class="page__heading">Typography</h1>
+    <div class="view--style__section">
+      <p class="page__desc--small">
+        Button text should be set in title case with the first letter of each word is capitalized.
+        Button labels should not exceed more than 3 words. Buttons text should follow the Bluemix Typography font stack for sans-serif.
+        <br>
+        <span class="page__desc--bold"><br>
+          font-size: 14px / .875rem<br>
+          font-weight: bold / 700
+        </span>
+      </p>
+    </div>
+
   </div>
   <!-- View: Style ends -->
 
