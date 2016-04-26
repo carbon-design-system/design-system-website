@@ -64,9 +64,27 @@
 
   &__img {
     width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
 
-    @media screen and (max-width: $width__screen-size--small) {
+    @media screen and (max-width: $width__screen-size--medium) {
       width: auto;
+      object-fit: cover;
+    }
+
+    &--dark {
+      @extend .page__img;
+      background-color: $color__blue-90;
+    }
+
+    &--light {
+      @extend .page__img;
+      background-color: $color__navy-gray-3;
+    }
+
+    &--vertical {
+      width: 100%;
+      min-height: 10em;
       object-fit: cover;
     }
   }
@@ -89,6 +107,7 @@
 
     &--list {
       @extend .bx--list--unordered;
+      @extend %type-constrain;
       list-style: disc;
       color: $color__text--dark;
       padding-bottom: 1em;
@@ -153,7 +172,7 @@
   &__container {
     margin-left: 9em; // push away from sidebar
     margin-right: 9em;
-    padding: 4em 9em 4em 0;
+    padding: 4em 5em 4em 0;
     transition: $transition--slow;
 
     @media screen and (max-width: $width__screen-size--medium) {
@@ -276,6 +295,47 @@
     @media screen and (max-width: $width__screen-size--small) {
       font-size: 1rem;
     }
+  }
+}
+
+// Specific element styles
+
+.link-examples {
+  display: flex;
+  align-items: baseline;
+
+  .do-example__img, .dont-example__img {
+    width: 100%;
+    padding-left: 1em;
+  }
+
+  .do-example__img {
+    border-left: 10px solid $color__green-30;
+  }
+
+  .dont-example__img {
+    border-left: 10px solid $color__red-40;
+  }
+
+  .dont-example {
+    margin-left: 5%;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      margin-left: 0;
+    }
+  }
+
+  .page__example-heading {
+    display: flex;
+    align-items: baseline;
+
+    img {
+      padding-right: 1em;
+    }
+  }
+
+  @media screen and (max-width: $width__screen-size--medium) {
+    flex-direction: column;
   }
 }
 
