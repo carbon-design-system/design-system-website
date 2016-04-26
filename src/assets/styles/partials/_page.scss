@@ -72,9 +72,63 @@
       object-fit: cover;
     }
 
+    &--small {
+      @extend .page__img;
+      padding: 0;
+    }
+
+    &--thumbnail {
+      max-width: 40rem;
+      position: relative;
+      margin-bottom: 2em;
+
+      .thumbnail-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .overlay {
+        opacity: 0;
+        background-color: rgba(85, 150, 230, .8);
+        position: absolute;
+        z-index: 2;
+        transition: $transition--base;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        p {
+          color: $color__white;
+          font-size: rem(12px);
+          padding-top: 1em;
+          letter-spacing: .5px;
+          font-weight: 400;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        & .overlay {
+          opacity: 1;
+        }
+      }
+    }
+
     &--dark {
       @extend .page__img;
       background-color: $color__blue-90;
+    }
+
+    &--x-dark {
+      @extend .page__img;
+      background-color: $color__navy-gray-1;
     }
 
     &--light {
