@@ -7,14 +7,20 @@ title: Visual Design
     <p class="page__category">Guidelines</p>
       <h1 class="page__large-heading">Visual Design</h1>
   </div>
-  <ul class="page__tabs">
-    <li class="toggle-view--typography is-selected">Typography</li>
-    <li class="toggle-view--color">Color</li>
-    <li class="toggle-view--grid">Grid</li>
-    <li class="toggle-view--iconography">Iconography</li>
-  </ul>
+  <nav data-tabs class="tabs tabs--light">
+    <div class="tabs__trigger tabs__trigger--light"><p class="trigger__text"></p>
+      <svg>
+        <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow"></use>
+      </svg>
+    </div>
+    <ul class="tabs__nav tabs__nav--light tabs--hidden">
+      <li class="nav__item nav__item--light selected toggle-view--typography"><a class="item__link" href="">Typography</a></li>
+      <li class="nav__item nav__item--light toggle-view--color"><a class="item__link" href="">Color</a></li>
+      <li class="nav__item nav__item--light toggle-view--grid"><a class="item__link" href="">Grid</a></li>
+      <li class="nav__item nav__item--light toggle-view--iconography"><a class="item__link" href="">Iconography</a></li>
+    </ul>
+  </nav>
 </div>
-
 
 <div class="page__container">
 

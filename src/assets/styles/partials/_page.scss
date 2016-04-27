@@ -256,8 +256,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: $height__header;
     padding-left: 9em;
+    height: $height__header;
     transition: $transition--slow;
 
     @media screen and (max-width: $width__screen-size--medium) {
@@ -266,7 +266,7 @@
 
     @media screen and (max-width: $width__screen-size--small) {
       padding-left: 1em;
-      height: 17.75em;
+      height: auto;
       padding-right: 1em;
     }
 
@@ -275,6 +275,88 @@
       height: 3.5em;
       z-index: 2;
       width: 100%;
+    }
+
+    .tabs {
+
+      &--light {
+        font-weight: 700;
+        color: $color__text--dark;
+        background-color: $color__blue-30;
+        margin-top: 1em;
+        margin-bottom: 0;
+        transition: .3s;
+
+        @media screen and (max-width: $width__tab-break) {
+          background-color: lighten($color__blue-30, 5%);
+          margin-bottom: 1.5em;
+        }
+      }
+
+      &__trigger {
+
+        &--light {
+          border-top: none;
+          background: lighten($color__blue-30, 8%);
+
+          &:hover {
+            background: lighten($color__blue-30, 8%);
+          }
+
+          svg {
+            fill: $color__white;
+          }
+        }
+
+        &__nav--light {
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .nav__item {
+
+      &--light {
+        background: $color__blue-30;
+
+        @media screen and (max-width: $width__tab-break) {
+          background-color: lighten($color__blue-30, 5%);
+
+          &:hover {
+            background: lighten($color__blue-30, 10%);
+          }
+        }
+
+        &.selected {
+          border-bottom: 3px solid $color__text--dark;
+
+          @media screen and (max-width: $width__tab-break) {
+            border-bottom: none;
+          }
+        }
+      }
+
+      a {
+        color: $color__text--dark;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: .0125em;
+        transition: .2s;
+
+
+        &:hover {
+          color: $color__white;
+
+          @media screen and (max-width: $width__tab-break) {
+            color: $color__text--dark;
+          }
+        }
+
+        @media screen and (max-width: $width__tab-break) {
+          font-size: .9rem;
+        }
+      }
     }
   }
 
@@ -309,40 +391,40 @@
   }
 
   &__tabs {
-    display: flex;
-
-    li {
-      @extend %font-smoothing;
-      color: $color__text--dark;
-      padding: 1em 0;
-      margin: 0 1.5em;
-      font-size: rem(16px);
-      font-weight: 600;
-      letter-spacing: em(.2px);
-      border-bottom: 3px solid transparent;
-      text-align: center;
-      transition: .2s;
-      cursor: pointer;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:hover,
-      &:focus {
-        color: $color__white;
-      }
-
-      &:hover,
-      &:focus,
-      &.is-selected {
-        cursor: pointer;
-      }
-
-      &.is-selected {
-        border-bottom: 3px solid $color__text--dark;
-      }
-    }
+    // display: flex;
+    //
+    // li {
+    //   @extend %font-smoothing;
+    //   color: $color__text--dark;
+    //   padding: 1em 0;
+    //   margin: 0 1.5em;
+    //   font-size: rem(16px);
+    //   font-weight: 600;
+    //   letter-spacing: em(.2px);
+    //   border-bottom: 3px solid transparent;
+    //   text-align: center;
+    //   transition: .2s;
+    //   cursor: pointer;
+    //
+    //   &:first-child {
+    //     margin-left: 0;
+    //   }
+    //
+    //   &:hover,
+    //   &:focus {
+    //     color: $color__white;
+    //   }
+    //
+    //   &:hover,
+    //   &:focus,
+    //   &.is-selected {
+    //     cursor: pointer;
+    //   }
+    //
+    //   &.is-selected {
+    //     border-bottom: 3px solid $color__text--dark;
+    //   }
+    // }
   }
 
   &__main-desc {
