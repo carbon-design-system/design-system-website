@@ -79,7 +79,20 @@
 
     &--small {
       @extend .page__img;
-      padding: 0;
+      max-width: 30rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--x-small {
+      @extend .page__img;
+      max-width: 15rem;
+
+      img {
+        width: 100%;
+      }
     }
 
     &--thumbnail {
@@ -129,6 +142,14 @@
     &--dark {
       @extend .page__img;
       background-color: $color__blue-90;
+
+      &.fitted {
+        max-width: 40rem;
+      }
+
+      &.fitted img {
+        width: 100%;
+      }
     }
 
     &--x-dark {
