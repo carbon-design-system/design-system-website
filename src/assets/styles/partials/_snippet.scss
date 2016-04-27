@@ -241,10 +241,6 @@ pre[class*='language-'] {
       }
 
       @media screen and (max-width: $width__screen-size--medium) {
-        right: 5em;
-      }
-
-      @media screen and (max-width: $width__screen-size--small) {
         right: 1em;
       }
     }
@@ -254,6 +250,7 @@ pre[class*='language-'] {
       background: none;
       border: none;
       color: $color__navy-gray-7;
+      background-color: $color__snippet-bg;
       font-size: rem(12px);
       text-decoration: none;
       position: absolute;
