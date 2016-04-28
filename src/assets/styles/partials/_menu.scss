@@ -71,6 +71,23 @@
         background-color: $color__blue-30;
       }
     }
+
+    .bx--btn--secondary {
+
+      &:hover {
+
+        .download-icon {
+          fill: $color__blue-90;
+        }
+      }
+    }
+
+    .download-icon {
+      width: em(16px);
+      height: em(16px);
+      fill: $color__blue-30;
+      transform: rotate(180deg);
+    }
   }
 }
 

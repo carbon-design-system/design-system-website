@@ -104,8 +104,11 @@
     text-decoration: none;
     transition: $transition--base;
 
-    img {
-      padding-left: 1em;
+    .download-icon {
+      width: em(20px);
+      height: em(20px);
+      transform: rotate(180deg);
+      margin-left: 1em;
     }
 
     &:hover {
