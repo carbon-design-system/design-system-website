@@ -190,6 +190,12 @@
     color: $color__text--dark;
     word-wrap: break-word;
 
+    &--code {
+      font-size: .8rem;
+      padding: .5em;
+      margin: 0 .25em;
+    }
+
     &--bold {
       font-weight: 700;
       font-size: .9rem;
@@ -244,6 +250,20 @@
 
     @media screen and (max-width: $width__screen-size--small) {
       padding-bottom: 1em;
+    }
+  }
+
+  &__code-example {
+    height: auto;
+    padding: .75em .75em 0 .5em;
+    background-color: $color__snippet-bg;
+    margin-bottom: 1em;
+
+    code {
+      font-size: .7rem;
+      background: none;
+      word-wrap: break-word;
+      white-space: pre-wrap;
     }
   }
 

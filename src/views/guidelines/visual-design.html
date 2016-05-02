@@ -14,17 +14,17 @@ title: Visual Design
       </svg>
     </div>
     <ul class="tabs__nav tabs__nav--light tabs--hidden">
-      <li class="nav__item nav__item--light selected toggle-view--typography"><a class="item__link" href="">Typography</a></li>
+      <li class="nav__item nav__item--light toggle-view--typography"><a class="item__link" href="">Typography</a></li>
       <li class="nav__item nav__item--light toggle-view--color"><a class="item__link" href="">Color</a></li>
       <li class="nav__item nav__item--light toggle-view--grid"><a class="item__link" href="">Grid</a></li>
-      <li class="nav__item nav__item--light toggle-view--iconography"><a class="item__link" href="">Iconography</a></li>
+      <li class="nav__item nav__item--light selected toggle-view--iconography"><a class="item__link" href="">Iconography</a></li>
     </ul>
   </nav>
 </div>
 
 <div class="page__container">
 
-  <div class="view--typography is-active">
+  <div class="view--typography">
     {{> typography}}
   </div>
 
@@ -37,8 +37,8 @@ title: Visual Design
     {{> grids}}
   </div>
 
-  <div class="view--iconography">
-    <h1 class="page__heading">Iconography</h1>
+  <div class="view--iconography is-active">
+    {{> iconography}}
   </div>
 
 </div>
