@@ -156,3 +156,22 @@
     }
   }
 }
+
+.view--iconography__code-example {
+
+  pre {
+    font-size: .75rem;
+    padding: 0;
+    max-width: 75em;
+    padding-top: .75em;
+
+    @media screen and (max-width: $width__screen-size--small) {
+      padding: .75em 1em 0;
+    }
+
+    code {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  }
+}
