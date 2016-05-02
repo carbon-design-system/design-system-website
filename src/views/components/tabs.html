@@ -8,7 +8,7 @@ iterations:
     title: "Tabs"
     htmlFile: "components/tabs-nav.html"
     jsFile: "js/tabs-nav.js"
-    desc: "Tabs follow a modified Priority Plus pattern to provide optimal usability at all screen sizes. It is a responsive navigation pattern that attempts to maximize horizontal space at all widths. As the viewport narrows, the most important tabs remain visible, while the other tabs are drop off into an overflow menu."
+    desc: "Tabs follow a modified Priority Plus pattern to provide optimal usability at all screen sizes. It is a responsive navigation pattern that maximizes horizontal space at all widths."
 ---
 
 <!-- Item header -->
@@ -159,35 +159,52 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-
+  <h1 class="page__heading">General</h1>
     <h3 class="page__small-heading">Text</h3>
-    <p class="page__desc">For the Service Details Page, Overview, Getting Started, and Connected Objects are required across all services. If custom UI is needed for your service, there are two options. </p>
-
-    <h3 class="page__small-heading">Required Tabs</h3>
-    <p class="page__desc">Each text title for a tab should appropriately describe its content and set user expectations. Titles should be as concise as possible: one, two, or if necessary, three words. Keep in mind that at mobile widths the character length of the title will impact the experience. Icons are not permitted in the tab titles.
-      <ol class="page__desc--list--ordered">
-        <li>Manage Tab<br>If you have minimal need for custom UI for your service, it can be contained within the Manage Tab.</li>
-        <li>Custom Tabs<br>If your service has more advanced taxonomical needs, additional custom tabs may be included.</li>
-      </ol>
-    </p>
-
+      <p class="page__desc">Each text title for a tab should appropriately describe its content and set user expectations. Titles should be as concise as possible: one, or if necessary, two words. Keep in mind that at mobile widths the character length of the title will impact the experience.
+        <br><br>
+        Icons are not permitted in the tab titles.</p>
     <h3 class="page__small-heading">Number of Tabs</h3>
-      <p class="page__desc">
-        <ul class="page__desc--list">
-          <li>There is a maximum of six tabs displayed. This is to maintain an uncluttered UI and reduce cognitive load for users.</li>
-          <li>If you require additional tabs, please see the <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html" target="_blank">Overflow Menu</a> component for further guidance.</li>
-          <li>Tabs should be ordered from left to right by frequency or expected frequency of use by the user. Alternatively, if each tab is used equally, tabs should be placed in the order in which a user flows through each area of content.</li>
-          <li>Tabs with related content should be grouped adjacent to each other.</li>
-        </ul>
-      </p>
+      <p class="page__desc">There is a maximum of six tabs displayed. This is to maintain an uncluttered UI and reduce cognitive load for users.</p>
 
-    <h3 class="page__small-heading">Hierarchy</h3>
-    <p class="page__desc">Only one level of tabs is used. This is to ensure a consistent, simple, and easily navigable experience for users. An intuitive taxonomy and descriptive tab titles can go a long way toward a good user experience.</p>
+    <h3 class="page__small-heading">Order</h3>
+        <p class="page__desc">Tab order should be consistent across service instances. If service instances require custom tabs they should be displayed after the default tabs. Tabs with related content should be grouped adjacent to each other.</p>
 
-    <h2 class="page__heading">Exceptions</h2>
     <h3 class="page__small-heading">Secondary Level</h3>
-    <p class="page__desc">A secondary level of tabs is permitted in the case of displaying multiple sets or views of the same content, or switching between discrete, but related content. Therefore, the secondary level should be considered a Content Switcher rather than navigation. <br>The second level manipulates the view or the content within its parent tab, and thus is part of the active tab. It should look and feel like as such. Please see <a href="http://design-system.stage1.mybluemix.net/components/content-switcher.html">Content Switcher</a> for more detail.</p>
+        <p class="page__desc">Tabs are used as the primary means of navigation within an experience. This is to ensure a consistent, simple, and easily navigable experience for users. An intuitive taxonomy and descriptive tab titles can go a long way toward a good user experience.
+              <br><br>
+        A secondary level of tabs is permitted in the case of displaying multiple sets or views of the same content, or switching between discrete, but related content. The second level manipulates the view or the content within its parent tab, and thus is part of the active tab. It should look and feel like as shown below.</p>
 
+        <div class="page__img--thumbnail">
+          <img class="thumbnail-img" src="/assets/images/tabs-secondary-level.png" />
+          <a href="/assets/images/tabs-secondary-level.png" target="_blank" class="overlay">
+            <img src="/assets/images/ibm-eye.png" />
+            <p>View at 100%</p>
+          </a>
+        </div>
+
+<h1 class="page__heading">Standard Use Cases</h1>
+    <p class="page__desc">Tabs are used as the primary means of navigation within the Service Console.</p>
+  <!--  COMMENTING OUT UNTIL TAB STRUCTURE IS FINALIZED
+
+    <h5 class="page__example-heading">Example:</h5>
+    <div class="page__img--thumbnail">
+      <img class="thumbnail-img" src="/assets/images/tabs-service-console.png" />
+      <a href="/assets/images/tabs-service-console.png" target="_blank" class="overlay">
+        <img src="/assets/images/ibm-eye.png" />
+        <p>View at 100%</p>
+      </a>
+    </div>
+  -->
+
+    <h3 class="page__small-heading">Manage</h3>
+        <p class="page__desc">Content aiding in the users productive use workflow, and any additional learning content will be within the Manage tab.</p>
+    <h3 class="page__small-heading">Service Credentials</h3>
+        <p class="page__desc">The service credentials tab shows the service instance credentials to an end user. Currently, users have the ability to create mulitple sets of credentials. Services that do not use credentials will not be required to have this tab.</p>
+    <h3 class="page__small-heading">Connections</h3>
+        <p class="page__desc">This tab provides a way for users to bind their service instance to an existing app or service instance. Service to service bindings will be supported in the near future.</p>
+    <h3 class="page__small-heading">Custom Tabs</h3>
+        <p class="page__desc">We understand some services will require an additional level of functionality not currently supported with the default tabs. Service providers who validate a need for an additional tab are permited one custom tab. </p>
   </div>
   <!-- View: Usage ends -->
 
