@@ -34,6 +34,7 @@ export const codeSnippets = () => {
     el.addEventListener('click', function(e) {
       e.preventDefault();
       let codeSnippet = el.parentNode;
+      console.log(codeSnippet);
       codeSnippet.classList.toggle('is-expanded');
       if (this.innerHTML === 'Show full code <img src="../assets/images/icon--down-arrow.svg">') {
         this.innerHTML = 'Show less code <img src="../assets/images/icon--up-arrow.svg">';
@@ -48,7 +49,7 @@ export const codeSnippets = () => {
     el.addEventListener('click', function(e) {
       e.preventDefault();
       let htmlElement = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.innerHTML;
-      let codeSnippet = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextSibling.nextElementSibling;
+      let codeSnippet = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextElementSibling;
       codeSnippet.value = htmlElement;
       codeSnippet.focus();
       codeSnippet.select();
@@ -69,8 +70,8 @@ export const codeSnippets = () => {
   const copyCode = (el, codeSnippet) => {
     codeSnippet.focus();
     codeSnippet.select();
-    let copyFeedback = el.firstChild.nextElementSibling.nextElementSibling;
-    console.log(copyFeedback);
+    console.log(el.childNodes[5]);
+    let copyFeedback = el.childNodes[5];
     let isSupported = document.queryCommandSupported('copy');
     if (isSupported) {
       try {
@@ -91,6 +92,7 @@ export const codeSnippets = () => {
       }
     }
     else {
+      console.log('here');
       copyFeedback.style.visibility = "visible";
       copyFeedback.innerHTML = "Please press CMD/Ctrl + C now to copy";
       copyFeedback.style.width = "20em";
