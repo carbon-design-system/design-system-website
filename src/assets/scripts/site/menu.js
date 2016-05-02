@@ -49,7 +49,7 @@ export const activeMenuLink = () => {
 export const openItemHeadings = (nodeList = itemHeadings) => {
   Array.prototype.forEach.call(nodeList, function(element) {
 
-    let subNav = element.nextSibling.nextElementSibling;
+    let subNav = element.nextSibling.nextSibling;
 
     element.addEventListener('click', function(e) {
       subNav.classList.toggle('open');
@@ -58,7 +58,7 @@ export const openItemHeadings = (nodeList = itemHeadings) => {
     let urlPath = window.location.pathname.split('/')[1];
 
     if (urlPath && urlPath === element.id) {
-      element.nextSibling.nextElementSibling.classList.add('open');
+      element.nextSibling.nextSibling.classList.add('open');
     }
   });
 }

@@ -1,0 +1,65 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10+ CSS styles go here */
+
+  // Overview section
+  .overview-section {
+
+    &__polygon {
+      z-index: -1;
+    }
+
+    &__resources {
+
+      .resources__info-boxes {
+        max-width: 100%;
+        width: 100vw;
+      }
+
+      .info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5em;
+        flex: 0 1 auto;
+        width: 27%;
+      }
+
+      .info-box__desc {
+        max-width: 100%;
+        white-space: pre-wrap;
+        box-sizing: border-box;
+      }
+    }
+
+    &__contribute {
+
+      .contribute__info-boxes {
+        max-width: 100%;
+        width: 100vw;
+      }
+
+      .info-box {
+        flex: 0 1 auto;
+        width: 45%;
+      }
+
+      .info-box__desc {
+        max-width: 100%;
+        white-space: pre-wrap;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .language-markup {
+    overflow: hidden;
+  }
+}
+
+.element__example .code__html, .element__example .code__js {
+  height: 10em;
+
+  &.is-expanded {
+    height: 50em;
+  }
+}
