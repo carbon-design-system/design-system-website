@@ -111,6 +111,12 @@ pre[class*='language-'] {
     padding: 0 1em;
     display: flex;
     justify-content: center;
+
+    &--column {
+      @extend .rendered__element;
+      flex-direction: column;
+      margin: 3.5em auto 2em;
+    }
   }
 
   .rendered__view-full-size {
