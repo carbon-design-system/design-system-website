@@ -71,7 +71,7 @@ gulp.task('copy', function() {
   // streams.push(copy(`${config.bower}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist
-  streams.push(copy(config.src.fonts, `${config.dest}/assets/styles`));
+  streams.push(copy(config.src.fonts, `${config.dest}/assets/fonts`));
 
   // Copy images from src to dist
   streams.push(copy(config.src.images, `${config.dest}/assets/images`));

@@ -20,12 +20,15 @@ import 'svgxuse';
 //   be consumed from this file instead of their actual locations.
 import FileUploader from './file-uploader';
 import FabButton from './fab';
+import ContentSwitcher from './content-switcher';
 import Tab from './tabs-nav';
 import OverflowMenu from './overflow-menu';
 import Modal from './modals';
 import HeaderNav from './header';
 import Toolbars from './toolbars';
 import Loading from './loading';
+import Dropdown from './dropdown';
+
 
 const settings = {};
 
@@ -34,24 +37,28 @@ export {
   settings,
   FabButton,
   FileUploader,
+  ContentSwitcher,
   Tab,
   OverflowMenu,
   Modal,
   HeaderNav,
   Toolbars,
   Loading,
+  Dropdown,
 };
 
 const init = () => {
   if (!settings.disableAutoInit) {
     FabButton.init();
     FileUploader.init();
+    ContentSwitcher.init();
     Tab.init();
     OverflowMenu.init();
     Modal.init();
     HeaderNav.init();
     Toolbars.init();
     Loading.init();
+    Dropdown.init();
   }
 };
 

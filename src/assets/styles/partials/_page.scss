@@ -378,33 +378,33 @@
           }
         }
 
-        &.selected {
+        &.is-selected {
           border-bottom: 3px solid $color__text--dark;
 
           @media screen and (max-width: $width__tab-break) {
             border-bottom: none;
           }
         }
-      }
 
-      a {
-        color: $color__text--dark;
-        font-weight: 600;
-        font-size: 1rem;
-        letter-spacing: .0125em;
-        transition: .2s;
+        a {
+          color: $color__text--dark;
+          font-weight: 600;
+          font-size: 1rem;
+          letter-spacing: .0125em;
+          transition: .2s;
 
 
-        &:hover {
-          color: $color__white;
+          &:hover {
+            color: $color__white;
+
+            @media screen and (max-width: $width__tab-break) {
+              color: $color__text--dark;
+            }
+          }
 
           @media screen and (max-width: $width__tab-break) {
-            color: $color__text--dark;
+            font-size: .9rem;
           }
-        }
-
-        @media screen and (max-width: $width__tab-break) {
-          font-size: .9rem;
         }
       }
     }
