@@ -50,7 +50,7 @@ var BluemixComponents =
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Loading = exports.Toolbars = exports.HeaderNav = exports.Modal = exports.OverflowMenu = exports.Tab = exports.FileUploader = exports.FabButton = exports.settings = undefined;
+	exports.Dropdown = exports.Loading = exports.Toolbars = exports.HeaderNav = exports.Modal = exports.OverflowMenu = exports.Tab = exports.ContentSwitcher = exports.FileUploader = exports.FabButton = exports.settings = undefined;
 	
 	__webpack_require__(1);
 	
@@ -62,29 +62,37 @@ var BluemixComponents =
 	
 	var _fab2 = _interopRequireDefault(_fab);
 	
-	var _tabsNav = __webpack_require__(5);
+	var _contentSwitcher = __webpack_require__(5);
+	
+	var _contentSwitcher2 = _interopRequireDefault(_contentSwitcher);
+	
+	var _tabsNav = __webpack_require__(8);
 	
 	var _tabsNav2 = _interopRequireDefault(_tabsNav);
 	
-	var _overflowMenu = __webpack_require__(8);
+	var _overflowMenu = __webpack_require__(9);
 	
 	var _overflowMenu2 = _interopRequireDefault(_overflowMenu);
 	
-	var _modals = __webpack_require__(9);
+	var _modals = __webpack_require__(10);
 	
 	var _modals2 = _interopRequireDefault(_modals);
 	
-	var _header = __webpack_require__(11);
+	var _header = __webpack_require__(12);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _toolbars = __webpack_require__(12);
+	var _toolbars = __webpack_require__(13);
 	
 	var _toolbars2 = _interopRequireDefault(_toolbars);
 	
-	var _loading = __webpack_require__(13);
+	var _loading = __webpack_require__(14);
 	
 	var _loading2 = _interopRequireDefault(_loading);
+	
+	var _dropdown = __webpack_require__(15);
+	
+	var _dropdown2 = _interopRequireDefault(_dropdown);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -114,24 +122,28 @@ var BluemixComponents =
 	exports.settings = settings;
 	exports.FabButton = _fab2.default;
 	exports.FileUploader = _fileUploader2.default;
+	exports.ContentSwitcher = _contentSwitcher2.default;
 	exports.Tab = _tabsNav2.default;
 	exports.OverflowMenu = _overflowMenu2.default;
 	exports.Modal = _modals2.default;
 	exports.HeaderNav = _header2.default;
 	exports.Toolbars = _toolbars2.default;
 	exports.Loading = _loading2.default;
+	exports.Dropdown = _dropdown2.default;
 	
 	
 	var init = function init() {
 	  if (!settings.disableAutoInit) {
 	    _fab2.default.init();
 	    _fileUploader2.default.init();
+	    _contentSwitcher2.default.init();
 	    _tabsNav2.default.init();
 	    _overflowMenu2.default.init();
 	    _modals2.default.init();
 	    _header2.default.init();
 	    _toolbars2.default.init();
 	    _loading2.default.init();
+	    _dropdown2.default.init();
 	  }
 	};
 	
@@ -504,8 +516,8 @@ var BluemixComponents =
 	          target.addEventListener('click', handler);
 	          return {
 	            v: {
-	              remove: function remove() {
-	                document.removeEventListener('click', handler);
+	              release: function release() {
+	                return target.removeEventListener('click', handler);
 	              }
 	            }
 	          };
@@ -567,10 +579,7 @@ var BluemixComponents =
 	  value: true
 	});
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); // This file was moved here as a dependancy of tab-nav.
-	// It no longer has anything to do with content-switcher, so the name could
-	// possibly be changed
-	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	__webpack_require__(6);
 	
@@ -586,13 +595,13 @@ var BluemixComponents =
 	  }
 	}
 	
-	var Tab = function () {
-	  function Tab(element) {
+	var ContentSwitcher = function () {
+	  function ContentSwitcher(element) {
 	    var _this = this;
 	
 	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 	
-	    _classCallCheck(this, Tab);
+	    _classCallCheck(this, ContentSwitcher);
 	
 	    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
 	      throw new TypeError('DOM element should be given to initialize this widget.');
@@ -601,13 +610,11 @@ var BluemixComponents =
 	    this.element = element;
 	
 	    this.options = Object.assign({
-	      selectorMenu: '.tabs__nav',
-	      selectorTrigger: '.tabs__trigger',
-	      selectorTriggerText: '.trigger__text',
-	      selectorButton: '.nav__item',
-	      selectorButtonSelected: '.nav__item.selected',
+	      selectorButton: 'input[type="radio"]',
+	      selectorButtonSelected: 'input[type="radio"].selected',
 	      classActive: 'selected',
-	      classHidden: 'tabs--hidden'
+	      eventBeforeSelected: 'content-switcher-beingselected',
+	      eventAfterSelected: 'content-switcher-selected'
 	    }, options);
 	
 	    this.constructor.components.set(this.element, this);
@@ -617,44 +624,42 @@ var BluemixComponents =
 	        return _this.handleItemClick(event);
 	      });
 	    });
-	
-	    [].concat(_toConsumableArray(this.element.querySelectorAll(this.options.selectorTrigger))).forEach(function (trigger) {
-	      trigger.addEventListener('click', function (event) {
-	        return _this.updateMenuState(event);
-	      });
-	    });
-	
-	    this.updateTriggerText(this.element.querySelector(this.options.selectorButtonSelected));
 	  }
 	
-	  _createClass(Tab, [{
+	  _createClass(ContentSwitcher, [{
 	    key: 'handleItemClick',
 	    value: function handleItemClick(event) {
-	      this.setActive(event);
-	      this.updateMenuState();
-	      this.updateTriggerText(event.currentTarget);
+	      this.setActive(event.currentTarget);
 	    }
 	  }, {
 	    key: 'setActive',
-	    value: function setActive(event) {
+	    value: function setActive(item) {
 	      var _this2 = this;
 	
-	      [].concat(_toConsumableArray(this.element.querySelectorAll(this.options.selectorButton))).forEach(function (button) {
-	        if (button !== event.currentTarget) {
-	          toggleClass(button, _this2.options.classActive, false);
-	        }
+	      var eventStart = new CustomEvent(this.options.eventBeforeSelected, {
+	        bubbles: true,
+	        cancelable: true,
+	        detail: { item: item }
 	      });
-	      toggleClass(event.currentTarget, this.options.classActive, true);
-	    }
-	  }, {
-	    key: 'updateMenuState',
-	    value: function updateMenuState() {
-	      this.element.querySelector(this.options.selectorMenu).classList.toggle(this.options.classHidden);
-	    }
-	  }, {
-	    key: 'updateTriggerText',
-	    value: function updateTriggerText(target) {
-	      this.element.querySelector(this.options.selectorTriggerText).textContent = target.textContent;
+	
+	      // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
+	      if (this.element.dispatchEvent(eventStart)) {
+	        [].concat(_toConsumableArray(this.element.querySelectorAll(this.options.selectorButton))).forEach(function (button) {
+	          if (button !== item) {
+	            [button].concat(_toConsumableArray(button.ownerDocument.querySelectorAll(button.dataset.target))).forEach(function (element) {
+	              toggleClass(element, _this2.options.classActive, false);
+	            });
+	          }
+	        });
+	        [item].concat(_toConsumableArray(item.ownerDocument.querySelectorAll(item.dataset.target))).forEach(function (element) {
+	          toggleClass(element, _this2.options.classActive, true);
+	        });
+	        this.element.dispatchEvent(new CustomEvent(this.options.eventAfterSelected, {
+	          bubbles: true,
+	          cancelable: true,
+	          detail: { item: item }
+	        }));
+	      }
 	    }
 	  }, {
 	    key: 'release',
@@ -663,22 +668,12 @@ var BluemixComponents =
 	    }
 	  }], [{
 	    key: 'init',
-	    value: function init() {
+	    value: function init(options) {
 	      var _this3 = this;
 	
-	      var target = arguments.length <= 0 || arguments[0] === undefined ? document : arguments[0];
-	      var options = arguments[1];
-	
-	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
-	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
-	      }
-	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.tabs !== undefined) {
-	        this.create(target, options);
-	      } else {
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-tabs]'))).forEach(function (element) {
-	          return _this3.create(element, options);
-	        });
-	      }
+	      [].concat(_toConsumableArray(document.querySelectorAll('[data-content-switcher]'))).forEach(function (element) {
+	        return _this3.create(element, options);
+	      });
 	    }
 	  }, {
 	    key: 'create',
@@ -687,13 +682,13 @@ var BluemixComponents =
 	    }
 	  }]);
 	
-	  return Tab;
+	  return ContentSwitcher;
 	}();
 	
-	exports.default = Tab;
+	exports.default = ContentSwitcher;
 	
 	
-	Tab.components = new WeakMap();
+	ContentSwitcher.components = new WeakMap();
 
 /***/ },
 /* 6 */
@@ -731,6 +726,117 @@ var BluemixComponents =
 
 /***/ },
 /* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+	
+	__webpack_require__(6);
+	
+	__webpack_require__(7);
+	
+	var _contentSwitcher = __webpack_require__(5);
+	
+	var _contentSwitcher2 = _interopRequireDefault(_contentSwitcher);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Tab = function (_ContentSwitcher) {
+	  _inherits(Tab, _ContentSwitcher);
+	
+	  function Tab(element) {
+	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+	
+	    _classCallCheck(this, Tab);
+	
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Tab).call(this, element, Object.assign({
+	      selectorMenu: '.tabs__nav',
+	      selectorTrigger: '.tabs__trigger',
+	      selectorTriggerText: '.trigger__text',
+	      selectorButton: '.nav__item',
+	      selectorButtonSelected: '.nav__item.selected',
+	      classActive: 'selected',
+	      classHidden: 'tabs--hidden',
+	      eventBeforeSelected: 'tab-beingselected',
+	      eventAfterSelected: 'tab-selected'
+	    }, options)));
+	
+	    [].concat(_toConsumableArray(_this.element.querySelectorAll(_this.options.selectorTrigger))).forEach(function (trigger) {
+	      trigger.addEventListener('click', function (event) {
+	        return _this.updateMenuState(event);
+	      });
+	    });
+	
+	    var selected = _this.element.querySelector(_this.options.selectorButtonSelected);
+	    if (selected) {
+	      _this.updateTriggerText(selected);
+	    }
+	    return _this;
+	  }
+	
+	  _createClass(Tab, [{
+	    key: 'handleItemClick',
+	    value: function handleItemClick(event) {
+	      _get(Object.getPrototypeOf(Tab.prototype), 'handleItemClick', this).call(this, event);
+	      this.updateMenuState();
+	      this.updateTriggerText(event.currentTarget);
+	    }
+	  }, {
+	    key: 'updateMenuState',
+	    value: function updateMenuState() {
+	      this.element.querySelector(this.options.selectorMenu).classList.toggle(this.options.classHidden);
+	    }
+	  }, {
+	    key: 'updateTriggerText',
+	    value: function updateTriggerText(target) {
+	      this.element.querySelector(this.options.selectorTriggerText).textContent = target.textContent;
+	    }
+	  }], [{
+	    key: 'init',
+	    value: function init() {
+	      var _this2 = this;
+	
+	      var target = arguments.length <= 0 || arguments[0] === undefined ? document : arguments[0];
+	      var options = arguments[1];
+	
+	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
+	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
+	      }
+	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.tabs !== undefined) {
+	        this.create(target, options);
+	      } else {
+	        [].concat(_toConsumableArray(target.querySelectorAll('[data-tabs]'))).forEach(function (element) {
+	          return _this2.create(element, options);
+	        });
+	      }
+	    }
+	  }]);
+	
+	  return Tab;
+	}(_contentSwitcher2.default);
+	
+	exports.default = Tab;
+	
+	
+	Tab.components = new WeakMap();
+
+/***/ },
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -816,7 +922,7 @@ var BluemixComponents =
 	OverflowMenu.components = new WeakMap();
 
 /***/ },
-/* 9 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -825,13 +931,21 @@ var BluemixComponents =
 	  value: true
 	});
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	__webpack_require__(6);
 	
 	__webpack_require__(7);
 	
-	__webpack_require__(10);
+	__webpack_require__(11);
+	
+	var _eventMatches = __webpack_require__(4);
+	
+	var _eventMatches2 = _interopRequireDefault(_eventMatches);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -850,7 +964,11 @@ var BluemixComponents =
 	    this.element = element;
 	
 	    this.options = Object.assign({
-	      classVisible: 'is-visible'
+	      classVisible: 'is-visible',
+	      eventBeforeShown: 'modal-beingshown',
+	      eventAfterShown: 'modal-shown',
+	      eventBeforeHidden: 'modal-beinghidden',
+	      eventAfterHidden: 'modal-hidden'
 	    }, options);
 	
 	    this.constructor.components.set(this.element, this);
@@ -928,7 +1046,7 @@ var BluemixComponents =
 	        return;
 	      }
 	
-	      var eventStart = new CustomEvent('modal-beingshown', {
+	      var eventStart = new CustomEvent(this.options.eventBeforeShown, {
 	        bubbles: true,
 	        cancelable: true,
 	        detail: { launchingElement: launchingElement }
@@ -937,7 +1055,7 @@ var BluemixComponents =
 	      // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
 	      if (this.element.dispatchEvent(eventStart)) {
 	        this._changeState(true, function () {
-	          _this3.element.dispatchEvent(new CustomEvent('modal-shown', {
+	          _this3.element.dispatchEvent(new CustomEvent(_this3.options.eventAfterShown, {
 	            bubbles: true,
 	            cancelable: true,
 	            detail: { launchingElement: launchingElement }
@@ -966,7 +1084,7 @@ var BluemixComponents =
 	        return;
 	      }
 	
-	      var eventStart = new CustomEvent('modal-beinghidden', {
+	      var eventStart = new CustomEvent(this.options.eventBeforeHidden, {
 	        bubbles: true,
 	        cancelable: true
 	      });
@@ -974,7 +1092,7 @@ var BluemixComponents =
 	      // https://connect.microsoft.com/IE/feedback/details/790389/event-defaultprevented-returns-false-after-preventdefault-was-called
 	      if (this.element.dispatchEvent(eventStart)) {
 	        this._changeState(false, function () {
-	          _this4.element.dispatchEvent(new CustomEvent('modal-hidden'), {
+	          _this4.element.dispatchEvent(new CustomEvent(_this4.options.eventAfterHidden), {
 	            bubbles: true,
 	            cancelable: true
 	          });
@@ -1010,17 +1128,46 @@ var BluemixComponents =
 	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
 	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
 	      }
-	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.modalTarget !== undefined) {
-	        this.hook(target, options);
-	      } else if (target.nodeType === Node.ELEMENT_NODE && target.dataset.modal !== undefined) {
+	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.modal !== undefined) {
 	        this.create(target, options);
 	      } else {
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-modal-target]'))).forEach(function (element) {
-	          return _this5.hook(element, options);
-	        });
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-modal]'))).forEach(function (element) {
-	          return _this5.create(element, options);
-	        });
+	        var _ret = function () {
+	          var handler = function handler(event) {
+	            var element = (0, _eventMatches2.default)(event, '[data-modal-target]');
+	
+	            if (element) {
+	              var modalElements = [].concat(_toConsumableArray(element.ownerDocument.querySelectorAll(element.dataset.modalTarget)));
+	              if (modalElements.length > 1) {
+	                throw new Error('Target modal must be unique.');
+	              }
+	
+	              if (modalElements.length === 1) {
+	                (function () {
+	                  if (element.tagName === 'A') {
+	                    event.preventDefault();
+	                  }
+	
+	                  var modal = _this5.create(modalElements[0], options);
+	                  modal.show(element, function (error, shownAlready) {
+	                    if (!error && !shownAlready && modal.element.offsetWidth > 0 && modal.element.offsetHeight > 0) {
+	                      modal.element.focus();
+	                    }
+	                  });
+	                })();
+	              }
+	            }
+	          };
+	          target.addEventListener('click', handler);
+	          return {
+	            v: {
+	              release: function release() {
+	                return target.removeEventListener('click', handler);
+	              }
+	            }
+	          };
+	        }();
+	
+	        if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
 	      }
 	    }
 	  }, {
@@ -1030,30 +1177,8 @@ var BluemixComponents =
 	    }
 	  }, {
 	    key: 'hook',
-	    value: function hook(element, options) {
-	      if (!element || element.nodeType !== Node.ELEMENT_NODE) {
-	        throw new TypeError('DOM element should be given to initialize this widget.');
-	      }
-	
-	      var modalElements = [].concat(_toConsumableArray(element.ownerDocument.querySelectorAll(element.getAttribute('data-modal-target'))));
-	      if (modalElements.length > 1) {
-	        throw new Error('Target modal must be unique.');
-	      }
-	
-	      var modal = this.create(modalElements[0], options);
-	
-	      element.addEventListener('click', function (event) {
-	        if (event.currentTarget.tagName === 'A') {
-	          event.preventDefault();
-	        }
-	        modal.show(event.currentTarget, function (error, shownAlready) {
-	          if (!error && !shownAlready && modal.element.offsetWidth > 0 && modal.element.offsetHeight > 0) {
-	            modal.element.focus();
-	          }
-	        });
-	      });
-	
-	      return modal;
+	    value: function hook() {
+	      console.warn('Modals.hook() is deprecated. Use Modals.init() instead.'); // eslint-disable-line no-console
 	    }
 	  }]);
 	
@@ -1066,7 +1191,7 @@ var BluemixComponents =
 	Modal.components = new WeakMap();
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1092,7 +1217,7 @@ var BluemixComponents =
 	}
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1101,13 +1226,21 @@ var BluemixComponents =
 	  value: true
 	});
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	__webpack_require__(6);
 	
 	__webpack_require__(7);
 	
-	__webpack_require__(10);
+	__webpack_require__(11);
+	
+	var _eventMatches = __webpack_require__(4);
+	
+	var _eventMatches2 = _interopRequireDefault(_eventMatches);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -1133,7 +1266,13 @@ var BluemixComponents =
 	      selectorMenu: '.taxonomy-menu',
 	      selectorItem: '.taxonomy-item',
 	      selectorItemLink: '.taxonomy-item--taxonomy-menu',
-	      selectorLabel: '.taxonomy-item__label'
+	      selectorLabel: '.taxonomy-item__label',
+	      eventBeforeShown: 'header-beingshown',
+	      eventAfterShown: 'header-shown',
+	      eventBeforeHidden: 'header-beinghidden',
+	      eventAfterHidden: 'header-hidden',
+	      eventBeforeSelected: 'header-beingselected',
+	      eventAfterSelected: 'header-selected'
 	    }, options);
 	
 	    this.constructor.components.set(this.element, this);
@@ -1165,13 +1304,13 @@ var BluemixComponents =
 	      } else {
 	        return;
 	      }
-	      if (event.currentTarget.tagName === 'A') {
+	
+	      var launchingElement = (0, _eventMatches2.default)(event, '[data-nav-target]') || event.currentTarget;
+	      if (launchingElement.tagName === 'A') {
 	        event.preventDefault();
 	      }
 	
-	      var launchingElement = event.currentTarget;
-	      var typeSuffix = add ? 'shown' : 'hidden';
-	      var eventStart = new CustomEvent('header-being' + typeSuffix, {
+	      var eventStart = new CustomEvent(this.options[add ? 'eventBeforeShown' : 'eventBeforeHidden'], {
 	        bubbles: true,
 	        cancelable: true,
 	        detail: { launchingElement: launchingElement }
@@ -1179,14 +1318,14 @@ var BluemixComponents =
 	      var defaultNotPrevented = this.element.dispatchEvent(eventStart);
 	
 	      if (add) {
-	        this.triggerNode = event.currentTarget;
+	        this.triggerNode = launchingElement;
 	        this.triggerLabelNode = this.triggerNode.querySelector(this.options.selectorTriggerLabel);
 	      }
 	
 	      if (defaultNotPrevented) {
 	        this.element.classList[add ? 'add' : 'remove'](this.options.classActive);
 	        (this.element.classList.contains(this.options.classActive) ? this.menuNode : this.triggerNode).focus();
-	        this.element.dispatchEvent(new CustomEvent('header-' + typeSuffix, {
+	        this.element.dispatchEvent(new CustomEvent(this.options[add ? 'eventAfterShown' : 'eventAfterHidden'], {
 	          bubbles: true,
 	          cancelable: true,
 	          detail: { launchingElement: launchingElement }
@@ -1197,7 +1336,7 @@ var BluemixComponents =
 	    key: 'select',
 	    value: function select(event) {
 	      var activatedElement = event.currentTarget;
-	      var eventStart = new CustomEvent('header-beingselected', {
+	      var eventStart = new CustomEvent(this.options.eventBeforeSelected, {
 	        bubbles: true,
 	        cancelable: true,
 	        detail: {
@@ -1218,7 +1357,7 @@ var BluemixComponents =
 	        if (this.triggerLabelNode) {
 	          this.triggerLabelNode.textContent = activatedElement.querySelector(this.options.selectorLabel).textContent;
 	        }
-	        this.element.dispatchEvent(new CustomEvent('header-selected', {
+	        this.element.dispatchEvent(new CustomEvent(this.options.eventAfterSelected, {
 	          bubbles: true,
 	          cancelable: true,
 	          detail: { itemElement: activatedElement }
@@ -1241,17 +1380,42 @@ var BluemixComponents =
 	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
 	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
 	      }
-	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.navTarget !== undefined) {
-	        this.hook(target, options);
-	      } else if (target.nodeType === Node.ELEMENT_NODE && target.dataset.nav !== undefined) {
+	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.nav !== undefined) {
 	        this.create(target, options);
 	      } else {
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-nav-target]'))).forEach(function (element) {
-	          return _this2.hook(element, options);
-	        });
-	        [].concat(_toConsumableArray(target.querySelectorAll('[data-nav]'))).forEach(function (element) {
-	          return _this2.create(element, options);
-	        });
+	        var _ret = function () {
+	          var handler = function handler(event) {
+	            var element = (0, _eventMatches2.default)(event, '[data-nav-target]');
+	
+	            if (element) {
+	              var headerElements = [].concat(_toConsumableArray(element.ownerDocument.querySelectorAll(element.dataset.navTarget)));
+	              if (headerElements.length > 1) {
+	                throw new Error('Target header must be unique.');
+	              }
+	
+	              if (headerElements.length === 1) {
+	                if (element.tagName === 'A') {
+	                  event.preventDefault();
+	                }
+	                _this2.create(headerElements[0], options).toggleNav(event);
+	              }
+	            }
+	          };
+	
+	          target.addEventListener('click', handler);
+	          target.addEventListener('keydown', handler);
+	
+	          return {
+	            v: {
+	              release: function release() {
+	                target.removeEventListener('keydown', handler);
+	                target.removeEventListener('click', handler);
+	              }
+	            }
+	          };
+	        }();
+	
+	        if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
 	      }
 	    }
 	  }, {
@@ -1261,26 +1425,8 @@ var BluemixComponents =
 	    }
 	  }, {
 	    key: 'hook',
-	    value: function hook(element, options) {
-	      var _this3 = this;
-	
-	      if (!element || element.nodeType !== Node.ELEMENT_NODE) {
-	        throw new TypeError('DOM element should be given to initialize this widget.');
-	      }
-	
-	      var navs = [].concat(_toConsumableArray(element.ownerDocument.querySelectorAll(element.dataset.navTarget))).map(function (target) {
-	        return _this3.create(target, options);
-	      });
-	
-	      ['keydown', 'click'].forEach(function (name) {
-	        element.addEventListener(name, function (event) {
-	          navs.forEach(function (nav) {
-	            return nav.toggleNav(event);
-	          });
-	        });
-	      });
-	
-	      return navs;
+	    value: function hook() {
+	      console.warn('HeaderNav.hook() is deprecated. Use HeaderNav.init() instead.'); // eslint-disable-line no-console
 	    }
 	  }]);
 	
@@ -1293,7 +1439,7 @@ var BluemixComponents =
 	HeaderNav.components = new WeakMap();
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1338,8 +1484,10 @@ var BluemixComponents =
 	      }
 	
 	      this.element.classList.toggle('show-search');
-	      this.searchFieldNode.classList.toggle('show-search');
-	      this.searchFieldNode.value = '';
+	      if (this.searchFieldNode) {
+	        this.searchFieldNode.classList.toggle('show-search');
+	        this.searchFieldNode.value = '';
+	      }
 	    }
 	  }, {
 	    key: 'release',
@@ -1380,7 +1528,7 @@ var BluemixComponents =
 	Toolbars.components = new WeakMap();
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1488,6 +1636,120 @@ var BluemixComponents =
 	
 	
 	Loading.components = new WeakMap();
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(6);
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var Dropdown = function () {
+	  function Dropdown(element) {
+	    var _this = this;
+	
+	    _classCallCheck(this, Dropdown);
+	
+	    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+	      throw new TypeError('DOM element should be given to initialize this widget.');
+	    }
+	
+	    this.element = element;
+	
+	    this.element.dataset.dropdown = '';
+	    this.element.dataset.state = 'closed';
+	    this.constructor.components.set(this.element, this);
+	
+	    this.element.ownerDocument.addEventListener('click', function (event) {
+	      return _this.toggle(event);
+	    });
+	    this.element.addEventListener('keypress', function (event) {
+	      return _this.toggle(event);
+	    });
+	    this.element.addEventListener('click', function (event) {
+	      return _this.selected(event);
+	    });
+	  }
+	
+	  _createClass(Dropdown, [{
+	    key: 'release',
+	    value: function release() {
+	      this.constructor.components.delete(this.element);
+	    }
+	
+	    // Open and close dropdown menu
+	
+	  }, {
+	    key: 'toggle',
+	    value: function toggle() {
+	      var isOfSelf = this.element.contains(event.target);
+	      var shouldBeOpen = isOfSelf && this.element.dataset.state !== 'open';
+	
+	      this.element.dataset.state = shouldBeOpen ? 'open' : 'closed';
+	    }
+	
+	    // Handles clicking on dropdown options.
+	    // * Change Dropdown text to selected option
+	    // * Remove selected option from options when selected.
+	
+	  }, {
+	    key: 'selected',
+	    value: function selected(event) {
+	      if (event.target.parentElement.dataset.option !== undefined) {
+	        this.element.firstElementChild.textContent = event.target.textContent;
+	        this.element.dataset.value = event.target.dataset.value;
+	
+	        if (this.selectedItem) {
+	          this.selectedItem.classList.remove('bx--dropdown--selected');
+	        }
+	
+	        event.target.classList.add('bx--dropdown--selected');
+	        this.selectedItem = event.target;
+	      }
+	    }
+	  }], [{
+	    key: 'create',
+	    value: function create(element) {
+	      return this.components.get(element) || new this(element);
+	    }
+	  }, {
+	    key: 'init',
+	    value: function init() {
+	      var _this2 = this;
+	
+	      var target = arguments.length <= 0 || arguments[0] === undefined ? document : arguments[0];
+	
+	      if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
+	        throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
+	      }
+	      if (target.nodeType === Node.ELEMENT_NODE && target.dataset.loading !== undefined) {
+	        this.create(target);
+	      } else {
+	        [].concat(_toConsumableArray(target.querySelectorAll('[data-dropdown]'))).forEach(function (element) {
+	          return _this2.create(element);
+	        });
+	      }
+	    }
+	  }]);
+	
+	  return Dropdown;
+	}();
+	
+	exports.default = Dropdown;
+	
+	
+	Dropdown.components = new WeakMap();
 
 /***/ }
 /******/ ]);

@@ -1,6 +1,7 @@
 import '../polyfills/array-from';
 import '../polyfills/object-assign';
 import '../polyfills/custom-event';
+import eventMatches from '../../js/polyfills/event-matches';
 
 export default class HeaderNav {
   constructor(element, options = {}) {
@@ -17,6 +18,12 @@ export default class HeaderNav {
       selectorItem: '.taxonomy-item',
       selectorItemLink: '.taxonomy-item--taxonomy-menu',
       selectorLabel: '.taxonomy-item__label',
+      eventBeforeShown: 'header-beingshown',
+      eventAfterShown: 'header-shown',
+      eventBeforeHidden: 'header-beinghidden',
+      eventAfterHidden: 'header-hidden',
+      eventBeforeSelected: 'header-beingselected',
+      eventAfterSelected: 'header-selected',
     }, options);
 
     this.constructor.components.set(this.element, this);
@@ -34,13 +41,36 @@ export default class HeaderNav {
     if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
       throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
     }
-    if (target.nodeType === Node.ELEMENT_NODE && target.dataset.navTarget !== undefined) {
-      this.hook(target, options);
-    } else if (target.nodeType === Node.ELEMENT_NODE && target.dataset.nav !== undefined) {
+    if (target.nodeType === Node.ELEMENT_NODE && target.dataset.nav !== undefined) {
       this.create(target, options);
     } else {
-      [... target.querySelectorAll('[data-nav-target]')].forEach(element => this.hook(element, options));
-      [... target.querySelectorAll('[data-nav]')].forEach(element => this.create(element, options));
+      const handler = (event) => {
+        const element = eventMatches(event, '[data-nav-target]');
+
+        if (element) {
+          const headerElements = [... element.ownerDocument.querySelectorAll(element.dataset.navTarget)];
+          if (headerElements.length > 1) {
+            throw new Error('Target header must be unique.');
+          }
+
+          if (headerElements.length === 1) {
+            if (element.tagName === 'A') {
+              event.preventDefault();
+            }
+            this.create(headerElements[0], options).toggleNav(event);
+          }
+        }
+      };
+
+      target.addEventListener('click', handler);
+      target.addEventListener('keydown', handler);
+
+      return {
+        release: () => {
+          target.removeEventListener('keydown', handler);
+          target.removeEventListener('click', handler);
+        },
+      };
     }
   }
 
@@ -56,13 +86,13 @@ export default class HeaderNav {
     } else {
       return;
     }
-    if (event.currentTarget.tagName === 'A') {
+
+    const launchingElement = eventMatches(event, '[data-nav-target]') || event.currentTarget;
+    if (launchingElement.tagName === 'A') {
       event.preventDefault();
     }
 
-    const launchingElement = event.currentTarget;
-    const typeSuffix = add ? 'shown' : 'hidden';
-    const eventStart = new CustomEvent(`header-being${typeSuffix}`, {
+    const eventStart = new CustomEvent(this.options[add ? 'eventBeforeShown' : 'eventBeforeHidden'], {
       bubbles: true,
       cancelable: true,
       detail: { launchingElement: launchingElement },
@@ -70,14 +100,14 @@ export default class HeaderNav {
     const defaultNotPrevented = this.element.dispatchEvent(eventStart);
 
     if (add) {
-      this.triggerNode = event.currentTarget;
+      this.triggerNode = launchingElement;
       this.triggerLabelNode = this.triggerNode.querySelector(this.options.selectorTriggerLabel);
     }
 
     if (defaultNotPrevented) {
       this.element.classList[add ? 'add' : 'remove'](this.options.classActive);
       (this.element.classList.contains(this.options.classActive) ? this.menuNode : this.triggerNode).focus();
-      this.element.dispatchEvent(new CustomEvent(`header-${typeSuffix}`, {
+      this.element.dispatchEvent(new CustomEvent(this.options[add ? 'eventAfterShown' : 'eventAfterHidden'], {
         bubbles: true,
         cancelable: true,
         detail: { launchingElement: launchingElement },
@@ -87,7 +117,7 @@ export default class HeaderNav {
 
   select(event) {
     const activatedElement = event.currentTarget;
-    const eventStart = new CustomEvent('header-beingselected', {
+    const eventStart = new CustomEvent(this.options.eventBeforeSelected, {
       bubbles: true,
       cancelable: true,
       detail: {
@@ -108,7 +138,7 @@ export default class HeaderNav {
       if (this.triggerLabelNode) {
         this.triggerLabelNode.textContent = activatedElement.querySelector(this.options.selectorLabel).textContent;
       }
-      this.element.dispatchEvent(new CustomEvent('header-selected', {
+      this.element.dispatchEvent(new CustomEvent(this.options.eventAfterSelected, {
         bubbles: true,
         cancelable: true,
         detail: { itemElement: activatedElement },
@@ -124,22 +154,8 @@ export default class HeaderNav {
     return this.components.get(element) || new this(element, options);
   }
 
-  static hook(element, options) {
-    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
-      throw new TypeError('DOM element should be given to initialize this widget.');
-    }
-
-    const navs = [... element.ownerDocument.querySelectorAll(element.dataset.navTarget)].map((target) => {
-      return this.create(target, options);
-    });
-
-    ['keydown', 'click'].forEach((name) => {
-      element.addEventListener(name, (event) => {
-        navs.forEach((nav) => nav.toggleNav(event));
-      });
-    });
-
-    return navs;
+  static hook() {
+    console.warn('HeaderNav.hook() is deprecated. Use HeaderNav.init() instead.'); // eslint-disable-line no-console
   }
 }
 
