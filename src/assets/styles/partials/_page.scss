@@ -546,3 +546,18 @@
   width: 100vw;
   padding: 1em;
 }
+
+.bx--link--dark {
+  @extend .bx--link;
+  color: $color__blue-50;
+  font-size: 1rem;
+  margin-bottom: .5em;
+
+  &:visited {
+    color: $color__blue-50;
+  }
+
+  &:hover {
+    color: $color__blue-40;
+  }
+}
