@@ -19,18 +19,18 @@
 
   a {
     font-weight: bold;
-    color: $color__blue-40;
+    color: $color__blue-50;
     text-decoration: underline;
     transition: $transition--link;
 
     &:visited {
-      color: $color__blue-40;
+      color: $color__blue-50;
     }
 
     &:active,
     &:hover,
     &:focus {
-      color: $color__blue-30;
+      color: $color__blue-40;
     }
   }
 
