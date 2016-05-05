@@ -2,16 +2,16 @@
 fabricator: true
 name: Detail Page Header
 category: components
-mainDesc: "is used to allow users to navigate throughout the views of Bluemix."
+mainDesc: "is used to describe the screen's content or purpose."
 iterations:
   detail-page-header--no-tabs:
     title: "Detail Page Header without tabs"
     htmlFile: "components/detail-page-header--no-tabs.html"
-    desc: ""
+    desc: "The basic header contains a page title and a back arrow."
   detail-page-header--with-tabs:
     title: "Detail Page Header with tabs"
     htmlFile: "components/detail-page-header--with-tabs.html"
-    desc: ""
+    desc: "An expanded version of the header includes a breadcrumb title, page title, and tabs to be used as a navigational element."
 ---
 
 <!-- Item header -->
@@ -162,7 +162,16 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h2 class="page__heading">Usage</h2>
+    <h2 class="page__heading">General</h2>
+    <p class="page__desc">The Detail Page Header, which appears at the top of the page, is used to allow users to navigate throughout the views of Bluemix. The header uses <a href="http://design-system.stage1.mybluemix.net/components/tabs.html">Tabs</a> as a primary navigation pattern. </p>
+    <h5 class="page__example-heading">Example:</h5>
+    <div class="page__img--thumbnail">
+      <img class="thumbnail-img" src="/assets/images/detail-header.png" />
+      <a href="/assets/images/detail-header.png" target="_blank" class="overlay">
+        <img src="/assets/images/ibm-eye.png" />
+        <p>View at 100%</p>
+      </a>
+    </div>
   </div>
   <!-- View: Usage ends -->
 

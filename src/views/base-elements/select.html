@@ -158,12 +158,26 @@ iterations:
 
   <!-- View: Usage -->
   <div class="view--usage">
-    <h3 class="page__small-heading">Validation</h3>
+    <h3 class="page__small-heading">Labels</h3>
+      <p class="page__desc">Effective form labeling helps users understand the required information to put into the field.<br><br> As a space-saving method, often placeholder/hint text is used as a label. This is not best practice, since the interaction of the label disappearing can cause issues for people with cognitive issues or who use a screen magnifier. It also increases cognitive load for all users who would have to remember the purpose of the field after they filled it in with text.</p>
+      <p class="page__desc">
+        <ul class="page__desc--list">
+          <li>Label must be visible when the field gets focus</li>
+          <li>The label must be announced to the screen reader on focus</li>
+          <li>Ensure helper text that appears under a field is read when the assistive technology user stops at the field using aria</li>
+        </ul>
+      </p>
+
+      <h3 class="page__small-heading">Validation</h3>
       <p class="page__desc"> Real time validation helps to streamline the process and keep data clean when the user is filling out data. Including helper or error text before, during, or after a user interacts with a text field can aid the user in making correct decisions.</p>
       <h5 class="page__example-heading">Example:</h5>
         <div class="page__img--small">
           <img src="/assets/images/select-validation.png"/>
         </div>
+  
+    <h3 class="page__small-heading">Order</h3>
+    <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
+
     <h3 class="page__small-heading">Styling select dropdowns</h3>
     <p class="page__desc">It is strongly recommended not to style <code>select</code> dropdowns due to accessibility purposes.</p>
     <p class="page__desc">One of the <a class="bx--link--dark" href="http://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is “Ensuring keyboard control for all functionality." CSS alternatives to <code>select</code> elements to not meet this requirement.
@@ -182,9 +196,6 @@ iterations:
     <div class="page__img--small">
       <img src="/assets/images/select-example-safari.png" />
     </div>
-
-    <h3 class="page__small-heading">Order</h3>
-    <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
 
     <h3 class="page__small-heading">Accessibility</h3>
     <p class="page__desc">The default <code>select</code> element is completely usable either with a mouse or a keyboard, following this process:
