@@ -1,12 +1,21 @@
 // Modal styles - Temporary
 
-.overview .modal-inner {
+.overview .bx--modal-inner {
   border-top: 6px solid #FDD430;
 }
 
-.overview .modal__header {
+.overview .bx--modal__header {
   padding: 1em 3.125em 0;
   margin: -2.5em -3.125em 0;
+}
+
+.overview .bx--modal-content__heading {
+  margin-bottom: 0;
+}
+
+.overview .bx--modal {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 //////////

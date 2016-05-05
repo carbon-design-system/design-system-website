@@ -22,3 +22,11 @@ form {
   height: 2.2em;
   padding: .2em 1rem;
 }
+
+.bx--text__input {
+  width: 35em;
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 22em;
+  }
+}
