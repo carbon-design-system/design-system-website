@@ -73,7 +73,10 @@ pre[class*='language-'] {
   max-height: 12em;
   transition-duration: $transition--slow;
   display: none;
-  min-height: 7em;
+}
+
+.element__example .code__html, .element__example .code__js {
+  height: auto;
 }
 
 .element__example {

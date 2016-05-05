@@ -31,6 +31,11 @@ export const codeSnippets = () => {
   }
 
   Array.prototype.forEach.call(showFullCode, function(el) {
+    if (el.parentNode.clientHeight < 190) {
+      if (((!(window.ActiveXObject) && "ActiveXObject" in window)) == false) {
+        el.style.display = "none";
+      }
+    }
     el.addEventListener('click', function(e) {
       e.preventDefault();
       let codeSnippet = el.parentNode;

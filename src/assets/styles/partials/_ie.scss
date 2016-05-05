@@ -54,12 +54,12 @@
   .language-markup {
     overflow: hidden;
   }
-}
 
-.element__example .code__html, .element__example .code__js {
-  height: 10em;
+  .element__example .code__html, .element__example .code__js {
+    height: 10em;
 
-  &.is-expanded {
-    height: 50em;
+    &.is-expanded {
+      height: 50em;
+    }
   }
 }
