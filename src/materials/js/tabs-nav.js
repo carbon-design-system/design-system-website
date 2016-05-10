@@ -1,3 +1,4 @@
+import eventMatches from '../polyfills/event-matches';
 import '../polyfills/array-from';
 import '../polyfills/object-assign';
 import ContentSwitcher from './content-switcher';
@@ -5,20 +6,16 @@ import ContentSwitcher from './content-switcher';
 export default class Tab extends ContentSwitcher {
   constructor(element, options = {}) {
     super(element, Object.assign({
-      selectorMenu: '.tabs__nav',
-      selectorTrigger: '.tabs__trigger',
-      selectorTriggerText: '.trigger__text',
-      selectorButton: '.nav__item',
-      selectorButtonSelected: '.nav__item.selected',
-      classActive: 'selected',
-      classHidden: 'tabs--hidden',
+      selectorMenu: '.bx--tabs__nav',
+      selectorTrigger: '.bx--tabs__trigger',
+      selectorTriggerText: '.bx--tabs__trigger-text',
+      selectorButton: '.bx--tabs__nav-item',
+      selectorButtonSelected: '.bx--tabs__nav-item.bx--tabs--selected',
+      classActive: 'bx--tabs--selected',
+      classHidden: 'bx--tabs--hidden',
       eventBeforeSelected: 'tab-beingselected',
       eventAfterSelected: 'tab-selected',
     }, options));
-
-    [... this.element.querySelectorAll(this.options.selectorTrigger)].forEach((trigger) => {
-      trigger.addEventListener('click', (event) => this.updateMenuState(event));
-    });
 
     const selected = this.element.querySelector(this.options.selectorButtonSelected);
     if (selected) {
@@ -37,10 +34,17 @@ export default class Tab extends ContentSwitcher {
     }
   }
 
-  handleItemClick(event) {
-    super.handleItemClick(event);
-    this.updateMenuState();
-    this.updateTriggerText(event.currentTarget);
+  handleClick(event) {
+    const button = eventMatches(event, this.options.selectorButton);
+    const trigger = eventMatches(event, this.options.selectorTrigger);
+    if (button) {
+      super.handleClick(event);
+      this.updateMenuState();
+      this.updateTriggerText(button);
+    }
+    if (trigger) {
+      this.updateMenuState();
+    }
   }
 
   updateMenuState() {
