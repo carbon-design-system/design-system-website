@@ -228,7 +228,75 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">Search boxes are single color filled with contrasting color for the text of the label. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button with a label and filter icon. Smaller search fields should have a filter button with a filter icon and no label.</p>
+        <p class="page__desc">
+          <span class="page__desc--bold">Search Box Color White rgba(255,255,255,0.10);</span><br>
+          <span class="page__desc--bold">Search Box Height: 50px / 3.125em</span><br>
+          <span class="page__desc--bold">Filter Icon (height & width): 16 px / 1em</span><br>
+          <span class="page__desc--bold">Search Icon (height & width): 20 px /1.25em</span>
+        </p>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc">
+          <span class="page__desc--bold">Space between box and search icon: 12px / .75em</span><br>
+          <span class="page__desc--bold">Space between search icon and search text: 12px / .75em</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Search Small_2px_640(1).png">
+          <img src="/assets/images/Search Small_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Small Search Field | units in px / em</h5>
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Search_Large_2px_640.png">
+          <img src="/assets/images/Search_Large_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Large Search Field | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">States</h3>
+        <p class="page__desc--small">
+          Search fields have three states: normal, hover, and input. There are specific elements such as type and button color that change depending on the state.
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Search_Small_States_2px_640(1).png">
+          <img src="/assets/images/Search_Small_States_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Small Search Field States | units in px / em</h5>
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Search_Large_States_2px_640(1).png">
+          <img src="/assets/images/Search_Large_States_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Large Search Field States | units in px / em</h5>
+      </div>
+    </div>
+
+    <h1 class="page__heading">Typography</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <p class="page__desc--small">Search text should be set in sentence case with only the first letter of the first word capitalized. Search text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc">
+          <span class="page__desc--bold">Large Search Field Normal and Hover font-size: 14px / .875rem</span><br>
+          <span class="page__desc--bold">Large Search Field Normal and Hover font weight: roman italic / 400</span><br>
+          <span class="page__desc--bold">Large Search Field Input font-size: 14px / .875rem</span><br>
+          <span class="page__desc--bold">Large Search Field Input font-weight: bold / 700</span><br>
+          <span class="page__desc--bold">Filter Button font-size: 14px / .875rem</span><br>
+          <span class="page__desc--bold">Filter Button font-weight: bold / 700</span>
+        </p>
+      </div>
+    </div>
   </div>
   <!-- View: Style ends -->
 
