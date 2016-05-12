@@ -41,3 +41,14 @@ form {
 .bx--table {
   width: 100%;
 }
+
+.bx--table__column-title, .bx--table__body__cell {
+
+  @media screen and (max-width: 1445px) {
+    width: 15%;
+  }
+
+  @media screen and (max-width: $width__screen-size--medium) {
+    width: auto;
+  }
+}
