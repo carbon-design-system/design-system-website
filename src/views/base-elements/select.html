@@ -174,7 +174,7 @@ iterations:
         <div class="page__img--small">
           <img src="/assets/images/select-validation.png"/>
         </div>
-  
+
     <h3 class="page__small-heading">Order</h3>
     <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
 
@@ -216,7 +216,82 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">Select boxes are single color filled at 10% opacity. The width of a select dropdown box should appropriately fit the design and layout of the content.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Select Box Background Color: rgba(255,255,255) at 10% opacity</span><br>
+          <span class="page__desc--bold">Select box height: 40px / 2.5em</span>
+        </p>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Space between label and select box: 10px / .625em</span><br>
+          <span class="page__desc--bold">Internal side padding: 16px / 1em</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Select_2px_640.png">
+          <img src="/assets/images/Select_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Select Basics | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">States</h3>
+        <ul class="page__desc--list">
+          <li>Default Non-Selected State: Browser Defined</li>
+          <li>Hover: 1px blue outline (rgb 90, 170, 250)</li>
+          <li>Open: Style determined by browser</li>
+          <li>New Selection:__</li>
+          <li>Form Validation: 2px bottom border (rgb 255, 80, 80)</li>
+          <li>Help: Tool tip should be left aligned with the text field box and underlined to indicate a link. Disabled: 50% opacity</li>
+        </ul>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Select_States_2px_640.png">
+          <img src="/assets/images/Select_States_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Select States</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Groupings</h3>
+        <p class="page__desc--small">Select dropdowns can be grouped horizontally and vertically for tablet and desktop views. Select dropdowns cannot be grouped horizontally for mobile views.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between vertical groupings: 32px / 2em</span><br>
+          <span class="page__desc--bold">Padding between horizontal groupings: 16px / 2em</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Select_Groupings_2px_640.png">
+          <img src="/assets/images/Select_Groupings_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Select Groupings Orientations | units in px / em</h5>
+      </div>
+    </div>
+    <h1 class="page__heading">Typography</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <p class="page__desc--small">Select dropdown labels should be set in title case with the first letter of every word capitalized and should not exceed more than 3 words. Select dropdown text should be set in sentence case with only the first letter of the first word capitalized. Select dropdown text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Select Label font-size: 14px / .875rem</span><br>
+          <span class="page__desc--bold">Select Label font-weight: bold / 700</span><br>
+          <span class="page__desc--bold">Select Dropdown Text font-size: 14px / .875rem</span><br>
+          <span class="page__desc--bold">Select Dropdown Text font-weight: roman / 400</span><br>
+        </p>
+      </div>
+    </div>
   </div>
   <!-- View: Style ends -->
 
