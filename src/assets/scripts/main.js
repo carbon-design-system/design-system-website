@@ -25,7 +25,9 @@ import FileUploader from '../../../bower_components/bluemix-components/consumabl
 import Spinner from '../../../bower_components/bluemix-components/consumables/js/es2015/loading';
 import Modal from '../../../bower_components/bluemix-components/consumables/js/es2015/modals';
 import OverflowMenu from '../../../bower_components/bluemix-components/consumables/js/es2015/overflow-menu';
-import Tab from '../../../bower_components/bluemix-components/consumables/js/es2015/tabs-nav';
+import Tab from '../../../bower_components/bluemix-components/consumables/js/es2015/tabs';
+import Dropdown from '../../../bower_components/bluemix-components/consumables/js/es2015/dropdown';
+import ContentSwitcher from '../../../bower_components/bluemix-components/consumables/js/es2015/content-switcher';
 
 ////////////////////////////////////////////////////////////////////////
 // Site
@@ -51,9 +53,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const spinner = new Spinner(element);
     setInterval(() => spinner.toggle(), 3000);
   });
-  [... document.querySelectorAll('[data-modal-target]')].forEach((element) => Modal.hook(element));
+  [... document.querySelectorAll('[data-modal-target]')].forEach((element) => Modal.init(element));
   [... document.querySelectorAll('[data-overflow-menu]')].forEach((element) => new OverflowMenu(element));
   [... document.querySelectorAll('[data-tabs]')].forEach((element) => new Tab(element));
+  [... document.querySelectorAll('[data-dropdown]')].forEach((element) => new Dropdown(element));
+  [... document.querySelectorAll('[data-content-switcher]')].forEach((element) => new ContentSwitcher(element));
   Array.prototype.forEach.call(document.querySelectorAll('[data-tabs] .item__link'), function (element) {
     // Don't follow links in tab
     element.addEventListener('click', function (event) {

@@ -21,14 +21,16 @@ import 'svgxuse';
 import FileUploader from './file-uploader';
 import FabButton from './fab';
 import ContentSwitcher from './content-switcher';
-import Tab from './tabs-nav';
+import Tab from './tabs';
 import OverflowMenu from './overflow-menu';
 import Modal from './modals';
 import HeaderNav from './header';
 import Toolbars from './toolbars';
 import Loading from './loading';
 import Dropdown from './dropdown';
-
+import Card from './card';
+import NumberInput from './number-input';
+import Table from './table';
 
 const settings = {};
 
@@ -45,6 +47,9 @@ export {
   Toolbars,
   Loading,
   Dropdown,
+  Card,
+  NumberInput,
+  Table,
 };
 
 const init = () => {
@@ -59,6 +64,9 @@ const init = () => {
     Toolbars.init();
     Loading.init();
     Dropdown.init();
+    Card.init();
+    NumberInput.init();
+    Table.init();
   }
 };
 

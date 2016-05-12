@@ -14,7 +14,7 @@ form {
   width: 30em;
 }
 
-.tabs__nav li a {
+.bx--tabs li a {
   text-decoration: none;
 }
 
@@ -29,4 +29,15 @@ form {
   @media screen and (max-width: $width__screen-size--small) {
     width: 22em;
   }
+}
+
+.bx--tabs {
+
+  @media screen and (max-width: 767px) {
+    width: 25em;
+  }
+}
+
+.bx--table {
+  width: 100%;
 }

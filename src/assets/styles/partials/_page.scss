@@ -338,12 +338,17 @@
         transition: .3s;
 
         @media screen and (max-width: $width__tab-break) {
+          width: 100%;
           background-color: lighten($color__blue-30, 5%);
           margin-bottom: 1.5em;
         }
       }
 
       &__trigger {
+
+        &-text--light {
+          color: $color__text--dark;
+        }
 
         &--light {
           border-top: none;

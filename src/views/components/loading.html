@@ -12,24 +12,7 @@ iterations:
 ---
 
 <!-- Item header -->
-<section class="page__header">
-  <div class="page__info">
-    <p class="page__category">{{category}}</p>
-    <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
-  </div>
-  <nav data-tabs class="bx--tabs tabs--light">
-    <div class="bx--tabs__trigger tabs__trigger--light"><p class="trigger__text"></p>
-      <svg>
-        <use xlink:href="https://new-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow"></use>
-      </svg>
-    </div>
-    <ul class="bx--tabs__nav tabs__nav--light bx--tabs--hidden">
-      <li class="bx--tabs__nav-item nav__item--light is-selected toggle-view--foundation"><a class="item__link" href="">Foundation</a></li>
-      <li class="bx--tabs__nav-item nav__item--light toggle-view--usage"><a class="item__link" href="">Usage</a></li>
-      <li class="bx--tabs__nav-item nav__item--light toggle-view--style"><a class="item__link" href="">Style</a></li>
-    </ul>
-  </nav>
-</section>
+{{> tabsnav}}
 <!-- Item header ends -->
 
 <!-- Item main container -->
