@@ -1,12 +1,7 @@
 import eventMatches from '../polyfills/event-matches';
 import '../polyfills/array-from';
 import '../polyfills/object-assign';
-
-function toggleClass(element, name, add) {
-  if (element.classList.contains(name) === !add) {
-    element.classList[add ? 'add' : 'remove'](name);
-  }
-}
+import toggleClass from '../polyfills/toggle-class';
 
 export default class ContentSwitcher {
   constructor(element, options = {}) {
@@ -29,8 +24,15 @@ export default class ContentSwitcher {
     this.element.addEventListener('click', (event) => this.handleClick(event));
   }
 
-  static init(options) {
-    [... document.querySelectorAll('[data-content-switcher]')].forEach(element => this.create(element, options));
+  static init(target = document, options) {
+    if (target.nodeType !== Node.ELEMENT_NODE && target.nodeType !== Node.DOCUMENT_NODE) {
+      throw new Error('DOM document or DOM element should be given to search for and initialize this widget.');
+    }
+    if (target.nodeType === Node.ELEMENT_NODE && target.dataset.contentSwitcher !== undefined) {
+      this.create(target, options);
+    } else {
+      [... document.querySelectorAll('[data-content-switcher]')].forEach(element => this.create(element, options));
+    }
   }
 
   handleClick(event) {
