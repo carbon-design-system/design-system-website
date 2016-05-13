@@ -207,24 +207,14 @@
     }
 
     &--list {
-      @extend .bx--list--unordered;
       @extend %type-constrain;
       list-style: disc;
       color: $color__text--dark;
       padding-bottom: 1em;
 
-      li {
-        @extend .bx--list--unordered__item;
-      }
-
       &--ordered {
-        @extend .bx--list--ordered;
         color: $color__text--dark;
         padding-bottom: 1em;
-
-        li {
-          @extend .bx--list--ordered__item;
-        }
       }
 
       .green, .yellow, .red, .blue {
