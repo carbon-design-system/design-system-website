@@ -161,6 +161,10 @@ iterations:
     <h3 class="page__small-heading">Message</h3>
     <p class="page__desc">The body or message of the notification must be contained within two lines. Be as descriptive as possible, and try to include troubleshooting actions or next steps. If you can communicate the main message of your notification to the user within the title, a secondary message may not be needed.</p>
 
+    <h3 class="page__small-heading">Dismissal</h3>
+    <p class="page__desc">All notifications must have at least one method of dismissal. Typically, it is a small "x" in the upper right hand corner.</p>
+<!--Commenting out until we can confirm the usage of time stamps.
+
     <h3 class="page__small-heading">Date</h3>
     <p class="page__desc">Every Generic Notification should be time-stamped.
       <br>Use the following rules to display time:
@@ -172,14 +176,14 @@ iterations:
         <li>Over a year: Follow ISO 8601 Standards: "2016-01-19"</li>
       </ul>
     </p>
-
+-->
     <h3 class="page__small-heading">Color</h3>
     <ul class="page__desc--list bx--list--unordered">
       <h4 style="color:#8cd211; font-weight:bold;">Green 30: Success</h4>
         <div class="page__img">
         <img src="/assets/images/notification-green.png" />
         </div>
-      <h4 style="color:#efc100; font-weight:bold;">Green 30: Warning</h4>
+      <h4 style="color:#efc100; font-weight:bold;">Yellow 30: Warning</h4>
           <div class="page__img">
           <img src="/assets/images/notification-yellow.png" />
           </div>
@@ -194,15 +198,24 @@ iterations:
     </ul>
 
     <h3 class="page__small-heading">Icons</h3>
-    <p class="page__desc">Icons aren't used in generic notifications, due to the space constraints. When icons appear in inline or modal notifications, they are placed to the left of the title. See the Style tab for further specs about icons.</p>
+    <p class="page__desc">Icons can provide additional clarity around the purpose of a notification. They should be placed to the left of the title. See the Style tab for further specs about icons.</p>
+    <div class="page__img">
+      <img src="/assets/images/notification-icons.png" />
+    </div>
 
-    <h3 class="page__small-heading">Dismissal</h3>
-    <p class="page__desc">All notifications must have at least one method of dismissal. Typically, it is a small "x" in the upper right hand corner.</p>
+
 
     <h2 class="page__heading">Placement</h2>
 
     <h3 class="page__small-heading"> Generic Notifications</h3>
     <p class="page__desc">These should always appear in the top right corner, and slide in from off canvas. Actionable notifications do not appear on mobile screen widths.</p>
+    <div class="page__img--thumbnail">
+      <img class="thumbnail-img" src="/assets/images/notifications-generic.png" />
+      <a href="/assets/images/notifications-generic.png" target="_blank" class="overlay">
+        <img src="/assets/images/ibm-eye.png" />
+        <p>View at 100%</p>
+      </a>
+    </div>
 
 
     <h3 class="page__small-heading">Inline Notifications</h3>
