@@ -52,3 +52,12 @@ form {
     width: auto;
   }
 }
+
+.demo--panel {
+  width: 50% !important;
+  padding: 1em 0 !important;
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 80% !important;
+  }
+}
