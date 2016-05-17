@@ -160,7 +160,161 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section" style="margin-bottom: 0">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">The width of detail headers extends across the entire browser, therefore the width of the detail page header is determined by the width of the browser.</p>
+        <p class="page__desc--small">When a user first comes to a Detail Page the header should be full height of 148px / 9.25em, when the user starts to scroll down the page it should shrink to 64px / 4em. The header is sticky to the top of the page.</p>
+        <p class="page__desc--small">On mobile the height of the header bar stays consistant at 135px / 8.438em. Please refer to the <a class="bx--link" href= "http://design-system.stage1.mybluemix.net/components/dropdown.html">dropdown</a> section for additional guidelines on styling dropdown menus.</p>
+        <p class="page__desc--small">Detail Page Header for desktop and tablet:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Title height: 148px / 9.25em</span><br>
+          <span class="page__desc--bold">Detail Page Title width: varies based on browser size</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for scrolling:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Title height for scrolling: 64px / 4em</span><br>
+          <span class="page__desc--bold">Detail Page Title width: varies based on browser size</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for mobile:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Title height: 135px / 8.438em</span><br>
+          <span class="page__desc--bold">Tab menu height: 40px / 2.5em</span><br>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Detail_Page_2px_640(1).png">
+          <img src="/assets/images/Detail_Page_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Detail Page Mobile Header | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <div class="page__img--thumbnail page__img--thumbnail--full">
+          <img class="thumbnail-img" src="/assets/images/Detail_Page_2px_640.png">
+          <a href="/assets/images/Detail_Page_2px_640.png" target="_blank" class="overlay">
+            <img src="/assets/images/ibm-eye.png" />
+            <p>View at 100%</p>
+          </a>
+        </div>
+        <h5 class="page__example-heading">Detail Page Header | units in px / em</h5>
+        <div class="page__img--thumbnail page__img--thumbnail--full">
+          <img class="thumbnail-img" src="/assets/images/Detail_Page_Scrolling_2px_640.png">
+          <a href="/assets/images/Detail_Page_Scrolling_2px_640.png" target="_blank" class="overlay">
+            <img src="/assets/images/ibm-eye.png" />
+            <p>View at 100%</p>
+          </a>
+        </div>
+        <h5 class="page__example-heading">Detail Page Header for Scrolling | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Each of the three detail page header variations have very specific padding requirements. Please see below for the details. The back arrow icon can be found in the <a class="bx--link" href="https://pages.github.ibm.com/bluemix/bluemix-icons/"> Bluemix Icons Repo</a>.</p>
+        <p class="page__desc--small">Detail Page Header for desktop and tablet:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between top of header and Breadcrumb Title: 32px / 2em</span><br>
+          <span class="page__desc--bold">Padding between Breadcrumb Title and Detail Page Title: 16px / 1em</span><br>
+          <span class="page__desc--bold">Padding between Detail Page Title and Tab Options: 24px / 1.5em</span><br><br>
+          <span class="page__desc--bold">Tab Options and bottom of header: 16px / 1em</span><br>
+          <span class="page__desc--bold">Padding between left side of header and internal elements: 68 px / 4.25em</span><br>
+          <span class="page__desc--bold">Padding between Back Arrow Icon and Breadcrumb Title: 8px / .5em</span><br>
+          <span class="page__desc--bold">Padding between tabs: 48px/ 3em</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for scrolling:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between top and bottom of header and internal elements: 16px / 1em</span><br>
+          <span class="page__desc--bold">Padding between left side of header and internal elements: 68 px / 4.25em</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for mobile:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between top of header and Detail Pager Title: 22px / 1.375em</span><br>
+          <span class="page__desc--bold">Padding between Detail Page Title and Tab Menu: 16px / 1em</span><br>
+          <span class="page__desc--bold">Padding between Tab Menu and bottom of header: 24px / 1.5em</span><br>
+          <span class="page__desc--bold">Padding between left side of header and internal elements: 20 px / 1.25em</span><br>
+          <span class="page__desc--bold">Padding between Back Arrow Icon and divider: 16px / 1em</span><br>
+          <span class="page__desc--bold">Padding between divider and Detail Page Title: 16px / 1em</span><br>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Detail_Page_Padding_2px_640.png">
+          <img src="/assets/images/Detail_Page_Padding_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Detail Page Mobile Header Padding | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <div class="page__img--thumbnail page__img--thumbnail--full">
+          <img class="thumbnail-img" src="/assets/images/Detail_Page__Padding_2px_640.png">
+          <a href="/assets/images/Detail_Page_Padding__2px_640.png" target="_blank" class="overlay">
+            <img src="/assets/images/ibm-eye.png" />
+            <p>View at 100%</p>
+          </a>
+        </div>
+        <h5 class="page__example-heading">Details Page Header Padding | units in px / em</h5>
+        <div class="page__img--thumbnail page__img--thumbnail--full">
+          <img class="thumbnail-img" src="/assets/images/Detail_Page_Scrolling_Padding_2px_640.png">
+          <a href="/assets/images/Detail_Page_Scrolling_Padding_2px_640.png" target="_blank" class="overlay">
+            <img src="/assets/images/ibm-eye.png" />
+            <p>View at 100%</p>
+          </a>
+        </div>
+        <h5 class="page__example-heading">Detail Page Header Padding for Scrolling | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">States</h3>
+        <p class="page__desc--small">The detail page header for mobile uses a tab menu that has two states, open and closed. Additionally when the menu is open there is a hover state for when users mouse over a tab menu option. Please refer to the dropdown section for additional guidelines on styling dropdown menus.</p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Detail_Page_OpenState_2px_640.png">
+          <img src="/assets/images/Detail_Page_OpenState_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Mobile Details Page Header Open Tab Menu</h5>
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Detail_Page_OpenState_Hover_2px_640.png">
+          <img src="/assets/images/Detail_Page_OpenState_Hover_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Mobile Details Page Header Open Tab Menu with Hover</h5>
+      </div>
+    </div>
+    <h1 class="page__heading">Typography</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <p class="page__desc--small">Detail page titles, breadcrumb titles, and tab labels should all be set in title case with the first letter of each word capitalized. Text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">Detail Page Header for desktop and tablet:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Title font-size: 32px / 2em</span><br>
+          <span class="page__desc--bold">Detail Page Title font-weight: light / 300</span><br>
+          <span class="page__desc--bold">Breadcrumb Title font-size: 14px / .8765em</span><br>
+          <span class="page__desc--bold">Breadcrumb Title font-weight: bold / 700</span><br>
+          <span class="page__desc--bold">Tab Label font-size: 14px / .8765em</span><br>
+          <span class="page__desc--bold">Tab Label font-weight: bold / 700</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for scrollling:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Header font-size: 26px / 1.625em</span><br>
+          <span class="page__desc--bold">Detail Page Header font-weight: light / 300</span><br>
+        </p>
+        <p class="page__desc--small">Detail Page Header for mobile:</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Detail Page Title font-size: 23px / 1.438em</span><br>
+          <span class="page__desc--bold">Detail Page Title font-weight: light / 300</span><br>
+          <span class="page__desc--bold">Current Tab font-size: 14px / .875 em</span><br>
+          <span class="page__desc--bold">Current Tab font-weight: bold / 700</span><br>
+          <span class="page__desc--bold">Tab Menu Option Text font-size: 14px / .875em</span><br>
+          <span class="page__desc--bold">Tab Menu Option Text font-weight: roman / 400</span><br>
+        </p>
+      </div>
+    </div>
   </div>
   <!-- View: Style ends -->
 
