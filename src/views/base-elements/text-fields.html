@@ -146,7 +146,14 @@ iterations:
   <!-- View: Usage -->
   <div class="view--usage">
     <h3 class="page__small-heading">Labels</h3>
-    <p class="page__desc">Labels are essential to usabililty of text fields. They provide guidance to the user in reference to what data they should input. Do not place a label inside a text field. If further clarification is needed, use placeholder text.</p>
+    <p class="page__desc">Effective form labeling helps users understand what information to put into the text field.<br><br> As a space-saving method, often placeholder/hint text is used as a label. This is not best practice, since the interaction of the label disappearing can cause issues for people with cognitive issues or who use a screen magnifier. It also increases cognitive load for all users who would have to remember the purpose of the field after they filled it in with text.</p>
+    <p class="page__desc">
+      <ul class="page__desc--list bx--list--unordered">
+        <li>Label must be visible when the field gets focus</li>
+        <li>The label must be announced to the screen reader on focus</li>
+        <li>Ensure helper text that appears under a field is read when the assistive technology user stops at the field using aria</li>
+      </ul>
+  </p>
 
     <h3 class="page__small-heading">Placeholder text</h3>
     <p class="page__desc">Placeholder text is used to complement a field and provide additional assistance to the user. It is helpful to provide examples of the data format required. Placeholder text should dissapear once the user has inputted data into the text field.</p>
@@ -163,7 +170,7 @@ iterations:
     </div>
 
     <h2 class="page__heading">Mobile</h2>
-    <p class="page__desc"> Text fields on mobile should typically be stacked vertically, with labels and or hints above each field. As mobile text fields increase in size (especially length), the limitation on space becomes less marked.</p>
+    <p class="page__desc"> Text fields on mobile should typically be stacked vertically, with labels and or hints above each field.</p>
     <h3 class="page__small-heading">Keyboard</h3>
       <p class="page__desc">
       <ul class="page__desc--list bx--list--unordered">
@@ -180,7 +187,7 @@ iterations:
     <div class="view--style__section">
       <div class="view--style__left-column">
         <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Text fields are single color filled at 10% opacity. The width of a text field should appropriately fit the design and layout of the content.</p>
+        <p class="page__desc--small">Text fields are one color, filled at 10% opacity. The width of a text field should appropriately fit the design and layout of the content.</p>
         <p class="page__desc--small">
           <span class="page__desc--bold">Select Box Background Color: rgb (255,255,255) at 10% opacity</span>
         </p>
@@ -238,7 +245,7 @@ iterations:
     <h1 class="page__heading">Typography</h1>
     <div class="view--style__section">
       <div class="view--style__full-width">
-        <p class="page__desc--small">Text field labels should be set in title case with the first letter of every word capitalized and should not exceed more than 3 words. Text field text should be set in sentence case with only the first letter of the first word capitalized. Text fields text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">Text field labels should be set in title case, with the first letter of every word capitalized. Text labels should be 3 words or less. Text field text should be set in sentence case with only the first letter of the first word capitalized. Text fields text should follow the Bluemix Typography font stack for sans-serif.</p>
       </div>
     </div>
   </div>

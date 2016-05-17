@@ -142,24 +142,17 @@ iterations:
   <!-- View: Usage -->
   <div class="view--usage">
     <h3 class="page__small-heading">Labels</h3>
-      <p class="page__desc">Effective form labeling helps users understand the required information to put into the field.<br><br> As a space-saving method, often placeholder/hint text is used as a label. This is not best practice, since the interaction of the label disappearing can cause issues for people with cognitive issues or who use a screen magnifier. It also increases cognitive load for all users who would have to remember the purpose of the field after they filled it in with text.</p>
-      <p class="page__desc">
-        <ul class="page__desc--list bx--list--unordered">
-          <li>Label must be visible when the field gets focus</li>
-          <li>The label must be announced to the screen reader on focus</li>
-          <li>Ensure helper text that appears under a field is read when the assistive technology user stops at the field using aria</li>
-        </ul>
-      </p>
+        <p class="page__desc">Labels are essential to usabililty of forms. They provide guidance to the user in reference to what data they should input. Do not place a label inside a select element. If further clarification is needed, use placeholder text.</p>
 
       <h3 class="page__small-heading">Validation</h3>
-      <p class="page__desc"> Real time validation helps to streamline the process and keep data clean when the user is filling out data. Including helper or error text before, during, or after a user interacts with a text field can aid the user in making correct decisions.</p>
+      <p class="page__desc"> Real time validation helps to streamline the process and keep data clean when the user is filling out data. Including helper or error text before, during, or after a user interacts with a form can aid the user in making correct decisions.</p>
       <h5 class="page__example-heading">Example:</h5>
         <div class="page__img--small">
           <img src="/assets/images/select-validation.png"/>
         </div>
 
     <h3 class="page__small-heading">Order</h3>
-    <p class="page__desc">The order of the list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
+    <p class="page__desc">The order of the select list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.</p>
 
     <h3 class="page__small-heading">Styling select dropdowns</h3>
     <p class="page__desc">It is strongly recommended not to style <code>select</code> dropdowns due to accessibility purposes.</p>
@@ -266,7 +259,7 @@ iterations:
     <h1 class="page__heading">Typography</h1>
     <div class="view--style__section">
       <div class="view--style__full-width">
-        <p class="page__desc--small">Select dropdown labels should be set in title case with the first letter of every word capitalized and should not exceed more than 3 words. Select dropdown text should be set in sentence case with only the first letter of the first word capitalized. Select dropdown text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">Select labels should be set in title case, with the first letter of every word capitalized. Labels should be 3 words or less. Select dropdown text should be set in sentence case, with only the first letter of the first word capitalized. Select dropdown text should follow the Bluemix Typography font stack for sans-serif.</p>
         <p class="page__desc--small">
           <span class="page__desc--bold">Select Label font-size: 14px / .875rem</span><br>
           <span class="page__desc--bold">Select Label font-weight: bold / 700</span><br>

@@ -143,7 +143,7 @@ iterations:
   <div class="view--usage">
     <h1 class="page__heading">General</h1>
         <h3 class="page__small-heading">Search Fields</h3>
-        <p class="page__desc">Search fields should include autocomplete and search history to aid the user in finding the correct query. Set users context for the search with helpful blank states of the search field ("Search Docs", "Search Bluemix").</p>
+        <p class="page__desc">Search fields should include autocomplete and search history to aid the user in finding the correct query. Set users context for the search with helpful hint text within the search field ("Search Docs", "Search Bluemix").</p>
 
         <h3 class="page__small-heading">Filtering</h3>
         <p class="page__desc">If additional sorting is necessary, filtering can be used as a way to further narrow content based on the user's search query. </p>
@@ -163,10 +163,9 @@ iterations:
             <li>Clearly show which results are being displayed with labels or headers (i.e. “Results for X”)</li>
             <li>Categorize the search results if they come from different areas of the site (eg. docs, services, apps, tutorials, blogs)</li>
             <li>Give the user control over their viewing options and ability to sort results (eg. relevancy, popularity, ratings, date)</li>
-            <li>Sorting options should be displayed near the search results, rather than near the search field</li>
-            <li>Have a clear no results message if there are no results, and offer suggestions if possible</li>
+            <li>Have a clear, no results message if there are no results, and offer suggestions if possible</li>
             <li>Have smart algorithms that can search for similar terms or can search even with misspelled words </li>
-            <li>Include enough of a description in the results for users to make a judgement as to whether that a particular result is relevant</li>
+            <li>Include enough of a description in the results for users to make a judgement as to whether that  particular result is relevant</li>
             <li>Highlight the search term in the results, where appropriate</li>
           </ul>
         </p>
@@ -181,7 +180,7 @@ iterations:
 
 
     <h1 class="page__heading">Size</h1>
-    <p class="page__desc">The standard sized search bar should be used when Search is the primary intent on the page.</p>
+    <p class="page__desc">The standard sized search bar should be used when Search can aid in the discoverability of content.</p>
     <h5 class="page__example-heading">Example:</h5>
     <div class="page__img--thumbnail">
       <img class="thumbnail-img" src="/assets/images/search-large.png" />
@@ -191,7 +190,7 @@ iterations:
       </a>
     </div>
 <br><br>
-    <p class="page__desc">A smaller, more compact search bar can be used when there is space constraints in your design. Use the magnifying glass icon to inform users that search is available with the page. Once the user clicks the magnifying glass, a search field will expand and allow the user to type in their query.</p>
+    <p class="page__desc">A smaller, more compact search bar can be used when there is space constraints in your design. Use the magnifying glass icon to inform users that search is available within the page. Once the user clicks the magnifying glass, a search field will expand and allow the user to type in their query.</p>
     <h5 class="page__example-heading">Example:</h5>
     <div class="page__img--thumbnail">
       <img class="thumbnail-img" src="/assets/images/search-small-2.png" />
@@ -203,9 +202,9 @@ iterations:
 
 
 
-
+<!-- -Leaving out until we confirm mobile use case
     <h1 class="page__heading">Mobile</h1>
-    <p class="page__desc">For Search as Primary intent, the search field will always be presented to the user but respond to the viewport size. <br> <br>For Search as Help and Search as a Filter, it is acceptable to hide the search field until a user-initiated action. If the search field is hidden a user can reveal it by tapping on the standard Bluemix magnifying glass icon. Upon tapping the magnifying glass icon the search field should appear and enter the active state ready for text entry. </p>
+    <p class="page__desc">For Search as Primary intent, the search field will always be presented to the user but respond to the viewport size. <br> <br>For Search as Help and Search as a Filter, it is acceptable to hide the search field until a user-initiated action. If the search field is hidden a user can reveal it by tapping on the standard Bluemix magnifying glass icon. Upon tapping the magnifying glass icon the search field should appear and enter the active state ready for text entry. </p> -->
   </div>
       <!-- View: Usage ends -->
 
@@ -215,7 +214,7 @@ iterations:
     <div class="view--style__section">
       <div class="view--style__full-width">
         <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Search boxes are single color filled with contrasting color for the text of the label. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button with a label and filter icon. Smaller search fields should have a filter button with a filter icon and no label.</p>
+        <p class="page__desc--small">Search inputs are solid, one color boxes with contrasting color for the text. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button, with a label and filter icon. Smaller search fields contain only a filter icon.</p>
         <p class="page__desc">
           <span class="page__desc--bold">Search Box Color White rgba(255,255,255,0.10);</span><br>
           <span class="page__desc--bold">Search Box Height: 50px / 3.125em</span><br>
@@ -269,7 +268,7 @@ iterations:
     <h1 class="page__heading">Typography</h1>
     <div class="view--style__section">
       <div class="view--style__full-width">
-        <p class="page__desc--small">Search text should be set in sentence case with only the first letter of the first word capitalized. Search text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">Search text should be set in sentence case, with only the first letter of the first word capitalized. Search text should follow the Bluemix Typography font stack for sans-serif.</p>
         <p class="page__desc">
           <span class="page__desc--bold">Large Search Field Normal and Hover font-size: 14px / .875rem</span><br>
           <span class="page__desc--bold">Large Search Field Normal and Hover font weight: roman italic / 400</span><br>
