@@ -164,7 +164,59 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">Content switchers must have at least two options for the user to choose from. Each container that makes up the content switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2em on both sides of the text.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Content Switcher height: 40px / 2.5em</span><br>
+          <span class="page__desc--bold">Content Switcher container width: varies based on amount of content</span><br>
+          <span class="page__desc--bold">Content Switcher fill color: #5AAAFA</span><br>
+          <span class="page__desc--bold">Border: 1px</span><br>
+          <span class="page__desc--bold">Border color: #5AAAFA</span><br>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Content_Switcher_2px_640(1).png">
+          <img src="/assets/images/Content_Switcher_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Content Switcher | units in px / em</h5>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">States</h3>
+        <p class="page__desc--small">Content switchers have two states: selected and not selected. Selected states are a solid color. There must always be only one selected state, no more, no less. Unselected options have 1px border with no fill.</p>
+      </div>
+    </div>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Internally there must be 32px / 2em of space between the content container option text and sides of the content container.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between side of content box and text: 32px / 2em</span><br>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Content_Switcher_Padding_2px_640(1).png">
+          <img src="/assets/images/Content_Switcher_Padding_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Content Switcher Padding | units in px / em</h5>
+      </div>
+    </div>
+    <h1 class="page__heading">Typography</h1>
+    <div class="view--style__section">
+      <div class="view--style__full-width">
+        <p class="page__desc--small">Content switcher text should be set in title case with the first letter of each word capitalized. Content Switcher option text should not exceed more than 3 words. Text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Content switcher font-size: 14px / .875em</span><br>
+          <span class="page__desc--bold">Content switcher font-weight: roman / 400</span><br>
+        </p>
+      </div>
+    </div>
   </div>
   <!-- View: Style ends -->
 
