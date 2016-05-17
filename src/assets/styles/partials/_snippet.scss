@@ -114,6 +114,7 @@ pre[class*='language-'] {
     padding: 0 1em;
     display: flex;
     justify-content: center;
+    min-width: 200px; // needed for layout reasons
 
     &--column {
       @extend .rendered__element;
