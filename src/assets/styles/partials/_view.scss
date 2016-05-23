@@ -131,7 +131,15 @@
   &__full-width {
     width: 100%;
 
+    .page__img--thumbnail {
+      margin-bottom: 0;
+    }
+
     .thumbnail-img {
+      width: 100%;
+    }
+
+    picture img {
       width: 100%;
     }
   }
