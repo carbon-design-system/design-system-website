@@ -68,6 +68,9 @@ gulp.task('copy', function() {
   streams.push(copy(`${config.bower}/html/base-elements/**/*.html`, `${materials}/base-elements`));
   streams.push(copy(`${config.bower}/html/components/**/*.html`, `${materials}/components`));
   streams.push(copy(`${config.bower}/consumables/js/**/*.js`, `${materials}/js`));
+  streams.push(copy(`${config.bower}/consumables/js/**/*.js`, `${materials}/js`));
+  // Copy bower.json to /data so that fabricator can access the version of Bluemix components being used
+  streams.push(copy(`bower.json`, `src/data`));
   // streams.push(copy(`${config.bower}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist

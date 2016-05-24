@@ -2,6 +2,11 @@
   <div class="page__info">
     <p class="page__category">{{category}}</p>
     <h1 id="{{name}}" class="page__large-heading">{{capitalize name}}</h1>
+    <div class="tags-container">
+      {{#each tag as |tag|}}
+      <span class="tag-light--{{tag.class}}">{{tag.text}}</span>
+      {{/each}}
+    </div>
   </div>
   <nav data-tabs class="bx--tabs tabs--light" role="navigation">
     <div class="bx--tabs__trigger tabs__trigger--light">

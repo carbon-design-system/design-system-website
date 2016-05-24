@@ -562,3 +562,11 @@
     color: $color__blue-40;
   }
 }
+
+.tags-container {
+  margin: 1.5em 0;
+
+  @media screen and (max-width: $width__screen-size--small) {
+    margin: .5em 0;
+  }
+}

@@ -42,6 +42,19 @@
     z-index: 3;
   }
 
+  .overview-header__lib-version {
+    text-transform: uppercase;
+    color: $color__blue-90;
+    font-weight: 700;
+    margin-bottom: 2em;
+    letter-spacing: .5px;
+    word-spacing: .125rem;
+
+    a {
+      color: $color__blue-90;
+    }
+  }
+
   .overview-header__main-heading {
     font-size: rem(64px);
     color: $color__white;
@@ -209,7 +222,7 @@
 
   &__polygon {
     position: absolute;
-    top: 24.4em;
+    top: 27.6em;
     left: 8em;
     z-index: 1;
     opacity: 1;
