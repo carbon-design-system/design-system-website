@@ -167,11 +167,72 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">All tags have the same height however the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Tag height: 20px / 1.25em</span><br>
+          <span class="page__desc--bold">Tag width: varies based on amount of content</span><br>
+          <span class="page__desc--bold">Radius of rounded rectangle: 15px</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Tag_2px_640.png">
+          <img src="/assets/images/Tag_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Tags | units in px / em</h5>
+      </div>
+    </div>
+  <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Tags cannot have any element or text within 3px / .188 em of their borders. Internally there must be 10px / .625em of space between the tag text and sides of the tag.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between tags horizontally: 3px / .188 em</span><br>
+          <span class="page__desc--bold">Padding between tags vertically: 3px / .188 em</span><br>
+          <span class="page__desc--bold">Pading on sides of text: 10px / .625em</span>
+        </p>
+      </div>
   </div>
+  <div class="view--style__section">
+    <div class="view--style__left-column">
+      <h3 class="page__x-small-heading">States</h3>
+      <p class="page__desc--small">There are many different types of tags, each type is detemined by color. All tag background colors should be at 20% opacity.</p>
+      <p class="page__desc--small">
+        <span class="page__desc--bold">IBM color: IBM Blue 20, #7CC7FF</span><br>
+        <span class="page__desc--bold">Beta color: Bluemix Light Gray, #DFE6EB</span><br>
+        <span class="page__desc--bold">Third-Party color: IBM Teal 20, #6EEDD8</span><br>
+        <span class="page__desc--bold">Local/Dedicated/Custom color: IBM Purple 20, #D7AAFF</span><br>
+        <span class="page__desc--bold">Experimental color: IBM Orange 20, #FFA573</span><br>
+        <span class="page__desc--bold">Community color: IBM Green 20, #B4E051</span><br>
+        <span class="page__desc--bold">Private color: IBM Yellow 20, #FDD600</span>
+      </p>
+    </div>
+    <div class="view--style__right-column">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/Tag_States_2px_640(1).png">
+        <img src="/assets/images/Tag_States_2px_640.png">
+      </picture>
+      <h5 class="page__example-heading">Tags | units in px / em</h5>
+    </div>
+  </div>
+  <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Typography</h3>
+        <p class="page__desc--small">Tag text should be set in title case with the first letter of each word capitalized. Tags should only have one word, however if more than one is necessary than the words should be connected using a hyphen with no spaces. Text should follow the Bluemix Typography font stack for san-serif.</p>
+        <p class="page__desc--small">Tag text should be the same color as the background of the tag it sits on but at 100% opacity (full color).</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Tag text font-size: 12px / .75rem</span><br>
+          <span class="page__desc--bold">Tag text font-weight: roman / 400</span>
+        </p>
+      </div>
+  </div>
+</div>
   <!-- View: Style ends -->
 
-</div>
 
 <!-- Item main container ends -->
 

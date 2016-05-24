@@ -165,8 +165,86 @@ iterations:
 
   <!-- View: Style -->
   <div class="view--style">
-    <h1 class="page__heading">Style</h1>
+    <h1 class="page__heading">Structure</h1>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Basics</h3>
+        <p class="page__desc--small">The width of tool tip is always the same at 240px / 15em however the height varies based on the amount of content. The tool tip icon can be found in the <a class="bx--link--dark" href="https://pages.github.ibm.com/bluemix/bluemix-icons/">Bluemix Icons Repo</a>.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Tool tip height: varies based on amount of content</span><br>
+          <span class="page__desc--bold">Tool tip width: 240px / 15em</span><br>
+          <span class="page__desc--bold">Tool tip icon height and width: 16px / 1em</span><br>
+          <span class="page__desc--bold">Tool tip icon color: #5AAAFA</span><br>
+          <span class="page__desc--bold">Tool Tip box drop shadow: #000000 50% Opacity</span><br>
+          <span class="page__desc--bold">Tool Tip box pointer: 8px / .5em</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Tool_Tip_2px_640(1).png">
+          <img src="/assets/images/Tool_Tip_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Tool Tip | units in px / em</h5>
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Tool_Tip_Min_2px_640.png">
+          <img src="/assets/images/Tool_Tip_Min_2px_640.png">
+        </picture>
+        <h5 class="page__example-heading">Tool Tip Maximum sizing | units in px / em</h5>
+      </div>
+    </div>
+  <div class="view--style__section">
+      <div class="view--style__left-column">
+        <h3 class="page__x-small-heading">Padding</h3>
+        <p class="page__desc--small">Internally there must be 24px / 1.5em of space between the tool tip text and sides of the tool tip. Padding around the tool tip icon is 10px / .625em</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Padding between header and icon: 10 px / .625em</span><br>
+          <span class="page__desc--bold">Padding between icon and tool tip: 10 px / .625em</span><br>
+          <span class="page__desc--bold">Internal Padding: 24px / 1.5em</span>
+        </p>
+      </div>
+      <div class="view--style__right-column">
+        <picture>
+          <source media="(max-width: 550px)" srcset="/assets/images/Tool_Tip_Padding_2px_640.png">
+          <img src="/assets/images/Tool_Tip_Padding_2px_640(1).png">
+        </picture>
+        <h5 class="page__example-heading">Tool Tip Padding | units in px / em</h5>
+      </div>
   </div>
+  <div class="view--style__section">
+    <div class="view--style__left-column">
+      <h3 class="page__x-small-heading">Placement</h3>
+      <p class="page__desc--small">Tool tips should always be placed below the tool tip logo unless it is within the height of the tool tip box plus 16px / 1em of the bottom of the page. In that instance, the tool tip should appear to the right of the tool tip icon.</p>
+      <p class="page__desc--small">On mobile, tool tips can only appear below the tool tip icon.</p>
+      <p class="page__desc--small">
+        <span class="page__desc--bold">Tool tip placement below icon: bottom of tool tip must be at least 16px / 1em from the bottom of page</span>
+      </p>
+    </div>
+    <div class="view--style__right-column">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/Tool_Tip_Placement_Min_2px_640..png">
+        <img src="/assets/images/Tool_Tip_Placement_Min_2px_640..png">
+      </picture>
+      <h5 class="page__example-heading">Tool Tip Placement</h5>
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/Tool_Tip_Placement_2px_640.png">
+        <img src="/assets/images/Tool_Tip_Placement_2px_640(1).png">
+      </picture>
+      <h5 class="page__example-heading">Tool Tip Placement</h5>
+    </div>
+  </div>
+  <div class="view--style__section">
+      <div class="view--style__full-width">
+        <h3 class="page__x-small-heading">Typography</h3>
+        <p class="page__desc--small">Tool tip labels should be set in title case with the first letter of each significant word capitalized. Tool tip text should be in sentence case with only the first word of every sentence capitalized. Text should follow the Bluemix Typography font stack for sans-serif.</p>
+        <p class="page__desc--small">
+          <span class="page__desc--bold">Tool Tip Label font-size: 14 px / .875rem</span><br>
+          <span class="page__desc--bold">Tool Tip Label font-weight: bold / 700</span><br>
+          <span class="page__desc--bold">Tool Tip Text font-size: 14 px / .875rem</span><br>
+          <span class="page__desc--bold">Tool Tip Text font-weight: roman / 400</span>
+        </p>
+      </div>
+  </div>
+</div>
   <!-- View: Style ends -->
 
 </div>
