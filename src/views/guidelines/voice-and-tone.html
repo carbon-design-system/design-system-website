@@ -1,0 +1,43 @@
+---
+fabricator: true
+title: Voice and Tone
+---
+<div class="page__header">
+  <div class="page__info">
+    <p class="page__category">Guidelines</p>
+    <h1 class="page__large-heading">Voice and Tone</h1>
+  </div>
+  <nav data-tabs class="bx--tabs tabs--light">
+    <div class="bx--tabs__trigger tabs__trigger--light"><p class="trigger__text"></p>
+      <svg>
+        <use xlink:href="https://new-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow"></use>
+      </svg>
+    </div>
+    <ul class="bx--tabs__nav tabs__nav--light bx--tabs--hidden">
+      <li class="bx--tabs__nav-item nav__item--light is-selected toggle-view--typography"><a class="item__link" href="">General</a></li>
+      <li class="bx--tabs__nav-item nav__item--light toggle-view--color"><a class="item__link" href="">Guidelines</a></li>
+      <li class="bx--tabs__nav-item nav__item--light toggle-view--grid"><a class="item__link" href="">Usage</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="page__container">
+
+  <div class="view--typography is-active">
+    {{> general}}
+  </div>
+
+  <div class="view--color">
+    {{> guidelines}}
+  </div>
+
+  <!-- GRIDS -->
+  <div class="view--grid">
+    {{> usage}}
+  </div>
+
+  <div class="view--iconography">
+    {{> iconography}}
+  </div>
+
+</div>
