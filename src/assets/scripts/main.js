@@ -29,6 +29,7 @@ import Tab from '../../../bower_components/bluemix-components/consumables/js/es2
 import Table from '../../../bower_components/bluemix-components/consumables/js/es2015/table';
 import Dropdown from '../../../bower_components/bluemix-components/consumables/js/es2015/dropdown';
 import ContentSwitcher from '../../../bower_components/bluemix-components/consumables/js/es2015/content-switcher';
+import { NumberInput } from '../../../bower_components/bluemix-components/consumables/js/es2015/index';
 
 ////////////////////////////////////////////////////////////////////////
 // Site

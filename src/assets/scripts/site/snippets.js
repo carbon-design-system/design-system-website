@@ -1,5 +1,14 @@
 'use strict';
 
+export const lineNumbers = () => {
+  const codeSnippets = document.querySelectorAll('pre');
+  if (codeSnippets) {
+    for (let i = 0; i < codeSnippets.length; i+= 1) {
+      codeSnippets[i].classList.add('line-numbers');
+    }
+  }
+}
+
 export const codeSnippets = () => {
 
   const showFullCode = document.querySelectorAll('.code__show-full');
