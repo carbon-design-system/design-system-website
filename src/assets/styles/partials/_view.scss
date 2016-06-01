@@ -4,7 +4,7 @@
   padding-right: 0 9em 15em 0;
   top: $height__header + em(50px);
   width: 100%;
-  max-width: 90em; // nothing will do wider than this (72 is arbitrary for now)
+  max-width: 90em; // nothing will go wider than this (72 is arbitrary for now)
 
   &.is-active {
     display: flex;

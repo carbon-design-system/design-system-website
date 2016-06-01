@@ -15,26 +15,31 @@ const port = process.env.PORT || 3333;
 app.set('views', path.resolve(__dirname, 'dist'));
 app.use(express.static('dist'));
 
+// Home Page
 app.get('/', (req, res) => {
   res.render('index');
 });
 
+// Redirect to default HTML pages
+// when User navigates to a route without specifying HTML file
+app.get('/global', (req, res) => {
+  res.redirect('colors.html');
+});
+
 app.get('/base-elements', (req, res) => {
-  // res.sendFile(path.join(__dirname + '/dist/base-elements.html'));
   res.redirect('buttons.html');
 });
 
 app.get('/components', (req, res) => {
-  // res.sendFile(path.join(__dirname + '/dist/components.html'));
   res.redirect('cards.html');
-});
-
-app.get('/guidelines', (req, res) => {
-  res.redirect('front-end-best-practices.html');
 });
 
 app.get('/templates', (req, res) => {
   res.redirect('add-menu.html');
+});
+
+app.get('/guidelines', (req, res) => {
+  res.redirect('front-end-best-practices.html');
 });
 
 app.listen(port, () => {

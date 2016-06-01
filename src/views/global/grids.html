@@ -1,0 +1,173 @@
+---
+fabricator: true
+title: Grids
+---
+
+<div class="page__header">
+  <div class="page__info">
+    <p class="page__category">Guidelines</p>
+    <h1 class="page__large-heading">Grids</h1>
+  </div>
+</div>
+
+<div class="page__container">
+  <div class="view--grid is-active">
+
+    <p class="page__main-desc">
+      <span class="highlight">Grid systems</span> are used for creating page layouts through a series of rows and columns that house your content. The Bluemix designs use a responsive, mobile first, fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
+    </p>
+
+    <h1 class="page__heading">Basic Structure</h1>
+    <ul class="view--grid__grid-examples">
+      <li>
+        <p>1440 px</p>
+        <a href="/assets/images/1440px-2x.png" target="_blank" class="overlay">
+          <img src="/assets/images/ibm-eye.png" />
+          <p>View at 100%</p>
+        </a>
+        <div class="image">
+          <img src="/assets/images/1440px-2x.png" />
+        </div>
+      </li>
+      <li>
+        <p>768 px</p>
+        <a href="/assets/images/768px-2x.png" target="_blank" class="overlay">
+          <img src="/assets/images/ibm-eye.png" />
+          <p>View at 100%</p>
+        </a>
+        <div class="image">
+          <img src="/assets/images/768px-2x.png" /></a>
+        </div>
+      </li>
+      <li>
+        <p>320 px</p>
+        <a href="/assets/images/320px-2x.png" target="_blank" class="overlay">
+          <img src="/assets/images/ibm-eye.png" />
+          <p>View at 100%</p>
+        </a>
+        <div class="image">
+          <img src="/assets/images/320px-2x.png" />
+      </li>
+    </ul>
+    <ul class="view--grid__grid-examples__keys">
+      <p>Key:</p>
+      <li>Columns</li>
+      <li>/ Gutter</li>
+      <li>/ Margins</li>
+    </ul>
+
+    <h1 class="page__heading">How it works:</h1>
+
+    <h3 class="page__small-heading">Gutters</h3>
+    <p class="page__desc">
+      Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on rows.
+      In devices with a screen width of ≥768px, the column padding is 10px left, 10px right.
+      This creates a gutter of 10px + 10px = 20px between column content. In devices with a screen width of < 768px, the column padding is 5px left, 5px right.
+      This creates a gutter of 5px + 5px = 10px between column content.
+      <br><br>
+      <span class="page__desc--bold">
+        ≥ 768px = 20px gutters <br>
+        < 768px = 10px gutters
+      </span>
+    </p>
+
+    <br><br>
+
+    <h3 class="page__small-heading">Columns</h3>
+    <p class="page__desc">
+      Bluemix designs should be limited to twelve columns.
+      If designers feel that they need fewer columns in their grid, they can specify the number of twelve available columns they wish to span.
+      This can translate to percentages of the twelve columns. Using this method, a designer can create a folded, less granular grid.
+      For example, if your component spans three equal columns, that is equal to 25% of twelve columns.
+      <br><br>
+      <span class="page__desc--bold">
+        Base column count: 12
+      </span>
+    </p>
+    <img class="page__img--big" src="/assets/images/column-spread_2x.png" />
+    <p class="img-desc">@1440px - 12 Columns / 20px Gutters / 5% Margins</p>
+
+    <br><br>
+
+    <h3 class="page__small-heading">Margins</h3>
+    <p class="page__desc">
+      The twelve column grid does not have a max width.
+      It has a width of 100% with built in margins that create padding between column count and the edges of the viewport.
+    </p>
+    <p class="page__desc">
+      <span class="page__desc--bold">
+        In devices with a screen width of ≥768px, the margins are 5% left, 5% right.
+      </span><br>
+      Example: Screen Width 768px<br>
+      5% left = 38px<br>
+      5% right = 38px<br>
+      12 columns + gutters = 768px - 30px - 30px = 692px
+    </p>
+
+    <p class="page__desc">
+      <span class="page__desc--bold">
+        In devices with a screen width of < 768px, the margins are 3% left, 3% right.
+      </span><br>
+      Example: Screen Width 320px<br>
+      3% left = 16px<br>
+      3% right = 16px<br>
+      12 columns + gutters = 320px - 16px - 16px = 288px
+    </p>
+
+    <br><br>
+
+    <h3 class="page__small-heading">Breakpoints</h3>
+    <ul class="text-boxes">
+      <li>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            Extra small devices Phones (< 768px)
+          </span><br>
+          12 Equal Columns<br>
+          Column Padding: 5px left, 5px right<br>
+          Gutters: 5px + 5px = 20px<br>
+          Outer Margins: 3% left, 3% right
+        </p>
+      </li>
+      <li>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            Small devices Tablets (≥ 768px)
+          </span><br>
+          12 Equal Columns<br>
+          Column Padding: 10px left, 10px right<br>
+          Gutters: 10px + 10px = 20px<br>
+          Outer Margins: 5% left, 5% right
+        </p>
+      </li>
+      <li>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            Medium devices Desktops (≥ 992px)
+          </span><br>
+          12 Equal Columns<br>
+          Column Padding: 10px left, 10px right<br>
+          Gutters: 10px + 10px = 20px<br>
+          Outer Margins: 5% left, 5% right
+        </p>
+      </li>
+      <li>
+        <p class="page__desc">
+          <span class="page__desc--bold">
+            Large devices Desktops (≥ 1200px)
+          </span><br>
+          12 Equal Columns<br>
+          Column Padding: 10px left, 10px right<br>
+          Gutters: 10px + 10px = 20px<br>
+          Outer Margins: 5% left, 5% right
+        </p>
+      </li>
+    </ul>
+
+    <h1 class="page__heading">Use the Grid</h1>
+    <p class="page__desc">Starter grid templates can be found in the Design Kit. Included example grid sizes are 1440px, 768px and 320px.</p>
+    <a class="bx--btn--right-icon download-btn" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Design Kit <img src="/assets/images/download-icon.png" /></a>
+
+  </div>
+
+</div>

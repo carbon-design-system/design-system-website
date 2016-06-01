@@ -25,6 +25,18 @@
         </ul>
     </li>
 
+    <!-- Global -->
+    <li class="main-nav__item">
+        <a class="item__heading" id="guidelines">Global</a>
+        <ul class="item__sub-nav">
+            {{#each views.global.items}}
+            <li class="sub-nav__item">
+                <a href="../global/{{@key}}.html" class="item__link">{{name}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+
     <!-- Base Elements -->
     <li class="main-nav__item">
         <a class="item__heading" id="base-elements">Base Elements</a>

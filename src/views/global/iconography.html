@@ -1,0 +1,88 @@
+---
+fabricator: true
+title: Iconography
+---
+
+<div class="page__header">
+  <div class="page__info">
+    <p class="page__category">Guidelines</p>
+    <h1 class="page__large-heading">Iconography</h1>
+  </div>
+</div>
+
+<div class="page__container">
+
+  <div class="view--iconography is-active">
+
+    <p class="page__main-desc">
+      <span class="highlight">Iconography</span> uses images and symbols to visually represent an object. They communicate a message, and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.
+    </p>
+
+    <p class="page__desc"><a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons GitHub Repo</a></p>
+    <p class="page__desc"><a class="bx--link--dark" href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank">Bluemix Icon Library</a></p>
+
+    <h1 class="page__heading">Adding Icons</h1>
+    <p class="page__desc">If you'd like to add an icon to our library, please submit a Pull Request in our <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.</p>
+    <p class="page__desc"><span class="page__desc--bold">If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.</span></p>
+    <ul class="page__desc--list bx--list--unordered--ordered bx--list--ordered">
+      <li class="bx--list__item">Fork the <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons">GitHub repo.</a></li>
+      <li class="bx--list__item">Clone it to your local system.</li>
+      <li class="bx--list__item">Add icons in the proper folder (you may add your own) within the <code class="page__desc--code">svg/</code> folder.</li>
+      <li class="bx--list__item">In your terminal run <code class="page__desc--code">npm install</code>.</li>
+      <li class="bx--list__item">Run <code class="page__desc--code">npm run build</code> to rebuild the <code class="page__desc--code">sprite.svg</code>.</li>
+      <li class="bx--list__item">Submit a Pull Request and rejoice!</li>
+    </ul>
+
+    <h1 class="page__heading">Usage</h1>
+    <p class="page__desc">The main file here is <code class="page__desc--code">sprite.svg</code>, which contains an SVG sprite (every SVG included in a single file within a <code class="page__desc--code">&ltdefs&gt</code> tag inside of a <code class="page__desc--code">&ltsymbol&gt</code>). We're using the <a class="bx--link--dark" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank">SVG</a> to access them.</p>
+    <h3 class="page__small-heading">HTML</h3>
+
+    <div class="view--iconography__code-example">
+    {{#markdown}}
+
+    ```html
+
+    <svg>
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--add-filled"></use>
+    </svg>
+
+    {{/markdown}}
+    </div>
+
+    <h3 class="page__small-heading">Styling</h3>
+    <p class="page__desc">In this usage, you style the SVG in CSS. Make sure to give it a width and height (default is 100% of parent). Some icons are colored while others are black by default. You can edit the fill to change this. See the <a class="bx--link--dark" href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank" />reference page</a> for a guide with what <code class="page__desc--code">xlink:href</code> to use.</p>
+
+    <p class="page__desc">To edit these icons in CSS, add your own class to the <code class="page__desc--code">&ltsvg&gt</code>. For example:</p>
+
+    <div class="view--iconography__code-example">
+    {{#markdown}}
+
+    ```html
+
+    <svg class="icon--add">
+      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--add-filled"></use>
+    </svg>
+
+    {{/markdown}}
+    </div>
+
+    <p class="page__desc">Sass:</p>
+
+    <div class="view--iconography__code-example">
+    {{#markdown}}
+
+    ```css
+
+    .icon--add {
+      fill: #cc6699; // additional styling
+    }
+
+    {{/markdown}}
+    </div>
+
+    <h1 class="page__heading">Troubleshooting and Development Use</h1>
+    <p class="page__desc">Please refer to the guidelines in the <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons GitHub Repo</a> if you experience any problems using the icons.</p>
+
+  </div>
+
+</div>
