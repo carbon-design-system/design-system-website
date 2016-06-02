@@ -22,11 +22,19 @@ app.get('/', (req, res) => {
 
 // Redirect to default HTML pages
 // when User navigates to a route without specifying HTML file
-app.get('/global', (req, res) => {
+app.get('/getting-started', (req, res) => {
+  res.redirect('front-end-best-practices.html');
+});
+
+app.get('/principles', (req, res) => {
+  res.redirect('user-experience.html');
+});
+
+app.get('/essentials', (req, res) => {
   res.redirect('colors.html');
 });
 
-app.get('/base-elements', (req, res) => {
+app.get('/elements', (req, res) => {
   res.redirect('buttons.html');
 });
 
@@ -36,10 +44,6 @@ app.get('/components', (req, res) => {
 
 app.get('/templates', (req, res) => {
   res.redirect('add-menu.html');
-});
-
-app.get('/guidelines', (req, res) => {
-  res.redirect('front-end-best-practices.html');
 });
 
 app.listen(port, () => {

@@ -143,7 +143,7 @@ gulp.task('assemble', function() {
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/guidelines/partials/*'],
+    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*'],
     views: ['src/views/**/*', '!src/views/+(layouts)/**'],
     data: 'src/data/*.json',
     materials: 'src/materials/**/*',

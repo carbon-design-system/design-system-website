@@ -13,37 +13,49 @@
       <a href="/" class="item__heading">Overview</a>
     </li>
 
-    <!-- Guidelines -->
+    <!-- Getting Started -->
     <li class="main-nav__item">
-        <a class="item__heading" id="guidelines">Guidelines</a>
+        <a class="item__heading" id="getting-started">Getting Started</a>
         <ul class="item__sub-nav">
-            {{#each views.guidelines.items}}
+            {{#each views.getting-started.items}}
             <li class="sub-nav__item">
-                <a href="../guidelines/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../getting-started/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
     </li>
 
-    <!-- Global -->
+    <!-- Principles -->
     <li class="main-nav__item">
-        <a class="item__heading" id="guidelines">Global</a>
+        <a class="item__heading" id="guidelines">Principles</a>
         <ul class="item__sub-nav">
-            {{#each views.global.items}}
+            {{#each views.principles.items}}
             <li class="sub-nav__item">
-                <a href="../global/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../principles/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
     </li>
 
-    <!-- Base Elements -->
+    <!-- Essentials -->
     <li class="main-nav__item">
-        <a class="item__heading" id="base-elements">Base Elements</a>
+        <a class="item__heading" id="guidelines">Essentials</a>
         <ul class="item__sub-nav">
-            {{#each views.base-elements.items}}
+            {{#each views.essentials.items}}
             <li class="sub-nav__item">
-                <a href="../base-elements/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../essentials/{{@key}}.html" class="item__link">{{name}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+
+    <!-- Elements -->
+    <li class="main-nav__item">
+        <a class="item__heading" id="elements">Elements</a>
+        <ul class="item__sub-nav">
+            {{#each views.elements.items}}
+            <li class="sub-nav__item">
+                <a href="../elements/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
