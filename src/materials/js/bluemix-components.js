@@ -479,6 +479,12 @@ var BluemixComponents =
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var FabButton = function () {
+	  /**
+	   * Floating action button.
+	   * @implements Component
+	   * @param {HTMLElement} element The element working as a floting action button.
+	   */
+	
 	  function FabButton(element) {
 	    var _this = this;
 	
@@ -496,8 +502,23 @@ var BluemixComponents =
 	    });
 	  }
 	
+	  /**
+	   * Instantiates floating action buttons in the given element.
+	   * If the given element indicates that it's an floating action button (having `data-fab` attribute), instantiates it.
+	   * Otherwise, instantiates floating action buttons by clicking on floating action buttons in the given node.
+	   * @param {Node} target The DOM node to instantiate floating action buttons in. Should be a document or an element.
+	   * @returns {Handle} The handle to remove the event listener to handle clicking.
+	   */
+	
+	
 	  _createClass(FabButton, [{
 	    key: 'toggle',
+	
+	
+	    /**
+	     * Toggles this floating action button.
+	     * @param {Event} event The event triggering this method.
+	     */
 	    value: function toggle(event) {
 	      if (this.element.tagName === 'A') {
 	        event.preventDefault();
@@ -514,6 +535,12 @@ var BluemixComponents =
 	    value: function release() {
 	      this.constructor.components.delete(this.element);
 	    }
+	
+	    /**
+	     * Instantiates floating action button of the given element.
+	     * @param {HTMLElement} element The element.
+	     */
+	
 	  }], [{
 	    key: 'init',
 	    value: function init() {
@@ -557,9 +584,13 @@ var BluemixComponents =
 	  return FabButton;
 	}();
 	
+	/**
+	 * The map associating DOM element and floating action button instance.
+	 * @type {WeakMap}
+	 */
+	
+	
 	exports.default = FabButton;
-	
-	
 	FabButton.components = new WeakMap();
 
 /***/ },
@@ -1723,6 +1754,14 @@ var BluemixComponents =
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var Loading = function () {
+	  /**
+	   * Spinner indicating loading state.
+	   * @implements Component
+	   * @param {HTMLElement} element The element working as a spinner.
+	   * @param {Object} options The component options.
+	   * @param {boolean} options.active `true` if this spinner should roll.
+	   */
+	
 	  function Loading(element) {
 	    var options = arguments.length <= 1 || arguments[1] === undefined ? { active: true } : arguments[1];
 	
@@ -1748,8 +1787,20 @@ var BluemixComponents =
 	    this.set(this.active);
 	  }
 	
+	  /**
+	   * Instantiates spinner of the given element.
+	   * @param {HTMLElement} element The element.
+	   */
+	
+	
 	  _createClass(Loading, [{
 	    key: 'set',
+	
+	
+	    /**
+	     * Sets active/inactive state.
+	     * @param {boolean} active `true` if this spinner should roll.
+	     */
 	    value: function set(active) {
 	      if (typeof active !== 'boolean') {
 	        throw new TypeError('set expects a boolean.');
@@ -1764,11 +1815,22 @@ var BluemixComponents =
 	
 	      return this;
 	    }
+	
+	    /**
+	     * Toggles active/inactive state.
+	     * @param {boolean} active `true` if this spinner should roll.
+	     */
+	
 	  }, {
 	    key: 'toggle',
 	    value: function toggle() {
 	      return this.set(!this.active);
 	    }
+	
+	    /**
+	     * @returns {boolean} `true` if this spinner is rolling roll.
+	     */
+	
 	  }, {
 	    key: 'isActive',
 	    value: function isActive() {
@@ -1784,6 +1846,14 @@ var BluemixComponents =
 	    value: function create(element) {
 	      return this.components.get(element) || new this(element);
 	    }
+	
+	    /**
+	     * Instantiates spinner in the given node.
+	     * If the given element indicates that it's an spinner (having `data-loading` attribute), instantiates it.
+	     * Otherwise, instantiates spinners by searching for spinners in the given node.
+	     * @param {Node} target The DOM node to instantiate spinners in. Should be a document or an element.
+	     */
+	
 	  }, {
 	    key: 'init',
 	    value: function init() {
@@ -1808,9 +1878,13 @@ var BluemixComponents =
 	  return Loading;
 	}();
 	
+	/**
+	 * The map associating DOM element and spinner instance.
+	 * @type {WeakMap}
+	 */
+	
+	
 	exports.default = Loading;
-	
-	
 	Loading.components = new WeakMap();
 
 /***/ },
@@ -1979,6 +2053,10 @@ var BluemixComponents =
 	
 	var _eventMatches2 = _interopRequireDefault(_eventMatches);
 	
+	__webpack_require__(6);
+	
+	__webpack_require__(7);
+	
 	__webpack_require__(10);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -1988,6 +2066,14 @@ var BluemixComponents =
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var Card = function () {
+	  /**
+	   * The container for cards.
+	   * @implements Component
+	   * @param {HTMLElement} element The element working as a container.
+	   * @param {Object} [options] The component options.
+	   * @param {string} [options.selectorCard] The CSS selector to find cards.
+	   */
+	
 	  function Card(element) {
 	    var _this = this;
 	
@@ -2008,8 +2094,23 @@ var BluemixComponents =
 	    });
 	  }
 	
+	  /**
+	   * Instantiates card container of the given element.
+	   * @param {HTMLElement} element The element working as a container.
+	   * @param {Object} [options] The component options.
+	   * @param {string} [options.selectorCard] The CSS selector to find cards.
+	   */
+	
+	
 	  _createClass(Card, [{
 	    key: 'cardKeyPress',
+	
+	
+	    /**
+	     * Goes back/forward among cards,
+	     * right arrow key for going forward, left arrow key for going backward.
+	     * @param {Event} event The event triggering this method.
+	     */
 	    value: function cardKeyPress(event) {
 	      var direction = {
 	        Left: -1,
@@ -2026,11 +2127,26 @@ var BluemixComponents =
 	        cards[nextIndexLooped].focus();
 	      }
 	    }
+	  }, {
+	    key: 'release',
+	    value: function release() {
+	      this.constructor.components.delete(this.element);
+	    }
 	  }], [{
 	    key: 'create',
 	    value: function create(element, options) {
 	      return this.components.get(element) || new this(element, options);
 	    }
+	
+	    /**
+	     * Instantiates card container in the given node.
+	     * If the given element indicates that it's an card container (having `data-card-list` attribute), instantiates it.
+	     * Otherwise, instantiates card containers by searching for card containers in the given node.
+	     * @param {Node} target The DOM node to instantiate card containers in. Should be a document or an element.
+	     * @param {Object} [options] The component options.
+	     * @param {string} [options.selectorCard] The CSS selector to find cards.
+	     */
+	
 	  }, {
 	    key: 'init',
 	    value: function init() {
@@ -2055,9 +2171,19 @@ var BluemixComponents =
 	  return Card;
 	}();
 	
+	/**
+	 * The component options.
+	 * @member {Object} Card#options
+	 * @property {string} [selectorCard] The CSS selector to find cards.
+	 */
+	
+	/**
+	 * The map associating DOM element and card list instance.
+	 * @type {WeakMap}
+	 */
+	
+	
 	exports.default = Card;
-	
-	
 	Card.components = new WeakMap();
 
 /***/ },
@@ -2079,6 +2205,12 @@ var BluemixComponents =
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var NumberInput = function () {
+	  /**
+	   * Number input UI.
+	   * @implements Component
+	   * @param {HTMLElement} element The element working as a number input UI.
+	   */
+	
 	  function NumberInput(element) {
 	    var _this = this;
 	
@@ -2095,8 +2227,20 @@ var BluemixComponents =
 	    });
 	  }
 	
+	  /**
+	   * Instantiates number input UI of the given element.
+	   * @param {HTMLElement} element The element.
+	   */
+	
+	
 	  _createClass(NumberInput, [{
 	    key: 'handleClick',
+	
+	
+	    /**
+	     * Increase/decrease number by clicking on up/down icons.
+	     * @param {Event} event The event triggering this method.
+	     */
 	    value: function handleClick(event) {
 	      var state = event.target.classList;
 	      var numberInput = this.element.querySelector('.bx--number__input');
@@ -2117,6 +2261,14 @@ var BluemixComponents =
 	    value: function create(element) {
 	      return this.components.get(element) || new this(element);
 	    }
+	
+	    /**
+	     * Instantiates number input UI in the given node.
+	     * If the given element indicates that it's an number input UI (having `data-numberinput` attribute), instantiates it.
+	     * Otherwise, instantiates number input UIs by searching for number input UIs in the given node.
+	     * @param {Node} target The DOM node to instantiate number input UIs in. Should be a document or an element.
+	     */
+	
 	  }, {
 	    key: 'init',
 	    value: function init() {
@@ -2140,9 +2292,13 @@ var BluemixComponents =
 	  return NumberInput;
 	}();
 	
+	/**
+	 * The map associating DOM element and number input UI instance.
+	 * @type {WeakMap}
+	 */
+	
+	
 	exports.default = NumberInput;
-	
-	
 	NumberInput.components = new WeakMap();
 
 /***/ },
@@ -2162,6 +2318,8 @@ var BluemixComponents =
 	var _eventMatches = __webpack_require__(4);
 	
 	var _eventMatches2 = _interopRequireDefault(_eventMatches);
+	
+	__webpack_require__(7);
 	
 	var _toggleClass = __webpack_require__(8);
 	

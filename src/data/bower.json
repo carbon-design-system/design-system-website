@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "bluemix-components": "~6.0.1"
+    "bluemix-components": "~6.1.2"
   }
 }

@@ -30,7 +30,7 @@ const fs = require('fs');
 const env = gutil.env.env || undefined;
 
 const config = {
-  bower: 'bower_components/bluemix-components',
+  npm: 'node_modules/@console/bluemix-components',
   src: {
     images: 'src/assets/images/**/*.*',
     fonts: 'src/assets/fonts/*.{woff,woff2}',
@@ -65,13 +65,13 @@ gulp.task('copy', function() {
   // live code examples and snippets
   const materials = 'src/materials';
   const streams = [];
-  streams.push(copy(`${config.bower}/html/base-elements/**/*.html`, `${materials}/base-elements`));
-  streams.push(copy(`${config.bower}/html/components/**/*.html`, `${materials}/components`));
-  streams.push(copy(`${config.bower}/consumables/js/**/*.js`, `${materials}/js`));
-  streams.push(copy(`${config.bower}/consumables/js/**/*.js`, `${materials}/js`));
-  // Copy bower.json to /data so that fabricator can access the version of Bluemix components being used
-  streams.push(copy(`bower.json`, `src/data`));
-  // streams.push(copy(`${config.bower}/consumables/scss/global/colors/*.json`, `src/data`));
+  streams.push(copy(`${config.npm}/html/base-elements/**/*.html`, `${materials}/base-elements`));
+  streams.push(copy(`${config.npm}/html/components/**/*.html`, `${materials}/components`));
+  streams.push(copy(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
+  streams.push(copy(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
+  // Copy package.json to /data so that fabricator can access the version of Bluemix components being used
+  streams.push(copy(`package.json`, `src/data`));
+  // streams.push(copy(`${config.npm}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist
   streams.push(copy(config.src.fonts, `${config.dest}/assets/fonts`));

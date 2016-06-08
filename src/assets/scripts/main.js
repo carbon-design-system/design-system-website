@@ -23,14 +23,14 @@ import {
   FileUploader, NumberInput, Table,
   // Components
   ContentSwitcher, Dropdown, Loading, Modal, OverflowMenu, Tab,
-} from '../../../bower_components/bluemix-components/consumables/js/es2015/index';
+} from '@console/bluemix-components';
 
 ////////////////////////////////////////////////////////////////////////
 // Site
 // -------------
 // Import specific scripts for controlling website behavior
 import { openItemHeadings, toggleMenu, activeMenuLink, autoCloseMenu } from './site/menu';
-import { tabsNavigation } from './site/tabs';
+import { tabsNavigation } from './site/tabsNavigation';
 import { codeSnippets } from './site/snippets';
 import { themeSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
@@ -44,13 +44,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
   [... document.querySelectorAll('[data-loading]')].forEach((element) => {
     // Toggles on and off animations for Loading as a demo but may be misleading for users
     setInterval(() => Loading.components.get(element).toggle(), 3000);
-  });
-
-  [... document.querySelectorAll('[data-tabs] .item__link')].forEach((element) => {
-    // Don't follow links in tab
-    element.addEventListener('click', function (event) {
-      event.preventDefault();
-    });
   });
 
   const alertModalElement = document.querySelector('#under-construction');

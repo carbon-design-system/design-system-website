@@ -344,6 +344,7 @@
 
         &-text--light {
           color: $color__text--dark;
+          line-height: 1;
         }
 
         &--light {
@@ -379,7 +380,7 @@
           }
         }
 
-        &.is-selected {
+        &.bx--tabs--selected {
           border-bottom: 3px solid $color__text--dark;
 
           @media screen and (max-width: $width__tab-break) {
