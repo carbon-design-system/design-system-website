@@ -46,6 +46,31 @@ app.get('/templates', (req, res) => {
   res.redirect('add-menu.html');
 });
 
+// Redirect to old routes
+app.get('/guidelines', (req, res) => {
+  res.redirect('/principles');
+});
+
+app.get('/guidelines/:name', (req, res) => {
+  res.redirect(`/principles/${req.params.name}`);
+});
+
+app.get('/base-elements', (req, res) => {
+  res.redirect('/elements');
+});
+
+app.get('/base-elements/:name', (req, res) => {
+  res.redirect(`/elements/${req.params.name}`);
+});
+
+app.get('/global', (req, res) => {
+  res.redirect('/essentials');
+})
+
+app.get('/global/:name', (req, res) => {
+  res.redirect(`/essentials/${req.params.name}`);
+});
+
 app.listen(port, () => {
   console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
 });
