@@ -2,7 +2,7 @@
 fabricator: true
 name: forms
 category: base elements
-mainDesc: "are used for submitting data"
+mainDesc: "are used for submitting data."
 tag:
   new:
     text: New in 6.0.0
@@ -144,8 +144,44 @@ iterations:
   </div>
 
   <!-- View: Usage -->
-  <div id="usage" class="view--usage">
+  <div class="view--usage">
+    <h2 class="page__heading">Effective form design</h2>
+    <div class="view--style__section">
+      <div class="view--style__left-column">
+      <p class="page__desc">All forms are comprised of 5 elements.<br>
+        <ul class="page__desc--list bx--list--ordered">
+          <li><span class="page__desc--bold">Labels:</span> Informs user what the corresponding input fields mean.</li>
+          <li><span class="page__desc--bold">Input fields:</span> Enable users to provide feedback. These range from text fields, to radio buttons, to checkboxes.</li>
+          <li><span class="page__desc--bold">Hint text:</span> Provides assistance on how to fill out the field.</li>
+          <li><span class="page__desc--bold">Actions:</span> Allow users to submit a form.</li>
+          <li><span class="page__desc--bold">Validation:</span> Ensure the data submitted by the user conforms to acecptable parameters.</li>
+      </ul>
+      </div>
+    <div class="view--style__right-column">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/forms-02.png">
+        <img src="/assets/images/forms-02.png">
+      </picture>
+    </div>
+  </div>
 
+      <h2 class="page__heading">General guidelines</h2>
+      <h3 class="page__small-heading">Keep it short</h3>
+      <p class="page__desc">Be as concise as possible when designing forms. Think about each field, and what value the data will provide. Does it present a benefit to your team to be collecting this information?<br><br>
+      Begin by asking:
+      <ul class="page__desc--list bx--list--unordered">
+        <li>Is this a piece of information that is valuable to us?</li>
+        <li>Is this a piece of information that is so valuable that it's worth preventing the user from continuing if they choose not to provide it?</li>
+      </ul>
+    </p>
+    <h3 class="page__small-heading">Validation and errors</h3>
+    <p class="page__desc">Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions.<br><br>Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.<br><br>
+    <a href="http://design-system.stage1.mybluemix.net/components/notifications.html" class="bx--link--dark">Inline notifications</a> can be used to inform the user that there has been an error with their form submission. Form validation is used to state the specific problem with the user's data and provide guidance on next steps. </p>
+
+    <h2 class="page__heading">Form logic</h2>
+      <div class="page__img--thumbnail">
+          <img class="thumbnail-img" src="/assets/images/form-logic-01.png" />
+      </div>
   </div>
   <!-- View: Usage ends -->
 

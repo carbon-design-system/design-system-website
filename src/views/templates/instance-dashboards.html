@@ -17,13 +17,24 @@ category: Templates
 
   <p class="page__desc">You can find the source file for these templates in the <a href="https://github.ibm.com/Bluemix/design-kit" target="_blank" class="bx--link--dark">Bluemix Design Kit.</a>
 
-    
+
   <h2 class="page__heading">Service Dashboard</h2>
-    <p class="page__desc">Service dashboards may be accessed from the Global Dashboard, or after a user provisions a service from the Bluemix catalog. Service dashboards serve as locations for users to learn more about services, configure their service instance and connect it to an existing app or service instance.</p>
-  <h3 class="page__small-heading">Learn</h3>
-    <p class="page__desc">Provide pertinent introductory material such as links to service-specific API documentation and demos so users quickly and effectively get up and running.</p>
-  <h3 class="page__small-heading">Configure</h3>
-    <p class="page__desc">Enable users to easily integrate a service into their workflow. Configuring a service should be accessible.</p>
+    <p class="page__desc">Service dashboards may be accessed from the Global Dashboard, or after a user provisions a service from the Bluemix catalog. Service dashboards serve as locations for users to learn more about services, configure their service instance and connect it to an existing app or service instance.<br><br>As shown in the example above, Service Dashboards are comprised of a series of tabs that are defined in the service broker meta-data.</p>
+  <h3 class="page__small-heading">Manage Tab</h3>
+    <p class="page__desc">Content aiding in a user's productive use workflow, and any additional learning content should surface in the Manage tab. Consider providing pertinent introductory material such as links to service-specific API documentation and demos so users quickly and effectively get up and running.</p>
+  <h3 class="page__small-heading">Getting Started Tab</h3>
+    <p class="page__desc">Get Started at the instance level should be all about getting a user up and running as fast as possible.<br><br>Upon creation of a service instance the content on the Getting Started tab is the first thing a user encounters and will likely dictate how successful they are with the service.</p><br>
+    <p class="page__desc"><span class="page__desc--bold">Implementation</span><br>
+      Service providers should provide consistent getting started documentation using the <a href="https://releaseblueprints.ibm.com/display/CLOUDOE/getting+started+template+and+guidelines" class="bx--link--dark">Bluemix Getting Started Template and Guidelines.</a> Content on the Getting Started tab is populated directly from Bluemix Documentation when registering your service. </p>
+
+  <h3 class="page__small-heading">Service Credentials Tab</h3>
+        <p class="page__desc">The Service Credentials tab shows the service instance credentials to an end user. Currently, users have the ability to create mulitple sets of credentials. Services that do not use credentials are not required to have this tab.</p>
+  <h3 class="page__small-heading">Connections Tab</h3>
+        <p class="page__desc">This tab provides a way for users to bind their service instance to an existing app or service instance. Service to service bindings will be supported in the near future.</p>
+
+  <h3 class="page__small-heading">Custom Tab</h3>
+              <p class="page__desc">We understand some services will require an additional level of functionality not currently supported with the default tabs. Service providers who validate a need for an additional tab are permited one custom tab.</p>
+
 
     <h2 class="page__heading">CF App Dashboard</h2>
         <div class="page__img--thumbnail">
