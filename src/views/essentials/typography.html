@@ -21,8 +21,11 @@ title: Typography
 
     <pre class="view--typography__code-example"><code class="language-css">%helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, 	Helvetica, sans-serif; }</code></pre>
 
-    <h1 class="page__heading">Major Second Type Scale | 1.125</h1>
-    <p class="page__desc">Bluemix uses the Major Second scale with a base size of 16px for 1 rem. Exclusively using sizes from this type scale will create visual as well as hierarchical consistency throughout the product.</p>
+    <h1 class="page__heading">Normalized Major Second Type Scale | 1.125</h1>
+    <p class="page__desc">Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale  will create visual as well as hierarchical consistency throughout the product. To reference the font size, use the mixin and reference the pixel value.</p>
+
+    <pre class="view--typography__code-example"><code class="language-css">@include font-size('18');</code></pre>
+
 
     <div class="view--typography__table">
       <div class="table__header">
