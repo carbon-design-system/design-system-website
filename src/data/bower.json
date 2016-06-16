@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "bluemix-components": "~6.1.2"
+    "bluemix-components": "~6.1.2",
+    "bluemix-icons": "~1.6.0"
   }
 }

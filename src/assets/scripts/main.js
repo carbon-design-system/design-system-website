@@ -36,6 +36,7 @@ import { themeSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
 import { copyHexValue } from './site/copy-hex';
 import { expandType } from './site/expand-type';
+import { filterIcons } from './site/icon-search';
 
 // import snippets stuff here
 
@@ -62,5 +63,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
   renderPopout();
   copyHexValue();
   expandType();
-
+  filterIcons();
+  
 });

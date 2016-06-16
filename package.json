@@ -39,6 +39,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "gulp-util": "^3.0.4",
+    "gulp-xml2js": "^0.1.1",
     "handlebars-helpers": "^0.5.8",
     "markdown-it": "^4.1.0",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
@@ -46,10 +47,13 @@
     "nodemon": "1.9.1",
     "parallelshell": "2.0.0",
     "string": "^3.3.0",
-    "webpack": "1.12.14"
+    "svgutils": "^0.13.6",
+    "webpack": "1.12.14",
+    "xml2js": "^0.4.16"
   },
   "dependencies": {
     "@console/bluemix-components": "^6.1.2",
+    "clipboard": "^1.5.10",
     "express": "4.13.4",
     "helper-markdown": "0.2.1",
     "svgxuse": "1.1.15"

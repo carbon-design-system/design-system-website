@@ -1,0 +1,92 @@
+.icon-med {
+  height: rem(32px);
+  width: rem(32px);
+}
+
+.icon-blue {
+  fill: $color__blue-40;
+}
+
+.search--light {
+  width: 100%;
+  margin-bottom: rem(32px);
+
+  svg {
+    // this is a bugfix need to investigate more
+    z-index: 2;
+  }
+
+  input[type=search] {
+    background: $color__snippet-bg;
+    color: $color__text--dark;
+  }
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.icon {
+  width: 10rem;
+  margin: 0 1rem;
+  height: 250px;
+
+  h5 {
+    @include letter-spacing;
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: rem(16px);
+    margin-bottom: rem(36px);
+  }
+
+}
+
+.icon__card {
+  background: $color__snippet-bg;
+  height: 10rem;
+  width: 10rem;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+
+  svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  &:hover {
+    .icon__actions {
+      opacity: 1;
+    }
+  }
+}
+
+.icon__actions {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(85, 150, 230, .8);
+  transition: $transition--base;
+  opacity: 0;
+}
+
+.icon__button {
+  @include btn--secondary($hover-bg: $color__blue-90, $text: $color__blue-90);
+  display: block;
+  margin-top: rem(14px);
+  margin-left: 1.5rem;
+  min-width: rem(112px);
+
+  &:first-child {
+    margin-top: rem(32px);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}

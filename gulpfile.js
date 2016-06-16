@@ -18,6 +18,7 @@ const webpack = require('webpack');
 const merge = require('merge-stream');
 const path = require('path');
 const fs = require('fs');
+const gxml = require('gulp-xml2js');
 
 
 ///////////////////////////////
@@ -81,7 +82,6 @@ gulp.task('copy', function() {
   return merge(streams);
 });
 
-
 ///////////////////////////////
 // STYLES                    //
 ///////////////////////////////
@@ -135,6 +135,54 @@ gulp.task('scripts', function (cb) {
 });
 
 ///////////////////////////////
+// ICONS                     //
+///////////////////////////////
+
+gulp.task('icons', function() {
+  // Transform svg sprite file into json
+  gulp.src('bower_components/bluemix-icons/sprite.svg')
+    .pipe(gxml())
+    .pipe(rename('sprite.json'))
+    .pipe(gulp.dest('./src/data/'));
+
+  //  Load svg json, get the size of the object, and set up vars
+  const data = require('./src/data/sprite.json');
+  const size = Object.keys(data.svg.symbol).length;
+  const icon = {};
+  const iconMeta = [];
+  let id;
+
+  // Loop through obj
+  for (var i = 0; i < size; i++) {
+
+    // Grab the id's of the svg icons
+    id = data.svg.symbol[i].$.id;
+    // Split id's into their prefixs and bodys
+    let split = id.split('--')
+    let parentFolder = split[0];
+    let name = split[1];
+    // Creat a obj containing the id, name, and prefixs of each icon
+    let iconObj = {
+      id: id,
+      name: name,
+      tags: parentFolder
+    };
+    // Push the each icon's obj to an array
+    iconMeta.push(iconObj)
+  }
+
+  // Assign the array to the key "icon" in the parent obj
+  icon["icon"] = iconMeta;
+  // Stringify obj and save to file
+  const iconString = JSON.stringify(icon);
+  fs.writeFile('./src/data/icons.json', iconString);
+
+});
+
+gulp.task('icons-clean', function() {
+  return del('./src/data/sprite.json');
+});
+///////////////////////////////
 // ASSEMBLE                  //
 ///////////////////////////////
 
@@ -143,7 +191,7 @@ gulp.task('assemble', function() {
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*'],
+    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*'],
     views: ['src/views/**/*', '!src/views/+(layouts)/**'],
     data: 'src/data/*.json',
     materials: 'src/materials/**/*',
