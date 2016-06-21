@@ -18,9 +18,8 @@ const webpack = require('webpack');
 const merge = require('merge-stream');
 const path = require('path');
 const fs = require('fs');
-const gxml = require('gulp-xml2js');
 const runSequence = require('run-sequence');
-
+const parseString = require('xml2js').parseString;
 
 ///////////////////////////////
 // CONFIGURATION             //
@@ -48,7 +47,7 @@ const config = {
 ///////////////////////////////
 
 gulp.task('clean', function () {
-  return del(config.dest);
+  return del(['dist', 'src/data/icons.json']);
 });
 
 
@@ -139,58 +138,54 @@ gulp.task('scripts', function (cb) {
 // ICONS                     //
 ///////////////////////////////
 
-gulp.task('icons-to-json', function() {
-  // Transform svg sprite file into json
-  return gulp.src('bower_components/bluemix-icons/sprite.svg')
-    .pipe(gxml())
-    .pipe(rename('sprite.json'))
-    .pipe(gulp.dest('./src/data/'));
-});
+gulp.task('icons', function() {
 
-gulp.task('icons-build', function(cb) {
-  //  Load svg json, get the size of the object, and set up vars
-  const data = require('./src/data/sprite.json');
-  const size = Object.keys(data.svg.symbol).length;
-  const icon = {};
-  const iconMeta = [];
-  let id;
+  /*
+    iconJSON()
+    * Converts XML to JSON
+    * Creates new JSON Array of icon objects
+    * Writes new JSON Array to icons.json file.
+  */
+  const iconJSON = () => {
+    // Read XML from sprite.svg
+    const xml = fs.readFileSync('bower_components/bluemix-icons/sprite.svg', { 'encoding': 'utf8' });
 
-  // Loop through obj
-  for (var i = 0; i < size; i++) {
+    // parsed - Use xml2js to convert XML to JSON
+    const parsed = parseString(xml, function(err, result) {
+      if (err) {
+        throw err;
+      }
 
-    // Grab the id's of the svg icons
-    id = data.svg.symbol[i].$.id;
-    // Split id's into their prefixs and bodys
-    let split = id.split('--')
-    let parentFolder = split[0];
-    let name = split[1];
-    // Creat a obj containing the id, name, and prefixs of each icon
-    let iconObj = {
-      id: id,
-      name: name,
-      tags: parentFolder
-    };
-    // Push the each icon's obj to an array
-    iconMeta.push(iconObj)
+      // iconMeta - returns new JSON Array of icon Objects
+      const iconMeta = (result.svg.symbol).map(symbol => {
+
+        // Split `id` key into an Array - [{{tags}}, '--', {{name}}]
+        const splitId = symbol.$.id.split('--')
+
+        // New values for an icon object
+        const id = symbol.$.id;
+        const tags = splitId[0];
+        const name = splitId[1];
+
+        // For each "symbol", create new Objects with these keys/values
+        return {
+          id,
+          name,
+          tags
+        }
+      });
+
+      // Stringify iconMeta's return value to JSON for use in template
+      const iconString = JSON.stringify(iconMeta);
+
+      // Write iconString to icons.json file
+      fs.writeFile('./src/data/icons.json', iconString);
+    });
   }
 
-  // Assign the array to the key "icon" in the parent obj
-  icon["icon"] = iconMeta;
-  // Stringify obj and save to file
-  const iconString = JSON.stringify(icon);
-  fs.writeFile('./src/data/icons.json', iconString);
-
-  cb();
-
+  iconJSON();
 });
 
-gulp.task('icons-clean', function() {
-  return del('./src/data/sprite.json');
-});
-
-gulp.task('icons', function() {
-  runSequence('icons-to-json', 'icons-build', 'icons-clean');
-});
 
 ///////////////////////////////
 // ASSEMBLE                  //
@@ -239,7 +234,7 @@ gulp.task('assemble', function() {
 // BUILD                     //
 ///////////////////////////////
 
-gulp.task('build', ['styles', 'scripts', 'icons', 'assemble']);
+gulp.task('build', runSequence(['styles', 'scripts', 'icons'], 'assemble'));
 
 ///////////////////////////////
 // SERVE                     //

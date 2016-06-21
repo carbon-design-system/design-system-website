@@ -57,6 +57,7 @@
     "clipboard": "^1.5.10",
     "express": "4.13.4",
     "helper-markdown": "0.2.1",
-    "svgxuse": "1.1.15"
+    "svgxuse": "1.1.15",
+    "xml2js": "^0.4.16"
   }
 }
