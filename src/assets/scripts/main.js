@@ -37,6 +37,8 @@ import { renderPopout } from './site/render-popout';
 import { copyHexValue } from './site/copy-hex';
 import { expandType } from './site/expand-type';
 import { filterIcons } from './site/icon-search';
+import { iconSymbols } from './site/icon-symbols.js';
+import { clipboardConfig } from './site/clipboardConfig.js';
 
 // import snippets stuff here
 
@@ -64,5 +66,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   copyHexValue();
   expandType();
   filterIcons();
-  
+  iconSymbols();
+  clipboardConfig();
+
 });

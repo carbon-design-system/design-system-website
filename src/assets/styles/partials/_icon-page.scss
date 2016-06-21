@@ -82,11 +82,20 @@
   margin-left: 1.5rem;
   min-width: rem(112px);
 
+  a {
+    text-decoration: none;
+    color: $color__blue-90;
+  }
+
   &:first-child {
     margin-top: rem(32px);
   }
 
   &:hover {
-    color: #fff;
+    color: $color__white;
+
+    a {
+      color: $color__white;
+    }
   }
 }

@@ -46,6 +46,7 @@
     "merge-stream": "1.0.0",
     "nodemon": "1.9.1",
     "parallelshell": "2.0.0",
+    "run-sequence": "1.2.1",
     "string": "^3.3.0",
     "svgutils": "^0.13.6",
     "webpack": "1.12.14",

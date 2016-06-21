@@ -19,6 +19,7 @@ const merge = require('merge-stream');
 const path = require('path');
 const fs = require('fs');
 const gxml = require('gulp-xml2js');
+const runSequence = require('run-sequence');
 
 
 ///////////////////////////////
@@ -138,13 +139,15 @@ gulp.task('scripts', function (cb) {
 // ICONS                     //
 ///////////////////////////////
 
-gulp.task('icons', function() {
+gulp.task('icons-to-json', function() {
   // Transform svg sprite file into json
-  gulp.src('bower_components/bluemix-icons/sprite.svg')
+  return gulp.src('bower_components/bluemix-icons/sprite.svg')
     .pipe(gxml())
     .pipe(rename('sprite.json'))
     .pipe(gulp.dest('./src/data/'));
+});
 
+gulp.task('icons-build', function(cb) {
   //  Load svg json, get the size of the object, and set up vars
   const data = require('./src/data/sprite.json');
   const size = Object.keys(data.svg.symbol).length;
@@ -177,11 +180,18 @@ gulp.task('icons', function() {
   const iconString = JSON.stringify(icon);
   fs.writeFile('./src/data/icons.json', iconString);
 
+  cb();
+
 });
 
 gulp.task('icons-clean', function() {
   return del('./src/data/sprite.json');
 });
+
+gulp.task('icons', function() {
+  runSequence('icons-to-json', 'icons-build', 'icons-clean');
+});
+
 ///////////////////////////////
 // ASSEMBLE                  //
 ///////////////////////////////
@@ -229,7 +239,7 @@ gulp.task('assemble', function() {
 // BUILD                     //
 ///////////////////////////////
 
-gulp.task('build', ['styles', 'scripts', 'assemble']);
+gulp.task('build', ['styles', 'scripts', 'icons', 'assemble']);
 
 ///////////////////////////////
 // SERVE                     //

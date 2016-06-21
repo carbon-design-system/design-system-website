@@ -74,3 +74,7 @@ app.get('/global/:name', (req, res) => {
 app.listen(port, () => {
   console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
 });
+
+app.get('/download/:iconFolder/:icon', (req, res) => {
+  res.download(`./bower_components/bluemix-icons/svg/${req.params.iconFolder}/${req.params.icon}.svg`)
+});

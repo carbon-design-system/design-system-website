@@ -17,8 +17,10 @@
         <use xlink:href="#{{this.id}}"></use>
       </svg>
       <div class="icon__actions">
-        <button type="button" class="icon__button">Copy Code</button>
-        <button type="button" class="icon__button">Download</button>
+        <button type="button" class="icon__button clipboard-button">Copy Code</button>
+        <button type="button" class="icon__button">
+          <a href="/download/{{this.tags}}/{{this.name}}">Download</a>
+        </button>
       </div>
     </div>
     <h5>{{this.name}}</h5>
