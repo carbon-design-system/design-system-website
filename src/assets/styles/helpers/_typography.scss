@@ -1,0 +1,50 @@
+// FONT WEIGHTS
+.light {
+  font-weight: 200;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+// FONT STYLES
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letterspacing {
+  letter-spacing: .5px;
+}
+
+.lh2 {
+  line-height: 2;
+}
+
+.center-text {
+  text-align: center;
+}
+
+// TEXT COLOR
+.white {
+  color: $color__white;
+}
+
+.blue-20 {
+  color: $color__blue-20;
+}
+
+.blue-30 {
+  color: $color__blue-30;
+}
+
+.blue-90 {
+  color: $color__blue-90;
+}
+
+.navy-gray-5 {
+  color: $color__navy-gray-5;
+}

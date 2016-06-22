@@ -1,61 +1,61 @@
-<h1 class="page__heading">Adding Icons</h1>
-<p class="page__desc">If you'd like to add an icon to our library, please submit a Pull Request in our <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.</p>
-<p class="page__desc"><span class="page__desc--bold">If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.</span></p>
-<ul class="page__desc--list bx--list--unordered--ordered bx--list--ordered">
-  <li class="bx--list__item">Fork the <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-icons">GitHub repo.</a></li>
-  <li class="bx--list__item">Clone it to your local system.</li>
-  <li class="bx--list__item">Add icons in the proper folder (you may add your own) within the <code class="page__desc--code">svg/</code> folder.</li>
-  <li class="bx--list__item">In your terminal run <code class="page__desc--code">npm install</code>.</li>
-  <li class="bx--list__item">Run <code class="page__desc--code">npm run build</code> to rebuild the <code class="page__desc--code">sprite.svg</code>.</li>
-  <li class="bx--list__item">Submit a Pull Request and rejoice!</li>
-</ul>
+{{#markdown}}
 
-<h1 class="page__heading">Exporting SVGs</h1>
+## Adding Icons
 
-<h3 class="page__small-heading">Best Practices:</h3>
-<ul class="page__desc--list bx--list--unordered">
-  <li class="bx--list__item">Create an individual artboard for each icon at 32 x 32 pixels. Export the entire icon artboard. Do not trim trim transparent pixels.</li>
-  <li class="bx--list__item">Note: Icons can be resized in the code but the default SVG size should be 32 x 32 pixels.</li>
-  <li class="bx--list__item">Make sure each artboard and the artwork within is pixel perfect. There should not be decimals in the x and y coordinates or in the width and height fields.</li>
-  <li class="bx--list__item">Delete any excess styling. The icon should be exported at the color #000000. All styling (size, color, etc.) will be done in code.</li>
-  <li class="bx--list__item">Ungroup the icon layers completely. It should be on the top-most layer in your artboard.</li>
-  <li class="bx--list__item">Make sure to properly name layers and artboards (these names will also be exported into the code).</li>
-</ul>
+If you'd like to add an icon to our library, please submit a Pull Request in our <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.
 
-<h3 class="page__small-heading">How to Export SVGs from Sketch</h3>
+**If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
-<ol class="page__desc--list bx--list--ordered">
-  <li class="bx--list__item">Draw a 32 x 32 pixel stand-alone artboard.</li>
-  <li class="bx--list__item"> Place icon in the pixel perfect center of the artboard.</li>
-  <li class="bx--list__item"> Make sure icon is #000000 and has no additional styling.</li>
-  <li class="bx--list__item"> Select the entire artboard (not just the icon).</li>
-  <li class="bx--list__item"> Click "Make Exportable" at the bottom of the right toolbar in Sketch.</li>
-  <li class="bx--list__item"> In the "Export" widget select "SVG" in the format dropdown.</li>
-  <li class="bx--list__item"> Click "Export 'Artboard-Name'".</li>
-  <li class="bx--list__item">Name icon appropriately.</li>
-</ol>
+1. Fork the <a href="https://github.ibm.com/Bluemix/bluemix-icons">GitHub repo.</a>
+2. Clone it to your local system.
+3. Add icons in the proper folder (you may add your own) within the `svg/` folder.
+4. In your terminal run `npm install`.
+5. Run `npm run build` to rebuild the `sprite.svg`.
+6. Submit a Pull Request and rejoice!
 
-<div class="page__img--thumbnail page__img--thumbnail--full">
-  <img src="../assets/images/SVG-Artboard.png" alt="" />
+## Exporting SVGs
+
+### Best Practices:
+
+- Create an individual artboard for each icon at 32 x 32 pixels. Export the entire icon artboard. Do not trim trim transparent pixels.
+- Note: Icons can be resized in the code but the default SVG size should be 32 x 32 pixels.
+- Make sure each artboard and the artwork within is pixel perfect. There should not be decimals in the x and y coordinates or in the width and height fields.
+- Delete any excess styling. The icon should be exported at the color #000000. All styling (size, color, etc.) will be done in code.
+- Ungroup the icon layers completely. It should be on the top-most layer in your artboard.
+- Make sure to properly name layers and artboards (these names will also be exported into the code).
+
+### How to Export SVGs from Sketch
+
+1. Draw a 32 x 32 pixel stand-alone artboard.
+2. Place icon in the pixel perfect center of the artboard.
+3. Make sure icon is #000000 and has no additional styling.
+4. Select the entire artboard (not just the icon).
+5. Click "Make Exportable" at the bottom of the right toolbar in Sketch.
+6. In the "Export" widget select "SVG" in the format dropdown.
+7. Click "Export 'Artboard-Name'".
+8. Name icon appropriately.
+
+<div class="mt2">
+  <img class="sm--width-full" src="../assets/images/SVG-Artboard.png" alt="" />
 </div>
-<h5 class="page__example-heading">Example: This is what a Sketch artboard should look like before SVG export</h5>
+<p class="caption">Example: This is what a Sketch artboard should look like before SVG export</p>
 
-<h3 class="page__small-heading">How to Export SVGs from Adobe Illustrator</h3>
+### How to Export SVGs from Adobe Illustrator
 
-<ol class="page__desc--list bx--list--ordered">
-  <li class="bx--list__item">Draw a 32 x 32 pixel stand-alone artboard.</li>
-  <li class="bx--list__item">Place icon in the pixel perfect center of the artboard.</li>
-  <li class="bx--list__item">Make sure icon is #000000 and has no additional styling.</li>
-  <li class="bx--list__item">Select "File" from the top navigation.</li>
-  <li class="bx--list__item">Select "Save A Copy..." which will open a dialog.</li>
-  <li class="bx--list__item">On the "Format" dropdown select "SVG (svg)".</li>
-  <li class="bx--list__item">Below "Format" select "Use Artboard" then select either all or a range of artboards depending on your need.</li>
-  <li class="bx--list__item">Click "Save".</li>
-  <li class="bx--list__item">The "SVG Options" dialog will then open.</li>
-  <li class="bx--list__item">Make sure the preferences are the same as in the image below.</li>
-</ol>
+1. Draw a 32 x 32 pixel stand-alone artboard.
+2. Place icon in the pixel perfect center of the artboard.
+3. Make sure icon is #000000 and has no additional styling.
+4. Select "File" from the top navigation.
+5. Select "Save A Copy..." which will open a dialog.
+6. On the "Format" dropdown select "SVG (svg)".
+7. Below "Format" select "Use Artboard" then select either all or a range of artboards depending on your need.
+8. Click "Save".
+9. The "SVG Options" dialog will then open.
+10. Make sure the preferences are the same as in the image below.
 
-<div class="page__img--thumbnail page__img--thumbnail--full">
-  <img src="../assets/images/Abode-SVG-Export.png" alt="" />
+<div class="mt2">
+  <img class="sm--width-full" src="../assets/images/Abode-SVG-Export.png" alt="" />
 </div>
-<h5 class="page__example-heading">SVG export options from Adobe Illustrator</h5>
+<p class="caption">SVG export options from Adobe Illustrator</p>
+
+{{/markdown}}

@@ -9,7 +9,7 @@ const assemble = () => {
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*'],
+    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'],
     views: ['src/views/**/*', '!src/views/+(layouts)/**'],
     data: 'src/data/*.json',
     materials: 'src/materials/**/*',

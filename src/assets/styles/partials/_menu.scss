@@ -1,12 +1,11 @@
-// menu
 .menu {
   @extend %font-smoothing;
+  z-index: z('menu');
   font-size: rem(14px);
   background-color: $color__menu-bg;
   border-right: 2px solid $color__border--menu;
   width: $width__menu;
   height: 100%;
-  z-index: 5;
   padding: 1em 2em 2em 2em;
   position: fixed;
   overflow: scroll;
@@ -36,13 +35,9 @@
     text-decoration: none;
 
     &--bold {
-      color: $color__text--light;
+      color: $color__navy-gray-8;
       font-weight: 600;
     }
-  }
-
-  &__main-nav {
-    list-style: none;
   }
 
   @media screen and (max-width: $width__screen-size--small) {
@@ -52,43 +47,6 @@
       transform: translateX(-100%);
     }
   }
-
-  &__download-btns {
-    border-top: 1px solid $color__blue-20;
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column;
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 1em;
-      color: $color__blue-30;
-      border-color: $color__blue-30;
-
-      &:hover {
-        background-color: $color__blue-30;
-      }
-    }
-
-    .bx--btn--secondary {
-
-      &:hover {
-
-        .download-icon {
-          fill: $color__blue-90;
-        }
-      }
-    }
-
-    .download-icon {
-      width: em(16px);
-      height: em(16px);
-      fill: $color__blue-30;
-      transform: rotate(180deg);
-    }
-  }
 }
 
 .menu__header--mobile {
@@ -96,14 +54,15 @@
 }
 
 .main-nav {
+  list-style: none;
 
   &__item {
-    border-top: 1px solid $color__border;
+    border-top: 1px solid $color__blue-20;
     padding: 1.5em 0;
 
     .item__heading {
       cursor: pointer;
-      color: $color__text--light;
+      color: $color__navy-gray-8;
       text-transform: uppercase;
       text-decoration: none;
       font-weight: 600;
@@ -130,14 +89,14 @@
     text-transform: capitalize;
     margin-left: 0;
     padding: .5em;
-    color: $color__text--light;
+    color: $color__navy-gray-8;
 
     &.active {
       background-color: $color__blue-30;
-      color: $color__text--dark;
+      color: $color__blue-90;
 
       &:hover {
-        color: $color__text--dark;
+        color: $color__blue-90;
       }
     }
 
@@ -154,16 +113,17 @@
       text-decoration: none;
       transition: .2s;
       cursor: pointer;
+      font-weight: normal;
     }
   }
 }
 
 .sidebar-toggle {
+  z-index: z('overlay');
   display: inline-block;
   position: absolute;
   top: 0;
   right: 15px;
-  z-index: 2;
   padding: 2em;
   cursor: pointer;
   transition: $transition--slow;

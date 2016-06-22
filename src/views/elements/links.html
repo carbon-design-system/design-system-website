@@ -1,7 +1,7 @@
 ---
 fabricator: true
 name: links
-category: base elements
+category: elements
 mainDesc: "are used primarily as a navigational element. Links may also change what or how data is displayed (view more, show all). If the action taken by the user will change or manipulate data, use a button."
 iterations:
   links:
@@ -13,224 +13,22 @@ iterations:
 {{> tabsnav}}
 <!-- Item header ends -->
 
-<!-- Item main container -->
-<div class="page__container">
-
-  <!-- View: Foundation -->
-  <div id="foundation" class="view--foundation">
-
-    <p class="page__main-desc">
-      <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
-    </p>
-
-  <h2 class="page__main-heading">Foundation</h2>
-
-  <!-- Element Loop -->
-  {{#each iterations as |item|}}
-    <section class="page" id="{{dasherize item.title}}">
-
-      <h2 class="page__heading">{{item.title}}</h2>
-
-      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
-
-  {{#if item.htmlFile}}
-
-  <div class="element__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__element">
-  {{{findFile item.htmlFile}}}
-  </div>
-  <input type="text" value="" class="hiddenHTMLSnippet" />
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{{findFile item.htmlFile}}}
-  ```
-
-  <button class="code__copy code__copy--html">
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <span class="copyFeedback">Copied!</span>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  {{#if item.jsFile}}
-  <!-- JS Code -->
-
-  <div class="code__js">
-
-  ```js
-  {{{findFile item.jsFile}}}
-  ```
-
-  <button class="code__copy code__copy--js">
-    <div class="copyFeedback">Copied!</div>
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/if}}
-
-  {{/markdown}}
-
-  {{#if item.jsFile}}
-  <input type="text" class="hiddenJSSnippet" value="{{{findFile item.jsFile}}}"/>
-  {{/if}}
-
-  {{/if}}
-  </section>
-  {{/each}}
-
-  <!-- View: Foundation ends -->
-  </div>
-
-  <!-- View: Usage -->
-  <div id="usage" class="view--usage">
-    <h3 class="page__small-heading">Text</h3>
-    <p class="page__desc">
-      <ul class="page__desc--list bx--list--unordered">
-        <li>Using text for links is recommended rather than graphics or icons</li>
-        <li>Links should be 3 words or less</li>
-        <li>Text should be consistent with the title of the intented destination </li>
-        <li>Use caution with links that are several words. It is recommended that links are long enough to be understood by the user, but short enough to prevent text wrapping</li>
-        <li>Avoid the term, &ldquo;Click here&rdquo;, other links to &ldquo;here&rdquo;, or the web address itself
-        <li>Instead, use a meaningful descriptive label for the link, and match the destination site name</li>
-      </ul>
-    </p>
-    <br>
-
-    <h3 class="page__small-heading">Visual Styling</h3>
-    <p class="page__desc">
-      <ul class="page__desc--list bx--list--unordered">
-        <li>Use consistent visual clickablility cues for links, such as underline, text color, or arrows</li>
-        <li>As a general rule, colors used for link text should be reserved for links</li>
-      </ul>
-    </p>
-    <div class="link-examples">
-      <div class="do-example">
-        <h5 class="page__example-heading"><img src="/assets/images/green-check.png" />Do: </h5>
-        <img class="do-example__img" src="/assets/images/Links-Good.png" />
-      </div>
-      <div class="dont-example">
-        <h5 class="page__example-heading"><img src="/assets/images/red-x.png" />Don't:</h5>
-        <img class="dont-example__img" src="/assets/images/Links-bad.png" />
-      </div>
-    </div>
-  </div>
-  <!-- View: Usage ends -->
-
-  <!-- View: Style -->
-  <div id="style" class="view--style">
-    <h1 class="page__heading">Structure</h1>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Links can be grouped horizontally or vertically and must be underlined.</p>
-        <p class="page__desc">
-          <span class="page__desc--bold">Font size: 14px / .875rem</span><br>
-          <span class="page__desc--bold">Font weight: bold / 700</span><br>
-          <span class="page__desc--bold">Line height: 24px / 1.5em</span><br>
-          <span class="page__desc--bold">Space between each link (horizontally): 18px / 2.75em</span><br>
-          <span class="page__desc--bold">Line height: 24px / 1.5em</span>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Link_Groupings-640_2px(2).png">
-          <img src="/assets/images/Link_Groupings-640_2px.png">
-        </picture>
-        <h5 class="page__example-heading">Horizontal and vertical Link styling</h5>
-      </div>
-    </div>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Link States</h3>
-        <p class="page__desc">Links have three different states, normal, hover, and disabled which are indicated through color change.</p>
-        <ul class="page__desc--list bx--list--unordered">
-          <li>Browser Defined</li>
-          <li>Hover: One shade lighter on the IBM Design Langauge color scale than normal color.</li>
-          <li>Disabled: 50% opacity</li>
-        </ul>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Link_States-640_2px.png">
-          <img src="/assets/images/Link_States-640px_2px.png">
-        </picture>
-      </div>
-    </div>
-    <h1 class="page__heading">Typography</h1>
-    <div class="view--style__section">
-      <div class="view--style__full-width">
-        <p class="page__desc--small">Links should be set in title case, with the first letter of each word capitalized. Links should be 3 words or less. Links should follow the Bluemix Typography font stack for sans-serif.</p>
-      </div>
-    </div>
-  </div>
-  <!-- View: Style ends -->
-
+<!-- View: Usage -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
 </div>
+<!-- View: Foundation ends -->
 
-<!-- Item main container ends -->
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> links-usage}}
+</div>
+<!-- View: Usage ends -->
 
-<script>
-  const codeSnippets = document.querySelectorAll('pre');
-  if (codeSnippets) {
-    for (let i = 0; i < codeSnippets.length; i+= 1) {
-      codeSnippets[i].classList.add('line-numbers');
-    }
-  }
-</script>
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> links-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}

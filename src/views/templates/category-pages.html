@@ -3,23 +3,34 @@ fabricator: true
 name: Category Pages
 category: Templates
 ---
-<div class="page__header">
-  <div class="page__info">
-    <p class="page__category">{{category}}</p>
-      <h1 class="page__large-heading">{{name}}</h1>
-  </div>
-</div>
 
-<div class="page__container">
-  <p class="page__main-desc">
-    <span class="highlight">Category Pages</span> exist one level below the main Bluemix console. These areas are owned, built, and designed by category owners in order to provide focused experiences for their target users. Maintain a level of consistency across these experiences, while allowing for the flexibility to address the specific needs of the target users.
-  </p>
-  <h2 class="page__heading">Purpose</h2>
-    <p class="page__desc">The core purpose is to allow end users to Discover platform capabilities, See current assets, and Do productive work. Category pages should ultimately enable users to efficiently achieve productive use. They provide a prescriptive, contextual, streamlined experience focused on user workflows.</p>
-  <h3 class="page__small-heading">Discover</h3>
-    <p class="page__desc">Various types of users such as data scientists and developers may learn about a specific task or capability offered by Bluemix. Thoughtfully expose users to the breadth of our capabilities. Embed information within the experience and present capabilities and tasks intuitively, using industry standard language. </p>
-  <h3 class="page__small-heading">See</h3>
-    <p class="page__desc">Clearly prioritize data so users quickly gain insight. Information is specific and digestible. Users are able to understand how data affects them at a glance and dive deeper, if necessary.  </p>
-  <h3 class="page__small-heading">Do</h3>
-    <p class="page__desc">Frame a contextual experience based on user behavior and intent to enable users to effectively accomplish tasks they set out to do. Reaching productive use is straightforward and dynamic assistance is built in at each step. </p>
+
+{{> page-header}}
+
+<div class="view">
+
+<p class="main">
+  <span class="blue-30">Category Pages</span> exist one level below the main Bluemix console. These areas are owned, built, and designed by category owners in order to provide focused experiences for their target users. Maintain a level of consistency across these experiences, while allowing for the flexibility to address the specific needs of the target users.
+</p>
+
+{{#markdown}}
+
+## Purpose
+
+The core purpose is to allow end users to Discover platform capabilities, See current assets, and Do productive work. Category pages should ultimately enable users to efficiently achieve productive use. They provide a prescriptive, contextual, streamlined experience focused on user workflows.
+
+### Discover
+
+Various types of users such as data scientists and developers may learn about a specific task or capability offered by Bluemix. Thoughtfully expose users to the breadth of our capabilities. Embed information within the experience and present capabilities and tasks intuitively, using industry standard language.
+
+### See
+
+Clearly prioritize data so users quickly gain insight. Information is specific and digestible. Users are able to understand how data affects them at a glance and dive deeper, if necessary.
+
+### Do
+
+Frame a contextual experience based on user behavior and intent to enable users to effectively accomplish tasks they set out to do. Reaching productive use is straightforward and dynamic assistance is built in at each step.
+
+{{/markdown}}
+
 </div>

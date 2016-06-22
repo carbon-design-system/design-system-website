@@ -1,0 +1,53 @@
+// HELPERS: LAYOUT //
+
+// Z-INDEX
+.z-menu {
+  z-index: z('menu');
+}
+
+.z-overlay {
+  z-index: z('overlay');
+}
+
+.z-hidden {
+  z-index: z('hidden');
+}
+
+// WIDTH
+.width-auto {
+  width: auto;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.max-width-40 {
+  max-width: 40rem;
+}
+
+.max-width-45 {
+  max-width: 45rem;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+// DISPLAY
+
+.hidden {
+  display: none;
+}
+
+// MEDIA QUERIES
+
+.sm--width-full {
+  @include breakpoint(bp--xs--major) {
+    width: 100%;
+  }
+}

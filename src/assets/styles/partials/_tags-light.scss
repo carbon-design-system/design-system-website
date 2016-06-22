@@ -1,25 +1,7 @@
-//This tag mixin is a placeholder until we refactor
-//the one in the component library
-@mixin tag-light($background-color, $color) {
-  @include font-size('12');
-  display: inline-flex;
-  align-items: center;
-  font-weight: 200;
-  padding: .835em 1em;
-  height: 1.25em;
-  margin: .1875em .1875em .1875em 0;
-  border-radius: .9375em;
-  background-color: $background-color;
-  color: $color;
-
-  &:first-child {
-    margin-left: .1875em;
-  }
-}
-
 //These tag colors are light UI specific
 //and are limited to this component until
 //further notice.
+
 .tag-light {
   &--ibm {
     @include tag-light(#C1E6FE, #345D7F);

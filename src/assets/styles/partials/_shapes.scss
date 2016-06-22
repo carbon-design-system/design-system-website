@@ -1,0 +1,44 @@
+// POLYGONS //
+
+.polygon--section,
+.polygon--header,
+.polygon--footer {
+  position: absolute;
+}
+
+.polygon--header {
+  right: 0;
+  top: 2.25em;
+  max-width: em(380px);
+  transition: .3s;
+
+  @include breakpoint(bp--md--major) {
+    max-width: em(320px);
+  }
+
+  @include breakpoint(bp--xs--major) {
+    display: none;
+  }
+}
+
+.polygon--section {
+  top: 27.9em;
+  left: 8em;
+  opacity: 1;
+  transition: $transition--slow;
+
+  @include breakpoint(bp--md--major) {
+    opacity: 0;
+    transform: scale(0);
+    transition: $transition--slow;
+  }
+}
+
+.polygon--footer {
+  bottom: 0;
+  right: 0;
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 100%;
+  }
+}

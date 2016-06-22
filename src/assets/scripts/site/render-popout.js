@@ -1,48 +1,43 @@
-'use strict';
-
 export const renderPopout = () => {
-
-  const renderBtn = document.querySelectorAll('.rendered__view-full-size');
+  const renderBtn = [... document.querySelectorAll('.rendered__link')];
   const styleLink = '<link rel="stylesheet" type="text/css" href="http://design-system.stage1.mybluemix.net/assets/styles/main.css">';
   const iconsLink = 'https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg';
 
   const getHTML = (url, callback) => {
+    // Feature detection
+    if (!window.XMLHttpRequest) return;
 
-      // Feature detection
-      if ( !window.XMLHttpRequest ) return;
+    // Create new request
+    const xhr = new XMLHttpRequest();
 
-      // Create new request
-      var xhr = new XMLHttpRequest();
-
-      // Setup callback
-      xhr.onload = function() {
-          if ( callback && typeof( callback ) === 'function' ) {
-              callback( this.responseXML );
-          }
+    // Setup callback
+    xhr.onload = () => {
+      if (callback && typeof(callback) === 'function') {
+        callback(xhr.responseXML);
       }
+    };
 
-      // Get the HTML
-      xhr.open( 'GET', url );
-      xhr.responseType = 'document';
-      xhr.send();
+    // Get the HTML
+    xhr.open('GET', url);
+    xhr.responseType = 'document';
+    xhr.send();
   };
 
 
-  Array.prototype.forEach.call(renderBtn, function(element) {
-    element.addEventListener('click', function(e) {
+  renderBtn.forEach((element) => {
+    element.addEventListener('click', (e) => {
       e.preventDefault();
       const popup = open('', '_blank');
-      let renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
+      const renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
 
       // pulling stylesheet into page head
       popup.document.head.innerHTML += styleLink;
 
       // pulling icon svg into the page DOM
       // then the rendered element content
-      getHTML(iconsLink, function (response) {
-          popup.document.body.innerHTML = '<div class="generatedIcons">' + response.documentElement.outerHTML + '</div>' + '<div class="rendered">' + renderedContent + "</div>";
+      getHTML(iconsLink, (response) => {
+        popup.document.body.innerHTML = `<div class="generatedIcons">${response.documentElement.outerHTML}</div><div class="rendered">${renderedContent}</div>`;
       });
-
     });
-  })
+  });
 };

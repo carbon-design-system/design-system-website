@@ -1,131 +1,127 @@
 ---
-title: Bluemix Design System
+title: IBM Bluemix Design System
 fabricator: true
 ---
 
-<main class="overview">
+<!-- Under Construction Modal - Temporary -->
+<div id="under-construction" class="bx--modal under-construction-modal" tabindex="-1">
+  <div class="bx--modal-inner">
+    <div class="bx--modal-content">
+      <div class="bx--modal__header">
+        <button class="bx--modal__close" data-modal-close>
+          <svg class="bx--modal__close--icon">
+            <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--cancel"></use>
+          </svg>
+        </button>
+        <h2 class="bx--modal-content__heading">Site Under Construction</h2>
+      </div>
+      <p class="bx--modal-content__text">Thanks for visiting the IBM Bluemix Design System website! This site is still under construction. At the moment please refer to the <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Design Kit</a> and <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">Component Library</a> on GitHub for the most accurate designs and code.</p>
+    </div>
+  </div>
+</div>
+<!-- end of Modal -->
 
-  <!-- Under Construction Modal - Temporary -->
-  <div id="under-construction" class="bx--modal under-construction-modal" tabindex="-1">
-    <div class="bx--modal-inner">
-      <div class="bx--modal-content">
-        <div class="bx--modal__header">
-          <button class="bx--modal__close" data-modal-close>
-            <svg class="bx--modal__close--icon">
-              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--cancel"></use>
-            </svg>
-          </button>
-          <h2 class="bx--modal-content__heading">Site Under Construction</h2>
-        </div>
-        <p class="bx--modal-content__text">Thanks for visiting the IBM Bluemix Design System website! This site is still under construction. At the moment please refer to the <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Design Kit</a> and <a class="bx--link--dark" href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">Component Library</a> on GitHub for the most accurate designs and code.</p>
+<section class="overview-header">
+  <div class="z-overlay">
+    <h5 class="bold mb2 uppercase letterspacing">Current Version <a class="blue-90" target="_blank" href="https://github.ibm.com/Bluemix/bluemix-components/releases">{{bower.dependencies.bluemix-components}}</a></h5>
+    <h1 class="pb0">IBM Bluemix<br><span class="bold">Design System</span></h1>
+    <h2 class="max-width-40 pt1 pb2">Thoughtful, detailed guidelines that enable teams to confidently design delightful experiences.</h2>
+    <div class="cta-btns--white">
+      <a class="cta-btns--white__btn" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Get the Design Kit
+        <svg class="btn-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+        </svg>
+      </a>
+      <a class="cta-btns--white__btn" href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">Get the Developer Kit
+        <svg class="btn-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div>
+    <img class="polygon--header" src="./assets/images/bx-polygon.png" />
+  </div>
+</section>
+
+<section class="overview-section">
+  <img class="polygon--section" src="./assets/images/bx-polygon-2.png" />
+  <p class="overview-section__main">The Bluemix Design System provides transparency into the Bluemix Component Library, core visual styles, and interaction patterns. Using Bluemix best practices, we want to enable others to design and build experiences that contribute to our united platform. This set of living guidelines is constantly evolving and growing as we learn from our users, and most importantly, from you.</p>
+</section>
+
+<section class="overview-section">
+  <div class="width-half py3 sm--width-full sm--pt1">
+    <h2>Base Elements</h2>
+    <p>Consider base elements as the deepest level of the Design System. These are very specific UI elements and patterns that make up a larger experience, such as buttons, links, and checkboxes.</p>
+  </div>
+  <div class="width-half py3 align-end justify-center sm--width-full sm--pt1">
+    <img src="./assets/images/baseelements-ph.png" />
+  </div>
+</section>
+
+<section class="overview-section">
+  <div class="width-half py3 sm--width-full">
+    <h2>Components</h2>
+    <p>Certain base elements are combined and reused based on the experience or the context. Components are composed of 1 or more base elements, such as tables, cards, and activity logs.</p>
+  </div>
+  <div class="width-half py3 sm--width-full align-end justify-center sm--width-full sm--pt1">
+    <img src="./assets/images/components-ph.png" />
+  </div>
+</section>
+
+<section class="overview-section">
+  <div class="width-half py3 sm--width-full">
+    <h2>Templates</h2>
+    <p>Templates provide a base structure for specific overviews built within Bluemix. Use these as a starting point and foundation for your design to be built around.</p>
+  </div>
+  <div class="width-half py3 align-end justify-center sm--width-full sm--pt1">
+    <img src="./assets/images/templates-ph.png" />
+  </div>
+</section>
+
+<section class="overview-section">
+  <div>
+    <h4 class="divider-heading">Resources</h4>
+    <div class="info-boxes">
+      <div class="info-box">
+        <img src="./assets/images/resources-icon.png" />
+        <h3>Design Resources</h3>
+        <p class="info-box__desc">The Bluemix Design Kit consists of core visual styles and patterns that were influenced by our users. It contains everything a designer needs to get started building an experience that contributes to our platform.<br></p>
+        <a href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Get the Sketch Files</a>
+        <a href="#">Get the Illustrator file</a>
+      </div>
+      <div class="info-box">
+        <img src="./assets/images/dev-resources-icon.png" />
+        <h3>Development Resources</h3>
+        <p class="info-box__desc">The Bluemix Component Library gives developers (FEDs & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces for Bluemix.<br></p>
+        <a href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">Use the GitHub Repo</a>
+      </div>
+      <div class="info-box">
+        <img src="./assets/images/design-language-icon.png" />
+        <h3>IBM Design Language</h3>
+        <p class="info-box__desc">At IBM Design, we believe the experiences we design should communicate the same brand promise. Bluemix uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and be authentically thoughtful.<br></p>
+        <a href="https://www.ibm.com/design/language/" target="_blank">Learn about the IBM Design Language</a>
       </div>
     </div>
   </div>
-  <!-- end of Modal -->
+</section>
 
-  <section class="overview-header">
-    <div class="overview-header__left-content">
-      <h5 class="overview-header__lib-version">Current Version <a target="_blank" href="https://github.ibm.com/Bluemix/bluemix-components/releases">{{bower.dependencies.bluemix-components}}</a></h5>
-      <h1 class="overview-header__main-heading">IBM Bluemix <br><span class="main-heading--bolder">Design System</span></h1>
-      <p class="overview-header__desc">Thoughtful, detailed guidelines that enable teams to confidently design delightful experiences.</p>
-      <div class="overview-header__download-btns">
-        <a class="download-btns__btn" href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Get the Design Kit
-          <svg class="download-icon">
-            <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
-          </svg>
-        </a>
-        <a class="download-btns__btn" href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">Get the Developer Kit
-          <svg class="download-icon">
-            <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
-          </svg>
-        </a>
+<section class="overview-footer">
+  <div>
+    <h4 class="divider-heading white sm--mt1">Contribute</h4>
+    <h1 class="bold max50">Have some feedback for the design system? <br><span class="blue-30">Great!</span></h1>
+    <div class="info-boxes">
+      <div class="info-box">
+        <h2 class="sm--pt0">Code</h2>
+        <p class="info-box__desc">The Bluemix Component Library is an open-source project, which allows developers to provide direct feedback and be a part of its growth. We are all contributors and maintainers of the source code. We also want to be welcoming and constructive when we are collaborating to grow the work that happens here.</p>
+        <a class="blue-30" href="https://github.ibm.com/Bluemix/bluemix-components">GitHub Repo</a>
+      </div>
+      <div class="info-box">
+        <h2 class="sm--pt0">Design</h2>
+        <p class="info-box__desc">The Bluemix Design Kit is a living, breathing document that evolves and changes as we collaborate with partners and service teams. We welcome all feedback and input in order to produce the best possible experience for our users. If you see an issue, something missing, or have questions, don't hesitate to reach out!</p>
+        <a class="blue-30" href="https://github.ibm.com/Bluemix/design-kit">Get in touch!</a>
       </div>
     </div>
-    <div class="overview-header__right-content">
-      <img src="./assets/images/bx-polygon.png" class="overview-header__polygon" />
-    </div>
-  </section>
-
-  <section class="overview-section">
-    <img src="./assets/images/bx-polygon-2.png" class="overview-section__polygon" />
-    <p class="overview-section__main-desc">The Bluemix Design System provides transparency into the Bluemix Component Library, core visual styles, and interaction patterns. Using Bluemix best practices, we want to enable others to design and build experiences that contribute to our united platform. This set of living guidelines is constantly evolving and growing as we learn from our users, and most importantly, from you.</p>
-  </section>
-
-  <section class="overview-section">
-    <div class="overview-section__text">
-      <h2 class="overview-section__heading">Base Elements</h2>
-      <p class="overview-section__desc">Consider base elements as the deepest level of the Design System. These are very specific UI elements and patterns that make up a larger experience, such as buttons, links, and checkboxes.</p>
-    </div>
-    <div class="overview-section__placeholder">
-      <img src="./assets/images/baseelements-ph.png" />
-    </div>
-  </section>
-
-  <section class="overview-section">
-    <div class="overview-section__text">
-      <h2 class="overview-section__heading">Components</h2>
-      <p class="overview-section__desc">Certain base elements are combined and reused based on the experience or the context. Components are composed of 1 or more base elements, such as tables, cards, and activity logs.</p>
-    </div>
-    <div class="overview-section__placeholder">
-      <img src="./assets/images/components-ph.png" />
-    </div>
-  </section>
-
-  <section class="overview-section">
-    <div class="overview-section__text">
-      <h2 class="overview-section__heading">Templates</h2>
-      <p class="overview-section__desc">Templates provide a base structure for specific overviews built within Bluemix. Use these as a starting point and foundation for your design to be built around.</p>
-    </div>
-    <div class="overview-section__placeholder">
-      <img src="./assets/images/templates-ph.png" />
-    </div>
-  </section>
-
-  <section class="overview-section">
-    <div class="overview-section__resources">
-      <h4 class="overview-section__main-heading">Resources</h4>
-      <div class="resources__info-boxes">
-        <div class="info-box">
-          <img src="./assets/images/resources-icon.png" />
-          <h2 class="info-box__heading">Design Resources</h2>
-          <p class="info-box__desc">The Bluemix Design Kit consists of core visual styles and patterns that were influenced by our users. It contains everything a designer needs to get started building an experience that contributes to our platform.<br></p>
-          <a href="https://github.ibm.com/Bluemix/design-kit" target="_blank" class="bx--link--dark">Get the Sketch Files</a>
-          <a href="#" class="bx--link--dark">Get the Illustrator file</a>
-        </div>
-        <div class="info-box">
-          <img src="./assets/images/dev-resources-icon.png" />
-          <h3 class="info-box__heading">Development Resources</h2>
-          <p class="info-box__desc">The Bluemix Component Library gives developers (FEDs & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces for Bluemix.<br></p>
-          <a href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank" class="bx--link--dark">Use the GitHub Repo</a>
-        </div>
-        <div class="info-box">
-          <img src="./assets/images/design-language-icon.png" />
-          <h3 class="info-box__heading">IBM Design Language</h2>
-          <p class="info-box__desc">At IBM Design, we believe the experiences we design should communicate the same brand promise. Bluemix uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and be authentically thoughtful.<br></p>
-          <a href="https://www.ibm.com/design/language/" target="_blank" class="bx--link--dark">Learn about the IBM Design Language</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="overview-section">
-    <div class="overview-section__contribute">
-      <h4 class="overview-section__main-heading">Contribute</h4>
-      <h1 class="contribute__big-heading">Have some feedback for the design system? <br><span class="contribute__big-heading--blue">Great!</span></h1>
-      <div class="contribute__info-boxes">
-        <div class="info-box">
-          <h1 class="info-box__heading">Code</h1>
-          <p class="info-box__desc">The Bluemix Component Library is an open-source project, which allows developers to provide direct feedback and be a part of its growth. We are all contributors and maintainers of the source code. We also want to be welcoming and constructive when we are collaborating to grow the work that happens here.</p>
-          <a href="https://github.ibm.com/Bluemix/bluemix-components" class="info-box__link">GitHub Repo</a>
-        </div>
-        <div class="info-box">
-          <h1 class="info-box__heading">Design</h1>
-          <p class="info-box__desc">The Bluemix Design Kit is a living, breathing document that evolves and changes as we collaborate with partners and service teams. We welcome all feedback and input in order to produce the best possible experience for our users. If you see an issue, something missing, or have questions, don't hesitate to reach out!</p>
-          <a href="https://github.ibm.com/Bluemix/design-kit" class="info-box__link">Get in touch!</a>
-        </div>
-      </div>
-      <img src="./assets/images/polygon-bottom.png" />
-    </div>
-  </section>
-
-</main>
+    <img class="polygon--footer" src="./assets/images/polygon-bottom.png"/>
+  </div>
+</section>

@@ -1,31 +1,26 @@
-'use strict';
-
-////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////
 // Node Modules
 // -------------
 // Import packages from node_modules needed for the website.
 import 'svgxuse';
 
-////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////
 // Vendor
 // -------------
 // Import third-party scripts that could not be installed with npm.
 // These are not meant to be edited.
 import './vendor/prism';
 
-////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////
 // Bluemix Components
 // -------------
 // Import all production JS (ES2015) files from bluemix-components
 
 import {
-  // Base Elements
-  FileUploader, NumberInput, Table,
-  // Components
-  ContentSwitcher, Dropdown, Loading, Modal, OverflowMenu, Tab,
+  Loading, Modal,
 } from '@console/bluemix-components';
 
-////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////
 // Site
 // -------------
 // Import specific scripts for controlling website behavior
@@ -42,8 +37,7 @@ import { clipboardConfig } from './site/clipboardConfig.js';
 
 // import snippets stuff here
 
-document.addEventListener('DOMContentLoaded', function(e) {
-
+document.addEventListener('DOMContentLoaded', () => {
   [... document.querySelectorAll('[data-loading]')].forEach((element) => {
     // Toggles on and off animations for Loading as a demo but may be misleading for users
     setInterval(() => Loading.components.get(element).toggle(), 3000);
@@ -68,5 +62,4 @@ document.addEventListener('DOMContentLoaded', function(e) {
   filterIcons();
   iconSymbols();
   clipboardConfig();
-
 });

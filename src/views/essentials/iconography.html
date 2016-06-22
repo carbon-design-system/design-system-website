@@ -1,15 +1,16 @@
 ---
 fabricator: true
-title: Iconography
+category: Essentials
+name: Iconography
 ---
-<div class="page__header">
-  <div class="page__info">
-    <p class="page__category">Global</p>
-      <h1 id="{{name}}" class="page__large-heading">{{title}}</h1>
+<section class="page-header">
+  <div class="page-info">
+    <p class="category white">{{category}}</p>
+    <h1>{{capitalize name}}</h1>
   </div>
   <nav data-tabs data-tabs-navigation class="bx--tabs tabs--light" role="navigation">
     <div class="bx--tabs__trigger tabs__trigger--light">
-    <a href="javascript:void(0)" class="bx--tabs__trigger-text tabs__trigger-text--light"></a>
+      <a href="javascript:void(0)" class="bx--tabs__trigger-text tabs__trigger-text--light"></a>
       <svg>
         <use xlink:href="https://new-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow"></use>
       </svg>
@@ -20,19 +21,18 @@ title: Iconography
       <li class="bx--tabs__nav-item nav__item--light" role="presentation"><a class="item__link" href="#contribution">Contribution</a></li>
     </ul>
   </nav>
-</div>
+</section>
 
-<div class="page__container">
-
-  <div id="usage" class="view--typography is-active">
+  <div id="usage" class="view hidden">
     {{> icon-usage}}
   </div>
 
-  <div id="library" class="view--color">
+  <div id="library" class="view hidden">
     {{> icon-library}}
   </div>
 
-  <div id="contribution" class="view--grid">
+  <div id="contribution" class="view hidden">
     {{> icon-contribution}}
   </div>
+
 </div>

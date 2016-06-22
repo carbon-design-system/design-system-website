@@ -58,6 +58,7 @@ pre[class*='language-'] {
   &.url,
   .language-css &.string {
     color: $code--light-blue;
+    background: none;
   }
 
   &.entity {
@@ -65,30 +66,32 @@ pre[class*='language-'] {
   }
 }
 
-%code-snippet {
-  background-color: $color__snippet-bg;
-  padding: 1em;
-  flex-direction: column;
-  justify-content: space-between;
-  max-height: 12em;
-  transition-duration: $transition--slow;
-  display: none;
-}
-
-.element__example .code__html, .element__example .code__js {
+.element__example .code__html,
+.element__example .code__js {
   height: auto;
 }
 
 .element__example {
-  min-width: 100%;
+  max-width: 65rem;
   display: block;
   margin-bottom: 5em;
   margin-top: 1em;
+  color: $color__white !important; // Need this to make sure Bluemix Components isn't being overridden
+  margin: 0 9em;
+  padding: 0 0 7em;
 
-  @media screen and (max-width: $width__screen-size--small) {
+  @include breakpoint(bp--md--major) {
+    margin: 0 4em;
+  }
+
+  @include breakpoint(bp--sm--major) {
+    margin: 0 2em;
+  }
+
+  @include breakpoint(bp--xs--major) {
     width: 100vw;
     position: relative;
-    left: em(-16px);
+    margin: 0;
   }
 
   .example__rendered {
@@ -99,6 +102,7 @@ pre[class*='language-'] {
     padding-bottom: 1em;
     position: relative;
     transition-duration: $transition--base;
+    overflow: hidden;
 
     &.light-ui {
       background: $color__white;
@@ -115,6 +119,8 @@ pre[class*='language-'] {
     display: flex;
     justify-content: center;
     min-width: 200px; // needed for layout reasons
+    flex-direction: column;
+    align-items: center;
 
     &--column {
       @extend .rendered__element;
@@ -123,13 +129,13 @@ pre[class*='language-'] {
     }
   }
 
-  .rendered__view-full-size {
+  .rendered__link {
     position: absolute;
     right: 0;
     bottom: 0;
     color: $color__navy-gray-7;
     font-size: rem(12px);
-    padding: 1.5em;
+    padding: .5em 1.5em;
   }
 
   .btn--theme-switcher {
@@ -147,6 +153,10 @@ pre[class*='language-'] {
   .code__tabs {
     background-color: $color__code-tabs;
     display: flex;
+    list-style: none;
+    margin-left: 0;
+    color: $color__white;
+    padding-bottom: 0;
 
     .tabs__html, .tabs__js {
       padding: 1em 0;
@@ -176,7 +186,14 @@ pre[class*='language-'] {
 
   .code__html,
   .code__js {
-    @extend %code-snippet;
+    background-color: $color__snippet-bg;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 12em;
+    transition-duration: $transition--slow;
+    display: none;
+    position: relative;
 
     @media screen and (max-width: $width__screen-size--small) {
       padding: 1em 0;
@@ -200,7 +217,7 @@ pre[class*='language-'] {
       cursor: pointer;
       padding: .75em;
       right: .75em;
-      top: 4em;
+      top: 1em;
       font-weight: 700;
       font-size: .8rem;
       outline: none;
@@ -221,7 +238,6 @@ pre[class*='language-'] {
 
       .copyFeedback {
         position: absolute;
-        z-index: 1;
         background-color: $color__code-tabs;
         color: $color__navy-gray-8;
         padding: .5em;
@@ -296,5 +312,19 @@ pre[class*='language-'] {
     .line-numbers .line-numbers-rows {
       border-right: none;
     }
+  }
+}
+
+.code-example {
+  height: auto;
+  padding: .75em .75em 0 .5em;
+  background-color: $color__snippet-bg;
+  margin-bottom: 1em;
+
+  code {
+    font-size: .7rem;
+    background: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
   }
 }

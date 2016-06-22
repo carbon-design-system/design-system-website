@@ -1,0 +1,5 @@
+**/gulpfile.js
+**/server.js
+**/examples/*
+dist
+node_modules

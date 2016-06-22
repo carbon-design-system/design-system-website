@@ -1,0 +1,52 @@
+// IMAGE CAPTION STYLE
+.caption {
+  color: $color__navy-gray-7;
+  font-size: rem(14px);
+  font-style: italic;
+  padding: 1em 0;
+}
+
+// HEADER CATEGORY STYLE
+.category {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2em;
+  color: $color__white;
+}
+
+// DIVIDER HEADING STYLE
+.divider-heading {
+  text-transform: uppercase;
+  font-size: rem(12px);
+  font-weight: 600;
+  letter-spacing: em(3px);
+  margin: 4em 0 5em;
+
+  &::after {
+    content: '';
+    display: block;
+    width: auto;
+    margin-left: 10em;
+    border-top: 1px solid $color__border--light;
+    position: relative;
+    top: -.5em;
+  }
+
+  @include breakpoint(bp--sm--major) {
+    margin: 2em 0;
+  }
+}
+
+.smaller {
+  font-size: rem(12px);
+}
+
+// MAIN DESCRIPTION STYLE
+p.main {
+  font-weight: 600;
+  font-size: rem(18px);
+
+  @include breakpoint(bp--sm--major) {
+    font-size: 1rem;
+  }
+}

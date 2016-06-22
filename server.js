@@ -35,7 +35,7 @@ app.get('/essentials', (req, res) => {
 });
 
 app.get('/elements', (req, res) => {
-  res.redirect('buttons.html');
+  res.redirect('/buttons.html');
 });
 
 app.get('/components', (req, res) => {

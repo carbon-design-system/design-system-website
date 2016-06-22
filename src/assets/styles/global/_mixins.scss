@@ -1,0 +1,31 @@
+@mixin text-contrast($n) {
+  $color-brightness: round((red($n) * 299) + (green($n) * 587) + (blue($n) * 114) / 1000);
+  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+
+  @if abs($color-brightness) < ($light-color / 2) {
+    color: $color__white;
+  }
+
+  @else {
+    color: $color__blue-90;
+  }
+}
+
+// This tag mixin is a placeholder until we refactor
+// the one in the component library
+@mixin tag-light($background-color, $color) {
+  @include font-size('12');
+  display: inline-flex;
+  align-items: center;
+  font-weight: 200;
+  padding: .835em 1em;
+  height: 1.25em;
+  margin: .1875em .1875em .1875em 0;
+  border-radius: .9375em;
+  background-color: $background-color;
+  color: $color;
+
+  &:first-child {
+    margin-left: .1875em;
+  }
+}

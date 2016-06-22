@@ -1,28 +1,26 @@
 // Modal styles - Temporary
 
-.overview .bx--modal-inner {
+.under-construction-modal .bx--modal-inner {
   border-top: 6px solid #FDD430;
 }
 
-.overview .bx--modal__header {
+.under-construction-modal .bx--modal__header {
   padding: 1em 3.125em 0;
   margin: -2.5em -3.125em 0;
 }
 
-.overview .bx--modal-content__heading {
+.under-construction-modal .bx--modal-content__heading {
   margin-bottom: 0;
 }
 
-.overview .bx--modal {
+.under-construction-modal .bx--modal {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-//////////
-
+///////////////////
 
 .overview-header {
-  @extend %font-smoothing;
   display: flex;
   background-color: $color__section-bg;
   margin: 0;
@@ -30,134 +28,39 @@
   width: 100%;
   transition: padding $transition--slow;
 
-  @media screen and (max-width: $width__screen-size--medium) {
-    padding: 6em 5em 5em;
+  @include breakpoint(bp--md--major) {
+    padding: 5em 4em;
   }
 
-  @media screen and (max-width: $width__screen-size--small) {
-    padding: 6em 2em 5em;
+  @include breakpoint(bp--sm--major) {
+    padding: 5em 2em;
   }
 
-  .overview-header__left-content {
-    z-index: 3;
-  }
+  @include breakpoint(bp--xs--major) {
+    padding: 5em 1.5em;
 
-  .overview-header__lib-version {
-    text-transform: uppercase;
-    color: $color__blue-90;
-    font-weight: 700;
-    margin-bottom: 2em;
-    letter-spacing: .5px;
-    word-spacing: .125rem;
-
-    a {
-      color: $color__blue-90;
-    }
-  }
-
-  .overview-header__main-heading {
-    font-size: rem(64px);
-    color: $color__white;
-    font-weight: 200;
-    line-height: 1.1;
-    padding: 0;
-
-    .main-heading--bolder {
-      font-weight: 600;
-    }
-
-    @media screen and (max-width: $width__screen-size--small) {
-      font-size: rem(36px);
-    }
-  }
-
-  .overview-header__desc {
-    @extend %type-constrain;
-    line-height: 1.5;
-    color: $color__dark-blue;
-    font-weight: 600;
-    font-size: rem(24px);
-    padding: 2em 0;
-
-    @media screen and (max-width: $width__screen-size--small) {
-      font-size: 1rem;
-      padding: 1.5em 0;
-    }
-  }
-
-  .overview-header__polygon {
-    position: absolute;
-    right: 0;
-    top: 2.25em;
-    max-width: em(380px);
-    transition: .3s;
-
-    @media screen and (max-width: $width__screen-size--medium) {
-      max-width: em(320px);
-    }
-
-    @media screen and (max-width: $width__screen-size--small) {
-      max-width: em(190px);
-    }
-
-    @media screen and (max-width: $width__screen-size--x-small) {
-      display: none;
-    }
-  }
-
-  .overview-header__download-btns {
-    display: flex;
-
-    @media screen and (max-width: $width__screen-size--x-small) {
-      flex-direction: column;
-    }
-  }
-
-  .download-btns__btn {
-    display: flex;
-    align-items: center;
-    padding: 1.25em;
-    border: none;
-    background-color: $color__white;
-    color: $color__dark-blue;
-    font-weight: 600;
-    font-size: .8rem;
-    margin-right: em(35px);
-    text-decoration: none;
-    transition: $transition--base;
-
-    .download-icon {
-      width: em(20px);
-      height: em(20px);
-      transform: rotate(180deg);
-      margin-left: 1em;
-    }
-
-    &:hover {
-      background-color: $color__light-btn--hover;
-    }
-
-    @media screen and (max-width: $width__screen-size--x-small) {
-      width: 100%;
-      margin-top: 1em;
-      justify-content: space-between;
+    h1 {
+      font-size: 2.5rem;
     }
   }
 }
 
 .overview-section {
   @extend %font-smoothing;
-  color: $color__text--dark;
   display: flex;
   padding: 1em 9em;
 
-  @media screen and (max-width: $width__screen-size--medium) {
-    padding: 1em 5em;
+  @include breakpoint(bp--md--major) {
+    padding: 0 4em;
   }
 
-  @media screen and (max-width: $width__screen-size--small) {
-    flex-direction: column;
+  @include breakpoint(bp--sm--major) {
     padding: 0 2em;
+  }
+
+  @include breakpoint(bp--xs--major) {
+    flex-direction: column;
+    padding: 0 1em;
   }
 
   &:nth-child(3) {
@@ -166,16 +69,26 @@
     border-bottom: 1px solid $color__border--light;
   }
 
-  &:nth-child(2n+1) {
-    .overview-section__text {
+  &:nth-child(3n+2) {
+
+    div:first-child {
       order: 2;
+
+      @include breakpoint(bp--xs--major) {
+        order: 1;
+      }
+
+      @include breakpoint(bp--sm--major) {
+        padding-left: 2em;
+      }
     }
 
-    .overview-section__placeholder {
+    div:nth-child(2) {
       padding-right: 7em;
 
-      @media screen and (max-width: $width__screen-size--small) {
+      @include breakpoint(bp--xs--major) {
         padding-right: 0;
+        order: 2;
       }
     }
   }
@@ -184,272 +97,45 @@
     padding: 0;
   }
 
-  &__text, &__placeholder {
-    width: 50%;
-    padding: 3em 0;
-
-    @media screen and (max-width: $width__screen-size--small) {
-      width: 100%;
-      padding: 1em 0;
-    }
-  }
-
-  &__text {
-
-    @media screen and (max-width: $width__screen-size--medium) {
-      padding: 2em 0;
-    }
-  }
-
-  &__placeholder {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 3em;
-
-    @media screen and (max-width: $width__screen-size--small) {
-      order: 2;
-      padding-top: 2em;
-      padding-bottom: 1em;
-    }
-
-    @media screen and (max-width: $width__screen-size--x-small) {
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  &__polygon {
-    position: absolute;
-    top: 27.6em;
-    left: 8em;
-    z-index: 1;
-    opacity: 1;
-    transition: $transition--slow;
-
-    @media screen and (max-width: $width__screen-size--medium) {
-      opacity: 0;
-      transform: scale(0);
-      transition: $transition--slow;
-    }
-  }
-
-  &__heading {
-    font-size: rem(24px);
-    font-weight: 600;
-  }
-
-  &__desc {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  &__main-desc {
-    font-size: 1rem;
+  &__main {
     font-weight: 600;
     line-height: 2;
-    max-width: em(1140px);
     padding: 7em;
-    z-index: 2;
-    color: $color__dark-blue;
+    z-index: z('overlay');
 
-    @media screen and (max-width: $width__screen-size--medium) {
-      padding: 5em 0;
+    @include breakpoint(bp--xs--major) {
+      padding: 2.5em 0;
     }
 
-    @media screen and (max-width: $width__screen-size--small) {
-      padding: 2em 0;
-      line-height: 1.5;
+    @include breakpoint(bp--md--major) {
+      padding: 4em 0;
     }
   }
+}
 
-  &__main-heading {
-    color: $color__dark-blue;
-    text-transform: uppercase;
-    font-size: rem(12px);
-    font-weight: 600;
-    letter-spacing: em(3px);
-    margin: 4em 0 5em;
+.overview-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $color__dark-blue;
+  color: $color__white;
+  margin-top: 5em;
+  padding: 3em 9em 20em;
 
-    &::after {
-      content: '';
-      display: block;
-      width: auto;
-      margin-left: 10em;
-      border-top: 1px solid $color__border--light;
-      position: relative;
-      top: -.5em;
-    }
-
-    @media screen and (max-width: $width__screen-size--small) {
-      margin: 6em 0 0;
-    }
+  @include breakpoint(bp--md--major) {
+    padding: 2em 4em 20em;
   }
 
-  &__resources {
-    .resources__info-boxes {
-      display: flex;
-      flex-direction: row;
-
-      @media screen and (max-width: $width__screen-size--small) {
-        flex-direction: column;
-      }
-    }
-
-    .info-box {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1.5em;
-      flex: 1;
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      @media screen and (max-width: $width__screen-size--small) {
-        padding: 3em 0;
-        justify-content: center;
-        border-bottom: 1px solid $color__border--light;
-
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-
-      &__heading {
-        padding: 0;
-        margin: 0 0 1.5em;
-        font-size: rem(25px);
-        font-weight: 600;
-
-        @media screen and (max-width: $width__screen-size--small) {
-          margin: 0 0 .75em;
-        }
-      }
-
-      &__desc {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 2em;
-      }
-
-      &__link {
-        color: $color__blue-40;
-        font-weight: 600;
-        padding-bottom: .5em;
-
-        &:hover {
-          color: $color__blue-30;
-        }
-      }
-
-      img {
-        margin-bottom: em(40px);
-      }
-    }
+  @include breakpoint(bp--sm--major) {
+    padding: 2em 2em 10em;
   }
 
-  &__contribute {
-    flex-direction: column;
-    background-color: $color__dark-blue;
-    color: $color__white;
-    margin-top: 5em;
-    padding: 3em 9em 20em;
+  @include breakpoint(bp--xs--major) {
+    padding: 2em 1.5em;
+    margin-top: 2em;
 
-    .overview-section__main-heading {
-      color: $color__white;
-
-      @media screen and (max-width: $width__screen-size--small) {
-        margin: 4em 0;
-      }
-    }
-
-    @media screen and (max-width: $width__screen-size--medium) {
-      padding: 0 5em 20em;
-    }
-
-    @media screen and (max-width: $width__screen-size--small) {
-      padding: 0 2em 10em;
-    }
-
-    @media screen and (max-width: $width__screen-size--x-small) {
-      margin-top: 0;
-      padding-top: 0;
-      padding-bottom: 4em;
-    }
-
-    img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 1;
-
-      @media screen and (max-width: $width__screen-size--small) {
-        width: 100%;
-      }
-    }
-
-    .contribute__big-heading {
-      font-size: rem(58px);
-      font-weight: 600;
-      width: 75%;
-      line-height: 1.1;
-
-      &--blue {
-        color: $color__blue-30;
-      }
-
-      @media screen and (max-width: $width__screen-size--small) {
-        font-size: 2.25rem;
-        width: 100%;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-    }
-
-    .contribute__info-boxes {
-      display: flex;
-      padding-top: 3em;
-
-      @media screen and (max-width: $width__screen-size--small) {
-        flex-direction: column;
-        padding-top: 3em;
-      }
-    }
-
-    .info-box {
-      padding-right: 4em;
-
-      &__heading {
-        font-size: rem(46px);
-        font-weight: 200;
-
-        @media screen and (max-width: $width__screen-size--small) {
-          font-size: 2rem;
-        }
-      }
-
-      &__desc {
-        font-size: 1rem;
-        line-height: 1.5;
-        padding-bottom: 1.5em;
-      }
-
-      &__link {
-        color: $color__blue-30;
-        font-weight: 600;
-
-        &:hover {
-          color: $color__blue-20;
-        }
-      }
-
-      @media screen and (max-width: $width__screen-size--small) {
-        padding-right: 0;
-        margin-bottom: 3.5em;
-      }
+    h1 {
+      font-size: 2.5rem;
+      padding-top: 1em;
     }
   }
 }

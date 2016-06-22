@@ -1,7 +1,7 @@
 ---
 fabricator: true
 name: buttons
-category: base elements
+category: elements
 mainDesc: "use text and/or an icon to express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience."
 iterations:
   button--primary:
@@ -24,302 +24,28 @@ iterations:
     title: "Sets of Buttons"
     htmlFile: "base-elements/sets-of-buttons.html"
     desc: "Sets of buttons are used when action required by the user may have more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left."
-
 ---
 
 <!-- Item header -->
 {{> tabsnav}}
 <!-- Item header ends -->
 
-<!-- Item main container -->
-<div class="page__container">
-
-  <!-- View: Foundation -->
-  <div id="foundation" class="view--foundation">
-
-    <p class="page__main-desc">
-      <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
-    </p>
-
-  <h2 class="page__main-heading">Variations</h2>
-
-  <!-- Element Loop -->
-  {{#each iterations as |item|}}
-    <section class="page" id="{{dasherize item.title}}">
-
-      <h2 class="page__heading">{{item.title}}</h2>
-
-      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
-
-  {{#if item.htmlFile}}
-
-  <div class="element__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__element">
-  {{{findFile item.htmlFile}}}
-  </div>
-
-  <input type="text" value="" class="hiddenHTMLSnippet" />
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{{findFile item.htmlFile}}}
-  ```
-
-  <button class="code__copy code__copy--html">
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <span class="copyFeedback">Copied!</span>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  {{#if item.jsFile}}
-  <!-- JS Code -->
-
-  <div class="code__js">
-
-  ```js
-  {{{findFile item.jsFile}}}
-  ```
-
-  <button class="code__copy code__copy--js">
-    <div class="copyFeedback">Copied!</div>
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/if}}
-
-  {{/markdown}}
-
-  {{#if item.jsFile}}
-  <input type="text" class="hiddenJSSnippet" value="{{{findFile item.jsFile}}}"/>
-  {{/if}}
-
-  {{/if}}
-  </section>
-  {{/each}}
-
-  <!-- View: Foundation ends -->
-  </div>
-
-  <!-- View: Usage -->
-  <div id="usage" class="view--usage">
-    <h2 class="page__heading">General</h2>
-    <p class="page__desc">Buttons are used primarily on &ldquo;action items.&rdquo; Some examples are &ldquo;Add, Save, Delete, Sign Up.&rdquo; Do not use buttons as navigational elements; use links instead. A link takes the user to a new page and is not associated with an action. </p>
-
-    <h3 class="page__small-heading">Text</h3>
-    <p class="page__desc">In the UI, buttons and descriptions of buttons use the verb of the actionable step. For example, &ldquo;Delete&rdquo; instead of &ldquo;OK,&rdquo; &ldquo;Yes,&rdquo; or &ldquo;Done.&rdquo;  &ldquo;Save&rdquo; can be used if the action is to finalize the editing of existing information.</p>
-
-    <h3 class="page__small-heading">Icon Usage</h3>
-    <p class="page__desc">
-      <ul class="page__desc--list bx--list--unordered">
-        <li>Use small icons (16px or less) within buttons. </li>
-        <li>Small icons are distinguished by their solid shape and knocked-out details.</li>
-        <li>Icons should always appear to the right of the text.</li>
-        <li>Icons used in buttons must be directly related to the action that the user is taking.</li>
-        <li>Icons must be the same color value as the text within a button.</li>
-      </ul>
-    </p>
-    <h5 class="page__example-heading">Example:</h5>
-    <div class="page__img--small">
-      <img src="/assets/images/button.png" />
-    </div>
-  </div>
-  <!-- View: Usage ends -->
-
-  <!-- View: Style -->
-  <div id="style" class="view--style">
-
-    <h1 class="page__heading">Structure</h1>
-    <div class="view--style__section">
-
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Primary buttons are single-colored, filled buttons with a contrasting color as the text label.</p>
-        <p class="page__desc--small">Secondary buttons have a solid 2px border with no fill. The text and border color on secondary buttons styles should be the same color.</p>
-        <p class="page__desc">
-          <span class="page__desc--bold"><br>
-            Button height: 40px / 2.5em<br>
-            Padding left and right of text: 16px / 1em<br>
-            Font size: 14px / .875 rem<br>
-            Font weight: bold / 700
-          </span>
-        </p>
-
-        <h3 class="page__x-small-heading">Padding</h3>
-        <p class="page__desc--small">A button can not have any element or text within 16 pixels / 1 em of its borders.</p>
-        <p class="page__desc">
-          <span class="page__desc--bold">
-            External Padding: 16px / 1em
-          </span>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Primary_Button_640_2px.png">
-          <img src="/assets/images/Primary_Button_640_2px(1).png" />
-        </picture>
-        <h5 class="page__example-heading">Primary Buttons | units in px / ems</h5>
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Secondary_Button_640_2px.png">
-          <img src="/assets/images/Secondary_Button_640_2px(1).png" />
-        </picture>
-        <h5 class="page__example-heading">Secondary Buttons | units in px / ems</h5>
-      </div>
-    </div>
-
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Groupings</h3>
-        <p class="page__desc--small">In a set of buttons, the primary button style is positioned on the outside of the set. The secondary button is positioned on the inside of the set.</p>
-        <p class="page__desc">
-          <span class="page__desc--bold">
-            Space between buttons: 16px
-          </span>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Groupings_640_2px.png">
-          <img src="/assets/images/Groupings_640_2px(1).png" />
-        </picture>
-        <h5 class="page__example-heading">Button Groupings | units in px / ems</h5>
-      </div>
-    </div>
-
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Button with Icons</h3>
-        <p class="page__desc--small">
-          There must be 16 pixels / 1 em between the text and the icon within the button.
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Button_with_icon_640_2px.png">
-          <img src="/assets/images/Button_with_icon_640_2px(1).png" />
-        </picture>
-        <h5 class="page__example-heading">Button with Icon | units in px / ems</h5>
-      </div>
-    </div>
-
-    <h1 class="page__heading">States</h1>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Primary Style</h3>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Focus:</span>
-          Browser defined
-        </p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Hover:</span>
-          Filled and one shade lighter on the IBM Design Language color scale than normal color. Text stays the same color.
-        </p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Disabled:</span>
-          50% opacity
-        </p>
-        <h3 class="page__x-small-heading">Secondary Style</h3>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Focus:</span>
-          Browser defined
-        </p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Hover:</span>
-           Filled with the same color as the stroke in the normal state. Text should change to a contrast color.
-        </p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Disabled:</span>
-          50% opacity
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Button_States_640_2px(1).png">
-          <img src="/assets/images/Button_States_640_2px.png">
-        </picture>
-      </div>
-    </div>
-
-    <h1 class="page__heading">Typography</h1>
-    <div class="view--style__section">
-      <p class="page__desc--small">
-        Button text should be set in title case, with the first letter of each word capitalized.
-        Button labels should not exceed more than 3 words. Button text should follow the Bluemix Typography font stack for sans-serif.
-        <br>
-        <span class="page__desc--bold"><br>
-          font-size: 14px / .875rem<br>
-          font-weight: bold / 700
-        </span>
-      </p>
-    </div>
-
-  </div>
-  <!-- View: Style ends -->
-
+<!-- View: Usage -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
 </div>
-<!-- Item main container ends -->
+<!-- View: Foundation ends -->
 
-<script>
-  const codeSnippets = document.querySelectorAll('pre');
-  if (codeSnippets) {
-    for (let i = 0; i < codeSnippets.length; i+= 1) {
-      codeSnippets[i].classList.add('line-numbers');
-    }
-  }
-</script>
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> buttons-usage}}
+</div>
+<!-- View: Usage ends -->
+
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> buttons-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}

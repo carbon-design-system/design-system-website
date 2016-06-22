@@ -1,15 +1,20 @@
-<h1 class="page__heading">UI Icons</h1>
-<p class="page__desc">UI Icons are used in the product to present common actions and commands. All icons below are rendered in their native state as 32 pixel svgs. Basic styling should be done within the svg code.</p>
+{{#markdown}}
 
-<div class="bx--search search--light" role="search">
+## UI Icons
+
+UI Icons are used in the product to present common actions and commands. All icons below are rendered in their native state as 32 pixel svgs. Basic styling should be done within the svg code.
+
+{{/markdown}}
+
+<div class="bx--search search--light max-width-45 mt1" role="search">
   <svg class="bx--search__icon--magnifier">
     <use  xlink:href="#common--search"></use>
   </svg>
   <label for="search__input" class="bx--search__label">Search</label>
-  <input type="search" class="bx--search__input icon-search" id="search__input" placeholder="Search Icons">
+  <input type="search" class="bx--search__input icon-search mr2" id="search__input" placeholder="Search Icons">
 </div>
 
-<div class="icon-container">
+<div class="icon-container max-width-45">
   {{#each icons}}
   <div class="icon" data-tags="{{this.name}}">
     <div class="icon__card">

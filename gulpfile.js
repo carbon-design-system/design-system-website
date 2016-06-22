@@ -41,7 +41,7 @@ gulp.task('serve', ['nodemon'], function () {
     logPrefix: 'Bluemix Design System'
   });
 
-  gulp.watch('src/**/*.{html,md,json,yml}').on('change', reload);
+  gulp.watch('src/**/*.{html,md,json,yml}', assemble).on('change', reload);
   gulp.watch('src/**/*.scss', ['styles']);
   gulp.watch('src/assets/**/*.js', ['scripts', reload]);
 });

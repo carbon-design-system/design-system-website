@@ -1,0 +1,26 @@
+//--------------------------------
+// Map: $z-indexes
+//--------------------------------
+
+$z-indexes: (
+  menu     : 3,
+  overlay  : 2,
+  hidden   : - 1
+);
+
+//-------------------------------------
+// @function: z($layer)
+//-------------------------------------
+// usage:
+// .modal {
+//   z-index: z('modal');
+// }
+//-------------------------------------
+
+@function z($layer) {
+  @if not map-has-key($z-indexes, $layer) {
+    @warn 'No layer found for `#{$layer}` in $z-indexes map. Property omitted.';
+  }
+
+  @return map-get($z-indexes, $layer);
+}

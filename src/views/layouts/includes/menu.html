@@ -6,7 +6,7 @@
 
   <a class="menu__header" href="/index.html">IBM Bluemix <br><span class="menu__header--bold">Design System</span></a>
 
-  <ul class="menu__main-nav">
+  <ul class="main-nav">
 
     <!-- Overview -->
     <li class="main-nav__item">
@@ -15,7 +15,7 @@
 
     <!-- Getting Started -->
     <li class="main-nav__item">
-        <a class="item__heading" id="getting-started">Getting Started</a>
+        <a class="item__heading normal" id="getting-started">Getting Started</a>
         <ul class="item__sub-nav">
             {{#each views.getting-started.items}}
             <li class="sub-nav__item">
@@ -55,7 +55,7 @@
         <ul class="item__sub-nav">
             {{#each views.elements.items}}
             <li class="sub-nav__item">
-                <a href="../elements/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../elements/{{@key}}.html" class="item__link normal">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -67,7 +67,7 @@
         <ul class="item__sub-nav">
             {{#each views.components.items}}
             <li class="sub-nav__item">
-                <a href="../components/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../components/{{@key}}.html" class="item__link normal">{{name}}</a>
             </li>
             {{/each}}
         </ul>
@@ -78,32 +78,32 @@
         <a class="item__heading" id="templates">Templates</a>
         <ul class="item__sub-nav">
             <li class="sub-nav__item">
-                <a href="../templates/bluemix-architecture.html" class="item__link">Bluemix Architecture</a>
+                <a href="../templates/bluemix-architecture.html" class="item__link normal">Bluemix Architecture</a>
             </li>
             <li class="sub-nav__item">
-                <a href="../templates/category-pages.html" class="item__link">Category Pages</a>
+                <a href="../templates/category-pages.html" class="item__link normal">Category Pages</a>
             </li>
             <li class="sub-nav__item">
-                <a href="../templates/catalog.html" class="item__link">Catalog</a>
+                <a href="../templates/catalog.html" class="item__link normal">Catalog</a>
             </li>
             <li class="sub-nav__item">
-                <a href="../templates/configuration-pages.html" class="item__link">Configuration Pages</a>
+                <a href="../templates/configuration-pages.html" class="item__link normal">Configuration Pages</a>
             </li>
             <li class="sub-nav__item">
-                <a href="../templates/instance-dashboards.html" class="item__link">Instance Dashboards</a>
+                <a href="../templates/instance-dashboards.html" class="item__link normal">Instance Dashboards</a>
             </li>
         </ul>
     </li>
   </ul>
 
-  <div class="menu__download-btns">
-    <a href="https://github.ibm.com/Bluemix/design-kit" class="bx--btn--secondary" target="_blank">Design Kit
-      <svg class="download-icon">
+  <div class="cta-btns--border">
+    <a href="https://github.ibm.com/Bluemix/design-kit" class="cta-btns--border__btn bx--btn--secondary" target="_blank">Design Kit
+      <svg class="btn-icon">
         <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
       </svg>
     </a>
-    <a href="https://github.ibm.com/Bluemix/bluemix-components" class="bx--btn--secondary" target="_blank">Developer Kit
-      <svg class="download-icon">
+    <a href="https://github.ibm.com/Bluemix/bluemix-components" class="cta-btns--border__btn bx--btn--secondary" target="_blank">Developer Kit
+      <svg class="btn-icon">
         <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
       </svg>
     </a>

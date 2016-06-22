@@ -1,194 +1,200 @@
 ---
 fabricator: true
-title: Typography
+category: Essentials
+name: Typography
 ---
 
-<div class="page__header">
-  <div class="page__info">
-    <p class="page__category">Guidelines</p>
-    <h1 class="page__large-heading">Typography</h1>
+{{> page-header}}
+
+
+  <div class="view">
+    <p class="main">
+      <span class="blue-30">Typography</span> is used to create clear hierarchy throughout the layout. It is the core structure of well designed interfaces. When type scaling is used appropriately it creates intentional flows, user focus, and progressive emphasis.
+    </p>
+
+{{#markdown}}
+
+## Typeface
+
+IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content. The font files for Bluemix can be found at <a href="https://github.ibm.com/Design/fonts/tree/master/fonts" target="_blank">https://github.ibm.com/Design/fonts/tree/master/fonts</a>
+
+
+```css
+  %helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, 	Helvetica, sans-serif; }
+```
+
+## Normalized Major Second Type Scale | 1.125
+
+Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale  will create visual as well as hierarchical consistency throughout the product. To reference the font size, use the mixin and reference the pixel value.
+
+```css
+  @include font-size('18');
+```
+
+<div class="table">
+  <div class="table__header">
+    <p>REM</p>
+    <p>~PX</p>
+    <p>Actual Size</p>
+  </div>
+  <div class="table__row">
+    <p>0.6875 rem</p>
+    <p>11 px</p>
+    <p class="actual-size" style="font-size: .702rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>0.75 rem</p>
+    <p>12 px</p>
+    <p class="actual-size" style="font-size: .79rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>0.875 rem</p>
+    <p>14 px</p>
+    <p class="actual-size" style="font-size: .889rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1 rem</p>
+    <p>16 px</p>
+    <p class="actual-size" style="font-size: 1rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1.125 rem</p>
+    <p>18 px</p>
+    <p class="actual-size" style="font-size: 1.125rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1.25 rem</p>
+    <p>20 px</p>
+    <p class="actual-size" style="font-size: 1.266rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1.4375 rem</p>
+    <p>23 px</p>
+    <p class="actual-size" style="font-size: 1.424rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1.625 rem</p>
+    <p>26 px</p>
+    <p class="actual-size" style="font-size: 1.602rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>1.8125 rem</p>
+    <p>29 px</p>
+    <p class="actual-size" style="font-size: 1.802rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>2 rem</p>
+    <p>32 px</p>
+    <p class="actual-size" style="font-size: 2.027rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>2.25 rem</p>
+    <p>36 px</p>
+    <p class="actual-size" style="font-size: 2.281rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>2.5625 rem</p>
+    <p>41 px</p>
+    <p class="actual-size" style="font-size: 2.566rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>2.875 rem</p>
+    <p>46 px</p>
+    <p class="actual-size" style="font-size: 2.887rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>3.25 rem</p>
+    <p>52 px</p>
+    <p class="actual-size" style="font-size: 3.247rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>3.625 rem</p>
+    <p>58 px</p>
+    <p class="actual-size" style="font-size: 3.653rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>4.125 rem</p>
+    <p>66 px</p>
+    <p class="actual-size" style="font-size: 4.11rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>4.625 rem</p>
+    <p>74 px</p>
+    <p class="actual-size" style="font-size: 4.624rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>5.1875 rem</p>
+    <p>83 px</p>
+    <p class="actual-size" style="font-size: 5.202rem">Good design is good business</p>
+  </div>
+  <div class="table__row">
+    <p>5.875 rem</p>
+    <p>94 px</p>
+    <p class="actual-size" style="font-size: 5.852rem">Good design is good business</p>
   </div>
 </div>
 
-<div class="page__container">
-  <div class="view--typography is-active">
-    <p class="page__main-desc">
-      <span class="highlight">Typography</span> is used to create clear hierarchy throughout the layout. It is the core structure of well designed interfaces. When type scaling is used appropriately it creates intentional flows, user focus, and progressive emphasis.
+<div class="expand-table"><p class="pb0">Show more</p><img class="width-auto" src="../assets/images/icon--down-arrow.svg"></div>
+
+## Font Weights
+
+Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight in conjunction with type size must be carefully balanced. At the same size, bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.
+
+<ul class="wrapped-list flex-column mt2 ml0">
+  <li class="flex-row mb2 align-start space-between sm--flex-column">
+    <p class="bold">Font-weight: 300 / Light<br>
+      <span class="normal">Should only be used at sizes greater than or <br> equal to 1.125em/18px</span>
     </p>
+    <h1 class="light blue-90">Light 300</h1>
+  </li>
+  <li class="flex-row mb2 align-start space-between sm--flex-column">
+    <p class="bold">Font-weight: 400 / Normal</p>
+    <h1 class="normal blue-90">Normal 400</h1>
+  </li>
+  <li class="flex-row mb2 align-start space-between sm--flex-column">
+    <p class="bold">Font-weight: 700 / Bold</p>
+    <h1 class="bold blue-90">Bold 700</h1>
+  </li>
+</ul>
 
-    <h1 class="page__heading">Typeface</h1>
-    <p class="page__desc">IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content. The font files for Bluemix can be found at <a class="bx--link--dark" href="https://github.ibm.com/Design/fonts/tree/master/fonts" target="_blank">https://github.ibm.com/Design/fonts/tree/master/fonts</a></p>
+## Headers
 
-    <pre class="view--typography__code-example"><code class="language-css">%helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, 	Helvetica, sans-serif; }</code></pre>
+Size of headers are determined by layout or template structure. Bluemix has several levels of architecture and areas that require varying sizes of headers. Nevertheless, all headers must be sized from the Major Second type scale with a thoughtfully considered font weight.
 
-    <h1 class="page__heading">Normalized Major Second Type Scale | 1.125</h1>
-    <p class="page__desc">Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale  will create visual as well as hierarchical consistency throughout the product. To reference the font size, use the mixin and reference the pixel value.</p>
+## Body Copy
 
-    <pre class="view--typography__code-example"><code class="language-css">@include font-size('18');</code></pre>
+### Font Size
 
+Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 0.875rem / 14px body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 1rem/16px to enhance readability.
 
-    <div class="view--typography__table">
-      <div class="table__header">
-        <p>REM</p>
-        <p>~PX</p>
-        <p>Actual Size</p>
-      </div>
-      <div class="table__row">
-        <p>0.6875 rem</p>
-        <p>11 px</p>
-        <p class="actual-size" style="font-size: .702rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>0.75 rem</p>
-        <p>12 px</p>
-        <p class="actual-size" style="font-size: .79rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>0.875 rem</p>
-        <p>14 px</p>
-        <p class="actual-size" style="font-size: .889rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1 rem</p>
-        <p>16 px</p>
-        <p class="actual-size" style="font-size: 1rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1.125 rem</p>
-        <p>18 px</p>
-        <p class="actual-size" style="font-size: 1.125rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1.25 rem</p>
-        <p>20 px</p>
-        <p class="actual-size" style="font-size: 1.266rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1.4375 rem</p>
-        <p>23 px</p>
-        <p class="actual-size" style="font-size: 1.424rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1.625 rem</p>
-        <p>26 px</p>
-        <p class="actual-size" style="font-size: 1.602rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>1.8125 rem</p>
-        <p>29 px</p>
-        <p class="actual-size" style="font-size: 1.802rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>2 rem</p>
-        <p>32 px</p>
-        <p class="actual-size" style="font-size: 2.027rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>2.25 rem</p>
-        <p>36 px</p>
-        <p class="actual-size" style="font-size: 2.281rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>2.5625 rem</p>
-        <p>41 px</p>
-        <p class="actual-size" style="font-size: 2.566rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>2.875 rem</p>
-        <p>46 px</p>
-        <p class="actual-size" style="font-size: 2.887rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>3.25 rem</p>
-        <p>52 px</p>
-        <p class="actual-size" style="font-size: 3.247rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>3.625 rem</p>
-        <p>58 px</p>
-        <p class="actual-size" style="font-size: 3.653rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>4.125 rem</p>
-        <p>66 px</p>
-        <p class="actual-size" style="font-size: 4.11rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>4.625 rem</p>
-        <p>74 px</p>
-        <p class="actual-size" style="font-size: 4.624rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>5.1875 rem</p>
-        <p>83 px</p>
-        <p class="actual-size" style="font-size: 5.202rem">Good design is good business</p>
-      </div>
-      <div class="table__row">
-        <p>5.875 rem</p>
-        <p>94 px</p>
-        <p class="actual-size" style="font-size: 5.852rem">Good design is good business</p>
-      </div>
-    </div>
-    <div class="view--typography__show-more"><p>Show more</p> <img src="../assets/images/icon--down-arrow.svg"></div>
+**Standard Console: 0.875rem / 14px**
+**Prolonged reading: 1rem / 16px**
 
-    <h1 class="page__heading">Font weights</h1>
-    <p class="page__desc">Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight in conjunction with type size must be carefully balanced. At the same size, bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.</p>
-    <ul class="view--typography__font-weights">
-      <li>
-        <p>
-          Font-weight: 300 / Light<br>
-          <span>Should only be used at sizes greater than or <br> equal to 1.125em/18px</span>
-        </p>
-        <h1 class="light-example">Light 300</h1>
-      </li>
-      <li>
-        <p>
-          Font-weight: 400 / Normal
-        </p>
-        <h1 class="normal-example">Normal 400</h1>
-      </li>
-      <li>
-        <p>
-          Font-weight: 700 / Bold
-        </p>
-        <h1 class="bold-example">Bold 700</h1>
-      </li>
-    </ul>
+### Line-height
 
-    <h1 class="page__heading">Headers</h1>
-    <p class="page__desc">Size of headers are determined by layout or template structure. Bluemix has several levels of architecture and areas that require varying sizes of headers. Nevertheless, all headers must be sized from the Major Second type scale with a thoughtfully considered font weight.</p>
+Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based off the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule is headings, which need less spacing and therefore have a line-height ratio of 1.25.
 
-    <h1 class="page__heading">Body Copy</h1>
+**Standard line-height: 1.5**
+**Headings line-height: 1.25**
 
-    <h3 class="page__small-heading">Font Size</h3>
-    <p class="page__desc">Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 0.875rem / 14px body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 1rem/16px to enhance readability.</p>
-    <p class="page__desc view--typography__body-copy">
-      Standard Console: 0.875rem / 14px<br>
-      Prolonged reading: 1rem / 16px
-    </p>
+### Line-length
 
-    <h3 class="page__small-heading">Line-height</h3>
-    <p class="page__desc">Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based off the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule is headings, which need less spacing and therefore have a line-height ratio of 1.25.</p>
-    <p class="page__desc view--typography__body-copy">
-      Standard line-height: 1.5<br>
-      Headings line-height: 1.25
-    </p>
+Line-length, traditionally known as measure, is the number of characters in a single line. It also directly contributes to readability and pacing of copy. Lines that are too long degrade eye tracking from line to line, making it difficult to gauge which line to read next. In contrast, lines that are too short make it difficult for a reader to maintain a steady reading rhythm. Short lines also often create disproportionate ragged edges that negatively affect the design.
 
-    <h3 class="page__small-heading">Line-length</h3>
-    <p class="page__desc">Line-length, traditionally known as measure, is the number of characters in a single line. It also directly contributes to readability and pacing of copy. Lines that are too long degrade eye tracking from line to line, making it difficult to gauge which line to read next. In contrast, lines that are too short make it difficult for a reader to maintain a steady reading rhythm. Short lines also often create disproportionate ragged edges that negatively affect the design.</p>
-    <p class="page__desc view--typography__body-copy">
-      Line-length: 52 - 78 characters
-    </p>
+**Line-length: 52 - 78 characters**
 
-    <h1 class="page__heading">Custom Styling</h1>
+## Custom Styling
 
-    <h3 class="page__small-heading">Letter-spacing</h3>
-    <p class="page__desc">Custom letter-spacing is used only on a few special styles. The styles that it can be applied to are headers, bold weights and always to All Caps.</p>
-    <p class="page__desc view--typography__body-copy">
-      Letter-spacing: 0.5px
-    </p>
+### Letter-spacing
 
-    <h3 class="page__small-heading">Font-smoothing</h3>
-    <p class="page__desc">Font-smoothing is only used on bold weights (700). It is never used on thin (200) and light (300) weights.</p>
-  </div>
+Custom letter-spacing is used only on a few special styles. The styles that it can be applied to are headers, bold weights and always to All Caps.
+
+**Letter-spacing: 0.5px**
+
+### Font-smoothing
+
+Font-smoothing is only used on bold weights (700). It is never used on thin (200) and light (300) weights.
+
 </div>
+
+{{/markdown}}

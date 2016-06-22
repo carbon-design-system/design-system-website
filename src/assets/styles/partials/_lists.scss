@@ -1,0 +1,133 @@
+.wrapped-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  max-width: 50rem;
+}
+
+.examples {
+  display: flex;
+  align-items: baseline;
+  padding: 1em 0 2em;
+  margin-bottom: 1em;
+
+  .do-example__img, .dont-example__img {
+    width: 100%;
+    padding-left: 1em;
+  }
+
+  .do-example__img {
+    border-left: 10px solid $color__green-30;
+  }
+
+  .dont-example__img {
+    border-left: 10px solid $color__red-40;
+  }
+
+  .dont-example {
+    margin-left: 5%;
+
+    @media screen and (max-width: $width__screen-size--medium) {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: $width__screen-size--medium) {
+    flex-direction: column;
+  }
+
+  .caption {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: .5em;
+    }
+  }
+}
+
+.grid-examples__keys {
+
+  li {
+    margin-left: .5em;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: .5em;
+      width: 10px;
+      height: 10px;
+    }
+
+    &:nth-child(2) {
+
+      &:after {
+        background-color: $color__text--dark;
+      }
+    }
+
+    &:nth-child(3) {
+
+      &:after {
+        background-color: $color__yellow-30;
+      }
+    }
+
+    &:nth-child(4) {
+
+      &:after {
+        background-color: $color__magenta;
+      }
+    }
+  }
+}
+
+.info-boxes {
+  display: flex;
+  flex-direction: row;
+
+  @include breakpoint(bp--md--major) {
+    flex-direction: column;
+  }
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5em;
+  flex: 1;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  @include breakpoint(bp--md--major) {
+    padding: 3em 0;
+    justify-content: center;
+    border-bottom: 1px solid $color__border--light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  h2 {
+    font-size: rem(46px);
+    font-weight: 200;
+  }
+
+  h3 {
+    font-size: rem(24px);
+    padding: .75em 0;
+  }
+
+  &__desc {
+    margin-bottom: 2em;
+  }
+
+  img {
+    margin-bottom: em(10px);
+  }
+}

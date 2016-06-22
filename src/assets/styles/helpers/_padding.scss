@@ -1,0 +1,68 @@
+// PADDING
+
+.p0 {
+  padding: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.px-half {
+  padding: 0 .5em;
+}
+
+.py15 {
+  padding: 1.5em 0;
+}
+
+@for $i from 1 through 10 {
+
+  .p#{$i} {
+    padding: 1em * $i;
+  }
+
+  .px#{$i} {
+    padding-left: 1em * $i;
+    padding-right: 1em * $i;
+  }
+
+  .py#{$i} {
+    padding-top: 1em * $i;
+    padding-bottom: 1em * $i;
+  }
+
+  .pb#{$i} {
+    padding-bottom: 1em * $i;
+  }
+
+  .pt#{$i} {
+    padding-top: 1em * $i;
+  }
+
+  .pr#{$i} {
+    padding-right: 1em * $i;
+  }
+
+  .pl#{$i} {
+    padding-left: 1em * $i;
+  }
+}
+
+// MEDIA QUERIES
+
+.sm--pt0 {
+  @include breakpoint(bp--xs--major) {
+    padding-top: 0;
+  }
+}
+
+.sm--pt1 {
+  @include breakpoint(bp--xs--major) {
+    padding-top: 1em;
+  }
+}

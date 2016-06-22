@@ -1,0 +1,29 @@
+// BACKGROUND COLOR
+.bg-navy-gray-1 {
+  background-color: $color__navy-gray-1;
+}
+
+.bg-navy-gray-3 {
+  background-color: $color__navy-gray-3;
+}
+
+.bg-blue-90 {
+  background-color: $color__blue-90;
+}
+
+// BORDER
+.border {
+  border: 1px solid;
+}
+
+.border-top {
+  border-top: 1px solid;
+}
+
+.border-color--navy-gray-9 {
+  border: 1px solid $color__navy-gray-9;
+}
+
+.border-top-color--navy-gray-9 {
+  border-top: 1px solid $color__navy-gray-8;
+}

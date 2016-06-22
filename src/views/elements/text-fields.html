@@ -1,265 +1,41 @@
 ---
 fabricator: true
 name: text fields
-category: base elements
+category: elements
 mainDesc: "allow the user to interact with and input data. Use when the application requires long-form content from the user."
 iterations:
   text-field:
     title: "Text Field"
     htmlFile: "base-elements/text.html"
     desc: "Single line text fields are used when the input anticipated by the user is a single line of text as opposed to a paragraph."
+    needWrap: "true"
   text-area:
     title: "Text Area"
     htmlFile: "base-elements/textarea.html"
     desc: "A text area should be used when you anticipate the user to input more than 1 sentence."
+    needWrap: "true"
 ---
 
 <!-- Item header -->
 {{> tabsnav}}
 <!-- Item header ends -->
 
-<!-- Item main container -->
-<div class="page__container">
-
-  <!-- View: Foundation -->
-  <div id="foundation" class="view--foundation">
-
-    <p class="page__main-desc">
-      <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
-    </p>
-
-  <h2 class="page__main-heading">Variations</h2>
-
-  <!-- Element Loop -->
-  {{#each iterations as |item|}}
-    <section class="page" id="{{dasherize item.title}}">
-
-      <h2 class="page__heading">{{item.title}}</h2>
-
-      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
-
-  {{#if item.htmlFile}}
-
-  <div class="element__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__element--column">
-  {{{findFile item.htmlFile}}}
-  </div>
-  <input type="text" value="" class="hiddenHTMLSnippet" />
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{{findFile item.htmlFile}}}
-  ```
-
-  <button class="code__copy code__copy--html">
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <span class="copyFeedback">Copied!</span>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  {{#if item.jsFile}}
-  <!-- JS Code -->
-
-  <div class="code__js">
-
-  ```js
-  {{{findFile item.jsFile}}}
-  ```
-
-  <button class="code__copy code__copy--js">
-    <div class="copyFeedback">Copied!</div>
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/if}}
-
-  {{/markdown}}
-
-  {{#if item.jsFile}}
-  <input type="text" class="hiddenJSSnippet" value="{{{findFile item.jsFile}}}"/>
-  {{/if}}
-
-  {{/if}}
-  </section>
-  {{/each}}
-
-  <!-- View: Foundation ends -->
-  </div>
-
-  <!-- View: Usage -->
-  <div id="usage" class="view--usage">
-    <h3 class="page__small-heading">Labels</h3>
-    <p class="page__desc">Effective form labeling helps users understand what information to put into the text field.<br><br> As a space-saving method, often placeholder/hint text is used as a label. This is not best practice, since the interaction of the label disappearing can cause issues for people with cognitive issues or who use a screen magnifier. It also increases cognitive load for all users who would have to remember the purpose of the field after they filled it in with text.</p>
-    <p class="page__desc">
-      <ul class="page__desc--list bx--list--unordered">
-        <li>Label must be visible when the field gets focus</li>
-        <li>The label must be announced to the screen reader on focus</li>
-        <li>Ensure helper text that appears under a field is read when the assistive technology user stops at the field using aria</li>
-      </ul>
-  </p>
-
-    <h3 class="page__small-heading">Placeholder text</h3>
-    <p class="page__desc">Placeholder text is used to complement a field and provide additional assistance to the user. It is helpful to provide examples of the data format required. Placeholder text should dissapear once the user has inputted data into the text field.</p>
-    <h5 class="page__example-heading">Example:</h5>
-    <div class="page__img--small">
-      <img src="/assets/images/text-fields.png"/>
-    </div>
-
-    <h3 class="page__small-heading">Validation</h3>
-    <p class="page__desc">Real time validation helps to streamline the process and keep data clean when the user is filling out data. Including helper or error text before, during, or after a user interacts with a text field can aid the user in making correct decisions.</p>
-    <h5 class="page__example-heading">Example:</h5>
-    <div class="page__img--small">
-      <img src="/assets/images/text-fields-validation.png"/>
-    </div>
-
-    <h2 class="page__heading">Mobile</h2>
-    <p class="page__desc"> Text fields on mobile should typically be stacked vertically, with labels and or hints above each field.</p>
-    <h3 class="page__small-heading">Keyboard</h3>
-      <p class="page__desc">
-      <ul class="page__desc--list bx--list--unordered">
-        <li>When the user touches an input field, a cursor is displayed and the keyboard is shown</li>
-        <li>Provide the keyboard that’s relevant to the data they are entering</li>
-      </ul>
-    </p>
-  </div>
-  <!-- View: Usage ends -->
-
-  <!-- View: Style -->
-  <div id="style" class="view--style">
-    <h1 class="page__heading">Structure</h1>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Text fields are one color, filled at 10% opacity. The width of a text field should appropriately fit the design and layout of the content.</p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Select Box Background Color: rgb (255,255,255) at 10% opacity</span>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Text_Field_2px_640.png">
-          <img src="/assets/images/Text_Field_2px_640(1).png">
-        </picture>
-        <h5 class="page__example-heading">Text Field Basics | units in px / em</h5>
-      </div>
-    </div>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">States</h3>
-        <ul class="page__desc--list bx--list--unordered">
-          <li>Default Non-Selected State: Browser Defined</li>
-          <li>Hover: 1px blue outline (rgb 90, 170, 250)</li>
-          <li>Form Validation: 2px bottom border (rgb 255, 80, 80)</li>
-          <li>Help: Tool tip should be left aligned with the text field box and underlined to indicate a link</li>
-          <li>Disabled: 50% opacity</li>
-        </ul>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Hover Border weight: 1px</span><br>
-          <span class="page__desc--bold">Hover Border color: rgb (90, 170, 250)</span><br>
-          <span class="page__desc--bold">Form Validation Bottom Border weight: 2px</span><br>
-          <span class="page__desc--bold">Form Validation Bottom Border color: rgb (255, 80, 80)</span>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Text_Field_States_2px_640.png">
-          <img src="/assets/images/Text_Field_States_2px_640(1).png">
-        </picture>
-        <h5 class="page__example-heading">Text Field States</h5>
-      </div>
-    </div>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Groupings</h3>
-        <p class="page__desc--small">Text fields can be grouped horizontally and vertically for tablet and desktop views. Text fields cannot be grouped horizontally for mobile views.</p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Padding between vertical groupings: 32px / 2em</span><br>
-          <span class="page__desc--bold">Padding between horizontal groupings: 16px / 2em</span><br>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Text_Field_Groupings_2px_640.png">
-          <img src="/assets/images/Text_Field_Groupings_2px_640(1).png">
-        </picture>
-        <h5 class="page__example-heading">Text Field Grouping Orientations</h5>
-      </div>
-    </div>
-    <h1 class="page__heading">Typography</h1>
-    <div class="view--style__section">
-      <div class="view--style__full-width">
-        <p class="page__desc--small">Text field labels should be set in title case, with the first letter of every word capitalized. Text labels should be 3 words or less. Text field text should be set in sentence case with only the first letter of the first word capitalized. Text fields text should follow the Bluemix Typography font stack for sans-serif.</p>
-      </div>
-    </div>
-  </div>
-  <!-- View: Style ends -->
-
+<!-- View: Usage -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
 </div>
+<!-- View: Foundation ends -->
 
-<!-- Item main container ends -->
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> text-fields-usage}}
+</div>
+<!-- View: Usage ends -->
 
-<script>
-  const codeSnippets = document.querySelectorAll('pre');
-  if (codeSnippets) {
-    for (let i = 0; i < codeSnippets.length; i+= 1) {
-      codeSnippets[i].classList.add('line-numbers');
-    }
-  }
-</script>
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> text-fields-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}

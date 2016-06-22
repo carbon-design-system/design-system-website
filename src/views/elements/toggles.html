@@ -1,7 +1,7 @@
 ---
 fabricator: true
 name: toggles
-category: base elements
+category: elements
 mainDesc: "are controls that are used to quickly switch between two possible states. "
 iterations:
   toggle:
@@ -14,215 +14,22 @@ iterations:
 {{> tabsnav}}
 <!-- Item header ends -->
 
-<!-- Item main container -->
-<div class="page__container">
-
-  <!-- View: Foundation -->
-  <div id="foundation" class="view--foundation">
-
-    <p class="page__main-desc">
-      <span class="highlight">{{capitalize name}}</span> {{mainDesc}}
-    </p>
-
-  <h2 class="page__main-heading">Foundation</h2>
-
-  <!-- Element Loop -->
-  {{#each iterations as |item|}}
-    <section class="page" id="{{dasherize item.title}}">
-
-      <h2 class="page__heading">{{item.title}}</h2>
-
-      <p class="page__desc">{{#if item.desc}}{{item.desc}}{{/if}}</p>
-
-  {{#if item.htmlFile}}
-
-  <div class="element__example">
-
-  <div class="example__rendered">
-
-  <div class="rendered__element">
-  {{{findFile item.htmlFile}}}
-  </div>
-  <input type="text" value="" class="hiddenHTMLSnippet" />
-
-  {{#markdown}}
-
-  <a class="rendered__view-full-size" href="#">View full render</a>
-
-  <!-- <button class="btn--theme-switcher">Light Theme</button> -->
-
-  </div>
-
-  <div class="example__code">
-
-  <ul class="code__tabs">
-    <li class="tabs__html is-selected">HTML</li>
-    {{#if item.jsFile}}<li class="tabs__js">JS</li>{{/if}}
-  </ul>
-
-  <!-- HTML Code -->
-  <div class="code__html is-active">
-
-  ```markup
-  {{{findFile item.htmlFile}}}
-  ```
-
-  <button class="code__copy code__copy--html">
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <span class="copyFeedback">Copied!</span>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  {{#if item.jsFile}}
-  <!-- JS Code -->
-
-  <div class="code__js">
-
-  ```js
-  {{{findFile item.jsFile}}}
-  ```
-
-  <button class="code__copy code__copy--js">
-    <div class="copyFeedback">Copied!</div>
-    Copy
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg class="copy-icon" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard-1" transform="translate(-969.000000, -1535.000000)" fill="#2D3F49">
-          <g id="Group-3-Copy-9" transform="translate(919.000000, 1523.000000)">
-            <g id="code_32" transform="translate(50.000000, 12.000000)">
-                <path d="M3.86084806,7.99360578e-15 L-4.4408921e-15,4 L3.86084806,8 L5.33333333,6.47423793 L2.94601191,4 L5.33333333,1.52576207 L3.86084806,7.99360578e-15 Z" id="Shape"></path>
-                <path d="M12.1391519,7.99360578e-15 L10.6666667,1.52576207 L13.0539881,4 L10.6666667,6.47423793 L12.1391519,8 L16,4 L12.1391519,7.99360578e-15 Z" id="Shape"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-  <button class="code__show-full">Show full code <img src="../assets/images/icon--down-arrow.svg" /></button>
-
-  </div>
-
-  <!-- End of Code Snippets -->
-
-  </div>
-
-  {{/if}}
-
-  {{/markdown}}
-
-  {{#if item.jsFile}}
-  <input type="text" class="hiddenJSSnippet" value="{{{findFile item.jsFile}}}"/>
-  {{/if}}
-
-  {{/if}}
-  </section>
-  {{/each}}
-
-  <!-- View: Foundation ends -->
-  </div>
-
-  <!-- View: Usage -->
-  <div id="usage" class="view--usage">
-    <h1 class="page__heading">General</h1>
-    <p class="page__desc">
-      Toggles should be used for binary actions that occur immediately after the user &ldquo;flips&rdquo; the toggle switch. They are commonly used for &ldquo;On/Off&rdquo; situations.</p>
-      <h5 class="page__example-heading">Example</h5>
-      <div class="page__img--small">
-        <img src="/assets/images/toggles.png" />
-      </div>
-    <h3 class="page__small-heading">Titles</h3>
-    <p class="page__desc">
-      Titles can be used to accompany Toggles to provide further clarification as to what action the toggle will perform. </p>
-    <h3 class="page__small-heading">Labels</h3>
-    <p class="page__desc">
-      Use a label to accompany a toggle so the user is aware of the action that will occur. Labels should be 3 words or less, and appear on both sides of the toggle. </p>
-    <h3 class="page__small-heading">Language</h3>
-    <p class="page__desc">
-      Labels should be adjectives, which describe the state of the object affected, rather than a verb. Verbs describe an action, in which case the user does not know whether the action has taken place or is yet to take place.</p>
-
-
-    <h1 class="page__heading">Example:</h1>
-    <div class="page__img--small">
-      <img src="/assets/images/toggle-ui.png" />
-    </div>
-
-  </div>
-  <!-- View: Usage ends -->
-
-  <!-- View: Style -->
-  <div id="style" class="view--style">
-    <h1 class="page__heading">Structure</h1>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Basics</h3>
-        <p class="page__desc--small">Toggles have two states: action on and action off. When an action state is on, the toggle button should be solid and on the right end of the toggle bar. <br><br>When an action state is off, the button should have a 2px border with no fill and be on the left end of the toggle bar.</p>
-        <p class="page__desc--small">The font for the unactive state should be lighter than the active state.</p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">Toggle Button height & width: 24px / 2.5em</span><br>
-          <span class="page__desc--bold">Button Border: 2 px / .125 em</span><br>
-          <span class="page__desc--bold">Font size: 14px / .875 em</span><br>
-          <span class="page__desc--bold">Font weight: normal / 400</span><br>
-        </p>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Toggle_640_2px.png">
-          <img src="/assets/images/Toggle_640_2px(1).png">
-        </picture>
-        <h5 class="page__example-heading">Toggle | units in px / em</h5>
-      </div>
-    </div>
-    <div class="view--style__section">
-      <div class="view--style__left-column">
-        <h3 class="page__x-small-heading">Padding</h3>
-        <p class="page__desc--small">Toggles can not have any element or text within 16 pixels / 1em of its borders.</p>
-        <p class="page__desc--small">
-          <span class="page__desc--bold">External Padding: 16px</span><br>
-      </div>
-      <div class="view--style__right-column">
-        <picture>
-          <source media="(max-width: 550px)" srcset="/assets/images/Toggle_With_Padding_640_2px.png">
-          <img src="/assets/images/Toggle_With_Padding_640_2px(1).png">
-        </picture>
-        <h5 class="page__example-heading">Toggle Padding | units in px / em</h5>
-      </div>
-    </div>
-    <div class="view--style__section">
-      <div class="view--style__full-width">
-        <h3 class="page__x-small-heading">Typography</h3>
-        <p class="page__desc--small">Toggle text should be set in title case, with the first letter of each word capitalized. Toggle labels should be 3 words or less. Toggle text should follow the Bluemix Typography font stack for sans-serif.</p>
-      </div>
-    </div>
-  </div>
-  <!-- View: Style ends -->
-
+<!-- View: Usage -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
 </div>
+<!-- View: Foundation ends -->
 
-<!-- Item main container ends -->
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> toggles-usage}}
+</div>
+<!-- View: Usage ends -->
 
-<script>
-  const codeSnippets = document.querySelectorAll('pre');
-  if (codeSnippets) {
-    for (let i = 0; i < codeSnippets.length; i+= 1) {
-      codeSnippets[i].classList.add('line-numbers');
-    }
-  }
-</script>
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> toggles-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}

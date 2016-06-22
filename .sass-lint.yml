@@ -36,8 +36,6 @@ rules:
   # Not Allowed
   no-color-keywords: 2
   no-misspelled-properties: 2
-  no-ids: 2
-  no-important: 2
   no-empty-rulesets: 2
   no-duplicate-properties: 2
   # Units

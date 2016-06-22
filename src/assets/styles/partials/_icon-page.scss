@@ -25,13 +25,13 @@
 .icon-container {
   display: flex;
   flex-flow: row wrap;
-  // justify-content: space-between;
 }
 
 .icon {
-  width: 10rem;
-  margin: 0 1rem;
+  flex: 1 1 10rem;
+  max-width: 10rem;
   height: 250px;
+  margin-right: 1rem;
 
   h5 {
     @include letter-spacing;
@@ -47,7 +47,6 @@
 .icon__card {
   background: $color__snippet-bg;
   height: 10rem;
-  width: 10rem;
   padding-top: 4rem;
   text-align: center;
   position: relative;
@@ -66,7 +65,10 @@
 
 .icon__actions {
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   height: 100%;
@@ -79,17 +81,12 @@
 .icon__button {
   @include btn--secondary($hover-bg: $color__blue-90, $text: $color__blue-90);
   display: block;
-  margin-top: rem(14px);
-  margin-left: 1.5rem;
   min-width: rem(112px);
+  margin: .2rem 0;
 
   a {
     text-decoration: none;
     color: $color__blue-90;
-  }
-
-  &:first-child {
-    margin-top: rem(32px);
   }
 
   &:hover {

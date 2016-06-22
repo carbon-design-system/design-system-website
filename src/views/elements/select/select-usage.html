@@ -1,0 +1,50 @@
+{{#markdown}}
+
+### Labels
+Labels are essential to usabililty of forms. They provide guidance to the user in reference to what data they should input. Do not place a label inside a select element. If further clarification is needed, use placeholder text.
+
+### Validation
+Real time validation helps to streamline the process and keep data clean when the user is filling out data. Including helper or error text before, during, or after a user interacts with a form can aid the user in making correct decisions.
+
+<p class="caption">Example:</p>
+<div>
+  <img src="/assets/images/select-validation.png"/>
+</div>
+
+### Order
+The order of the select list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.
+
+### Styling select dropdowns
+It is strongly recommended not to style `select` dropdowns due to accessibility purposes.
+One of the <a href="http://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is &ldquo;Ensuring keyboard control for all functionality.&rdquo; CSS alternatives to <code>select</code> elements to not meet this requirement.
+You can see examples below of how a browser-specific <code>select</code> element renders differently.
+
+<p class="caption">Chrome:</p>
+<div>
+<img src="/assets/images/select-example-chrome.png" />
+</div>
+
+<p class="caption">Firefox:</p>
+<div>
+<img src="/assets/images/select-example-firefox.png" />
+</div>
+
+<p class="caption">Safari:</p>
+<div>
+<img src="/assets/images/select-example-safari.png" />
+</div>
+
+### Accessibility
+The default <code>select</code> element is completely usable either with a mouse or a keyboard, following this process:
+- Mouse: move your cursor over the <code>select</code> element
+Keyboard: use the tab key to focus the <code>select</code> element
+- Mouse: click on the <code>select</code> element
+Keyboard: press enter
+- Mouse: move your cursor over the desired option
+Keyboard: use the top and bottom arrow keys to pick an option
+- Mouse: click on the desired option
+Keyboard: press enter
+
+While you can make a CSS dropdown easily usable by a mouse, making it usable with keyboard navigation is complex.
+
+{{/markdown}}
