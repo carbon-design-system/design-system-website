@@ -1,0 +1,11 @@
+{
+  "npm": "node_modules/@console/bluemix-components",
+  "src": {
+    "images": "src/assets/images/**/*.*",
+    "fonts": "src/assets/fonts/*.{woff,woff2}",
+    "scripts": "src/assets/scripts/*.js",
+    "styles": "src/assets/styles/main.scss",
+    "views": "src/views/*.html"
+  },
+  "dest": "dist"
+}

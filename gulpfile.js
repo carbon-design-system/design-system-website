@@ -1,246 +1,36 @@
-'use strict';
+/*----------------------
+  Require
+------------------------*/
 
-///////////////////////////////
-// MODULES                   //
-///////////////////////////////
-const assemble = require('fabricator-assemble');
+// Plugins
 const browserSync = require('browser-sync').create();
-const csso = require('gulp-csso');
-const del = require('del');
 const gulp = require('gulp');
-const gutil = require('gulp-util');
-const gulpif = require('gulp-if');
-const imagemin = require('gulp-imagemin');
-const prefix = require('gulp-autoprefixer');
-const rename = require('gulp-rename');
-const sass = require('gulp-sass');
-const webpack = require('webpack');
 const merge = require('merge-stream');
-const path = require('path');
-const fs = require('fs');
-const runSequence = require('run-sequence');
-const parseString = require('xml2js').parseString;
 
-///////////////////////////////
-// CONFIGURATION             //
-///////////////////////////////
+// Tasks
+const assemble = require('./gulp-tasks/assemble');
+const copy = require('./gulp-tasks/copy');
+const icons = require('./gulp-tasks/icons');
+const scripts = require('./gulp-tasks/scripts');
+const nodemon = require('./gulp-tasks/nodemon');
+const styles = require('./gulp-tasks/styles');
 
-// Set env with --env=$env flag
-// like this: gulp serve --env=dev
-// Source: http://ypereirareis.github.io/blog/2015/10/13/gulp-gulpfile-environment-variable/
-const env = gutil.env.env || undefined;
+/*----------------------
+  Tasks
+------------------------*/
 
-const config = {
-  npm: 'node_modules/@console/bluemix-components',
-  src: {
-    images: 'src/assets/images/**/*.*',
-    fonts: 'src/assets/fonts/*.{woff,woff2}',
-    scripts: 'src/assets/scripts/*.js',
-    styles: 'src/assets/styles/main.scss',
-    views: 'src/views/*.html'
-  },
-  dest: 'dist'
-};
-
-///////////////////////////////
-// CLEAN                     //
-///////////////////////////////
-
-gulp.task('clean', function () {
-  return del(['dist', 'src/data/icons.json']);
+gulp.task('copy', copy);
+gulp.task('icons', icons);
+gulp.task('scripts', scripts);
+gulp.task('styles', () => {
+  styles(browserSync);
 });
 
+gulp.task('nodemon', nodemon);
 
-///////////////////////////////
-// COPY                      //
-///////////////////////////////
+gulp.task('build', ['styles', 'scripts', 'icons'], assemble);
 
-function copy(glob, dest) {
-  return gulp.src(glob)
-    .pipe(rename({ dirname: '' }))
-    .pipe(gulp.dest(dest));
-}
-
-gulp.task('copy', function() {
-  // Copy HTML for base-elements and components into src/materials for use as
-  // live code examples and snippets
-  const materials = 'src/materials';
-  const streams = [];
-  streams.push(copy(`${config.npm}/html/base-elements/**/*.html`, `${materials}/base-elements`));
-  streams.push(copy(`${config.npm}/html/components/**/*.html`, `${materials}/components`));
-  streams.push(copy(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
-  streams.push(copy(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
-  // Copy package.json to /data so that fabricator can access the version of Bluemix components being used
-  streams.push(copy(`package.json`, `src/data`));
-  // streams.push(copy(`${config.npm}/consumables/scss/global/colors/*.json`, `src/data`));
-
-  // Copy font files from src to dist
-  streams.push(copy(config.src.fonts, `${config.dest}/assets/fonts`));
-
-  // Copy images from src to dist
-  streams.push(copy(config.src.images, `${config.dest}/assets/images`));
-  return merge(streams);
-});
-
-///////////////////////////////
-// STYLES                    //
-///////////////////////////////
-
-gulp.task('styles', function () {
-  return gulp.src(config.src.styles)
-    .pipe(sass({
-      errLogToConsole: true
-    }))
-    .pipe(prefix({
-      browsers: ['> 1%', 'last 2 versions']
-    }))
-    .pipe(gulpif(env !== 'dev', csso()))
-    .pipe(rename('main.css'))
-    .pipe(gulp.dest(`${config.dest}/assets/styles`))
-    .pipe(gulpif(env === 'dev', browserSync.stream()));
-});
-
-
-///////////////////////////////
-// SCRIPTS                   //
-///////////////////////////////
-
-gulp.task('scripts', function (cb) {
-  webpack({
-    devtool: 'source-maps',
-    entry: './src/assets/scripts/main.js',
-    output: {
-      path: `${config.dest}/assets/scripts`,
-      filename: 'bundle.js'
-    },
-    module: {
-      loaders: [
-        {
-          test: /\.js$/,
-          loader: 'babel-loader',
-          query: {
-            presets: ['es2015']
-          }
-        }
-      ]
-    }
-  }, function (err, stats) {
-    if (err) throw new gutil.PluginError('webpack', err);
-    gutil.log('[webpack]', stats.toString({
-      progress: true,
-      colors: true
-    }));
-    cb();
-  });
-});
-
-///////////////////////////////
-// ICONS                     //
-///////////////////////////////
-
-gulp.task('icons', function() {
-
-  /*
-    iconJSON()
-    * Converts XML to JSON
-    * Creates new JSON Array of icon objects
-    * Writes new JSON Array to icons.json file.
-  */
-  const iconJSON = () => {
-    // Read XML from sprite.svg
-    const xml = fs.readFileSync('bower_components/bluemix-icons/sprite.svg', { 'encoding': 'utf8' });
-
-    // parsed - Use xml2js to convert XML to JSON
-    const parsed = parseString(xml, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      // iconMeta - returns new JSON Array of icon Objects
-      const iconMeta = (result.svg.symbol).map(symbol => {
-
-        // Split `id` key into an Array - [{{tags}}, '--', {{name}}]
-        const splitId = symbol.$.id.split('--')
-
-        // New values for an icon object
-        const id = symbol.$.id;
-        const tags = splitId[0];
-        const name = splitId[1];
-
-        // For each "symbol", create new Objects with these keys/values
-        return {
-          id,
-          name,
-          tags
-        }
-      });
-
-      // Stringify iconMeta's return value to JSON for use in template
-      const iconString = JSON.stringify(iconMeta);
-
-      // Write iconString to icons.json file
-      fs.writeFile('./src/data/icons.json', iconString);
-    });
-  }
-
-  iconJSON();
-});
-
-
-///////////////////////////////
-// ASSEMBLE                  //
-///////////////////////////////
-
-gulp.task('assemble', function() {
-
-  const options = {
-    layout: 'default',
-    layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*'],
-    views: ['src/views/**/*', '!src/views/+(layouts)/**'],
-    data: 'src/data/*.json',
-    materials: 'src/materials/**/*',
-    docs: 'src/docs/**/*.md',
-    keys: {
-      materials: 'materials',
-      views: 'views',
-      docs: 'docs'
-    },
-    helpers: {
-      capitalize: function() {
-        return this.name.charAt(0).toUpperCase() + this.name.slice(1);
-      },
-      dasherize: function(str) {
-        return str.toLowerCase().trim().replace(/[-_\s]+/g, '-');
-      },
-      markdown: require('helper-markdown'),
-      decode: function (val) {
-        return decodeURIComponent(val);
-      },
-      raw: function (options) {
-        return options.fn();
-      },
-      findFile: function(fileName) {
-        return fs.readFileSync(`src/materials/${fileName}`, { 'encoding': 'utf8' });
-      }
-    }
-  };
-
-  return assemble(options);
-});
-
-
-///////////////////////////////
-// BUILD                     //
-///////////////////////////////
-
-gulp.task('build', runSequence(['styles', 'scripts', 'icons'], 'assemble'));
-
-///////////////////////////////
-// SERVE                     //
-///////////////////////////////
-
-gulp.task('serve', function () {
+gulp.task('serve', ['nodemon'], function () {
 
   const reload = browserSync.reload;
 
@@ -251,7 +41,7 @@ gulp.task('serve', function () {
     logPrefix: 'Bluemix Design System'
   });
 
-  gulp.watch('src/**/*.{html,md,json,yml}', ['assemble']).on('change', reload);
-  gulp.watch('src/**/*.scss', ['styles']).on('change', reload);
-  gulp.watch('src/assets/**/*.js', ['scripts']);
+  gulp.watch('src/**/*.{html,md,json,yml}').on('change', reload);
+  gulp.watch('src/**/*.scss', ['styles']);
+  gulp.watch('src/assets/**/*.js', ['scripts', reload]);
 });
