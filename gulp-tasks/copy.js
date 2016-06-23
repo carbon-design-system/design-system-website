@@ -14,6 +14,9 @@ function copyGlob(glob, dest) {
 }
 
 const copy = () => {
+  // Copy icon svg files into dist asset folder
+  gulp.src(['./bower_components/bluemix-icons/svg/**'])
+    .pipe(gulp.dest('./dist/assets/icons/'));
   // Copy HTML for base-elements and components into src/materials for use as
   // live code examples and snippets
   const materials = 'src/materials';

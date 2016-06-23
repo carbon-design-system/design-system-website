@@ -76,5 +76,5 @@ app.listen(port, () => {
 });
 
 app.get('/download/:iconFolder/:icon', (req, res) => {
-  res.download(`./bower_components/bluemix-icons/svg/${req.params.iconFolder}/${req.params.icon}.svg`)
+  res.download(__dirname + `/dist/assets/icons/${req.params.iconFolder}/${req.params.icon}.svg`)
 });
