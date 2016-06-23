@@ -14,15 +14,15 @@ const isProd = !!util.env.production;
 const styles = (bs) => {
   return gulp.src(config.src.styles)
     .pipe(sass({
-      errLogToConsole: true
+      errLogToConsole: true,
     }))
     .pipe(prefix({
-      browsers: ['> 1%', 'last 2 versions']
+      browsers: ['> 1%', 'last 2 versions'],
     }))
     .pipe(isProd ? csso() : util.noop())
     .pipe(rename('main.css'))
     .pipe(gulp.dest(`${config.dest}/assets/styles`))
     .pipe(bs.stream());
-}
+};
 
 module.exports = styles;

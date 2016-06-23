@@ -5,7 +5,6 @@
 // Plugins
 const browserSync = require('browser-sync').create();
 const gulp = require('gulp');
-const merge = require('merge-stream');
 
 // Tasks
 const assemble = require('./gulp-tasks/assemble');
@@ -30,15 +29,14 @@ gulp.task('nodemon', nodemon);
 
 gulp.task('build', ['styles', 'scripts', 'icons'], assemble);
 
-gulp.task('serve', ['nodemon'], function () {
-
+gulp.task('serve', ['nodemon'], () => {
   const reload = browserSync.reload;
 
   browserSync.init({
     proxy: 'localhost:3333',
     notify: true,
     open: false,
-    logPrefix: 'Bluemix Design System'
+    logPrefix: 'Bluemix Design System',
   });
 
   gulp.watch('src/**/*.{html,md,json,yml}', assemble).on('change', reload);
