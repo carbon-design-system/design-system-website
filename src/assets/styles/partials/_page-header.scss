@@ -5,6 +5,7 @@
   justify-content: space-between;
   flex-direction: column;
   padding-left: 9em;
+  min-height: $height__header;
   transition: $transition--slow;
 
   @include breakpoint(bp--md--major) {
