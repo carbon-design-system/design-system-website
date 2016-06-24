@@ -37,7 +37,7 @@ export const autoCloseMenu = () => {
 export const activeMenuLink = () => {
   itemLinks.forEach((element) => {
     const itemPath = element.pathname.split('/')[2];
-    const windowPath = window.location.href.split('/')[4];
+    const windowPath = window.location.href.split('/')[4].split('#')[0];
     if (itemPath === windowPath) {
       element.parentElement.classList.add('active');
     }
