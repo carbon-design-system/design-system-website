@@ -16,8 +16,10 @@ const queryIcons = () => {
 };
 
 export const filterIcons = () => {
-  iconSearch.addEventListener('input', (evt) => {
-    evt.preventDefault();
-    queryIcons();
-  });
+  if (iconSearch) {
+    iconSearch.addEventListener('input', evt => {
+      evt.preventDefault();
+      queryIcons();
+    });
+  }
 };

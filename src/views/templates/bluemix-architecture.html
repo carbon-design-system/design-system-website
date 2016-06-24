@@ -6,12 +6,284 @@ category: Templates
 
 {{> page-header}}
 
+<div class="view">
 
+  <p class="main">
+    <span class="blue-30">Bluemix</span> is an open-standards, cloud-based platform for building, managing, and running apps of all types. It supports several programming languages and services, as well as integrated DevOps to build, run, deploy and manage applications on the cloud. Bluemix is based on Cloud Foundry open technology and runs on SoftLayer infrastructure.
+  </p>
 
-  <div class="view">
-    <p class="main">
-      <span class="blue-30">Bluemix</span> is an open-standards, cloud-based platform for building, managing, and running apps of all types. It supports several programming languages and services, as well as integrated DevOps to build, run, deploy and manage applications on the cloud. Bluemix is based on Cloud Foundry open technology and runs on SoftLayer infrastructure.
-    </p>
+  <p class="italic">Click an area of the map to learn more.</p>
+  <div class="taxonomy-map">
+    <ul class="taxonomy-map__cards">
+
+      <!-- HOME card -->
+      <li class="taxonomy-map__card home">
+        <div class="content home">
+          <div class="card-header">
+            <h1 class="card-header__heading">Home</h1>
+          </div>
+          <div class="card-content">
+            <img class="card-content__icon" src="/assets/images/home-icon.png" />
+            <div class="blue-dot blue-dot--right"></div>
+          </div>
+        </div>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Home:</span><br> The starting place for users to enter Bluemix. Displays a list of all Bluemix categories.</p>
+            <img class="detail-card__img" src="/assets/images/home.png" />
+          </div>
+        </div>
+        <ul class="top-branch">
+          <li class="taxonomy-map__card top-branch-main">
+            <div class="card__plus-sign first">
+              <img src="/assets/images/plus-icon.png" />
+            </div>
+
+            <ul class="right-branch">
+              <li class="taxonomy-map__card">
+                <div class="card__plus-sign">
+                  <img src="/assets/images/plus-icon.png" />
+                </div>
+
+                <ul class="right-branch-row">
+                  <li class="taxonomy-map__card">
+                    <div class="content">
+                      <div class="card-header">
+                        <h1 class="card-header__heading">Catalog</h1>
+                      </div>
+                      <div class="card-content">
+                        <div class="blue-dot"></div>
+                        <img class="card-content__icon" src="/assets/images/home-icon.png" />
+                      </div>
+                    </div>
+                    <div class="taxonomy-map__detail-card">
+                      <div class="detail-card__content">
+                        <p class="detail-card__desc"><span class="detail-card__desc--blue">Catalog:</span><br> Displays a list of services and offerings within Bluemix.</p>
+                        <img class="detail-card__img" src="/assets/images/add-menu.png" />
+                      </div>
+                      <a class="detail-card__link" href="./catalog.html">
+                        <span>View details</span>
+                        <svg class="link-icon">
+                          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+                        </svg>
+                      </a>
+                    </div>
+                    <ul>
+                      <li class="line">
+                        <p>User clicks on service tile</p>
+                      </li>
+                      <li class="taxonomy-map__card">
+                        <div class="content">
+                          <div class="card-header">
+                            <h1 class="card-header__heading">Configuration</h1>
+                          </div>
+                          <div class="card-content">
+                            <div class="blue-dot"></div>
+                            <img class="card-content__icon" src="/assets/images/home-icon.png" />
+                          </div>
+                        </div>
+                        <div class="taxonomy-map__detail-card left-aligned">
+                          <div class="detail-card__content">
+                            <p class="detail-card__desc"><span class="detail-card__desc--blue">Configuration:</span><br> Displays settings for users to configure an item before creating an instance.</p>
+                            <img class="detail-card__img" src="/assets/images/Containers-Config.png" />
+                          </div>
+                          <a class="detail-card__link" href="./configuration-pages.html">
+                            <span>View details</span>
+                            <svg class="link-icon">
+                              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="split-line">
+          <li>
+            User has multiple instances running
+          </li>
+          <li>
+            User has instance running
+          </li>
+          <li>
+            User has no instances of a category
+          </li>
+        </ul>
+        <ul class="bottom-branch">
+          <li class="taxonomy-map__card">
+            <div class="content">
+              <div class="card-header">
+                <h1 class="card-header__heading">Global Dashboard</h1>
+              </div>
+              <div class="card-content">
+                <div class="blue-dot"></div>
+                <img class="card-content__icon" src="/assets/images/global-dashboard-icon.png" />
+              </div>
+            </div>
+            <div class="taxonomy-map__detail-card">
+              <div class="detail-card__content">
+                <p class="detail-card__desc"><span class="detail-card__desc--blue">Global Dashboard:</span><br> Displays all instances that have been provisioned or added by the user.</p>
+                <img class="detail-card__img" src="/assets/images/global-dash.png" />
+              </div>
+            </div>
+            <ul class="bottom-branch-row">
+              <li class="line-two">
+                <p>User clicks on running instance</p>
+              </li>
+              <li class="taxonomy-map__card">
+                <div class="content">
+                  <div class="card-header">
+                    <h1 class="card-header__heading">Instance Dashboard</h1>
+                  </div>
+                  <div class="card-content">
+                    <div class="blue-dot"></div>
+                    <img class="card-content__icon" src="/assets/images/home-icon.png" />
+                  </div>
+                </div>
+                <div class="taxonomy-map__detail-card">
+                  <div class="detail-card__content">
+                    <p class="detail-card__desc"><span class="detail-card__desc--blue">Instance Dashboard:</span><br> Displays information and detail about a single instance.</p>
+                    <img class="detail-card__img" src="/assets/images/service-details.png" />
+                  </div>
+                  <a class="detail-card__link" href="./instance-dashboards.html">
+                    <span>View details</span>
+                    <svg class="link-icon">
+                      <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="taxonomy-map__card">
+            <div class="content">
+              <div class="card-header">
+                <h1 class="card-header__heading">Category Dashboard</h1>
+              </div>
+              <div class="card-content">
+                <div class="blue-dot"></div>
+                <img class="card-content__icon" src="/assets/images/category-dashboard-icon.png" />
+              </div>
+            </div>
+            <div class="taxonomy-map__detail-card">
+              <div class="detail-card__content">
+                <p class="detail-card__desc"><span class="detail-card__desc--blue">Category Dashboard:</span><br> Displays a list of all user added instances running in a particular category.</p>
+                <img class="detail-card__img" src="/assets/images/category-dashboard2.png" />
+              </div>
+            </div>
+          </li>
+          <li class="taxonomy-map__card">
+            <div class="content">
+              <div class="card-header">
+                <h1 class="card-header__heading">Category Page</h1>
+              </div>
+              <div class="card-content">
+                <div class="blue-dot"></div>
+                <img class="card-content__icon" src="/assets/images/category-page-icon.png" />
+              </div>
+            </div>
+            <div class="taxonomy-map__detail-card">
+              <div class="detail-card__content">
+                <p class="detail-card__desc"><span class="detail-card__desc--blue">Category Page:</span><br> Displays information and descriptions for a category when instances have not been added by user yet.</p>
+                <img class="detail-card__img" src="/assets/images/category-dashboard.png" />
+              </div>
+              <a class="detail-card__link" href="./category-pages.html">
+                <span>View details</span>
+                <svg class="link-icon">
+                  <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="taxonomy-map__cards--mobile">
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Home:</span><br> The starting place for users to enter Bluemix. Displays a list of all Bluemix categories.</p>
+            <img class="detail-card__img" src="/assets/images/home.png" />
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Catalog:</span><br> Displays a list of services and offerings within Bluemix.</p>
+            <img class="detail-card__img" src="/assets/images/add-menu.png" />
+          </div>
+          <a class="detail-card__link" href="./catalog.html">
+            <span>View details</span>
+            <svg class="link-icon">
+              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Configuration:</span><br> Displays settings for users to configure an item before creating an instance.</p>
+            <img class="detail-card__img" src="/assets/images/Containers-Config.png" />
+          </div>
+          <a class="detail-card__link" href="./configuration-pages.html">
+            <span>View details</span>
+            <svg class="link-icon">
+              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Global Dashboard:</span><br> Displays all instances that have been provisioned or added by the user.</p>
+            <img class="detail-card__img" src="/assets/images/global-dash.png" />
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Instance Dashboard:</span><br> Displays information and detail about a single instance.</p>
+            <img class="detail-card__img" src="/assets/images/service-details.png" />
+          </div>
+          <a class="detail-card__link" href="./instance-dashboards.html">
+            <span>View details</span>
+            <svg class="link-icon">
+              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Category Dashboard:</span><br> Displays a list of all user added instances running in a particular category.</p>
+            <img class="detail-card__img" src="/assets/images/category-dashboard2.png" />
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="taxonomy-map__detail-card">
+          <div class="detail-card__content">
+            <p class="detail-card__desc"><span class="detail-card__desc--blue">Category Page:</span><br> Displays information and descriptions for a category when instances have not been added by user yet.</p>
+            <img class="detail-card__img" src="/assets/images/category-dashboard.png" />
+          </div>
+          <a class="detail-card__link" href="./category-pages.html">
+            <span>View details</span>
+            <svg class="link-icon">
+              <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--previous"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>
-
 </div>

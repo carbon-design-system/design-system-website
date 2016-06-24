@@ -33,6 +33,7 @@ import { copyHexValue } from './site/copy-hex';
 import { expandType } from './site/expand-type';
 import { filterIcons } from './site/icon-search';
 import { iconSymbols } from './site/icon-symbols.js';
+import { taxonomyMap } from './site/taxonomy-map';
 import { clipboardConfig } from './site/clipboardConfig.js';
 
 // import snippets stuff here
@@ -62,4 +63,5 @@ document.addEventListener('DOMContentLoaded', () => {
   filterIcons();
   iconSymbols();
   clipboardConfig();
+  taxonomyMap();
 });
