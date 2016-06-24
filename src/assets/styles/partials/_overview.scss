@@ -77,10 +77,6 @@
       @include breakpoint(bp--xs--major) {
         order: 1;
       }
-
-      @include breakpoint(bp--sm--major) {
-        padding-left: 2em;
-      }
     }
 
     div:nth-child(2) {
