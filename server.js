@@ -1,9 +1,8 @@
-'use strict';
-
 const path = require('path');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3333;
+const favicon = require('serve-favicon');
 
 // Clean exit of server.js process
 // See: http://www.benjiegillam.com/2011/08/node-js-clean-restart-and-faster-development-with-nodemon/
@@ -78,3 +77,5 @@ app.listen(port, () => {
 app.get('/download/:iconFolder/:icon', (req, res) => {
   res.download(__dirname + `/dist/assets/icons/${req.params.iconFolder}/${req.params.icon}.svg`)
 });
+
+app.use(favicon(path.resolve(__dirname + `/dist/assets/images/favicon.ico`)));
