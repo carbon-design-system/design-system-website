@@ -45,7 +45,6 @@
     "gulp-util": "3.0.7",
     "merge-stream": "1.0.0",
     "rimraf": "2.5.2",
-    "serve-favicon": "2.3.0",
     "webpack-stream": "3.2.0",
     "xml2js": "0.4.16"
   },
@@ -58,6 +57,7 @@
     "helper-markdown": "0.2.1",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
     "markdown-it": "7.0.0",
-    "svgxuse": "1.1.17"
+    "svgxuse": "1.1.17",
+    "serve-favicon": "2.3.0"
   }
 }
