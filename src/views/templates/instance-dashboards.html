@@ -13,71 +13,150 @@ category: Templates
     <span class="blue-30">Instance Dashboards</span> are used for showing information and details of an instance that exists in the user's dashboard. They appear when a user clicks on a specific item in their dashboard. Typically, these instances can include CF Apps, Services, Virtual Machines, and Containers. Use these templates as a starting point and foundation for your design.
   </p>
 
-  {{#markdown}}
+  <div class="accordion">
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <a class="panel-title" role="button" data-toggle="open" data-parent=".accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Service Dashboard
+        </a>
+        <svg class="panel-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--arrow-right"></use>
+        </svg>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" arialabelledby="headingOne">
+        <div class="panel-body">
 
-  You can find the source file for these templates in the <a href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Bluemix Design Kit.</a>
+{{#markdown}}
 
-  ## Service Dashboard
+Service dashboards may be accessed from the Global Dashboard, or after a user provisions a service from the Bluemix catalog. Service dashboards serve as locations for users to learn more about services, configure their service instance and connect it to an existing app or service instance.<br><br>As shown in the example above, Service Dashboards are comprised of a series of tabs that are defined in the service broker meta-data.
 
-  Service dashboards may be accessed from the Global Dashboard, or after a user provisions a service from the Bluemix catalog. Service dashboards serve as locations for users to learn more about services, configure their service instance and connect it to an existing app or service instance.<br><br>As shown in the example above, Service Dashboards are comprised of a series of tabs that are defined in the service broker meta-data.
+### Manage Tab
 
-  ### Manage Tab
+Content aiding in a user's productive use workflow, and any additional learning content should surface in the Manage tab. Consider providing pertinent introductory material such as links to service-specific API documentation and demos so users quickly and effectively get up and running.
 
-  Content aiding in a user's productive use workflow, and any additional learning content should surface in the Manage tab. Consider providing pertinent introductory material such as links to service-specific API documentation and demos so users quickly and effectively get up and running.
+### Getting Started Tab
 
-  ### Getting Started Tab
+Get Started at the instance level should be all about getting a user up and running as fast as possible.
 
-  Get Started at the instance level should be all about getting a user up and running as fast as possible.
+Upon creation of a service instance the content on the Getting Started tab is the first thing a user encounters and will likely dictate how successful they are with the service.<br>
 
-  Upon creation of a service instance the content on the Getting Started tab is the first thing a user encounters and will likely dictate how successful they are with the service.
+**Implementation**
 
-  **Implementation**
+Service providers should provide consistent getting started documentation using the <a href="https://releaseblueprints.ibm.com/display/CLOUDOE/getting+started+template+and+guidelines">Bluemix Getting Started Template and Guidelines.</a> Content on the Getting Started tab is populated directly from Bluemix Documentation when registering your service.
 
-  Service providers should provide consistent getting started documentation using the <a href="https://releaseblueprints.ibm.com/display/CLOUDOE/getting+started+template+and+guidelines">Bluemix Getting Started Template and Guidelines.</a> Content on the Getting Started tab is populated directly from Bluemix Documentation when registering your service.
+### Service Credentials Tab
 
-  ### Service Credentials Tab
+The Service Credentials tab shows the service instance credentials to an end user. Currently, users have the ability to create mulitple sets of credentials. Services that do not use credentials are not required to have this tab.
 
-  The Service Credentials tab shows the service instance credentials to an end user. Currently, users have the ability to create mulitple sets of credentials. Services that do not use credentials are not required to have this tab.
+### Connections Tab
 
-  ### Connections Tab
+This tab provides a way for users to bind their service instance to an existing app or service instance. Service to service bindings will be supported in the near future.
 
-  This tab provides a way for users to bind their service instance to an existing app or service instance. Service to service bindings will be supported in the near future.
+### Custom Tab
 
-  ### Custom Tab
+We understand some services will require an additional level of functionality not currently supported with the default tabs. Service providers who validate a need for an additional tab are permited one custom tab.
 
-  We understand some services will require an additional level of functionality not currently supported with the default tabs. Service providers who validate a need for an additional tab are permited one custom tab.
+{{/markdown}}
 
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <a class="panel-title" role="button" data-toggle="open" data-parent=".accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          Bare Metal Dashboard
+        </a>
+        <svg class="panel-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--arrow-right"></use>
+        </svg>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" arialabelledby="headingTwo">
+        <div class="panel-body">
 
-  ## CF App Dashboard
+{{#markdown}}
 
-  <div class="overlay-image">
-    <img class="thumbnail-img" src="/assets/images/cf-app.png" />
-    <a href="/assets/images/cf-app.png" target="_blank" class="overlay">
-    <img src="/assets/images/ibm-eye.png" />
-    <p>View at 100%</p>
+<div class="overlay-image">
+  <img class="thumbnail-img" src="/assets/images/bare-metal.png" />
+  <a href="/assets/images/bare-metal.png" target="_blank" class="overlay">
+  <img src="/assets/images/ibm-eye.png" />
+  <p>View at 100%</p>
   </a>
-  </div>
+</div>
 
-  ## Bare Metal Dashboard
+{{/markdown}}
 
-  <div class="overlay-image">
-    <img class="thumbnail-img" src="/assets/images/bare-metal.png" />
-    <a href="/assets/images/bare-metal.png" target="_blank" class="overlay">
-    <img src="/assets/images/ibm-eye.png" />
-    <p>View at 100%</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <a class="panel-title" role="button" data-toggle="open" data-parent=".accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          CF App Dashboard
+        </a>
+        <svg class="panel-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--arrow-right"></use>
+        </svg>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" arialabelledby="headingTwo">
+        <div class="panel-body">
+
+{{#markdown}}
+
+<div class="overlay-image">
+  <img class="thumbnail-img" src="/assets/images/cf-app.png" />
+  <a href="/assets/images/cf-app.png" target="_blank" class="overlay">
+  <img src="/assets/images/ibm-eye.png" />
+  <p>View at 100%</p>
   </a>
-  </div>
+</div>
 
-  ## Virtual Machines Dashboard
+{{/markdown}}
 
-  <div class="overlay-image">
-    <img class="thumbnail-img" src="/assets/images/vm.png" />
-    <a href="/assets/images/vm.png" target="_blank" class="overlay">
-    <img src="/assets/images/ibm-eye.png" />
-    <p>View at 100%</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <a class="panel-title" role="button" data-toggle="open" data-parent=".accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          Virtual Machine (VM) Dashboard
+        </a>
+        <svg class="panel-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--arrow-right"></use>
+        </svg>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" arialabelledby="headingFour">
+        <div class="panel-body">
+
+{{#markdown}}
+
+<div class="overlay-image">
+  <img class="thumbnail-img" src="/assets/images/vm.png" />
+  <a href="/assets/images/vm.png" target="_blank" class="overlay">
+  <img src="/assets/images/ibm-eye.png" />
+  <p>View at 100%</p>
   </a>
-  </div>
+</div>
 
-  {{/markdown}}
+{{/markdown}}
+
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-heading" role="tab" id="headingFive">
+        <a class="panel-title" role="button" data-toggle="open" data-parent=".accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          Object Storage Dashboard
+        </a>
+        <svg class="panel-icon">
+          <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--arrow-right"></use>
+        </svg>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" arialabelledby="headingFive">
+        <div class="panel-body">
+          <p>Content coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>

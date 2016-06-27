@@ -34,6 +34,7 @@ import { expandType } from './site/expand-type';
 import { filterIcons } from './site/icon-search';
 import { iconSymbols } from './site/icon-symbols.js';
 import { taxonomyMap } from './site/taxonomy-map';
+import { accordion } from './site/accordion';
 import { clipboardConfig } from './site/clipboardConfig.js';
 
 // import snippets stuff here
@@ -64,4 +65,5 @@ document.addEventListener('DOMContentLoaded', () => {
   iconSymbols();
   clipboardConfig();
   taxonomyMap();
+  accordion();
 });

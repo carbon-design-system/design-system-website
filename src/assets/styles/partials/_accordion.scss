@@ -1,0 +1,57 @@
+.accordion {
+  width: 100%;
+  margin-top: 3rem;
+  border-bottom: 1px solid $color__navy-gray-7;
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .panel-heading {
+    height: rem(75px);
+    border-top: 1px solid $color__navy-gray-7;
+    padding: .5rem 0 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .panel-title {
+    display: block;
+    text-decoration: none;
+    color: $color__blue-40;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .panel-icon {
+    width: rem(12px);
+    height: rem(12px);
+    transform: rotate(90deg);
+    margin: 0 .75em;
+    fill: $color__navy-gray-6;
+    transition: .3s;
+
+    &.expanded {
+      transform: rotate(270deg);
+    }
+  }
+
+  .panel-collapse {
+    transition: .5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .open {
+    max-height: 100rem;
+  }
+
+  .panel-body {
+    padding-bottom: 2rem;
+  }
+}
