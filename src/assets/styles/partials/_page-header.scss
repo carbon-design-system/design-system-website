@@ -14,7 +14,7 @@
 
   @include breakpoint(bp--sm--major) {
     padding: 0 2em;
-    height: auto;
+    min-height: 14.75em;
   }
 
   @include breakpoint(bp--xs--major) {
