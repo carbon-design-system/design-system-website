@@ -8,7 +8,7 @@
   height: 100%;
   padding: 1em 2em 2em 2em;
   position: fixed;
-  overflow: scroll;
+  overflow-y: auto;
   transition: $transition--slow;
 
   &.is-hidden {
