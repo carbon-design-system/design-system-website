@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const container = document.querySelector('.container');
 const toggleButton = document.querySelector('.sidebar-toggle');
 const itemLinks = [... document.querySelectorAll('.item__link')];
+const mobileWidth = 800;
 
 export const toggleMenu = () => {
   toggleButton.addEventListener('click', (e) => {
@@ -15,7 +16,7 @@ export const toggleMenu = () => {
 
 export const autoCloseMenu = () => {
   const checkWindowSize = () => {
-    if (window.innerWidth < 1140) {
+    if (window.innerWidth < mobileWidth) {
       if (!(menu.classList.contains('is-hidden'))) {
         menu.classList.add('is-hidden');
         toggleButton.classList.remove('active');
