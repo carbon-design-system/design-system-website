@@ -34,7 +34,9 @@ const assemble = () => {
         return options.fn();
       },
       findFile: function(fileName) {
-        return fs.readFileSync(`src/materials/${fileName}`, { 'encoding': 'utf8' });
+        let jsFile = fs.readFileSync(`src/materials/${fileName}`, { 'encoding': 'utf8' });
+        jsFile = jsFile.replace(/["']/g, '\'');
+        return jsFile;
       }
     }
   };
