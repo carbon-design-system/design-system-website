@@ -29,6 +29,9 @@ export const renderPopout = () => {
       e.preventDefault();
       const popup = open('', '_blank');
       const renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
+      const script = popup.document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'http://design-system.stage1.mybluemix.net/assets/scripts/bundle.js';
 
       // pulling stylesheet into page head
       popup.document.head.innerHTML += styleLink;
@@ -36,7 +39,10 @@ export const renderPopout = () => {
       // pulling icon svg into the page DOM
       // then the rendered element content
       getHTML(iconsLink, (response) => {
-        popup.document.body.innerHTML = `<div class="generatedIcons">${response.documentElement.outerHTML}</div><div class="rendered">${renderedContent}</div>`;
+        popup.document.body.innerHTML = `
+          <div class="rendered">${renderedContent}</div>
+          <div class="generatedIcons">${response.documentElement.outerHTML}</div>`;
+        popup.document.body.appendChild(script);
       });
     });
   });
