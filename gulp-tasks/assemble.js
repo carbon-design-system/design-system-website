@@ -1,6 +1,7 @@
 /*----------------------
   Gulp-Task / Assemble
 ------------------------*/
+'use strict'
 
 const fabricator = require('fabricator-assemble');
 const fs = require('fs');
