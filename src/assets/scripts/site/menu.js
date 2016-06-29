@@ -36,11 +36,16 @@ export const autoCloseMenu = () => {
 };
 
 export const activeMenuLink = () => {
-  itemLinks.forEach((element) => {
+  itemLinks.forEach(element => {
     const itemPath = element.pathname.split('/')[2];
-    const windowPath = window.location.href.split('/')[4].split('#')[0];
-    if (itemPath === windowPath) {
-      element.parentElement.classList.add('active');
+    const windowPath = window.location.href.split('/')[4];
+
+    if (windowPath) {
+      const windowHashPath = windowPath.split('#')[0];
+
+      if (itemPath === windowHashPath) {
+        element.parentElement.classList.add('active');
+      }
     }
   });
 };

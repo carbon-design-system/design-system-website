@@ -32,10 +32,11 @@ import { renderPopout } from './site/render-popout';
 import { copyHexValue } from './site/copy-hex';
 import { expandType } from './site/expand-type';
 import { filterIcons } from './site/icon-search';
-import { iconSymbols } from './site/icon-symbols.js';
+import { iconSymbols } from './site/icon-symbols';
 import { taxonomyMap } from './site/taxonomy-map';
 import { accordion } from './site/accordion';
-import { clipboardConfig } from './site/clipboardConfig.js';
+import { clipboardConfig } from './site/clipboardConfig';
+import analytics from './site/analytics';
 
 // import snippets stuff here
 
@@ -66,4 +67,5 @@ document.addEventListener('DOMContentLoaded', () => {
   clipboardConfig();
   taxonomyMap();
   accordion();
+  analytics();
 });
