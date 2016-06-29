@@ -52,3 +52,11 @@
 .navy-gray-5 {
   color: $color__navy-gray-5;
 }
+
+// Hover colors
+
+.hover--blue-90 {
+  &:hover {
+    color: $color__blue-90;
+  }
+}

@@ -28,6 +28,7 @@
 
   &:hover {
     background-color: $color__light-btn--hover;
+    color: $color__dark-blue;
   }
 
   @media screen and (max-width: $width__screen-size--x-small) {
@@ -85,7 +86,7 @@
       background-color: $color__blue-30;
       color: $color__blue-90;
 
-      .icon {
+      .btn-icon {
         fill: $color__blue-90;
       }
     }
