@@ -18,10 +18,9 @@ const nodemon = (cb) => {
       cb();
     } else {
       browserSync.reload({ stream: false });
+      cb();
     }
   });
-
-  cb();
 }
 
 module.exports = nodemon;

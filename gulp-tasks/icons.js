@@ -43,8 +43,9 @@ const iconJSON = () => {
   });
 }
 
-const icons = () => {
+const icons = (cb) => {
   iconJSON();
-}
+  cb();
+};
 
 module.exports = icons;
