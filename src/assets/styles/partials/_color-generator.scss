@@ -26,6 +26,101 @@
   }
 }
 
+@for $i from 1 through length($light-ui-colors) {
+  .light-ui-color:nth-of-type(#{$i}) {
+    .color__example {
+      background-color: nth($light-ui-colors, $i);
+
+      p {
+        @include text-contrast(nth($light-ui-colors, $i));
+      }
+    }
+  }
+}
+
+@for $i from 1 through length($light-ui-accent-colors) {
+  .light-ui-accent-color:nth-of-type(#{$i}) {
+    .color__example {
+      background-color: nth($light-ui-accent-colors, $i);
+
+      p {
+        @include text-contrast(nth($light-ui-accent-colors, $i));
+      }
+    }
+  }
+}
+
+.color-name-with-tooltip {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+
+  p {
+    padding-top: 0;
+  }
+
+  a {
+    margin-bottom: 0;
+  }
+
+  .tooltip-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $color__white;
+    color: $color__blue-90;
+    border: 1px solid $color__navy-gray-8;
+    font-weight: 400;
+    padding: 1rem 1rem 0;
+    margin-top: .5rem;
+    width: 17rem;
+    white-space: pre-wrap;
+    right: -8rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: .2s;
+
+    p {
+      @include font-size('14');
+    }
+
+    &:before {
+      content: '';
+      width: .5rem;
+      right: 0;
+      left: 0;
+      height: .5rem;
+      position: absolute;
+      background-color: $color__white;
+      border-left: 1px solid $color__navy-gray-8;
+      border-top: 1px solid $color__navy-gray-8;
+      margin: 0 auto;
+      top: -.3rem;
+      transform: rotate(45deg);
+    }
+  }
+
+  .tooltip-icon {
+    margin-left: .5rem;
+    position: relative;
+    cursor: pointer;
+
+    svg {
+      width: rem(16px);
+      height: rem(16px);
+      fill: $color__blue-51;
+    }
+
+    &:hover {
+
+      .tooltip-content {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
 .ui-color {
 
   @include breakpoint(bp--xs--major) {
@@ -72,17 +167,26 @@
   ul {
 
     li {
-      margin-bottom: .75em;
+      margin-bottom: .5em;
 
       &:nth-child(1) {
 
         .color {
           background-color: $color__white;
           border: 1px solid $color__navy-gray-8;
+
+          &--light {
+            background-color: $color__blue-40;
+          }
         }
 
         .color--other {
           background-color: $color__blue-90;
+
+          &--light {
+            background-color: $color__white;
+            border: 1px solid $color__navy-gray-8;
+          }
         }
       }
 
@@ -90,10 +194,18 @@
 
         .color {
           background-color: $color__navy-gray-8;
+
+          &--light {
+            background-color: $color__blue-51;
+          }
         }
 
         .color--other {
           background-color: $color__navy-gray-5;
+
+          &--light {
+            background-color: $color__blue-20;
+          }
         }
       }
 
@@ -101,10 +213,18 @@
 
         .color {
           background-color: $color__blue-20;
+
+          &--light {
+            background-color: $color__navy-gray-6;
+          }
         }
 
         .color--other {
           background-color: $color__blue-40;
+
+          &--light {
+            background-color: $color__blue-40;
+          }
         }
       }
 
@@ -112,10 +232,18 @@
 
         .color {
           background-color: $color__blue-30;
+
+          &--light {
+            background-color: $color__blue-90;
+          }
         }
 
         .color--other {
           background-color: $color__blue-50;
+
+          &--light {
+            background-color: $color__blue-51;
+          }
         }
       }
 
@@ -133,5 +261,48 @@
 
   @media screen and (max-width: $width__screen-size--x-small) {
     margin-top: 2em;
+  }
+}
+
+.color-usage-example {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 2rem 0;
+
+  .gradient-example {
+    width: rem(230px);
+    margin-top: 1rem;
+
+    p {
+      @include font-size('14');
+      margin-bottom: 1rem;
+    }
+  }
+
+  .layer-example {
+    display: flex;
+    position: relative;
+    margin-left: 1.5rem;
+
+    img {
+      margin-left: 5rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+
+    li {
+
+      p {
+        @include font-size('14');
+      }
+    }
   }
 }

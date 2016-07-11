@@ -26,6 +26,18 @@ $color__border--menu: #2c4559;
 
 $color__light-btn--hover: #c0e6ff;
 
+// Temporary
+// Light UI Color Scheme
+$color__blue-51    : #3d72b3;
+$color__gray-1     : #dfe3e6;
+$color__gray-2     : #f0f3f6;
+$color__gray-3     : #f5f7fa;
+$color__teal-50    : #008571;
+$color__green-40   : #5aa700;
+$color__green-50   : #4b8400;
+$color__purple-60  : #734098;
+
+
 $ui-colors: (
   $color__blue-20,
   $color__blue-30,
@@ -54,6 +66,33 @@ $accent-colors: (
   $color__red-40,
   $color__red-50,
   $color__purple-40
+);
+
+$light-ui-colors: (
+  $color__white,
+  $color__gray-3,
+  $color__gray-2,
+  $color__gray-1,
+  $color__blue-51,
+  $color__blue-40,
+  $color__blue-30,
+  $color__blue-20,
+  $color__navy-gray-1,
+  $color__blue-90,
+  $color__navy-gray-3,
+  $color__navy-gray-6,
+  $color__navy-gray-7
+);
+
+$light-ui-accent-colors: (
+  $color__teal-20,
+  $color__teal-50,
+  $color__green-40,
+  $color__green-50,
+  $color__yellow-30,
+  $color__red-40,
+  $color__red-50,
+  $color__purple-60
 );
 
 ///////////////////////////////

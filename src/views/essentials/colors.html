@@ -5,166 +5,29 @@ title: Colors | IBM Bluemix Design System
 category: Essentials
 ---
 
-{{> page-header}}
+<section class="page-header">
+  <div class="page-info">
+    <p class="category white">{{category}}</p>
+    <h1>{{capitalize name}}</h1>
+  </div>
+  <nav data-tabs data-tabs-navigation class="bx--tabs tabs--light" role="navigation">
+    <div class="bx--tabs__trigger tabs__trigger--light">
+      <a href="javascript:void(0)" class="bx--tabs__trigger-text tabs__trigger-text--light"></a>
+      <svg>
+        <use xlink:href="https://new-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow"></use>
+      </svg>
+    </div>
+    <ul class="bx--tabs__nav tabs__nav--light bx--tabs--hidden" role="tablist">
+      <li class="bx--tabs__nav-item nav__item--light" role="presentation"><a class="item__link" href="#dark-theme">Dark Theme</a></li>
+      <li class="bx--tabs__nav-item nav__item--light" role="presentation"><a class="item__link" href="#light-theme">Light Theme</a></li>
+    </ul>
+  </nav>
+</section>
 
-<div class="view">
+<div id="dark-theme" class="view hidden">
+  {{> dark-theme}}
+</div>
 
-  <p class="main">
-    <span class="blue-30">Color</span> brings a design to life. Color is versatile; its used to express emotion and tone as well as place emphasis and create associations. Color should always be used in meaningful and intentional ways that create patterns and visual cues.
-  </p>
-
-  <h2>UI Color Scheme</h2>
-  <ul class="wrapped-list list-reset ml0">
-    {{#each colors.ui-colors}}
-    <li class="ui-color mb2">
-      {{#if this.white}}
-      <div class="color__example border-color--navy-gray-9">
-      {{else}}
-      <div class="color__example">
-      {{/if}}
-        <p>Copy HEX</p>
-      </div>
-      <p class="pt1 pb0 bold">{{this.name}}</p>
-      <p class="navy-gray-5 pb0">{{this.hex}}</p>
-      <p class="navy-gray-5 pb0">{{this.scss}}</p>
-      <input class="color__hidden-input" type="text" value="" />
-    </li>
-    {{/each}}
-  </ul>
-
-  <h2>Accent Colors</h2>
-  <ul class="wrapped-list list-reset ml0">
-    {{#each colors.accent-colors}}
-    <li class="accent-color mb2">
-      <div class="color__example">
-        <p>Copy HEX</p>
-      </div>
-      <p class="pt1 pb0 bold">{{this.name}}</p>
-      <p class="navy-gray-5 pb0">{{this.hex}}</p>
-      <p class="navy-gray-5 pb0">{{this.scss}}</p>
-      <input class="color__hidden-input" type="text" value="" />
-    </li>
-    {{/each}}
-  </ul>
-
-  <h2>Color Contrast | 4.5 : 1 Ratio</h2>
-  <p>All type color combinations on Bluemix must pass WCAG AA standards of 4.5 : 1. In the table below are approved color combinations.</p>
-
-  <ul class="wrapped-list list-reset ml0">
-    <li class="flex-row mr1">
-      <img class="width-auto" src="/assets/images/normal-text-icon.png" />
-      <p class="pb0 pl1 bold">Normal Text</p>
-    </li>
-    <li class="flex-row mr1">
-      <img class="width-auto" src="/assets/images/large-text-icon.png" />
-      <p class="pb0 pl1 bold">Large Text: <span class="normal">18px bold or larger</span></p>
-    </li>
-  </ul>
-
-  <ul class="mt4 ml0">
-    <li class="wrapped-list mb5">
-      <div class="mr2">
-        <h5 class="category navy-gray-5 smaller py15">Dark Background Colors:</h5>
-        <ul class="wrapped-list ml0 pt2 border-top-color--navy-gray-9 list-reset">
-          <li class="ml0 mx-half">
-            <img class="width-auto" src="/assets/images/navy-gray-3-bg-example.png" />
-            <p class="pt1 bold">Navy-Gray 3 <br><span class="normal navy-gray-5">#2d4f49</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/navy-gray-2-bg-example.png" />
-            <p class="pt1 bold">Navy-Gray 2 <br><span class="normal navy-gray-5">#20343e</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/blue-90-bg-example.png" />
-            <p class="pt1 bold">IBM Blue 90<br><span class="normal navy-gray-5">#152934</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/navy-gray-1-bg-example.png" />
-            <p class="pt1 bold">Navy-Gray 1 <br><span class="normal navy-gray-5">#0f212e</span></p>
-          </li>
-        </ul>
-      </div>
-      <div class="type-colors">
-        <h5 class="category navy-gray-5 smaller py15">Type Colors:</h5>
-        <ul class="wrapped-list ml0 flex-column pt2 border-top-color--navy-gray-9 list-reset">
-          <li class="ml0 flex-row">
-            <div class="color"></div>
-            <p class="bold">White <br><span class="normal navy-gray-5">#ffffff</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color"></div>
-            <p class="bold">Navy-Gray 8 <br><span class="normal navy-gray-5">#dfe6eb</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color"></div>
-            <p class="bold">IBM Blue 20 <br><span class="normal navy-gray-5">#7cc7ff</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color"></div>
-            <p class="bold">IBM Blue 30 <br><span class="normal navy-gray-5">#5aaafa</span></p>
-          </li>
-        </ul>
-      </div>
-    </li>
-    <li class="wrapped-list mb5">
-      <div class="mr2">
-        <h5 class="category navy-gray-5 smaller py15">Other Background Colors:</h5>
-        <ul class="wrapped-list ml0 pt2 border-top-color--navy-gray-9 list-reset">
-          <li class="ml0 mx-half">
-            <img class="width-auto" src="/assets/images/white-bg-example.png" />
-            <p class="pt1 bold">White <br><span class="normal navy-gray-5">#ffffff</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/light-gray-bg-example.png" />
-            <p class="pt1 bold">Navy-Gray 8 <br><span class="normal navy-gray-5">#dfe6eb</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/blue-30-bg-example.png" />
-            <p class="pt1 bold">IBM Blue 30<br><span class="normal navy-gray-5">#5aaafa</span></p>
-          </li>
-          <li class="mx-half">
-            <img class="width-auto" src="/assets/images/blue-40-bg-example.png" />
-            <p class="pt1 bold">IBM Blue 40 <br><span class="normal navy-gray-5">#5596e6</span></p>
-          </li>
-        </ul>
-      </div>
-      <div class="type-colors">
-        <h5 class="category navy-gray-5 smaller py15">Type Colors:</h5>
-        <ul class="wrapped-list ml0 flex-column pt2 border-top-color--navy-gray-9 list-reset">
-          <li class="ml0 flex-row">
-            <div class="color--other"></div>
-            <p class="bold">IBM Blue 90 <br><span class="normal navy-gray-5">#152934</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color--other"></div>
-            <p class="bold">Navy-Gray 5 <br><span class="normal navy-gray-5">#42535c</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color--other"></div>
-            <p class="bold">IBM Blue 40 <br><span class="normal navy-gray-5">#5596e6</span></p>
-          </li>
-          <li class="ml0 flex-row">
-            <div class="color--other"></div>
-            <p class="bold">IBM Blue 50 <br><span class="normal navy-gray-5">#4178be</span></p>
-          </li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-
-  <h2>Additional Resources</h2>
-  <ul class="flex-row sm--flex-column ml0 list-reset">
-    <li class="flex-column mr5 align-start">
-      <img class="width-auto pb1" src="/assets/images/link-icon.png" />
-      <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank">IBM Accessible Color Guide</a>
-      <a href="http://w3-03.ibm.com/able/devtest/quick/" target="_blank">IBM Accessibility Quick Guidance</a>
-      <a href="http://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a>
-      <a href="http://www.ibm.com/design/language/framework/visual/color" target="_blank">IBM Design Language Colors</a>
-    </li>
-    <li class="flex-column mr5 align-start sm--mt1">
-      <img class="width-auto pb1" src="/assets/images/download-light-icon.png" />
-      <a href="#" target="_blank">Bluemix Swatch Palette</a>
-    </li>
-  </ul>
-
+<div id="light-theme" class="view hidden">
+  {{> light-theme}}
 </div>

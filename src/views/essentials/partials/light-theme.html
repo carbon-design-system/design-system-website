@@ -1,0 +1,186 @@
+<div class="heading--with-tags">
+  <h2 class="mr1">Light UI Color Scheme</h2>
+  <span class="tag-light--experimental mb1-half">Experimental</span>
+</div>
+<ul class="wrapped-list list-reset ml0">
+  {{#each colors.light-ui-colors}}
+  <li class="light-ui-color mb2">
+    {{#if this.white}}
+    <div class="color__example border-color--navy-gray-9">
+    {{else}}
+    <div class="color__example">
+    {{/if}}
+      <p>Copy HEX</p>
+    </div>
+    {{#if this.tooltip}}
+    <div class="color-name-with-tooltip">
+      <p class="pt1 pb0 bold">{{this.name}}</p>
+      <span class="tooltip-icon">
+        <svg>
+         <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#support--info-stroke-circle"></use>
+       </svg>
+       <div class="tooltip-content">
+         <p class="bold">Why IBM Blue 51, not 50?</p>
+         <p>IBM Blue 50 at small text sizes is only accessible on pure white. Therefore, we have created a modified version (IBM Blue 50 darkened by 6%) which passes contrast accessibility on all three light background colors.</p>
+       </div>
+      </span>
+    </div>
+    {{else}}
+    <p class="pt1 pb0 bold">{{this.name}}</p>
+    {{/if}}
+    <p class="navy-gray-5 pb0">{{this.hex}}</p>
+    <p class="navy-gray-5 pb0">{{this.scss}}</p>
+    <input class="color__hidden-input" type="text" value="" />
+  </li>
+  {{/each}}
+</ul>
+
+<h2>Accent Colors</h2>
+<ul class="wrapped-list list-reset ml0">
+  {{#each colors.light-ui-accent-colors}}
+  <li class="light-ui-accent-color mb2">
+    <div class="color__example">
+      <p>Copy HEX</p>
+    </div>
+    <p class="pt1 pb0 bold">{{this.name}}</p>
+    <p class="navy-gray-5 pb0">{{this.hex}}</p>
+    <p class="navy-gray-5 pb0">{{this.scss}}</p>
+    <input class="color__hidden-input" type="text" value="" />
+  </li>
+  {{/each}}
+</ul>
+
+<h2>Color Contrast | 4.5 : 1 Ratio</h2>
+<p>All type color combinations on Bluemix must pass WCAG AA standards of 4.5 : 1. In the table below are approved color combinations.</p>
+
+<ul class="wrapped-list list-reset ml0">
+  <li class="flex-row mr1">
+    <img class="width-auto" src="/assets/images/normal-text-icon.png" />
+    <p class="pb0 pl1 bold">Normal Text</p>
+  </li>
+  <li class="flex-row mr1">
+    <img class="width-auto" src="/assets/images/large-text-icon.png" />
+    <p class="pb0 pl1 bold">Large Text: <span class="normal">18px bold or larger</span></p>
+  </li>
+</ul>
+
+<ul class="mt4 ml0">
+  <li class="wrapped-list mb5">
+    <div class="mr4">
+      <h5 class="category navy-gray-5 smaller py1">Light UI Background Colors:</h5>
+      <ul class="wrapped-list ml0 pt2 border-top-color--navy-gray-9 list-reset">
+        <li class="ml0 mx-half">
+          <img class="width-auto" src="/assets/images/Light-UI_Accessibility_bg_white.png" />
+          <p class="pt1 bold">White <br><span class="normal navy-gray-5">#ffffff</span></p>
+        </li>
+        <li class="mx-half">
+          <img class="width-auto" src="/assets/images/Light-UI_Accessibility_bg_gray-3.png" />
+          <p class="pt1 bold">Gray 3 <br><span class="normal navy-gray-5">#f5f7fa</span></p>
+        </li>
+        <li class="mx-half">
+          <img class="width-auto" src="/assets/images/Light-UI_Accessibility_bg_gray-2.png" />
+          <p class="pt1 bold">Gray 2<br><span class="normal navy-gray-5">#f0f3f6</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="type-colors">
+      <h5 class="category navy-gray-5 smaller py1">Type Colors:</h5>
+      <ul class="wrapped-list ml0 flex-column pt2 border-top-color--navy-gray-9 list-reset">
+        <li class="ml0 flex-row">
+          <div class="color color--light"></div>
+          <p class="bold">Blue-40 <br><span class="normal navy-gray-5">#5596e6</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color color--light"></div>
+          <p class="bold">Blue-51 <br><span class="normal navy-gray-5">#3d70b2</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color color--light"></div>
+          <p class="bold">Navy-Gray 6 <br><span class="normal navy-gray-5">#5a6872</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color color--light"></div>
+          <p class="bold">Blue-90 <br><span class="normal navy-gray-5">#152935</span></p>
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li class="wrapped-list mb5">
+    <div class="mr4">
+      <h5 class="category navy-gray-5 smaller py1">Header Colors & Type Uses</h5>
+      <ul class="wrapped-list ml0 pt2 border-top-color--navy-gray-9 list-reset">
+        <li class="ml0 mx-half">
+          <img class="width-auto" src="/assets/images/Dark-UI_Accessibility_bg_navy-gray-1.png" />
+          <p class="pt1 bold">Navy-Gray 1 <br><span class="normal navy-gray-5">#0f212e</span></p>
+        </li>
+        <li class="mx-half">
+          <img class="width-auto" src="/assets/images/Dark-UI_Accessibility_bg_blue-90.png" />
+          <p class="pt1 bold">Blue 90 <br><span class="normal navy-gray-5">#152935</span></p>
+        </li>
+        <li class="mx-half">
+          <img class="width-auto" src="/assets/images/Dark-UI_Accessibility_bg_navy-gray-2.png" />
+          <p class="pt1 bold">Navy-Gray 2<br><span class="normal navy-gray-5">#20343e</span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="type-colors">
+      <h5 class="category navy-gray-5 smaller py1">Type Colors:</h5>
+      <ul class="wrapped-list ml0 flex-column pt2 border-top-color--navy-gray-9 list-reset">
+        <li class="ml0 flex-row">
+          <div class="color--other color--other--light"></div>
+          <p class="bold">White <br><span class="normal navy-gray-5">#ffffff</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color--other color--other--light"></div>
+          <p class="bold">Blue-20 <br><span class="normal navy-gray-5">#7cc7ff</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color--other color--other--light"></div>
+          <p class="bold">Blue-40 <br><span class="normal navy-gray-5">#5596e6</span></p>
+        </li>
+        <li class="ml0 flex-row">
+          <div class="color--other color--other--light"></div>
+          <p class="bold">Blue-51 <br><span class="normal navy-gray-5">#3d70b2</span></p>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+<h2>Light UI Color Usage</h2>
+<p>The base background color for Light UI is Gray-3. The global header is the uniting element between the Dark and Light UI themes, and therefore remains dark and does not change between the two themes. Type and other native elements and components can live either on the base Gray-3 or on a layered white module or container.</p>
+<div class="color-usage-example">
+  <ul class="max-width-10 pr1">
+    <li class="mb3-half">
+      <p>Unchanged Global Dark UI Header</p>
+    </li>
+    <li class="mb3-half">
+      <p class="bold pb0">Layer 2</p>
+      <p class="pb0">White</p>
+      <p>#fffff</p>
+      <p class="pr2">Added layer background color</p>
+    </li>
+    <li class="mb3-half">
+      <p class="bold pb0">Layer 1</p>
+      <p class="pb0">Gray 3</p>
+      <p>#f5f7fa</p>
+      <p>Base background color</p>
+    </li>
+  </ul>
+  <img class="width-auto max-width-45" src="/assets/images/light-ui-explained.png" />
+</div>
+
+<h2>Additional Resources</h2>
+<ul class="flex-row sm--flex-column ml0 list-reset">
+  <li class="flex-column mr5 align-start">
+    <img class="width-auto pb1" src="/assets/images/link-icon.png" />
+    <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank">IBM Accessible Color Guide</a>
+    <a href="http://w3-03.ibm.com/able/devtest/quick/" target="_blank">IBM Accessibility Quick Guidance</a>
+    <a href="http://webaim.org/resources/contrastchecker/" target="_blank">Color Contrast Checker</a>
+    <a href="http://www.ibm.com/design/language/framework/visual/color" target="_blank">IBM Design Language Colors</a>
+  </li>
+  <li class="flex-column mr5 align-start sm--mt1">
+    <img class="width-auto pb1" src="/assets/images/download-light-icon.png" />
+    <a href="#" target="_blank">Bluemix Swatch Palette</a>
+  </li>
+</ul>
