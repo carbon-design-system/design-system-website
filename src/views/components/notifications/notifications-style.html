@@ -1,0 +1,157 @@
+{{#markdown}}
+
+## Structure
+<div class="view__section">
+
+<div class="view__half">
+
+### Basics
+There are three types of notifications—inline, toast, and modal. Please refer to the usage tab for application practices. The border color of a notification indicates the notification state. The left border of a notification should be 5px.
+
+Notifications on desktop and tablet should not exceed two lines including the notification title. Notifications on mobile should not exceed three lines including the notification title.
+
+**Note: In code, we use rem units instead of em.**
+
+Inline Mobile Notifications:
+
+**One-line notification height: 40px / 2.5em**
+**Two-line notification height: 56px / 3.5em**
+**Three-line notification height: 85px / 5.313em**
+**Notification width: varies based on content**
+**Padding around close icon: 16px / 1em**
+**Notification icon height and width: 16px / 1em**
+**Padding around notification state icon: 16px / 1em**
+**Left notification border: 5px**
+
+Inline Desktop and Tablet Notifications:
+
+**One-line notification height: 40px / 2.5em**
+**Two-line notification height: 56px / 3.5em**
+**Notification width: varies based on content**
+**Padding between top and bottom of notification and text: 12px / .75em**
+**Padding around close icon: 16px / 1em**
+**Notification Icon height and width: 16px / 1em**
+**Padding around notification state icon: 16px / 1em**
+**Left notification border: 5px**
+
+</div>
+
+<div class="view__half">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/Notifications_2px_640.png">
+    <img src="/assets/images/Notifications_2x_640.png">
+  </picture>
+  <p class="caption">Notifications | units in px / em</p>
+</div>
+
+</div>
+
+<div class="view__section">
+
+<div class="view__half">
+
+Toast Notifications Mobile, Desktop, and Tablet:
+
+**Height: 80px / 5em**
+**Width: 270px / 16.875em**
+**Internal padding on right side: 16px / 1em**
+**Internal padding on left side: 80px / 5em**
+**Internal padding top to title: 16px / 1em**
+**Internal padding subtitle to caption: 16px / 1em**
+**Internal padding caption to bottom: 8px / .5em**
+**Internal padding around 'x' icon: 8px / .5em**
+**External padding between notifications: 8px / .5em**
+
+</div>
+
+<div class="view__half">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/ToastNotifications_2px_640(1).png">
+    <img src="/assets/images/ToastNotifications_2px_640.png">
+  </picture>
+  <p class="caption">Toast Notifications | units in px / em</p>
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/ToastNotifications_Padding_2px_640(1).png">
+    <img src="/assets/images/ToastNotifications_Padding_2px_640.png">
+  </picture>
+  <p class="caption">Toast Notifications Internal Padding | units in px / em</p>
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/ToastNotifications_Padding2_2px_640.png">
+    <img src="/assets/images/ToastNotifications_Padding2_2px_640(1).png">
+  </picture>
+  <p class="caption">Toast Notifications External Padding | units in px / em</p>
+</div>
+
+</div>
+
+<div class="view__section">
+
+<div class="view__half">
+
+Modal Notifications:
+Please refer to the <a href= "http://design-system.stage1.mybluemix.net/components/modals.html">Modal</a> section for additional guidelines on styling and using modals.
+
+**Notification height: varies based on content and layout**
+**Notification width: varies based on content and layout**
+**Close button height and width: 10px / .625em**
+**Padding between buttons 16px / 1em**
+
+</div>
+
+<div class="view__half">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/Notifications_Modal_2px_640(1).png">
+    <img class="pt0" src="/assets/images/Notifications_Modal_2px_640.png">
+  </picture>
+  <p class="caption">Modal Notifications | units in px / em</p>
+</div>
+
+</div>
+
+<div class="view__section">
+
+<div class="view__half">
+
+### States
+There are four states for notifications: warning, informational, error, and success. The notification state is indicated by icon and border color. This rule applies to all three types of notifications (inline, toast, and modal). All icons can be found in the <a href="https://pages.github.ibm.com/bluemix/bluemix-icons/">Bluemix Icon Repo</a> or the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#usage">Iconography</a> page.
+
+**Warning notification color: #EFC100**
+**Informational notification color: #7CC7FF**
+**Error notification color: #FF5050**
+**Success notification color: #8CD211**
+
+</div>
+
+<div class="view__half">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/Notifications_States_2px_640.png">
+    <img src="/assets/images/Notifications_States_2px_640(1).png">
+  </picture>
+  <p class="caption">Notifications States | units in px / em</p>
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/Notifications_States2_2px_640.png">
+    <img src="/assets/images/Notifications_States2_2px_640.png">
+  </picture>
+  <p class="caption">Notifications States | units in px / em</p>
+</div>
+
+</div>
+
+## Typography
+
+<div class="view__section">
+
+<div class="view__full">
+
+Notification titles should be set in bold and title case with the first letter of each word capitalized. Notification titles should not exceed more than 3 words. Notification text should be set in sentence case with only the first word capitalized. All notification type should follow the Bluemix Typography font stack for sans-serif.
+
+**Notification title font-size: 14px / .875rem**
+**Notification title font-weight: roman / 400**
+**Notification text font-size: 14px / .875rem**
+**Notification text font-weight: roman / 400**
+
+</div>
+
+</div>
+
+{{/markdown}}
