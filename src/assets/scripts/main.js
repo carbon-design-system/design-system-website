@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => Loading.components.get(element).toggle(), 3000);
   });
 
-  const alertModalElement = document.querySelector('#under-construction');
-  if (alertModalElement) {
-    const alertModal = Modal.create(alertModalElement);
-    alertModal.show();
-  }
+  // const alertModalElement = document.querySelector('#under-construction');
+  // if (alertModalElement) {
+  //   const alertModal = Modal.create(alertModalElement);
+  //   alertModal.show();
+  // }
 
   openItemHeadings();
   toggleMenu();
