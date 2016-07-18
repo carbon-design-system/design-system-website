@@ -25,7 +25,6 @@ const copy = () => {
   streams.push(copyGlob(`${config.npm}/html/base-elements/**/*.html`, `${materials}/base-elements`));
   streams.push(copyGlob(`${config.npm}/html/components/**/*.html`, `${materials}/components`));
   streams.push(copyGlob(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
-  streams.push(copyGlob(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
   // Copy package.json to /data so that fabricator can access the version of Bluemix components being used
   streams.push(copyGlob(`package.json`, `src/data`));
   streams.push(copyGlob(`bower.json`, `src/data`));
@@ -39,8 +38,10 @@ const copy = () => {
     .pipe(gulp.dest('./dist/assets/'));
 
   // Copy images from src to dist
-  streams.push(copyGlob(config.src.images, `${config.dest}/assets/images`));
+  gulp.src(['./src/assets/images/**'])
+    .pipe(gulp.dest('./dist/assets/images/'));
+
   return merge(streams);
-}
+};
 
 module.exports = copy;
