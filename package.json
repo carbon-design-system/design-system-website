@@ -50,14 +50,14 @@
   },
   "dependencies": {
     "@console/bluemix-components": "6.2.1",
-    "@console/bluemix-icons": "1.7.2",
+    "@console/bluemix-icons": "1.8.0",
     "clipboard": "1.5.12",
     "express": "4.14.0",
     "handlebars-helpers": "0.6.1",
     "helper-markdown": "0.2.1",
     "markdown-it-headinganchor": "lukeaskew/markdown-it-headinganchor",
     "markdown-it": "7.0.0",
-    "svgxuse": "1.1.17",
+    "svgxuse": "1.1.18",
     "serve-favicon": "2.3.0"
   }
 }
