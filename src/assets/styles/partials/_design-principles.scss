@@ -1,0 +1,51 @@
+.design-principles {
+
+  .view__section {
+
+    @media screen and (max-width: 500px) {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .view__half {
+
+      div {
+
+        @media screen and (max-width: 1410px) {
+          max-width: 45rem;
+          text-align: center;
+          padding: 0 7rem 4rem;
+
+          img {
+            width: 50%;
+          }
+        }
+
+        @media screen and (max-width: 500px) {
+          padding: 0 5rem 4rem;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2n+2) {
+
+      .view__half {
+
+        @media screen and (max-width: 1410px) {
+
+          &:nth-child(1) {
+            order: 2;
+          }
+
+          &:nth-child(2) {
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+}

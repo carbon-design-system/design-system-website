@@ -61,3 +61,11 @@
 picture img {
   padding-top: 2.5em;
 }
+
+.principles__img {
+  width: 100%;
+
+  @include breakpoint(bp--md--major) {
+    width: auto;
+  }
+}
