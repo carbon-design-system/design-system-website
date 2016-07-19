@@ -63,13 +63,13 @@
     padding: 0 1em;
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid $color__border--light;
   }
 
-  &:nth-child(3n+2) {
+  &:nth-child(2n+2) {
 
     div:first-child {
       order: 2;
