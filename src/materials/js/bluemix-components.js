@@ -751,14 +751,19 @@ var BluemixComponents =
 	})[0];
 	
 	function eventMatches(event, selector) {
-	  if (event.target[matchesFuncName](selector)) {
-	    // If event target itself matches the given selector, return it
-	    return event.target;
-	  } else if (event.target[matchesFuncName](selector + ' *')) {
-	    // If event target is a child node of a DOM element that matches the given selector, find the DOM element by going up the DOM tree
-	    for (var traverse = event.target; traverse && traverse !== event.currentTarget; traverse = traverse.parentNode) {
-	      if (traverse[matchesFuncName](selector)) {
-	        return traverse;
+	  // <svg> in IE does not have `Element#msMatchesSelector()`.
+	  // Also a weird behavior is seen in IE where DOM tree seems broken when `event.target` is on <svg>.
+	  // Therefore this function simply returns `undefined` when `event.target` is on <svg>.
+	  if (typeof event.target[matchesFuncName] === 'function') {
+	    if (event.target[matchesFuncName](selector)) {
+	      // If event target itself matches the given selector, return it
+	      return event.target;
+	    } else if (event.target[matchesFuncName](selector + ' *')) {
+	      // If event target is a child node of a DOM element that matches the given selector, find the DOM element by going up the DOM tree
+	      for (var traverse = event.target; traverse && traverse !== event.currentTarget; traverse = traverse.parentNode) {
+	        if (traverse[matchesFuncName](selector)) {
+	          return traverse;
+	        }
 	      }
 	    }
 	  }
@@ -823,7 +828,7 @@ var BluemixComponents =
 	    this.element = element;
 	
 	    this.options = Object.assign({
-	      selectorButton: 'input[type="radio"]',
+	      selectorButton: 'input[type="radio"], a.bx--content-switcher__btn',
 	      selectorButtonSelected: 'input[type="radio"].bx--content-switcher--selected',
 	      classActive: 'bx--content-switcher--selected',
 	      eventBeforeSelected: 'content-switcher-beingselected',
@@ -866,6 +871,7 @@ var BluemixComponents =
 	     */
 	    value: function handleClick(event) {
 	      var button = (0, _eventMatches2.default)(event, this.options.selectorButton);
+	
 	      if (button) {
 	        this.setActive(button);
 	      }
@@ -893,7 +899,9 @@ var BluemixComponents =
 	        itemLink.setAttribute('aria-selected', 'true');
 	      }
 	
-	      [].concat(_toConsumableArray(this.element.querySelectorAll(this.options.selectorButton))).forEach(function (button) {
+	      var selectorButtons = [].concat(_toConsumableArray(this.element.querySelectorAll(this.options.selectorButton)));
+	
+	      selectorButtons.forEach(function (button) {
 	        if (button !== item) {
 	          (0, _toggleClass2.default)(button, _this2.options.classActive, false);
 	          [].concat(_toConsumableArray(button.ownerDocument.querySelectorAll(button.dataset.target))).forEach(function (element) {
@@ -901,6 +909,7 @@ var BluemixComponents =
 	          });
 	        }
 	      });
+	
 	      (0, _toggleClass2.default)(item, this.options.classActive, true);
 	      [].concat(_toConsumableArray(item.ownerDocument.querySelectorAll(item.dataset.target))).forEach(function (element) {
 	        return element.removeAttribute('hidden');
@@ -1479,9 +1488,23 @@ var BluemixComponents =
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	/**
+	 * @param {Element} element The element to obtain transition duration from.
+	 * @returns {number} The transition duration of the given property set in the given element.
+	 */
+	function getTransitionDuration(element) {
+	  var computedStyle = element.ownerDocument.defaultView.getComputedStyle(element);
+	  var durations = computedStyle.transitionDuration.split(/,\s*/).map(function (transitionDuration) {
+	    return parseFloat(transitionDuration);
+	  }).filter(function (duration) {
+	    return !isNaN(duration);
+	  });
+	  return durations.length > 0 ? Math.max.apply(Math, _toConsumableArray(durations)) : 0;
+	}
 	
 	var Modal = function () {
 	  /**
@@ -1490,6 +1513,7 @@ var BluemixComponents =
 	   * @param {HTMLElement} element The element working as a modal dialog.
 	   * @param {Object} [options] The component options.
 	   * @param {string} [options.classVisible] The CSS class for the visible state.
+	   * @param {string} [options.classNoScroll] The CSS class for hiding scroll bar in body element while modal is shown.
 	   * @param {string} [options.eventBeforeShown]
 	   *   The name of the custom event fired before this modal is shown.
 	   *   Cancellation of this event stops showing the modal.
@@ -1513,6 +1537,7 @@ var BluemixComponents =
 	
 	    this.options = Object.assign({
 	      classVisible: 'is-visible',
+	      classNoScroll: 'bx--noscroll',
 	      eventBeforeShown: 'modal-beingshown',
 	      eventAfterShown: 'modal-shown',
 	      eventBeforeHidden: 'modal-beinghidden',
@@ -1529,6 +1554,7 @@ var BluemixComponents =
 	   * @param {HTMLElement} element The element working as a modal dialog.
 	   * @param {Object} [options] The component options.
 	   * @param {string} [options.classVisible] The CSS class for the visible state.
+	   * @param {string} [options.classNoScroll] The CSS class for hiding scroll bar in body element while modal is shown.
 	   * @param {string} [options.eventBeforeShown]
 	   *   The name of the custom event fired before this modal is shown.
 	   *   Cancellation of this event stops showing the modal.
@@ -1596,9 +1622,10 @@ var BluemixComponents =
 	      };
 	
 	      this.element.addEventListener('transitionend', finishedTransition);
+	      var transitionDuration = getTransitionDuration(this.element);
 	      (0, _toggleClass2.default)(this.element, this.options.classVisible, visible);
-	      var transitionDuration = parseFloat(this.element.ownerDocument.defaultView.getComputedStyle(this.element).transitionDuration);
-	      if (isNaN(transitionDuration) || transitionDuration === 0) {
+	      (0, _toggleClass2.default)(this.element.ownerDocument.body, this.options.classNoScroll, visible);
+	      if (transitionDuration === 0) {
 	        finishedTransition();
 	      }
 	    }
@@ -1737,6 +1764,7 @@ var BluemixComponents =
 	     * @param {Node} target The DOM node to instantiate modal dialogs in. Should be a document or an element.
 	     * @param {Object} [options] The component options.
 	     * @param {string} [options.classVisible] The CSS class for the visible state.
+	     * @param {string} [options.classNoScroll] The CSS class for hiding scroll bar in body element while modal is shown.
 	     * @param {string} [options.eventBeforeShown]
 	     *   The name of the custom event fired before this modal is shown.
 	     *   Cancellation of this event stops showing the modal.
@@ -1815,6 +1843,7 @@ var BluemixComponents =
 	 * The component options.
 	 * @member {Object} Modal#options
 	 * @property {string} [classVisible] The CSS class for the visible state.
+	 * @property {string} [classNoScroll] The CSS class for hiding scroll bar in body element while modal is shown.
 	 * @property {string} [eventBeforeShown]
 	 *   The name of the custom event fired before this modal is shown.
 	 *   Cancellation of this event stops showing the modal.
@@ -2372,7 +2401,7 @@ var BluemixComponents =
 	    // Check if browser is Internet Explorer
 	    if (options.ie || window.ActiveXObject || 'ActiveXObject' in window) {
 	      this.ie = true;
-	      this.element.classList.add('bx--dropdown--ie');
+	      this.element.classList.add('bx--loading--ie');
 	    }
 	
 	    this.constructor.components.set(this.element, this);
@@ -2874,15 +2903,25 @@ var BluemixComponents =
 	  function NumberInput(element) {
 	    var _this = this;
 	
+	    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+	
 	    _classCallCheck(this, NumberInput);
 	
 	    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
 	      throw new TypeError('DOM element should be given to initialize this widget.');
 	    }
 	
+	    this.options = options;
+	    this.options.ie = this.options.ie || 'ActiveXObject' in window;
+	
 	    this.element = element;
 	    this.constructor.components.set(this.element, this);
-	    this.element.addEventListener('click', function (event) {
+	    // Broken DOM tree is seen with up/down arrows <svg> in IE, which breaks event delegation.
+	    // Also <svg> does not seems to have `Element.classList`.
+	    this.element.querySelector('.bx--number__arrow--up').addEventListener('click', function (event) {
+	      return _this.handleClick(event);
+	    });
+	    this.element.querySelector('.bx--number__arrow--down').addEventListener('click', function (event) {
 	      return _this.handleClick(event);
 	    });
 	  }
@@ -2902,13 +2941,23 @@ var BluemixComponents =
 	     * @param {Event} event The event triggering this method.
 	     */
 	    value: function handleClick(event) {
-	      var state = event.target.classList;
+	      var state = event.currentTarget.classList;
 	      var numberInput = this.element.querySelector('.bx--number__input');
 	
 	      if (state.contains('bx--number__arrow--icon-up')) {
-	        numberInput.stepUp();
+	        if (this.options.ie) {
+	          ++numberInput.value;
+	        } else {
+	          numberInput.stepUp();
+	        }
 	      } else if (state.contains('bx--number__arrow--icon-down')) {
-	        numberInput.stepDown();
+	        if (this.options.ie) {
+	          if (numberInput.value > 0) {
+	            --numberInput.value;
+	          }
+	        } else {
+	          numberInput.stepDown();
+	        }
 	      }
 	    }
 	  }, {

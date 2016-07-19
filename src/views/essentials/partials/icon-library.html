@@ -19,7 +19,7 @@ UI Icons are used in the product to present common actions and commands. All ico
   <div class="icon" data-tags="{{this.name}}">
     <div class="icon__card">
       <svg>
-        <use xlink:href="#{{this.id}}"></use>
+        <use xlink:href="../assets/sprite.svg#{{this.id}}"></use>
       </svg>
       <div class="icon__actions">
         <button type="button" class="icon__button clipboard-button">Copy Code</button>
@@ -29,6 +29,7 @@ UI Icons are used in the product to present common actions and commands. All ico
       </div>
     </div>
     <h5>{{this.name}}</h5>
+    <span>#{{this.id}}</span>
   </div>
   {{/each}}
 </div>

@@ -32,6 +32,7 @@
   max-width: 10rem;
   height: 250px;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 
   h5 {
     @include letter-spacing;
@@ -39,7 +40,12 @@
     font-weight: 700;
     text-transform: capitalize;
     margin-top: rem(16px);
-    margin-bottom: rem(36px);
+    margin-bottom: rem(5px);
+  }
+
+  span {
+    font-size: .8rem;
+    color: $color__navy-gray-7;
   }
 
 }

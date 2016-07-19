@@ -1,15 +1,14 @@
 export const iconSymbols = () => {
-  window.setTimeout(() => {
-    const iconItems = [... document.querySelectorAll('.icon')];
-    const iconSprite = document.querySelector('svg');
+  const iconItems = [... document.querySelectorAll('.icon')];
 
-    if (iconItems) {
-      iconItems.forEach((icon) => {
-        const iconId = icon.querySelector('use').getAttribute('xlink:href');
-        const iconSymbol = iconSprite.querySelector(iconId);
-        const iconSymbolHTML = iconSymbol.outerHTML;
-        icon.querySelector('.icon__button').setAttribute('data-clipboard-text', iconSymbolHTML);
-      });
-    }
-  }, 4000);
+  if (iconItems) {
+    iconItems.forEach((icon) => {
+      const iconId = icon.querySelector('span').innerHTML;
+      const svgCode =
+`<svg class="your-class">
+<use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg${iconId}"></use>
+</svg>`;
+      icon.querySelector('.icon__button').setAttribute('data-clipboard-text', svgCode);
+    });
+  }
 };
