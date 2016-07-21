@@ -117,9 +117,71 @@
 
       &:hover {
 
+        .tab-theme-icon {
+          fill: $color__white;
+          stroke: $color__white;
+
+          path {
+            stroke: $color__white;
+            fill: $color__white;
+          }
+
+          circle {
+            stroke: $color__white;
+            fill: $color__white;
+          }
+
+          &.dark--selected, &.light--selected {
+            fill: $color__white;
+
+            circle {
+              fill: $color__white;
+            }
+          }
+        }
+
         a {
           color: $color__white;
         }
+      }
+
+      .tab-theme-icon {
+        width: rem(18px);
+        height: rem(18px);
+        fill: $color__blue-90;
+        stroke: $color__blue-90;
+        margin-right: .5rem;
+
+        &--dark {
+          fill: none;
+        }
+
+        path {
+          stroke: $color__blue-90;
+        }
+
+        circle {
+          stroke: $color__blue-90;
+          fill: none;
+        }
+
+        &.dark--selected {
+          fill: $color__blue-90;
+        }
+
+        &.light--selected {
+          fill: $color__blue-90;
+
+          circle {
+            fill: $color__blue-90;
+          }
+        }
+      }
+
+      .item__link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
       }
     }
   }

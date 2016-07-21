@@ -28,7 +28,7 @@ const copy = () => {
   // Copy package.json to /data so that fabricator can access the version of Bluemix components being used
   streams.push(copyGlob(`package.json`, `src/data`));
   streams.push(copyGlob(`bower.json`, `src/data`));
-  // streams.push(copyGlob(`${config.npm}/consumables/scss/global/colors/*.json`, `src/data`));
+  streams.push(copyGlob(`${config.npm}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist
   streams.push(copyGlob(config.src.fonts, `${config.dest}/assets/fonts`));

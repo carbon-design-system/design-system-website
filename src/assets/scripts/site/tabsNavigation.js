@@ -27,6 +27,15 @@ export const tabsNavigation = () => {
   const setActiveView = (element) => {
     currentHash = element.hash;
     window.location.hash = currentHash;
+    if (currentHash === '#light-theme') {
+      const icons = [... mainTab.querySelectorAll('.tab-theme-icon')];
+      icons[1].classList.add('light--selected');
+      icons[0].classList.remove('dark--selected');
+    } else if (currentHash === '#dark-theme') {
+      const icons = [... mainTab.querySelectorAll('.tab-theme-icon')];
+      icons[0].classList.add('dark--selected');
+      icons[1].classList.remove('light--selected');
+    }
     element.tabElement.classList.add('bx--tabs--selected');
     element.viewDiv.classList.remove('hidden');
     removeActive(element);
