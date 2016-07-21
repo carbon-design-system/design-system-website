@@ -2,7 +2,7 @@
 
 ## Structure
 
-
+{{> theme-switcher-btns}}
 
 <div class="view__section">
 
@@ -10,7 +10,7 @@
 
   ### Basics
 
-  Primary buttons are single-colored, filled buttons with a contrasting color as the text label.
+  Primary buttons are single color filled with a contrasting color for the text of the label.
 
   Secondary buttons have a solid 2px border with no fill. The text and border color on secondary buttons styles should be the same color.
 
@@ -28,6 +28,7 @@
 </div>
 
 <div class="view__half">
+<div class="style-img--dark">
 <picture>
   <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Primary_Button_Mobile@2x.png">
   <img src="/assets/images/style/buttons/Primary_Button_Desktop@2x.png" />
@@ -39,51 +40,79 @@
 </picture>
 <p class="caption pt0">Secondary Buttons | units in px / ems</p>
 </div>
+<div class="style-img--light">
+<picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Primary_Button_Mobile_Light@2x.png">
+  <img src="/assets/images/style/buttons/light-ui/Primary_Button_Desktop_Light@2x.png" />
+</picture>
+<p class="caption pt0">Primary Buttons | units in px / ems</p>
+<picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Secondary_Button_Mobile_Light@2x.png">
+  <img src="/assets/images/style/buttons/light-ui/Secondary_Button_Desktop_Light@2x.png" />
+</picture>
+<p class="caption pt0">Secondary Buttons | units in px / ems</p>
+</div>
+</div>
 
 </div>
 
-
-
-<div class="view__section">
+<div class="view__section mb10">
 
 <div class="view__half">
 
   ### Groupings
 
-  In a set of buttons, the primary button style is positioned on the outside of the set. The secondary button is positioned on the inside of the set.
+  For button groups, the primary button style is positioned on the outside of the set. The secondary button is positioned on the inside of the set.
 
-  **Space between buttons: 16px**
+  **Space between buttons: 16px / 1em**
 
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Groupings_Mobile@2x.png">
-    <img src="/assets/images/style/buttons/Groupings_Desktop@2x.png" />
-  </picture>
-  <p class="caption pt0">Button Groupings | units in px / ems
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Groupings_Mobile@2x.png">
+      <img src="/assets/images/style/buttons/Groupings_Desktop@2x.png" />
+    </picture>
+    <p class="caption pt0">Button Groupings | units in px / ems</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Groupings_Mobile_Light@2x.png">
+      <img src="/assets/images/style/buttons/light-ui/Groupings_Desktop_Light@2x.png" />
+    </picture>
+    <p class="caption pt0">Button Groupings | units in px / ems</p>
+  </div>
 </div>
 
 </div>
 
 
-
-<div class="view__section">
+<div class="view__section mt5 mb10">
 
 <div class="view__half">
 
 ### Button with Icons
 
-There must be 16 pixels / 1 em between the text and the icon within the button.
+There must be 16 pixels / 1 em between the label text and an icon on a button.
 
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_with_icon_Mobile@2x.png">
-    <img src="/assets/images/style/buttons/Button_with_icon_Desktop@2x.png" />
-  </picture>
-  <p class="caption pt0">Button with Icon | units in px / ems
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_with_icon_Mobile@2x.png">
+      <img src="/assets/images/style/buttons/Button_with_icon_Desktop@2x.png" />
+    </picture>
+    <p class="caption pt0">Button with Icon | units in px / ems</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Button_with_icon_Mobile_Light@2x.png">
+      <img src="/assets/images/style/buttons/light-ui/Button_with_icon_Desktop_Light@2x.png" />
+    </picture>
+    <p class="caption pt0">Button with Icon | units in px / ems</p>
+  </div>
 </div>
 
 </div>
@@ -105,16 +134,24 @@ There must be 16 pixels / 1 em between the text and the icon within the button.
   ### Secondary Style
 
   **Focus:** Browser Defined
-  **Hover:** Filled with the same color as the stroke in the normal state. Text should change to a contrast color.
+  **Hover:** Filled and the same color as the stroke in the normal state. Text should change to a contrast color.
   **Disabled:** 50% opacity.
 
   </div>
 
   <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_States_Mobile@2x.png">
-    <img src="/assets/images/style/buttons/Button_States_Desktop@2x.png">
-  </picture>
+    <div class="style-img--dark">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_States_Mobile@2x.png">
+        <img src="/assets/images/style/buttons/Button_States_Desktop@2x.png">
+      </picture>
+    </div>
+    <div class="style-img--light">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/States_Both_Mobile_Light@2x.png">
+        <img src="/assets/images/style/buttons/light-ui/States_Both__Desktop_Light@2x.png">
+      </picture>
+    </div>
   </div>
 
 </div>

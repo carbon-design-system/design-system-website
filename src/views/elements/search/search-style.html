@@ -1,15 +1,20 @@
 {{#markdown}}
 
 ## Structure
+
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__full">
 
 ### Basics
 
-Search inputs are solid, one color boxes with contrasting color for the text. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button, with a label and filter icon. Smaller search fields contain only a filter icon.
+Search boxes are single color filled with a contrasting color for the text of the label. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button, with a label and filter icon. Smaller search fields should have a filter button with a filter icon and no label.
 
-**Search Box Color White rgba(255,255,255,0.10);**
+**Search Box Color:
+Dark UI: #ffffff at 10% opacity rgba(255, 255, 255, 0.10)
+Light UI: #3d70b2 at 10% opacity rgba(61, 112, 178, 0.10)**
 **Search Box Height: 50px / 3.125em**
 **Filter Icon (height & width): 16 px / 1em**
 **Search Icon (height & width): 20 px /1.25em**
@@ -30,16 +35,30 @@ Search inputs are solid, one color boxes with contrasting color for the text. Th
 </div>
 
 <div class="view__half">
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_Mobile@2x.png">
-  <img src="/assets/images/style/search/Search_Small_Desktop@2x.png">
-</picture>
-<p class="caption">Small Search Field | units in px / em</p>
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Large_Mobile@2x.png">
-  <img src="/assets/images/style/search/Search_Large_Desktop@2x.png">
-</picture>
-<p class="caption">Large Search Field | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_Mobile@2x.png">
+      <img src="/assets/images/style/search/Search_Small_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small Search Field | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Large_Mobile@2x.png">
+      <img src="/assets/images/style/search/Search_Large_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large Search Field | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/light-ui/Search_Small_Mobile_Light@2x.png">
+      <img src="/assets/images/style/search/light-ui/Search_Small_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Small Search Field | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/light-ui/Large_Search_Mobile_Light@2x.png">
+      <img src="/assets/images/style/search/light-ui/Large_Search_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large Search Field | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -55,16 +74,30 @@ Search fields have three states: normal, hover, and input. There are specific el
 </div>
 
 <div class="view__half">
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_States_Mobile@2x.png">
-  <img src="/assets/images/style/search/Search_Small_States_Desktop@2x.png">
-</picture>
-<p class="caption">Small Search Field States | units in px / em</p>
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Large_States_Mobile@2x.png">
-  <img src="/assets/images/style/search/Search_Large_States_Desktop@2x.png">
-</picture>
-<p class="caption">Large Search Field States | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_States_Mobile@2x.png">
+      <img src="/assets/images/style/search/Search_Small_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small Search Field States | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Large_States_Mobile@2x.png">
+      <img src="/assets/images/style/search/Search_Large_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large Search Field States | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/light-ui/Search_Small_States_Mobile_Light@2x.png">
+      <img src="/assets/images/style/search/light-ui/Search_Small_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Small Search Field States | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/search/light-ui/Large_Search_States_Mobile_Light@2x.png">
+      <img src="/assets/images/style/search/light-ui/Large_Search_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large Search Field States | units in px / em</p>
+  </div>
 </div>
 
 </div>

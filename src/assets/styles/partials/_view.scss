@@ -5,11 +5,12 @@
 .view {
   display: flex;
   flex-direction: column;
-  top: $height__header + em(50px);
+  top: 0;
   margin: 0 9em;
   padding: 4em 0;
   transition: $transition--slow;
   max-width: 57rem;
+  position: relative;
 
   @media screen and (min-width: 1700px) {
     max-width: 85rem;
@@ -45,6 +46,13 @@
 
   &__half {
     width: 50%;
+    position: relative;
+
+    .theme-switcher-btns {
+      top: 0;
+      right: 0;
+      z-index: 1000;
+    }
 
     img {
       width: 100%;
@@ -145,5 +153,47 @@
     list-style: decimal;
     line-height: 1.5;
     margin-left: 1.25em;
+  }
+}
+
+.view__property-table {
+  display: flex;
+  flex-direction: column;
+  max-width: 45rem;
+
+  p {
+    padding: 0;
+    font-size: .875rem;
+  }
+
+  .property-table__row {
+    display: flex;
+    border-bottom: 2px solid $color__navy-gray-8;
+    align-items: center;
+    border-left: 1px solid $color__navy-gray-8;
+    border-right: 1px solid $color__navy-gray-8;
+
+    &--main {
+      border-top: 1px solid $color__navy-gray-8;
+
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .property-table__column {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+
+    &:first-child {
+      flex: 1;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $color__navy-gray-8;
+    }
   }
 }

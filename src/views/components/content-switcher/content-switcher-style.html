@@ -2,6 +2,8 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
@@ -11,18 +13,31 @@ Content switchers must have at least two options for the user to choose from. Ea
 
 **Content Switcher height: 40px / 2.5em**
 **Content Switcher container width: varies based on amount of content**
-**Content Switcher fill color: #5AAAFA**
+**Content Switcher fill color:**
+**Dark UI:** #5aaafa
+**Light UI:** #3d70b2
 **Border: 1px**
-**Border color: #5AAAFA**
+**Border color:**
+**Dark UI:** #5aaafa
+**Light UI:** #3d70b2
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Mobile@2x.png">
-<img src="/assets/images/style/content-switcher/Content_Switcher_Desktop@2x.png">
-</picture>
-<p class="caption">Content Switcher | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Mobile@2x.png">
+    <img src="/assets/images/style/content-switcher/Content_Switcher_Desktop@2x.png">
+    </picture>
+    <p class="caption">Content Switcher | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/light-ui/Content_Switcher_Mobile_Light@2x.png">
+    <img src="/assets/images/style/content-switcher/light-ui/Content_Switcher_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Content Switcher | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -52,11 +67,20 @@ Internally there must be 32px / 2em of space between the content container optio
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Padding_Mobile@2x.png">
-<img src="/assets/images/style/content-switcher/Content_Switcher_Padding_Desktop@2x.png">
-</picture>
-<p class="caption">Content Switcher Padding | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/content-switcher/Content_Switcher_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Content Switcher Padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/light-ui/Content_Switcher_Padding_Mobile_Light@2x.png">
+    <img src="/assets/images/style/content-switcher/light-ui/Content_Switcher_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Content Switcher Padding | units in px / em</p>
+  </div>
 </div>
 
 </div>

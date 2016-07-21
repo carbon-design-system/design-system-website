@@ -103,13 +103,12 @@ pre[class*='language-'] {
     position: relative;
     transition-duration: $transition--base;
     overflow: hidden;
+    border: 1px solid transparent;
 
-    &.light-ui {
-      background: $color__white;
-
-      .btn--theme-switcher {
-        color: $color__navy-gray-5;
-      }
+    &.bx--global-light-ui {
+      background-color: $color__gray-3;
+      color: $color__blue-90;
+      border: 1px solid $color__gray-1;
     }
   }
 
@@ -136,18 +135,6 @@ pre[class*='language-'] {
     color: $color__navy-gray-7;
     font-size: rem(12px);
     padding: .5em 1.5em;
-  }
-
-  .btn--theme-switcher {
-    color: $color__navy-gray-7;
-    font-size: rem(12px);
-    border: none;
-    background: none;
-    text-decoration: underline;
-    position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    cursor: pointer;
   }
 
   .code__tabs {

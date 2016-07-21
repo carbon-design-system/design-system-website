@@ -40,8 +40,10 @@ export const renderPopout = () => {
       // then the rendered element content
       getHTML(iconsLink, (response) => {
         popup.document.body.innerHTML = `
-          <div class="rendered">${renderedContent}</div>
-          <div class="generatedIcons">${response.documentElement.outerHTML}</div>`;
+        <div class="generatedIcons">${response.documentElement.outerHTML}</div>
+        <div class="rendered">
+          ${renderedContent}
+        </div>`;
         popup.document.body.appendChild(script);
       });
     });

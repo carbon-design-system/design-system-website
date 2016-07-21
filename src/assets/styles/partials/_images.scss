@@ -69,3 +69,26 @@ picture img {
     width: auto;
   }
 }
+.style-img--dark {
+  opacity: 1;
+
+  .bx--global-light-ui & {
+    opacity: 0;
+  }
+}
+
+.style-img--light {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .bx--global-light-ui & {
+    opacity: 1;
+  }
+}
+
+.style-img--dark,
+.style-img--light {
+  transition: .3s;
+}

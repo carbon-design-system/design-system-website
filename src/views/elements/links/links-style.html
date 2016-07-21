@@ -2,7 +2,7 @@
 
 ## Structure
 
-
+{{> theme-switcher-btns}}
 
 <div class="view__section">
 
@@ -12,25 +12,30 @@
 
 Links can be grouped horizontally or vertically and must be underlined.
 
-**Font size: 14px / .875rem**
-**Font weight: bold / 700**
 **Line height: 24px / 1.5em**
-**Space between each link (horizontally): 18px / 2.75em**
+**Padding between each link (horizontally): 18px / 2.75em**
 **Line height: 24px / 1.5em**
 
 </div>
 
 <div class="view__half">
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/links/Link_Groupings_Mobile@2x.png">
-  <img src="/assets/images/style/links/Link_Groupings_Desktop@2x.png">
-</picture>
-<p class="caption">Horizontal and vertical Link styling</h5>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/links/Link_Groupings_Mobile@2x.png">
+      <img src="/assets/images/style/links/Link_Groupings_Desktop@2x.png">
+    </picture>
+    <p class="caption">Horizontal and vertical Link styling</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/links/light-ui/Links_Groupings_Mobile_Light@2x.png">
+      <img src="/assets/images/style/links/light-ui/Links_Groupings_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Horizontal and vertical Link styling</p>
+  </div>
 </div>
 
 </div>
-
-
 
 <div class="view__section">
 
@@ -38,7 +43,7 @@ Links can be grouped horizontally or vertically and must be underlined.
 
 ### Link States
 
-Links have three different states, normal, hover, and disabled which are indicated through color change.
+Links have three different states, normal, hover, and disabled which are indicated by change in color.
 
 - Browser Defined
 - Hover: One shade lighter on the IBM Design Langauge color scale than normal color.
@@ -47,10 +52,18 @@ Links have three different states, normal, hover, and disabled which are indicat
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/links/Link_States_Mobile@2x.png">
-    <img src="/assets/images/style/links/Link_States_Desktop@2x.png">
-  </picture>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/links/Link_States_Mobile@2x.png">
+      <img src="/assets/images/style/links/Link_States_Desktop@2x.png">
+    </picture>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/links/light-ui/Links_Mobile_Light@2x.png">
+      <img src="/assets/images/style/links/light-ui/Links_Desktop_Light@2x.png">
+    </picture>
+  </div>
 </div>
 
 </div>
@@ -63,7 +76,10 @@ Links have three different states, normal, hover, and disabled which are indicat
 
 <div class="view__full">
 
-Links should be set in title case, with the first letter of each word capitalized. Links should be 3 words or less. Links should follow the Bluemix Typography font stack for sans-serif.
+Links should be set in title case, with the first letter of each word capitalized. Links should not exceed more than 3 words. Links should follow the Bluemix Typography font stack for sans-serif.
+
+**Font size: 14px / .875rem**
+**Font weight: bold / 700**
 
 </div>
 

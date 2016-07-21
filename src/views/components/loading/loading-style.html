@@ -2,33 +2,51 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
 
 ### Basics
 
-There are two types of loading spinners, large and small. The large loading spinner appears with an overlay on top of a whole page of content.
+There are two types of loading spinners, large and small. The large loading spinner appears with an overlay on top of a whole page of content. The smaller loading spinner is used on its own.
 
 **Large Loading Spinner height and width: 84px / 5.25em**
-**Large Loading Spinner color: Teal 40 #1CB3A0**
-**Overlay background color: #0F212E at 75% opacity**
+**Large Loading Spinner color:**
+**Dark UI:** Teal 40 #1cb3a0
+**Light UI:** Teal 20 #6eedd8
+**Overlay background color: #0f212e at 75% opacity (Light UI: 50% opacity)*
 **Small Loading Spinner height and width: 16px / 1em**
-**Small Loading Spinner color: Navy-Gray 7 #8C9BA5**
+**Small Loading Spinner color: Navy-Gray 7 #8c9ba5**
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Mobile@2x.png">
-<img src="/assets/images/style/loading/Loading_Large_Desktop@2x.png">
-</picture>
-<p class="caption">Large Loading Spinner | units in px / em</p>
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Mobile@2x.png">
-<img src="/assets/images/style/loading/Loading_Small_Desktop@2x.png">
-</picture>
-<p class="caption">Small Loading Spinner | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Mobile@2x.png">
+    <img src="/assets/images/style/loading/Loading_Large_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner | units in px / em</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Mobile@2x.png">
+    <img src="/assets/images/style/loading/Loading_Small_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small Loading Spinner | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/light-ui/Loading_Large_Mobile_Light@2x.png">
+    <img src="/assets/images/style/loading/light-ui/Loading_Large_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner | units in px / em</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/light-ui/Loading_Small__Mobile_Light@2x.png">
+    <img src="/assets/images/style/loading/light-ui/Loading_Small_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Small Loading Spinner | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -39,7 +57,7 @@ There are two types of loading spinners, large and small. The large loading spin
 
 ### Placement
 
-The large loading spinner should appear centered over a page or content that it is loading. Please note that the naviagation is not included in the page loading overlay. The small loading spinner should be placed to the left of a label.
+The large loading spinner should appear centered over a page or content that it is loading. Please note that the navigation is not included in the page loading overlay. The small loading spinner should be placed to the left of a label.
 
 **Large Loading Spinner: centered in loading area**
 **Small Loading Spinner: 8px / .5em to the left of label**
@@ -47,26 +65,45 @@ The large loading spinner should appear centered over a page or content that it 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Spacing_Mobile@2x.png">
-<img src="/assets/images/style/loading/Loading_Large_Spacing_Desktop@2x.png">
-</picture>
-<p class="caption">Large Loading Spinner Placement</h5>
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Context_Desktop@2x.png">
-<img src="/assets/images/style/loading/Loading_Large_Context_Desktop@2x.png">
-</picture>
-<p class="caption">Large Loading Spinner Context</h5>
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Spacing_Mobile@2x.png">
-<img src="/assets/images/style/loading/Loading_Small_Spacing_Desktop@2x.png">
-</picture>
-<p class="caption">Small Loading Spinner Placement</h5>
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Context_Mobile@2x.png">
-<img src="/assets/images/style/loading/Loading_Small_Context_Desktop@2x.png">
-</picture>
-<p class="caption">Small Loading Spinner Context</h5>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Spacing_Mobile@2x.png">
+    <img src="/assets/images/style/loading/Loading_Large_Spacing_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner Placement</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Large_Context_Desktop@2x.png">
+    <img src="/assets/images/style/loading/Loading_Large_Context_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner Context</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Spacing_Mobile@2x.png">
+    <img src="/assets/images/style/loading/Loading_Small_Spacing_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small Loading Spinner Placement</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/Loading_Small_Context_Mobile@2x.png">
+    <img src="/assets/images/style/loading/Loading_Small_Context_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small Loading Spinner Context</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/light-ui/Loading_Large_Spacing_Mobile_Light@2x.png">
+    <img src="/assets/images/style/loading/light-ui/Loading_Large_Spacing_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner Placement</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/light-ui/Loading_Overlay_Full_Page_Light@2x.png">
+    <img src="/assets/images/style/loading/light-ui/Loading_Overlay_Full_Page_Light@2x.png">
+    </picture>
+    <p class="caption">Large Loading Spinner Context</p>
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/loading/light-ui/Loading_Small_Spacing__Mobile_Light@2x.png">
+    <img src="/assets/images/style/loading/light-ui/Loading_Small_Spacing_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Small Loading Spinner Context</p>
+  </div>
 </div>
 
 </div>

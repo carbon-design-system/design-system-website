@@ -1,8 +1,8 @@
 {{#markdown}}
 
-
-
 ## Structure
+
+{{> theme-switcher-btns}}
 
 <div class="view__section">
 
@@ -11,22 +11,36 @@
 ### Basics
 
 There are two types of lists: ordered and unordered.
-Level 1 ordered list points are marked numerical with Level 2 points marked with a dash.
-Level 1 unordered list points are bulleted with Level 2 points marked with a dash.
+Level 1 **ordered** list points are marked numerical while Level 2 points are marked with a dash.
+Level 1 **unordered** list points are bulleted while Level 2 points are marked with a dash.
 
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Ordered_List_Mobile@2x.png">
-    <img src="/assets/images/style/lists/Ordered_List_Desktop@2x.png">
-  </picture>
-  <p class="caption">Ordered List | units in px / em</p>
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Unordered_List_Mobile@2x.png">
-    <img src="/assets/images/style/lists/Unordered_List_Desktop@2x.png">
-  </picture>
-  <p class="caption">Unordered List | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Ordered_List_Mobile@2x.png">
+      <img src="/assets/images/style/lists/Ordered_List_Desktop@2x.png">
+    </picture>
+    <p class="caption">Ordered List | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Unordered_List_Mobile@2x.png">
+      <img src="/assets/images/style/lists/Unordered_List_Desktop@2x.png">
+    </picture>
+    <p class="caption">Unordered List | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/light-ui/Ordered_Lists_Mobile_Light@2x.png">
+      <img src="/assets/images/style/lists/light-ui/Ordered_Lists_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Ordered List | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/light-ui/Unordered_Lists_Mobile_Light@2x.png">
+      <img src="/assets/images/style/lists/light-ui/Unordered_Lists_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Unordered List | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -41,21 +55,33 @@ Level 1 unordered list points are bulleted with Level 2 points marked with a das
 
 Lists cannot have any element or text within 16 px / 1em of its borders.
 
-**External Padding: 16px / 1em**
-
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Ordered_List_Padding_Mobile@2x.png">
-    <img src="/assets/images/style/lists/Ordered_List_Padding_Desktop@2x.png">
-  </picture>
-  <p class="caption">Ordered List Padding | units in px / em</p>
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Unordered_List_Padding_Mobile@2x.png">
-    <img src="/assets/images/style/lists/Unordered_List_Padding_Desktop@2x.png">
-  </picture>
-  <p class="caption">Unordered List Padding | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Ordered_List_Padding_Mobile@2x.png">
+      <img src="/assets/images/style/lists/Ordered_List_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Ordered List Padding | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/Unordered_List_Padding_Mobile@2x.png">
+      <img src="/assets/images/style/lists/Unordered_List_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Unordered List Padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/light-ui/Ordered_Lists_Padding_Mobile_Light@2x.png">
+      <img src="/assets/images/style/lists/light-ui/Ordered_Lists_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Ordered List Padding | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/lists/light-ui/Unordered_Lists_Padding_Mobile_Light@2x.png">
+      <img src="/assets/images/style/lists/light-ui/Unordered_Lists_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Unordered List Padding | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -68,9 +94,9 @@ Lists cannot have any element or text within 16 px / 1em of its borders.
 
 <div class="view__full">
 
-Level 1 text in a list should be set in bold/700 and title case, with the first letter of every word capitalized. Level 2 text in a list should be set in roman/400 and title case as well. List text should follow the Bluemix Typography font stack for sans-serif.
+Level 1 of any list type should be set in title case, with the first letter of every word capitalized and bolded. Level 2 of any list type should also be set in title case, with the first letter of every word capitalized in roman. All list text should follow the Bluemix Typography font stack for san-serif.
 
-**List font-size: 14px / .875em**
+**List font-size: 14px / .875rem**
 **Level 1 List font-weight: bold / 700**
 **Level 2 List font-weight: roman / 400**
 **Line height: 24px**

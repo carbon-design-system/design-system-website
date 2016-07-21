@@ -1,16 +1,18 @@
 export const themeSwitcher = () => {
-  const switcherBtn = [... document.querySelectorAll('.btn--theme-switcher')];
+  const themeSwitcherContainer = [... document.querySelectorAll('[data-theme-switcher]')];
 
-  switcherBtn.forEach((element) => {
-    const button = element;
-    button.addEventListener('click', () => {
-      const parentBox = element.parentElement;
-      parentBox.classList.toggle('light-ui');
-      if (parentBox.classList.contains('light-ui')) {
-        button.innerHTML = 'Dark Theme';
-      } else {
-        button.innerHTML = 'Light Theme';
-      }
+  themeSwitcherContainer.forEach(element => {
+    const themeSwitcherBtns = [... element.querySelectorAll('[data-toggle-theme]')];
+    themeSwitcherBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const exampleBackground = element.parentElement;
+        console.log(exampleBackground);
+        if (btn.dataset.toggleTheme === 'dark') {
+          exampleBackground.classList.remove('bx--global-light-ui');
+        } else {
+          exampleBackground.classList.add('bx--global-light-ui');
+        }
+      });
     });
   });
 };

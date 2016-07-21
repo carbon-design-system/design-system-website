@@ -1,12 +1,15 @@
 {{#markdown}}
 
 ## Structure
+
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
 
 ### Basics
-There are three types of notifications—inline, toast, and modal. Please refer to the usage tab for application practices. The border color of a notification indicates the notification state. The left border of a notification should be 5px.
+There are three types of notifications — inline, toast, and modal. Please refer to the usage tab to review when to use which notification type. The border color of a notification and its accompanying icon indicate the notification state. The left border of a notification should be 5px, while the remaining sides are 1px.
 
 Notifications on desktop and tablet should not exceed two lines including the notification title. Notifications on mobile should not exceed three lines including the notification title.
 
@@ -37,11 +40,20 @@ Inline Desktop and Tablet Notifications:
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/Notifications_Desktop@2x.png">
-  </picture>
-  <p class="caption">Notifications | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/Notifications_Desktop@2x.png">
+    </picture>
+    <p class="caption">Notifications | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Inline_Notifications_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Inline_Notifications_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Notifications | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -65,21 +77,40 @@ Toast Notifications Mobile, Desktop, and Tablet:
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/ToastNotifications_Desktop@2x.png">
-  </picture>
-  <p class="caption">Toast Notifications | units in px / em</p>
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Padding_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/ToastNotifications_Padding_Desktop@2x.png">
-  </picture>
-  <p class="caption">Toast Notifications Internal Padding | units in px / em</p>
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Padding2_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/ToastNotifications_Padding2_Desktop@2x.png">
-  </picture>
-  <p class="caption">Toast Notifications External Padding | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/ToastNotifications_Desktop@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Padding_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/ToastNotifications_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications Internal Padding | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/ToastNotifications_Padding2_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/ToastNotifications_Padding2_Desktop@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications External Padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Toast_Notification_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Toast_Notification_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Toast_Notification_Internal_Padding_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Toast_Notification_Internal_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications Internal Padding | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Toast_Notification_External_Padding_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Toast_Notification_External_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Toast Notifications External Padding | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -99,11 +130,20 @@ Please refer to the <a href= "http://design-system.stage1.mybluemix.net/componen
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_Modal_Mobile@2x.png">
-    <img class="pt0" src="/assets/images/style/notifications/Notifications_Modal_Desktop@2x.png">
-  </picture>
-  <p class="caption">Modal Notifications | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_Modal_Mobile@2x.png">
+      <img class="pt0" src="/assets/images/style/notifications/Notifications_Modal_Desktop@2x.png">
+    </picture>
+    <p class="caption">Modal Notifications | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Modal_Notification_Mobile_Light@2x.png">
+      <img class="pt0" src="/assets/images/style/notifications/light-ui/Modal_Notification_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Modal Notifications | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -113,26 +153,46 @@ Please refer to the <a href= "http://design-system.stage1.mybluemix.net/componen
 <div class="view__half">
 
 ### States
-There are four states for notifications: warning, informational, error, and success. The notification state is indicated by icon and border color. This rule applies to all three types of notifications (inline, toast, and modal). All icons can be found in the <a href="https://pages.github.ibm.com/bluemix/bluemix-icons/">Bluemix Icon Repo</a> or the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#usage">Iconography</a> page.
+There are four states for notifications: warning, informational, error, and success. The notification state is indicated by icon and border color. This rule applies to all three types of notifications (inline, toast, and modal). All icons can be found in the <a href="https://pages.github.ibm.com/bluemix/bluemix-icons/">Bluemix Icon Repo</a> or the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library">Iconography</a> page.
 
-**Warning notification color: #EFC100**
-**Informational notification color: #7CC7FF**
-**Error notification color: #FF5050**
-**Success notification color: #8CD211**
+**Warning notification color: #efc100**
+**Informational notification color:**
+**Dark UI:** #7cc7ff
+**Light UI:** #5aaafa
+**Error notification color:**
+**Dark UI:** #ff5050
+**Light UI:** #e71d32
+**Success notification color:**
+**Dark UI:** #8cd211
+**Light UI:** #5aa700
 
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_States_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/Notifications_States_Desktop@2x.png">
-  </picture>
-  <p class="caption">Notifications States | units in px / em</p>
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_States2_Mobile@2x.png">
-    <img src="/assets/images/style/notifications/Notifications_States2_Desktop@2x.png">
-  </picture>
-  <p class="caption">Notifications States | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_States_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/Notifications_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Notifications States | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/Notifications_States2_Mobile@2x.png">
+      <img src="/assets/images/style/notifications/Notifications_States2_Desktop@2x.png">
+    </picture>
+    <p class="caption">Notifications States | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Inline_Notification_States_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Inline_Notification_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Notifications States | units in px / em</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/notifications/light-ui/Inline_Notification_Two_Lines_States_Mobile_Light@2x.png">
+      <img src="/assets/images/style/notifications/light-ui/Inline_Notification_Two_Lines_States__Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Notifications States | units in px / em</p>
+  </div>
 </div>
 
 </div>

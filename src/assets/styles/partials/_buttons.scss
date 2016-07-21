@@ -99,3 +99,79 @@
     transform: rotate(180deg);
   }
 }
+
+.theme-switcher-btns {
+  position: absolute;
+  top: .75em;
+  right: .75em;
+
+  .view & {
+    top: 4rem;
+    right: 0;
+
+    .theme-switcher-btns__btn svg {
+      width: rem(25px);
+      height: rem(25px);
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 0 .3rem 0;
+
+    svg {
+      width: rem(20px);
+      height: rem(20px);
+      transition: 0s;
+    }
+
+    &--dark {
+      border-bottom: 2px solid $color__blue-30;
+
+      svg {
+        fill: $color__blue-30;
+      }
+
+      .bx--global-light-ui & {
+        border-bottom: 2px solid transparent;
+
+        svg {
+          fill: none;
+          path {
+            stroke: $color__navy-gray-7;
+          }
+        }
+      }
+    }
+
+    &--light {
+      border-bottom: 2px solid transparent;
+      margin-right: .5rem;
+
+      svg {
+        fill: $color__navy-gray-7;
+
+        circle {
+          stroke: $color__navy-gray-7;
+          fill: none;
+        }
+      }
+
+      .bx--global-light-ui & {
+        border-bottom: 2px solid $color__blue-51;
+
+        svg {
+          fill: $color__blue-51;
+
+          circle {
+            fill: $color__blue-51;
+            stroke: none;
+          }
+        }
+      }
+    }
+  }
+}

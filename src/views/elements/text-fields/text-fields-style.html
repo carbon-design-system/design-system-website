@@ -2,24 +2,39 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
 
 ### Basics
 
-Text fields are one color, filled at 10% opacity. The width of a text field should appropriately fit the design and layout of the content.
+Text fields are single color filled at 10% opacity. The width of a text field should appropriately fit the design and layout of the content.
 
-**Select Box Background Color: rgb (255,255,255) at 10% opacity**
+**Text Field Background Color:**
+**Dark UI:**
+#ffffff at 10% opacity rgba(255, 255, 255, .10)
+**Light UI:**
+#3d70b2 at 10% opacity rgba(61, 112, 178, .10)
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_Mobile@2x.png">
-<img src="/assets/images/style/text-fields/Text_Field_Desktop@2x.png">
-</picture>
-<p class="caption">Text Field Basics | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_Mobile@2x.png">
+    <img src="/assets/images/style/text-fields/Text_Field_Desktop@2x.png">
+    </picture>
+    <p class="caption">Text Field Basics | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/light-ui/Text_Field_Mobile_Light@2x.png">
+    <img src="/assets/images/style/text-fields/light-ui/Text_Field_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Text Field Basics | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -31,24 +46,30 @@ Text fields are one color, filled at 10% opacity. The width of a text field shou
 ### States
 
 - Default Non-Selected State: Browser Defined
-- Hover: 1px blue outline (rgb 90, 170, 250)
-- Form Validation: 2px bottom border (rgb 255, 80, 80)
+- Hover: 1px outline #5aaafa (rgb 90, 170, 250)
+- Form Validation:
+  Dark UI: 2px bottom border #ff5050 (rgb 255, 80, 80)
+  Light UI: 2px bottom border #e71d32 (rgb 231, 29, 50)
 - Help: Tool tip should be left aligned with the text field box and underlined to indicate a link
 - Disabled: 50% opacity
-
-**Hover Border weight: 1px**
-**Hover Border color: rgb (90, 170, 250)**
-**Form Validation Bottom Border weight: 2px**
-**Form Validation Bottom Border color: rgb (255, 80, 80)**
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_States_Mobile@2x.png">
-<img src="/assets/images/style/text-fields/Text_Field_States_Desktop@2x.png">
-</picture>
-<p class="caption">Text Field States</h5>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_States_Mobile@2x.png">
+    <img src="/assets/images/style/text-fields/Text_Field_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Text Field States</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/light-ui/Text_Field_States_Mobile_Light@2x.png">
+    <img src="/assets/images/style/text-fields/light-ui/Text_Field_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Text Field States</p>
+  </div>
 </div>
 
 </div>
@@ -66,11 +87,20 @@ Text fields can be grouped horizontally and vertically for tablet and desktop vi
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_Groupings_Mobile@2x.png">
-<img src="/assets/images/style/text-fields/Text_Field_Groupings_Desktop@2x.png">
-</picture>
-<p class="caption">Text Field Grouping Orientations</h5>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/Text_Field_Groupings_Mobile@2x.png">
+    <img src="/assets/images/style/text-fields/Text_Field_Groupings_Desktop@2x.png">
+    </picture>
+    <p class="caption">Text Field Grouping Orientations</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/text-fields/light-ui/Text_Field_Groupings_Mobile_Light@2x.png">
+    <img src="/assets/images/style/text-fields/light-ui/Text_Field_Groupings_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Text Field Grouping Orientations</p>
+  </div>
 </div>
 
 </div>
@@ -81,7 +111,7 @@ Text fields can be grouped horizontally and vertically for tablet and desktop vi
 
 <div class="view__full">
 
-Text field labels should be set in title case, with the first letter of every word capitalized. Text labels should be 3 words or less. Text field text should be set in sentence case with only the first letter of the first word capitalized. Text fields text should follow the Bluemix Typography font stack for sans-serif.
+Text field labels should be set in title case, with the first letter of every word capitalized and should not exceed more than 3 words. Text field text should be set in sentence case, with only the first letter of the first word capitalized. Text fields text should follow the Bluemix Typography font stack for sans-serif.
 
 </div>
 

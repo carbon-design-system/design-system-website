@@ -93,4 +93,19 @@ p {
   padding: 1rem;
   background-color: $color__navy-gray-3;
   color: $color__white;
+
+  .theme-switcher-btns {
+
+    &__btn {
+      width: 3rem;
+      height: 3rem;
+      background: none;
+      border: none;
+
+      svg {
+        width: rem(25px);
+        height: rem(25px);
+      }
+    }
+  }
 }

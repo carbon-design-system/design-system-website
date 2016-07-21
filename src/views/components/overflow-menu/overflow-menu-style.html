@@ -2,28 +2,41 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
 
 ### Basics
 
-The overflow menu should always have a width of 180px / 11.25. The height of an overflow menu is determined by the amount of content in the menu. The overflow menu icon can be found on the <a href="https://pages.github.ibm.com/Bluemix/bluemix-icons/">Bluemix Icons</a> page.
+The overflow menu should always have a width of 180px / 11.25. The height of an overflow menu is determined by the amount of content in the menu. The overflow menu icon can be found on the <a href="https://pages.github.ibm.com/Bluemix/bluemix-icons/">Bluemix Icons</a> or on the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library">Iconography Library</a> page.
 
 **Overflow menu height: varies based on content**
 **Overflow menu width: 180px / 11.25em**
 **Line height: 32px / 2em**
 **Dividing Line border: 1px**
-**Dividing Line color: #5A6872**
+**Dividing Line color:**
+**Dark UI:** #5a6872
+**Light UI:** #dde2e6
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Mobile@2x.png">
-<img src="/assets/images/style/overflow-menu/Overflow_menu_Desktop@2x.png">
-</picture>
-<p class="caption">Overflow Menu | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Mobile@2x.png">
+    <img src="/assets/images/style/overflow-menu/Overflow_menu_Desktop@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/light-ui/Overflow_menu_Mobile_Light@2x.png">
+    <img src="/assets/images/style/overflow-menu/light-ui/Overflow_menu_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -34,20 +47,35 @@ The overflow menu should always have a width of 180px / 11.25. The height of an 
 
 ### States
 
-Open overflow menus have a hover state, indicated by a color change. All hover states should be #5AAAFA unless the option the user is hovering over cannot be undone, in which case the color is #FF5050. Menu option text color changes during a hover state.
+Open overflow menus have a hover state, indicated by a color change. All hover states should be #5aaafa (Light UI: #3d70b2) unless the option the user is hovering over cannot be undone, in which case the color is #ff5050 (Light UI: #e71d32). Menu option text color changes during a hover state.
 
-**Regular hover color: #5AAAFA**
-**Warning hover color: #FF5050**
-**Text hover color: #152934**
+**Regular hover color:**
+**Dark UI:** #5aaafa
+**Light UI:** #3d70b2
+**Warning hover color:**
+**Dark UI:** #ff5050
+**Light UI:** #e71d32
+**Text hover color:**
+**Dark UI:** #152934
+**Dark UI:** #ffffff
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_States_Mobile@2x.png">
-<img src="/assets/images/style/overflow-menu/Overflow_menu_States_Desktop@2x.png">
-</picture>
-<p class="caption">Overflow Menu States | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_States_Mobile@2x.png">
+    <img src="/assets/images/style/overflow-menu/Overflow_menu_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu States | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_States_Mobile_Light@2x.png">
+    <img src="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu States | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -66,11 +94,20 @@ Internally there must be 16px / 1em of space between the menu text and sides of 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Padding_Mobile@2x.png">
-<img src="/assets/images/style/overflow-menu/Overflow_menu_Padding_Desktop@2x.png">
-</picture>
-<p class="caption">Overflow Menu Padding | units in px / em</p>
+<div class="style-img--dark">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Padding_Mobile@2x.png">
+  <img src="/assets/images/style/overflow-menu/Overflow_menu_Padding_Desktop@2x.png">
+  </picture>
+  <p class="caption">Overflow Menu Padding | units in px / em</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Mobile_Light@2x.png">
+  <img src="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Desktop_Light@2x.png">
+  </picture>
+  <p class="caption">Overflow Menu Padding | units in px / em</p>
+</div>
 </div>
 
 </div>

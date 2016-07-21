@@ -2,6 +2,8 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
@@ -14,21 +16,36 @@ Dropdown menus have two major states, open and closed. The open and closed menu 
 
 Closed Dropdown Menu:
 
-**Background color: white at 10% opacity (rgba: 255, 255, 255, 0.15)**
+**Background color:**
+**Dark UI**: #ffffff at 10% opacity (rgba: 255, 255, 255, 0.10)
+**Light UI**: #3d70b2 at 10% opacity (rgba: 61, 112, 178, 0.10)
 
 Open Dropdown Menu:
 
-**Background color: white at 10% opacity (rgba: 255, 255, 255, 0.15)**
-**Dropdown menu bar color: #3A4B54**
+**Background color:**
+**Dark UI**: #ffffff at 10% opacity (rgba: 255, 255, 255, 0.10)
+**Light UI**: #3d70b2 at 10% opacity (rgba: 61, 112, 178, 0.10)
+**Dropdown drawer background color:**
+**Dark UI**: #3a4b54
+**Light UI**: #ffffff
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Mobile@2x.png">
-<img src="/assets/images/style/dropdown/Menu_Dropdown_Desktop@2x.png">
-</picture>
-<p class="caption">Dropdown Basics | units in px / em</p>
+<div class="style-img--dark">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Mobile@2x.png">
+  <img src="/assets/images/style/dropdown/Menu_Dropdown_Desktop@2x.png">
+  </picture>
+  <p class="caption">Dropdown Basics | units in px / em</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Mobile_Light@2x.png">
+  <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Desktop_Light@2x.png">
+  </picture>
+  <p class="caption">Dropdown Basics | units in px / em</p>
+</div>
 </div>
 
 </div>
@@ -45,11 +62,20 @@ Internally there must be 16px / 1em of space between the sides of the dropdown m
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Padding_Mobile@2x.png">
-<img src="/assets/images/style/dropdown/Menu_Dropdown_Padding_Desktop@2x.png">
-</picture>
-<p class="caption">Dropdown Padding | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Menu_Dropdown_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Dropdown Padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Mobile_Light@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Dropdown Padding | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -62,18 +88,27 @@ Internally there must be 16px / 1em of space between the sides of the dropdown m
 In addition to the open and closed states, dropdown menus have hover, new selection, and disabled states.
 
 **Hover border: 1px**
-**Hover color: #5AAAFA**
+**Hover color: #5aaafa**
 **Disabled: 50% opacity**
-**New Selection color fill: #5AAAFA**
+**New Selection color fill: #5aaafa**
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_States_Mobile@2x.png">
-<img src="/assets/images/style/dropdown/Menu_Dropdown_States_Desktop@2x.png">
-</picture>
-<p class="caption">Dropdown States</h5>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_States_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Menu_Dropdown_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Dropdown States</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Mobile_Light@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Dropdown States</p>
+  </div>
 </div>
 
 </div>

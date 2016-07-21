@@ -2,12 +2,14 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
 
 ### Basics
-All tags have the same height however the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.
+All tags have the same height,however the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.
 
 **Tag height: 20px / 1.25em**
 **Tag width: varies based on amount of content**
@@ -16,11 +18,20 @@ All tags have the same height however the width of tags varies based on the amou
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_Mobile@2x.png">
-<img src="/assets/images/style/tags/Tag_Desktop@2x.png">
-</picture>
-<p class="caption">Tags | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_Mobile@2x.png">
+      <img src="/assets/images/style/tags/Tag_Desktop@2x.png">
+    </picture>
+    <p class="caption">Tags | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/tags/light-ui/Tags_Mobile_Light@2x.png">
+      <img src="/assets/images/style/tags/light-ui/Tags_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Tags | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -45,24 +56,47 @@ Tags cannot have any element or text within 3px / .188 em of their borders. Inte
 <div class="view__half">
 
 ### States
-There are many different types of tags, each type is detemined by color. All tag background colors should be at 20% opacity.
+There are many different types of tags, each type is detemined by color.
+
+**Dark UI:**
+All tag background colors should be at 20% opacity with text at 100% opacity (full color).
 
 **IBM color: IBM Blue 20, #7CC7FF**
-**Beta color: Bluemix Light Gray, #DFE6EB**
+**Beta color: Navy-Gray-8, #DFE6EB**
 **Third-Party color: IBM Teal 20, #6EEDD8**
 **Local/Dedicated/Custom color: IBM Purple 20, #D7AAFF**
 **Experimental color: IBM Orange 20, #FFA573**
 **Community color: IBM Green 20, #B4E051**
 **Private color: IBM Yellow 20, #FDD600**
 
+**Light UI:**
+The background color for each tag type is listed below.
+
+**IBM color: IBM Blue 10, #C0E6FF**
+**Beta color: Navy-Gray-8, #DFE6EB**
+**Third-Party color: IBM Teal 10, #A7FAE6**
+**Local/Dedicated/Custom color: IBM Purple 10, #EED2FF**
+**Experimental color: IBM Orange 10, #FFD791**
+**Community color: IBM Green 10, #C9F08F**
+**Private color: IBM Yellow 10, #FDE876**
+
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_States_Mobile@2x.png">
-<img src="/assets/images/style/tags/Tag_States_Desktop@2x.png">
-</picture>
-<p class="caption">Tags | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_States_Mobile@2x.png">
+    <img src="/assets/images/style/tags/Tag_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Tags | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/tags/light-ui/Tag_States_Mobile_Light@2x.png">
+    <img src="/assets/images/style/tags/light-ui/Tag_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Tags | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -73,10 +107,22 @@ There are many different types of tags, each type is detemined by color. All tag
 
 ### Typography
 Tag text should be set in title case with the first letter of each word capitalized. Tags should only have one word, however if more than one is necessary than the words should be connected using a hyphen with no spaces. Text should follow the Bluemix Typography font stack for san-serif.
-Tag text should be the same color as the background of the tag it sits on but at 100% opacity (full color).
 
 **Tag text font-size: 12px / .75rem**
 **Tag text font-weight: roman / 400**
+
+**Dark UI Tag Text Colors:**
+Tag text should be the same color as the background of the tag it sits on but at 100% opacity (full color).
+
+**Light UI Tag Text Colors:**
+
+**IBM text color: IBM Blue 60, #325C80**
+**Beta text color: Navy-Gray-4, #394B54**
+**Third-Party text color: IBM Teal 60, #006D5D**
+**Local/Dedicated/Custom text color: IBM Purple 60, #734098**
+**Experimental text color: IBM Orange 60, #872A0F**
+**Community text color: IBM Green 60, #2D660A**
+**Private text color: IBM Yellow 60, #735F00**
 
 </div>
 

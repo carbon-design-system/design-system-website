@@ -4,3 +4,5 @@ bower_components
 npm-debug.log
 dist
 *.map
+src/materials
+src/data

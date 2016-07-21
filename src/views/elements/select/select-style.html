@@ -2,6 +2,8 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__full">
@@ -9,8 +11,13 @@
 ### Basics
 Select boxes are single color filled at 10% opacity. The width of a select dropdown box should appropriately fit the design and layout of the content.
 
-**Select Box Background Color: rgba(255,255,255) at 10% opacity**
 **Select box height: 40px / 2.5em**
+
+**Select Box Background Color:**
+**Dark UI:**
+#ffffff at 10% opacity rgba(255,255,255, .10)
+**Light UI:**
+#3d70b2 at 10% opacity rgba(61, 112, 178, .10)
 
 </div>
 
@@ -22,17 +29,26 @@ Select boxes are single color filled at 10% opacity. The width of a select dropd
 
 ### Padding
 
-**Space between label and select box: 10px / .625em**
+**Padding between label and select box: 10px / .625em**
 **Internal side padding: 16px / 1em**
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Mobile@2x.png">
-<img src="/assets/images/style/select/Select_Desktop@2x.png">
-</picture>
-<p class="caption">Select Basics | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Mobile@2x.png">
+      <img src="/assets/images/style/select/Select_Desktop@2x.png">
+    </picture>
+    <p class="caption">Select Basics | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/light-ui/Select_Mobile_Light@2x.png">
+      <img src="/assets/images/style/select/light-ui/Select_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Select Basics | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -44,20 +60,31 @@ Select boxes are single color filled at 10% opacity. The width of a select dropd
 ### States
 
 - Default Non-Selected State: Browser Defined
-- Hover: 1px blue outline (rgb 90, 170, 250)
+- Hover: 1px outline #5aaafa (rgb 90, 170, 250)
 - Open: Style determined by browser
-- New Selection:__
-- Form Validation: 2px bottom border (rgb 255, 80, 80)
-- Help: Tool tip should be left aligned with the text field box and underlined to indicate a link. Disabled: 50% opacity
+- Form Validation:
+  Dark UI: 2px bottom border #ff50f0 rgb(255, 80, 80)
+  Light UI: 2px bottom border #e71d21 rgb(231, 29, 50)
+- Help: Tool tip should be left aligned with the text field box and underlined to indicate a link.
+- Disabled: 50% opacity
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_States_Mobile@2x.png">
-<img src="/assets/images/style/select/Select_States_Desktop@2x.png">
-</picture>
-<p class="caption">Select States</h5>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_States_Mobile@2x.png">
+      <img src="/assets/images/style/select/Select_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Select States</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/light-ui/Select_States_Mobile_Light@2x.png">
+      <img src="/assets/images/style/select/light-ui/Select_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Select States</p>
+  </div>
 </div>
 
 </div>
@@ -76,11 +103,20 @@ Select dropdowns can be grouped horizontally and vertically for tablet and deskt
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Groupings_Mobile@2x.png">
-<img src="/assets/images/style/select/Select_Groupings_Desktop@2x.png">
-</picture>
-<p class="caption">Select Groupings Orientations | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Groupings_Mobile@2x.png">
+      <img src="/assets/images/style/select/Select_Groupings_Desktop@2x.png">
+    </picture>
+    <p class="caption">Select Groupings Orientations | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/select/light-ui/Select_Groupings_Mobile_Light@2x.png">
+      <img src="/assets/images/style/select/light-ui/Select_Groupings_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Select Groupings Orientations | units in px / em</p>
+  </div>
 </div>
 
 </div>

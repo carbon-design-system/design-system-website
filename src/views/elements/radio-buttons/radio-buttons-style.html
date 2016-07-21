@@ -2,6 +2,8 @@
 
 ## Structure
 
+{{> theme-switcher-btns}}
+
 <div class="view__section">
 
 <div class="view__half">
@@ -9,7 +11,6 @@
 ### Basics
 
 Radio buttons have two states, selected and unselected. Selected buttons are filled by a small, solid dot encircled by a 2px border. The dot and border should be the same color. Unselected buttons have a 2px border with no fill.
-There should be 16px / 1em between the radio button and the radio button label text.
 
 **Radio Button height and width: 16px / 1 em**
 **Radio Button border: 2 px / .125 em**
@@ -18,11 +19,20 @@ There should be 16px / 1em between the radio button and the radio button label t
 </div>
 
 <div class="view__half">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/Radio_Button_Mobile@2x.png">
-    <img src="/assets/images/style/radio-buttons/Radio_Button_Desktop@2x.png">
-  </picture>
-  <p class="caption">Radio button | units in px / em</p>
+  <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/Radio_Button_Mobile@2x.png">
+      <img src="/assets/images/style/radio-buttons/Radio_Button_Desktop@2x.png">
+    </picture>
+    <p class="caption">Radio button | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/light-ui/Radio_Button_Text_Mobile_Light@2x.png">
+      <img src="/assets/images/style/radio-buttons/light-ui/Radio_Button_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Radio button | units in px / em</p>
+  </div>
 </div>
 
 </div>
@@ -34,17 +44,28 @@ There should be 16px / 1em between the radio button and the radio button label t
 ### Padding
 
 Radio buttons cannot have any element or text within 16 pixels of its borders.
+There should be 16px / 1em between the radio button and the radio button label text.
 
 **External Padding: 16px / 1em**
+**Padding between Label and button: 16 px / 1em**
 
 </div>
 
 <div class="view__half">
-<picture>
-<source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/Radio_Button_Padding_Mobile@2x.png">
-<img src="/assets/images/style/radio-buttons/Radio_Button_with_Padding_Desktop@2x.png">
-</picture>
-<p class="caption">Radio button padding | units in px / em</p>
+<div class="style-img--dark">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/Radio_Button_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/radio-buttons/Radio_Button_with_Padding_Desktop@2x.png">
+  </picture>
+  <p class="caption">Radio button padding | units in px / em</p>
+</div>
+<div class="style-img--light">
+  <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/radio-buttons/light-ui/Radio_Button_Padding_Mobile_Light@2x.png">
+    <img src="/assets/images/style/radio-buttons/light-ui/Radio_Button_Padding_Desktop_Light@2x.png">
+  </picture>
+  <p class="caption">Radio button padding | units in px / em</p>
+</div>
 </div>
 
 </div>
@@ -55,13 +76,13 @@ Radio buttons cannot have any element or text within 16 pixels of its borders.
 
 ## Typography
 
-Radio button legend text, or titles, should be set in bold / 700 and title case, with the first letter of each word capitalized.
+Radio button legend text should be set in bold / 700 and title case, with the first letter of each word capitalized.
 Radio button label text should be set in regular / 400 and sentence case, with only the first letter of the first word capitilized.
-Radio button labels should be 3 words or less. Radio button text should follow the Bluemix Typography font stack for sans-serif.
+Radio button labels should not exceed more than 3 words. Radio button text should follow the Bluemix Typography font stack for sans-serif.
 
-**Radio Legend font size: 14px / .875 em**
+**Radio Legend font size: 14px / .875rem**
 **Radio Legend font weight: bold / 700**
-**Radio Label font size: 14px / .875 em**
+**Radio Label font size: 14px / .875rem**
 **Radio Label font weight: regular / 400**
 
 </div>
