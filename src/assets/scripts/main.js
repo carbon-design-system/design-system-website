@@ -24,6 +24,7 @@ import {
 // Site
 // -------------
 // Import specific scripts for controlling website behavior
+import { playPause } from './site/motionDemos.js';
 import { openItemHeadings, toggleMenu, activeMenuLink, autoCloseMenu } from './site/menu';
 import { tabsNavigation } from './site/tabsNavigation';
 import { codeSnippets } from './site/snippets';
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //   alertModal.show();
   // }
 
+  playPause();
   openItemHeadings();
   toggleMenu();
   tabsNavigation();

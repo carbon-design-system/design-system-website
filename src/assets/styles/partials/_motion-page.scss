@@ -1,0 +1,280 @@
+.motion-demo {
+  position: relative;
+  width: 100%;
+  max-width: rem(720px);
+  background: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &__element {
+    height: 48px;
+    width: 48px;
+    background: $color__blue-30;
+  }
+
+  &__track {
+    border-bottom: 2px solid $color__navy-gray-8;
+  }
+
+  svg {
+    height: 12px;
+    width: 12px;
+  }
+
+  &__overlay {
+    height: 100%;
+    width: 100%;
+    background: hsla(255, 0%, 0%, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+.overlay__button {
+  background: none;
+  border: none;
+  outline: none;
+  pointer-events: none;
+  margin-top: rem(136px);
+
+  svg {
+    pointer-events: none;
+    fill: $color__white;
+    height: rem(48px);
+    width: rem(48px);
+
+    g rect {
+      fill: $color__white;
+    }
+  }
+}
+.motion-demo .overlay__button {
+  margin-top: rem(125px);
+}
+
+// Unfortunately the "*" selector is needed here.
+// animation-play-state doesn't seem to be inherited correctly
+.paused * { animation-play-state: paused; }
+
+.paused > .motion-demo__overlay {
+  opacity: .5;
+  
+    &:hover {
+      opacity: .6;
+    }
+}
+
+// Demo durations are set here
+$demo-duration: 4000ms;
+$right-duration: 300ms;
+$wrong-duration: 600ms;
+
+// Durations as percentages of the animation
+$r: ($right-duration / $demo-duration) * 100;
+$w: ($wrong-duration / $demo-duration) * 100;
+
+
+// Values for the keyframes
+$s: (((($demo-duration - ($wrong-duration * 2)) / 4)) / $demo-duration) * 100;
+
+$r2: $s + $r;
+
+$w2: $s + $w;
+
+$s2: $w2 + $s * 2;
+
+$r4: $s2 + $r;
+$w4: $s2 + $w;
+
+@keyframes right {
+  0% { transform: translateX(0); }
+  #{$s}% { transform: translateX(0); }
+  #{$r2}% { transform: translateX(576px); }
+  #{$s2}% { transform: translateX(576px); }
+  #{$r4}% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes wrong {
+  0% { transform: translateX(0); }
+  #{$s}% { transform: translateX(0); }
+  #{$w2}% { transform: translateX(576px); }
+  #{$s2}% { transform: translateX(576px); }
+  #{$w4}% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.right-duration {
+  animation: right $demo-duration linear;
+  animation-iteration-count: infinite;
+  animation-play-state: inherit;
+}
+
+.wrong-duration {
+  animation: wrong $demo-duration linear;
+  animation-iteration-count: infinite;
+  animation-play-state: inherit;
+}
+
+@keyframes easing {
+  0% { transform: translateX(0); }
+  #{$s}% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+  }
+  #{$w2}% { transform: translateX(576px); }
+  #{$s2}% {
+    transform: translateX(576px);
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+  }
+  #{$w4}% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes no-easing {
+  0% { transform: translateX(0); }
+  #{$s}% { transform: translateX(0); }
+  #{$w2}% { transform: translateX(576px); }
+  #{$s2}% { transform: translateX(576px); }
+  #{$w4}% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.easing {
+  animation: easing $demo-duration linear;
+  animation-iteration-count: infinite;
+  animation-play-state: inherit;
+}
+
+.no-easing {
+  animation: no-easing $demo-duration linear;
+  animation-iteration-count: infinite;
+  animation-play-state: inherit;
+}
+
+// Easing specific demos
+
+.easing-demo {
+  position: relative;
+  width: rem(320px);
+  background: #f5f7fa;
+
+  &__curve {
+    height: rem(320px);
+    width: 100%;
+
+    svg > polyline {
+      stroke: $color__navy-gray-7;
+      stroke-width: 1;
+    }
+
+    svg > g:first-child > path {
+      stroke: $color__navy-gray-7;
+      stroke-width: 1;
+    }
+
+    svg > g:last-child > path {
+      stroke: $color__blue-30;
+      stroke-width: 6;
+      animation-iteration-count: infinite;
+      animation-play-state: inherit;
+    }
+  }
+
+  &__track {
+    width: 100%;
+  }
+
+  &__element {
+    height: rem(24px);
+    width: rem(24px);
+    background: $color__blue-30;
+    animation: easing-demo-element $demo-duration linear;
+    animation-iteration-count: infinite;
+    animation-play-state: inherit;
+  }
+}
+
+@keyframes easing-demo-element {
+  0% { transform: translateX(0); }
+  #{$s}% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+  }
+  #{$w2}% { transform: translateX(264px); }
+  #{$s2}% {
+    transform: translateX(264px);
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+  }
+  #{$w4}% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes stroke-fill-standard {
+  0% { stroke-dashoffset: -460;}
+  #{$s}% {
+    stroke-dashoffset: -460;
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+   }
+  #{$w2}% { stroke-dashoffset: 0;}
+  #{$s2}% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+  }
+  #{$w4}% { stroke-dashoffset: -460;}
+  100% { stroke-dashoffset: -460;}
+}
+
+@keyframes stroke-fill-out {
+  0% { stroke-dashoffset: -456;}
+  #{$s}% {
+    stroke-dashoffset: -456;
+    animation-timing-function: cubic-bezier(0, 0, .25, 1);
+   }
+  #{$w2}% { stroke-dashoffset: 0;}
+  #{$s2}% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(0, 0, .25, 1);
+  }
+  #{$w4}% { stroke-dashoffset: -456;}
+  100% { stroke-dashoffset: -456;}
+}
+
+@keyframes stroke-fill-in {
+  0% { stroke-dashoffset: -429;}
+  #{$s}% {
+    stroke-dashoffset: -429;
+    animation-timing-function: cubic-bezier(.25, 0, 1, 1);
+   }
+  #{$w2}% { stroke-dashoffset: 0;}
+  #{$s2}% {
+    stroke-dashoffset: 0;
+    animation-timing-function: cubic-bezier(.25, 0, 1, 1);
+  }
+  #{$w4}% { stroke-dashoffset: -429;}
+  100% { stroke-dashoffset: -429;}
+}
+
+.standard-curve {
+  animation: stroke-fill-standard $demo-duration linear;
+  animation-delay: -$demo-duration + .01;
+}
+
+.ease-out-curve {
+  animation: stroke-fill-out $demo-duration linear;
+  animation-delay: -$demo-duration + .01;
+}
+
+.ease-in-curve {
+  animation: stroke-fill-in $demo-duration linear;
+  animation-delay: -$demo-duration + .01;
+}

@@ -24,12 +24,22 @@
   line-height: 2;
 }
 
+.italic {
+  font-style: italic;
+}
+
+// TEXT ALIGN
+
 .center-text {
   text-align: center;
 }
 
-.italic {
-  font-style: italic;
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
 }
 
 // TEXT COLOR

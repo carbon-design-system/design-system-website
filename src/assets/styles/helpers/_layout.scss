@@ -43,9 +43,26 @@
 }
 
 // DISPLAY
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
 
 .hidden {
   display: none;
+}
+
+//FLOAT
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
 }
 
 // MEDIA QUERIES
