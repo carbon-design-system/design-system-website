@@ -3,38 +3,49 @@
 ## Structure
 
 ### Header Row
-Headers guide users to the data that is presented below. Use meaningful text to label the table data and provide clarity to the content below. If necessary, use foot notes to clarify more detailed or technical information that would otherwise clutter the table.
+Headers guide users to the data that is presented below. Use meaningful text to label the table data and provide clarity to the content below.
 
 ### Number of Columns
 For large sets of data, it is preferred to use rows rather than columns, to guide the eye across the page. Readers can scan quickly down a single row, but find it harder to scan across many columns to relate connected data.
 
-### Minimal
-By following a minimal design structure of your table, it allows the user to focus on the content without any visual distractions. Use clean, subtle grid lines along with a simple font/color style that contrasts nicely with the background.
-
 ### Zebra Stripes
 Alternating colors on rows increases readability, and helps the guide the users through the data in the table.
 
-<p class="caption">Example:</h5>
-<div>
-  <img src="/assets/images/usage/table-1.png" />
-</div>
-
 ## Interactions
+### Search
+Search functionality within a table should follow the convention of a <a href="http://design-system.stage1.mybluemix.net/elements/search.html#foundation">small search</a>.
 
-### Loading Additional Data
-Depending on the context, two different patterns for loading additional data can be used. Pagination  directs a user to a different page that contains additional content. Continuous scrolling loads data as the user scrolls. A simple, &ldquo;View More&rdquo; link that loads a more data is appropriate for use.
+### Sorting
+Usability of your table will be greatly improved by making data sortable. By making header labels clickable, it allows the user to sort the table data up/down to their liking. Whichever attrribute is being sorted should be labeled with a caret.
 
-### Filters/Sorting
-Usability of your table will be greatly improved by making data sortable. Sorting can be helpful when users are looking to compare adjacent information. By making header labels clickable, it allows the user to easily filter the data to their liking.
+### Batch Actions
+Batch actions are functions that can be performed on multiple items within a table. Use an <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html#foundation">overflow menu</a> to present batch actions to the user. The overflow menu appears when the user clicks on the icon. If there is only one batch action available for the table data, that action should be styled as a <a href="http://design-system.stage1.mybluemix.net/elements/buttons.html#foundation">primary button</a>.
+
+### Inline Actions
+Inline actions are functions that can be performed on a specific table row. When the user hovers over a table cell, an <a href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html#foundation">overflow menu</a> icon appears which contains actions related specifically to that table row.
+<!--
+### Inline edit
+Inline edit enables the user to edit text directly in the page without going to a separate page. It makes the interaction more direct and intuitive as the user can edit the text in the same place where it is shown.
+-->
 
 ### Expandable Rows
-Expanable rows allow for minimal information to be shown at a high level, and a more detailed description/action set hidden within the overflow of the row.
+Expandable rows allow for minimal information to be shown at a high level, and a more detailed description shown nested within the row.
+
+
+## Additional Content
+Depending on the type of data within a table, any of the below options can be used to load additional content. It is important to note that only 1 of these solutions should be implemented.
+
+### Pagination
+Pagination divides table data into separate pages. Pagination should be accompanied by an option that allows the user to change the number of items per page.
+
+### Lazy Load
+Lazy loading loads additional content as the user scrolls in their viewport.
 
 ## Example
 
 <div class="overlay-image">
-<img class="thumbnail-img" src="/assets/images/usage/tables-2.png" />
-<a href="/assets/images/usage/tables-2.png" target="_blank" class="overlay">
+<img class="thumbnail-img" src="/assets/images/usage/table-1.png" />
+<a href="/assets/images/usage/table-1.png" target="_blank" class="overlay">
 <img src="/assets/images/icons/ibm-eye.png" />
 <p>View at 100%</p>
 </a>
