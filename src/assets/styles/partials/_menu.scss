@@ -6,7 +6,7 @@
   border-right: 2px solid $color__border--menu;
   width: $width__menu;
   height: 100%;
-  padding: 1em 2em 2em 2em;
+  padding: 1rem 1.5rem 2rem 1.5rem;
   position: fixed;
   overflow-y: auto;
   transition: $transition--slow;
@@ -17,7 +17,7 @@
 
     .sidebar-toggle {
       background-color: $color__blue-30;
-      padding: 2em 2.9em 2.1em 1.2em;
+      padding: 2rem 2.9rem 2.1rem 1.2rem;
       border-radius: 50%;
       top: 7px;
       right: 6px;
@@ -30,8 +30,8 @@
     color: $color__blue-20;
     font-weight: 200;
     line-height: 1.2;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     text-decoration: none;
 
     &--bold {
@@ -58,9 +58,12 @@
 
   &__item {
     border-top: 1px solid $color__blue-20;
-    padding: 1.5em 0;
+    padding: 1.5rem 0;
 
     .item__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       cursor: pointer;
       color: $color__navy-gray-8;
       text-transform: uppercase;
@@ -68,27 +71,47 @@
       font-weight: 600;
       letter-spacing: 2px;
       transition: .2s;
+      margin-bottom: 0;
 
       &:hover {
         color: $color__blue-40;
+      }
+    }
+
+    .item__arrow {
+      height: rem(10px);
+      width: rem(10px);
+      fill: $color__gray-3;
+      margin-right: .5rem;
+      transform: rotate(-180deg);
+
+      &.rotated {
+        transform: rotate(0deg);
+      }
+
+      &.transition {
+        transition: .3s;
       }
     }
   }
 }
 
 .item__sub-nav {
-  max-height: 0;
+  max-height: 30rem;
   overflow: hidden;
-  transition-duration: $transition--slow;
 
-  &.open {
-    max-height: 30em;
+  &.closed {
+    max-height: 0rem;
+  }
+
+  &.transition {
+    transition: .3s;
   }
 
   .sub-nav__item {
     text-transform: capitalize;
     margin-left: 0;
-    padding: .5em;
+    padding: .5rem;
     color: $color__navy-gray-8;
 
     &.active {
@@ -105,7 +128,7 @@
     }
 
     &:first-child {
-      margin-top: 1em;
+      margin-top: 1rem;
     }
 
     .item__link {
@@ -124,10 +147,10 @@
   position: absolute;
   top: 0;
   right: 15px;
-  padding: 2em;
+  padding: 2rem;
   cursor: pointer;
   transition: $transition--slow;
-  transform: translate(5em);
+  transform: translate(5rem);
   background-color: transparent;
 
   &.active {
@@ -155,8 +178,8 @@
   span:before,
   span:after {
     border-radius: 1px;
-    height: em(2px);
-    width: em(28px);
+    height: rem(2px);
+    width: rem(28px);
     background: $color__white;
     cursor: pointer;
     position: absolute;

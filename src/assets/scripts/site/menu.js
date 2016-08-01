@@ -53,15 +53,21 @@ export const activeMenuLink = () => {
 export const openItemHeadings = (nodeList = itemHeadings) => {
   nodeList.forEach((element) => {
     const subNav = element.nextSibling.nextSibling;
+    const itemArrow = element.querySelector('.item__arrow');
+    let isClosed;
+    let itemHeadingName;
+
+    if (subNav) {
+      itemHeadingName = element.getAttribute('data-category');
+    }
 
     element.addEventListener('click', () => {
-      subNav.classList.toggle('open');
+      itemArrow.classList.add('transition');
+      subNav.classList.add('transition');
+      subNav.classList.toggle('closed');
+      itemArrow.classList.toggle('rotated');
+      isClosed = subNav.classList.contains('closed');
+      localStorage.setItem(itemHeadingName, isClosed);
     });
-
-    const urlPath = window.location.pathname.split('/')[1];
-
-    if (urlPath && urlPath === element.id) {
-      element.nextSibling.nextSibling.classList.add('open');
-    }
   });
 };

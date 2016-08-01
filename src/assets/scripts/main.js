@@ -47,11 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => Loading.components.get(element).toggle(), 3000);
   });
 
-  // const alertModalElement = document.querySelector('#under-construction');
-  // if (alertModalElement) {
-  //   const alertModal = Modal.create(alertModalElement);
-  //   alertModal.show();
-  // }
+  [... document.querySelectorAll('[data-category]')].forEach(element => {
+    const category = element.getAttribute('data-category');
+    const subNav = element.nextSibling.nextSibling;
+    const arrow = element.querySelector('.item__arrow');
+    const isClosed = localStorage.getItem(category);
+    if (isClosed === 'true') {
+      subNav.classList.add('closed');
+      arrow.classList.add('rotated');
+    } else if (isClosed === 'false') {
+      subNav.classList.remove('closed');
+      arrow.classList.remove('rotated');
+    }
+  });
 
   playPause();
   openItemHeadings();
