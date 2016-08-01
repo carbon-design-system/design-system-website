@@ -27,6 +27,15 @@ const assemble = () => {
       dasherize: function(str) {
         return str.toLowerCase().trim().replace(/[-_\s]+/g, '-');
       },
+      checkIfVariations: function(iterations) {
+        let returnText = '';
+        if (Object.keys(iterations).length > 1) {
+          returnText = 'Variations';
+        } else {
+          returnText = 'Foundation';
+        }
+        return returnText;
+      },
       markdown: require('helper-markdown'),
       decode: function (val) {
         return decodeURIComponent(val);
