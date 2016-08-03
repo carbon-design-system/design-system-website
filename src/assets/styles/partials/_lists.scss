@@ -83,6 +83,25 @@
   }
 }
 
+.info-boxes__container {
+  @extend %font-smoothing;
+  display: flex;
+  padding: 1em 9em;
+
+  @include breakpoint(bp--md--major) {
+    padding: 0 4em;
+  }
+
+  @include breakpoint(bp--sm--major) {
+    padding: 0 2em;
+  }
+
+  @include breakpoint(bp--xs--major) {
+    flex-direction: column;
+    padding: 0 1em;
+  }
+}
+
 .info-boxes {
   display: flex;
   flex-direction: row;
