@@ -115,6 +115,13 @@
     }
   }
 
+  .templates & {
+
+    @include breakpoint(bp--sm--major) {
+      top: 14rem;
+    }
+  }
+
   &__btn {
     border: none;
     background: none;

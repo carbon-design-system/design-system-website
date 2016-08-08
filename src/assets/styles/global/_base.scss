@@ -75,6 +75,10 @@ p {
 
     .view {
       max-width: 80rem;
+
+      @include breakpoint(bp--sm--major) {
+        margin: 0 2em 0 2em;
+      }
     }
   }
 

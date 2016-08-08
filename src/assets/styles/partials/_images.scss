@@ -69,6 +69,7 @@ picture img {
     width: auto;
   }
 }
+
 .style-img--dark {
   opacity: 1;
 
@@ -91,4 +92,77 @@ picture img {
 .style-img--dark,
 .style-img--light {
   transition: .3s;
+}
+
+// LAYOUT
+
+
+.two-columns-img {
+  display: flex;
+  width: 100%;
+  max-width: 85rem;
+  max-height: rem(610px);
+  overflow: hidden;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .first-column {
+    width: 80%;
+
+    .style-img--dark,
+    .style-img--light {
+      width: 100%;
+      overflow: hidden;
+
+      @media screen and (max-width: 1410px) {
+        overflow: visible;
+      }
+
+      .thumbnail-img {
+        width: auto;
+        max-height: rem(610px);
+
+        @media screen and (max-width: 1410px) {
+          width: 100%;
+          max-height: auto;
+        }
+      }
+    }
+  }
+
+  .second-column {
+    width: 20%;
+    position: relative;
+    padding-left: 1rem;
+
+    @media screen and (max-width: 1410px) {
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .style-img--dark img,
+    .style-img--light img {
+      width: 100%;
+
+      @media screen and (max-width: 1410px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .style-img--light {
+      left: auto;
+    }
+  }
+
+  .first-column,
+  .second-column {
+
+    @media screen and (max-width: 1410px) {
+      width: 100%;
+    }
+  }
 }
