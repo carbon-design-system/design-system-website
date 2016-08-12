@@ -55,11 +55,92 @@ form {
   min-width: 50rem;
 }
 
-.demo--panel {
-  width: 50% !important;
-  padding: 1em 0 !important;
+.bx--sets-of-buttons {
+  margin-bottom: 1rem;
+}
 
-  @media screen and (max-width: $width__screen-size--small) {
-    width: 80% !important;
+.bx--checkbox__label {
+  margin-bottom: .25rem;
+}
+
+.bx--number {
+  min-width: 20rem;
+}
+
+.bx--number__input {
+  margin: 0;
+}
+
+.bx--tooltip__top {
+  margin-bottom: .5em;
+}
+
+.bx--overflow-menu {
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__icon {
+
+    &:focus {
+      box-shadow: 0px 2px 15px -2px rgba(0, 85, 255, 1);
+    }
+  }
+
+  &:active,
+  &.bx--overflow-menu--open {
+    .bx--overflow-menu__icon {
+      color: $color__white;
+      border: 1px solid #3577b9;
+      box-shadow: 0px 0px 2px 2px #3577b9;
+    }
+  }
+}
+
+.bx--overflow-menu__options {
+  left: auto;
+  right: rem(-20px);
+
+  &:before {
+    left: 8.9rem; // temporary
+    right: rem(40px);
+  }
+}
+
+.bx--content-switcher__btn {
+  background-color: transparent;
+}
+
+.bx--content-switcher {
+  margin-bottom: 1rem;
+}
+
+.bx--notification--new {
+  min-width: 30rem;
+  margin-bottom: .5rem;
+
+  p {
+    line-height: 1;
+  }
+}
+
+.bx--notification-inline--warning,
+.bx--notification-inline--error,
+.bx--notification-inline--info,
+.bx--notification-inline--success {
+  margin-bottom: .5rem;
+
+  p {
+    line-height: 1;
+  }
+}
+
+.bx--global-light-ui .bx--tabs__nav-item {
+  background: none;
+
+  &:hover {
+    background: none;
   }
 }

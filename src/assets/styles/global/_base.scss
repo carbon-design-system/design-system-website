@@ -26,13 +26,6 @@ h1 {
   }
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 1rem 0;
-  line-height: 1.5;
-}
-
 h3 {
   font-size: 1.125rem;
   font-weight: 600;
@@ -42,21 +35,14 @@ img {
   width: auto;
 }
 
-a {
-  color: $color__blue-50;
-  font-weight: 600;
-  margin-bottom: .5rem;
-  transition: $transition--base;
-
-  &:hover {
-    color: $color__blue-40;
-  }
-}
-
 code {
   font-size: .75rem;
   padding: .25rem .5rem;
   margin: 0 .25rem;
+}
+
+strong {
+  letter-spacing: 0;
 }
 
 p {

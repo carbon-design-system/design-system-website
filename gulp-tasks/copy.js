@@ -24,7 +24,7 @@ const copy = () => {
   const streams = [];
   streams.push(copyGlob(`${config.npm}/consumables/html/base-elements/**/*.html`, `${materials}/base-elements`));
   streams.push(copyGlob(`${config.npm}/consumables/html/components/**/*.html`, `${materials}/components`));
-  streams.push(copyGlob(`${config.npm}/consumables/js/**/*.js`, `${materials}/js`));
+  streams.push(copyGlob(`${config.npm}/consumables/js/es2015/*.js`, `${materials}/js`));
   // Copy package.json to /data so that fabricator can access the version of Bluemix components being used
   streams.push(copyGlob(`package.json`, `src/data`));
   streams.push(copyGlob(`bower.json`, `src/data`));

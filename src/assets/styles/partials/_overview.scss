@@ -43,6 +43,12 @@
       font-size: 2.5rem;
     }
   }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
 }
 
 .overview-section {
@@ -61,6 +67,17 @@
   @include breakpoint(bp--xs--major) {
     flex-direction: column;
     padding: 0 1em;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
   }
 
   &:nth-child(2) {

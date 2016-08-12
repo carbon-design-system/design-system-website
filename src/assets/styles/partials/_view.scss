@@ -88,6 +88,7 @@
     color: $color__blue-40;
     position: relative;
     margin-top: 2.5em;
+    font-weight: 600;
     padding: .5em 0 1.5em;
 
     &:first-child {
@@ -124,6 +125,7 @@
   h3 {
     color: $color__blue-40;
     padding: 1em 0;
+    letter-spacing: 0;
 
     &:first-child {
       padding-top: 0;
@@ -148,11 +150,26 @@
     &.list-reset {
       list-style: none;
     }
+
+    &.lh0 {
+      line-height: 0;
+    }
   }
 
   ol {
     list-style: decimal;
     line-height: 1.5;
     margin-left: 1.25em;
+  }
+
+  a:not(.cta-btns--border__btn) {
+    color: $color__blue-50;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    transition: $transition--base;
+
+    &:hover {
+      color: $color__blue-40;
+    }
   }
 }

@@ -17,7 +17,7 @@ import './vendor/prism';
 // Import all production JS (ES2015) files from bluemix-components
 
 import {
-  Loading, Modal,
+  Loading,
 } from '@console/bluemix-components';
 
 // /////////////////////////////////////////////////////////////////////

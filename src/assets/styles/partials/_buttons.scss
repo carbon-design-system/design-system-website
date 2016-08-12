@@ -1,5 +1,6 @@
 .cta-btns--white {
   display: flex;
+  padding-bottom: .5rem;
 
   @media screen and (max-width: $width__screen-size--x-small) {
     flex-direction: column;
@@ -42,10 +43,10 @@
   display: flex;
   width: em(250px);
   align-items: center;
-  padding: 1em;
-  border: none;
-  background-color: $color__blue-40;
-  color: $color__dark-blue;
+  padding: .75rem;
+  background-color: transparent;;
+  color: $color__blue-40;
+  border: 2px solid $color__blue-40;
   font-weight: 600;
   font-size: .8rem;
   margin-right: em(35px);
@@ -59,8 +60,8 @@
   }
 
   &:hover {
-    background-color: $color__blue-30;
-    color: $color__dark-blue;
+    background-color: $color__blue-40;
+    color: $color__blue-90 !important;
   }
 
   @media screen and (max-width: $width__screen-size--x-small) {
@@ -73,22 +74,23 @@
   flex-direction: column;
   border-top: 1px solid $color__blue-20;
   padding-top: 2em;
+}
 
-  .cta-btns--border__btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1em;
-    color: $color__blue-30;
-    border-color: $color__blue-30;
+.cta-btns--border__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  color: $color__blue-30;
+  border-color: $color__blue-30;
+  max-width: 15rem;
 
-    &:hover {
-      background-color: $color__blue-30;
-      color: $color__blue-90;
+  &:hover {
+    background-color: $color__blue-30;
+    color: $color__blue-90;
 
-      .btn-icon {
-        fill: $color__blue-90;
-      }
+    .btn-icon {
+      fill: $color__blue-90;
     }
   }
 
@@ -96,7 +98,23 @@
     width: em(16px);
     height: em(16px);
     fill: $color__blue-30;
+  }
+
+  .btn-icon--rotated {
     transform: rotate(180deg);
+  }
+
+  &--dark {
+    color: $color__blue-40;
+    border-color: $color__blue-40;
+
+    &:hover {
+      background-color: $color__blue-40;
+    }
+
+    .btn-icon {
+      fill: $color__blue-40;
+    }
   }
 }
 
@@ -128,6 +146,7 @@
     cursor: pointer;
     margin: 0;
     padding: 0 0 .3rem 0;
+    outline: none;
 
     svg {
       width: rem(20px);

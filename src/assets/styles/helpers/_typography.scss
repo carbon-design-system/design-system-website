@@ -20,6 +20,10 @@
   letter-spacing: .5px;
 }
 
+.lh0 {
+  line-height: 0;
+}
+
 .lh2 {
   line-height: 2;
 }
@@ -53,6 +57,14 @@
 
 .blue-30 {
   color: $color__blue-30;
+}
+
+.blue-40 {
+  color: $color__blue-40;
+}
+
+.blue-51 {
+  color: $color__blue-51;
 }
 
 .blue-90 {

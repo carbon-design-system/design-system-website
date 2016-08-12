@@ -13,7 +13,7 @@ const assemble = () => {
     layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'],
     views: ['src/views/**/*', '!src/views/+(layouts)/**'],
     data: 'src/data/*.json',
-    materials: 'src/materials/**/*',
+    materials: ['src/materials/**/*', 'src/views/temp-materials/**/*'],
     docs: 'src/docs/**/*.md',
     keys: {
       materials: 'materials',
@@ -43,8 +43,8 @@ const assemble = () => {
       raw: function (options) {
         return options.fn();
       },
-      findFile: function(fileName) {
-        let jsFile = fs.readFileSync(`src/materials/${fileName}`, { 'encoding': 'utf8' });
+      findFile: function(fileNamePath) {
+        let jsFile = fs.readFileSync(`${fileNamePath}`, { 'encoding': 'utf8' });
         jsFile = jsFile.replace(/["']/g, '\'');
         return jsFile;
       }

@@ -1,17 +1,24 @@
 .demo--panels {
   width: 100%;
   height: 3.75rem;
+  position: relative;
 }
 
 .demo--panel {
   position: absolute;
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  padding: 1em;
+  padding-top: 1rem;
 
-  &.bx--content-switcher--selected,
-  &.bx--tabs--selected {
-    opacity: 1;
+  .bx--module--full {
+    background-color: #2D3F49;
+
+    .bx--global-light-ui & {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  h2 {
+    padding-left: 0;
   }
 }

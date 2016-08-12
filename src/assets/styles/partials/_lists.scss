@@ -132,9 +132,18 @@
     }
   }
 
+  a {
+    font-weight: 700;
+
+    &:hover {
+      color: $color__blue-40;
+    }
+  }
+
   h2 {
     font-size: rem(46px);
     font-weight: 200;
+    margin-bottom: .5rem;
   }
 
   h3 {

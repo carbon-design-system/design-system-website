@@ -34,6 +34,7 @@ gulp.task('serve', ['nodemon'], () => {
 
   browserSync.init({
     proxy: 'localhost:3333',
+    port: 3010,
     notify: true,
     open: false,
     logPrefix: 'Bluemix Design System',

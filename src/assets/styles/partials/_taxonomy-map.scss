@@ -4,7 +4,6 @@
   padding: 9rem 0;
   margin-bottom: 13rem;
 
-  // Styles to overwrite the base styles in view
   ul {
     list-style: none;
     margin-left: 0;
@@ -19,7 +18,6 @@
   a {
     margin-bottom: 0;
   }
-  //
 
   @media screen and (max-width: 1400px) {
     padding-top: 0;
@@ -30,7 +28,6 @@
     height: 100%;
     position: relative;
     display: flex;
-    align-items: center;
 
     @media screen and (max-width: 1400px) {
       flex-direction: column;
@@ -54,9 +51,10 @@
     &.home {
 
       & > .taxonomy-map__detail-card {
+        top: 13rem;
 
         &.is-open {
-          transform: translateX(-10rem) translateY(13rem) scale(1);
+          transform: scale(1);
         }
 
         &:before {
@@ -85,11 +83,10 @@
         &::after {
           content: '';
           position: absolute;
-          top: 0;
-          left: 0;
           border-top: 1px solid #bbb;
           width: 185px;
-          transform: translateX(100px) translateY(40px);
+          top: 2.75rem;
+          left: 6.5rem;
 
           @media screen and (max-width: 1400px) {
             display: none;
@@ -104,7 +101,8 @@
     }
 
     .top-branch {
-      transform: translateY(em(-3px)) translateX(em(-85px));
+      top: 0;
+      left: 2.1rem;
       position: absolute;
     }
 
@@ -122,11 +120,10 @@
               content: '';
               text-align: right;
               position: absolute;
-              top: 0;
-              left: 0;
               border-top: 1px solid #bbb;
               width: 60px;
-              transform: translateX(-75px) translateY(42px);
+              left: -4.7rem;
+              top: 2.6rem;
 
               @media screen and (max-width: 1400px) {
                 display: none;
@@ -136,11 +133,11 @@
             &::after {
               content: '';
               position: absolute;
-              top: 0;
-              left: 0;
+              top: 6rem;
+              left: -7.5rem;
               border-top: 2px dotted #bbb;
               width: 350px;
-              transform: rotate(90deg) translateX(117px) translateY(120px);
+              transform: rotate(90deg);
               z-index: -1;
 
               @media screen and (max-width: 1400px) {
@@ -152,7 +149,7 @@
           .card-content {
 
             &:before {
-              content: url('../images/arrow.svg');
+              content: url('../images/templates/arrow.svg');
               height: 5px;
               width: 5px;
               position: absolute;
@@ -170,11 +167,10 @@
             &::before {
               content: '';
               position: absolute;
-              top: 0;
-              right: 0;
               border-top: 1px solid #bbb;
               width: 50px;
-              transform: translateX(50px) translateY(42px);
+              top: 2.3rem;
+              left: 6.2rem;
 
               @media screen and (max-width: 1400px) {
                 display: none;
@@ -182,11 +178,11 @@
             }
 
             &:after {
-              content: url('../images/arrow.svg');
+              content: url('../images/templates/arrow.svg');
               height: 5px;
               width: 5px;
               position: absolute;
-              top: 30.5px;
+              top: 34.5px;
               left: -19px;
               z-index: 5;
             }
@@ -200,11 +196,10 @@
             &::before {
               content: '';
               position: absolute;
-              top: 0;
-              left: 0;
               border-top: 1px solid #bbb;
               width: 60px;
-              transform: translateX(-75px) translateY(42px);
+              top: 2.7rem;
+              left: -4.7rem;
 
               @media screen and (max-width: 1400px) {
                 display: none;
@@ -212,7 +207,7 @@
             }
 
             &:after {
-              content: url('../images/arrow.svg');
+              content: url('../images/templates/arrow.svg');
               height: 5px;
               width: 5px;
               position: absolute;
@@ -228,7 +223,6 @@
     .bottom-branch {
       .bottom-branch-row {
         flex-direction: row;
-        align-items: center;
 
         .taxonomy-map__card .content {
 
@@ -239,11 +233,11 @@
           &::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
             border-top: 1px solid #bbb;
             width: 90px;
-            transform: translateX(-107px) translateY(42px);
+            transform: rotate(0deg);
+            left: -6.7rem;
+            top: 2.6rem;
 
             @media screen and (max-width: 1400px) {
               display: none;
@@ -268,12 +262,12 @@
         &::before {
           content: '';
           position: absolute;
-          top: 0;
           right: 0;
           border-top: 1px solid #bbb;
           width: 130px;
           height: 47px;
-          transform: rotate(90deg) translateX(81px);
+          transform: rotate(90deg);
+          top: 5rem;
 
           @media screen and (max-width: 1400px) {
             display: none;
@@ -281,7 +275,7 @@
         }
 
         &:after {
-          content: url('../images/circle-icon.png');
+          content: url('../images/templates/circle-icon.png');
           height: 10px;
           width: 10px;
           position: absolute;
@@ -320,7 +314,7 @@
         }
 
         &:nth-child(2) {
-          margin-bottom: 25px;
+          margin-bottom: 17px;
 
           &:after {
             right: -2px;
@@ -330,7 +324,7 @@
 
         &:last-child {
           margin-left: -55px;
-          transform: translateY(3px);
+          top: .2rem;
 
           &:after {
             top: 1px;
@@ -339,7 +333,7 @@
         }
 
         &:after {
-          content: url('../images/circle-icon.png');
+          content: url('../images/templates/circle-icon.png');
           height: 10px;
           width: 10px;
           position: absolute;
@@ -361,12 +355,12 @@
           &::after {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
             border-top: 2px dotted #bbb;
             width: 40px;
             height: 20px;
-            transform: rotate(90deg) translateX(-32px) translateY(5px);
+            transform: rotate(90deg);
+            top: -2rem;
+            left: -1rem;
 
             @media screen and (max-width: 1400px) {
               display: none;
@@ -376,12 +370,18 @@
           &::before {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
             border-top: 2px dotted #bbb;
-            width: 101px;
+            width: 85px;
             height: 69px;
-            transform: rotate(90deg) translateX(48px);
+            transform: rotate(90deg);
+            top: 3rem;
+            z-index: 1;
+            left: -4rem;
+          }
+
+          img {
+            position: absolute;
+            top: .25rem;
           }
         }
 
@@ -391,16 +391,16 @@
       }
 
       ul li .card__plus-sign {
-        transform: translateY(-15px) translateX(80px);
+        top: 1rem;
+        left: 5rem;
 
         &::after {
           content: '';
           position: absolute;
-          top: 0;
-          right: 0;
           border-top: 2px dotted #bbb;
           width: 294px;
-          transform: translateX(-30px) translateY(15px);
+          top: 1rem;
+          left: -18.5rem;
 
           @media screen and (max-width: 1400px) {
             display: none;
@@ -410,11 +410,10 @@
         &::before {
           content: '';
           position: absolute;
-          top: 0;
-          right: 0;
           border-top: 2px dotted #bbb;
           width: 310px;
-          transform: translateX(310px) translateY(15px);
+          top: 1rem;
+          left: 2rem;
 
           @media screen and (max-width: 1400px) {
             display: none;
@@ -430,26 +429,29 @@
     .right-branch {
       order: 1;
       position: absolute;
-      transform: translateY(-41px) translateX(230px);
+      top: -5rem;
+      left: 14.4rem;
     }
 
     .right-branch-row {
       flex-direction: row;
-      margin-left: 428px;
-      transform: translateY(-62px);
+      margin-left: 436px;
+      position: absolute;
+      top: -1.9rem;
 
       ul {
         margin-left: 112px;
 
         .taxonomy-map__card {
-          transform: translateY(-6px) translateX(-35px);
+          left: -2rem;
+          top: 0;
 
           &:before {
-            content: url('../images/arrow.svg');
+            content: url('../images/templates/arrow.svg');
             height: 5px;
             width: 5px;
             position: absolute;
-            top: 44.5px;
+            top: 51px;
             left: -7px;
             z-index: 5;
           }
@@ -457,11 +459,10 @@
           &::after {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
             border-top: 1px solid #bbb;
             width: 90px;
-            transform: translateX(-135px) translateY(54px);
+            left: -6rem;
+            top: 3.8rem;
 
             @media screen and (max-width: 1400px) {
               display: none;
@@ -471,7 +472,7 @@
       }
 
       &:before {
-        content: url('../images/arrow.svg');
+        content: url('../images/templates/arrow.svg');
         height: 5px;
         width: 5px;
         position: absolute;
@@ -482,27 +483,29 @@
     }
 
     .line {
-      transform: translateX(-125px) translateY(-10px);
+      position: absolute;
+      left: 8rem;
+      top: -1rem;
 
       &:before {
-        content: url('../images/circle-icon.png');
+        content: url('../images/templates/circle-icon.png');
         height: 10px;
         width: 10px;
         position: absolute;
-        top: 10px;
-        left: 49px;
+        top: 12px;
+        left: 37px;
         z-index: 5;
       }
 
       &::after {
         content: '';
         position: absolute;
-        top: 0;
-        right: 0;
+        left: 0;
+        top: 2.2rem;
         border-top: 1px solid #bbb;
         width: 50px;
         height: 30px;
-        transform: rotate(90deg) translateX(32px) translateY(70px);
+        transform: rotate(90deg);
 
         @media screen and (max-width: 1400px) {
           display: none;
@@ -553,10 +556,11 @@
         border-radius: 50%;
         position: absolute;
         z-index: 3;
-        transform: translateX(-35px);
+        left: -.5rem;
+        top: .2rem;
 
         &--right {
-          transform: translateX(15px);
+          left: 5.5rem;
         }
       }
     }
@@ -573,15 +577,18 @@
     border-radius: 10px;
     margin-top: 1.5rem;
     position: absolute;
-    transform: translateX(-10rem) translateY(2rem) scale(0);
+    transform: scale(0);
     opacity: 0;
     transition: .3s;
     z-index: 5;
+    left: -2.75rem;
+    top: 5.5rem;
 
     &.left-aligned {
+      left: -17.75rem;
 
       &.is-open {
-        transform: translateX(-26rem) translateY(5.6rem) scale(1);
+        transform: scale(1);
         opacity: 1;
       }
 
@@ -653,7 +660,7 @@
     }
 
     &.is-open {
-      transform: translateX(-11em) translateY(6em) scale(1);
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -695,108 +702,12 @@
 
 // Firefox Specific Styles
 
-@-moz-document url-prefix() {
-
-  .taxonomy-map__card .top-branch {
-    transform: translateY(-11em) translateX(-5.3125em);
-    position: absolute;
-  }
-
-  .taxonomy-map__card .right-branch {
-    order: 1;
-    position: absolute;
-    transform: translateY(-109px) translateX(230px);
-  }
-
-  .taxonomy-map__card .right-branch-row {
-    flex-direction: row;
-    margin-left: 428px;
-    transform: translateY(3px);
-  }
-
-  .taxonomy-map__card .card-content .blue-dot {
-    width: 20px;
-    height: 20px;
-    background-color: $color__blue-30;
-    border-radius: 50%;
-    z-index: 3;
-    transform: translateX(-35px) translateY(-22px);
-    position: absolute;
-  }
-
-  .taxonomy-map__card .card-content .blue-dot--right {
-    transform: translateX(12px) translateY(-22px);
-  }
-
-  .taxonomy-map__detail-card.is-open {
-    transform: translateX(-11em) translateY(2em) scale(1);
-    opacity: 1;
-  }
-
-  .taxonomy-map__detail-card.left-aligned.is-open {
-    transform: translateX(-26em) translateY(2em) scale(1);
-    opacity: 1;
-  }
-
-  .taxonomy-map__card.home > .taxonomy-map__detail-card.is-open {
-    transform: translateX(-10em) translateY(2em) scale(1);
-  }
-}
+// @-moz-document url-prefix() {
+//
+// }
 
 // Internet Explorer specific styles
 
-@media all and(-ms-high-contrast: none), (-ms-high-contrast: active) {
-
-  .taxonomy-map__card .top-branch {
-    transform: translateY(-11em) translateX(-5.3125em);
-    position: absolute;
-  }
-
-  .taxonomy-map__card .right-branch {
-    order: 1;
-    position: absolute;
-    transform: translateY(-109px) translateX(230px);
-  }
-
-  .taxonomy-map__card .right-branch-row {
-    flex-direction: row;
-    margin-left: 428px;
-    transform: translateY(3px);
-  }
-
-  .taxonomy-map__card .card-content .blue-dot {
-    width: 20px;
-    height: 20px;
-    background-color: $color__blue-30;
-    border-radius: 50%;
-    z-index: 3;
-    transform: translateX(-35px) translateY(-22px);
-    position: absolute;
-  }
-
-  .taxonomy-map__card .card-content .blue-dot--right {
-    transform: translateX(12px) translateY(-22px);
-  }
-
-  .taxonomy-map__detail-card {
-
-    .detail-card__content {
-      max-width: 25rem;
-      height: 100%;
-    }
-  }
-
-  .taxonomy-map__detail-card.is-open {
-    transform: translateX(-11rem) translateY(2rem) scale(1);
-    opacity: 1;
-  }
-
-  .taxonomy-map__detail-card.left-aligned.is-open {
-    transform: translateX(-26rem) translateY(2rem) scale(1);
-    opacity: 1;
-  }
-
-  .taxonomy-map__card.home > .taxonomy-map__detail-card.is-open {
-    transform: translateX(-10rem) translateY(2rem) scale(1);
-  }
-}
+// @media all and(-ms-high-contrast: none), (-ms-high-contrast: active) {
+//
+// }
