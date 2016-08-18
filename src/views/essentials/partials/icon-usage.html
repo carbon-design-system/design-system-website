@@ -11,17 +11,17 @@
 <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons GitHub Repo</a>
 <a href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank">Bluemix Icon Library</a>
 <a href="https://releaseblueprints.ibm.com/display/CLOUDOE/Master+Icon+List" target="_blank">Service Provider Master Icon List</a>
+<a href="http://www.ibm.com/design/language/resources/icon-library/">IBM Design Language Icon Library</a>
 
 <svg class="icon-blue icon-med"><use xlink:href="/assets/sprite.svg#common--download"></use></svg>
 
-<a href="" target="_blank">Bluemix UI Icons Sketch File</a>
-<a href="" target="_blank">Bluemix SVG Sketch Template</a>
+<a href="https://github.ibm.com/Bluemix/design-kit" target="_blank">Bluemix UI Icons Sketch File</a>
 
 ## Visual Usage
 
 ### Sizing
 
-Bluemix uses a standard set for icon sizes. [UI Icons] (Link to the Library Tab where we describe UI Icons) should always be used at one of the specified sizes in the table below (64 x 64, 48 x 48, 32 x 32, 24 x 24, 16 x 16). The art of the icon itself does not have to completely fill the entire square artboard. However, the icon should optically fill the space.
+Bluemix uses a standard set for icon sizes. Icons from the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> should always be used at one of the specified sizes in the table below. The shape of the icon itself does not have to completely fill the entire square artboard. However, the icon should optically fill the space.
 
 32 x 32 px is the default svg size for the library.
 
@@ -50,10 +50,10 @@ Bluemix uses a standard set for icon sizes. [UI Icons] (Link to the Library Tab 
 
 ### Background and Internal Padding
 
-All icons should be on a transparent background and centered within the artboard boundaries of one of the below standard dimensions. This means that icons could have extra internal horizontal or vertical.
+All icons should be on a transparent background and centered within the artboard boundaries at one of the below standard dimensions. This means that icons could have extra internal horizontal or vertical space.
 
 **Background: 100% Transparent**
-**Alignment in container: Centered**
+**Artboard Alignment: Centered**
 
 <div class="my2">
   <img src="../assets/images/iconography-page/icongraphy_background.png" alt="" />
@@ -61,7 +61,7 @@ All icons should be on a transparent background and centered within the artboard
 
 ### External Padding
 
-Include enough padding around the icons so that no matter the icon size it will always meet the standand touch affordance of 44 pixels or higher.
+Include enough padding around the icons so that no matter the icon size, it will always meet the standand touch affordance of 44 pixels or higher.
 
 **Target Area: 44 px or higher**
 
@@ -71,14 +71,14 @@ Include enough padding around the icons so that no matter the icon size it will 
 
 ### Color
 
-Interactive UI Icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the action of icon. If it is a primary action then the icon should be Blue 30. If the icon is a secondary or supplementary action then icon color should be a neutral, Navy-Gray-8. Blue should always be used with an icon to show that it is interactive. For secondary UI Icons the hover state should be blue to help emphasize its int.
+Interactive UI Icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the  importance of the icon's action. If it is a primary action then the icon should be Blue 30. If the icon is a secondary or supplementary action, then icon color should be a neutral color, like Navy-Gray-8. Blue should always be used with an icon to show that it is interactive. For secondary UI Icons the hover state should be blue to help emphasize that it is interactive.
 
-**Exception:** There is an exception to the either Blue or Neutral color rule. Icons such as status or notification icons can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
+**Exception:** There is an exception to both the Blue and Neutral color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
 **Primary UI Icon Color State**
 
 - Normal: Blue 30 #5aaafa
-- Hover: Blue 20 #7cc
+- Hover: Blue 20 #7cc7ff
 - Disabled: @ 50% opacity
 
 **Secondary UI Icon Color State**
@@ -95,9 +95,9 @@ Interactive UI Icons need to pass the same color contrast ratio as typography at
 
 Icons of the same size should have the same visual weight. One icon should not look heavier or lighter than another icon of the same size. Most Bluemix UI Icons are drawn with a two pixel stroke.
 
-Be careful when resizing icons that the 2px stroke does not increase or decrease causing icons to look uneven. When scaling icons you should always start each icon at the same base size (preferrably the default of 32px).
+Be mindful when resizing icons, make sure that the 2px stroke does not increase or decrease causing icons to look uneven. When scaling icons you should always start each icon at the same base size (preferrably the default of 32px).
 
-**Glyphs** or 16 pixel icons should always be a filled icon. This adds visual weight to the icon allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
+**Glyphs** or 16 pixel icons, should always be a filled icon. This adds visual weight to the ico, allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
 
 <div class="examples">
   <div class="do-example">
@@ -117,7 +117,7 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 ## Code Usage
 
-Access the <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons GitHub repo.</a>
+Access the <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a> for Bluemix Icons.
 
 The main file here is <code>sprite.svg</code>, which contains an SVG sprite (every SVG included in a single file within a `<defs>` tag inside of a `<symbol>`). We're using the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank">SVG</a> to access them.</p>
 

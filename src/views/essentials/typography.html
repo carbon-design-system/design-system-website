@@ -26,7 +26,7 @@ IBM uses a custom version of Helvetica Neue for both its Marketing and Product b
 
 ## Normalized Major Second Type Scale | 1.125
 
-Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale  will create visual as well as hierarchical consistency throughout the product. To reference the font size, use the mixin and reference the pixel value.
+Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
 
 ```css
   @include font-size('18');
@@ -139,12 +139,12 @@ Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been
 
 ## Font Weights
 
-Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight in conjunction with type size must be carefully balanced. At the same size, bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.
+Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight, in conjunction with type size, must be carefully balanced. At the same size, bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.
 
 <ul class="wrapped-list flex-column mt2 ml0">
   <li class="flex-row mb2 align-start space-between sm--flex-column">
     <p class="bold">Font-weight: 300 / Light<br>
-      <span class="normal">Should only be used at sizes greater than or <br> equal to 1.125em/18px</span>
+      <span class="normal">Should only be used at sizes greater than or <br> equal to 18px / 1.125rem</span>
     </p>
     <h1 class="light blue-90">Light 300</h1>
   </li>
@@ -160,27 +160,27 @@ Font weight is another typographic style that can add emphasis and differentiate
 
 ## Headers
 
-Size of headers are determined by layout or template structure. Bluemix has several levels of architecture and areas that require varying sizes of headers. Nevertheless, all headers must be sized from the Major Second type scale with a thoughtfully considered font weight.
+The size of a header is determined by layout or template structure. Bluemix has several levels of architecture and areas that require varying header sizes. Nevertheless, all headers must be sized from the Major Second type scale and paired with a thoughtfully considered font weight.
 
 ## Body Copy
 
 ### Font Size
 
-Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 0.875rem / 14px body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 1rem/16px to enhance readability.
+Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
 
-**Standard Console: 0.875rem / 14px**
-**Prolonged reading: 1rem / 16px**
+**Standard Console: 14px / 0.875rem**
+**Prolonged reading: 16px / 1rem**
 
 ### Line-height
 
-Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based off the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule is headings, which need less spacing and therefore have a line-height ratio of 1.25.
+Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based off the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1.25.
 
-**Standard line-height: 1.5**
-**Headings line-height: 1.25**
+**Standard line-height: type size x 1.5**
+**Headings line-height: type size x 1.25**
 
 ### Line-length
 
-Line-length, traditionally known as measure, is the number of characters in a single line. It also directly contributes to readability and pacing of copy. Lines that are too long degrade eye tracking from line to line, making it difficult to gauge which line to read next. In contrast, lines that are too short make it difficult for a reader to maintain a steady reading rhythm. Short lines also often create disproportionate ragged edges that negatively affect the design.
+Line-length, traditionally known as measure, is the number of characters in a single line. It also directly contributes to the readability and pacing of copy. Lines that are too long degrade eye tracking from line to line, making it difficult to gauge which line to read next. In contrast, lines that are too short make it difficult for a reader to maintain a steady reading rhythm. Short lines often create disproportionate ragged edges that negatively affect the design.
 
 **Line-length: 52 - 78 characters**
 

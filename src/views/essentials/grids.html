@@ -61,14 +61,12 @@ category: Essentials
 
 ### Gutters
 
-Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on rows.
-In devices with a screen width of ≥768px, the column padding is 10px left, 10px right.
+Columns create gutters (gaps between column content) via padding.
+For devices with a screen width greater than 768px, the column padding is 20px.For devices with a screen width less than 768px, the column padding is 10px.
 
-This creates a gutter of 10px + 10px = 20px between column content. In devices with a screen width of < 768px, the column padding is 5px left, 5px right.
-This creates a gutter of 5px + 5px = 10px between column content.
 
-**≥ 768px = 20px gutters**
-**< 768px = 10px gutters**
+** Screen width ≥ 768px = 20px gutters**
+** Screen width < 768px = 10px gutters**
 
 
 ### Columns
@@ -76,33 +74,32 @@ This creates a gutter of 5px + 5px = 10px between column content.
 Bluemix designs should be limited to twelve columns.
 If designers feel that they need fewer columns in their grid, they can specify the number of twelve available columns they wish to span.
 
-This can translate to percentages of the twelve columns. Using this method, a designer can create a folded, less granular grid.
-For example, if your component spans three equal columns, that is equal to 25% of twelve columns.
+This can translate to percentages of the twelve columns. Using this method, a designer can create a folded, less granular grid. For example, if your component spans three equal columns, that is equal to 25% of twelve columns.
 
 
 **Column count: 12**
 
 <img class="width-full" src="/assets/images/guidelines/column-spread_2x.png" />
-<p class="smaller">@1440px - 12 Columns / 20px Gutters / 5% Margins</p>
+<p class="smaller" style= "font-style:italic">@1440px - 12 Columns / 20px Gutters / 5% Margins</p>
 
 ### Margins
 
-The twelve column grid does not have a max width.
-It has a width of 100% with built in margins that create padding between column count and the edges of the viewport.
+The twelve column grid does not have a maximum width.
+It has a width of 100%, with built in margins that create padding between column count and the edges of the viewport.
 
-**In devices with a screen width of ≥768px, the margins are 5% left, 5% right.**
+**In devices with a screen width greater than 768px, the margins are 5% on the left, 5% on the right.**
 
 Example: Screen Width 768px
-5% left = 38px
-5% right = 38px
-12 columns + gutters = 768px - 30px - 30px = 692px
+5% left = 38px (rounded to nearest whole pixel)
+5% right = 38px (rounded to nearest whole pixel)
+12 columns + gutters = 768px - 38px - 38px = 692px (rounded to nearest whole pixel)
 
-**In devices with a screen width of < 768px, the margins are 3% left, 3% right.**
+**In devices with a screen width less than 768px, the margins are 3% on the left, 3% on the right.**
 
 Example: Screen Width 320px
-3% left = 16px
-3% right = 16px
-12 columns + gutters = 320px - 16px - 16px = 288px
+3% left = 10px (rounded to nearest whole pixel)
+3% right = 10px (rounded to nearest whole pixel)
+12 columns + gutters = 320px - 10px - 10px = 300px (rounded to nearest whole pixel)
 
 ### Breakpoints
 

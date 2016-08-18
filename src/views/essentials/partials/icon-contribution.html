@@ -2,11 +2,11 @@
 
 ## Adding Icons
 
-If you'd like to add an icon to our library, please submit a Pull Request in our <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.
+If you would like to add an icon to our library, please submit a Pull Request in our <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
-1. Fork the <a href="https://github.ibm.com/Bluemix/bluemix-icons">GitHub repo.</a>
+1. Fork the <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub repo.</a>
 2. Clone it to your local system.
 3. Add icons in the proper folder (you may add your own) within the `svg/` folder.
 4. In your terminal run `npm install`.
@@ -17,9 +17,8 @@ If you'd like to add an icon to our library, please submit a Pull Request in our
 
 ### Best Practices:
 
-- Create an individual artboard for each icon at 32 x 32 pixels. Export the entire icon artboard. Do not trim trim transparent pixels.
-- Note: Icons can be resized in the code but the default SVG size should be 32 x 32 pixels.
-- Make sure each artboard and the artwork within is pixel perfect. There should not be decimals in the x and y coordinates or in the width and height fields.
+- Create an individual artboard for each icon at 32 x 32 pixels. Export the entire icon artboard. Do not trim trim transparent pixels. <span style="font-weight: 700"> Note:</span> Icons can be resized in the code but the default SVG size should be 32 x 32 pixels.
+- Make sure each artboard and the artwork within it is pixel perfect. There should not be decimals in the x and y coordinates or in the width and height fields.
 - Delete any excess styling. The icon should be exported at the color #000000. All styling (size, color, etc.) will be done in code.
 - Ungroup the icon layers completely. It should be on the top-most layer in your artboard.
 - Make sure to properly name layers and artboards (these names will also be exported into the code).
@@ -28,12 +27,14 @@ If you'd like to add an icon to our library, please submit a Pull Request in our
 
 1. Draw a 32 x 32 pixel stand-alone artboard.
 2. Place icon in the pixel perfect center of the artboard.
-3. Make sure icon is #000000 and has no additional styling.
-4. Select the entire artboard (not just the icon).
-5. Click "Make Exportable" at the bottom of the right toolbar in Sketch.
-6. In the "Export" widget select "SVG" in the format dropdown.
-7. Click "Export 'Artboard-Name'".
-8. Name icon appropriately.
+3. Convert all strokes to outlines (Shift + Command + O)
+4. Select any overlapping shapes and click the 'Union' icon from the top navigation, to merge all of the shapes together.
+5. Make sure the icon is at #000000 and has no additional styling.
+6. Select the entire artboard (not just the icon).
+7. Click "Make Exportable" at the bottom of the right toolbar in Sketch.
+8. In the "Export" widget select "SVG" in the format dropdown.
+9. Click "Export 'Artboard-Name'".
+10. Name icon appropriately.
 
 <div class="mt2">
   <img class="sm--width-full" src="../assets/images/iconography-page/SVG-Artboard.png" alt="" />
@@ -44,7 +45,9 @@ If you'd like to add an icon to our library, please submit a Pull Request in our
 
 1. Draw a 32 x 32 pixel stand-alone artboard.
 2. Place icon in the pixel perfect center of the artboard.
-3. Make sure icon is #000000 and has no additional styling.
+3. Expand all strokes (Object > Expand).
+4. Select all overlapping shapes and click the 'Unite' icon in the Pathfinder panel, to merge all of the shapes together.
+3. Make sure the icon is at #000000 and has no additional styling.
 4. Select "File" from the top navigation.
 5. Select "Save A Copy..." which will open a dialog.
 6. On the "Format" dropdown select "SVG (svg)".
