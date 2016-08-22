@@ -119,14 +119,16 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 Access the <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a> for Bluemix Icons.
 
-The main file here is <code>sprite.svg</code>, which contains an SVG sprite (every SVG included in a single file within a `<defs>` tag inside of a `<symbol>`). We're using the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank">SVG</a> to access them.</p>
+The main file here is `sprite.svg`, which contains an SVG sprite (every SVG included in a single file within a `<defs>` tag inside of a `<symbol>`). We're using the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank">SVG</a> to access them.
+
+The `sprite.svg` file can be used **locally** or **dynamically** from <a href="https://github.ibm.com/Bluemix/bluemix.common" target="_blank">Bluemix Common.</a>
 
 ### HTML
 
 ```html
 
 <svg class="icon--add">
-  <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--add-filled"></use>
+  <use xlink:href="{LOCAL_OR_DYNAMIC_PATH}/sprite.svg#service--add-filled"></use>
 </svg>
 ```
 
