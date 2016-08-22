@@ -1,5 +1,6 @@
 {
   "npm": "node_modules/@console/bluemix-components",
+  "icons": "node_modules/@console/bluemix-icons",
   "src": {
     "images": "src/assets/images/**/*.*",
     "fonts": "src/assets/fonts/*.{woff,woff2}",

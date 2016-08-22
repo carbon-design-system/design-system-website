@@ -9,7 +9,6 @@ const gulp = require('gulp');
 // Tasks
 const assemble = require('./gulp-tasks/assemble');
 const copy = require('./gulp-tasks/copy');
-const icons = require('./gulp-tasks/icons');
 const scripts = require('./gulp-tasks/scripts');
 const nodemon = require('./gulp-tasks/nodemon');
 const styles = require('./gulp-tasks/styles');
@@ -19,7 +18,6 @@ const styles = require('./gulp-tasks/styles');
 ------------------------*/
 
 gulp.task('copy', copy);
-gulp.task('icons', icons);
 gulp.task('scripts', scripts);
 gulp.task('styles', () => {
   styles(browserSync);
@@ -27,7 +25,7 @@ gulp.task('styles', () => {
 
 gulp.task('nodemon', nodemon);
 
-gulp.task('build', ['styles', 'scripts', 'icons'], assemble);
+gulp.task('build', ['styles', 'scripts'], assemble);
 
 gulp.task('serve', ['nodemon'], () => {
   const reload = browserSync.reload;
