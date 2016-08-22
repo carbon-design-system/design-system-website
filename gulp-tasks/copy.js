@@ -45,6 +45,10 @@ const copy = () => {
   gulp.src(['./src/assets/images/**'])
     .pipe(gulp.dest('./dist/assets/images/'));
 
+  // Copy resources from src to dist
+  gulp.src(['./src/assets/resources/**'])
+    .pipe(gulp.dest('./dist/assets/resources/'));
+
   return merge(streams);
 };
 

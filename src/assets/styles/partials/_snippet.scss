@@ -121,6 +121,11 @@ pre[class*='language-'] {
     align-items: center;
     height: 100%;
 
+    &.expanded-height {
+      justify-content: flex-start;
+      height: 200px;
+    }
+
     &--column {
       @extend .rendered__element;
       flex-direction: column;

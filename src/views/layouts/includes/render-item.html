@@ -27,15 +27,28 @@
 
   <div class="example__rendered">
 
-  <div class="rendered__element">
-  {{#if item.needWrap}}
-    <div>
-      {{{findFile item.htmlFile}}}
+  {{#if item.expandHeight}}
+    <div class="rendered__element expanded-height">
+    {{#if item.needWrap}}
+      <div>
+        {{{findFile item.htmlFile}}}
+      </div>
+    {{else}}
+        {{{findFile item.htmlFile}}}
+    {{/if}}
     </div>
   {{else}}
-      {{{findFile item.htmlFile}}}
+    <div class="rendered__element">
+    {{#if item.needWrap}}
+      <div>
+        {{{findFile item.htmlFile}}}
+      </div>
+    {{else}}
+        {{{findFile item.htmlFile}}}
+    {{/if}}
+    </div>
   {{/if}}
-  </div>
+
   <input type="text" value="" class="hiddenHTMLSnippet" />
 
   {{#markdown}}
@@ -44,19 +57,6 @@
 
   <div data-theme-switcher class="theme-switcher-btns">
     <button data-toggle-theme="light" class="theme-switcher-btns__btn theme-switcher-btns__btn--light">
-      <!-- <svg viewBox="-1 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g stroke="none" stroke-width="1">
-            <rect id="Rectangle-path" x="8.44" y="0" width="1.12" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" x="8.44" y="14.36" width="1.13" height="3.64" rx="0.56"></rect>
-            <path d="M9.11,4.67 C6.71860703,4.67 4.78,6.60860703 4.78,9 C4.78,11.391393 6.71860703,13.33 9.11,13.33 C11.501393,13.33 13.44,11.391393 13.44,9 C13.44,7.8516126 12.9838049,6.75026016 12.1717724,5.93822764 C11.3597398,5.12619512 10.2583874,4.67 9.11,4.67 L9.11,4.67 Z M9.11,12.2 C7.3426888,12.2 5.91,10.7673112 5.91,9 C5.91,7.2326888 7.3426888,5.8 9.11,5.8 C10.8773112,5.8 12.31,7.2326888 12.31,9 C12.31,9.84869277 11.9728581,10.6626253 11.3727417,11.2627417 C10.7726253,11.8628581 9.95869277,12.2 9.11,12.2 L9.11,12.2 Z" fill=""></path>
-            <rect id="Rectangle-path" transform="translate(16.180000, 9.005000) rotate(-90.000000) translate(-16.180000, -9.005000) " x="15.615" y="7.185" width="1.13" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" transform="translate(1.820000, 9.005000) rotate(-90.000000) translate(-1.820000, -9.005000) " x="1.255" y="7.185" width="1.13" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" transform="translate(3.433994, 3.666170) rotate(-45.000000) translate(-3.433994, -3.666170) " x="2.86899368" y="1.84617009" width="1.13" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" transform="translate(14.373957, 3.663794) rotate(225.000000) translate(-14.373957, -3.663794) " x="13.8139574" y="1.84379367" width="1.12" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" transform="translate(14.360073, 14.389393) rotate(135.000000) translate(-14.360073, -14.389393) " x="13.7950734" y="12.5693934" width="1.13" height="3.64" rx="0.56"></rect>
-            <rect id="Rectangle-path" transform="translate(3.430110, 14.380643) rotate(45.000000) translate(-3.430110, -14.380643) " x="2.87010968" y="12.5606428" width="1.12" height="3.64" rx="0.56"></rect>
-          </g>
-      </svg> -->
       <svg viewBox="-1 0 19 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill-rule="evenodd">
               <rect id="Rectangle-path" x="8.44" y="0" width="1.12" height="3.64" rx="0.56"></rect>

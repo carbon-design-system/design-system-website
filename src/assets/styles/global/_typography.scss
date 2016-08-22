@@ -55,3 +55,17 @@ p.main {
   display: flex;
   align-items: center;
 }
+
+.quote {
+  padding: .5rem 1rem 1.5rem;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.6;
+
+  span {
+    display: block;
+    font-size: .875rem;
+    padding-top: .5rem;
+    font-style: normal;
+  }
+}

@@ -162,7 +162,7 @@
     margin-left: 1.25em;
   }
 
-  a:not(.cta-btns--border__btn) {
+  a:not(.cta-btns--border__btn):not(.icon__button a) {
     color: $color__blue-50;
     font-weight: 600;
     margin-bottom: .5rem;
