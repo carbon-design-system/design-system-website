@@ -7,18 +7,28 @@ const fabricator = require('fabricator-assemble');
 const fs = require('fs');
 
 const assemble = () => {
+  const env = process.env.ENV || 'internal';
+
+  const internalOnly = [
+    '!src/views/getting-started/service-providers.html',
+  ];
+
+  const views = (env === 'internal')
+    ? ['src/views/**/*', '!src/views/+(layouts)/**']
+    : ['src/views/**/*', '!src/views/+(layouts)/**', ...internalOnly];
+
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
     layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'],
-    views: ['src/views/**/*', '!src/views/+(layouts)/**'],
+    views,
     data: 'src/data/*.json',
     materials: ['src/materials/**/*', 'src/views/temp-materials/**/*'],
     docs: 'src/docs/**/*.md',
     keys: {
       materials: 'materials',
       views: 'views',
-      docs: 'docs'
+      docs: 'docs',
     },
     helpers: {
       capitalize: function() {

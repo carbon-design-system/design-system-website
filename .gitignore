@@ -6,3 +6,4 @@ dist
 *.map
 src/materials
 src/data
+deploy.sh
