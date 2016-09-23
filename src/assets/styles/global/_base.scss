@@ -49,6 +49,15 @@ p {
   max-width: 70rem;
 }
 
+a {
+  color: $color__blue-51;
+  font-weight: 700;
+
+  &:hover {
+    color: $color__blue-40;
+  }
+}
+
 // PAGE CONTAINER
 .container {
   width: 100%;
