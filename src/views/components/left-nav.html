@@ -1,0 +1,37 @@
+---
+fabricator: true
+name: Left navigation
+title: Left navigation | IBM Bluemix Design System
+category: components
+mainDesc: "organizes content structure and provides context to support user orientation within Bluemix. This pattern accommodates the breadth of content and tasks users expect to see."
+iterations:
+  loading:
+    title: "Left navigation"
+    htmlFile: ""
+    jsFile: ""
+    desc: ""
+---
+
+<!-- Item header -->
+{{> tabsnav}}
+<!-- Item header ends -->
+
+<!-- View: Foundation -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
+</div>
+<!-- View: Foundation ends -->
+
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> left-nav-usage}}
+</div>
+<!-- View: Usage ends -->
+
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> left-nav-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}
