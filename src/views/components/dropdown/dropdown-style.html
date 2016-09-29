@@ -9,9 +9,9 @@
 <div class="view__half">
 
 ### Basics
-Dropdown menus have two major states, open and closed. The open and closed menu should be the same width and appropriately fit the design, layout, and content. The height of a closed menu should always be 40px / 2.5em. The height of an open menu will vary based on the amount of menu options it has. Please note the various color differences for closed and open menus.
+Dropdown menus have two major states, open and closed. The open and closed menu should be the same width and appropriately fit the design, layout, and content. The height of a closed menu should always be 40px / 2.5rem. The height of an open menu will vary based on the amount of menu options it has. Please note the various color differences for closed and open menus.
 
-**Dropdown Menu height: 40px / 2.5em**
+**Dropdown Menu height: 40px / 2.5rem**
 **Dropdown Menu width: varies based on content and layout**
 
 Closed Dropdown Menu:
@@ -29,6 +29,10 @@ Open Dropdown Menu:
 **Dark UI**: #3a4b54
 **Light UI**: #ffffff
 
+Small Dropdown
+##### Height: 24px / 1.5rem
+##### Width: 56px / 3.5rem
+
 </div>
 
 <div class="view__half">
@@ -37,14 +41,14 @@ Open Dropdown Menu:
   <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Mobile@2x.png">
   <img src="/assets/images/style/dropdown/Menu_Dropdown_Desktop@2x.png">
   </picture>
-  <p class="caption">Dropdown Basics | units in px / em</p>
+  <p class="caption">Dropdown Basics | units in px / rem</p>
 </div>
 <div class="style-img--light">
   <picture>
   <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Mobile_Light@2x.png">
   <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Desktop_Light@2x.png">
   </picture>
-  <p class="caption">Dropdown Basics | units in px / em</p>
+  <p class="caption">Dropdown Basics | units in px / rem</p>
 </div>
 </div>
 
@@ -55,9 +59,13 @@ Open Dropdown Menu:
 <div class="view__half">
 
 ### Padding
-Internally, there must be 16px / 1em of space between the sides of the dropdown menu and the elements within the menu.
+Internally, there must be 16px / 1rem of space between the sides of the dropdown menu and the elements within the menu.
 
-**Internal side padding: 16px / 1em**
+Large Dropdown
+##### Internal side padding: 16px / 1rem
+
+Small Dropdown
+##### Internal side padding: 8px / .5rem
 
 </div>
 
@@ -67,14 +75,14 @@ Internally, there must be 16px / 1em of space between the sides of the dropdown 
     <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Padding_Mobile@2x.png">
     <img src="/assets/images/style/dropdown/Menu_Dropdown_Padding_Desktop@2x.png">
     </picture>
-    <p class="caption">Dropdown Padding | units in px / em</p>
+    <p class="caption">Dropdown Padding | units in px / rem</p>
   </div>
   <div class="style-img--light">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Mobile_Light@2x.png">
     <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Desktop_Light@2x.png">
     </picture>
-    <p class="caption">Dropdown Padding | units in px / em</p>
+    <p class="caption">Dropdown Padding | units in px / rem</p>
   </div>
 </div>
 
@@ -87,10 +95,21 @@ Internally, there must be 16px / 1em of space between the sides of the dropdown 
 ### States
 In addition to the open and closed states, dropdown menus have hover, new selection, and disabled states.
 
+Dropdown:
+
 **Hover border: 1px**
 **Hover color: #5aaafa**
 **Disabled: 50% opacity**
 **New Selection color fill: #5aaafa**
+
+Small Dropdown
+Whichever number is displayed at the top of the dropdown box, the corresponding number in the list below should have a check mark next to it, indicating which number is the one currently selected. The icon for the check mark can be found in the <a href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> or the <a href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons Repo</a>.
+
+**Hover (Dark): 1px solid outline, #5AAAFA**
+**Hover (Light): 1px solid outline, #3D70B2**
+**Open hover (Dark): #5AAAFA**
+**Open hover (Light): #5596E6**
+**Disabled: 50% opacity**
 
 </div>
 
