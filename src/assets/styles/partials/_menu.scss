@@ -94,6 +94,12 @@
       }
     }
   }
+
+  &__copyright {
+    margin-top: 2rem;
+    font-size: .75rem;
+    color: $color__navy-gray-8;
+  }
 }
 
 .item__sub-nav {
