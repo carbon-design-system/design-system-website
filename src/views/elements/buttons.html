@@ -20,11 +20,6 @@ iterations:
     htmlFile: "src/materials/base-elements/button--right-icon.html"
     desc: "When words are not enough, icons can be used in buttons to better communicate what the button does. Icons are always paired with text."
     needWrap: "true"
-  button--small:
-    title: "Small Button"
-    htmlFile: ""
-    desc: "Small Buttons may be used when there is not enough vertical space for a regular sized button. This issue is most commonly found in <a href='http://design-system.stage1.mybluemix.net/components/tables.html#foundation' target='_blank'>tables</a>. Small Buttons should have three words or less."
-    needWrap: "true"
   button--disabled:
     title: "Disabled Button"
     htmlFile: "src/materials/base-elements/button--disabled.html"
@@ -35,6 +30,11 @@ iterations:
     htmlFile: "src/materials/base-elements/sets-of-buttons.html"
     desc: "Sets of buttons are used when an action required by the user has more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left."
     needWrap: "true"
+  button--small:
+    title: "Small Button"
+    htmlFile: ""
+    desc: "Small Buttons may be used when there is not enough vertical space for a regular sized button. This issue is most commonly found in tables. Small Buttons should have three words or less."
+    needWrap: "true"
 ---
 
 <!-- Item header -->
@@ -42,7 +42,7 @@ iterations:
 <!-- Item header ends -->
 
 <!-- View: Usage -->
-<div id="foundation" class="hidden">
+<div id="foundation" class="hidden pb5">
   {{> render-item}}
 </div>
 <!-- View: Foundation ends -->
