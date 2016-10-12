@@ -11,13 +11,50 @@
 ### Basics
 Select boxes are single color filled at 10% opacity. The width of a select dropdown box should appropriately fit the design and layout of the content.
 
-**Select box height: 40px / 2.5em**
-
-**Select Box Background Color:**
-**Dark UI:**
-#ffffff at 10% opacity / rgba(255,255,255, .10)
-**Light UI:**
-#3d70b2 at 10% opacity / rgba(61, 112, 178, .10)
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Height</p>
+      <p class="table--light">40px</p>
+      <p class="table--light">2.5rem</p>
+    </div>
+  </div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#ffffff at 10% opacity</p>
+          <p class="table--light">$color__inputs--bg</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#3d70b2 at 10% opacity</p>
+          <p class="table--light">$color__inputs--bg--light-ui</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 
@@ -29,12 +66,7 @@ Select boxes are single color filled at 10% opacity. The width of a select dropd
 
 ### Padding
 
-**Padding between label and select box: 10px / .625em**
-**Internal side padding: 16px / 1em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Mobile@2x.png">
@@ -51,26 +83,100 @@ Select boxes are single color filled at 10% opacity. The width of a select dropd
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between label and select box</p>
+      <p class="table--light">10px</p>
+      <p class="table--light">.625rem</p>
+    </div>
+    <div class="table__row">
+      <p>Internal side padding</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### States
 
-- Default Non-Selected State: Browser Defined
-- Hover: 1px outline #5aaafa (rgb 90, 170, 250)
-- Open: Style determined by browser
-- Form Validation:
-  Dark UI: 2px bottom border #ff50f0 rgb(255, 80, 80)
-  Light UI: 2px bottom border #e71d21 rgb(231, 29, 50)
-- Help: Tool tip should be left aligned with the text field box and underlined to indicate a link.
-- Disabled: 50% opacity
+**Default Non-Selected State:** Browser Defined
+**Open:** Style determined by browser
+**Disabled:** 50% opacity
+**Help:** Tool tip should be left aligned with the text field box and underlined to indicate a link.
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Hover outline</p>
+      <p class="table--light">1px</p>
+      <p class="table--light">-</p>
+    </div>
+    <div class="table__row">
+      <p>Form validation bottom border</p>
+      <p class="table--light">2px</p>
+      <p class="table--light">-</p>
+    </div>
+  </div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Form validation</p>
+          <p class="table--light">#ff50f0</p>
+          <p class="table--light">$color__red-40</p>
+        </div>
+        <div class="table__row">
+          <p>Hover outline</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Form validation</p>
+          <p class="table--light">#e71d21</p>
+          <p class="table--light">$color__red-50</p>
+        </div>
+        <div class="table__row">
+          <p>Hover outline</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_States_Mobile@2x.png">
@@ -89,20 +195,17 @@ Select boxes are single color filled at 10% opacity. The width of a select dropd
 
 </div>
 
+</div>
+
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Groupings
 
 Select dropdowns can be grouped horizontally and vertically for tablet and desktop views. Select dropdowns cannot be grouped horizontally for mobile views.
 
-**Padding between vertical groupings: 32px / 2em**
-**Padding between horizontal groupings: 16px / 2em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/select/Select_Groupings_Mobile@2x.png">
@@ -119,6 +222,28 @@ Select dropdowns can be grouped horizontally and vertically for tablet and deskt
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between vertical groupings</p>
+      <p class="table--light">32px</p>
+      <p class="table--light">2rem</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between horizontal groupings</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 ## Typography
@@ -129,10 +254,42 @@ Select dropdowns can be grouped horizontally and vertically for tablet and deskt
 
 Select labels should be set in title case, with the first letter of every word capitalized. Labels should be 3 words or less. Select dropdown text should be set in sentence case, with only the first letter of the first word capitalized. Select dropdown text should follow the Bluemix Typography font stack for sans-serif.
 
-**Select Label font-size: 14px / .875rem**
-**Select Label font-weight: bold / 700**
-**Select Dropdown Text font-size: 14px / .875rem**
-**Select Dropdown Text font-weight: roman / 400**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Label</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+    <div class="table__row">
+      <p>Dropdown text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Label</p>
+      <p class="table--light">Bold</p>
+      <p class="table--light">700</p>
+    </div>
+    <div class="table__row">
+      <p>Dropdown text</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
 
 </div>
 

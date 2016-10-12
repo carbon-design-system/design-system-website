@@ -47,6 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => Loading.components.get(element).toggle(), 3000);
   });
 
+  document.addEventListener('scroll', () => {
+    const themeSwitcherBtns = [... document.querySelectorAll('.view .theme-switcher-btns')];
+    if (window.scrollY > 315) {
+      themeSwitcherBtns.forEach(btn => {
+        btn.classList.add('scrolled');
+      });
+    } else {
+      themeSwitcherBtns.forEach(btn => {
+        btn.classList.remove('scrolled');
+      });
+    }
+  });
+
   [... document.querySelectorAll('[data-category]')].forEach(element => {
     const category = element.getAttribute('data-category');
     const subNav = element.nextSibling.nextSibling;

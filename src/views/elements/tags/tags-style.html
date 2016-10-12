@@ -6,18 +6,12 @@
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Basics
 All tags have the same height, however, the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.
 
-**Tag height: 20px / 1.25em**
-**Tag width: varies based on amount of content**
-**Radius of rounded rectangle: 15px**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_Mobile@2x.png">
@@ -34,6 +28,30 @@ All tags have the same height, however, the width of tags varies based on the am
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Height</p>
+      <p class="table--light">20px</p>
+      <p class="table--light">1.25rem</p>
+    </div>
+    <div class="table__row">
+      <p>Radius of rounded rectangle</p>
+      <p class="table--light">15px</p>
+      <p class="table--light">0.938rem</p>
+    </div>
+  </div>
+</div>
+
+**Width: varies based on amount of content**
+
+</div>
+
 </div>
 
 <div class="view__section">
@@ -43,9 +61,30 @@ All tags have the same height, however, the width of tags varies based on the am
 ### Padding
 Tags cannot have any element or text within 3px / .188 em of its borders. Internally, there must be 10px / .625em of space between the tag text and the sides of the tag.
 
-**Padding between tags horizontally: 3px / .188 em**
-**Padding between tags vertically: 3px / .188 em**
-**Pading on sides of text: 10px / .625em**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between tags horizontally</p>
+      <p class="table--light">3px</p>
+      <p class="table--light">.188rem</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between tags vertically</p>
+      <p class="table--light">3px</p>
+      <p class="table--light">.188rem</p>
+    </div>
+    <div class="table__row">
+      <p>Padding on sides of text</p>
+      <p class="table--light">10px</p>
+      <p class="table--light">.625rem</p>
+    </div>
+  </div>
+</div>
 
 </div>
 
@@ -53,36 +92,12 @@ Tags cannot have any element or text within 3px / .188 em of its borders. Intern
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### States
 There are many different types of tags and each type is determined by color:
 
-**Dark UI:**
-All tag background colors should be at 20% opacity with text at 100% opacity (full color).
-
-**IBM color: IBM Blue 20, #7CC7FF**
-**Beta color: Navy-Gray-8, #DFE6EB**
-**Third-Party color: IBM Teal 20, #6EEDD8**
-**Local/Dedicated/Custom color: IBM Purple 20, #D7AAFF**
-**Experimental color: IBM Orange 20, #FFA573**
-**Community color: IBM Green 20, #B4E051**
-**Private color: IBM Yellow 20, #FDD600**
-
-**Light UI:**
-The background color for each tag type is listed below.
-
-**IBM color: IBM Blue 10, #C0E6FF**
-**Beta color: Navy-Gray-8, #DFE6EB**
-**Third-Party color: IBM Teal 10, #A7FAE6**
-**Local/Dedicated/Custom color: IBM Purple 10, #EED2FF**
-**Experimental color: IBM Orange 10, #FFD791**
-**Community color: IBM Green 10, #C9F08F**
-**Private color: IBM Yellow 10, #FDE876**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/tags/Tag_States_Mobile@2x.png">
@@ -99,6 +114,102 @@ The background color for each tag type is listed below.
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <p>Dark UI only: All tag background colors should be at 20% opacity with text at 100% opacity.</p>
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>IBM</p>
+          <p class="table--light">#7cc7ff</p>
+          <p class="table--light">$color__blue-20</p>
+        </div>
+        <div class="table__row">
+          <p>Beta</p>
+          <p class="table--light">#dfe6eb</p>
+          <p class="table--light">$color__navy-gray-8</p>
+        </div>
+        <div class="table__row">
+          <p>Third-party</p>
+          <p class="table--light">#6eedd8</p>
+          <p class="table--light">$color__teal-20</p>
+        </div>
+        <div class="table__row">
+          <p>Local/Dedicated/Custom</p>
+          <p class="table--light">#d7aaff</p>
+          <p class="table--light">$color__purple-20</p>
+        </div>
+        <div class="table__row">
+          <p>Experimental</p>
+          <p class="table--light">#ffa573</p>
+          <p class="table--light">$color__orange-20</p>
+        </div>
+        <div class="table__row">
+          <p>Community</p>
+          <p class="table--light">#bfe051</p>
+          <p class="table--light">$color__green-20</p>
+        </div>
+        <div class="table__row">
+          <p>Private</p>
+          <p class="table--light">#fdd600</p>
+          <p class="table--light">$color__yellow-20</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>IBM</p>
+          <p class="table--light">#c0e6ff</p>
+          <p class="table--light">$color__blue-10</p>
+        </div>
+        <div class="table__row">
+          <p>Beta</p>
+          <p class="table--light">#dfe6eb</p>
+          <p class="table--light">$color__navy-gray-8</p>
+        </div>
+        <div class="table__row">
+          <p>Third-party</p>
+          <p class="table--light">#a7fae6</p>
+          <p class="table--light">$color__teal-10</p>
+        </div>
+        <div class="table__row">
+          <p>Local/Dedicated/Custom</p>
+          <p class="table--light">#eed2ff</p>
+          <p class="table--light">$color__purple-10</p>
+        </div>
+        <div class="table__row">
+          <p>Experimental</p>
+          <p class="table--light">#ffd791</p>
+          <p class="table--light">$color__orange-10</p>
+        </div>
+        <div class="table__row">
+          <p>Community</p>
+          <p class="table--light">#c9f08f</p>
+          <p class="table--light">$color__green-10</p>
+        </div>
+        <div class="table__row">
+          <p>Private</p>
+          <p class="table--light">#fde876</p>
+          <p class="table--light">$color__yellow-10</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 <div class="view__section">
@@ -108,21 +219,81 @@ The background color for each tag type is listed below.
 ### Typography
 Tag text should be set in title case with the first letter of each word capitalized. Tags should only have one word. However, if more than one is necessary then connect the words using a hyphen with no spaces. Text should follow the Bluemix Typography font stack for san-serif.
 
-**Tag text font-size: 12px / .75rem**
-**Tag text font-weight: roman / 400**
-
-**Dark UI Tag Text Colors:**
-Tag text should be the same color as the background of the tag it sits on but at 100% opacity (full color).
-
-**Light UI Tag Text Colors:**
-
-**IBM text color: IBM Blue 60, #325C80**
-**Beta text color: Navy-Gray-4, #394B54**
-**Third-Party text color: IBM Teal 60, #006D5D**
-**Local/Dedicated/Custom text color: IBM Purple 60, #734098**
-**Experimental text color: IBM Orange 60, #872A0F**
-**Community text color: IBM Green 60, #2D660A**
-**Private text color: IBM Yellow 60, #735F00**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Tag text</p>
+      <p class="table--light">12px</p>
+      <p class="table--light">.75rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Tag text</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <p class="table--light">Tag text should be the same color as the background of the tag it sits on but at 100% opacity (full color).</p>
+    </div>
+    <div class="style-properties__light">
+      <div class="table mb2">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>IBM</p>
+          <p class="table--light">#325c80</p>
+          <p class="table--light">$color__blue-60</p>
+        </div>
+        <div class="table__row">
+          <p>Beta</p>
+          <p class="table--light">#394b54</p>
+          <p class="table--light">$color__navy-gray-4</p>
+        </div>
+        <div class="table__row">
+          <p>Third-party</p>
+          <p class="table--light">#006d5d</p>
+          <p class="table--light">$color__teal-60</p>
+        </div>
+        <div class="table__row">
+          <p>Local/Dedicated/Custom</p>
+          <p class="table--light">#734098</p>
+          <p class="table--light">$color__purple-60</p>
+        </div>
+        <div class="table__row">
+          <p>Experimental</p>
+          <p class="table--light">#872a0f</p>
+          <p class="table--light">$color__orange-60</p>
+        </div>
+        <div class="table__row">
+          <p>Community</p>
+          <p class="table--light">#2d660a</p>
+          <p class="table--light">$color__green-60</p>
+        </div>
+        <div class="table__row">
+          <p>Private</p>
+          <p class="table--light">#735f00</p>
+          <p class="table--light">$color__yellow-60</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 

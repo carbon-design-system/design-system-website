@@ -6,7 +6,6 @@ export const themeSwitcher = () => {
     themeSwitcherBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         const exampleBackground = element.parentElement;
-        console.log(exampleBackground);
         if (btn.dataset.toggleTheme === 'dark') {
           exampleBackground.classList.remove('bx--global-light-ui');
         } else {

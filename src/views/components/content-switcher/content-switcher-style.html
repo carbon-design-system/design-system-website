@@ -6,24 +6,12 @@
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Basics
 Content switchers must have at least two options for the user to choose from. Each container that makes up the content switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2em on both sides of the text.
 
-**Content Switcher height: 40px / 2.5em**
-**Content Switcher container width: varies based on amount of content**
-**Content Switcher fill color:**
-**Dark UI:** #5aaafa
-**Light UI:** #3d70b2
-**Border: 1px**
-**Border color:**
-**Dark UI:** #5aaafa
-**Light UI:** #3d70b2
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Mobile@2x.png">
@@ -38,6 +26,70 @@ Content switchers must have at least two options for the user to choose from. Ea
     </picture>
     <p class="caption">Content Switcher | units in px / em</p>
   </div>
+</div>
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Height</p>
+      <p class="table--light">40px</p>
+      <p class="table--light">2.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Border</p>
+      <p class="table--light">1px</p>
+      <p class="table--light">-</p>
+    </div>
+  </div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Fill color</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Border color</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Fill color</p>
+          <p class="table--light">#3d70b2</p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Border color</p>
+          <p class="table--light">#3d70b2</p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+**Width: varies based on amount of content**
+
 </div>
 
 </div>
@@ -56,17 +108,13 @@ Content switchers have two states: selected and not selected. Selected states ar
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Padding
 
 Internally there must be 32px / 2em of space between the content container option text and sides of the content container.
 
-**Padding between side of content box and text: 32px / 2em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/content-switcher/Content_Switcher_Padding_Mobile@2x.png">
@@ -83,6 +131,24 @@ Internally there must be 32px / 2em of space between the content container optio
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between side of box and text</p>
+      <p class="table--light">32px</p>
+      <p class="table--light">2rem</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
 </div>
 
 ## Typography
@@ -93,8 +159,32 @@ Internally there must be 32px / 2em of space between the content container optio
 
 Content switcher text should be set in title case with the first letter of each word capitalized. Content Switcher option text should not exceed more than 3 words. Text should follow the Bluemix Typography font stack for sans-serif.
 
-**Content switcher font-size: 14px / .875em**
-**Content switcher font-weight: roman / 400**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
 
 </div>
 

@@ -6,7 +6,7 @@
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
   ### Basics
 
@@ -14,65 +14,123 @@
 
   Secondary buttons have a solid 2px border with no fill. The text and border color on secondary buttons styles are the same color.
 
-  **Button height: 40px / 2.5em**
-  **Small Button height: 32px / 2em**
-  **Padding left and right of text: 16px / 1em**
-  **Font size: 14px / .875 rem**
-  **Font weight: bold / 700**
+  <div class="style-img">
+    <div class="style-img--dark">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Primary_Button_Mobile@2x.png">
+      <img src="/assets/images/style/buttons/Primary_Button_Desktop@2x.png" />
+    </picture>
+    <p class="caption pt0">Primary Buttons | units in px / ems</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Secondary_Button_Mobile@2x.png">
+      <img src="/assets/images/style/buttons/Secondary_Button_Desktop@2x.png" />
+    </picture>
+    <p class="caption pt0">Secondary Buttons | units in px / ems</p>
+    </div>
+    <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Primary_Button_Mobile_Light@2x.png">
+      <img src="/assets/images/style/buttons/light-ui/Primary_Button_Desktop_Light@2x.png" />
+    </picture>
+    <p class="caption pt0">Primary Buttons | units in px / ems</p>
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Secondary_Button_Mobile_Light@2x.png">
+      <img src="/assets/images/style/buttons/light-ui/Secondary_Button_Desktop_Light@2x.png" />
+    </picture>
+    <p class="caption pt0">Secondary Buttons | units in px / ems</p>
+    </div>
+  </div>
+
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>PROPERTY</p>
+        <p>PX</p>
+        <p>REM</p>
+      </div>
+      <div class="table__row">
+        <p>Height</p>
+        <p class="table--light">40px</p>
+        <p class="table--light">2.5rem</p>
+      </div>
+      <div class="table__row">
+        <p>Small Button height</p>
+        <p class="table--light">32px</p>
+        <p class="table--light">2rem</p>
+      </div>
+      <div class="table__row">
+        <p>Padding left and right of text</p>
+        <p class="table--light">16px</p>
+        <p class="table--light">1rem</p>
+      </div>
+      <div class="table__row">
+        <p>Font size</p>
+        <p class="table--light">14px</p>
+        <p class="table--light">.875rem</p>
+      </div>
+    </div>
+    <div class="table">
+      <div class="table__header">
+        <p>FONT WEIGHT</p>
+        <p>KEYWORD</p>
+        <p>NUMERICAL VALUE</p>
+      </div>
+      <div class="table__row">
+        <p>Button text</p>
+        <p class="table--light">Bold</p>
+        <p class="table--light">700</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="view__section">
+
+<div class="view__full">
 
   ### Padding
 
   A button cannot have any element or text within 16 pixels / 1 em of its borders.
 
-  **Internal side padding: 16px / 1em**
-  **Button external padding: 16px / 1em**
-  **Small button external padding: 10px / .625em**
-
-
-</div>
-
-<div class="view__half">
-<div class="style-img--dark">
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Primary_Button_Mobile@2x.png">
-  <img src="/assets/images/style/buttons/Primary_Button_Desktop@2x.png" />
-</picture>
-<p class="caption pt0">Primary Buttons | units in px / ems</p>
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Secondary_Button_Mobile@2x.png">
-  <img src="/assets/images/style/buttons/Secondary_Button_Desktop@2x.png" />
-</picture>
-<p class="caption pt0">Secondary Buttons | units in px / ems</p>
-</div>
-<div class="style-img--light">
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Primary_Button_Mobile_Light@2x.png">
-  <img src="/assets/images/style/buttons/light-ui/Primary_Button_Desktop_Light@2x.png" />
-</picture>
-<p class="caption pt0">Primary Buttons | units in px / ems</p>
-<picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/light-ui/Secondary_Button_Mobile_Light@2x.png">
-  <img src="/assets/images/style/buttons/light-ui/Secondary_Button_Desktop_Light@2x.png" />
-</picture>
-<p class="caption pt0">Secondary Buttons | units in px / ems</p>
-</div>
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>PROPERTY</p>
+        <p>PX</p>
+        <p>REM</p>
+      </div>
+      <div class="table__row">
+        <p>Internal side padding</p>
+        <p class="table--light">16px</p>
+        <p class="table--light">1rem</p>
+      </div>
+      <div class="table__row">
+        <p>Button external padding</p>
+        <p class="table--light">16px</p>
+        <p class="table--light">1rem</p>
+      </div>
+      <div class="table__row">
+        <p>Small Button external padding</p>
+        <p class="table--light">10px</p>
+        <p class="table--light">.625rem</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 </div>
 
-<div class="view__section mb10">
+<div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
   ### Groupings
 
   For button groups, the primary button style is positioned on the outside of the set. The secondary button is positioned on the inside of the set.
 
-  **Space between buttons: 16px / 1em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Groupings_Mobile@2x.png">
@@ -89,20 +147,34 @@
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Space between buttons</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+  </div>
 </div>
 
+</div>
 
-<div class="view__section mt5 mb10">
+</div>
 
-<div class="view__half">
+<div class="view__section">
+
+<div class="view__full">
 
 ### Button with Icons
 
 There must be 16 pixels / 1 em between the label text and an icon on a button.
 
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_with_icon_Mobile@2x.png">
@@ -121,13 +193,13 @@ There must be 16 pixels / 1 em between the label text and an icon on a button.
 
 </div>
 
-
+</div>
 
 ## States
 
 <div class="view__section">
 
-  <div class="view__half">
+  <div class="view__full">
 
   ### Primary Style
 
@@ -141,9 +213,7 @@ There must be 16 pixels / 1 em between the label text and an icon on a button.
   **Hover:** Filled and the same color as the stroke in the normal state. Text should change to a contrast color.
   **Disabled:** 50% opacity.
 
-  </div>
-
-  <div class="view__half">
+  <div class="style-img">
     <div class="style-img--dark">
       <picture>
         <source media="(max-width: 550px)" srcset="/assets/images/style/buttons/Button_States_Mobile@2x.png">
@@ -158,9 +228,8 @@ There must be 16 pixels / 1 em between the label text and an icon on a button.
     </div>
   </div>
 
+  </div>
 </div>
-
-
 
 ## Typography
 
@@ -171,8 +240,32 @@ There must be 16 pixels / 1 em between the label text and an icon on a button.
   Button text should be set in title case, with the first letter of each word capitalized.
   Button labels should not exceed more than 3 words. Button text should follow the Bluemix Typography font stack for sans-serif.
 
-  **Font-size: 14px / .875rem**
-  **Font-weight: bold / 700**
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>FONT-SIZE</p>
+        <p>PX</p>
+        <p>REM</p>
+      </div>
+      <div class="table__row">
+        <p>Button text</p>
+        <p class="table--light">14px</p>
+        <p class="table--light">.875rem</p>
+      </div>
+    </div>
+    <div class="table">
+      <div class="table__header">
+        <p>FONT-WEIGHT</p>
+        <p>KEYWORD</p>
+        <p>NUMERICAL VALUE</p>
+      </div>
+      <div class="table__row">
+        <p>Button text</p>
+        <p class="table--light">Bold</p>
+        <p class="table--light">700</p>
+      </div>
+    </div>
+  </div>
 
   </div>
 

@@ -36,6 +36,7 @@
       background-color: $color__blue-30;
       margin-bottom: 0;
       transition: .3s;
+      z-index: 5;
 
       @media screen and (max-width: $width__tab-break) {
         width: 100%;

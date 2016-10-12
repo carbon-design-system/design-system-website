@@ -12,14 +12,65 @@
 
 Search boxes are a single color fill with a contrasting color for the text of the label. The width of the search field should appropriately fit the design and layout of content. Larger search fields should include a filter button with a label and filter icon. Smaller search fields should have a filter button with a filter icon and no label.
 
-**Search Box Color:
-Dark UI: #ffffff at 10% opacity rgba(255, 255, 255, 0.10)
-Light UI: #3d70b2 at 10% opacity rgba(61, 112, 178, 0.10)**
-**Search Box Height: 50px / 3.125em**
-**Small Search Box Height: 40px / 2.5em**
-**Filter Icon (height & width): 16 px / 1em**
-**Search Icon (height & width): 20 px /1.25em**
-**Small Search Icon (height & width): 20px / 1.25em**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Height</p>
+      <p class="table--light">50px</p>
+      <p class="table--light">3.125rem</p>
+    </div>
+    <div class="table__row">
+      <p>Small search height</p>
+      <p class="table--light">40px</p>
+      <p class="table--light">2.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Filter Icon (height & width)</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Search Icon (height & width)</p>
+      <p class="table--light">20px</p>
+      <p class="table--light">1.25rem</p>
+    </div>
+  </div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#ffffff at 10% opacity</p>
+          <p class="table--light">$color__inputs--bg</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#3d70b2 at 10% opacity</p>
+          <p class="table--light">$color__inputs--bg--light-ui</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 
@@ -27,16 +78,11 @@ Light UI: #3d70b2 at 10% opacity rgba(61, 112, 178, 0.10)**
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Padding
 
-**Space between box and search icon: 12px / .75em**
-**Space between search icon and search text: 12px / .75em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_Mobile@2x.png">
@@ -63,19 +109,39 @@ Light UI: #3d70b2 at 10% opacity rgba(61, 112, 178, 0.10)**
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Space between box and search icon</p>
+      <p class="table--light">12px</p>
+      <p class="table--light">.75rem</p>
+    </div>
+    <div class="table__row">
+      <p>Space between search icon and search text</p>
+      <p class="table--light">12px</p>
+      <p class="table--light">.75rem</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### States
 
 Search fields have three states: normal, hover, and input. There are specific elements such as type and button color that change depending on the state.
 
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/search/Search_Small_States_Mobile@2x.png">
@@ -111,12 +177,52 @@ Search fields have three states: normal, hover, and input. There are specific el
 
 Search text should be set in sentence case, with only the first letter of the first word capitalized. Search text should follow the Bluemix Typography font stack for sans-serif.
 
-**Large Search Field Normal and Hover font-size: 14px / .875rem**
-**Large Search Field Normal and Hover font weight: roman italic / 400**
-**Large Search Field Input font-size: 14px / .875rem**
-**Large Search Field Input font-weight: bold / 700**
-**Filter Button font-size: 14px / .875rem**
-**Filter Button font-weight: bold / 700**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Search placeholder text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+    <div class="table__row">
+      <p>Search field text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+    <div class="table__row">
+      <p>Filter button text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Search placeholder text</p>
+      <p class="table--light">Normal italic</p>
+      <p class="table--light">400</p>
+    </div>
+    <div class="table__row">
+      <p>Search field text</p>
+      <p class="table--light">Bold</p>
+      <p class="table--light">700</p>
+    </div>
+    <div class="table__row">
+      <p>Filter button text</p>
+      <p class="table--light">Bold</p>
+      <p class="table--light">700</p>
+    </div>
+  </div>
+</div>
 
 </div>
 

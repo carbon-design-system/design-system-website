@@ -28,6 +28,10 @@
   margin-left: 0;
 }
 
+.mt0 {
+  margin-top: 0;
+}
+
 @for $i from 1 through 10 {
 
   .m#{$i} {

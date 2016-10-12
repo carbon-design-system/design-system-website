@@ -59,7 +59,7 @@
 }
 
 picture img {
-  padding-top: 2.5em;
+  padding-top: 1rem;
 }
 
 .principles__img {
@@ -67,6 +67,20 @@ picture img {
 
   @include breakpoint(bp--md--major) {
     width: auto;
+  }
+}
+
+.style-img {
+  position: relative;
+
+  picture img {
+    padding-top: 1rem;
+    width: auto;
+    max-width: 45rem;
+
+    @include breakpoint(bp--md--major) {
+      width: 100%;
+    }
   }
 }
 

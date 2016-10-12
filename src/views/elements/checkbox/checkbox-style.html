@@ -6,52 +6,61 @@
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
-### Basics
+  ### Basics
 
-Checkboxes have two states: selected (checked) and not selected (unchecked). Selected or checked boxes are a single color fill with a contrasting color for the check mark. Unselected or unchecked boxes have a 2px border with no fill.
+  Checkboxes have two states: selected (checked) and not selected (unchecked). Selected or checked boxes are a single color fill with a contrasting color for the check mark. Unselected or unchecked boxes have a 2px border with no fill.
 
-**Checkbox height and width: 18px / 2.75em**
-**Checkbox outline: 2px border**
-
-</div>
-
-<div class="view__half">
-  <div class="style-img--dark">
-    <picture>
-      <source media="(max-width: 550px)" srcset="/assets/images/style/checkbox/Checkbox_Mobile@2x.png">
-      <img src="/assets/images/style/checkbox/Checkbox_Desktop@2x.png">
-    </picture>
-    <p class="caption">Checkbox | units in px / em
+  <div class="style-img">
+    <div class="style-img--dark">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/checkbox/Checkbox_Mobile@2x.png">
+        <img src="/assets/images/style/checkbox/Checkbox_Desktop@2x.png">
+      </picture>
+      <p class="caption">Checkbox | units in px / em
+    </div>
+    <div class="style-img--light">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/checkbox/light-ui/Checkbox_Mobile_Light@2x.png">
+        <img src="/assets/images/style/checkbox/light-ui/Checkbox_Desktop_Light@2x.png">
+      </picture>
+      <p class="caption">Checkbox | units in px / em
+    </div>
   </div>
-  <div class="style-img--light">
-    <picture>
-      <source media="(max-width: 550px)" srcset="/assets/images/style/checkbox/light-ui/Checkbox_Mobile_Light@2x.png">
-      <img src="/assets/images/style/checkbox/light-ui/Checkbox_Desktop_Light@2x.png">
-    </picture>
-    <p class="caption">Checkbox | units in px / em
+
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>PROPERTY</p>
+        <p>PX</p>
+        <p>REM</p>
+      </div>
+      <div class="table__row">
+        <p>Height and width</p>
+        <p class="table--light">18px</p>
+        <p class="table--light">2.75rem</p>
+      </div>
+      <div class="table__row">
+        <p>Outline</p>
+        <p class="table--light">2px</p>
+        <p class="table--light">-</p>
+      </div>
+    </div>
   </div>
 </div>
 
 </div>
-
-
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Padding
 
 Checkboxes cannot have any element or text within 16 pixels / 1 em of its borders.
 
-**Padding between checkbox and checkbox label text: 8px / .05em**
-**Padding between checkboxes: 16px / 1em**
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
       <source media="(max-width: 550px)" srcset="/assets/images/style/checkbox/Checkbox_with_Padding_Mobile@2x.png">
@@ -66,9 +75,29 @@ Checkboxes cannot have any element or text within 16 pixels / 1 em of its border
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between checkbox and label</p>
+      <p class="table--light">8px</p>
+      <p class="table--light">.05rem</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between checkboxes</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+  </div>
 </div>
 
+</div>
 
+</div>
 
 ## Typography
 
@@ -77,13 +106,47 @@ Checkboxes cannot have any element or text within 16 pixels / 1 em of its border
 <div class="view__full">
 
 Checkbox legend text should be set in bold / 700 and title case, with the first letter of each word capitalized.
+
 Checkbox label text should be set in regular / 400 and sentence case, with only the first letter of the first word capitilized.
+
 Checkbox should not exceed more than 3 words. Checkbox text should follow the Bluemix Typography font stack for sans-serif.
 
-**Legend font size: 14px / .875rem**
-**Legend font weight: bold / 700**
-**Label font size: 14px / .875rem**
-**Legend font weight: normal / 400**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Legend</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+    <div class="table__row">
+      <p>Label</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Legend</p>
+      <p class="table--light">Bold</p>
+      <p class="table--light">700</p>
+    </div>
+    <div class="table__row">
+      <p>Label</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
 
 </div>
 

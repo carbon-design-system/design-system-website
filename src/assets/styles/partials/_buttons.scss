@@ -124,12 +124,44 @@
   right: .75em;
 
   .view & {
-    top: 4rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 10;
+    top: 0;
     right: 0;
+    transform: translateY(rem(350px));
+    background-color: $color__gray-3;
+    padding: 1.3rem 1.5rem 1rem;
+    box-shadow: 4px 3px 4px 0px rgba(0,0,0,.15);
 
     .theme-switcher-btns__btn svg {
-      width: rem(25px);
-      height: rem(25px);
+      width: rem(28px);
+      height: rem(28px);
+    }
+
+    @media all and (min-width: 768px) {
+      &.scrolled {
+        position: fixed;
+        transform: translateY(rem(40px));
+      }
+    }
+
+    @include breakpoint(bp--sm--major) {
+      transform: translateY(rem(300px));
+    }
+
+    @include breakpoint(bp--xs--major) {
+      background-color: transparent;
+      position: static;
+      transform: translateY(0);
+      margin-top: -100px;
+      margin-bottom: 50px;
+      padding-right: 0;
+      width: rem(60px);
+      align-self: flex-end;
+      box-shadow: none;
     }
   }
 

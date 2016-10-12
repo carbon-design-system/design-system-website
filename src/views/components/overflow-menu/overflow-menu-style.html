@@ -6,23 +6,13 @@
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Basics
 
 The overflow menu should always have a width of 180px / 11.25em. The height of an overflow menu is determined by the amount of content in the menu. The overflow menu icon can be found in the <a class="base-link" href="https://pages.github.ibm.com/Bluemix/bluemix-icons/" target="_blank">Bluemix Icons</a> or on the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> page.
 
-**Overflow menu height: varies based on content**
-**Overflow menu width: 180px / 11.25em**
-**Line height: 32px / 2em**
-**Dividing Line border: 1px**
-**Dividing Line color:**
-**Dark UI:** #5a6872
-**Light UI:** #dde2e6
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Mobile@2x.png">
@@ -39,29 +29,77 @@ The overflow menu should always have a width of 180px / 11.25em. The height of a
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Width</p>
+      <p class="table--light">180px</p>
+      <p class="table--light">11.25rem</p>
+    </div>
+    <div class="table__row">
+      <p>Line height</p>
+      <p class="table--light">32px</p>
+      <p class="table--light">2rem</p>
+    </div>
+    <div class="table__row">
+      <p>Dividing line border</p>
+      <p class="table--light">1px</p>
+      <p class="table--light">-</p>
+    </div>
+  </div>
+
+  **Height: varies based on content**
+
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Dividing line</p>
+          <p class="table--light">#5a6872</p>
+          <p class="table--light">$color__navy-gray-6</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Dividing line</p>
+          <p class="table--light">#dfe3e6</p>
+          <p class="table--light">$color__gray-3</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### States
 
 Open overflow menus have a hover state that is indicated by a color change. All hover states should be #5aaafa (Light UI: #3d70b2) unless the option the user is hovering over cannot be undone, in which case the color is #ff5050 (Light UI: #e71d32). Menu option text color changes during a hover state.
 
-**Regular hover color:**
-**Dark UI:** #5aaafa
-**Light UI:** #3d70b2
-**Warning hover color:**
-**Dark UI:** #ff5050
-**Light UI:** #e71d32
-**Text hover color:**
-**Dark UI:** #152934
-**Dark UI:** #ffffff
-
-</div>
-
-<div class="view__half">
+<div class="style-img">
   <div class="style-img--dark">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_States_Mobile@2x.png">
@@ -78,36 +116,108 @@ Open overflow menus have a hover state that is indicated by a color change. All 
   </div>
 </div>
 
+<div class="style-properties max-width-45">
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Regular hover color</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Warning hover color</p>
+          <p class="table--light">#ff5050</p>
+          <p class="table--light">$color__red-40</p>
+        </div>
+        <div class="table__row">
+          <p>Text hover color</p>
+          <p class="table--light">#152935</p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Regular hover color</p>
+          <p class="table--light">#3d70b2</p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Warning hover color</p>
+          <p class="table--light">#e71d32</p>
+          <p class="table--light">$color__red-50</p>
+        </div>
+        <div class="table__row">
+          <p>Text hover color</p>
+          <p class="table--light">#ffffff</p>
+          <p class="table--light">$color__white</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 
 <div class="view__section">
 
-<div class="view__half">
+<div class="view__full">
 
 ### Padding
 
 Internally, there must be 16px / 1em of space between the menu text and the ssides of the overflow menu.
 
-**Internal Padding: 16px / 1em**
-**Padding between menu icon and overflow menu: 8px / .5em**
-
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/overflow-menu/Overflow_menu_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu Padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Mobile_Light@2x.png">
+    <img src="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Overflow Menu Padding | units in px / em</p>
+  </div>
 </div>
 
-<div class="view__half">
-<div class="style-img--dark">
-  <picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/Overflow_menu_Padding_Mobile@2x.png">
-  <img src="/assets/images/style/overflow-menu/Overflow_menu_Padding_Desktop@2x.png">
-  </picture>
-  <p class="caption">Overflow Menu Padding | units in px / em</p>
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Internal padding</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between menu icon and overflow menu</p>
+      <p class="table--light">8px</p>
+      <p class="table--light">.5rem</p>
+    </div>
+  </div>
 </div>
-<div class="style-img--light">
-  <picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Mobile_Light@2x.png">
-  <img src="/assets/images/style/overflow-menu/light-ui/Overflow_Menu_Padding_Desktop_Light@2x.png">
-  </picture>
-  <p class="caption">Overflow Menu Padding | units in px / em</p>
-</div>
+
 </div>
 
 </div>
@@ -120,8 +230,32 @@ Internally, there must be 16px / 1em of space between the menu text and the ssid
 
 Overflow menu text should be set in title case with the first letter of each significant word capitalized. Text should follow the Bluemix Typography font stack for sans-serif.
 
-**Overflow menu font-size: 14px / .875rem**
-**Overflow menu font-weight: roman / 400**
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
 
 </div>
 
