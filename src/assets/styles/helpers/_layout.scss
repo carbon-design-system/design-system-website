@@ -1,5 +1,10 @@
 // HELPERS: LAYOUT //
 
+// FLEX
+.flex-1 {
+  flex: 1;
+}
+
 // Z-INDEX
 .z-menu {
   z-index: z('menu');
@@ -11,6 +16,11 @@
 
 .z-hidden {
   z-index: z('hidden');
+}
+
+// POSITIONING
+.relative {
+  position: relative;
 }
 
 // WIDTH
