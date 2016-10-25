@@ -119,7 +119,7 @@ pre[class*='language-'] {
     min-width: 200px; // needed for layout reasons
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto;
 
     &.expanded-height {
       justify-content: flex-start;
