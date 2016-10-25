@@ -1,0 +1,45 @@
+.resources {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .view__half {
+    @include breakpoint('1410px') {
+      margin-top: 2rem;
+    }
+  }
+
+  .blue-90 {
+    color: $color__blue-90;
+  }
+
+  .divider-heading {
+    margin-bottom: 1.75rem;
+    font-size: .75rem;
+
+    @include breakpoint('1410px') {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .view__section {
+    .view__column {
+      @include breakpoint('1410px') {
+        padding-right: 0;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .bx--btn--secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-stack {
+    width: 193.5px;
+  }
+}

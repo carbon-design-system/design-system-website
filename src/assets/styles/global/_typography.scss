@@ -57,6 +57,12 @@ p.main {
   margin-top: 4rem;
 }
 
+.heading-bold {
+  font-size: rem(25px);
+  font-weight: 700;
+  color: $color__blue-90;
+}
+
 .quote {
   padding: .5rem 1rem 1.5rem;
   font-style: italic;
