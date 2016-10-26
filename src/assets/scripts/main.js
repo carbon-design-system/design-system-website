@@ -37,6 +37,7 @@ import { iconSymbols } from './site/icon-symbols';
 import { taxonomyMap } from './site/taxonomy-map';
 import { accordion } from './site/accordion';
 import { clipboardConfig } from './site/clipboardConfig';
+import { glossaryNav } from './site/glossary';
 import analytics from './site/analytics';
 
 // import snippets stuff here
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('scroll', () => {
     const themeSwitcherBtns = [... document.querySelectorAll('.view .theme-switcher-btns')];
+    const glossarySideNav = document.querySelector('.glossary__side-nav');
     if (window.scrollY > 315) {
       themeSwitcherBtns.forEach(btn => {
         btn.classList.add('scrolled');
@@ -57,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
       themeSwitcherBtns.forEach(btn => {
         btn.classList.remove('scrolled');
       });
+    }
+
+    if (window.scrollY > 614) {
+      glossarySideNav.classList.add('fixed');
+    } else {
+      glossarySideNav.classList.remove('fixed');
     }
   });
 
@@ -91,4 +99,5 @@ document.addEventListener('DOMContentLoaded', () => {
   taxonomyMap();
   accordion();
   analytics();
+  glossaryNav();
 });

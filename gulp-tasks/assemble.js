@@ -57,7 +57,11 @@ const assemble = () => {
         let jsFile = fs.readFileSync(`${fileNamePath}`, { 'encoding': 'utf8' });
         jsFile = jsFile.replace(/["']/g, '\'');
         return jsFile;
-      }
+      },
+      json: function(context) {
+        console.log(context);
+        return JSON.stringify(context);
+      },
     }
   };
 

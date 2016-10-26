@@ -5,5 +5,8 @@ npm-debug.log
 dist
 *.map
 src/materials
-src/data
+src/data/bower.json
+src/data/colors.json
+src/data/icons.json
+src/data/package.json
 deploy.sh

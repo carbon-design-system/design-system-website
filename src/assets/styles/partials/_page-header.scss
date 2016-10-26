@@ -195,4 +195,8 @@
   @media screen and (max-width: $width__screen-size--small) {
     padding-top: 5em;
   }
+
+  @include breakpoint('bp--sm--major') {
+    padding-bottom: 1rem;
+  }
 }

@@ -180,3 +180,52 @@ picture img {
     }
   }
 }
+
+.img-with-text {
+  margin: 2.25rem 0 0;
+  font-size: 1rem;
+  color: $color__blue-90;
+  line-height: 1.75;
+
+  &__img {
+    float: left;
+    margin: 0 2rem .75rem 0;
+
+    &--voice {
+      width: 3.2rem;
+    }
+
+    &--tone {
+      width: 4rem;
+      margin: 0 1.2rem .75rem 0;
+    }
+
+    &--capitalization {
+      width: 9rem;
+    }
+  }
+
+  br {
+    clear: both;
+  }
+}
+
+.img-with-overlay-text {
+  position: relative;
+  margin-top: 1.75rem;
+  margin-bottom: 8rem;
+
+  img {
+    position: absolute;
+  }
+
+  span {
+    @include font-smoothing;
+    position: absolute;
+    font-size: rem(26px);
+    color: $color__white;
+    top: rem(26px);
+    left: rem(26px);
+    font-weight: 600;
+  }
+}

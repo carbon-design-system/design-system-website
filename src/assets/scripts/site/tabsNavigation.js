@@ -44,21 +44,35 @@ export const tabsNavigation = () => {
 
   // Function to update hash
   const updateHash = () => {
+    const hashArray = window.location.hash.split('#');
     // If URL does not have a hash, set hash to the hash of the first tab
     if (window.location.hash === '') {
       currentHash = tabList[0].firstChild.hash;
     } else {
-      currentHash = window.location.hash;
+      if (hashArray.length > 2) {
+        currentHash = `#${hashArray[1]}`;
+      } else {
+        currentHash = window.location.hash;
+      }
     }
     // Goes through each tab and sets the active view
     viewList.forEach((element) => {
       if (element.hash === currentHash) {
         setActiveView(element);
+        if (hashArray.length > 2) {
+          window.location.hash = `${window.location.hash}#${hashArray[2]}`;
+        }
       }
     });
   };
 
-  const scrollToTop = () => window.scrollTo(0, 0);
+  const scrollToTop = () => {
+    viewList.forEach((element) => {
+      if (element.hash === window.location.hash) {
+        window.scrollTo(0, 0);
+      }
+    });
+  };
 
   // If main tab exists, update the hash and sets the active view when clicked
   if (mainTab) {
