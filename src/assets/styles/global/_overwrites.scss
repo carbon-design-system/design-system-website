@@ -29,15 +29,15 @@ form {
   }
 }
 
-.bx--tabs {
-
-  @media screen and (max-width: 767px) {
-    width: 25em;
-  }
-}
-
 .bx--table {
   width: 100%;
+}
+
+.bx--tabs {
+
+  @media screen and (max-width: $width__screen-size--small) {
+    width: 100%;
+  }
 }
 
 .bx--table__column-title, .bx--table__body__cell {
@@ -143,4 +143,8 @@ form {
   &:hover {
     background: none;
   }
+}
+
+.bx--radio:checked + .bx--radio__label .bx--radio__appearance {
+  z-index: auto;
 }

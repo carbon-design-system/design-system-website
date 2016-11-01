@@ -326,7 +326,7 @@ pre[class*='language-'] {
 .responsive-switcher {
   display: flex;
   margin: 1rem 0 1.125rem;
-  
+
   @media screen and (max-width: $width__screen-size--small) {
     margin-left: 2rem;
   }
@@ -379,13 +379,21 @@ pre[class*='language-'] {
   }
 }
 
+iframe {
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
 .iframe {
   width: 100%;
   transition: 280ms;
 
   &--mobile {
     width: 600px;
-    
+
     @media screen and (max-width: $width__screen-size--small) {
       width: 100%;
     }
@@ -424,7 +432,3 @@ pre[class*='language-'] {
     }
   }
 }
-// 
-// #detail-page-header-with-tabs .iframe {
-//   min-height: 450px;
-// }
