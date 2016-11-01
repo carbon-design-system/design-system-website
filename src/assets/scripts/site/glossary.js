@@ -10,6 +10,21 @@ export const glossaryNav = () => {
           link.classList.remove('selected');
         });
       }
+
+      window.addEventListener('scroll', () => {
+        letters.forEach(letter => {
+          const scrollPos = (letter.offsetTop + letter.getBoundingClientRect().height - 200);
+          if (window.scrollY > (scrollPos)) {
+            glossaryNavLinks.forEach(link => {
+              if (link.href.substring(link.href.indexOf('#')) === `#${letter.id}`) {
+                link.classList.add('selected');
+              } else {
+                link.classList.remove('selected');
+              }
+            });
+          }
+        });
+      });
     });
 
     window.addEventListener('scroll', () => {
