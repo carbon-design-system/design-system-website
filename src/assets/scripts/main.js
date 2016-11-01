@@ -28,7 +28,7 @@ import { playPause } from './site/motionDemos.js';
 import { openItemHeadings, toggleMenu, activeMenuLink, autoCloseMenu } from './site/menu';
 import { tabsNavigation } from './site/tabsNavigation';
 import { codeSnippets } from './site/snippets';
-import { themeSwitcher } from './site/theme-switcher';
+import { themeSwitcher, responsiveSwitcher } from './site/theme-switcher';
 import { renderPopout } from './site/render-popout';
 import { copyHexValue } from './site/copy-hex';
 import { expandType } from './site/expand-type';
@@ -43,6 +43,61 @@ import analytics from './site/analytics';
 // import snippets stuff here
 
 document.addEventListener('DOMContentLoaded', () => {
+  const getHTML = (url, callback) => {
+    // Feature detection
+    if (!window.XMLHttpRequest) return;
+
+    // Create new request
+    const xhr = new XMLHttpRequest();
+
+    // Setup callback
+    xhr.onload = () => {
+      if (callback && typeof(callback) === 'function') {
+        callback(xhr.responseXML);
+      }
+    };
+
+    // Get the HTML
+    xhr.open('GET', url);
+    xhr.responseType = 'document';
+    xhr.send();
+  };
+
+  const syncHeight = (iframe, height) => {
+    iframe.style.height = `${height}px`;
+  };
+
+  setTimeout(() => {
+    [... document.querySelectorAll('.iframe')].forEach(iframe => {
+      const head = iframe.contentDocument.children[0].children[0];
+      const body = iframe.contentDocument.children[0].children[1];
+      const iconsLink = 'https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg';
+      body.classList.add('iframe__body');
+      const script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'http://design-system.stage1.mybluemix.net/assets/scripts/bundle.js';
+      const cssLink = document.createElement('link');
+      const svgUseLink = document.createElement('script');
+      svgUseLink.src = '../../assets/svgxuse.js';
+      svgUseLink.defer = true;
+      cssLink.href = '/assets/styles/main.css';
+      cssLink.rel = 'stylesheet';
+      head.appendChild(cssLink);
+      body.appendChild(script);
+      body.appendChild(svgUseLink);
+      body.addEventListener('click', () => {
+        syncHeight(iframe, body.offsetHeight);
+      });
+    });
+  }, 1000);
+
+  setTimeout(() => {
+    [... document.querySelectorAll('.iframe')].forEach(iframe => {
+      const height = iframe.contentDocument.children[0].children[1].offsetHeight;
+      iframe.addEventListener('load', syncHeight(iframe, height));
+    });
+  }, 1200);
+
   [... document.querySelectorAll('[data-loading]')].forEach((element) => {
     // Toggles on and off animations for Loading as a demo but may be misleading for users
     setInterval(() => Loading.components.get(element).toggle(), 3000);
@@ -90,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
   activeMenuLink();
   codeSnippets();
   themeSwitcher();
+  responsiveSwitcher();
   renderPopout();
   copyHexValue();
   expandType();

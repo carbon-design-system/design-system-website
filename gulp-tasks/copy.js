@@ -42,6 +42,18 @@ const copy = () => {
     .pipe(gulp.dest('./dist/assets/'));
 
   // Copy images from src to dist
+  gulp.src(['./src/materials/**/**'])
+     .pipe(gulp.dest('./dist/materials/'));
+
+   // Copy images from src to dist
+  gulp.src(['./src/views/temp-materials/**'])
+     .pipe(gulp.dest('./dist/materials/'));
+
+  // Copy images from src to dist
+  gulp.src(['./src/assets/scripts/vendor/**'])
+   .pipe(gulp.dest('./dist/assets/'));
+
+  // Copy images from src to dist
   gulp.src(['./src/assets/images/**'])
     .pipe(gulp.dest('./dist/assets/images/'));
 

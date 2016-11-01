@@ -24,9 +24,36 @@
   {{#if item.htmlFile}}
 
   <div class="element__example">
+  
+  {{#if item.iframeLink}}
+  
+  <div class="responsive-switcher" data-responsive-switcher>
+    <button data-toggle-size="mobile" class="responsive-switcher__btn">
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 0v16h10V0H3zm9 3v10H4V3h8zm-2-2v1H6V1h4z" fill="#000" fill-rule="evenodd"/>
+      </svg>
+      SMALL
+    </button>
+    <button data-toggle-size="desktop" class="responsive-switcher__btn active">
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#000" fill-rule="evenodd">
+          <path d="M7 13h2v1H7v-1zm-4 1h10v2H3v-2zM0 1l1-1v11l-1-1h16l-1 1V0l1 1H0zm16-1v11H0V0h16z"/>
+        </g>
+      </svg>
+      LARGE
+    </button>
+  </div>
+  
+  {{/if}}
 
   <div class="example__rendered">
-
+    
+  {{#if item.iframeLink}}
+    
+    <iframe class="iframe" src={{{item.iframeLink}}}></iframe>
+  
+  {{else}}
+  
   {{#if item.expandHeight}}
     <div class="rendered__element expanded-height">
     {{#if item.needWrap}}
@@ -48,7 +75,9 @@
     {{/if}}
     </div>
   {{/if}}
-
+  
+  {{/if}}
+  
   <input type="text" value="" class="hiddenHTMLSnippet" />
 
   {{#markdown}}

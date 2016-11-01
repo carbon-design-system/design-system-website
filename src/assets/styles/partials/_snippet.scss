@@ -98,6 +98,7 @@ pre[class*='language-'] {
     background-color: $color__rendered-example;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
     padding-bottom: 1em;
     position: relative;
@@ -117,6 +118,7 @@ pre[class*='language-'] {
     display: flex;
     justify-content: center;
     min-width: 200px; // needed for layout reasons
+    width: 100%;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -320,3 +322,109 @@ pre[class*='language-'] {
     white-space: pre-wrap;
   }
 }
+
+.responsive-switcher {
+  display: flex;
+  margin: 1rem 0 1.125rem;
+  
+  @media screen and (max-width: $width__screen-size--small) {
+    margin-left: 2rem;
+  }
+
+  &__btn {
+    display: block;
+    border: none;
+    background: transparent;
+    font-size: .9rem;
+    font-weight: 700;
+    align-items: center;
+    margin-right: 1rem;
+    padding-bottom: .6rem;
+    padding-left: 0;
+    letter-spacing: 1px;
+    border-bottom: 3px solid transparent;
+    color: $color__navy-gray-6;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+
+    &:first-child {
+      svg {
+        margin-right: .5rem;
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: .75rem;
+      fill: $color__navy-gray-6;
+
+      g,
+      path {
+        fill: $color__navy-gray-6;
+      }
+    }
+
+    &.active {
+      border-bottom: 3px solid $color__blue-40;
+      color: $color__blue-90;
+
+      svg,
+      svg g,
+      svg path {
+        fill: $color__blue-40;
+      }
+    }
+  }
+}
+
+.iframe {
+  width: 100%;
+  transition: 280ms;
+
+  &--mobile {
+    width: 600px;
+    
+    @media screen and (max-width: $width__screen-size--small) {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $color__rendered-example;
+    color: $color__white;
+    // margin-top: 3.5rem;
+    overflow: hidden;
+    padding: 3.5rem 4rem 0;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+
+    @include light-ui {
+      background-color: $color__navy-gray-9;
+      color: $color__blue-90;
+    }
+
+    .bx--form,
+    .bx--search {
+      width: 100%;
+    }
+
+    .bx--tabs li a {
+      white-space: nowrap;
+    }
+
+    .bx--detail-page-header--no-tabs {
+      min-width: 0;
+    }
+  }
+}
+// 
+// #detail-page-header-with-tabs .iframe {
+//   min-height: 450px;
+// }
