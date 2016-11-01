@@ -1,3 +1,14 @@
+@mixin table-swatch($color, $borders: false) {
+  background-color: $color;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+  @if ($borders) {
+    border: 1px solid $color__navy-gray-7;
+  }
+}
+
 .table {
   color: $color__text--dark;
   width: 100%;
@@ -21,14 +32,28 @@
     padding: .75em 0;
     margin-bottom: 1em;
 
-    p {
-      padding-bottom: 0;
+    & > p {
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    &--side {
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-align: right;
+      padding-right: 1.5rem;
+      margin-left: -1.5rem;
     }
   }
 
   .table__row {
     align-items: baseline;
     margin-bottom: 1em;
+
+    & > .small-text {
+      font-size: .875rem;
+      font-weight: 400;
+    }
   }
 
   .actual-size {
@@ -40,6 +65,15 @@
   &.expanded {
     max-height: 200em;
     transition-duration: $transition--code-snippet;
+  }
+
+  &__swatch {
+    &--blue-30 { @include table-swatch($color__blue-30); }
+    &--blue-20 { @include table-swatch($color__blue-20); }
+    &--blue-51 { @include table-swatch($color__blue-51); }
+    &--blue-40 { @include table-swatch($color__blue-40); }
+    &--gray-3 { @include table-swatch($color__gray-3, true); }
+    &--navy-gray-7 { @include table-swatch($color__navy-gray-7); }
   }
 }
 

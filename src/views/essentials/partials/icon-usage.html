@@ -20,9 +20,10 @@ You can find the source file for the Bluemix icon library within the <a class="b
 
 ### Sizing
 
-Bluemix uses a standard set for icon sizes. Icons from the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> should always be used at one of the specified sizes in the table below. The shape of the icon itself does not have to completely fill the entire square artboard. However, the icon should optically fill the space.
+Icons come in 2 sizes: `24px` and `16px`.
+While most icons occupy a square artboard, some icons may occupy a rectangular artboard where the width or height of the icons is either `24px` or `16px`.
 
-24 x 24 px is the default svg size for the library.
+In most cases, you can use icons at their original sizes.
 
 <div class="table mb2 max-width-45">
   <div class="table__header">
@@ -30,15 +31,7 @@ Bluemix uses a standard set for icon sizes. Icons from the <a class="base-link" 
     <p>DIMENSIONS</p>
   </div>
   <div class="table__row">
-    <p>Large (48)</p>
-    <p>48px x 48px</p>
-  </div>
-  <div class="table__row">
-    <p>Medium (32)</p>
-    <p>32px x 32px</p>
-  </div>
-  <div class="table__row">
-    <p>Small (24)</p>
+    <p>Standard (24)</p>
     <p>24px x 24px</p>
   </div>
   <div class="table__row">
@@ -47,12 +40,11 @@ Bluemix uses a standard set for icon sizes. Icons from the <a class="base-link" 
   </div>
 </div>
 
-### Background and Internal Padding
+### Background
 
-All icons should be on a transparent background and centered within the artboard boundaries at one of the below standard dimensions. This means that icons could have extra internal horizontal or vertical space.
+All icons should be on a transparent background and centered within the artboard boundaries at one of the below standard dimensions.
 
-**Background: 100% Transparent**
-**Artboard Alignment: Centered**
+- Background: 100% Transparent
 
 <div class="my2">
   <img src="../assets/images/iconography-page/icons-1.png" alt="" />
@@ -60,7 +52,7 @@ All icons should be on a transparent background and centered within the artboard
 
 ### External Padding
 
-Include enough padding around the icons so that no matter the icon size, it will always meet the standand touch affordance of 44 pixels or higher.
+Include enough external padding around the icons so that no matter the icon size, it will always meet the standand touch affordance of 44 pixels or higher.
 
 **Target Area: 44 px or higher**
 
@@ -70,24 +62,54 @@ Include enough padding around the icons so that no matter the icon size, it will
 
 ### Color
 
-Interactive UI Icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the  importance of the icon's action. If it is a primary action then the icon should be Blue 30. If the icon is a secondary or supplementary action, then icon color should be a neutral color, like Navy-Gray-8. Blue should always be used with an icon to show that it is interactive. For secondary UI Icons the hover state should be blue to help emphasize that it is interactive.
+Interactive UI Icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action. If it is a primary action then the icon should be Blue 30. If the icon is a secondary or supplementary action, then icon color should be a neutral color, like Navy-Gray-8. Blue should always be used with an icon to show that it is interactive. For secondary UI Icons the hover state should be blue to help emphasize that it is interactive.
 
-**Exception:** There is an exception to both the Blue and Neutral color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
+**Exception**: There is an exception to both the Blue and Neutral color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
-**Primary UI Icon Color State**
+<!-- style="background-color: #5aaafa; padding: 0 10px; margin-right: 10px;"
+style="background-color: #7cc7ff; padding: 0 10px; margin-right: 10px;"
+style="background-color: #3D70B2; padding: 0 10px; margin-right: 10px;"
+style="background-color: #5596E6; padding: 0 10px; margin-right: 10px;"
+style="background-color: #dfe6eb; padding: 0 10px; margin-right: 10px;"
+style="background-color: #5aaafa; padding: 0 10px; margin-right: 10px;"
+style="background-color: #8C9BA5; padding: 0 10px; margin-right: 10px;"
+style="background-color: #3D70B2; padding: 0 10px; margin-right: 10px;" -->
 
-- Normal: Blue 30 #5aaafa
-- Hover: Blue 20 #7cc7ff
-- Disabled: @ 50% opacity
-
-**Secondary UI Icon Color State**
-
-- Normal: Navy-Gray-8 #dfe6eb
-- Hover: Blue 30 #5aaafa
-- Disabled: @ 50% opacity
+<div class="table mb2 max-width-45">
+  <div class="table__header">
+    <p> </p>
+    <p>NORMAL</p>
+    <p>HOVER</p>
+    <p>DISABLED</p>
+  </div>
+  <div class="table__row dark">
+    <p class="table__header--side">PRIMARY (DARK)</p>
+    <p><span class="table__swatch--blue-30"></span> Blue 30</p>
+    <p><span class="table__swatch--blue-20"></span> Blue 20</p>
+    <p>@ 50% opacity</p>
+  </div>
+  <div class="table__row dark">
+    <p class="table__header--side">SECONDARY (DARK)</p>
+    <p><span class="table__swatch--gray-3"></span> Navy-Gray-8</p>
+    <p><span class="table__swatch--blue-30"></span> Blue 30</p>
+    <p>@ 50% opacity</p>
+  </div>
+  <div class="table__row">
+    <p class="table__header--side">PRIMARY (LIGHT)</p>
+    <p><span class="table__swatch--blue-51"></span> Blue 51</p>
+    <p><span class="table__swatch--blue-40"></span> Blue 40</p>
+    <p>@ 50% opacity</p>
+  </div>
+  <div class="table__row">
+    <p class="table__header--side">SECONDARY (LIGHT)</p>
+    <p><span class="table__swatch--navy-gray-7"></span> Navy-Gray-7</p>
+    <p><span class="table__swatch--blue-51"></span> Blue 51</p>
+    <p>@ 50% opacity</p>
+  </div>
+</div>
 
 <div class="small-img">
-  <img src="../assets/images/iconography-page/icons-3.png" alt="" />
+  <img src="/assets/images/iconography-page/icons-3.png" alt="" />
 </div>
 
 ### Weight
@@ -96,7 +118,7 @@ Icons of the same size should have the same visual weight. One icon should not l
 
 Be mindful when resizing icons, make sure that the 2px stroke does not increase or decrease causing icons to look uneven. When scaling icons you should always start each icon at the same base size (preferrably the default of 24px).
 
-**Glyphs** or 16 pixel icons, should always be a filled icon. This adds visual weight to the icon, allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
+Glyphs or 16 pixel icons, should always be a filled icon. This adds visual weight to the icon, allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
 
 <div class="examples">
   <div class="do-example">
@@ -114,41 +136,109 @@ Be mindful when resizing icons, make sure that the 2px stroke does not increase 
 When drawing or re-sizing icons make sure the vector always aligns to the base pixel grid. This insures pixel clarity and crispness on all screen ratios. The x and y coordinates of icons should never contain decimals.
 
 
-## Code Usage
+## Developer Usage
 
-Access the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a> for Bluemix Icons.
+The following guidelines are for developers who are using <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">bluemix-icons</a>.
 
-The main file here is `sprite.svg`, which contains an SVG sprite (every SVG included in a single file within a `<defs>` tag inside of a `<symbol>`). We're using the <a class="base-link" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use" target="_blank">SVG</a> to access them.
+### Using SVG file from Static Assets
 
-The `sprite.svg` file can be used **locally** or **dynamically** from <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix.common" target="_blank">Bluemix Common.</a>
-
-### HTML
+You can use **sprite.svg** or **bluemix-icons.svg** by serving it as a static asset (like an image file) and use it with the following HTML:
 
 ```html
-
-<svg class="icon--add">
-  <use xlink:href="{LOCAL_OR_DYNAMIC_PATH}/sprite.svg#service--add-filled"></use>
+  <!-- From static assets  -->
+<svg>
+  <use xlink:href="path/to/static-assets/img/sprite.svg#common--arrows"></use>
 </svg>
 ```
 
+### Using SVG file from Bluemix.Common
 
-### Styling
-In this usage, you style the SVG in CSS. Make sure to give it a width and height (default is 100% of parent). Some icons are colored while others are black by default. You can edit the fill to change this. See the <a class="base-link" href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank" />reference page</a> for a guide with what `xlink:href` to use.
+<a class="base-link" href="https://github.ibm.com/Bluemix/Bluemix.Common">Bluemix.Common</a> provides an endpoint to access their currently installed version of bluemix-icons. Using the icons in your HTML will look like this.
 
-To edit these icons in CSS, add your own class to the `svg`.
+```html
+  <!-- From Bluemix.Common -->
+<svg>
+  <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--arrows"></use>
+</svg>
+```
 
-_For example:_
+**Important notes about Bluemix.Common**:
+- If you need more control over how the polyfill is invoked, use bluemix-icons locally as a static asset.
+- The polyfill acts directly on the window object, so it shouldn't need to be re-imported if you are using the header JavaScript from Bluemix.Common.
 
+### Main files
+
+Bluemix Icons ships with two main SVG files that contain different sets of external SVG sprite files:
+
+<div class="table mb2 max-width-45">
+  <div class="table__header">
+    <p>FILENAME</p>
+    <p>DESCRIPTION</p>
+    <p>SUPPORTED</p>
+    <p>API</p>
+  </div>
+  <div class="table__row">
+    <p>bluemix-icons.svg</p>
+    <p class="small-text">Contains current icons</p>
+    <p class="small-text"><code>3.x</code> and newer</p>
+    <p class="small-text">/api/v5/files/bluemix-icons.svg</p>
+  </div>
+  <div class="table__row">
+    <p>bluemix-icons.json</p>
+    <p class="small-text">JSON file created from bluemix-icons.svg</p>
+    <p class="small-text"><code>3.x</code> and newer</p>
+    <p> </p>
+  </div>
+  <div class="table__row">
+    <p>sprite.svg</p>
+    <p class="small-text">legacy SVG sprite</p>
+    <p class="small-text"><code>3.x</code> and older</p>
+    <p class="small-text">/api/v4/files/sprite.svg</p>
+  </div>
+  <div class="table__row">
+    <p>icons.json</p>
+    <p class="small-text">legacy JSON file created from sprite.svg</p>
+    <p class="small-text"><code>3.x</code> and older</p>
+    <p> </p>
+  </div>
+</div>
+
+### Styling Icons with CSS
+
+**Note:** The icons use original color by default, which should be black. Colors can be changed with CSS.
+
+Some icons are colored while others are black by default. You can edit the fill to change this. See the temporary <a href="https://pages.github.ibm.com/Bluemix/bluemix-icons/" class="base-link">reference page</a> for a guide with what `xlink:href` to use.
+
+To edit these icons in CSS, add your own class to the `<svg>`. For example:
+
+**SCSS:**
 
 ```css
-
-.icon--add {
-  fill: #cc6699; // additional styling
+  .icon--add {
+  fill: #cc6699;
 }
 ```
 
-## Troubleshooting and Development Use
+**HTML:**
 
-Please refer to the guidelines in the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icons GitHub Repo</a> if you experience any problems using the icons.
+```html
+  <svg class="icon--add">
+  <use xlink:href="path/to/sprite.svg#service--add-filled"></use>
+</svg>
+```
+
+### Accessibility
+
+For screen reader accessibility, use `<title>` element and `aria-labelledby` attribute.
+
+```html
+  <svg class="icon--add" aria-labelledby="add">
+  <title id="add">Add a new service</title>
+  <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--add"></use>
+</svg>
+```
+
+- The `aria-labelledby` attribute will reference the `id` attribute in the the `<title>` element. Make sure that you do not duplicate this `id`.
+- The `<title>` element will be read by the screen reader to the user so it should describe it's purpose.
 
 {{/markdown}}

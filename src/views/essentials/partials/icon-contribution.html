@@ -1,6 +1,8 @@
 {{#markdown}}
 
-## Adding Icons
+## Visual Guidelines
+
+### Adding Icons
 
 If you would like to add an icon to our library, please submit a Pull Request in our <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">GitHub Repo</a>.
 
@@ -17,24 +19,27 @@ If you would like to add an icon to our library, please submit a Pull Request in
 
 ### Best Practices:
 
-- Create an individual artboard for each icon at 32 x 32 pixels. Export the entire icon artboard. Do not trim trim transparent pixels. <span style="font-weight: 700"> Note:</span> Icons can be resized in the code but the default SVG size should be 32 x 32 pixels.
-- Make sure each artboard and the artwork within it is pixel perfect. There should not be decimals in the x and y coordinates or in the width and height fields.
-- Delete any excess styling. The icon should be exported at the color #000000. All styling (size, color, etc.) will be done in code.
-- Ungroup the icon layers completely. It should be on the top-most layer in your artboard.
+- **square icons:** create an artboard for an individual icon that is 24 x 24 pixels (or 16 x 16 pixels for glyphs)
+- **rectangular icons:** make sure the width or the height of the artboard is 24 pixels (16 pixels for glyphs).
+- Each artboard and the artwork within it must be pixel perfect.
+- No decimals in `x` and `y` coordinates or width and height fields.
+- No padding when exporting icons (internal and external padding can be added with CSS).
+- Do not trim trim transparent pixels.
+- Ungroup icon layers completely. It should be on the top-most layer in your artboard.
 - Make sure to properly name layers and artboards (these names will also be exported into the code).
 
 ### How to Export SVGs from Sketch
 
-1. Draw a 32 x 32 pixel stand-alone artboard.
+1. Draw a 24 x 24 pixel stand-alone artboard.
 2. Place icon in the pixel perfect center of the artboard.
-3. Convert all strokes to outlines (Shift + Command + O)
+3. Convert all strokes to outlines (`Shift + ⌘ + O`)
 4. Select any overlapping shapes and click the 'Union' icon from the top navigation, to merge all of the shapes together.
-5. Make sure the icon is at #000000 and has no additional styling.
+5. Make sure the icon is at `#000000` and has no additional styling.
 6. Select the entire artboard (not just the icon).
 7. Click "Make Exportable" at the bottom of the right toolbar in Sketch.
 8. In the "Export" widget select "SVG" in the format dropdown.
 9. Click "Export 'Artboard-Name'".
-10. Name icon appropriately.
+10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--code.svg, add.svg, add--outline.svg).
 
 <div class="mt2">
   <img class="sm--width-full" src="../assets/images/iconography-page/SVG-Artboard.png" alt="" />
@@ -47,7 +52,7 @@ If you would like to add an icon to our library, please submit a Pull Request in
 2. Place icon in the pixel perfect center of the artboard.
 3. Expand all strokes (Object > Expand).
 4. Select all overlapping shapes and click the 'Unite' icon in the Pathfinder panel, to merge all of the shapes together.
-3. Make sure the icon is at #000000 and has no additional styling.
+3. Make sure the icon is at `#000000` and has no additional styling.
 4. Select "File" from the top navigation.
 5. Select "Save A Copy..." which will open a dialog.
 6. On the "Format" dropdown select "SVG (svg)".
@@ -60,5 +65,70 @@ If you would like to add an icon to our library, please submit a Pull Request in
   <img class="sm--width-full" src="../assets/images/iconography-page/Abode-SVG-Export.png" alt="" />
 </div>
 <p class="caption">SVG export options from Adobe Illustrator</p>
+
+## Developer Guidelines
+
+These are contributing guidelines for adding Bluemix UI icons.
+
+**Service Icons:** you can find all icons for internal services on the <a href="https://releaseblueprints.ibm.com/display/CLOUDOE/Master+Icon+List" class="base-link">Master Icon List</a> on release blueprints.
+
+### Submitting Pull Requests
+
+**Do not commit built files.**
+- These are files created when running `npm run build`
+- Committing built files results in unintended merge conflicts
+
+**Keep your branch up to date with `master` branch**
+
+### Adding SVGs
+
+1. Fork this repo
+2. Clone the fork to your computer
+3. Add icons to svg folder
+4. **Optional:** Open terminal to your forked repo Run `npm install` to make use of dev environment
+5. Submit a pull request
+
+When submitting pull requests to bluemix-icons, simply add icons to svg folder directly.
+
+**Do not add new icons to svg subfolders**, these are legacy icons that will be removed in `4.0.0`.
+
+
+For example, icons in any subfolders, like <a href="https://github.ibm.com/Bluemix/bluemix-icons/blob/master/svg/taxonomy" class="base-link" target="_blank">taxonomy</a> or <a href="https://github.ibm.com/Bluemix/bluemix-icons/blob/master/svg/common" class="base-link" target="_blank">common</a>, are **legacy icons**.
+
+### Prepping SVG XML code
+
+All SVG icons are optimized through <a href="https://github.com/svg/svgo" class="base-link">SVGO</a>  and other build steps to prepare icons for use via external SVG sprite files (sprite.svg and bluemix-icons.svg).
+
+For example, here's how XML code for add--glyph.svg can look:
+
+```html
+  <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path
+    d="(removed for brevity)"
+    id="Shape"
+    stroke="none"
+    fill="#000000"
+    fill-rule="evenodd"
+  ></path>
+</svg>
+```
+
+The XML code **must have** the following attributes:
+- `width` and `height`
+- `viewBox`
+- `fill-rule="evenodd"`
+
+It **must not have** the following nodes:
+- `<g>`
+- `<style>`
+
+SVGO and other build steps will not optimize correctly when `<g>` nodes are present.
+
+### About SVGO and Gulp API
+
+Gulp is used for build tasks and are accessed via `npm` scripts.
+SVGO is used with various other gulp tasks to format external SVG sprite files. These should only be used when submitting pull requests that bump the repo to new versions.
+
+See <a href="https://github.ibm.com/Bluemix/bluemix-icons/blob/master/docs/contributing.md#about-svgo-and-gulp-api" class="base-link">API reference here</a>.
 
 {{/markdown}}
