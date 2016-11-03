@@ -9,6 +9,7 @@ const gulp = require('gulp');
 // Tasks
 const assemble = require('./gulp-tasks/assemble');
 const copy = require('./gulp-tasks/copy');
+const imageMin = require('./gulp-tasks/image-min');
 const scripts = require('./gulp-tasks/scripts');
 const nodemon = require('./gulp-tasks/nodemon');
 const styles = require('./gulp-tasks/styles');
@@ -16,7 +17,7 @@ const styles = require('./gulp-tasks/styles');
 /*----------------------
   Tasks
 ------------------------*/
-
+gulp.task('imageMin', imageMin);
 gulp.task('copy', copy);
 gulp.task('scripts', scripts);
 gulp.task('styles', () => {
