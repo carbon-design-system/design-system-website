@@ -28,6 +28,7 @@ export const showIssueForm = () => {
     if (window.innerWidth < mobileWidth) {
       menu.classList.add('is-hidden');
       toggleButton.classList.remove('active');
+      container.classList.remove('fixed');
     }
     container.classList.toggle('fixed');
     issueForm.classList.toggle('is-active');
@@ -55,7 +56,8 @@ export const showIssueForm = () => {
   };
 
   closeIssueButton.addEventListener('click', () => {
-    issueForm.classList.toggle('is-active');
+    issueForm.classList.remove('is-active');
+    container.classList.remove('fixed');
     const views = [... issueForm.querySelectorAll('.form-container')];
     views.forEach(view => {
       if (view.classList.contains('is-active') && view.dataset.view === 'confirmation') {
