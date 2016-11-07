@@ -1,5 +1,6 @@
 .menu {
   @extend %font-smoothing;
+  z-index: 6;
   font-size: rem(14px);
   background-color: $color__menu-bg;
   border-right: 2px solid $color__border--menu;
@@ -21,6 +22,26 @@
       border-radius: 50%;
       top: 7px;
       right: 6px;
+    }
+  }
+
+  &__feedback {
+    color: $color__white;
+    padding: 1.5rem 0 .5rem;
+
+    p {
+      font-size: .875rem;
+      padding-bottom: .2rem;
+    }
+
+    a {
+      font-size: .875rem;
+      font-weight: 700;
+      color: $color__blue-30;
+
+      &:hover {
+        color: $color__blue-40;
+      }
     }
   }
 
@@ -60,6 +81,10 @@
     border-top: 1px solid $color__blue-20;
     padding: 1.5rem 0;
 
+    &:last-child {
+      border-bottom: 1px solid $color__blue-20;
+    }
+
     .item__heading {
       display: flex;
       justify-content: space-between;
@@ -96,18 +121,18 @@
   }
 
   &__copyright {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: .75rem;
     color: $color__navy-gray-8;
   }
 }
 
 .item__sub-nav {
-  max-height: 30rem;
+  max-height: 0rem;
   overflow: hidden;
 
-  &.closed {
-    max-height: 0rem;
+  &.open {
+    max-height: 30rem;
   }
 
   &.transition {

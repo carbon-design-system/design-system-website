@@ -36,6 +36,7 @@ gulp.task('serve', ['nodemon'], () => {
     port: 3010,
     notify: true,
     open: false,
+    port: 3010,
     logPrefix: 'Bluemix Design System',
   });
 

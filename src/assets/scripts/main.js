@@ -25,7 +25,11 @@ import {
 // -------------
 // Import specific scripts for controlling website behavior
 import { playPause } from './site/motionDemos.js';
-import { openItemHeadings, toggleMenu, activeMenuLink, autoCloseMenu } from './site/menu';
+import { openItemHeadings,
+         toggleMenu,
+         activeMenuLink,
+         autoCloseMenu,
+         showIssueForm } from './site/menu';
 import { tabsNavigation } from './site/tabsNavigation';
 import { codeSnippets } from './site/snippets';
 import { themeSwitcher, responsiveSwitcher } from './site/theme-switcher';
@@ -38,7 +42,9 @@ import { taxonomyMap } from './site/taxonomy-map';
 import { accordion } from './site/accordion';
 import { clipboardConfig } from './site/clipboardConfig';
 import { glossaryNav } from './site/glossary';
+import { formatText } from './site/formatText';
 import analytics from './site/analytics';
+import './site/fileIssue';
 
 // import snippets stuff here
 
@@ -93,14 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', () => {
     const themeSwitcherBtns = [... document.querySelectorAll('.view .theme-switcher-btns')];
     const glossarySideNav = document.querySelector('.glossary__side-nav');
-    if (window.scrollY > 315) {
-      themeSwitcherBtns.forEach(btn => {
-        btn.classList.add('scrolled');
-      });
-    } else {
-      themeSwitcherBtns.forEach(btn => {
-        btn.classList.remove('scrolled');
-      });
+
+    if (themeSwitcherBtns) {
+      if (window.scrollY > 315) {
+        themeSwitcherBtns.forEach(btn => {
+          btn.classList.add('scrolled');
+        });
+      } else {
+        themeSwitcherBtns.forEach(btn => {
+          btn.classList.remove('scrolled');
+        });
+      }
     }
 
     if (glossarySideNav) {
@@ -118,10 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const arrow = element.querySelector('.item__arrow');
     const isClosed = localStorage.getItem(category);
     if (isClosed === 'true') {
-      subNav.classList.add('closed');
+      subNav.classList.remove('open');
       arrow.classList.add('rotated');
     } else if (isClosed === 'false') {
-      subNav.classList.remove('closed');
+      subNav.classList.add('open');
       arrow.classList.remove('rotated');
     }
   });
@@ -129,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
   playPause();
   openItemHeadings();
   toggleMenu();
+  showIssueForm();
   tabsNavigation();
   autoCloseMenu();
   activeMenuLink();

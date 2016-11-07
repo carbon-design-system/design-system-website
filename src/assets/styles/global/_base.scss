@@ -77,6 +77,10 @@ p {
     }
   }
 
+  &.fixed {
+    position: fixed;
+  }
+
   @media screen and (max-width: $width__screen-size--small) {
     margin-left: 0;
   }

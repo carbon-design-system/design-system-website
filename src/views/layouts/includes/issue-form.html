@@ -1,0 +1,182 @@
+<div class="issue-form">
+  <div class="form-container bx--global-light-ui is-active" data-view="issue">
+    <h2>What can we help you with?</h2>
+    <p>See a problem with the code? Need a new component? Have feedback? We'd love to hear it all! The success of the Bluemix Design System relies on great people like yourself. Fill out the form below to submit your issue to our GitHub repo.</p>
+    <p>A member of the Bluemix Design System's team will be in touch within 48 hours.</p>
+    <form class="bx--form" data-issues>
+      <label for="name" class="bx--form__label">Github username</label>
+      <input id="username" type="text" class="bx--text__input mb1" placeholder="@username" required>
+      <label for="team" class="bx--form__label">Team</label>
+      <input id="team" type="text" class="bx--text__input mb1" placeholder="Bluemix Design System" required>
+      <label for="title" class="bx--form__label">Issue title</label>
+      <input id="title" type="text" class="bx--text__input mb1" placeholder="For example: Button Color" required>
+      <div class='bx--select'>
+        <label for='issue-type' class='bx--form__label'>Choose category</label>
+        <select id='issue-type' class='bx--select__input'>
+          <option class='bx--select__option' value='Design' selected>Design</option>
+          <option class='bx--select__option' value='Development'>Development</option>
+        </select>
+        <svg class='bx--select__arrow'>
+          <use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#service--down-arrow'></use>
+        </svg>
+      </div>
+      <div class="form-container__category mb2">
+        <label class="bx--form__label">Choose tags</label>
+        <label class='bx--checkbox__label'>
+          <input tag class='bx--checkbox' type='checkbox' value='bug' name='tag'>
+          <span class='bx--checkbox__appearance'></span>
+          <span class='bx--checkbox__label-text'>Bug</span>
+        </label>
+        <label class='bx--checkbox__label'>
+          <input tag class='bx--checkbox' type='checkbox' value='resource-request' name='tag'>
+          <span class='bx--checkbox__appearance'></span>
+          <span class='bx--checkbox__label-text'>Resource Request</span>
+        </label>
+        <label class='bx--checkbox__label'>
+          <input tag class='bx--checkbox' type='checkbox' value='feedback' name='tag'>
+          <span class='bx--checkbox__appearance'></span>
+          <span class='bx--checkbox__label-text'>Feedback</span>
+        </label>
+        <label class='bx--checkbox__label'>
+          <input tag class='bx--checkbox' type='checkbox' value='other' name='tag'>
+          <span class='bx--checkbox__appearance'></span>
+          <span class='bx--checkbox__label-text'>Other</span>
+        </label>
+      </div>
+      <div class="form-container__description">
+        <label for="description" class="bx--form__label">Issue description</label>
+        <p>Please describe your issue in depth, with as much clarity, detail, and imagery as necessary.</p>
+        <div class="description__header">
+          <ul class="description__tabs">
+            <li class="write-tab selected">Write</li>
+            <li class="preview-tab">Preview</li>
+          </ul>
+          <ul class="description__toolbar">
+            <li class="description__toolbar--header">
+              <svg width="25" height="10" viewBox="0 0 25 10" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#152935" fill-rule="evenodd">
+                  <g font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM" font-weight="bold">
+                    <text font-size="14" transform="translate(.406 -.266)">
+                      <tspan x="6.266" y="10">A</tspan>
+                    </text>
+                    <text font-size="10" transform="translate(.406 -.266)">
+                      <tspan x=".266" y="10">A</tspan>
+                    </text>
+                  </g>
+                  <path d="M18.39 4.01l3.252 3.252 3.252-3.252"/>
+                </g>
+              </svg>
+              <ul class="toolbar-header-styles">
+                <li><button data-format="header-big" class="toolbar-btn">Header</button></li>
+                <li><button data-format="header-medium" class="toolbar-btn">Header</button></li>
+                <li><button data-format="header-small" class="toolbar-btn">Header</button></li>
+              </ul>
+            </li>
+            <li>
+              <button data-format="bold" class="toolbar-btn">
+                <svg width="9" height="10" viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg">
+                  <text transform="translate(-35.594 -1.266)" fill="#152935" fill-rule="evenodd" font-size="14" font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM" font-weight="bold">
+                    <tspan x="35" y="11">B</tspan>
+                  </text>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="italic" class="toolbar-btn">
+                <svg width="4" height="10" viewBox="0 0 4 10" xmlns="http://www.w3.org/2000/svg">
+                  <text transform="translate(-58.594 -1.266)" fill="#152935" fill-rule="evenodd" font-family="HelvNeueRomanItalicforIBM, HelvNeue Roman Italic for IBM" font-style="italic" font-size="14">
+                    <tspan x="59" y="11">i</tspan>
+                  </text>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="code" class="toolbar-btn">
+                <svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#152935" fill-rule="evenodd">
+                    <path d="M3.784.54L.406 4.04l3.378 3.5 1.29-1.335-2.09-2.165 2.09-2.165M11.028.54L9.74 1.875l2.088 2.165L9.74 6.205l1.288 1.335 3.378-3.5"/>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="link" class="toolbar-btn">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.55 1.187C11.024.66 10.294.332 9.487.332c-.806 0-1.536.327-2.064.855L6.172 2.44c-.53.527-.857 1.256-.857 2.063 0 .31.058.604.144.888-.28-.088-.574-.15-.883-.15-.806 0-1.536.328-2.064.856l-1.25 1.252c-.53.528-.857 1.257-.857 2.064 0 .806.307 1.557.834 2.085.53.528 1.28.835 2.087.835.806 0 1.536-.327 2.064-.855l1.252-1.252c.528-.528.855-1.257.855-2.064 0-.308-.06-.6-.15-.88.284.085.58.143.89.143.805 0 1.535-.327 2.063-.855l1.25-1.252c.53-.528.856-1.257.856-2.064 0-.806-.327-1.537-.855-2.065zM5.87 9.454l-1.25 1.25c-.346.347-.805.537-1.293.537-.508 0-.988-.187-1.314-.513-.328-.328-.516-.807-.516-1.315 0-.49.19-.948.536-1.293l1.25-1.252c.347-.346.806-.536 1.294-.536.3 0 .585.08.843.215l-1.58 1.58.77.772 1.58-1.582c.137.258.216.543.216.843 0 .49-.19.948-.535 1.294zm4.91-4.91L9.528 5.797c-.345.346-.804.536-1.292.536-.307 0-.598-.076-.857-.202l1.594-1.594-.772-.77-1.594 1.593c-.126-.26-.202-.55-.202-.857 0-.49.19-.948.536-1.293l1.25-1.25c.347-.347.806-.537 1.294-.537.49 0 .948.19 1.294.536.346.344.535.804.535 1.292 0 .49-.19.947-.535 1.293z" fill="#152935" fill-rule="evenodd"/>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="quote" class="toolbar-btn">
+                <svg width="11" height="9" viewBox="0 0 11 9" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#152935" fill-rule="evenodd">
+                    <path d="M4.406 4.01h-2l1-4h-2l-1 4v4h4M10.406 4.01h-2l1-4h-2l-1 4v4h4"/>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="ul-list" class="toolbar-btn">
+                <svg width="15" height="11" viewBox="0 0 15 11" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#152935" d="M3.906 1.716H14.52V.793H3.905M3.906 5.87H14.52v-.924H3.905M3.906 10.022H14.52V9.1H3.905"/>
+                    <g fill="#000">
+                      <path d="M1.6.332c-.51 0-.924.413-.924.923s.413.923.923.923.92-.414.92-.923c0-.51-.41-.923-.92-.923M1.6 4.485c-.51 0-.924.413-.924.923s.413.923.923.923.92-.413.92-.922c0-.51-.41-.923-.92-.923M1.6 8.638c-.51 0-.924.413-.924.923s.413.923.923.923.92-.413.92-.922c0-.51-.41-.922-.92-.922"/>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="ol-list" class="toolbar-btn">
+                <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#152935" fill-rule="evenodd">
+                    <path d="M3.702 2.045h11.7V1.028H3.7M3.702 6.623h11.7V5.606H3.7M3.702 11.202h11.7v-1.018H3.7M.14.01v.51h.51v2.034H.14v.508H1.67v-.508h-.51V.01M1.158 5.097v1.018h.51V5.097M.65 6.623h.508v-.508H.65"/>
+                    <path d="M.14 6.623V7.64h1.527v-.508H.65v-.51M.65 4.588H.14v.51H1.16v-.51M1.158 10.184h.51v-.51h-.51M.65 10.693h.508v-.51H.65M1.158 10.693v1.017h.51v-1.018M.65 11.71H.14v.51H1.16v-.51"/>
+                    <path d="M.65 9.167H.14v.508H1.16v-.508"/>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button data-format="mention" class="toolbar-btn">
+                <svg width="11" height="12" viewBox="0 0 11 12" xmlns="http://www.w3.org/2000/svg">
+                  <text transform="translate(-48.594 -.266)" fill="#152935" fill-rule="evenodd" font-size="14" font-family="HelvNeueBoldforIBM, HelvNeue Bold for IBM" font-weight="bold">
+                    <tspan x="48.496" y="11">@</tspan>
+                  </text>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="description__write show">
+          <textarea id="description" class="bx--textarea__input mb1" rows="4" cols="50" placeholder="Markdown is supported. To add images please follow the markdown copy of ![image name](image url)." required></textarea>
+        </div>
+        <div class="description__preview">
+          <div class="preview"></div>
+        </div>
+      </div>
+      <button class="bx--btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="issue-form__close">
+    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+      <title>
+        Close Icon
+      </title>
+      <path d="M21.903 0L12.5 9.403 3.097 0 0 3.097 9.403 12.5 0 21.903 3.097 25l9.403-9.403L21.903 25 25 21.903 15.597 12.5 25 3.097" fill="#DFE3E6" fill-rule="evenodd"/>
+    </svg>
+  </div>
+
+  <div class="form-container ml3 pr5 bx--global-light-ui" data-view="confirmation">
+    <h2 class="mt1 mb1">Thank you!</h2>
+    <p>Your issue, <a class="base-link" target="_blank" data-link></a>, is now in the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-components" target="_blank">bluemix-components repo</a>. Click the issue number
+to track the progress or make edits to your issue.</p>
+    <p>We will get back to you within 48 hours. Feel free to reach out to us on one of our slack channels if you have additional questions:</p>
+    <a href="https://ibm-cloudplatform.slack.com/archives/bluemix-components" target="_blank" class="base-link">#bluemix-components</a><br/>
+    <a href="https://ibm-cloudplatform.slack.com/archives/bluemix-design-system" target="_blank" class="base-link">#bluemix-design-system</a>
+    <button class="form-container__submit-new-issue bx--btn">Submit another issue</button>
+  </div>
+
+</div>

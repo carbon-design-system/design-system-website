@@ -43,15 +43,17 @@ export const glossaryNav = () => {
     });
   }
 
-  glossaryNavLinks.forEach(link => {
-    link.addEventListener('click', (evt) => {
-      glossaryNavLinks.forEach(item => {
-        if (evt.target === item) {
-          item.classList.add('selected');
-        } else {
-          item.classList.remove('selected');
-        }
+  if (glossaryNavLinks) {
+    glossaryNavLinks.forEach(link => {
+      link.addEventListener('click', (evt) => {
+        glossaryNavLinks.forEach(item => {
+          if (evt.target === item) {
+            item.classList.add('selected');
+          } else {
+            item.classList.remove('selected');
+          }
+        });
       });
     });
-  });
+  }
 };

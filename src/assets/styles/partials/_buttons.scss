@@ -72,8 +72,7 @@
 .cta-btns--border {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid $color__blue-20;
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 .cta-btns--border__btn {
@@ -115,6 +114,17 @@
     .btn-icon {
       fill: $color__blue-40;
     }
+  }
+}
+
+.show-issue-form {
+  color: $color__navy-gray-8;
+  font-weight: 700;
+  margin-top: .5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: $color__blue-30;
   }
 }
 
