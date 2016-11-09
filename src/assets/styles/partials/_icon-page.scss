@@ -38,7 +38,6 @@
     @include letter-spacing;
     color: #000;
     font-weight: 700;
-    text-transform: capitalize;
     margin-top: rem(16px);
     margin-bottom: rem(5px);
   }
@@ -53,14 +52,11 @@
 .icon__card {
   background: $color__snippet-bg;
   height: 10rem;
-  padding-top: 4rem;
   text-align: center;
   position: relative;
-
-  svg {
-    height: 32px;
-    width: 32px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     .icon__actions {

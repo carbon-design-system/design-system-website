@@ -32,14 +32,18 @@ const copy = () => {
 
   // Copy other data JSON files to /data
   streams.push(copyGlob(`${config.icons}/icons.json`, `src/data`));
+  streams.push(copyGlob(`${config.icons}/bluemix-icons.json`, `src/data`));
   streams.push(copyGlob(`${config.npm}/consumables/scss/global/colors/*.json`, `src/data`));
 
   // Copy font files from src to dist
   streams.push(copyGlob(config.src.fonts, `${config.dest}/assets/fonts`));
 
   // Copy sprite.svg into asset folder
-  gulp.src('./node_modules/@console/bluemix-icons/sprite.svg')
-    .pipe(gulp.dest('./dist/assets/'));
+  gulp.src([
+    './node_modules/@console/bluemix-icons/sprite.svg',
+    './node_modules/@console/bluemix-icons/bluemix-icons.svg',
+  ])
+  .pipe(gulp.dest('./dist/assets/'));
 
   // Copy images from src to dist
   gulp.src(['./src/materials/**/**'])

@@ -74,8 +74,8 @@ app.listen(port, () => {
   console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
 });
 
-app.get('/download/:iconFolder/:icon', (req, res) => {
-  res.download(__dirname + `/dist/assets/icons/${req.params.iconFolder}/${req.params.icon}.svg`)
+app.get('/download/:icon', (req, res) => {
+  res.download(__dirname + `/dist/assets/icons/${req.params.icon}.svg`)
 });
 
 app.use(favicon(path.resolve(__dirname + `/dist/assets/images/favicon.ico`)));

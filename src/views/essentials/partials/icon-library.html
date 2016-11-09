@@ -1,30 +1,32 @@
 {{#markdown}}
 
-## UI Icons
+## Icons
 
-UI Icons are used in the product to present common actions and commands. All icons below are rendered in their native state as 24 pixel svgs. Basic styling should be done within the svg code.
+Icons are used in the product to present common actions and commands.
 
+See <a href="/essentials/iconography.html#usage" class="base-link">Usage</a> page for more details.
 {{/markdown}}
 
+<h3>Bluemix Icons - Version: {{package.dependencies.[@console/bluemix-icons]}}</h3>
 <div class="bx--search search--light max-width-45 mt1" role="search">
   <svg class="bx--search__icon--magnifier">
-    <use  xlink:href="#common--search"></use>
+    <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg#search"></use>
   </svg>
   <label for="search__input" class="bx--search__label">Search</label>
   <input type="search" class="bx--search__input icon-search mr2" id="search__input" placeholder="Search Icons">
 </div>
 
 <div class="icon-container max-width-45">
-  {{#each icons}}
+  {{#each bluemix-icons}}
   <div class="icon" data-tags="{{this.name}}">
     <div class="icon__card">
-      <svg>
-        <use xlink:href="/assets/sprite.svg#{{this.id}}"></use>
+      <svg width="{{this.width}}" height="{{this.height}}">
+        <use xlink:href="/assets/bluemix-icons.svg#{{this.name}}"></use>
       </svg>
       <div class="icon__actions">
         <button type="button" class="icon__button clipboard-button">Copy Code</button>
         <button type="button" class="icon__button">
-          <a href="/download/{{this.tags}}/{{this.name}}">Download</a>
+          <a href="/download/{{this.name}}">Download</a>
         </button>
       </div>
     </div>
