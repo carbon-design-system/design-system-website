@@ -149,7 +149,7 @@
         "title": "Docs",
         "hash": "glossary#docs",
         "desc": "Opens a separate window containing the landing page for Bluemix Docs.",
-        "caption": "Use only as link text from the console menu bar. See <a href='#glossary#learn-more' class='base-link'>New</a>.",
+        "caption": "Use only as link text from the console menu bar. See <a href='#glossary#learn-more' class='base-link'>Learn More</a>.",
       },
       {
         "title": "Done",
