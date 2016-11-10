@@ -64,10 +64,14 @@ app.get('/base-elements/:name', (req, res) => {
 
 app.get('/global', (req, res) => {
   res.redirect('/essentials');
-})
+});
 
 app.get('/global/:name', (req, res) => {
   res.redirect(`/essentials/${req.params.name}`);
+});
+
+app.get('/let-us-know', (req, res) => {
+  res.redirect('/#let-us-know');
 });
 
 app.listen(port, () => {

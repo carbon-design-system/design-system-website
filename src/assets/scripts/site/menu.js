@@ -23,6 +23,10 @@ export const toggleMenu = () => {
 };
 
 export const showIssueForm = () => {
+  if (window.location.hash === '#let-us-know') {
+    container.classList.add('fixed');
+    issueForm.classList.add('is-active');
+  }
   showIssueFormButton.addEventListener('click', (e) => {
     e.preventDefault();
     if (window.innerWidth < mobileWidth) {
