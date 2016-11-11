@@ -4,13 +4,30 @@ name: Accordion
 title: Accordion | IBM Bluemix Design System
 category: components
 mainDesc: "allow users to expand and collapse sections of content."
-iterations:
-  tabs:
-    title: "Accordion"
-    htmlFile: ""
-    jsFile: ""
-    desc: "Accordions allow users to expand and collapse sections of content. "
-    needWrap: "true"
+tag:
+  new:
+    text: New in 7.0
+    class: third-party
 ---
 
-<!--EXAMPLES NEED TO BE ADDED TO THIS PAGE-->
+<!-- Item header -->
+{{> tabsnav}}
+<!-- Item header ends -->
+
+
+<!-- View: Foundation -->
+<div id="foundation" class="hidden">
+</div>
+<!-- View: Foundation ends -->
+
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> accordion-usage}}
+</div>
+<!-- View: Usage ends -->
+
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> accordion-style}}
+</div>
+<!-- View: Style ends -->

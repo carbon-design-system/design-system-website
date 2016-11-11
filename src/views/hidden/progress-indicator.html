@@ -1,16 +1,33 @@
 ---
 fabricator: true
-name: Progress Indicator
-title: Progress Indicator | IBM Bluemix Design System
+name: Progress indicator
+title: Progress indicator | IBM Bluemix Design System
 category: components
-mainDesc: "are a visual representation of a user's progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.."
-iterations:
-  tabs:
-    title: "Accordion"
-    htmlFile: ""
-    jsFile: ""
-    desc: "Progress indicators are a visual representation of a user's progress through a set of steps. They guide the user through a number of steps in order to complete a specified process. "
-    needWrap: "true"
+mainDesc: "is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process."
+tag:
+  new:
+    text: New in 7.0
+    class: third-party
 ---
 
-<!--EXAMPLES NEED TO BE ADDED TO THIS PAGE-->
+<!-- Item header -->
+{{> tabsnav}}
+<!-- Item header ends -->
+
+
+<!-- View: Foundation -->
+<div id="foundation" class="hidden">
+</div>
+<!-- View: Foundation ends -->
+
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> progress-indicator-usage}}
+</div>
+<!-- View: Usage ends -->
+
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> progress-indicator-style}}
+</div>
+<!-- View: Style ends -->
