@@ -148,3 +148,19 @@ form {
 .bx--radio:checked + .bx--radio__label .bx--radio__appearance {
   z-index: auto;
 }
+
+.bx--search-with-options .bx--search__input {
+  height: auto;
+}
+
+.bx--select__arrow {
+  fill: $color__blue-30;
+}
+
+.bx--overflow-menu__icon {
+  width: 100%;
+}
+
+.bx--dropdown__arrow {
+  fill: $color__blue-30;
+}
