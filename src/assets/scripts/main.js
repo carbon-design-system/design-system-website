@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     [... document.querySelectorAll('.iframe')].forEach(iframe => {
-      const head = iframe.contentDocument.children[0].children[0];
-      const body = iframe.contentDocument.children[0].children[1];
+      const head = iframe.contentDocument.querySelector('head');
+      const body = iframe.contentDocument.querySelector('body');
       body.classList.add('iframe__body');
       iframe.classList.add('visible');
       const svgLinks = [... body.querySelectorAll('use')];
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     [... document.querySelectorAll('.iframe')].forEach(iframe => {
-      const height = iframe.contentDocument.children[0].children[1].offsetHeight;
+      const height = iframe.contentDocument.querySelector('body').offsetHeight;
       iframe.addEventListener('load', syncHeight(iframe, height));
     });
   }, 1200);

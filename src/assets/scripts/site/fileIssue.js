@@ -83,4 +83,7 @@ ${description}
   postIssue(config);
 };
 
-form.addEventListener('submit', setupData);
+// The bundle can be loaded in component demo <iframe>, which doesn't have <form> for filing issues
+if (form) {
+  form.addEventListener('submit', setupData);
+}

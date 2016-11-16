@@ -175,6 +175,22 @@ export const activeMenuLink = () => {
   });
 };
 
+const toggleClassForSvg = (svg, name, add) => {
+  const value = svg.getAttribute('class');
+  const list = value ? value.split(' ') : [];
+  const foundIndex = list.indexOf(name);
+  const exists = foundIndex >= 0;
+  const effectiveAdd = add !== undefined ? !exists : add;
+  if (exists !== effectiveAdd) {
+    if (add) {
+      list.push(name);
+    } else {
+      list.splice(foundIndex, 1);
+    }
+    svg.setAttribute('class', list.join(' '));
+  }
+};
+
 export const openItemHeadings = (nodeList = itemHeadings) => {
   nodeList.forEach((element) => {
     const subNav = element.nextSibling.nextSibling;
@@ -187,10 +203,10 @@ export const openItemHeadings = (nodeList = itemHeadings) => {
     }
 
     element.addEventListener('click', () => {
-      itemArrow.classList.add('transition');
+      toggleClassForSvg(itemArrow, 'transition', true);
       subNav.classList.add('transition');
       subNav.classList.toggle('open');
-      itemArrow.classList.toggle('rotated');
+      toggleClassForSvg(itemArrow, 'rotated');
       isClosed = !(subNav.classList.contains('open'));
       localStorage.setItem(itemHeadingName, isClosed);
     });

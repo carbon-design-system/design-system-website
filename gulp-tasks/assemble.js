@@ -9,13 +9,11 @@ const fs = require('fs');
 const assemble = () => {
   const env = process.env.ENV || 'internal';
 
-  const internalOnly = [
+  const internalOnly = env === 'internal' ? [
     '!src/views/getting-started/service-providers.html',
-  ];
+  ] : [];
 
-  const views = (env === 'internal')
-    ? ['src/views/**/*', '!src/views/+(layouts)/**']
-    : ['src/views/**/*', '!src/views/+(layouts)/**', ...internalOnly];
+  const views = ['src/views/**/*', '!src/views/+(layouts)/**'].concat(internalOnly);
 
   const options = {
     layout: 'default',
