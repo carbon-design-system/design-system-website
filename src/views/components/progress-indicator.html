@@ -1,0 +1,38 @@
+---
+fabricator: true
+name: Progress Indicator
+title: Progress Indicator | IBM Bluemix Design System
+category: components
+mainDesc: "are a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process."
+iterations:
+  progress-indicator:
+    title: "Overflow Menu"
+    htmlFile: "src/materials/components/overflow-menu.html"
+    jsFile: "src/materials/js/overflow-menu.js"
+    desc: ""
+    expandHeight: true
+---
+
+<!-- Item header -->
+{{> tabsnav}}
+<!-- Item header ends -->
+
+<!-- View: Foundation -->
+<div id="foundation" class="hidden">
+  {{> render-item}}
+</div>
+<!-- View: Foundation ends -->
+
+<!-- View: Usage -->
+<div id="usage" class="view hidden">
+  {{> overflow-menu-usage}}
+</div>
+<!-- View: Usage ends -->
+
+<!-- View: Style -->
+<div id="style" class="view hidden">
+  {{> progress-indicator-style}}
+</div>
+<!-- View: Style ends -->
+
+{{> line-numbers}}

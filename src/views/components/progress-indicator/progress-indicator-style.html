@@ -1,0 +1,366 @@
+{{#markdown}}
+
+{{> theme-switcher-btns}}
+
+## Structure
+
+<div class="view__section">
+
+<div class="view__full">
+
+### Basics
+
+The progress indicator is used to inform the user what step they are on in a series of steps to complete a larger action. All steps that have already been completed are indicated by an outlined circle with a checkmark. The checkmark icon can be found in the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icon Repo</a> or on the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> page. The current step the user is on is indicated by a filled circle. Steps the user has not encountered yet, or future steps, are indicated by a smaller, single color fill circle.
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>PROPERTY</p>
+        <p>PX</p>
+        <p>REM</p>
+      </div>
+      <div class="table__row">
+        <p>Space between steps (minimum)</p>
+        <p class="table--light">48px</p>
+        <p class="table--light">3rems</p>
+      </div>
+      <div class="table__row">
+        <p>Large circle height and width</p>
+        <p class="table--light">16px</p>
+        <p class="table--light">1rem</p>
+      </div>
+      <div class="table__row">
+        <p>Small circle height & width</p>
+        <p class="table--light">8px</p>
+        <p class="table--light">.5rem</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>WEIGHT</p>
+        <p>PX</p>
+        <p></p>
+      </div>
+      <div class="table__row">
+        <p>Large circle outline weight</p>
+        <p class="table--light">2px</p>
+        <p class="table--light"></p>
+      </div>
+      <div class="table__row">
+        <p>Line between completed steps</p>
+        <p class="table--light">2px</p>
+        <p class="table--light"></p>
+    </div>
+    <div class="table__row">
+      <p>Line between completed step & future step</p>
+      <p class="table--light">2px</p>
+      <p class="table--light"></p>
+    </div>
+  </div>
+
+<div class="style-properties max-width-45">
+<div class="style-properties__switcher">
+      <div class="style-properties__dark">
+        <div class="table">
+          <div class="table__header">
+            <p>COLOR</p>
+            <p>HEX</p>
+            <p>SCSS VARIABLE</p>
+          </div>
+          <div class="table__row">
+            <p>Large circle</p>
+            <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
+            <p class="table--light">$color__blue-30</p>
+          </div>
+          <div class="table__row">
+            <p>Small circle @ 50% opacity</p>
+            <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
+            <p class="table--light">$color__blue-30</p>
+          </div>
+          <div class="table__row">
+            <p>Line between completed step & future step @ 50% opacity</p>
+            <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
+            <p class="table--light">$color__blue-30</p>
+          </div>
+        </div>
+      </div>
+      <div class="style-properties__light">
+        <div class="table">
+          <div class="table__header">
+            <p>COLOR</p>
+            <p>HEX</p>
+            <p>SCSS VARIABLE</p>
+          </div>
+          <div class="table__row">
+            <p>Large circle</p>
+            <p class="table--light"> #3D70B2 <span class="table__swatch--blue-30"></span></p>
+            <p class="table--light">$color__blue-30</p>
+          </div>
+          <div class="table__row">
+            <p>Small circle @ 50% opacity</p>
+            <p class="table--light"> #5A6872 <span class="table__swatch--blue-51"></span></p>
+            <p class="table--light">$color__blue-51</p>
+          </div>
+          <div class="table__row">
+            <p>Line between completed step & future step @ 50% opacity</p>
+            <p class="table--light">#3D70B2 <span class="table__swatch--blue-30"></span></p>
+            <p class="table--light">$color__blue-30</p>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+There are a few distinguishing rules that seperate a progress indicator on desktop from one on mobile.
+
+**Desktop**
+A progress indicator only appears horizontally on a desktop, above the content that it is changing. The line that connects the current step to the next future step should be 1px and take on the color of the future step circle.
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_Desktop@2x.png">
+    <img src="/assets/images/style/progress-indicator/Progress_Indicator_Desktop@2x.png">
+    </picture>
+    <p class="caption">Progress indicator | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Desktop_Light@2x.png">
+    <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Progress indicator | units in px / em</p>
+  </div>
+</div>
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_Two-Words_Desktop@2x.png">
+    <img src="/assets/images/style/progress-indicator/Progress_Indicator_Two-Words_Desktop@2x.png">
+    </picture>
+    <p class="caption">Progress indicator with two words | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Two-Words_Desktop_Light@2x.png">
+    <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Two-Words_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Progress indicator with two words | units in px / em</p>
+  </div>
+</div>
+
+**Mobile**
+A progress indicator appears vertically on mobile, to the left of the content. The current step expands open revealing its content, while all other steps are closed with the content hidden. The line that connects the current step to next future step should be 2px and take on the color of the current step circle.
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_1_Mobile@2x.png">
+    <img src="/assets/images/style/progress-indicator/Progress_Indicator_1_Mobile@2x.png">
+    </picture>
+    <p class="caption">Mobile progress indicator | units in px / em</p>
+  </div>
+  <div class="style-img--light width-full">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_1_Mobile@2x.png">
+    <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_1_Mobile@2x.png">
+    </picture>
+    <p class="caption">Mobile progress indicator | units in px / em</p>
+  </div>
+</div>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_2_Mobile@2x.png">
+    <img src="/assets/images/style/progress-indicator/Progress_Indicator_2_Mobile@2x.png">
+    </picture>
+    <p class="caption">Mobile progress indicator | units in px / em</p>
+  </div>
+  <div class="style-img--light width-full">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_2_Mobile@2x.png">
+    <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_2_Mobile@2x.png">
+    </picture>
+    <p class="caption">Mobile progress indicator | units in px / em</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="view__section">
+
+<div class="view__full">
+
+### Padding
+
+A progress indicator cannot have any element or text within 16 pixels / 1 em of its borders. There should be 8px / .5 em of space between the progress indicator bar and the labels.
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Padding between circles and labels</p>
+      <p class="table--light">8px</p>
+      <p class="table--light">.5rem</p>
+    </div>
+  </div>
+</div>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_Padding_Desktop@2x.png">
+    <img src="/assets/images/style/progress-indicator/Progress_Indicator_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Progress indicator internal padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Padding_Desktop@2x.png">
+        <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Padding_Desktop@2x.png">
+    </picture>
+      <p class="caption">Mobile progress indicator padding | units in px / em</p>
+  </div>
+</div>
+
+<div class="style-img">
+  <div class="style-img--dark">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/Progress_Indicator_Padding_Mobile@2x.png">
+        <img src="/assets/images/style/progress-indicator/Progress_Indicator_Padding_Mobile@2x.png">
+      </picture>
+      <p class="caption">Mobile progress indicator padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Padding_Mobile@2x.png">
+        <img src="/assets/images/style/progress-indicator/light-ui/Progress_Indicator_Padding_Mobile@2x.png">
+    </picture>
+      <p class="caption">Mobile progress indicator padding | units in px / em</p>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- <div class="view__section">
+
+<div class="view__full">
+
+### In context
+
+Each step in the progress indicator must be accompanied by both a 'previous' and a 'save & continue' button. These buttons allow the user to navigate back to previous steps to edit content, and feel confident that their content changes and additions have been saved before continuing to the next step.
+
+<div class="style-img">
+  <div class="style-img--dark">
+      <picture>
+        <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/_">
+        <img src="/assets/images/style/progress-indicator/_">
+      </picture>
+      <p class="caption">Mobile progress indicator padding | units in px / em</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+      <source media="(max-width: 550px)" srcset="/assets/images/style/progress-indicator/light-ui/_">
+        <img src="/assets/images/style/progress-indicator/light-ui/_">
+    </picture>
+      <p class="caption">Mobile progress indicator padding | units in px / em</p>
+  </div>
+</div>
+</div>
+</div> -->
+<div class="view__section">
+
+<div class="view__full">
+
+### Typography
+Labels should be one to two words only, with a limit of **16 characters** total per label. All labels should be set in title case, with the first letter of every word capitalized. All label text should follow the Bluemix Typography font stack for san-serif.
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Current step label font-size</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">18.75rem</p>
+    </div>
+    <div class="table__row">
+      <p>Completed/Future steps label font-size</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>WEIGHT</p>
+        <p>KEYWORD</p>
+        <p>NUMERICAL PROPERTY</p>
+      </div>
+      <div class="table__row">
+        <p>Current step label font-weight</p>
+        <p class="table--light">bold</p>
+        <p class="table--light">700</p>
+      </div>
+      <div class="table__row">
+        <p>Completed/Future steps label font-weight</p>
+        <p class="table--light">roman</p>
+        <p class="table--light">400</p>
+      </div>
+    </div>
+
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Completed/Current steps label color</p>
+          <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Completed/Current steps label color @ 50% opacity</p>
+          <p class="table--light">#FFFFFF <span class="table__swatch--white"></p>
+          <p class="table--light">$color__white</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Completed/Current steps label color</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Completed/Current steps label color @ 50% opacity</p>
+          <p class="table--light">#5a6872 <span class="table__swatch--navy-gray-6"></p>
+          <p class="table--light">$color__navy-gray-6</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+{{/markdown}}

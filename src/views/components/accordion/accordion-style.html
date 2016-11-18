@@ -1,0 +1,264 @@
+{{#markdown}}
+
+## Structure
+
+{{> theme-switcher-btns}}
+
+<div class="view__section">
+
+<div class="view__full">
+
+### Basics
+
+Accordion rows can be open or closed. A user can have multiple rows open at once. There is no limit to the height of an open row, however the padding specs below should be followed. The width of an accordion varies based on the content, layout, and page design. The chevron icon can be found in the <a class="base-link" href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank">Bluemix Icon Repo</a> or on the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> page. The chevron has two different colors, one when the row is closed, and a second for when the row is open.
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/accordion/Accordion_Mobile@2x.png">
+    <img src="/assets/images/style/accordion/Accordion_Desktop@2x.png">
+    </picture>
+    <p class="caption">Accordion | units in px / rem</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/accordion/light-ui/Accordion_Mobile@2x.png">
+    <img src="/assets/images/style/accordion/light-ui/Accordion_Desktop@2x.png">
+    </picture>
+    <p class="caption">Accordion | units in px / rem</p>
+  </div>
+</div>
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Row height</p>
+      <p class="table--light">40px</p>
+      <p class="table--light">2.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Chevron height</p>
+      <p class="table--light">10px</p>
+      <p class="table--light">.635rem</p>
+    </div>
+    <div class="table__row">
+      <p>Divider Line</p>
+      <p class="table--light">1px</p>
+      <p class="table--light">-</p>
+    </div>
+  </div>
+
+**The width of the accordion varies based based on the layout and content of a page's design.**
+
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Open Chevron</p>
+          <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Closed Chevron</p>
+          <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
+          <p class="table--light">$color__white</p>
+        </div>
+        <div class="table__row">
+          <p>Divider Line</p>
+          <p class="table--light">#20343e <span class="table__swatch--navy-gray-2"></span></p>
+          <p class="table--light">$color__navy-gray-2</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Open Chevron</p>
+          <p class="table--light">#3D70B2 <span class="table__swatch--blue-51"></span></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Closed Chevron</p>
+          <p class="table--light">#152935 <span class="table__swatch--blue-90"></span></p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+        <div class="table__row">
+          <p>Divider Line</p>
+          <p class="table--light">#DFE3E6 <span class="table__swatch--gray-1"></span></p>
+          <p class="table--light">$color__gray-1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="view__section">
+
+<div class="view__full">
+
+### Padding
+
+There must not be any text within 16px / 1em of the accordion's sides. Additionally there must be padding between labels, body copy, and seperation lines to provide breathing room between elements.
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/accordion/Accordion_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/accordion/Accordion_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Accordion padding | px / rem</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/accordion/light-ui/Accordion_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/accordion/light-ui/Accordion_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Accordion Padding | px / rem</p>
+  </div>
+</div>
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Between chevron & label</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1em</p>
+    </div>
+    <div class="table__row">
+      <p>Between content & right edge</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Between label & content</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Between content & line</p>
+      <p class="table--light">24px</p>
+      <p class="table--light">1.5rem</p>
+    </div>
+  </div>
+</div>
+
+### Typography
+
+All accordion labels should be set in title case, with the first letter of each word capitalized. Labels hsould not exceed three words. Body copy text should be set appropriately based on content. All text should follow the Bluemix Typography font stack for san-serif.
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Label font-size</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Body copy font-size</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+
+  <div class="style-properties max-width-45">
+    <div class="table">
+      <div class="table__header">
+        <p>WEIGHT</p>
+        <p>KEYWORD</p>
+        <p>NUMERICAL VALUE</p>
+      </div>
+      <div class="table__row">
+        <p>Label font-weight</p>
+        <p class="table--light">roman</p>
+        <p class="table--light">400</p>
+      </div>
+      <div class="table__row">
+        <p>Body copy font-weight</p>
+        <p class="table--light">roman</p>
+        <p class="table--light">400</p>
+      </div>
+    </div>
+
+
+
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Label</p>
+          <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
+          <p class="table--light">$color__white</p>
+        </div>
+        <div class="table__row">
+          <p>Body copy</p>
+          <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
+          <p class="table--light">$color__white</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Label</p>
+          <p class="table--light">#152935 <span class="table__swatch--blue-90"></span></p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+        <div class="table__row">
+          <p>Body copy</p>
+          <p class="table--light">#152935 <span class="table__swatch--blue-90"></span></p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+{{/markdown}}

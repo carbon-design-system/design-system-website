@@ -72,8 +72,14 @@
     &--blue-20 { @include table-swatch($color__blue-20); }
     &--blue-51 { @include table-swatch($color__blue-51); }
     &--blue-40 { @include table-swatch($color__blue-40); }
+    &--blue-90 { @include table-swatch($color__blue-90); }
+    &--navy-gray-2 { @include table-swatch($color__navy-gray-2); }
+    &--navy-gray-4 { @include table-swatch($color__navy-gray-4); }
+    &--navy-gray-6 { @include table-swatch($color__navy-gray-6); }
     &--navy-gray-7 { @include table-swatch($color__navy-gray-7); }
     &--navy-gray-8 { @include table-swatch($color__navy-gray-8, true); }
+    &--gray-1 { @include table-swatch($color__gray-1, true); }
+    &--white { @include table-swatch($color__white, true); }
   }
 }
 
