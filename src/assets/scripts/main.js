@@ -44,6 +44,7 @@ import { clipboardConfig } from './site/clipboardConfig';
 import { glossaryNav } from './site/glossary';
 import { formatText } from './site/formatText';
 import analytics from './site/analytics';
+import toggleClassForSvg from './site/toggle-class-for-svg';
 import './site/fileIssue';
 
 // import snippets stuff here
@@ -128,11 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const isClosed = localStorage.getItem(category);
     if (isClosed === 'true') {
       subNav.classList.remove('open');
-      arrow.classList.add('rotated');
     } else if (isClosed === 'false') {
       subNav.classList.add('open');
-      arrow.classList.remove('rotated');
     }
+    toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
   });
 
   playPause();

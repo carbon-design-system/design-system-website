@@ -1,4 +1,5 @@
 import formatText from './formatText';
+import toggleClassForSvg from './toggle-class-for-svg';
 
 const itemHeadings = [... document.querySelectorAll('.item__heading')];
 const menu = document.querySelector('.menu');
@@ -173,22 +174,6 @@ export const activeMenuLink = () => {
       }
     }
   });
-};
-
-const toggleClassForSvg = (svg, name, add) => {
-  const value = svg.getAttribute('class');
-  const list = value ? value.split(' ') : [];
-  const foundIndex = list.indexOf(name);
-  const exists = foundIndex >= 0;
-  const effectiveAdd = add !== undefined ? !exists : add;
-  if (exists !== effectiveAdd) {
-    if (add) {
-      list.push(name);
-    } else {
-      list.splice(foundIndex, 1);
-    }
-    svg.setAttribute('class', list.join(' '));
-  }
 };
 
 export const openItemHeadings = (nodeList = itemHeadings) => {
