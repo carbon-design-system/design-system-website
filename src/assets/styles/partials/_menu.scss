@@ -109,9 +109,10 @@
       fill: $color__gray-3;
       margin-right: .5rem;
       transform: rotate(-180deg);
+      transform-origin: 50% 50%;
 
       &.rotated {
-        transform: rotate(0deg);
+        transform: rotate(0);
       }
 
       &.transition {

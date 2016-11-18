@@ -34,11 +34,11 @@ app.get('/essentials', (req, res) => {
 });
 
 app.get('/elements', (req, res) => {
-  res.redirect('/buttons.html');
+  res.redirect('buttons.html');
 });
 
 app.get('/components', (req, res) => {
-  res.redirect('cards.html');
+  res.redirect('accordion.html');
 });
 
 app.get('/templates', (req, res) => {
@@ -74,12 +74,12 @@ app.get('/let-us-know', (req, res) => {
   res.redirect('/#let-us-know');
 });
 
-app.listen(port, () => {
-  console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
-});
-
 app.get('/download/:icon', (req, res) => {
   res.download(__dirname + `/dist/assets/icons/${req.params.icon}.svg`)
 });
 
 app.use(favicon(path.resolve(__dirname + `/dist/assets/images/favicon.ico`)));
+
+app.listen(port, () => {
+  console.log(`\n> Bluemix Design System is running: http://localhost:3333/\n`);
+});

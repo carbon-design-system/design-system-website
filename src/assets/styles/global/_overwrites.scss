@@ -67,10 +67,6 @@ form {
   min-width: 20rem;
 }
 
-.bx--number__input {
-  margin: 0;
-}
-
 .bx--tooltip__top {
   margin-bottom: .5em;
 }
@@ -149,9 +145,6 @@ form {
   z-index: auto;
 }
 
-.bx--search-with-options .bx--search__input {
-  height: auto;
-}
 
 .bx--select__arrow {
   fill: $color__blue-30;
@@ -163,4 +156,9 @@ form {
 
 .bx--dropdown__arrow {
   fill: $color__blue-30;
+}
+
+.bx--inline-left-nav {
+  position: static;
+  min-height: 40rem;
 }

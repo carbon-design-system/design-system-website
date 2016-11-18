@@ -1,8 +1,8 @@
 {{#markdown}}
 
-{{> theme-switcher-btns}}
-
 ## Structure
+
+{{> theme-switcher-btns}}
 
 <div class="view__section">
 
@@ -11,6 +11,7 @@
 ### Basics
 
 The progress indicator is used to inform the user what step they are on in a series of steps to complete a larger action. All steps that have already been completed are indicated by an outlined circle with a checkmark. The checkmark icon can be found in the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Bluemix Icon Repo</a> or on the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> page. The current step the user is on is indicated by a filled circle. Steps the user has not encountered yet, or future steps, are indicated by a smaller, single color fill circle.
+
   <div class="style-properties max-width-45">
     <div class="table">
       <div class="table__header">
@@ -62,61 +63,63 @@ The progress indicator is used to inform the user what step they are on in a ser
 
 <div class="style-properties max-width-45">
 <div class="style-properties__switcher">
-      <div class="style-properties__dark">
-        <div class="table">
-          <div class="table__header">
-            <p>COLOR</p>
-            <p>HEX</p>
-            <p>SCSS VARIABLE</p>
-          </div>
-          <div class="table__row">
-            <p>Large circle</p>
-            <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
-            <p class="table--light">$color__blue-30</p>
-          </div>
-          <div class="table__row">
-            <p>Small circle @ 50% opacity</p>
-            <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
-            <p class="table--light">$color__blue-30</p>
-          </div>
-          <div class="table__row">
-            <p>Line between completed step & future step @ 50% opacity</p>
-            <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
-            <p class="table--light">$color__blue-30</p>
-          </div>
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Large circle</p>
+          <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Small circle @ 50% opacity</p>
+          <p class="table--light">#FFFFFF <span class="table__swatch--white"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Line between completed step & future step @ 50% opacity</p>
+          <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
         </div>
       </div>
-      <div class="style-properties__light">
-        <div class="table">
-          <div class="table__header">
-            <p>COLOR</p>
-            <p>HEX</p>
-            <p>SCSS VARIABLE</p>
-          </div>
-          <div class="table__row">
-            <p>Large circle</p>
-            <p class="table--light"> #3D70B2 <span class="table__swatch--blue-30"></span></p>
-            <p class="table--light">$color__blue-30</p>
-          </div>
-          <div class="table__row">
-            <p>Small circle @ 50% opacity</p>
-            <p class="table--light"> #5A6872 <span class="table__swatch--blue-51"></span></p>
-            <p class="table--light">$color__blue-51</p>
-          </div>
-          <div class="table__row">
-            <p>Line between completed step & future step @ 50% opacity</p>
-            <p class="table--light">#3D70B2 <span class="table__swatch--blue-30"></span></p>
-            <p class="table--light">$color__blue-30</p>
-          </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Large circle</p>
+          <p class="table--light"> #3D70B2 <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Small circle @ 50% opacity</p>
+          <p class="table--light"> #5A6872 <span class="table__swatch--blue-51"></span></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Line between completed step & future step @ 50% opacity</p>
+          <p class="table--light">#3D70B2 <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
         </div>
       </div>
-</div>
+    </div>
+  </div>
 </div>
 
 There are a few distinguishing rules that seperate a progress indicator on desktop from one on mobile.
 
 **Desktop**
+
 A progress indicator only appears horizontally on a desktop, above the content that it is changing. The line that connects the current step to the next future step should be 1px and take on the color of the future step circle.
+
 <div class="style-img">
   <div class="style-img--dark">
     <picture>
@@ -184,6 +187,8 @@ A progress indicator appears vertically on mobile, to the left of the content. T
     </picture>
     <p class="caption">Mobile progress indicator | units in px / em</p>
   </div>
+</div>
+
 </div>
 
 </div>
@@ -361,6 +366,5 @@ Labels should be one to two words only, with a limit of **16 characters** total 
   </div>
 </div>
 
-</div>
 </div>
 {{/markdown}}

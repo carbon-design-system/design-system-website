@@ -78,7 +78,7 @@
 .cta-btns--border__btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
   margin-top: 1em;
   color: $color__blue-30;
   border-color: $color__blue-30;

@@ -188,10 +188,9 @@ export const openItemHeadings = (nodeList = itemHeadings) => {
     }
 
     element.addEventListener('click', () => {
-      toggleClassForSvg(itemArrow, 'transition', true);
+      toggleClassForSvg(itemArrow, 'rotated', isClosed === 'true');
       subNav.classList.add('transition');
       subNav.classList.toggle('open');
-      toggleClassForSvg(itemArrow, 'rotated');
       isClosed = !(subNav.classList.contains('open'));
       localStorage.setItem(itemHeadingName, isClosed);
     });

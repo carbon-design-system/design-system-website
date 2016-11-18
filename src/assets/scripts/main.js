@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       subNav.classList.add('open');
     }
     toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
+    toggleClassForSvg(arrow, 'transition', true);
   });
 
   playPause();
