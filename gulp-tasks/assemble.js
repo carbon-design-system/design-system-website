@@ -1,25 +1,21 @@
 /*----------------------
   Gulp-Task / Assemble
 ------------------------*/
-'use strict'
+'use strict';
 
 const fabricator = require('fabricator-assemble');
 const fs = require('fs');
 
 const assemble = () => {
   const env = process.env.ENV || 'internal';
-
   const internalOnly = env === 'internal' ? [
-    '!src/views/getting-started/service-providers.html',
+    'src/views/getting-started/service-providers.html',
   ] : [];
-
   const views = ['src/views/**/*', '!src/views/+(layouts)/**'].concat(internalOnly);
-
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'],
-    views,
+    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'], views,
     data: 'src/data/*.json',
     materials: ['src/materials/**/*', 'src/views/temp-materials/**/*'],
     docs: 'src/docs/**/*.md',
