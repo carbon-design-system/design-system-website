@@ -8,36 +8,37 @@
 
 <div class="view__full">
 
+Tables are a configurable and customizable component. Designers can pick and choose certain elements and interactions. Table widths can vary based on the layout, amount of data and content.
+
 ### Basics
 
-Tables may contain <a class="base-link" href="http://design-system.stage1.mybluemix.net/elements/checkbox.html#foundation" target="_blank">checkboxes</a> that enable users to select multiple rows at once. Table width varies based on the layout, amount of data, and content.
-
-<div class="style-properties max-width-45">
-  <div class="table">
-    <div class="table__header">
-      <p>PROPERTY</p>
-      <p>PX</p>
-      <p>REM</p>
-    </div>
-    <div class="table__row">
-      <p>Row height</p>
-      <p class="table--light">48px</p>
-      <p class="table--light">3rem</p>
-    </div>
-    <div class="table__row">
-      <p>Space between columns (greater than or equal to)</p>
-      <p class="table--light">64px</p>
-      <p class="table--light">4rem</p>
-    </div>
-  </div>
-</div>
+The basic table style is the required base from which tables can start developing. Basic tables are composed of a header row followed by rows of data below. At a minimum, tables require 3 or more columns. Table row heights can be set to narrow or wide or be toggled between the two. Column widths can vary by content and only requires a minimum spacing between columns.
 
 <div class="style-img">
+<div class="style-img--dark">
   <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables_Desktop@2x.png">
-    <img src="/assets/images/style/tables/Tables_Desktop@2x.png">
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables-32--dark@2x.png">
+  <img src="/assets/images/style/tables/Tables-32--dark@2x.png">
   </picture>
-  <p class="caption">Table | units in px / em</p>
+  <p class="caption">32px row height | units in px / rem</p>
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables-44--dark@2x.png">
+  <img src="/assets/images/style/tables/Tables-44--dark@2x.png">
+  </picture>
+  <p class="caption">44px row height | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/light-ui/Tables-32--light@2x.png">
+  <img src="/assets/images/style/tables/light-ui/Tables-32--light@2x.png">
+  </picture>
+  <p class="caption">32px row height | units in px / rem</p>
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/light-ui/Tables-44--light@2x.png">
+  <img src="/assets/images/style/tables/light-ui/Tables-44--light@2x.png">
+  </picture>
+  <p class="caption">44px row height | units in px / rem</p>
+</div>
 </div>
 
 <div class="style-properties max-width-45">
@@ -48,88 +49,251 @@ Tables may contain <a class="base-link" href="http://design-system.stage1.myblue
       <p>REM</p>
     </div>
     <div class="table__row">
-      <p>Filter arrow width</p>
-      <p class="table--light">10px</p>
-      <p class="table--light">.625rem</p>
+      <p>Narrow row height</p>
+      <p class="table--light">32px</p>
+      <p class="table--light">2rem</p>
     </div>
     <div class="table__row">
-      <p>Filter arrow height</p>
-      <p class="table--light">5px</p>
-      <p class="table--light">.313rem</p>
-    </div>
-  </div>
-  <div class="table">
-    <div class="table__header">
-      <p>COLOR</p>
-      <p>HEX</p>
-      <p>SCSS VARIABLE</p>
+      <p>Wide row height</p>
+      <p class="table--light">44px</p>
+      <p class="table--light">2.75rem</p>
     </div>
     <div class="table__row">
-      <p>Row hover color</p>
-      <p class="table--light">#20343e</p>
-      <p class="table--light">$color__navy-gray-2</p>
+      <p>Header row height</p>
+      <p class="table--light">40px</p>
+      <p class="table--light">2.5rem</p>
     </div>
     <div class="table__row">
-      <p>Row hover border color</p>
-      <p class="table--light">#5aaafa</p>
-      <p class="table--light">$color__blue-30</p>
+      <p>Total width</p>
+      <p>can vary</p>
+      <p>can vary</p>
+    </div>
+    <div class="table__row">
+      <p>Min space between columns</p>
+      <p class="table--light">24px</p>
+      <p class="table--light">1.5rem</p>
     </div>
   </div>
 </div>
-<br>
 
-### Table with Checkboxes
+<div class="style-properties max-width-45 mb2">
+  <div class="style-properties__switcher mt0">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#394b54</p>
+          <p class="table--light">$color__navy-gray-4</p>
+        </div>
+        <div class="table__row">
+          <p>Border</p>
+          <p class="table--light">#2d3f49</p>
+          <p class="table--light">$color__navy-gray-3</p>
+        </div>
+        <div class="table__row">
+          <p>Header divider line</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Row hover stroke</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Alternating row</p>
+          <p class="table--light">#42535c</p>
+          <p class="table--light">$color__navy-gray-5</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#ffffff</p>
+          <p class="table--light">$color__white</p>
+        </div>
+        <div class="table__row">
+          <p>Border</p>
+          <p class="table--light">#dfe3e6</p>
+          <p class="table--light">$color__gray-1</p>
+        </div>
+        <div class="table__row">
+          <p>Header divider line</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Row hover stroke</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Alternating row</p>
+          <p class="table--light">#f0f3f6</p>
+          <p class="table--light">$color__gray-2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Enhanced Tables
+
+After the basic structure, tables can be enchanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter. The following example is what a table would look like with all of the enhancements.
+
 <div class="style-img">
+<div class="style-img--dark">
   <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables_Checkboxes_Desktop@2x.png">
-    <img src="/assets/images/style/tables/Tables_Checkboxes_Desktop@2x.png">
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables-expanding--dark@2x.png">
+  <img src="/assets/images/style/tables/Tables-expanding--dark@2x.png">
   </picture>
-  <p class="caption">Table with Checkboxes | units in px / em</p>
+  <p class="caption">Expandable and selectable table | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/light-ui/Tables-expanding--light@2x.png">
+  <img src="/assets/images/style/tables/light-ui/Tables-expanding--light@2x.png">
+  </picture>
+  <p class="caption">Expandable and selectable table | units in px / rem</p>
+</div>
 </div>
 
 <div class="style-properties max-width-45">
   <div class="table">
     <div class="table__header">
-      <p>PROPERTY</p>
-      <p>PX</p>
-      <p>REM</p>
+      <p>SUPPORTED ELEMENT</p>
+      <p>LINK</p>
+      <p></p>
     </div>
     <div class="table__row">
-      <p>Checkbox height & width</p>
-      <p class="table--light">18px</p>
-      <p class="table--light">1.125rem</p>
+      <p>Checkboxes</p>
+      <p class="table--light"><a class="base-link" href="http://design-system.stage1.mybluemix.net/elements/checkboxes.html#foundation">View element</a></p>
+      <p></p>
     </div>
     <div class="table__row">
-      <p>Unchecked box border</p>
-      <p class="table--light">2px</p>
-      <p class="table--light">-</p>
+      <p>Overflow menu</p>
+      <p class="table--light"><a class="base-link" href="http://design-system.stage1.mybluemix.net/components/overflow-menu.html#foundation">View component</a></p>
+      <p></p>
+    </div>
+    <div class="table__row">
+      <p>Small button</p>
+      <p class="table--light"><a class="base-link" href="http://design-system.stage1.mybluemix.net/elements/buttons.html#foundation">View element</a></p>
+      <p></p>
+    </div>
+    <div class="table__row">
+      <p>Chevron</p>
+      <p class="table--light"><a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library">View icon</a></p>
+      <p></p>
+    </div>
+    <div class="table__row">
+      <p>Arrow</p>
+      <p class="table--light"><a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library">View icon</a></p>
+      <p></p>
     </div>
   </div>
-  <div class="table">
-    <div class="table__header">
-      <p>COLOR</p>
-      <p>HEX</p>
-      <p>SCSS VARIABLE</p>
+</div>
+<br />
+<div class="style-properties max-width-45 mb2">
+  <div class="style-properties__switcher mt0">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#394b54</p>
+          <p class="table--light">$color__navy-gray-4</p>
+        </div>
+        <div class="table__row">
+          <p>Border</p>
+          <p class="table--light">#2d3f49</p>
+          <p class="table--light">$color__navy-gray-3</p>
+        </div>
+        <div class="table__row">
+          <p>Header divider line</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Row hover stroke</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Alternating row</p>
+          <p class="table--light">#42535c</p>
+          <p class="table--light">$color__navy-gray-5</p>
+        </div>
+        <div class="table__row">
+          <p>Expanded row highlight</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Icons</p>
+          <p class="table--light">#dfe6eb</p>
+          <p class="table--light">$color__navy-gray-8</p>
+        </div>
+      </div>
     </div>
-    <div class="table__row">
-      <p>Unchecked box border color</p>
-      <p class="table--light">#8c9ba5</p>
-      <p class="table--light">$color__navy-gray-7</p>
-    </div>
-    <div class="table__row">
-      <p>Checked box color</p>
-      <p class="table--light">#8c9ba5</p>
-      <p class="table--light">$color__navy-gray-7</p>
-    </div>
-    <div class="table__row">
-      <p>Selected row border</p>
-      <p class="table--light">#20343e</p>
-      <p class="table--light">$color__navy-gray-2</p>
-    </div>
-    <div class="table__row">
-      <p>Selected row border color</p>
-      <p class="table--light">#5aaafa</p>
-      <p class="table--light">$color__blue-30</p>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Background</p>
+          <p class="table--light">#ffffff</p>
+          <p class="table--light">$color__white</p>
+        </div>
+        <div class="table__row">
+          <p>Border</p>
+          <p class="table--light">#dfe3e6</p>
+          <p class="table--light">$color__gray-1</p>
+        </div>
+        <div class="table__row">
+          <p>Header divider line</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Row hover stroke</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Alternating row</p>
+          <p class="table--light">#f0f3f6</p>
+          <p class="table--light">$color__gray-2</p>
+        </div>
+        <div class="table__row">
+          <p>Expanded row highlight</p>
+          <p class="table--light">#5aaafa</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Icons</p>
+          <p class="table--light">#5a6872</p>
+          <p class="table--light">$color__navy-gray-6</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -143,7 +307,23 @@ Tables may contain <a class="base-link" href="http://design-system.stage1.myblue
 <div class="view__full">
 
 ### Padding
-There must be 24 pixels / 1.5 em of space between the sides of a table and the text within the table.
+
+<div class="style-img">
+<div class="style-img--dark">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables-32-padding--dark@2x.png">
+  <img src="/assets/images/style/tables/Tables-32-padding--dark@2x.png">
+  </picture>
+  <p class="caption">Basic table padding | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/light-ui/Tables-32-padding--light@2x.png">
+  <img src="/assets/images/style/tables/light-ui/Tables-32-padding--light@2x.png">
+  </picture>
+  <p class="caption">Basic table padding | units in px / rem</p>
+</div>
+</div>
 
 <div class="style-properties max-width-45">
   <div class="table">
@@ -153,7 +333,17 @@ There must be 24 pixels / 1.5 em of space between the sides of a table and the t
       <p>REM</p>
     </div>
     <div class="table__row">
-      <p>Internal side padding</p>
+      <p>Internal edges</p>
+      <p class="table--light">24px</p>
+      <p class="table--light">1.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Between label and arrow</p>
+      <p class="table--light">8px</p>
+      <p class="table--light">.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Min space between columns</p>
       <p class="table--light">24px</p>
       <p class="table--light">1.5rem</p>
     </div>
@@ -161,11 +351,20 @@ There must be 24 pixels / 1.5 em of space between the sides of a table and the t
 </div>
 
 <div class="style-img">
+<div class="style-img--dark">
   <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables_Padding_Desktop@2x.png">
-    <img src="/assets/images/style/tables/Tables_Padding_Desktop@2x.png">
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables-expanding-padding--ldark@2x.png">
+  <img src="/assets/images/style/tables/Tables-expanding-padding--ldark@2x.png">
   </picture>
-  <p class="caption">Table Padding | units in px / em</p>
+  <p class="caption">Enhanced table padding | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/tables/light-ui/Tables-expanding-padding--light@2x.png">
+  <img src="/assets/images/style/tables/light-ui/Tables-expanding-padding--light@2x.png">
+  </picture>
+  <p class="caption">Enhanced table padding | units in px / rem</p>
+</div>
 </div>
 
 <div class="style-properties max-width-45">
@@ -176,32 +375,29 @@ There must be 24 pixels / 1.5 em of space between the sides of a table and the t
       <p>REM</p>
     </div>
     <div class="table__row">
-      <p>Padding between label and arrow</p>
-      <p class="table--light">9px</p>
-      <p class="table--light">.563rem</p>
-    </div>
-  </div>
-</div>
-
-<div class="style-img">
-  <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/tables/Tables_Checkboxes_Padding_Desktop@2x.png">
-    <img src="/assets/images/style/tables/Tables_Checkboxes_Padding_Desktop@2x.png">
-  </picture>
-  <p class="caption">Table with Checkboxes Padding | units in px / em</p>
-</div>
-
-<div class="style-properties max-width-45">
-  <div class="table">
-    <div class="table__header">
-      <p>PROPERTY</p>
-      <p>PX</p>
-      <p>REM</p>
+      <p>Internal edges</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
     </div>
     <div class="table__row">
-      <p>Padding between checkbox and column text</p>
+      <p>Between label and arrow</p>
+      <p class="table--light">8px</p>
+      <p class="table--light">.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Min space between columns</p>
       <p class="table--light">24px</p>
       <p class="table--light">1.5rem</p>
+    </div>
+    <div class="table__row">
+      <p>Left and right of chevron</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
+    </div>
+    <div class="table__row">
+      <p>Left and right of checkboxes</p>
+      <p class="table--light">16px</p>
+      <p class="table--light">1rem</p>
     </div>
   </div>
 </div>
@@ -216,7 +412,7 @@ There must be 24 pixels / 1.5 em of space between the sides of a table and the t
 
 <div class="view__full">
 
-Column label should be in all caps. All other table text should be cased as appropriate. Column labels and table text should both follow the Bluemix Typography font stack for sans-serif.
+Column label should be in all caps. All other table text should be sentenced case. Column labels and table text should both follow the Bluemix Typography font stack for sans-serif.
 
 <div class="style-properties max-width-45 mb2">
   <div class="table">
@@ -226,12 +422,17 @@ Column label should be in all caps. All other table text should be cased as appr
       <p>REM</p>
     </div>
     <div class="table__row">
+      <p>Table title</p>
+      <p class="table--light">23px</p>
+      <p class="table--light">1.4375rem</p>
+    </div>
+    <div class="table__row">
       <p>Column label</p>
       <p class="table--light">12px</p>
       <p class="table--light">.75rem</p>
     </div>
     <div class="table__row">
-      <p>Table text</p>
+      <p>Row text</p>
       <p class="table--light">14px</p>
       <p class="table--light">.875rem</p>
     </div>
@@ -243,14 +444,72 @@ Column label should be in all caps. All other table text should be cased as appr
       <p>NUMERICAL VALUE</p>
     </div>
     <div class="table__row">
+      <p>Table title</p>
+      <p class="table--light">Light</p>
+      <p class="table--light">300</p>
+    </div>
+    <div class="table__row">
       <p>Column label</p>
       <p class="table--light">Bold</p>
       <p class="table--light">700</p>
     </div>
     <div class="table__row">
-      <p>Table text</p>
+      <p>Row text</p>
       <p class="table--light">Normal</p>
       <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
+
+<div class="style-properties max-width-45 mb2">
+  <div class="style-properties__switcher mt0">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Table title</p>
+          <p class="table--light">#152935</p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+        <div class="table__row">
+          <p>Column label</p>
+          <p class="table--light">#152935</p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+        <div class="table__row">
+          <p>Row text</p>
+          <p class="table--light">#152935</p>
+          <p class="table--light">$color__blue-90</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Table title</p>
+          <p class="table--light">#dfe6eb</p>
+          <p class="table--light">$color__navy-gray-8</p>
+        </div>
+        <div class="table__row">
+          <p>Column label</p>
+          <p class="table--light">#dfe6eb</p>
+          <p class="table--light">$color__navy-gray-8</p>
+        </div>
+        <div class="table__row">
+          <p>Row text</p>
+          <p class="table--light">#ffffff</p>
+          <p class="table--light">$color__white</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
