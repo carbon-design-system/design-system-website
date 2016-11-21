@@ -278,6 +278,10 @@ pre[class*='language-'] {
       bottom: 1em;
       padding: 1em;
       cursor: pointer;
+
+      img {
+        margin-left: .25rem;
+      }
     }
 
     pre[class*='language-'], pre {

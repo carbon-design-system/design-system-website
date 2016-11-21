@@ -46,10 +46,10 @@ export const codeSnippets = () => {
       const codeSnippet = el.parentNode;
       codeSnippet.classList.toggle('is-expanded');
       if (element.dataset.closed === 'true') {
-        element.innerHTML = 'Show less code <img src="../assets/images/icon--up-arrow.svg">';
+        element.innerHTML = 'Show less code <img src="../assets/images/icons/icon--up-arrow.svg">';
         element.dataset.closed = 'false';
       } else {
-        element.innerHTML = 'Show full code <img src="../assets/images/icon--down-arrow.svg">';
+        element.innerHTML = 'Show full code <img src="../assets/images/icons/icon--down-arrow.svg">';
         element.dataset.closed = 'true';
       }
     });

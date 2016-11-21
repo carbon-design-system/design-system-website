@@ -24,9 +24,9 @@
   {{#if item.htmlFile}}
 
   <div class="element__example">
-  
+
   {{#if item.iframeLink}}
-  
+
   <div class="responsive-switcher" data-responsive-switcher>
     <button data-toggle-size="mobile" class="responsive-switcher__btn">
       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -43,17 +43,17 @@
       LARGE
     </button>
   </div>
-  
+
   {{/if}}
 
   <div class="example__rendered">
-    
+
   {{#if item.iframeLink}}
-    
+
     <iframe class="iframe" src={{{item.iframeLink}}}></iframe>
-  
+
   {{else}}
-  
+
   {{#if item.expandHeight}}
     <div class="rendered__element expanded-height">
     {{#if item.needWrap}}
@@ -75,9 +75,9 @@
     {{/if}}
     </div>
   {{/if}}
-  
+
   {{/if}}
-  
+
   <input type="text" value="" class="hiddenHTMLSnippet" />
 
   {{#markdown}}
