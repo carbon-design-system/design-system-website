@@ -90,8 +90,14 @@ export const codeSnippets = () => {
   copyHtmlButtons.forEach((el) => {
     el.addEventListener('click', (evt) => {
       evt.preventDefault();
-      const htmlElement = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.innerHTML;
-      const codeSnippet = el.parentElement.parentElement.previousSibling.previousSibling.firstChild.nextSibling.nextElementSibling;
+      let htmlElement;
+      const parent = el.parentElement.parentElement.previousSibling.previousSibling;
+      if (parent.querySelector('iframe')) {
+        htmlElement = parent.querySelector('iframe').contentDocument.querySelector('body').innerHTML;
+      } else {
+        htmlElement = parent.firstChild.nextSibling.innerHTML;
+      }
+      const codeSnippet = parent.firstChild.nextSibling.nextElementSibling;
       codeSnippet.value = htmlElement;
       codeSnippet.focus();
       codeSnippet.select();
