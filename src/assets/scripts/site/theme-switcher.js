@@ -10,12 +10,12 @@ export const themeSwitcher = () => {
         if (btn.dataset.toggleTheme === 'dark') {
           exampleBackground.classList.remove('bx--global-light-ui');
           if (iframe) {
-            iframe.contentDocument.children[0].children[1].classList.remove('bx--global-light-ui');
+            iframe.contentDocument.querySelector('body').classList.remove('bx--global-light-ui');
           }
         } else {
           exampleBackground.classList.add('bx--global-light-ui');
           if (iframe) {
-            iframe.contentDocument.children[0].children[1].classList.add('bx--global-light-ui');
+            iframe.contentDocument.querySelector('body').classList.add('bx--global-light-ui');
           }
         }
       });
