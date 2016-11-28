@@ -1,11 +1,17 @@
 language: node_js
 node_js:
   - "6"
+cache:
+  directories:
+    - node_modules
 
-install: true
+install:
+  - npm install || (cat npm-debug.log; false)
+
 script: true
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: sh deploy.sh
   on:
