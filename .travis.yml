@@ -5,6 +5,8 @@ cache:
   directories:
     - node_modules
 
+group: bluezone
+
 install:
   - npm install || (cat npm-debug.log; false)
 
