@@ -64,8 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const svgLinks = [... body.querySelectorAll('use')];
       if (svgLinks) {
         svgLinks.forEach(link => {
-          const linkArray = link.getAttribute('xlink:href').split('sprite.svg');
-          link.setAttribute('xlink:href', `/assets/sprite.svg${linkArray[1]}`);
+          const linkArray = link.getAttribute('xlink:href').split('#');
+          link.setAttribute('xlink:href',
+            `${linkArray[0].replace(/^.*\/(.+\.svg)$/i, '/assets/$1')}#${linkArray[1] || ''}`
+              .replace(/#$/, ''));
         });
       }
       // BUNDLE JS
