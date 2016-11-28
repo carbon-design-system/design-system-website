@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "6"
+
+install: true
+script: true
+
+deploy:
+  provider: script
+  script: sh deploy.sh
+  on:
+    branch: master
