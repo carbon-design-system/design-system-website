@@ -5,5 +5,5 @@ applications:
   path: .
   instances: 1
   disk_quota: 1024M
-  memory: 512M
+  memory: 128M
   buildpack: nodejs_buildpack
