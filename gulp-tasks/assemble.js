@@ -8,14 +8,28 @@ const fs = require('fs');
 
 const assemble = () => {
   const env = process.env.ENV || 'internal';
-  const internalOnly = env === 'internal' ? [
-    'src/views/getting-started/service-providers.html',
-  ] : [];
-  const views = ['src/views/**/*', '!src/views/+(layouts)/**'].concat(internalOnly);
+  const filter = env === 'internal'
+    ? []
+    : [
+      '!src/views/getting-started/service-providers.html',
+    ];
+
+  const views = [
+    'src/views/**/*',
+    '!src/views/+(layouts)/**',
+  ].concat(filter);
+
   const options = {
     layout: 'default',
     layouts: 'src/views/layouts/*',
-    layoutIncludes: ['src/views/layouts/includes/*', 'src/views/principles/partials/*', 'src/views/essentials/partials/*', 'src/views/elements/**/*', 'src/views/components/**/*'], views,
+    layoutIncludes: [
+      'src/views/layouts/includes/*',
+      'src/views/principles/partials/*',
+      'src/views/essentials/partials/*',
+      'src/views/elements/**/*',
+      'src/views/components/**/*',
+    ],
+    views,
     data: 'src/data/*.json',
     materials: ['src/materials/**/*', 'src/views/temp-materials/**/*'],
     docs: 'src/docs/**/*.md',
@@ -25,13 +39,13 @@ const assemble = () => {
       docs: 'docs',
     },
     helpers: {
-      capitalize: function() {
+      capitalize() {
         return this.name.charAt(0).toUpperCase() + this.name.slice(1);
       },
-      dasherize: function(str) {
+      dasherize(str) {
         return str.toLowerCase().trim().replace(/[-_\s]+/g, '-');
       },
-      checkIfVariations: function(iterations) {
+      checkIfVariations(iterations) {
         let returnText = '';
         if (Object.keys(iterations).length > 1) {
           returnText = 'Variations';
@@ -41,26 +55,25 @@ const assemble = () => {
         return returnText;
       },
       markdown: require('helper-markdown'),
-      decode: function (val) {
+      decode(val) {
         return decodeURIComponent(val);
       },
-      raw: function (options) {
+      raw(options) {
         return options.fn();
       },
-      findFile: function(fileNamePath) {
+      findFile(fileNamePath) {
         let jsFile = fs.readFileSync(`${fileNamePath}`, { 'encoding': 'utf8' });
         jsFile = jsFile.replace(/["']/g, '\'');
         return jsFile;
       },
-      json: function(context) {
-        console.log(context);
+      json(context) {
         return JSON.stringify(context);
       },
-    }
+    },
   };
 
   console.info(`\n====> ASSEMBLE is building dist...\n`);
   return fabricator(options);
-}
+};
 
 module.exports = assemble;
