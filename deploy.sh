@@ -1,4 +1,4 @@
-curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx
+curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.16.1&source=github-rel" | tar -zx
 ./cf install-plugin blue-green-deploy -r CF-Community -f
 ./cf api https://api.ng.bluemix.net
 ./cf login -u chrisdhanaraj@us.ibm.com -p $password -o chrisdhanaraj_org -s "Bluemix Design System"
