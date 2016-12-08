@@ -131,8 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const isClosed = localStorage.getItem(category);
     if (isClosed === 'true') {
       subNav.classList.remove('open');
+      arrow.classList.remove('rotated');
     } else if (isClosed === 'false') {
       subNav.classList.add('open');
+      arrow.classList.add('rotated');
     }
     toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
     toggleClassForSvg(arrow, 'transition', true);
