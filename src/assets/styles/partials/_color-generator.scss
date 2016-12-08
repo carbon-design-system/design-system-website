@@ -269,6 +269,7 @@
   align-items: flex-start;
   position: relative;
   margin: 2rem 0;
+  max-width: 45rem;
 
   .gradient-example {
     width: rem(230px);
@@ -282,11 +283,13 @@
 
   .layer-example {
     display: flex;
+    align-items: center;
     position: relative;
     margin-left: 1.5rem;
+    width: 100%;
 
     img {
-      margin-left: 5rem;
+      max-width: 45rem;
     }
   }
 
@@ -296,10 +299,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    top: 0;
 
     li {
 
       p {
+        line-height: 1.5;
         @include font-size('14');
       }
     }
