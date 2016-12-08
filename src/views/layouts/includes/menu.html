@@ -4,7 +4,7 @@
 
   <a href="#" class="sidebar-toggle active"><span></span></a>
 
-  <a class="menu__header" href="/index.html">IBM Bluemix <br><span class="menu__header--bold">Design System</span></a>
+  <a class="menu__header" href="/index.html">Carbon <br><span class="menu__header--bold">Design System</span></a>
 
   <ul class="main-nav">
 
@@ -30,18 +30,18 @@
         </ul>
     </li>
 
-    <!-- Principles -->
+    <!-- Brand -->
     <li class="main-nav__item">
-        <a class="item__heading" id="principles" data-category="principles">
-          Principles
+        <a class="item__heading" id="brand" data-category="brand">
+          Brand
           <svg class="item__arrow">
             <use xlink:href="/assets/sprite.svg#service--down-arrow"></use>
           </svg>
         </a>
         <ul class="item__sub-nav">
-            {{#each views.principles.items}}
+            {{#each views.brand.items}}
             <li class="sub-nav__item">
-                <a href="../principles/{{@key}}.html" class="item__link">{{name}}</a>
+                <a href="../brand/{{@key}}.html" class="item__link">{{name}}</a>
             </li>
             {{/each}}
         </ul>
