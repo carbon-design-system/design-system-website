@@ -181,13 +181,15 @@ pre[class*='language-'] {
   .code__html,
   .code__js {
     background-color: $color__snippet-bg;
-    padding: 1em;
+    padding: 1rem;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 12em;
+    max-height: 12rem;
+    height: auto;
     transition-duration: $transition--slow;
     display: none;
     position: relative;
+    overflow: hidden;
 
     @media screen and (max-width: $width__screen-size--small) {
       padding: 1em 0;
@@ -195,7 +197,7 @@ pre[class*='language-'] {
 
     &.is-expanded {
       transition-duration: $transition--code-snippet;
-      max-height: 200em;
+      max-height: 200rem;
     }
 
     &.is-active {
@@ -216,6 +218,7 @@ pre[class*='language-'] {
       font-size: .8rem;
       outline: none;
       transition: background-color $transition--base;
+      overflow: visible;
 
       .copy-icon {
         margin-left: .25em;

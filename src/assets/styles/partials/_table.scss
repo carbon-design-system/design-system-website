@@ -69,9 +69,11 @@
 
   &__swatch {
     &--blue-30 { @include table-swatch($color__blue-30); }
+    &--blue-10 { @include table-swatch($color__blue-10); }
     &--blue-20 { @include table-swatch($color__blue-20); }
     &--blue-51 { @include table-swatch($color__blue-51); }
     &--blue-40 { @include table-swatch($color__blue-40); }
+    &--blue-60 { @include table-swatch($color__blue-60); }
     &--blue-90 { @include table-swatch($color__blue-90); }
     &--blue-10 { @include table-swatch($color__blue-10); }
     &--navy-gray-1 { @include table-swatch($color__navy-gray-1); }
@@ -86,18 +88,23 @@
     &--gray-2 { @include table-swatch($color__gray-2, true); }
     &--gray-3 { @include table-swatch($color__gray-3, true); }
     &--white { @include table-swatch($color__white, true); }
-    &--red-40{ @include table-swatch($color__red-40); }
+    &--red-40 { @include table-swatch($color__red-40); }
     &--red-50 { @include table-swatch($color__red-50); }
-    &--teal-20 { @include table-swatch($color__teal-20); }
-    &--green-20 { @include table-swatch($color__green-20); }
-    &--orange-20 { @include table-swatch($color__orange-20); }
-    &--purple-20 { @include table-swatch($color__purple-20); }
-    &--yellow-20 { @include table-swatch($color__yellow-20); }
     &--teal-10 { @include table-swatch($color__teal-10); }
-    &--green-10 { @include table-swatch($color__green-10); }
-    &--orange-10 { @include table-swatch($color__orange-10); }
+    &--teal-20 { @include table-swatch($color__teal-20); }
+    &--teal-60 { @include table-swatch($color__teal-60); }
     &--purple-10 { @include table-swatch($color__purple-10); }
+    &--purple-20 { @include table-swatch($color__purple-20); }
+    &--purple-60 { @include table-swatch($color__purple-60); }
+    &--orange-10 { @include table-swatch($color__orange-10); }
+    &--orange-20 { @include table-swatch($color__orange-20); }
+    &--orange-60 { @include table-swatch($color__orange-60); }
+    &--green-10 { @include table-swatch($color__green-10); }
+    &--green-20 { @include table-swatch($color__green-20); }
+    &--green-60 { @include table-swatch($color__green-60); }
     &--yellow-10 { @include table-swatch($color__yellow-10); }
+    &--yellow-20 { @include table-swatch($color__yellow-20); }
+    &--yellow-60 { @include table-swatch($color__yellow-60); }
   }
 }
 

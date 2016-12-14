@@ -39,11 +39,13 @@ export const renderPopout = () => {
       // pulling icon svg into the page DOM
       // then the rendered element content
       getHTML(iconsLink, (response) => {
-        popup.document.body.innerHTML = `
-        <div class="generatedIcons">${response.documentElement.outerHTML}</div>
-        <div class="rendered">
-          ${renderedContent}
-        </div>`;
+        if (response.documentElement.outerHTML !== undefined) {
+          popup.document.body.innerHTML = `
+          <div class="generatedIcons">${response.documentElement.outerHTML}</div>
+          <div class="rendered">
+            ${renderedContent}
+          </div>`;
+        }
         popup.document.body.appendChild(script);
       });
     });
