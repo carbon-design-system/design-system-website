@@ -102,9 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', () => {
     const themeSwitcherBtns = [... document.querySelectorAll('.view .theme-switcher-btns')];
     const glossarySideNav = document.querySelector('.glossary__side-nav');
+    const y = window.scrollY || window.pageYOffset;
 
     if (themeSwitcherBtns) {
-      if (window.scrollY > 315) {
+      if (y > 315) {
         themeSwitcherBtns.forEach(btn => {
           btn.classList.add('scrolled');
         });
@@ -116,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (glossarySideNav) {
-      if (window.scrollY > 614) {
+      if (y > 614) {
         glossarySideNav.classList.add('fixed');
       } else {
         glossarySideNav.classList.remove('fixed');
