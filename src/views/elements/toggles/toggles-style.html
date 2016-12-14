@@ -10,8 +10,7 @@
 
 ### Basics
 
-Toggles have two states: action on and action off. When an action state is on, the toggle button should be solid and on the right end of the toggle bar. When an action state is off, the button should have a 2px border with no fill and be on the left end of the toggle bar.
-The font for the unactive state should be lighter than the active state.
+Toggles have two states: action on and action off. When an action state is on, the toggle button should be solid and on the right end of the toggle bar. When an action state is off, the button should have a 2px border with no fill and be on the left end of the toggle bar. The font for the inactive state should be lighter than the active state.
 
 <div class="style-img">
   <div class="style-img--dark">
@@ -19,17 +18,18 @@ The font for the unactive state should be lighter than the active state.
     <source media="(max-width: 550px)" srcset="/assets/images/style/toggle/Toggle_Mobile@2x.png">
     <img src="/assets/images/style/toggle/Toggle_Desktop@2x.png">
     </picture>
-    <p class="caption">Toggle | units in px / em</p>
+    <p class="caption">Toggle | units in px / rem</p>
   </div>
   <div class="style-img--light">
     <picture>
     <source media="(max-width: 550px)" srcset="/assets/images/style/toggle/light-ui/Toggle_Mobile_Light@2x.png">
     <img src="/assets/images/style/toggle/light-ui/Toggle_Desktop_Light@2x.png">
     </picture>
-    <p class="caption">Toggle | units in px / em</p>
+    <p class="caption">Toggle | units in px / rem</p>
   </div>
 </div>
 
+<!-- style properties -->
 <div class="style-properties max-width-45">
   <div class="table">
     <div class="table__header">
@@ -45,7 +45,7 @@ The font for the unactive state should be lighter than the active state.
     <div class="table__row">
       <p>Button border</p>
       <p class="table--light">2px</p>
-      <p class="table--light">.125rem</p>
+      <p class="table--light">0.125rem</p>
     </div>
     <div class="table__row">
       <p>Toggle slider</p>
@@ -53,18 +53,106 @@ The font for the unactive state should be lighter than the active state.
       <p class="table--light">2.5rem</p>
     </div>
   </div>
-</div>
 
-</div>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Non-selected state fill</p>
+          <p class="table--light">#20343e <span class="table__swatch--navy-gray-2"></span></p>
+          <p class="table--light">$color__navy-gray-2</p>
+        </div>
+        <div class="table__row">
+          <p>Non-selected state stroke</p>
+          <p class="table--light">#8c9ba5 <span class="table__swatch--navy-gray-7"></span></p>
+          <p class="table--light">$color__navy-gray-7</p>
+        </div>
+        <div class="table__row">
+          <p>Selected state fill</p>
+          <p class="table--light">#5aaafa <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Selected state stroke</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Non-selected state fill</p>
+          <p class="table--light">#f5f7fa <span class="table__swatch--navy-gray-3"></span></p>
+          <p class="table--light">$color__navy-gray-3</p>
+        </div>
+        <div class="table__row">
+          <p>Non-selected state stroke</p>
+          <p class="table--light">#8c9ba5 <span class="table__swatch--navy-gray-7"></span></p>
+          <p class="table--light">$color__navy-gray-7</p>
+        </div>
+        <div class="table__row">
+          <p>Selected state fill</p>
+          <p class="table--light">#5aaafa <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Selected state stroke</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
-
+<br>
 <div class="view__section">
 
 <div class="view__full">
 
+### Typography
+
+Toggle headings and labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than 3 words. Toggle text should follow the typography font stack for sans-serif.
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>FONT-SIZE</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">14px</p>
+      <p class="table--light">.875rem</p>
+    </div>
+  </div>
+  <div class="table">
+    <div class="table__header">
+      <p>FONT WEIGHT</p>
+      <p>KEYWORD</p>
+      <p>NUMERICAL VALUE</p>
+    </div>
+    <div class="table__row">
+      <p>Text</p>
+      <p class="table--light">Normal</p>
+      <p class="table--light">400</p>
+    </div>
+  </div>
+</div>
+
 ### Padding
-Toggles cannot have any element or text within 16 pixels / 1em of its borders.
+Toggles cannot have any element or text within 16 pixels / 1rem of its borders.
 
 <div class="style-img">
   <div class="style-img--dark">
@@ -98,47 +186,6 @@ Toggles cannot have any element or text within 16 pixels / 1em of its borders.
   </div>
 </div>
 
-</div>
-
-
-
-</div>
-
-<div class="view__section">
-
-<div class="view__full">
-
-### Typography
-
-Toggle headings should be set in title case, with the first letter of each word capitalized.
-Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than 3 words. Toggle text should follow the Typography font stack for sans-serif.
-
-<div class="style-properties max-width-45">
-  <div class="table">
-    <div class="table__header">
-      <p>FONT-SIZE</p>
-      <p>PX</p>
-      <p>REM</p>
-    </div>
-    <div class="table__row">
-      <p>Text</p>
-      <p class="table--light">14px</p>
-      <p class="table--light">.875rem</p>
-    </div>
-  </div>
-  <div class="table">
-    <div class="table__header">
-      <p>FONT WEIGHT</p>
-      <p>KEYWORD</p>
-      <p>NUMERICAL VALUE</p>
-    </div>
-    <div class="table__row">
-      <p>Text</p>
-      <p class="table--light">Normal</p>
-      <p class="table--light">400</p>
-    </div>
-  </div>
-</div>
 
 </div>
 

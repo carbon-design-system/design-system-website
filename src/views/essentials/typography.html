@@ -24,9 +24,9 @@ IBM uses a custom version of Helvetica Neue for both its Marketing and Product b
   %helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, 	Helvetica, sans-serif; }
 ```
 
-## Normalized Major Second Type Scale | 1.125
+## Normalized Major Second type scale | 1.125
 
-Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
+Bluemix uses the Major Second scale with a base size of 16px for 1 rem. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
 
 ```css
   @include font-size('18');
@@ -36,7 +36,7 @@ Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been
   <div class="table__header">
     <p>REM</p>
     <p>PX</p>
-    <p>Actual Size</p>
+    <p>ACTUAL SIZE</p>
   </div>
   <div class="table__row">
     <p>0.6875 rem</p>
@@ -139,7 +139,7 @@ Bluemix uses the Major Second scale with a base size of 16px for 1 em. It's been
 
 ## Font weights
 
-Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight, in conjunction with type size, must be carefully balanced. At the same size, bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.
+Font weight is another typographic style that can add emphasis and differentiate content in the hierarchy of the design. Font weight, in conjunction with type size, must be carefully balanced. At the same size, a bold weight will always have more emphasis than a lighter weight font. However, a larger, lighter weight font is ranked higher than a smaller, bold font.
 
 <ul class="wrapped-list flex-column mt2 ml0">
   <li class="flex-row mb2 align-start space-between sm--flex-column">
@@ -173,7 +173,7 @@ Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable 
 
 ### Line-height
 
-Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based off the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1.25.
+Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based on the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1.25.
 
 **Standard line-height: type size x 1.5**
 **Headings line-height: type size x 1.25**

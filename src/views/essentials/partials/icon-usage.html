@@ -1,5 +1,5 @@
 <p class="main">
-  <span class="blue-30">Iconography</span> uses images and symbols to visually represent an object. They communicate a message, and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.
+  <span class="blue-30">Iconography</span> uses images and symbols to represent an object visually. They communicate a message and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.
 </p>
 
 {{#markdown}}
@@ -10,13 +10,13 @@ You can find the source file for the icon library within the <a class="base-link
 
 <svg class="icon-blue icon-med"><use xlink:href="/assets/sprite.svg#common--link"></use></svg>
 
-<a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Icons GitHub Repo</a>
-<a class="base-link" href="https://pages.github.ibm.com/bluemix/bluemix-icons/" target="_blank">Icon Library</a>
-<a class="base-link" href="https://releaseblueprints.ibm.com/display/CLOUDOE/Master+Icon+List" target="_blank">Service Provider Master Icon List</a>
-<a class="base-link" href="http://www.ibm.com/design/language/resources/icon-library/">IBM Design Language Icon Library</a>
+<a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Icons GitHub repo</a>
+<a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Icon library</a>
+<a class="base-link" href="https://releaseblueprints.ibm.com/display/CLOUDOE/Master+Icon+List" target="_blank">Service provider master icon list</a>
+<a class="base-link" href="http://www.ibm.com/design/language/resources/icon-library/">IBM Design Language icon library</a>
 
 
-## Visual Usage
+## Visual usage
 
 ### Sizing
 
@@ -67,7 +67,7 @@ When **using icons**:
 
 ### Color
 
-Interactive UI Icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
+Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
 
 If it is a **primary action** then the icon should be:
 
@@ -79,7 +79,7 @@ If the icon is a **secondary** or **supplementary action**, then the icon color 
 - <span class="table__swatch--navy-gray-8"></span> Navy-Gray-8 for the dark UI
 - <span class="table__swatch--navy-gray-7"></span> Navy-Gray-7 for the light UI.
 
-Blue should always be used with an icon to show that it is interactive. For secondary UI Icons the hover state should be blue to help emphasize that it is interactive.
+Blue should always be used with an icon to show that it is interactive. For secondary UI icons, the hover state should be blue to help emphasize that it is interactive.
 
 **Exception**: There is an exception to both the Blue and Neutral color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
@@ -124,7 +124,7 @@ Blue should always be used with an icon to show that it is interactive. For seco
 
 Icons of the same size should have the same visual weight. One icon should not look heavier or lighter than another icon of the same size. Most UI Icons are drawn with a two pixel stroke.
 
-Be mindful when resizing icons, make sure that the 2px stroke does not increase or decrease causing icons to look uneven. When scaling icons you should always start each icon at the same base size (preferrably the default of 24px).
+Be mindful when resizing icons, make sure that the 2px stroke does not increase or decrease causing icons to look uneven. When scaling icons you should always start each icon at the same base size (preferably the default of 24px).
 
 Glyphs or 16 pixel icons, should always be a filled icon. This adds visual weight to the icon, allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
 
@@ -139,16 +139,16 @@ Glyphs or 16 pixel icons, should always be a filled icon. This adds visual weigh
   </div>
 </div>
 
-### Pixel Grid
+### Pixel grid
 
-When drawing or re-sizing icons make sure the vector always aligns to the base pixel grid. This insures pixel clarity and crispness on all screen ratios. The x and y coordinates of icons should never contain decimals.
+When drawing or re-sizing icons make sure the vector always aligns to the base pixel grid. This ensures pixel clarity and crispness on all screen ratios. The x and y coordinates of icons should never contain decimals.
 
 
-## Developer Usage
+## Developer usage
 
 The following guidelines are for developers who are using <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">bluemix-icons</a>.
 
-### Using SVG file from Static Assets
+### Using SVG file from static assets
 
 You can use **sprite.svg** or **bluemix-icons.svg** by serving it as a static asset (like an image file) and use it with the following HTML:
 
@@ -176,7 +176,7 @@ You can use **sprite.svg** or **bluemix-icons.svg** by serving it as a static as
 
 ### Main files
 
-Bluemix Icons ships with two main SVG files that contain different sets of external SVG sprite files:
+Bluemix icons ships with two main SVG files that contain different sets of external SVG sprite files:
 
 <div class="table mb2 max-width-45">
   <div class="table__header">
