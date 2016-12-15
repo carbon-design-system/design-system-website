@@ -10,7 +10,7 @@
     <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg#search"></use>
   </svg>
   <label for="search__input" class="bx--search__label">Search</label>
-  <input type="search" class="bx--search__input icon-search mr2" id="search__input" placeholder="Search Icons">
+  <input type="search" class="bx--search__input icon-search mr2" id="search__input">
 </div>
 
 <div class="icon-container max-width-45">
@@ -22,9 +22,7 @@
       </svg>
       <div class="icon__actions">
         <button type="button" class="icon__button clipboard-button">Copy Code</button>
-        <button type="button" class="icon__button">
-          <a href="/download/{{this.name}}">Download</a>
-        </button>
+        <a class="icon__button icon__button--link" href="/download/{{this.name}}">Download</a>
       </div>
     </div>
     <h5>{{this.name}}</h5>

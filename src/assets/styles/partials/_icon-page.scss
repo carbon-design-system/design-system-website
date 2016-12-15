@@ -98,6 +98,10 @@
       color: $color__white;
     }
   }
+
+  &--link {
+    display: flex;
+  }
 }
 
 .hide-sprite {
