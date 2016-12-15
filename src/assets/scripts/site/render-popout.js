@@ -28,7 +28,12 @@ export const renderPopout = () => {
     element.addEventListener('click', (e) => {
       e.preventDefault();
       const popup = open('', '_blank');
-      const renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
+      let renderedContent;
+      if (element.parentElement.parentElement.querySelector('iframe')) {
+        renderedContent = element.parentElement.previousElementSibling.previousElementSibling.contentDocument.querySelector('body').innerHTML;
+      } else {
+        renderedContent = element.parentElement.previousElementSibling.previousElementSibling.innerHTML;
+      }
       const script = popup.document.createElement('script');
       script.type = 'text/javascript';
       script.src = 'http://design-system.stage1.mybluemix.net/assets/scripts/bundle.js';
