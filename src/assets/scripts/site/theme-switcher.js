@@ -7,6 +7,17 @@ export const themeSwitcher = () => {
       btn.addEventListener('click', () => {
         const exampleBackground = element.parentElement;
         const iframe = element.parentElement.querySelector('.iframe');
+        if (element.parentElement.querySelector('[data-responsive-table]')) {
+          if (btn.dataset.toggleTheme === 'dark') {
+            [... document.querySelectorAll('.bx--overflow-menu__options')].forEach(menu => {
+              menu.classList.remove('bx--global-light-ui');
+            });
+          } else {
+            [... document.querySelectorAll('.bx--overflow-menu__options')].forEach(menu => {
+              menu.classList.add('bx--global-light-ui');
+            });
+          }
+        }
         if (btn.dataset.toggleTheme === 'dark') {
           exampleBackground.classList.remove('bx--global-light-ui');
           if (iframe) {

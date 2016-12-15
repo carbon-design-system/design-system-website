@@ -103,3 +103,15 @@ form {
   position: static;
   min-height: 40rem;
 }
+
+.bx--overflow-menu__options.bx--global-light-ui {
+  background: $color__white;
+  border: 1px solid $color__gray-1;
+
+  &:before {
+    top: -.45rem;
+    background-color: $color__white;
+    border-top: 1px solid $color__gray-1;
+    border-left: 1px solid $color__gray-1;
+  }
+}
