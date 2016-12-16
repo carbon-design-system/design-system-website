@@ -1,6 +1,5 @@
 .menu {
   @extend %font-smoothing;
-  z-index: 6;
   font-size: rem(14px);
   background-color: $color__menu-bg;
   border-right: 2px solid $color__border--menu;
@@ -10,7 +9,7 @@
   position: fixed;
   overflow-y: auto;
   transition: $transition--slow;
-  z-index: 6;
+  z-index: 7;
 
   &.is-hidden {
     transform: translateX(-100%);

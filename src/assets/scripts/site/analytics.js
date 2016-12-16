@@ -31,11 +31,15 @@ const copyCodeHandler = () => {
       };
     });
 
-    copyArray.forEach(copyItem => {
-      copyItem.node.addEventListener('click', () => {
-        gaEvent('Copy Code', 'click', copyItem.title);
+    if (copyArray) {
+      copyArray.forEach(copyItem => {
+        if (copyItem.node) {
+          copyItem.node.addEventListener('click', () => {
+            gaEvent('Copy Code', 'click', copyItem.title);
+          });
+        }
       });
-    });
+    }
   }
 };
 

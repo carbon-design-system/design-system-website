@@ -126,19 +126,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   [... document.querySelectorAll('[data-category]')].forEach(element => {
+    let arrow = '';
     const category = element.getAttribute('data-category');
     const subNav = element.nextSibling.nextSibling;
-    const arrow = element.querySelector('.item__arrow');
-    const isClosed = localStorage.getItem(category);
-    if (isClosed === 'true') {
-      subNav.classList.remove('open');
-      arrow.classList.remove('rotated');
-    } else if (isClosed === 'false') {
-      subNav.classList.add('open');
-      arrow.classList.add('rotated');
+    if (element.querySelector('.item__arrow')) {
+      arrow = element.querySelector('.item__arrow');
     }
-    toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
-    toggleClassForSvg(arrow, 'transition', true);
+    const isClosed = localStorage.getItem(category);
+    if (!(arrow === '')) {
+      if (isClosed === 'true') {
+        subNav.classList.remove('open');
+        arrow.classList.remove('rotated');
+      } else if (isClosed === 'false') {
+        subNav.classList.add('open');
+        if (arrow.classList) {
+          arrow.classList.add('rotated');
+        }
+      }
+      toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
+      toggleClassForSvg(arrow, 'transition', true);
+    }
   });
 
   playPause();
