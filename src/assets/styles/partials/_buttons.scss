@@ -208,10 +208,7 @@
 
         svg {
           fill: none;
-
-          path {
-            stroke: $color__navy-gray-7;
-          }
+          stroke: $color__navy-gray-7;
         }
       }
     }
@@ -222,11 +219,6 @@
 
       svg {
         fill: $color__navy-gray-7;
-
-        circle {
-          stroke: $color__navy-gray-7;
-          fill: none;
-        }
       }
 
       .bx--global-light-ui & {
@@ -234,11 +226,6 @@
 
         svg {
           fill: $color__blue-51;
-
-          circle {
-            fill: $color__blue-51;
-            stroke: none;
-          }
         }
       }
     }
