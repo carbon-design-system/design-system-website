@@ -9,54 +9,8 @@
 <div class="view__full">
 
 ### Basics
-Dropdowns have two major states, open and closed. The open and closed dropdown should be the same width and appropriately fit the design, layout, and content. The height of a closed dropdown should always be 40px / 2.5rem. The height of an open dropdown will vary based on the amount of options it has. Please note the various color differences for closed and open dropdowns.
+There are two types of dropdowns, large and small. Regardless of size, dropdowns have two states, open and closed. AN open and closed dropdown should be the same width and appropriately fit the design, layout, and content. The height of a closed dropdown stays consistent while the height of an open dropdown will vary based on the amount of options it has. Please note the various color differences for closed and open dropdowns.
 
-<div class="style-img">
-<div class="style-img--dark">
-  <picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Mobile@2x.png">
-  <img src="/assets/images/style/dropdown/Menu_Dropdown_Desktop@2x.png">
-  </picture>
-  <p class="caption">Dropdown basics | units in px / rem</p>
-</div>
-<div class="style-img--light">
-  <picture>
-  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Mobile_Light@2x.png">
-  <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Desktop_Light@2x.png">
-  </picture>
-  <p class="caption">Dropdown basics | units in px / rem</p>
-</div>
-</div>
-
-<div class="style-properties max-width-45">
-  <div class="table">
-    <div class="table__header">
-      <p>PROPERTY</p>
-      <p>PX</p>
-      <p>REM</p>
-    </div>
-    <div class="table__row">
-      <p>Height</p>
-      <p class="table--light">40px</p>
-      <p class="table--light">2.5rem</p>
-    </div>
-    <div class="table__row">
-      <p>Small dropdown height</p>
-      <p class="table--light">24px</p>
-      <p class="table--light">1.5rem</p>
-    </div>
-    <div class="table__row">
-      <p>Small dropdown width</p>
-      <p class="table--light">56px</p>
-      <p class="table--light">3.5rem</p>
-    </div>
-  </div>
-</div>
-
-**Width: Varies based on content and layout**
-<br>
-
-#### Closed dropdown
 <div class="style-properties max-width-45 mb2">
   <div class="style-properties__switcher mt0">
     <div class="style-properties__dark">
@@ -67,46 +21,17 @@ Dropdowns have two major states, open and closed. The open and closed dropdown s
           <p>SCSS VARIABLE</p>
         </div>
         <div class="table__row">
-          <p>Background</p>
+          <p>Background - closed</p>
           <p class="table--light">#ffffff <span class="table__swatch--white"></span> <br>at 10% opacity </p>
           <p class="table--light">$color__inputs--bg</p>
         </div>
-      </div>
-    </div>
-    <div class="style-properties__light">
-      <div class="table">
-        <div class="table__header">
-          <p>COLOR</p>
-          <p>HEX</p>
-          <p>SCSS VARIABLE</p>
-        </div>
         <div class="table__row">
-          <p>Background</p>
-          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span><br>at 10% opacity </p>
-          <p class="table--light">$color__inputs--bg--light-ui</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-#### Open dropdown
-<div class="style-properties max-width-45">
-  <div class="style-properties__switcher mt0">
-    <div class="style-properties__dark">
-      <div class="table">
-        <div class="table__header">
-          <p>COLOR</p>
-          <p>HEX</p>
-          <p>SCSS VARIABLE</p>
-        </div>
-        <div class="table__row">
-          <p>Background</p>
+          <p>Background - open</p>
           <p class="table--light">#ffffff <span class="table__swatch--white"></span><br>at 10% opacity </p>
           <p class="table--light">$color__inputs--bg</p>
         </div>
         <div class="table__row">
-          <p>Drawer background</p>
+          <p>Drawer background - open</p>
           <p class="table--light">#394b54 <span class="table__swatch--navy-gray-4"></span></p>
           <p class="table--light">$color__navy-gray-4</p>
         </div>
@@ -120,18 +45,85 @@ Dropdowns have two major states, open and closed. The open and closed dropdown s
           <p>SCSS VARIABLE</p>
         </div>
         <div class="table__row">
-          <p>Background</p>
+          <p>Background - closed</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span><br>at 10% opacity </p>
+          <p class="table--light">$color__inputs--bg--light-ui</p>
+        </div>
+        <div class="table__row">
+          <p>Background - open</p>
           <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span><br> at 10% opacity</p>
           <p class="table--light">$color__inputs--bg--light-ui</p>
         </div>
         <div class="table__row">
-          <p>Drawer background</p>
+          <p>Drawer background - open</p>
           <p class="table--light">#ffffff <span class="table__swatch--white"></span></p>
           <p class="table--light">$color__white</p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+#### Large Dropdown
+
+<div class="style-img">
+<div class="style-img--dark">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Mobile@2x.png">
+  <img src="/assets/images/style/dropdown/Menu_Dropdown_Desktop@2x.png">
+  </picture>
+  <p class="caption">Large dropdown basics | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Mobile_Light@2x.png">
+  <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Desktop_Light@2x.png">
+  </picture>
+  <p class="caption">Large dropdown basics | units in px / rem</p>
+</div>
+</div>
+
+<br>
+
+#### Small dropdown
+
+Whichever number is displayed at the top of the dropdown box, the corresponding number in the list below should have a checkmark next to it, indicating which number is the one currently selected. The icon for the check mark can be found in the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> or the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Icons Repo</a>.
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>PROPERTY</p>
+      <p>PX</p>
+      <p>REM</p>
+    </div>
+    <div class="table__row">
+      <p>Height</p>
+      <p class="table--light">24</p>
+      <p class="table--light">1.5</p>
+    </div>
+    <div class="table__row">
+      <p>Small dropdown width</p>
+      <p class="table--light">56</p>
+      <p class="table--light">3.5</p>
+    </div>
+  </div>
+</div>
+
+<div class="style-img">
+<div class="style-img--dark">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Small_Dropdown_Mobile@2x.png">
+  <img src="/assets/images/style/dropdown/Small_Dropdown_Desktop@2x.png">
+  </picture>
+  <p class="caption">Small dropdown basics | units in px / rem</p>
+</div>
+<div class="style-img--light">
+  <picture>
+  <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Small_Dropdown_Mobile@2x.png">
+  <img src="/assets/images/style/dropdown/light-ui/Small_Dropdown_Desktop@2x.png">
+  </picture>
+  <p class="caption">Small dropdown basics | units in px / rem</p>
+</div>
 </div>
 
 </div>
@@ -143,25 +135,6 @@ Dropdowns have two major states, open and closed. The open and closed dropdown s
 <div class="view__full">
 
 ### Padding
-Internally, there must be 16px / 1rem of space between the sides of the dropdown and the elements within it.
-
-<div class="style-img">
-  <div class="style-img--dark">
-    <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Padding_Mobile@2x.png">
-    <img src="/assets/images/style/dropdown/Menu_Dropdown_Padding_Desktop@2x.png">
-    </picture>
-    <p class="caption">Dropdown padding | units in px / rem</p>
-  </div>
-  <div class="style-img--light">
-    <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Mobile_Light@2x.png">
-    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Desktop_Light@2x.png">
-    </picture>
-    <p class="caption">Dropdown padding | units in px / rem</p>
-  </div>
-</div>
-<br>
 
 #### Large dropdown
 <div class="style-properties max-width-45">
@@ -173,9 +146,27 @@ Internally, there must be 16px / 1rem of space between the sides of the dropdown
     </div>
     <div class="table__row">
       <p>Internal side padding</p>
-      <p class="table--light">16px</p>
-      <p class="table--light">1rem</p>
+      <p class="table--light">16</p>
+      <p class="table--light">1</p>
     </div>
+  </div>
+</div>
+<br>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Menu_Dropdown_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large dropdown padding | units in px / rem</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Mobile_Light@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_Padding_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large dropdown padding | units in px / rem</p>
   </div>
 </div>
 <br>
@@ -190,11 +181,29 @@ Internally, there must be 16px / 1rem of space between the sides of the dropdown
     </div>
     <div class="table__row">
       <p>Internal side padding</p>
-      <p class="table--light">8px</p>
-      <p class="table--light">.5rem</p>
+      <p class="table--light">8</p>
+      <p class="table--light">.5</p>
     </div>
   </div>
 </div>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Small_Dropdown_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Small_Dropdown_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small dropdown padding | units in px / rem</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Small_Dropdown_Padding_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Small_Dropdown_Padding_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small dropdown padding | units in px / rem</p>
+  </div>
+</div>
+<br>
 
 </div>
 
@@ -207,26 +216,7 @@ Internally, there must be 16px / 1rem of space between the sides of the dropdown
 ### States
 In addition to the open and closed states, dropdowns have hover, new selection, and disabled states.
 
-<div class="style-img">
-  <div class="style-img--dark">
-    <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_States_Mobile@2x.png">
-    <img src="/assets/images/style/dropdown/Menu_Dropdown_States_Desktop@2x.png">
-    </picture>
-    <p class="caption">Dropdown states</p>
-  </div>
-  <div class="style-img--light">
-    <picture>
-    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Mobile_Light@2x.png">
-    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Desktop_Light@2x.png">
-    </picture>
-    <p class="caption">Dropdown states</p>
-  </div>
-</div>
-<br>
-
 #### Dropdown
-**Disabled: 50% opacity**
 
 <div class="style-properties max-width-45">
   <div class="table">
@@ -237,7 +227,7 @@ In addition to the open and closed states, dropdowns have hover, new selection, 
     </div>
     <div class="table__row">
       <p>Hover border</p>
-      <p class="table--light">1px</p>
+      <p class="table--light">1px solid border</p>
       <p class="table--light">-</p>
     </div>
   </div>
@@ -257,15 +247,34 @@ In addition to the open and closed states, dropdowns have hover, new selection, 
       <p class="table--light">#5aaafa <span class="table__swatch--blue-30"></span></p>
       <p class="table--light">$color__blue-30</p>
     </div>
+    <div class="table__row">
+      <p>Disabled</p>
+      <p class="table--light">@50% opacity </p>
+      <p class="table--light"></p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Menu_Dropdown_States_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Menu_Dropdown_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Large dropdown states</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Mobile_Light@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Dropdown_Menu_States_Desktop_Light@2x.png">
+    </picture>
+    <p class="caption">Large dropdown states</p>
   </div>
 </div>
 <br>
 
 #### Small dropdown
-
-Whichever number is displayed at the top of the dropdown box, the corresponding number in the list below should have a check mark next to it, indicating which number is the one currently selected. The icon for the check mark can be found in the <a class="base-link" href="http://design-system.stage1.mybluemix.net/essentials/iconography.html#library" target="_blank">Iconography Library</a> or the <a class="base-link" href="https://github.ibm.com/Bluemix/bluemix-icons" target="_blank">Icons Repo</a>.
-
-**Disabled: 50% opacity**
 
 <div class="style-properties max-width-45">
   <div class="table">
@@ -303,24 +312,47 @@ Whichever number is displayed at the top of the dropdown box, the corresponding 
     <div class="style-properties__light">
       <div class="table">
         <div class="table__header">
-          <p>COLOR</p>
+          <p>STATE</p>
           <p>HEX</p>
           <p>SCSS VARIABLE</p>
         </div>
         <div class="table__row">
-          <p>Hover color</p>
+          <p>Hover</p>
           <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span></p>
           <p class="table--light">$color__blue-51</p>
         </div>
         <div class="table__row">
-          <p>Open hover color</p>
+          <p>Open hover</p>
           <p class="table--light">#5596e6 <span class="table__swatch--blue-40"></span></p>
           <p class="table--light">$color__blue-40</p>
+        </div>
+        <div class="table__row">
+          <p>Disabled</p>
+          <p class="table--light">@50% opacity</p>
+          <p class="table--light"></p>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="style-img">
+  <div class="style-img--dark">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/Small_Dropdown_States_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/Small_Dropdown_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small dropdown states</p>
+  </div>
+  <div class="style-img--light">
+    <picture>
+    <source media="(max-width: 550px)" srcset="/assets/images/style/dropdown/light-ui/Small_Dropdown_States_Mobile@2x.png">
+    <img src="/assets/images/style/dropdown/light-ui/Small_Dropdown_States_Desktop@2x.png">
+    </picture>
+    <p class="caption">Small dropdown states</p>
+  </div>
+</div>
+<br>
 
 </div>
 
@@ -343,13 +375,13 @@ All dropdown text should be set in sentence case with the first letter of each w
     </div>
     <div class="table__row">
       <p>Label</p>
-      <p class="table--light">14px</p>
-      <p class="table--light">.875rem</p>
+      <p class="table--light">14</p>
+      <p class="table--light">.875</p>
     </div>
     <div class="table__row">
       <p>Option text</p>
-      <p class="table--light">14px</p>
-      <p class="table--light">.875rem</p>
+      <p class="table--light">14</p>
+      <p class="table--light">.875</p>
     </div>
   </div>
   <div class="table">

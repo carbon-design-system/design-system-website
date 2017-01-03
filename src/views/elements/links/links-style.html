@@ -10,7 +10,7 @@
 
 ### Basics
 
-Links can be grouped horizontally or vertically and must be underlined.
+Links can be grouped horizontally or vertically and must be <span style="font-weight:bold;">underlined.</span>
 
 <div class="style-img">
   <div class="style-img--dark">
@@ -38,13 +38,13 @@ Links can be grouped horizontally or vertically and must be underlined.
     </div>
     <div class="table__row">
       <p>Line height</p>
-      <p class="table--light">24px</p>
-      <p class="table--light">1.5rem</p>
+      <p class="table--light">24</p>
+      <p class="table--light">1.5</p>
     </div>
     <div class="table__row">
       <p>Padding between each link (horizontally)</p>
-      <p class="table--light">18px</p>
-      <p class="table--light">2.75rem</p>
+      <p class="table--light">16</p>
+      <p class="table--light">1</p>
     </div>
   </div>
 </div>
@@ -59,11 +59,33 @@ Links can be grouped horizontally or vertically and must be underlined.
 
 ### Link states
 
-Links have three different states: normal, hover, and disabled, which are indicated by change in color.
+Links have three different states: normal, hover, and disabled, each are indicated by change in color.
 
-- Browser defined
-- Hover: One shade lighter on the IBM Design Language color scale than normal color.
-- Disabled: 50% opacity
+
+<div class="style-properties max-width-45">
+  <div class="table">
+    <div class="table__header">
+      <p>STATE</p>
+      <p>HEX</p>
+      <p>SCSS VARIABLE</p>
+    </div>
+    <div class="table__row">
+      <p>Normal</p>
+      <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></p>
+      <p class="table--light">$color__blue-30</p>
+    </div>
+    <div class="table__row">
+      <p>Hover</p>
+      <p class="table--light">#7CC7FF <span class="table__swatch--blue-20"></span></p>
+      <p class="table--light">$color__blue-20</p>
+    </div>
+    <div class="table__row">
+      <p>Disabled</p>
+      <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span> @50% opacity </p>
+      <p class="table--light">$color__blue-30</p>
+    </div>
+  </div>
+</div>
 
 <div class="style-img">
   <div class="style-img--dark">
@@ -103,8 +125,8 @@ Links should be set in title case, with the first letter of each word capitalize
     </div>
     <div class="table__row">
       <p>Link text</p>
-      <p class="table--light">14px</p>
-      <p class="table--light">.875rem</p>
+      <p class="table--light">14</p>
+      <p class="table--light">.875</p>
     </div>
   </div>
   <div class="table">
