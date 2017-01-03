@@ -82,7 +82,7 @@
       {
         "title": "Clear",
         "hash": "glossary#clear",
-        "desc": "Clears all the fields or selections. Also deletes the contents of a document, such as a log. Typically the default selection or value is re-established for controls that always have a selection or value, such as radio buttons.",
+        "desc": "This action clears all the fields or selections. Also deletes the contents of a document, such as a log. Typically the default selection or value is re-established for controls that always have a selection or value, such as radio buttons.",
         "caption": "Where appropriate, combine Clear with the object (for example, Clear contents, Clear fields, Clear all). Contrast with <a href='#glossary#delete' class='base-link'>Delete</a> and <a href='#glossary#remove' class='base-link'>Remove</a>.",
       },
       {
@@ -266,8 +266,8 @@
       {
         "title": "Hide",
         "hash": "glossary#hide",
-        "desc": "Removes an element that was previously shown (for example, Hide descriptions).",
-        "caption": "See <a href='#glossary#show' class='base-link'>Show</a>.",
+        "desc": "Removes an element that was previously shown.",
+        "caption": "Context: Hide descriptions. <br>See <a href='#glossary#show' class='base-link'>Show</a>.",
       }
     ],
     "idioms": [
@@ -296,14 +296,14 @@
       {
         "title": "Import...",
         "hash": "glossary#import",
-        "desc": "Transforms data or objects from an external source. Typically opens a secondary window for the user to locate the external source (for example, creating a new table based on comma-separated values contained in a separate file).",
-        "caption": "See <a href='#glossary#export' class='base-link'>Export</a>.",
+        "desc": "Transforms data or objects from an external source. Typically opens a secondary window for the user to locate the external source.",
+        "caption": "Context: Creating a new table based on comma-separated values contained in a separate file. <br>See <a href='#glossary#export' class='base-link'>Export</a>.",
       },
       {
         "title": "Insert",
         "hash": "glossary#insert",
-        "desc": "Adds an element at a particular position in an ordered view (for example, adding a picture to the body of a document or inserting a record into a table).",
-        "caption": "Contrast with <a href='#glossary#add' class='base-link'>Add</a> and <a href='#glossary#new' class='base-link'>New</a>.",
+        "desc": "Adds an element at a particular position in an ordered view.",
+        "caption": "Context: Adding a picture to the body of a document or inserting a record into a table. <br>Contrast with <a href='#glossary#add' class='base-link'>Add</a> and <a href='#glossary#new' class='base-link'>New</a>.",
       }
     ],
     "idioms": [
@@ -405,7 +405,7 @@
         "title": "OK",
         "hash": "glossary#ok",
         "desc": "Completes the current task.",
-        "caption": "The best practice is to use a label corresponding to the requested action, such as <a href='#glossary#save' class='base-link'>Save</a> or <a href='#glossary#create' class='base-link'>Create</a>. Use OK only when such a label isn't available.",
+        "caption": "The best practice is to use a label corresponding to the requested action, such as <a href='#glossary#save' class='base-link'>Save</a> or <a href='#glossary#create' class='base-link'>Create</a>. Use OK only when such a label is not available.",
       }
     ],
     "idioms": [
@@ -453,7 +453,7 @@
         "title": "Post",
         "hash": "glossary#post",
         "desc": "Adds a new comment to an online community or adds status to a log or record.",
-        "caption": "If you're editing an existing comment, use <a href='#glossary#save' class='base-link'>Save</a> instead.",
+        "caption": "If you are editing an existing comment, use <a href='#glossary#save' class='base-link'>Save</a> instead.",
       },
       {
         "title": "Preview",
@@ -582,8 +582,8 @@
       {
         "title": "Show",
         "hash": "glossary#show",
-        "desc": "Reveals an object that was previously hidden (for example, Show descriptions).",
-        "caption": "See <a href='#glossary#hide' class='base-link'>Hide</a>."
+        "desc": "Reveals an object that was previously hidden.",
+        "caption": "Context: Show descriptions. <br>See <a href='#glossary#hide' class='base-link'>Hide</a>."
       },
       {
         "title": "Sign up",
@@ -627,7 +627,7 @@
         "title": "sweet",
         "hash": "glossary#sweet",
         "desc": "(adjective) pertaining to something that is considered excellent, awesome, or cool.",
-        "caption": "Context: We bet you've built some sweet apps by now.",
+        "caption": "Context: We bet you have built some sweet apps by now.",
       },
       {
         "title": "sync",
@@ -666,7 +666,7 @@
       {
         "title": "Undo",
         "hash": "glossary#undo",
-        "desc": "Reverts to the state before the most recent change made by the user. Repeated use successively reverts to prior states in reverse chronological order. Applies to changes in data and not to changes made to the view.",
+        "desc": "Reverts to the state before the most recent changes made by the user. Repeated use successively reverts to prior states in reverse chronological order. Applies to changes in data and not to changes made to the view.",
         "caption": "Not all actions, such as <a href='#glossary#save' class='base-link'>Save</a>, can be undone. See <a href='#glossary#redo' class='base-link'>Redo</a>, <a href='#glossary#reset' class='base-link'>Reset</a>, and <a href='#glossary#restore-defaults' class='base-link'>Restore defaults</a>."
       },
       {
@@ -686,7 +686,7 @@
       {
         "title": "unfavorite",
         "hash": "glossary#unfavorite",
-        "desc": "(verb) to change the status of an item that was previously marked as a favorite.<br /> (adjective) an item that is not a favorite.",
+        "desc": "(verb) to change the status of an item that was previously marked as a favorite. (adjective) an item that is not a favorite.",
         "caption": "Context: Unfavorite."
       }
     ],
@@ -705,7 +705,7 @@
         "title": "voila",
         "hash": "glossary#voila",
         "desc": "(expression) draws attention to something that has been accomplished or gained.",
-        "caption": "Context: Runtime and container usage is charged based on two things: How much memory your runtime or container uses and the duration that memory is used. Multiply the two together, and voila! The GB-hour.",
+        "caption": "Context: Runtime and container usage is charged based on two things. One, how much memory your runtime or container uses, and two, the duration that memory is used. Multiply the two together, and voila! The GB-hour.",
       }
     ],
   },

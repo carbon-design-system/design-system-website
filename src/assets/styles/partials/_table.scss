@@ -81,6 +81,7 @@
     &--navy-gray-9 { @include table-swatch($color__navy-gray-9, true); }
     &--navy-gray-4 { @include table-swatch($color__navy-gray-4); }
     &--navy-gray-3 { @include table-swatch($color__navy-gray-3); }
+    &--navy-gray-5 { @include table-swatch($color__navy-gray-5); }
     &--navy-gray-6 { @include table-swatch($color__navy-gray-6); }
     &--navy-gray-7 { @include table-swatch($color__navy-gray-7); }
     &--navy-gray-8 { @include table-swatch($color__navy-gray-8, true); }
@@ -92,6 +93,7 @@
     &--red-50 { @include table-swatch($color__red-50); }
     &--teal-10 { @include table-swatch($color__teal-10); }
     &--teal-20 { @include table-swatch($color__teal-20); }
+    &--teal-40 { @include table-swatch($color__teal-40); }
     &--teal-60 { @include table-swatch($color__teal-60); }
     &--purple-10 { @include table-swatch($color__purple-10); }
     &--purple-20 { @include table-swatch($color__purple-20); }
@@ -101,9 +103,12 @@
     &--orange-60 { @include table-swatch($color__orange-60); }
     &--green-10 { @include table-swatch($color__green-10); }
     &--green-20 { @include table-swatch($color__green-20); }
+    &--green-30 { @include table-swatch($color__green-30); }
+    &--green-40 { @include table-swatch($color__green-40); }
     &--green-60 { @include table-swatch($color__green-60); }
     &--yellow-10 { @include table-swatch($color__yellow-10); }
     &--yellow-20 { @include table-swatch($color__yellow-20); }
+    &--yellow-30 { @include table-swatch($color__yellow-30); }
     &--yellow-60 { @include table-swatch($color__yellow-60); }
   }
 }
