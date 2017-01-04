@@ -201,3 +201,26 @@ picture img {
     font-weight: 600;
   }
 }
+
+.image-grid {
+  width: 100%;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &-item {
+      width: 45%;
+      margin-right: 1rem;
+
+      picture img {
+        width: 100%;
+      }
+
+      @include breakpoint('bp--xs--major') {
+        width: 100%;
+      }
+    }
+  }
+}
