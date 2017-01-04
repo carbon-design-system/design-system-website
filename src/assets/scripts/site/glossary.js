@@ -2,9 +2,10 @@ export const glossaryNav = () => {
   const currentHash = window.location.hash.split('#');
   const glossaryNavLinks = [... document.querySelectorAll('.glossary__side-nav--link')];
   const letters = [... document.querySelectorAll('.glossary-letter__img')];
+  const windowScrollY = window.scrollY || window.pageYOffset;
   if (currentHash[1] === 'glossary') {
     window.addEventListener('hashchange', () => {
-      window.scrollTo(0, window.scrollY - 40);
+      window.scrollTo(0, windowScrollY - 80);
       if (currentHash.length === 2) {
         glossaryNavLinks.forEach(link => {
           link.classList.remove('selected');
@@ -14,7 +15,7 @@ export const glossaryNav = () => {
       window.addEventListener('scroll', () => {
         letters.forEach(letter => {
           const scrollPos = (letter.offsetTop + letter.getBoundingClientRect().height - 200);
-          if (window.scrollY > (scrollPos)) {
+          if (windowScrollY > (scrollPos)) {
             glossaryNavLinks.forEach(link => {
               if (link.href.substring(link.href.indexOf('#')) === `#${letter.id}`) {
                 link.classList.add('selected');
@@ -30,7 +31,7 @@ export const glossaryNav = () => {
     window.addEventListener('scroll', () => {
       letters.forEach(letter => {
         const scrollPos = (letter.offsetTop + letter.getBoundingClientRect().height - 200);
-        if (window.scrollY > (scrollPos)) {
+        if (windowScrollY > (scrollPos)) {
           glossaryNavLinks.forEach(link => {
             if (link.href.substring(link.href.indexOf('#')) === `#${letter.id}`) {
               link.classList.add('selected');

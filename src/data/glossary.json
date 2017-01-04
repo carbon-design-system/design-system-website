@@ -89,7 +89,7 @@
         "title": "Close",
         "hash": "glossary#close",
         "desc": "Closes the current page or window (for example, closing a secondary window containing online help).",
-        "caption": "Do not use Close together with OK or Cancel actions. Contrast with <a href='#glossary#delete' class='base-link'>Done</a>. See <a href='#glossary#cancel' class='base-link'>Cancel</a>.",
+        "caption": "Do not use Close together with OK or Cancel actions. Contrast with <a href='#glossary#done' class='base-link'>Done</a>. See <a href='#glossary#cancel' class='base-link'>Cancel</a>.",
       },
       {
         "title": "Copy",
