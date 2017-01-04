@@ -63,26 +63,54 @@ Links have three different states: normal, hover, and disabled, each are indicat
 
 
 <div class="style-properties max-width-45">
-  <div class="table">
-    <div class="table__header">
-      <p>STATE</p>
-      <p>HEX</p>
-      <p>SCSS VARIABLE</p>
+  <div class="style-properties__switcher">
+    <div class="style-properties__dark">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Normal</p>
+          <p class="table--light">#5aaafa <span class="table__swatch--blue-30"></span></p>
+          <p class="table--light">$color_blue-30</p>
+        </div>
+        <div class="table__row">
+          <p>Hover</p>
+          <p class="table--light">#7cc7ff <span class="table__swatch--blue-20"></span></p>
+          <p class="table--light">$color__blue-20</p>
+        </div>
+        <div class="table__row">
+          <p>Disabled</p>
+          <p class="table--light">#5aaafa <span class="table__swatch--blue-30"></span><br>at 50% opacity</p>
+          <p class="table--light">$color__blue-30</p>
+        </div>
+      </div>
     </div>
-    <div class="table__row">
-      <p>Normal</p>
-      <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></p>
-      <p class="table--light">$color__blue-30</p>
-    </div>
-    <div class="table__row">
-      <p>Hover</p>
-      <p class="table--light">#7CC7FF <span class="table__swatch--blue-20"></span></p>
-      <p class="table--light">$color__blue-20</p>
-    </div>
-    <div class="table__row">
-      <p>Disabled</p>
-      <p class="table--light">#5AAAFA <span class="table__swatch--blue-30"></span> @50% opacity </p>
-      <p class="table--light">$color__blue-30</p>
+    <div class="style-properties__light">
+      <div class="table">
+        <div class="table__header">
+          <p>COLOR</p>
+          <p>HEX</p>
+          <p>SCSS VARIABLE</p>
+        </div>
+        <div class="table__row">
+          <p>Normal</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span></p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+        <div class="table__row">
+          <p>Hover</p>
+          <p class="table--light">#5596e6 <span class="table__swatch--blue-40"></span></p>
+          <p class="table--light">$color__blue-40</p>
+        </div>
+        <div class="table__row">
+          <p>Disabled</p>
+          <p class="table--light">#3d70b2 <span class="table__swatch--blue-51"></span><br>at 50% opacity</p>
+          <p class="table--light">$color__blue-51</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
