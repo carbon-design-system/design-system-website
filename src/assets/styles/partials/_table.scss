@@ -128,6 +128,20 @@
     font-size: rem(12px);
     padding-right: 1em;
   }
+
+  &__icon {
+    fill: $color__navy-gray-7;
+    width: rem(15px);
+    height: rem(15px);
+    margin-top: .2rem;
+  }
+
+  &.expanded {
+
+    .expand-table__icon {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .style-properties {

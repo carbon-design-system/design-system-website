@@ -1,6 +1,6 @@
 export const renderPopout = () => {
   const renderBtn = [... document.querySelectorAll('.rendered__link')];
-  const styleLink = '<link rel="stylesheet" type="text/css" href="http://design-system.stage1.mybluemix.net/assets/styles/main.css">';
+  const styleLink = '<link rel="stylesheet" type="text/css" href="http://carbondesignsystem.com/assets/styles/main.css">';
   const iconsLink = 'https://dev-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg';
 
   const getHTML = (url, callback) => {
@@ -36,7 +36,7 @@ export const renderPopout = () => {
       }
       const script = popup.document.createElement('script');
       script.type = 'text/javascript';
-      script.src = 'http://design-system.stage1.mybluemix.net/assets/scripts/bundle.js';
+      script.src = 'http://carbondesignsystem.com/assets/scripts/bundle.js';
 
       // pulling stylesheet into page head
       popup.document.head.innerHTML += styleLink;
