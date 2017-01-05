@@ -67,7 +67,7 @@
 
 .paused > .motion-demo__overlay {
   opacity: .5;
-  
+
     &:hover {
       opacity: .6;
     }
@@ -165,7 +165,7 @@ $w4: $s2 + $w;
 
 .easing-demo {
   position: relative;
-  width: rem(320px);
+  width: rem(324px);
   background: #f5f7fa;
 
   &__curve {

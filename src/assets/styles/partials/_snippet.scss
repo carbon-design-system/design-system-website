@@ -386,14 +386,6 @@ pre[class*='language-'] {
   }
 }
 
-iframe {
-  opacity: 0;
-
-  &.visible {
-    opacity: 1;
-  }
-}
-
 .iframe {
   width: 100%;
   transition: 280ms;
@@ -411,7 +403,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: $color__rendered-example;
+    background-color: $color__navy-gray-2;
     color: $color__white;
     // margin-top: 3.5rem;
     overflow: hidden;
@@ -437,5 +429,13 @@ iframe {
     .bx--detail-page-header--no-tabs {
       min-width: 0;
     }
+  }
+}
+
+iframe {
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
   }
 }

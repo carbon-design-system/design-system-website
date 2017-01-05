@@ -99,16 +99,7 @@
         font-weight: 600;
         font-size: 1rem;
         letter-spacing: .0125em;
-        transition: .2s;
-
-
-        &:hover {
-          color: $color__white;
-
-          @media screen and (max-width: $width__tab-break) {
-            color: $color__text--dark;
-          }
-        }
+        transition: .3s;
 
         @media screen and (max-width: $width__tab-break) {
           font-size: .9rem;
@@ -158,11 +149,13 @@
 
         path {
           stroke: $color__blue-90;
+          transition: .3s;
         }
 
         circle {
           stroke: $color__blue-90;
           fill: none;
+          transition: .3s;
         }
 
         &.dark--selected {
