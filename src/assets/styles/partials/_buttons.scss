@@ -198,6 +198,7 @@
 
     &--dark {
       border-bottom: 2px solid $color__blue-30;
+      margin-right: .5rem;
 
       svg {
         fill: $color__blue-30;
@@ -215,7 +216,6 @@
 
     &--light {
       border-bottom: 2px solid transparent;
-      margin-right: .5rem;
 
       svg {
         fill: $color__navy-gray-7;

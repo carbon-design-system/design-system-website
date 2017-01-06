@@ -192,7 +192,7 @@ export const openItemHeadings = (nodeList = itemHeadings) => {
       subNav.classList.add('transition');
       subNav.classList.toggle('open');
       isClosed = !(subNav.classList.contains('open'));
-      localStorage.setItem(itemHeadingName, isClosed);
+      sessionStorage.setItem(itemHeadingName, isClosed);
     });
   });
 };

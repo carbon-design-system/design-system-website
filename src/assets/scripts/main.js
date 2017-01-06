@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const head = iframe.contentDocument.querySelector('head');
       const body = iframe.contentDocument.querySelector('body');
       body.classList.add('iframe__body');
+      body.classList.add('bx--global-light-ui');
       iframe.classList.add('visible');
       const svgLinks = [... body.querySelectorAll('use')];
       if (svgLinks) {
@@ -122,6 +123,29 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         glossarySideNav.classList.remove('fixed');
       }
+    }
+  });
+
+  [... document.querySelectorAll('[data-category]')].forEach(element => {
+    let arrow = '';
+    const category = element.getAttribute('data-category');
+    const subNav = element.nextSibling.nextSibling;
+    if (element.querySelector('.item__arrow')) {
+      arrow = element.querySelector('.item__arrow');
+    }
+    const isClosed = sessionStorage.getItem(category);
+    if (!(arrow === '')) {
+      if (isClosed === 'true') {
+        subNav.classList.remove('open');
+        arrow.classList.remove('rotated');
+      } else if (isClosed === 'false') {
+        subNav.classList.add('open');
+        if (arrow.classList) {
+          arrow.classList.add('rotated');
+        }
+      }
+      toggleClassForSvg(arrow, 'rotated', isClosed === 'true');
+      toggleClassForSvg(arrow, 'transition', true);
     }
   });
 
