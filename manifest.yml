@@ -1,9 +1,0 @@
-applications:
-- host: design-system
-  name: design-system
-  command: npm start
-  path: .
-  instances: 1
-  disk_quota: 1024M
-  memory: 128M
-  buildpack: nodejs_buildpack
