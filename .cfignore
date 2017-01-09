@@ -1,7 +1,0 @@
-node_modules
-bower_components
-src
-npm-debug.log
-.git
-.DS_Store
-*.map
