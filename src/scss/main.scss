@@ -1,0 +1,8 @@
+$use-fonts: true;
+
+@import 'node_modules/@console/bluemix-components/consumables/scss/styles.scss';
+
+@import 'global/colors';
+@import 'global/layout';
+
+@import '../components/sidenav/sidenav.scss';

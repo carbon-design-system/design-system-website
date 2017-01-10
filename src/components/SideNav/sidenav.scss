@@ -1,0 +1,84 @@
+.side-nav {
+  @include font-smoothing;
+  font-size: rem(14px);
+  background-color: $dark-bg-color;
+  border-right: 2px solid $color__navy-gray-3;
+  width: 12.438rem;
+  height: 100%;
+  padding: 1rem 1.25rem 2rem 1.5rem;
+  position: fixed;
+  overflow-y: auto;
+
+  &__logo {
+    display: inline-block;
+    color: $color__blue-20;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+
+    span {
+      font-weight: 700;
+      color: $color__white;
+    }
+  }
+}
+
+.side-nav__menu {
+  list-style: none;
+  padding-left: 0;
+
+  .menu-item {
+    border-top: 1px solid $color__blue-20;
+    padding: 1.5rem 0;
+
+    &:last-child {
+      border-bottom: 1px solid $color__blue-20;
+    }
+
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: .875rem;
+      color: $color__navy-gray-8;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+    }
+
+    &__arrow {
+      height: rem(10px);
+      width: rem(10px);
+      fill: $color__gray-3;
+      margin-right: .5rem;
+    }
+  }
+}
+
+.menu__sub-nav {
+  list-style: none;
+  padding-left: 0;
+
+  .sub-nav__item {
+    text-transform: capitalize;
+    margin-left: 0;
+    padding: .5rem;
+    color: $color__navy-gray-8;
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: normal;
+    }
+  }
+}
