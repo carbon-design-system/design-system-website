@@ -4,7 +4,7 @@ class Overview extends React.Component {
 
   render() {
     return (
-      <h1>Carbon Design System</h1>
+      <h1>Overview page here</h1>
     );
   }
 }

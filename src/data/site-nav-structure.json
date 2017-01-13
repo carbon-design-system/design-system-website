@@ -1,0 +1,45 @@
+{
+  "getting-started": {
+    "title": "Getting Started",
+    "subnav": {
+      "designers": "Designers",
+      "developers": "Developers"
+    }
+  },
+  "guidelines": {
+    "title": "Guidelines",
+    "subnav": {
+      "accessibility": "Accessibility",
+      "content": "Content",
+      "bluemix-brand": "Bluemix Brand",
+      "principles": "Principles",
+      "watson-brand": "Watson Brand"
+    }
+  },
+  "style": {
+    "title": "Style",
+    "subnav": {
+      "colors": "Colors",
+      "grids": "Grids",
+      "iconography": "Iconography",
+      "layer": "Layer",
+      "motion": "Motion",
+      "typography": "Typography"
+    }
+  },
+  "templates": {
+    "title": "Templates",
+    "subnav": {
+      "catalog": "Catalog",
+      "category-pages": "Category Pages",
+      "configuration-pages": "Configuration Pages",
+      "instance-dashboards": "Instance Dashboards"
+    }
+  },
+  "resources": {
+    "title": "Resources"
+  },
+  "component-status": {
+    "title": "Component Status"
+  }
+}

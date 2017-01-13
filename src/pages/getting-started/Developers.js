@@ -4,7 +4,7 @@ class Developers extends React.Component {
 
   render() {
     return (
-      <h1>Developers</h1>
+      <h1>Developers page here</h1>
     );
   }
 }

@@ -52,6 +52,7 @@
   "dependencies": {
     "@console/bluemix-components": "^6.11.5",
     "@console/bluemix-components-react": "^1.2.0",
+    "classnames": "^2.2.5",
     "markdown-loader": "^0.1.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -95,10 +96,6 @@
     ]
   },
   "eslintConfig": {
-    "globals": {
-      "window": true,
-      "document": true
-    },
     "parser": "babel-eslint",
     "extends": "airbnb",
     "rules": {
@@ -107,21 +104,15 @@
         130,
         4
       ],
+      "react/jsx-filename-extension": 0,
       "no-underscore-dangle": 0,
       "react/prefer-stateless-function": 0,
       "react/require-default-props": 0,
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ]
+      "react/prop-types": 0,
+      "jsx-a11y/no-static-element-interactions": 0
     },
     "env": {
-      "jest": true
+      "browser": true
     }
   }
 }
