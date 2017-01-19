@@ -1,0 +1,61 @@
+//////////////////////////////////////////
+// COLOR EXAMPLES FOR ESSENTIALS -> COLORS
+//////////////////////////////////////////
+
+.wrapped-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  max-width: 50rem;
+}
+
+$width__menu: 17.5em;
+$height__header: em(300px);
+
+$width__screen-size--x-small: 35em;
+$width__screen-size--small: 50em;
+$width__tab-break: em(768px);
+$width__screen-size--medium: 80em;
+
+.color__example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: em(165px);
+  height: em(120px);
+  transition: transform $transition--base;
+
+  button {
+    font-size: rem(12px);
+    background: transparent;
+    border: 2px solid currentColor;
+    padding: .5em .75em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity $transition--base;
+    opacity: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+    button {
+      opacity: 1;
+    }
+  }
+
+  input {
+    display: none;
+  }
+}
+
+.dark-text {
+  color: #152935;
+}
+
+.light-text {
+  color: #fff;
+}

@@ -53,8 +53,10 @@
     "@console/bluemix-components": "^6.11.5",
     "@console/bluemix-components-react": "^1.2.0",
     "classnames": "^2.2.5",
+    "color": "^1.0.3",
     "markdown-loader": "^0.1.7",
     "react": "^15.4.2",
+    "react-copy-to-clipboard": "^4.2.3",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0",
     "svgxuse": "^1.1.23"
@@ -109,7 +111,8 @@
       "react/prefer-stateless-function": 0,
       "react/require-default-props": 0,
       "react/prop-types": 0,
-      "jsx-a11y/no-static-element-interactions": 0
+      "jsx-a11y/no-static-element-interactions": 0,
+      "arrow-body-style": 0
     },
     "env": {
       "browser": true
