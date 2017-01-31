@@ -27,6 +27,41 @@
       "typography": "Typography"
     }
   },
+  "components": {
+    "title": "Components",
+    "subnav": {
+      "accordion": "Accordion",
+      "buttons": "Buttons",
+      "card": "Card",
+      "checkbox": "Checkbox",
+      "content-switcher": "Content Switcher",
+      "detail-page-header": "Detail Page Header",
+      "dropdown": "Dropdown",
+      "file-uploader": "File Uploader",
+      "forms": "Forms",
+      "interior-left-nav": "Interior Left Nav",
+      "links": "Links",
+      "lists": "Lists",
+      "loading": "Loading",
+      "modals": "Modals",
+      "modules": "Modules",
+      "notifications": "Notifications",
+      "number-input": "Number Input",
+      "overflow-menu": "Overflow Menu",
+      "pagination": "Pagination",
+      "progress-indicator": "Progress Indicator",
+      "radio-buttons": "Radio Buttons",
+      "search": "Search",
+      "select": "Select",
+      "tables": "Tables",
+      "tabs": "Tabs",
+      "tags": "Tags",
+      "textfield": "Text Fields",
+      "textara": "Text Area",
+      "toggle": "Toggle",
+      "tooltips": "Tooltips"
+    }
+  },
   "templates": {
     "title": "Templates",
     "subnav": {

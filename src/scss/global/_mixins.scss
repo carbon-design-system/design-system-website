@@ -1,0 +1,24 @@
+$breakpoints: (
+  bp--xs--major: 500px,
+  bp--sm--major: 830px,
+  bp--md--major: 992px,
+  bp--lg--major: 1200px
+);
+
+@mixin breakpoint-padding {
+  padding-left: 7rem;
+}
+
+@mixin breakpoint($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}

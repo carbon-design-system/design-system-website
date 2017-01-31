@@ -1,0 +1,36 @@
+.live-component {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color__gray-3;
+
+  &__variation {
+    margin: 1rem 0;
+
+    .live-component__title {
+      font-size: 1.25rem;
+      padding-bottom: 2rem;
+    }
+
+    .live-component__component {
+      margin-top: 2rem;
+    }
+  }
+
+  &__back-btn {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  &__back-btn svg {
+    margin-left: 0;
+    margin-right: .5rem;
+    fill: $color__white;
+  }
+}

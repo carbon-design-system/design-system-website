@@ -29,15 +29,19 @@
     "filesize": "3.3.0",
     "fs-extra": "0.30.0",
     "gzip-size": "3.0.0",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
     "jest": "17.0.2",
     "json-loader": "0.5.4",
+    "markdown-loader": "^0.1.7",
     "node-sass": "^4.2.0",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "postcss-loader": "1.0.0",
     "promise": "7.1.1",
+    "raw-loader": "^0.5.1",
+    "react-copy-to-clipboard": "^4.2.3",
     "react-dev-utils": "^0.4.2",
     "recursive-readdir": "2.1.0",
     "sass-loader": "^4.1.1",
@@ -47,24 +51,29 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "1.0.0",
+    "yaml-front-matter": "^3.4.0"
   },
   "dependencies": {
-    "@console/bluemix-components": "^6.11.5",
-    "@console/bluemix-components-react": "^1.2.0",
+    "@console/bluemix-components": "git+ssh://git@github.ibm.com:Bluemix/bluemix-components.git#7.x",
+    "@console/bluemix-components-react": "1.2.0",
     "classnames": "^2.2.5",
-    "color": "^1.0.3",
+    "front-matter": "^2.1.1",
     "markdown-loader": "^0.1.7",
+    "marked": "^0.3.6",
     "react": "^15.4.2",
-    "react-copy-to-clipboard": "^4.2.3",
     "react-dom": "^15.4.2",
+    "react-highlight": "^0.9.0",
+    "react-markdown": "^2.4.4",
+    "react-remarkable": "^1.1.1",
     "react-router": "^3.0.0",
     "svgxuse": "^1.1.23"
   },
   "scripts": {
-    "dev": "node scripts/start.js",
+    "dev": "npm run front-matter && node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "front-matter": "node scripts/frontmatter.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,26 +105,5 @@
       "react",
       "stage-0"
     ]
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb",
-    "rules": {
-      "max-len": [
-        2,
-        130,
-        4
-      ],
-      "react/jsx-filename-extension": 0,
-      "no-underscore-dangle": 0,
-      "react/prefer-stateless-function": 0,
-      "react/require-default-props": 0,
-      "react/prop-types": 0,
-      "jsx-a11y/no-static-element-interactions": 0,
-      "arrow-body-style": 0
-    },
-    "env": {
-      "browser": true
-    }
   }
 }

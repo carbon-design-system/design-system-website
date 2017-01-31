@@ -1,0 +1,129 @@
+$temp-bg: $color__navy-gray-9;
+$temp-text: $color__blue-90;
+
+.code-example {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $color__gray-2;
+  color: $color__blue-90;
+  padding-bottom: 1rem;
+}
+
+.code-example__raw-html {
+  background-color: $temp-bg;
+  padding: 1rem 1.5rem;
+  max-height: 12rem;
+  min-height: 7rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  transition: $transition--base;
+
+  &--expanded {
+    max-height: 100rem;
+  }
+}
+
+.code-example__copy-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: $color__gray-1;
+  transition: background-color $transition--base;
+  color: $color__blue-90;
+
+  &:focus,
+  &:hover {
+    background-color: $color__white;
+    color: $color__blue-30;
+    outline: none;
+
+    .code-example__copy-btn--icon {
+      fill: $color__blue-30;
+    }
+  }
+
+  .bx--btn--copy__feedback--displayed {
+    display: block;
+  }
+}
+
+.code-example__expand {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  color: $temp-text;
+  background-color: $temp-bg;
+  border: none;
+  padding: 1rem 0 1rem 1rem;
+  cursor: pointer;
+  font-size: .75rem;
+
+  &--icon {
+    margin-left: .5rem;
+    fill: $temp-text;
+    transition: $transition--base;
+
+    &--rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+///////////////////////////////
+// Code snippet: Temporary
+///////////////////////////////
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5rem;
+  background: none;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hljs,
+.hljs-subst {
+  color: $temp-text;
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-regexp {
+  color: $temp-text;
+}
+
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-link {
+  color: $temp-text;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: $temp-text;
+}
+
+.hljs-title,
+.hljs-variable,
+.hljs-deletion,
+.hljs-template-tag {
+  color: $temp-text;
+}

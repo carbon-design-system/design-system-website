@@ -1,0 +1,25 @@
+.page-tabs {
+  @include breakpoint-padding;
+  margin-top: rem(-52px);
+
+  .bx--tabs__nav {
+    margin: 0;
+  }
+
+  .bx--tabs__nav-item {
+    .bx--tabs__nav-link {
+      font-size: 1rem;
+      color: $color__blue-90;
+    }
+
+    &:hover {
+      .bx--tabs__nav-link {
+        color: $color__white;
+      }
+    }
+
+    &.bx--tabs--selected {
+      border-bottom: 3px solid $color__blue-90;
+    }
+  }
+}

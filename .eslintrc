@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb-base",
+  "rules": {
+    "max-len": [
+      2,
+      180,
+      4
+    ],
+    "no-underscore-dangle": 0,
+    "react/prefer-stateless-function": 0,
+    "react/require-default-props": 0,
+    "react/prop-types": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "no-unused-vars": 0,
+    "global-require": 0,
+    "react/no-danger": 0,
+    "import/no-dynamic-require": 0,
+    "no-console": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-webpack-loader-syntax": 0,
+    "import/no-unresolved": 0,
+    "react/no-did-mount-set-state": 0,
+    "arrow-body-style": 0
+  },
+  "env": {
+    "jest": true
+  }
+}

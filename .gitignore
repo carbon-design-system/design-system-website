@@ -7,6 +7,8 @@ coverage
 # production
 build
 dist
+config
+scripts
 
 # misc
 .DS_Store

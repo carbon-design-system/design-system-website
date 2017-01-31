@@ -8,18 +8,27 @@
 
 $use-fonts: true;
 
-@import 'node_modules/@console/bluemix-components/consumables/scss/styles.scss';
+@import 'node_modules/@console/bluemix-components/src/globals/scss/styles.scss';
 
 //---------------------------------------------------------------
 // Global
 //---------------------------------------------------------------
 
+@import 'global/vars';
+@import 'global/mixins';
 @import 'global/colors';
 @import 'global/layout';
+@import 'global/page';
 
 //---------------------------------------------------------------
 // Components
 //---------------------------------------------------------------
 
-@import '../components/sidenav/sidenav.scss';
-@import '../components/colorcard/colorcard.scss';
+@import '../internal/SideNav/sidenav.scss';
+@import '../internal/ColorCard/colorcard.scss';
+@import '../internal/PageHeader/page-header.scss';
+@import '../internal/PageHeader/page-tabs.scss';
+@import '../internal/CodePage/code-page.scss';
+@import '../internal/ComponentExample/component-example.scss';
+@import '../internal/CodeExample/code-example.scss';
+@import '../internal/LiveComponent/live-component.scss';

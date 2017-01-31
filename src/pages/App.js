@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SideNav from '../components/SideNav/SideNav';
+import SideNav from '../internal/SideNav';
 
 class App extends Component {
   static propTypes = {

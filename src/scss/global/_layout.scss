@@ -1,13 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: $color__white;
-  color: $text--dark;
+  color: $text-color-dark;
 }
 
 .container {
-  margin-left: 18rem;
-  padding-top: 2rem;
+  margin-left: $width--side-nav;
 }

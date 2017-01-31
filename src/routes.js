@@ -27,6 +27,11 @@ import Guidelines from './pages/guidelines/Guidelines';
 import Style from './pages/style/Style';
 
 //------------------------
+// Components
+//------------------------
+import ComponentPage from './pages/components/ComponentPage';
+
+//------------------------
 // Templates
 //------------------------
 import Templates from './pages/templates/Templates';
@@ -55,6 +60,13 @@ export default (
     <Route path="style">
       <IndexRedirect to="/style/colors" />
       <Route path="/style/:name" component={Style} />
+    </Route>
+    <Route path="components">
+      <IndexRedirect to="/components/accordion/foundation" />
+      <Route path="/components/:name">
+        <IndexRedirect to="/components/:name/foundation" />
+        <Route path="/components/:name/:page" component={ComponentPage} />
+      </Route>
     </Route>
     <Route path="templates">
       <IndexRedirect to="/templates/colors" />

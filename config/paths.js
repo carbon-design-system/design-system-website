@@ -41,5 +41,6 @@ module.exports = {
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   ownNodeModules: resolveApp('node_modules'),
+  bluemixComponents: resolveApp('node_modules/@console/bluemix-components'),
   nodePaths: nodePaths
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
+import 'svgxuse';
 import routes from './routes';
-
 import './scss/main.scss';
 import './assets/fonts/font-face.scss';
 

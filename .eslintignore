@@ -1,0 +1,5 @@
+config
+scripts
+node_modules
+build
+public

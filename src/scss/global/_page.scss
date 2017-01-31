@@ -1,0 +1,28 @@
+.page {
+  @include breakpoint-padding;
+  margin-top: 3rem;
+  max-width: 65rem;
+}
+
+.page__sub-heading {
+  color: $color__blue-30;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  font-size: 1rem;
+}
+
+.page__desc {
+  max-width: 45rem;
+  color: $color__blue-90;
+  word-wrap: break-word;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 700;
+  padding-bottom: 1rem;
+
+  span {
+    color: $color__blue-30;
+  }
+}

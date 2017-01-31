@@ -1,0 +1,38 @@
+.page-header {
+  @include breakpoint-padding;
+  height: 18rem;
+  background-color: $color__blue-30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  &__label {
+    @include font-size('16');
+    color: $color__white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: $color__white;
+    text-transform: capitalize;
+    font-weight: 200;
+    margin-left: -3px;
+    transition: $transition--base $bx--standard-easing;
+  }
+
+  @include breakpoint('bp--sm--major') {
+    .page-header__title {
+      font-size: 3.5rem;
+    }
+  }
+
+  @include breakpoint('bp--md--major') {
+    .page-header__title {
+      font-size: 4rem;
+    }
+  }
+}
