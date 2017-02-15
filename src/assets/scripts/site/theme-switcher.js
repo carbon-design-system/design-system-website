@@ -1,6 +1,5 @@
 export const themeSwitcher = () => {
   const themeSwitcherContainer = [... document.querySelectorAll('[data-theme-switcher]')];
-
   themeSwitcherContainer.forEach(element => {
     const themeSwitcherBtns = [... element.querySelectorAll('[data-toggle-theme]')];
     themeSwitcherBtns.forEach(btn => {

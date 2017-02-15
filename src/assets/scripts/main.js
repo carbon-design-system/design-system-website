@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
     iframe.style.height = `${h}px`;
   };
 
+  const overflowMenus = [... document.querySelectorAll('.bx--overflow-menu__options')];
+  const table = document.querySelector('.bx--responsive-table');
+  if (overflowMenus && table) {
+    overflowMenus.forEach(menu => {
+      menu.classList.add('bx--global-light-ui');
+    });
+  }
+
   setTimeout(() => {
     [... document.querySelectorAll('.iframe')].forEach(iframe => {
       const head = iframe.contentDocument.querySelector('head');
