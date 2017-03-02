@@ -1,0 +1,78 @@
+.side-nav__toggle-btn {
+  @include reset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: $color__blue-51;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  span,
+  span:before,
+  span:after {
+    @include reset;
+    height: rem(1px);
+    width: 1rem;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all $transition--base ease;
+  }
+
+  span {
+    top: .95rem;
+    left: .4rem;
+  }
+
+  span:before,
+  span:after {
+    background: $color__white;
+    width: 1.29rem;
+    transform-origin: center;
+  }
+
+  span:after {
+    transform: rotate(-45deg);
+  }
+
+  span:before {
+    transform: rotate(45deg);
+  }
+
+  .side-nav__closed & {
+    right: -2rem;
+
+    span {
+      left: .5rem;
+    }
+
+    span,
+    span:before,
+    span:after {
+      width: 1rem;
+      background: $color__white;
+    }
+
+    span:before,
+    span:after {
+      transform: rotate(0);
+    }
+
+    span:before {
+      top: rem(-5px);
+    }
+
+    span:after {
+      bottom: rem(-5px);
+    }
+  }
+}

@@ -1,3 +1,0 @@
-## Buttons usage
-
-Test test

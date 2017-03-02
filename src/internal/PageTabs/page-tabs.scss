@@ -1,0 +1,60 @@
+.page-tabs {
+  @include grid-margins;
+  margin-top: -3.5rem;
+  background-color: rgba(#3d70b2, .1);
+  width: auto;
+
+  .bx--tabs--hidden {
+    display: none;
+
+    @include breakpoint('768px') {
+      display: flex;
+    }
+  }
+
+  .bx--tabs__trigger {
+    &-text,
+    svg {
+      color: $color__blue-90;
+      fill: $color__blue-51;
+    }
+  }
+
+  .bx--tabs__nav {
+    @include layer('overlay');
+    z-index: 5;
+  }
+
+  @include breakpoint('768px') {
+    @include grid-padding;
+    background-color: transparent;
+    margin: -3rem 0 0 0;
+
+    .bx--tabs__nav {
+      margin: 0;
+      box-shadow: none;
+    }
+
+    .bx--tabs__nav-item {
+      .bx--tabs__nav-link {
+        font-size: 1rem;
+        padding: .75rem 0 1rem;
+        color: $color__blue-90;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:hover {
+        .bx--tabs__nav-link {
+          color: $color__blue-51;
+        }
+      }
+
+      &.bx--tabs--selected {
+        border-bottom: 3px solid $color__blue-90;
+      }
+    }
+  } 
+}

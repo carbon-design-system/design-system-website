@@ -1,21 +1,31 @@
-import React from 'react';
-import Accessibility from './Accessibility';
-import BluemixBrand from './BluemixBrand';
+import React, { PropTypes } from 'react';
+import Markdown from 'react-remarkable';
+import Page from '../../internal/Page';
 import Content from './Content';
-import Principles from './Principles';
-import WatsonBrand from './WatsonBrand';
 
 class Guidelines extends React.Component {
+  static propTypes = {
+    params: PropTypes.object,
+  }
 
   render() {
-    const paramsName = this.props.params.name;
-    let page;
-    if (paramsName === 'accessibility') page = <Accessibility />;
-    else if (paramsName === 'bluemix-brand') page = <BluemixBrand />;
-    else if (paramsName === 'content') page = <Content />;
-    else if (paramsName === 'principles') page = <Principles />;
-    else if (paramsName === 'watson-brand') page = <WatsonBrand />;
-    return page;
+    const {
+      params,
+    } = this.props;
+    const title = params.name.charAt(0).toUpperCase() + params.name.substring(1);
+    const content = (params.name === 'content') ? (
+      <Content currentPage={params.page} />
+    ) : (
+      <div className="page">
+        <Markdown
+          options={{ html: true }}
+          source={require(`../../content/guidelines/${params.name}/${params.name}.md`)} // eslint-disable-line
+        />
+      </div>
+    );
+    return (
+      <Page label="Guidelines" title={title} content={content} />
+    );
   }
 }
 

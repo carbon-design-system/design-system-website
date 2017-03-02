@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="63px" viewBox="0 0 74 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="33.084482 6.15826628 63.6617658 62.9133138 0.868968706 62.9133138"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="62.7927971" height="56.7550476" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homapge" transform="translate(-612.000000, -159.000000)">
+            <g id="Lock-Up" transform="translate(494.000000, 158.000000)">
+                <g id="Group-8" transform="translate(118.000000, 1.000000)">
+                    <polygon id="Rectangle-16" fill="#8CD211" points="43.084482 0.158266277 73.6617658 56.9133138 10.8689687 56.9133138"></polygon>
+                    <use id="Rectangle-16" stroke="#152935" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

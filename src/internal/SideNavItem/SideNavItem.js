@@ -5,10 +5,11 @@ class SideNavItem extends Component {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
+    isCurrentPath: PropTypes.bool,
   }
 
   state = {
-    open: this.props.open,
+    open: this.props.isCurrentPath,
   }
 
   handleClick = (evt) => {
@@ -23,15 +24,13 @@ class SideNavItem extends Component {
 
   render() {
     const {
-      className,
       children,
     } = this.props;
 
     const classNames = classnames({
-      'menu-item__open': this.state.open,
-    },
-      className,
-    );
+      'main-nav-item': true,
+      'main-nav-item__open': this.state.open,
+    });
 
     return (
       <li className={classNames} onClick={this.handleClick}>

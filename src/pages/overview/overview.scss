@@ -1,0 +1,85 @@
+.overview-page {
+  background-color: $color__gray-3;
+  height: 100vh;
+
+  &__top-banner {
+    background-color: $color__white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 3%;
+    width: 100%;
+    transition: $transition--base ease;
+
+    @include breakpoint('bp--sm--major') {
+      height: rem(640px);
+      padding: 4rem 10%;
+    }
+
+    @include breakpoint('1024px') {
+      padding: 7rem 15%;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: rem(704px);
+  }
+
+  &__title--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 6.25vw;
+
+    @include breakpoint('990px') {
+      margin-right: rem(75px);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    span:last-child {
+      margin-bottom: 0;
+    }
+
+    .overview-page__title--letter,
+    .overview-page__title--shape {
+      margin-bottom: 6.25vw;
+
+      @include breakpoint('990px') {
+        margin-bottom: rem(70px);
+      }
+    }
+
+    .overview-page__title--letter {
+      @include font-smoothing;
+      font-weight: 700;
+      font-size: 8vw;
+
+      @include breakpoint('990px') {
+        font-size: 4.5rem;
+      }
+    }
+
+    .overview-page__title--shape svg {
+      width: 8vw;
+      height: 8vw;
+
+      @include breakpoint('990px') {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+  }
+
+  &__content {
+  }
+}

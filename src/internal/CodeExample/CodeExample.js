@@ -60,19 +60,21 @@ class CodeExample extends Component {
     const expandCodeBtnText = this.state.expandedCode ? 'Show less code' : 'Show more code';
 
     return (
-      <div className="code-example">
+      <div className="code-example bx--snippet bx--snippet--code">
         <div className={codeExampleClass} ref={(ref) => { this.codeBlock = ref; }}>
-          <Highlight className="html">
-            {htmlFile}
-          </Highlight>
+          <div className="bx--snippet-container">
+            <pre className="code-example__snippet">
+              {htmlFile}
+            </pre>
+          </div>
         </div>
         <CopyToClipboard
           text={htmlFile}
           onCopy={this.handleCopy}
         >
-          <button data-copy-btn className="bx--btn--copy code-example__copy-btn">
+          <button data-copy-btn className="bx--snippet-button code-example__copy-btn">
             Copy
-            <Icon className="code-example__copy-btn--icon" name="copy--code" description="Copy code icon" />
+            <Icon className="code-example__copy-btn--icon bx--snippet__icon" name="copy" description="Copy code icon" />
             <div className={copyBtnClass} data-feedback="Copied!" />
           </button>
         </CopyToClipboard>

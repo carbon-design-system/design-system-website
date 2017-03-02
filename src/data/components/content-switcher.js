@@ -1,16 +1,5 @@
 /* eslint-disable */
- module.exports = [
-  {
-    "desc": "<span>Content switcher</span> manipulates the content shown following an exclusive or “either/or” pattern.",
-    "__content": "\n"
-  },
-  {
-    "__content": "undefined"
-  },
-  {
-    "__content": "undefined"
-  },
-  {
-    "__content": "undefined"
-  }
-]
+ module.exports = {
+  "desc": "<span>Content switcher</span> manipulates the content shown following an exclusive or “either/or” pattern.",
+  "__content": "\n"
+}

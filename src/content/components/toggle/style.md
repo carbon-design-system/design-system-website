@@ -1,3 +1,33 @@
-## Buttons style
+## Color
+| COLOR                 | SCSS     | HEX      |
+|-----------------------|----------|----------|
+| Inactive: fill        | $ui-01   | #ffffff  |
+| Inactive: border      | $ui-05   | #8c9ba5  |
+| Inactive :hover       | $ui-03   | #f0f3f6  |
+| Active: fill          | $brand-01| #3d70b2  |
+| Label                 | $text-01 | #152935  |
 
-<PageHeader label="test" title="name" />
+![Inactive, inactive hover, and active states for a Toggle](images/toggle-style-1.png)
+_Examples of inactive, inactive hoer, and active states for a Toggle_
+
+## Typography 
+Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words. 
+
+| PROPERTY | FONT-SIZE     | FONT-WEIGHT |
+|----------|-----------------|--------------|
+| Label    | 14px / 0.875rem | Normal / 400 |
+
+## Structure
+| PROPERTY          | PX | REM   |
+|-------------------|----|-------|
+| Height & width    | 24 | 1.5   |
+| Circle border     | 2  | 0.125 |
+| Slider line       | 24 | 1.5   |
+| Spacing: external | 16 | 1     |
+| Spacing: internal | 8  | 0.5   |
+
+![Structure and spacing measurements for toggle](images/toggle-style-2.png)
+_Structure and spacing measurements for Toggle | px / rem_
+
+
+

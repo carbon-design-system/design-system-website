@@ -7,8 +7,9 @@
 //---------------------------------------------------------------
 
 $use-fonts: true;
+$use-reset: true;
 
-@import 'node_modules/@console/bluemix-components/src/globals/scss/styles.scss';
+@import 'node_modules/@console/bluemix-components/src/globals/scss/styles';
 
 //---------------------------------------------------------------
 // Global
@@ -18,7 +19,6 @@ $use-fonts: true;
 @import 'global/mixins';
 @import 'global/colors';
 @import 'global/layout';
-@import 'global/page';
 
 //---------------------------------------------------------------
 // Components
@@ -27,8 +27,12 @@ $use-fonts: true;
 @import '../internal/SideNav/sidenav.scss';
 @import '../internal/ColorCard/colorcard.scss';
 @import '../internal/PageHeader/page-header.scss';
-@import '../internal/PageHeader/page-tabs.scss';
+@import '../internal/PageTabs/page-tabs.scss';
 @import '../internal/CodePage/code-page.scss';
 @import '../internal/ComponentExample/component-example.scss';
 @import '../internal/CodeExample/code-example.scss';
 @import '../internal/LiveComponent/live-component.scss';
+@import '../internal/Page/page.scss';
+
+@import '../pages/overview/overview.scss';
+@import '../pages/guidelines/guidelines.scss';

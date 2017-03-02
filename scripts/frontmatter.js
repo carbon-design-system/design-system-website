@@ -14,19 +14,24 @@ imported where it's needed as an object.
 const renderFrontMatter = (targetFile) => {
   const dir = path.resolve(__dirname, '..');
   const folders = fs.readdirSync(`${dir}/src/content/components/`)
-      .filter(folder => fs.statSync(path.join(`${dir}/src/content/components/`, folder)).isDirectory())
+      .filter(folder => fs.statSync(path.join(`${dir}/src/content/components/`, folder)).isDirectory());
   folders.forEach(component => {
-    const componentContent = fs.readdirSync(`${dir}/src/content/components/${component}/`)
-      .map(file => {
-        if (file.includes(targetFile)) {
-          return fs.readFileSync(`${dir}/src/content/components/${component}/${file}`);
-        }
-      })
-      .map(data => {
-        return yamlFront.loadFront(data)
-      });
+    const componentFolder = fs.readdirSync(`${dir}/src/content/components/${component}/`);
+    let componentContent;
+    componentFolder.forEach(file => {
+      if (file === targetFile) {
+        componentContent = yamlFront.loadFront(fs.readFileSync(`${dir}/src/content/components/${component}/${file}`));
+      }
+    });
     fs.writeFileSync(`${dir}/src/data/components/${component}.js`, `/* eslint-disable */\n module.exports = ${JSON.stringify(componentContent, null, 2)}`);
   });
 };
 
+const renderGlossaryFile = (targetFile) => {
+  const dir = path.resolve(__dirname, '..');
+  const glossaryContent = yamlFront.loadFront(fs.readFileSync(`${dir}/src/content/guidelines/content/content-glossary.md`));
+  fs.writeFileSync(`${dir}/src/data/guidelines/glossary.js`, `/* eslint-disable */\n module.exports = ${JSON.stringify(glossaryContent, null, 2)}`);
+};
+
 renderFrontMatter('code.md');
+renderGlossaryFile('content-glossary.md');

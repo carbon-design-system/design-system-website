@@ -1,0 +1,39 @@
+.main-nav__sub-nav {
+  list-style: none;
+  padding-left: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: .3s;
+
+  .sub-nav__item {
+    text-transform: capitalize;
+    margin-left: 0;
+    padding: .5rem .5rem .5rem 2rem;
+    color: $color__blue-90;
+    border-left: 4px solid transparent;
+
+    &:hover {
+      color: $color__blue-51;
+    }
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: normal;
+    }
+
+    &.selected {
+      border-left: 4px solid $color__blue-51;
+      color: $color__blue-51;
+
+      .sub-nav__item-link {
+        font-weight: 700;
+      }
+    }
+  }
+}

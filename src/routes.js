@@ -55,16 +55,18 @@ export default (
     </Route>
     <Route path="guidelines">
       <IndexRedirect to="/guidelines/accessibility" />
-      <Route path=":name" component={Guidelines} />
+      <Route path="/guidelines/:name" component={Guidelines} />
+      <Route path="/guidelines/:name/:page" component={Guidelines} />
     </Route>
     <Route path="style">
-      <IndexRedirect to="/style/colors" />
+      <IndexRedirect to="/style/colors/swatches" />
       <Route path="/style/:name" component={Style} />
+      <Route path="/style/:name/:page" component={Style} />
     </Route>
     <Route path="components">
-      <IndexRedirect to="/components/accordion/foundation" />
+      <IndexRedirect to="/components/accordion/code" />
       <Route path="/components/:name">
-        <IndexRedirect to="/components/:name/foundation" />
+        <IndexRedirect to="/components/:name/code" />
         <Route path="/components/:name/:page" component={ComponentPage} />
       </Route>
     </Route>

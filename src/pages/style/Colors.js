@@ -1,39 +1,60 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import Markdown from 'react-remarkable';
+import Tab from '@console/bluemix-components-react/dist/components/Tab';
+import PageTabs from '../../internal/PageTabs';
 import ColorCard from '../../internal/ColorCard';
 import ColorList from '../../data/colors.json';
-import PageHeader from '../../internal/PageHeader';
 
 class Colors extends React.Component {
+  static propTypes = {
+    currentPage: PropTypes.string,
+  }
+
   renderColorCards = ColorItems =>
     Object.keys(ColorItems).map((ColorItem) => {
       const ColorItemObj = ColorItems[ColorItem];
       return (
         <ColorCard
+          key={ColorItem}
           name={ColorItemObj.name}
           hex={ColorItemObj.hex}
-          scss={ColorItemObj.scss}
+          white={ColorItemObj.white}
         />
       );
     });
 
   render() {
-    const ColorCards = this.renderColorCards(ColorList['light-ui-colors']);
-    const AccentColorCards = this.renderColorCards(ColorList['light-ui-accent-colors']);
+    const ColorCards = this.renderColorCards(ColorList['ui-colors']);
+    const SupportColorCards = this.renderColorCards(ColorList['support-colors']);
+    const usage = require('../../content/style/color/usage.md'); // eslint-disable-line
+    const tabs = ['swatches', 'usage'];
+    let currentPage = 'swatches';
+    if (this.props.currentPage) {
+      currentPage = this.props.currentPage;
+    }
 
     return (
-      <div>
-        <PageHeader label="Style" title="Colors" />
-        <div>
-          <p>Color brings a design to life. Color is versatile;
-            it&apos;s used to express emotion and tone, as well as place
-            emphasis and create associations. Color should always
-            be used in meaningful and intentional ways that create patterns and visual cues.</p>
-          <ul className="wrapped-list">
-            {ColorCards}
-            {AccentColorCards}
-          </ul>
-        </div>
-      </div>
+      <PageTabs tabs={tabs} currentPage={currentPage}>
+        <Tab href="/style/colors/swatches" label="Swatches">
+          <div className="page">
+            <h2>Carbon default theme</h2>
+            <div className="wrapped-list">
+              {ColorCards}
+            </div>
+            <h3 className="page__divider-heading">Supporting Colors</h3>
+            <div className="wrapped-list">
+              {SupportColorCards}
+            </div>
+          </div>
+        </Tab>
+        <Tab href="/style/colors/usage" label="Usage">
+          <div className="page">
+            <Markdown options={{ html: true }}>
+              {usage}
+            </Markdown>
+          </div>
+        </Tab>
+      </PageTabs>
     );
   }
 }

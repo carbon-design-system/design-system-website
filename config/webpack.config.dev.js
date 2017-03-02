@@ -14,6 +14,16 @@ var publicPath = '/';
 var publicUrl = '';
 var env = getClientEnvironment(publicUrl);
 
+var query = {
+  bypassOnDebug: true,
+  optipng: {
+    optimizationLevel: true
+  },
+  gifsicle: {
+    interlaced: true
+  }
+};
+
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: [
@@ -32,14 +42,11 @@ module.exports = {
     extensions: ['', '.js', '.json']
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint',
-        include: paths.appSrc,
-      }
-    ],
     loaders: [
+      {
+        test: /\.(css|scss)$/,
+        loader: 'style!css?importLoaders=1!postcss!sass'
+      },
       {
         test: /\.js$/,
         include: [
@@ -52,12 +59,11 @@ module.exports = {
         }
       },
       {
-        test: /\.(css|scss)$/,
-        loader: 'style!css?importLoaders=1!postcss!sass'
-      },
-      {
         test: /\.md$/,
-        loader: 'html!markdown?gfm=false'
+        loaders: [
+          'html-loader',
+          'markdown-loader'
+        ]
       },
       {
         test: /\.json$/,
@@ -67,8 +73,12 @@ module.exports = {
         test: /\.(jpe?g|png|gif)$/i,
         loaders: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false',
+          'img?progressive=true'
         ],
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'file',
       },
       {
         test: /\.svg$/,
@@ -91,7 +101,7 @@ module.exports = {
   },
   plugins: [
     new InterpolateHtmlPlugin({
-      PUBLIC_URL: publicUrl
+      PUBLIC_URL: publicUrl,
     }),
     new HtmlWebpackPlugin({
       inject: true,

@@ -1,0 +1,108 @@
+{
+  "ui-colors": [
+    {
+      "name": "brand-01",
+      "hex": "#3d70b2"
+    },
+    {
+      "name": "brand-02",
+      "hex": "#5596e6"
+    },
+    {
+      "name": "brand-03",
+      "hex": "#41d6c3"
+    },
+    {
+      "white": true,
+      "name": "ui-01",
+      "hex": "#ffffff"
+    },
+    {
+      "name": "ui-02",
+      "hex": "#f5f7fa"
+    },
+    {
+      "name": "ui-03",
+      "hex": "#f0f3f6"
+    },
+    {
+      "name": "ui-04",
+      "hex": "#dfe3e6"
+    },
+    {
+      "name": "ui-05",
+      "hex": "#8c9ba5"
+    },
+    {
+      "name": "text-01",
+      "hex": "#152934"
+    },
+    {
+      "name": "text-02",
+      "hex": "#5a6872"
+    },
+    {
+      "name": "text-03",
+      "hex": "#5a6872"
+    },
+    {
+      "white": true,
+      "name": "inverse-01",
+      "hex": "#ffffff"
+    },
+    {
+      "name": "field-01",
+      "hex": "#3d70b2 (10% opacity)"
+    }
+  ],
+  "support-colors": [
+    {
+      "name": "support-01",
+      "hex": "#e71d32"
+    },
+    {
+      "name": "support-02",
+      "hex": "#8cd211"
+    },
+    {
+      "name": "support-03",
+      "hex": "#efc100"
+    },
+    {
+      "name": "support-04",
+      "hex": "#7cc7ff"
+    },
+    {
+      "name": "nav-01",
+      "hex": "#0f212e"
+    },
+    {
+      "name": "nav-02",
+      "hex": "#152935"
+    },
+    {
+      "name": "nav-03",
+      "hex": "#ba8ff7"
+    },
+    {
+      "name": "nav-04",
+      "hex": "#73f098"
+    },
+    {
+      "name": "nav-05",
+      "hex": "#00b4a0"
+    },
+    {
+      "name": "nav-06",
+      "hex": "#008571"
+    },
+    {
+      "name": "nav-07",
+      "hex": "#5aaafa"
+    },
+    {
+      "name": "nav-08",
+      "hex": "#3d70b2"
+    }
+  ]
+}

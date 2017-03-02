@@ -1,5 +1,6 @@
 .component-example {
   width: 100%;
+  max-width: 50rem;
   display: block;
   color: $color__white;
 
@@ -7,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: rem(200px);
     position: relative;
     padding: 2rem 2rem 2.5rem;
@@ -14,6 +16,14 @@
     background-color: $color__gray-3;
     color: $color__blue-90;
     border: 1px solid $color__gray-1;
+
+    &--rendered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
   }
 
   &__view-full-render {

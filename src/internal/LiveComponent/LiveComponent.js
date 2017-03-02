@@ -8,7 +8,7 @@ class LiveComponent extends Component {
   }
 
   renderVariation = (variation) => {
-    const htmlFile = require(`@console/bluemix-components/src/components/${this.props.component}/${variation}.html`);
+    const htmlFile = require(`@console/bluemix-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
     return (
       <div className="live-component__variation">
         <a
@@ -26,18 +26,22 @@ class LiveComponent extends Component {
     const {
       component,
     } = this.props;
-    const content = require(`../../data/components/${component}.js`);
+    const content = require(`../../data/components/${component}.js`); // eslint-disable-line
     const variations = content[0].variations;
+    const variationContent = content[0].variations ?
+      (
+        Object.keys(variations).map((variation) => this.renderVariation(variation))
+      ) :
+      this.renderVariation(component);
+    const componentTitle = `${component.charAt(0).toUpperCase()}${component.substring(1)}`;
 
     return (
       <div className="live-component">
         <Link to={`/components/${component}/foundation`} className="bx--btn live-component__back-btn">
           <Icon className="live-component__back-btn--icon" name="arrow--left" description="Back button icon" />
-          {component} guidelines
+          {componentTitle} code page
         </Link>
-        {Object.keys(variations).map((variation) => {
-          return this.renderVariation(variation);
-        })}
+        {variationContent}
       </div>
     );
   }

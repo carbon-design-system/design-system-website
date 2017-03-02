@@ -12,8 +12,7 @@
       "accessibility": "Accessibility",
       "content": "Content",
       "bluemix-brand": "Bluemix Brand",
-      "principles": "Principles",
-      "watson-brand": "Watson Brand"
+      "principles": "Principles"
     }
   },
   "style": {
@@ -31,44 +30,35 @@
     "title": "Components",
     "subnav": {
       "accordion": "Accordion",
-      "buttons": "Buttons",
+      "button": "Button",
       "card": "Card",
       "checkbox": "Checkbox",
       "content-switcher": "Content Switcher",
       "detail-page-header": "Detail Page Header",
       "dropdown": "Dropdown",
       "file-uploader": "File Uploader",
-      "forms": "Forms",
+      "form": "Form",
       "interior-left-nav": "Interior Left Nav",
-      "links": "Links",
-      "lists": "Lists",
+      "link": "Link",
+      "list": "List",
       "loading": "Loading",
-      "modals": "Modals",
-      "modules": "Modules",
-      "notifications": "Notifications",
+      "modal": "Modal",
+      "module": "Module",
+      "notification": "Notification",
       "number-input": "Number Input",
       "overflow-menu": "Overflow Menu",
       "pagination": "Pagination",
       "progress-indicator": "Progress Indicator",
-      "radio-buttons": "Radio Buttons",
+      "radio-button": "Radio Button",
       "search": "Search",
       "select": "Select",
-      "tables": "Tables",
+      "table": "Table",
       "tabs": "Tabs",
-      "tags": "Tags",
-      "textfield": "Text Fields",
-      "textara": "Text Area",
+      "tag": "Tag",
+      "text-input": "Text Input",
+      "text-area": "Text Area",
       "toggle": "Toggle",
-      "tooltips": "Tooltips"
-    }
-  },
-  "templates": {
-    "title": "Templates",
-    "subnav": {
-      "catalog": "Catalog",
-      "category-pages": "Category Pages",
-      "configuration-pages": "Configuration Pages",
-      "instance-dashboards": "Instance Dashboards"
+      "tooltip": "Tooltip"
     }
   },
   "resources": {

@@ -1,7 +1,3 @@
-//////////////////////////////////////////
-// COLOR EXAMPLES FOR ESSENTIALS -> COLORS
-//////////////////////////////////////////
-
 .wrapped-list {
   display: flex;
   flex-wrap: wrap;
@@ -10,13 +6,24 @@
   max-width: 50rem;
 }
 
-$width__menu: 17.5em;
-$height__header: em(300px);
+.color {
+  margin-bottom: 3rem;
 
-$width__screen-size--x-small: 35em;
-$width__screen-size--small: 50em;
-$width__tab-break: em(768px);
-$width__screen-size--medium: 80em;
+  &--border {
+
+    .color__example {
+      border: 1px solid $color__gray-1;
+    }
+  }
+
+  p {
+    font-weight: 700;
+
+    &:last-child {
+      font-weight: 300;
+    }
+  }
+}
 
 .color__example {
   display: flex;
@@ -25,6 +32,7 @@ $width__screen-size--medium: 80em;
   width: em(165px);
   height: em(120px);
   transition: transform $transition--base;
+  margin-bottom: 1rem;
 
   button {
     font-size: rem(12px);

@@ -1,3 +1,83 @@
-## Buttons style
+## Color
+| COLOR                    | SCSS      | HEX       |
+|--------------------------|-----------|-----------|
+| Background with Tabs     | $ui-01    | #ffffff   |
+| Background with Interior Left Nav  | $ui-02    | #f5f7fa   |
+| Title                    | $text-02  | #5a6872   |
+| Breadcrumb: arrow & text | $brand-01 | #3d70b2   |
+| Secondary text           | $text-01  | #152935   |
 
-<PageHeader label="test" title="name" />
+
+
+## Typography
+Detail Page Header titles, breadcrumb text, and tab labels should all be set in sentence case.
+
+| Property   | Font-size       | Font-weight  |
+|------------|-----------------|--------------|
+| Title      | 28px / 1.75rem  | Light / 300  |
+| Secondary text     | 14px / 0.875rem | Normal / 400 |
+| Breadcrumb | 14px / 0.875rem | Normal / 400 |
+
+## Layer
+| COMPONENT                     | LAYER    | ELEVATION | BOX-SHADOW  |
+|----------                     |----------|---------- |-------------|
+| Detail page header            | Base     | 0         | none  |
+| Detail page header with tabs  | Flat     | 1         | none  |
+| Detail page header on scroll  | Overlay  | 8         | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
+
+
+## Structure
+The width of the Detail Page Headers extend across the entire browser, therefore the width of the Detail Page Header is determined by the width of the browser.
+
+### Detail Page Header with Interior Left Nav 
+
+| PROPERTY                     | PX | REM   |
+|------------------------------|----|-------|
+| Height                       | 88 | 5.5   |
+| Height: on scroll            | 64 | 4     |
+| Icon                         | 36 | 2.25  |
+| Spacing: above breadcrumb    | 10 | .625  |
+| Spacing: breadcrumb & title  | 12 | .75   |
+| Spacing: below title         | 14 | .875  |
+| Spacing: icon, title & status| 10 | .625  |
+
+
+![Structure and spacing measurements for Detail Page Header](images/detail-page-header-style-1.png)
+![Detail Page Header on scroll](images/detail-page-header-style-2.png)
+_Structure and spacing measurements for Detail Page Header and Detail Page Header on scroll | px / rem_
+
+
+### Detail Page Header with Tabs
+
+| SPACING                      | PX  | REM  |
+|------------------------------|-----|------|
+| Height                       | 124 | 7.75 |
+| Height: on scroll            | 64  | 4    |
+| Spacing: above breadcrumb    | 12  | .75  |                   
+| Spacing: breadcrumb & title  | 8   | 0.5  |
+| Spacing: title & tabs        | 20  | 1.25 |
+| Spacing: icon, title & status| 10  | .625 |
+
+![Structure and spacing measurements for Detail Page Header with tabs ](images/detail-page-header-style-3.png)
+_Structure and spacing measurements for Detail Page Header with tabs | px / rem_
+
+
+### Detail Page Header for mobile
+
+Please see [Dropdown](#) for additional styling specs.
+
+| SPACING                         | PX  | REM  |
+|---------------------------------|-----|------|
+| Height                          | 116 | 7.25 |
+| Height: on scroll & no tabs     | 64  | 4    |
+| Width                           | Varies based on browser width | |    
+| Spacing: internal sides         | 20  | 1.25 |   
+| Spacing: internal, top & bottom | 12  | .75  |              
+| Spacing: title & dropdown       | 12  | .75  |
+| Spacing: icon, title & status   | 10  | .625 |
+] Icon                            | 36  | 2.25 |
+
+
+![Structure and spacing measurements for Detail Page Header mobile ](images/detail-page-header-style-4.png)
+_Structure and spacing measurements for Detail Page Header with tabs on mobile, Detail Page Header mobile, and Detail Page Header on scroll | px / rem_
+

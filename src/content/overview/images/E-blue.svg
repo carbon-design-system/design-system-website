@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.719092029" y="6.88408927" width="53.0526664" height="53.8230728"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="53.0526664" height="53.8230728" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homapge" transform="translate(-619.000000, -290.000000)">
+            <g id="Lock-Up" transform="translate(494.000000, 158.000000)">
+                <g id="Group-9" transform="translate(125.000000, 132.000000)">
+                    <rect id="Rectangle-17" fill="#5596E6" x="6.71909203" y="0.884089269" width="53.0526664" height="53.8230728"></rect>
+                    <use id="Rectangle-17" stroke="#152935" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

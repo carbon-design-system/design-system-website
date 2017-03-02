@@ -1,8 +1,22 @@
+* {
+  @include reset;
+}
+
 body {
+  @include helvetica;
   background-color: $color__white;
   color: $text-color-dark;
 }
 
 .container {
-  margin-left: $width--side-nav;
+  margin-left: 0;
+  transition: $transition--base ease;
+
+  @include breakpoint('bp--md--major') {
+    margin-left: $width--side-nav;
+  }
+
+  &--expanded {
+    margin-left: 0;
+  }
 }

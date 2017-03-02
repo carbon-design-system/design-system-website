@@ -25,7 +25,16 @@
 
   &__back-btn {
     margin-bottom: 1rem;
-    text-transform: capitalize;
+    background-color: $color__blue-51;
+    color: $color__white;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: $color__blue-40;
+    }
   }
 
   &__back-btn svg {
