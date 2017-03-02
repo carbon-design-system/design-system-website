@@ -1,5 +1,6 @@
 import React from 'react';
 import Colors from './Colors';
+import Iconography from './Iconography';
 import Page from '../../internal/Page';
 
 class Style extends React.Component {
@@ -10,6 +11,9 @@ class Style extends React.Component {
     let content;
     if (paramsName === 'colors') {
       content = <Colors currentPage={this.props.params.page} />;
+    }
+    if (paramsName === 'iconography') {
+      content = <Iconography currentPage={this.props.params.page} />;
     }
     return <Page label="Style" title={title} content={content} />;
   }
