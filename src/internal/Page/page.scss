@@ -91,16 +91,6 @@
     font-size: 1rem;
   }
 
-  a {
-    @include font-smoothing;
-    color: $color__blue-51;
-    font-weight: 600;
-
-    &:hover {
-      color: $color__blue-40;
-    }
-  }
-
   p:first-child {
 
     strong {
@@ -160,7 +150,7 @@
   table {
 
     thead {
-      
+
       tr {
         display: flex;
         justify-content: space-between;

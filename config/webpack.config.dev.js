@@ -44,10 +44,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.(css|scss)$/,
-        loader: 'style!css?importLoaders=1!postcss!sass'
-      },
-      {
         test: /\.js$/,
         include: [
           paths.appSrc,
@@ -57,6 +53,10 @@ module.exports = {
         query: {
           presets: ['es2015', 'react', 'stage-1']
         }
+      },
+      {
+        test: /\.(css|scss)$/,
+        loader: 'style!css?importLoaders=1!postcss!sass'
       },
       {
         test: /\.md$/,

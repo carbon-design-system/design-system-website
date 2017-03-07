@@ -24,15 +24,16 @@ $use-reset: true;
 // Components
 //---------------------------------------------------------------
 
+@import '../internal/Page/page.scss';
 @import '../internal/SideNav/sidenav.scss';
 @import '../internal/ColorCard/colorcard.scss';
 @import '../internal/PageHeader/page-header.scss';
 @import '../internal/PageTabs/page-tabs.scss';
 @import '../internal/CodePage/code-page.scss';
 @import '../internal/ComponentExample/component-example.scss';
+@import '../internal/IconCard/iconcard.scss';
 @import '../internal/CodeExample/code-example.scss';
 @import '../internal/LiveComponent/live-component.scss';
-@import '../internal/Page/page.scss';
 
 @import '../pages/overview/overview.scss';
 @import '../pages/guidelines/guidelines.scss';

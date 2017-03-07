@@ -20,3 +20,13 @@ body {
     margin-left: 0;
   }
 }
+
+a {
+  @include font-smoothing;
+  color: $color__blue-51;
+  font-weight: 600;
+
+  &:hover {
+    color: $color__blue-40;
+  }
+}

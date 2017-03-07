@@ -1,0 +1,94 @@
+.version {
+  display: inline-block;
+  margin-bottom: rem(16px);
+  color: $text-03;
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 45rem;
+}
+
+.iconography .bx--search {
+  width: 100%;
+  max-width: 100%;
+
+  .bx--search__input {
+    background-color: $color__navy-gray-9;
+    margin-bottom: rem(32px);
+    color: $text-01;
+  }
+
+  svg {
+    fill: $text-01;
+    z-index: 2;
+  }
+}
+
+.icon {
+  flex: 1 1 10rem;
+  max-width: 10rem;
+  height: 250px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  h5 {
+    @include letter-spacing;
+    color: $text-01;
+    font-weight: 700;
+    margin-top: rem(16px);
+    margin-bottom: rem(5px);
+  }
+
+  span {
+    @include font-size('12');
+    color: $text-03;
+  }
+}
+
+.icon__card {
+  background: $color__navy-gray-9;
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    .icon__actions {
+      opacity: 1;
+    }
+  }
+}
+
+.icon__actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $brand-02;
+  transition: $transition--base;
+  opacity: 0;
+}
+
+.icon-button {
+  border: 2px solid $text-01;
+  background-color: transparent;
+  min-width: rem(112px);
+  margin: .2rem 0;
+  color: $text-01;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $text-01;
+    color: $inverse-01;
+  }
+}
