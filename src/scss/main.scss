@@ -6,7 +6,7 @@
 // Vendor
 //---------------------------------------------------------------
 
-$use-fonts: true;
+$css--font-face: true;
 $use-reset: true;
 
 @import 'node_modules/@console/bluemix-components/src/globals/scss/styles';
@@ -34,6 +34,12 @@ $use-reset: true;
 @import '../internal/IconCard/iconcard.scss';
 @import '../internal/CodeExample/code-example.scss';
 @import '../internal/LiveComponent/live-component.scss';
+@import '../internal/Page/page.scss';
+@import '../internal/LayerTypes/layer-types.scss';
+@import '../internal/GlossaryNav/glossary-nav.scss';
+@import '../internal/MotionExample/motion-example.scss';
+@import '../internal/TypographyTable/typography-table.scss';
 
 @import '../pages/overview/overview.scss';
 @import '../pages/guidelines/guidelines.scss';
+@import '../pages/component-status/component-status.scss';

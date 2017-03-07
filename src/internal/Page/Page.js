@@ -1,5 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import Markdown from 'react-remarkable';
+import PageTransition from 'react-router-page-transition';
 
 import PageHeader from '../../internal/PageHeader';
 
@@ -30,7 +31,9 @@ class Page extends Component {
           label={label}
           title={title}
         />
-        {pageContent}
+        <PageTransition>
+          {pageContent}
+        </PageTransition>
       </div>
     );
   }

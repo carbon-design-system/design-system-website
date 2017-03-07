@@ -16,7 +16,7 @@ Movement should be slow enough that the user can recognize what's happening, but
 
 **Note:** We use milliseconds instead of seconds to reinforce the importance of subtle interactions.
 
-![](images/motion-1)
+<div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
 
 | TYPE                     | DURATION  |
 |--------------------------|-----------|
@@ -25,11 +25,10 @@ Movement should be slow enough that the user can recognize what's happening, but
 | Panels/modals            | 300-400ms |
 | Page transitions         | 500-700ms |
 
-
 ### Easing
 Strictly linear movement appears strange to the human eye. An animation should accelerate and decelerate smoothly throughout its duration to appear as natural as possible.
 
-![](images/motion-2)
+<div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
 There are three specific easing curves: standard, ease-out, and ease-in.
 
@@ -38,20 +37,19 @@ You can think of “in” and “out” as referring to the side of the curve wh
 **Standard:** cubic-bezier(0.5, 0, 0.1, 1)
 The standard cubic-bezier is used for the majority of animations. Especially when extra context is needed or when an element is removed from the screen but easily accessible (i.e. slide out navigation panel). Acceleration and deceleration occur asymmetrically to feel natural. This means that more emphasis is placed on the end of the curve than at the beginning. In most cases, a user will need greater easing at the end of a movement to allow their eye to register the new state of the element.
 
-![](images/motion-3)
+<div data-insert-component="MotionExample" data-props="standard"></div>
 
 **Ease-out:** cubic-bezier(0, 0, 0.25, 1)
 The ease-out cubic-bezier is used for adding elements to the stage or changing on-screen states at a users' input.
 Ease-out is a much more dramatic curve because it is used for moving elements onto the stage. In which case, the object will slowly come to rest allowing the user to adjust to its arrival.
 
-![](images/motion-4)
-
+<div data-insert-component="MotionExample" data-props="ease-out"></div>
 
 **Ease-in:** cubic-bezier(0.25, 0, 1, 1)
 The ease-in cubic-bezier is used primarily for removing elements from the screen or stage.
 Ease-in does not need as much easing since it is primarily used for objects exiting the stage. Therefore, slow it slightly to allow the user to recognize that it is exiting before speeds out of view.
 
-![](images/motion-5)
+<div data-insert-component="MotionExample" data-props="ease-in"></div>
 
 ### Properties
 The reality of the web is that [some properties](https://csstriggers.com/) are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.

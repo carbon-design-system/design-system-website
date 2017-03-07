@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
+import LayerTypes from './internal/LayerTypes';
 
 //------------------------
 // Main wrapper component
@@ -46,8 +48,38 @@ import Resources from './pages/Resources';
 //------------------------
 import ComponentStatus from './pages/ComponentStatus';
 
+
+const handleRouteChange = () => {
+  const lists = [... document.querySelectorAll('.page ul')];
+  lists.forEach(list => {
+    list.classList.add('bx--list--unordered');
+  });
+  const listItems = [... document.querySelectorAll('.page ul li')];
+  listItems.forEach(item => {
+    item.classList.add('bx--list__item');
+  });
+  const overlayImages = [... document.querySelectorAll('p em img')];
+  const ibmEye = require('./assets/images/ibm-eye.png'); // eslint-disable-line
+  overlayImages.forEach(image => {
+    const overlay = document.createElement('a');
+    overlay.setAttribute('target', '__blank');
+    overlay.setAttribute('href', image.src);
+    overlay.innerHTML = `
+      <img src=${ibmEye} />
+      <p>View at 100%</p>
+    `;
+    overlay.classList.add('image-overlay__overlay');
+    image.parentElement.classList.add('image-overlay');
+    image.parentElement.appendChild(overlay);
+  });
+  const imageSets = [... document.querySelectorAll('p strong img')];
+  imageSets.forEach(image => {
+    image.parentElement.parentElement.classList.add('image-set');
+  });
+};
+
 export default (
-  <Route path="/" component={App}>
+  <Route onChange={handleRouteChange} path="/" component={App}>
     <IndexRoute component={Overview} />
     <Route path="getting-started">
       <IndexRedirect to="/getting-started/designers" />

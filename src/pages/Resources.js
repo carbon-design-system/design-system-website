@@ -1,10 +1,12 @@
 import React from 'react';
+import Page from '../internal/Page';
 
 class Resources extends React.Component {
 
   render() {
+    const content = require('../content/resources/resources.md');
     return (
-      <h1>Resources page here</h1>
+      <Page title="Resources" label="" content={content} />
     );
   }
 }

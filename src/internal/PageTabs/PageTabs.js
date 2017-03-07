@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
-import { Tabs, Tab } from '@console/bluemix-components-react';
+import Tabs from '@console/bluemix-components-react/dist/components/Tabs';
 
 class PageTabs extends Component {
   updateTab = (evt) => {

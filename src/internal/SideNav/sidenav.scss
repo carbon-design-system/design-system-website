@@ -40,6 +40,11 @@
     }
   }
 
+  &__version {
+    padding: 0;
+    font-size: .75rem;
+  }
+
   &__links {
     padding: 0 rem(20px);
     width: 100%;

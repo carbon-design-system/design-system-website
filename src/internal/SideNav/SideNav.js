@@ -7,6 +7,7 @@ import Button from '@console/bluemix-components-react/dist/components/Button';
 
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
+import Packages from '../../../package.json';
 
 class SideNav extends Component {
   static propTypes = {
@@ -72,6 +73,8 @@ class SideNav extends Component {
       'side-nav': true,
       'side-nav__closed': !isOpen,
     });
+    // const version = Packages.dependencies['@console/bluemix-components'];
+    const version = 'Version 7.0.0';
 
     return (
       <div className={classNames}>
@@ -79,7 +82,8 @@ class SideNav extends Component {
           <span></span>
         </button>
         <Link to="/" className="side-nav__logo">
-          Carbon <span>Design System</span>
+          Carbon <span>Design System</span><br />
+          <span className="side-nav__version">{version}</span>
         </Link>
         <ul className="side-nav__main-nav">
           {navItems}
@@ -87,7 +91,7 @@ class SideNav extends Component {
         <div className="side-nav__links">
           <Button
             href="https://github.ibm.com/Bluemix/design-kit"
-            className="side-nav__link"
+            className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"
             iconDescription="sidenav link icon"
@@ -95,7 +99,7 @@ class SideNav extends Component {
           </Button>
           <Button
             href="https://github.ibm.com/Bluemix/bluemix-components"
-            className="side-nav__link"
+            className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"
             iconDescription="sidenav link icon"

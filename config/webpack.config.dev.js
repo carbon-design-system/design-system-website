@@ -9,7 +9,7 @@ var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeMod
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
-
+var path = require('path');
 var publicPath = '/';
 var publicUrl = '';
 var env = getClientEnvironment(publicUrl);
@@ -51,12 +51,13 @@ module.exports = {
         ],
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'react', 'stage-1']
+          presets: ['es2015', 'react', 'stage-0'],
+          plugins: ['transform-inline-environment-variables', 'minify-dead-code-elimination'],
         }
       },
       {
-        test: /\.(css|scss)$/,
-        loader: 'style!css?importLoaders=1!postcss!sass'
+        test: /\.scss$/,
+        loader: 'style!css?importLoaders=1!postcss!sass',
       },
       {
         test: /\.md$/,
@@ -93,6 +94,9 @@ module.exports = {
         loader: 'html'
       }
     ]
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, '..', 'node_modules')],
   },
   postcss: () => {
     return [

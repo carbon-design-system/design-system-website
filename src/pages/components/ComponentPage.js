@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Markdown from 'react-remarkable';
 import { browserHistory } from 'react-router';
-import { Tabs, Tab } from '@console/bluemix-components-react';
+import Tabs from '@console/bluemix-components-react/dist/components/Tabs';
+import Tab from '@console/bluemix-components-react/dist/components/Tab';
 
 import PageHeader from '../../internal/PageHeader';
 import CodePage from '../../internal/CodePage';

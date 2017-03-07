@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import PageTransition from 'react-router-page-transition';
 import SideNav from '../internal/SideNav';
 
 class App extends Component {
@@ -13,8 +14,7 @@ class App extends Component {
 
   componentDidMount() {
     this.checkWidth();
-    this.findImages();
-    this.addBxClasses();
+    // this.addBxClasses();
   }
 
   onToggleBtnClick = () => {
@@ -32,9 +32,6 @@ class App extends Component {
     listItems.forEach(item => {
       item.classList.add('bx--list__item');
     });
-  }
-
-  findImages = () => {
     const overlayImages = [... document.querySelectorAll('p em img')];
     const ibmEye = require('../assets/images/ibm-eye.png'); // eslint-disable-line
     overlayImages.forEach(image => {
@@ -87,10 +84,10 @@ class App extends Component {
     );
 
     return (
-      <div className="wrapper">
+      <div className="wrapper" onLoad={this.initCustomComponents}>
         {sideNavContent}
         <div className={classNames}>
-          {this.props.children}
+            {this.props.children}
         </div>
       </div>
     );

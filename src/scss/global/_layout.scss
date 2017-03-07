@@ -1,11 +1,12 @@
-* {
-  @include reset;
-}
-
 body {
+  @include reset;
   @include helvetica;
   background-color: $color__white;
   color: $text-color-dark;
+
+  hr {
+    display: none;
+  }
 }
 
 .container {

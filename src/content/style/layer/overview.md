@@ -1,9 +1,9 @@
 
-Layer is the surface on which content and components live. It is a visual motif used to create groupings and associations between content as well as heirarchy and focus through depth.
+**_Layer_ is the surface on which content and components live. It is a visual motif used to create groupings and associations between content as well as heirarchy and focus through depth.**
 
 ## Layer types
 
-<example image>
+<div data-insert-component="LayerTypes"></div>
 
 LAYER NAME | ELEVATION | BOX-SHADOW
 -------------------|--------------|-----------------
@@ -30,7 +30,6 @@ LAYER NAME | ELEVATION | BOX-SHADOW
 - Content on a layer is bound by the edges of the layer container. Content cannot cross boundaries of the layer.
 - Borders are the only over arching limitation of the content on layer, however limitations on the content per component may occur. See individual components for more details.
 
-
 ## Elevation
 Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intenisty and depth of the shadow it casts. 
 
@@ -39,5 +38,6 @@ The range of imagined plains in the UI are on a scale from 0 to 24, with zero be
 
 Each layer is a defined marker along the elevation scale. There is not a layer for each level of the scale.
 
-< diagram >
+![Layer elevation](images/layer-elevation-604.png)
+
 

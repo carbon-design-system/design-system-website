@@ -1,31 +1,22 @@
-**Grid systems** are used for creating page layouts through a series of rows and columns that house your content. Carbon uses a responsive, mobile first, fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.
-
+**Grid systems are used for creating page layouts through a series of rows and columns that house your content. Carbon uses a responsive, mobile first, fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.**
 
 ## Basic structure
 
-**1440px**
-
-![1440px grid](images/grids-1.png)
-
-**786px**
-
-![786px grid](images/grids-2.png)
-
-**320px**
-
-![320px grid](images/grids-3.png)
+**
+![1440px grid](images/grid-1.png)
+![786px grid](images/grid-2.png)
+![320px grid](images/grid-3.png)
+**
 
 **Key:**
 Columns / Gutter / Margins
-
 
 ### Grid with interior left navigation
 The interior left navigation lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
 
 **Grid area with left navigation: page width minus 200px from left edge.**
 
-![Interior left nav grid](images/grids-4.png)
-
+![Interior left nav grid](images/grid-4.png)
 
 ## How it works
 ### Gutters
@@ -42,10 +33,9 @@ This can translate to percentages of the twelve columns. Using this method, a de
 
 **Column count: 12**
 
-![Interior left nav grid](images/grids-5.png)
+![Interior left nav grid](images/grid-5.png)
 
 _@1440px - 12 Columns / 20px Gutters / 5% Margins_
-
 
 ### Margins
 The twelve column grid does not have a maximum width. It has a width of 100%, with built in margins that create padding between column count and the edges of the viewport.
@@ -60,13 +50,11 @@ In devices with a screen width greater than 768px, the margins are 5% on the lef
 
 In devices with a screen width less than 768px, the margins are 3% on the left, and 3% on the right.
 
-
 **Example: Screen Width 320px**
 
 * 3% left = 10px (rounded to nearest whole pixel)
 * 3% right = 10px (rounded to nearest whole pixel)
 * 12 columns + gutters = 320px - 10px - 10px = 300px (rounded to nearest whole pixel)
-
 
 ### Breakpoints
 

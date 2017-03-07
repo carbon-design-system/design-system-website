@@ -24,3 +24,23 @@ Use this syntax for overlay images:
 _
 ![image alt text](images/image.png)
 _
+
+Use this syntax for Do's and Don't lists:
+
+---
+***
+![green-check](images/green-check.png)
+**Do:**
+
+“The API returns a promise.”
+
+---
+***
+![red-x](images/red-x.png)
+**Don't:**
+
+> “The API will return a promise.”
+
+Add custom component by adding this div:
+
+<div data-insert-component="ComponentName"></div>

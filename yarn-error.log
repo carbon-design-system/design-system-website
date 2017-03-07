@@ -1,4 +1,13 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 Arguments:
+=======
+Arguments: 
+<<<<<<< HEAD
+>>>>>>> started setting up environment
+=======
+Arguments:
+>>>>>>> added eslint and tested out routes:
   /Users/marijohannessen/.nvm/versions/node/v6.9.1/bin/node /Users/marijohannessen/.nvm/versions/node/v6.9.1/bin/yarn add copy-webpack-plugin
 
 PATH:
@@ -5638,7 +5647,16 @@ Lockfile:
       decamelize "^1.0.0"
       window-size "0.1.0"
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 Trace:
+=======
+Trace: 
+<<<<<<< HEAD
+>>>>>>> started setting up environment
+=======
+Trace:
+>>>>>>> added eslint and tested out routes:
   Error: http://console-npm.ng.bluemix.net/@console%2fbluemix-icons/-/bluemix-icons-3.2.0.tgz: invalid tar file
       at Extract.Parse._startEntry (/Users/marijohannessen/.nvm/versions/node/v6.9.1/lib/node_modules/yarn/node_modules/tar/lib/parse.js:149:13)
       at Extract.Parse._process (/Users/marijohannessen/.nvm/versions/node/v6.9.1/lib/node_modules/yarn/node_modules/tar/lib/parse.js:131:12)

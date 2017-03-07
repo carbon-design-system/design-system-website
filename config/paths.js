@@ -42,5 +42,6 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   ownNodeModules: resolveApp('node_modules'),
   bluemixComponents: resolveApp('node_modules/@console/bluemix-components'),
+  bluemixReactComponents: resolveApp('node_modules/@console/bluemix-components-react'),
   nodePaths: nodePaths
 };

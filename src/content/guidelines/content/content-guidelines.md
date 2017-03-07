@@ -1,5 +1,6 @@
 ## Capitalization
-![capitalization](images/content-guidelines-6.png)
+
+<img alt="capitalization" src="images/content-guidelines-6.png" class="content-page__cap-letter" />
 Good content design is consistent and coherent so that users can trust and predict how to interact with it. Details matter.
 
 Always capitalize proper names, such as United States. Use ALL CAPS for abbreviations, acronyms, and initials (for example, IBM and ASCII) and two-letter abbreviations (for example, AL, AK, and AZ), and for OK.
@@ -38,58 +39,81 @@ Use headline-style capitalization for table/grid column headers and product name
 * whether
 * while
 
-
 **Do not capitalize the initial letter of the following words:**
 
 * Articles, except as the first word
 * Coordinating conjunctions
 * Prepositions, except as the first or last word
 
-
-
 ## Do's & Dont's
 These guidelines apply for developers and writers working with the Bluemix UI and documentation.
 
-### Do use simple tense.
-![do use simple tense](images/content-guidelines-1.png)
+---
+***
+### **Do use simple tense.** ![Do use simple tense](images/content-guidelines-1.png)
 
 Use simple verbs and tenses, and keep sentences concise, simple, friendly, and punchy. Focus on the user's context and make content relevant. The more familiar you are with their context, the better you can communicate without using a lot of words.
 
 If you need to use past or future tense, avoid verb tenses with the words have, has, had, been, should, would, and will.
 
+---
+***
+![green-check](images/green-check.png)
 **Future tense:**
+
 “The API returns a promise.”
 
-x **Future tense:**
-“The API will return a promise.”
+---
+***
+![red-x](images/red-x.png)
+**Future tense:**
 
+> “The API will return a promise.”
 
+---
+***
+![green-check](images/green-check.png)
 **Past tense:**
+
 “The limit has been exceeded.”
 
-x **Past tense:**
-“The limit was exceeded.”
+---
+***
+![red-x](images/red-x.png)
+**Past tense:**
 
-### Do use active voice.
-![do use active voice](images/content-guidelines-2.png)
+> “The limit was exceeded.”
+
+---
+***
+### **Do use active voice.** ![Do use active voice](images/content-guidelines-2.png)
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
+---
+***
+![green-check](images/green-check.png)
 **Active voice:**
+
 “In the Limits window, specify the minimum and maximum values.”
 
-x **Passive voice:**
-“The Limits window is used to specify the minimum and maximum values.”
+---
+***
+![red-x](images/red-x.png)
+**Passive voice:**
 
+> “The Limits window is used to specify the minimum and maximum values.”
 
-### Do use second person.
-![do use second person](images/content-guidelines-3.png)
+---
+***
+### **Do use second person.** ![Do use second person](images/content-guidelines-3.png)
 
 Engage your readers by using second person **(you, your)**. First person (I, we, our) focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
 One exception to this is in the case of possessive adjectives in the UI. You can use first person in headings or labels that are very specific to the user or customer data, for example “My Account” or “My Usage.” In explanatory text for the heading or label, switch to second person, for example _“Your usage is calculated from the 1st day of the month.”_
 
-### Don't be too formal or stuffy.
-![don't be too formal or stuffy](images/content-guidelines-4.png)
+---
+***
+### **Don't be too formal <br> or stuffy.** ![Don't be too formal or stuffy](images/content-guidelines-4.png)
 
 * Do not be afraid to use contractions once in a while. Decide whether they fit the context.
 * Occasionally begin sentences with **and, but or so.** This usage allows for shorter, scannable sentences. Do not overuse these devices, especially in instructional (steps) content.
@@ -97,32 +121,64 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 * Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: **_“Do you want to close without saving?”_**
 * Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
+---
+***
+![green-check](images/green-check.png)
+**Exclamation points:**
 
-**Exclamation points**: “Your IBM Bluemix account is ready!”
+“Your IBM Bluemix account is ready!”
 
+---
+***
+![red-x](images/red-x.png)
+**Exclamation points:**
 
-x **Exclamation points**: “You've reached your usage limit!”
+> “You've reached your usage limit!”
 
-
-### Don't be overly mannerly.
-![don't be overly mannerly](images/content-guidelines-5.png)
+---
+***
+### **Don't be overly mannerly.** ![Don't be overly mannerly](images/content-guidelines-5.png)
  
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
-Use please in a UI only when the user is being inconvenienced.
+Use **please** in a UI only when the user is being inconvenienced.
 
-**Using please**: “Indexing might take a few minutes. Please wait.”
+---
+***
+![green-check](images/green-check.png)
+**Using Please:**
+
+“Indexing might take a few minutes. Please wait.”
 
 Instead of using “may,” use “can” to indicate ability or use “might” to indicate possibility.
 
+---
+***
+![green-check](images/green-check.png)
+**Ability:**
 
-**Ability**: “You can use the command line interface to update your app.”
+“You can use the command line interface to update your app.”
 
-x **Ability**: “You may use the command line interface to update your app.”
+---
+***
+![red-x](images/red-x.png)
+**Ability:**
 
-**Possibility**: “You might need more advanced features when you're integrating with another app.”
+> “You may use the command line interface to update your app.”
 
-x **Permission**: “You may need more advanced features when you're integrating with another app.”
+---
+***
+![green-check](images/green-check.png)
+**Possibility:**
+
+“You might need more advanced features when you're integrating with another app.”
+
+---
+***
+![red-x](images/red-x.png)
+**Permission:**
+
+> “You may need more advanced features when you're integrating with another app.”
 
 
 
