@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import PageTransition from 'react-router-page-transition';
 import SideNav from '../internal/SideNav';
 
 class App extends Component {
