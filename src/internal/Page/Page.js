@@ -1,9 +1,7 @@
 import React, { PropTypes, Component } from 'react';
-import ReactDOM from 'react-dom';
 import Markdown from 'react-remarkable';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-light.css';
-import ImageGrid from '../ImageGrid';
 import PageHeader from '../../internal/PageHeader';
 
 class Page extends Component {
@@ -15,7 +13,6 @@ class Page extends Component {
 
   componentDidMount() {
     this.updateClasses();
-    // this.addCustomComponent();
   }
 
   componentDidUpdate() {
@@ -23,43 +20,22 @@ class Page extends Component {
   }
 
   updateClasses = () => {
-    const codeBlocks = [... document.querySelectorAll('pre')];
-    codeBlocks.forEach(block => {
-      block.classList.add('bx--snippet', 'bx--snippet--code');
-      hljs.highlightBlock(block.querySelector('code'));
-    });
-    const firstIntro = document.querySelector('div span p strong');
-    firstIntro.parentElement.style.marginBottom = '5rem';
-    const linkButtons = [... document.querySelectorAll('hr')];
-    linkButtons.forEach(sibling => {
-      if (sibling.nextElementSibling.tagName === 'P') {
-        if (sibling.nextElementSibling.querySelector('a')) {
-          sibling.nextElementSibling.querySelector('a').classList.add('bx--btn', 'bx--btn--secondary');
-        }
-      }
-    });
+    // const codeBlocks = [... document.querySelectorAll('pre')];
+    // codeBlocks.forEach(block => {
+    //   block.classList.add('bx--snippet', 'bx--snippet--code');
+    //   hljs.highlightBlock(block.querySelector('code'));
+    // });
+    // const firstIntro = document.querySelector('div span p strong');
+    // firstIntro.parentElement.style.marginBottom = '5rem';
+    // const linkButtons = [... document.querySelectorAll('hr')];
+    // linkButtons.forEach(sibling => {
+    //   if (sibling.nextElementSibling.tagName === 'P') {
+    //     if (sibling.nextElementSibling.querySelector('a')) {
+    //       sibling.nextElementSibling.querySelector('a').classList.add('bx--btn', 'bx--btn--secondary');
+    //     }
+    //   }
+    // });
   }
-
-  // addCustomComponent = () => {
-  //   const customComponents = {
-  //     ImageGrid,
-  //   };
-
-  //   const insertComponent = [... document.querySelectorAll('[data-insert-component]')];
-  //   insertComponent.forEach(component => {
-  //     const comp = component.dataset.insertComponent;
-  //     const NewComponent = customComponents[comp];
-  //     let props;
-  //     if (component.dataset.props) {
-  //       props = component.dataset.props.split(',');
-  //     }
-  //     component.classList.add('custom-component-parent');
-  //     ReactDOM.render(
-  //       <NewComponent images={props} />,
-  //       component
-  //     );
-  //   });
-  // }
 
   render() {
     const {

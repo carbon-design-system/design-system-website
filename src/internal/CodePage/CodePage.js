@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import ComponentExample from '../ComponentExample/ComponentExample';
+import '@console/bluemix-components/src/index.js';
 
 class CodePage extends Component {
   static propTypes = {
@@ -27,6 +28,7 @@ class CodePage extends Component {
   }
 
   render() {
+    const svgSprite = require('@console/bluemix-icons/sprite.svg');
     const component = this.props.component;
     const componentInfo = require(`../../data/components/${component}.js`); // eslint-disable-line
     const description = componentInfo.desc;
@@ -50,6 +52,7 @@ class CodePage extends Component {
 
     return (
       <div className="page code-page">
+        {svgSprite}
         <p className="page__desc" dangerouslySetInnerHTML={{ __html: description }} />
         {componentContent}
         {javascriptContent}

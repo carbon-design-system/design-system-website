@@ -139,10 +139,12 @@ RGB 65 214 195
 * Understand color associations across cultures.
 
 
-## Brand colors
+## Brand fonts
 Helvetica Neue is the official Bluemix font as well as one of the official fonts of the greater IBM Brand. Helvetica Neue should be used whenever possible.
 
-[type scale shown here]
+# **Helvetica Neue Bold**
+# Helvetia Neue Roman
+# Helvetica Neue Light
 
 ## Parent brands
 Bluemix falls under two parent brands, [IBM Cloud](http://www.ibm.com/cloud-computing/) and [IBM Design.](https://www.ibm.com/design/) IBM Cloud is the product and business ecosystem in which Blumeix lives. IBM Design is the greater [design language](https://www.ibm.com/design/language/) and practices we use to design and develop Bluemix.

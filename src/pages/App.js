@@ -24,14 +24,6 @@ class App extends Component {
   }
 
   addBxClasses = () => {
-    const lists = [... document.querySelectorAll('.page ul')];
-    lists.forEach(list => {
-      list.classList.add('bx--list--unordered');
-    });
-    const listItems = [... document.querySelectorAll('.page ul li')];
-    listItems.forEach(item => {
-      item.classList.add('bx--list__item');
-    });
     const overlayImages = [... document.querySelectorAll('p em img')];
     const ibmEye = require('../assets/images/ibm-eye.png'); // eslint-disable-line
     overlayImages.forEach(image => {

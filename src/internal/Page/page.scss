@@ -134,7 +134,7 @@
       }
 
       p {
-        max-width: rem(600px);
+        max-width: 38rem;
         line-height: 1.75;
       }
 
@@ -171,7 +171,7 @@
       pre:not(.code-example__snippet) {
         margin: 0 0 1rem;
         width: 100%;
-        max-width: rem(600px);
+        max-width: 38rem;
 
         code {
           font-size: .875rem;
@@ -188,7 +188,7 @@
 
       table {
         width: 100%;
-        max-width: 45rem;
+        max-width: 38rem;
         margin-bottom: 1.5rem;
 
         thead {
@@ -242,7 +242,7 @@
         margin-left: 1.5rem;
         margin-bottom: 1rem;
         line-height: 1.75;
-        max-width: rem(600px);
+        max-width: 38rem;
 
         li {
           font-weight: 400;

@@ -27,8 +27,8 @@ class LiveComponent extends Component {
       component,
     } = this.props;
     const content = require(`../../data/components/${component}.js`); // eslint-disable-line
-    const variations = content[0].variations;
-    const variationContent = content[0].variations ?
+    const variations = content.variations;
+    const variationContent = content.variations ?
       (
         Object.keys(variations).map((variation) => this.renderVariation(variation))
       ) :
@@ -37,7 +37,7 @@ class LiveComponent extends Component {
 
     return (
       <div className="live-component">
-        <Link to={`/components/${component}/foundation`} className="bx--btn live-component__back-btn">
+        <Link to={`/components/${component}/code`} className="bx--btn live-component__back-btn">
           <Icon className="live-component__back-btn--icon" name="arrow--left" description="Back button icon" />
           {componentTitle} code page
         </Link>
