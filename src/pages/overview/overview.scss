@@ -1,9 +1,13 @@
 .overview-page {
-  background-color: $color__gray-3;
-  height: 100vh;
+  @include reset;
+  @include grid-padding;
+  background-color: $color__white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
 
   &__top-banner {
-    background-color: $color__white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,6 +15,7 @@
     padding: 3rem 3%;
     width: 100%;
     transition: $transition--base ease;
+    border-bottom: 1px solid $color__gray-1;
 
     @include breakpoint('bp--sm--major') {
       height: rem(640px);
@@ -81,5 +86,73 @@
   }
 
   &__content {
+    @include helvetica;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: rem(704px);
+    padding-top: 8rem;
+
+    .overview-page__main-intro {
+      width: 100%;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .overview-page__main-intro--icon {
+      margin-right: 2rem;
+    }
+
+    .overview-page__main-intro--text {
+      font-size: rem(18px);
+      font-weight: 700;
+      line-height: 1.75;
+      width: 100%;
+    }
+
+    .overview-page__main-intro--link {
+      margin-top: 1.5rem;
+    }
+
+    .overview-page__tiles {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      @include breakpoint('1440px') {
+        flex-direction: row;
+      }
+    }
+
+    .overview-page__tile {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+
+      @include breakpoint('620px') {
+        flex: 1;
+        margin-right: 2rem;
+      }
+    }
+
+    .overview-page__tile--icon {
+      margin-right: 2rem;
+    }
+
+    .overview-page__tile--heading {
+      font-weight: 700;
+    }
+
+    .overview-page__tile--text {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
   }
 }

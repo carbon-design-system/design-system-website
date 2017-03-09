@@ -82,9 +82,9 @@ class SideNav extends Component {
           <span></span>
         </button>
         <Link to="/" className="side-nav__logo">
-          Carbon <span>Design System</span><br />
-          <span className="side-nav__version">{version}</span>
+          Carbon <span>Design System</span>
         </Link>
+        <a href="https://github.ibm.com/Bluemix/bluemix-components/releases" className="side-nav__version">{version}</a>
         <ul className="side-nav__main-nav">
           {navItems}
         </ul>

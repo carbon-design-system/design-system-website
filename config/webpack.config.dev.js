@@ -10,6 +10,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
 var path = require('path');
+
 var publicPath = '/';
 var publicUrl = '';
 var env = getClientEnvironment(publicUrl);
@@ -56,7 +57,7 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         loader: 'style!css?importLoaders=1!postcss!sass',
       },
       {
@@ -94,9 +95,6 @@ module.exports = {
         loader: 'html'
       }
     ]
-  },
-  sassLoader: {
-    includePaths: [path.resolve(__dirname, '..', 'node_modules')],
   },
   postcss: () => {
     return [

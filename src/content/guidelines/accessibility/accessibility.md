@@ -10,6 +10,7 @@ Use natively-accessible elements in navigation to activate links, buttons, and f
 
 Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
 
+
 [WebAIM](http://webaim.org/techniques/skipnav/) recommends the following to enable a “Skip to content ”link.
 
 ```
@@ -17,6 +18,8 @@ Provide a “Skip to content” option when there is lengthy navigation so a use
     <a href="#maincontent">Skip to main content</a>
     ...
     <main id="maincontent>
-    <h1>Heading</h1>
-    <p>This is the first paragraph</p>
+        <h1>Heading</h1>
+        <p>This is the first paragraph</p>
+    </main>
+</body>
 ```

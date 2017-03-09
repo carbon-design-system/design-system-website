@@ -14,8 +14,6 @@ Motion should be used with discretion—a little bit goes a long way. When appli
 ### Duration
 Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
 
-**Note:** We use milliseconds instead of seconds to reinforce the importance of subtle interactions.
-
 <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
 
 | TYPE                     | DURATION  |

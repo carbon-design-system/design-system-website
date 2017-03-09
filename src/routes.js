@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
-import LayerTypes from './internal/LayerTypes';
 
 //------------------------
 // Main wrapper component

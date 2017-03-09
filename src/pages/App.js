@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import SideNav from '../internal/SideNav';
+import '../scss/main.scss';
 
 class App extends Component {
   static propTypes = {
@@ -86,7 +87,7 @@ class App extends Component {
       <div className="wrapper" onLoad={this.initCustomComponents}>
         {sideNavContent}
         <div className={classNames}>
-            {this.props.children}
+          {this.props.children}
         </div>
       </div>
     );

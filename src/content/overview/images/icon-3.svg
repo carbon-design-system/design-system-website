@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="63px" viewBox="0 0 64 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="29.7674419" cy="32.744186" r="29.7674419"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="59.5348837" height="59.5348837" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homapge---1440px" transform="translate(-831.000000, -1081.000000)">
+            <g id="Group-2" transform="translate(831.000000, 1081.000000)">
+                <g id="Group">
+                    <ellipse id="Oval-47-Copy-12" fill="#F0F3F6" cx="34.2325581" cy="29.7674419" rx="29.7674419" ry="29.7674419"></ellipse>
+                    <use id="Oval-47-Copy-12" stroke="#3D70B2" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+                <g id="code_32" transform="translate(19.000000, 26.000000)" fill="#3D70B2">
+                    <polygon id="Shape" points="5.79127209 -1.15463195e-14 6.21724894e-15 6 5.79127209 12 8 9.71135689 4.41901787 6 8 2.28864311"></polygon>
+                    <polygon id="Shape" points="18.2087279 -1.15463195e-14 16 2.28864311 19.5809821 6 16 9.71135689 18.2087279 12 24 6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

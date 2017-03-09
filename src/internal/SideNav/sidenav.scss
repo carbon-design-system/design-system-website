@@ -24,6 +24,7 @@
   }
 
   &__logo {
+    width: 100%;
     display: inline-block;
     color: $color__blue-90;
     font-size: rem(16px);
@@ -32,7 +33,6 @@
     line-height: 1.2;
     margin-top: 2rem;
     white-space: nowrap;
-    margin-bottom: 2rem;
     padding: 0 rem(20px);
 
     span {
@@ -41,8 +41,19 @@
   }
 
   &__version {
-    padding: 0;
-    font-size: .75rem;
+    display: inline-block;
+    width: 100%;
+    font-size: rem(11px);
+    padding: 0 rem(20px);
+    margin-top: .25rem;
+    margin-bottom: rem(16px);
+    text-decoration: none;
+    color: $color__navy-gray-6;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__links {

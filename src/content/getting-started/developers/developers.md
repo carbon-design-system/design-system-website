@@ -2,7 +2,7 @@
 
 
 ## Installing
-There are a few ways to get started. Before installing Carbon Components, make sure you set up your [SSH key on GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/) You may also need to set up your SSH key on **Jenkins** or **Travis** if you use those for continuous integration or deployment.
+There are a few ways to get started. Before installing Carbon Components, make sure you set up your [SSH key on GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/). You may also need to set up your SSH key on **Jenkins** or **Travis** if you use those for continuous integration or deployment.
 
 ### npm
 Carbon Components is published to a private npm registry maintained by Bluemix Ops Console team.

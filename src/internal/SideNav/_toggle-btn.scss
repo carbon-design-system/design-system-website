@@ -19,7 +19,7 @@
   span:before,
   span:after {
     @include reset;
-    height: rem(1px);
+    height: rem(1.5px);
     width: 1rem;
     cursor: pointer;
     position: absolute;

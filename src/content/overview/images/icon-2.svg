@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="63px" viewBox="0 0 64 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="29.7674419" cy="32.744186" r="29.7674419"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="59.5348837" height="59.5348837" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homapge---1440px" transform="translate(-452.000000, -1081.000000)">
+            <g id="Group" transform="translate(452.000000, 1081.000000)">
+                <ellipse id="Oval-47-Copy-12" fill="#F0F3F6" cx="34.2325581" cy="29.7674419" rx="29.7674419" ry="29.7674419"></ellipse>
+                <use id="Oval-47-Copy-12" stroke="#3D70B2" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                <g id="edit--glyph" transform="translate(22.000000, 24.000000)" fill="#3D70B2">
+                    <rect id="Rectangle-path" transform="translate(7.511645, 8.413935) rotate(-45.000000) translate(-7.511645, -8.413935) " x="1.86169918" y="6.31395514" width="11.2998916" height="4.19995972"></rect>
+                    <rect id="Rectangle-path" transform="translate(13.521000, 2.508900) rotate(-45.000000) translate(-13.521000, -2.508900) " x="12.1210134" y="0.408920139" width="2.79997315" height="4.19995972"></rect>
+                    <polygon id="Shape" points="0 16 3 15 1 13"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

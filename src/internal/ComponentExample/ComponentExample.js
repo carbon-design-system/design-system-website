@@ -17,7 +17,9 @@ class ComponentExample extends Component {
     return (
       <div className="component-example">
         <div className="component-example__live">
-          <div className="component-example__live--rendered" dangerouslySetInnerHTML={{ __html: htmlFile }} />
+          <div className="component-example__live--rendered">
+            <div dangerouslySetInnerHTML={{ __html: htmlFile }} />
+          </div>
           <Link
             className="component-example__view-full-render"
             to={`/components/${component}/live`}

@@ -1,11 +1,12 @@
-Brand is the unified experience the Bluemix identity and purpose. It is more than what Bluemix looks like, it is who we are. Brand is how Bluemix users perceive it and what it feels like when they interact with the product.
+**_Brand_ is the unified experience the Bluemix identity and purpose. It is more than what Bluemix looks like, it is who we are. Brand is how Bluemix users perceive it and what it feels like when they interact with the product.**
 
 ## Bluemix logo
 ![Bluemix logo](images/bluemix-1.0.svg) 
 
 The Bluemix logo is the most prominent visual element associated with our identity. The logo is a combination of the icon and wordmark. We are proud of our logo and recommend the following guidelines on this page.
 
-[Bluemix logo assets]()
+***
+[Bluemix logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
 
 ### Wordmark
 When using the workmark as a stand alone element, "IBM" should always be typeset in Helvetica Neue Light and "Bluemix" should always be typeset in Helvetica Neue Bold.
@@ -19,47 +20,41 @@ When using the workmark as a stand alone element, "IBM" should always be typeset
 ### Icon
 The Bluemix icon may be used on its own in cases where the Bluemix brand has already been established. Use the primary version when possible. However, use one of the following alternative icons if there are technical restraints:
 
-![Primary light background](images/bluemix-2.svg)
+<div class="image-grid">
+  <div>
+    ![Primary light background](images/bluemix-2.svg)
+    **Primary icon**
+    Light Background
+  </div>
+  <div class="dark-bg">
+    ![Primary dark background](images/bluemix-3.svg)
+    **Primary icon**
+    Dark Background
+  </div>
+</div>
 
-**Primary** 
-
-Light Background
-
-
-![Primary dark background](images/bluemix-3.svg)
-
-**Primary** 
-
-Dark Background
-
-
-![Decorative light background](images/bluemix-4.svg) 
-
-**Decorative** 
-
-Light Background
-
-
-
-![Decorative dark background](images/bluemix-5.svg)
-
-**Decorative** 
-
-Dark Background
-
-
-![One-color solid light background](images/bluemix-6.svg)
-
-**One-color solid** 
-
-Light Background
-
-
-![One-color solid dark background](images/bluemix-7.svg)
-
-**One-color solid** 
-
-Dark Background
+<div class="image-grid">
+  <div>
+    ![Decorative light background](images/bluemix-4.svg) 
+    **Decorative** 
+    Light Background
+  </div>
+  <div class="dark-bg">
+    ![Decorative dark background](images/bluemix-5.svg)
+    **Decorative** 
+    Dark Background
+  </div>
+  <div>
+    ![One-color solid light background](images/bluemix-6.svg)
+    **One-color solid** 
+    Light Background
+  </div>
+  <div class="dark-bg">
+    ![One-color solid dark background](images/bluemix-7.svg)
+    **One-color solid** 
+    Dark Background
+  </div>
+</div>
 
 ## Logo usage
 
@@ -80,43 +75,40 @@ The space between the icon and wordmark is determined by the trajectory of the o
 
 In order to maintain consistency, the logo should never be modified, transformed or reinterpreted. Below are examples of what not to do:
 
-
-![logo misuse example1](images/bluemix-9.svg)
-
-**Do not** use the old wordmark with a capital "M".
-
-
-![logo misuse example2](images/bluemix-10.png)
-
-**Do not** change the general appearance of the logo (no drop-shadows, feather, glow or other effects).
-
-
-![logo misuse example3](images/bluemix-11.svg)
-
-**Do not** change the wordmark typeface or font weight.
-
-![logo misuse example1](images/bluemix-12.svg)
-
-**Do not** skew or disproportionally scale the logo.
-
-
-![logo misuse example4](images/bluemix-13.svg)
-
-**Do not** change the size relationship of the icon and wordmark.
-
-![logo misuse example5](images/bluemix-14.svg)
-
-**Do not** invert the positioning of the icon and wordmark
-
-![logo misuse example6](images/bluemix-15.svg)
-
-**Do not** use any other colors in the logo or icon other than the ones defined.
-
-![logo misuse example7](images/bluemix-16.png)
-
-**Do not** place the logo on busy backgrounds that make it hard to distinguish.
-
-
+<div class="image-grid donts">
+  <div>
+    ![logo misuse example1](images/bluemix-9.svg)
+    ![red-x](images/red-x.png) **Do not** use the old wordmark with a capital "M".
+  </div>
+  <div>
+    ![logo misuse example2](images/bluemix-10.png)
+    ![red-x](images/red-x.png) **Do not** change the general appearance of the logo (no drop-shadows, feather, glow or other effects).
+  </div>
+  <div>
+    ![logo misuse example3](images/bluemix-11.svg)
+    ![red-x](images/red-x.png) **Do not** change the wordmark typeface or font weight.
+  </div>
+  <div>
+    ![logo misuse example4](images/bluemix-12.svg)
+    ![red-x](images/red-x.png) **Do not** skew or disproportionally scale the logo.
+  </div>
+  <div>
+    ![logo misuse example5](images/bluemix-13.svg)
+    ![red-x](images/red-x.png) **Do not** change the size relationship of the icon and wordmark.
+  </div>
+  <div>
+    ![logo misuse example6](images/bluemix-14.svg)
+    ![red-x](images/red-x.png) **Do not** invert the positioning of the icon and wordmark
+  </div>
+  <div>
+    ![logo misuse example7](images/bluemix-15.svg)
+    ![red-x](images/red-x.png) **Do not** use any other colors in the logo or icon other than the ones defined.
+  </div>
+  <div>
+    ![logo misuse example8](images/bluemix-16.png)
+    ![red-x](images/red-x.png) **Do not** place the logo on busy backgrounds that make it hard to distinguish.
+  </div>
+</div>
 
 ## Brand colors
 Primary Bluemix brand colors are IBM Design Blue 30, Blue 80 and Teal 30. These colors directly correlate with the Bluemix identity. While we have other colors in our broader UI and communication palette, these three colors should be the most prominent outward-facing brand colors.

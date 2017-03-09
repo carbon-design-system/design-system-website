@@ -1,5 +1,4 @@
 body {
-  @include reset;
   @include helvetica;
   background-color: $color__white;
   color: $text-color-dark;
@@ -30,4 +29,8 @@ a {
   &:hover {
     color: $color__blue-40;
   }
+}
+
+.img-2x1 {
+  display: flex;
 }
