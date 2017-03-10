@@ -6,7 +6,7 @@ export const iconSymbols = () => {
       const iconId = icon.querySelector('span').innerHTML;
       const svgCode =
 `<svg class="your-class">
-<use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg${iconId}"></use>
+<use xlink:href="https://new-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg${iconId}"></use>
 </svg>`;
       icon.querySelector('.icon__button').setAttribute('data-clipboard-text', svgCode);
     });

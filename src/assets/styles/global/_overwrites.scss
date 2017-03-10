@@ -96,8 +96,11 @@ form {
 
 .bx--inline-left-nav {
   position: static;
-  min-height: 40rem;
-  height: auto;
+  min-height: 38rem;
+}
+
+.bx--inline-left-nav--collapseable .bx--inline-left-nav-collapse {
+  margin-bottom: 0;
 }
 
 .bx--overflow-menu__options.bx--global-light-ui {

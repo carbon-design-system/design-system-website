@@ -1,7 +1,7 @@
 export const renderPopout = () => {
   const renderBtn = [... document.querySelectorAll('.rendered__link')];
   const styleLink = '<link rel="stylesheet" type="text/css" href="http://carbondesignsystem.com/assets/styles/main.css">';
-  const iconsLink = 'https://dev-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg';
+  const iconsLink = 'https://new-console.stage1.ng.bluemix.net/api/v5/img/bluemix-icons.svg';
 
   const getHTML = (url, callback) => {
     // Feature detection

@@ -52,8 +52,8 @@
     "xml2js": "0.4.16"
   },
   "dependencies": {
-    "@console/bluemix-components": "6.11.5",
-    "@console/bluemix-icons": "3.5.1",
+    "@console/bluemix-components": "6.17.0",
+    "@console/bluemix-icons": "4.1.1",
     "clipboard": "1.5.12",
     "es6-promise": "3.2.1",
     "express": "4.14.0",
