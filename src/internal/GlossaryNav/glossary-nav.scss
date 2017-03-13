@@ -2,12 +2,16 @@
   position: absolute;
   right: 1rem;
   padding: 1rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   line-height: 1.5;
   margin-top: 2rem;
+
+  @include breakpoint('bp--sm--major') {
+    display: flex;
+  }
 
   &--fixed {
     position: fixed;

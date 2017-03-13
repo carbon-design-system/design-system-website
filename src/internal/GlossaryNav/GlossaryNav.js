@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import debounce from 'lodash.debounce';
 
 class GlossaryNav extends Component {
   state = {
@@ -13,8 +12,6 @@ class GlossaryNav extends Component {
 
   componentDidMount() {
     setTimeout(() => { this.getEntryPositions(); }, 100);
-
-    this.handleScroll = debounce(this.handleScroll, 10);
     this.handleScroll();
 
     if (this.state.activeLetter) {
@@ -63,11 +60,10 @@ class GlossaryNav extends Component {
     });
   }
 
-
   handleScroll = () => {
+    const scrollPosition = this.updateScrollPosition();
     const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
     const scrolledItem = this.getActiveItem(windowScroll);
-    const scrollPosition = this.updateScrollPosition();
 
     if (scrolledItem !== this.state.activeLetter) {
       this.setState({
