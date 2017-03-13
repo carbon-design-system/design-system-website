@@ -7,34 +7,36 @@ class GlossaryNav extends Component {
   }
 
   state = {
-    fixed: false,
+    previousScroll: 0,
+    isReverseScroll: false,
+    isFixed: false,
     activeLetter: window.location.hash.substring(1, 2).toUpperCase() || ''
   }
 
   componentDidMount() {
+    if (this.state.activeLetter) {
+      const activeLetter = document.querySelector(`#${this.state.activeLetter}`);
+      window.scrollTo(0, activeLetter.offsetTop);
+    }
+
     window.addEventListener('scroll', this.handleScroll);
+    setTimeout(() => { this.navPosition = document.querySelector('.glossary-nav').offsetTop; }, 100);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll = () => {
-    const scrolledItem = this.getActiveItem();
-    if (scrolledItem !== this.state.activeLetter) {
-      this.setState({
-        activeLetter: scrolledItem
-      });
-    }
-    if (window.scrollY > 630) {
-      this.setState({
-        fixed: true,
-      });
-    } else {
-      this.setState({
-        fixed: false,
-      });
-    }
+  getActiveItem = (windowScroll) => {
+    let scrollLetter = this.state.activeLetter;
+
+    this.props.letters.forEach((letter) => {
+      if (windowScroll <= letter.bottom && windowScroll >= letter.top) {
+        scrollLetter = letter.id;
+      }
+    });
+
+    return scrollLetter;
   }
 
   updateActive = (evt) => {
@@ -43,17 +45,41 @@ class GlossaryNav extends Component {
     });
   }
 
-  getActiveItem = () => {
-    const scrollPosition = window.scrollY;
-    let scrollLetter = this.state.activeLetter;
+  handleScroll = () => {
+    const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
+    const scrolledItem = this.getActiveItem(windowScroll);
+    const scrollPosition = this.updateScrollPosition();
 
-    this.props.letters.forEach((letter) => {
-      if (scrollPosition >= letter.positionTop && scrollPosition <= letter.positionBot) {
-        scrollLetter = letter.id;
-      }
-    });
+    if (scrolledItem !== this.state.activeLetter) {
+      this.setState({
+        activeLetter: scrolledItem
+      });
+    }
 
-    return scrollLetter;
+    if (scrollPosition >= (this.navPosition - 80)) {
+      this.setState({
+        isFixed: true,
+      });
+    } else {
+      this.setState({
+        isFixed: false,
+      });
+    }
+  }
+
+  updateScrollPosition = () => {
+    if (window.scrollY >= this.state.previousScroll) {
+      this.setState({
+        previousScroll: window.scrollY,
+        isReverseScroll: false,
+      });
+    } else {
+      this.setState({
+        previousScroll: window.scrollY,
+        isReverseScroll: true,
+      });
+    }
+    return window.scrollY;
   }
 
   renderGlossaryNavItems = (letters) => {
@@ -80,7 +106,7 @@ class GlossaryNav extends Component {
     const letters = this.renderGlossaryNavItems(this.props.letters);
     const classNames = classnames({
       'glossary-nav': true,
-      'glossary-nav--fixed': this.state.fixed,
+      'glossary-nav--fixed': this.state.isFixed,
     });
     return (
       <ul className={classNames}>

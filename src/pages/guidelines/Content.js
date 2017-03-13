@@ -15,7 +15,7 @@ class Content extends React.Component {
   }
 
   componentDidMount() {
-    this.getEntryPositions();
+    setTimeout(() => { this.getEntryPositions(); }, 100);
   }
 
   getEntryPositions() {
@@ -23,8 +23,8 @@ class Content extends React.Component {
     document.querySelectorAll('.glossary-entry').forEach(entry => {
       letters.push({
         id: entry.id,
-        positionTop: entry.offsetTop,
-        positionBot: entry.offsetTop + entry.offsetHeight,
+        top: entry.offsetTop,
+        bottom: entry.offsetTop + entry.offsetHeight,
       });
     });
 
