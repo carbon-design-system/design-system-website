@@ -20,7 +20,7 @@ class Content extends React.Component {
 
   getEntryPositions() {
     const letters = [];
-    document.querySelectorAll('.glossary-entry').forEach(entry => {
+    [...document.querySelectorAll('.glossary-entry')].forEach(entry => {
       letters.push({
         id: entry.id,
         top: entry.offsetTop,

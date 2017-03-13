@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
+import debounce from 'lodash.debounce';
 
 class GlossaryNav extends Component {
   static propTypes = {
@@ -14,13 +15,16 @@ class GlossaryNav extends Component {
   }
 
   componentDidMount() {
+    this.handleScroll = debounce(this.handleScroll, 10);
+    this.handleScroll();
+
     if (this.state.activeLetter) {
       const activeLetter = document.querySelector(`#${this.state.activeLetter}`);
       window.scrollTo(0, activeLetter.offsetTop);
     }
 
     window.addEventListener('scroll', this.handleScroll);
-    setTimeout(() => { this.navPosition = document.querySelector('.glossary-nav').offsetTop; }, 100);
+    setTimeout(() => { this.navPosition = document.querySelector('.glossary-nav').offsetTop; }, 10);
   }
 
   componentWillUnmount() {
