@@ -20,40 +20,34 @@ When using the workmark as a stand alone element, "IBM" should always be typeset
 ### Icon
 The Bluemix icon may be used on its own in cases where the Bluemix brand has already been established. Use the primary version when possible. However, use one of the following alternative icons if there are technical restraints:
 
-<div class="image-grid">
-  <div>
-    ![Primary light background](images/bluemix-2.svg)
-    **Primary icon**
-    Light Background
-  </div>
-  <div class="dark-bg">
-    ![Primary dark background](images/bluemix-3.svg)
-    **Primary icon**
-    Dark Background
-  </div>
+<div data-insert-component="ImageGrid" data-dark-bg="2">
+
+  ![Primary light background](images/bluemix-2.svg)
+  **Primary icon**
+  Light Background
+
+  ![Primary dark background](images/bluemix-3.svg)
+  **Primary icon**
+  Dark Background
 </div>
 
-<div class="image-grid">
-  <div>
-    ![Decorative light background](images/bluemix-4.svg) 
-    **Decorative** 
-    Light Background
-  </div>
-  <div class="dark-bg">
-    ![Decorative dark background](images/bluemix-5.svg)
-    **Decorative** 
-    Dark Background
-  </div>
-  <div>
-    ![One-color solid light background](images/bluemix-6.svg)
-    **One-color solid** 
-    Light Background
-  </div>
-  <div class="dark-bg">
-    ![One-color solid dark background](images/bluemix-7.svg)
-    **One-color solid** 
-    Dark Background
-  </div>
+<div data-insert-component="ImageGrid" data-dark-bg="2,4">
+
+  ![Decorative light background](images/bluemix-4.svg) 
+  **Decorative** 
+  Light Background
+
+  ![Decorative dark background](images/bluemix-5.svg)
+  **Decorative** 
+  Dark Background
+
+  ![One-color solid light background](images/bluemix-6.svg)
+  **One-color solid** 
+  Light Background
+
+  ![One-color solid dark background](images/bluemix-7.svg)
+  **One-color solid** 
+  Dark Background
 </div>
 
 ## Logo usage
@@ -143,7 +137,7 @@ RGB 65 214 195
 Helvetica Neue is the official Bluemix font as well as one of the official fonts of the greater IBM Brand. Helvetica Neue should be used whenever possible.
 
 # **Helvetica Neue Bold**
-# Helvetia Neue Roman
+# Helvetica Neue Roman
 # Helvetica Neue Light
 
 ## Parent brands

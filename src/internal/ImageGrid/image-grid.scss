@@ -5,7 +5,8 @@
   margin: 1rem 0;
   max-width: 45rem;
 
-  > div {
+  > div,
+  > p {
     width: 100%;
     margin-right: 1rem;
 
@@ -15,7 +16,7 @@
 
     strong {
       display: block;
-      margin-bottom: .5rem;
+      margin-bottom: .5rem !important;
     }
 
     img {
@@ -30,23 +31,23 @@
     }
   }
 
-  div:first-child:nth-last-child(2),
-  div:first-child:nth-last-child(2) ~ div {
+  p:first-child:nth-last-child(2),
+  p:first-child:nth-last-child(2) ~ p {
 
     @include breakpoint('900px') {
       width: calc(50% - 1rem);
     }
   }
 
-  div:first-child:nth-last-child(3),
-  div:first-child:nth-last-child(3) ~ div {
+  p:first-child:nth-last-child(3),
+  p:first-child:nth-last-child(3) ~ p {
     @include breakpoint('900px') {
       width: calc(33.3333% - 1rem);
     }
   }
 
-  div:first-child:nth-last-child(4),
-  div:first-child:nth-last-child(4) ~ div {
+  > p:first-child:nth-last-child(4),
+  > p:first-child:nth-last-child(4) ~ p {
     @include breakpoint('900px') {
       width: calc(25% - 1rem);
     }
@@ -80,6 +81,53 @@
     strong {
       display: inline-block;
       margin-bottom: 0;
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  .image-grid--#{$i} {
+
+    > p:nth-child(#{$i}) {
+
+      img {
+        background-color: $color__blue-90;
+      }
+    }
+  }
+}
+
+#be-essential,
+#be-inclusive,
+#be-consistent,
+#be-humanistic,
+#be-delightful {
+  & + p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 45rem;
+
+    img {
+      width: 100%;
+      max-width: 10rem;
+      margin-left: 0;
+      padding: 0;
+      margin-top: 4rem;
+    }
+
+    @include breakpoint('bp--md--major') {
+      flex-direction: row;
+      align-items: flex-start;
+
+      img {
+        width: 40%;
+        margin-left: 1rem;
+        padding: 2rem 4rem 4rem;
+        max-width: 30rem;
+        margin-top: 0;
+      }
     }
   }
 }

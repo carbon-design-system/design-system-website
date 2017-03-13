@@ -1,62 +1,148 @@
 **The _Carbon Component library_ gives developers (Front End Developers & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user-interfaces for Bluemix. The aim is for all developers to use consistent markup, styles, and behavior in their prototype and production work.**
 
+## Quick start
 
-## Installing
-There are a few ways to get started. Before installing Carbon Components, make sure you set up your [SSH key on GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/). You may also need to set up your SSH key on **Jenkins** or **Travis** if you use those for continuous integration or deployment.
-
-### npm
-Carbon Components is published to a private npm registry maintained by Bluemix Ops Console team.
-
-Before installing with npm, you must create an **.npmrc** file - you can create this in the root of your project folder or on your computer's ~ directory.
+Using npm:
 
 ```
-$ touch .npmrc
+$ npm install --save @carbon/components
 ```
 
-Next, write the following into your **.npmrc** file:
+<!--or [Download the latest release](release link here)-->
+
+## What's included
 
 ```
-//dev-console-npm.stage1.ng.bluemix.net/:_authToken="u6vjQywpRv51/eKBiRcAFA=="@console:registry=https://dev-console-npm.stage1.ng.bluemix.net
+carbon/
+├── global/
+    ├── carbon.js
+    └── carbon.min.js
+    ├── carbon.css
+    ├── carbon.min.css
+├── components/
+│   ├── modal
+│   │   ├── _modal.scss
+│   │   ├── modal.umd.js
+│   │   ├── modal.js
+│   │   ├── modal.es5.js
+│   │   ├── modal.html
+│   ├── button / etc
+│   ├── index.es5.js
+│   ├── index.umd.js
+│   ├── index.js
+│   ├── index.scss
 ```
 
-If you haven't done so already, create a **package.json** for your project:
+The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
+
+## SASS
+
+Using the Carbon sass files infers usage of the SASS pre-processor and a build step to process the files.
+
+**Importing a component style**
+
+To add a component style to your build, simply import the component directly
 
 ```
-$ npm init
+@import 'node_modules/@carbon/components/card/card';
 ```
 
-Finally, install Carbon Components with **npm.**
+Importing a component this way will bring in any dependencies that component has well; the import system dedupes dependencies, so shared dependendencies between components will not create extra CSS
 
+**Namespacing**
+
+Carbon components are built to be included individually and not clobber global styles - all `class names` are prefixed by the `bx--` moniker.
+
+**Global Flags**
+
+Carbon exposes a few global flags to alter what CSS gets compiled
+
+| SASS flag       | Default | Description                                                                         |
+|-----------------|---------|-------------------------------------------------------------------------------------|
+| $css--font-face | false   | If set to true, add in css font face definition                                     |
+| $css--helpers   | true    | If set to true, create the css visual helper styles                                 |
+| $css--body      | true    | If set to true, set default body and typographical styles                           |
+| $css--reset     | false   | If set to true, remove the reset on individual components and apply to global scope |
+
+
+## Javascript
+
+### Using a module bundler: recommended
+
+Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component
+
+**Initialize all instances of a component**
+
+```js
+import { Modal } from '@carbon/components'
+Modal.init();
 ```
-$ npm install @console/bluemix-components --save
+
+**Initialize a specific instance**
+```js
+import { Modal } from '@carbon/components';
+const myModal = document.querySelector(querySelector('[data-modal]')); // element node of the modal itself
+Modal.init(myModal);
 ```
 
-### Bower
-We also publish Carbon Components to a private bower registry.
-
-It's required to set up your [SSH Key on GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/) and on **Jenkins** or **Travis** if you use those as well.
-
-Create a **bower.json** file:
-
-```
-$ bower init
+**Reference a previously initialized component**
+```js
+import { Modal } from '@carbon/components';
+const myModal = document.querySelector(querySelector('[data-modal]'));
+const myModalInstance = Modal.components.get(myModal);
 ```
 
-Create a **.bowerrc** file in the root of your project directory and write the following config:
+### Using the compiled carbon-components file directly
 
+Users can also opt to use the pre-compiled `carbon-components.js` file directly. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using. By default, including the javascript file will automatically instantiate any component on the page as well as create a global objected called `CarbonComponents`.
+
+**Initialize all instances of a component**
+
+```html
+<html>
+  <body>
+    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+  </body>
+</html>
 ```
-{ "registry": "http://9.37.228.216:5678/" }
+
+**Don't initialize components by default**
+```html
+<html>
+  <body>
+    <script>
+      CarbonComponents.settings.disableAutoInit = true;
+    </script>
+    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+  </body>
+</html>
 ```
 
-Finally, install the bower package.
+**Initialize specific component**
 
+```html
+<html>
+  <body>
+    <script>
+      CarbonComponents.settings.disableAutoInit = true;
+      var modal = document.querySelector('[data-model']);
+      CarbonComponents.Modal.init(modal);
+    </script>
+    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+  </body>
+</html>
 ```
-$ bower install bluemix-components --save
+
+**Reference a previously initialized component**
+
+```html
+<html>
+  <body>
+    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+    <script>
+      var modal = document.querySelector('[data-model']);
+      var myModalRef = CarbonComponents.Modal.components.get(modal);
+    </script>
+  </body>
+</html>
 ```
-
-
-## Download
-
-* Download the latest version of the [Carbon Component Library]()
-* See [tags]() on GitHub Enterprise for older versions.
-* See [releases]() for release notes and changelogs.

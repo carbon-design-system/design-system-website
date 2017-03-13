@@ -8,6 +8,7 @@ import CodePage from '../../internal/CodePage';
 import LiveComponent from '../../internal/LiveComponent';
 
 class ComponentPage extends Component {
+
   updateTab = (evt) => {
     const tab = evt.currentTarget.querySelector('a').getAttribute('href');
     browserHistory.push(tab);

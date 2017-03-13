@@ -12,7 +12,7 @@ class Guidelines extends React.Component {
     const {
       params,
     } = this.props;
-    const title = params.name.charAt(0).toUpperCase() + params.name.substring(1);
+    const title = params.name.charAt(0).toUpperCase() + params.name.substring(1).replace('-', ' ');
     const content = (params.name === 'content') ? (
       <Content currentPage={params.page} />
     ) : (

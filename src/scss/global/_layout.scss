@@ -8,15 +8,24 @@ body {
   }
 }
 
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
 .container {
+  width: 100%;
   margin-left: 0;
   transition: $transition--base ease;
+  overflow-x: hidden;
 
   @include breakpoint('bp--md--major') {
     margin-left: $width--side-nav;
+    width: calc(100% - 200px);
   }
 
   &--expanded {
+    width: 100%;
     margin-left: 0;
   }
 }

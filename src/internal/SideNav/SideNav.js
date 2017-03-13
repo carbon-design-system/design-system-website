@@ -4,10 +4,11 @@ import classnames from 'classnames';
 
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
 import Button from '@console/bluemix-components-react/dist/components/Button';
+import ClickListener from '@console/bluemix-components-react/dist/internal/ClickListener';
 
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
-import Packages from '../../../package.json';
+// import Packages from '../../../package.json';
 
 class SideNav extends Component {
   static propTypes = {

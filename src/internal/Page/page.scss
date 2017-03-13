@@ -52,6 +52,10 @@
 
   h1 {
     font-size: rem(66px);
+
+    &#helvetica-neue-light {
+      font-weight: 300;
+    }
   }
 
   h2 {
@@ -121,7 +125,7 @@
     padding-bottom: 1rem;
   }
 
-  &:not(.code-page) {
+  & > *:not(.component-example) {
     p:first-child {
 
         strong {
@@ -461,27 +465,5 @@
         font-style: italic;
         color: $color__navy-gray-6;
       }
-  }
-
-}
-
-.page {
-  overflow: auto;
-  box-sizing: border-box;
-  transition: opacity 300ms ease;
- 
-  &.transition-appear {
-    opacity: 0;
-  }
- 
-  &.transition-appear.transition-appear-active {
-    opacity: 1;
-  }
-  &.transition-leave {
-    opacity: 1;
-  }
- 
-  &.transition-leave.transition-leave-active {
-    opacity: 0;
   }
 }

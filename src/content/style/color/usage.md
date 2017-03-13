@@ -53,28 +53,11 @@ VARIABLE | ROLE/S | VALUE
 
 ## Color contrast | 4.5 : 1 ratio
 
-All type color combinations on Carbon must pass WCAG AA standards of 4.5 : 1. In the table below are approved color combinations.
-
-<img> Normal Text
-
-<img> Large Text: 18px bold or larger
-
-<!--- CONTENT BELOW IN LIST/TABLE --->
-
-##### TYPE COLORS
-- brand-02 #5596e6
-- brand-01 #3d70b2
-- text-02 #5a6872
-- text-01 #152935
-
-##### BACKGROUND COLORS
-- ui-01 #ffffff
-- ui-02 #f5f7fa
-- ui-03 #f0f3f6
+<div data-insert-component="ColorContrast"></div>
 
 ## Resources
 
-- [IBM accessible color guide] (https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-- [IBM accessibility quick guidance] (http://w3-03.ibm.com/able/devtest/quick/)
-- [Color contrast checker] (http://webaim.org/resources/contrastchecker/) 
-- [IBM Design Language colors] (http://www.ibm.com/design/language/framework/visual/color)
+- [IBM accessible color guide](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+- [IBM accessibility quick guidance](http://w3-03.ibm.com/able/devtest/quick/)
+- [Color contrast checker](http://webaim.org/resources/contrastchecker/) 
+- [IBM Design Language colors](http://www.ibm.com/design/language/framework/visual/color)

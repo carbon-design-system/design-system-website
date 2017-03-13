@@ -48,6 +48,7 @@ import ComponentStatus from './pages/ComponentStatus';
 
 
 const handleRouteChange = () => {
+  window.scrollTo(0, 0);
   const overlayImages = [... document.querySelectorAll('p em img')];
   const ibmEye = require('./assets/images/ibm-eye.png'); // eslint-disable-line
   overlayImages.forEach(image => {

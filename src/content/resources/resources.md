@@ -25,6 +25,7 @@ IBM Design uses the Helvetica Neue for IBM font family across products for brand
 ## Carbon boilerplate
 A simple boilerplate for rapid UI prototyping with Carbon components.
 
+***
 [Carbon boilerplate](https://carbon-boilerplate.mybluemix.net/)
 
 <hr> 
@@ -35,11 +36,14 @@ A simple boilerplate for rapid UI prototyping with Carbon components.
 ### Presentation templates
 Use our branded templates for your presentation needs.
 
+***
 [Download Keynote]()
 
+***
 [Download Powerpoint]()
 
 ### Bluemix logo
 This comprehensive file contains the various versions of the Bluemix logo.
 
+***
 [Download logo assets]()

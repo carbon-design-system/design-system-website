@@ -1,0 +1,149 @@
+.color-contrast {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.color-contrast__keys {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 0 !important;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+    img {
+      width: rem(24px) !important;
+    }
+
+    p {
+      padding-bottom: 0;
+      font-size: rem(14px);
+      margin-left: 1rem;
+      font-weight: 700;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+ul.color-contrast__examples {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  margin-left: 0 !important;
+  width: 100%;
+
+  > li {
+    width: 100%;
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    flex: 1;
+
+    &:nth-child(2) {
+      flex: 2;
+    }
+  }
+
+  li h4 {
+    text-transform: uppercase;
+    font-size: rem(12px);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $color__blue-40;
+    color: $color__navy-gray-2;
+    letter-spacing: 1px;
+  }
+}
+
+ul.color-contrast__examples--type-colors {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0 !important;
+  margin-top: 2rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    div:first-child {
+      width: rem(18px);
+      height: rem(18px);
+      margin-right: 1rem;
+    }
+
+    div p {
+      padding: 0;
+      margin: 0;
+      line-height: 1 !important;
+      font-size: rem(14px);
+      font-weight: 700;
+
+      &:nth-child(2) {
+        margin-top: .25rem;
+        font-weight: 400;
+        color: $color__navy-gray-6;
+      }
+    }
+
+    &.blue-40 {
+      div:first-child {
+        background-color: $color__blue-40;
+      }
+    }
+
+    &.blue-51 {
+      div:first-child {
+        background-color: $color__blue-51;
+      }
+    }
+
+    &.navy-gray-6 {
+      div:first-child {
+        background-color: $color__navy-gray-6;
+      }
+    }
+
+    &.blue-90 {
+      div:first-child {
+        background-color: $color__blue-90;
+      }
+    }
+  }
+}
+
+ul.color-contrast__examples--bg-colors {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 0 !important;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    > p {
+      font-size: rem(14px);
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      line-height: 1 !important;
+
+      &:last-of-type {
+        font-weight: 400;
+        color: $color__navy-gray-6;
+        margin-top: .25rem;
+      }
+    }
+  }
+}
