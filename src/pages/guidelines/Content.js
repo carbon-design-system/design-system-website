@@ -10,29 +10,6 @@ class Content extends React.Component {
     currentPage: PropTypes.string,
   }
 
-  state = {
-    letters: [],
-  }
-
-  componentDidMount() {
-    setTimeout(() => { this.getEntryPositions(); }, 100);
-  }
-
-  getEntryPositions() {
-    const letters = [];
-    [...document.querySelectorAll('.glossary-entry')].forEach(entry => {
-      letters.push({
-        id: entry.id,
-        top: entry.offsetTop,
-        bottom: entry.offsetTop + entry.offsetHeight,
-      });
-    });
-
-    this.setState({
-      letters,
-    });
-  }
-
   render() {
     const {
       currentPage,
@@ -46,6 +23,8 @@ class Content extends React.Component {
     if (currentPage) {
       page = currentPage;
     }
+
+    const glossaryNavContent = (currentPage === 'glossary') ? <GlossaryNav /> : '';
 
     return (
       <PageTabs tabs={tabs} currentPage={page}>
@@ -68,7 +47,7 @@ class Content extends React.Component {
             <Markdown options={{ html: true }}>
               {glossaryIntro}
             </Markdown>
-            <GlossaryNav letters={this.state.letters} />
+            {glossaryNavContent}
             <Glossary glossary={glossary} />
           </div>
         </Tab>

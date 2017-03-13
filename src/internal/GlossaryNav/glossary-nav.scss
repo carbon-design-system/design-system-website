@@ -7,10 +7,11 @@
   align-items: center;
   justify-content: flex-start;
   line-height: 1.5;
+  margin-top: 2rem;
 
   &--fixed {
     position: fixed;
-    top: 5rem;
+    top: 0;
   }
 
   li {

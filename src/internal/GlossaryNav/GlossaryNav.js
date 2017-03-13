@@ -1,20 +1,19 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 import debounce from 'lodash.debounce';
 
 class GlossaryNav extends Component {
-  static propTypes = {
-    letters: PropTypes.array,
-  }
-
   state = {
     previousScroll: 0,
     isReverseScroll: false,
     isFixed: false,
-    activeLetter: window.location.hash.substring(1, 2).toUpperCase() || ''
+    activeLetter: window.location.hash.substring(1, 2).toUpperCase() || '',
+    letters: []
   }
 
   componentDidMount() {
+    setTimeout(() => { this.getEntryPositions(); }, 100);
+
     this.handleScroll = debounce(this.handleScroll, 10);
     this.handleScroll();
 
@@ -24,7 +23,6 @@ class GlossaryNav extends Component {
     }
 
     window.addEventListener('scroll', this.handleScroll);
-    setTimeout(() => { this.navPosition = document.querySelector('.glossary-nav').offsetTop; }, 10);
   }
 
   componentWillUnmount() {
@@ -34,7 +32,7 @@ class GlossaryNav extends Component {
   getActiveItem = (windowScroll) => {
     let scrollLetter = this.state.activeLetter;
 
-    this.props.letters.forEach((letter) => {
+    this.state.letters.forEach((letter) => {
       if (windowScroll <= letter.bottom && windowScroll >= letter.top) {
         scrollLetter = letter.id;
       }
@@ -43,11 +41,28 @@ class GlossaryNav extends Component {
     return scrollLetter;
   }
 
+  getEntryPositions() {
+    const letters = [];
+    [...document.querySelectorAll('.glossary-entry')].forEach(entry => {
+      letters.push({
+        id: entry.id,
+        top: entry.offsetTop,
+        bottom: entry.offsetTop + entry.offsetHeight,
+      });
+    });
+
+    this.setState({
+      letters,
+    });
+  }
+
   updateActive = (evt) => {
     this.setState({
       activeLetter: evt.target.textContent,
+      isReverseScroll: true
     });
   }
+
 
   handleScroll = () => {
     const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
@@ -59,15 +74,16 @@ class GlossaryNav extends Component {
         activeLetter: scrolledItem
       });
     }
-
-    if (scrollPosition >= (this.navPosition - 80)) {
-      this.setState({
-        isFixed: true,
-      });
-    } else {
-      this.setState({
-        isFixed: false,
-      });
+    if (this.state.letters.length > 0) {
+      if (scrollPosition >= this.state.letters[0].top) {
+        this.setState({
+          isFixed: true,
+        });
+      } else {
+        this.setState({
+          isFixed: false,
+        });
+      }
     }
   }
 
@@ -107,7 +123,7 @@ class GlossaryNav extends Component {
   }
 
   render() {
-    const letters = this.renderGlossaryNavItems(this.props.letters);
+    const letters = this.renderGlossaryNavItems(this.state.letters);
     const classNames = classnames({
       'glossary-nav': true,
       'glossary-nav--fixed': this.state.isFixed,
