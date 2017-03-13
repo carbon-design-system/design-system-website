@@ -1,0 +1,15 @@
+.svg--sprite {
+  @include hidden;
+}
+
+.live-component__variation {
+  width: 100%;
+}
+
+.component-example,
+.live-component {
+
+  .dropdown > div {
+    width: 100%;
+  }
+}

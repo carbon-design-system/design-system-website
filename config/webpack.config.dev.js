@@ -84,6 +84,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
+        exclude: `${paths.assets}/bluemix-icons.svg`,
         loader: 'file',
       },
       {

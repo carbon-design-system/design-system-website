@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
+import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
+import svgSprite from 'raw!../../assets/bluemix-icons.svg';
+
 
 class ComponentExample extends Component {
   static propTypes = {
@@ -14,10 +17,16 @@ class ComponentExample extends Component {
       component,
     } = this.props;
 
+    const classNames = classnames({
+      'component-example__live--rendered': true,
+      [`${component}`]: true,
+    });
+
     return (
-      <div className="component-example">
+      <div className="component-example bx--global-light-ui">
+        <div className="svg--sprite" dangerouslySetInnerHTML={{ __html: svgSprite }} />
         <div className="component-example__live">
-          <div className="component-example__live--rendered">
+          <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />
           </div>
           <Link

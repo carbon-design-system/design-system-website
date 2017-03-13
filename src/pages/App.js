@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import SideNav from '../internal/SideNav';
 import '../scss/main.scss';
+import '@console/bluemix-components/src/index.js';
 
 class App extends Component {
   static propTypes = {
