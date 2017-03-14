@@ -10,38 +10,22 @@ class LiveComponent extends Component {
     component: PropTypes.string,
   }
 
-  // componentDidMount() {
-  //   console.log('mount');
-  //   initCheckbox();
-  //   FileUploader.init();
-  //   ContentSwitcher.init();
-  //   Tab.init();
-  //   OverflowMenu.init();
-  //   Modal.init();
-  //   Loading.init();
-  //   Dropdown.init();
-  //   Card.init();
-  //   NumberInput.init();
-  //   DataTable.init();
-  //   DetailPageHeader.init();
-  //   InlineLeftNav.init();
-  //   Pagination.init();
-  //   Search.init();
-  //   Accordion.init();
-  //   Notification.init();
-  //   Toolbar.init();
-  //   ProgressIndicator.init();
-  // }
-
   renderVariation = (variation) => {
     const classNames = classnames({
       'live-component__component': true,
       [`${variation}`]: true,
     });
 
-    const htmlFile = require(`@console/bluemix-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
+    let htmlFile = require(`@console/bluemix-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
+
+    if (variation.includes('card')) {
+      const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
+      const newPath = require('../../assets/images/placeholder.svg');
+      htmlFile = htmlFile.replace(oldPath, newPath);
+    }
+
     return (
-      <div className="live-component__variation bx--global-light-ui">
+      <div key={variation} className="live-component__variation bx--global-light-ui">
         <div className="svg--sprite" dangerouslySetInnerHTML={{ __html: svgSprite }} />
         <a
           href={`https://github.ibm.com/Bluemix/bluemix-components/tree/7.x/src/components/${this.props.component}`}

@@ -32,7 +32,13 @@ class CodePage extends Component {
   }
 
   renderVariation = (parent, variation, title) => {
-    const htmlFile = require(`@console/bluemix-components/src/components/${parent}/${variation}.html`);
+    let htmlFile = require(`@console/bluemix-components/src/components/${parent}/${variation}.html`);
+
+    if (parent === 'card') {
+      const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
+      const newPath = require('../../assets/images/placeholder.svg');
+      htmlFile = htmlFile.replace(oldPath, newPath);
+    }
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>

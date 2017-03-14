@@ -44,88 +44,87 @@
     }
   }
 
-  h1,
-  h2,
-  h3 {
-    @include font-smoothing;
-  }
-
-  h1 {
-    font-size: rem(66px);
-
-    &#helvetica-neue-light {
-      font-weight: 300;
-    }
-  }
-
-  h2 {
-    color: $color__blue-90;
-    position: relative;
-    margin-top: 5rem;
-    font-weight: 600;
-    font-size: rem(26px);
-    padding: 1rem 0 3rem;
-
-    &:before {
-      content: '';
-      width: 5rem;
-      height: .3rem;
-      display: block;
-      background-color: $color__blue-40;
-      position: absolute;
-      top: -.5rem;
-      left: 0;
+  & > *:not(.component-variation,.component-example) {
+    h1,
+    h2,
+    h3 {
+      @include font-smoothing;
     }
 
-    &:first-of-type {
-      margin-top: 1rem;
+    h1 {
+      font-size: rem(66px);
+
+      &#helvetica-neue-light {
+        font-weight: 300;
+      }
     }
 
-    & + h3 {
+    h2 {
+      color: $color__blue-90;
+      position: relative;
+      margin-top: 5rem;
+      font-weight: 600;
+      font-size: rem(26px);
+      padding: 1rem 0 3rem;
+
+      &:before {
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        display: block;
+        background-color: $color__blue-40;
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+      }
+
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+
+      & + h3 {
+        padding-top: 0;
+      }
+
+      & + h4 {
+        padding-top: 0;
+      }
+
+      & + p {
+        padding: 0;
+      }
+    }
+
+    div span h2:first-of-type {
+      margin-top: 0;
+    }
+
+    div span > p:first-of-type + h3 {
+      margin-top: 0;
       padding-top: 0;
     }
 
-    & + h4 {
-      padding-top: 0;
+    h3 {
+      color: $color__blue-51;
+      padding: 4rem 0 2rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+
+      & + h4 {
+        padding-top: 0;
+      }
     }
 
-    & + p {
-      padding: 0;
+    h4 {
+      color: $color__blue-90;
+      padding: 4rem 0 .5rem;
+      font-weight: 600;
+      font-size: 1rem;
     }
-  }
 
-  div span h2:first-of-type {
-    margin-top: 0;
-  }
-
-  div span > p:first-of-type + h3 {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  h3 {
-    color: $color__blue-51;
-    padding: 4rem 0 2rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-
-    & + h4 {
-      padding-top: 0;
+    div span p {
+      padding-bottom: 1rem;
     }
-  }
-
-  h4 {
-    color: $color__blue-90;
-    padding: 4rem 0 .5rem;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  div span p {
-    padding-bottom: 1rem;
-  }
-
-  & > *:not(.component-example) {
     p:first-child {
 
         strong {
@@ -355,7 +354,7 @@
         & + table thead {
           display: none;
         }
-      
+
         & + table tbody tr td {
           font-size: 1rem;
           line-height: 1.5;

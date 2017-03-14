@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    Placeholder Icon - 32 x 32
+  </title>
+  <defs>
+    <path id="a" d="M0 0h32v32H0z"/>
+    <mask id="b" x="0" y="0" width="32" height="32" fill="#fff">
+      <use xlink:href="#a"/>
+    </mask>
+  </defs>
+  <g fill="#EFC100" fill-rule="evenodd">
+    <use stroke="#EFC100" mask="url(#b)" stroke-width="2" fill-opacity=".5" xlink:href="#a"/>
+    <text font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-size="10" font-style="condensed" font-weight="bold">
+      <tspan x="7.495" y="13">Icon</tspan> <tspan x="4.09" y="25">32x32</tspan>
+    </text>
+  </g>
+</svg>
