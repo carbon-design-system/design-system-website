@@ -1,4 +1,4 @@
-![Sketch](images/resources-1.png) 
+![Sketch](images/resources-1.png)
 ## Design Kit
 The Design Kit consists of core visual styles and patterns. It contains everything needed to get started building an experience that contributes to our platform.
 
@@ -28,22 +28,23 @@ A simple boilerplate for rapid UI prototyping with Carbon components.
 ***
 [Carbon boilerplate](https://carbon-boilerplate.mybluemix.net/)
 
-<hr> 
+<hr>
 **DOWNLOADS**
 
-<!-- all are styled as secondary buttons --> 
+<!-- all are styled as secondary buttons -->
 
 ### Presentation templates
 Use our branded templates for your presentation needs.
 
 ***
-[Download Keynote]()
+[Download Keynote](#)
 
 ***
-[Download Powerpoint]()
+[Download Powerpoint](#)
+
 
 ### Bluemix logo
 This comprehensive file contains the various versions of the Bluemix logo.
 
 ***
-[Download logo assets]()
+[Download logo assets](#)

@@ -9,7 +9,6 @@ Display the steps in order from left to right. Indicate to the user that they ar
 Keeping the user informed of where they currently are within the process or task at hand will give them a sense of control. This helps the user to know where they are in relation to where they have been, and what sections are to follow. Clear labels should accompany the Progress Indicator to indicate what the user will accomplish within each step. Keep labels between one to two words.
 
 #### Validation
-Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [inline notification]() to inform them.
+Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [inline notification](/components/notification) to inform them.
 
 ![Progress Indicator example](images/progress-indicator-usage-1.png)
-

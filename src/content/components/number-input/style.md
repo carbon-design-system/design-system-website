@@ -6,8 +6,8 @@
 | Caret                | $brand-01 | #3d70b2       |
 
 
-## Typography 
-Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized. 
+## Typography
+Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
 | PROPERTY  | FONT-SIZE      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
@@ -16,7 +16,7 @@ Number Input labels should use sentence case, with only the first word in a phra
 
 
 ## Structure
-The height of a Number Input is always the same. The width however, varies based on content, layout and design. The arrows icon can be found in the [iconography]() library.
+The height of a Number Input is always the same. The width however, varies based on content, layout and design. The arrows icon can be found in the [iconography](/style/iconography/library) library.
 
 | PROPERTY         | PX | REM |
 |------------------|----|-----|

@@ -1,8 +1,8 @@
-**Iconography** uses images and symbols to represent an object visually. They communicate a message and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.
+**_Iconography_ uses images and symbols to represent an object visually. They communicate a message and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.**
 
 
 ## Resources
-You can find the source file for the icon library within the [Carbon Design Kit.]()
+You can find the source file for the icon library within the [Carbon Design Kit.](https://github.com/carbon-design-system/design-kit)
 
 [Icons GitHub repo]()
 
@@ -65,18 +65,18 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 ### Using SVG sprite (recommended)
 
-Requirements: 
+**Requirements:**
 
 - Install `@console/bluemix-icons`
 - Use `svgxuse` polyfill
-	
-Full installation details in [GitHub](https://github.ibm.com/Bluemix/bluemix-icons/blob/master/docs/install.md). 
+
+Full installation details in [GitHub](https://github.ibm.com/Bluemix/bluemix-icons/blob/master/docs/install.md).
 
 ### Using SVG sprite from static assets (recommended)
 
 Use the SVG sprite (__bluemix-icons.svg__) by serving it as a static asset.
 Then reference the SVG icon you want to display using a path to the SVG sprite file.
-To use SVG sprite files, they __must__ be distributed through a web server and while using `svgxuse`. 
+To use SVG sprite files, they __must__ be distributed through a web server and while using `svgxuse`.
 
 ```html
 <!-- From static assets  -->
@@ -85,8 +85,10 @@ To use SVG sprite files, they __must__ be distributed through a web server and w
 </svg>
 ```
 
-- `path_to_static-assets` is the path to your static assets where `bluemix-icons.svg` is located.
-- `icon_name` is the icon name, which will display the corresponding icon. Refer to the [library page](http://design-system.stage1.mybluemix.net/essentials/iconography.html#library) for a full list of icon names
+`path_to_static-assets` is the path to your static assets where `bluemix-icons.svg` is located.
+
+
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library page](http://carbondesignsystem.com/style/iconography) for a full list of icon names.
 
 ### CSS
 
@@ -121,7 +123,7 @@ Bluemix Icons ships with two main SVG files that contain different sets of exter
 | filename | description | supported versions|
 |-----|--------|---------------|
 |bluemix-icons.svg| Contains current icons (consolidated subset of legacy icons used in Bluemix) | `3.x` and newer|
-|bluemix-icons.json| JSON file created from bluemix-icons.svg, used on [design-system-website](http://design-system.stage1.mybluemix.net/essentials/iconography.html#library) | `3.x` and newer|
+|bluemix-icons.json| JSON file created from bluemix-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer|
 |bluemix-icons.js| JS module created from bluemix-icons.svg, used in `Icon` React Component in [bluemix-components-react](https://github.ibm.com/Bluemix/bluemix-components-react) | `3.x` and newer|
 |sprite.svg| SVG sprite contains legacy icons | `1.x`, `2.x` and `3.x`|
 |icons.json| legacy JSON file created from sprite.svg | `1.x`, `2.x` and `3.x`|
@@ -138,12 +140,8 @@ For screen reader accessibility, use `<title>` element and `aria-labelledby` att
   <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--add"></use>
 </svg>
 ```
-* The `aria-labelledby` attribute will reference the `id` attribute in the the `<title>` element.
+The `aria-labelledby` attribute will reference the `id` attribute in the the `<title>` element.
 Make sure that you do not duplicate this `id`.
-* The `<title>`element will be read by the screen reader to the user so it should describe it's purpose.
 
 
-
-
-
-
+The `<title>`element will be read by the screen reader to the user so it should describe it's purpose.

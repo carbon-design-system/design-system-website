@@ -1,15 +1,10 @@
 ## Effective form design
 All forms are comprised of 5 elements:
-
-**Labels:** Inform users what the corresponding input fields mean.
-
-**Input fields:** Enable users to provide information. Information can be entered through a variety of different input fields ranging from text fields, checkboxes, and many other types.
-
-**Placeholder text:** Provides assistance on how to fill out a field.
-
-**Actions:** Allow users to submit a form.
-
-**Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
+* **Labels:** Inform users what the corresponding input fields mean.
+* **Input fields:** Enable users to provide information. Information can be entered through a variety of different input fields ranging from text fields, checkboxes, and many other types.
+* **Placeholder text:** Provides assistance on how to fill out a field.
+* **Actions:** Allow users to submit a form.
+* **Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
 
 ![effective form design](images/form-usage-1.png)
 
@@ -31,17 +26,17 @@ Be as concise as possible when designing forms. Think about each field and what 
 
 ## Validation and errors
 ### Error messaging
-Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions. [Inline Notifications]() can be used to state the general problem with the users input, such as _“Please input the required fields.”_ Inline Notifications can occur pre or post submission, depending on the type of data the user is inputting.
+Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions. [Inline Notifications](/components/notification) can be used to state the general problem with the users input, such as _“Please input the required fields.”_ Inline Notifications can occur pre or post submission, depending on the type of data the user is inputting.
 
 
 ![Inline notification on forms](images/form-usage-2.png)
-_Inline Notification for error messaging_ 
+_Inline Notification for error messaging_
 
 
 ### Form validation
 We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
 
-The validation should appear when the user has clicked away from the text field. Once the user corrects the errors within the text field, the validation should dissapear once the data is rendered as valid.
+The validation should appear when the user has clicked away from the text field. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
 
 The validation label below the field should be as informative as possible when describing the issue with the users data. For example, if password limitations require 16 characters, but the user inputs a password with only six characters, the text should read something like, _"Password must be at least 16 characters."_
 

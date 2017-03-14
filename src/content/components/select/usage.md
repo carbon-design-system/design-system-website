@@ -2,7 +2,7 @@
 Labels are essential to the usability of forms because they provide guidance to the data a user might provide. Do not place a label inside a Select element. Use sentence case and no more than three words.
 
 ### Validation
-Real time validation helps to streamline the process and keep data clean when the user is filling out data. For full guidelines, refer to the [Forms]() usage tab.
+Real time validation helps to streamline the process and keep data clean when the user is filling out data. For full guidelines, refer to the [Forms](/components/form) usage tab.
 
 ![validation on select element](images/select-usage-1.png)
 
@@ -17,7 +17,7 @@ One of the [WCAG 2.0 standards](https://www.w3.org/TR/WCAG20-TECHS/G202.html) fo
 
 ![Select element rendered in Chrome](images/select-usage-2.png)
 
-_Rendering of Select element in Chrome_: 
+_Rendering of Select element in Chrome_:
 
 ### Accessibility
 While you can make a Select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default `select` element should follow this process:
@@ -29,7 +29,7 @@ While you can make a Select element easily usable by a mouse, making it usable w
 | :       | move your cursor over the desired option | use the top and bottom arrow keys to pick an option |
 | :select | click on the desired option              | press enter                                         |
 
-<!----
-## Small select 
+<br>
+
+## Small select
 Small selects are commonly used in Tables. When using a small dropdown for a number selection, the increments in the dropdown should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
----> 

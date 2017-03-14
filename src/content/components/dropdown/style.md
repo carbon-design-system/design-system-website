@@ -7,13 +7,14 @@
 | Text               | $text-01        | #152935   |
 | Drawer: hover      | $brand-01       | #3d70b2   |
 | Text: hover        | $inverse-01     | #ffffff   |
+| Border: active     | $brand-01       | #3d70b2   |
 
 
 ![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
 _Normal, active, open, and disabled states for Dropdown_
 
 ## Typography
-All Dropdown text should be set in sentence case with the first letter of each word capitalized. Dropdown options should not exceed three words. 
+All Dropdown text should be set in sentence case with the first letter of each word capitalized. Dropdown options should not exceed three words.
 
 | PROPERTY  | FONT-SIZE       | FONT-WEIGHT  |
 |-------------|-----------------|--------------|
@@ -37,4 +38,3 @@ Dropdowns have two states, open and closed. An open and closed Dropdown should b
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 _Structure and spacing measurements for Dropdown | px / rem_
-

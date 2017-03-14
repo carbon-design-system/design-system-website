@@ -12,7 +12,7 @@ The body of the notification should be contained within two lines. Be descriptiv
 All notifications have at least one method of dismissal. Typically, it is a small “x” in the upper right hand corner.
 
 ### Icons
-Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography]() library. 
+Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/style/iconography) library. 
 
 ![notification icons](images/notification-usage-1.png)
 

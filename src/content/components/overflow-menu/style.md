@@ -16,7 +16,7 @@
 
 _Text and warning hover examples for Overflow Menu_
 
-## Typography 
+## Typography
 Overflow Menu text should be set in set in sentence case with the first letter of each word capitalized.
 
 | PROPERTY | FONT-SIZE     | FONT-WEIGHT |
@@ -29,7 +29,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
 ## Structure
-The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [Iconography]() library.
+The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [Iconography](/style/iconography/library) library.
 
 | PROPERTY             | PX                      | REM   |
 |----------------------|-------------------------|-------|

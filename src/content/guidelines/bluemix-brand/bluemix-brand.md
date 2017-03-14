@@ -1,7 +1,7 @@
 **_Brand_ is the unified experience the Bluemix identity and purpose. It is more than what Bluemix looks like, it is who we are. Brand is how Bluemix users perceive it and what it feels like when they interact with the product.**
 
 ## Bluemix logo
-![Bluemix logo](images/bluemix-1.0.svg) 
+![Bluemix logo](images/bluemix-1.0.svg)
 
 The Bluemix logo is the most prominent visual element associated with our identity. The logo is a combination of the icon and wordmark. We are proud of our logo and recommend the following guidelines on this page.
 
@@ -9,7 +9,7 @@ The Bluemix logo is the most prominent visual element associated with our identi
 [Bluemix logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
 
 ### Wordmark
-When using the workmark as a stand alone element, "IBM" should always be typeset in Helvetica Neue Light and "Bluemix" should always be typeset in Helvetica Neue Bold.
+When using the workmark as a stand alone element, “IBM” should always be typeset in Helvetica Neue Light and “Bluemix” should always be typeset in Helvetica Neue Bold.
 
 | Background | SCSS        | HEX      |
 |------------|----------   |----------|
@@ -31,22 +31,23 @@ The Bluemix icon may be used on its own in cases where the Bluemix brand has alr
   Dark Background
 </div>
 
+
 <div data-insert-component="ImageGrid" data-dark-bg="2,4">
 
-  ![Decorative light background](images/bluemix-4.svg) 
-  **Decorative** 
+  ![Decorative light background](images/bluemix-4.svg)
+  **Decorative**
   Light Background
 
   ![Decorative dark background](images/bluemix-5.svg)
-  **Decorative** 
+  **Decorative**
   Dark Background
 
   ![One-color solid light background](images/bluemix-6.svg)
-  **One-color solid** 
+  **One-color solid**
   Light Background
 
   ![One-color solid dark background](images/bluemix-7.svg)
-  **One-color solid** 
+  **One-color solid**
   Dark Background
 </div>
 
@@ -56,8 +57,8 @@ The Bluemix icon may be used on its own in cases where the Bluemix brand has alr
 ### Exclusion zone
 No content is allowed in the exclusion zone. Note that the icon and wordmark are associated together. The exclusion zone is equal to the height of the “B” in the wordmark shown above as the magenta border around the logo.
 
-### Spacing 
-The space between the icon and wordmark is determined by the trajectory of the outer angles of the right edges of top and bottom hexagons. It is demonstrated in the above image by the dotted lines that make an "X".
+### Spacing
+The space between the icon and wordmark is determined by the trajectory of the outer angles of the right edges of top and bottom hexagons. It is demonstrated in the above image by the dotted lines that make an “X.”
 
 | Icon type      | Minumum size     
 |------------    |----------   
@@ -72,7 +73,7 @@ In order to maintain consistency, the logo should never be modified, transformed
 <div class="image-grid donts">
   <div>
     ![logo misuse example1](images/bluemix-9.svg)
-    ![red-x](images/red-x.png) **Do not** use the old wordmark with a capital "M".
+    ![red-x](images/red-x.png) **Do not** use the old wordmark with a capital “M”.
   </div>
   <div>
     ![logo misuse example2](images/bluemix-10.png)

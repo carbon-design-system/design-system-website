@@ -1,9 +1,9 @@
 ## General guidelines
 
 ### Search variations
-**Large Search** should be used at a global level, when the user is searching content within a page view. 
+**Large Search** should be used at a global level, when the user is searching content within a page view.
 
-**Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](). 
+**Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table).
 
 
 ![Search on a table](images/search-usage-1.png)
@@ -28,4 +28,3 @@ Filtering can be used as a way to further narrow down content based on the user'
 * Have smart algorithms that can search for similar terms or can search even with misspelled words.
 * Include enough of a description in the results for users to make a judgement as to whether that particular result is relevant.
 * Highlight the search term in the results, where appropriate.
-

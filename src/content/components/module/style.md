@@ -12,10 +12,8 @@ _
 _
 _Example of Module layout_
 
-box shadow: rgba (0 0 0 0.2)
-
-## Typography 
-Module headings and text should be set sentence case, with only the first word in a phrase and any proper nouns capitalized. Module headings should not exceed three words. 
+## Typography
+Module headings and text should be set sentence case, with only the first word in a phrase and any proper nouns capitalized. Module headings should not exceed three words.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT |
 |----------|-----------------|-------------|
@@ -50,5 +48,3 @@ Single or Double >> needs to be explained more in paragraph form
 
 ![Structure and spacing measurements for Modules](images/module-style-2.png)
 _Structure and spacing measurements for a Module | px / rem_
-
-

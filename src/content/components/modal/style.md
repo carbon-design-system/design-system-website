@@ -4,12 +4,14 @@
 | Background | $ui-01   | #ffffff   |
 | Border-top | $brand-01| #3d70b2   |
 | Text       | $text-01 | #152935   |
+| Title      | $text-02 | #5a6872   |
 | X icon     | $ui-05   | #8c9ba5   |
 | Footer     | $ui-04   | #dfe3e6   |
+| Page overlay  | $ui-01  | #ffffff @ 70% opacity  |
 
 
-## Typography 
-Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman. 
+## Typography
+Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman.
 
 | PROPERTY | FONT-SIZE     | FONT-WEIGHT |
 |----------|-----------------|--------------|
@@ -26,8 +28,8 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | PROPERTY                  | PX | REM     |
 |---------------------------|----|---------|
 | Top border                | 5  | .313    |
-| X icon                    | 10 | 0.625   |
-| Footer: height            | 92 | 5.75    |
+| X icon                    | 12 | 0.75   |
+| Footer: height            | 88 | 5.5    |
 | Spacing: internal (L,R,B) | 48 | 3       |
 | Spacing: top              | 44 | 2.75    |
 | Spacing: title & text     | 24 | 1.5     |

@@ -10,14 +10,14 @@ Modals may be dismissed in 3 ways:
 Include a heading within the Modal that mirrors the action or button that was clicked by the user. Headers include a close button “x” in the upper right-hand corner of the Modal.
 
 ### Body
-The body content within a Modal should be as minimal as possible. Components that may be used in mMdals include: Form fields, Text Area, Select, and Radio Buttons.
+The body content within a Modal should be as minimal as possible. Components that may be used in Modals include: Form fields, Text Area, Select, and Radio Buttons.
 
 ### Footer
-The footer area of a Modal typically contains a set of buttons. Refer to [Button]() guidelines for usage.
+The footer area of a Modal typically contains a set of buttons. Refer to [Button](/components/button) guidelines for usage.
 
 ## Usage
 ### Transactional Modal
-Transactional Modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the Modal requests either a 'yes' or 'no' response. 
+Transactional Modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the Modal requests either a 'yes' or 'no' response.
 
 ![transactional modal](images/modal-usage-3.png)
 

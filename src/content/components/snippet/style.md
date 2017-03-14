@@ -3,12 +3,12 @@
 |--------------------------|---------|-----------|
 | Code snippet: background | #3d70b2 | $field-01 |
 | Code snippet: text       | #152935 | $text-01  |
-| Terminal: background     |         | TBD       |
-| Terminal: text           |         | TBD       |
+| Terminal: background     | #0f212e | $nav-01   |
+| Terminal: text           | #f5f7fa | $ui-02    |
 | Icon: copy               | #3d70b2 | $brand-01 |
 
 
-## Typography 
+## Typography
 | PROPERTY | FONT-FAMILY | FONT-SIZE   | FONT-WEIGHT  |
 |----------|-------------|-------------|--------------|
 | Text     | Monospace   | 16px / 1rem | Normal / 400 |
@@ -20,7 +20,7 @@
 | Height: snippet   | 192 | 12    |
 | Height: terminal  | 56  | 3.5   |
 | Width             | 640 | 40    |
-| Spacing: interal  | 16  | 1     |
+| Spacing: internal | 16  | 1     |
 | Spacing: external | 16  | 1     |
 | Icon: height      | 24  | 1.5   |
 | Icon: width       | 18  | 1.125 |

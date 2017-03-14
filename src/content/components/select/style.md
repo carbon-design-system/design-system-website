@@ -10,8 +10,8 @@
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states_
 
-## Typography 
-Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be 3 words or less. 
+## Typography
+Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
 | PROPERTY | FONT-SIZE       | FONT-WEIGHT  |
 |----------|-----------------|--------------|
@@ -45,4 +45,14 @@ _Examples of open, disabled, and help Select states_
 
 ### Small Select
 
-**image example of small select goes here**
+| PROPERTY                    | PX | REM   |
+|-----------------------------|----|-------|
+| Height                      | 24 | 1.5   |
+| Width                       | 56 | 3.5   |
+| Internal spacing            | 8  | .5    |
+
+![Structure and spacing measurements for Small Select](images/select-style-4.png)
+_Structure and spacing measurements for Small Select | px / rem_
+
+![Structure and spacing measurements for Small Select](images/select-style-5.png)
+_Examples of open and disabled Small Select states_

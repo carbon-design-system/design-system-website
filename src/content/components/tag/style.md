@@ -1,13 +1,5 @@
-
-<!-- NOTE: We are leaving out the color section for Tags because these colors aren't in our library. They are an exception. Should we surface them? 
-
-If we add in colors, add in the colors images
-
-![Various tag types and colors](images/tag-style-2.png)
---> 
-
 ## Typography 
-Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces. 
+Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
 |----------|----------------|--------------|
@@ -26,5 +18,3 @@ All tags have the same height. However, the width of tags varies based on the am
 
 ![Structure and spacing measurements](images/tag-style-1.png)
 _Structure and spacing measurements for a Tag | px / rem_
-
-

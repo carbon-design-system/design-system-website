@@ -2,14 +2,14 @@
 | COLOR             | SCSS     | HEX      |
 |-------------------|----------|----------|
 | Background        | $ui-01   | #ffffff  |
-| Footer background | $ui-03   | #f0f3f6  | 
+| Footer background | $ui-03   | #f0f3f6  |
 | Border            | $ui-04   | #dfe3e6  |
 | Text              | $text-01 | #152935  |
 | App actions icon  | $ui-05   | #8c9ba5  |
 
 
 ## Typography
-Card names and card information should be set in title case with the first letter of each word capitalized. All other text should be set in sentence case. 
+Card names and card information should be set in title case with the first letter of each word capitalized. All other text should be set in sentence case.
 
 | PROPERTY                  | FONT-SIZE     | FONT-WEIGHT  |
 |----------------------------|-----------------|--------------|
@@ -27,14 +27,14 @@ Card names and card information should be set in title case with the first lette
 
 
 ## Structure
-There are several types of cards, each having its own measurements and attributes. Please select the appropriate card based on content and card needs. Find the measurement and visual details for each card type listed below. Card icons can be found in the [iconography]() page. 
+There are several types of cards, each having its own measurements and attributes. Please select the appropriate card based on content and card needs. Find the measurement and visual details for each card type listed below. Card icons can be found in the [iconography]() page.
 
 | PROPERTY             | PX  | REM    |
 |----------------------|-----|--------|
 | Height               | 240 | 15     |
 | Width                | 200 | 12.5   |
 | Footer               | 48  | 3      |
-| Icon Circle          | 50  | 3.125  |
+| Icon circle          | 50  | 3.125  |
 | Icon                 | 32  | 2      |
 | Border               | 1   | -      |
 

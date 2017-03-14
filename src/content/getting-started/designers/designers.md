@@ -4,9 +4,9 @@
 
 ### 1. Download the Kit
 
-Go to the [Design Kit](https://github.com/carbon-design-system/design-kit) repo and click on the latest version of the Design Kit. Click the "View Raw" link to begin downloading the kit.
+Go to the [Design Kit](https://github.com/carbon-design-system/design-kit) repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.
 
-<!--![Download the Carbon Design Kit](images/designers-2.png)-->
+![Download the Carbon Design Kit](images/designers-2.png)
 
 ### 2. Open the Design Kit in Sketch
 

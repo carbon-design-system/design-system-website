@@ -1,6 +1,6 @@
 ## Visual guidelines
 ### Adding icons
-If you would like to add an icon to our library, please submit a pull request in our [GitHub repo.]()
+If you would like to add an icon to our library, please submit a pull request in our [GitHub repo.](https://github.com/carbon-design-system/design-kit)
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
@@ -99,6 +99,5 @@ Inspect the code and make sure that your XML doesn't include the following:
 4. Optional: Go to [localhost:3000/test](http://localhost:3000/test) and test styling of icon manually using CSS.
 
 
-Unit tests are run against built SVG sprite files (bluemix-icons.svg and sprite.svg). 
+Unit tests are run against built SVG sprite files (bluemix-icons.svg and sprite.svg).
 Do not commit built files to pull requests.
-

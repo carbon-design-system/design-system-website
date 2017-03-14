@@ -1,4 +1,4 @@
-**Grid systems are used for creating page layouts through a series of rows and columns that house your content. Carbon uses a responsive, mobile first, fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.**
+**_Grid_ systems are used for creating page layouts through a series of rows and columns that house your content. Carbon uses a responsive, mobile first, fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.**
 
 ## Basic structure
 
@@ -12,7 +12,7 @@
 Columns / Gutter / Margins
 
 ### Grid with interior left navigation
-The interior left navigation lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
+The Interior Left Nav lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
 
 **Grid area with left navigation: page width minus 200px from left edge.**
 
@@ -42,7 +42,7 @@ The twelve column grid does not have a maximum width. It has a width of 100%, wi
 
 In devices with a screen width greater than 768px, the margins are 5% on the left, and 5% on the right.
 
-**Example: Screen Width 768px** 
+**Example: Screen Width 768px**
 
 * 5% left = 38px (rounded to nearest whole pixel)
 * 5% right = 38px (rounded to nearest whole pixel)
@@ -58,9 +58,9 @@ In devices with a screen width less than 768px, the margins are 3% on the left, 
 
 ### Breakpoints
 
-|                                     | COLUMNS | COLUMN PADDING        | GUTTERS            | OUTER MARGINS     |
+| SIZE                         | COLUMNS | GUTTERS            | OUTER MARGINS     |
 |-------------------------------------|---------|-----------------------|--------------------|-------------------|
-| Extra small devices Phones (<768px) | 12      | 5px left, 5px right   | 5px + 5px = 20px   | 3% left, 3% right |
-| Small devices Tablets (≥768px)      | 12      | 10px left, 10px right | 10px + 10px = 20px | 5% left, 5% right |
-| Medium devices Desktop (≥992px)     | 12      | 10px left, 10px right | 10px + 10px = 20px | 5% left, 5% right |
-| Large devices Desktop (≥1200px)     | 12      | 10px left, 10px right | 10px + 10px = 20px | 5% left, 5% right |
+| XS (<768px) | 12      | 5px + 5px = 20px   | 3% left, 3% right |
+| S (≥768px)      | 12      | 10px + 10px = 20px | 5% left, 5% right |
+| M (≥992px)     | 12      | 10px + 10px = 20px | 5% left, 5% right |
+| L (≥1200px)     | 12      | 10px + 10px = 20px | 5% left, 5% right |

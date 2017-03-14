@@ -2,7 +2,7 @@
 
 ## Typeface
 
-IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content. The font files for Bluemix can be found at https://github.ibm.com/Design/fonts/tree/master/fonts.
+IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content.
 
 ```
 %helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif; }
@@ -10,7 +10,7 @@ IBM uses a custom version of Helvetica Neue for both its Marketing and Product b
 
 ## Normalized Major Second type scale | 1.125
 
-Bluemix uses the Major Second scale with a base size of 16px for 1 rem. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
+Carbon uses the Major Second scale with a base size of 16px for 1 rem. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
 
 ```
 @include font-size('18');
@@ -32,13 +32,13 @@ Font weight is another typographic style that can add emphasis and differentiate
 
 ## Headers
 
-The size of a header is determined by layout or template structure. Bluemix has several levels of architecture and areas that require varying header sizes. Nevertheless, all headers must be sized from the Major Second type scale and paired with a thoughtfully considered font weight.
+The size of a header is determined by layout or template structure. Each UI may have several levels of architecture and areas that require varying header sizes. Nevertheless, all headers must be sized from the Major Second type scale and paired with a thoughtfully considered font weight.
 
 ## Body copy
 
 ### Font size
 
-Bluemix uses two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
+We recommend using two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
 
 **Standard Console: 14px / 0.875rem**
 **Prolonged reading: 16px / 1rem**

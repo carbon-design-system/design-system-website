@@ -7,7 +7,7 @@
 | Chevron        | $ui-05  | #8c9ba5     |
 
 
-## Typography 
+## Typography
 Pagination text should be set in set in sentence case with the first letter of each word capitalized.
 
 | PROPERTY       | FONT-SIZE      | FONT-WEIGHT |
@@ -16,9 +16,7 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 
 ## Structure
-The Pagination bar is most commonly used in [Data tables](). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 10px by 5px. 
-
-<!-- Tayler can you confirm size of the icon used in the small select?? --> 
+The Pagination bar is most commonly used in [Data tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 10px by 5px.
 
 | PROPERTY                           | PX        | REM   |
 |------------------------------------|-----------|-------|
@@ -26,10 +24,9 @@ The Pagination bar is most commonly used in [Data tables](). The width can vary 
 | Width                              | Varies based on content and layout | |
 | Border                             | 1         | -     |
 | Spacing: left & right              | 16        | 1     |
-| Spacing: small select & items text | 10        | .625  |
+| Spacing: small select & items text | 10        | 0.625  |
 | Spacing: page text & chevron       | 16        | 1     |
 | Spacing: chevron & page number     | 30        | 1.875 |
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 _Structure and spacing measurements for Pagination | px / rem_
-

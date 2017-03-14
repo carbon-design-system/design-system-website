@@ -10,7 +10,7 @@
 
 
 ## Typography
-The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized. 
+The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
 | PROPERTY         | FONT-SIZE      | FONT-WEIGHT  |
 |------------------|-----------------|--------------|
@@ -20,7 +20,7 @@ The File Uploader label and instruction text should be set in sentence case, wit
 
 
 ## Structure
-The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button]() guidelines for styling and usage of the 'Add files' button.
+The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button](/components/button) guidelines for styling and usage of the “Add files” button.
 
 | PROPERTY               | PX | REM   |
 |------------------------|----|-------|
@@ -32,4 +32,3 @@ The width of an uploaded file varies based on the content and layout of a design
 
 ![Structure and spacing measurements for File Uploader](images/file-uploader-style-1.png)
 _Structure and spacing measurements for File Uploader | px / rem_
-

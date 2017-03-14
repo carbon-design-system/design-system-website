@@ -8,7 +8,7 @@
 | Divider line   | $ui-04     |  #dfe3e6   |
 
 ## Typography
-All Accordion labels are set in title case, with the first letter of each word capitalized. Labels should not exceed three words. Set body text appropriately based on content. All text should follow the typography font stack for sans-serif.
+All Accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
 
 | PROPERTY   | FONT-SIZE       | FONT-WEIGHT  |
 |------------|-----------------|--------------|
@@ -17,7 +17,7 @@ All Accordion labels are set in title case, with the first letter of each word c
 
 
 ## Structure
-There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon may be found on the [iconography]() library page. 
+There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon may be found on the [iconography](/style/iconography/library) library page. 
 
 | HEIGHT       | PX | REM   |
 |--------------|----|-------|
