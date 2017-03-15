@@ -1,35 +1,11 @@
 import React, { PropTypes } from 'react';
-import ReactDOM from 'react-dom';
 import Markdown from 'react-remarkable';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import PageTabs from '../../internal/PageTabs';
 
-import LayerTypes from '../../internal/LayerTypes';
-
 class Layer extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string,
-  }
-
-  componentDidMount() {
-    this.addCustomComponent();
-  }
-
-  addCustomComponent = () => {
-    const customComponents = {
-      LayerTypes,
-    };
-
-    const insertComponent = [... document.querySelectorAll('[data-insert-component]')];
-    insertComponent.forEach(component => {
-      const comp = component.dataset.insertComponent;
-      const NewComponent = customComponents[comp];
-      component.classList.add('custom-component-parent');
-      ReactDOM.render(
-        <NewComponent />,
-        component
-      );
-    });
   }
 
   render() {

@@ -6,6 +6,11 @@ import 'highlight.js/styles/atom-one-light.css';
 import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';
 import ColorContrast from '../../internal/ColorContrast';
+import GridExample from '../../internal/GridExample';
+import LayerTypes from '../../internal/LayerTypes';
+import LayerUsage from '../../internal/LayerUsage';
+import TypographyTable from '../../internal/TypographyTable';
+import BrandColors from '../../internal/BrandColors';
 
 class Page extends Component {
   static propTypes = {
@@ -27,7 +32,12 @@ class Page extends Component {
   addCustomComponent = () => {
     const customComponents = {
       ImageGrid,
-      ColorContrast
+      ColorContrast,
+      GridExample,
+      LayerTypes,
+      LayerUsage,
+      TypographyTable,
+      BrandColors
     };
 
     const insertComponent = [... document.querySelectorAll('[data-insert-component]')];
@@ -81,13 +91,19 @@ class Page extends Component {
     }
 
     // First paragraph margin styling
-    const firstIntro = document.querySelector('div span p strong');
-    const firstChild = document.querySelector('.page div span').firstChild;
-    if (firstIntro && firstChild) {
-      if (firstIntro.parentElement === firstChild) {
-        firstIntro.parentElement.style.marginBottom = '5rem';
+    const firstChildren = [... document.querySelectorAll('.page')];
+    firstChildren.forEach(child => {
+      const firstPageChild = child.firstChild;
+      if (firstPageChild.querySelector('span p') && firstPageChild.querySelector('span p').innerHTML === '') {
+        firstPageChild.querySelector('span p').style.display = 'none';
       }
-    }
+      const paragraphs = [... child.querySelectorAll('div span p')];
+      paragraphs.forEach(paragraph => {
+        if (paragraph.innerHTML === '') {
+          paragraph.style.display = 'none';
+        }
+      });
+    });
   }
 
   render() {

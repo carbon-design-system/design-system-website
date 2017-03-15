@@ -15,7 +15,11 @@ class App extends Component {
 
   componentDidMount() {
     this.checkWidth();
-    // this.addBxClasses();
+    this.addBxClasses();
+  }
+
+  componentDidUpdate() {
+    this.addBxClasses();
   }
 
   onToggleBtnClick = () => {
@@ -38,10 +42,6 @@ class App extends Component {
       overlay.classList.add('image-overlay__overlay');
       image.parentElement.classList.add('image-overlay');
       image.parentElement.appendChild(overlay);
-    });
-    const imageSets = [... document.querySelectorAll('p strong img')];
-    imageSets.forEach(image => {
-      image.parentElement.parentElement.classList.add('image-set');
     });
   }
 

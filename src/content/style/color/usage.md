@@ -8,8 +8,6 @@ A universal variable can also have multiple associated roles when the color is c
 
 ### Color terms
 
-<!--- CONTENT BELOW IN LIST/TABLE --->
-
 TERM | DEFINITION
 -----|-----------
 **Value** | A unique color (hex code) assigned to a universal variable
@@ -21,22 +19,20 @@ TERM | DEFINITION
 
 ## Color roles
 
-<!--- CONTENT BELOW IN LIST/TABLE --->
-
 VARIABLE | ROLE/S | VALUE
 ---------|--------|------
-**brand-01** | Primary brand, interactive text, Primary icon color, border highlight, emphasis background | #3d70b2
-**brand-02** | Supporting brand, brand-01 hover | #5596e6
-**brand-03** | Secondary brand, Loading| #00b4a0
-**ui-01** | Primary background, Layer 1 background | #ffffff
-**ui-02** | Default background, Layer 0 background, secondary background | #f5f7fa
+**brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> border highlight <br /> Emphasis background | #3d70b2
+**brand-02** | Supporting brand <br /> brand-01 hover | #5596e6
+**brand-03** | Secondary brand <br /> Loading| #00b4a0
+**ui-01** | Primary background <br /> Layer 1 background | #ffffff
+**ui-02** | Default background <br /> Layer 0 background <br /> Secondary background | #f5f7fa
 **ui-03** | Tertiary background | #f0f3f6
 **ui-04** | Subtle border | #dfe3e6
-**ui-05** | Emphasis border, secondary icons | #8c9ba5
-**text-01** | Primary text, body copy | #152935
-**text-02** | Secondary text, subtle text | #5a6872
+**ui-05** | Emphasis border <br /> Secondary icons | #8c9ba5
+**text-01** | Primary text <br /> Body copy | #152935
+**text-02** | Secondary text <br /> Subtle text | #5a6872
 **text-03** | Hint text | #5a6872
-**inverse-01** | Inverse text color, inverse icon color | #ffffff
+**inverse-01** | Inverse text color <br /> Inverse icon color | #ffffff
 **field-01** | Field background | rgba(60,112,178,0.10)
 **support-01** | Error | #e71d32
 **support-02** | Success | #5aa700
@@ -51,7 +47,9 @@ VARIABLE | ROLE/S | VALUE
 **nav-07** | Header id - infrastructure | #5aaafa
 **nav-08** | Left nav id - infrastructure | #3d70b2
 
-## Color contrast | 4.5 : 1 ratio
+## Color contrast | WCAG AA standards
+
+All type color combinations on Carbon must pass [WCAG AA standards](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is bold (700) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
 
 <div data-insert-component="ColorContrast"></div>
 
@@ -59,5 +57,5 @@ VARIABLE | ROLE/S | VALUE
 
 - [IBM accessible color guide](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
 - [IBM accessibility quick guidance](http://w3-03.ibm.com/able/devtest/quick/)
-- [Color contrast checker](http://webaim.org/resources/contrastchecker/)
+- [Color contrast checker](https://marijohannessen.github.io/color-contrast-checker/)
 - [IBM Design Language colors](http://www.ibm.com/design/language/framework/visual/color)

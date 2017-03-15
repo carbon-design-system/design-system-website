@@ -108,20 +108,7 @@ In order to maintain consistency, the logo should never be modified, transformed
 ## Brand colors
 Primary Bluemix brand colors are IBM Design Blue 30, Blue 80 and Teal 30. These colors directly correlate with the Bluemix identity. While we have other colors in our broader UI and communication palette, these three colors should be the most prominent outward-facing brand colors.
 
-**IBM Blue 30**
-`#5aaafa`
-RGB 90 170 250
-
-
-**IBM Blue 80**
-`#1d3649`
-RGB 29 54 73
-
-
-**IBM Teal 30**
-`#41d6c3`
-RGB 65 214 195
-
+<div data-insert-component="BrandColors"></div>
 
 ### Best practices
 * Use color with purpose.

@@ -1,8 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import Highlight from 'react-highlight';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
+// import hljs from 'highlight.js';
+// import 'highlight.js/styles/atom-one-light.css';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -64,7 +65,9 @@ class CodeExample extends Component {
         <div className={codeExampleClass} ref={(ref) => { this.codeBlock = ref; }}>
           <div className="bx--snippet-container">
             <pre className="code-example__snippet">
-              {htmlFile}
+              <code>
+                {htmlFile}
+              </code>
             </pre>
           </div>
         </div>

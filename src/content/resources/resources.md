@@ -1,26 +1,39 @@
-![Sketch](images/resources-1.png)
-## Design Kit
-The Design Kit consists of core visual styles and patterns. It contains everything needed to get started building an experience that contributes to our platform.
+<div class="image-grid">
+  <div>
+  ![Sketch](images/resources-1.png)
 
-[Design Kit]()
+  ## Design Kit
+  
+  The Design Kit consists of core visual styles and patterns. It contains everything needed to get started building an experience that contributes to our platform.
+  
+  [Design Kit]()
+  </div>
+  <div>
+  ![GitHub](images/resources-2.png)
+  
+  ## Component library
+  
+  The Component Library gives developers (FEDs & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.
+  
+  [Component library]()
+  </div>
+  <div>
 
+  ## IBM Design Language
 
-![GitHub](images/resources-2.png)
-## Component library
-The Component Library gives developers (FEDs & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.
+  Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.
+  
+  [IBM Design Language](https://www.ibm.com/design/language/)
+  </div>
+  <div>
+  
+  ## IBM web fonts
 
-[Component library]()
+  IBM Design uses the Helvetica Neue for IBM font family across products for brand consistency and cohesion.
 
-
-## IBM Design Language
-Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.
-
-[IBM Design Language](https://www.ibm.com/design/language/)
-
-## IBM web fonts
-IBM Design uses the Helvetica Neue for IBM font family across products for brand consistency and cohesion.
-
-[IBM web fonts]()
+  [IBM web fonts]()
+  </div>
+</div>
 
 ## Carbon boilerplate
 A simple boilerplate for rapid UI prototyping with Carbon components.
@@ -28,7 +41,6 @@ A simple boilerplate for rapid UI prototyping with Carbon components.
 ***
 [Carbon boilerplate](https://carbon-boilerplate.mybluemix.net/)
 
-<hr>
 **DOWNLOADS**
 
 <!-- all are styled as secondary buttons -->

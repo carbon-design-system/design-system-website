@@ -89,16 +89,12 @@ class Iconography extends React.Component {
         </Tab>
         <Tab href="/style/iconography/usage" label="Usage">
           <div className="page">
-            <Markdown options={{ html: true }}>
-              {usage}
-            </Markdown>
+            <Markdown options={{ html: true }} source={usage} />
           </div>
         </Tab>
         <Tab href="/style/iconography/contribution" label="Contribution">
           <div className="page">
-            <Markdown options={{ html: true }}>
-              {contribution}
-            </Markdown>
+            <Markdown options={{ html: true }} source={contribution} />
           </div>
         </Tab>
       </PageTabs>

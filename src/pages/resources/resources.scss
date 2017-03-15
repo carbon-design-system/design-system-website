@@ -1,0 +1,31 @@
+.resources {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 45rem;
+
+    li {
+      width: 48%;
+      margin-bottom: 2rem;
+      list-style-type: none !important;
+    }
+
+    li img {
+      width: rem(100px) !important;
+    }
+
+    li h2 {
+      padding-bottom: 2rem !important;
+    }
+
+    li h2:before {
+      display: none !important;
+    }
+
+    li p {
+      padding-bottom: 1rem !important;
+    }
+  }
+}

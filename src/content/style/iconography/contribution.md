@@ -54,6 +54,7 @@ _Example: This is what a Sketch artboard should look like before SVG export_
 11. The `SVG Options` dialog will then open.
 12. Make sure the preferences are the same as in the image below.
 
+---
 ![export icons from Illustrator](images/icon-contribution-2.png)
 
 _SVG export options from Adobe Illustrator_

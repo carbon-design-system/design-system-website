@@ -2,6 +2,10 @@
   margin: 4rem 3% 0;
   padding-bottom: 5rem;
 
+  > div:first-child > span:first-child > p:first-child {
+    margin-bottom: 5rem;
+  }
+
   @include breakpoint('600px') {
     margin: 4rem 5% 0;
   }
@@ -44,7 +48,9 @@
     }
   }
 
-  & > *:not(.component-variation,.component-example) {
+  & > *:not(.component-variation):not(.component-example),
+  & > {
+
     h1,
     h2,
     h3 {
@@ -125,6 +131,7 @@
     div span p {
       padding-bottom: 1rem;
     }
+
     p:first-child {
 
         strong {
@@ -164,7 +171,12 @@
         margin: 1rem 0;
       }
 
-      p code {
+      a.bx--btn {
+        margin-top: 1rem;
+      }
+
+      p code,
+      li code {
         font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
         font-size: .875rem;
         padding: .25rem;
@@ -192,6 +204,7 @@
       table {
         width: 100%;
         max-width: 38rem;
+        margin-top: 1rem;
         margin-bottom: 1.5rem;
 
         thead {
@@ -209,11 +222,6 @@
             letter-spacing: 1px;
             padding: 1rem 3rem 1rem 0;
             border-bottom: 2px solid $color__blue-40;
-            flex: 2;
-
-            &:first-child {
-              flex: 1;
-            }
           }
         }
 
@@ -227,14 +235,21 @@
             td {
               font-size: rem(14px);
               padding: 1rem 3rem 1rem 0;
-              flex: 2;
+
+              strong {
+                letter-spacing: 0;
+              }
 
               &:first-child {
                 font-weight: 600;
-                flex: 1;
               }
             }
           }
+        }
+
+        th,
+        td {
+          flex: 1;
         }
       }
 
@@ -295,6 +310,7 @@
         img {
           width: 100%;
           z-index: 1;
+          margin: 0 !important;
         }
 
         &__overlay {
@@ -302,7 +318,7 @@
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%;
+          height: 98.5%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -365,8 +381,10 @@
           }
 
           &:nth-child(2) {
+            white-space: nowrap;
             font-size: 4rem;
             text-align: right;
+            line-height: 1;
           }
         }
 
@@ -463,6 +481,14 @@
       blockquote + hr + p {
         font-style: italic;
         color: $color__navy-gray-6;
+      }
+
+      hr + p img {
+        width: auto;
+      }
+
+      hr + table {
+        max-width: 45rem;
       }
   }
 }

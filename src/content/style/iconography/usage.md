@@ -1,12 +1,10 @@
 **_Iconography_ uses images and symbols to represent an object visually. They communicate a message and should be simple, distinct, and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.**
 
-
 ## Resources
 You can find the source file for the icon library within the [Carbon Design Kit.](https://github.com/carbon-design-system/design-kit)
 
-[Icons GitHub repo]()
-
-[IBM Design Language icon library](http://www.ibm.com/design/language/resources/icon-library/)
+- [Bluemix Icons GitHub repo]()
+- [IBM Design Language icon library](http://www.ibm.com/design/language/resources/icon-library/)
 
 
 ## Visual usage
@@ -23,6 +21,7 @@ While most icons occupy a square artboard, some icons may occupy a rectangular a
 ### Background
 All icons should be on a transparent background and centered within the artboard boundaries at one of the below standard dimensions.
 
+---
 ![icon usage](images/icon-usage-1.png)
 
 ### Padding
@@ -30,11 +29,10 @@ When **creating icons:**
 Do not add internal padding with Sketch or Illustrator.
 If the icon needs padding, developers can add this with CSS.
 
-
 When **using icons:** All touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
 
+---
 ![icon padding](images/icon-usage-2.png)
-
 
 ### Color
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.

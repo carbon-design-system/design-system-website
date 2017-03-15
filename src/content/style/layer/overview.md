@@ -31,7 +31,7 @@ LAYER NAME | ELEVATION | BOX-SHADOW
 - Borders are the only over arching limitation of the content on layer, however limitations on the content per component may occur. See individual components for more details.
 
 ## Elevation
-Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intenisty and depth of the shadow it casts. 
+Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intenisty and depth of the shadow it casts.
 
 ### Elevation scale
 The range of imagined plains in the UI are on a scale from 0 to 24, with zero being the base and 24 the highest point. The higher the elevation is the larger the shadow each layer will cast. Each unit on the elevation scale is equal to the pixel value of the coded blur applied to shadow.

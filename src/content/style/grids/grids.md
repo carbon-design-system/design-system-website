@@ -2,21 +2,16 @@
 
 ## Basic structure
 
-**
-![1440px grid](images/grid-1.png)
-![786px grid](images/grid-2.png)
-![320px grid](images/grid-3.png)
-**
-
-**Key:**
-Columns / Gutter / Margins
+<div data-insert-component="GridExample"></div>
 
 ### Grid with interior left navigation
 The Interior Left Nav lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
 
 **Grid area with left navigation: page width minus 200px from left edge.**
 
+_
 ![Interior left nav grid](images/grid-4.png)
+_
 
 ## How it works
 ### Gutters
@@ -33,8 +28,9 @@ This can translate to percentages of the twelve columns. Using this method, a de
 
 **Column count: 12**
 
+_
 ![Interior left nav grid](images/grid-5.png)
-
+_
 _@1440px - 12 Columns / 20px Gutters / 5% Margins_
 
 ### Margins
@@ -58,6 +54,7 @@ In devices with a screen width less than 768px, the margins are 3% on the left, 
 
 ### Breakpoints
 
+---
 | SIZE                         | COLUMNS | GUTTERS            | OUTER MARGINS     |
 |-------------------------------------|---------|-----------------------|--------------------|-------------------|
 | XS (<768px) | 12      | 5px + 5px = 20px   | 3% left, 3% right |

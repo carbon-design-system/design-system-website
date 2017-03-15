@@ -11,16 +11,14 @@ class ColorContrast extends Component {
 
     return (
       <div className="color-contrast">
-        <p>All type color combinations on Bluemix must pass WCAG AA standards of 4.5 : 1.
-          In the table below are approved color combinations.</p>
         <ul className="color-contrast__keys">
           <li>
             <img alt="normal text icon" src={normalTextImage} />
-            <p>Normal Text</p>
+            <p>Text (4.5:1)</p>
           </li>
           <li>
             <img alt="large text icon" src={largeTextImage} />
-            <p>Large Text: <span>18px bold or larger</span></p>
+            <p>Large Text (3:1): <span>at least 24px / 19px bold</span></p>
           </li>
         </ul>
         <ul className="color-contrast__examples">

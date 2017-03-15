@@ -42,7 +42,11 @@ $css--reset: true;
 @import '../internal/TypographyTable/typography-table.scss';
 @import '../internal/ImageGrid/image-grid.scss';
 @import '../internal/ColorContrast/color-contrast.scss';
+@import '../internal/GridExample/grid-example.scss';
+@import '../internal/LayerUsage/layer-usage.scss';
+@import '../internal/BrandColors/brand-colors.scss';
 
 @import '../pages/overview/overview.scss';
 @import '../pages/guidelines/guidelines.scss';
 @import '../pages/component-status/component-status.scss';
+@import '../pages/resources/resources.scss';
