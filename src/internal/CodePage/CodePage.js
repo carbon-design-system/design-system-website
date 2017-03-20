@@ -1,34 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import ComponentExample from '../ComponentExample/ComponentExample';
-import hljs from 'highlight.js';
 
 class CodePage extends Component {
   static propTypes = {
     component: PropTypes.string,
-  }
-
-  componentDidMount() {
-    const codeBlocks = [... document.querySelectorAll('pre')];
-    if (codeBlocks) {
-      codeBlocks.forEach(block => {
-        if (block.querySelector('code')) {
-          block.classList.add('bx--snippet', 'bx--snippet--code');
-          hljs.highlightBlock(block.querySelector('code'));
-        }
-      });
-    }
-  }
-
-  componentDidUpdate() {
-    const codeBlocks = [... document.querySelectorAll('pre')];
-    if (codeBlocks) {
-      codeBlocks.forEach(block => {
-        if (block.querySelector('code')) {
-          block.classList.add('bx--snippet', 'bx--snippet--code');
-          hljs.highlightBlock(block.querySelector('code'));
-        }
-      });
-    }
   }
 
   renderVariation = (parent, variation, title) => {

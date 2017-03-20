@@ -5,25 +5,33 @@ $temp-text: $color__blue-90;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 1rem;
   max-width: 100%;
-}
 
-.code-example__snippet {
-  color: initial;
+  // code[class*="language-"], pre[class*="language-"] {
+  //   background-color: #fff;
+  // }
+
+  .bx--snippet__icon {
+    top: 0;
+    right: .25rem;
+  }
 }
 
 .code-example__copy-btn {
-  width: 10rem;
+  height: rem(24px);
   position: absolute;
-  right: 0;
-  top: 0;
-  background-color: transparent;
+  top: .75rem;
+  right: .75rem;
   color: transparent;
+  background-color: #F5F7FF;
+  cursor: pointer;
+
+  &:hover svg {
+    fill: $brand-02;
+  }
 }
 
 .code-example__raw-html {
-  padding: 1rem 1.5rem;
   max-height: 12rem;
   min-height: 7rem;
   height: auto;

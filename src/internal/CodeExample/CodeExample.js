@@ -2,8 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
-// import hljs from 'highlight.js';
-// import 'highlight.js/styles/atom-one-light.css';
+import Prism from '../../assets/syntax/prism.js';
+import '../../assets/syntax/prism.css';
+import '../../assets/syntax/syntax.css';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -20,6 +21,15 @@ class CodeExample extends Component {
     if (this.codeBlock.offsetHeight > 190) {
       this.setState({ showBtn: true });
     }
+    Prism.highlightAll();
+  }
+
+  componentWillUpdate = () => {
+    Prism.highlightAll();
+  }
+
+  componentDidUpdate = () => {
+    Prism.highlightAll();
   }
 
   handleCopy = () => {
@@ -37,6 +47,8 @@ class CodeExample extends Component {
     const {
       htmlFile,
     } = this.props;
+
+
 
     const copyBtnClass = classnames({
       'bx--btn--copy__feedback': true,
@@ -61,15 +73,13 @@ class CodeExample extends Component {
     const expandCodeBtnText = this.state.expandedCode ? 'Show less code' : 'Show more code';
 
     return (
-      <div className="code-example bx--snippet bx--snippet--code">
+      <div className="code-example">
         <div className={codeExampleClass} ref={(ref) => { this.codeBlock = ref; }}>
-          <div className="bx--snippet-container">
-            <pre className="code-example__snippet">
-              <code>
-                {htmlFile}
-              </code>
-            </pre>
-          </div>
+          <pre className="line-numbers">
+            <code className="language-html">
+              {htmlFile}
+            </code>
+          </pre>
         </div>
         <CopyToClipboard
           text={htmlFile}

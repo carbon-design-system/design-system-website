@@ -1,8 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 import Markdown from 'react-remarkable';
-import hljs from 'highlight.js';
-import 'highlight.js/styles/atom-one-light.css';
 import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';
 import ColorContrast from '../../internal/ColorContrast';
@@ -78,15 +76,6 @@ class Page extends Component {
             sibling.nextElementSibling.querySelector('a').classList.add('bx--btn', 'bx--btn--secondary');
           }
         }
-      });
-    }
-
-    // Code blocks
-    const codeBlocks = [... document.querySelectorAll('pre')];
-    if (codeBlocks) {
-      codeBlocks.forEach(block => {
-        block.classList.add('bx--snippet', 'bx--snippet--code');
-        hljs.highlightBlock(block.querySelector('code'));
       });
     }
 
