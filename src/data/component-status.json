@@ -2,168 +2,168 @@
   "items": [
     {
       "item": "Accordion",
-      "added": "6.3.0",
+      "added": "6.10.0",
       "status": 0
     },
     {
       "item": "Breadcrumb",
-      "added": "6.3.0",
-      "status": 1
+      "added": "6.16.0",
+      "status": 0
     },
     {
       "item": "Button",
-      "added": "6.3.0",
-      "status": 2
+      "added": "2.0.0",
+      "status": 0
     },
     {
       "item": "Card",
-      "added": "6.3.0",
-      "status": 3
+      "added": "2.0.0",
+      "status": 0
     },
     {
       "item": "Checkbox",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Code Snippet",
-      "added": "6.3.0",
+      "added": "6.16.0",
       "status": 0
     },
     {
       "item": "Content Switcher",
-      "added": "6.3.0",
+      "added": "4.0.0",
       "status": 0
     },
     {
       "item": "Copy Button",
-      "added": "6.3.0",
-      "status": 0
+      "added": "6.11.0",
+      "status": 2
     },
     {
       "item": "Data Table",
-      "added": "6.3.0",
+      "added": "6.11.0",
       "status": 0
     },
     {
       "item": "Detail Page Header",
-      "added": "6.3.0",
+      "added": "2.3.0",
       "status": 0
     },
     {
       "item": "Dropdown",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "File Uploader",
-      "added": "6.3.0",
+      "added": "2.12.0",
       "status": 0
     },
     {
       "item": "Footer",
-      "added": "6.3.0",
-      "status": 0
+      "added": "4.0.0",
+      "status": 2
     },
     {
       "item": "Form",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Interior Left Nav",
-      "added": "6.3.0",
+      "added": "6.8.0",
       "status": 0
     },
     {
       "item": "Link",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "List",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Loading",
-      "added": "6.3.0",
+      "added": "5.0.0",
       "status": 0
     },
     {
       "item": "Modal",
-      "added": "6.3.0",
+      "added": "4.3.0",
       "status": 0
     },
     {
       "item": "Module",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Notification",
-      "added": "6.3.0",
+      "added": "6.0.0",
       "status": 0
     },
     {
       "item": "Number Input",
-      "added": "6.3.0",
+      "added": "6.0.0",
       "status": 0
     },
     {
       "item": "Pagination",
-      "added": "6.3.0",
+      "added": "6.10.0",
       "status": 0
     },
     {
       "item": "Progress Indicator",
-      "added": "6.3.0",
+      "added": "6.11.0",
       "status": 0
     },
     {
       "item": "Overflow Menu",
-      "added": "6.3.0",
+      "added": "5.0.0",
       "status": 0
     },
     {
       "item": "Radio Button",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Search",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Select",
-      "added": "6.3.0",
+      "added": "4.0.0",
       "status": 0
     },
     {
       "item": "Tabs",
-      "added": "6.3.0",
+      "added": "2.13.0",
       "status": 0
     },
     {
       "item": "Tags",
-      "added": "6.3.0",
+      "added": "6.0.0",
       "status": 0
     },
     {
       "item": "Text Input",
-      "added": "6.3.0",
+      "added": "2.0.0",
       "status": 0
     },
     {
       "item": "Toggle",
-      "added": "6.3.0",
+      "added": "4.0.0",
       "status": 0
     },
     {
       "item": "Tooltip",
-      "added": "6.3.0",
-      "status": 1
+      "added": "2.0.0",
+      "status": 0
     }
   ]
-} 
+}
