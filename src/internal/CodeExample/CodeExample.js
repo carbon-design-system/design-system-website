@@ -2,9 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
-import Prism from '../../assets/syntax/prism.js';
-import '../../assets/syntax/prism.css';
-import '../../assets/syntax/syntax.css';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -18,18 +15,10 @@ class CodeExample extends Component {
   };
 
   componentDidMount = () => {
+    console.log('hello');
     if (this.codeBlock.offsetHeight > 190) {
       this.setState({ showBtn: true });
     }
-    Prism.highlightAll();
-  }
-
-  componentWillUpdate = () => {
-    Prism.highlightAll();
-  }
-
-  componentDidUpdate = () => {
-    Prism.highlightAll();
   }
 
   handleCopy = () => {
@@ -39,7 +28,7 @@ class CodeExample extends Component {
     }, 2500);
   }
 
-  expandCode = (evt) => {
+  expandCode = () => {
     this.setState({ expandedCode: !this.state.expandedCode });
   }
 
@@ -47,8 +36,6 @@ class CodeExample extends Component {
     const {
       htmlFile,
     } = this.props;
-
-
 
     const copyBtnClass = classnames({
       'bx--btn--copy__feedback': true,
@@ -71,7 +58,7 @@ class CodeExample extends Component {
     });
 
     const expandCodeBtnText = this.state.expandedCode ? 'Show less code' : 'Show more code';
-
+    console.log(htmlFile);
     return (
       <div className="code-example">
         <div className={codeExampleClass} ref={(ref) => { this.codeBlock = ref; }}>

@@ -79,6 +79,14 @@ class Page extends Component {
       });
     }
 
+    // Code blocks
+    // const codeBlocks = [... document.querySelectorAll('pre')];
+    // if (codeBlocks) {
+    //   codeBlocks.forEach(block => {
+    //     block.classList.add('bx--snippet', 'bx--snippet--code');
+    //   });
+    // }
+
     // First paragraph margin styling
     const firstChildren = [... document.querySelectorAll('.page')];
     firstChildren.forEach(child => {
@@ -103,7 +111,7 @@ class Page extends Component {
     } = this.props;
 
     const contentType = typeof content;
-    const pageContent = (contentType === 'object') ?
+    const pageContent = (contentType === 'object' || title === '') ?
       content : (
       <div className="page">
         <Markdown options={{ html: true, breaks: true }} source={content} />

@@ -62,10 +62,11 @@
     "yaml-front-matter": "^3.4.0"
   },
   "dependencies": {
-    "@console/bluemix-components": "git+ssh://git@github.ibm.com:Bluemix/bluemix-components.git#7.x",
     "@console/bluemix-components-react": "1.6.4",
     "@console/bluemix-icons": "^4.1.1",
     "classnames": "^2.2.5",
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
     "front-matter": "^2.1.1",
     "lodash.debounce": "^4.0.8",
     "markdown-loader": "^0.1.7",
@@ -85,7 +86,9 @@
     "dev": "npm run front-matter && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "front-matter": "node scripts/frontmatter.js"
+    "front-matter": "node scripts/frontmatter.js",
+    "server": "node index.js",
+    "start": "concurrently \"npm run dev\" \"babel-watch index.js\""
   },
   "jest": {
     "collectCoverageFrom": [

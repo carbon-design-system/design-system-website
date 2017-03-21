@@ -9,8 +9,8 @@ class Resources extends React.Component {
 
     const resourcesContent = (
       <div className="page">
-        <ul className="resources__top">
-          <li>
+        <div className="resources__top">
+          <div>
             <img src={designKitImage} alt="Design kit" />
             <h2>Design Kit</h2>
             <p>
@@ -18,8 +18,8 @@ class Resources extends React.Component {
               It contains everything needed to get started building an experience that contributes to our platform.
             </p>
             <a href="#" target="_blank">Design Kit</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <img src={githubImage} alt="Design kit" />
             <h2>Component Library</h2>
             <p>
@@ -27,23 +27,44 @@ class Resources extends React.Component {
               and Sass partials they can use for building websites and user interfaces.
             </p>
             <a href="#" target="_blank">Component Library</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <h2>IBM Design Language</h2>
             <p>
               Carbon uses the IBM Design Language as our guiding principle.
               These core values remind us to design for an outcome and to be authentically thoughtful.
             </p>
             <a href="#" target="_blank">IBM Design Language</a>
-          </li>
-          <li>
+          </div>
+          <div>
             <h2>IBM Web Fonts</h2>
             <p>
-              IBM Design uses the Helvetica Neue for IBM font family across products for brand consistency and cohesion.
+              The IBM Design Language uses the Helvetica Neue as the IBM font family across products for brand consistency and cohesion.
             </p>
             <a href="#" target="_blank">IBM web fonts</a>
-          </li>
-        </ul>
+          </div>
+          <div>
+            <h2>Carbon Boilerplate</h2>
+            <p>
+              A simple boilerplate for rapid UI prototyping with Carbon components.
+            </p>
+            <a href="#" target="_blank">Carbon Boilerplate</a>
+          </div>
+        </div>
+        <h3 className="page__divider-heading">Downloads</h3>
+        <div className="resources__bottom">
+          <div>
+            <h3>Presentation Templates</h3>
+            <p>Use our branded templates for your presentation needs.</p>
+            <button className="bx--btn bx--btn--secondary">Download Keynote</button>
+            <button className="bx--btn bx--btn--secondary">Download Powerpoint</button>
+          </div>
+          <div>
+            <h3>Bluemix logo</h3>
+            <p>This comprehensive file contains the various versions of the Bluemix logo.</p>
+            <button className="bx--btn bx--btn--secondary">Download logo assets</button>
+          </div>
+        </div>
       </div>
     );
 

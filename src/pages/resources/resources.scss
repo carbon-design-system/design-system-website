@@ -4,28 +4,105 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 45rem;
+    max-width: 100%;
+    flex-direction: column;
+    margin-left: 0;
 
-    li {
-      width: 48%;
-      margin-bottom: 2rem;
-      list-style-type: none !important;
+    @include breakpoint('1267px') {
+      flex-direction: row;
     }
 
-    li img {
-      width: rem(100px) !important;
+    div p {
+      padding-bottom: 1rem !important;
+      max-width: 100% !important;
+
+      @include breakpoint('1267px') {
+        max-width: 20rem !important;
+      }
     }
 
-    li h2 {
+    div {
+      flex: 1 1 auto;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
+
+      @include breakpoint('bp--sm--major') {
+        flex-basis: 30%;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          flex-basis: 46%;
+
+          p {
+            max-width: 30rem !important;
+          }
+        }
+      }
+    }
+
+    div img {
+      width: rem(80px) !important;
+    }
+
+    div h2 {
       padding-bottom: 2rem !important;
+      margin-top: 0 !important;
     }
 
-    li h2:before {
+    div h2:before {
       display: none !important;
     }
 
-    li p {
-      padding-bottom: 1rem !important;
+    div a {
+      display: block;
+      margin-bottom: .5rem;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 45rem;
+    margin-left: 0;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+
+      p {
+        max-width: 100% !important;
+      }
+
+      h3 {
+        white-space: nowrap;
+        padding-top: 0 !important;
+      }
+
+      .bx--btn {
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      @include breakpoint('bp--sm--major') {
+        margin-bottom: 0;
+        margin-right: 3rem;
+        width: auto;
+
+        .bx--btn {
+          width: 15rem;
+        }
+        
+        p {
+          max-width: 15rem !important;
+        }
+      }
     }
   }
 }

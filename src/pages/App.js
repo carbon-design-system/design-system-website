@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import SideNav from '../internal/SideNav';
+import Prism from '../assets/syntax/prism.js';
+import '../assets/syntax/prism.css';
+import '../assets/syntax/syntax.css';
 import '../scss/main.scss';
 import '@console/bluemix-components/src/index.js';
 
@@ -16,10 +19,16 @@ class App extends Component {
   componentDidMount() {
     this.checkWidth();
     this.addBxClasses();
+    Prism.highlightAll();
+  }
+
+  componentWillUpdate = () => {
+    Prism.highlightAll();
   }
 
   componentDidUpdate() {
     this.addBxClasses();
+    Prism.highlightAll();
   }
 
   onToggleBtnClick = () => {

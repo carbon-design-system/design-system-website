@@ -95,10 +95,6 @@ export default (
         <Route path="/components/:name/:page" component={ComponentPage} />
       </Route>
     </Route>
-    <Route path="templates">
-      <IndexRedirect to="/templates/colors" />
-      <Route path="/templates/:name" component={Templates} />
-    </Route>
     <Route path="resources" component={Resources} />
     <Route path="component-status" component={ComponentStatus} />
   </Route>

@@ -55,10 +55,10 @@
   }
 
   &__layer-16 {
-    @include layer('left-nav');
+    @include layer('temporary-nav');
   }
 
   &__layer-24 {
-    @include layer('global-header');
+    @include layer('sticky-nav');
   }
 }

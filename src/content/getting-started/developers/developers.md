@@ -4,15 +4,15 @@
 
 Using npm:
 
-```
+```javascript
 $ npm install --save @carbon/components
 ```
 
-<!--or [Download the latest release](release link here)-->
-
 ## What's included
 
-```
+The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
+
+```javascript
 carbon/
 ├── global/
     ├── carbon.js
@@ -33,8 +33,6 @@ carbon/
 │   ├── index.scss
 ```
 
-The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
-
 ## SASS
 
 Using the Carbon sass files infers usage of the SASS pre-processor and a build step to process the files.
@@ -43,7 +41,7 @@ Using the Carbon sass files infers usage of the SASS pre-processor and a build s
 
 To add a component style to your build, simply import the component directly
 
-```
+```javascript
 @import 'node_modules/@carbon/components/card/card';
 ```
 
@@ -73,20 +71,20 @@ Using a module bundler will bring in only the component code your application ne
 
 **Initialize all instances of a component**
 
-```js
+```javascript
 import { Modal } from '@carbon/components'
 Modal.init();
 ```
 
 **Initialize a specific instance**
-```js
+```javascript
 import { Modal } from '@carbon/components';
 const myModal = document.querySelector(querySelector('[data-modal]')); // element node of the modal itself
 Modal.init(myModal);
 ```
 
 **Reference a previously initialized component**
-```js
+```javascript
 import { Modal } from '@carbon/components';
 const myModal = document.querySelector(querySelector('[data-modal]'));
 const myModalInstance = Modal.components.get(myModal);

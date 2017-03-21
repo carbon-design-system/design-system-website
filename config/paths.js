@@ -33,7 +33,7 @@ var nodePaths = (process.env.NODE_PATH || '')
 module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('public/index.hbs'),
   appIndexJs: resolveApp('src/index.js'),
   assets: resolveApp('src/assets'),
   appPackageJson: resolveApp('package.json'),

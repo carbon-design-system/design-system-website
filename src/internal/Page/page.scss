@@ -6,6 +6,10 @@
     margin-bottom: 5rem;
   }
 
+  .code-example pre.bx--snippet {
+    max-width: 100%;
+  }
+
   @include breakpoint('600px') {
     margin: 4rem 5% 0;
   }
@@ -107,7 +111,7 @@
 
     div span > p:first-of-type + h3 {
       margin-top: 0;
-      padding-top: 0;
+      padding-top: 0 !important;
     }
 
     h3 {

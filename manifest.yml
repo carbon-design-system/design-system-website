@@ -1,0 +1,7 @@
+---
+applications:
+- name: carbon-website-1
+  buildpack: nodejs_buildpack
+  command: node index.js
+  disk_quota: 256MB
+  memory: 128MB

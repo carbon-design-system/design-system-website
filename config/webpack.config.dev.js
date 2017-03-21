@@ -74,18 +74,18 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif)$/i,
         loaders: [
-          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'file-loader?name=images/[name].[ext]',
           'img?progressive=true'
         ],
       },
       {
         test: /\.mp4$/,
-        loader: 'file',
+        loader: 'file-loader?name=images/[name].[ext]',
       },
       {
         test: /\.svg$/,
         exclude: `${paths.assets}/bluemix-icons.svg`,
-        loader: 'file',
+        loader: 'file?name=images/[name].[ext]',
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -93,7 +93,10 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html',
+        options: {
+          minimize: false
+        }
       }
     ]
   },
@@ -109,6 +112,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
+      minify: false
     }),
     new webpack.DefinePlugin(env),
     new webpack.HotModuleReplacementPlugin(),
