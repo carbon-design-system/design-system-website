@@ -62,6 +62,7 @@
     "yaml-front-matter": "^3.4.0"
   },
   "dependencies": {
+    "@console/bluemix-components": "git+ssh://git@github.ibm.com:Bluemix/bluemix-components.git#7.x",
     "@console/bluemix-components-react": "1.6.4",
     "@console/bluemix-icons": "^4.1.1",
     "classnames": "^2.2.5",

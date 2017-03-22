@@ -172,10 +172,6 @@ pre[class*="language-"]:after {
 	cursor: help;
 }
 
-.namespace {
-	opacity: .7;
-}
-
 @media screen and (max-width: 767px) {
 	pre[class*="language-"]:before,
 	pre[class*="language-"]:after {

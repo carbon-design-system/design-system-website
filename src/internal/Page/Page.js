@@ -20,11 +20,36 @@ class Page extends Component {
   componentDidMount() {
     this.updateClasses();
     this.addCustomComponent();
+    this.colorHex();
   }
 
   componentDidUpdate() {
     this.updateClasses();
     this.addCustomComponent();
+    this.colorHex();
+  }
+
+  colorHex = () => {
+    const tableCells = document.querySelectorAll('td');
+    const colors = [...tableCells].filter((color) => {
+      let node;
+      if (color.textContent.includes('#')) {
+        node = color;
+      }
+      return node;
+    });
+
+    [...colors].forEach((color) => {
+      const colorBlock = document.createElement('span');
+      colorBlock.classList.add('color-block');
+      if (color.textContent.length > 7 && color.textContent.length < 20) {
+        colorBlock.style.left = '7rem';
+      } else if (color.textContent.length > 7) {
+        colorBlock.style.left = '10rem';
+      }
+      colorBlock.style.backgroundColor = color.textContent;
+      color.appendChild(colorBlock);
+    });
   }
 
   addCustomComponent = () => {

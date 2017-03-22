@@ -15,7 +15,6 @@ class CodeExample extends Component {
   };
 
   componentDidMount = () => {
-    console.log('hello');
     if (this.codeBlock.offsetHeight > 190) {
       this.setState({ showBtn: true });
     }
@@ -58,7 +57,6 @@ class CodeExample extends Component {
     });
 
     const expandCodeBtnText = this.state.expandedCode ? 'Show less code' : 'Show more code';
-    console.log(htmlFile);
     return (
       <div className="code-example">
         <div className={codeExampleClass} ref={(ref) => { this.codeBlock = ref; }}>

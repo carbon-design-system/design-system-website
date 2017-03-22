@@ -24,8 +24,8 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #f5f7ff;
-  color: #5e6687;
+  background: #fff;
+  color: #5A6872;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -60,11 +60,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-  color: #5e6687;
-}
-
-.token.namespace {
-  opacity: .7;
+  color: #5A6872;
 }
 
 .token.operator,
@@ -78,7 +74,7 @@ pre[class*="language-"] {
 }
 
 .token.tag {
-  color: #3d8fd1;
+  color: #5B8121;
 }
 
 .token.string {
@@ -90,7 +86,7 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-  color: #c76b29;
+  color: #5AAAFA;
 }
 
 .token.entity,
@@ -105,7 +101,7 @@ pre[class*="language-"] {
 .token.control,
 .token.directive,
 .token.unit {
-  color: #ac9739;
+  color: #C22DD5;
 }
 
 .token.statement,
