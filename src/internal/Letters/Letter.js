@@ -18,24 +18,20 @@ class Letter extends Component {
   handleClick = () => {
     this.setState({
       active: !this.state.active,
-      hover: !this.state.hover,
     });
   }
 
   handleMouseEnter = () => {
-    if (!this.state.active) {
-      this.setState({
-        hover: true,
-      });
-    }
+    this.setState({
+      hover: true,
+    });
   }
 
   endAnimation = (evt) => {
+    evt.currentTarget.removeEventListener('animationiteration', this.endAnimation);
     this.setState({
       hover: false,
     });
-
-    evt.currentTarget.removeEventListener('animationiteration', this.endAnimation);
   }
 
   handleMouseLeave = (evt) => {

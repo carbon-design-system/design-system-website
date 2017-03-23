@@ -161,7 +161,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(1);
-    transition: all 250ms cubic-bezier(.8,-.5,.2,1.4);
+    transition: all 250ms cubic-bezier(.8,-.5,.2,1.8);
     @include breakpoint('990px') {
       font-size: 4.5rem;
     }
@@ -170,7 +170,7 @@
   svg {
     width: 8vw;
     height: 8vw;
-    transition: all 250ms cubic-bezier(.8,-.5,.2,1.4);
+    transition: all 250ms cubic-bezier(.8,-.5,.2,1.8);
     visibility: hidden;
     opacity: 0;
     transform: scale(0.1);

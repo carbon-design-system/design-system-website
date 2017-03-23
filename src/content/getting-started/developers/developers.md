@@ -4,7 +4,7 @@
 
 Using npm:
 
-```javascript
+```bash
 $ npm install --save @carbon/components
 ```
 

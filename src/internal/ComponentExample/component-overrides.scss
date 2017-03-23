@@ -6,10 +6,21 @@
   width: 100%;
   max-width: 1000px;
 
+  & > .primary-button button,
+  & > .secondary-button button {
+    margin: .5rem;
+  }
+
   & > .detail-page-header--no-tabs > .bx--detail-page-header--no-tabs  {
     width: 100%;
     top: 300px;
     left: 0;
+  }
+
+  & .bx--detail-page-header--with-tabs {
+    .bx--tabs__nav-link {
+      padding-bottom: 14px;
+    }
   }
 
   & > .inline-notification .bx--inline-notification {
@@ -33,6 +44,10 @@
 
 .component-example__live {
   position: relative;
+
+  .button button {
+    margin: .5rem;
+  }
 
   & .detail-page-header .bx--detail-page-header.bx--detail-page-header--no-tabs {
     position: absolute;

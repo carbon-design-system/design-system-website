@@ -4,7 +4,7 @@
 
 IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content.
 
-```
+```scss
 %helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif; }
 ```
 
@@ -12,7 +12,7 @@ IBM uses a custom version of Helvetica Neue for both its Marketing and Product b
 
 Carbon uses the Major Second scale with a base size of 16px for 1 rem. It's been normalized to account for whole pixel rounding where the 1.125 ratio was applied to whole pixel values. Exclusively using sizes from this type scale will create visual, as well as hierarchical consistency, throughout the product. To reference the font size, use the mixin and reference the pixel value.
 
-```
+```scss
 @include font-size('18');
 ```
 

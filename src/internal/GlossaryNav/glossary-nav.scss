@@ -34,6 +34,7 @@
       text-decoration: none;
       color: $color__navy-gray-7;
       font-size: 1rem;
+      font-weight: 400;
     }
 
     &.glossary-nav__item--active,
@@ -42,6 +43,7 @@
 
       a {
         color: $brand-01;
+        font-weight: 600;
       }
     }
   }

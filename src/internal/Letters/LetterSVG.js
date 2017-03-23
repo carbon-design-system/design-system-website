@@ -99,7 +99,7 @@ class LetterSVG extends Component {
       </svg>
     ),
     R: (
-      <svg xmlns="http://www.w3.org/2000/svg" id="Diamond" viewBox="0 0 65.17 72.81">
+      <svg viewBox="0 0 65.17 72.81">
         <path fill="#eec11b" d="M38.02 0l27.15 37.09-26.68 35.72-28.04-36.19L38.02 0z" />
         <path fill="#231f20" d="M27.55 3.36l24.68 33.72-24.22 32.43-25.5-32.9 25-33.25M27.58 0L0 36.62l28.08 36.19 26.64-35.72L27.58 0z" />
       </svg>
