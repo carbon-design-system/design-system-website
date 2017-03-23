@@ -47,6 +47,13 @@
 
   .button button {
     margin: .5rem;
+  }
+
+  & > .inline-left-nav .bx--inline-left-nav {
+    position: initial;
+    display: block;
+    min-height: rem(400px);
+  }
 
   & .text-input .bx--text-input {
     min-width: 20rem;

@@ -19,7 +19,7 @@ class SideNav extends Component {
   renderSubNavItems = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     return Object.keys(subnav).map(subNavItem => {
-      const link = `/${parentItem}/${subNavItem}/code`;
+      const link = `/${parentItem}/${subNavItem}`;
       const isCurrentPage = (parentItem === currentPath[1] && subNavItem === currentPath[2]);
       const classNames = classnames({
         'sub-nav__item': true,

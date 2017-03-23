@@ -2,14 +2,11 @@
  module.exports = {
   "desc": "<span>Modals</span> communicate information via a secondary window and allow the user to maintain the context of a particular task. Use modals sparingly because they interrupt user workflow.",
   "variations": {
-    "modal--passive": [
+    "modal--nofooter": [
       "Passive Modal"
     ],
-    "modal--transactional": [
+    "modal": [
       "Transactional Modal"
-    ],
-    "modal--inputs": [
-      "Modal with inputs"
     ]
   },
   "__content": "\n"

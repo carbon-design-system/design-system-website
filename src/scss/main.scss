@@ -24,6 +24,7 @@ $css--reset: true;
 //---------------------------------------------------------------
 
 @import '../internal/Page/page.scss';
+@import '../internal/Page/page-overrides.scss';
 @import '../internal/MarkdownPage/markdown-page.scss';
 @import '../internal/SideNav/sidenav.scss';
 @import '../internal/ColorCard/colorcard.scss';

@@ -30,6 +30,8 @@ class Page extends Component {
     this.colorHex();
   }
 
+  addPageClass = () => window.location.pathname.replace(/\//g, '-').substr(1);
+
   colorHex = () => {
     const tableCells = document.querySelectorAll('td');
     const colors = [...tableCells].filter((color) => {
@@ -43,12 +45,26 @@ class Page extends Component {
     [...colors].forEach((color) => {
       const colorBlock = document.createElement('span');
       colorBlock.classList.add('color-block');
+
       if (color.textContent.length > 7 && color.textContent.length < 20) {
         colorBlock.style.left = '7rem';
       } else if (color.textContent.length > 7) {
         colorBlock.style.left = '10rem';
       }
-      colorBlock.style.backgroundColor = color.textContent;
+
+      if (color.textContent === '#3d70b2 @ 10%') {
+        colorBlock.style.backgroundColor = '#E5EAF7';
+        colorBlock.style.border = '1px solid #8c9ba5';
+      } else {
+        colorBlock.style.backgroundColor = color.textContent;
+      }
+
+      if (color.textContent === '#ffffff' ||
+          color.textContent === '#f5f7fa' ||
+          color.textContent === '#f0f3f6') {
+        colorBlock.style.border = '1px solid #8c9ba5';
+      }
+
       color.appendChild(colorBlock);
     });
   }
@@ -124,7 +140,7 @@ class Page extends Component {
     const pageContent = (contentType === 'object' || title === '') ?
       content : <MarkdownPage content={content} />;
     return (
-      <div>
+      <div className={this.addPageClass()}>
         <PageHeader
           label={label}
           title={title}
