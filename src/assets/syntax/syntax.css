@@ -86,7 +86,7 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-  color: #5AAAFA;
+  color: #C22DD5;
 }
 
 .token.entity,
@@ -101,7 +101,7 @@ pre[class*="language-"] {
 .token.control,
 .token.directive,
 .token.unit {
-  color: #C22DD5;
+  color: #5AAAFA;
 }
 
 .token.statement,
