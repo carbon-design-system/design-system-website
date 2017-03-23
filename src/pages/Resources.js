@@ -17,19 +17,18 @@ class Resources extends React.Component {
               <img src={designKitImage} alt="Design kit" />
               <h2>Design Kit</h2>
               <p>
-                The Design Kit consists of core visual styles and patterns.
-                It contains everything needed to get started building an experience that contributes to our platform.
+                The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
               </p>
-              <a href="#" target="_blank">Design Kit</a>
+              <a href="https://github.com/carbon-design-system/design-kit" target="_blank">Design Kit</a>
             </div>
             <div>
               <img src={githubImage} alt="Design kit" />
               <h2>Component Library</h2>
               <p>
-                The Component Library gives developers (FEDs & Engineers) a collection of re-usable HTML
+                The Component Library gives developers a collection of re-usable HTML
                 and Sass partials they can use for building websites and user interfaces.
               </p>
-              <a href="#" target="_blank">Component Library</a>
+              <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Component Library</a>
             </div>
             <div>
               <h2>IBM Design Language</h2>
@@ -37,21 +36,15 @@ class Resources extends React.Component {
                 Carbon uses the IBM Design Language as our guiding principle.
                 These core values remind us to design for an outcome and to be authentically thoughtful.
               </p>
-              <a href="#" target="_blank">IBM Design Language</a>
+              <a href="https://www.ibm.com/design/language/" target="_blank">IBM Design Language</a>
             </div>
-            <div>
-              <h2>IBM Web Fonts</h2>
-              <p>
-                The IBM Design Language uses the Helvetica Neue as the IBM font family across products for brand consistency and cohesion.
-              </p>
-              <a href="#" target="_blank">IBM web fonts</a>
-            </div>
+
             <div>
               <h2>Carbon Boilerplate</h2>
               <p>
                 A simple boilerplate for rapid UI prototyping with Carbon components.
               </p>
-              <a href="#" target="_blank">Carbon Boilerplate</a>
+              <a href="https://carbon-boilerplate.mybluemix.net/" target="_blank">Carbon Boilerplate</a>
             </div>
             <div>
               <h2>Color Accessibility</h2>

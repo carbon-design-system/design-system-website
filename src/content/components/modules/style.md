@@ -8,9 +8,9 @@
 | Heading    | $text-01 | #152935  |
 | Text       | $text-01 | #152935  |
 
-_
+
 ![Example of Module layout](images/module-style-1.png)
-_
+
 _Example of Module layout_
 
 ## Typography

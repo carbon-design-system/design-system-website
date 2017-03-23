@@ -8,11 +8,11 @@
 | Tooltip border     | $ui-04    | #dfe3e6   |
 
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
-_Examlle of closed and open states for a Tooltip_
+_Example of closed and open states for a Tooltip_
 
-## Typography 
+## Typography
 
-Tooltip labels and text should be set in sentence case. 
+Tooltip labels and text should be set in sentence case.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
 |----------|-----------------|--------------|
@@ -30,18 +30,18 @@ Tooltip labels and text should be set in sentence case.
 | PROPERTY                | PX  | REM   |
 |-------------------------|-----|-------|
 | Tooltip: width          | 240 | 15    |
-| Tooltip: height         | Varies based on content | |
+| Tooltip: height         | Varies based on content | - |
 | Icon: width & height    | 16  | 1     |
 | Spacing: label & icon   | 10  | 0.625 |
 | Spacing: icon & Tooltip | 10  | 0.625 |
-| Spacing: interal        | 24  | 1.5   |
+| Spacing: internal       | 24  | 1.5   |
 
 ![Structure and spacing measurements for a tooltip](images/tooltip-style-2.png)
 _Structure and spacing measurements for a Tooltip | px / rem_
 
 ### Placement
 
-Tooltips should always be placed below the Tooltip icon unless it is within the height of the Tooltip box plus 16px / 1em of the bottom of the page. In that instance, the tooltip should appear to the right of the Tooltip icon. On mobile, Tooltips can only appear below the Tooltip icon.
+Tooltips should always be placed below the Tooltip icon unless it is within the height of the Tooltip box plus 16px / 1em of the bottom of the page. In that instance, the Tooltip should appear to the right of the Tooltip icon. On mobile, Tooltips can only appear below the Tooltip icon.
 
 ![Placement examples for a Tooltip](images/tooltip-style-3.png)
 _Placement examples for a Tooltip_

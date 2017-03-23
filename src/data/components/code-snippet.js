@@ -1,11 +1,11 @@
 /* eslint-disable */
  module.exports = {
-  "desc": "<span>Code snippets</span> ....",
+  "desc": "<span>Code snippets</span> are small blocks of reusable code that can be inserted in a code file.",
   "variations": {
-    "snippet--code": [
+    "code-snippet--code": [
       "Code Snippet"
     ],
-    "snippet--terminal": [
+    "code-snippet--terminal": [
       "Terminal"
     ]
   },

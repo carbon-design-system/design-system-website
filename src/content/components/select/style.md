@@ -35,8 +35,10 @@ _Structure and spacing measurements for Select | px / rem_
 ### States
 
 **Open:** Style determined by browser
+
 **Disabled:** 50% opacity
-**Help:** Tool tip should be left aligned with the text field box and underlined to indicate a link.
+
+**Help/More Info:** A Tooltip should appear when the user clicks the "More Info" link. The Tooltip indicator should be left aligned with the Select and underlined.
 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 _Examples of open, disabled, and help Select states_
@@ -47,7 +49,7 @@ _Examples of open, disabled, and help Select states_
 |-----------------------------|----|-------|
 | Height                      | 24 | 1.5   |
 | Width                       | 56 | 3.5   |
-| Internal spacing            | 8  | .5    |
+| Internal spacing            | 8  | 0.5    |
 
 ![Structure and spacing measurements for Small Select](images/select-style-4.png)
 _Structure and spacing measurements for Small Select | px / rem_

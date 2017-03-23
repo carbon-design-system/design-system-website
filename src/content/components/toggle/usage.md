@@ -6,11 +6,11 @@ Toggles are used for binary actions that occur immediately after the user “fli
 
 ### Heading
 
-A heading may accompany a toggle to further clarify on the action the Toggle will perform.
+A heading may accompany a Toggle to further clarify on the action the Toggle will perform.
 
 ### Labels
 
-Use labels with a toggle so the action of the Toggle is clear. Labels should be three words or less and appear on both sides of a Toggle.
+Use labels with a Toggle so the action is clear. Labels should be three words or less and appear on both sides of a Toggle.
 
 ### Language
 

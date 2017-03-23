@@ -1,6 +1,6 @@
 ## General
 
-Our Code Snippets are built with basic styling. We recommend using [Base16.](https://chriskempson.github.io/base16/) for more complex syntax highlighting. Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. The theme we recommend using is **Solarflare**. 
+Our Code Snippets are built with basic styling. We recommend using [Base16](https://chriskempson.github.io/base16/) for more complex syntax highlighting. Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. The theme we recommend using is **Solarflare**.
 
 ### Overflow
 

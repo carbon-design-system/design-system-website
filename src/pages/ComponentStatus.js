@@ -117,7 +117,7 @@ class ComponentStatus extends React.Component {
                 <tr>
                   <td>{notApplicableIcon}</td>
                   <td>Not applicable</td>
-                  <td>Component was not available in this version of the library</td>
+                  <td>Component was not available in this version of the library.</td>
                 </tr>
                 <tr>
                   <td>

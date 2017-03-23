@@ -14,9 +14,8 @@ The Interior Left Nav occupies the left of the screen and spans vertically from 
 
 The Interior Left Nav can be expanded/collapsed by clicking the chevron icon at the bottom of the viewport.
 
-<!--
+
 ![Interior Left Nav open / collapse interaction](images/interior-left-nav-usage-2.gif)
--->
 _Interior Left Nav collapse interaction_
 
 ### Secondary items

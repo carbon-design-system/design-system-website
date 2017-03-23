@@ -17,7 +17,7 @@ Number Input labels should use sentence case, with only the first word in a phra
 
 ## Structure
 
-The height of a Number Input is always the same. The width however, varies based on content, layout and design. The arrows icon can be found in the [iconography](/style/iconography/library) library.
+The height of a Number Input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/style/iconography/library) library.
 
 | PROPERTY         | PX | REM |
 |------------------|----|-----|

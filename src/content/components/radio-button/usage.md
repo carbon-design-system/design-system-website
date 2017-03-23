@@ -9,6 +9,3 @@ Always use a clear and concise label for Radio Buttons. Be explicit about the ac
 ### Default selection
 
 A set of Radio Buttons should default to having one option selected. Never display them without a default selection.
-
-![default selection on radio buttons](images/radio-button-usage-1.png)
-_Default selection on a set of Radio Buttons_ 

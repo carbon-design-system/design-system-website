@@ -15,7 +15,7 @@ Level 1 and 2 of any list type should be set in bold and sentence case, with onl
 
 ## Structure
 
-There are two types of lists, ordered and unordered.
+There are two types of Lists, ordered and unordered.
 Level 1 ordered list points are marked numerically while Level 2 points are marked with a dash.
 Level 1 unordered list points are bulleted while Level 2 points are marked with a dash.
 

@@ -33,7 +33,7 @@ Notification titles should not exceed more than three words. Notification text s
 | Spacing: text      | 16  | 1      |
 
 ![Structure and spacing for a toast notification](images/notification-style-1.png)
-_Structure and spacing measurements for a toast Notification | px / rem_
+_Structure and spacing measurements for a Toast Notification | px / rem_
 
 ### Inline Notification
 
@@ -51,4 +51,4 @@ The width of an Inline Notification will vary based on content.
 | Spacing: top, bottom | 12 | 0.75|
 
 ![Structure and spacing for an inline notification](images/notification-style-2.png)
-_Structure and spacing measurements for a inline Notification | px / rem_
+_Structure and spacing measurements for a Inline Notification | px / rem_

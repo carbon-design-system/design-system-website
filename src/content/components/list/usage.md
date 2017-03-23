@@ -7,7 +7,7 @@
 
 ### Length
 
-Generally, Lists should be used to present simple pieces of information. For more complex sets of data, consider using a [Data table.](/components/data-table)
+Generally, Lists should be used to present simple pieces of information. For more complex sets of data, consider using a [Data Table.](/components/data-table)
 
 ### Order
 
