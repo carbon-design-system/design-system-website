@@ -60,7 +60,19 @@ td {position: relative;}
     }
   }
 
-  & > *:not(.component-example):not(.component-variation) {
+  & > *:not(.component-example):not(.component-variation),
+  & > {
+    .page__divider-heading {
+      font-size: rem(12px);
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $color__blue-40;
+      text-transform: uppercase;
+      color: $color__blue-90;
+      margin-bottom: 3rem;
+      max-width: rem(660px);
+    }
+
     h1 {
       font-size: 4rem;
 

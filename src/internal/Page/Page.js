@@ -30,7 +30,11 @@ class Page extends Component {
     this.colorHex();
   }
 
-  addPageClass = () => window.location.pathname.replace(/\//g, '-').substr(1);
+  addPageClass = () => {
+    const path = window.location.pathname.split('/');
+    const dataAttr = (path.length > 3) ? `${path[1]}-${path[3]}-${path[2]}` : `${path[1]}-${path[2]}`;
+    return dataAttr;
+  }
 
   colorHex = () => {
     const tableCells = document.querySelectorAll('td');
@@ -121,13 +125,6 @@ class Page extends Component {
         }
       });
     }
-
-    const tables = [... document.querySelectorAll('.page_md table')];
-    tables.forEach(table => {
-      const rows = [... table.querySelector('tbody').querySelectorAll('tr')];
-      rows.forEach(row => {
-      })
-    })
   }
 
   render() {
@@ -140,7 +137,7 @@ class Page extends Component {
     const pageContent = (contentType === 'object' || title === '') ?
       content : <MarkdownPage content={content} />;
     return (
-      <div className={this.addPageClass()}>
+      <div data-page={this.addPageClass()}>
         <PageHeader
           label={label}
           title={title}

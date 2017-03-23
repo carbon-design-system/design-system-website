@@ -40,8 +40,8 @@
       margin-top: 0;
     }
 
-    div h2:before {
-      display: none;
+    h2:before {
+      display: none !important;
     }
 
     div a {
@@ -50,7 +50,7 @@
     }
 
     & + .page__divider-heading {
-      max-width: 100%;
+      max-width: 100% !important;
     }
   }
 
@@ -77,7 +77,7 @@
 
       h3 {
         white-space: nowrap;
-        padding-top: 0;
+        padding-top: 0 !important;
       }
 
       .bx--btn {
