@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
-import Markdown from 'react-remarkable';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import PageTabs from '../../internal/PageTabs';
 import Glossary from '../../internal/Glossary';
 import GlossaryNav from '../../internal/GlossaryNav';
+import Markdown from 'markdown-it';
+import MarkdownPage from '../../internal/MarkdownPage';
 
 class Content extends React.Component {
   static propTypes = {
@@ -14,10 +15,11 @@ class Content extends React.Component {
     const {
       currentPage,
     } = this.props;
-    const general = require('../../content/guidelines/content/content-general.md'); // eslint-disable-line
-    const guidelines = require('../../content/guidelines/content/content-guidelines.md'); // eslint-disable-line
+    const md = new Markdown({
+      html: true
+    });
     const glossary = require('../../data/guidelines/glossary.js'); // eslint-disable-line
-    const glossaryIntro = require('../../content/guidelines/content/content-glossary-intro.md');
+    const glossaryIntro = md.renderInline(require('../../content/guidelines/content/content-glossary-intro.md'));
     const tabs = ['general', 'guidelines', 'glossary'];
     let page = 'general';
     if (currentPage) {
@@ -29,24 +31,14 @@ class Content extends React.Component {
     return (
       <PageTabs tabs={tabs} currentPage={page}>
         <Tab href="/guidelines/content/general" label="General">
-          <div className="page">
-            <Markdown options={{ html: true }}>
-              {general}
-            </Markdown>
-          </div>
+          <MarkdownPage content={require('../../content/guidelines/content/content-general.md')} />
         </Tab>
         <Tab href="/guidelines/content/guidelines" label="Guidelines">
-          <div className="page">
-            <Markdown options={{ html: true }}>
-              {guidelines}
-            </Markdown>
-          </div>
+          <MarkdownPage content={require('../../content/guidelines/content/content-guidelines.md')} />
         </Tab>
         <Tab href="/guidelines/content/glossary" label="Glossary">
           <div className="page">
-            <Markdown options={{ html: true }}>
-              {glossaryIntro}
-            </Markdown>
+            <div className="page_md" dangerouslySetInnerHTML={{ __html: glossaryIntro }} />
             {glossaryNavContent}
             <Glossary glossary={glossary} />
           </div>

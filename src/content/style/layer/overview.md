@@ -1,5 +1,5 @@
 
-**_Layer_ is the surface on which content and components live. It is a visual motif used to create groupings and associations between content as well as heirarchy and focus through depth.**
+**_Layer_ is the surface on which content and components live. It is a visual motif used to create groupings and associations between content as well as hierarchy and focus through depth.**
 
 ## Layer types
 
@@ -17,7 +17,8 @@ LAYER NAME | ELEVATION | BOX-SHADOW
 
 ## Properties
 
-### Physical properties 
+### Physical properties
+
 - All layers are the same thickness
 - The implied thickness of one layer is one pixel
 - Layers live on distinct z coordinate planes and uses the offset of the y axis and blur of the box-shadow to represent this depth.
@@ -26,14 +27,17 @@ LAYER NAME | ELEVATION | BOX-SHADOW
 - The only defined style of a layer is its elevation and shadow. The layer container can be styled as needed.
 
 ### Content on layer
+
 - Content appears on same plane as layer, content does not add to a layer's elevation
 - Content on a layer is bound by the edges of the layer container. Content cannot cross boundaries of the layer.
 - Borders are the only over arching limitation of the content on layer, however limitations on the content per component may occur. See individual components for more details.
 
 ## Elevation
-Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intenisty and depth of the shadow it casts.
+
+Each type of layer lives on a different imagined plane of the UI giving each its own distinct elevation. Elevation is the implied measured distance above the base layer. The affect of the elevation on a layer is defined by the intensity and depth of the shadow it casts.
 
 ### Elevation scale
+
 The range of imagined plains in the UI are on a scale from 0 to 24, with zero being the base and 24 the highest point. The higher the elevation is the larger the shadow each layer will cast. Each unit on the elevation scale is equal to the pixel value of the coded blur applied to shadow.
 
 Each layer is a defined marker along the elevation scale. There is not a layer for each level of the scale.

@@ -4,7 +4,6 @@ import classnames from 'classnames';
 
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
 import Button from '@console/bluemix-components-react/dist/components/Button';
-import ClickListener from '@console/bluemix-components-react/dist/internal/ClickListener';
 
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
@@ -56,12 +55,15 @@ class SideNav extends Component {
       if (navItemObj.subnav) {
         return this.renderSubNav(navItemObj.subnav, navItem);
       }
+      const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+      const isCurrentPath = currentPath[1] === navItem;
       return (
-        <SideNavItem key={navItem}>
+        <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
           <Link className="main-nav-item__heading" to={`/${navItem}`}>{navItemObj.title}</Link>
         </SideNavItem>
       );
     });
+
 
   render() {
     const {

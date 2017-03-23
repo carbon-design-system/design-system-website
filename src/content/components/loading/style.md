@@ -1,10 +1,10 @@
 ## Color
+
 | COLOR              | SCSS          | HEX      |
 |--------------------|---------------|----------|
 | Large spinner      | $nav-05       | #00b4a0  |
 | Small spinner      | $ui-05        | #8c9ba5  |
 | Overlay            | $ui-01 @ 60%  | #ffffff  |
-
 
 ## Structure
 
@@ -20,8 +20,8 @@
 _Structure measurements for small and large loading spinner | px / rem_
 
 ### Placement
-The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay. 
 
+The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay. 
 _
 ![Large spinner in context example](images/loading-style-4.png)
 _

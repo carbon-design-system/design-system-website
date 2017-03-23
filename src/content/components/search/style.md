@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
 | Background        | $field-01     | #3d70b2 @ 10% |
@@ -10,6 +11,7 @@
 _Examples of normal, hover, and input Search states_
 
 ## Typography
+
 Search text should be set in sentence case, with only the first letter of the first word capitalized.
 
 | PROPERTY        | FONT-SIZE      | FONT-WEIGHT       |
@@ -17,8 +19,8 @@ Search text should be set in sentence case, with only the first letter of the fi
 | Placeholder text | 14px / 0.875rem | Normal italic / 400 |
 | Text             | 14px / 0.875rem | Bold / 700          |
 
-
 ## Structure
+
 The width of the Search field should appropriately fit the design and layout of content. Larger Search fields can include a filter button and a list/card view button.
 
 | PROPERTY             | PX | REM   |

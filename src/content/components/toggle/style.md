@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                 | SCSS     | HEX      |
 |-----------------------|----------|----------|
 | Inactive: fill        | $ui-01   | #ffffff  |
@@ -10,7 +11,8 @@
 ![Inactive, inactive hover, and active states for a Toggle](images/toggle-style-1.png)
 _Examples of inactive, inactive hoer, and active states for a Toggle_
 
-## Typography 
+## Typography
+
 Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words. 
 
 | PROPERTY | FONT-SIZE     | FONT-WEIGHT |
@@ -18,6 +20,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 | Label    | 14px / 0.875rem | Normal / 400 |
 
 ## Structure
+
 | PROPERTY          | PX | REM   |
 |-------------------|----|-------|
 | Height & width    | 24 | 1.5   |

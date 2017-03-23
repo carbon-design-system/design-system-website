@@ -4,6 +4,7 @@
 
 .side-nav {
   @include font-smoothing;
+  @include layer('temporary-nav');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,10 @@
   overflow-y: auto;
   z-index: 10;
   transition: $transition--base ease;
+
+  @include breakpoint('bp--sm--major') {
+    box-shadow: none;
+  }
 
   &__closed {
     transform: translateX(-100%);

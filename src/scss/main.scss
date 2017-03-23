@@ -17,7 +17,6 @@ $css--reset: true;
 
 @import 'global/vars';
 @import 'global/mixins';
-@import 'global/colors';
 @import 'global/layout';
 
 //---------------------------------------------------------------
@@ -25,6 +24,7 @@ $css--reset: true;
 //---------------------------------------------------------------
 
 @import '../internal/Page/page.scss';
+@import '../internal/MarkdownPage/markdown-page.scss';
 @import '../internal/SideNav/sidenav.scss';
 @import '../internal/ColorCard/colorcard.scss';
 @import '../internal/PageHeader/page-header.scss';

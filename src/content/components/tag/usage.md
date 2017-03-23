@@ -1,4 +1,5 @@
 ## General guidelines
+
 Multiple or single tags can be used to categorize items. 
 
 Use Tags when content is mapped to multiple categories, and the user needs a way to differentiate between them. 
@@ -6,7 +7,6 @@ Use Tags when content is mapped to multiple categories, and the user needs a way
 ![Tags example](images/tags-usage-1.png)
 
 Tags can also be used as a method of filtering data, to show only items within that particular category. 
-
 
 ![Tags to filter](images/tags-usage-2.png)
 

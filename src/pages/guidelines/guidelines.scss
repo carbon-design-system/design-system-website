@@ -10,20 +10,18 @@
     padding-bottom: 2rem;
   }
 
-  h4.glossary-entry__word-heading {
+  .glossary-entry__word-heading {
     padding-top: 1rem;
     padding-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
-  .glossary-entry__word > p {
-
-    &:nth-child(3) {
-      span p {
-        font-size: rem(13px);
-        color: $color__navy-gray-7;
-        margin-top: .25rem;
-      }
-    }
+  .glossary-entry__subtext {
+    font-size: rem(13px);
+    color: $color__navy-gray-7;
+    margin-top: .25rem;
+    max-width: 38rem;
   }
 
   .glossary-entry__list {

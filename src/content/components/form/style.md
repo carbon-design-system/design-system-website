@@ -1,8 +1,10 @@
 ## Color
+
 For color specs, refer to specific components.
 
 ## Typography
-Form headings and labels should be set in set in sentence case with the first letter of each word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/Dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
+
+Form headings and labels should be set in set in sentence case with the first letter of each word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
@@ -11,7 +13,9 @@ Form headings and labels should be set in set in sentence case with the first le
 | Input text | 14px / 0.875rem | Normal / 400 |
 
 ## Structure
+
 Forms are made up of several different components. The order in which these elements are arranged is flexible, but should always follow the spacing guidelines below.
+
 Forms can be one column or two. The width of each column varies based on the content and layout of the design. On mobile, forms can only have one column.
 
 All icons can be found on the [iconography](/style/iconography/library) library page.

@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import Markdown from 'react-remarkable';
+import Markdown from 'markdown-it';
+const md = new Markdown({
+  html: true
+});
 
 class Glossary extends Component {
   static propTypes = {
@@ -16,15 +19,13 @@ class Glossary extends Component {
           const listItems = Object.keys(entry[list]).map(word => {
             const currentWord = entry[list][word];
             const wordId = word.toLowerCase().replace(' ', '-');
+            const desc = (currentWord.desc) ? md.renderInline(currentWord.desc) : '';
+            const subtext = (currentWord.subtext) ? md.renderInline(currentWord.subtext) : '';
             return (
               <div id={wordId} key={word} className="glossary-entry__word">
                 <h4 className="glossary-entry__word-heading">{word}</h4>
-                <Markdown container="p">
-                  {currentWord.desc}
-                </Markdown>
-                <Markdown container="p">
-                  {currentWord.subtext}
-                </Markdown>
+                <p className="glossary-entry__desc" dangerouslySetInnerHTML={{ __html: desc }} />
+                <p className="glossary-entry__subtext" dangerouslySetInnerHTML={{ __html: subtext }} />
               </div>
             );
           });

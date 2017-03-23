@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR             | SCSS          | HEX           |
 |-------------------|---------------|---------------|
 | Background        | $field-01     | #3d70b2 @ 10% |
@@ -6,11 +7,11 @@
 | Text: user input  | $text-01      | #152935       |
 | Text: placeholder | $text-03      | #5a6872       |
 
-
 ![Default and user input states for Text Input](images/text-input-style-1.png)
 _Examples of default and user-input states for Text Input_
 
-## Typography 
+## Typography
+
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less. 
 
 | PROPERTY | FONT-SIZE     | FONT-WEIGHT  |
@@ -19,6 +20,7 @@ Text Input labels and placeholder text should be set in sentence case, with only
 | Text     | 14px / 0.875rem | Normal / 400 |
 
 ## Structure
+
 | PROPERTY                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
@@ -31,10 +33,9 @@ Text Input labels and placeholder text should be set in sentence case, with only
 _Structure and spacing measurements for Text Input | px / rem_
 
 ### States
+
 **Active:** Hint text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
-
 **Help:** Tool tip should be left aligned with the text field box and underlined to indicate a link.
-
 **Disabled:** 50% opacity
 
 ![Active, help, or disabled states for Text Input](images/text-input-style-3.png)

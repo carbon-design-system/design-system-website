@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
-import Markdown from 'react-remarkable';
 import Page from '../../internal/Page';
+import MarkdownPage from '../../internal/MarkdownPage';
 import Content from './Content';
 
 class Guidelines extends React.Component {
@@ -13,16 +13,9 @@ class Guidelines extends React.Component {
       params,
     } = this.props;
     const title = params.name.charAt(0).toUpperCase() + params.name.substring(1).replace('-', ' ');
-    const content = (params.name === 'content') ? (
-      <Content currentPage={params.page} />
-    ) : (
-      <div className="page">
-        <Markdown
-          options={{ html: true }}
-          source={require(`../../content/guidelines/${params.name}/${params.name}.md`)} // eslint-disable-line
-        />
-      </div>
-    );
+    const content = (params.name === 'content') ?
+    (<Content currentPage={params.page} />) :
+    (<MarkdownPage content={require(`../../content/guidelines/${params.name}/${params.name}.md`)} />);
     return (
       <Page label="Guidelines" title={title} content={content} />
     );

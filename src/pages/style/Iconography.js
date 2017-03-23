@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import IconList from
  '../../../node_modules/@console/bluemix-icons/bluemix-icons.json';
-import Markdown from 'react-remarkable';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import Search from '@console/bluemix-components-react/dist/components/Search';
 import PageTabs from '../../internal/PageTabs';
 import IconCard from '../../internal/IconCard';
+import MarkdownPage from '../../internal/MarkdownPage';
 import Packages from '@console/bluemix-components-react/package.json';
 
 class Iconography extends React.Component {
@@ -65,11 +65,7 @@ class Iconography extends React.Component {
 
   render() {
     const tabs = ['library', 'usage', 'contribution'];
-    const usage = require('../../content/style/iconography/usage.md');
-    const contribution = require('../../content/style/iconography/contribution.md');
-    // const IconCards = ;
     const packageVer = Packages.dependencies['@console/bluemix-icons'];
-
     let currentPage = 'library';
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
@@ -88,14 +84,10 @@ class Iconography extends React.Component {
           </div>
         </Tab>
         <Tab href="/style/iconography/usage" label="Usage">
-          <div className="page">
-            <Markdown options={{ html: true }} source={usage} />
-          </div>
+          <MarkdownPage content={require('../../content/style/iconography/usage.md')} />
         </Tab>
         <Tab href="/style/iconography/contribution" label="Contribution">
-          <div className="page">
-            <Markdown options={{ html: true }} source={contribution} />
-          </div>
+          <MarkdownPage content={require('../../content/style/iconography/contribution.md')} />
         </Tab>
       </PageTabs>
     );

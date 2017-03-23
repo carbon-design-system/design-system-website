@@ -5,7 +5,7 @@
   width: 100%;
 
   .main-nav-item {
-    padding: .5rem 0;
+    padding: .225rem 0;
 
     &:hover {
       color: $color__blue-51;
@@ -20,9 +20,10 @@
       color: $color__blue-90;
       font-weight: 600;
       text-decoration: none;
-      padding: 0 rem(20px);
+      padding: .2825rem rem(20px);
       margin: 0;
       line-height: 1.5;
+      border-left: 4px solid transparent;
     }
 
     &__arrow {
@@ -41,6 +42,15 @@
       & .main-nav-item__arrow {
         transform: rotate(-180deg);
       }
+    }
+
+    &__active {
+
+      .main-nav-item__heading {
+        font-weight: 700;
+        color: $color__blue-51;
+        border-left: 4px solid $color__blue-51;
+      }      
     }
   }
 }

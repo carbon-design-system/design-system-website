@@ -16,7 +16,6 @@ TERM | DEFINITION
 **Theme** | The set of unique color values assigned to the universal palette
 **Palette** | The complete set of universal variables. The palette is the naming conventions of colors used in the UI. Each theme will use the same palette of variables.
 
-
 ## Color roles
 
 VARIABLE | ROLE/S | VALUE

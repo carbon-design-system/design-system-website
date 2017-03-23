@@ -9,6 +9,7 @@ The Bluemix logo is the most prominent visual element associated with our identi
 [Bluemix logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
 
 ### Wordmark
+
 When using the workmark as a stand alone element, “IBM” should always be typeset in Helvetica Neue Light and “Bluemix” should always be typeset in Helvetica Neue Bold.
 
 | Background | SCSS        | HEX      |
@@ -16,48 +17,57 @@ When using the workmark as a stand alone element, “IBM” should always be typ
 | Light      | $text-01    | #152935  |
 | Dark       | $inverse-01 | #ffffff  |
 
-
 ### Icon
+
 The Bluemix icon may be used on its own in cases where the Bluemix brand has already been established. Use the primary version when possible. However, use one of the following alternative icons if there are technical restraints:
 
 <div data-insert-component="ImageGrid" data-dark-bg="2">
-
+<div>
   ![Primary light background](images/bluemix-2.svg)
   **Primary icon**
   Light Background
-
+</div>
+<div>
   ![Primary dark background](images/bluemix-3.svg)
   **Primary icon**
   Dark Background
 </div>
+</div>
 
 
 <div data-insert-component="ImageGrid" data-dark-bg="2,4">
-
+<div>
   ![Decorative light background](images/bluemix-4.svg)
   **Decorative**
   Light Background
-
+</div>
+<div>
   ![Decorative dark background](images/bluemix-5.svg)
   **Decorative**
   Dark Background
-
+</div>
+<div>
   ![One-color solid light background](images/bluemix-6.svg)
   **One-color solid**
   Light Background
-
+</div>
+<div>
   ![One-color solid dark background](images/bluemix-7.svg)
   **One-color solid**
   Dark Background
+</div>
 </div>
 
 ## Logo usage
 
 ![Bluemix logo exclusion zone](images/bluemix-8.svg)
+
 ### Exclusion zone
+
 No content is allowed in the exclusion zone. Note that the icon and wordmark are associated together. The exclusion zone is equal to the height of the “B” in the wordmark shown above as the magenta border around the logo.
 
 ### Spacing
+
 The space between the icon and wordmark is determined by the trajectory of the outer angles of the right edges of top and bottom hexagons. It is demonstrated in the above image by the dotted lines that make an “X.”
 
 | Icon type      | Minumum size     
@@ -106,11 +116,13 @@ In order to maintain consistency, the logo should never be modified, transformed
 </div>
 
 ## Brand colors
+
 Primary Bluemix brand colors are IBM Design Blue 30, Blue 80 and Teal 30. These colors directly correlate with the Bluemix identity. While we have other colors in our broader UI and communication palette, these three colors should be the most prominent outward-facing brand colors.
 
 <div data-insert-component="BrandColors"></div>
 
 ### Best practices
+
 * Use color with purpose.
 * Use color, spacing, and sizing to create hierarchy and focus.
 * If a brand color does not establish proper page hierarchy, evaluate all the visual elements (size, padding, spacing) before selecting a non-brand color.
@@ -120,8 +132,8 @@ Primary Bluemix brand colors are IBM Design Blue 30, Blue 80 and Teal 30. These 
 * Accommodate for visual deficiencies such as low vision and color blindness.
 * Understand color associations across cultures.
 
-
 ## Brand fonts
+
 Helvetica Neue is the official Bluemix font as well as one of the official fonts of the greater IBM Brand. Helvetica Neue should be used whenever possible.
 
 # **Helvetica Neue Bold**
@@ -129,4 +141,5 @@ Helvetica Neue is the official Bluemix font as well as one of the official fonts
 # Helvetica Neue Light
 
 ## Parent brands
-Bluemix falls under two parent brands, [IBM Cloud](http://www.ibm.com/cloud-computing/) and [IBM Design.](https://www.ibm.com/design/) IBM Cloud is the product and business ecosystem in which Blumeix lives. IBM Design is the greater [design language](https://www.ibm.com/design/language/) and practices we use to design and develop Bluemix.
+
+Bluemix falls under two parent brands, [IBM Cloud](http://www.ibm.com/cloud-computing/) and [IBM Design.](https://www.ibm.com/design/) IBM Cloud is the product and business ecosystem in which Bluemix lives. IBM Design is the greater [design language](https://www.ibm.com/design/language/) and practices we use to design and develop Bluemix.

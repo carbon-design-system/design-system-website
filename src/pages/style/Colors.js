@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import Markdown from 'react-remarkable';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import PageTabs from '../../internal/PageTabs';
+import MarkdownPage from '../../internal/MarkdownPage';
 import ColorCard from '../../internal/ColorCard';
 import ColorList from '../../data/colors.json';
 
@@ -26,7 +26,6 @@ class Colors extends React.Component {
   render() {
     const ColorCards = this.renderColorCards(ColorList['ui-colors']);
     const SupportColorCards = this.renderColorCards(ColorList['support-colors']);
-    const usage = require('../../content/style/color/usage.md'); // eslint-disable-line
     const tabs = ['swatches', 'usage'];
     let currentPage = 'swatches';
     if (this.props.currentPage) {
@@ -48,11 +47,7 @@ class Colors extends React.Component {
           </div>
         </Tab>
         <Tab href="/style/colors/usage" label="Usage">
-          <div className="page">
-            <Markdown options={{ html: true }}>
-              {usage}
-            </Markdown>
-          </div>
+          <MarkdownPage content={require('../../content/style/color/usage.md')} />
         </Tab>
       </PageTabs>
     );

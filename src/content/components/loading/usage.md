@@ -1,4 +1,5 @@
 ## General guidelines
+
 The waiting experience is a crucial design opportunity. Although it may not be obvious what is occurring on the back-end, we can communicate clearly to reassure the user that progress is happening.
 
 It is best practice to use a loading spinner whenever the wait time is anticipated to be longer than three seconds.
@@ -10,6 +11,7 @@ Adopted from the [IBM Design Language Animation Library:](https://www.ibm.com/de
 ![Loading animation](images/loading-usage-1.mp4)
 
 ## Size
+
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
 
 ![Small loader](images/loading-usage-2.png)

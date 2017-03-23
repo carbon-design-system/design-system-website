@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                    | HEX     | SCSS      |
 |--------------------------|---------|-----------|
 | Code snippet: background | #3d70b2 | $field-01 |
@@ -7,14 +8,14 @@
 | Terminal: text           | #f5f7fa | $ui-02    |
 | Icon: copy               | #3d70b2 | $brand-01 |
 
-
 ## Typography
+
 | PROPERTY | FONT-FAMILY | FONT-SIZE   | FONT-WEIGHT  |
 |----------|-------------|-------------|--------------|
 | Text     | Monospace   | 16px / 1rem | Normal / 400 |
 
-
 ## Structure
+
 | PROPERTY          | PX  | REM   |
 |-------------------|-----|-------|
 | Height: snippet   | 192 | 12    |

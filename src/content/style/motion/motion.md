@@ -1,17 +1,23 @@
 ## Principles
+
 Motion is an indicator of life, it breathes soul into a static object—giving it a certain personality, tone, rhythm, and purpose. When used properly, motion design should feel like a well choreographed dance, with all of the elements acting and reacting to one another in sync. Start with a clear objective, layering in movements that mimic reality and guide the user through an interface.
 
 ### Purposeful
+
 Motion within an experience should be meaningful and intentional. It is used to establish hierarchy and draw the user’s attention to essential elements, giving them an understanding of an object’s role within the design. In order to convey this, the motion needs to be quick, direct, and precise.
 
 ### Familiar
+
 Motion design should mirror movements we encounter in the physical world around us. Mimicking the expected behavior of objects from reality creates repetition and consistency, which enables users to anticipate what comes next. Providing motion feedback can help guide the user’s workflow, creating a clear path towards their end goal.
 
 ### Unobtrusive
+
 Motion should be used with discretion—a little bit goes a long way. When applied properly, motion goes unnoticed. If a motion feels like it is calling attention to itself, tone it down! Subtlety ensures that the user won’t be distracted and allows for a cohesive motion experience across components.
 
 ## Guidelines
+
 ### Duration
+
 Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
 
 <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
@@ -24,6 +30,7 @@ Movement should be slow enough that the user can recognize what's happening, but
 | Page transitions         | 500-700ms |
 
 ### Easing
+
 Strictly linear movement appears strange to the human eye. An animation should accelerate and decelerate smoothly throughout its duration to appear as natural as possible.
 
 <div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
@@ -50,4 +57,5 @@ Ease-in does not need as much easing since it is primarily used for objects exit
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
 ### Properties
+
 The reality of the web is that [some properties](https://csstriggers.com/) are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.

@@ -1,6 +1,5 @@
 import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
-import Markdown from 'react-remarkable';
 import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';
 import ColorContrast from '../../internal/ColorContrast';
@@ -9,6 +8,8 @@ import LayerTypes from '../../internal/LayerTypes';
 import LayerUsage from '../../internal/LayerUsage';
 import TypographyTable from '../../internal/TypographyTable';
 import BrandColors from '../../internal/BrandColors';
+import MotionExample from '../../internal/MotionExample';
+import MarkdownPage from '../../internal/MarkdownPage';
 
 class Page extends Component {
   static propTypes = {
@@ -60,6 +61,7 @@ class Page extends Component {
       LayerTypes,
       LayerUsage,
       TypographyTable,
+      MotionExample,
       BrandColors
     };
 
@@ -104,28 +106,13 @@ class Page extends Component {
       });
     }
 
-    // Code blocks
-    // const codeBlocks = [... document.querySelectorAll('pre')];
-    // if (codeBlocks) {
-    //   codeBlocks.forEach(block => {
-    //     block.classList.add('bx--snippet', 'bx--snippet--code');
-    //   });
-    // }
-
-    // First paragraph margin styling
-    const firstChildren = [... document.querySelectorAll('.page')];
-    firstChildren.forEach(child => {
-      const firstPageChild = child.firstChild;
-      if (firstPageChild.querySelector('span p') && firstPageChild.querySelector('span p').innerHTML === '') {
-        firstPageChild.querySelector('span p').style.display = 'none';
-      }
-      const paragraphs = [... child.querySelectorAll('div span p')];
-      paragraphs.forEach(paragraph => {
-        if (paragraph.innerHTML === '') {
-          paragraph.style.display = 'none';
-        }
-      });
-    });
+    const tables = [... document.querySelectorAll('.page_md table')];
+    tables.forEach(table => {
+      const rows = [... table.querySelector('tbody').querySelectorAll('tr')];
+      rows.forEach(row => {
+        console.log(row);
+      })
+    })
   }
 
   render() {
@@ -134,14 +121,9 @@ class Page extends Component {
       label,
       title,
     } = this.props;
-
     const contentType = typeof content;
     const pageContent = (contentType === 'object' || title === '') ?
-      content : (
-      <div className="page">
-        <Markdown options={{ html: true, breaks: true }} source={content} />
-      </div>
-      );
+      content : <MarkdownPage content={content} />;
     return (
       <div>
         <PageHeader

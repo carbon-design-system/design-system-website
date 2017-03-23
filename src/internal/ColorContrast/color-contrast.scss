@@ -62,13 +62,14 @@ ul.color-contrast__examples {
 ul.color-contrast__examples--type-colors {
   display: flex;
   flex-direction: column;
-  margin-left: 0 !important;
+  margin-left: 0;
   margin-top: 2rem;
 
   li {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    padding-left: 0;
 
     div:first-child {
       width: rem(18px);
@@ -79,7 +80,7 @@ ul.color-contrast__examples--type-colors {
     div p {
       padding: 0;
       margin: 0;
-      line-height: 1 !important;
+      line-height: 1;
       font-size: rem(14px);
       font-weight: 700;
 
@@ -121,7 +122,7 @@ ul.color-contrast__examples--bg-colors {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  margin-left: 0 !important;
+  margin-left: 0;
 
   li {
     display: flex;
@@ -137,7 +138,7 @@ ul.color-contrast__examples--bg-colors {
       font-weight: 700;
       padding: 0;
       margin: 0;
-      line-height: 1 !important;
+      line-height: 1;
 
       &:last-of-type {
         font-weight: 400;

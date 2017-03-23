@@ -10,7 +10,10 @@ $ npm install --save @carbon/components
 
 ## What's included
 
-The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
+The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. 
+
+
+Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
 
 ```javascript
 carbon/
@@ -37,7 +40,7 @@ carbon/
 
 Using the Carbon sass files infers usage of the SASS pre-processor and a build step to process the files.
 
-**Importing a component style**
+#### Importing a component style
 
 To add a component style to your build, simply import the component directly
 
@@ -47,11 +50,11 @@ To add a component style to your build, simply import the component directly
 
 Importing a component this way will bring in any dependencies that component has well; the import system dedupes dependencies, so shared dependendencies between components will not create extra CSS
 
-**Namespacing**
+#### Namespacing
 
 Carbon components are built to be included individually and not clobber global styles - all `class names` are prefixed by the `bx--` moniker.
 
-**Global Flags**
+#### Global Flags
 
 Carbon exposes a few global flags to alter what CSS gets compiled
 
@@ -62,28 +65,29 @@ Carbon exposes a few global flags to alter what CSS gets compiled
 | $css--body      | true    | If set to true, set default body and typographical styles                           |
 | $css--reset     | false   | If set to true, remove the reset on individual components and apply to global scope |
 
-
 ## Javascript
 
 ### Using a module bundler: recommended
 
 Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component
 
-**Initialize all instances of a component**
+#### Initialize all instances of a component
 
 ```javascript
 import { Modal } from '@carbon/components'
 Modal.init();
 ```
 
-**Initialize a specific instance**
+#### Initialize a specific instance
+
 ```javascript
 import { Modal } from '@carbon/components';
 const myModal = document.querySelector(querySelector('[data-modal]')); // element node of the modal itself
 Modal.init(myModal);
 ```
 
-**Reference a previously initialized component**
+#### Reference a previously initialized component
+
 ```javascript
 import { Modal } from '@carbon/components';
 const myModal = document.querySelector(querySelector('[data-modal]'));
@@ -94,7 +98,7 @@ const myModalInstance = Modal.components.get(myModal);
 
 Users can also opt to use the pre-compiled `carbon-components.js` file directly. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using. By default, including the javascript file will automatically instantiate any component on the page as well as create a global objected called `CarbonComponents`.
 
-**Initialize all instances of a component**
+#### Initialize all instances of a component
 
 ```html
 <html>
@@ -104,7 +108,8 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-**Don't initialize components by default**
+#### Don't initialize components by default
+
 ```html
 <html>
   <body>
@@ -116,7 +121,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-**Initialize specific component**
+#### Initialize specific component
 
 ```html
 <html>
@@ -131,7 +136,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-**Reference a previously initialized component**
+#### Reference a previously initialized component
 
 ```html
 <html>

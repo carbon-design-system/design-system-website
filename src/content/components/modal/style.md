@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR      | SCSS     | HEX       |
 |------------|--------- |-----------|
 | Background | $ui-01   | #ffffff   |
@@ -9,8 +10,8 @@
 | Footer     | $ui-04   | #dfe3e6   |
 | Page overlay  | $ui-01  | #ffffff @ 70% opacity  |
 
-
 ## Typography
+
 Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman.
 
 | PROPERTY | FONT-SIZE     | FONT-WEIGHT |
@@ -20,11 +21,13 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | Text     | 14px / 0.875rem | Normal / 400 |
 
 ## Layer
+
 | LAYER      | ELEVATION     | BOX-SHADOW      |
 |------------|----------|----------|
 | Pop-out    | 24       | `0 12px 24px 0 rgba(0,0,0,0.10);`  |
 
 ## Structure
+
 | PROPERTY                  | PX | REM     |
 |---------------------------|----|---------|
 | Top border                | 5  | .313    |
@@ -41,6 +44,7 @@ _Structure and spacing measurements for a passive Modal | px / rem_
 _Structure and spacing measurements for a transactional Modal | px / rem_
 
 ## Mobile
+
 Modals should be full screen on mobile.
 
 ![Modal on mobile](images/modal-style-3.png)

@@ -66,6 +66,10 @@ class App extends Component {
         this.setState({
           isOpen: false,
         });
+      } else {
+        this.setState({
+          isOpen: true
+        });
       }
     });
   }

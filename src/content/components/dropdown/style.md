@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR              | SCSS            | HEX       |
 |--------------------|-----------------|-----------|
 | Background         | $field-01 @ 10% | #3d70b2   |
@@ -9,11 +10,11 @@
 | Text: hover        | $inverse-01     | #ffffff   |
 | Border: active     | $brand-01       | #3d70b2   |
 
-
 ![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
 _Normal, active, open, and disabled states for Dropdown_
 
 ## Typography
+
 All Dropdown text should be set in sentence case with the first letter of each word capitalized. Dropdown options should not exceed three words.
 
 | PROPERTY  | FONT-SIZE       | FONT-WEIGHT  |
@@ -21,14 +22,14 @@ All Dropdown text should be set in sentence case with the first letter of each w
 | Label       | 14px / 0.875rem | Bold / 700   |
 | Option text | 14px / 0.875rem | Normal / 400 |
 
-
 ## Layer
+
 | LAYER      | ELEVATION     | BOX-SHADOW      |
 |------------|----------|----------|
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
-
 ## Structure
+
 Dropdowns have two states, open and closed. An open and closed Dropdown should be the same width and appropriately fit the design, layout, and content. The height of a closed Dropdown stays consistent while the height of an open Dropdown will vary based on the amount of options it has. Please note the various color differences for closed and open Dropdowns.
 
 | PROPERTY         | PX | REM |

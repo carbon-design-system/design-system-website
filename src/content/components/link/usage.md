@@ -1,4 +1,5 @@
 ## Link text
+
 * Use text for links rather than graphics or icons.
 * Links should be three words or less.
 * Text should be consistent with the title of the intended destination.

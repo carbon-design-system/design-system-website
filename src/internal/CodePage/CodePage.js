@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Markdown from 'markdown-it';
 import ComponentExample from '../ComponentExample/ComponentExample';
 
 class CodePage extends Component {
@@ -7,7 +8,12 @@ class CodePage extends Component {
   }
 
   renderVariation = (parent, variation, title) => {
-    let htmlFile = require(`@console/bluemix-components/src/components/${parent}/${variation}.html`);
+    let htmlFile;
+    if (parent === 'text-input' && variation === 'text-area') {
+      htmlFile = require('@console/bluemix-components/src/components/text-area/text-area.html');
+    } else {
+      htmlFile = require(`@console/bluemix-components/src/components/${parent}/${variation}.html`);
+    }
 
     if (parent === 'card') {
       const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
@@ -36,9 +42,14 @@ class CodePage extends Component {
     const component = this.props.component;
     const componentInfo = require(`../../data/components/${component}.js`); // eslint-disable-line
     const description = componentInfo.desc;
+    const md = new Markdown({
+      html: true
+    });
     let componentContent;
     if (componentInfo.variations) {
-      componentContent = Object.keys(componentInfo.variations).map(variation => this.renderVariation(component, variation, componentInfo.variations[variation]));
+      componentContent =
+      Object.keys(componentInfo.variations).map(variation =>
+        this.renderVariation(component, variation, componentInfo.variations[variation]));
     } else {
       const htmlFile = require(`@console/bluemix-components/src/components/${component}/${component}.html`); // eslint-disable-line
       componentContent = (
@@ -48,7 +59,7 @@ class CodePage extends Component {
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {
       javascriptContent = (
-        <div className="code__javascript-section" dangerouslySetInnerHTML={{ __html: this.renderJavascriptContent(component) }} />
+        <div className="page_md" dangerouslySetInnerHTML={{ __html: md.renderInline(this.renderJavascriptContent(component)) }} />
       );
     } else {
       javascriptContent = '';

@@ -30,6 +30,7 @@
     "title": "Components",
     "subnav": {
       "accordion": "Accordion",
+      "breadcrumb": "Breadcrumb",
       "button": "Button",
       "card": "Card",
       "checkbox": "Checkbox",
@@ -40,12 +41,12 @@
       "dropdown": "Dropdown",
       "file-uploader": "File Uploader",
       "form": "Form",
-      "interior-left-nav": "Interior Left Nav",
+      "inline-left-nav": "Inline Left Nav",
       "link": "Link",
       "list": "List",
       "loading": "Loading",
       "modal": "Modal",
-      "module": "Module",
+      "modules": "Modules",
       "notification": "Notification",
       "number-input": "Number Input",
       "overflow-menu": "Overflow Menu",
@@ -57,7 +58,6 @@
       "tabs": "Tabs",
       "tag": "Tag",
       "text-input": "Text Input",
-      "text-area": "Text Area",
       "toggle": "Toggle",
       "tooltip": "Tooltip"
     }

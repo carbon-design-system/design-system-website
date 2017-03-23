@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                    | SCSS      | HEX       |
 |--------------------------|-----------|-----------|
 | Background with Tabs     | $ui-01    | #ffffff   |
@@ -6,9 +7,8 @@
 | Title                    | $text-02  | #5a6872   |
 | Secondary text           | $text-01  | #152935   |
 
-
-
 ## Typography
+
 Detail Page Header titles, Breadcrumb text, and Tab labels should all be set in sentence case.
 
 | Property   | Font-size       | Font-weight  |
@@ -18,14 +18,15 @@ Detail Page Header titles, Breadcrumb text, and Tab labels should all be set in 
 | Breadcrumb | 14px / 0.875rem | Normal / 400 |
 
 ## Layer
+
 | COMPONENT                     | LAYER    | ELEVATION | BOX-SHADOW  |
 |----------                     |----------|---------- |-------------|
 | Detail page header            | Base     | 0         | none  |
 | Detail page header with tabs  | Flat     | 1         | none  |
 | Detail page header on scroll  | Overlay  | 8         | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
-
 ## Structure
+
 The width of the Detail Page Headers extend across the entire browser, therefore the width of the Detail Page Header is determined by the width of the browser.
 
 ### Detail Page Header with Interior Left Nav
@@ -40,11 +41,9 @@ The width of the Detail Page Headers extend across the entire browser, therefore
 | Spacing: below title         | 14 | 0.875  |
 | Spacing: icon, title & status| 10 | 0.625  |
 
-
 ![Structure and spacing measurements for Detail Page Header](images/detail-page-header-style-1.png)
 ![Detail Page Header on scroll](images/detail-page-header-style-2.png)
 _Structure and spacing measurements for Detail Page Header and Detail Page Header on scroll | px / rem_
-
 
 ### Detail Page Header with Tabs
 
@@ -60,7 +59,6 @@ _Structure and spacing measurements for Detail Page Header and Detail Page Heade
 ![Structure and spacing measurements for Detail Page Header with tabs ](images/detail-page-header-style-3.png)
 _Structure and spacing measurements for Detail Page Header with tabs | px / rem_
 
-
 ### Detail Page Header for mobile
 
 Please see [Dropdown](/components/dropdown/style) for additional styling specs.
@@ -75,7 +73,6 @@ Please see [Dropdown](/components/dropdown/style) for additional styling specs.
 | Spacing: title & dropdown       | 12  | 0.75  |
 | Spacing: icon, title & status   | 10  | 0.625 |
 | Icon                            | 36  | 2.25 |
-
 
 ![Structure and spacing measurements for Detail Page Header mobile ](images/detail-page-header-style-4.png)
 _Structure and spacing measurements for Detail Page Header with tabs on mobile, Detail Page Header mobile, and Detail Page Header on scroll | px / rem_

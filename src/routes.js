@@ -32,11 +32,6 @@ import Style from './pages/style/Style';
 import ComponentPage from './pages/components/ComponentPage';
 
 //------------------------
-// Templates
-//------------------------
-import Templates from './pages/templates/Templates';
-
-//------------------------
 // Resources
 //------------------------
 import Resources from './pages/Resources';
@@ -46,29 +41,30 @@ import Resources from './pages/Resources';
 //------------------------
 import ComponentStatus from './pages/ComponentStatus';
 
+//------------------------
+// 404 page
+//------------------------
+import NotFound from './pages/NotFound';
+
 
 const handleRouteChange = () => {
   if (!(window.pathname === '/guidelines/content/glossary')) {
     window.scrollTo(0, 0);
   }
-  const overlayImages = [... document.querySelectorAll('p em img')];
-  const ibmEye = require('./assets/images/ibm-eye.png'); // eslint-disable-line
-  overlayImages.forEach(image => {
-    const overlay = document.createElement('a');
-    overlay.setAttribute('target', '__blank');
-    overlay.setAttribute('href', image.src);
-    overlay.innerHTML = `
-      <img src=${ibmEye} />
-      <p>View at 100%</p>
-    `;
-    overlay.classList.add('image-overlay__overlay');
-    image.parentElement.classList.add('image-overlay');
-    image.parentElement.appendChild(overlay);
-  });
-  const imageSets = [... document.querySelectorAll('p strong img')];
-  imageSets.forEach(image => {
-    image.parentElement.parentElement.classList.add('image-set');
-  });
+  // const overlayImages = [... document.querySelectorAll('p em img')];
+  // const ibmEye = require('./assets/images/ibm-eye.png'); // eslint-disable-line
+  // overlayImages.forEach(image => {
+  //   const overlay = document.createElement('a');
+  //   overlay.setAttribute('target', '__blank');
+  //   overlay.setAttribute('href', image.src);
+  //   overlay.innerHTML = `
+  //     <img src=${ibmEye} />
+  //     <p>View at 100%</p>
+  //   `;
+  //   overlay.classList.add('image-overlay__overlay');
+  //   image.parentElement.classList.add('image-overlay');
+  //   image.parentElement.appendChild(overlay);
+  // });
 };
 
 export default (
@@ -97,5 +93,6 @@ export default (
     </Route>
     <Route path="resources" component={Resources} />
     <Route path="component-status" component={ComponentStatus} />
+    <Route path="*" component={NotFound} />
   </Route>
 );

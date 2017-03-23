@@ -31,23 +31,23 @@
     }
   }
 
-  p:first-child:nth-last-child(2),
-  p:first-child:nth-last-child(2) ~ p {
+  div:first-child:nth-last-child(2),
+  div:first-child:nth-last-child(2) ~ div {
 
     @include breakpoint('900px') {
       width: calc(50% - 1rem);
     }
   }
 
-  p:first-child:nth-last-child(3),
-  p:first-child:nth-last-child(3) ~ p {
+  div:first-child:nth-last-child(3),
+  div:first-child:nth-last-child(3) ~ div {
     @include breakpoint('900px') {
       width: calc(33.3333% - 1rem);
     }
   }
 
-  > p:first-child:nth-last-child(4),
-  > p:first-child:nth-last-child(4) ~ p {
+  > div:first-child:nth-last-child(4),
+  > div:first-child:nth-last-child(4) ~ div {
     @include breakpoint('900px') {
       width: calc(25% - 1rem);
     }
@@ -58,8 +58,9 @@
 
     > div img:first-child {
       border: none;
-      border-left: 8px solid red;
       padding-left: 1rem;
+      border-left: 8px solid red;
+      height: 5rem;
     }
 
     > div img:nth-child(2) {
@@ -88,7 +89,7 @@
 @for $i from 1 through 4 {
   .image-grid--#{$i} {
 
-    > p:nth-child(#{$i}) {
+    > div:nth-child(#{$i}) {
 
       img {
         background-color: $color__blue-90;

@@ -1,3 +1,18 @@
+//--------------------
+// GLOBAL MIXINS
+//--------------------
+
+
+//--------------------
+// BREAKPOINTS
+// 
+// Usage:
+//
+// @include breakpoint('bp--xs--major') {
+//    // your content here
+// }
+//--------------------
+
 $breakpoints: (
   bp--xs--major: 600px,
   bp--sm--major: 840px,
@@ -18,6 +33,14 @@ $breakpoints: (
   }
 }
 
+//--------------------
+// GRID MARGINS
+//
+// Usage:
+//
+// @include grid-margins;
+//--------------------
+
 @mixin grid-margins {
   margin-left: 3%;
   margin-right: 3%;
@@ -33,6 +56,13 @@ $breakpoints: (
   }
 }
 
+//--------------------
+// GRID PADDING
+//
+// Usage:
+//
+// @include grid-padding;
+//--------------------
 @mixin grid-padding {
   padding-left: 3%;
   padding-right: 3%;

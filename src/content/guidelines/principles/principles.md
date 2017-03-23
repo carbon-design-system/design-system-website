@@ -5,8 +5,6 @@
 Every element in an experience should have a purpose. Leaving complexity behind allows you to design with restraint by emphasizing the essential and stripping away the distracting. Provide all the necessary information in a sleek and elegant way, so we can be distinct, clear, and concise with our users.
 ![be essential](images/overview-1.png)
 
-</div>
-
 ## Be inclusive
 
 Good design should work for everyone. We need not to focus only on the average person, with regular needs and expectations. Keep in mind that the people using your products will be extremely diverse. User diversity covers variation in capabilities, needs, and aspirations. Don't design around a checklist, empathize with a full spectrum of potential users.

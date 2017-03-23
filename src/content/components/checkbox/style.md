@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR             | SCSS        | HEX         |
 |-------------------|-------------|-------------|
 | Checked: fill     | $brand-01  | #3d70b2     |
@@ -12,13 +13,13 @@
 _Disabled and normal Checkbox states_
 
 ## Typography
+
 Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words. 
 
 | PROPERTY   | FONT-SIZE      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
 | Heading    | 14px / 0.875rem | Bold / 700   |
 | Label      | 14px / 0.875rem | Normal / 400 |
-
 
 ## Structure
 

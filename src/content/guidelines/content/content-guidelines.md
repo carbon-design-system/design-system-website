@@ -8,6 +8,7 @@ Always capitalize proper names, such as United States. Use ALL CAPS for abbrevia
 For specific capitalization rules for different element or component types, see the usage details for each individual element or component type.
 
 ### Sentence style
+
 Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers, headings for groups of toggles, and product names. Sentence style capitalizes only the first word of each sentence and proper nouns (names).
 
 **Examples:**
@@ -17,8 +18,8 @@ Use sentence-style capitalization in text and for all text elements in the UI, e
 * Creating Boolean expressions
 * Planning network architectures
 
-
 ### Headline style
+
 Use headline-style capitalization for table/grid column headers and product names. Headline style capitalizes words based on parts of speech.
 
 **Capitalize the initial letter of the following words:**
@@ -46,6 +47,7 @@ Use headline-style capitalization for table/grid column headers and product name
 * Prepositions, except as the first or last word
 
 ## Do's & Dont's
+
 These guidelines apply for developers and writers working with the Bluemix UI and documentation.
 
 ---

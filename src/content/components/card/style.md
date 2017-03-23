@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR             | SCSS     | HEX      |
 |-------------------|----------|----------|
 | Background        | $ui-01   | #ffffff  |
@@ -7,8 +8,8 @@
 | Text              | $text-01 | #152935  |
 | App actions icon  | $ui-05   | #8c9ba5  |
 
-
 ## Typography
+
 Card names and card information should be set in title case with the first letter of each word capitalized. All other text should be set in sentence case.
 
 | PROPERTY                  | FONT-SIZE     | FONT-WEIGHT  |
@@ -17,17 +18,15 @@ Card names and card information should be set in title case with the first lette
 | Secondary info             | 12px / 0.75rem  | Normal / 400 |
 | Status                     | 12px / 0.75rem  | Normal / 400 |
 
-
 ## Layer
 
 | LAYER    | ELEVATION | BOX-SHADOW  |
 |----------|---------- |-------------|
-| Raised   | 2         | `0 1px 2px 0 rgba(0,0,0,0.10);`        |
-
-
+| Raised   | 2         | `0 1px 2px 0 rgba(0,0,0,0.10);` |
 
 ## Structure
-There are several types of cards, each having its own measurements and attributes. Please select the appropriate card based on content and card needs. Find the measurement and visual details for each card type listed below. Card icons can be found in the [iconography]() page.
+
+There are several types of cards, each having its own measurements and attributes. Please select the appropriate card based on content and card needs. Find the measurement and visual details for each card type listed below. Card icons can be found in the [iconography](/style/iconography) page.
 
 | PROPERTY             | PX  | REM    |
 |----------------------|-----|--------|
@@ -40,7 +39,6 @@ There are several types of cards, each having its own measurements and attribute
 
 ![Card structure measurements](images/card-style-1.png)
 _Structure measurements for a Card | px / rem_
-
 
 | SPACING                  | PX | REM   |
 |--------------------------|----|-------|

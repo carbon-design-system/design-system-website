@@ -10,17 +10,13 @@ td {position: relative;}
   border: 1px solid #8c9ba5;
 }
 
+//--------------------
+// Page styles
+//--------------------
+
 .page {
   margin: 4rem 3% 0;
   padding-bottom: 5rem;
-
-  > div:first-child > span:first-child > p:first-child {
-    margin-bottom: 5rem;
-  }
-
-  .code-example pre.bx--snippet {
-    max-width: 100%;
-  }
 
   @include breakpoint('600px') {
     margin: 4rem 5% 0;
@@ -51,6 +47,7 @@ td {position: relative;}
   }
 
   .page__desc {
+    @include font-smoothing;
     max-width: 45rem;
     color: $color__blue-90;
     word-wrap: break-word;
@@ -60,447 +57,59 @@ td {position: relative;}
     padding-bottom: 1rem;
 
     span {
-      color: $color__blue-30;
+      color: $color__blue-40;
     }
   }
 
-  & > *:not(.component-variation):not(.component-example),
-  & > {
+  h1 {
+    font-size: 4rem;
 
-    h1,
-    h2,
-    h3 {
-      @include font-smoothing;
+    &#helvetica-neue-light {
+      font-weight: 300;
+    }
+  }
+
+  h2 {
+    color: $color__blue-90;
+    position: relative;
+    margin-top: 5rem;
+    font-weight: 600;
+    font-size: rem(26px);
+    padding: 1rem 0 3rem;
+
+    &:before {
+      content: '';
+      width: 5rem;
+      height: .3rem;
+      display: block;
+      background-color: $color__blue-40;
+      position: absolute;
+      top: -.5rem;
+      left: 0;
     }
 
-    h1 {
-      font-size: rem(66px);
+    & + h3 {
+      padding-top: 0;
+    }
+  }
 
-      &#helvetica-neue-light {
-        font-weight: 300;
-      }
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  h3 {
+    color: $color__blue-51;
+    padding: 4rem 0 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0;
+
+    & + h4 {
+      padding-top: 0;
     }
 
-    h2 {
-      color: $color__blue-90;
-      position: relative;
-      margin-top: 5rem;
-      font-weight: 600;
-      font-size: rem(26px);
-      padding: 1rem 0 3rem;
-
-      &:before {
-        content: '';
-        width: 5rem;
-        height: .3rem;
-        display: block;
-        background-color: $color__blue-40;
-        position: absolute;
-        top: -.5rem;
-        left: 0;
-      }
-
-      &:first-of-type {
-        margin-top: 1rem;
-      }
-
-      & + h3 {
-        padding-top: 0;
-      }
-
-      & + h4 {
-        padding-top: 0;
-      }
-
-      & + p {
-        padding: 0;
-      }
-    }
-
-    div span h2:first-of-type {
+    & + hr + table {
       margin-top: 0;
     }
-
-    div span > p:first-of-type + h3 {
-      margin-top: 0;
-      padding-top: 0 !important;
-    }
-
-    h3 {
-      color: $color__blue-51;
-      padding: 4rem 0 2rem;
-      font-size: 1.125rem;
-      font-weight: 600;
-
-      & + h4 {
-        padding-top: 0;
-      }
-    }
-
-    h4 {
-      color: $color__blue-90;
-      padding: 4rem 0 .5rem;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-
-    div span p {
-      padding-bottom: 1rem;
-    }
-
-    p:first-child {
-
-        strong {
-          font-size: 1.125rem;
-          line-height: 1.75;
-          word-wrap: break-word;
-          letter-spacing: 0;
-          margin-bottom: 5rem;
-        }
-      }
-
-      p {
-        max-width: 38rem;
-        line-height: 1.75;
-      }
-
-      p strong {
-        -webkit-font-smoothing: auto;
-      }
-
-      p em {
-        font-size: rem(14px);
-      }
-
-      p strong em {
-        font-size: 1.125rem;
-        color: $color__blue-40;
-        font-style: normal;
-      }
-
-      p + ul {
-        padding-top: 0;
-      }
-
-      img {
-        width: 100%;
-        margin: 1rem 0;
-      }
-
-      a.bx--btn {
-        margin-top: 1rem;
-      }
-
-      p code,
-      li code {
-        font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-        font-size: .875rem;
-        padding: .25rem;
-        background-color: $field-01;
-      }
-
-      pre:not(.code-example__snippet) {
-        margin: 0 0 1rem;
-        width: 100%;
-        max-width: 38rem;
-
-        code {
-          font-size: .875rem;
-          font-family: monospace;
-          white-space: pre-wrap;
-          word-break: break-all;
-          line-height: 1.5;
-        }
-      }
-
-      table {
-        width: 100%;
-        max-width: 38rem;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-
-        thead {
-
-          tr {
-            display: flex;
-            justify-content: space-between;
-          }
-
-          th {
-            font-size: rem(12px);
-            text-transform: uppercase;
-            font-weight: 600;
-            text-align: left;
-            letter-spacing: 1px;
-            padding: 1rem 3rem 1rem 0;
-            border-bottom: 2px solid $color__blue-40;
-          }
-        }
-
-        tbody {
-
-          tr {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid $color__gray-1;
-
-            td {
-              font-size: rem(14px);
-              padding: 1rem 3rem 1rem 0;
-
-              strong {
-                letter-spacing: 0;
-              }
-
-              &:first-child {
-                font-weight: 600;
-              }
-            }
-          }
-        }
-
-        th,
-        td {
-          flex: 1;
-        }
-      }
-
-      ul,
-      ol {
-        @include font-size('16');
-        @include font-smoothing;
-        margin-left: 1.5rem;
-        margin-bottom: 1rem;
-        line-height: 1.75;
-        max-width: 38rem;
-
-        li {
-          font-weight: 400;
-          padding-left: .25rem;
-        }
-      }
-
-      ul li {
-        list-style-type: disc;
-      }
-
-      ol li {
-        list-style-type: decimal;
-      }
-
-      .image-set {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-
-        img {
-          width: 100%;
-        }
-
-        img:first-child:nth-last-child(2),
-        img:first-child:nth-last-child(2) ~ img {
-
-          @include breakpoint('900px') {
-            width: 50%;
-          }
-        }
-
-        img:first-child:nth-last-child(3),
-        img:first-child:nth-last-child(3) ~ img {
-          @include breakpoint('900px') {
-            width: 33.3333%;
-          }
-        }
-      }
-
-      .image-overlay {
-        position: relative;
-        overflow: hidden;
-        display: block;
-        margin-top: 1rem;
-
-        img {
-          width: 100%;
-          z-index: 1;
-          margin: 0 !important;
-        }
-
-        &__overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 98.5%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          background-color: rgba($color__blue-30, .8);
-          color: $color__white;
-          font-size: rem(12px);
-          font-style: normal;
-          cursor: pointer;
-          transition: $transition--base ease;
-          opacity: 0;
-          z-index: 2;
-          text-decoration: none;
-
-          img {
-            width: auto;
-          }
-        }
-
-        &:hover {
-
-          .image-overlay__overlay {
-            opacity: 1;
-          }
-        }
-      }
-
-      blockquote p img {
-        width: 3.2rem;
-        float: left;
-        margin: 0 2rem .75rem 0;
-      }
-
-      blockquote + p strong {
-        font-size: 1rem;
-        color: $color__blue-40;
-      }
-
-      blockquote {
-        margin: 2.25rem 0 0;
-        line-height: 1.75;
-      }
-
-      // div:first-child span p + h2 {
-      //   margin-top: 0;
-      // }
-
-      hr + hr {
-        & + table thead {
-          display: none;
-        }
-
-        & + table tbody tr td {
-          font-size: 1rem;
-          line-height: 1.5;
-
-          em {
-            font-style: normal;
-            font-weight: 400;
-          }
-
-          &:nth-child(2) {
-            white-space: nowrap;
-            font-size: 4rem;
-            text-align: right;
-            line-height: 1;
-          }
-        }
-
-        & + table tbody tr {
-          border-bottom: 0;
-
-          &:nth-child(1) {
-            td:nth-child(2) {
-              font-weight: 300;
-            }
-          }
-
-          &:nth-child(2) {
-            td:nth-child(2) {
-              font-weight: 400;
-            }
-          }
-
-          &:nth-child(3) {
-            td:nth-child(2) {
-              font-weight: 700;
-            }
-          }
-        }
-      }
-
-      // Do's and Dont's list
-      hr + hr {
-        & + p {
-          display: flex;
-          align-items: center;
-          padding-bottom: 0 !important;
-          font-size: .875rem;
-
-          img {
-            width: auto !important;
-            padding-right: .5rem;
-          }
-
-          & + p {
-            border-left: 10px solid #8cd211;
-            display: flex;
-            align-items: center;
-            padding: 1rem !important;
-            font-size: 1.25rem;
-            font-style: italic;
-            font-weight: 300;
-          }
-
-          & + blockquote {
-            margin: 0 !important;
-          }
-
-          & + blockquote p {
-            border-left: 10px solid #ff5050;
-            display: flex;
-            align-items: center;
-            padding: 1rem !important;
-            font-size: 1.25rem;
-            font-style: italic;
-            font-weight: 300;
-          }
-        }
-      }
-
-      hr + hr {
-        + h3 {
-          position: relative;
-          margin-top: 2rem;
-          margin-bottom: 3rem;
-
-          strong {
-            position: absolute;
-            top: 0;
-            left:0;
-            z-index: 2;
-            color: $color__white;
-            letter-spacing: 0;
-            font-size: 1.625rem;
-            top: 2.2rem;
-            left: 1.625rem;
-          }
-
-          img {
-            width: auto !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-          }
-        }
-      }
-
-      blockquote + hr + p {
-        font-style: italic;
-        color: $color__navy-gray-6;
-      }
-
-      hr + p img {
-        width: auto;
-      }
-
-      hr + table {
-        max-width: 45rem;
-      }
   }
 }

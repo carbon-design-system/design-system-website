@@ -5,35 +5,37 @@
 <div data-insert-component="GridExample"></div>
 
 ### Grid with interior left navigation
+
 The Interior Left Nav lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
 
 **Grid area with left navigation: page width minus 200px from left edge.**
-
 _
 ![Interior left nav grid](images/grid-4.png)
 _
 
 ## How it works
+
 ### Gutters
+
 Columns create gutters (gaps between column content) through padding. For devices with a screen width greater than 768px, the column padding is 20px. For devices with a screen width less than 768px, the column padding is 10px.
 
 **Screen width ≥ 768px = 20px gutters**
-
 **Screen width < 768px = 10px gutters**
 
 ### Columns
+
 Carbon designs should be limited to twelve columns. If designers feel that they need fewer columns in their grid, they can specify the number of twelve available columns they wish to span.
 
 This can translate to percentages of the twelve columns. Using this method, a designer can create a folded, less granular grid. For example, if your component spans three equal columns, that is equal to 25% of twelve columns.
 
 **Column count: 12**
-
 _
 ![Interior left nav grid](images/grid-5.png)
 _
 _@1440px - 12 Columns / 20px Gutters / 5% Margins_
 
 ### Margins
+
 The twelve column grid does not have a maximum width. It has a width of 100%, with built in margins that create padding between column count and the edges of the viewport.
 
 In devices with a screen width greater than 768px, the margins are 5% on the left, and 5% on the right.

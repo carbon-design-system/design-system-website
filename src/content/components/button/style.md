@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR            | SCSS                   | HEX                    |
 |------------------|------------------------|------------------------|
 | Normal           | $brand-01              | #3d70b2                |
@@ -16,17 +17,16 @@
 **
 _Primary and Secondary Button state examples_
 
-
 ## Typography
+
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
 | PROPERTY  | FONT-SIZE      | FONT-WEIGHT  |
 |-------------|------------------|--------------|
 | Button text | 14px / 0.875rem  | Bold / 700   |
 
-
-
 ## Structure
+
 | HEIGHT          | PX | REM |
 |-----------------|----|-----|
 | Regular buttons | 40 | 2.5 |
@@ -36,10 +36,9 @@ Button text should be set in sentence case, with only the first word in a phrase
 ![Structure for a small Primary Button](images/button-style-8.png)
 _Stucture measurements for small and regualr Primary Buttonx | px / rem_
 
-
 ### Spacing
-A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with an icon, the space between the button label and the icon must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with icons appear together.
 
+A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with an icon, the space between the button label and the icon must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with icons appear together.
 
 | SPACING                 | PX | REM   |
 |-------------------------|----|-------|

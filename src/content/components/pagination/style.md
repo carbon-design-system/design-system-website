@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR          | SCSS    | HEX         |
 |----------------|---------|-------------|
 | Background     | $ui-01  | #ffffff     |
@@ -6,16 +7,16 @@
 | Border         | $ui-04  | #dfe3e6     |
 | Chevron        | $ui-05  | #8c9ba5     |
 
-
 ## Typography
+
 Pagination text should be set in set in sentence case with the first letter of each word capitalized.
 
 | PROPERTY       | FONT-SIZE      | FONT-WEIGHT |
 |------------------|-----------------|--------------|
 | Secondary text   | 12px / 0.75rem  | Normal / 400 |
 
-
 ## Structure
+
 The Pagination bar is most commonly used in [Data tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 10px by 5px.
 
 | PROPERTY                           | PX        | REM   |

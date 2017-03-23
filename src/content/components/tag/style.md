@@ -1,12 +1,13 @@
-## Typography 
+## Typography
+
 Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
 |----------|----------------|--------------|
 | Text     | 12px / 0.75rem | Normal / 400 |
 
-
 ## Structure
+
 All tags have the same height. However, the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.
 
 | PROPERTY          | PX | REM   |

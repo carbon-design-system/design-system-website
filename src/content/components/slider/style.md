@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                 | SCSS      | HEX      |
 |-----------------------|---------  |----------|
 | Circle: fill          | $brand-01 | #3d70b2  |
@@ -7,8 +8,8 @@
 | Label                 | $text-01  | #152935  | 
 | Secondary text        | $text02   | #5a6872  |
 
-
 ## Typography 
+
 Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than 3 words. 
 
 | Property | Font-size       | Font-weight  |
@@ -17,6 +18,7 @@ Slider labels should be set in sentence case, with only the first word in a phra
 | Secoondary text    | 14px / 0.875rem | Normal / 400 |
 
 ## Structure
+
 The width of the slider can vary depending on page layout. 
 
 | PROPERTY          | PX | REM   |

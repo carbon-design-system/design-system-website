@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR              | SCSS            | HEX     |
 |--------------------|-----------------|---------|
 | Text: label        | $text-01        | #152934 |
@@ -8,8 +9,8 @@
 | Icon: remove       | $inverse-01     | #152934 |
 | Icon: loading      | $ui-05          | #8c9ba5 |
 
-
 ## Typography
+
 The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
 | PROPERTY         | FONT-SIZE      | FONT-WEIGHT  |
@@ -18,8 +19,8 @@ The File Uploader label and instruction text should be set in sentence case, wit
 | Instruction text | 14px / 0.875rem | Normal / 400 |
 | File name        | 12px / 0.75rem  | Normal / 400 |
 
-
 ## Structure
+
 The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button](/components/button) guidelines for styling and usage of the “Add files” button.
 
 | PROPERTY               | PX | REM   |

@@ -1,7 +1,12 @@
+//--------------------
+// GLOBAL LAYOUT
+// Includes styles for body, link, wrapper and container.
+//--------------------
+
 body {
   @include helvetica;
   background-color: $color__white;
-  color: $text-color-dark;
+  color: $color__blue-90;
 
   hr {
     display: none;
@@ -38,8 +43,4 @@ a {
   &:hover {
     color: $color__blue-40;
   }
-}
-
-.img-2x1 {
-  display: flex;
 }

@@ -13,9 +13,10 @@ LAYER | COMPONENTS
 <div data-insert-component="LayerUsage"></div>
 
 ## Code usage
+
 To use in code, just include the layer mixin like so with the appropriate layer value from the table below:
 
-```
+```scss
 @include layer('raised');
 ```
 

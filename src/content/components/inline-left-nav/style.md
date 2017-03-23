@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                      | SCSS       | HEX      |
 |----------------------------|------------|----------|
 | Background                 | $ui-01     | #ffffff  |
@@ -17,6 +18,7 @@ _
 _Select and hover states for Interior Left Navigation_
 
 ## Typography
+
 All left navigation text should be set in title case, with the first letter of each word capitalized. Labels should not exceed three words. 
 
 | Property                | Font-size       | Font-weight  |
@@ -26,11 +28,13 @@ All left navigation text should be set in title case, with the first letter of e
 | List item: selected    | 12px / 0.75rem  | Bold / 700   |
 
 ## Layer
+
 | LAYER      | ELEVATION     | BOX-SHADOW      |
 |------------|----------|----------|
 | Temporary nav     | 16        | `0 8px 16px 0 rgba(0,0,0,0.10);`  |
 
 ## Structure
+
 The width of the menu stays consistent, while the menu height varies based on the height of the viewport, always spanning from the global header to the bottom of the viewport. 
 
 | PROPERTY                      | PX  | REM    |
@@ -45,11 +49,7 @@ The width of the menu stays consistent, while the menu height varies based on th
 | Spacing: collapse and chevron | 12  |.75     |
 | Spacing: chevron & bottom     | 14  | .875   |
 
-**
 ![Structure and spacing measurements for the open Interior Left Nav ]()
-
 ![Structure and spacing measurements for the closed Interior Left Nav]()
-**
-
 _Structure and spacing measurements for open and closed Interior Left Nav | px / rem_
 

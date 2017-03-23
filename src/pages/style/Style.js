@@ -1,13 +1,14 @@
-import React from 'react';
-import Markdown from 'react-remarkable';
+import React, { PropTypes } from 'react';
 import Colors from './Colors';
 import Iconography from './Iconography';
 import Layer from './Layer';
-import Motion from './Motion';
-import Typography from './Typography';
 import Page from '../../internal/Page';
+import MarkdownPage from '../../internal/MarkdownPage';
 
 class Style extends React.Component {
+  static propTypes = {
+    params: PropTypes.object
+  }
 
   render() {
     const paramsName = this.props.params.name;
@@ -20,21 +21,11 @@ class Style extends React.Component {
       content = <Layer currentPage={paramsPage} />;
     } else if (paramsName === 'iconography') {
       content = <Iconography currentPage={paramsPage} />;
-    } else if (paramsName === 'motion') {
-      content = <Motion />;
-    } else if (paramsName === 'typography') {
-      content = <Typography />;
     } else {
       content = (
-        <div className="page">
-          <Markdown
-            options={{ html: true }}
-            source={require(`../../content/style/${paramsName}/${paramsName}.md`)} // eslint-disable-line
-          />
-        </div>
+        <MarkdownPage content={require(`../../content/style/${paramsName}/${paramsName}.md`)} />
       );
     }
-
     return <Page label="Style" title={title} content={content} />;
   }
 }

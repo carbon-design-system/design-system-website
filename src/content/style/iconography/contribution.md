@@ -91,14 +91,12 @@ Inspect the code and make sure that your XML doesn't include the following:
 4. Submit a pull request
 5. Do not commit built files (files created from `npm run build` script).
 
-
 ### Testing SVGs
 
 1. `npm run build` to build new SVG sprite files.
 2. `npm test` to run unit tests
 3. `npm start` and go to [localhost:3000](http://localhost:3000/), make sure added icons are rendering correctly
 4. Optional: Go to [localhost:3000/test](http://localhost:3000/test) and test styling of icon manually using CSS.
-
 
 Unit tests are run against built SVG sprite files (bluemix-icons.svg and sprite.svg).
 Do not commit built files to pull requests.

@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import Markdown from 'react-remarkable';
 import { browserHistory } from 'react-router';
 import Tabs from '@console/bluemix-components-react/dist/components/Tabs';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import CodePage from '../../internal/CodePage';
 import LiveComponent from '../../internal/LiveComponent';
 import Page from '../../internal/Page';
+import MarkdownPage from '../../internal/MarkdownPage';
 
 class ComponentPage extends Component {
   static propTypes = {
@@ -25,8 +25,8 @@ class ComponentPage extends Component {
   render() {
     const currentComponent = this.props.params.name;
     const componentTitle = currentComponent.replace(/-/g, ' ');
-    const usage = require(`../../content/components/${currentComponent}/usage.md`); // eslint-disable-line
-    const style = require(`../../content/components/${currentComponent}/style.md`); // eslint-disable-line
+    const usage = require(`../../content/components/${currentComponent}/usage.md`);
+    const style = require(`../../content/components/${currentComponent}/style.md`);
 
     if (this.props.params.page === 'live') {
       return <LiveComponent component={currentComponent} />;
@@ -38,18 +38,10 @@ class ComponentPage extends Component {
           <CodePage component={currentComponent} />
         </Tab>
         <Tab href={`/components/${currentComponent}/usage`} label="Usage" onClick={this.updateTab}>
-          <div className="page">
-            <Markdown options={{ html: true }}>
-              {usage}
-            </Markdown>
-          </div>
+          <MarkdownPage content={usage} />
         </Tab>
         <Tab href={`/components/${currentComponent}/style`} label="Style" onClick={this.updateTab}>
-          <div className="page">
-            <Markdown options={{ html: true }}>
-              {style}
-            </Markdown>
-          </div>
+          <MarkdownPage content={style} />
         </Tab>
       </Tabs>
     );

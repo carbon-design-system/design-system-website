@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR                       | SCSS     | HEX       |
 |-----------------------------|--------- |-----------|
 | Background                  | $ui-01   | #ffffff   |
@@ -12,6 +13,7 @@
 _Example of a Data Table_
 
 ## Typography
+
 Column labels should be in all caps. All other table text should be sentenced case.
 
 | PROPERTY      | FONT-SIZE     | FONT-WEIGHT  |
@@ -26,12 +28,12 @@ Column labels should be in all caps. All other table text should be sentenced ca
 |----------|---------- |-------------|
 | Flat     | 1         | none        |
 
-
-
 ## Structure
+
 Tables are a configurable and customizable component. Designers can pick and choose certain elements and interactions.
 
 ### Simple data table
+
 The basic table style is the required base from which tables can be developed. Basic tables are composed of a header row followed by rows of data below. At a minimum, tables require three or more columns. Table row heights can be set to narrow or wide and be toggled between the two. Column widths can vary by content and only requires a minimum spacing between columns.
 
 | PROPERTY                | PX | REM  |
@@ -43,7 +45,6 @@ The basic table style is the required base from which tables can be developed. B
 | Chevron                 | 12   | 0.75  |
 | Checkbox                | 18   | 1.125 |
 
-
 **
 ![Structure for a narrow row Data Table](images/data-table-style-1.png)
 ![Structure for a wide row Data Table](images/data-table-style-2.png)
@@ -51,6 +52,7 @@ The basic table style is the required base from which tables can be developed. B
 _Structure and spacing measurements for a narrow and a wide row Data Table | px / rem_
 
 ### Data table
+
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
 | SPACING            | PX   | REM   |
@@ -62,12 +64,10 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 | Internal elements  | 16   | 1     |
 | Between columns    | ≥ 24 | 1.5   |
 
-
 **
 ![Spacing for a basic Data Table](images/data-table-style-3.png)
 ![Spacing for an enhanced Data Table](images/data-table-style-4.png)
 **
-
 _Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
 
 ### Toolbar

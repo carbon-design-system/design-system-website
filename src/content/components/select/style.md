@@ -1,4 +1,5 @@
 ## Color
+
 | COLOR             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
 | Background        | $field-01     | #3d70b2 @ 10% |
@@ -6,18 +7,17 @@
 | Text: user input  | $text-01      | #152935   |
 | Text: placeholder | $text-03      | #5a6872   |
 
-
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states_
 
 ## Typography
+
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
 | PROPERTY | FONT-SIZE       | FONT-WEIGHT  |
 |----------|-----------------|--------------|
 | Label    | 14px / 0.875rem | Bold / 700   |
 | Text     | 14px / 0.875rem | Normal / 400 |
-
 
 ## Structure
 
@@ -33,15 +33,13 @@ Select text should be set in sentence case, with only the first word in a phrase
 _Structure and spacing measurements for Select | px / rem_
 
 ### States
+
 **Open:** Style determined by browser
-
 **Disabled:** 50% opacity
-
 **Help:** Tool tip should be left aligned with the text field box and underlined to indicate a link.
 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 _Examples of open, disabled, and help Select states_
-
 
 ### Small Select
 
