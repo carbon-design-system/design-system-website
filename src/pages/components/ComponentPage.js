@@ -33,7 +33,7 @@ class ComponentPage extends Component {
     }
 
     const content = (
-      <Tabs className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
+      <Tabs key={this.props.params.name} className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
         <Tab href={`/components/${currentComponent}/code`} label="Code" onClick={this.updateTab}>
           <CodePage component={currentComponent} />
         </Tab>
@@ -45,7 +45,6 @@ class ComponentPage extends Component {
         </Tab>
       </Tabs>
     );
-
     return <Page label="component" title={componentTitle} content={content} />;
   }
 }

@@ -19,7 +19,7 @@ class SideNav extends Component {
   renderSubNavItems = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     return Object.keys(subnav).map(subNavItem => {
-      const link = `/${parentItem}/${subNavItem}`;
+      const link = `/${parentItem}/${subNavItem}/code`;
       const isCurrentPage = (parentItem === currentPath[1] && subNavItem === currentPath[2]);
       const classNames = classnames({
         'sub-nav__item': true,
@@ -111,7 +111,11 @@ class SideNav extends Component {
         </div>
         <div className="side-nav__footer">
           <p className="side-nav__text">See something missing?</p>
-          <a className="side-nav__github-issue-link bx--link" onClick={onClick}>Let us know!</a>
+          <a
+            className="side-nav__github-issue-link bx--link"
+            href="https://github.com/carbon-design-system/carbon-components/issues"
+            target="_blank"
+          >Let us know!</a>
           <p className="side-nav__copyright-text">Copyright © 2017 IBM</p>
         </div>
       </div>

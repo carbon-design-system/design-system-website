@@ -110,7 +110,6 @@ class Page extends Component {
     tables.forEach(table => {
       const rows = [... table.querySelector('tbody').querySelectorAll('tr')];
       rows.forEach(row => {
-        console.log(row);
       })
     })
   }

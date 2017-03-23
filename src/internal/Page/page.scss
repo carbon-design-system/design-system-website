@@ -48,11 +48,11 @@ td {position: relative;}
 
   .page__desc {
     @include font-smoothing;
-    max-width: 45rem;
+    max-width: 38rem;
     color: $color__blue-90;
     word-wrap: break-word;
     font-size: 1.125rem;
-    line-height: 1.75;
+    line-height: 1.5;
     font-weight: 700;
     padding-bottom: 1rem;
 
@@ -61,55 +61,61 @@ td {position: relative;}
     }
   }
 
-  h1 {
-    font-size: 4rem;
+  & > *:not(.component-example):not(.component-variation) {
+    h1 {
+      font-size: 4rem;
 
-    &#helvetica-neue-light {
-      font-weight: 300;
-    }
-  }
-
-  h2 {
-    color: $color__blue-90;
-    position: relative;
-    margin-top: 5rem;
-    font-weight: 600;
-    font-size: rem(26px);
-    padding: 1rem 0 3rem;
-
-    &:before {
-      content: '';
-      width: 5rem;
-      height: .3rem;
-      display: block;
-      background-color: $color__blue-40;
-      position: absolute;
-      top: -.5rem;
-      left: 0;
+      &#helvetica-neue-light {
+        font-weight: 300;
+      }
     }
 
-    & + h3 {
-      padding-top: 0;
+    h2 {
+      color: $color__blue-90;
+      position: relative;
+      margin-top: 5rem;
+      font-weight: 600;
+      font-size: rem(26px);
+      padding: 1rem 0 3rem;
+
+      &:before {
+        content: '';
+        width: 5rem;
+        height: .3rem;
+        display: block;
+        background-color: $color__blue-40;
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+      }
+
+      & + h3 {
+        padding-top: 0;
+      }
     }
-  }
 
-  h2:first-of-type {
-    margin-top: 0;
-  }
-
-  h3 {
-    color: $color__blue-51;
-    padding: 4rem 0 2rem;
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: 0;
-
-    & + h4 {
-      padding-top: 0;
-    }
-
-    & + hr + table {
+    h2:first-of-type {
       margin-top: 0;
+    }
+
+    table + h2:first-of-type {
+      margin-top: 4rem;
+    }
+
+    h3 {
+      color: $color__blue-51;
+      padding: 4rem 0 1rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: 0;
+
+      & + h4 {
+        padding-top: 0;
+      }
+
+      & + hr + table {
+        margin-top: 0;
+      }
     }
   }
 }

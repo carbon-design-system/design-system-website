@@ -22,6 +22,9 @@ Effective form labeling helps users understand what information to enter into a 
 
 Placeholder text provides hints or examples of what to enter. Placeholder text should disappear after the user has entered data into the Text Input. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
 
+---
+***
+> 
 ![Placeholder text](images/text-input-usage-1.png)
 
 ### Default values
@@ -32,5 +35,8 @@ Where possible, add programmatic assistance. Detect and pre-fill inputs to reduc
 
 Real time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [Forms](/components/form/usage) usage page.
 
+---
+***
+> 
 ![validation on text field](images/text-input-usage-2.png)
 _Text Input validation_

@@ -87,7 +87,6 @@ export default (
     <Route path="components">
       <IndexRedirect to="/components/accordion/code" />
       <Route path="/components/:name">
-        <IndexRedirect to="/components/:name/code" />
         <Route path="/components/:name/:page" component={ComponentPage} />
       </Route>
     </Route>

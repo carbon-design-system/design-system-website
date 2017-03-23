@@ -14,12 +14,19 @@
   }
 
   &__label {
-    @include font-size('16');
+    @include font-size('14');
     color: $color__navy-gray-6;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
-    margin: 3rem 0 1rem;
+    margin: 4rem 0 1.25rem;
+    white-space: nowrap;
+
+    @include breakpoint('500px') {
+      @include font-size('16');
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+    }
   }
 
   &__title {
@@ -31,7 +38,7 @@
     padding: 0;
     transition: $transition--base $bx--standard-easing;
 
-    @include breakpoint('320px') {
+    @include breakpoint('500px') {
       font-size: rem(52px);
     }
 

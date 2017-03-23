@@ -114,6 +114,10 @@ module.exports = {
         loader: 'file-loader?name=images/[name].[ext]',
       },
       {
+        test: /\.(pptx|key)$/,
+        loader: 'file-loader?name=downloads/[name].[ext]',
+      },
+      {
         test: /\.svg$/,
         exclude: `${paths.assets}/bluemix-icons.svg`,
         loader: 'file?name=images/[name].[ext]',
@@ -127,7 +131,7 @@ module.exports = {
         loader: 'html',
         options: {
           minimize: false
-        },
+        }
       }
     ]
   },

@@ -16,7 +16,7 @@
   padding: 1rem 0;
   position: fixed;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 7000;
   transition: $transition--base ease;
 
   @include breakpoint('bp--sm--major') {
@@ -43,6 +43,10 @@
     span {
       font-weight: 300;
     }
+
+    &:hover {
+      color: $color__blue-51;
+    }
   }
 
   &__version {
@@ -58,6 +62,7 @@
 
     &:hover {
       text-decoration: underline;
+      color: $color__blue-51;
     }
   }
 
@@ -104,7 +109,7 @@
 
   &__copyright-text {
     font-size: .75rem;
-    color: $color__blue-90;
+    color: $color__navy-gray-6;
     margin-top: 1.5rem;
   }
 }

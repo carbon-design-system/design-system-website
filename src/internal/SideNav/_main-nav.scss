@@ -24,6 +24,7 @@
       margin: 0;
       line-height: 1.5;
       border-left: 4px solid transparent;
+      transition: 200ms ease;
     }
 
     &__arrow {
@@ -51,6 +52,12 @@
         color: $color__blue-51;
         border-left: 4px solid $color__blue-51;
       }      
+    }
+
+    &:hover {
+      .main-nav-item__heading {
+        color: $color__blue-51;
+      }
     }
   }
 }

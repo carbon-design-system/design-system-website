@@ -7,6 +7,9 @@
 | Text: user input  | $text-01      | #152935       |
 | Text: placeholder | $text-03      | #5a6872       |
 
+---
+***
+> 
 ![Default and user input states for Text Input](images/text-input-style-1.png)
 _Examples of default and user-input states for Text Input_
 
@@ -41,5 +44,7 @@ _Structure and spacing measurements for Text Input | px / rem_
 **Disabled:** 50% opacity
 
 ---
+***
+> 
 ![Active, help, or disabled states for Text Input](images/text-input-style-3.png)
 _Examples of active, help, and disabled Text Input states_

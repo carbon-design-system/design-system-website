@@ -28,12 +28,19 @@
     }
   }
 
+  h2 {
+
+    & + table {
+      margin-top: 0;
+    }
+  }
+
   > p:not(:empty):first-child {
      margin-bottom: 4rem;
 
     strong {
       font-size: 1.125rem;
-      line-height: 1.75;
+      line-height: 1.5;
       word-wrap: break-word;
       letter-spacing: 0;
     }
@@ -44,6 +51,10 @@
     padding: 4rem 0 1rem;
     font-weight: 600;
     font-size: 1rem;
+
+    & + table {
+      margin-top: 0;
+    }
   }
 
   p strong {
@@ -62,11 +73,8 @@
 
   img {
     width: 100%;
-    margin: 1rem 0;
-  }
-
-  p + p img {
-    margin-top: 0;
+    margin: 1rem 0 0;
+    background-color: $color__gray-3;
   }
 
   a.bx--btn {
@@ -75,10 +83,11 @@
 
   p code,
   li code {
-    font-size: 1.125rem;
+    font-size: .975rem;
     padding: .25rem;
     background-color: $field-01;
-    font-family: monospace;
+    color: $color__navy-gray-6;
+    font-family: 'Menlo';
   }
 
   pre {
@@ -104,6 +113,18 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.25;
+
+    & + p {
+      margin-top: 3rem;
+    }
+
+    & + h2 {
+      margin-top: 2rem;
+    }
+
+    & + hr + hr + blockquote {
+      margin-top: 2rem;
+    }
 
     thead {
 
@@ -260,7 +281,7 @@
   }
 
   blockquote {
-    margin: 2.25rem 0 0;
+    margin: 1.75rem 0 0;
     line-height: 1.75;
     width: 100%;
     max-width: 38rem;
@@ -368,7 +389,7 @@
         left: 1.625rem;
       }
 
-      img {
+      > img {
         width: auto !important;
         position: absolute;
         top: 0;
@@ -386,6 +407,22 @@
 
   hr + p img {
     width: auto;
+  }
+
+  hr + hr + blockquote {
+    margin-top: 1rem;
+  }
+
+  hr + hr + blockquote p {
+    margin-bottom: 1.5rem;
+  }
+
+  hr + hr + blockquote p img {
+    width: 50%;
+    position: static;
+    margin: 0;
+    float: none;
+    display: block;
   }
 
   hr + table {

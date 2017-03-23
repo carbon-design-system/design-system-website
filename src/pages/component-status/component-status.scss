@@ -1,4 +1,10 @@
 .component-status-page {
+  margin-top: 2rem;
+
+  @include breakpoint('552px') {
+    margin-top: 4rem;
+  }
+
     table {
     width: 100%;
     max-width: 45rem;
@@ -59,14 +65,26 @@
 
   &__icon-list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 0;
     margin-left: 0 !important;
+    flex-direction: column;
+
+    @include breakpoint('552px') {
+      flex-direction: row;
+      align-items: center;
+    }
 
     li {
       display: flex;
       align-items: center;
-      margin: 0 1rem;
+      margin: 0 1rem .25rem;
+      margin-left: 0;
+
+      @include breakpoint('552px') {
+        margin-left: 1rem;
+        margin-bottom: 0;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -120,7 +138,6 @@
 
     &.under-review {
       fill: $color__white;
-      background-color: #EFC100;
 
       span {
         font-size: .675rem;

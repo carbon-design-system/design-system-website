@@ -7,6 +7,9 @@
 | Text: user input  | $text-01      | #152935   |
 | Text: placeholder | $text-03      | #5a6872   |
 
+---
+***
+> 
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states_
 
@@ -40,6 +43,9 @@ _Structure and spacing measurements for Select | px / rem_
 
 **Help/More Info:** A Tooltip should appear when the user clicks the "More Info" link. The Tooltip indicator should be left aligned with the Select and underlined.
 
+---
+***
+> 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 _Examples of open, disabled, and help Select states_
 
@@ -51,8 +57,14 @@ _Examples of open, disabled, and help Select states_
 | Width                       | 56 | 3.5   |
 | Internal spacing            | 8  | 0.5    |
 
+---
+***
+> 
 ![Structure and spacing measurements for Small Select](images/select-style-4.png)
 _Structure and spacing measurements for Small Select | px / rem_
 
+---
+***
+> 
 ![Structure and spacing measurements for Small Select](images/select-style-5.png)
 _Examples of open and disabled Small Select states_

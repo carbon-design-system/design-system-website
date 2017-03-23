@@ -31,6 +31,7 @@ $temp-text: $color__blue-90;
   color: transparent;
   background-color: #fff;
   cursor: pointer;
+  z-index: 20;
 
   &:hover svg {
     fill: $brand-02;

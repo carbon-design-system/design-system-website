@@ -34,7 +34,7 @@ class ComponentStatus extends React.Component {
     );
     const underReviewIcon = (
       <div className="component-status__icon under-review">
-        <span>!</span>
+        <Icon fill="#EFC100" width="16" height="16" name="warning--glyph" description="ready status" />
       </div>
     );
     const deprecatedIcon = (
@@ -47,7 +47,7 @@ class ComponentStatus extends React.Component {
         <span>-</span>
       </div>
     );
-    const currentVersion = `Current version: ${Packages.dependencies['@console/bluemix-components']} (March 13, 2017)`;
+    const currentVersion = `Current version: 7.0 (March 13, 2017)`; // UPDATE
     const componentStatus = require('../data/component-status.json'); // eslint-disable-line
     const content = (
       <div className="page component-status-page">

@@ -47,6 +47,9 @@
 
   .button button {
     margin: .5rem;
+
+  & .text-input .bx--text-input {
+    min-width: 20rem;
   }
 
   & .detail-page-header .bx--detail-page-header.bx--detail-page-header--no-tabs {

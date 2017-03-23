@@ -124,7 +124,7 @@ module.exports = {
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     new CopyWebpackPlugin([
       {
-        from: 'src/assets/fonts', to: 'assets/fonts',
+        from: 'src/assets/', to: 'assets/',
       },
     ]),
   ],
