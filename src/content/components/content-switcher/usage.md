@@ -1,3 +1,5 @@
+## General guidelines
+
 ### Text
 
 Be concise and specific. Titles have a max of two words.

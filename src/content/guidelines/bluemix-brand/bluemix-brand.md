@@ -1,4 +1,4 @@
-**_Brand_ is the unified experience the Bluemix identity and purpose. It is more than what Bluemix looks like, it is who we are. Brand is how Bluemix users perceive it and what it feels like when they interact with the product.**
+**_Brand_ is the unified experience the Bluemix identity and purpose. It is how Bluemix users perceive it and what it feels like when they interact with the product.**
 
 ## Bluemix logo
 ![Bluemix logo](images/bluemix-1.0.svg)
@@ -6,7 +6,7 @@
 The Bluemix logo is the most prominent visual element associated with our identity. The logo is a combination of the icon and wordmark. We are proud of our logo and recommend the following guidelines on this page.
 
 ***
-[Bluemix logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
+[Download logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
 
 ### Wordmark
 

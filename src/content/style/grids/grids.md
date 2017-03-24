@@ -6,7 +6,7 @@
 
 ### Grid with interior left navigation
 
-The Interior Left Nav lives outside the bounds of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
+The interior left navigation lives outside the boundary of the grid. When using the interior left navigation, start the grid after indenting 200px from the left edge of the page (200px being the fixed width of the left navigation). Normal grid rules apply within the content area.
 
 **Grid area with left navigation: page width minus 200px from left edge.**
 _

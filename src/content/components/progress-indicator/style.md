@@ -11,6 +11,9 @@ All steps that have already been completed are indicated by an outlined circle w
 | Icon: current & completed       | $brand-01 | #3d70b2 |
 | Icon: future step               | $ui-05    | #8c9ba5 |
 
+---
+***
+> 
 ![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
 _Examples of current, completed, and future steps for Progress Indicator_
 
@@ -35,6 +38,7 @@ The checkmark icon can be found in the [iconography](/style/iconography/library)
 | Spacing: steps (minimum) | 48  | 3     |
 | Spacing: icon & label    | 8   | 0.5   |
 | Spacing: icons external  | 16  | 1     |
+
 
 ![Structure and spacing for Progress Indicator](images/progress-indicator-style-2.png)
 _Structure and spacing measurements for Progress Indicator | px / rem_

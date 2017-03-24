@@ -12,10 +12,16 @@ Clearly identify which page the user is on by displaying the current page number
 
 **Previous** and **next** chevrons are the most useful way for the user to move forward or backward through pages of data. Provide a [Text Input](/components/text-input) in which users can input the page they wish to navigate to.
 
+---
+***
+> 
 ![Pagination example](images/pagination-usage-1.png)
 
 ### Items per page
 
 Use a small select within the Pagination bar so the user can change the amount of data displayed per page.
 
+---
+***
+> 
 ![Pagination with small select](images/pagination-usage-2.png)

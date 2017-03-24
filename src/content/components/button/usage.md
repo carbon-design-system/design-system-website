@@ -29,6 +29,8 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 * Icons used in buttons must be directly related to the action that the user is taking.
 * Icons must be the same color value as the text within a button.
 
+---
+***
+> 
 ![button with icon](images/button-usage-1.png)
 _Icon usage in button_
-

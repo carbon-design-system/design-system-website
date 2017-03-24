@@ -12,14 +12,27 @@
 | Caret                      | $ui-05     | #8C9BA5  |
 | Chevron                    | $brand-01  | #152935  |
 
-_
-![Various select and hover states for the Interior Left Navigation]() 
-_
+---
+***
+> 
+![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-1.png)
+_Select and hover states for Interior Left Navigation_
+
+---
+***
+> 
+![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-2.png)
+_Select and hover states for Interior Left Navigation_
+
+---
+***
+> 
+![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-3.png)
 _Select and hover states for Interior Left Navigation_
 
 ## Typography
 
-All left navigation text should be set in title case, with the first letter of each word capitalized. Labels should not exceed three words. 
+All left navigation text should be set in title case, with the first letter of each word capitalized. Labels should not exceed three words.
 
 | Property                | Font-size       | Font-weight  |
 |-------------------------|-----------------|--------------|
@@ -35,7 +48,7 @@ All left navigation text should be set in title case, with the first letter of e
 
 ## Structure
 
-The width of the menu stays consistent, while the menu height varies based on the height of the viewport, always spanning from the global header to the bottom of the viewport. 
+The width of the menu stays consistent, while the menu height varies based on the height of the viewport, always spanning from the global header to the bottom of the viewport.
 
 | PROPERTY                      | PX  | REM    |
 |-------------------------------|-----|--------|
@@ -49,7 +62,13 @@ The width of the menu stays consistent, while the menu height varies based on th
 | Spacing: collapse and chevron | 12  |.75     |
 | Spacing: chevron & bottom     | 14  | .875   |
 
-![Structure and spacing measurements for the open Interior Left Nav ]()
-![Structure and spacing measurements for the closed Interior Left Nav]()
-_Structure and spacing measurements for open and closed Interior Left Nav | px / rem_
+---
+***
+> 
+![Structure and spacing measurements for the open Interior Left Nav](images/interior-left-nav-style-4.png)
 
+---
+***
+> 
+![Interior left nav collapse](images/interior-left-nav-style-5.png)
+_Structure and spacing measurements for open and closed Interior Left Nav | px / rem_

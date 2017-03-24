@@ -8,13 +8,20 @@
 | Icon: checkmark   | $inverse-01 | #ffffff     |
 | Text              | $text-01    | #152935     |
 
+---
+***
+> 
 ![Normal checkbox example](images/checkbox-style-1.png)
+
+---
+***
+> 
 ![Disabled checkbox example](images/checkbox-style-2.png)
 _Disabled and normal Checkbox states_
 
 ## Typography
 
-Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words. 
+Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words.
 
 | PROPERTY   | FONT-SIZE      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
@@ -31,5 +38,8 @@ Checkbox headings and labels should be sentence case, with only the first word i
 | Spacing: checkbox & label | 8  | 0.5  |
 | External Spacing     | 16 | 1    |
 
+---
+***
+> 
 ![Checkbox structure and spacing measurements](images/checkbox-style-3.png)
 _Structure and spacing measurements for Checkbox | px / rem_

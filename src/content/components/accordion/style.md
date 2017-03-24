@@ -19,7 +19,7 @@ All Accordion labels are set in sentence case and should not exceed three words.
 
 ## Structure
 
-There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon may be found on the [iconography](/style/iconography/library) library page. 
+There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon can be found on the [iconography](/style/iconography/library) library page.
 
 | HEIGHT       | PX | REM   |
 |--------------|----|-------|

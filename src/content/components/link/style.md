@@ -6,6 +6,9 @@
 | Hover    | $brand-02     | #5596e6       |
 | Disabled | $brand-01     | #3d70b2 @ 50% |
 
+---
+***
+> 
 ![Example of normal, hover, and disabled link states](images/link-style-1.png)
 _Normal, hover disabled Link states_
 
@@ -26,6 +29,8 @@ Links can be grouped horizontally or vertically and must be underlined.
 | Line height          | 24 | 1.5  |
 | Horizontal spacing   | 16 | 1    |
 
+---
+***
+> 
 ![Link structure and spacing measurements ](images/link-style-2.png)
 _Structure and spacing measurements for Link | px / rem_
-

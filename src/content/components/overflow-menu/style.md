@@ -10,11 +10,15 @@
 | Warning: hover | $support-01 | #e71d32 |
 | Line           | $ui-04      | #dfe3e6 |
 
-**
+---
+***
+> 
 ![Overflow menu text hover example](images/overflow-menu-style-1.png)
-![Overflow menu warning hover example](images/overflow-menu-style-2.png)
-**
 
+---
+***
+> 
+![Overflow menu warning hover example](images/overflow-menu-style-2.png)
 _Text and warning hover examples for Overflow Menu_
 
 ## Typography
@@ -43,5 +47,8 @@ The height of an Overflow Menu is determined by the amount of content in the men
 | Internal spacing     | 16                      | 1     |
 | Spacing: icon & menu | 8                       | 0.5   |
 
+---
+***
+> 
 ![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)
 _Structure and spacing measurements for Overflow Menu | px / rem_

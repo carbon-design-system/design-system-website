@@ -9,7 +9,8 @@ For specific capitalization rules for different element or component types, see 
 
 ### Sentence style
 
-Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers, headings for groups of toggles, and product names. Sentence style capitalizes only the first word of each sentence and proper nouns (names).
+Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers, headings for groups of toggles, and product names. Sentence style capitalizes only the first word of each sentence and proper nouns
+(such as names).
 
 **Examples:**
 
@@ -25,30 +26,30 @@ Use headline-style capitalization for table/grid column headers and product name
 **Capitalize the initial letter of the following words:**
 
 * All nouns, pronouns, adjectives, verbs, adverbs, and subordinating conjunctions such as:
-* after
-* although
-* because
-* before
-* how
-* if
-* than
-* that
-* though
-* until
-* when
-* where
-* whether
-* while
+* After
+* Although
+* Because
+* Before
+* How
+* If
+* Than
+* That
+* Though
+* Until
+* When
+* Where
+* Whether
+* While
 
 **Do not capitalize the initial letter of the following words:**
 
-* Articles, except as the first word
-* Coordinating conjunctions
-* Prepositions, except as the first or last word
+* articles, except as the first word
+* coordinating conjunctions
+* prepositions, except as the first or last word
 
 ## Do's & Dont's
 
-These guidelines apply for developers and writers working with the Bluemix UI and documentation.
+These guidelines apply for developers and writers working with IBM Cloud UI and documentation.
 
 ---
 ***
@@ -110,7 +111,7 @@ To convey a more natural tone, use active voice. People tend to speak in active 
 ***
 ### **Do use second person.** ![Do use second person](images/content-guidelines-3.png)
 
-Engage your readers by using second person **(you, your)**. First person (I, we, our) focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
+Engage your readers by using second person **(you, your)**. First person **(I, we, our)** focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
 One exception to this is in the case of possessive adjectives in the UI. You can use first person in headings or labels that are very specific to the user or customer data, for example “My Account” or “My Usage.” In explanatory text for the heading or label, switch to second person, for example _“Your usage is calculated from the 1st day of the month.”_
 
 ---
@@ -120,7 +121,7 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 * Do not be afraid to use contractions once in a while. Decide whether they fit the context.
 * Occasionally begin sentences with **and, but or so.** This usage allows for shorter, scannable sentences. Do not overuse these devices, especially in instructional (steps) content.
 * For example, _“You can deploy an app to the cloud during lunch hour. And still have time to eat”_ is great for Discover, Try, Buy.
-* Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: **_“Do you want to close without saving?”_**
+* Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
 * Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
 ---
@@ -140,7 +141,7 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 ---
 ***
 ### **Don't be overly mannerly.** ![Don't be overly mannerly](images/content-guidelines-5.png)
- 
+
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
 Use **please** in a UI only when the user is being inconvenienced.
@@ -181,7 +182,3 @@ Instead of using “may,” use “can” to indicate ability or use “might”
 **Permission:**
 
 > “You may need more advanced features when you're integrating with another app.”
-
-
-
-

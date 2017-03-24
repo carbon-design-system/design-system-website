@@ -15,4 +15,7 @@ Adopted from the [IBM Design Language Animation Library:](https://www.ibm.com/de
 
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
 
+---
+***
+> 
 ![Small loader](images/loading-usage-2.png)

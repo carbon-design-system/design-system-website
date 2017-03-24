@@ -14,7 +14,9 @@ The Interior Left Nav occupies the left of the screen and spans vertically from 
 
 The Interior Left Nav can be expanded/collapsed by clicking the chevron icon at the bottom of the viewport.
 
-
+---
+***
+>
 ![Interior Left Nav open / collapse interaction](images/interior-left-nav-usage-2.gif)
 _Interior Left Nav collapse interaction_
 
@@ -22,5 +24,8 @@ _Interior Left Nav collapse interaction_
 
 Secondary or child items can exist beneath the primary level of navigation links. If secondary items exist, the parent or primary level item is not an actual destination. Clicking the parent element will trigger an expansion where the secondary items are shown. If an overview or home page is needed for that particular category, include it as the first item in the nested list.
 
+---
+***
+> 
 ![Primary and secondary menu items](images/interior-left-nav-usage-1.png)
 _Primary and secondary items_

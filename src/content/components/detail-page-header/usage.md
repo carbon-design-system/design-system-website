@@ -16,4 +16,7 @@ The header above the content area extends across the entire viewport. When the u
 
 At 767px, the tabs in the Detail page header will collapse into a [Dropdown](/components/dropdown).
 
+---
+***
+> 
 ![detail page header with tabs on mobile](images/detail-page-header-usage-2.png)

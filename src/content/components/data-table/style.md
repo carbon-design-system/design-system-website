@@ -45,10 +45,15 @@ The basic table style is the required base from which tables can be developed. B
 | Chevron                 | 12   | 0.75  |
 | Checkbox                | 18   | 1.125 |
 
-**
+---
+***
+> 
 ![Structure for a narrow row Data Table](images/data-table-style-1.png)
+
+---
+***
+> 
 ![Structure for a wide row Data Table](images/data-table-style-2.png)
-**
 _Structure and spacing measurements for a narrow and a wide row Data Table | px / rem_
 
 ### Data table
@@ -64,10 +69,15 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 | Internal elements  | 16   | 1     |
 | Between columns    | ≥ 24 | 1.5   |
 
-**
+---
+***
+> 
 ![Spacing for a basic Data Table](images/data-table-style-3.png)
+
+---
+***
+> 
 ![Spacing for an enhanced Data Table](images/data-table-style-4.png)
-**
 _Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
 
 ### Toolbar
@@ -78,5 +88,8 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 | Spacing: icons         | 16   | 1     |
 | Spacing: icons & table | 14   | 0.875  |
 
+---
+***
+> 
 ![Spacing for toolabr icons](images/data-table-style-6.png)
 _Structure and spacing measurements for toolbar icons | px / rem_

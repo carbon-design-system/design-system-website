@@ -37,6 +37,9 @@ There are several types of cards, each having its own measurements and attribute
 | Icon                 | 32  | 2      |
 | Border               | 1   | -      |
 
+---
+***
+> 
 ![Card structure measurements](images/card-style-1.png)
 _Structure measurements for a Card | px / rem_
 
@@ -47,5 +50,8 @@ _Structure measurements for a Card | px / rem_
 | Icon to card name        | 24 | 1.5   |
 | Secondary Info to Footer | 48 | 3     |
 
+---
+***
+> 
 ![Card spacing measurements](images/card-style-2.png)
 _Spacing measurements for a Card | px / rem_

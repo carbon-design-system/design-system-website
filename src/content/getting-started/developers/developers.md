@@ -1,4 +1,4 @@
-**The _Carbon Component library_ gives developers (Front End Developers & Engineers) a collection of re-usable HTML and Sass partials they can use for building websites and user-interfaces for Bluemix. The aim is for all developers to use consistent markup, styles, and behavior in their prototype and production work.**
+**The _Carbon Component library_ provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
 
 ## Quick start
 
@@ -10,7 +10,7 @@ $ npm install --save @carbon/components
 
 ## What's included
 
-The `global` directory includes transpiled, minified assets needed to use the Carbon Design System. 
+The `global` directory includes transpiled, minified assets needed to use the Carbon Design System.
 
 
 Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
@@ -36,9 +36,9 @@ carbon/
 │   ├── index.scss
 ```
 
-## SASS
+## SCSS
 
-Using the Carbon sass files infers usage of the SASS pre-processor and a build step to process the files.
+Using the Carbon Sass files infers usage of the SCSS pre-processor.
 
 #### Importing a component style
 
@@ -48,7 +48,7 @@ To add a component style to your build, simply import the component directly
 @import 'node_modules/@carbon/components/card/card';
 ```
 
-Importing a component this way will bring in any dependencies that component has well; the import system dedupes dependencies, so shared dependendencies between components will not create extra CSS
+Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 #### Namespacing
 
@@ -56,7 +56,7 @@ Carbon components are built to be included individually and not clobber global s
 
 #### Global Flags
 
-Carbon exposes a few global flags to alter what CSS gets compiled
+Carbon exposes a few global flags to alter what CSS gets compiled.
 
 | SASS flag       | Default | Description                                                                         |
 |-----------------|---------|-------------------------------------------------------------------------------------|

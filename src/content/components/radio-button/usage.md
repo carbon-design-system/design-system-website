@@ -1,3 +1,6 @@
+
+## General guidelines
+
 ### Headings
 
 If necessary, a heading can accompany a set of Radio Buttons to provide further clarity for the user. Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized).

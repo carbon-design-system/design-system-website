@@ -24,5 +24,9 @@ The height of a Number Input is always the same. The width however, varies based
 | Height           | 40 | 2.5 |
 | Internal spacing | 16 | 1   |
 
+
+---
+***
+> 
 ![Structure and spacing for number input](images/number-input-style-1.png)
 _Structure and spacing measurements for a Number Input | px / rem_

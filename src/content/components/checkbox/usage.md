@@ -1,3 +1,5 @@
+## General guidelines
+
 ### Headings
 
 If necessary, a heading can accompany a set of Checkboxes to provide further context or clarity. Use sentence case for Checkbox headings. In the example below, “IBM Designers” would be the heading for the set of Checkboxes below.
@@ -18,5 +20,8 @@ See the [Data Tables](/components/data-tables/usage) section for guidance on how
 
 The default view of a set of Checkboxes is having no option selected.
 
+---
+***
+> 
 ![checkbox example](images/checkbox-usage-1.png)
 _Default selected to none_

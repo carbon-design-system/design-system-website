@@ -14,13 +14,13 @@ Go to the [Design Kit](https://github.com/carbon-design-system/design-kit) repo 
 
 [Sketch](https://www.sketchapp.com/) is the industry standard design tool for UI design.
 
-You can purchase a lifetime license for $99. If you don't have a liscence for Sketch, you can sign up for a 30 day free trial. Sketch is easy to learn, and they offer many [tutorials](https://leveluptutorials.com/tutorials/sketch-3-tutorials) for further learning.
+You can purchase a lifetime license for $99. If you donʼt have a license for sketch, you may sign up for a 30-day free trial. Sketch is easy to learn, and they offer many [tutorials](https://leveluptutorials.com/tutorials/sketch-3-tutorials) for further learning.
 
 ![Carbon Design Kit](images/designers-3.png)
 
 ### 3. Using the Design Kit
 
-The Design Kit contains core visual styles, components, color swatches, iconography, and templates. It contains a collection of symbols and text styles for rapid design and prototyping of layouts. Each is broken out into respective pages, which can be navigated to through the left side panel.
+The Design Kit contains core visual styles, components, color swatches, iconography, and templates. It also has a collection of symbols and text styles for rapid design and layout prototyping. Each is designated its own page, which may be accessed via the left side panel.
 
 ![Carbon Design Kit](images/designers-4.png)
 

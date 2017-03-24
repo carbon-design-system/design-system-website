@@ -31,5 +31,8 @@ The width of an uploaded file varies based on the content and layout of a design
 | Spacing: uploaded file | 20 | 1.25  |
 | Spacing: remove icon   | 16 | 1     |
 
+---
+***
+> 
 ![Structure and spacing measurements for File Uploader](images/file-uploader-style-1.png)
 _Structure and spacing measurements for File Uploader | px / rem_
