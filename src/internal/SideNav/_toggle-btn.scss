@@ -10,69 +10,49 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: right $transition--base ease;
 
   &:focus {
     outline: none;
   }
 
-  span,
-  span:before,
-  span:after {
+  .line {
     @include reset;
-    height: rem(1.5px);
+    height: rem(2px);
     width: 1rem;
     cursor: pointer;
-    position: absolute;
     display: block;
-    content: '';
-    transition: all $transition--base ease;
-  }
-
-  span {
-    top: .95rem;
-    left: .4rem;
-  }
-
-  span:before,
-  span:after {
+    margin: rem(1.5px) 0;
     background: $color__white;
-    width: 1.29rem;
-    transform-origin: center;
+    will-change: all;
   }
 
-  span:after {
-    transform: rotate(-45deg);
+  .line:nth-child(2) {
+    opacity: 0;
   }
 
-  span:before {
-    transform: rotate(45deg);
+  .line:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .line:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
   }
 
   .side-nav__closed & {
     right: -2rem;
 
-    span {
-      left: .5rem;
+    .line:nth-child(2) {
+      opacity: 1;
     }
 
-    span,
-    span:before,
-    span:after {
-      width: 1rem;
-      background: $color__white;
-    }
-
-    span:before,
-    span:after {
-      transform: rotate(0);
-    }
-
-    span:before {
-      top: rem(-5px);
-    }
-
-    span:after {
-      bottom: rem(-5px);
+    .line {
+      transform: translateY(0) rotate(0);
+      transition: all $transition--base ease-in-out;
     }
   }
 }

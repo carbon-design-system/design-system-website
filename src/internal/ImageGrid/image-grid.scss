@@ -58,9 +58,11 @@
 
     > div img:first-child {
       border: none;
+      display: block;
       padding-left: 1rem;
       border-left: 8px solid red;
       height: 5rem;
+      max-width: 15rem;
     }
 
     > div img:nth-child(2) {

@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
 import svgSprite from 'raw!../../assets/bluemix-icons.svg';
-import * as BluemixComponents from '@console/bluemix-components/src';
 
 class LiveComponent extends Component {
   static propTypes = {
@@ -16,7 +15,7 @@ class LiveComponent extends Component {
       [`${variation}`]: true,
     });
 
-    let htmlFile = require(`@console/bluemix-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
+    let htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
 
     if (variation.includes('card')) {
       const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
@@ -28,7 +27,7 @@ class LiveComponent extends Component {
       <div key={variation} className="live-component__variation bx--global-light-ui">
         <div className="svg--sprite" dangerouslySetInnerHTML={{ __html: svgSprite }} />
         <a
-          href={`https://github.ibm.com/Bluemix/bluemix-components/tree/7.x/src/components/${this.props.component}`}
+          href={`https://github.ibm.com/carbon-design-system/carbon-components/src/components/${this.props.component}`}
           className="live-component__title"
         >
           {variation}.html

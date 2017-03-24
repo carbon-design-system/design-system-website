@@ -1,6 +1,6 @@
 td {position: relative;}
 .color-block {
-  top: 50%;
+  top: 25px;
   transform: translateY(-50%);
   left: 5rem;
   display: block;
@@ -54,6 +54,7 @@ td {position: relative;}
     line-height: 1.5;
     font-weight: 700;
     padding-bottom: 1rem;
+    letter-spacing: 0;
 
     span {
       color: $color__blue-40;

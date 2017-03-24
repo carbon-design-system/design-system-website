@@ -104,6 +104,12 @@ class Page extends Component {
           </NewComponent>,
           component
         );
+      } else if (comp === 'MotionExample') {
+        const props = component.dataset.props.split(',');
+        ReactDOM.render(
+          <NewComponent motionType={props[0]} correctText={props[1]} incorrectText={props[2]} />,
+          component
+        );
       } else {
         ReactDOM.render(
           <NewComponent />,

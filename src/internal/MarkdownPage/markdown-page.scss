@@ -5,6 +5,10 @@
     @include font-smoothing;
   }
 
+  h3#css-modifiers {
+    padding-top: 0;
+  }
+
   > p:not(:empty) {
     max-width: 38rem;
     line-height: 1.75;
@@ -127,11 +131,6 @@
 
     thead {
 
-      tr {
-        display: flex;
-        justify-content: space-between;
-      }
-
       th {
         font-size: rem(12px);
         text-transform: uppercase;
@@ -140,14 +139,13 @@
         letter-spacing: 1px;
         padding: 1rem 3rem 1rem 0;
         border-bottom: 2px solid $color__blue-40;
+        white-space: nowrap;
       }
     }
 
     tbody {
 
       tr {
-        display: flex;
-        justify-content: space-between;
         border-bottom: 1px solid $color__gray-1;
 
         td {
@@ -160,14 +158,10 @@
 
           &:first-child {
             font-weight: 600;
+            white-space: nowrap;
           }
         }
       }
-    }
-
-    th,
-    td {
-      flex: 1;
     }
   }
 
@@ -291,6 +285,12 @@
       display: none;
     }
 
+    & + table tbody tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     & + table tbody tr td {
       font-size: 1rem;
       line-height: 1.5;
@@ -298,6 +298,10 @@
       em {
         font-style: normal;
         font-weight: 400;
+      }
+
+      &:nth-child(1) {
+        white-space: initial;
       }
 
       &:nth-child(2) {

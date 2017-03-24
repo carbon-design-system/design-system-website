@@ -5,7 +5,6 @@ import Prism from '../assets/syntax/prism.js';
 import '../assets/syntax/prism.css';
 import '../assets/syntax/syntax.css';
 import '../scss/main.scss';
-import '@console/bluemix-components/src/index.js';
 
 class App extends Component {
   static propTypes = {
@@ -69,6 +68,23 @@ class App extends Component {
       } else {
         this.setState({
           isOpen: true
+        });
+      }
+    });
+    document.addEventListener('click', (evt) => {
+      const isTarget = document.querySelector('.side-nav').contains(evt.target);
+      const isSmallerScreen = window.innerWidth < 1024;
+      if (!isTarget && isSmallerScreen) {
+        this.setState({
+          isOpen: false
+        });
+      }
+    });
+    document.addEventListener('keydown', (evt) => {
+      const isSmallerScreen = window.innerWidth < 1024;
+      if (evt.which === 27 && this.state.isOpen && isSmallerScreen) {
+        this.setState({
+          isOpen: false
         });
       }
     });

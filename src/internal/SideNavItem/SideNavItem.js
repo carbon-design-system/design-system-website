@@ -21,13 +21,23 @@ class SideNavItem extends Component {
     if (!targetIsSubItem && hasSubMenu) {
       const open = !this.state.open;
       this.setState({ open });
+      const subMenu = evt.currentTarget.querySelector('ul');
+      if (!this.state.open) {
+        let height = 0;
+        [... subMenu.children].forEach(child => {
+          height += child.offsetHeight;
+        });
+        subMenu.style.maxHeight = `${height}px`;
+      } else {
+        subMenu.style.maxHeight = 0;
+      }
     }
   }
 
   render() {
     const {
       children,
-      isActiveItem
+      isActiveItem,
     } = this.props;
 
     const classNames = classnames({

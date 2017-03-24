@@ -188,6 +188,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: 'src/assets/', to: 'assets/',
+        from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/'
       },
     ]),
   ],

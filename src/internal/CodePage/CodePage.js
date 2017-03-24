@@ -10,9 +10,9 @@ class CodePage extends Component {
   renderVariation = (parent, variation, title) => {
     let htmlFile;
     if (parent === 'text-input' && variation === 'text-area') {
-      htmlFile = require('@console/bluemix-components/src/components/text-area/text-area.html');
+      htmlFile = require('carbon-components/src/components/text-area/text-area.html');
     } else {
-      htmlFile = require(`@console/bluemix-components/src/components/${parent}/${variation}.html`);
+      htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
     }
 
     if (parent === 'card') {
@@ -31,7 +31,7 @@ class CodePage extends Component {
   renderJavascriptContent = (component) => {
     let javascriptSection;
     try {
-      javascriptSection = require(`@console/bluemix-components/src/components/${component}/README.md`);
+      javascriptSection = require(`carbon-components/src/components/${component}/README.md`);
     } catch (e) {
       javascriptSection = '';
     }
@@ -51,7 +51,7 @@ class CodePage extends Component {
       Object.keys(componentInfo.variations).map(variation =>
         this.renderVariation(component, variation, componentInfo.variations[variation]));
     } else {
-      const htmlFile = require(`@console/bluemix-components/src/components/${component}/${component}.html`); // eslint-disable-line
+      const htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
       componentContent = (
         <ComponentExample component={component} htmlFile={htmlFile} />
       );

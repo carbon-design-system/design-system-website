@@ -69,7 +69,6 @@ class SideNav extends Component {
     const {
       isOpen,
       onToggleBtnClick,
-      onClick,
     } = this.props;
     const navItems = this.renderSiteItems(SiteNavStructure);
     const classNames = classnames({
@@ -82,7 +81,9 @@ class SideNav extends Component {
     return (
       <div className={classNames}>
         <button onClick={onToggleBtnClick} className="side-nav__toggle-btn">
-          <span></span>
+          <span className="line"></span>
+          <span className="line"></span>
+          <span className="line"></span>
         </button>
         <Link to="/" className="side-nav__logo">
           Carbon <span>Design System</span>
