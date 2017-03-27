@@ -12,9 +12,10 @@ ul.color-contrast__keys {
   li {
     display: flex;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 
     img {
+      margin-top: 0;
       width: rem(24px) !important;
     }
 
@@ -131,6 +132,7 @@ ul.color-contrast__examples--bg-colors {
 
     img {
       width: 100%;
+      margin-bottom: .5rem;
     }
 
     > p {

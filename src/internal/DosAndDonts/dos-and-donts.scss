@@ -1,0 +1,49 @@
+.do-and-dont {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  &.full-width .example {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  &.full-width > p {
+    margin-top: 1rem;
+  }
+
+  svg {
+    margin-right: .5rem;
+  }
+
+  .example {
+    flex: 1;
+    flex-basis: calc(50% - 1rem);
+    max-width: 450px;
+    min-width: 350px;
+    margin-right: 1rem;
+    margin: .5rem 1rem .5rem 0;
+  }
+
+  .example-caption {
+    @include font-smoothing;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: rem(14px);
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .example-text {
+    display: flex;
+    align-items: center;
+
+    p {
+      padding: 1rem;
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+}

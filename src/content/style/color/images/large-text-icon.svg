@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="uppercase-A" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1{fill:#152934;}
+    </style>
+  </defs>
+  <path id="A" d="M14.48 6.07l4.81 12.85h-2.94l-1-2.86h-4.78l-1 2.86H6.72l4.86-12.85h2.9zm.16 7.93L13 9.24 11.31 14h3.33z" class="cls-1"/>
+  <path id="circle" d="M13 2A11 11 0 1 1 2 13 11 11 0 0 1 13 2m0-2a13 13 0 1 0 13 13A13 13 0 0 0 13 0z" class="cls-1"/>
+</svg>

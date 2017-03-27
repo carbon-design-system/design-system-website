@@ -65,7 +65,7 @@ class Overview extends React.Component {
                 <Letter letter="G" />
               </span>
               <span className="overview-page__title--shape">
-                <Letter letter="E" active />
+                <Letter letter="E" active purple />
               </span>
             </div>
             <div className="overview-page__title--column">

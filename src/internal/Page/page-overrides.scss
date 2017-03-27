@@ -1,5 +1,33 @@
-.components-form-style {
+div[data-page="components-form-style"] {
   #color {
     padding-bottom: 1.5rem;
+  }
+}
+
+div[data-page="guidelines-general-content"] {
+  img[alt="voice"] {
+    width: 3rem;
+    margin-right: 1.7rem;
+    margin-left: .5rem;
+  }
+
+  img[alt="tone"] {
+    width: 4rem;
+    margin-right: 1.2rem;
+  }
+}
+
+div[data-page="guidelines-guidelines-content"] {
+  img:not([alt="capitalization"]) {
+    padding-bottom: 1rem;
+  }
+
+  #-don-t-be-too-formal-br-or-stuffy-don-t-be-too-formal-or-stuffy-images-content-guidelines-4-png- {
+    line-height: 28px;
+  }
+
+  h3:not(#sentence-style):not(#headline-style) {
+    min-height: 103px;
+    padding: 0;
   }
 }

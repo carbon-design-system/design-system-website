@@ -4,6 +4,10 @@ import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';
 import ColorContrast from '../../internal/ColorContrast';
 import GridExample from '../../internal/GridExample';
+import DosAndDonts1 from '../../internal/DosAndDonts/DosAndDonts1';
+import DosAndDonts2 from '../../internal/DosAndDonts/DosAndDonts2';
+import DosAndDonts3 from '../../internal/DosAndDonts/DosAndDonts3';
+import DosAndDonts4 from '../../internal/DosAndDonts/DosAndDonts4';
 import LayerTypes from '../../internal/LayerTypes';
 import LayerUsage from '../../internal/LayerUsage';
 import TypographyTable from '../../internal/TypographyTable';
@@ -82,7 +86,11 @@ class Page extends Component {
       LayerUsage,
       TypographyTable,
       MotionExample,
-      BrandColors
+      BrandColors,
+      DosAndDonts1,
+      DosAndDonts2,
+      DosAndDonts3,
+      DosAndDonts4,
     };
 
     const insertComponent = [... document.querySelectorAll('[data-insert-component]')];

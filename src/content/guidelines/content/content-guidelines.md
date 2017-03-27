@@ -59,33 +59,8 @@ Use simple verbs and tenses, and keep sentences concise, simple, friendly, and p
 
 If you need to use past or future tense, avoid verb tenses with the words have, has, had, been, should, would, and will.
 
----
-***
-![green-check](images/green-check.png)
-**Future tense:**
 
-“The API returns a promise.”
-
----
-***
-![red-x](images/red-x.png)
-**Future tense:**
-
-> “The API will return a promise.”
-
----
-***
-![green-check](images/green-check.png)
-**Past tense:**
-
-“The limit has been exceeded.”
-
----
-***
-![red-x](images/red-x.png)
-**Past tense:**
-
-> “The limit was exceeded.”
+<div data-insert-component="DosAndDonts1"></div>
 
 ---
 ***
@@ -93,19 +68,7 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
----
-***
-![green-check](images/green-check.png)
-**Active voice:**
-
-“In the Limits window, specify the minimum and maximum values.”
-
----
-***
-![red-x](images/red-x.png)
-**Passive voice:**
-
-> “The Limits window is used to specify the minimum and maximum values.”
+<div data-insert-component="DosAndDonts2"></div>
 
 ---
 ***
@@ -124,19 +87,7 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 * Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
 * Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
----
-***
-![green-check](images/green-check.png)
-**Exclamation points:**
-
-“Your IBM Bluemix account is ready!”
-
----
-***
-![red-x](images/red-x.png)
-**Exclamation points:**
-
-> “You've reached your usage limit!”
+<div data-insert-component="DosAndDonts3"></div>
 
 ---
 ***
@@ -146,39 +97,4 @@ Terms of politeness are superfluous, convey the wrong tone for technical materia
 
 Use **please** in a UI only when the user is being inconvenienced.
 
----
-***
-![green-check](images/green-check.png)
-**Using Please:**
-
-“Indexing might take a few minutes. Please wait.”
-
-Instead of using “may,” use “can” to indicate ability or use “might” to indicate possibility.
-
----
-***
-![green-check](images/green-check.png)
-**Ability:**
-
-“You can use the command line interface to update your app.”
-
----
-***
-![red-x](images/red-x.png)
-**Ability:**
-
-> “You may use the command line interface to update your app.”
-
----
-***
-![green-check](images/green-check.png)
-**Possibility:**
-
-“You might need more advanced features when you're integrating with another app.”
-
----
-***
-![red-x](images/red-x.png)
-**Permission:**
-
-> “You may need more advanced features when you're integrating with another app.”
+<div data-insert-component="DosAndDonts4"></div>

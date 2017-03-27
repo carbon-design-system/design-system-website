@@ -3,33 +3,20 @@ import React, { Component, PropTypes } from 'react';
 class LetterSVG extends Component {
   static propTypes = {
     letter: PropTypes.string,
+    purple: PropTypes.bool,
   }
 
   state = {
     A: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="74"
-        height="63"
-        viewBox="0 0 74 63"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      >
-        <defs>
-          <path id="a1" d="M33.0845 6.1583l30.5773 56.755H.869z" />
-          <mask id="a2" width="62.7928" height="56.755" x="0" y="0" fill="#fff">
-            <use xlinkHref="#a1" />
-          </mask>
-        </defs>
-        <g fill="none" fillRule="evenodd">
-          <path fill="#8CD211" d="M43.0845.1583l30.5773 56.755H10.869" />
-          <use stroke="#152935" strokeWidth="2" mask="url(#a1)" xlinkHref="#a1" />
-        </g>
+      <svg viewBox="0 0 73 60.41">
+        <path fill="#8cd211" d="M41 0l16 28 16 28-32.29-.14-32.29-.08 16.27-27.89z" />
+        <path fill="#152935" d="M61.12 58.4l-28.82-.13-28.83-.13L18 33.24 32.52 8.33l14.3 25 14.3 25m3.46 2l-16-28-16-28-16.31 27.91L0 60.13l32.29.14 32.29.14v-.08z" />
       </svg>
     ),
     B: (
-      <svg xmlns="http://www.w3.org/2000/svg" id="B-shape" viewBox="0 0 57.5 73">
-        <path fill="#5596e6" id="B-Solid" d="M57.5 67.17H8.33V0H57.5L36.71 32.75 57.5 67.17z" />
-        <path fill="#152935" id="B-Outline" d="M45.53 7.83L26.69 37.51l-.66 1 .64 1.06L45.62 71H2V7.83h43.53m3.64-2H0V73h49.17L28.38 38.58 49.17 5.83z" />
+      <svg viewBox="0 0 57.5 73">
+        <path fill="#5596e6" d="M57.5 67.17H8.33V0H57.5L36.71 32.75 57.5 67.17z" />
+        <path fill="#152935" d="M45.53 7.83L26.69 37.51l-.66 1 .64 1.06L45.62 71H2V7.83h43.53m3.64-2H0V73h49.17L28.38 38.58 49.17 5.83z" />
       </svg>
     ),
     C: (
@@ -45,23 +32,9 @@ class LetterSVG extends Component {
       </svg>
     ),
     E: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="60"
-        height="61"
-        viewBox="0 0 60 61"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      >
-        <defs>
-          <path id="e1" d="M.719 6.884H53.772v53.8232H.719z" />
-          <mask id="e2" width="53.0527" height="53.8231" x="0" y="0" fill="#fff">
-            <use xlinkHref="#e1" />
-          </mask>
-        </defs>
-        <g fill="none" fillRule="evenodd">
-          <path fill="#5596E6" d="M6.719.884H59.772v53.8232H6.719z" />
-          <use stroke="#152935" strokeWidth="4" mask="url(#e2)" xlinkHref="#e1" />
-        </g>
+      <svg viewBox="0 0 59.17 60.41">
+        <path fill={this.props.purple ? '#AF6EE8' : '#5596e6'} d="M6 0h53.17v53.92H6z" />
+        <path fill="#152935" d="M51.17 8.49v49.92H2V8.49h49.17m2-2H0v53.92h53.17V6.49z" />
       </svg>
     ),
     G: (
@@ -71,11 +44,9 @@ class LetterSVG extends Component {
       </svg>
     ),
     I: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="63" viewBox="900 619 21 63">
-        <g fill="none" fillRule="evenodd">
-          <path fill="#E71D32" d="M907.87 674.142h11.686v-53.916H907.87" />
-          <path stroke="#152935" strokeWidth="2" d="M902.87 680.142h11.686v-53.916H902.87z" />
-        </g>
+      <svg viewBox="0 0 17.73 60.39">
+        <path fill="#e71d32" d="M6.1 0h11.63v54H6.1z" />
+        <path fill="#152935" d="M13.63 60.39H-.02v-56h13.65v56zm-11.65-2h9.63v-52H1.98v52z" />
       </svg>
     ),
     M: (
@@ -91,11 +62,9 @@ class LetterSVG extends Component {
       </svg>
     ),
     O: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="306 767 64 65">
-        <g fill="none" fillRule="evenodd" transform="translate(307.5 767.806)">
-          <ellipse cx="33.607" cy="28.433" fill="#EFC100" rx="27.714" ry="28.117" />
-          <ellipse cx="28.607" cy="34.433" stroke="#152935" strokeWidth="2" rx="27.714" ry="28.117" />
-        </g>
+      <svg viewBox="0 0 64.42 60.37">
+        <circle fill="#efc100" cx="36.17" cy="28.25" r="28.25" />
+        <path fill="#152935" d="M29.25 60.37A29.25 29.25 0 1 1 58.5 31.12a29.25 29.25 0 0 1-29.25 29.25zm0-56.5A27.25 27.25 0 1 0 56.5 31.12 27.25 27.25 0 0 0 29.25 3.87z" />
       </svg>
     ),
     R: (
@@ -111,17 +80,9 @@ class LetterSVG extends Component {
       </svg>
     ),
     T: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="59" height="78" viewBox="1438 611 59 78">
-        <defs>
-          <path id="a" d="M.375 8h51v70h-51z" />
-          <mask id="b" width="51" height="70" x="0" y="0" fill="#fff">
-            <use xlinkHref="#a" />
-          </mask>
-        </defs>
-        <g fill="none" fillRule="evenodd" transform="translate(1438 611)">
-          <path fill="#EFC100" d="M7.375 0h51v70h-51z" />
-          <use stroke="#152935" strokeWidth="2" mask="url(#a)" xlinkHref="#a" />
-        </g>
+      <svg viewBox="0 0 50.44 63.75">
+        <path fill="#efc100" d="M8.26 0h42.18v56.16H8.26z" />
+        <path fill="#152935" d="M44.19 63.75H0V5.59h44.19v58.16zM2 61.75h40.19V7.59H2v54.16z" />
       </svg>
     ),
     Y: (

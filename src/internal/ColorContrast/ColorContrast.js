@@ -3,11 +3,11 @@ import React, { Component, PropTypes } from 'react';
 class ColorContrast extends Component {
 
   render() {
-    const normalTextImage = require('../../content/style/color/images/normal-text-icon.png');
-    const largeTextImage = require('../../content/style/color/images/large-text-icon.png');
-    const ui1 = require('../../content/style/color/images/ui-01.png');
-    const ui2 = require('../../content/style/color/images/ui-02.png');
-    const ui3 = require('../../content/style/color/images/ui-03.png');
+    const normalTextImage = require('../../content/style/color/images/normal-text-icon.svg');
+    const largeTextImage = require('../../content/style/color/images/large-text-icon.svg');
+    const ui1 = require('../../content/style/color/images/ui-01.svg');
+    const ui2 = require('../../content/style/color/images/ui-02.svg');
+    const ui3 = require('../../content/style/color/images/ui-03.svg');
 
     return (
       <div className="color-contrast">
