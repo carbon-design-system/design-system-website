@@ -5,6 +5,10 @@
   max-height: 0;
   transition: .3s;
 
+  .main-nav-item__open & {
+    max-height: 70rem;
+  }
+
   .sub-nav__item {
     text-transform: capitalize;
     margin-left: 0;

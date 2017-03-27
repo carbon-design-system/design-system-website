@@ -1,6 +1,6 @@
 ---
 applications:
-- name: carbon-qa
+- name: carbon-design-system
   buildpack: nodejs_buildpack
   command: node index.js
   disk_quota: 256MB

@@ -11,6 +11,9 @@ function getClientEnvironment(publicUrl) {
       'NODE_ENV': JSON.stringify(
         process.env.NODE_ENV || 'development'
       ),
+      'ENV': JSON.stringify(
+        process.env.ENV || 'internal'
+      ),
       'PUBLIC_URL': JSON.stringify(publicUrl)
     });
   return {'process.env': processEnv};

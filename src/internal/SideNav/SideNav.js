@@ -18,6 +18,7 @@ class SideNav extends Component {
 
   renderSubNavItems = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const processEnv = process.env;
     return Object.keys(subnav).map(subNavItem => {
       const link = `/${parentItem}/${subNavItem}`;
       const isCurrentPage = (parentItem === currentPath[1] && subNavItem === currentPath[2]);
@@ -25,6 +26,9 @@ class SideNav extends Component {
         'sub-nav__item': true,
         'selected': isCurrentPage, // eslint-disable-line
       });
+      if (!(processEnv.ENV === 'internal') && subNavItem === 'service-providers') {
+        return '';
+      }
       return (
         <li key={subNavItem} className={classNames}>
           <Link className="sub-nav__item-link" to={link}>{subnav[subNavItem]}</Link>

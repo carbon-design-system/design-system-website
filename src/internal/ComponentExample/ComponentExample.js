@@ -2,14 +2,20 @@ import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
-import svgSprite from 'raw!../../assets/bluemix-icons.svg';
-
+import svgSprite from 'raw!../../assets/bluemix-icons.svg'; // eslint-disable-line
 
 class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
     component: PropTypes.string,
   }
+
+  // generateComponentJS = () => {
+  //   const script = document.createElement('script');
+  //   const js = require('carbon-components/scripts/carbon-components.min.js');
+  //   script.setAttribute('src', js);
+  //   console.log(script);
+  // }
 
   render() {
     const {
