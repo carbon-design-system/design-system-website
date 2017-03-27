@@ -8,7 +8,9 @@ var url = require('url');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+let extractSASS = new ExtractTextPlugin('/assets/css/styles.css');
 
 function ensureSlash(path, needsSlash) {
   var hasSlash = path.endsWith('/');
@@ -89,7 +91,10 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loader: 'style!css?importLoaders=1!postcss!sass',
+        loader: ExtractTextPlugin.extract(
+          "style",
+          "css?sourceMap!postcss!sass?sourceMap"
+        ),
       },
       {
         test: /\.md$/,
@@ -128,10 +133,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html',
-        options: {
-          minimize: false
-        }
+        loader: 'html?minimize=false'
       }
     ]
   },
@@ -141,55 +143,43 @@ module.exports = {
     ];
   },
   plugins: [
-    // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
-    // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    // In production, it will be an empty string unless you specify "homepage"
-    // in `package.json`, in which case it will be the pathname of that URL.
     new InterpolateHtmlPlugin({
       PUBLIC_URL: publicUrl
     }),
-    // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
       minify: false
     }),
-    // Makes some environment variables available to the JS code, for example:
-    // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
-    // It is absolutely essential that NODE_ENV was set to production here.
-    // Otherwise React will be compiled in the very slow development mode.
     new webpack.DefinePlugin(env),
-    // This helps ensure the builds are consistent if source hasn't changed:
     new webpack.optimize.OccurrenceOrderPlugin(),
-    // Try to dedupe duplicated modules, if any:
     new webpack.optimize.DedupePlugin(),
     // Minify the code.
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: {
-    //     screw_ie8: true,
-    //     warnings: false
-    //   },
-    //   mangle: {
-    //     screw_ie8: true
-    //   },
-    //   output: {
-    //     comments: false,
-    //     screw_ie8: true
-    //   }
-    // }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        screw_ie8: true,
+        warnings: false
+      },
+      mangle: {
+        screw_ie8: true
+      },
+      output: {
+        comments: false,
+        screw_ie8: true
+      }
+    }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
-    new ExtractTextPlugin('static/css/[name].[contenthash:8].css'),
-    // Generate a manifest file which contains a mapping of all asset filenames
-    // to their corresponding output file so that tools can pick it up without
-    // having to parse `index.html`.
+    new ExtractTextPlugin('static/css/styles.css'),
+    new BundleAnalyzerPlugin(),
     new ManifestPlugin({
       fileName: 'asset-manifest.json'
     }),
     new CopyWebpackPlugin([
-      {
-        from: 'src/assets/', to: 'assets/',
-        from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/'
-      },
+      { from: 'src/assets/downloads', to: 'downloads/' },
+      { from: 'src/assets/fonts', to: 'assets/fonts/' },
+      { from: 'src/assets/images', to: 'images/' },
+      { from: 'node_modules/carbon-icons/', to: 'carbon-icons/' },
+      { from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/' }
     ]),
   ],
   // Some libraries import Node modules but don't use them in the browser.

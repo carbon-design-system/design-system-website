@@ -123,11 +123,11 @@ module.exports = {
     new CaseSensitivePathsPlugin(),
     new WatchMissingNodeModulesPlugin(paths.appNodeModules),
     new CopyWebpackPlugin([
-      {
-        from: 'src/assets/', to: 'assets/',
-        from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/',
-        from: 'node_modules/carbon-icons/', to: 'carbon-icons/'
-      },
+      { from: 'src/assets/downloads', to: 'downloads/' },
+      { from: 'src/assets/fonts', to: 'assets/fonts/' },
+      { from: 'src/assets/images', to: 'images/' },
+      { from: 'node_modules/carbon-icons/', to: 'carbon-icons/' },
+      { from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/' }
     ]),
   ],
   node: {

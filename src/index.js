@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import 'svgxuse';
-import './assets/fonts/font-face.scss';
 // import * as CarbonComponents from 'carbon-components';
 
 // console.log(CarbonComponents);
