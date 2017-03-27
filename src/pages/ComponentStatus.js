@@ -50,7 +50,7 @@ class ComponentStatus extends React.Component {
     const currentVersion = `Current version: 7.0 (March 13, 2017)`; // UPDATE
     const componentStatus = require('../data/component-status.json'); // eslint-disable-line
     const content = (
-      <div className="page component-status-page">
+      <div className="page page_md component-status-page">
         <div className="component-status">
           {/*<Dropdown className="bx--global-light-ui component-status__dropdown" value="7.0.0">
             <DropdownItem itemText="7.0.0" value="7.0.0" />
@@ -77,7 +77,7 @@ class ComponentStatus extends React.Component {
         <table>
           <thead>
             <tr>
-              <th>Item</th>
+              <th>Component</th>
               <th>Added</th>
               <th>Status</th>
             </tr>

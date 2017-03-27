@@ -69,6 +69,10 @@
     font-size: rem(14px);
   }
 
+  > em {
+    color: $color__navy-gray-6;
+  }
+
   p strong em {
     font-size: 1.125rem;
     color: $color__blue-40;
@@ -410,6 +414,7 @@
 
   hr + p img {
     width: auto;
+    display: block;
   }
 
   hr + hr + blockquote {

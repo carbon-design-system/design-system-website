@@ -5,53 +5,8 @@
     margin-top: 4rem;
   }
 
-    table {
-    width: 100%;
-    max-width: 45rem;
-    margin-bottom: 6rem;
-
-    thead {
-
-      tr {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      th {
-        font-size: rem(12px);
-        text-transform: uppercase;
-        font-weight: 600;
-        text-align: left;
-        letter-spacing: 1px;
-        padding: 1rem 3rem 1rem 0;
-        border-bottom: 2px solid $color__blue-40;
-        flex: 2;
-      }
-    }
-
-    tbody {
-
-      tr {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid $color__gray-1;
-
-        td {
-          font-size: rem(14px);
-          line-height: 1.75;
-          padding: 1rem 3rem 1rem 0;
-          flex: 2;
-
-          .component-status__icon {
-            margin-left: .75rem;
-          }
-
-          &:first-child {
-            font-weight: 600;
-          }
-        }
-      }
-    }
+  table tr td:nth-child(2) {
+    white-space: nowrap;
   }
 }
 
@@ -157,6 +112,10 @@
   &__description {
     table tbody tr td:first-child {
       font-weight: 400 !important;
+    }
+
+    h2 {
+      margin-top: 5rem !important;
     }
   }
 }

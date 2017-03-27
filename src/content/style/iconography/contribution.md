@@ -36,7 +36,6 @@ If you would like to add an icon to our library, please submit a pull request in
 10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--code.svg, add.svg, add--outline.svg).
 
 ![export icons from Sketch](images/icon-contribution-1.png)
-
 _Example: This is what a Sketch artboard should look like before SVG export_
 
 
@@ -56,7 +55,6 @@ _Example: This is what a Sketch artboard should look like before SVG export_
 
 ---
 ![export icons from Illustrator](images/icon-contribution-2.png)
-
 _SVG export options from Adobe Illustrator_
 
 ## Developer guidelines
