@@ -1,5 +1,4 @@
 .resources {
-
   &__top {
     display: flex;
     justify-content: space-between;
@@ -15,6 +14,7 @@
     div p {
       padding-bottom: 1rem;
       max-width: 100%;
+      min-height: 88px;
 
       @include breakpoint('1267px') {
         max-width: 30rem !important;
@@ -59,23 +59,24 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 45rem;
     margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
 
     div {
+      min-width: 200px;
+      flex-basis: 100%;
+      // flex: 1 1 auto;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-right: 0;
+      margin-right: 3rem;
       margin-bottom: 2rem;
       width: 100%;
 
-      p {
-        max-width: 100%;
-      }
-
       h3 {
+        color: $brand-02 !important;
         white-space: nowrap;
         padding-top: 0 !important;
       }
@@ -85,19 +86,50 @@
         width: 100%;
       }
 
-      @include breakpoint('bp--sm--major') {
+      a {
+        margin-top: 2rem;
+      }
+
+      p {
         margin-bottom: 0;
-        margin-right: 3rem;
-        width: auto;
+        max-width: 25rem !important;
+      }
+
+      @include breakpoint('bp--sm--major') {
+        flex-basis: calc(50% - 3rem);
 
         .bx--btn {
           width: 15rem;
         }
-        
+
         p {
-          max-width: 15rem !important;
+          min-height: 48px;
+          margin-bottom: 2rem;
         }
       }
+    }
+  }
+}
+
+
+div[data-page="resources-undefined"] {
+  .page__divider-heading {
+    letter-spacing: 2.29px !important;
+    max-width: 100% !important;
+    font-size: 1rem !important;
+    color: $brand-01 !important;
+    border-bottom: 2px solid $ui-03 !important;
+  }
+
+  // a:not(.bx--btn) {
+  //   color: $brand-02;
+  // }
+
+  .cheat-sheet {
+    margin-top: 0;
+
+    @include breakpoint('bp--sm--major') {
+      margin-top: 4rem;
     }
   }
 }

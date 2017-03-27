@@ -14,7 +14,7 @@ class Resources extends React.Component {
         <div className="page_md">
           <div className="resources__top">
             <div>
-              <img src={designKitImage} alt="Design kit" />
+              <img src={designKitImage} alt="Sketch icon" />
               <h2>Design Kit</h2>
               <p>
                 The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
@@ -22,7 +22,7 @@ class Resources extends React.Component {
               <a href="https://github.com/carbon-design-system/design-kit" target="_blank">Design Kit</a>
             </div>
             <div>
-              <img src={githubImage} alt="Design kit" />
+              <img src={githubImage} alt="Github icon" />
               <h2>Component Library</h2>
               <p>
                 The Component Library gives developers a collection of re-usable HTML
@@ -30,29 +30,36 @@ class Resources extends React.Component {
               </p>
               <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Component Library</a>
             </div>
+          </div>
+          <h3 className="page__divider-heading">Additional Links</h3>
+          <div className="resources__bottom">
             <div>
-              <h2>IBM Design Language</h2>
+              <h4>Craft Plugin</h4>
               <p>
-                Carbon uses the IBM Design Language as our guiding principle.
-                These core values remind us to design for an outcome and to be authentically thoughtful.
+                Downloading and installing this plugin gives you the ability to use the Carbon Craft Library.
               </p>
-              <a href="https://www.ibm.com/design/language/" target="_blank">IBM Design Language</a>
+              <a href="https://github.com/carbon-design-system/design-kit" target="_blank">Craft by Invision plugin</a>
             </div>
-
             <div>
-              <h2>Carbon Boilerplate</h2>
+              <h4>Carbon Boilerplate</h4>
               <p>
                 A simple boilerplate for rapid UI prototyping with Carbon components.
               </p>
               <a href="https://carbon-boilerplate.mybluemix.net/" target="_blank">Carbon Boilerplate</a>
             </div>
             <div>
-              <h2>Color Accessibility</h2>
+              <h4>Color Accessibility</h4>
               <p>
-                This color contrast checker allows you to easily calculate the color contrast ratio between two colors,
-                ensuring that it passes WCAG 2.0 Level AA requirements.
+                This color contrast checker allows you to easily calculate the
+                color contrast ratio between two colors, ensuring that it passes WCAG 2.0 Level AA requirements.
               </p>
               <a href="https://marijohannessen.github.io/color-contrast-checker/" target="_blank">Color Contrast Checker</a>
+            </div>
+            <div>
+              <h4>IBM Design Language</h4>
+              <p>Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.
+              </p>
+              <a href="https://www.ibm.com/design/language/" target="_blank">IBM Design Language</a>
             </div>
           </div>
           <h3 className="page__divider-heading">Downloads</h3>
@@ -72,6 +79,17 @@ class Resources extends React.Component {
                 className="bx--btn bx--btn--secondary"
               >
                 Download logo assets
+              </a>
+            </div>
+            <div>
+              <h3 className="cheat-sheet">Design System Cheat Sheet</h3>
+              <p>This card can be printed for go-to info such as color values and type sizes.</p>
+              <a
+                href="http://www.carbondesignsystem.com/assets/resources/Cheatsheet.pdf"
+                target="_blank"
+                className="bx--btn bx--btn--secondary"
+              >
+                Download cheat sheet
               </a>
             </div>
           </div>
