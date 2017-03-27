@@ -82,7 +82,7 @@
       line-height: 1.75;
       width: 100%;
       margin-right: 2rem;
-      
+
       @include breakpoint('900px') {
         width: calc(50% - 2rem);
       }
@@ -111,7 +111,7 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     img {
       border: none;
       margin: 0;
@@ -174,11 +174,14 @@
       align-items: flex-start;
 
       img {
+        display: inline-flex;
         width: 40%;
         margin-left: 1rem;
         padding: 2rem 4rem 4rem;
         max-width: 30rem;
         margin-top: 0;
+        min-height: 260px;
+        min-width: 270px;
       }
     }
   }
