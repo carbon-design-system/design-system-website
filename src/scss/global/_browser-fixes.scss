@@ -1,0 +1,12 @@
+.overview-page__tiles {
+  width: 100%;
+}
+
+.overview-page__tile {
+  min-height: 110px;
+
+  &--text,
+  &--content {
+    width: 100%;
+  }
+}
