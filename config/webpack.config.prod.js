@@ -9,7 +9,7 @@ var paths = require('./paths');
 var getClientEnvironment = require('./env');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-
+require('babel-polyfill');
 let extractSASS = new ExtractTextPlugin('/assets/css/styles.css');
 
 function ensureSlash(path, needsSlash) {
@@ -57,7 +57,7 @@ module.exports = {
   devtool: 'source-map',
   // In production, we only want to load the polyfills and the app code.
   entry: [
-    require.resolve('./polyfills'),
+    'babel-polyfill',
     paths.appIndexJs
   ],
   output: {

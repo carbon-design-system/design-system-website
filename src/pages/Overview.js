@@ -4,6 +4,10 @@ import { Link } from 'react-router';
 
 class Overview extends React.Component {
 
+  componentDidMount() {
+    document.title = 'Carbon Design System';
+  }
+
   render() {
     const icon1 = require('../content/overview/images/icon-1.svg');
     const icon2 = require('../content/overview/images/icon-2.svg');

@@ -5,7 +5,9 @@
 IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content.
 
 ```scss
-%helvetica { font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif; }
+@mixin helvetica {
+  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+}
 ```
 
 ## Normalized Major Second type scale | 1.125

@@ -10,13 +10,6 @@ class ComponentExample extends Component {
     component: PropTypes.string,
   }
 
-  // generateComponentJS = () => {
-  //   const script = document.createElement('script');
-  //   const js = require('carbon-components/scripts/carbon-components.min.js');
-  //   script.setAttribute('src', js);
-  //   console.log(script);
-  // }
-
   render() {
     const {
       htmlFile,

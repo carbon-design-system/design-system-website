@@ -300,6 +300,10 @@
   }
 
   hr + hr {
+    & + table {
+      max-width: 45rem;
+    }
+
     & + table thead {
       display: none;
     }
@@ -321,6 +325,7 @@
 
       &:nth-child(1) {
         white-space: initial;
+        float: left;
       }
 
       &:nth-child(2) {

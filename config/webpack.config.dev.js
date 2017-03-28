@@ -14,6 +14,7 @@ var path = require('path');
 var publicPath = '/';
 var publicUrl = '';
 var env = getClientEnvironment(publicUrl);
+require('babel-polyfill');
 
 var query = {
   bypassOnDebug: true,
@@ -29,7 +30,7 @@ module.exports = {
   devtool: 'cheap-module-source-map',
   entry: [
     require.resolve('react-dev-utils/webpackHotDevClient'),
-    require.resolve('./polyfills'),
+    'babel-polyfill',
     paths.appIndexJs
   ],
   output: {

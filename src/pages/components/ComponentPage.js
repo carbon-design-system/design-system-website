@@ -24,7 +24,7 @@ class ComponentPage extends Component {
 
   render() {
     const currentComponent = this.props.params.name;
-    const componentTitle = currentComponent.replace(/-/g, ' ');
+    const componentTitle = currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() + currentComponent.replace(/-/g, ' ').substring(1);
     const usage = require(`../../content/components/${currentComponent}/usage.md`);
     const style = require(`../../content/components/${currentComponent}/style.md`);
 

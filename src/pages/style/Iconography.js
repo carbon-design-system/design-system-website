@@ -18,6 +18,10 @@ class Iconography extends React.Component {
     searchValue: ''
   };
 
+  componentDidMount() {
+    document.title = `Carbon Design System | ${this.props.currentPage}`;
+  }
+
   handleSearch = (evt) => {
     if (evt.target.value) {
       this.setState({
