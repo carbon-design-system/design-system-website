@@ -39,7 +39,7 @@ a {
   @include font-smoothing;
   color: $color__blue-51;
   font-weight: 600;
-  transition: all 250ms;
+  transition: color 250ms;
 
   &:hover {
     color: $color__blue-40;
@@ -48,4 +48,8 @@ a {
 
 svg {
   transition: fill 250ms;
+}
+
+.bx--tabs__nav-item {
+  transition: background-color 250ms;
 }

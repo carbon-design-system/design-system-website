@@ -1,0 +1,116 @@
+.fourohfour-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  @include breakpoint('1020px') {
+    padding-left: 200px;
+
+    .overview__letter {
+      margin: 1rem;
+    }
+  }
+
+  .fourohfour-error {
+    span {
+      font-size: 8vw;
+    }
+
+    svg {
+      height: 8vw;
+      width: 8vw;
+    }
+
+     @include breakpoint('1020px') {
+        span {
+          font-size: 5.5rem;
+        }
+
+        svg {
+          height: 5.5rem;
+          width: 5.5rem;
+        }
+     }
+  }
+
+  .overview__letter {
+    position: relative;
+    display: inline-block;
+    margin: .5rem;
+  }
+
+  .fourohfour-large {
+    display: flex;
+    align-items: flex-start;
+
+    svg {
+      height: 12vw;
+      width: 12vw;
+      circle {
+        fill: $brand-02;
+      }
+    }
+
+    .letter {
+      margin: 0;
+      font-size: 12vw;
+    }
+
+    span {
+      @include font-smoothing;
+      display: inline-block;
+      margin: .5rem;
+      font-weight: 700;
+      font-size: 12vw;
+    }
+
+    @include breakpoint('1020px') {
+      svg {
+        height: 13rem;
+        width: 13rem;
+      }
+
+      span {
+        font-size: 13rem;
+        margin: 1rem;
+      }
+
+      .letter {
+        font-size: 13rem;
+      }
+
+      .overview__letter {
+        height: 174px;
+        margin: 1rem;
+      }
+    }
+  }
+
+  .fourohfour-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      text-align: center;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      font-size: rem(20px);
+
+      @include breakpoint('1020px') {
+        padding: 1rem 0;
+      }
+    }
+
+    span {
+      font-size: rem(14px);
+    }
+  }
+}

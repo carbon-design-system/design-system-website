@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import Page from '../../internal/Page';
-import NotFound from '../NotFound';
 
 class GettingStarted extends React.Component {
   static propTypes = {

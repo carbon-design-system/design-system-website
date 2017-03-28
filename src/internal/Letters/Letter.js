@@ -7,6 +7,7 @@ class Letter extends Component {
     letter: PropTypes.string,
     active: PropTypes.bool,
     purple: PropTypes.bool,
+    className: PropTypes.string,
   }
 
   state = {
@@ -40,7 +41,7 @@ class Letter extends Component {
   }
 
   render() {
-    const classNames = classnames({
+    const classNames = classnames(this.props.className, {
       overview__letter: true,
       'overview__letter--active': this.state.active,
       'overview__letter--hover': this.state.hover,

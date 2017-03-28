@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, IndexRoute, IndexRedirect } from 'react-router';
+import { Route, Redirect, IndexRoute, IndexRedirect } from 'react-router';
 
 //------------------------
 // Main wrapper component
@@ -44,7 +44,7 @@ import ComponentStatus from './pages/ComponentStatus';
 //------------------------
 // 404 page
 //------------------------
-import NotFound from './pages/NotFound';
+import FourOhFour from './pages/404';
 
 
 const handleRouteChange = () => {
@@ -107,6 +107,7 @@ export default (
     </Route>
     <Route path="resources" component={Resources} />
     <Route path="component-status" component={ComponentStatus} />
-    <Route path="*" component={NotFound} />
+    <Route path="/404" component={FourOhFour} />
+    <Redirect from="*" to="/404" />
   </Route>
 );

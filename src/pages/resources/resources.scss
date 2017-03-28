@@ -66,19 +66,16 @@
     div {
       min-width: 200px;
       flex-basis: 100%;
-      // flex: 1 1 auto;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin-right: 3rem;
       margin-bottom: 2rem;
       width: 100%;
+      max-width: 100%;
 
-      h3 {
-        color: $brand-02 !important;
+      h4 {
         white-space: nowrap;
-        padding-top: 0 !important;
       }
 
       .bx--btn {
@@ -86,25 +83,35 @@
         width: 100%;
       }
 
-      // a {
-      //   margin-top: 2rem;
-      // }
+      a {
+        margin-top: 2rem;
+      }
 
       p {
         margin-bottom: 0;
         max-width: 25rem !important;
       }
 
+      @include breakpoint('575px') {
+        max-width: 70%;
+      }
+
       @include breakpoint('bp--sm--major') {
         flex-basis: calc(50% - 3rem);
+        max-width: 100%;
+        margin-right: 3rem;
 
         .bx--btn {
           width: 15rem;
         }
 
+        a {
+          margin-top: 0;
+        }
+
         p {
-          min-height: 48px;
           margin-bottom: 2rem;
+          min-height: 48px;
         }
       }
     }

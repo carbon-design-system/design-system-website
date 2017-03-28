@@ -65,13 +65,13 @@ class Resources extends React.Component {
           <h3 className="page__divider-heading">Downloads</h3>
           <div className="resources__bottom">
             <div>
-              <h3>Presentation Templates</h3>
+              <h4>Presentation Templates</h4>
               <p>Use our branded templates for your presentation needs.</p>
               <a href={keyNoteTemplate} target="_download" className="bx--btn bx--btn--secondary">Download Keynote</a>
               <a href={powerPointTemplate} target="_download" className="bx--btn bx--btn--secondary">Download Powerpoint</a>
             </div>
             <div>
-              <h3>Bluemix logo</h3>
+              <h4>Bluemix logo</h4>
               <p>This comprehensive file contains the various versions of the Bluemix logo.</p>
               <a
                 href="https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true"
@@ -82,7 +82,7 @@ class Resources extends React.Component {
               </a>
             </div>
             <div>
-              <h3 className="cheat-sheet">Design System Cheat Sheet</h3>
+              <h4 className="cheat-sheet">Design System Cheat Sheet</h4>
               <p>This card can be printed for go-to info such as color values and type sizes.</p>
               <a
                 href="http://www.carbondesignsystem.com/assets/resources/Cheatsheet.pdf"
