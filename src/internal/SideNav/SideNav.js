@@ -7,7 +7,7 @@ import Button from '@console/bluemix-components-react/dist/components/Button';
 
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
-// import Packages from '../../../package.json';
+import Packages from '../../../package.json';
 
 class SideNav extends Component {
   static propTypes = {
@@ -74,13 +74,14 @@ class SideNav extends Component {
       isOpen,
       onToggleBtnClick,
     } = this.props;
+
     const navItems = this.renderSiteItems(SiteNavStructure);
     const classNames = classnames({
       'side-nav': true,
       'side-nav__closed': !isOpen,
     });
-    // const version = Packages.dependencies['@console/bluemix-components'];
-    const version = 'Version 7.0.0';
+
+    const version = Packages.dependencies['carbon-components'];
 
     return (
       <div className={classNames}>
@@ -94,13 +95,13 @@ class SideNav extends Component {
         <Link to="/" className="side-nav__logo">
           Carbon <span>Design System</span>
         </Link>
-        <a href="https://github.ibm.com/Bluemix/bluemix-components/releases" className="side-nav__version">{version}</a>
+        <a href="https://github.com/carbon-design-system/carbon-components/releases" className="side-nav__version">{version}</a>
         <ul className="side-nav__main-nav">
           {navItems}
         </ul>
         <div className="side-nav__links">
           <Button
-            href="https://github.ibm.com/Bluemix/design-kit"
+            href="https://github.com/carbon-design-system/carbon-design-kit"
             className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"
@@ -108,7 +109,7 @@ class SideNav extends Component {
           >Design Kit
           </Button>
           <Button
-            href="https://github.ibm.com/Bluemix/bluemix-components"
+            href="https://github.com/carbon-design-system/carbon-components"
             className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"

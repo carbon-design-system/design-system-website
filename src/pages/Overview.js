@@ -106,7 +106,7 @@ class Overview extends React.Component {
                 <p className="overview-page__tile--text">
                   The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
                 </p>
-                <a href="https://github.ibm.com/Bluemix/design-kit" className="overview-page__tile--link">Get the kit</a>
+                <a href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile--link">Get the kit</a>
               </div>
             </div>
             <div className="overview-page__tile">
@@ -120,7 +120,7 @@ class Overview extends React.Component {
                 <p className="overview-page__tile--text">
                   The component library gives developers a collection of re-usable HTML and Sass partialst for building their products.
                 </p>
-                <a href="https://github.ibm.com/Bluemix/bluemix-components" className="overview-page__tile--link">Go to repo</a>
+                <a href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile--link">Go to repo</a>
               </div>
             </div>
           </div>
