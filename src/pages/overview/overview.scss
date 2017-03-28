@@ -5,7 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: rem(48px);
+
+  @include breakpoint('620px') {
+    padding-bottom: 10rem;
+  }
 
   &__top-banner {
     width: 100%;
@@ -80,8 +84,12 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding-top: rem(48px);
     max-width: 55rem;
-    padding-top: 8rem;
+
+    @include breakpoint('620px') {
+      padding-top: 8rem;
+    }
 
     .overview-page__main-intro {
       width: 100%;
@@ -91,7 +99,11 @@
     }
 
     .overview-page__main-intro--icon {
-      margin-right: 2rem;
+      margin-right: 1.2rem;
+
+      @include breakpoint('620px') {
+        margin-right: 2rem;
+      }
     }
 
     .overview-page__main-intro--text {
@@ -131,7 +143,11 @@
     }
 
     .overview-page__tile--icon {
-      margin-right: 2rem;
+      margin-right: 1.2rem;
+
+      @include breakpoint('620px') {
+        margin-right: 2rem;
+      }
     }
 
     .overview-page__tile--heading {

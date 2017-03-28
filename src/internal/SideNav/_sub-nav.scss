@@ -10,11 +10,17 @@
   }
 
   .sub-nav__item {
+    @include font-size('16');
     text-transform: capitalize;
     margin-left: 0;
-    padding: .5rem .5rem .5rem 2rem;
+    padding: .875rem .875rem .875rem 2rem;
     color: $color__blue-90;
     border-left: 4px solid transparent;
+
+    @include breakpoint('620px') {
+      @include font-size('14');
+      padding: .5rem .5rem .5rem 2rem;
+    }
 
     &:hover {
       color: $color__blue-51;

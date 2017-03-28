@@ -2,14 +2,19 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.3rem;
+  height: 2.3rem;
   background-color: $color__blue-51;
   border: 1px solid transparent;
   margin: 0;
   padding: 0;
   cursor: pointer;
   transition: right $transition--base ease;
+
+  @include breakpoint('620px') {
+    width: 2rem;
+    height: 2rem;
+  }
 
   &:focus {
     outline: 0;
@@ -51,8 +56,8 @@
   }
 
   .side-nav__closed & {
-    right: -2rem;
-    
+    right: -2.3rem;
+
     div {
       .line:nth-child(2) {
         opacity: 1;
