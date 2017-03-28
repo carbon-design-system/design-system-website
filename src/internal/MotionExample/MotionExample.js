@@ -11,12 +11,30 @@ class MotionExample extends Component {
 
   state = {
     playing: false,
+    mouseover: false,
   };
 
   toggleMotionExample = () => {
     this.setState({
-      playing: !this.state.playing
+      playing: !this.state.playing,
+      mouseover: false,
     });
+  }
+
+  overlayMouseOver = () => {
+    if (this.state.playing) {
+      this.setState({
+        mouseover: true,
+      });
+    }
+  }
+
+  overlayMouseOut = () => {
+    if (this.state.playing) {
+      this.setState({
+        mouseover: false,
+      });
+    }
   }
 
   render() {
@@ -30,7 +48,7 @@ class MotionExample extends Component {
 
     const containerClasses = classnames({
       'motion-example': true,
-      'motion-example__easing-demo': isSingleExample,
+      'motion-example-easing--container': isSingleExample,
       'paused': !this.state.playing,
     });
 
@@ -59,6 +77,11 @@ class MotionExample extends Component {
       [`${motionType}`]: true,
     });
 
+    const overlayClasses = classnames({
+      'motion-example__overlay': true,
+      'motion-example__overlay--hover': this.state.mouseover
+    });
+
     const correctInfo = correctText ?
       (
         <p className="motion-example__correct-text">
@@ -74,7 +97,7 @@ class MotionExample extends Component {
           {incorrectText}
         </p>
       ) : '';
-    
+
     let curveSvg;
 
     if (motionType === 'standard') {
@@ -150,7 +173,12 @@ class MotionExample extends Component {
     }
 
     const overlayContent = (
-      <div className="motion-example__overlay" onClick={this.toggleMotionExample}>
+      <div
+        className={overlayClasses}
+        onClick={this.toggleMotionExample}
+        onMouseOver={this.overlayMouseOver}
+        onMouseOut={this.overlayMouseOut}
+      >
         <button className="motion-example__button">
           <svg
             width="99px"
@@ -172,17 +200,19 @@ class MotionExample extends Component {
               <rect x="0" y="0" width="37" height="98"></rect>
               <rect x="61" y="0" width="37" height="98"></rect>
             </g>
-          </svg>            
+          </svg>
         </button>
       </div>
     );
     const motionExampleContent = isSingleExample ? (
         <div className={containerClasses}>
-          <div className={motionCurveClasses}>
-            {curveSvg}
-          </div>
-          <div className="motion-example__easing-demo motion-example__track">
-            <div className="motion-example__easing-demo motion-example__element"></div>
+          <div className="motion-example__easing-demo">
+            <div className={motionCurveClasses}>
+              {curveSvg}
+            </div>
+            <div className="motion-example__track">
+              <div className=" motion-example__element"></div>
+            </div>
           </div>
           {overlayContent}
         </div>

@@ -34,9 +34,9 @@
     justify-content: center;
     transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
 
-    &:hover {
+    &--hover {
       opacity: .6;
-    }   
+    }
   }
 
   &__button {
@@ -60,8 +60,8 @@
         &.hidden {
           display: none;
         }
-      } 
-    }  
+      }
+    }
   }
 
   &__correct-text,
@@ -183,11 +183,13 @@ $w4: $s2 + $w;
   animation-play-state: inherit;
 }
 
+.motion-example-easing--container {
+  width: rem(416px);
+}
+
 .motion-example__easing-demo {
   position: relative;
-  width: rem(324px);
   background: #f5f7fa;
-  padding: 0;
 
   .motion-example__track {
     padding: 1rem;
