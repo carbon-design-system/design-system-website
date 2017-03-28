@@ -25,3 +25,13 @@
     margin: 1rem 0;
   }
 }
+
+div[data-page|=components-code]{
+  table {
+    max-width: 45rem;
+  }
+
+  table tr td:nth-child(2):not(:last-child) {
+    white-space: nowrap;
+  }
+}

@@ -44,7 +44,7 @@ class App extends Component {
       overlay.setAttribute('target', '__blank');
       overlay.setAttribute('href', image.src);
       overlay.innerHTML = `
-        <img src=${ibmEye} />
+        <img class="ibm-eye" src=${ibmEye} />
         <p>View at 100%</p>
       `;
       overlay.classList.add('image-overlay__overlay');
@@ -72,7 +72,10 @@ class App extends Component {
       }
     });
     document.addEventListener('click', (evt) => {
-      const isTarget = document.querySelector('.side-nav').contains(evt.target);
+      let isTarget = false;
+      if (document.querySelector('.side-nav')) {
+        isTarget = document.querySelector('.side-nav').contains(evt.target);
+      }
       const isSmallerScreen = window.innerWidth < 1024;
       if (!isTarget && isSmallerScreen) {
         this.setState({

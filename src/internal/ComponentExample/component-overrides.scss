@@ -40,6 +40,18 @@
   & .text-input .bx--form-item {
     margin-right: 0;
   }
+
+  & .tabs .bx--tabs__nav--hidden {
+    display: none;
+
+    @include breakpoint('768px') {
+      display: flex;
+    }
+  }
+
+  & .tabs .bx--tabs__nav {
+    z-index: 6000;
+  }
 }
 
 .component-example__live {
@@ -100,6 +112,18 @@
 
   & .tabs > div {
     width: 100%;
+  }
+
+  & .tabs .bx--tabs__nav--hidden {
+    display: none;
+
+    @include breakpoint('768px') {
+      display: flex;
+    }
+  }
+
+  & .tabs .bx--tabs__nav {
+    z-index: 6000;
   }
 
   & .text-input .bx--form-item {

@@ -8,15 +8,14 @@
 | Icon: checkmark   | $inverse-01 | #ffffff     |
 | Text              | $text-01    | #152935     |
 
----
-***
-> 
-![Normal checkbox example](images/checkbox-style-1.png)
-
----
-***
-> 
-![Disabled checkbox example](images/checkbox-style-2.png)
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Normal checkbox example](images/checkbox-style-1.png)
+  </div>
+  <div>
+    ![Disabled checkbox example](images/checkbox-style-2.png)
+  </div>
+</div>
 _Disabled and normal Checkbox states_
 
 ## Typography

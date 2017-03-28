@@ -10,15 +10,14 @@
 | Warning: hover | $support-01 | #e71d32 |
 | Line           | $ui-04      | #dfe3e6 |
 
----
-***
-> 
-![Overflow menu text hover example](images/overflow-menu-style-1.png)
-
----
-***
-> 
-![Overflow menu warning hover example](images/overflow-menu-style-2.png)
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Overflow menu text hover example](images/overflow-menu-style-1.png)
+  </div>
+  <div>
+    ![Overflow menu warning hover example](images/overflow-menu-style-2.png)
+  </div>
+</div>
 _Text and warning hover examples for Overflow Menu_
 
 ## Typography

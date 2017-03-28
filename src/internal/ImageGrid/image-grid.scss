@@ -137,6 +137,25 @@
   }
 }
 
+[data-page="components-style-loading"] [data-insert-component="ImageGrid"] {
+  .image-grid {
+    div:nth-child(2) img {
+      width: 97%;
+    }
+  }
+}
+
+[data-page="components-style-form"] [data-insert-component="ImageGrid"] {
+  .image-grid {
+    align-items: flex-start;
+
+    em {
+      font-size: .875rem;
+      color: $color__navy-gray-6;
+    }
+  }
+}
+
 @for $i from 1 through 4 {
   .image-grid--#{$i} {
 

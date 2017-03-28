@@ -5,6 +5,20 @@
     @include font-smoothing;
   }
 
+  video {
+    margin: 1rem 0;
+    max-width: 38rem;
+  }
+
+  [data-page="components-usage-loading"] & blockquote {
+    margin: 1rem 0 2rem;
+
+    & > p {
+      font-style: italic;
+      color: $color__navy-gray-6;
+    }
+  }
+
   h3#css-modifiers {
     padding-top: 0;
   }

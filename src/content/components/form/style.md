@@ -26,11 +26,13 @@ All icons can be found on the [iconography](/style/iconography/library) library 
 | Non-input components | 32 | 2    |
 | Columns              | 20 | 1.25 |
 
-_
-![Structure and spacing measurements for a single column form](images/form-style-1.png)
-_
-_Structure and spacing measurements for a single column Form | px / rem_
-_
-![Structure and spacing measurements for a double column form ](images/form-style-2.png)
-_
-_Structure and spacing measurements for a double column Form | px / rem_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Structure and spacing measurements for a single column form](images/form-style-1.png)
+    _Structure and spacing measurements for a single column Form | px / rem_
+  </div>
+  <div>
+    ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
+    _Structure and spacing measurements for a double column Form | px / rem_
+  </div>
+</div>

@@ -28,6 +28,7 @@
     margin-bottom: 1rem;
     background-color: $color__blue-51;
     color: $color__white;
+    z-index: 6000;
 
     &:first-letter {
       text-transform: uppercase;

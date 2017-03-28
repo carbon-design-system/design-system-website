@@ -11,7 +11,13 @@ class CodePage extends Component {
     let currentComponent = this.props.component;
     currentComponent = currentComponent.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
     currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
+    if (currentComponent === 'Tabs') {
+      currentComponent = 'Tab';
+    }
     if (window.CarbonComponents[currentComponent]) {
+      if (currentComponent === 'Tab') {
+        window.CarbonComponents['ContentSwitcher'].init();
+      }
       window.CarbonComponents[currentComponent].init();
     }
   }

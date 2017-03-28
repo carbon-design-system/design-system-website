@@ -58,7 +58,7 @@ const handleRouteChange = () => {
   //   overlay.setAttribute('target', '__blank');
   //   overlay.setAttribute('href', image.src);
   //   overlay.innerHTML = `
-  //     <img src=${ibmEye} />
+  //     <img class="ibm-eye" src=${ibmEye} />
   //     <p>View at 100%</p>
   //   `;
   //   overlay.classList.add('image-overlay__overlay');
