@@ -5,7 +5,7 @@
 Using npm:
 
 ```bash
-$ npm install --save @carbon/components
+$ npm install --save carbon-components
 ```
 
 ## What's included
@@ -15,25 +15,23 @@ The `global` directory includes transpiled, minified assets needed to use the Ca
 
 Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
 
-```javascript
-carbon/
-├── global/
-    ├── carbon.js
-    └── carbon.min.js
-    ├── carbon.css
-    ├── carbon.min.css
-├── components/
-│   ├── modal
-│   │   ├── _modal.scss
-│   │   ├── modal.umd.js
-│   │   ├── modal.js
-│   │   ├── modal.es5.js
-│   │   ├── modal.html
-│   ├── button / etc
-│   ├── index.es5.js
-│   ├── index.umd.js
-│   ├── index.js
-│   ├── index.scss
+```js
+carbon-components/
+├── html
+├── css
+│   ├── carbon-components.css
+│   └── carbon-components.min.css
+├── scripts
+│   ├── carbon-components.js
+│   └── carbon-components.min.js
+├── scss
+│   └── modal
+│       └── _modal.scss
+├── umd
+│   └── index.js
+├── es
+│   └── index.js
+└── src
 ```
 
 ## SCSS
@@ -45,20 +43,20 @@ Using the Carbon Sass files infers usage of the SCSS pre-processor.
 To add a component style to your build, simply import the component directly
 
 ```javascript
-@import 'node_modules/@carbon/components/card/card';
+@import 'node_modules/carbon-components/scss/card/card';
 ```
 
 Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 #### Namespacing
 
-Carbon components are built to be included individually and not clobber global styles - all `class names` are prefixed by the `bx--` moniker.
+Carbon components are built to be included individually and not clobber global styles - all `class` attribtues are prefixed by the `bx--` moniker.
 
 #### Global Flags
 
 Carbon exposes a few global flags to alter what CSS gets compiled.
 
-| SASS flag       | Default | Description                                                                         |
+| SCSS flag       | Default | Description                                                                         |
 |-----------------|---------|-------------------------------------------------------------------------------------|
 | $css--font-face | false   | If set to true, add in css font face definition                                     |
 | $css--helpers   | true    | If set to true, create the css visual helper styles                                 |
@@ -73,24 +71,24 @@ Using a module bundler will bring in only the component code your application ne
 
 #### Initialize all instances of a component
 
-```javascript
-import { Modal } from '@carbon/components'
+```js
+import { Modal } from 'carbon-components'
 Modal.init();
 ```
 
 #### Initialize a specific instance
 
-```javascript
-import { Modal } from '@carbon/components';
-const myModal = document.querySelector(querySelector('[data-modal]')); // element node of the modal itself
+```js
+import { Modal } from 'carbon-components';
+const myModal = document.querySelector('[data-modal]'); // element node of the modal itself
 Modal.init(myModal);
 ```
 
 #### Reference a previously initialized component
 
-```javascript
-import { Modal } from '@carbon/components';
-const myModal = document.querySelector(querySelector('[data-modal]'));
+```js
+import { Modal } from 'carbon-components';
+const myModal = document.querySelector('[data-modal]');
 const myModalInstance = Modal.components.get(myModal);
 ```
 
@@ -103,7 +101,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
-    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
 ```
@@ -116,7 +114,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
     <script>
       CarbonComponents.settings.disableAutoInit = true;
     </script>
-    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
 ```
@@ -131,7 +129,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
       var modal = document.querySelector('[data-model']);
       CarbonComponents.Modal.init(modal);
     </script>
-    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
 ```
@@ -141,7 +139,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
-    <script src="node_modules/@carbon/components/global/carbon-components.min.js"></script>
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
       var modal = document.querySelector('[data-model']);
       var myModalRef = CarbonComponents.Modal.components.get(modal);
