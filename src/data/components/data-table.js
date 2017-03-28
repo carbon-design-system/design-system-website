@@ -7,6 +7,9 @@
     ],
     "data-table--simple": [
       "Simple Table"
+    ],
+    "toolbar": [
+      "Tool bar"
     ]
   },
   "__content": "\n"

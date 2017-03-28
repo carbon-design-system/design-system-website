@@ -26,6 +26,8 @@ class CodePage extends Component {
     let htmlFile;
     if (parent === 'text-input' && variation === 'text-area') {
       htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+    } else if (parent === 'data-table' && variation === 'toolbar') {
+      htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
     } else {
       htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
     }

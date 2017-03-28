@@ -81,6 +81,7 @@
 
   p em {
     font-size: rem(14px);
+    color: $color__navy-gray-6;
   }
 
   > em {
@@ -427,8 +428,12 @@
   }
 
   hr + p img {
-    width: auto;
+    width: 100%;
     display: block;
+
+    @include breakpoint('600px') {
+      width: auto;
+    }
   }
 
   hr + hr + blockquote {
@@ -440,11 +445,15 @@
   }
 
   hr + hr + blockquote p img {
-    width: 50%;
+    width: 100%;
     position: static;
     margin: 0;
     float: none;
     display: block;
+
+    @include breakpoint('600px') {
+      width: 50%;
+    }
   }
 
   hr + table {

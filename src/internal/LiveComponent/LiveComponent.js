@@ -29,8 +29,14 @@ class LiveComponent extends Component {
       'live-component__component': true,
       [`${variation}`]: true,
     });
-
-    let htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`); // eslint-disable-line
+    let htmlFile;
+    if (this.props.component === 'text-input' && variation === 'text-area') {
+      htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+    } else if (this.props.component === 'data-table' && variation === 'toolbar') {
+      htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+    } else {
+      htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`);
+    }
 
     if (variation.includes('card')) {
       const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';

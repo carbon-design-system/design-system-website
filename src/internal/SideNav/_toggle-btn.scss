@@ -1,58 +1,67 @@
 .side-nav__toggle-btn {
-  @include reset;
   position: absolute;
   top: 0;
   right: 0;
   width: 2rem;
   height: 2rem;
   background-color: $color__blue-51;
-  border: none;
+  border: 1px solid transparent;
   margin: 0;
   padding: 0;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   transition: right $transition--base ease;
 
   &:focus {
-    outline: none;
+    outline: 0;
   }
 
-  .line {
+  & > div {
     @include reset;
-    height: rem(2px);
-    width: 1rem;
-    cursor: pointer;
-    display: block;
-    margin: rem(1.5px) 0;
-    background: $color__white;
-    will-change: all;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-  .line:nth-child(2) {
-    opacity: 0;
-  }
+    &:focus {
+      outline: none;
+    }
 
-  .line:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
-  }
+    .line {
+      @include reset;
+      height: rem(2px);
+      width: 1rem;
+      cursor: pointer;
+      display: block;
+      margin: rem(1.5px) 0;
+      background: $color__white;
+      will-change: all;
+    }
 
-  .line:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg);
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .line:nth-child(1) {
+      transform: translateY(5px) rotate(45deg);
+    }
+
+    .line:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
   }
 
   .side-nav__closed & {
     right: -2rem;
+    
+    div {
+      .line:nth-child(2) {
+        opacity: 1;
+      }
 
-    .line:nth-child(2) {
-      opacity: 1;
-    }
-
-    .line {
-      transform: translateY(0) rotate(0);
-      transition: all $transition--base ease-in-out;
+      .line {
+        transform: translateY(0) rotate(0);
+        transition: all $transition--base ease-in-out;
+      }
     }
   }
 }

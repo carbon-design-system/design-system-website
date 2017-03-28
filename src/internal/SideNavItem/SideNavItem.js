@@ -29,7 +29,12 @@ class SideNavItem extends Component {
         });
         subMenu.style.maxHeight = `${height}px`;
       } else {
-        subMenu.style.maxHeight = 0;
+        const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+        if (!evt.currentTarget.classList.contains('main-nav-item__open') && isIE11) {
+          subMenu.style.maxHeight = 0;
+        } else if (!isIE11) {
+          subMenu.style.maxHeight = 0;
+        }
       }
     }
   }

@@ -8,7 +8,10 @@
   > div,
   > p {
     width: 100%;
-    margin-right: 1rem;
+
+    @include breakpoint('600px') {
+      margin-right: 1rem;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -20,6 +23,7 @@
     }
 
     img {
+      width: 100%;
       border: 1px solid $color__navy-gray-8;
     }
 
@@ -34,28 +38,28 @@
   div:first-child:nth-last-child(2),
   div:first-child:nth-last-child(2) ~ div {
 
-    @include breakpoint('900px') {
+    @include breakpoint('600px') {
       width: calc(50% - 1rem);
     }
   }
 
   div:first-child:nth-last-child(3),
   div:first-child:nth-last-child(3) ~ div {
-    @include breakpoint('900px') {
+    @include breakpoint('600px') {
       width: calc(33.3333% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(4),
   > div:first-child:nth-last-child(4) ~ div {
-    @include breakpoint('900px') {
+    @include breakpoint('600px') {
       width: calc(25% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(6),
   > div:first-child:nth-last-child(6) ~ div {
-    @include breakpoint('900px') {
+    @include breakpoint('600px') {
       width: calc(33% - 1rem);
     }
   }
@@ -92,6 +96,14 @@
       display: inline-block;
       margin-bottom: 0;
     }
+  }
+}
+
+[data-insert-component="ImageGrid"] {
+  & + em,
+  em {
+    font-size: .875rem;
+    color: $color__navy-gray-6;
   }
 }
 
@@ -148,11 +160,6 @@
 [data-page="components-style-form"] [data-insert-component="ImageGrid"] {
   .image-grid {
     align-items: flex-start;
-
-    em {
-      font-size: .875rem;
-      color: $color__navy-gray-6;
-    }
   }
 }
 

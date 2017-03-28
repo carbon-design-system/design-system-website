@@ -5,4 +5,6 @@ variations:
   - Data Table
   data-table--simple:
   - Simple Table
+  toolbar:
+  - Tool bar
 ---
