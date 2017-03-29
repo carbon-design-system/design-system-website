@@ -8,6 +8,10 @@
   table tr td:nth-child(2) {
     white-space: nowrap;
   }
+
+  .inline-tag {
+    margin-left: rem(8px);
+  }
 }
 
 .component-status {

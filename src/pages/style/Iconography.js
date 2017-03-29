@@ -41,18 +41,7 @@ class Iconography extends React.Component {
       const Icon = IconItems[IconItem];
       const path = require(`../../assets/svg/${Icon.name}.svg`);
       let iconElement;
-      if (!this.state.isSearching) {
-        iconElement = (
-          <IconCard
-            key={IconItem}
-            name={Icon.name}
-            viewBox={Icon.viewBox}
-            height={Icon.height}
-            width={Icon.width}
-            path={path}
-          />
-        );
-      } else if (Icon.name.includes(this.state.searchValue)) {
+      if (!this.state.isSearching || Icon.name.includes(this.state.searchValue)) {
         iconElement = (
           <IconCard
             key={IconItem}
@@ -82,7 +71,7 @@ class Iconography extends React.Component {
             <h2>Icon library</h2>
             <em className="version">Version {packageVer}</em>
             <div className="icon-container">
-              <Search small onChange={this.handleSearch}></Search>
+              <Search small onChange={this.handleSearch} placeHolderText="Search the icon library"></Search>
               {this.renderIconCards(IconList)}
             </div>
           </div>

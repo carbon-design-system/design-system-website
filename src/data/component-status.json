@@ -7,7 +7,8 @@
     },
     {
       "item": "Breadcrumb",
-      "added": "6.16.0",
+      "added": "7.0.0",
+      "tag": "new",
       "status": 0
     },
     {
@@ -27,7 +28,8 @@
     },
     {
       "item": "Code Snippet",
-      "added": "6.16.0",
+      "added": "7.0.0",
+      "tag": "new",
       "status": 0
     },
     {
@@ -57,7 +59,8 @@
     },
     {
       "item": "File Uploader",
-      "added": "2.12.0",
+      "added": "7.0.0",
+      "tag": "new",
       "status": 0
     },
     {
@@ -112,7 +115,8 @@
     },
     {
       "item": "Pagination",
-      "added": "6.10.0",
+      "added": "7.0.0",
+      "tag": "new",
       "status": 0
     },
     {

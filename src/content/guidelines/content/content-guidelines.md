@@ -53,7 +53,7 @@ These guidelines apply for developers and writers working with IBM Cloud UI and 
 
 ---
 ***
-### **Do use simple tense.** ![Do use simple tense](images/content-guidelines-1.png)
+### **Do use simple tense.** ![Do use simple tense](images/content-guidelines-1.svg)
 
 Use simple verbs and tenses, and keep sentences concise, simple, friendly, and punchy. Focus on the user's context and make content relevant. The more familiar you are with their context, the better you can communicate without using a lot of words.
 
@@ -64,7 +64,7 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 
 ---
 ***
-### **Do use active voice.** ![Do use active voice](images/content-guidelines-2.png)
+### **Do use active voice.** ![Do use active voice](images/content-guidelines-2.svg)
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
@@ -72,14 +72,14 @@ To convey a more natural tone, use active voice. People tend to speak in active 
 
 ---
 ***
-### **Do use second person.** ![Do use second person](images/content-guidelines-3.png)
+### **Do use second person.** ![Do use second person](images/content-guidelines-3.svg)
 
 Engage your readers by using second person **(you, your)**. First person **(I, we, our)** focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
 One exception to this is in the case of possessive adjectives in the UI. You can use first person in headings or labels that are very specific to the user or customer data, for example “My Account” or “My Usage.” In explanatory text for the heading or label, switch to second person, for example _“Your usage is calculated from the 1st day of the month.”_
 
 ---
 ***
-### **Don't be too formal <br> or stuffy.** ![Don't be too formal or stuffy](images/content-guidelines-4.png)
+### **Don't be too formal <br> or stuffy.** ![Don't be too formal or stuffy](images/content-guidelines-4.svg)
 
 * Do not be afraid to use contractions once in a while. Decide whether they fit the context.
 * Occasionally begin sentences with **and, but or so.** This usage allows for shorter, scannable sentences. Do not overuse these devices, especially in instructional (steps) content.
@@ -91,7 +91,7 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 
 ---
 ***
-### **Don't be overly mannerly.** ![Don't be overly mannerly](images/content-guidelines-5.png)
+### **Don't be overly mannerly.** ![Don't be overly mannerly](images/content-guidelines-5.svg)
 
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 

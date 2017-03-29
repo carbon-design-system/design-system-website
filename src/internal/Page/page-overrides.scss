@@ -62,3 +62,9 @@ div[data-page|=components-style] {
     }
   }
 }
+
+div[data-page="guidelines-general-content"] {
+  strong {
+    color: $brand-01 !important;
+  }
+}

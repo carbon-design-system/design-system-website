@@ -7,7 +7,7 @@ import Packages from '../../package.json';
 
 class ComponentStatus extends React.Component {
   renderItems = (currentItem, readyIcon, underReviewIcon, deprecatedIcon, notApplicableIcon) => {
-    let status;
+    let status, tag;
     if (currentItem.status === 0) {
       status = readyIcon;
     } else if (currentItem.status === 1) {
@@ -17,9 +17,12 @@ class ComponentStatus extends React.Component {
     } else {
       status = notApplicableIcon;
     }
+    if (currentItem.tag && currentItem.tag === 'new') {
+      tag = <span className="bx--tag bx--tag--community inline-tag">New</span>;
+    }
     return (
       <tr key={currentItem.item}>
-        <td>{currentItem.item}</td>
+        <td>{currentItem.item} {tag}</td>
         <td>{currentItem.added}</td>
         <td>{status}</td>
       </tr>
