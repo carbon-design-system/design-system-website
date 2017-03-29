@@ -200,14 +200,10 @@
       align-items: flex-start;
 
       img {
+        min-height: 10rem;
         display: inline-flex;
-        width: 40%;
-        margin-left: 1rem;
-        padding: 2rem 4rem 4rem;
-        max-width: 30rem;
+        margin-left: 3rem;
         margin-top: 0;
-        min-height: 260px;
-        min-width: 270px;
       }
     }
   }

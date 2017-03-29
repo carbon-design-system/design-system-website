@@ -81,7 +81,7 @@ class SideNav extends Component {
       'side-nav__closed': !isOpen,
     });
 
-    const version = Packages.dependencies['carbon-components'];
+    const version = `Version: ${Packages.dependencies['carbon-components']}`;
 
     return (
       <div className={classNames}>

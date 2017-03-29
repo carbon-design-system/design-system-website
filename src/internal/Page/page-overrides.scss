@@ -30,4 +30,9 @@ div[data-page="guidelines-guidelines-content"] {
     min-height: 103px;
     padding: 0;
   }
+
+  p em {
+    font-size: 1rem;
+    color: $color__blue-90;
+  }
 }

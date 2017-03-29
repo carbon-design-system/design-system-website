@@ -81,6 +81,9 @@ Modal.init();
 ```js
 import { Modal } from 'carbon-components';
 const myModal = document.querySelector('[data-modal]'); // element node of the modal itself
+for {
+    test;
+}
 Modal.init(myModal);
 ```
 

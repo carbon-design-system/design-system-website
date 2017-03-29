@@ -51,20 +51,6 @@ const handleRouteChange = () => {
   if (!(window.pathname === '/guidelines/content/glossary')) {
     window.scrollTo(0, 0);
   }
-  // const overlayImages = [... document.querySelectorAll('p em img')];
-  // const ibmEye = require('./assets/images/ibm-eye.png'); // eslint-disable-line
-  // overlayImages.forEach(image => {
-  //   const overlay = document.createElement('a');
-  //   overlay.setAttribute('target', '__blank');
-  //   overlay.setAttribute('href', image.src);
-  //   overlay.innerHTML = `
-  //     <img class="ibm-eye" src=${ibmEye} />
-  //     <p>View at 100%</p>
-  //   `;
-  //   overlay.classList.add('image-overlay__overlay');
-  //   image.parentElement.classList.add('image-overlay');
-  //   image.parentElement.appendChild(overlay);
-  // });
 };
 
 export default (
@@ -107,7 +93,6 @@ export default (
     </Route>
     <Route path="resources" component={Resources} />
     <Route path="component-status" component={ComponentStatus} />
-    <Route path="/404" component={FourOhFour} />
-    <Redirect from="*" to="/404" />
+    <Route path="*" component={FourOhFour} />
   </Route>
 );

@@ -16,7 +16,7 @@ class CodePage extends Component {
     }
     if (window.CarbonComponents[currentComponent]) {
       if (currentComponent === 'Tab') {
-        window.CarbonComponents['ContentSwitcher'].init();
+        window.CarbonComponents['ContentSwitcher'].init(); // eslint-disable-line
       }
       window.CarbonComponents[currentComponent].init();
     }

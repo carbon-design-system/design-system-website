@@ -47,7 +47,7 @@ class ComponentStatus extends React.Component {
         <span>-</span>
       </div>
     );
-    const currentVersion = `Current version: 7.0 (March 13, 2017)`; // UPDATE
+    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']} (March 13, 2017)`;
     const componentStatus = require('../data/component-status.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
