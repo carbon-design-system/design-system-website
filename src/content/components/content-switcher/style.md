@@ -30,6 +30,7 @@ Content Switchers must have at least two options for the user to choose from. Ea
 ***
 > 
 ![Content switcher structure and spacing measurements](images/content-switcher-style-1.png)
+
 _Structure and spacing measurements for Content Switcher | px / rem_
 
 ### States

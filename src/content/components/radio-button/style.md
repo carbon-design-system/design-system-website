@@ -28,4 +28,5 @@ Radio Button labels and headings should be set in sentence case, with only the f
 ***
 > 
 ![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
+
 _Structure and spacing measurements for Radio Button | px | rem_

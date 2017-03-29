@@ -50,4 +50,5 @@ The height of an Overflow Menu is determined by the amount of content in the men
 ***
 > 
 ![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)
+
 _Structure and spacing measurements for Overflow Menu | px / rem_

@@ -12,6 +12,7 @@
 
   &__variation {
     margin: 1rem 0;
+    position: relative;
 
     .live-component__component {
       margin-top: 6rem;
@@ -21,7 +22,7 @@
     .live-component__title {
       font-size: 1.25rem;
       padding: 2rem 0 1rem;
-      position: fixed;
+      position: absolute;
       top: 3rem;
       left: 1rem;
       z-index: 8000;

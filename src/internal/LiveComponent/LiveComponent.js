@@ -16,15 +16,20 @@ class LiveComponent extends Component {
     currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
     if (currentComponent === 'Tabs') {
       currentComponent = 'Tab';
+    } else if (currentComponent === 'Card') {
+      currentComponent = 'OverflowMenu';
     }
     if (window.CarbonComponents[currentComponent]) {
       if (currentComponent === 'Tab') {
-        window.CarbonComponents.ContentSwitcher.init();
-      } else if (currentComponent === 'DetailPageHeader') {
-        window.CarbonComponents.DetailPageHeader.init();
         window.CarbonComponents.Tab.init();
+        window.CarbonComponents.ContentSwitcher.init();
+      } else if (currentComponent === 'DataTable') {
+        window.CarbonComponents.OverflowMenu.init();
+        window.CarbonComponents.DataTable.init();
+        window.CarbonComponents.Toolbar.init();
+      } else {
+        window.CarbonComponents[currentComponent].init();
       }
-      window.CarbonComponents[currentComponent].init();
     }
   }
 

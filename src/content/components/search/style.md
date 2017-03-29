@@ -8,6 +8,7 @@
 | Icon              | $ui-05        | #8c9ba5  |
 
 ![Normal, hover, and input search states](images/search-style-1.png)
+
 _Examples of normal, hover, and input Search states_
 
 ## Typography

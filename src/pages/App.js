@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
+import debounce from 'lodash.debounce';
 import SideNav from '../internal/SideNav';
 import Prism from '../assets/syntax/prism.js';
 import '../assets/syntax/prism.css';
@@ -40,16 +41,18 @@ class App extends Component {
     const overlayImages = [... document.querySelectorAll('p em img')];
     const ibmEye = require('../assets/images/ibm-eye.png'); // eslint-disable-line
     overlayImages.forEach(image => {
-      const overlay = document.createElement('a');
-      overlay.setAttribute('target', '__blank');
-      overlay.setAttribute('href', image.src);
-      overlay.innerHTML = `
-        <img class="ibm-eye" src=${ibmEye} />
-        <p>View at 100%</p>
-      `;
-      overlay.classList.add('image-overlay__overlay');
-      image.parentElement.classList.add('image-overlay');
-      image.parentElement.appendChild(overlay);
+      if (!image.parentElement.classList.contains('image-overlay')) {
+        const overlay = document.createElement('a');
+        overlay.setAttribute('target', '__blank');
+        overlay.setAttribute('href', image.src);
+        overlay.innerHTML = `
+          <img class="ibm-eye" src=${ibmEye} />
+          <p>View at 100%</p>
+        `;
+        overlay.classList.add('image-overlay__overlay');
+        image.parentElement.classList.add('image-overlay');
+        image.parentElement.appendChild(overlay);
+      }
     });
   }
 
@@ -60,17 +63,8 @@ class App extends Component {
         isOpen: false,
       });
     }
-    window.addEventListener('resize', () => {
-      if (window.innerWidth < 1024) {
-        this.setState({
-          isOpen: false,
-        });
-      } else {
-        this.setState({
-          isOpen: true
-        });
-      }
-    });
+    const debouncedResize = debounce(this.handleResize, 1000);
+    window.addEventListener('resize', debouncedResize);
     document.addEventListener('click', (evt) => {
       let isTarget = false;
       if (document.querySelector('.side-nav')) {
@@ -91,6 +85,18 @@ class App extends Component {
         });
       }
     });
+  }
+
+  handleResize = () => {
+    if (window.innerWidth < 1024) {
+      this.setState({
+        isOpen: false,
+      });
+    } else {
+      this.setState({
+        isOpen: true
+      });
+    }
   }
 
   render() {

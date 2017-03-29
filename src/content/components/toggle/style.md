@@ -12,6 +12,7 @@
 ***
 > 
 ![Inactive, inactive hover, and active states for a Toggle](images/toggle-style-1.png)
+
 _Examples of inactive, inactive hover, and active states for a Toggle_
 
 ## Typography
@@ -36,4 +37,5 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 ***
 > 
 ![Structure and spacing measurements for toggle](images/toggle-style-2.png)
+
 _Structure and spacing measurements for Toggle | px / rem_

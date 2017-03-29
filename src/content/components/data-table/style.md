@@ -89,5 +89,6 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 ---
 ***
 > 
-![Spacing for toolabr icons](images/data-table-style-6.png)
+![Spacing for toolbar icons](images/data-table-style-6.png)
+
 _Structure and spacing measurements for toolbar icons | px / rem_

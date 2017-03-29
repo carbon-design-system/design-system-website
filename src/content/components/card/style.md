@@ -41,6 +41,7 @@ There are several types of cards, each having its own measurements and attribute
 ***
 > 
 ![Card structure measurements](images/card-style-1.png)
+
 _Structure measurements for a Card | px / rem_
 
 | SPACING                  | PX | REM   |
@@ -54,4 +55,5 @@ _Structure measurements for a Card | px / rem_
 ***
 > 
 ![Card spacing measurements](images/card-style-2.png)
+
 _Spacing measurements for a Card | px / rem_

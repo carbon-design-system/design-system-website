@@ -110,12 +110,11 @@
 div[data-page|=components-style] [data-insert-component="ImageGrid"] {
   .image-grid {
     align-items: center;
-    padding: 1rem;
     background-color: $color__gray-3;
 
-    @include breakpoint('900px') {
-      align-items: flex-start;
-    }
+    // @include breakpoint('900px') {
+    //   align-items: flex-start;
+    // }
 
     > div {
       margin-right: 0;

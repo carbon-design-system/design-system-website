@@ -11,6 +11,7 @@
 ***
 > 
 ![Default and new selection state examples for Select](images/select-style-1.png)
+
 _Examples of default and new selection Select states_
 
 ## Typography
@@ -47,6 +48,7 @@ _Structure and spacing measurements for Select | px / rem_
 ***
 > 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
+
 _Examples of open, disabled, and help Select states_
 
 ### Small Select
@@ -57,14 +59,15 @@ _Examples of open, disabled, and help Select states_
 | Width                       | 56 | 3.5   |
 | Internal spacing            | 8  | 0.5    |
 
----
-***
-> 
-![Structure and spacing measurements for Small Select](images/select-style-4.png)
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Structure and spacing measurements for Small Select](images/select-style-4.png)
+  </div>
+  <div>
+    ![Structure and spacing measurements for Small Select](images/select-style-5.png)
+  </div>
+</div>
 _Structure and spacing measurements for Small Select | px / rem_
 
----
-***
-> 
-![Structure and spacing measurements for Small Select](images/select-style-5.png)
 _Examples of open and disabled Small Select states_
+

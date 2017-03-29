@@ -21,4 +21,5 @@ All tags have the same height. However, the width of tags varies based on the am
 ***
 > 
 ![Structure and spacing measurements](images/tag-style-1.png)
+
 _Structure and spacing measurements for a Tag | px / rem_

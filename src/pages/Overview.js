@@ -105,12 +105,12 @@ class Overview extends React.Component {
               </div>
               <div className="overview-page__tile--content">
                 <p className="overview-page__tile--heading">
-                  Design Kit
+                  Carbon design kit
                 </p>
                 <p className="overview-page__tile--text">
                   The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
                 </p>
-                <a href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile--link">Get the kit</a>
+                <a href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile--link">Get the Sketch kit</a>
               </div>
             </div>
             <div className="overview-page__tile">
@@ -119,12 +119,12 @@ class Overview extends React.Component {
               </div>
               <div className="overview-page__tile--content">
                 <p className="overview-page__tile--heading">
-                  Component Library
+                  Carbon component library
                 </p>
                 <p className="overview-page__tile--text">
-                  The component library gives developers a collection of re-usable HTML and Sass partialst for building their products.
+                  The component library gives developers a collection of re-usable HTML and Sass partials for building their products.
                 </p>
-                <a href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile--link">Go to repo</a>
+                <a href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile--link">Component GitHub repo</a>
               </div>
             </div>
           </div>

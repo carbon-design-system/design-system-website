@@ -23,12 +23,17 @@ class ComponentExample extends Component {
       [`${component}`]: true,
     });
 
+    const lightUIclassnames = classnames({
+      'component-example': true,
+      'bx--global-light-ui': component === 'tabs'
+    });
+
     const componentLink = (component === 'detail-page-header') ?
       `/components/${variation}/live` :
       `/components/${component}/live`;
 
     return (
-      <div className="component-example bx--global-light-ui">
+      <div className={lightUIclassnames}>
         <div className="svg--sprite" dangerouslySetInnerHTML={{ __html: svgSprite }} />
         <div className="component-example__live">
           <div className={classNames}>

@@ -10,6 +10,7 @@
 ***
 > 
 ![Example of normal, hover, and disabled link states](images/link-style-1.png)
+
 _Normal, hover disabled Link states_
 
 ## Typography
@@ -33,4 +34,5 @@ Links can be grouped horizontally or vertically and must be underlined.
 ***
 > 
 ![Link structure and spacing measurements ](images/link-style-2.png)
+
 _Structure and spacing measurements for Link | px / rem_

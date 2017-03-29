@@ -105,6 +105,7 @@ class SideNav extends Component {
             className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"
+            target="_blank"
             iconDescription="sidenav link icon"
           >Design Kit
           </Button>
@@ -113,8 +114,9 @@ class SideNav extends Component {
             className="side-nav__link bx--btn"
             kind="secondary"
             icon="arrow--right"
+            target="_blank"
             iconDescription="sidenav link icon"
-          >Developer Kit
+          >GitHub Repo
           </Button>
         </div>
         <div className="side-nav__footer">

@@ -15,6 +15,7 @@ All steps that have already been completed are indicated by an outlined circle w
 ***
 > 
 ![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
+
 _Examples of current, completed, and future steps for Progress Indicator_
 
 ## Typography

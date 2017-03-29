@@ -35,4 +35,5 @@ The width of an uploaded file varies based on the content and layout of a design
 ***
 > 
 ![Structure and spacing measurements for File Uploader](images/file-uploader-style-1.png)
+
 _Structure and spacing measurements for File Uploader | px / rem_
