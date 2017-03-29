@@ -9,7 +9,7 @@
       "Simple Table"
     ],
     "toolbar": [
-      "Tool bar"
+      "Toolbar"
     ]
   },
   "__content": "\n"

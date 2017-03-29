@@ -6,5 +6,5 @@ variations:
   data-table--simple:
   - Simple Table
   toolbar:
-  - Tool bar
+  - Toolbar
 ---
