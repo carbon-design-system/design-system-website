@@ -7,7 +7,8 @@ import Packages from '../../package.json';
 
 class ComponentStatus extends React.Component {
   renderItems = (currentItem, readyIcon, underReviewIcon, deprecatedIcon, notApplicableIcon) => {
-    let status, tag;
+    let status;
+    let tag;
     if (currentItem.status === 0) {
       status = readyIcon;
     } else if (currentItem.status === 1) {
@@ -18,7 +19,7 @@ class ComponentStatus extends React.Component {
       status = notApplicableIcon;
     }
     if (currentItem.tag && currentItem.tag === 'new') {
-      tag = <span className="bx--tag bx--tag--community inline-tag">New</span>;
+      tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
     }
     return (
       <tr key={currentItem.item}>
@@ -124,7 +125,7 @@ class ComponentStatus extends React.Component {
                 </tr>
                 <tr>
                   <td>
-                    <span className="bx--tag bx--tag--community">New</span>
+                    <span className="bx--tag bx--tag--ibm">New</span>
                   </td>
                   <td></td>
                   <td>This component is brand new to our library.</td>
