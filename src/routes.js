@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, IndexRoute, IndexRedirect } from 'react-router';
+import { Route, IndexRoute, IndexRedirect } from 'react-router';
 
 //------------------------
 // Main wrapper component

@@ -27,7 +27,7 @@ var query = {
 };
 
 module.exports = {
-  devtool: 'cheap-module-source-map',
+  devtool: 'eval',
   entry: [
     require.resolve('react-dev-utils/webpackHotDevClient'),
     'babel-polyfill',
@@ -127,7 +127,7 @@ module.exports = {
       { from: 'src/assets/downloads', to: 'downloads/' },
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
-      { from: 'node_modules/carbon-icons/', to: 'carbon-icons/' },
+      { from: 'node_modules/carbon-icons/bluemix-icons.svg', to: 'carbon-icons/' },
       { from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/' }
     ]),
   ],
