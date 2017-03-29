@@ -8,7 +8,7 @@ Adopted from the <a href="https://www.ibm.com/design/language/experience/animati
 
 > “The rhythmic oscillations of tape reels in motion got us thinking about a user’s waiting experience. If a user watches search results load, showing the machine at work relays a sense of efficiency. The swift and even balance of the spinning circles indicates that progress is being made.”
 
-<video src="/images/loading-usage-1.mp4" autoplay loop></video>
+![Small loader](images/loading.gif)
 
 ## Size
 
