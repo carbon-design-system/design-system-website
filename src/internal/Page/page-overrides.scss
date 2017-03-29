@@ -36,3 +36,13 @@ div[data-page="guidelines-guidelines-content"] {
     color: $color__blue-90;
   }
 }
+
+div[data-page="guidelines-bluemix-brand"] {
+  .image-grid img {
+    margin-bottom: 1rem;
+  }
+
+  .image-grid.donts strong{
+    margin-bottom: 0 !important;
+  }
+}

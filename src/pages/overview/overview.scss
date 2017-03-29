@@ -154,6 +154,7 @@
 }
 
 .overview__letter {
+  user-select: none;
   position: relative;
   transition: transform 250ms;
   transform: scale(1);

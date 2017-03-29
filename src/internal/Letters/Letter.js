@@ -24,9 +24,11 @@ class Letter extends Component {
   }
 
   handleMouseEnter = () => {
-    this.setState({
-      hover: true,
-    });
+    if (window.innerWidth > 700) {
+      this.setState({
+        hover: true,
+      });
+    }
   }
 
   endAnimation = (evt) => {
