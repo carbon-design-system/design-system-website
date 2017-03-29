@@ -12,23 +12,19 @@
 | Caret                      | $ui-05     | #8C9BA5  |
 | Chevron                    | $brand-01  | #152935  |
 
----
-***
-> 
-![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-1.png)
-_Select and hover states for Interior Left Navigation_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-1.png)
+  </div>
+  <div>
+    ![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-2.png)
+  </div>
+</div>
 
----
-***
-> 
-![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-2.png)
-_Select and hover states for Interior Left Navigation_
-
----
-***
-> 
 ![Various select and hover states for the Interior Left Navigation](images/interior-left-nav-style-3.png)
+
 _Select and hover states for Interior Left Navigation_
+
 
 ## Typography
 
@@ -62,13 +58,13 @@ The width of the menu stays consistent, while the menu height varies based on th
 | Spacing: collapse and chevron | 12  |.75     |
 | Spacing: chevron & bottom     | 14  | .875   |
 
----
-***
-> 
-![Structure and spacing measurements for the open Interior Left Nav](images/interior-left-nav-style-4.png)
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Structure and spacing measurements for the open Interior Left Nav](images/interior-left-nav-style-4.png)
+  </div>
+  <div>
+    ![Interior left nav collapse](images/interior-left-nav-style-5.png)
+  </div>
+</div>
 
----
-***
-> 
-![Interior left nav collapse](images/interior-left-nav-style-5.png)
 _Structure and spacing measurements for open and closed Interior Left Nav | px / rem_

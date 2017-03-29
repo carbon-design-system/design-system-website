@@ -16,9 +16,13 @@ class CodePage extends Component {
     }
     if (window.CarbonComponents[currentComponent]) {
       if (currentComponent === 'Tab') {
-        window.CarbonComponents['ContentSwitcher'].init(); // eslint-disable-line
+        window.CarbonComponents.Tab.init();
+        window.CarbonComponents.ContentSwitcher.init();
+      } else if (currentComponent === 'DetailPageHeader') {
+        window.CarbonComponents.OverflowMenu.init();
+      } else {
+        window.CarbonComponents[currentComponent].init();
       }
-      window.CarbonComponents[currentComponent].init();
     }
   }
 
@@ -40,7 +44,7 @@ class CodePage extends Component {
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>
-        <ComponentExample component={parent} htmlFile={htmlFile} />
+        <ComponentExample variation={variation} component={parent} htmlFile={htmlFile} />
       </div>
     );
   }

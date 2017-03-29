@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -14,13 +13,18 @@
   &__variation {
     margin: 1rem 0;
 
-    .live-component__title {
-      font-size: 1.25rem;
-      padding-bottom: 2rem;
+    .live-component__component {
+      margin-top: 6rem;
+      padding: 1rem;
     }
 
-    .live-component__component {
-      margin-top: 2rem;
+    .live-component__title {
+      font-size: 1.25rem;
+      padding: 2rem 0 1rem;
+      position: fixed;
+      top: 3rem;
+      left: 1rem;
+      z-index: 8000;
     }
   }
 
@@ -29,6 +33,10 @@
     background-color: $color__blue-51;
     color: $color__white;
     z-index: 6000;
+    padding: 1rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
 
     &:first-letter {
       text-transform: uppercase;
@@ -44,5 +52,24 @@
     margin-left: 0;
     margin-right: .5rem;
     fill: $color__white;
+  }
+
+  .live-component-header {
+    height: 80px;
+    width: 100vw;
+    margin-top: 2rem;
+    background-color: $color__navy-gray-3;
+    position: fixed;
+    top: 6rem;
+    z-index: 8000;
+  }
+
+  .live-component__component {
+    &.detail-page-header--no-tabs,
+    &.detail-page-header--with-tabs {
+      position: relative;
+      height: 300vh;
+      margin-top: 0;
+    }
   }
 }

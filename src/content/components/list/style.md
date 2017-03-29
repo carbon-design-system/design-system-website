@@ -23,14 +23,12 @@ Level 1 unordered list points are bulleted while Level 2 points are marked with 
 |----------------------|----|------|
 | External spacing     | 16 | 1    |
 
----
-***
-> 
-![Structure and spacing measurements for ordered and unordered lists](images/list-style-1.png)
-
----
-***
-> 
-![Example of ordered list](images/list-style-2.png)
-
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Structure and spacing measurements for ordered and unordered lists](images/list-style-1.png)
+  </div>
+  <div>
+    ![Example of ordered list](images/list-style-2.png)
+  </div>
+</div>
 _Structure and spacing measurements for an ordered and an unordered List | px / rem_

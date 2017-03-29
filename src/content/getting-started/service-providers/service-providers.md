@@ -18,11 +18,11 @@ The catalog service icon is an opportunity for you to create or utilize an icon 
 
 An SVG and 4 transparent background PNGs are required for your catalog icon. Borders are used here to show total dimensions; icons should not include a border when submitted.
 
-![Catalog service icon sizing](images/service-providers-2.png)
+![Catalog service icon sizing](images/service-providers-2.svg)
 
 If you have multiple services, you should use the same icon with a different color for each service. The example here shows how a row of services from the same provider would look in the catalog.
 
-![Multiple services in the Bluemix catalog](images/service-providers-1.png)
+![Multiple services in the Bluemix catalog](images/service-providers-1.svg)
 
 #### Color
 
@@ -46,11 +46,11 @@ Make sure your Service Icon meets Bluemix's Catalog service icon guidelines, the
 
 #### Service Dashboard
 
-Service Dashboards are used for showing information and details of an instance that exists. Use the service dashboard templates in the [Carbon Design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
+Service Dashboards are used for showing information and details of an instance that exists. Use the service dashboard templates in the [Carbon design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
 
 #### Service Configuration Pages
 
-Configuration pages appear when a user has clicked on a category or service from the Bluemix catalog. Use the service configuration templates in the [Carbon Design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
+Configuration pages appear when a user has clicked on a category or service from the Bluemix catalog. Use the service configuration templates in the [Carbon design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
 
 When you have met the above requirements, schedule a playback with your design director to go over your work and gain approval.
 

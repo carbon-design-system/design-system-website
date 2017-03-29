@@ -46,3 +46,19 @@ div[data-page="guidelines-bluemix-brand"] {
     margin-bottom: 0 !important;
   }
 }
+
+div[data-page|=components-style] {
+  hr + hr + blockquote p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color__gray-3;
+    padding: 1rem 0;
+    margin-bottom: .5rem;
+
+    img {
+
+    }
+  }
+}

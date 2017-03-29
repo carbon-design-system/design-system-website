@@ -18,27 +18,21 @@ class App extends Component {
   componentDidMount() {
     this.checkWidth();
     this.addBxClasses();
-    this.highlightPrism();
+    Prism.highlightAll();
   }
 
-  componentWillUpdate = () => {
-    this.highlightPrism();
+  componentWillUpdate() {
+    Prism.highlightAll();
   }
 
   componentDidUpdate() {
     this.addBxClasses();
-    this.highlightPrism();
+    Prism.highlightAll();
   }
 
   onToggleBtnClick = () => {
     this.setState({
       isOpen: !this.state.isOpen,
-    });
-  }
-
-  highlightPrism() {
-    [...document.querySelectorAll('pre')].forEach(pre => {
-      Prism.highlightElement(pre.querySelector('code'));
     });
   }
 

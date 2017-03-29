@@ -13,8 +13,14 @@
 
   & > .detail-page-header--no-tabs > .bx--detail-page-header--no-tabs  {
     width: 100%;
-    top: 300px;
     left: 0;
+    top: 206px;
+  }
+
+  & > .detail-page-header--with-tabs > .bx--detail-page-header--with-tabs  {
+    width: 100%;
+    left: 0;
+    top: 206px;
   }
 
   & .bx--detail-page-header--with-tabs {
@@ -129,6 +135,23 @@
   & .text-input .bx--form-item {
     margin-right: 0;
   }
+
+  & .tabs {
+    .bx--tabs + div {
+      padding: 0 !important;
+      margin-top: 2rem;
+    }
+
+    #tab-panel-1,
+    #tab-panel-2,
+    #tab-panel-3,
+    #tab-panel-4,
+    #tab-panel-5 {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 .page-header + div > .bx--tabs {
@@ -137,4 +160,8 @@
   @include breakpoint('768px') {
     background-color: transparent;
   }
+}
+
+.bx--overflow-menu-options {
+  z-index: 7000;
 }

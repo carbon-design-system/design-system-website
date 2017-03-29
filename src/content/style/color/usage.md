@@ -20,7 +20,7 @@ TERM | DEFINITION
 
 VARIABLE | ROLE/S | VALUE
 ---------|--------|------
-**brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> border highlight <br /> Emphasis background | #3d70b2
+**brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2
 **brand-02** | Supporting brand <br /> brand-01 hover | #5596e6
 **brand-03** | Secondary brand <br /> Loading| #00b4a0
 **ui-01** | Primary background <br /> Layer 1 background | #ffffff
@@ -42,7 +42,7 @@ VARIABLE | ROLE/S | VALUE
 **nav-03** | Header id - services | #ba8ff7
 **nav-04** | Left nav id - services | #734098
 **nav-05** | Header id - application | #00b4a0
-**nav-06** | left nav id - application | #008571
+**nav-06** | Left nav id - application | #008571
 **nav-07** | Header id - infrastructure | #5aaafa
 **nav-08** | Left nav id - infrastructure | #3d70b2
 

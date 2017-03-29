@@ -108,12 +108,14 @@ class Page extends Component {
         }
         const compChildren = component.innerHTML;
         component.classList.add('custom-component-parent');
-        ReactDOM.render(
-          <NewComponent darkBg={needsDarkBg}>
-            {compChildren}
-          </NewComponent>,
-          component
-        );
+        if (!(component.querySelector('.image-grid'))) {
+          ReactDOM.render(
+            <NewComponent darkBg={needsDarkBg}>
+              {compChildren}
+            </NewComponent>,
+            component
+          );
+        }
       } else if (comp === 'MotionExample') {
         const props = component.dataset.props.split(',');
         ReactDOM.render(

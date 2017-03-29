@@ -41,4 +41,5 @@ Checkbox headings and labels should be sentence case, with only the first word i
 ***
 > 
 ![Checkbox structure and spacing measurements](images/checkbox-style-3.png)
+
 _Structure and spacing measurements for Checkbox | px / rem_

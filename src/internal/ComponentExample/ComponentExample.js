@@ -8,18 +8,24 @@ class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
     component: PropTypes.string,
+    variation: PropTypes.string
   }
 
   render() {
     const {
       htmlFile,
       component,
+      variation,
     } = this.props;
 
     const classNames = classnames({
       'component-example__live--rendered': true,
       [`${component}`]: true,
     });
+
+    const componentLink = (component === 'detail-page-header') ?
+      `/components/${variation}/live` :
+      `/components/${component}/live`;
 
     return (
       <div className="component-example bx--global-light-ui">
@@ -30,7 +36,7 @@ class ComponentExample extends Component {
           </div>
           <Link
             className="component-example__view-full-render"
-            to={`/components/${component}/live`}
+            to={componentLink}
           >
             View full render
           </Link>
