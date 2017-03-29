@@ -53,7 +53,7 @@ The basic table style is the required base from which tables can be developed. B
     ![Structure for a wide row Data Table](images/data-table-style-2.png)
   </div>
 </div>
-_Structure and spacing measurements for a narrow and a wide row Data Table | px / rem_
+_Structure and spacing measurements for narrow and tall rows / Data Table | px / rem_
 
 ### Data table
 

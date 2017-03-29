@@ -2,10 +2,10 @@
 
 ## Resources
 
-You can find the source file for the icon library within the [Carbon Design Kit.](https://github.com/carbon-design-system/design-kit)
+You can find the source file for the icon library within the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon design kit.</a>
 
-- [Carbon icons GitHub repo](https://github.com/carbon-design-system/carbon-icons)
-- [IBM Design Language icon library](http://www.ibm.com/design/language/resources/icon-library/)
+- <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>Carbon icons GitHub repo</a>
+- <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
 
 ## Visual usage
 
@@ -70,7 +70,7 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 - Install `@console/carbon-icons`
 - Use `svgxuse` polyfill
 
-Full installation details in [GitHub](https://github.com/carbon-design-system/carbon-icons).
+Full installation details in <a href="https://github.com/carbon-design-system/carbon-icons">Carbon icons GitHub repo.</a>
 
 ### Using SVG sprite from static assets (recommended)
 
@@ -87,7 +87,7 @@ To use SVG sprite files, they __must__ be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library page](http://carbondesignsystem.com/style/iconography) for a full list of icon names.
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="http://carbondesignsystem.com/style/iconography" target=blank>iconography library</a> page for a full list of icon names.
 
 ### CSS
 

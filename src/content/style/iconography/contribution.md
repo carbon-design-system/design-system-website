@@ -1,6 +1,6 @@
 ## Visual guidelines
 ### Adding icons
-If you would like to add an icon to our library, please submit a pull request in our [GitHub repo.](https://github.com/carbon-design-system/design-kit)
+If you would like to add an icon to our library, please submit a pull request in the Carbon design kit<a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
@@ -72,20 +72,20 @@ We use the following naming convention for SVG filenames:
 
 It's the goal of this library to make sure icons can be modified with CSS to change it's __color__ (`fill`) and __size__ (`width`, `height`).  
 
-Run SVG XML code through [SVGOMG](https://jakearchibald.github.io/svgomg/).
+Run SVG XML code through <a href="https://jakearchibald.github.io/svgomg/" target=blank>SVGOMG</a>
 Inspect the code and make sure that your XML doesn't include the following:
 
 - `<style>` tags
 - `<g>` tags
-- `class` attribtues
+- `class` attributes
 - `stroke` attributes
 - `stroke-width` attributes
 
 ### Submitting new SVGs
 
-1. Fork the [bluemix-icons](https://github.ibm.com/Bluemix/bluemix-icons) repo
+1. Fork the <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>carbon-icons</a> repo.
 2. Close the fork.
-3. Add new SVG file(s) to [svg](https://github.ibm.com/Bluemix/bluemix-icons/tree/master/svg) folder. SVG subfolders are deprecated as of version `3.0.0`.
+3. Add new SVG file(s) to <a href="https://github.com/carbon-design-system/carbon-icons/tree/master/svg" target=blank>svg</a> folder. SVG subfolders are deprecated as of version `3.0.0`.
 4. Submit a pull request
 5. Do not commit built files (files created from `npm run build` script).
 
@@ -96,5 +96,5 @@ Inspect the code and make sure that your XML doesn't include the following:
 3. `npm start` and go to [localhost:3000](http://localhost:3000/), make sure added icons are rendering correctly
 4. Optional: Go to [localhost:3000/test](http://localhost:3000/test) and test styling of icon manually using CSS.
 
-Unit tests are run against built SVG sprite files (bluemix-icons.svg and sprite.svg).
+Unit tests are run against built SVG sprite files (carbon-icons.svg and sprite.svg).
 Do not commit built files to pull requests.

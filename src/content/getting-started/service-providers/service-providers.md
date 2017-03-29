@@ -46,11 +46,11 @@ Make sure your Service Icon meets Bluemix's Catalog service icon guidelines, the
 
 #### Service Dashboard
 
-Service Dashboards are used for showing information and details of an instance that exists. Use the service dashboard templates in the [Carbon design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
+Service Dashboards are used for showing information and details of an instance that exists. Use the service dashboard templates in the [Carbon design kit](https://github.com/carbon-design-system/carbon-design-kit) as a starting point and foundation for your design.
 
 #### Service Configuration Pages
 
-Configuration pages appear when a user has clicked on a category or service from the Bluemix catalog. Use the service configuration templates in the [Carbon design Kit](https://github.com/carbon-design-system/design-kit) as a starting point and foundation for your design.
+Configuration pages appear when a user has clicked on a category or service from the Bluemix catalog. Use the service configuration templates in the [Carbon design kit](https://github.com/carbon-design-system/carbon-design-kit) as a starting point and foundation for your design.
 
 When you have met the above requirements, schedule a playback with your design director to go over your work and gain approval.
 

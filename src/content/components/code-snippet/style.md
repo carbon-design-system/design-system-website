@@ -1,12 +1,12 @@
 ## Color
 
-| COLOR                    | HEX     | SCSS      |
-|--------------------------|---------|-----------|
-| Code snippet: background | #3d70b2 | $field-01 |
-| Code snippet: text       | #152935 | $text-01  |
-| Terminal: background     | #0f212e | $nav-01   |
-| Terminal: text           | #f5f7fa | $ui-02    |
-| Icon: copy               | #3d70b2 | $brand-01 |
+| COLOR                    | SCSS     | HEX     |
+|--------------------------|----------|---------|
+| Code snippet: background | $field-01| #3d70b2 |  
+| Code snippet: text       | $text-01 | #152935 |
+| Terminal: background     | $nav-01  | #0f212e |
+| Terminal: text           | $ui-02   | #f5f7fa |
+| Icon: copy               | $brand-01| #3d70b2 |
 
 ## Typography
 

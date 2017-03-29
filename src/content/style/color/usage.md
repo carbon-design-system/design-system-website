@@ -48,13 +48,13 @@ VARIABLE | ROLE/S | VALUE
 
 ## Color contrast | WCAG AA standards
 
-All type color combinations on Carbon must pass [WCAG AA standards](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is bold (700) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
+All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is bold (700) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
 
 <div data-insert-component="ColorContrast"></div>
 
 ## Resources
 
-- [IBM accessible color guide](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
-- [IBM accessibility quick guidance](http://w3-03.ibm.com/able/devtest/quick/)
-- [Color contrast checker](https://marijohannessen.github.io/color-contrast-checker/)
-- [IBM Design Language colors](http://www.ibm.com/design/language/framework/visual/color)
+- <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>IBM accessible color guide</a>
+- <a href="http://w3-03.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
+- <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
+- <a href="http://www.ibm.com/design/language/framework/visual/color" target=blank>IBM Design Language colors</a>

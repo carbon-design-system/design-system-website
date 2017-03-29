@@ -20,23 +20,23 @@ Search functionality within a table follows [Small search](/components/search) c
 
 ### Sorting
 
-Improve table usability by making data sortable. Clickable headers enable users to sort table data up or down. The specific attribute being sorted is accompanied by a caret label.
+Improve table usability by making data sortable. Clickable headers enable users to sort table data up or down. The specific attribute being sorted is accompanied by a caret icon.
 
 ![sorting in a data table](images/data-tables-usage-1.png)
 
 ### Batch actions
 
-Batch actions are functions that may be performed on multiple items within a table. Use an [Overflow menu](/components/overflow-menu) to present batch actions to the user. The overflow menu appears when the user clicks on the icon. If there is only one batch action available for the table data, that action should be styled as a [Small button](/components/button) and live _outside_ of the Overflow menu.
+Batch actions are functions that may be performed on multiple items within a table. Use an [Overflow Menu](/components/overflow-menu) to present batch actions to the user. The Overflow Menu appears when the user clicks on the icon. If there is only one batch action available for the table data, that action should be styled as a [Small Button](/components/button) and live outside of the Overflow menu.
 
 ![batch actions in overflow menu](images/data-tables-usage-2.png)
-_Batch actions in Overflow menu_
+_Batch actions in Overflow Menu_
 
 ![batch action as small button](images/data-tables-usage-3.png)
-_One batch action in as Small button_
+_One batch action as Small Button_
 
 ### Inline actions
 
-Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [Overflow menu](/components/overflow-menu) that contains actions related specifically to that table row.
+Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [Overflow Menu](/components/overflow-menu) that contains actions related specifically to that table row.
 
 ![inline table actions](images/data-tables-usage-4.png)
 

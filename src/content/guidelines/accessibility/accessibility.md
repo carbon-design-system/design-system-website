@@ -12,7 +12,7 @@ Use natively-accessible elements in navigation to activate links, buttons, and f
 
 Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
 
-[WebAIM](http://webaim.org/techniques/skipnav/) recommends the following to enable a “Skip to content ”link.
+<a href="http://webaim.org/techniques/skipnav/" target=blank>WebAIM</a> recommends the following to enable a “Skip to content” link.
 
 ```html
 <body>
@@ -24,4 +24,3 @@ Provide a “Skip to content” option when there is lengthy navigation so a use
     </main>
 </body>
 ```
-

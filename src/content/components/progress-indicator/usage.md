@@ -14,7 +14,7 @@ Keeping the user informed of where they currently are within the process or task
 
 ### Validation
 
-Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [inline notification](/components/notification) to inform them.
+Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [Inline Notification](/components/notification) to inform them.
 
 ![Progress Indicator example](images/progress-indicator-usage-1.png)
 _In-context Progress Indicator_

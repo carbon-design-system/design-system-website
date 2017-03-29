@@ -9,9 +9,9 @@ Buttons are used primarily on action items. Some examples include **Add**, **Sav
 | Primary          | For the principle call to action on the page.                                                                                                                                                                                                                    |
 | Secondary        | For secondary actions on each page.                                                                                                                                                                                                                              |
 | Button with icon | When words are not enough, icons can be used in buttons to better communicate what the button does. Icons are always paired with text.                                                                                                                           |
-| Disabled button  | When the user cannot proceed until input is collected.                                                                                                                                                                                                           |
-| Set of Buttons   | When an action required by the user has more than one option. Always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left. |
-| Small Button     | When there is not enough vertical space for a regular sized button.           
+| Disabled button  | Use when the user cannot proceed until an input is collected.                                                                                                                                                                                                        |
+| Set of Buttons   | When an action required by the user has more than one option, always use a positive action button (primary) paired with a negative action button (secondary). Positive action buttons should be on the right, while negative action buttons will be on the left. |
+| Small Button     | Use when there is not enough vertical space for a regular sized button.           
 
 ## Labels
 
@@ -33,4 +33,4 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 ***
 > 
 ![button with icon](images/button-usage-1.png)
-_Icon usage in button_
+_Icon usage in Button_

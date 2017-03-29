@@ -36,7 +36,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 
 ## Structure
 
-The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [Iconography](/style/iconography/library) library.
+The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [iconography](/style/iconography/library) library.
 
 | PROPERTY             | PX                      | REM   |
 |----------------------|-------------------------|-------|

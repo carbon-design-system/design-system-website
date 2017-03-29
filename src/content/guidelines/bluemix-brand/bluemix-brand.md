@@ -6,7 +6,7 @@
 The Bluemix logo is the most prominent visual element associated with our identity. The logo is a combination of the icon and wordmark. We are proud of our logo and recommend the following guidelines on this page.
 
 ***
-[Download logo assets](https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
+[Download logo assets](https://github.com/carbon-design-system/carbon-design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true)
 
 ### Wordmark
 
@@ -70,7 +70,7 @@ No content is allowed in the exclusion zone. Note that the icon and wordmark are
 
 The space between the icon and wordmark is determined by the trajectory of the outer angles of the right edges of top and bottom hexagons. It is demonstrated in the above image by the dotted lines that make an “X.”
 
-| Icon type      | Minumum size     
+| Icon type      | Minimum size     
 |------------    |----------   
 | Primary icon   | 24px   
 | Decorative icon| 72px
@@ -142,4 +142,4 @@ Helvetica Neue is the official Bluemix font as well as one of the official fonts
 
 ## Parent brands
 
-Bluemix falls under two parent brands, [IBM Cloud](http://www.ibm.com/cloud-computing/) and [IBM Design.](https://www.ibm.com/design/) IBM Cloud is the product and business ecosystem in which Bluemix lives. IBM Design is the greater [design language](https://www.ibm.com/design/language/) and practices we use to design and develop Bluemix.
+Bluemix falls under two parent brands, <a href="http://www.ibm.com/cloud-computing/" target=blank>IBM Cloud</a> and <a href="https://www.ibm.com/design/" target=blank>IBM Design.</a> IBM Cloud is the product and business ecosystem in which Bluemix lives. IBM Design is the greater <a href="https://www.ibm.com/design/language/" target=blank>design language</a> and practices we use to design and develop Bluemix.

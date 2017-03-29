@@ -58,4 +58,4 @@ Ease-in does not need as much easing since it is primarily used for objects exit
 
 ### Properties
 
-The reality of the web is that [some properties](https://csstriggers.com/) are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.
+The reality of the web is that <a href="https://csstriggers.com/" target=blank>some properties</a> are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.

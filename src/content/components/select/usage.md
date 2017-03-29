@@ -10,7 +10,7 @@ Real time validation helps to streamline the process and keep data clean when th
 
 ---
 ***
-> 
+> 
 ![validation on select element](images/select-usage-1.png)
 _Validation on Select_
 
@@ -21,11 +21,11 @@ The order of the Select list should be based on the frequency of use. If applica
 ### Styling Select dropdowns
 
 It is strongly recommended not to style Select dropdowns due to accessibility purposes.
-One of the [WCAG 2.0 standards](https://www.w3.org/TR/WCAG20-TECHS/G202.html) for accessibility is “Ensuring keyboard control for all functionality.” CSS alternatives to `select` elements to not meet this requirement.
+One of the <a href="https://www.w3.org/TR/WCAG20-TECHS/G202.html" target=blank>WCAG 2.0 standards</a> for accessibility is “Ensuring keyboard control for all functionality.” CSS alternatives to `select` elements to not meet this requirement.
 
 ---
 ***
-> 
+> 
 ![Select element rendered in Chrome](images/select-usage-2.png)
 _Rendering of Select element in Chrome_
 

@@ -75,4 +75,4 @@ Please see [Dropdown](/components/dropdown/style) for additional styling specs.
 | Icon                            | 36  | 2.25 |
 
 ![Structure and spacing measurements for Detail Page Header mobile ](images/detail-page-header-style-4.png)
-_Structure and spacing measurements for Detail Page Header with tabs on mobile, Detail Page Header mobile, and Detail Page Header on scroll | px / rem_
+_Structure and spacing measurements for Detail Page Header on mobile | px / rem_

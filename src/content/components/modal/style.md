@@ -30,7 +30,7 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 | PROPERTY                  | PX | REM     |
 |---------------------------|----|---------|
-| Top border                | 5  | .313    |
+| Top border                | 5  | 0.313    |
 | X icon                    | 12 | 0.75   |
 | Footer: height            | 88 | 5.5    |
 | Spacing: internal (L,R,B) | 48 | 3       |
@@ -38,14 +38,17 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | Spacing: title & text     | 24 | 1.5     |
 | Spacing: text to footer   | 48 | 3       |
 
-![Structure and spacing measurements for passive modal](images/modal-style-1.png)
-_Structure and spacing measurements for a passive Modal | px / rem_
-![Structure and spacing measurements for transactional modal elements](images/modal-style-2.png)
-_Structure and spacing measurements for a transactional Modal | px / rem_
+![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
+_Structure and spacing measurements for a Passive Modal | px / rem_
+![Structure and spacing measurements for Transactional Modal elements](images/modal-style-2.png)
+_Structure and spacing measurements for a Transactional Modal | px / rem_
 
 ## Mobile
 
 Modals should be full screen on mobile.
 
+---
+***
+> 
 ![Modal on mobile](images/modal-style-3.png)
 _Example of a Modal on a mobile screen_

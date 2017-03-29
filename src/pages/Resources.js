@@ -15,20 +15,20 @@ class Resources extends React.Component {
           <div className="resources__top">
             <div>
               <img src={designKitImage} alt="Sketch icon" />
-              <h2>Design Kit</h2>
+              <h2>Carbon design kit</h2>
               <p>
                 The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
               </p>
-              <a href="https://github.com/carbon-design-system/design-kit" target="_blank">Design Kit</a>
+              <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank">Carbon design kit</a>
             </div>
             <div>
               <img src={githubImage} alt="Github icon" />
-              <h2>Component Library</h2>
+              <h2>Carbon component library</h2>
               <p>
-                The Component Library gives developers a collection of re-usable HTML
+                The component library gives developers a collection of re-usable HTML
                 and Sass partials they can use for building websites and user interfaces.
               </p>
-              <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Component Library</a>
+              <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Carbon component library</a>
             </div>
           </div>
           <h3 className="page__divider-heading">Additional Links</h3>
@@ -38,7 +38,7 @@ class Resources extends React.Component {
               <p>
                 Downloading and installing this plugin gives you the ability to use the Carbon Craft Library.
               </p>
-              <a href="https://github.com/carbon-design-system/design-kit" target="_blank">Craft by Invision plugin</a>
+              <a href="#">Coming soon!</a>
             </div>
             <div>
               <h4>Carbon Boilerplate</h4>
@@ -74,24 +74,14 @@ class Resources extends React.Component {
               <h4>Bluemix logo</h4>
               <p>This comprehensive file contains the various versions of the Bluemix logo.</p>
               <a
-                href="https://github.ibm.com/Bluemix/design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true"
+                href="https://github.com/carbon-design-system/carbon-design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true"
                 target="_blank"
                 className="bx--btn bx--btn--secondary"
               >
                 Download logo assets
               </a>
             </div>
-            <div>
-              <h4 className="cheat-sheet">Design System Cheat Sheet</h4>
-              <p>This card can be printed for go-to info such as color values and type sizes.</p>
-              <a
-                href="http://www.carbondesignsystem.com/assets/resources/Cheatsheet.pdf"
-                target="_blank"
-                className="bx--btn bx--btn--secondary"
-              >
-                Download cheat sheet
-              </a>
-            </div>
+
           </div>
         </div>
       </div>

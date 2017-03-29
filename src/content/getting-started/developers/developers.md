@@ -1,4 +1,4 @@
-**The _Carbon Component library_ provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
+**The _Carbon component library_ provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
 
 ## Quick start
 
@@ -13,7 +13,7 @@ $ npm install --save carbon-components
 The `global` directory includes transpiled, minified assets needed to use the Carbon Design System.
 
 
-Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommmend people use the modules to create an optimized build.
+Including the minified or the non-minified assets as well as any HTML snippets will have Carbon work for you out of the box. This methodology is appropriate for sandbox environments or testing, but we recommend people use the modules to create an optimized build.
 
 ```js
 carbon-components/
@@ -50,7 +50,7 @@ Importing a component this way will bring in any dependencies that component has
 
 #### Namespacing
 
-Carbon components are built to be included individually and not clobber global styles - all `class` attribtues are prefixed by the `bx--` moniker.
+Carbon components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker.
 
 #### Global Flags
 
@@ -67,7 +67,7 @@ Carbon exposes a few global flags to alter what CSS gets compiled.
 
 ### Using a module bundler: recommended
 
-Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component
+Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
 
 #### Initialize all instances of a component
 

@@ -43,6 +43,7 @@ The size of a header is determined by layout or template structure. Each UI may 
 We recommend using two sizes for body copy. The first is UI specific. Due to valuable screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
 
 **Standard Console: 14px / 0.875rem**
+
 **Prolonged reading: 16px / 1rem**
 
 ### Line-height
@@ -50,6 +51,7 @@ We recommend using two sizes for body copy. The first is UI specific. Due to val
 Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based on the size of the font itself. Ideal line-heights for standard copy have a ratio of 1.5. For example, a type at 1em/16px would have a line-height of 24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1.25.
 
 **Standard line-height: type size x 1.5**
+
 **Headings line-height: type size x 1.25**
 
 ### Line-length

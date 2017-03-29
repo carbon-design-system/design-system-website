@@ -9,7 +9,7 @@
 | Border-right               | $ui-04     | #dfe3e6  |
 | Footer, nav closed         | $ui-01     | #f0f3f6  |
 | Footer, nav closed: hover  | $ui-04     | #dfe3e6  |
-| Caret                      | $ui-05     | #8C9BA5  |
+| Caret                      | $ui-05     | #8c9ba5  |
 | Chevron                    | $brand-01  | #152935  |
 
 <div data-insert-component="ImageGrid">
@@ -55,8 +55,8 @@ The width of the menu stays consistent, while the menu height varies based on th
 | Height: collapse section      | 48  | 3      |
 | Spacing: internal sides       | 20  | 1.25   |
 | Spacing: top                  | 24  | 1.5    |
-| Spacing: collapse and chevron | 12  |.75     |
-| Spacing: chevron & bottom     | 14  | .875   |
+| Spacing: collapse and chevron | 12  | 0.75     |
+| Spacing: chevron & bottom     | 14  | 0.875   |
 
 <div data-insert-component="ImageGrid">
   <div>
