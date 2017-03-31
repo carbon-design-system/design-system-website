@@ -153,7 +153,7 @@ function build(previousSizeMap) {
     console.log('The ' + chalk.cyan('build') + ' folder is ready to be deployed.');
     console.log('You may also serve it locally with a static server:')
     console.log();
-    console.log('  ' + chalk.cyan('npm') +  ' run server');
+    console.log('  ' + chalk.cyan('npm') +  ' run start');
     console.log('  ' + chalk.cyan(openCommand) + ' http://localhost:8080');
     console.log();
   });
