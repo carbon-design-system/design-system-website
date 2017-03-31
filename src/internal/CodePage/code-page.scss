@@ -30,7 +30,7 @@
   }
 }
 
-div[data-page|=components-code]{
+main[data-page|=components-code]{
   h3 + h4 {
     margin-top: 1rem;
   }
@@ -56,7 +56,7 @@ div[data-page|=components-code]{
   }
 }
 
-div[data-page='components-code-button'] {
+main[data-page='components-code-button'] {
   .page_md {
     table tr td:nth-child(3) {
       white-space: nowrap;

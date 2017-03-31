@@ -29,7 +29,8 @@ class ComponentPage extends Component {
       return <LiveComponent component={currentComponent} />;
     }
 
-    const componentTitle = currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() + currentComponent.replace(/-/g, ' ').substring(1);
+    const componentTitle =
+    currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() + currentComponent.replace(/-/g, ' ').substring(1);
     const usage = require(`../../content/components/${currentComponent}/usage.md`);
     const style = require(`../../content/components/${currentComponent}/style.md`);
 

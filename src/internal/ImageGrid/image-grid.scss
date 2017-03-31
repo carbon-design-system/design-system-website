@@ -107,7 +107,7 @@
   }
 }
 
-div[data-page|=components-style] [data-insert-component="ImageGrid"] {
+main[data-page|=components-style] [data-insert-component="ImageGrid"] {
   .image-grid {
     align-items: center;
     background-color: $color__gray-3;

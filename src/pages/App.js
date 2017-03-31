@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 import debounce from 'lodash.debounce';
 import SideNav from '../internal/SideNav';
+import SideNavToggle from '../internal/SideNavToggle';
 import Prism from '../assets/syntax/prism.js';
 import '../assets/syntax/prism.css';
 import '../assets/syntax/syntax.css';
@@ -14,6 +15,7 @@ class App extends Component {
 
   state = {
     isOpen: true,
+    isFinal: false
   }
 
   componentDidMount() {
@@ -32,9 +34,25 @@ class App extends Component {
   }
 
   onToggleBtnClick = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
+    if (this.state.isOpen) {
+      this.setState({
+        isOpen: false,
+      });
+      setTimeout(() => {
+        this.setState({
+          isFinal: true
+        });
+      }, 300);
+    } else {
+      this.setState({
+        isFinal: false,
+      });
+      setTimeout(() => {
+        this.setState({
+          isOpen: true
+        });
+      }, 5);
+    }
   }
 
   addBxClasses = () => {
@@ -85,8 +103,8 @@ class App extends Component {
       this.handleClose(evt);
     });
     document.addEventListener('keydown', (evt) => {
-      const isSmallerScreen = window.innerWidth < 1024;
-      if (evt.which === 27 && this.state.isOpen && isSmallerScreen) {
+      // const isSmallerScreen = window.innerWidth < 1024;
+      if (evt.which === 27 && this.state.isOpen) {
         this.setState({
           isOpen: false
         });
@@ -118,11 +136,19 @@ class App extends Component {
       ''
     ) :
     (
-      <SideNav isOpen={this.state.isOpen} onToggleBtnClick={this.onToggleBtnClick} />
+      <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />
+    );
+    const toggleBtnContent = currentLocation === 'live' ?
+    (
+      ''
+    ) :
+    (
+      <SideNavToggle onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
     );
 
     return (
       <div className="wrapper" onLoad={this.initCustomComponents}>
+        {toggleBtnContent}
         {sideNavContent}
         <div className={classNames}>
           {this.props.children}

@@ -1,10 +1,10 @@
-div[data-page="components-form-style"] {
+main[data-page="components-form-style"] {
   #color {
     padding-bottom: 1.5rem;
   }
 }
 
-div[data-page="guidelines-general-content"] {
+main[data-page="guidelines-general-content"] {
   img[alt="voice"] {
     width: 3rem;
     margin-right: 1.7rem;
@@ -17,7 +17,7 @@ div[data-page="guidelines-general-content"] {
   }
 }
 
-div[data-page="guidelines-guidelines-content"] {
+main[data-page="guidelines-guidelines-content"] {
   img:not([alt="capitalization"]) {
     padding-bottom: 1rem;
   }
@@ -37,7 +37,7 @@ div[data-page="guidelines-guidelines-content"] {
   }
 }
 
-div[data-page="guidelines-bluemix-brand"] {
+main[data-page="guidelines-bluemix-brand"] {
   .image-grid img {
     margin-bottom: 1rem;
   }
@@ -47,7 +47,7 @@ div[data-page="guidelines-bluemix-brand"] {
   }
 }
 
-div[data-page|=components-style] {
+main[data-page|=components-style] {
   hr + hr + blockquote p {
     width: 100%;
     display: flex;
@@ -63,7 +63,7 @@ div[data-page|=components-style] {
   }
 }
 
-div[data-page="guidelines-general-content"] {
+main[data-page="guidelines-general-content"] {
   strong {
     color: $brand-01 !important;
   }

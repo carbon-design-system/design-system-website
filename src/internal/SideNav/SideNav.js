@@ -12,8 +12,16 @@ import Packages from '../../../package.json';
 class SideNav extends Component {
   static propTypes = {
     isOpen: PropTypes.bool,
+    isFinal: PropTypes.bool,
     onToggleBtnClick: PropTypes.func,
     onClick: PropTypes.func,
+  }
+
+  handleSkip = (evt) => {
+    if (evt.which === 13) {
+      document.activeElement.blur();
+      document.querySelector('#maincontent').focus();
+    }
   }
 
   renderSubNavItems = (subnav, parentItem) => {
@@ -30,8 +38,8 @@ class SideNav extends Component {
         return '';
       }
       return (
-        <li key={subNavItem} className={classNames}>
-          <Link className="sub-nav__item-link" to={link}>{subnav[subNavItem]}</Link>
+        <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
+          <Link className="sub-nav__item-link" aria-label={subnav[subNavItem]} to={link} tabIndex="-1">{subnav[subNavItem]}</Link>
         </li>
       );
     });
@@ -46,7 +54,7 @@ class SideNav extends Component {
         <p className="main-nav-item__heading">{SiteNavStructure[parentItem].title}
           <Icon className="main-nav-item__arrow" name="caret--down" description="Menu arrow icon" />
         </p>
-        <ul className="main-nav__sub-nav">
+        <ul role="menu" aria-hidden="true" className="main-nav__sub-nav">
           {subNavItems}
         </ul>
       </SideNavItem>
@@ -63,40 +71,41 @@ class SideNav extends Component {
       const isCurrentPath = currentPath[1] === navItem;
       return (
         <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
-          <Link className="main-nav-item__heading" to={`/${navItem}`}>{navItemObj.title}</Link>
+          <Link
+            aria-label={navItemObj.title}
+            tabIndex="0"
+            className="main-nav-item__heading"
+            to={`/${navItem}`}
+          >
+            {navItemObj.title}
+          </Link>
         </SideNavItem>
       );
     });
 
-
   render() {
     const {
       isOpen,
-      onToggleBtnClick,
+      isFinal,
     } = this.props;
 
     const navItems = this.renderSiteItems(SiteNavStructure);
     const classNames = classnames({
       'side-nav': true,
       'side-nav__closed': !isOpen,
+      'side-nav__closed--final': isFinal && !isOpen
     });
 
     const version = `Version: ${Packages.dependencies['carbon-components']}`;
 
     return (
-      <div className={classNames}>
-        <button onClick={onToggleBtnClick} className="side-nav__toggle-btn">
-          <div>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </div>
-        </button>
+      <nav aria-label="Page Navigation" aria-expanded={isOpen} className={classNames}>
+        <a tabIndex="0" className="skip-to-content" onKeyDown={this.handleSkip}>Skip to main content</a>
         <Link to="/" className="side-nav__logo">
           Carbon <span>Design System</span>
         </Link>
         <a href="https://github.com/carbon-design-system/carbon-components/releases" className="side-nav__version">{version}</a>
-        <ul className="side-nav__main-nav">
+        <ul role="navigation" className="side-nav__main-nav">
           {navItems}
         </ul>
         <div className="side-nav__links">
@@ -106,6 +115,7 @@ class SideNav extends Component {
             kind="secondary"
             icon="arrow--right"
             target="_blank"
+            role="button"
             iconDescription="sidenav link icon"
           >Design Kit
           </Button>
@@ -115,11 +125,12 @@ class SideNav extends Component {
             kind="secondary"
             icon="arrow--right"
             target="_blank"
+            role="button"
             iconDescription="sidenav link icon"
           >GitHub Repo
           </Button>
         </div>
-        <div className="side-nav__footer">
+        <footer className="side-nav__footer">
           <p className="side-nav__text">See something missing?</p>
           <a
             className="side-nav__github-issue-link bx--link"
@@ -127,8 +138,8 @@ class SideNav extends Component {
             target="_blank"
           >Let us know!</a>
           <p className="side-nav__copyright-text">Copyright © 2017 IBM</p>
-        </div>
-      </div>
+        </footer>
+      </nav>
     );
   }
 }

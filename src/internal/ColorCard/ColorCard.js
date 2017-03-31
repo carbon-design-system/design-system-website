@@ -44,13 +44,13 @@ class ColorCard extends Component {
     });
 
     return (
-      <div className={classNames}>
-        <div className="color__example" style={{ backgroundColor: hex }} >
+      <div tabIndex="0" className={classNames}>
+        <div tabIndex="0" className="color__example" style={{ backgroundColor: hex }} >
           <CopyToClipboard
             text={this.state.value}
             onCopy={this.toggleCopied}
           >
-            <button className={textClass}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
+            <button tabIndex="0" className={textClass}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
           </CopyToClipboard>
         </div>
         <p>{this.props.name}</p>

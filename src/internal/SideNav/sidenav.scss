@@ -1,6 +1,16 @@
-@import 'toggle-btn';
 @import 'main-nav';
 @import 'sub-nav';
+
+.skip-to-content {
+  @include hidden;
+
+  &:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: initial;
+  }
+}
 
 .side-nav {
   @include font-smoothing;
@@ -26,6 +36,10 @@
   &__closed {
     transform: translateX(-100%);
     overflow: inherit;
+  }
+
+  &__closed--final {
+    display: none;
   }
 
   &__logo {

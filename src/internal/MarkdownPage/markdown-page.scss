@@ -271,14 +271,20 @@
       img {
         width: auto;
       }
-    }
 
-    &:hover {
-
-      .image-overlay__overlay {
+      &:hover,
+      &:focus {
         opacity: 1;
       }
     }
+
+    // &:hover,
+    // &:focus {
+
+    //   .image-overlay__overlay {
+    //     opacity: 1;
+    //   }
+    // }
   }
 
   blockquote p img {

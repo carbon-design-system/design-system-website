@@ -39,6 +39,10 @@
     max-width: rem(704px);
   }
 
+  &__title--aria {
+    @include hidden;
+  }
+
   &__title--column {
     display: flex;
     flex-direction: column;
@@ -143,7 +147,10 @@
     }
 
     .overview-page__tile--heading {
+      font-size: 1rem;
       font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.5;
     }
 
     .overview-page__tile--text {

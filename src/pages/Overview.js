@@ -14,9 +14,10 @@ class Overview extends React.Component {
     const icon3 = require('../content/overview/images/icon-3.svg');
 
     return (
-      <section className="overview-page">
+      <main tabIndex="0" id="maincontent" className="overview-page">
         <div className="overview-page__top-banner">
-          <div className="overview-page__title">
+          <div className="overview-page__title" tabIndex="0">
+            <h1 className="overview-page__title--aria">Carbon Design System</h1>
             <div className="overview-page__title--column">
               <span className="overview-page__title--letter">
                 <Letter letter="C" />
@@ -104,9 +105,9 @@ class Overview extends React.Component {
                 <img alt="Tile icon 1" src={icon2} />
               </div>
               <div className="overview-page__tile--content">
-                <p className="overview-page__tile--heading">
+                <h2 className="overview-page__tile--heading">
                   Carbon design kit
-                </p>
+                </h2>
                 <p className="overview-page__tile--text">
                   The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
                 </p>
@@ -118,9 +119,9 @@ class Overview extends React.Component {
                 <img alt="Tile icon 2" src={icon3} />
               </div>
               <div className="overview-page__tile--content">
-                <p className="overview-page__tile--heading">
+                <h2 className="overview-page__tile--heading">
                   Carbon component library
-                </p>
+                </h2>
                 <p className="overview-page__tile--text">
                   The component library gives developers a collection of re-usable HTML and Sass partials for building their products.
                 </p>
@@ -129,7 +130,7 @@ class Overview extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+      </main>
     );
   }
 }

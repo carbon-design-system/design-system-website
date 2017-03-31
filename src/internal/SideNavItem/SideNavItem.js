@@ -39,6 +39,44 @@ class SideNavItem extends Component {
     }
   }
 
+  handleKeyDown = (evt) => {
+    if (evt.which === 13) {
+      const targetIsSubItem =
+        evt.target.classList.contains('sub-nav__item') ||
+        evt.target.classList.contains('sub-nav__item-link');
+      const hasSubMenu = (!(evt.currentTarget.querySelector('ul') === null));
+      if (!targetIsSubItem && hasSubMenu) {
+        const open = !this.state.open;
+        this.setState({ open });
+        const subMenu = evt.currentTarget.querySelector('ul');
+        if (!this.state.open) {
+          let height = 0;
+          [... subMenu.children].forEach(child => {
+            height += child.offsetHeight;
+          });
+          subMenu.style.maxHeight = `${height}px`;
+        } else {
+          const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+          if (!evt.currentTarget.classList.contains('main-nav-item__open') && isIE11) {
+            subMenu.style.maxHeight = 0;
+          } else if (!isIE11) {
+            subMenu.style.maxHeight = 0;
+          }
+        }
+      }
+    }
+    if (evt.which === 39) {
+      document.querySelector('#maincontent').focus();
+    }
+    [... evt.currentTarget.querySelectorAll('.sub-nav__item')].forEach(link => {
+      if (this.state.open) {
+        link.querySelector('a').tabIndex = 0;
+      } else {
+        link.querySelector('a').tabIndex = -1;
+      }
+    });
+  }
+
   render() {
     const {
       children,
@@ -51,8 +89,10 @@ class SideNavItem extends Component {
       'main-nav-item__active': isActiveItem
     });
 
+    const tabIndex = (children.length) ? 0 : -1;
+
     return (
-      <li className={classNames} onClick={this.handleClick}>
+      <li role="menuitem" tabIndex={tabIndex} className={classNames} onClick={this.handleClick} onKeyDown={this.handleKeyDown}>
         {children}
       </li>
     );

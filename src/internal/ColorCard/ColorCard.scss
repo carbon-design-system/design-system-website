@@ -46,9 +46,12 @@
     opacity: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  button:focus {
     cursor: pointer;
     transform: scale(1.1);
+    opacity: 1;
 
     button {
       opacity: 1;

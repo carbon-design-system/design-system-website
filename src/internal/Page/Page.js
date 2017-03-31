@@ -25,6 +25,7 @@ class Page extends Component {
   componentDidMount() {
     this.updateClasses();
     this.addCustomComponent();
+    this.addTabIndex();
     this.colorHex();
     document.title = `Carbon Design System | ${this.props.title}`;
   }
@@ -32,8 +33,22 @@ class Page extends Component {
   componentDidUpdate() {
     this.updateClasses();
     this.addCustomComponent();
+    this.addTabIndex();
     this.colorHex();
     document.title = `Carbon Design System | ${this.props.title}`;
+  }
+
+  handleKeyDown = (evt) => {
+    if (evt.shiftKey && evt.keyCode === 9) {
+      console.log(document.querySelector('.sub-nav__item.selected').querySelector('a'));
+      document.querySelector('.sub-nav__item.selected').querySelector('a').focus();
+    }
+  }
+
+  addTabIndex = () => {
+    [... document.querySelectorAll('h2')].forEach(heading => {
+      heading.tabIndex = 0; //eslint-disable-line
+    });
   }
 
   addPageClass = () => {
@@ -155,13 +170,13 @@ class Page extends Component {
     const pageContent = (contentType === 'object' || title === '') ?
       content : <MarkdownPage content={content} />;
     return (
-      <div data-page={this.addPageClass()}>
+      <main id="maincontent" tabIndex="0" data-page={this.addPageClass()} onKeyDown={this.handleKeyDown}>
         <PageHeader
           label={label}
           title={title}
         />
         {pageContent}
-      </div>
+      </main>
     );
   }
 }
