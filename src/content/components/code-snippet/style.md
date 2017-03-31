@@ -37,4 +37,5 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 ***
 > 
 ![](images/code-snippet-style-3.png)
+
 _Structure and spacing measurements for Copy | px / rem_
