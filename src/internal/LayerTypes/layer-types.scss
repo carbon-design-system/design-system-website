@@ -51,7 +51,7 @@
   }
 
   &__layer-12 {
-    @include layer('pop-out');
+    @include layer('sticky-nav');
   }
 
   &__layer-16 {
@@ -59,6 +59,6 @@
   }
 
   &__layer-24 {
-    @include layer('sticky-nav');
+    @include layer('pop-out');
   }
 }

@@ -85,8 +85,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "front-matter": "node scripts/frontmatter.js",
-    "server": "node index.js",
-    "start": "concurrently \"npm run dev\" \"babel-watch index.js\""
+    "start": "node index.js",
+    "server": "concurrently \"npm run dev\" \"babel-watch index.js\""
   },
   "jest": {
     "collectCoverageFrom": [
