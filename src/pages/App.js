@@ -56,6 +56,19 @@ class App extends Component {
     });
   }
 
+  handleClose = (evt) => {
+    let isTarget = false;
+    if (document.querySelector('.side-nav')) {
+      isTarget = document.querySelector('.side-nav').contains(evt.target);
+    }
+    const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
+    if (!isTarget && isSmallerScreen) {
+      this.setState({
+        isOpen: false
+      });
+    }
+  }
+
   checkWidth = () => {
     const width = window.innerWidth;
     if (width < 1024) {
@@ -66,16 +79,10 @@ class App extends Component {
     const debouncedResize = debounce(this.handleResize, 1000);
     window.addEventListener('resize', debouncedResize);
     document.addEventListener('click', (evt) => {
-      let isTarget = false;
-      if (document.querySelector('.side-nav')) {
-        isTarget = document.querySelector('.side-nav').contains(evt.target);
-      }
-      const isSmallerScreen = window.innerWidth < 1024;
-      if (!isTarget && isSmallerScreen) {
-        this.setState({
-          isOpen: false
-        });
-      }
+      this.handleClose(evt);
+    });
+    document.addEventListener('touchstart', (evt) => {
+      this.handleClose(evt);
     });
     document.addEventListener('keydown', (evt) => {
       const isSmallerScreen = window.innerWidth < 1024;
