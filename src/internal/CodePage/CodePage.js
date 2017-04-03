@@ -26,6 +26,7 @@ class CodePage extends Component {
         window.CarbonComponents.Toolbar.init();
       } else if (currentComponent === 'DetailPageHeader') {
         window.CarbonComponents.OverflowMenu.init();
+        window.CarbonComponents.Tab.init();
       } else {
         window.CarbonComponents[currentComponent].init();
       }

@@ -28,6 +28,10 @@ class LiveComponent extends Component {
         window.CarbonComponents.DataTable.init();
         window.CarbonComponents.Toolbar.init();
       } else {
+        if (this.props.component === 'detail-page-header--with-tabs') {
+          window.CarbonComponents.Tab.init();
+          window.CarbonComponents.OverflowMenu.init();
+        }
         window.CarbonComponents[currentComponent].init();
       }
     }

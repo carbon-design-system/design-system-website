@@ -47,6 +47,11 @@
     margin-right: 0;
   }
 
+  & .bx--detail-page-header--with-tabs .bx--tabs {
+    background-color: $ui-01;
+  }
+
+  & .bx--detail-page-header--with-tabs .bx--tabs__nav--hidden,
   & .tabs .bx--tabs__nav--hidden {
     display: none;
 
@@ -108,6 +113,18 @@
 
     .bx--tabs__nav {
       bottom: 0;
+    }
+
+    & li:not(.bx--tabs__nav-item--selected) {
+      .bx--tabs__nav-link {
+        color: $text-01;
+      }
+    }
+
+    & .bx--tabs__nav-item:hover {
+      .bx--tabs__nav-link {
+        color: $brand-01 !important;
+      }
     }
   }
 
