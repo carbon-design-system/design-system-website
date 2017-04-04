@@ -48,22 +48,6 @@
   }
 }
 
-.icon__card {
-  background: $color__navy-gray-9;
-  height: 10rem;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    .icon__actions {
-      opacity: 1;
-    }
-  }
-}
-
 .icon__actions {
   position: absolute;
   display: flex;
@@ -77,6 +61,30 @@
   background-color: $brand-02;
   transition: $transition--base;
   opacity: 0;
+
+  &.displayed {
+    opacity: 1;
+  }
+}
+
+.icon__card {
+  background: $color__navy-gray-9;
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  .icon__actions:focus,
+  button:focus,
+  a:focus {
+    .icon__actions {
+      opacity: 1;
+    }
+  }
 }
 
 .icon-button {

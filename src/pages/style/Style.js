@@ -11,8 +11,11 @@ class Style extends React.Component {
   }
 
   render() {
-    const paramsName = this.props.params.name;
-    const paramsPage = this.props.params.page;
+    const {
+      params
+    } = this.props;
+    const paramsName = params.name;
+    const paramsPage = params.page;
     const title = paramsName.charAt(0).toUpperCase() + paramsName.substring(1);
     let content;
     if (paramsName === 'colors') {

@@ -27,6 +27,14 @@ class IconCard extends Component {
     }, 2500);
   }
 
+  handleFocus = () => {
+    this.iconActions.classList.add('displayed');
+  }
+
+  handleBlur = () => {
+    this.iconActions.classList.remove('displayed');
+  }
+
   render() {
     const name = `${this.props.name}.svg`;
     const path = this.props.path || null;
@@ -36,22 +44,23 @@ class IconCard extends Component {
     </svg>`;
     return (
       <div className="icon">
-        <div className="icon__card">
+        <div tabIndex="0" className="icon__card">
           <Icon
             name={this.props.name}
             description={this.props.name}
             height={this.props.height}
             width={this.props.width}
             viewBox={this.props.viewBox}
+            tabIndex="-1"
           />
-          <div className="icon__actions">
+          <div ref={(iconActions) => { this.iconActions = iconActions; }} className="icon__actions" onBlur={this.handleBlur}>
             <CopyToClipboard
               text={icon}
               onCopy={this.toggleCopied}
             >
-              <Button className="icon-button">{this.state.displayCopied ? 'Icon Copied!' : 'Copy Icon'}</Button>
+              <Button onFocus={this.handleFocus} tabIndex={0} className="icon-button">{this.state.displayCopied ? 'Icon Copied!' : 'Copy Icon'}</Button>
             </CopyToClipboard>
-            <Button href={path} className="icon-button" download={name}>Download</Button>
+            <Button onFocus={this.handleFocus} tabIndex={0} href={path} className="icon-button" download={name}>Download</Button>
           </div>
         </div>
         <h5>{this.props.name}</h5>

@@ -39,7 +39,6 @@ a {
   @include font-smoothing;
   color: $color__blue-51;
   font-weight: 600;
-  transition: 250ms color, 250ms background-color !important;
 
   &:hover {
     color: $color__blue-40;

@@ -14,10 +14,10 @@ class Overview extends React.Component {
     const icon3 = require('../content/overview/images/icon-3.svg');
 
     return (
-      <main tabIndex="0" id="maincontent" className="overview-page">
-        <div className="overview-page__top-banner">
-          <div className="overview-page__title" tabIndex="0">
-            <h1 className="overview-page__title--aria">Carbon Design System</h1>
+      <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
+        <h1 id="page-title" className="overview-page__title--aria" aria-label="Carbon Design System">Carbon Design System</h1>
+        <div className="overview-page__top-banner" aria-hidden="true">
+          <div className="overview-page__title">
             <div className="overview-page__title--column">
               <span className="overview-page__title--letter">
                 <Letter letter="C" />
@@ -94,7 +94,7 @@ class Overview extends React.Component {
             </div>
             <div className="overview-page__main-intro--content">
               <p className="overview-page__main-intro--text">Carbon, in nature, allows for complex structures to be made from simpler compounds. The Carbon Design System is a series of individual styles and components, that when combined make beautiful, intuitive designs. These designs are systemic and logical, as they all follow the same universal principles.</p>
-              <Link className="overview-page__main-intro--link bx--btn bx--btn--secondary" to="/components/accordion/code">
+              <Link tabIndex="0" className="overview-page__main-intro--link bx--btn bx--btn--secondary" to="/components/accordion/code">
                 Explore the system
               </Link>
             </div>
@@ -111,7 +111,12 @@ class Overview extends React.Component {
                 <p className="overview-page__tile--text">
                   The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
                 </p>
-                <a href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile--link">Get the Sketch kit</a>
+                <a
+                  href="https://github.com/carbon-design-system/carbon-design-kit"
+                  className="overview-page__tile--link"
+                >
+                Get the Sketch kit
+                </a>
               </div>
             </div>
             <div className="overview-page__tile">
@@ -122,10 +127,17 @@ class Overview extends React.Component {
                 <h2 className="overview-page__tile--heading">
                   Carbon component library
                 </h2>
-                <p className="overview-page__tile--text">
+                <p
+                  className="overview-page__tile--text"
+                >
                   The component library gives developers a collection of re-usable HTML and Sass partials for building their products.
                 </p>
-                <a href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile--link">Component GitHub repo</a>
+                <a
+                  href="https://github.com/carbon-design-system/carbon-components"
+                  className="overview-page__tile--link"
+                >
+                Component GitHub repo
+                </a>
               </div>
             </div>
           </div>

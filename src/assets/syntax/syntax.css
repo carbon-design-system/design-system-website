@@ -63,10 +63,13 @@ pre[class*="language-"] {
   color: #5A6872;
 }
 
-.token.operator,
+.token.operator {
+  color: #5a6872;
+}
+
 .token.boolean,
 .token.number {
-  color: #c76b29;
+  color: #006456;
 }
 
 .token.property {
@@ -101,7 +104,7 @@ pre[class*="language-"] {
 .token.control,
 .token.directive,
 .token.unit {
-  color: #5AAAFA;
+  color:#006456;
 }
 
 .token.statement,

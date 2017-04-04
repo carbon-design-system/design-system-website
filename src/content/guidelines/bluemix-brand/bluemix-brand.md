@@ -1,4 +1,4 @@
-**_Brand_ is the unified experience the Bluemix identity and purpose. It is how Bluemix users perceive it and what it feels like when they interact with the product.**
+**_Brand_ is the unified experience that Bluemix presents to users, regardless of medium or environment. It reflects the Bluemix identity and purpose; it is more than what Bluemix looks like, it is who we are. Brand is how Bluemix users perceive it and what it feels like when they interact with the product.**
 
 ## Bluemix logo
 ![Bluemix logo](images/bluemix-1.0.svg)

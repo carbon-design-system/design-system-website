@@ -21,12 +21,11 @@ class Content extends React.Component {
     const glossary = require('../../data/guidelines/glossary.js'); // eslint-disable-line
     const glossaryIntro = md.renderInline(require('../../content/guidelines/content/content-glossary-intro.md'));
     const tabs = ['general', 'guidelines', 'glossary'];
+    const glossaryNavContent = (currentPage === 'glossary') ? <GlossaryNav /> : '';
     let page = 'general';
     if (currentPage) {
       page = currentPage;
     }
-
-    const glossaryNavContent = (currentPage === 'glossary') ? <GlossaryNav /> : '';
 
     return (
       <PageTabs tabs={tabs} currentPage={page}>

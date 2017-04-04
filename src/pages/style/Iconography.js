@@ -71,7 +71,7 @@ class Iconography extends React.Component {
             <h2>Icon library</h2>
             <em className="version">Version {packageVer}</em>
             <div className="icon-container">
-              <Search small onChange={this.handleSearch} placeHolderText="Search the icon library"></Search>
+              <Search small onChange={this.handleSearch} placeHolderText="Search the icon library" aria-label="Icon library search"></Search>
               {this.renderIconCards(IconList)}
             </div>
           </div>

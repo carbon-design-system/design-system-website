@@ -23,9 +23,13 @@ class ComponentPage extends Component {
   }
 
   render() {
-    const currentComponent = this.props.params.name;
+    const {
+      params
+    } = this.props;
 
-    if (this.props.params.page === 'live') {
+    const currentComponent = params.name;
+
+    if (params.page === 'live') {
       return <LiveComponent component={currentComponent} />;
     }
 
@@ -35,7 +39,7 @@ class ComponentPage extends Component {
     const style = require(`../../content/components/${currentComponent}/style.md`);
 
     const content = (
-      <Tabs key={this.props.params.name} className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
+      <Tabs key={params.name} className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
         <Tab href={`/components/${currentComponent}/code`} label="Code" onClick={this.updateTab}>
           <CodePage component={currentComponent} />
         </Tab>

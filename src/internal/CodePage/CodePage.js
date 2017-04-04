@@ -94,7 +94,7 @@ class CodePage extends Component {
     }
 
     return (
-      <div tabIndex="0" className="page code-page">
+      <div className="page code-page test">
         <p className="page__desc" dangerouslySetInnerHTML={{ __html: description }} />
         {componentContent}
         {javascriptContent}

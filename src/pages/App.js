@@ -64,7 +64,7 @@ class App extends Component {
         overlay.setAttribute('target', '__blank');
         overlay.setAttribute('href', image.src);
         overlay.innerHTML = `
-          <img class="ibm-eye" src=${ibmEye} />
+          <img class="ibm-eye" alt="ibm eye icon" src=${ibmEye} />
           <p>View at 100%</p>
         `;
         overlay.classList.add('image-overlay__overlay');
@@ -103,7 +103,6 @@ class App extends Component {
       this.handleClose(evt);
     });
     document.addEventListener('keydown', (evt) => {
-      // const isSmallerScreen = window.innerWidth < 1024;
       if (evt.which === 27 && this.state.isOpen) {
         this.setState({
           isOpen: false

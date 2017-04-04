@@ -69,7 +69,7 @@ Carbon exposes a few global flags to alter what CSS gets compiled.
 
 Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
 
-#### Initialize all instances of a component
+#### Initialize all instances of a component using a module bundler
 
 ```js
 import { Modal } from 'carbon-components'
@@ -87,7 +87,7 @@ for {
 Modal.init(myModal);
 ```
 
-#### Reference a previously initialized component
+#### Reference a previously initialized component using a module bundler
 
 ```js
 import { Modal } from 'carbon-components';
@@ -99,7 +99,7 @@ const myModalInstance = Modal.components.get(myModal);
 
 Users can also opt to use the pre-compiled `carbon-components.js` file directly. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using. By default, including the javascript file will automatically instantiate any component on the page as well as create a global objected called `CarbonComponents`.
 
-#### Initialize all instances of a component
+#### Initialize all instances of a component using the compiled file directly
 
 ```html
 <html>
@@ -137,7 +137,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-#### Reference a previously initialized component
+#### Reference a previously initialized component using the compiled file directly
 
 ```html
 <html>

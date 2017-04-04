@@ -10,7 +10,7 @@ Experimental is the place for early-stage testing of your service. This stage is
 
 Beta approval allows your service to be available in the public catalog. Before your offering can reach the Beta stage it must meet the following pre-beta requirements.
 
-### Design Requirements
+### Design Requirements for Experimental & Pre-Beta
 
 #### Catalog Service Icon
 
@@ -58,7 +58,7 @@ When you have met the above requirements, schedule a playback with your design d
 
 Welcome to Beta, where the bulk of the work happens to make your service better than ever.
 
-### Design Requirements
+### Design Requirements for Beta
 
 #### Net Promoter Score
 

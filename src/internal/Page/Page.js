@@ -39,8 +39,7 @@ class Page extends Component {
   }
 
   handleKeyDown = (evt) => {
-    if (evt.shiftKey && evt.keyCode === 9) {
-      console.log(document.querySelector('.sub-nav__item.selected').querySelector('a'));
+    if (evt.keyCode === 37) {
       document.querySelector('.sub-nav__item.selected').querySelector('a').focus();
     }
   }
@@ -170,7 +169,7 @@ class Page extends Component {
     const pageContent = (contentType === 'object' || title === '') ?
       content : <MarkdownPage content={content} />;
     return (
-      <main id="maincontent" tabIndex="0" data-page={this.addPageClass()} onKeyDown={this.handleKeyDown}>
+      <main role="main" id="maincontent" aria-labelledby="page-title" tabIndex="-1" data-page={this.addPageClass()} onKeyDown={this.handleKeyDown}>
         <PageHeader
           label={label}
           title={title}

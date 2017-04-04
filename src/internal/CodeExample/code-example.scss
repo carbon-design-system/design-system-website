@@ -33,6 +33,10 @@ $temp-text: $color__blue-90;
   cursor: pointer;
   z-index: 20;
 
+  &:focus {
+    @include focus-outline;
+  }
+
   &:hover svg {
     fill: $brand-02;
   }

@@ -7,8 +7,13 @@
   .main-nav-item {
     padding: .225rem 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color__blue-51;
+    }
+
+    &:focus {
+      outline: 0;
     }
 
     &__heading {
@@ -41,10 +46,6 @@
 
     &__open {
 
-      & .main-nav__sub-nav {
-        // max-height: 60rem;
-      }
-
       & .main-nav-item__arrow {
         transform: rotate(-180deg);
       }
@@ -59,10 +60,16 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
+      
       .main-nav-item__heading {
         color: $color__blue-51;
       }
+    }
+
+    &:focus {
+      outline: 0;
     }
   }
 }

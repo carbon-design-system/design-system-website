@@ -21,7 +21,6 @@ class SideNavToggle extends Component {
     return (
       <button
         aria-label="Toggle Side Navigation"
-        tabIndex="0"
         onClick={onToggleBtnClick}
         className={classNames}
       >

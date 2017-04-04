@@ -114,7 +114,7 @@ class MotionExample extends Component {
             <path d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"></path>
           </g>
           <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
-          <g id="standard-curve" fill="none" fillRule="evenodd">
+          <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
               d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"
@@ -137,7 +137,7 @@ class MotionExample extends Component {
             <path d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"></path>
           </g>
           <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
-          <g id="out-curve" fill="none" fillRule="evenodd">
+          <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
               d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"
@@ -160,7 +160,7 @@ class MotionExample extends Component {
             <path d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"></path>
           </g>
           <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
-          <g id="in-curve" fill="none" fillRule="evenodd">
+          <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
               d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"
@@ -179,7 +179,7 @@ class MotionExample extends Component {
         onMouseOver={this.overlayMouseOver}
         onMouseOut={this.overlayMouseOut}
       >
-        <button className="motion-example__button">
+        <button className="motion-example__button" aria-label="Play motion example">
           <svg
             width="99px"
             height="100px"

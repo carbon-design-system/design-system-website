@@ -34,7 +34,7 @@ class ComponentExample extends Component {
 
     return (
       <div className={lightUIclassnames}>
-        <div className="svg--sprite" dangerouslySetInnerHTML={{ __html: svgSprite }} />
+        <div className="svg--sprite" aria-hidden="true" dangerouslySetInnerHTML={{ __html: svgSprite }} />
         <div className="component-example__live">
           <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />

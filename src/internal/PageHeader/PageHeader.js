@@ -12,10 +12,12 @@ class PageHeader extends Component {
       title,
     } = this.props;
 
+    let labelContent = (label) ? <h4 className="page-header__label">{label}</h4> : <div className="page-header__label"></div>;
+
     return (
       <div className="page-header">
-        <h4 className="page-header__label">{label}</h4>
-        <h1 className="page-header__title">{title}</h1>
+        {labelContent}
+        <h1 id="page-title" className="page-header__title">{title}</h1>
       </div>
     );
   }

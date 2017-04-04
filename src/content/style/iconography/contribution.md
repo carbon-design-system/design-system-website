@@ -1,6 +1,6 @@
 ## Visual guidelines
 ### Adding icons
-If you would like to add an icon to our library, please submit a pull request in the Carbon design kit<a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
+If you would like to add an icon to our library, please submit a pull request in the Carbon design kit <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 

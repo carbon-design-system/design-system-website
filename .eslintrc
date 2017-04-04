@@ -6,7 +6,7 @@
       "comma-dangle": 0,
       "max-len": [
         2,
-        130,
+        180,
         4
       ],
       "no-underscore-dangle": 0,

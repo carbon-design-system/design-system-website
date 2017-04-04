@@ -34,7 +34,8 @@
     justify-content: center;
     transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
 
-    &--hover {
+    &--hover,
+    &:focus {
       opacity: .6;
     }
   }

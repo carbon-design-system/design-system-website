@@ -6,7 +6,7 @@
   transition: .3s;
 
   .main-nav-item__open & {
-    max-height: 70rem;
+    max-height: 100rem;
   }
 
   .sub-nav__item {
@@ -22,8 +22,13 @@
       padding: .5rem .5rem .5rem 2rem;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color__blue-51;
+    }
+
+    &:focus {
+      outline: 0;
     }
 
     &:first-child {
@@ -35,6 +40,16 @@
       text-decoration: none;
       cursor: pointer;
       font-weight: normal;
+
+      &:hover,
+      &:focus {
+        color: $color__blue-51;
+      }
+
+      &:focus {
+        outline: 0;
+        font-weight: 700;
+      }
     }
 
     &.selected {
