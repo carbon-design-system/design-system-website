@@ -1,6 +1,6 @@
 ## Principles
 
-Motion is an indicator of life, it breathes soul into a static object—giving it a certain personality, tone, rhythm, and purpose. When used properly, motion design should feel like a well choreographed dance, with all of the elements acting and reacting to one another in sync. Start with a clear objective, layering in movements that mimic reality and guide the user through an interface.
+Motion brings personality, tone, rhythm, and purpose to otherwise static objects. When used properly, UI motion should feel like a well choreographed dance, with all of the elements acting and reacting to one another in sync. Start with a clear objective, layering in movements that mimic reality and guide the user through an interface.
 
 ### Purposeful
 
