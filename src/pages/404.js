@@ -10,7 +10,7 @@ class FourOhFour extends React.Component {
           <Letter letter="E" active purple className="fourohfour-letter" />
           <Letter letter="R" className="fourohfour-letter" />
           <Letter letter="R" className="fourohfour-letter" />
-          <Letter letter="O" active className="fourohfour-letter" />
+          <Letter letter="O" active green className="fourohfour-letter" />
           <Letter letter="R" className="fourohfour-letter" />
         </div>
 

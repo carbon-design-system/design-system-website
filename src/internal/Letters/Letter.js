@@ -7,6 +7,7 @@ class Letter extends Component {
     letter: PropTypes.string,
     active: PropTypes.bool,
     purple: PropTypes.bool,
+    green: PropTypes.bool,
     className: PropTypes.string,
   }
 
@@ -15,7 +16,7 @@ class Letter extends Component {
     hover: false,
   }
 
-  getLetterSVG = (letter) => <LetterSVG letter={letter} purple={this.props.purple} />;
+  getLetterSVG = (letter) => <LetterSVG letter={letter} purple={this.props.purple} green={this.props.green} />;
 
   handleClick = () => {
     this.setState({

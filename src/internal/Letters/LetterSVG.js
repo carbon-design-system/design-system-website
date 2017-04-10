@@ -4,6 +4,7 @@ class LetterSVG extends Component {
   static propTypes = {
     letter: PropTypes.string,
     purple: PropTypes.bool,
+    green: PropTypes.bool,
   }
 
   state = {
@@ -63,7 +64,7 @@ class LetterSVG extends Component {
     ),
     O: (
       <svg viewBox="0 0 64.42 60.37">
-        <circle fill="#efc100" cx="36.17" cy="28.25" r="28.25" />
+        <circle fill={this.props.green ? '#8cd211' : '#efc100'} cx="36.17" cy="28.25" r="28.25" />
         <path fill="#152935" d="M29.25 60.37A29.25 29.25 0 1 1 58.5 31.12a29.25 29.25 0 0 1-29.25 29.25zm0-56.5A27.25 27.25 0 1 0 56.5 31.12 27.25 27.25 0 0 0 29.25 3.87z" />
       </svg>
     ),
