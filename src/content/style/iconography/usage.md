@@ -131,16 +131,26 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 
 ### Accessibility
 
-For screen reader accessibility, use `<title>` element and `aria-labelledby` attribute.
+For screen reader accessibility, provide a context-rich title for the SVG using `<title>` element.
 
 ```html
-<svg class="icon--add" aria-labelledby="add">
-  <title id="add">Add a new service</title>
-  <use xlink:href="https://dev-console.stage1.ng.bluemix.net/api/v4/img/sprite.svg#common--add"></use>
+<svg>
+  <title>Add a new service</title>
+  <use xlink:href="/carbon-icons/dist/icon--add--glyph"></use>
 </svg>
 ```
 
-The `aria-labelledby` attribute will reference the `id` attribute in the the `<title>` element.
+If support for older browsers is needed, use `aria-labelledby` attribute to reference the `<title>` element using an `id`.
+The `<title>` element will be read by the screen reader to the user so it should describe its purpose.
 Make sure that you do not duplicate this `id`.
 
-The `<title>`element will be read by the screen reader to the user so it should describe it's purpose.
+```html
+<svg aria-labelledby="add">
+  <title id="add">Add a new service</title>
+  <use xlink:href="/carbon-icons/dist/icon--add--glyph"></use>
+</svg>
+```
+
+For more details on accessibility, see the following resources: 
+- "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
+- "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)
