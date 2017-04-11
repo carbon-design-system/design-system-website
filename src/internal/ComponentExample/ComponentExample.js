@@ -8,8 +8,8 @@ class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
     component: PropTypes.string,
-    variation: PropTypes.string
-  }
+    variation: PropTypes.string,
+  };
 
   render() {
     const {
@@ -25,16 +25,20 @@ class ComponentExample extends Component {
 
     const lightUIclassnames = classnames({
       'component-example': true,
-      'bx--global-light-ui': component === 'tabs'
+      'bx--global-light-ui': component === 'tabs',
     });
 
-    const componentLink = (component === 'detail-page-header') ?
-      `/components/${variation}/live` :
-      `/components/${component}/live`;
+    const componentLink = component === 'detail-page-header'
+      ? `/components/${variation}/live`
+      : `/components/${component}/live`;
 
     return (
       <div className={lightUIclassnames}>
-        <div className="svg--sprite" aria-hidden="true" dangerouslySetInnerHTML={{ __html: svgSprite }} />
+        <div
+          className="svg--sprite"
+          aria-hidden="true"
+          dangerouslySetInnerHTML={{ __html: svgSprite }}
+        />
         <div className="component-example__live">
           <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />

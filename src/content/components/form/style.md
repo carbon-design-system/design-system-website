@@ -29,10 +29,9 @@ All icons can be found on the [iconography](/style/iconography/library) library 
 <div data-insert-component="ImageGrid">
   <div>
     ![Structure and spacing measurements for a single column form](images/form-style-1.png)
-    _Structure and spacing measurements for a single column Form | px / rem_
   </div>
   <div>
     ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
-    _Structure and spacing measurements for a double column Form | px / rem_
   </div>
 </div>
+_Structure and spacing measurements for a single and a double column Form | px / rem_

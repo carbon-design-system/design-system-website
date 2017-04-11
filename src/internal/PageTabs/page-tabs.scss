@@ -1,7 +1,6 @@
 .page-tabs {
   @include grid-margins;
   margin-top: -3.5rem;
-  background-color: rgba(#3d70b2, .1);
   width: auto;
 
   .bx--tabs--hidden {
@@ -13,6 +12,8 @@
   }
 
   .bx--tabs__trigger {
+    background-color: rgba(61, 112, 178, .1);
+
     &-text,
     svg {
       color: $color__blue-90;
@@ -52,5 +53,5 @@
         border-bottom: 3px solid $color__blue-40 !important;
       }
     }
-  } 
+  }
 }

@@ -96,7 +96,8 @@
       fill: $color__blue-51;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $color__blue-51;
 
       .bx--btn--right-icon__icon {
