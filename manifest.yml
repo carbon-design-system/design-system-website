@@ -1,6 +1,8 @@
 ---
 applications:
-- buildpack: nodejs_buildpack
+- name: carbonized
+  random-route: true
+  buildpack: nodejs_buildpack
   command: node index.js
   disk_quota: 256MB
   memory: 128MB
