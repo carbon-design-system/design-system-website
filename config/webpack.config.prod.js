@@ -1,19 +1,18 @@
-var autoprefixer = require('autoprefixer');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var ManifestPlugin = require('webpack-manifest-plugin');
-var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-var url = require('url');
-var paths = require('./paths');
-var getClientEnvironment = require('./env');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-let extractSASS = new ExtractTextPlugin('/assets/css/styles.css');
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
+const url = require('url');
+const paths = require('./paths');
+const getClientEnvironment = require('./env');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 require('babel-polyfill');
 
 function ensureSlash(path, needsSlash) {
-  var hasSlash = path.endsWith('/');
+  const hasSlash = path.endsWith('/');
   if (hasSlash && !needsSlash) {
     return path.substr(path, path.length - 1);
   } else if (!hasSlash && needsSlash) {
@@ -23,69 +22,51 @@ function ensureSlash(path, needsSlash) {
   }
 }
 
-var homepagePath = require(paths.appPackageJson).homepage;
-var homepagePathname = homepagePath ? url.parse(homepagePath).pathname : '/';
-var publicPath = ensureSlash(homepagePathname, true);
-var publicUrl = ensureSlash(homepagePathname, false);
-var env = getClientEnvironment(publicUrl);
+const homepagePath = require(paths.appPackageJson).homepage;
+const homepagePathname = homepagePath ? url.parse(homepagePath).pathname : '/';
+const publicPath = ensureSlash(homepagePathname, true);
+const publicUrl = ensureSlash(homepagePathname, false);
+const env = getClientEnvironment(publicUrl);
 
 if (env['process.env'].NODE_ENV !== '"production"') {
   throw new Error('Production builds must have NODE_ENV=production.');
 }
 
 module.exports = {
-  bail: true,
-  devtool: 'cheap-module-source-map',
-  entry: [
-    'babel-polyfill',
-    paths.appIndexJs
-  ],
+  entry: ['babel-polyfill', paths.appIndexJs],
   output: {
+    filename: 'static/js/[name].[chunkhash].js',
+    chunkFilename: 'static/js/[name].[chunkhash].chunk.js',
     path: paths.appBuild,
-    filename: 'static/js/[name].js',
-    publicPath: publicPath
-  },
-  resolve: {
-    fallback: paths.nodePaths,
-    extensions: ['', '.js', '.json']
+    publicPath: publicPath,
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        include: [
-          paths.appSrc,
-          paths.bluemixComponents
-        ],
+        include: [paths.appSrc, paths.bluemixComponents],
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react', 'stage-1'],
-          plugins: ['transform-inline-environment-variables', 'minify-dead-code-elimination'],
-        }
       },
       {
         test: /\.(css|scss)$/,
-        loader: ExtractTextPlugin.extract(
-          "style",
-          "css?sourceMap!postcss!sass?sourceMap"
-        ),
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader!postcss-loader!sass-loader',
+        }),
       },
       {
         test: /\.md$/,
-        loaders: [
-          'html-loader',
-          'markdown-loader'
-        ]
+        loaders: ['html-loader', 'markdown-loader'],
       },
       {
         test: /\.json$/,
-        loader: 'json'
+        loader: 'json-loader',
       },
       {
         test: /\.(jpe?g|png|gif)$/i,
         loaders: [
           'file-loader?name=images/[name].[ext]',
-          'img?progressive=true'
+          'img-loader?progressive=true',
         ],
       },
       {
@@ -99,64 +80,74 @@ module.exports = {
       {
         test: /\.svg$/,
         exclude: `${paths.assets}/bluemix-icons.svg`,
-        loader: 'file?name=images/[name].[ext]',
+        loader: 'file-loader?name=images/[name].[ext]',
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url',
+        loader: 'url-loader',
       },
       {
         test: /\.html$/,
-        loader: 'html?minimize=false'
-      }
-    ]
-  },
-  postcss: () => {
-    return [
-      require('autoprefixer')
-    ];
+        loader: 'html-loader?minimize=false',
+      },
+    ],
   },
   plugins: [
-    new InterpolateHtmlPlugin({
-      PUBLIC_URL: publicUrl
-    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
-      minify: false
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      }
     }),
-    new webpack.DefinePlugin(env),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: Infinity,
+      children: true,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.ENV': JSON.stringify('external')
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         screw_ie8: true,
-        warnings: false
+        warnings: false,
       },
       mangle: {
-        screw_ie8: true
+        screw_ie8: true,
       },
       output: {
         comments: false,
-        screw_ie8: true
-      }
+        screw_ie8: true,
+      },
     }),
     new ExtractTextPlugin('static/css/styles.css'),
     new ManifestPlugin({
-      fileName: 'asset-manifest.json'
+      fileName: 'asset-manifest.json',
     }),
     new CopyWebpackPlugin([
       { from: 'src/assets/downloads', to: 'downloads/' },
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
       { from: 'src/assets/googleb9799b851dc5160a.html', to: '' },
-      { from: 'node_modules/carbon-icons/bluemix-icons.svg', to: 'carbon-icons/' },
-      { from: 'node_modules/carbon-components/scripts/carbon-components.min.js', to: 'js/' }
+      {
+        from: 'node_modules/carbon-icons/bluemix-icons.svg',
+        to: 'carbon-icons/',
+      },
+      {
+        from: 'node_modules/carbon-components/scripts/carbon-components.min.js',
+        to: 'js/',
+      },
     ]),
-  ],
-  node: {
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty'
-  }
+  ]
 };

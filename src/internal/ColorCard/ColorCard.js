@@ -1,11 +1,16 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import color from 'color';
 import classnames from 'classnames';
+import ReactGA from 'react-ga';
 
 class ColorCard extends Component {
-
-  // declare prop types
+  static propTypes = {
+    hex: PropTypes.string,
+    white: PropTypes.bool,
+    name: PropTypes.string
+  }
 
   state = {
     value: this.props.hex,
@@ -23,6 +28,13 @@ class ColorCard extends Component {
     }, 2500);
   }
 
+  handleClick = () => {
+    ReactGA.event({
+      category: 'Copy Color',
+      action: 'click'
+    });
+  }
+
   colorContrast = (ColorHEX) => {
     if (ColorHEX.charAt(0) === '#') {
       const ConvertedHEX = color(ColorHEX);
@@ -33,14 +45,15 @@ class ColorCard extends Component {
 
   render() {
     const textClass = this.colorContrast(this.props.hex);
-    // add all props
     const {
       hex,
+      white,
+      name,
     } = this.props;
 
     const classNames = classnames({
       'color': true,
-      'color--border': this.props.white,
+      'color--border': white,
     });
 
     return (
@@ -50,10 +63,10 @@ class ColorCard extends Component {
             text={this.state.value}
             onCopy={this.toggleCopied}
           >
-            <button tabIndex="0" className={textClass}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
+            <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
           </CopyToClipboard>
         </div>
-        <p>{this.props.name}</p>
+        <p>{name}</p>
         <p>{hex}</p>
       </div>
     );

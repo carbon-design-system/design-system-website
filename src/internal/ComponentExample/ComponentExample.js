@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
-import svgSprite from 'raw!../../assets/bluemix-icons.svg'; // eslint-disable-line
+import svgSprite from 'raw-loader!../../assets/bluemix-icons.svg'; // eslint-disable-line
 
 class ComponentExample extends Component {
   static propTypes = {

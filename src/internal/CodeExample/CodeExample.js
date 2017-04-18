@@ -1,7 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
+import ReactGA from 'react-ga';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -29,6 +31,13 @@ class CodeExample extends Component {
 
   expandCode = () => {
     this.setState({ expandedCode: !this.state.expandedCode });
+  }
+
+  handleClick = () => {
+    ReactGA.event({
+      category: 'Copy Code',
+      action: 'click'
+    });
   }
 
   render() {
@@ -70,7 +79,7 @@ class CodeExample extends Component {
           text={htmlFile}
           onCopy={this.handleCopy}
         >
-          <button data-copy-btn className="bx--snippet-button code-example__copy-btn">
+          <button data-copy-btn className="bx--snippet-button code-example__copy-btn" onClick={() => this.handleClick()}>
             Copy
             <Icon className="code-example__copy-btn--icon bx--snippet__icon" name="copy" description="Copy code icon" />
             <div className={copyBtnClass} data-feedback="Copied!" />

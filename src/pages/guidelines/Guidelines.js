@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Page from '../../internal/Page';
 import MarkdownPage from '../../internal/MarkdownPage';
 import Content from './Content';

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import IconList from 'carbon-icons';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import Search from '@console/bluemix-components-react/dist/components/Search';

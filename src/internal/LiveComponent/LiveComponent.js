@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
-import svgSprite from 'raw!../../assets/bluemix-icons.svg';
+import svgSprite from 'raw-loader!../../assets/bluemix-icons.svg';
 
 class LiveComponent extends Component {
   static propTypes = {

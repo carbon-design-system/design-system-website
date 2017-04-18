@@ -3,15 +3,21 @@
     [
       "env",
       {
-        modules: false,
-        chrome: "latest",
-        edge: "latest",
-        firefox: "latest",
-        safari: "latest",
-        ie: "11",
-        ios: "latest"
+        "modules": false,
+        "chrome": "latest",
+        "edge": "latest",
+        "firefox": "latest",
+        "safari": "latest",
+        "ie": "11",
+        "ios": "latest"
       }
-    ]
+    ],
+    "react"
   ],
-  "plugins": ["transform-class-properties"]
+  "plugins": [
+    "transform-class-properties",
+    "transform-inline-environment-variables",
+    "minify-dead-code-elimination",
+    "syntax-dynamic-import"
+  ]
 }

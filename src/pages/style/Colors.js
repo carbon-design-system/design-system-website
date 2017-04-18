@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import PageTabs from '../../internal/PageTabs';
 import MarkdownPage from '../../internal/MarkdownPage';

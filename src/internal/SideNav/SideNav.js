@@ -1,6 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link, browserHistory } from 'react-router';
 import classnames from 'classnames';
+import ReactGA from 'react-ga';
 
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
 import Button from '@console/bluemix-components-react/dist/components/Button';
@@ -24,9 +26,24 @@ class SideNav extends Component {
     }
   }
 
+  handleClick = (evt, cat) => {
+    if (cat === 'Left Nav') {
+      ReactGA.event({
+        category: cat,
+        action: 'click',
+        label: evt.target.innerText
+      });
+    } else {
+      ReactGA.event({
+        category: cat,
+        action: 'click'
+      });
+    }
+  }
+
   renderSubNavItems = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
-    const processEnv = process.env;
+    const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
       const link = `/${parentItem}/${subNavItem}`;
       const isCurrentPage = (parentItem === currentPath[1] && subNavItem === currentPath[2]);
@@ -34,7 +51,7 @@ class SideNav extends Component {
         'sub-nav__item': true,
         'selected': isCurrentPage, // eslint-disable-line
       });
-      if (!(processEnv.ENV === 'internal') && subNavItem === 'service-providers') {
+      if (!(ENV === 'internal') && subNavItem === 'service-providers') {
         return '';
       }
       const tabIndex = (this.props.isOpen) ? 0 : -1;
@@ -106,7 +123,7 @@ class SideNav extends Component {
           Carbon <span>Design System</span>
         </Link>
         <a href="https://github.com/carbon-design-system/carbon-components/releases" className="side-nav__version">{version}</a>
-        <ul role="menu" aria-label="Page main menu" className="side-nav__main-nav">
+        <ul role="menu" aria-label="Page main menu" className="side-nav__main-nav" onClick={(e) => this.handleClick(e, 'Left Nav')}>
           {navItems}
         </ul>
         <div className="side-nav__links">
@@ -118,6 +135,7 @@ class SideNav extends Component {
             target="_blank"
             role="button"
             iconDescription="sidenav link icon"
+            onClick={(e) => this.handleClick(e, 'Design Kit')}
           >Design Kit
           </Button>
           <Button
@@ -128,6 +146,7 @@ class SideNav extends Component {
             target="_blank"
             role="button"
             iconDescription="sidenav link icon"
+            onClick={(e) => this.handleClick(e, 'Developer Kit')}
           >GitHub Repo
           </Button>
         </div>
@@ -138,6 +157,7 @@ class SideNav extends Component {
             href="https://github.com/carbon-design-system/carbon-components/issues"
             target="_blank"
             aria-label="Click here to file an Github issue"
+            onClick={(e) => this.handleClick(e, 'Github Issue')}
           >Let us know!</a>
           <p className="side-nav__copyright-text">Copyright © 2017 IBM</p>
         </footer>

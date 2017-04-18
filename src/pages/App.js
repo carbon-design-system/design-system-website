@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import debounce from 'lodash.debounce';
 import SideNav from '../internal/SideNav';
@@ -10,7 +11,7 @@ import '../scss/main.scss';
 
 class App extends Component {
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   }
 
   state = {

@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import PageHeader from '../../internal/PageHeader';
 import ImageGrid from '../../internal/ImageGrid';

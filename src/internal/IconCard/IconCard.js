@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
 import Button from '@console/bluemix-components-react/dist/components/Button';
@@ -39,8 +40,9 @@ class IconCard extends Component {
     const name = `${this.props.name}.svg`;
     const path = this.props.path || null;
     const id = `#${this.props.name}`;
-    const icon = `<svg width="${this.props.width}" height="${this.props.height}">
-      <use xlink:href="/@console/bluemix-icons/bluemix-icons.svg#${this.props.name}"></use>
+    const icon =
+    `<svg width="${this.props.width}" height="${this.props.height}">
+      <use xlink:href="carbon-icons/bluemix-icons.svg#${this.props.name}"></use>
     </svg>`;
     return (
       <div className="icon">

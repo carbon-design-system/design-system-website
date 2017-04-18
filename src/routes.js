@@ -1,51 +1,8 @@
+// eslint-disable
+
 import React from 'react';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
-
-//------------------------
-// Main wrapper component
-//------------------------
 import App from './pages/App';
-
-//------------------------
-// Overview
-//------------------------
-import Overview from './pages/Overview';
-
-//------------------------
-// Getting started
-//------------------------
-import GettingStarted from './pages/getting-started/GettingStarted';
-
-//------------------------
-// Guidelines
-//------------------------
-import Guidelines from './pages/guidelines/Guidelines';
-
-//------------------------
-// Style
-//------------------------
-import Style from './pages/style/Style';
-
-//------------------------
-// Components
-//------------------------
-import ComponentPage from './pages/components/ComponentPage';
-
-//------------------------
-// Resources
-//------------------------
-import Resources from './pages/Resources';
-
-//------------------------
-// Component Status
-//------------------------
-import ComponentStatus from './pages/ComponentStatus';
-
-//------------------------
-// 404 page
-//------------------------
-import FourOhFour from './pages/404';
-
 
 const handleRouteChange = () => {
   if (!(window.pathname === '/guidelines/content/glossary')) {
@@ -53,46 +10,182 @@ const handleRouteChange = () => {
   }
 };
 
-export default (
-  <Route onChange={handleRouteChange} path="/" component={App}>
-    <IndexRoute component={Overview} />
-    <Route path="getting-started">
-      <IndexRedirect to="/getting-started/designers" />
-      <Route path="/getting-started/:name" component={GettingStarted} />
-    </Route>
-    <Route path="guidelines">
-      <IndexRedirect to="/guidelines/accessibility" />
-      <Route path="/guidelines/content">
-        <IndexRedirect to="/guidelines/content/general" />
-        <Route path="/guidelines/:name/:page" component={Guidelines} />
-      </Route>
-      <Route path="/guidelines/:name" component={Guidelines} />
-    </Route>
-    <Route path="style">
-      <IndexRedirect to="/style/colors/swatches" />
-      <Route path="/style/colors">
-        <IndexRedirect to="/style/colors/swatches" />
-        <Route path="/style/:name/:page" component={Style} />
-      </Route>
-      <Route path="/style/iconography">
-        <IndexRedirect to="/style/iconography/library" />
-        <Route path="/style/:name/:page" component={Style} />
-      </Route>
-      <Route path="/style/layer">
-        <IndexRedirect to="/style/layer/overview" />
-        <Route path="/style/:name/:page" component={Style} />
-      </Route>
-      <Route path="/style/:name" component={Style} />
-    </Route>
-    <Route path="components">
-      <IndexRedirect to="/components/accordion/code" />
-      <Route path="/components/:name">
-        <IndexRedirect to="/components/:name/code" />
-        <Route path="/components/:name/:page" component={ComponentPage} />
-      </Route>
-    </Route>
-    <Route path="resources" component={Resources} />
-    <Route path="component-status" component={ComponentStatus} />
-    <Route path="*" component={FourOhFour} />
-  </Route>
-);
+const errorLoading = err => {
+  console.error('Page loading failed', err);
+};
+
+const loadRoute = cb => {
+  return module => cb(null, module.default);
+};
+
+const routes = {
+  path: '/',
+  component: App,
+  onChange: handleRouteChange,
+  indexRoute: {
+    getComponent(location, cb) {
+      import('./pages/Overview').then(loadRoute(cb)).catch(errorLoading);
+    },
+  },
+  childRoutes: [
+    {
+      path: 'getting-started',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/getting-started/designers'),
+      },
+      childRoutes: [
+        {
+          path: '/getting-started/:name',
+          getComponent(location, cb) {
+            import('./pages/getting-started/GettingStarted')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'guidelines',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/guidelines/accessibility'),
+      },
+      childRoutes: [
+        {
+          path: '/guidelines/content',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/guidelines/content/general'),
+          },
+          childRoutes: [
+            {
+              path: '/guidelines/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/guidelines/Guidelines')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/guidelines/:name',
+          getComponent(location, cb) {
+            import('./pages/guidelines/Guidelines')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'style',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+      },
+      childRoutes: [
+        {
+          path: '/style/colors',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/style/iconography',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/style/iconography/library'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/style/layer',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/style/layer/overview'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/style/:name',
+          getComponent(location, cb) {
+            import('./pages/style/Style')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'components',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/components/accordion/code'),
+      },
+      childRoutes: [
+        {
+          path: '/components/:name',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace(`/components/${nextState.params.name}/code`),
+          },
+        },
+        {
+          path: '/components/:name/:page',
+          getComponent(location, cb) {
+            import('./pages/components/ComponentPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'resources',
+      getComponent(location, cb) {
+        import('./pages/Resources').then(loadRoute(cb)).catch(errorLoading);
+      },
+    },
+    {
+      path: 'component-status',
+      getComponent(location, cb) {
+        import('./pages/ComponentStatus')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
+      path: '*',
+      getComponent(location, cb) {
+        import('./pages/404').then(loadRoute(cb)).catch(errorLoading);
+      },
+    },
+  ],
+};
+
+export default routes;
