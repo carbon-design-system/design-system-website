@@ -66,6 +66,11 @@
 
   & .interior-left-nav .bx--interior-left-nav {
     top: 8.5rem;
+    max-height: 80vh;
+  }
+
+  & .interior-left-nav .bx--interior-left-nav--collapseable .bx--interior-left-nav-collapse {
+    margin-bottom: 0;
   }
 }
 
@@ -82,8 +87,11 @@
 
   & > .interior-left-nav .bx--interior-left-nav {
     position: initial;
-    display: block;
     min-height: rem(400px);
+  }
+
+  & > .interior-left-nav .bx--interior-left-nav--collapseable .bx--interior-left-nav-collapse {
+    margin-bottom: 0;
   }
 
   & .text-input .bx--text-input {
