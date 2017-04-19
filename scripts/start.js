@@ -92,7 +92,7 @@ function setupCompiler(host, port, protocol) {
       console.log('  ' + chalk.cyan(protocol + '://' + host + ':' + port + '/'));
       console.log();
       console.log('Note that the development build is not optimized.');
-      console.log('To create a production build, use ' + chalk.cyan(cli + ' run build') + '.');
+      console.log('To create a production build, use ' + chalk.cyan(cli + ' run build-external') + ' or ' + chalk.cyan(cli + ' run build-internal') + '.');
       console.log();
       isFirstCompile = false;
     }

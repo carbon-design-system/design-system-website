@@ -88,7 +88,9 @@
   },
   "scripts": {
     "dev": "npm run front-matter && node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build-external": "ENV=external node scripts/build.js",
+    "build-internal": "ENV=internal node scripts/build.js",
+    "build": "echo 'ERROR: Please specify environment by running either build-external or build-internal. This will set the correct environment variable for the build.'",
     "test": "node scripts/test.js --env=jsdom",
     "front-matter": "node scripts/frontmatter.js",
     "start": "node index.js",

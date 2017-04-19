@@ -27,11 +27,26 @@ class Content extends React.Component {
     if (currentPage) {
       page = currentPage;
     }
+    const { ENV } = process.env;
+    const resources = (ENV === 'internal')
+    ? <div className="page page_md">
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a href="https://apps.na.collabserv.com/communities/service/html/communitystart?communityUuid=279b622e-3902-4086-9cc7-6c07d8d2d745" target="_blank">IBM style</a>
+          </li>
+          <li>
+            <a href="http://tlwi.w3-969.ibm.com/standards/terminology/cgi-bin/lookup.pl?user_group=corporate" target="_blank">IBM Terminology</a>
+          </li>
+        </ul>
+      </div>
+    : '';
 
     return (
       <PageTabs tabs={tabs} currentPage={page}>
         <Tab href="/guidelines/content/general" label="General">
           <MarkdownPage content={require('../../content/guidelines/content/content-general.md')} />
+          {resources}
         </Tab>
         <Tab href="/guidelines/content/guidelines" label="Guidelines">
           <MarkdownPage content={require('../../content/guidelines/content/content-guidelines.md')} />
