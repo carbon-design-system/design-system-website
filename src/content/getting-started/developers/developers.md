@@ -81,9 +81,6 @@ Modal.init();
 ```js
 import { Modal } from 'carbon-components';
 const myModal = document.querySelector('[data-modal]'); // element node of the modal itself
-for {
-    test;
-}
 Modal.init(myModal);
 ```
 
@@ -104,6 +101,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
+    <!-- Put HTML snippets of components here... -->
     <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
@@ -114,6 +112,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
+    <!-- Put HTML snippets of components here... -->
     <script>
       CarbonComponents.settings.disableAutoInit = true;
     </script>
@@ -127,12 +126,13 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
+    <!-- Put a HTML snippet from http://localhost:3000/components/modal/code here -->
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
       CarbonComponents.settings.disableAutoInit = true;
-      var modal = document.querySelector('[data-model']);
+      var modal = document.querySelector('[data-modal]');
       CarbonComponents.Modal.init(modal);
     </script>
-    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
 ```
@@ -142,9 +142,10 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
+    <!-- Put a HTML snippet from http://localhost:3000/components/modal/code here -->
     <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
-      var modal = document.querySelector('[data-model']);
+      var modal = document.querySelector('[data-modal]');
       var myModalRef = CarbonComponents.Modal.components.get(modal);
     </script>
   </body>
