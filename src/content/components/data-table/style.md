@@ -3,11 +3,13 @@
 | COLOR                       | SCSS     | HEX       |
 |-----------------------------|--------- |-----------|
 | Background                  | $ui-01   | #ffffff   |
+| Border                      | $ui-04   | #dfe3e6   |
 | Table header: border-bottom | $brand-01| #3d70b2   |
 | Zebra stripe                | $ui-03   | #f0f3f6   |
 | Expanded: border-left       | $brand-01| #3d70b2   |
 | Text                        | $text-01 | #152935   |
 | Chevron & caret             | $ui-05   | #8c9ba5   |
+
 
 ![Example of a Data Table](images/data-table-style-5.png)
 _Example of a Data Table_
