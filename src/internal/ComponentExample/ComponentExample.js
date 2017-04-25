@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
-import svgSprite from 'raw-loader!../../assets/bluemix-icons.svg'; // eslint-disable-line
 
 class ComponentExample extends Component {
   static propTypes = {
@@ -13,11 +12,7 @@ class ComponentExample extends Component {
   };
 
   render() {
-    const {
-      htmlFile,
-      component,
-      variation,
-    } = this.props;
+    const { htmlFile, component, variation } = this.props;
 
     const classNames = classnames({
       'component-example__live--rendered': true,
@@ -35,11 +30,7 @@ class ComponentExample extends Component {
 
     return (
       <div className={lightUIclassnames}>
-        <div
-          className="svg--sprite"
-          aria-hidden="true"
-          dangerouslySetInnerHTML={{ __html: svgSprite }}
-        />
+        <div className="svg--sprite" aria-hidden="true" />
         <div className="component-example__live">
           <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />

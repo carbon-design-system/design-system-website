@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import classnames from 'classnames';
 import Icon from '@console/bluemix-components-react/dist/components/Icon';
-import svgSprite from 'raw-loader!../../assets/bluemix-icons.svg';
 
 class LiveComponent extends Component {
   static propTypes = {
@@ -17,9 +16,10 @@ class LiveComponent extends Component {
       ? 'detail-page-header'
       : this.props.component;
     currentComponent = currentComponent.replace(/-([a-z])/g, g =>
-      g[1].toUpperCase());
-    currentComponent = currentComponent.charAt(0).toUpperCase() +
-      currentComponent.substring(1);
+      g[1].toUpperCase()
+    );
+    currentComponent =
+      currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
     if (currentComponent === 'Tabs') {
       currentComponent = 'Tab';
     } else if (currentComponent === 'Card') {
@@ -82,14 +82,9 @@ class LiveComponent extends Component {
       : `${this.props.component}`;
     return (
       <div key={variation} className="live-component__variation">
-        <div
-          className="svg--sprite"
-          dangerouslySetInnerHTML={{ __html: svgSprite }}
-        />
+        <div className="svg--sprite" />
         <a
-          href={
-            `http://www.github.com/carbon-design-system/carbon-components/tree/master/src/components/${variationLink}`
-          }
+          href={`http://www.github.com/carbon-design-system/carbon-components/tree/master/src/components/${variationLink}`}
           target="_blank"
           className="live-component__title"
         >
@@ -105,9 +100,7 @@ class LiveComponent extends Component {
   };
 
   render() {
-    const {
-      component,
-    } = this.props;
+    const { component } = this.props;
     let componentTitle;
     let variationContent;
     let backLink = component === 'detail-page-header--no-tabs' ||
@@ -125,7 +118,8 @@ class LiveComponent extends Component {
       const variations = content.variations;
       variationContent = content.variations
         ? Object.keys(variations).map(variation =>
-            this.renderVariation(variation))
+            this.renderVariation(variation)
+          )
         : this.renderVariation(component);
       componentTitle = `${component
         .charAt(0)
