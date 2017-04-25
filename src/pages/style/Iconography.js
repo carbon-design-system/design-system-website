@@ -5,32 +5,48 @@ import Tab from '@console/bluemix-components-react/dist/components/Tab';
 import Search from '@console/bluemix-components-react/dist/components/Search';
 import PageTabs from '../../internal/PageTabs';
 import IconCard from '../../internal/IconCard';
+import IconEmptyState from '../../internal/IconEmptyState';
 import MarkdownPage from '../../internal/MarkdownPage';
 import Packages from 'carbon-components/package.json';
 
 class Iconography extends React.Component {
   static propTypes = {
-    currentPage: PropTypes.string
+    currentPage: PropTypes.string,
   };
   state = {
     isSearching: false,
-    searchValue: ''
+    searchValue: '',
+    icons: '',
+    newIcons: '',
   };
 
   componentDidMount() {
     document.title = `Carbon Design System | ${this.props.currentPage}`;
+    this.renderIcons(IconList);
   }
 
   handleSearch = evt => {
     if (evt.target.value) {
-      this.setState({
-        isSearching: true,
-        searchValue: evt.target.value
+      const newIcons = [];
+      this.state.icons.forEach(icon => {
+        if (icon.props.name.includes(evt.target.value)) {
+          newIcons.push(icon);
+          this.setState({
+            newIcons,
+          });
+        } else {
+          const index = newIcons.indexOf(icon);
+          if (index !== -1) {
+            newIcons.splice(index, 1);
+          }
+          this.setState({
+            newIcons,
+          });
+        }
       });
     } else {
       this.setState({
-        isSearching: false,
-        searchValue: ''
+        newIcons: this.state.icons,
       });
     }
   };
@@ -38,15 +54,16 @@ class Iconography extends React.Component {
   tempModifyIconName = name => {
     return name.split('--').filter(string => string !== 'icon').join('--');
   };
-  renderIconCards = IconItems =>
+
+  renderIcons = IconItems => {
+    const allIcons = [];
     Object.keys(IconItems).map(IconItem => {
       const Icon = IconItems[IconItem];
       const path = require(`../../assets/svg/${this.tempModifyIconName(Icon.name)}.svg`);
-      let iconElement;
       if (
         !this.state.isSearching || Icon.name.includes(this.state.searchValue)
       ) {
-        iconElement = (
+        allIcons.push(
           <IconCard
             key={IconItem}
             name={this.tempModifyIconName(Icon.name)}
@@ -57,8 +74,12 @@ class Iconography extends React.Component {
           />
         );
       }
-      return iconElement;
     });
+    this.setState({
+      icons: allIcons,
+      newIcons: allIcons,
+    });
+  };
 
   render() {
     const tabs = ['library', 'usage', 'contribution'];
@@ -67,6 +88,11 @@ class Iconography extends React.Component {
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
     }
+    const iconList = this.state.newIcons;
+
+    const iconContent = iconList.length > 0
+      ? this.state.newIcons
+      : <IconEmptyState />;
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
@@ -81,7 +107,7 @@ class Iconography extends React.Component {
                 placeHolderText="Search the icon library"
                 aria-label="Icon library search"
               />
-              {this.renderIconCards(IconList)}
+              {iconContent}
             </div>
           </div>
         </Tab>

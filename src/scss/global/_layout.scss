@@ -33,6 +33,12 @@ body {
     width: 100%;
     margin-left: 0;
   }
+
+  main {
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 a {
