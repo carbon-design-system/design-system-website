@@ -126,7 +126,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
-    <!-- Put a HTML snippet from http://localhost:3000/components/modal/code here -->
+    <!-- Put a HTML snippet from http://www.carbondesignsystem.com/components/modal/code here -->
     <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
       CarbonComponents.settings.disableAutoInit = true;
@@ -142,7 +142,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ```html
 <html>
   <body>
-    <!-- Put a HTML snippet from http://localhost:3000/components/modal/code here -->
+    <!-- Put a HTML snippet from http://www.carbondesignsystem.com/components/modal/code here -->
     <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
       var modal = document.querySelector('[data-modal]');
