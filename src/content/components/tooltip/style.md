@@ -3,13 +3,14 @@
 | COLOR              | SCSS      | HEX       |
 |--------------------|-----------|-----------|
 | Icon               | $brand-01 | #3d70b2   |
+| Icon: hover        | $brand-02 | #5596e6   |
 | Text               | $text-01  | #152935   |
 | Tooltip background | $ui-01    | #ffffff   |
 | Tooltip border     | $ui-04    | #dfe3e6   |
 
 ---
 ***
-> 
+>
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
 
 _Example of closed and open states for a Tooltip_
@@ -20,6 +21,7 @@ Tooltip labels and text should be set in sentence case.
 
 | PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
 |----------|-----------------|--------------|
+| Header   | 16px / 1rem     | Bold / 700   |
 | Label    | 14px / 0.875rem | Bold / 700   |
 | Text     | 14px / 0.875rem | Normal / 400 |
 
