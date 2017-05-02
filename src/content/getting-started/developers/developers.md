@@ -113,10 +113,10 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 <html>
   <body>
     <!-- Put HTML snippets of components here... -->
+    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
     <script>
       CarbonComponents.settings.disableAutoInit = true;
     </script>
-    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
   </body>
 </html>
 ```
