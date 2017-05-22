@@ -5,18 +5,20 @@ import Markdown from 'markdown-it';
 class MarkdownPage extends Component {
   static propTypes = {
     content: PropTypes.any,
-  }
+  };
 
   render() {
-    const {
-      content,
-    } = this.props;
+    const { content } = this.props;
     const md = new Markdown({
-      html: true
+      html: true,
     });
+
     return (
       <div className="page">
-        <div className="page_md" dangerouslySetInnerHTML={{ __html: md.renderInline(content) }} />
+        <div
+          className="page_md"
+          dangerouslySetInnerHTML={{ __html: md.renderInline(content) }}
+        />
       </div>
     );
   }

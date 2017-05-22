@@ -83,12 +83,46 @@ td {position: relative;}
     }
 
     h2 {
-      color: $color__blue-90;
       position: relative;
+      display: flex;
+      align-items: center;
+      color: $color__blue-90;
       margin-top: 6rem;
       font-weight: 600;
       font-size: rem(26px);
       padding: 1rem 0 3rem;
+
+
+      &:focus {
+        outline: none;
+      }
+
+      .title-anchor {
+        transition: .2s cubic-bezier(0.5, 0, 0.1, 1);
+        opacity: .25;
+        line-height: 0;
+        order: 2;
+        margin-left: .25rem;
+        padding: 3px;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        svg {
+          fill: $brand-02;
+
+          &:hover {
+            fill: $brand-01;
+          }
+        }
+
+
+        &:focus {
+          opacity: 1;
+          outline: 1px solid $brand-01;
+        }
+      }
 
       &:before {
         content: '';
