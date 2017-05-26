@@ -42,7 +42,7 @@ We recommend you use 1-4 colors max in your catalog icon. Use color combinations
 * Use more than 2px line weight/stroke
 * Use a color background
 
-Make sure your Service Icon meets Bluemix's Catalog service icon guidelines, then submit the files to the Master Icon List for approval.
+Make sure your Service Icon meets Bluemix's Catalog service icon guidelines, then submit the design files to the [Service Icon repository](https://github.ibm.com/bthan/service-icons-temp) via an issue for approval.
 
 #### Service Dashboard
 
@@ -62,7 +62,7 @@ Welcome to Beta, where the bulk of the work happens to make your service better 
 
 #### Net Promoter Score
 
-Bluemix uses Net Promoter Score (NPS) to track user feedback. The NPS question, “How likely are you to recommend this service to a friend or coworker?” will be presented to users in the product on their third use of your service. Users answer on a scale from 0-10, and will have the opportunity to provide additional feedback through a follow-up response. Services should achieve and maintain a minimum NPS of 30% from a minimum of 25 non-IBM users. Use the user feedback to inform design decisions and make appropriate changes.
+Bluemix uses Net Promoter Score (NPS) to track user feedback. The NPS question, “How likely are you to recommend this service to a friend or coworker?” will be presented to users in the product on their third use of your service. Users answer on a scale from 0-10, and will have the opportunity to provide additional feedback through a follow-up response. Services should achieve and maintain a minimum NPS of 26 from a minimum of 25 non-IBM users. Use the user feedback to inform design decisions and make appropriate changes.
 
 #### User Testing
 
@@ -74,4 +74,4 @@ At its core, a Playback is a presentation. Plan to communicate the current state
 
 ## GA
 
-**Net Promoter Score:** You must maintain an NPS of 30% or your service will be under review. There will be a six month post-GA check-in to look at your score and discuss user feedback.
+**Net Promoter Score:** You must maintain an NPS of 26 or your service will be under review. There will be a six month post-GA check-in to look at your score and discuss user feedback.
