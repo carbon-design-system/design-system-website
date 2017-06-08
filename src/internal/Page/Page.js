@@ -15,12 +15,6 @@ import TypographyTable from '../../internal/TypographyTable';
 import BrandColors from '../../internal/BrandColors';
 import MotionExample from '../../internal/MotionExample';
 import MarkdownPage from '../../internal/MarkdownPage';
-// import Icon from '@console/bluemix-components-react/dist/components/Icon';
-// import glamorous from 'glamorous';
-
-// const TitleAnchor = glamorous.a({
-//   color: 'red',
-// });
 
 class Page extends Component {
   static propTypes = {
@@ -32,7 +26,6 @@ class Page extends Component {
   componentDidMount() {
     this.updateClasses();
     this.addCustomComponent();
-    this.addAnchor();
     this.colorHex();
     document.title = `Carbon Design System | ${this.props.title}`;
   }
@@ -49,34 +42,6 @@ class Page extends Component {
     if (evt.keyCode === 37) {
       document.querySelector('.sub-nav__item.selected').querySelector('a').focus();
     }
-  };
-
-  createAnchor = id => {
-    const anchor = document.createElement('a');
-    anchor.href = `#${id}`;
-    anchor.classList.add('title-anchor');
-    anchor.insertAdjacentHTML(
-      'afterbegin',
-      `<svg width="24" height="24" viewBox="0 0 24 24" fill-rule="evenodd">
-          <path d="M22.3 1.7C21.2.7 19.8 0 18.2 0c-1.6 0-3.1.7-4.1 1.7l-2.5 2.5c-1.1 1.1-1.7 2.5-1.7 4.1 0 .6.1 1.2.3 1.8-.7-.2-1.2-.3-1.9-.3-1.6 0-3.1.7-4.1 1.7L1.7 14C.7 15.1 0 16.5 0 18.2c0 1.6.6 3.1 1.7 4.2 1 1 2.5 1.6 4.1 1.6 1.6 0 3.1-.7 4.1-1.7l2.5-2.5c1.1-1.1 1.7-2.5 1.7-4.1 0-.6-.1-1.2-.3-1.8.6.2 1.2.3 1.8.3 1.6 0 3.1-.7 4.1-1.7l2.5-2.5C23.3 8.9 24 7.5 24 5.8c0-1.6-.7-3-1.7-4.1zM10.9 18.2l-2.5 2.5c-.7.7-1.6 1.1-2.6 1.1s-2-.4-2.6-1c-.7-.7-1-1.6-1-2.6s.4-1.9 1.1-2.6l2.5-2.5c.6-.7 1.6-1.1 2.5-1.1.6 0 1.2.2 1.7.4l-3.2 3.2 1.5 1.5 3.2-3.2c.3.5.4 1.1.4 1.7.1 1-.3 2-1 2.6zm9.8-9.8l-2.5 2.5c-.7.7-1.6 1.1-2.6 1.1-.6 0-1.2-.2-1.7-.4l3.2-3.2-1.5-1.5-3.2 3.2c-.2-.6-.4-1.1-.4-1.8 0-1 .4-1.9 1.1-2.6l2.5-2.5c.7-.7 1.6-1.1 2.6-1.1s1.9.4 2.6 1.1c.7.7 1.1 1.6 1.1 2.6-.1 1-.5 1.9-1.2 2.6z" />
-        </svg>`
-    );
-    return anchor;
-  };
-
-  addAnchor = () => {
-    [...document.querySelectorAll('.title-anchor')].forEach(titleAnchor => {
-      titleAnchor.parentNode.removeChild(titleAnchor);
-    });
-    [...document.querySelectorAll('h2')].forEach(heading => {
-      if (
-        heading.id.split() === [''] ||
-        heading.classList.contains('component-variation__name')
-      ) {
-        return;
-      }
-      heading.insertAdjacentElement('afterbegin', this.createAnchor(heading.id));
-    });
   };
 
   addPageClass = () => {
