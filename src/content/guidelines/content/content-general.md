@@ -10,7 +10,7 @@ What is the difference between voice and tone? Simply put, we have the same voic
 
 > ![tone](images/content-general-2.png)
 
-**Tone** conveys your attitude toward what you are writing about and who you are writing to. When you create content – whether its introductory text on the UI, an error message, or a topic in the Docs – you are essentially a storyteller. Good storytellers are experts in two main areas: what they are saying (the important information that the audience needs to know) and how to say it (the experience that they want to create for the audience). Be a good storyteller.
+**Tone** conveys your attitude toward what you are writing about and who you are writing to. When you create content – whether it's introductory text on the UI, an error message, or a topic in the docs – you are essentially a storyteller. Good storytellers are experts in two main areas: what they are saying (the important information that the audience needs to know) and how to say it (the experience that they want to create for the audience). Be a good storyteller.
 
 ## Conversation levels
 
