@@ -73,8 +73,8 @@ D:
       desc: Destroys an existing object.
       subtext: Combine Delete with the object to delete (for example, Delete column or Delete table). Contrast with [Clear](#clear) and [Remove](#remove).
     Docs:
-      desc: Opens a separate window containing the landing page for Bluemix Docs.
-      subtext: Use only as link text from the console menu bar. See [Learn More](#learn-more).
+      desc: Opens a separate window containing the landing page for the Bluemix product documentation.
+      subtext: Use as link text only for the specific link that points to the Bluemix product documentation from the console menu bar. See [Learn More](#learn-more).
     Done:
       desc: Indicates that the user has finished working in an environment (for example, editing templates) and wants to return to where he or she came from.
       subtext: See [Finish](#finish). Contrast with [Close](#close).
@@ -88,7 +88,7 @@ D:
     dev-to-dev:
       desc: (phrase) developer to developer.
       subtext: "Context: Free support is available in our dev-to-dev forum."
-    Docs:
+    docs:
       desc: (noun) documentation.
       subtext: "Context: View docs."
     dream:
@@ -209,8 +209,8 @@ O:
     oh no!:
       desc: (phrase) used to indicate shock.
       subtext: "Context: Oh no! The free trial expired."
-    on prem, on-prem:
-      desc: (adjective) on premises, on-premises.
+    on-prem:
+      desc: (adjective) on-premises.
       subtext: "Context: Incrementally port application features across on-prem platforms and clouds with consistent services."
     oops:
       desc: (expression) used to indicate an accident or a mistake.
