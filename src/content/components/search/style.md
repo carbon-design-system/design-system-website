@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR             | SCSS          | HEX      |
+| ATTRIBUTE             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
 | Background        | $field-01     | #3d70b2 @ 10% |
 | Text: user input  | $text-01      | #152935  |
@@ -15,10 +15,10 @@ _Examples of normal, hover, and input Search states_
 
 Search text should be set in sentence case, with only the first letter of the first word capitalized.
 
-| PROPERTY        | FONT-SIZE      | FONT-WEIGHT       |
+| PROPERTY        | FONT-SIZE (px/rem)     | FONT-WEIGHT       |
 |------------------|-----------------|---------------------|
-| Placeholder text | 14px / 0.875rem | Normal italic / 400 |
-| Text             | 14px / 0.875rem | Bold / 700          |
+| Placeholder text | 14 / 0.875 | Normal italic / 400 |
+| Text             | 14 / 0.875 | Bold / 700          |
 
 ## Structure
 

@@ -6,11 +6,11 @@ For color specs, refer to specific components.
 
 Form headings and labels should be set in set in sentence case with the first letter of each word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |------------|-----------------|--------------|
-| Heading    | 32px / 2rem     | Light / 300  |
-| Label      | 14px / 0.875rem | Bold / 700   |
-| Input text | 14px / 0.875rem | Normal / 400 |
+| Heading    | 32 / 2     | Light / 300  |
+| Label      | 14 / 0.875 | Bold / 700   |
+| Input text | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

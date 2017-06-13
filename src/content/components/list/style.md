@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR    | SCSS          | HEX      |
+| ATTRIBUTE    | SCSS          | HEX      |
 |----------|---------------|----------|
 | Text     | $text-01      | #152934  |
 
@@ -8,10 +8,10 @@
 
 Level 1 and 2 of any list type should be set in bold and sentence case, with only the first word in a phrase and any proper noun capitalized. **Line height** for lists should be set at 24px / 1.5rem.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Level 1  | 14px / 0.875rem | Bold / 700   |
-| Level 2  | 14px / 0.875rem | Normal / 400 |
+| Level 1  | 14 / 0.875 | Bold / 700   |
+| Level 2  | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

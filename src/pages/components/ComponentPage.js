@@ -46,10 +46,20 @@ class ComponentPage extends Component {
     const usage = require(`../../content/components/${currentComponent}/usage.md`);
     const style = require(`../../content/components/${currentComponent}/style.md`);
 
+    let hasCodePage;
+    try {
+      const jsFile = require(`../../data/components/${currentComponent}.js`); // eslint-disable-line
+      hasCodePage = true;
+    } catch (err) {
+      hasCodePage = false;
+    }
+    const codePageContent = (hasCodePage)
+    ? <CodePage component={currentComponent} />
+    : '';
     const content = (
       <Tabs key={params.name} className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
         <Tab href={`/components/${currentComponent}/code`} label="Code" onClick={this.updateTab}>
-          <CodePage component={currentComponent} />
+          {codePageContent}
         </Tab>
         <Tab href={`/components/${currentComponent}/usage`} label="Usage" onClick={this.updateTab}>
           <MarkdownPage content={usage} />

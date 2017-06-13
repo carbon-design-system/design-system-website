@@ -21,11 +21,11 @@ class DosAndDonts1 extends Component {
           <Example
             correct
             caption="Past tense:"
-            text="The limit has been exceeded."
+            text="The limit was exceeded."
           />
           <Example
             caption="Past tense:"
-            text="The limit was exceeded."
+            text="The limit has been exceeded."
           />
         </div>
       </div>

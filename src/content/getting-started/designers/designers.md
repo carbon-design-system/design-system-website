@@ -1,12 +1,12 @@
-**The _Carbon design kit_ is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).**
+**The _Carbon Design Kit_ is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).**
 
 ## Setup
 
 ### 1. Download the Kit
 
-Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>design kit</a> repo and click on the latest version of the design kit. Click the “View Raw” link to begin downloading the kit.
+Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.
 
-![Download the Carbon design kit](images/designers-2.png)
+![Download the Carbon Design Kit](images/designers-2.png)
 
 ### 2. Open the Design Kit in Sketch
 
@@ -20,10 +20,10 @@ You can purchase a lifetime license for $99. If you donʼt have a license for Sk
 
 ### 3. Using the Design Kit
 
-The design kit contains core visual styles, components, color swatches, iconography, and templates. It also has a collection of symbols and text styles for rapid design and layout prototyping. Each is designated its own page, which may be accessed via the left side panel.
+The Design Kit contains core visual styles, components, color swatches, iconography, and templates. It also has a collection of symbols and text styles for rapid design and layout prototyping. Each is designated its own page, which may be accessed via the left side panel.
 
 ![Carbon Design Kit](images/designers-4.png)
 
 ## Releases
 
-The Carbon Design System team often makes improvements to the design kit. We track all release updates in our <a href="https://github.com/carbon-design-system/carbon-design-kit/tree/master/previous-releases" target=blank>change log</a>, so check back frequently!
+The Carbon Design System team often makes improvements to the Design Kit. We track all release updates in our <a href="https://github.com/carbon-design-system/carbon-design-kit/tree/master/previous-releases" target=blank>change log</a>, so check back frequently!

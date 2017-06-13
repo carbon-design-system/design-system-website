@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR              | SCSS            | HEX     |
+| ATTRIBUTE              | SCSS            | HEX     |
 |--------------------|-----------------|---------|
 | Text: label        | $text-01        | #152934 |
 | Text: instructions | $text-02        | #5a6872 |
@@ -13,11 +13,11 @@
 
 The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
-| PROPERTY         | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY         | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |------------------|-----------------|--------------|
-| Label            | 14px / 0.875rem | Bold / 700   |
-| Instruction text | 14px / 0.875rem | Normal / 400 |
-| File name        | 12px / 0.75rem  | Normal / 400 |
+| Label            | 14 / 0.875 | Bold / 700   |
+| Instruction text | 14 / 0.875 | Normal / 400 |
+| File name        | 12 / 0.75  | Normal / 400 |
 
 ## Structure
 

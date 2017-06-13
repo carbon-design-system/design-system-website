@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR                | SCSS      | HEX           |
+| ATTRIBUTE                | SCSS      | HEX           |
 |----------------------|-----------|---------------|
 | Background           | $field-01 | #3d70b2 @ 10% |
 | Text: label & number | $text-01  | #152935       |
@@ -10,10 +10,10 @@
 
 Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| PROPERTY  | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY  | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
-| Label       | 14px / 0.875rem | Bold / 700   |
-| Text        | 14px / 0.875rem | Normal / 400   |
+| Label       | 14 / 0.875 | Bold / 700   |
+| Text        | 14 / 0.875 | Normal / 400   |
 
 ## Structure
 

@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR         | SCSS        | HEX     |
+| ATTRIBUTE         | SCSS        | HEX     |
 |---------------|-------------|---------|
 | Background: Toast    | $ui-01      | #ffffff |
 | Error         | $support-01 | #e71d32 |
@@ -15,10 +15,10 @@
 
 Notification titles should not exceed more than three words. Notification text should be set in sentence case with only the first word capitalized.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Title    | 14px / 0.875rem | Bold / 700   |
-| Text     | 14px / 0.875rem | Normal / 400 |
+| Title    | 14 / 0.875 | Bold / 700   |
+| Text     | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

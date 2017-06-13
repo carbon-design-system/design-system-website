@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR              | SCSS            | HEX       |
+| ATTRIBUTE              | SCSS            | HEX       |
 |--------------------|-----------------|-----------|
 | Background         | $field-01 @ 10% | #3d70b2   |
 | Drawer background  | $ui-01          | #ffffff   |
@@ -17,10 +17,10 @@ _Normal, active, open, and disabled states for Dropdown_
 
 All Dropdown text should be set in sentence case with the first letter of each word capitalized. Dropdown options should not exceed three words.
 
-| PROPERTY  | FONT-SIZE       | FONT-WEIGHT  |
+| PROPERTY  | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |-------------|-----------------|--------------|
-| Label       | 14px / 0.875rem | Bold / 700   |
-| Option text | 14px / 0.875rem | Normal / 400 |
+| Label       | 14 / 0.875 | Bold / 700   |
+| Option text | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 

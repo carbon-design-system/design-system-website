@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR      | SCSS     | HEX      |
+| ATTRIBUTE      | SCSS     | HEX      |
 |------------|----------|----------|
 | Background | $ui-01   | #ffffff  |
 | Border     | $ui-04   | #dfe3e6  |
@@ -17,10 +17,10 @@ _Example of Module layout_
 
 Module headings and text should be set sentence case, with only the first word in a phrase and any proper nouns capitalized. Module headings should not exceed three words.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT |
+| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT |
 |----------|-----------------|-------------|
-| Heading  | 14px / 0.875rem | Bold / 700  |
-| Text     | 14px / 0.875rem | Normal / 400|
+| Heading  | 14 / 0.875 | Bold / 700  |
+| Text     | 14 / 0.875 | Normal / 400|
 
 ## Layer
 

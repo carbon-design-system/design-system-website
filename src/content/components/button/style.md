@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR            | SCSS                   | HEX                    |
+| ATTRIBUTE            | SCSS                   | HEX                    |
 |------------------|------------------------|------------------------|
 | Normal           | $brand-01              | #3d70b2                |
 | Primary:hover    | $brand-02              | #5596e6               |
@@ -27,16 +27,27 @@
   <div>
     ![Example of a disabled Secondary Button](images/button-style-6.png)
   </div>
+  <div>
+    ![Example of a normal Ghost Button](images/button-style-15.png)
+  </div>
+  <div>
+    ![Example of a Ghost Button on hover](images/button-style-16.png)
+  </div>
+  <div>
+    ![Example of a disabled Ghost Button](images/button-style-17.png)
+  </div>
 </div>
-_Primary and Secondary Button state examples_
+_Primary, Secondary, and Ghost Button state examples_
+
+
 
 ## Typography
 
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| PROPERTY  | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY  | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |-------------|------------------|--------------|
-| Button text | 14px / 0.875rem  | Bold / 700   |
+| Button text | 14 / 0.875 | Bold / 700   |
 
 ## Structure
 
@@ -57,15 +68,16 @@ _Stucture measurements for small and regular Primary Button | px / rem_
 
 ### Spacing
 
-A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with an icon, the space between the button label and the icon must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with icons appear together.
+A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
 
 | SPACING                 | PX | REM   |
 |-------------------------|----|-------|
-| Text & button           | 16 | 1     |
 | External: regular button| 16 | 1     |
+| Internal: regular button| 16 | 1     |
 | Internal: small button  | 10 | 0.625 |
 | Button pairings         | 16 | 1     |
-| Button & icon           | 16 | 1     |
+| Text & glyph            | 16 | 1     |
+| Ghost Button: text & glyph    | 8  | 0.5   |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -78,7 +90,13 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
     ![External Button spacing](images/button-style-11.png)
   </div>
   <div>
-    ![Internal spacing for a Button with icon](images/button-style-12.png)
+    ![Internal spacing for a Button with glyph](images/button-style-12.png)
+  </div>
+  <div>
+  ![Ghost button spacing](images/button-style-13.png)
+  </div>
+  <div>
+  ![Small Ghost button spacing](images/button-style-14.png)
   </div>
 </div>
 _Spacing measurements for various Button types | px / rem_

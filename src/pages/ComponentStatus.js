@@ -21,6 +21,9 @@ class ComponentStatus extends React.Component {
     if (currentItem.tag && currentItem.tag === 'new') {
       tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
     }
+    if (currentItem.tag && currentItem.tag === 'updated') {
+      tag = <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>;
+    }
     return (
       <tr key={currentItem.item}>
         <td>{currentItem.item} {tag}</td>

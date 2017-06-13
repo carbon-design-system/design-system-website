@@ -1,3 +1,31 @@
+| Select type      | Purpose                                                                                                                                                                                                                                                          |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Default          | Typically used in forms with a variety of other components.                                                                                                                                                                                                                    |
+| Small select        | When vertical space is a concern, or Select is being paired with larger component, such as [Cards](/components/cards) or [Data Tables](/components/data-table).                                                                                                                                                                                                                               |
+| Inline select | When multiple selects are grouped together.                                                                                                                          |
+
+### Small select
+Small selects are commonly used in [Data Tables](/components/data-table). When using a Small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
+
+---
+***
+> 
+![example of Small select in Data Table](images/select-usage-3.png)
+
+_Example of Small select in Data Table_
+
+### Inline select
+Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page, since stylistically they are borderless.
+
+---
+***
+> 
+![example of inline select](images/select-usage-4.png)
+
+_Example of Inline select_
+
+<br>
+
 ## General guidelines
 
 ### Labels
@@ -18,6 +46,10 @@ _Validation on Select_
 
 The order of the Select list should be based on the frequency of use. If applicable, the list should be in increasing order relative to the content. In cases of Forms, alternative orders such as alphabetical may be more fitting. A horizontal rule can be used to group similar items together.
 
+
+
+## Accessibility
+
 ### Styling Select dropdowns
 
 It is strongly recommended not to style Select dropdowns due to accessibility purposes.
@@ -29,7 +61,6 @@ One of the <a href="https://www.w3.org/TR/WCAG20-TECHS/G202.html" target=blank>W
 ![Select element rendered in Chrome](images/select-usage-2.png)
 _Rendering of Select element in Chrome_
 
-### Accessibility
 
 While you can make a Select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default `select` element should follow this process:
 
@@ -39,7 +70,3 @@ While you can make a Select element easily usable by a mouse, making it usable w
 | :focus  | click on the select element              | press enter                                         |
 | :       | move your cursor over the desired option | use the top and bottom arrow keys to pick an option |
 | :select | click on the desired option              | press enter                                         |
-
-## Small select
-
-Small selects are commonly used in [Data Tables](/components/data-table). When using a small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.

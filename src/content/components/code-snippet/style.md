@@ -1,8 +1,8 @@
 ## Color
 
-| COLOR                    | SCSS     | HEX     |
+| ATTRIBUTE                    | SCSS     | HEX     |
 |--------------------------|----------|---------|
-| Code snippet: background | $field-01| #3d70b2 |  
+| Code snippet: background | $field-01| #3d70b2 @ 10% |  
 | Code snippet: text       | $text-01 | #152935 |
 | Terminal: background     | $nav-01  | #0f212e |
 | Terminal: text           | $ui-02   | #f5f7fa |
@@ -10,9 +10,9 @@
 
 ## Typography
 
-| PROPERTY | FONT-FAMILY | FONT-SIZE   | FONT-WEIGHT  |
+| PROPERTY | FONT-FAMILY | FONT-SIZE (px/rem)  | FONT-WEIGHT  |
 |----------|-------------|-------------|--------------|
-| Text     | Monospace   | 16px / 1rem | Normal / 400 |
+| Text     | Monospace   | 16 / 1 | Normal / 400 |
 
 ## Structure
 

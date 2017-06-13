@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR             | SCSS          | HEX           |
+| ATTRIBUTE             | SCSS          | HEX           |
 |-------------------|---------------|---------------|
 | Background        | $field-01     | #3d70b2 @ 10% |
 | Text: label       | $text-01      | #152935       |
@@ -9,7 +9,7 @@
 
 ---
 ***
-> 
+>
 ![Default and user input states for Text Input](images/text-input-style-1.png)
 
 _Examples of default and user-input states for Text Input_
@@ -18,10 +18,10 @@ _Examples of default and user-input states for Text Input_
 
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less.
 
-| PROPERTY | FONT-SIZE     | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Label    | 14px / 0.875rem | Bold / 700   |
-| Text     | 14px / 0.875rem | Normal / 400 |
+| Label    | 14 / 0.875 | Bold / 700   |
+| Text     | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
@@ -40,13 +40,13 @@ _Structure and spacing measurements for Text Input | px / rem_
 
 **Active:** Hint text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
 
-**Help/More Info:** A Tooltip should appear when the user clicks the "More Info" link. The Tooltip indicator should be left aligned with the Text Input and underlined. 
+**Help/More Info:** A Tooltip should appear when the user clicks the "More Info" link. The Tooltip indicator should be left aligned with the Text Input and underlined.
 
 **Disabled:** 50% opacity
 
 ---
 ***
-> 
+>
 ![Active, help, or disabled states for Text Input](images/text-input-style-3.png)
 
 _Examples of active, help, and disabled Text Input states_

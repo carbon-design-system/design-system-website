@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR          | SCSS    | HEX         |
+| ATTRIBUTE          | SCSS    | HEX         |
 |----------------|---------|-------------|
 | Background     | $ui-01  | #ffffff     |
 | Text           | $text-02| #5a6872     |
@@ -11,9 +11,9 @@
 
 Pagination text should be set in set in sentence case with the first letter of each word capitalized.
 
-| PROPERTY       | FONT-SIZE      | FONT-WEIGHT |
+| PROPERTY       | FONT-SIZE (px/rem)     | FONT-WEIGHT |
 |------------------|-----------------|--------------|
-| Secondary text   | 12px / 0.75rem  | Normal / 400 |
+| Secondary text   | 12 / 0.75  | Normal / 400 |
 
 ## Structure
 

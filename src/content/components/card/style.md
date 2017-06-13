@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR             | SCSS     | HEX      |
+| ATTRIBUTE             | SCSS     | HEX      |
 |-------------------|----------|----------|
 | Background        | $ui-01   | #ffffff  |
 | Footer background | $ui-03   | #f0f3f6  |
@@ -12,11 +12,11 @@
 
 Card names and card information should be set in title case with the first letter of each word capitalized. All other text should be set in sentence case.
 
-| PROPERTY                  | FONT-SIZE     | FONT-WEIGHT  |
+| PROPERTY                  | FONT-SIZE (px/rem)    | FONT-WEIGHT  |
 |----------------------------|-----------------|--------------|
-| Card name                  | 18px / 1.125rem | Light / 300  |
-| Secondary info             | 12px / 0.75rem  | Normal / 400 |
-| Status                     | 12px / 0.75rem  | Normal / 400 |
+| Card name                  | 18 / 1.125 | Light / 300  |
+| Secondary info             | 12 / 0.75  | Normal / 400 |
+| Status                     | 12 / 0.75  | Normal / 400 |
 
 ## Layer
 

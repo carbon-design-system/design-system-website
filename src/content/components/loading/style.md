@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR              | SCSS          | HEX      |
+| ATTRIBUTE              | SCSS          | HEX      |
 |--------------------|---------------|----------|
 | Large spinner      | $nav-05       | #00b4a0  |
 | Small spinner      | $ui-05        | #8c9ba5  |

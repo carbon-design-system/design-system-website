@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR          | SCSS        | HEX     |
+| ATTRIBUTE          | SCSS        | HEX     |
 |----------------|-------------|---------|
 | Icon           | $ui-05      | #8c9ba5 |
 | Background     | $ui-01      | #ffffff |
@@ -24,9 +24,9 @@ _Text and warning hover examples for Overflow Menu_
 
 Overflow Menu text should be set in set in sentence case with the first letter of each word capitalized.
 
-| PROPERTY | FONT-SIZE     | FONT-WEIGHT |
+| PROPERTY | FONT-SIZE (px/rem)    | FONT-WEIGHT |
 |------------|-----------------|--------------|
-| Label      | 14px / 0.875rem | Normal / 400 |
+| Label      | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 

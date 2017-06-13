@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR                      | SCSS       | HEX      |
+| ATTRIBUTE                      | SCSS       | HEX      |
 |----------------------------|------------|----------|
 | Background                 | $ui-01     | #ffffff  |
 | Background: active, hover  | $ui-01     | #f0f3f6  |
@@ -30,11 +30,11 @@ _Select and hover states for Interior Left Navigation_
 
 All left navigation text should be set in title case, with the first letter of each word capitalized. Labels should not exceed three words.
 
-| Property                | Font-size       | Font-weight  |
+| Property                | Font-size (px/rem)      | Font-weight  |
 |-------------------------|-----------------|--------------|
-| List item               | 14px / 0.875rem | Bold / 700   |
-| List item               | 12px / 0.75rem  | Roman / 300  |
-| List item: selected    | 12px / 0.75rem  | Bold / 700   |
+| List item               | 14 / 0.875 | Bold / 700   |
+| List item               | 12 / 0.75  | Roman / 300  |
+| List item: selected    | 12 / 0.75  | Bold / 700   |
 
 ## Layer
 

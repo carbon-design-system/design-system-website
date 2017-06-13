@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR                       | SCSS     | HEX       |
+| ATTRIBUTE                       | SCSS     | HEX       |
 |-----------------------------|--------- |-----------|
 | Background                  | $ui-01   | #ffffff   |
 | Border                      | $ui-04   | #dfe3e6   |
@@ -18,11 +18,11 @@ _Example of a Data Table_
 
 Column labels should be in all caps. All other table text should be sentenced case.
 
-| PROPERTY      | FONT-SIZE     | FONT-WEIGHT  |
+| PROPERTY      | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |---------------|------------------|--------------|
-| Title         | 23px / 1.4375rem | Light / 300  |
-| Header        | 12px / 0.75rem   | Bold / 700   |
-| Text          | 14px / 0.875rem  | Normal / 400 |
+| Title         | 23 / 1.4375 | Light / 300  |
+| Header        | 12 / 0.75   | Bold / 700   |
+| Text          | 14 / 0.875  | Normal / 400 |
 
 ## Layer
 

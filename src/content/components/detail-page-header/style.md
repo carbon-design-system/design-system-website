@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR                    | SCSS      | HEX       |
+| ATTRIBUTE                    | SCSS      | HEX       |
 |--------------------------|-----------|-----------|
 | Background with Tabs     | $ui-01    | #ffffff   |
 | Background with Interior Left Nav  | $ui-02    | #f5f7fa   |
@@ -11,11 +11,11 @@
 
 Detail Page Header titles, Breadcrumb text, and Tab labels should all be set in sentence case.
 
-| Property   | Font-size       | Font-weight  |
+| Property   | Font-size (px/rem)       | Font-weight  |
 |------------|-----------------|--------------|
-| Title      | 28px / 1.75rem  | Light / 300  |
-| Secondary text     | 14px / 0.875rem | Normal / 400 |
-| Breadcrumb | 14px / 0.875rem | Normal / 400 |
+| Title      | 28 / 1.75  | Light / 300  |
+| Secondary text     | 14 / 0.875 | Normal / 400 |
+| Breadcrumb | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 

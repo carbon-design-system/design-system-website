@@ -1,15 +1,20 @@
 ## Color
 
-| COLOR             | SCSS          | HEX      |
+| ATTRIBUTE             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
 | Background        | $field-01     | #3d70b2 @ 10% |
 | Caret             | $brand-01     | #3d70b2   |
-| Text: user input  | $text-01      | #152935   |
+| Label             | $text-01      | #152935   |
+| Label: inline select  | $text-03      | #5a6872   |
+| Text              | $text-01      | #152935   |
+| Text: inline select | $brand-01     | #3d70b2   |
 | Text: placeholder | $text-03      | #5a6872   |
+
+
 
 ---
 ***
-> 
+> 
 ![Default and new selection state examples for Select](images/select-style-1.png)
 
 _Examples of default and new selection Select states_
@@ -18,17 +23,19 @@ _Examples of default and new selection Select states_
 
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
-| PROPERTY | FONT-SIZE       | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Label    | 14px / 0.875rem | Bold / 700   |
-| Text     | 14px / 0.875rem | Normal / 400 |
+| Label    | 14 / 0.875 | Bold / 700   |
+| Label: inline select    | 14px / 0.875rem |  Normal / 400   |
+| Text     | 14 / 0.875 | Normal / 400 |
+| Text: inline select     | 14 / 0.875rem | Bold / 700 |
 
 ## Structure
 
 | PROPERTY                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
-| Spacing: Label & select box | 10 | 0.625 |
+| Spacing: Label & field      | 10 | 0.625 |
 | Internal spacing            | 16 | 1     |
 | Groupings: vertical         | 32 | 2     |
 | Groupings: horizontal       | 16 | 1     |
@@ -46,7 +53,7 @@ _Structure and spacing measurements for Select | px / rem_
 
 ---
 ***
-> 
+> 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 
 _Examples of open, disabled, and help Select states_
@@ -71,3 +78,19 @@ _Structure and spacing measurements for Small Select | px / rem_
 
 _Examples of open and disabled Small Select states_
 
+
+
+### Inline select
+
+| PROPERTY                    | PX | REM   |
+|-----------------------------|----|-------|
+| Height                      | 32 | 2     |
+| Internal spacing            | 10  | 0.625    |
+
+
+---
+***
+> 
+![Structure and spacing measurements for Inline Select](images/select-style-6.png)
+
+_Structure and spacing measurements for Inline Select (on hover) | px / rem_

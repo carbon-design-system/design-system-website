@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR          | SCSS       | HEX        |
+| ATTRIBUTE          | SCSS       | HEX        |
 |----------------|------------|------------|
 | Label          | $text-01   |  #152935   |
 | Body           | $text-01   |  #152935   |
@@ -12,10 +12,10 @@
 
 All Accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
 
-| PROPERTY   | FONT-SIZE       | FONT-WEIGHT  |
+| PROPERTY   | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |------------|-----------------|--------------|
-| Label      | 16px / 1rem     | Normal / 400 |
-| Body       | 14px / 0.875rem | Normal / 400 |
+| Label      | 16 / 1     | Normal / 400 |
+| Body       | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

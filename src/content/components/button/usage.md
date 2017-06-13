@@ -11,7 +11,8 @@ Buttons are used primarily on action items. Some examples include **Add**, **Sav
 | Button with icon | When words are not enough, icons can be used in buttons to better communicate what the button does. Icons are always paired with text.                                                                                                                                                                                                                                                   |
 | Disabled button  | Use when the user cannot proceed until an input is collected.                                                                                                                                                                                                                                                                                                                            |
 | Set of Buttons   | When an action required by the user has more than one option, always use a a negative action button (secondary) paired with a positive action button (primary) in that order. Negative action buttons will be on the left. Positive action buttons should be on the right. When these two types of buttons are paired in the correct order, they will automatically space themselves apart. |
-| Small Button     | Use when there is not enough vertical space for a regular sized button.                                                                                                                                                                                                                                                                                                                  |           
+| Small Button     | Use when there is not enough vertical space for a regular sized button.                                                                                                                                                                                                                                                                                                                  |   
+| Ghost Button     | When an action does not require primary dominance on the page.  |        
 
 ## Labels
 
@@ -25,12 +26,13 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 
 * Use glyphs (16px) within buttons.
 * Glyphs are distinguished by their solid shape and knocked-out details.
-* Icons should always appear to the right of the text.
-* Icons used in buttons must be directly related to the action that the user is taking.
-* Icons must be the same color value as the text within a button.
+* Glyphs should always appear to the right of the text.
+* Glyphs used in buttons must be directly related to the action that the user is taking.
+* Glyphs must be the same color value as the text within a button.
+* Ghost buttons require a glyph icon (cannot be stand alone text because of poor affordance).
 
 ---
 ***
 > 
-![button with icon](images/button-usage-1.png)
-_Icon usage in Button_
+![button with glyph](images/button-usage-1.png)
+_Glyph usage in Button_

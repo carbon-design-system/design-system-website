@@ -15,35 +15,29 @@ class Resources extends React.Component {
           <div className="resources__top">
             <div>
               <img src={designKitImage} alt="Sketch icon" />
-              <h2>Carbon design kit</h2>
+              <h2>Carbon Design Kit</h2>
               <p>
-                The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
+                The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
               </p>
-              <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank">Carbon design kit</a>
+              <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank">Carbon Design Kit</a>
             </div>
             <div>
               <img src={githubImage} alt="Github icon" />
-              <h2>Carbon component library</h2>
+              <h2>Carbon Component Library</h2>
               <p>
-                The component library gives developers a collection of re-usable HTML
+                The Component Library gives developers a collection of re-usable HTML
                 and Sass partials they can use for building websites and user interfaces.
               </p>
-              <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Carbon component library</a>
+              <a href="https://github.com/carbon-design-system/carbon-components" target="_blank">Carbon Component Library</a>
             </div>
           </div>
           <h3 className="page__divider-heading">Additional Links</h3>
           <div className="resources__bottom">
-            <div>
-              <h4>Craft Plugin</h4>
-              <p>
-                Downloading and installing this plugin gives you the ability to use the Carbon Craft Library.
-              </p>
-              <a href="#">Coming soon!</a>
-            </div>
+            
             <div>
               <h4>Carbon Boilerplate</h4>
               <p>
-                A simple boilerplate for rapid UI prototyping with Carbon components.
+                A simple boilerplate for rapid UI prototyping with Carbon Components.
               </p>
               <a href="https://carbon-boilerplate.mybluemix.net/" target="_blank">Carbon Boilerplate</a>
             </div>

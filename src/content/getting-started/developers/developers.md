@@ -1,4 +1,5 @@
-**The `carbon-components` library provides front-end developers and engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
+**The _Carbon Component Library_ provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
+
 
 ## Install
 
@@ -47,8 +48,8 @@ Using the Carbon Sass files infers usage of the SCSS pre-processor.
 All Sass files use the `*.scss` file extension.
 
 #### Things to know
- 
-If you're starting a new project without a boilerplate, 
+
+If you're starting a new project without a boilerplate,
 you need to know about a few things to get started.
 
 __Autoprefixer__: Make sure your build process uses [autoprefixer](https://github.com/postcss/autoprefixer) to ensure vendor prefixes are automatically added to your output CSS.
@@ -71,14 +72,14 @@ __Global `SCSS` variables__: These variables are used to configure which parts o
 
 For example:
 
-- When you set `$css--reset: true`, then the contents of [_css--reset.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--reset.scss) will be part of your output CSS. 
+- When you set `$css--reset: true`, then the contents of [_css--reset.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--reset.scss) will be part of your output CSS.
 - When you set `$css--reset: false`, then nothing gets included from that SCSS file.
 - When the variable is not declared at all, then nothing gets included from that SCSS file.
 
 The same rules apply to all the following variables:
 
 ```scss
-// In styles.scss: 
+// In styles.scss:
 // These are the default settings.
 
 $css--font-face: false !default; // _css--font-face.scss
@@ -89,7 +90,7 @@ $css--reset: true !default;      // _css--reset.scss
 $css--typography: true !default; // _css--typography.scss
 ```
 
-These flags are set for you by default when you `@import` the `styles.scss` file. 
+These flags are set for you by default when you `@import` the `styles.scss` file.
 You can override these default settings by redeclarining the variables.
 
 #### Importing SCSS files
@@ -104,13 +105,13 @@ Importing a component this way will bring in any dependencies that component has
 
 #### Namespacing
 
-Carbon components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker.
+Carbon Components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker.
 
 ## Javascript
 
 ### Using a module bundler: recommended
 
-Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
+Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon Components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
 
 #### Initialize all instances of a component using a module bundler
 

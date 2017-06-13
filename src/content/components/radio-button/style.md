@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR               | SCSS      | HEX       |
+| ATTRIBUTE               | SCSS      | HEX       |
 |---------------------|-----------|-----------|
 | Non-selected border | $ui-05    | #8c9ba5   |
 | Selected            | $brand-01 | #3d70b2   |
@@ -9,10 +9,10 @@
 
 Radio Button labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| PROPERTY | FONT-SIZE    | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)   | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Heading  | 14px / 0.875rem | Bold / 700   |
-| Label    | 14px / 0.875rem | Normal / 400 |
+| Heading  | 14 / 0.875 | Bold / 700   |
+| Label    | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

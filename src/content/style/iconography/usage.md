@@ -2,7 +2,7 @@
 
 ## Resources
 
-You can find the source file for the icon library within the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon design kit.</a>
+You can find the source file for the icon library within the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon Design Kit.</a>
 
 - <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>Carbon icons GitHub repo</a>
 - <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
@@ -151,6 +151,6 @@ Make sure that you do not duplicate this `id`.
 </svg>
 ```
 
-For more details on accessibility, see the following resources: 
+For more details on accessibility, see the following resources:
 - "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
 - "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)

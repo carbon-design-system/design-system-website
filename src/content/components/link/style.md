@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR    | SCSS          | HEX           |
+| ATTRIBUTE    | SCSS          | HEX           |
 |----------|---------------|---------------|
 | Normal   | $brand-01     | #3d70b2       |
 | Hover    | $brand-02     | #5596e6       |
@@ -17,9 +17,9 @@ _Normal, hover disabled Link states_
 
 Link text should be set in set in sentence case with the first letter of each word capitalized. Links should not exceed three words.
 
-| PROPERTY  | FONT-SIZE    | FONT-WEIGHT |
+| PROPERTY  | FONT-SIZE (px/rem)   | FONT-WEIGHT |
 |------------|-----------------|--------------|
-| Text       | 14px / 0.875rem | Bold / 700   |
+| Text       | 14 / 0.875 | Bold / 700   |
 
 ## Structure
 

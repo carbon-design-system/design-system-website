@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR              | SCSS | HEX |
+| ATTRIBUTE              | SCSS | HEX |
 |--------------------|------|------|
 | Active: fill       | $brand-01   | #3d70b2  |
 | Active: text       | $inverse-01 | #ffffff  |
@@ -12,9 +12,9 @@
 
 Content Switcher text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. The text should not exceed three words.
 
-| PROPERTY   | FONT-SIZE       | FONT-WEIGHT  |
+| PROPERTY   | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |------------|-----------------|--------------|
-| Text       | 14px / 0.875rem | Normal / 400 |
+| Text       | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 

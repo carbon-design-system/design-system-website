@@ -2,9 +2,9 @@
 
 Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
 |----------|----------------|--------------|
-| Text     | 12px / 0.75rem | Normal / 400 |
+| Text     | 12 / 0.75 | Normal / 400 |
 
 ## Structure
 
@@ -19,7 +19,7 @@ All tags have the same height. However, the width of tags varies based on the am
 
 ---
 ***
-> 
+>
 ![Structure and spacing measurements](images/tag-style-1.png)
 
 _Structure and spacing measurements for a Tag | px / rem_

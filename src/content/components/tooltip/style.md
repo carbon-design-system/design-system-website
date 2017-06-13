@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR              | SCSS      | HEX       |
+| ATTRIBUTE              | SCSS      | HEX       |
 |--------------------|-----------|-----------|
 | Icon               | $brand-01 | #3d70b2   |
 | Icon: hover        | $brand-02 | #5596e6   |
@@ -19,11 +19,11 @@ _Example of closed and open states for a Tooltip_
 
 Tooltip labels and text should be set in sentence case.
 
-| PROPERTY | FONT-SIZE      | FONT-WEIGHT  |
+| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
 |----------|-----------------|--------------|
-| Header   | 16px / 1rem     | Bold / 700   |
-| Label    | 14px / 0.875rem | Bold / 700   |
-| Text     | 14px / 0.875rem | Normal / 400 |
+| Header   | 16 / 1     | Bold / 700   |
+| Label    | 14 / 0.875 | Bold / 700   |
+| Text     | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 
@@ -44,7 +44,7 @@ Tooltip labels and text should be set in sentence case.
 
 ---
 ***
-> 
+>
 ![Structure and spacing measurements for a tooltip](images/tooltip-style-2.png)
 
 _Structure and spacing measurements for a Tooltip | px / rem_

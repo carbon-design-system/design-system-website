@@ -23,7 +23,9 @@ const renderFrontMatter = (targetFile) => {
         componentContent = yamlFront.loadFront(fs.readFileSync(`${dir}/src/content/components/${component}/${file}`));
       }
     });
-    fs.writeFileSync(`${dir}/src/data/components/${component}.js`, `/* eslint-disable */\n module.exports = ${JSON.stringify(componentContent, null, 2)}`);
+    if (!componentContent === undefined) {
+      fs.writeFileSync(`${dir}/src/data/components/${component}.js`, `/* eslint-disable */\n module.exports = ${JSON.stringify(componentContent, null, 2)}`);
+    }
   });
 };
 
