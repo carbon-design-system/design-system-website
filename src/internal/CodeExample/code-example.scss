@@ -16,15 +16,10 @@ $temp-text: $color__blue-90;
     border: none;
     box-shadow: none;
   }
-
-  .bx--snippet__icon {
-    top: 0;
-    right: .25rem;
-  }
 }
 
 .code-example__copy-btn {
-  height: rem(24px);
+  height: 2.5rem;
   position: absolute;
   top: .75rem;
   right: .75rem;
@@ -39,6 +34,12 @@ $temp-text: $color__blue-90;
 
   &:hover svg {
     fill: $brand-02;
+  }
+
+  svg {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
   }
 }
 

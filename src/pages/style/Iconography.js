@@ -59,9 +59,12 @@ class Iconography extends React.Component {
     const allIcons = [];
     Object.keys(IconItems).map(IconItem => {
       const Icon = IconItems[IconItem];
-      const path = require(`../../assets/svg/${this.tempModifyIconName(Icon.name)}.svg`);
+      const path = require(`../../assets/svg/${this.tempModifyIconName(
+        Icon.name
+      )}.svg`);
       if (
-        !this.state.isSearching || Icon.name.includes(this.state.searchValue)
+        !this.state.isSearching ||
+        Icon.name.includes(this.state.searchValue)
       ) {
         allIcons.push(
           <IconCard
@@ -83,7 +86,10 @@ class Iconography extends React.Component {
 
   render() {
     const tabs = ['library', 'usage', 'contribution'];
-    const packageVer = Packages.dependencies['carbon-icons'];
+    let packageVer = Packages.dependencies['carbon-icons'];
+    if (packageVer.slice(0, 1) === '^') {
+      packageVer = packageVer.slice(1);
+    }
     let currentPage = 'library';
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;

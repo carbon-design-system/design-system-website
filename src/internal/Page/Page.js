@@ -33,14 +33,16 @@ class Page extends Component {
   componentDidUpdate() {
     this.updateClasses();
     this.addCustomComponent();
-    this.addAnchor();
     this.colorHex();
     document.title = `Carbon Design System | ${this.props.title}`;
   }
 
   handleKeyDown = evt => {
     if (evt.keyCode === 37) {
-      document.querySelector('.sub-nav__item.selected').querySelector('a').focus();
+      document
+        .querySelector('.sub-nav__item.selected')
+        .querySelector('a')
+        .focus();
     }
   };
 
@@ -107,7 +109,9 @@ class Page extends Component {
       DosAndDonts4,
     };
 
-    const insertComponent = [...document.querySelectorAll('[data-insert-component]')];
+    const insertComponent = [
+      ...document.querySelectorAll('[data-insert-component]'),
+    ];
     insertComponent.forEach(component => {
       const comp = component.dataset.insertComponent;
       const NewComponent = customComponents[comp];

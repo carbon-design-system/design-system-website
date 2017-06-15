@@ -70,7 +70,7 @@
   "dependencies": {
     "@console/bluemix-components-react": "2.0.0",
     "babel-polyfill": "^6.23.0",
-    "carbon-components": "7.5.7",
+    "carbon-components": "7.10.2",
     "carbon-icons": "5.1.2",
     "classnames": "^2.2.5",
     "color": "^1.0.3",

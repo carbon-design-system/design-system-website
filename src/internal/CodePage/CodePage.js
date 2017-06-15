@@ -29,6 +29,8 @@ class CodePage extends Component {
         window.CarbonComponents.OverflowMenu.init();
         window.CarbonComponents.DataTable.init();
         window.CarbonComponents.Toolbar.init();
+      } else if (currentComponent === 'DatePicker') {
+        window.CarbonComponents.DatePicker.init();
       } else if (currentComponent === 'DetailPageHeader') {
         window.CarbonComponents.OverflowMenu.init();
         window.CarbonComponents.Tab.init();
@@ -44,6 +46,8 @@ class CodePage extends Component {
       htmlFile = require('carbon-components/src/components/text-area/text-area.html');
     } else if (parent === 'data-table' && variation === 'toolbar') {
       htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+    } else if (parent === 'date-picker' && variation === 'time-picker') {
+      htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
     } else {
       htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
     }

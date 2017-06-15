@@ -5,4 +5,6 @@ variations:
   - Primary button
   secondary-button:
   - Secondary button
+  ghost-button:
+  - Ghost button
 ---

@@ -53,7 +53,7 @@
   > div:first-child:nth-last-child(4),
   > div:first-child:nth-last-child(4) ~ div {
     @include breakpoint('600px') {
-      width: calc(25% - 1rem);
+      width: calc(50% - 1rem);
     }
   }
 
@@ -143,6 +143,18 @@ main[data-page|=components-style] [data-insert-component="ImageGrid"] {
   }
 }
 
+main[data-page|=components-usage] [data-insert-component="ImageGrid"] {
+  .image-grid {
+    align-items: center;
+    background-color: $color__gray-3;
+    padding: 0 1rem 1rem;
+
+    img {
+      border: none;
+    }
+  }
+}
+
 [data-page="components-style-button"] [data-insert-component="ImageGrid"]:first-of-type {
   .image-grid img {
     max-width: 200px;
@@ -201,9 +213,11 @@ main[data-page|=components-style] [data-insert-component="ImageGrid"] {
     img {
       width: 100%;
       max-width: rem(160px);
+      max-height: rem(150px);
       margin-left: 0;
       padding: 0;
       margin-top: 4rem;
+      object-fit: contain;
     }
 
     @include breakpoint('bp--md--major') {

@@ -150,13 +150,13 @@
     },
     {
       "item": "Slider",
-      "added": "7.10.1",
+      "added": "7.10.0",
       "tag": "new",
       "status": 0
     },
     {
       "item": "Structured List",
-      "added": "7.10.1",
+      "added": "7.7.0",
       "tag": "new",
       "status": 0
     },

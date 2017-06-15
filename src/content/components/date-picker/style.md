@@ -94,5 +94,4 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
     ![Spacing for a 24-hour clock](images/time-picker-style-4.png)
   </div>
 </div>
-
 _Structure and spacing for 12-hour and 24-hour Time Pickers | px / rem_

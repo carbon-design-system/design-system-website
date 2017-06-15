@@ -7,6 +7,9 @@
     ],
     "secondary-button": [
       "Secondary button"
+    ],
+    "ghost-button": [
+      "Ghost button"
     ]
   },
   "__content": "\n"
