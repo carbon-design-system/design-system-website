@@ -1,6 +1,14 @@
 ## Types of Sliders
 The Slider in its basic form should be accompanied by a label and a number input that can demonstrate the slider input's increase or decrease. The basic slider does **not** include values as the slider represents a percentage of 0-100. In this case it is not necessary for a user to choose a specific value, but instead generally increase or decrease an input. For example, the user increases the Slider amount and the volume of the music gets louder. The more complex versions should be used for selecting a specific value within a value range.
 
+---
+***
+> 
+![basic slider example](images/slider-usage-2.png)
+
+_Slider used to change volume_
+
+
 ## Interaction
 Users can choose a numerical value by:
 
@@ -11,9 +19,10 @@ Users can choose a numerical value by:
 * ↑ ↓ ← → changes the value by one step size increment. (_Example: Pressing `→` changes the inputted value from 59 to 60, increasing the value by 1 unit._)
 * `Shift` + ↑ ↓ ← → changes the value by 10 step size increments. (_Example: Typing `Shift + →` changes the value from 60 to 70, increasing the inputted value by 10 units._)
 
-<!--
-![slider interaction](images/)
-_Example of a Slider interaction_-->
+
+![slider interaction](images/slider-usage-4.gif)
+
+_Example of a Slider interaction_
 
 
 ## Best practices

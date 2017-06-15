@@ -48,7 +48,7 @@
     },
     {
       "item": "Date Picker",
-      "added": "7.6.0",
+      "added": "7.10.1",
       "tag": "new",
       "status": 0
     },
@@ -150,13 +150,13 @@
     },
     {
       "item": "Slider",
-      "added": "7.6.0",
+      "added": "7.10.1",
       "tag": "new",
       "status": 0
     },
     {
       "item": "Structured List",
-      "added": "7.6.0",
+      "added": "7.10.1",
       "tag": "new",
       "status": 0
     },

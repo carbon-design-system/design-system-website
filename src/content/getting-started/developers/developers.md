@@ -98,7 +98,7 @@ You can override these default settings by redeclarining the variables.
 To add a component style to your build, simply import the component directly
 
 ```javascript
-@import 'node_modules/carbon-components/scss/card/card';
+@import 'node_modules/carbon-components/scss/components/card/card';
 ```
 
 Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.

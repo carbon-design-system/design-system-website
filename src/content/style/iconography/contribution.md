@@ -66,7 +66,7 @@ We use the following naming convention for SVG filenames:
 * `name`: icon name (ex. `add.svg`)
 * `name--outline`: icon with an outline (ex. `add--outline.svg`)
 * `name--glyph`: icon that is a glyph (ex. `add--glyph`)
-* `name--new`: new icon that replaces a deprecated icon, see [README](https://github.ibm.com/Bluemix/bluemix-icons#skull-deprecated-in-3x)
+* `name--new`: new icon that replaces a deprecated icon
 
 ### Prepping SVG XML code
 
