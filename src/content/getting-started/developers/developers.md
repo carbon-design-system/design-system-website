@@ -195,3 +195,28 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
   </body>
 </html>
 ```
+
+### Wrapping a component with JavaScript framework of your choice
+
+Many JavaScript frameworks have a mechanism to automatically create/destroy DOM elements, for example, upon change in array.
+Carbon Components defined in DOM elements that are created after `DOMContentLoaded` event, like ones such JavaScript frameworks create upon change in array, need to be initialized (and released) manually.
+
+The easiest way to manually initialize/release components is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example with Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
+
+```javascript
+class BXLoading extends HTMLElement {
+  // Called when this custom element gets into render tree
+  connectedCallback() {
+    // `this` here is `<bx-loading>` element
+    this.innerHTML = '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
+    this.loading = CarbonComponents.Loading.create(this.querySelector('[data-loading]'));
+  }
+
+  // Called when this custom element gets out of render tree
+  disconnectedCallback() {
+    this.loading.release();
+  }
+}
+
+customElements.define('bx-loading', BXLoading);
+```
