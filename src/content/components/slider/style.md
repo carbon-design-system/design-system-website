@@ -28,6 +28,6 @@ The width of a Slider varies based on page content and layout.
 | Spacing: range value & text input | 16 | 1  |
 
 
-![Structure and spacing measurements for Slider](images/slider-style-3.png)
+![Structure and spacing measurements for Slider](images/slider-style-1.png)
 
 _Structure and spacing measurements for Slider | px / rem_
