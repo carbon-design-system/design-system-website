@@ -10,7 +10,7 @@
 
 ---
 ***
->
+>  
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
 
 _Example of closed and open states for a Tooltip_
@@ -44,7 +44,7 @@ Tooltip labels and text should be set in sentence case.
 
 ---
 ***
->
+>  
 ![Structure and spacing measurements for a tooltip](images/tooltip-style-2.png)
 
 _Structure and spacing measurements for a Tooltip | px / rem_

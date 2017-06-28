@@ -45,8 +45,36 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 
 ## Structure
 
+### Simple & Single Date Pickers
 
-### Date Picker
+| PROPERTY                     | PX  | REM    |
+|------------------------------|-----|--------|
+| Height                       | 40  | 2.5    |
+| Width: Simple Date Picker (mm/yyyy) | 91 | 5.7   |
+| Width: Simple Date Picker (mm/dd/yyyy) | 114 | 7.125  |
+| Width: Single Date Picker    | 144 | 9      |
+| Calendar icon                | 16  | 1      |
+| Internal spacing             | 16  | 1      |
+| Spacing: icon & input text   | 10  | 0.625|
+
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Structure for Simple & Single Date Pickers](images/date-picker-style-4.png)
+  </div>
+  <div>
+    ![Spacing for Simple & Single Date Pickers](images/date-picker-style-5.png)
+  </div>
+  <div>
+    ![Structure for Simple & Single Date Pickers](images/date-picker-style-6.png)
+  </div>
+  <div>
+    ![Spacing for Simple & Single Date Pickers](images/date-picker-style-7.png)
+  </div>
+</div>
+_Structure and spacing for Simple & Single Date Pickers | px / rem_
+
+
+### Range Date Picker
 
 | PROPERTY                     | PX  | REM    |
 |------------------------------|-----|--------|
