@@ -1,6 +1,5 @@
-## Visual guidelines
-### Adding icons
-If you would like to add an icon to our library, please submit a pull request in the Carbon design kit <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
+## Adding icons
+If you would like to add an UI icon to our library, please submit a pull request in the Carbon Design Kit <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
@@ -16,16 +15,18 @@ If you would like to add an icon to our library, please submit a pull request in
 ### Best practices
 * **Square icons:** create an artboard for an individual icon that is 24 x 24 pixels (or 16 x 16 pixels for glyphs)
 * **Rectangular icons:** make sure the width or the height of the artboard is 24 pixels (16 pixels for glyphs).
-* Each artboard and the artwork within it must be pixel perfect.
-* No decimals in x and y coordinates or width and height fields.
+* Each artboard and the artwork within it must be aligned to the pixel grid.
+* Icons should be at whole pixels. No decimals in x and y coordinates or width and height fields.
+* All strokes must be expanded.
+* All strokes must be full pixels.
 * No padding when exporting icons (internal and external padding can be added with CSS).
-* Do not trim transparent pixels.
+* Combine all possible shapes and paths.
 * Ungroup icon layers completely. It should be on the top-most layer in your artboard.
 * Make sure to properly name layers and artboards (these names will also be exported into the code).
 
 ### How to export SVGs from Sketch
-1. Draw a 24 x 24 pixel stand-alone artboard.
-2. Place icon in the pixel perfect center of the artboard.
+1. Draw an artboard that is the same size as your icon (at least one side should be 24px or 16px exactly). The artboard should hug the edges of the icon.
+2. Place the icon squarely on the artboard making sure its aligned to the pixel grid.
 3. Convert all strokes to outlines `(Shift + ⌘ + O)`
 4. Select any overlapping shapes and click the Union icon from the top navigation, to merge all of the shapes together.
 5. Make sure the icon is at `#000000` and has no additional styling.
@@ -33,15 +34,15 @@ If you would like to add an icon to our library, please submit a pull request in
 7. Click `Make Exportable` at the bottom of the right toolbar in Sketch.
 8. In the `Export` widget select SVG in the format dropdown.
 9. Click `Export 'Artboard-Name'`.
-10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--code.svg, add.svg, add--outline.svg).
+10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
 
 ![export icons from Sketch](images/icon-contribution-1.png)
 _Example: This is what a Sketch artboard should look like before SVG export_
 
 
 ### How to export SVGs from Adobe Illustrator
-1. Draw a 32 x 32 pixel stand-alone artboard.
-2. Place icon in the pixel perfect center of the artboard.
+1. Draw an artboard that is the same size as your icon (at least one side should be 24px or 16px exactly). The artboard should hug the edges of the icon.
+2. Place the icon squarely on the artboard making sure its aligned to the pixel grid.
 3. Expand all strokes `(Object > Expand)`.
 4. Select all overlapping shapes and click the Unite icon in the Pathfinder panel, to merge all of the shapes together.
 5. Make sure the icon is at `#000000` and has no additional styling.

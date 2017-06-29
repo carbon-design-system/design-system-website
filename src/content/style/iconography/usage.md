@@ -11,7 +11,7 @@ You can find the source file for the icon library within the <a href="https://gi
 
 ### Sizing
 
-Icons come in two sizes: 24px and 16px.
+UI icons come in two sizes: 24px and 16px.
 While most icons occupy a square artboard, some icons may occupy a rectangular artboard where the width or height of the icons is either 24px or 16px. In most cases, you can use icons at their original sizes.
 
 | NAME     | PX |
@@ -21,7 +21,7 @@ While most icons occupy a square artboard, some icons may occupy a rectangular a
 
 ### Background
 
-All icons should be on a transparent background and centered within the artboard boundaries at one of the standard dimensions below:
+All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
 
 ---
 ![icon usage](images/icon-usage-1.png)
