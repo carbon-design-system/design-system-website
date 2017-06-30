@@ -1,7 +1,5 @@
 import React from 'react';
-import Icon from '@console/bluemix-components-react/dist/components/Icon';
-// import Dropdown from '@console/bluemix-components-react/dist/components/Dropdown';
-// import DropdownItem from '@console/bluemix-components-react/dist/components/DropdownItem';
+import { Icon } from 'carbon-components-react';
 import Page from '../internal/Page';
 import Packages from '../../package.json';
 

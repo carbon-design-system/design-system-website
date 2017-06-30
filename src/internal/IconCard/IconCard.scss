@@ -13,10 +13,10 @@
 .iconography .bx--search {
   width: 100%;
   max-width: 100%;
+  margin-bottom: rem(32px);
 
-  .bx--search__input {
+  .bx--search-input {
     background-color: $color__navy-gray-9;
-    margin-bottom: rem(32px);
     color: $text-01;
     margin-right: 2rem;
   }

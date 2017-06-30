@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconList from 'carbon-icons';
-import Tab from '@console/bluemix-components-react/dist/components/Tab';
-import Search from '@console/bluemix-components-react/dist/components/Search';
+import { Tab, Search } from 'carbon-components-react';
 import PageTabs from '../../internal/PageTabs';
 import IconCard from '../../internal/IconCard';
 import IconEmptyState from '../../internal/IconEmptyState';

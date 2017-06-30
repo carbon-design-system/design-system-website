@@ -15,6 +15,7 @@ import TypographyTable from '../../internal/TypographyTable';
 import BrandColors from '../../internal/BrandColors';
 import MotionExample from '../../internal/MotionExample';
 import MarkdownPage from '../../internal/MarkdownPage';
+import Video from '../../internal/Video';
 
 class Page extends Component {
   static propTypes = {
@@ -107,6 +108,7 @@ class Page extends Component {
       DosAndDonts2,
       DosAndDonts3,
       DosAndDonts4,
+      Video,
     };
 
     const insertComponent = [
@@ -139,6 +141,14 @@ class Page extends Component {
             motionType={props[0]}
             correctText={props[1]}
             incorrectText={props[2]}
+          />,
+          component
+        );
+      } else if (comp === 'Video') {
+        const videoProp = component.dataset.props;
+        ReactDOM.render(
+          <NewComponent
+            videoLink={videoProp}
           />,
           component
         );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Icon from '@console/bluemix-components-react/dist/components/Icon';
+import { Icon } from 'carbon-components-react';
 
 class MotionExample extends Component {
   static propTypes = {

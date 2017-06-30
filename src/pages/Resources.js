@@ -33,13 +33,20 @@ class Resources extends React.Component {
           </div>
           <h3 className="page__divider-heading">Additional Links</h3>
           <div className="resources__bottom">
-            
+
             <div>
               <h4>Carbon Boilerplate</h4>
               <p>
                 A simple boilerplate for rapid UI prototyping with Carbon Components.
               </p>
               <a href="https://carbon-boilerplate.mybluemix.net/" target="_blank">Carbon Boilerplate</a>
+            </div>
+            <div>
+              <h4>Craft Library</h4>
+              <p>
+                Craft is a Sketch plugin made by Invision that has an easy to access library of sketch-ready Carbon components and design assets.
+              </p>
+              <a href="https://github.com/carbon-design-system/carbon-design-kit/wiki/Carbon-Craft-Library" target="_blank">Set-up Instructions</a>
             </div>
             <div>
               <h4>Color Accessibility</h4>

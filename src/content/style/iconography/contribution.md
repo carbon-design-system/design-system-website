@@ -36,9 +36,7 @@ If you would like to add an UI icon to our library, please submit a pull request
 9. Click `Export 'Artboard-Name'`.
 10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
 
-![export icons from Sketch](images/icon-contribution-1.png)
-_Example: This is what a Sketch artboard should look like before SVG export_
-
+<div data-insert-component="Video" data-props="icon-sketch.mp4"></div>
 
 ### How to export SVGs from Adobe Illustrator
 1. Draw an artboard that is the same size as your icon (at least one side should be 24px or 16px exactly). The artboard should hug the edges of the icon.
@@ -54,9 +52,7 @@ _Example: This is what a Sketch artboard should look like before SVG export_
 11. The `SVG Options` dialog will then open.
 12. Make sure the preferences are the same as in the image below.
 
----
-![export icons from Illustrator](images/icon-contribution-2.png)
-_SVG export options from Adobe Illustrator_
+<div data-insert-component="Video" data-props="icon-illustrator.mp4"></div>
 
 ## Developer guidelines
 

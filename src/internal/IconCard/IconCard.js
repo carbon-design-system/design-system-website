@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import Icon from '@console/bluemix-components-react/dist/components/Icon';
-import Button from '@console/bluemix-components-react/dist/components/Button';
+import { Icon } from 'carbon-components-react';
+import { Button } from 'carbon-components-react';
 
 class IconCard extends Component {
   static propTypes = {

@@ -43,6 +43,6 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   ownNodeModules: resolveApp('node_modules'),
   bluemixComponents: resolveApp('node_modules/carbon-components'),
-  bluemixReactComponents: resolveApp('node_modules/@console/bluemix-components-react'),
+  bluemixReactComponents: resolveApp('node_modules/carbon-components-react'),
   nodePaths: nodePaths
 };

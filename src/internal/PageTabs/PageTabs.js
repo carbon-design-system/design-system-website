@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
-import Tabs from '@console/bluemix-components-react/dist/components/Tabs';
+import { Tabs } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 
 class PageTabs extends Component {
@@ -32,7 +32,7 @@ class PageTabs extends Component {
     const currentTab = tabs.indexOf(currentPage);
 
     return (
-      <Tabs className="bx--global-light-ui page-tabs" selected={currentTab} onClick={this.updateTab}>
+      <Tabs className="page-tabs" selected={currentTab} onClick={this.updateTab}>
         {children}
       </Tabs>
     );

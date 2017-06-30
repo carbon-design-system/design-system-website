@@ -67,8 +67,7 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 **Requirements:**
 
-- Install `@console/carbon-icons`
-- Use `svgxuse` polyfill
+- Install `carbon-icons`
 
 Full installation details in <a href="https://github.com/carbon-design-system/carbon-icons">Carbon icons GitHub repo.</a>
 

@@ -9,8 +9,7 @@
 
 ---
 ***
->
-![Default and user input states for Text Input](images/text-input-style-1.png)
+> ![Default and user input states for Text Input](images/text-input-style-1.png)
 
 _Examples of default and user-input states for Text Input_
 

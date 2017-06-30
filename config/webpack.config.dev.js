@@ -66,6 +66,10 @@ module.exports = {
         loader: 'file-loader?name=images/[name].[ext]',
       },
       {
+        test: /\.mov$/,
+        loader: 'file-loader?name=images/[name].[ext]',
+      },
+      {
         test: /\.(pptx|key)$/,
         loader: 'file-loader?name=downloads/[name].[ext]',
       },

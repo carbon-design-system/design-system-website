@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
 import ReactGA from 'react-ga';
 
-import Tabs from '@console/bluemix-components-react/dist/components/Tabs';
-import Tab from '@console/bluemix-components-react/dist/components/Tab';
+import { Tabs, Tab } from 'carbon-components-react';
 import CodePage from '../../internal/CodePage';
 import LiveComponent from '../../internal/LiveComponent';
 import Page from '../../internal/Page';

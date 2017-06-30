@@ -29,7 +29,7 @@
   @include breakpoint('768px') {
     @include grid-padding;
     background-color: transparent;
-    margin: -3rem 0 0 0;
+    margin: -2.95rem 0 0 0;
 
     .bx--tabs__nav {
       margin: 0;
@@ -37,6 +37,8 @@
     }
 
     .bx--tabs__nav-item {
+      padding: 0;
+
       .bx--tabs__nav-link {
         font-size: 1rem;
         padding: .75rem 0 1rem;

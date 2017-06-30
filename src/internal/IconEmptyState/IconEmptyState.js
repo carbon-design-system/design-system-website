@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '@console/bluemix-components-react/dist/components/Button';
+import { Button } from 'carbon-components-react';
 
 class IconEmptyState extends Component {
   render() {

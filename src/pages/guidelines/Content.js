@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Tab from '@console/bluemix-components-react/dist/components/Tab';
+import { Tab } from 'carbon-components-react';
 import PageTabs from '../../internal/PageTabs';
 import Glossary from '../../internal/Glossary';
 import GlossaryNav from '../../internal/GlossaryNav';

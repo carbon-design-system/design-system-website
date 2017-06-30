@@ -4,8 +4,7 @@ import { Link, browserHistory } from 'react-router';
 import classnames from 'classnames';
 import ReactGA from 'react-ga';
 
-import Icon from '@console/bluemix-components-react/dist/components/Icon';
-import Button from '@console/bluemix-components-react/dist/components/Button';
+import { Icon, Button } from 'carbon-components-react';
 
 import SiteNavStructure from '../../data/site-nav-structure.json';
 import SideNavItem from '../SideNavItem/SideNavItem';
