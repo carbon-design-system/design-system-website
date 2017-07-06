@@ -74,6 +74,7 @@
     "carbon-icons": "5.1.2",
     "classnames": "^2.2.5",
     "color": "^1.0.3",
+    "compression": "^1.6.2",
     "express": "^4.15.2",
     "file-loader": "^0.9.0",
     "front-matter": "^2.1.1",
@@ -93,7 +94,7 @@
     "build": "echo 'ERROR: Please specify environment by running either build-external or build-internal. This will set the correct environment variable for the build.'",
     "test": "node scripts/test.js --env=jsdom",
     "front-matter": "node scripts/frontmatter.js",
-    "start": "node index.js",
+    "start": "NODE_ENV=production node index.js",
     "server": "concurrently \"npm run dev\" \"babel-watch index.js\""
   },
   "jest": {
