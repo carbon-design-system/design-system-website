@@ -56,7 +56,7 @@ class IconEmptyState extends Component {
             icon="add--glyph"
             target="_blank"
             role="button"
-            iconDescription="submit an icon icon"
+            iconDescription="submit an icon"
           >
             Submit an Icon
           </Button>

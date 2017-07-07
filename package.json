@@ -68,10 +68,10 @@
     "yaml-front-matter": "^3.4.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
     "carbon-components": "7.13.1",
     "carbon-components-react": "^3.2.0",
-    "carbon-icons": "5.1.2",
     "classnames": "^2.2.5",
     "color": "^1.0.3",
     "compression": "^1.6.2",
@@ -84,8 +84,7 @@
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.0",
-    "svgxuse": "^1.1.23"
+    "react-router": "^3.0.0"
   },
   "scripts": {
     "dev": "npm run front-matter && node scripts/start.js",
