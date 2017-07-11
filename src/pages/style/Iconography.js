@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Tab, Search, Loading } from 'carbon-components-react';
+import { Tab, Search } from 'carbon-components-react';
 import PageTabs from '../../internal/PageTabs';
 import IconCard from '../../internal/IconCard';
 import IconEmptyState from '../../internal/IconEmptyState';
@@ -17,6 +17,7 @@ class Iconography extends React.Component {
   };
 
   state = {
+    searchValue: '',
     isSearching: false,
     icons: null,
     iconSearchResults: []
@@ -29,38 +30,31 @@ class Iconography extends React.Component {
       .then(res => this.setState({ icons: res.data }));
   }
 
+  // Return an array of icons filtered by name
+  filterIconsByName = (icons, name) => icons.filter(icon => icon.name.includes(name));
+
+  // Return an array of icons filtered by tag
+  filterIconsByTag = (icons, tag) =>
+    icons.filter(icon => icon.tags.join('').includes(tag));
+
   handleChange = evt => {
-    if (evt.target.value !== '') {
-      this.setState({ isSearching: true });
+    this.setState({ isSearching: true, searchValue: evt.target.value });
 
-      // Return an array of icons filtered by name
-      const namedIcons = this.state.icons.filter(icon =>
-        icon.name.includes(evt.target.value)
-      );
+    const namedIcons = this.filterIconsByName(this.state.icons, evt.target.value);
+    const taggedIcons = this.filterIconsByTag(this.state.icons, evt.target.value);
 
-      // Return an array of icons filtered by tag
-      const taggedIcons = this.state.icons.filter(icon =>
-        icon.tags.join('').includes(evt.target.value)
-      );
+    // Return an array of icons filtered by name and tag
+    // concat combines the namedIcons and taggedIcons arrays
+    // filter again to remove duplicate icons
+    const iconSearchResults = namedIcons
+      .concat(taggedIcons)
+      .filter((icon, index, self) => index === self.indexOf(icon));
 
-      // Return an array of icons filtered by name and tag
-      // concat combines the namedIcons and taggedIcons arrays
-      // filter again to remove duplicate icons
-      const iconSearchResults = namedIcons
-        .concat(taggedIcons)
-        .filter((icon, index, self) => index === self.indexOf(icon));
-
-      this.setState({ iconSearchResults });
-    } else {
-      this.setState({
-        isSearching: false,
-        iconSearchResults: []
-      });
-    }
+    this.setState({ iconSearchResults });
   };
 
-  renderIconCards = icons => {
-    return icons.map((icon, index) =>
+  renderIconCards = icons =>
+    icons.map((icon, index) =>
       <IconCard
         key={index}
         name={icon.name}
@@ -71,6 +65,13 @@ class Iconography extends React.Component {
         svgString={icon.svgString}
       />
     );
+
+  renderEmptyIconCards = length => {
+    const dummyArray = [];
+    for (let i = 0; i < length; i++) {
+      dummyArray.push(<IconCard key={i} loading />);
+    }
+    return dummyArray;
   };
 
   renderIcons = () => {
@@ -79,7 +80,7 @@ class Iconography extends React.Component {
     if (!this.state.isSearching) {
       icons =
         this.state.icons === null
-          ? <Loading withOverlay={false} />
+          ? this.renderEmptyIconCards(116)
           : this.renderIconCards(this.state.icons);
     } else {
       icons =
@@ -102,10 +103,10 @@ class Iconography extends React.Component {
             <div className="icon-container">
               <Search
                 small
-                id="iconography-search"
                 onChange={this.handleChange}
                 placeHolderText="Search the icon library"
                 aria-label="Icon library search"
+                value={this.state.searchValue}
               />
               {this.renderIcons()}
             </div>

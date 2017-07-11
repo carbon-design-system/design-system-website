@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Icon, Button } from 'carbon-components-react';
+import { Icon, Button, Loading } from 'carbon-components-react';
 
 class IconCard extends Component {
   static propTypes = {
@@ -10,8 +10,18 @@ class IconCard extends Component {
     width: PropTypes.string,
     viewBox: PropTypes.string,
     downloadUrl: PropTypes.string,
-    svgString: PropTypes.string
+    svgString: PropTypes.string,
+    loading: PropTypes.bool
   };
+
+  static defaultProps = {
+    name: '',
+    height: '',
+    width: '',
+    viewBox: '',
+    svgString: '',
+    loading: false,
+  }
 
   state = {
     displayCopied: false
@@ -37,18 +47,20 @@ class IconCard extends Component {
   };
 
   render() {
-    const { name, height, width, viewBox, svgString, downloadUrl } = this.props;
+    const { name, height, width, viewBox, svgString, downloadUrl, loading } = this.props;
     return (
       <div className="icon">
         <div tabIndex={0} className="icon__card">
-          <Icon
-            name={name}
-            description={name}
-            height={height}
-            width={width}
-            viewBox={viewBox}
-            tabIndex={-1}
-          />
+          {loading
+            ? <Loading withOverlay={false} small />
+            : <Icon
+              name={name}
+              description={name}
+              height={height}
+              width={width}
+              viewBox={viewBox}
+              tabIndex={-1}
+            />}
           <div
             ref={iconActions => {
               this.iconActions = iconActions;
@@ -73,10 +85,10 @@ class IconCard extends Component {
           </div>
         </div>
         <h5>
-          {name}
+          {loading ? null : name}
         </h5>
         <span>
-          {`#${name}`}
+          {loading ? null : `#${name}`}
         </span>
       </div>
     );
