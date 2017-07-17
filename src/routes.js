@@ -145,15 +145,23 @@ const routes = {
     {
       path: 'components',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/components/accordion/code'),
+        onEnter: (nextState, replace) => replace('/components/overview'),
       },
       childRoutes: [
         {
           path: '/components/:name',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace(`/components/${nextState.params.name}/code`),
+            onEnter: (nextState, replace) => {
+              if (!(nextState.params.name === 'overview')) {
+                replace(`/components/${nextState.params.name}/code`)
+              }
+            },
           },
+          getComponent(location, cb) {
+            import ('./pages/components/ComponentPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading)
+          }
         },
         {
           path: '/components/:name/:page',
