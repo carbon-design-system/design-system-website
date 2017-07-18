@@ -53,29 +53,13 @@
     margin-top: 2rem;
     white-space: nowrap;
     padding: 0 rem(20px);
+    margin-bottom: rem(16px);
 
     span {
       font-weight: 300;
     }
 
     &:hover {
-      color: $color__blue-51;
-    }
-  }
-
-  &__version {
-    display: inline-block;
-    width: 100%;
-    font-size: rem(11px);
-    padding: 0 rem(20px);
-    margin-top: .25rem;
-    margin-bottom: rem(16px);
-    text-decoration: none;
-    color: $color__navy-gray-6;
-    font-weight: 400;
-
-    &:hover {
-      text-decoration: underline;
       color: $color__blue-51;
     }
   }

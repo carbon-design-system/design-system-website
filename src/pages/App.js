@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import debounce from 'lodash.debounce';
 import SideNav from '../internal/SideNav';
 import SideNavToggle from '../internal/SideNavToggle';
+import PageFooter from '../internal/PageFooter';
 import Prism from '../assets/syntax/prism.js';
 import '../assets/syntax/prism.css';
 import '../assets/syntax/syntax.css';
@@ -152,6 +153,7 @@ class App extends Component {
         {sideNavContent}
         <div className={classNames}>
           {this.props.children}
+          <PageFooter isExpanded={this.state.isOpen} />
         </div>
       </div>
     );

@@ -16,6 +16,12 @@ body {
 .wrapper {
   width: 100%;
   display: flex;
+  position: relative;
+}
+
+#maincontent {
+  padding-bottom: 23rem;
+  min-height: 100vh;
 }
 
 .container {
@@ -23,6 +29,9 @@ body {
   margin-left: 0;
   transition: $transition--base ease;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include breakpoint('bp--md--major') {
     margin-left: $width--side-nav;
