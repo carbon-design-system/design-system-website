@@ -23,11 +23,11 @@
   border-right: 2px solid $color__gray-3;
   width: $width--side-nav;
   height: 100%;
-  padding: 1rem 0;
+  padding: 0 0 1rem;
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
-  transition: $transition--base ease;
+  transition: 500ms $bx--standard-easing;
 
   @include breakpoint('bp--sm--major') {
     box-shadow: none;
@@ -64,6 +64,56 @@
     }
   }
 
+  &__top-container {
+    background: white;
+    z-index: 1000;
+    padding: 1rem 0 0;
+  }
+
+  &__bottom-container {
+    transform: translateY(0);
+    transition: opacity 600ms $bx--standard-easing, transform 400ms $bx--standard-easing;
+    background: white;
+    opacity: 1;
+
+    &--hidden {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  .bx--search {
+    margin: 0 0 2rem;
+    height: rem(32px);
+    padding: 0 rem(20px);
+  }
+
+  .bx--search-input {
+    padding: 0 .75rem;
+    height: 100%;
+  }
+
+  .bx--search--sm .bx--search-close {
+    right: 1.75rem;
+  }
+
+  &__version {
+    display: inline-block;
+    width: 100%;
+    font-size: rem(11px);
+    padding: 0 rem(20px);
+    margin-top: .25rem;
+    margin-bottom: rem(8px);
+    text-decoration: none;
+    color: $color__navy-gray-6;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      color: $color__blue-51;
+    }
+  }
+
   &__links {
     padding: 0 rem(20px);
     width: 100%;
@@ -90,25 +140,9 @@
     }
   }
 
-  &__footer {
-    width: 100%;
-    padding: 0 rem(20px);
-  }
-
   &__text {
     font-size: .875rem;
     color: $color__blue-90;
     margin: .25rem 0;
-  }
-
-  &__github-issue-link {
-    color: $color__blue-51;
-    cursor: pointer;
-  }
-
-  &__copyright-text {
-    font-size: .75rem;
-    color: $color__navy-gray-6;
-    margin-top: 1.5rem;
   }
 }

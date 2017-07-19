@@ -9,10 +9,10 @@ import ColorList from '../../data/colors.json';
 class Colors extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string,
-  }
+  };
 
   renderColorCards = ColorItems =>
-    Object.keys(ColorItems).map((ColorItem) => {
+    Object.keys(ColorItems).map(ColorItem => {
       const ColorItemObj = ColorItems[ColorItem];
       return (
         <ColorCard
@@ -26,7 +26,9 @@ class Colors extends React.Component {
 
   render() {
     const ColorCards = this.renderColorCards(ColorList['ui-colors']);
-    const SupportColorCards = this.renderColorCards(ColorList['support-colors']);
+    const SupportColorCards = this.renderColorCards(
+      ColorList['support-colors'],
+    );
     const tabs = ['swatches', 'usage'];
     let currentPage = 'swatches';
     if (this.props.currentPage) {
@@ -48,7 +50,9 @@ class Colors extends React.Component {
           </div>
         </Tab>
         <Tab href="/style/colors/usage" label="Usage">
-          <MarkdownPage content={require('../../content/style/color/usage.md')} />
+          <MarkdownPage
+            content={require('../../content/style/colors/usage.md')}
+          />
         </Tab>
       </PageTabs>
     );

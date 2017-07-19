@@ -28,7 +28,11 @@ const query = {
 
 module.exports = {
   devtool: 'eval',
-  entry: [require.resolve('react-dev-utils/webpackHotDevClient'), 'babel-polyfill', paths.appIndexJs],
+  entry: [
+    require.resolve('react-dev-utils/webpackHotDevClient'),
+    'babel-polyfill',
+    paths.appIndexJs,
+  ],
   output: {
     path: paths.appBuild,
     pathinfo: true,
@@ -44,7 +48,8 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loader: 'style-loader!css-loader?importLoaders=1!postcss-loader!sass-loader',
+        loader:
+          'style-loader!css-loader?importLoaders=1!postcss-loader!sass-loader',
       },
       {
         test: /\.md$/,
@@ -110,5 +115,5 @@ module.exports = {
         to: 'js/',
       },
     ]),
-  ]
+  ],
 };

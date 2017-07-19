@@ -8,7 +8,8 @@ const url = require('url');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 require('babel-polyfill');
 
 function ensureSlash(path, needsSlash) {
@@ -110,7 +111,7 @@ module.exports = {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true,
-      }
+      },
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -119,7 +120,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
-      'process.env.ENV': JSON.stringify('external')
+      'process.env.ENV': JSON.stringify('external'),
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -148,5 +149,5 @@ module.exports = {
         to: 'js/',
       },
     ]),
-  ]
+  ],
 };

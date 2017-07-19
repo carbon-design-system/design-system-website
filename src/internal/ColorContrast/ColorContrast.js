@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
 class ColorContrast extends Component {
-
   render() {
-    const normalTextImage = require('../../content/style/color/images/normal-text-icon.svg');
-    const largeTextImage = require('../../content/style/color/images/large-text-icon.svg');
-    const ui1 = require('../../content/style/color/images/ui-01.svg');
-    const ui2 = require('../../content/style/color/images/ui-02.svg');
-    const ui3 = require('../../content/style/color/images/ui-03.svg');
+    const normalTextImage = require('../../content/style/colors/images/normal-text-icon.svg');
+    const largeTextImage = require('../../content/style/colors/images/large-text-icon.svg');
+    const ui1 = require('../../content/style/colors/images/ui-01.svg');
+    const ui2 = require('../../content/style/colors/images/ui-02.svg');
+    const ui3 = require('../../content/style/colors/images/ui-03.svg');
 
     return (
       <div className="color-contrast">
@@ -18,7 +17,9 @@ class ColorContrast extends Component {
           </li>
           <li>
             <img alt="large text icon" src={largeTextImage} />
-            <p>Large Text (3:1): <span>at least 24px / 19px bold</span></p>
+            <p>
+              Large Text (3:1): <span>at least 24px / 19px bold</span>
+            </p>
           </li>
         </ul>
         <ul className="color-contrast__examples">
@@ -26,28 +27,28 @@ class ColorContrast extends Component {
             <h4>Type colors</h4>
             <ul className="color-contrast__examples--type-colors">
               <li className="blue-40">
-                <div></div>
+                <div />
                 <div>
                   <p>brand-02</p>
                   <p>#5596e6</p>
                 </div>
               </li>
               <li className="blue-51">
-                <div></div>
+                <div />
                 <div>
                   <p>brand-01</p>
                   <p>#3d70b2</p>
                 </div>
               </li>
               <li className="navy-gray-6">
-                <div></div>
+                <div />
                 <div>
                   <p>text-02</p>
                   <p>#5a6872</p>
                 </div>
               </li>
               <li className="blue-90">
-                <div></div>
+                <div />
                 <div>
                   <p>text-01</p>
                   <p>#152935</p>
@@ -82,4 +83,3 @@ class ColorContrast extends Component {
 }
 
 export default ColorContrast;
-

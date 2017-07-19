@@ -172,7 +172,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(1);
-    transition: all 250ms cubic-bezier(.8,-.5,.2,1.8);
+    transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
     @include breakpoint('990px') {
       font-size: 4.5rem;
     }
@@ -181,7 +181,7 @@
   svg {
     width: 8vw;
     height: 8vw;
-    transition: all 250ms cubic-bezier(.8,-.5,.2,1.8);
+    transition: all 250ms cubic-bezier(.8, -.5, .2, 1.8);
     visibility: hidden;
     opacity: 0;
     transform: scale(0.1);
@@ -207,18 +207,29 @@
   }
 
   &--hover {
-    animation: rock 350ms infinite forwards linear 250ms,
-               pop 250ms 1;
+    animation: rock 350ms infinite forwards linear 250ms, pop 250ms 1;
   }
 }
 
 @keyframes rock {
-  0%, 100% { transform: scale(1.0) rotate(0deg) }
-  25% { transform: rotate(-3deg) }
-  75% { transform: rotate(3deg) }
+  0%,
+  100% {
+    transform: scale(1.0) rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
 }
 
 @keyframes pop {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }

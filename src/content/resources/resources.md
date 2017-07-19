@@ -1,62 +1,45 @@
-<div class="image-grid">
-  <div>
-  ![Sketch](images/resources-1.png)
+## Carbon Design Kit
 
-  ## Design Kit
+The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
+![https://github.com/carbon-design-system/carbon-design-kit](Carbon Design Kit)
 
-  The design kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
+## Carbon Component Library
 
-  [Design Kit](https://github.com/carbon-design-system/design-kit)
-  </div>
-  <div>
-  ![GitHub](images/resources-2.png)
+The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.
+![https://github.com/carbon-design-system/carbon-components](Carbon Component Library)
 
-  ## Component Library
+### Additional Links
 
-  The Component Library gives developers a collection of re-usable HTML and Sass partials for building their products.
+#### Carbon Boilerplate
 
-  [Component library](https://github.com/carbon-design-system/carbon-components)
-  </div>
-  <div>
+A simple boilerplate for rapid UI prototyping with Carbon Components.
+![https://carbon-boilerplate.mybluemix.net/](Carbon Boilerplate)
 
-  ## IBM Design Language
+#### Craft Library
 
-  Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.
+Craft is a Sketch plugin made by Invision that has an easy to access library of sketch-ready Carbon components and design assets.
+![https://github.com/carbon-design-system/carbon-design-kit/wiki/Carbon-Craft-Library](Set-up Instructions)
 
-  [IBM Design Language](https://www.ibm.com/design/language/)
-  </div>
-  <div>
+#### Color Accessibility
 
-  ## IBM web fonts
+This color contrast checker allows you to easily calculate the color contrast ratio between two colors, ensuring that it passes WCAG 2.0 Level AA requirements.
+![https://marijohannessen.github.io/color-contrast-checker/](Color Contrast Checker)
 
-  IBM Design uses Helvetica Neue for IBM font family across products for brand consistency and cohesion.
+#### IBM Design Language
 
-  [IBM Web Fonts]()
-  </div>
-</div>
+Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.
+![https://www.ibm.com/design/language/](IBM Design Language)
 
-## Carbon boilerplate
-A simple boilerplate for rapid UI prototyping with Carbon components.
+### Downloads
 
-***
-[Carbon boilerplate](https://carbon-boilerplate.mybluemix.net/)
+#### Presentation Templates
 
-**DOWNLOADS**
-
-<!-- all are styled as secondary buttons -->
-
-### Presentation templates
 Use our branded templates for your presentation needs.
 
-***
-[Download Keynote](#)
+Download Keynote
+Download Powerpoint
 
-***
-[Download Powerpoint](#)
+#### Bluemix logo
 
-
-### Bluemix logo
 This comprehensive file contains the various versions of the Bluemix logo.
-
-***
-[Download logo assets](#)
+![https://github.com/carbon-design-system/carbon-design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true](Download logo assets)
