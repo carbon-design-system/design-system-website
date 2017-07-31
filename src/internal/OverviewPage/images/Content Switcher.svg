@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Content Switcher</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Content-Switcher">
+            <path d="M117.263973,62.5 L131.298354,62.5 L131.298354,102.5 L117.263973,102.5 L63.2571198,102.5 C58.8349096,102.5 55.25,98.9150647 55.25,94.5015401 L55.25,70.4984599 C55.25,66.0810325 58.8415022,62.5 63.2571198,62.5 L117.263973,62.5 Z" id="Combined-Shape" fill="#3D70B2"></path>
+            <rect id="Rectangle-10" fill="#FFFFFF" x="73.2741771" y="80.5" width="40" height="4"></rect>
+            <g id="Group" transform="translate(55.000000, 62.000000)">
+                <rect id="Rectangle-7" stroke="#3D70B2" x="0.75" y="1" width="146.5" height="39" rx="8"></rect>
+                <rect id="Rectangle-10" fill="#3D70B2" x="90.769043" y="18.5" width="40" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

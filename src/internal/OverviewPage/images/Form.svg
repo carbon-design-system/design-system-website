@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Form</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form">
+            <polygon id="Rectangle-157-Copy-3" fill-opacity="0.1" fill="#3D70B2" points="86.7211765 35.2737987 143.295527 35.2737987 171.278824 35.2737987 171.278824 51.7728518 86.7211765 51.7728518"></polygon>
+            <polygon id="Shape" fill="#3D70B2" transform="translate(162.616821, 43.729563) scale(1, -1) translate(-162.616821, -43.729563) " points="160.554439 44.7607542 162.616821 42.6983726 164.679202 44.7607542"></polygon>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="92.1599024" y="42.2858962" width="50.7345882" height="2.47485796"></rect>
+            <polygon id="Rectangle-157-Copy-3" fill-opacity="0.1" fill="#3D70B2" points="86.7211765 13.6179504 143.295527 13.6179504 171.278824 13.6179504 171.278824 30.1170035 86.7211765 30.1170035"></polygon>
+            <polygon id="Rectangle-157-Copy-3" fill-opacity="0.1" fill="#3D70B2" points="86.7211765 111.894669 143.295527 111.894669 171.278824 111.894669 171.278824 128.393722 86.7211765 128.393722"></polygon>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="92.1599024" y="20.6300479" width="50.7345882" height="2.47485796"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="92.1599024" y="118.906766" width="50.7345882" height="2.47485796"></rect>
+            <g id="Radio-Button---Selected-Option" transform="translate(86.721176, 92.021656)">
+                <ellipse id="Oval-1-Copy" stroke="#3D70B2" stroke-width="2" cx="6.03983193" cy="6.06890993" rx="5.03983193" ry="5.06890993"></ellipse>
+                <ellipse id="Oval-3" fill="#3D70B2" cx="6.03983193" cy="6.06890993" rx="2.68436975" ry="2.6972933"></ellipse>
+            </g>
+            <g id="Radio-Button---Unselected-Option" transform="translate(86.721176, 75.837896)" stroke="#8C9BA5" stroke-width="2">
+                <ellipse id="Oval-1" cx="6.03983193" cy="6.06890993" rx="5.03983193" ry="5.06890993"></ellipse>
+            </g>
+            <rect id="Rectangle" fill="#DFE3E6" x="86.7211765" y="60.3675105" width="60.1626109" height="6.87572696"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="104.16958" y="79.0277616" width="67.1092437" height="4.04593996"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="104.16958" y="95.0297702" width="67.1092437" height="4.04593996"></rect>
+            <rect id="Rectangle-9" fill="#3D70B2" x="143.269595" y="138.454713" width="28.0092285" height="12.9273362"></rect>
+            <rect id="Rectangle-9" stroke="#3D70B2" x="111.451254" y="138.954713" width="27.0092285" height="11.9273362"></rect>
+        </g>
+    </g>
+</svg>

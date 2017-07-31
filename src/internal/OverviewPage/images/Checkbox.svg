@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Checkbox">
+            <g id="Group" transform="translate(66.000000, 50.000000)">
+                <g id="Checbox" transform="translate(0.000000, 22.079971)">
+                    <g id="Checkbox-/-Checked" transform="translate(0.000000, 24.000000)">
+                        <rect id="Rectangle-2-Copy" fill="#3D70B2" x="0" y="0" width="18" height="18"></rect>
+                        <polygon id="Shape-Copy-2" fill="#FFFFFF" points="7 14 2 9.19230769 3.4 7.84615385 7 11.3076923 14.6 4 16 5.34615385"></polygon>
+                    </g>
+                    <g id="Checkbox-/-Unchecked">
+                        <g id="Rectangle-2-Copy">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#8C9BA5" stroke-width="2" x="1" y="1" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#DFE3E6" x="0" y="0" width="70" height="8"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="26" y="28.7304688" width="100" height="4"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="26" y="52.4609375" width="100" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

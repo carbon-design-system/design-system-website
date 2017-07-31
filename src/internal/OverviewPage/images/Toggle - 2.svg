@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Toggle - 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="117.5" cy="82.5" r="12"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toggle---2">
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="70.1142578" y="79.5" width="27.3857422" height="6"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="160.5" y="79.5" width="20" height="6"></rect>
+            <rect id="Rectangle-2-Copy-14" fill="#8C9BA5" x="128.5" y="80.5" width="24" height="4"></rect>
+            <g id="Oval-1-Copy-14">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#8C9BA5" stroke-width="2" cx="117.5" cy="82.5" r="11"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

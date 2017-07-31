@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search">
+            <rect id="Rectangle-38" fill-opacity="0.1" fill="#3D70B2" x="26.5" y="62.5" width="205" height="40"></rect>
+            <g id="search--glyph" transform="translate(38.500000, 74.523438)" fill="#8C9BA5">
+                <polygon id="Shape" points="16 13.8 13.8 16 10.2 12.4 12.4 10.2"></polygon>
+                <path d="M6,2 C8.2,2 10,3.8 10,6 C10,8.2 8.2,10 6,10 C3.8,10 2,8.2 2,6 C2,3.8 3.8,2 6,2 L6,2 Z M6,0 C2.7,0 0,2.7 0,6 C0,9.3 2.7,12 6,12 C9.3,12 12,9.3 12,6 C12,2.7 9.3,0 6,0 L6,0 L6,0 Z" id="Shape"></path>
+            </g>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.5" y="79.5" width="123" height="6"></rect>
+        </g>
+    </g>
+</svg>

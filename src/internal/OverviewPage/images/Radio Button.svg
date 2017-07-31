@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Radio Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Radio-Button">
+            <g id="Group" transform="translate(66.000000, 49.000000)">
+                <g id="Radio-Button---Stacked-(vertically)" transform="translate(0.000000, 24.500000)">
+                    <g id="Radio-Button---Selected-Option" transform="translate(0.000000, 24.000000)">
+                        <circle id="Oval-1-Copy" stroke="#3D70B2" stroke-width="2" cx="9" cy="9" r="8"></circle>
+                        <circle id="Oval-3" fill="#3D70B2" cx="9" cy="9" r="4"></circle>
+                    </g>
+                    <g id="Radio-Button---Unselected-Option" stroke-width="2" stroke="#8C9BA5">
+                        <circle id="Oval-1" cx="9" cy="9" r="8"></circle>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#DFE3E6" x="0" y="0.5" width="70" height="8"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="26" y="29.2304688" width="100" height="6"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="26" y="52.9609375" width="100" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

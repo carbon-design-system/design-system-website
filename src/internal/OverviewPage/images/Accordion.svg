@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Accordion</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accordion">
+            <g id="Group" transform="translate(38.000000, 31.000000)">
+                <path d="M0.0765768961,101.948027 L181.609761,101.948027" id="Path" stroke="#DFE3E6" fill="#8C9BA5"></path>
+                <polygon id="chevron--right" fill="#8C9BA5" points="0.449974777 86.3813604 1.38381263 85.4480271 5.38597484 89.4480271 1.38381263 93.4480271 0.449974777 92.5146937 3.51829914 89.4480271"></polygon>
+                <path d="M0.0765768961,76.9480271 L181.609761,76.9480271" id="Path" stroke="#DFE3E6" fill="#8C9BA5"></path>
+                <polygon id="chevron--right" fill="#8C9BA5" points="0.449974777 61.3813604 1.38381263 60.4480271 5.38597484 64.4480271 1.38381263 68.4480271 0.449974777 67.5146937 3.51829914 64.4480271"></polygon>
+                <path d="M0.0765768961,51.9480271 L181.609761,51.9480271" id="Path" stroke="#DFE3E6"></path>
+                <polygon id="chevron--down" fill="#8C9BA5" transform="translate(4.843244, 13.914694) rotate(90.000000) translate(-4.843244, -13.914694) " points="2.3765769 10.8480271 3.30991023 9.91469372 7.30991023 13.9146937 3.30991023 17.9146937 2.3765769 16.9813604 5.44324356 13.9146937"></polygon>
+                <path d="M0.0765768961,1 L181.609761,1" id="Path" stroke="#DFE3E6"></path>
+                <rect id="Rectangle" fill="#DFE3E6" x="13.5" y="60.2774145" width="43" height="8"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="13.5" y="9.44802705" width="43" height="8"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="13.5" y="23.4480271" width="160" height="6"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="13.5" y="35.4480271" width="160" height="6"></rect>
+                <rect id="Rectangle" fill="#DFE3E6" x="13.5" y="85.2774145" width="43" height="8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
