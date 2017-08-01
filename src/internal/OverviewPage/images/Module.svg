@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Module</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -17,7 +17,7 @@
                 <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
             </g>
-            <path d="M39,46.5 L219,46.5" id="Line-Copy-6" stroke="#DFE3E6" stroke-linecap="square"></path>
+            <polygon id="Line-Copy-6" fill="#DFE3E6" fill-rule="nonzero" points="38.5 47 219.5 47 219.5 46 38.5 46"></polygon>
             <rect id="Rectangle" fill="#DFE3E6" x="54.1806124" y="27.5" width="70" height="8"></rect>
         </g>
     </g>

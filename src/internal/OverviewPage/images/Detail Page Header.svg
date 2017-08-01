@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Detail Page Header</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -25,10 +25,9 @@
                     <circle id="Oval" cx="0.964414956" cy="4.82207478" r="1"></circle>
                     <circle id="Oval" cx="0.964414956" cy="8.67973461" r="1"></circle>
                 </g>
-                <g id="Service/App-Icon" transform="translate(13.088489, 19.142299)" fill="#FFFFFF" stroke="#8C9BA6">
-                    <g id="Group-5">
-                        <path d="M8.23300976,16.4660195 C12.7799755,16.4660195 16.4660195,12.7799755 16.4660195,8.23300976 C16.4660195,3.68604402 12.7799755,0 8.23300976,0 C3.68604402,0 0,3.68604402 0,8.23300976 C0,12.7799755 3.68604402,16.4660195 8.23300976,16.4660195 Z" id="Oval-315"></path>
-                    </g>
+                <g id="Service/App-Icon" transform="translate(12.088489, 18.142299)">
+                    <circle id="Oval-5" fill="#FFFFFF" cx="9.33299568" cy="9.31160766" r="8.33203125"></circle>
+                    <path d="M9.23300976,17.9660195 C4.40990165,17.9660195 0.5,14.0561179 0.5,9.23300976 C0.5,4.40990165 4.40990165,0.5 9.23300976,0.5 C14.0561179,0.5 17.9660195,4.40990165 17.9660195,9.23300976 C17.9660195,14.0561179 14.0561179,17.9660195 9.23300976,17.9660195 Z M9.23300976,16.9660195 C13.5038331,16.9660195 16.9660195,13.5038331 16.9660195,9.23300976 C16.9660195,4.9621864 13.5038331,1.5 9.23300976,1.5 C4.9621864,1.5 1.5,4.9621864 1.5,9.23300976 C1.5,13.5038331 4.9621864,16.9660195 9.23300976,16.9660195 Z" id="Oval-315" fill="#8C9BA6" fill-rule="nonzero"></path>
                 </g>
                 <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="81.9752713" y="28.0975803" width="20.6660348" height="2.7554713"></rect>
                 <rect id="Rectangle-5" fill="#3D70B2" x="13.0884887" y="10.515756" width="20.6660348" height="2.7554713"></rect>

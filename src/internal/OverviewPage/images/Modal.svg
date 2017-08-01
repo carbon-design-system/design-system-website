@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Modal</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -27,9 +27,9 @@
                 <g id="close" transform="translate(128.493972, 9.953125)" fill="#8C9BA5">
                     <polygon id="Shape" points="5.34545455 4.98563255 4.58181818 5.74926892 2.72727273 3.78563255 0.763636364 5.74926892 0 4.98563255 1.96363636 3.02199619 0.0545454545 1.05835983 0.818181818 0.294723462 2.72727273 2.25835983 4.69090909 0.294723462 5.45454545 1.05835983 3.49090909 3.02199619"></polygon>
                 </g>
-                <g id="Group-3" transform="translate(68.000000, 94.000000)">
-                    <rect id="Rectangle-9" fill="#3D70B2" x="30" y="0.841764503" width="26" height="12"></rect>
-                    <rect id="Rectangle-9" stroke="#3D70B2" x="0.5" y="1.3417645" width="25" height="11"></rect>
+                <g id="Group-3" transform="translate(68.000000, 94.000000)" fill="#3D70B2">
+                    <rect id="Rectangle-9" x="30" y="0.841764503" width="26" height="12"></rect>
+                    <path d="M1,1.8417645 L1,11.8417645 L25,11.8417645 L25,1.8417645 L1,1.8417645 Z M0,0.841764503 L26,0.841764503 L26,12.8417645 L0,12.8417645 L0,0.841764503 Z" id="Rectangle-9" fill-rule="nonzero"></path>
                 </g>
             </g>
         </g>

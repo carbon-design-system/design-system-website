@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Radio Button</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
@@ -8,12 +8,12 @@
         <g id="Radio-Button">
             <g id="Group" transform="translate(66.000000, 49.000000)">
                 <g id="Radio-Button---Stacked-(vertically)" transform="translate(0.000000, 24.500000)">
-                    <g id="Radio-Button---Selected-Option" transform="translate(0.000000, 24.000000)">
-                        <circle id="Oval-1-Copy" stroke="#3D70B2" stroke-width="2" cx="9" cy="9" r="8"></circle>
-                        <circle id="Oval-3" fill="#3D70B2" cx="9" cy="9" r="4"></circle>
+                    <g id="Radio-Button---Selected-Option" transform="translate(0.000000, 24.000000)" fill="#3D70B2">
+                        <path d="M9,16 C12.8659932,16 16,12.8659932 16,9 C16,5.13400675 12.8659932,2 9,2 C5.13400675,2 2,5.13400675 2,9 C2,12.8659932 5.13400675,16 9,16 Z M9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.02943725 4.02943725,0 9,0 C13.9705627,0 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 Z" id="Oval-1-Copy" fill-rule="nonzero"></path>
+                        <circle id="Oval-3" cx="9" cy="9" r="4"></circle>
                     </g>
-                    <g id="Radio-Button---Unselected-Option" stroke-width="2" stroke="#8C9BA5">
-                        <circle id="Oval-1" cx="9" cy="9" r="8"></circle>
+                    <g id="Radio-Button---Unselected-Option" fill-rule="nonzero" fill="#8C9BA5">
+                        <path d="M9,16 C12.8659932,16 16,12.8659932 16,9 C16,5.13400675 12.8659932,2 9,2 C5.13400675,2 2,5.13400675 2,9 C2,12.8659932 5.13400675,16 9,16 Z M9,18 C4.02943725,18 0,13.9705627 0,9 C0,4.02943725 4.02943725,0 9,0 C13.9705627,0 18,4.02943725 18,9 C18,13.9705627 13.9705627,18 9,18 Z" id="Oval-1"></path>
                     </g>
                 </g>
                 <rect id="Rectangle" fill="#DFE3E6" x="0" y="0.5" width="70" height="8"></rect>

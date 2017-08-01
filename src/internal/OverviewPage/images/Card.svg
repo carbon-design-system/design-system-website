@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Card</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -19,7 +19,7 @@
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
                         <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
                     </g>
-                    <circle id="Oval-6" stroke="#DDE2E6" fill="#FFFFFF" cx="52.7784261" cy="35.9795997" r="13.1946065"></circle>
+                    <path d="M52.7784261,49.6742062 C45.2151037,49.6742062 39.0838196,43.542922 39.0838196,35.9795997 C39.0838196,28.4162774 45.2151037,22.2849932 52.7784261,22.2849932 C60.3417484,22.2849932 66.4730326,28.4162774 66.4730326,35.9795997 C66.4730326,43.542922 60.3417484,49.6742062 52.7784261,49.6742062 Z M52.7784261,48.6742062 C59.7894637,48.6742062 65.4730326,42.9906373 65.4730326,35.9795997 C65.4730326,28.9685621 59.7894637,23.2849932 52.7784261,23.2849932 C45.7673885,23.2849932 40.0838196,28.9685621 40.0838196,35.9795997 C40.0838196,42.9906373 45.7673885,48.6742062 52.7784261,48.6742062 Z" id="Oval-6" fill="#DDE2E6" fill-rule="nonzero"></path>
                     <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 9.473595) rotate(-270.000000) translate(-96.047226, -9.473595) " cx="96.0472258" cy="9.47359487" rx="1.0290467" ry="1.0460589"></ellipse>
                     <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 13.168085) rotate(-270.000000) translate(-96.047226, -13.168085) " cx="96.0472258" cy="13.1680847" rx="1.0290467" ry="1.0460589"></ellipse>
                     <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 17.390359) rotate(-270.000000) translate(-96.047226, -17.390359) " cx="96.0472258" cy="17.3903588" rx="1.0290467" ry="1.0460589"></ellipse>
