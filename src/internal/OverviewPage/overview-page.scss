@@ -20,8 +20,6 @@
   padding: 16px;
   color: #152934;
 
-  // height: 165px;
-  // width: 258px;
   a {
     display: block;
     text-decoration: none;
@@ -36,7 +34,7 @@
     right: 16px;
     background-color: #000;
     opacity: 0;
-    transition: opacity 100ms ease-in;
+    transition: opacity 200ms ease-in;
     pointer-events: none;
   }
 
