@@ -70,8 +70,9 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
-    "carbon-components": "7.17.0",
-    "carbon-components-react": "^3.4.6",
+    "carbon-components": "7.13.1",
+    "carbon-components-react": "^3.5.12",
+    "carbon-icons": "^6.0.6",
     "classnames": "^2.2.5",
     "color": "^1.0.3",
     "compression": "^1.6.2",

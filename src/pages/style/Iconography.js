@@ -17,46 +17,54 @@ class Iconography extends React.Component {
   };
 
   state = {
+    icons_all: null,
+    icons_glyphs: null,
+    icons_ui: null,
+    icons_pictograms: null,
     searchValue: '',
-    isSearching: false,
-    icons: null,
     iconSearchResults: []
   };
 
   componentDidMount() {
     document.title = `Carbon Design System | ${this.props.currentPage}`;
-    axios
-      .get('http://carbon-apis.mybluemix.net/icons')
-      .then(res => this.setState({ icons: res.data }));
+    axios.get('http://carbon-apis.mybluemix.net/icons').then(res =>
+      this.setState({
+        icons_all: res.data,
+        icons_ui: res.data
+          .filter(icon => !icon.tags.join('').includes('glyph'))
+          .filter(icon => !icon.tags.join('').includes('pictogram')),
+        icons_glyphs: this.filterIconsByTag(res.data, 'glyph'),
+        icons_pictograms: this.filterIconsByTag(res.data, 'pictogram')
+      })
+    );
   }
 
-  // Return an array of icons filtered by name
   filterIconsByName = (icons, name) => icons.filter(icon => icon.name.includes(name));
 
-  // Return an array of icons filtered by tag
   filterIconsByTag = (icons, tag) =>
     icons.filter(icon => icon.tags.join('').includes(tag));
 
-  handleChange = evt => {
-    this.setState({ isSearching: true, searchValue: evt.target.value });
-
-    const namedIcons = this.filterIconsByName(this.state.icons, evt.target.value);
-    const taggedIcons = this.filterIconsByTag(this.state.icons, evt.target.value);
-
-    // Return an array of icons filtered by name and tag
-    // concat combines the namedIcons and taggedIcons arrays
-    // filter again to remove duplicate icons
-    const iconSearchResults = namedIcons
+  handleSearch = (icons, searchValue) => {
+    const namedIcons = this.filterIconsByName(icons, searchValue);
+    const taggedIcons = this.filterIconsByTag(icons, searchValue);
+    const searchResults = namedIcons
       .concat(taggedIcons)
       .filter((icon, index, self) => index === self.indexOf(icon));
 
-    this.setState({ iconSearchResults });
+    return searchResults;
+  };
+
+  handleChange = evt => {
+    this.setState({
+      searchValue: evt.target.value.trim(),
+      iconSearchResults: this.handleSearch(this.state.icons_all, this.state.searchValue)
+    });
   };
 
   renderIconCards = icons =>
-    icons.map((icon, index) =>
+    icons.map(icon =>
       <IconCard
-        key={index}
+        key={icon._id}
         name={icon.name}
         viewBox={icon.viewBox}
         width={icon.width.toString()}
@@ -74,42 +82,58 @@ class Iconography extends React.Component {
     return dummyArray;
   };
 
-  renderIcons = () => {
-    let icons;
-
-    if (!this.state.isSearching) {
-      icons =
-        this.state.icons === null
-          ? this.renderEmptyIconCards(116)
-          : this.renderIconCards(this.state.icons);
-    } else {
-      icons =
-        this.state.iconSearchResults.length > 0
-          ? this.renderIconCards(this.state.iconSearchResults)
-          : <IconEmptyState />;
-    }
-
-    return icons;
-  };
-
   render() {
     const { currentPage } = this.props;
+
+    const initialIcons = (
+      <div style={{ marginTop: '70px' }}>
+        <h2>UI icons</h2>
+        <div className="icon-container">
+          {this.state.icons_ui === null
+            ? this.renderEmptyIconCards(62)
+            : this.renderIconCards(this.state.icons_ui)}
+        </div>
+        <h2>UI glyphs</h2>
+        <div className="icon-container">
+          {this.state.icons_glyphs === null
+            ? this.renderEmptyIconCards(19)
+            : this.renderIconCards(this.state.icons_glyphs)}
+        </div>
+        <h2>Pictograms</h2>
+        <div className="icon-container">
+          {this.state.icons_pictograms === null
+            ? this.renderEmptyIconCards(26)
+            : this.renderIconCards(this.state.icons_pictograms)}
+        </div>
+      </div>
+    );
+
+    const searchResults = (
+      <div style={{ marginTop: '70px' }}>
+        <h2>Search results</h2>
+        <div className="icon-container">
+          {this.state.iconSearchResults.length > 0
+            ? this.renderIconCards(this.state.iconSearchResults)
+            : <IconEmptyState />}
+        </div>
+      </div>
+    );
 
     return (
       <PageTabs tabs={['library', 'usage', 'contribution']} currentPage={currentPage}>
         <Tab href="/style/iconography/library" label="Library">
           <div className="page iconography">
-            <h2>Icon library</h2>
             <div className="icon-container">
               <Search
                 small
                 onChange={this.handleChange}
-                placeHolderText="Search the icon library"
+                onKeyUp={this.handleClearInput}
+                placeHolderText="Search icon library"
                 aria-label="Icon library search"
                 value={this.state.searchValue}
               />
-              {this.renderIcons()}
             </div>
+            {this.state.searchValue.length > 0 ? searchResults : initialIcons}
           </div>
         </Tab>
         <Tab href="/style/iconography/usage" label="Usage">
