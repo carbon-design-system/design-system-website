@@ -106,7 +106,7 @@ class Overview extends React.Component {
                 onClick={() => this.handleClick('Explore the system')}
                 tabIndex="0"
                 className="overview-page__main-intro--link bx--btn bx--btn--secondary"
-                to="/components/accordion/code"
+                to="/components/overview"
               >
                 Explore the system
               </Link>

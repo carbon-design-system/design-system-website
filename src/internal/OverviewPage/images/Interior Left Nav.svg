@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Interior Left Nav </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.261924635" y="0.636525524" width="188.035647" height="121.033207"></rect>
+        <filter x="-3.7%" y="-4.1%" width="107.4%" height="111.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Interior-Left-Nav-">
+            <g id="Group" transform="translate(34.818444, 21.308594)">
+                <g id="Rectangle-17">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F5F7FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle-13" fill="#FFFFFF" x="0.261924635" y="8.94674753" width="48.7024845" height="112.709541"></rect>
+                <rect id="Rectangle-14" fill="#EBF0F7" x="0.261924635" y="109.225226" width="48.7024845" height="12.4310623"></rect>
+                <g id="chevron--right" transform="translate(42.632244, 115.754296) scale(-1, 1) translate(-42.632244, -115.754296) translate(41.132244, 113.254296)" fill="#3D70B2">
+                    <polygon id="SVGID_1_" points="0 3.86274779 1.71272779 2.18646101 0 0.510174236 0.510174236 0 2.73307626 2.18646101 0.510174236 4.37292202"></polygon>
+                </g>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="6.41294071" y="16.0480978" width="19.638999" height="2.31735209"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="6.41294071" y="32.9983828" width="21.5261896" height="2.31735209"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="6.41294071" y="49.6497031" width="18.9270387" height="2.31735209"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="6.41294071" y="24.4484991" width="27.2402008" height="2.31735209"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="6.41294071" y="41.2070953" width="24.0849458" height="2.31735209"></rect>
+                <g id="caret--down" transform="translate(41.216963, 33.428238)" fill="#3D70B2">
+                    <polygon id="Shape" points="2.91528135 0 1.45764067 1.45764067 0 0"></polygon>
+                </g>
+                <g id="caret--down" transform="translate(41.216963, 24.878355)" fill="#3D70B2">
+                    <polygon id="Shape" points="2.91528135 0 1.45764067 1.45764067 0 0"></polygon>
+                </g>
+                <g id="caret--down" transform="translate(40.488142, 41.272541)" fill="#3D70B2">
+                    <polygon id="Shape" points="3.50388918 0.313520858 2.04624851 2.1355717 0.588607831 0.313520858"></polygon>
+                </g>
+                <rect id="Rectangle-16" fill-opacity="0.4" fill="#152935" x="0.294664611" y="0.636525524" width="188.035647" height="8.01702371"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

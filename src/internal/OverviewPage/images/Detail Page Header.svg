@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Detail Page Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.622941022 0.0791473784 223.94797 0.0791473784 223.94797 43.6371354 177.364559 43.6371354 0.622941022 43.6371354"></polygon>
+        <filter x="-1.6%" y="-5.7%" width="103.1%" height="116.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="35.1322591" y="23.2755055" width="36.5099948" height="8.26641391"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail-Page-Header">
+            <g id="Group-8" transform="translate(17.000000, 60.500000)">
+                <g id="header-background">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F5F7FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M78.5309322,31.5419195 C79.6722857,31.5419195 80.5975356,30.6166696 80.5975356,29.475316 C80.5975356,28.3339624 79.6722857,27.4087125 78.5309322,27.4087125 C77.3895786,27.4087125 76.4643287,28.3339624 76.4643287,29.475316 C76.4643287,30.6166696 77.3895786,31.5419195 78.5309322,31.5419195 Z" id="Oval-319" fill="#8CD211"></path>
+                <g id="overflow-menu" transform="translate(201.215332, 16.858141)" fill="#8C9BA5">
+                    <circle id="Oval" cx="0.964414956" cy="0.964414956" r="1"></circle>
+                    <circle id="Oval" cx="0.964414956" cy="4.82207478" r="1"></circle>
+                    <circle id="Oval" cx="0.964414956" cy="8.67973461" r="1"></circle>
+                </g>
+                <g id="Service/App-Icon" transform="translate(12.088489, 18.142299)">
+                    <circle id="Oval-5" fill="#FFFFFF" cx="9.33299568" cy="9.31160766" r="8.33203125"></circle>
+                    <path d="M9.23300976,17.9660195 C4.40990165,17.9660195 0.5,14.0561179 0.5,9.23300976 C0.5,4.40990165 4.40990165,0.5 9.23300976,0.5 C14.0561179,0.5 17.9660195,4.40990165 17.9660195,9.23300976 C17.9660195,14.0561179 14.0561179,17.9660195 9.23300976,17.9660195 Z M9.23300976,16.9660195 C13.5038331,16.9660195 16.9660195,13.5038331 16.9660195,9.23300976 C16.9660195,4.9621864 13.5038331,1.5 9.23300976,1.5 C4.9621864,1.5 1.5,4.9621864 1.5,9.23300976 C1.5,13.5038331 4.9621864,16.9660195 9.23300976,16.9660195 Z" id="Oval-315" fill="#8C9BA6" fill-rule="nonzero"></path>
+                </g>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="81.9752713" y="28.0975803" width="20.6660348" height="2.7554713"></rect>
+                <rect id="Rectangle-5" fill="#3D70B2" x="13.0884887" y="10.515756" width="20.6660348" height="2.7554713"></rect>
+                <rect id="Rectangle-5" fill="#3D70B2" x="41.8106567" y="10.515756" width="20.6660348" height="2.7554713"></rect>
+                <rect id="Rectangle-5" fill="#3D70B2" x="70.5930115" y="10.515756" width="20.6660348" height="2.7554713"></rect>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Rectangle-5" fill-opacity="0.1" fill="#152935" xlink:href="#path-3"></use>
+            </g>
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+                <tspan x="53.519043" y="74.3966773">/</tspan>
+            </text>
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+                <tspan x="82.2412109" y="74.3966773">/</tspan>
+            </text>
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+                <tspan x="111.023566" y="74.3966773">/</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

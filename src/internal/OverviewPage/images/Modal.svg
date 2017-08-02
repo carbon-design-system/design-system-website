@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Modal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="140" height="116.841765"></rect>
+        <filter x="-30.0%" y="-25.7%" width="160.0%" height="171.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modal">
+            <g id="Group-4" transform="translate(59.000000, 24.000000)">
+                <g id="Rectangle-8">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <rect id="Rectangle-1007" fill="#F0F3F6" x="0" y="84.8417645" width="140" height="32"></rect>
+                <polygon id="Line" fill="#3D70B2" fill-rule="nonzero" points="0 5 140 5 140 0 0 0"></polygon>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16" y="17" width="50" height="8"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16" y="38.953125" width="108" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16" y="50.953125" width="108" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16" y="62.953125" width="48" height="4"></rect>
+                <g id="close" transform="translate(128.493972, 9.953125)" fill="#8C9BA5">
+                    <polygon id="Shape" points="5.34545455 4.98563255 4.58181818 5.74926892 2.72727273 3.78563255 0.763636364 5.74926892 0 4.98563255 1.96363636 3.02199619 0.0545454545 1.05835983 0.818181818 0.294723462 2.72727273 2.25835983 4.69090909 0.294723462 5.45454545 1.05835983 3.49090909 3.02199619"></polygon>
+                </g>
+                <g id="Group-3" transform="translate(68.000000, 94.000000)" fill="#3D70B2">
+                    <rect id="Rectangle-9" x="30" y="0.841764503" width="26" height="12"></rect>
+                    <path d="M1,1.8417645 L1,11.8417645 L25,11.8417645 L25,1.8417645 L1,1.8417645 Z M0,0.841764503 L26,0.841764503 L26,12.8417645 L0,12.8417645 L0,0.841764503 Z" id="Rectangle-9" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

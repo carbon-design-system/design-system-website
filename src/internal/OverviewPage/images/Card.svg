@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Card</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="105.556852" height="126.668223"></rect>
+        <filter x="-3.3%" y="-2.0%" width="106.6%" height="105.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Card">
+            <g id="Group-2" transform="translate(129.000000, 81.500000) rotate(-360.000000) translate(-129.000000, -81.500000) translate(75.500000, 17.500000)">
+                <g id="Card" transform="translate(0.291003, 0.554408)">
+                    <g id="Rectangle-3">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M52.7784261,49.6742062 C45.2151037,49.6742062 39.0838196,43.542922 39.0838196,35.9795997 C39.0838196,28.4162774 45.2151037,22.2849932 52.7784261,22.2849932 C60.3417484,22.2849932 66.4730326,28.4162774 66.4730326,35.9795997 C66.4730326,43.542922 60.3417484,49.6742062 52.7784261,49.6742062 Z M52.7784261,48.6742062 C59.7894637,48.6742062 65.4730326,42.9906373 65.4730326,35.9795997 C65.4730326,28.9685621 59.7894637,23.2849932 52.7784261,23.2849932 C45.7673885,23.2849932 40.0838196,28.9685621 40.0838196,35.9795997 C40.0838196,42.9906373 45.7673885,48.6742062 52.7784261,48.6742062 Z" id="Oval-6" fill="#DDE2E6" fill-rule="nonzero"></path>
+                    <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 9.473595) rotate(-270.000000) translate(-96.047226, -9.473595) " cx="96.0472258" cy="9.47359487" rx="1.0290467" ry="1.0460589"></ellipse>
+                    <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 13.168085) rotate(-270.000000) translate(-96.047226, -13.168085) " cx="96.0472258" cy="13.1680847" rx="1.0290467" ry="1.0460589"></ellipse>
+                    <ellipse id="Oval" fill="#8C9BA5" transform="translate(96.047226, 17.390359) rotate(-270.000000) translate(-96.047226, -17.390359) " cx="96.0472258" cy="17.3903588" rx="1.0290467" ry="1.0460589"></ellipse>
+                    <rect id="Rectangle-12" fill="#F0F3F6" x="0" y="101.334578" width="105.556852" height="25.3336445"></rect>
+                    <circle id="Oval-189-Copy" fill="#8CD211" cx="12.6668223" cy="113.473616" r="4.22227409"></circle>
+                    <g id="launch--glyph" transform="translate(88.667756, 109.251342)" fill-rule="nonzero" fill="#8C9BA5">
+                        <polygon id="Shape" points="7.38897965 7.38897965 1.05556852 7.38897965 1.05556852 2.11113704 2.6389213 2.11113704 2.6389213 0 0 0 0 1.68890963 0 8.44454817 8.44454817 8.44454817 8.44454817 5.80562687 7.38897965 5.80562687"></polygon>
+                        <polygon id="Shape_1_" points="4.06393881 5.11950733 7.38897965 1.79446649 7.38897965 4.22227409 8.44454817 4.22227409 8.44454817 0 4.22227409 0 4.22227409 1.05556852 6.65008169 1.05556852 3.32504084 4.38060936"></polygon>
+                    </g>
+                    <g id="restart--glyph" transform="translate(74.945365, 109.251342)" fill="#8C9BA5">
+                        <path d="M3.8528251,5.01395048 L4.8556152,4.01116038 L5.59451316,3.27226242 L6.33341113,2.58614288 L3.8528251,0.105556852 L3.16670556,0.738897965 L4.53894464,2.00558019 L3.21948399,2.00558019 C3.21948399,2.00558019 3.21948399,2.00558019 3.16670556,2.00558019 L3.11392714,2.00558019 C2.2166939,2.00558019 1.37223908,2.4278076 0.791676391,3.06114871 C0.26389213,3.6417114 0,4.38060936 0,5.17228576 C0,6.91397382 1.4250175,8.33899132 3.16670556,8.33899132 C4.01116038,8.33899132 4.75005835,8.02232076 5.27784261,7.4945365 L4.53894464,6.75563854 C4.16949566,7.07230909 3.69448983,7.2834228 3.16670556,7.2834228 C2.00558019,7.2834228 1.05556852,6.33341113 1.05556852,5.17228576 C1.05556852,4.01116038 2.00558019,3.06114871 3.16670556,3.06114871 L3.21948399,3.06114871 L4.6445015,3.06114871 L4.32783094,3.37781927 L3.16670556,4.32783094 L3.8528251,5.01395048 Z" id="Shape"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-2" fill="#8C9BA5" x="21.3863569" y="112.618688" width="31.7919823" height="3.02780784"></rect>
+                <rect id="Rectangle-4" fill="#DFE3E6" x="27.3771684" y="59.7530915" width="51.6023415" height="4"></rect>
+                <rect id="Rectangle-4" fill="#3D70B2" x="13.4182178" y="70.1504949" width="79.5202427" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

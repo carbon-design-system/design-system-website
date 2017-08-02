@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Pagination</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pagination">
+            <g id="Group-9" transform="translate(9.000000, 62.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0.98352342" width="239" height="39.0164766"></rect>
+                <path d="M1,1.98352342 L1,39.9835234 L239,39.9835234 L239,1.98352342 L1,1.98352342 Z M0,0.98352342 L240,0.98352342 L240,40.9835234 L0,40.9835234 L0,0.98352342 Z" id="Background" fill="#DFE3E6" fill-rule="nonzero"></path>
+                <polygon id="SVGID_1_" fill="#8C9BA5" points="227 24.0501901 230.133333 20.9835234 227 17.9168568 227.933333 16.9835234 232 20.9835234 227.933333 24.9835234"></polygon>
+                <g id="Page-#-Field" transform="translate(195.000000, 8.983523)" fill="#3D70B2" fill-opacity="0.1">
+                    <rect id="Rectangle-315-Copy-23" x="0" y="0" width="24" height="24"></rect>
+                </g>
+                <polygon id="SVGID_1_" fill="#8C9BA5" points="187 24.0501901 183.866667 20.9835234 187 17.9168568 186.066667 16.9835234 182 20.9835234 186.066667 24.9835234"></polygon>
+                <g id="Drop-Down-Items" transform="translate(8.000000, 8.983523)" fill="#3D70B2">
+                    <rect id="Rectangle-315-Copy-21" fill-opacity="0.1" x="0" y="0" width="48.6259766" height="24"></rect>
+                    <polygon id="Shape-Copy-37" transform="translate(37.625977, 12.935118) scale(1, -1) translate(-37.625977, -12.935118) " points="33.6259766 14.870237 37.6259766 11 41.6259766 14.870237"></polygon>
+                </g>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="66.614321" y="17.9835234" width="61.111265" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

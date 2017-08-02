@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>Accordion</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accordion">
+            <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38.0765769 133.448027 219.609761 133.448027 219.609761 132.448027 38.0765769 132.448027"></polygon>
+            <polygon id="chevron--right" fill="#8C9BA5" points="38.4499748 117.38136 39.3838126 116.448027 43.3859748 120.448027 39.3838126 124.448027 38.4499748 123.514694 41.5182991 120.448027"></polygon>
+            <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38.0765769 108.448027 219.609761 108.448027 219.609761 107.448027 38.0765769 107.448027"></polygon>
+            <polygon id="chevron--right" fill="#8C9BA5" points="38.4499748 92.3813604 39.3838126 91.4480271 43.3859748 95.4480271 39.3838126 99.4480271 38.4499748 98.5146937 41.5182991 95.4480271"></polygon>
+            <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38.0765769 83.4480271 219.609761 83.4480271 219.609761 82.4480271 38.0765769 82.4480271"></polygon>
+            <polygon id="chevron--down" fill="#8C9BA5" transform="translate(42.843244, 44.914694) rotate(90.000000) translate(-42.843244, -44.914694) " points="40.3765769 41.8480271 41.3099102 40.9146937 45.3099102 44.9146937 41.3099102 48.9146937 40.3765769 47.9813604 43.4432436 44.9146937"></polygon>
+            <path d="M38.0765769,32 L219.609761,32" id="Path" stroke="#DFE3E6"></path>
+            <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="91.2774145" width="43" height="8"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="40.4480271" width="43" height="8"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="54.4480271" width="160" height="6"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="66.4480271" width="160" height="6"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="116.277414" width="43" height="8"></rect>
+        </g>
+    </g>
+</svg>

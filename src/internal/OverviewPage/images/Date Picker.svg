@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Date Picker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.671875" y="24.859375" width="134.709961" height="110.441613"></rect>
+        <filter x="-10.4%" y="-9.1%" width="120.8%" height="125.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Date-Picker">
+            <g id="Group-7" transform="translate(60.500000, 14.500000)">
+                <g id="Rectangle-157-Copy-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Rectangle-157-Copy-3" fill-opacity="0.1" fill="#3D70B2" points="0.671875 0.859375 38.139375 0.859375 56.671875 0.859375 56.671875 24.859375 0.671875 24.859375"></polygon>
+                <polygon id="Rectangle-157-Copy-3" fill-opacity="0.1" fill="#3D70B2" points="60.671875 0.859375 98.139375 0.859375 116.671875 0.859375 116.671875 24.859375 60.671875 24.859375"></polygon>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="8.67381541" y="10.859375" width="40" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="68.6738154" y="10.859375" width="40" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="13.0268555" y="58.3710938" width="110" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="13.0268555" y="72.5807292" width="110" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="13.0268555" y="86.7903646" width="110" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="13.0268555" y="101" width="110" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="13.0268555" y="115" width="70" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="58.0268555" y="38.2744141" width="20" height="6"></rect>
+                <g id="Group-2" transform="translate(123.026855, 4.859375)" fill="#3D70B2">
+                    <g id="Group" transform="translate(0.279686, 0.660712)">
+                        <g id="Icon/UI/launch--glyph" transform="translate(0.289759, 1.389649)">
+                            <g id="launch--glyph">
+                                <path d="M0,0 L0,2.22851562 L0,11.1425781 L11.1425781,11.1425781 L11.1425781,2.22851562 L11.1425781,0 L0,0 L0,0 Z M1.39282227,9.74975586 L1.39282227,2.78564453 L9.74975586,2.78564453 L9.74975586,9.74975586 L1.39282227,9.74975586 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                        <path d="M1.7242156,2.96345272 L1.7242156,0.208770884 L3.11703786,0.208770884 L3.11703786,2.96345272 L1.7242156,2.96345272 Z M8.68832692,2.96345272 L8.68832692,0.208770884 L10.0811492,0.208770884 L10.0811492,2.96345272 L8.68832692,2.96345272 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                    </g>
+                    <path d="M6.70891822,6.25632318 L6.07936256,6.25632318 C5.99022193,6.85245111 5.48880592,7.04744623 4.9372483,7.03073236 L4.9372483,7.62686029 L5.91779517,7.62686029 L5.91779517,10.1562255 L6.70891822,10.1562255 L6.70891822,6.25632318 Z" id="1"></path>
+                </g>
+                <g id="chevron--left" transform="translate(13.026855, 38.274414)" fill="#000000">
+                    <polygon id="SVGID_1_" points="4 5.3 1.65 3 4 0.7 3.3 0 0.25 3 3.3 6"></polygon>
+                </g>
+                <g id="chevron--right" transform="translate(119.026855, 38.274414)" fill="#000000">
+                    <polygon id="SVGID_1_" points="0 5.3 2.35 3 0 0.7 0.7 0 3.75 3 0.7 6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
