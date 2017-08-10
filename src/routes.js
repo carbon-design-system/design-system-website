@@ -180,6 +180,12 @@ const routes = {
       },
     },
     {
+      path: 'themes',
+      getComponent(location, cb) {
+        import('./pages/Themes').then(loadRoute(cb)).catch(errorLoading);
+      },
+    },
+    {
       path: 'component-status',
       getComponent(location, cb) {
         import('./pages/ComponentStatus')

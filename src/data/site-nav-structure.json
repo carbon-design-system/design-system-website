@@ -67,10 +67,13 @@
       "tooltip": "Tooltip"
     }
   },
+  "component-status": {
+    "title": "Component Status"
+  },
   "resources": {
     "title": "Resources"
   },
-  "component-status": {
-    "title": "Component Status"
+  "themes": {
+    "title": "Themes"
   }
 }

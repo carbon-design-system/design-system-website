@@ -7,7 +7,7 @@
 | Text       | $text-01 | #152935   |
 | Title      | $text-02 | #5a6872   |
 | X icon     | $ui-05   | #8c9ba5   |
-| Footer     | $ui-04   | #dfe3e6   |
+| Footer     | $ui-03   | #f0f3f6   |
 | Page overlay  | $ui-03  | #f0f3f6 @ 50% opacity  |
 
 ## Typography
