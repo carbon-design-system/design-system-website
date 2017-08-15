@@ -39,6 +39,17 @@
       "code-snippet": "Code Snippet",
       "content-switcher": "Content Switcher",
       "data-table": "Data Table",
+      "data-vis": {
+        "title": "Data Vis",
+        "subnav": {
+          "overview": "Overview",
+          "bar-graph": "Bar Graph",
+          "circle-gauge": "Circle Gauge",
+          "line-graph": "Line Graph",
+          "pie-chart": "Pie Chart",
+          "scatterplot": "Scatterplot"
+        }
+      },
       "date-picker": "Date Picker",
       "detail-page-header": "Detail Page Header",
       "dropdown": "Dropdown",

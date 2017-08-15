@@ -40,7 +40,6 @@ class OverviewPage extends Component {
     const toggleExample = require('./images/Toggle - 2.svg');
     const tooltipExample = require('./images/Tooltip.svg');
 
-
     const componentData = [
       {
         name: 'Accordion',
@@ -208,10 +207,11 @@ class OverviewPage extends Component {
         link: '/components/tooltip',
       },
     ];
-
+    let key = 0;
     const componentTemplate = componentData.map(component => {
+      key++;
       return (
-        <li className="component-item">
+        <li key={key} className="component-item">
           <div className="flex-item">
             <Link to={component.link}>
               <img src={component.img} />
