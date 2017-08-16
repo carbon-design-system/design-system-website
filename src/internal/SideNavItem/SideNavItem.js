@@ -7,7 +7,8 @@ class SideNavItem extends Component {
     className: PropTypes.string,
     children: PropTypes.node,
     isCurrentPath: PropTypes.bool,
-    isActiveItem: PropTypes.bool
+    isActiveItem: PropTypes.bool,
+    type: PropTypes.string
   }
 
   state = {
@@ -19,7 +20,10 @@ class SideNavItem extends Component {
       evt.target.classList.contains('sub-nav__item') ||
       evt.target.classList.contains('sub-nav__item-link');
     const hasSubMenu = (!(evt.currentTarget.querySelector('ul') === null));
-    if (!targetIsSubItem && hasSubMenu) {
+    const targetIsInnerSubNav = evt.currentTarget.classList.contains('main-nav-item--sub');
+    const targetIsInnerSubNavItem = evt.target.classList.contains('sub-nav__item-link--sub');
+    const targetIsInnerSubNavItemContainer = evt.target.classList.contains('sub-nav__item--sub');
+    if ((!targetIsSubItem && hasSubMenu) || (targetIsInnerSubNav && !targetIsInnerSubNavItem && !targetIsInnerSubNavItemContainer)) {
       const open = !this.state.open;
       this.setState({ open });
       const subMenu = evt.currentTarget.querySelector('ul');
@@ -87,7 +91,8 @@ class SideNavItem extends Component {
     const classNames = classnames({
       'main-nav-item': true,
       'main-nav-item__open': this.state.open,
-      'main-nav-item__active': isActiveItem
+      'main-nav-item__active': isActiveItem,
+      'main-nav-item--sub': this.props.type === 'sub'
     });
 
     const tabIndex = (children.length) ? 0 : -1;

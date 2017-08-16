@@ -175,7 +175,34 @@ class SideNav extends Component {
     );
   };
 
-  renderSubNavItems = (subnav, parentItem) => {
+  renderInnerSubNav = (parent, parentKey) => {
+    const innerSubNavItems = this.renderInnerSubNavItems(parent.subnav, parentKey);
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const isCurrentPath = currentPath[1] === parentKey;
+    return (
+    <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
+      <p className="sub-nav__item">
+        {parent.title}
+        <Icon
+          className="main-nav-item__arrow"
+          name="caret--down"
+          aria-hidden="true"
+          description="Menu arrow icon"
+        />
+      </p>
+      <ul
+        role="menu"
+        aria-label={`${parent.title} sub menu`}
+        aria-hidden="true"
+        className="sub-nav__inner-sub-nav"
+      >
+        {innerSubNavItems}
+      </ul>
+    </SideNavItem>
+    );
+  }
+
+  renderInnerSubNavItems = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
@@ -184,7 +211,12 @@ class SideNav extends Component {
         parentItem === currentPath[1] && subNavItem === currentPath[2];
       const classNames = classnames({
         'sub-nav__item': true,
+        'sub-nav__item--sub': true,
         selected: isCurrentPage, // eslint-disable-line
+      });
+      const subClassNames = classnames({
+        'sub-nav__item-link': true,
+        'sub-nav__item-link--sub': true
       });
       if (!(ENV === 'internal') && subNavItem === 'service-providers') {
         return '';
@@ -198,7 +230,7 @@ class SideNav extends Component {
           tabIndex="-1"
         >
           <Link
-            className="sub-nav__item-link"
+            className={subClassNames}
             aria-label={subnav[subNavItem]}
             to={link}
             tabIndex={tabIndex}
@@ -207,6 +239,45 @@ class SideNav extends Component {
           </Link>
         </li>
       );
+    });
+  };
+
+  renderSubNavItems = (subnav, parentItem) => {
+    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const { ENV } = process.env;
+    return Object.keys(subnav).map(subNavItem => {
+      if (typeof subnav[subNavItem] === 'object') {
+        return this.renderInnerSubNav(subnav[subNavItem], subNavItem);
+      } else {
+        const link = `/${parentItem}/${subNavItem}`;
+        const isCurrentPage =
+          parentItem === currentPath[1] && subNavItem === currentPath[2];
+        const classNames = classnames({
+          'sub-nav__item': true,
+          selected: isCurrentPage, // eslint-disable-line
+        });
+        if (!(ENV === 'internal') && subNavItem === 'service-providers') {
+          return '';
+        }
+        const tabIndex = this.props.isOpen ? 0 : -1;
+        return (
+          <li
+            role="menuitem"
+            key={subNavItem}
+            className={classNames}
+            tabIndex="-1"
+          >
+            <Link
+              className="sub-nav__item-link"
+              aria-label={subnav[subNavItem]}
+              to={link}
+              tabIndex={tabIndex}
+            >
+              {subnav[subNavItem]}
+            </Link>
+          </li>
+        );
+      }
     });
   };
 

@@ -46,7 +46,7 @@
 
     &__open {
 
-      & .main-nav-item__arrow {
+      & > .main-nav-item__heading .main-nav-item__arrow {
         transform: rotate(-180deg);
       }
     }
@@ -62,7 +62,7 @@
 
     &:hover,
     &:focus {
-      
+
       .main-nav-item__heading {
         color: $color__blue-51;
       }
@@ -70,6 +70,31 @@
 
     &:focus {
       outline: 0;
+    }
+  }
+
+  .main-nav-item--sub {
+    padding-top: 0;
+
+    > .sub-nav__item:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0;
+      padding: .3rem 1rem .2rem 2rem;
+      cursor: pointer;
+    }
+
+    .sub-nav__inner-sub-nav .sub-nav__item {
+      margin-top: 0;
+      padding: .5rem 1rem .5rem 3rem;
+      cursor: pointer;
+    }
+
+    &.main-nav-item__open {
+      .main-nav-item__arrow {
+        transform: rotate(-180deg);
+      }
     }
   }
 }

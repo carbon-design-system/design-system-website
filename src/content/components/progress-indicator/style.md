@@ -2,10 +2,10 @@
 
 All steps that have already been completed are indicated by an outlined circle with a checkmark. The current step the user is on is indicated by a filled circle. Steps the user has not encountered yet, or future steps, are indicated by an outlined circle.
 
-| ATTRIBUTE                           | SCSS      | HEX     |
+| ATTRIBUTE                       | SCSS      | HEX     |
 |---------------------------------|---------  |---------|
 | Label: current & completed      | $brand-01 | #3d70b2 |
-| Label: future step              | $ui-05    | #8c9ba5 |
+| Label: future step              | $text-02  | #5a6872 |
 | Line: current & completed       | $brand-01 | #3d70b2 |
 | Line: future step               | $ui-05    | #8c9ba5 |
 | Icon: current & completed       | $brand-01 | #3d70b2 |

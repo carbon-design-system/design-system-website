@@ -180,6 +180,12 @@ const routes = {
       },
     },
     {
+      path: 'themes',
+      getComponent(location, cb) {
+        import('./pages/Themes').then(loadRoute(cb)).catch(errorLoading);
+      },
+    },
+    {
       path: 'component-status',
       getComponent(location, cb) {
         import('./pages/ComponentStatus')
@@ -187,6 +193,41 @@ const routes = {
           .catch(errorLoading);
       },
     },
+
+    {
+      path: 'data-vis',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/data-vis/overview/usage'),
+      },
+      childRoutes: [
+        {
+          path: '/data-vis/:name',
+          indexRoute: {
+            onEnter: (nextState, replace) => {
+              if (!(nextState.params.name === 'overview')) {
+                replace(`/data-vis/${nextState.params.name}/code`)
+              } else {
+                replace(`/data-vis/overview/usage`)
+              }
+            },
+          },
+          getComponent(location, cb) {
+            import ('./pages/data-vis/DataVis')
+              .then(loadRoute(cb))
+              .catch(errorLoading)
+          }
+        },
+        {
+          path: '/data-vis/:name/:page',
+          getComponent(location, cb) {
+            import('./pages/data-vis/DataVis')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+
     {
       path: '*',
       getComponent(location, cb) {

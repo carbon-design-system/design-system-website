@@ -1405,26 +1405,26 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-components-react@^3.2.0:
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-3.4.6.tgz#4bb5287ade626362332ed8312abbb4854568c7b6"
+carbon-components-react@^3.8.15:
+  version "3.8.15"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-3.8.15.tgz#622dbbcad0eb36e7c1cb2ed0d4041a06a14b551a"
   dependencies:
     classnames "2.2.5"
-    flatpickr "^3.0.5-1"
+    flatpickr "^3.0.7"
     lodash.debounce "^4.0.8"
     react-addons-css-transition-group "^15.4.2"
     warning "3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@7.13.1:
-  version "7.13.1"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.13.1.tgz#d83149548e50f8818d8eb31142e0d9b79cc009b8"
+carbon-components@^7.19.0:
+  version "7.19.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.19.0.tgz#b878a83a2401c222ea2e686904db967eafdebbfd"
   dependencies:
     carbon-icons "^6.0.4"
     flatpickr "2.6.3"
     lodash.debounce "^4.0.8"
 
-carbon-icons@^6.0.4:
+carbon-icons@^6.0.4, carbon-icons@^6.0.6:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-6.0.6.tgz#63e72520e7f1c0fe2c3da716dd36cd84ef90cb9c"
 
@@ -2941,9 +2941,9 @@ flatpickr@2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-2.6.3.tgz#457357532deb135f3da64b425bf4435737961564"
 
-flatpickr@^3.0.5-1:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-3.0.6.tgz#81540f1a0f010fa3b96d929943b6396bbb25b1b6"
+flatpickr@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-3.0.7.tgz#2aa980c0bd83884c0299ee9fba3b7809bea16a29"
 
 flatten@^1.0.2:
   version "1.0.2"

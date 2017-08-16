@@ -62,3 +62,20 @@
     }
   }
 }
+
+.sub-nav__inner-sub-nav {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: .3s;
+
+  .main-nav-item__open > & {
+    margin: .5rem 0;
+    max-height: 50rem;
+  }
+
+  > .sub-nav__item {
+    padding-left: 3rem;
+  }
+}
