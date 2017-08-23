@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class GridExample extends Component {
 
   render() {
-    const grid1 = require('../../content/style/grids/images/grid-1.png');
-    const grid2 = require('../../content/style/grids/images/grid-2.png');
-    const grid3 = require('../../content/style/grids/images/grid-3.png');
+    const grid1 = require('../../content/style/grid/images/grid-1.png');
+    const grid2 = require('../../content/style/grid/images/grid-2.png');
+    const grid3 = require('../../content/style/grid/images/grid-3.png');
     const ibmEye = require('../../assets/images/ibm-eye.png');
 
     return (

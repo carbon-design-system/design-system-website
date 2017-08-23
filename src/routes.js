@@ -117,6 +117,23 @@ const routes = {
           ],
         },
         {
+          path: '/style/grid',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/style/grid/design'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/style/layer',
           indexRoute: {
             onEnter: (nextState, replace) => replace('/style/layer/overview'),

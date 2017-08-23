@@ -5,6 +5,7 @@ import Iconography from './Iconography';
 import Layer from './Layer';
 import Page from '../../internal/Page';
 import MarkdownPage from '../../internal/MarkdownPage';
+import Grid from './Grid';
 
 class Style extends React.Component {
   static propTypes = {
@@ -25,6 +26,8 @@ class Style extends React.Component {
       content = <Layer currentPage={paramsPage} />;
     } else if (paramsName === 'iconography') {
       content = <Iconography currentPage={paramsPage} />;
+    } else if (paramsName === 'grid') {
+      content = <Grid currentPage={paramsPage} />;
     } else {
       content = (
         <MarkdownPage content={require(`../../content/style/${paramsName}/${paramsName}.md`)} />
