@@ -20,7 +20,7 @@
     "title": "Style",
     "subnav": {
       "colors": "Colors",
-      "grids": "Grids",
+      "grid": "Grid",
       "iconography": "Iconography",
       "layer": "Layer",
       "motion": "Motion",
