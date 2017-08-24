@@ -82,6 +82,11 @@ class OverviewPage extends Component {
         link: '/components/data-table',
       },
       {
+        name: 'Data Vis',
+        img: require('./images/data-vis.svg'),
+        link: '/components/data-vis',
+      },
+      {
         name: 'Date Picker',
         img: require('./images/Date Picker.svg'),
         link: '/components/date-picker',
