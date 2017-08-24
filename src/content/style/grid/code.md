@@ -4,7 +4,7 @@
 
 ```html
 <div class="bx--grid">
-<div class="bx--row">
+  <div class="bx--row">
     <div class="bx--col-xs-12 ">
       <p>Content space for bx--col-xs-12 bx--col-sm-6</p>
     </div>

@@ -106,7 +106,7 @@ class CodePage extends Component {
         <div
           className="page_md"
           dangerouslySetInnerHTML={{
-            __html: md.renderInline(this.renderJavascriptContent(component)),
+            __html: md.render(this.renderJavascriptContent(component)),
           }}
         />
       );

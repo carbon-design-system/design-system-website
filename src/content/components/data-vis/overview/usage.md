@@ -9,8 +9,6 @@ An effective visualization provides enough context to show the graph's purpose, 
 ![Example of base graph with terminology labels](images/usage-base-graph.png)
 _Example of base graph with terminology labels_
 
-
-
 ### Title
 A title describes what the graph is about and is set in title case capitalization. It may state the type of quantitative and categorical relationship the data presents, for example "2017 Account Cost by Month."
 
@@ -31,10 +29,8 @@ Keep the distance between tick marks on the x and y-axis consistently spaced. Th
 
 Tick marks are not required for categorical values. However, for quantitative values, choose round numbers that fit the given data range and always include an additional tick mark that is one increment greater than the data set. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
 
-
 ### Key
 A key explains what the plotted data in a graph represents. We recommend using up to six data sets (and no more) in a key because any more loses the comparative value of graphs. The key is generally located to the right of a graph. However, if the amount of items listed in the key exceeds that space or the span of the graph is limited, place the key below.  
-
 
 ### Tooltips
 
@@ -43,8 +39,9 @@ A tooltip appears when hovering over content in a graph, showing the exact value
 ### Empty State
 Empty states appear when no data is available, which may be due to a number of reasons. When applicable, include a call to action that helps users to get the graph up and running.
 
-#### Abbreviations
+### Abbreviations
 Abbreviate labels if spacing is a concern. Follow these conventions across graphs:
+
 ***
 | ATTRIBUTE             | ABBREVIATIONS  |
 |-----------------------|--------------- |
@@ -53,7 +50,6 @@ Abbreviate labels if spacing is a concern. Follow these conventions across graph
 | 12 hour time             | 9am, 12pm, 6pm |
 | Numbers               | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label "Cost in thousands" may have data increments 1K, 1.5K, 2K, etc.|
 | Currency              | Describe the full currency name in the axis label and currency symbols in the data increment. For instance, if an axis label uses Dollars the data increment may be $100, $200, $300, etc.
-
 
 
 ## Accessibility
@@ -68,15 +64,15 @@ Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab
 3.
 **Use inline SVG:** SVG 2.0 is currently in a draft state. In the meantime we can make the most of SVG 1.0 by utilizing the "title" and "desc" attributes in combination with ARIA roles and attributes. Below is an example section of code using this techinique. To see a full example go to [Describler](http://describler.com/#intro) and select "aria-bar-chart.svg" from the dropdown on the left. Make sure to turn on your sound so you can hear the chart read to you!
 
-`<g id="ChartRoot" role="chart" aria-charttype="bar">
+```html
+<g id="ChartRoot" role="chart" aria-charttype="bar">
   <g id="dataarea" role="dataset">
     <g id="datapoint_0" role="datapoint">
       <title role="datavalue" aria-labelledby="x-Saturday">8 Hours</title>
     </g>
   </g>
-</g>`
-
-
+</g>
+```
 
 #### _References_
 _"The Visual Display of Quantitative Information" by Edward Tufte_

@@ -1416,9 +1416,9 @@ carbon-components-react@^3.8.15:
     warning "3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^7.19.0:
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.19.0.tgz#b878a83a2401c222ea2e686904db967eafdebbfd"
+carbon-components@7.20.0:
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.20.0.tgz#9d381a50a54500b7716e8ff34968b0a30dcbd3fc"
   dependencies:
     carbon-icons "^6.0.4"
     flatpickr "2.6.3"
