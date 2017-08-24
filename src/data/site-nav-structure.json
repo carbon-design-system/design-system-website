@@ -47,7 +47,8 @@
           "circle-gauge": "Circle Gauge",
           "line-graph": "Line Graph",
           "pie-chart": "Pie Chart",
-          "scatterplot": "Scatterplot"
+          "scatterplot": "Scatterplot",
+          "tooltip": "Tooltip"
         }
       },
       "date-picker": "Date Picker",
