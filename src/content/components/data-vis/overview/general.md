@@ -1,3 +1,8 @@
+## Data visualizations
+
+
+## Graph Basics
+
 Data visualization should communicate quantitative information in a way that tells a story about data. Graphs express data visually, making it easy to see the general shape of the data to reveal patterns and trends that text or a table alone cannot.
 
 A graph's story displays the relationship between a set of values, two quantitative values or a quantitative and categorical value. For example, if we were to depict cost over time, cost would be the quantitative value and time would be the categorical value. How this set of values changes over time shows the pattern of their relationship.
