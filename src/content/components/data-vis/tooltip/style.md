@@ -74,7 +74,7 @@ Width varies based on content length.
 **
 _Example of a large Tooltip_
 
-## Tooltip Responsiveness
+## Tooltip responsiveness
 The below images show how a tooltip would respond to different amounts of data values. It also shows how the width of tooltip changes when a label is at its max-width.
 
 **
