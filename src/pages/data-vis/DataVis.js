@@ -46,7 +46,7 @@ class DataVis extends React.Component {
       content = (
         <PageTabs tabs={tabs} currentPage={page}>
           <Tab href="/data-vis/overview/usage" label="Usage">
-             <MarkdownPage content={require('../../content/components/data-vis/overview/usage.md')} />
+             <MarkdownPage content={require('../../content/components/data-vis/overview/general.md')} />
           </Tab>
           <Tab href="/data-vis/overview/colors" label="Colors">
              <MarkdownPage content={require('../../content/components/data-vis/overview/colors.md')} />

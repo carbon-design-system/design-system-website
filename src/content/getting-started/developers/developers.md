@@ -59,7 +59,7 @@ __Default body styles__: CSS is automatically applied to `<body>` element, which
 ```scss
 body {
   @include reset;
-  @include helvetica;
+  font-family: 'IBM Plex Sans';
   color: $text-01;
   background-color: $ui-02;
   line-height: 1;
