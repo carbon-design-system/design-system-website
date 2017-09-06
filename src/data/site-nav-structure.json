@@ -63,6 +63,7 @@
       "tabs": "Tabs",
       "tag": "Tag",
       "text-input": "Text Input",
+      "tile": "Tile",
       "toggle": "Toggle",
       "tooltip": "Tooltip"
     }
