@@ -1,7 +1,4 @@
-## Data visualizations
-
-
-## Graph Basics
+## Graph basics
 
 Data visualization should communicate quantitative information in a way that tells a story about data. Graphs express data visually, making it easy to see the general shape of the data to reveal patterns and trends that text or a table alone cannot.
 
@@ -28,7 +25,7 @@ Grid lines are points of reference aligned to data increments that divide the ar
 The position where a quantitative and categorical value meet is portrayed as either a point, bar, or line.
 
 ### Data increments
-Maintain even spacing between data increments to provide a predictable reference and limit the likelihood of distorting data. Keep in mind the larger the data range, the more data increments a graph should contain.
+Keep the distance between tick marks on the x and y-axis consistently spaced. This provides a predictable reference and limits the likelihood of distorting data. The larger the data range, the more tick marks a graph should contain.
 
 Categorical values should be labeled in logical increments, such as consecutive months. For quantitative values, choose round numbers that fit the given data range and always include an additional increment greater than the dataset. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
 
