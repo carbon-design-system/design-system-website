@@ -191,6 +191,37 @@ const routes = {
       ],
     },
     {
+      path: 'add-ons',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/add-ons/overview'),
+      },
+      childRoutes: [
+        {
+          path: '/add-ons/:name',
+          indexRoute: {
+            onEnter: (nextState, replace) => {
+              if (!(nextState.params.name === 'overview')) {
+                replace(`/add-ons/${nextState.params.name}/code`)
+              }
+            },
+          },
+          getComponent(location, cb) {
+            import ('./pages/add-ons/ComponentPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading)
+          }
+        },
+        {
+          path: '/add-ons/:name/:page',
+          getComponent(location, cb) {
+            import('./pages/add-ons/ComponentPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
       path: 'resources',
       getComponent(location, cb) {
         import('./pages/Resources').then(loadRoute(cb)).catch(errorLoading);
