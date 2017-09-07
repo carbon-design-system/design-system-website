@@ -1,7 +1,4 @@
-## Data visualizations
-
-
-## Graph Basics
+## Graph basics
 
 Data visualization should communicate quantitative information in a way that tells a story about data. Graphs express data visually, making it easy to see the general shape of the data to reveal patterns and trends that text or a table alone cannot.
 
@@ -18,16 +15,16 @@ A title describes what the graph is about and is set in title case capitalizatio
 ### X & Y Axes
 Typical graphs have two axes, the x-axis that runs horizontally and the y-axis that runs vertically. Together, the axes outline the area where visual information is displayed.
 
-### Axis Label
+### Axis label
 An axis label describes the quantitative or categorical value of an axis. For a quantitative label, make sure to include the unit, either in the label name or in parentheses after it. In this case, "Cost in Dollars" is the y-axis label title and "Time" is the x-axis label title.
 
-### Grid Lines
+### Grid lines
 Grid lines are points of reference aligned to data increments that divide the area of a graph into smaller regions, enhancing the ability to notice subtle differences that makes comparing data easier. Grid lines are not required on a graph and can be toggled on as a filter option.
 
-### Data Representation
+### Data representation
 The position where a quantitative and categorical value meet is portrayed as either a point, bar, or line.
 
-### Data Increments
+### Data increments
 Keep the distance between tick marks on the x and y-axis consistently spaced. This provides a predictable reference and limits the likelihood of distorting data. The larger the data range, the more tick marks a graph should contain.
 
 Tick marks are not required for categorical values. However, for quantitative values, choose round numbers that fit the given data range and always include an additional tick mark that is one increment greater than the data set. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
@@ -39,7 +36,7 @@ A key explains what the plotted data in a graph represents. We recommend using u
 
 A tooltip appears when hovering over content in a graph, showing the exact value(s) for that point of intersection of the x and y-axes.
 
-### Empty State
+### Empty state
 Empty states appear when no data is available, which may be due to a number of reasons. When applicable, include a call to action that helps users to get the graph up and running.
 
 ### Abbreviations

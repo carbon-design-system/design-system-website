@@ -4,9 +4,11 @@ import Page from '../../internal/Page';
 import PageTabs from '../../internal/PageTabs';
 import MarkdownPage from '../../internal/MarkdownPage';
 import CodePage from '../../internal/CodePage';
+import ColorCard from '../../internal/ColorCard';
 import { Tabs, Tab } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import { browserHistory } from 'react-router';
+import ColorList from '../../data/data-vis-colors.json';
 
 class DataVis extends React.Component {
   static propTypes = {
@@ -29,6 +31,19 @@ class DataVis extends React.Component {
     browserHistory.push(tab);
   };
 
+  renderColorCards = ColorItems =>
+  Object.keys(ColorItems).map(ColorItem => {
+    const ColorItemObj = ColorItems[ColorItem];
+    return (
+      <ColorCard
+        key={ColorItem}
+        name={ColorItemObj.name}
+        hex={ColorItemObj.hex}
+        white={ColorItemObj.white}
+      />
+    );
+  });
+
   render() {
     const {
       params
@@ -42,6 +57,9 @@ class DataVis extends React.Component {
     if (params.page) {
       page = params.page;
     }
+    const PrimaryColorCards = this.renderColorCards(ColorList['primary']);
+    const SecondaryColorCards = this.renderColorCards(ColorList['secondary']);
+    const TertiaryColorCards = this.renderColorCards(ColorList['tertiary']);
     if (name === 'overview') {
       content = (
         <PageTabs tabs={tabs} currentPage={page}>
@@ -49,7 +67,25 @@ class DataVis extends React.Component {
              <MarkdownPage content={require('../../content/components/data-vis/overview/general.md')} />
           </Tab>
           <Tab href="/data-vis/overview/colors" label="Colors">
-             <MarkdownPage content={require('../../content/components/data-vis/overview/colors.md')} />
+            <div className="page">
+              <div className="page_md">
+                <h2>General guidelines</h2>
+                <p>There are three theme palettes for data visualizations: primary, secondary, and tertiary. Each palette has been carefully chosen to meet contrast standards for color blindness, with a majority of the colors meeting the Web Content Accessibility Guidelines (WCAG) color contrast requirements of 3.5:1. Data visualizations should always be shown on a white (#fff) background.</p>
+                <p><em>Disclaimer: Please note that the first four colors in the palette themes meet the WCAG 2.1 guidelines for accessibility. The last color of each palette does not. This was an intentional decision made in order meet the contrast requirements for color blindness.</em></p>
+                <h3 className="page__divider-heading">Primary theme</h3>
+                <div className="wrapped-list">
+                  {PrimaryColorCards}
+                </div>
+                <h3 className="page__divider-heading">Secondary theme</h3>
+                <div className="wrapped-list">
+                  {SecondaryColorCards}
+                </div>
+                <h3 className="page__divider-heading">Tertiary theme</h3>
+                <div className="wrapped-list">
+                  {TertiaryColorCards}
+                </div>
+              </div>
+            </div>
           </Tab>
           <Tab href="/data-vis/overview/style" label="Style">
              <MarkdownPage content={require('../../content/components/data-vis/overview/style.md')} />
@@ -57,18 +93,9 @@ class DataVis extends React.Component {
         </PageTabs>
       );
     } else {
-      let hasCodePage;
-      try {
-        const jsFile = require(`../../data/components/${currentComponent}.js`); // eslint-disable-line
-        hasCodePage = true;
-      } catch (err) {
-        hasCodePage = false;
-      }
-      const codePageContent = hasCodePage
-        ? <CodePage component={params.name} />
-        : '';
       const usage = require(`../../content/components/data-vis/${params.name}/usage.md`);
       const style = require(`../../content/components/data-vis/${params.name}/style.md`);
+      const code = require(`../../content/components/data-vis/${params.name}/code.md`);
       content = (
         <Tabs
           key={params.name}
@@ -80,7 +107,7 @@ class DataVis extends React.Component {
             label="Code"
             onClick={this.updateTab}
           >
-            {codePageContent}
+            <MarkdownPage content={code} />
           </Tab>
           <Tab
             href={`/data-vis/${params.name}/usage`}

@@ -68,3 +68,33 @@ main[data-page="guidelines-general-content"] {
     color: $brand-01 !important;
   }
 }
+
+main[data-page="getting-started-FAQ"] {
+  a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $brand-01;
+    }
+  }
+
+  .page_md h4 > a {
+    color: black;
+    cursor: default;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  h2 + h4 {
+    padding-top: 0;
+  }
+
+  ul + h4 {
+    padding-top: 1rem;
+  }
+}
+

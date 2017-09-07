@@ -1,6 +1,5 @@
 **The _Carbon Component Library_ provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
 
-
 ## Install
 
 Using npm:
@@ -47,16 +46,16 @@ See all files from `carbon-components` available on unpkg CDN [here](https://unp
 Using the Carbon Sass files infers usage of the SCSS pre-processor.
 All Sass files use the `*.scss` file extension.
 
-#### Things to know
+### Things to know
 
 If you're starting a new project without a boilerplate,
 you need to know about a few things to get started.
 
-__Autoprefixer__: Make sure your build process uses [autoprefixer](https://github.com/postcss/autoprefixer) to ensure vendor prefixes are automatically added to your output CSS.
+**Autoprefixer**: Make sure your build process uses [autoprefixer](https://github.com/postcss/autoprefixer) to ensure vendor prefixes are automatically added to your output CSS.
 
-__Default body styles__: CSS is automatically applied to `<body>` element, which comes from [`_css--body.scss`](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
+**Default body styles**: CSS is automatically applied to `<body>` element, which comes from [_css--body.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
 
-```scss
+```css
 body {
   @include reset;
   font-family: 'IBM Plex Sans';
@@ -66,9 +65,9 @@ body {
 }
 ```
 
-__Icons__: A lot of components depend on SVG icons from [`carbon-icons`](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
+**Icons**: A lot of components depend on SVG icons from [carbon-icons](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
 
-__Global `SCSS` variables__: These variables are used to configure which parts of the SCSS gets compiled where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
+**Global SCSS variables**: These variables are used to configure which parts of the SCSS gets compiled where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
 
 For example:
 
@@ -97,7 +96,7 @@ You can override these default settings by redeclarining the variables.
 
 To add a component style to your build, simply import the component directly
 
-```javascript
+```js
 @import 'node_modules/carbon-components/scss/components/card/card';
 ```
 
