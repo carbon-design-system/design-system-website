@@ -45,7 +45,6 @@ _Structure and spacing measurements for Text Input | px / rem_
 
 ---
 ***
->
-![Active, help, or disabled states for Text Input](images/text-input-style-3.png)
+> ![Active, help, or disabled states for Text Input](images/text-input-style-3.png)
 
 _Examples of active, help, and disabled Text Input states_

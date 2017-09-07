@@ -40,6 +40,14 @@
       "code-snippet": "Code Snippet",
       "content-switcher": "Content Switcher",
       "data-table": "Data Table",
+      "data-vis": {
+        "title": "Data Vis",
+        "subnav": {
+          "overview": "Overview",
+          "circle-gauge": "Circle Gauge",
+          "line-graph": "Line Graph"
+        }
+      },
       "date-picker": "Date Picker",
       "detail-page-header": "Detail Page Header",
       "dropdown": "Dropdown",

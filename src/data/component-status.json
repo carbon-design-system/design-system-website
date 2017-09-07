@@ -13,7 +13,6 @@
     {
       "item": "Button",
       "added": "2.0.0",
-      "tag": "updated",
       "status": 0
     },
     {
@@ -49,7 +48,6 @@
     {
       "item": "Date Picker",
       "added": "7.10.1",
-      "tag": "new",
       "status": 0
     },
     {
@@ -145,19 +143,16 @@
     {
       "item": "Select",
       "added": "4.0.0",
-      "tag": "updated",
       "status": 0
     },
     {
       "item": "Slider",
       "added": "7.10.0",
-      "tag": "new",
       "status": 0
     },
     {
       "item": "Structured List",
       "added": "7.7.0",
-      "tag": "new",
       "status": 0
     },
     {
@@ -173,6 +168,12 @@
     {
       "item": "Text Input",
       "added": "2.0.0",
+      "status": 0
+    },
+    {
+      "item": "Tile",
+      "added": "7.22.0",
+      "tag": "new",
       "status": 0
     },
     {

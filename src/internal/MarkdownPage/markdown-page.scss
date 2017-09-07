@@ -111,12 +111,14 @@
     background-color: $field-01;
     color: $color__navy-gray-6;
     font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    -webkit-font-smoothing: auto;
   }
 
   pre {
     margin: 0 0 1rem;
     width: 100%;
     max-width: 38rem;
+    border: 2px solid #F5F7FA;
 
     code {
       font-size: .875rem;
