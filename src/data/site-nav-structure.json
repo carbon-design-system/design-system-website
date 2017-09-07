@@ -4,7 +4,8 @@
     "subnav": {
       "designers": "Designers",
       "developers": "Developers",
-      "service-providers": "Service Providers"
+      "service-providers": "Service Providers",
+      "FAQ": "FAQ"
     }
   },
   "guidelines": {
@@ -59,6 +60,7 @@
       "tabs": "Tabs",
       "tag": "Tag",
       "text-input": "Text Input",
+      "tile": "Tile",
       "toggle": "Toggle",
       "tooltip": "Tooltip"
     }
@@ -67,7 +69,7 @@
     "title": "Add-On's",
     "subnav": {
       "card": "Card",
-      "Detail-page-header": "Detail Page Header",
+      "detail-page-header": "Detail Page Header",
       "interior-left-nav": "Interior Left Nav",
       "module": "Module"
   }

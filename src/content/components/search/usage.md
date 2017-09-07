@@ -7,7 +7,6 @@
 **Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table).
 
 ![Search on a table](images/search-usage-1.png)
-![Search on a table](images/search-usage-2.png)
 
 _Small Search to filter table data_
 

@@ -31,8 +31,6 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 * Glyphs must be the same color value as the text within a button.
 * Ghost buttons require a glyph icon (cannot be stand alone text because of poor affordance).
 
----
-***
-> 
+
 ![button with glyph](images/button-usage-1.png)
-_Glyph usage in Button_
+_Glyph usage in Buttons_

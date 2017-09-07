@@ -81,7 +81,12 @@ class CodePage extends Component {
 
   render() {
     const component = this.props.component;
-    const componentInfo = require(`../../data/components/${component}.js`); // eslint-disable-line
+    let componentInfo;
+    if (component === 'card' || component === 'detail-page-header' || component === 'inline-left-nav' || component === 'module') {
+      componentInfo = require(`../../data/add-ons/${component}.js`); // eslint-disable-line
+    } else {
+      componentInfo = require(`../../data/components/${component}.js`); // eslint-disable-line
+    }
     const description = componentInfo.desc;
     const md = new Markdown({
       html: true,

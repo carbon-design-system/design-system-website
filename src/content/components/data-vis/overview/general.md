@@ -1,4 +1,7 @@
-## General Guidelines
+## Data visualizations
+
+
+## Graph Basics
 
 Data visualization should communicate quantitative information in a way that tells a story about data. Graphs express data visually, making it easy to see the general shape of the data to reveal patterns and trends that text or a table alone cannot.
 
@@ -6,7 +9,7 @@ A graph's story displays the relationship between a set of values, two quantitat
 
 An effective visualization provides enough context to show the graph's purpose, whether it is to analyze, communicate, monitor, or plan. Below are basic elements that make up a successful graph.
 
-![Example of base graph with terminology labels](images/usage-base-graph.png)
+![Example of base graph with terminology labels](images/general-base-graph.png)
 _Example of base graph with terminology labels_
 
 ### Title
