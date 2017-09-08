@@ -1,11 +1,11 @@
 ## Color
 | COLOR            | SCSS                   | HEX                 |
 |------------------|------------------------|---------------------|
-| Graph title      | $text-02               | #5A6872             |
-| Axis labels      | $text-02               | #5A6872             |
-| Grid lines       | $text-02               | #5A6872             |
-| Data Increments  | $text-02               | #5A6872             |
-| Tooltip: text    | $text-02               | #5A6872             |
+| Graph title      | $text-02               | #5a6872             |
+| Axis labels      | $text-02               | #5a6872             |
+| Grid lines       | $text-02               | #5a6872             |
+| Data Increments  | $text-02               | #5a6872             |
+| Tooltip: text    | $text-02               | #5a6872             |
 
 ## Typography
 Note that all axis labels should be set in uppercase.  
