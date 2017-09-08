@@ -9,6 +9,7 @@ import { Tabs, Tab } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import { browserHistory } from 'react-router';
 import ColorList from '../../data/data-vis-colors.json';
+import Markdown from 'markdown-it';
 
 class DataVis extends React.Component {
   static propTypes = {
@@ -57,9 +58,13 @@ class DataVis extends React.Component {
     if (params.page) {
       page = params.page;
     }
+    const md = new Markdown({
+      html: true,
+    });
     const PrimaryColorCards = this.renderColorCards(ColorList['primary']);
     const SecondaryColorCards = this.renderColorCards(ColorList['secondary']);
     const TertiaryColorCards = this.renderColorCards(ColorList['tertiary']);
+    const colors = require('../../content/components/data-vis/overview/colors.md');
     if (name === 'overview') {
       content = (
         <PageTabs tabs={tabs} currentPage={page}>
@@ -84,6 +89,10 @@ class DataVis extends React.Component {
                 <div className="wrapped-list">
                   {TertiaryColorCards}
                 </div>
+                <br />
+                <br />
+                <br />
+                <div className="page_md" dangerouslySetInnerHTML={{ __html: md.renderInline(colors) }} />
               </div>
             </div>
           </Tab>
