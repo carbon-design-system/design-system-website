@@ -1,6 +1,6 @@
 /* eslint-disable */
  module.exports = {
-  "desc": "<span>Tiles</span> provide a diverse method for displaying information.",
+  "desc": "<span>Tiles</span> are flexible containers that house a variety of content.",
   "variations": {
     "tile": [
       "Tile"
