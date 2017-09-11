@@ -84,6 +84,6 @@ We recommend you use 1-4 colors max in your catalog icon. Use color combinations
 
 ### Icon Approval
 
-Make sure your Service Icon meets Bluemix's Catalog Service Icon Guidelines, then submit your services SVG to the [Service Icon repository](https://github.ibm.com/bthan/service-icons-temp) via an issue for approval.
+Make sure your Service Icon meets Bluemix's Catalog Service Icon Guidelines. It is up to your business unit's design manager to approve all Service Icons. From there, you can submit your services SVG through the Service broker.
 
 For help on exporting SVGs refer to the [Carbon Iconography Guidelines](http://carbondesignsystem.com/style/iconography/contribution)

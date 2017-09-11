@@ -1,34 +1,3 @@
-## General guidelines
-
-There are three theme palettes for data visualizations: primary, secondary, and tertiary. Each palette has been carefully chosen to meet contrast standards for color blindness, with a majority of the colors meeting the Web Content Accessibility Guidelines (WCAG) color contrast requirements of 3.5:1. Data visualizations should always be shown on a white (#fff) background.
-
-
-_Disclaimer: Please note that the first four colors in the palette themes meet the [WCAG 2.1](https://www.w3.org/TR/WCAG21/#sotd) guidelines for accessibility. The last color of each palette does not. This was an intentional decision made in order meet the contrast requirements for color blindness._
-
-
-<!-- The hover-able palettes go here and are split into the following three sections -->
-
-##### Primary theme
-primary-01  #3B1A40
-primary-02  #473793
-primary-03  #3C6DF0
-primary-04  #00A68F
-primary-05  #48D4BB
-
-##### Secondary theme
-secondary-01  #112C1B
-secondary-02  #164D56
-secondary-03  #5A3EC8
-secondary-04  #9B82F3
-secondary-05  #EFCEF3
-
-##### Tertiary theme
-tertiary-01  #252E6A
-tertiary-02  #602797
-tertiary-03  #9320A2
-tertiary-04  #009BEF
-tertiary-05  #F7AAC3
-
 ## Color usage best practices
 
 Apply the primary data vis color `primary-04` when using only one data set. If you are comparing multiple sets of data, start by using colors in the primary theme so that each data set is assigned its own color. The primary theme is always used for the first data visualization on any given page. If there is more than one data visualization on a page, the secondary and/or tertiary themes may be used.

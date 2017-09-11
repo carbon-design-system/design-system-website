@@ -1,0 +1,68 @@
+{
+  "primary": [
+    {
+      "name": "primary-01",
+      "hex": "#3b1a40"
+    },
+    {
+      "name": "primary-02",
+      "hex": "#473793"
+    },
+    {
+      "name": "primary-03",
+      "hex": "#3c6df0"
+    },
+    {
+      "name": "primary-04",
+      "hex": "#00a68f"
+    },
+    {
+      "name": "primary-05",
+      "hex": "#48d4bb"
+    }
+  ],
+  "secondary": [
+    {
+      "name": "secondary-01",
+      "hex": "#112c1b"
+    },
+    {
+      "name": "secondary-02",
+      "hex": "#164d56"
+    },
+    {
+      "name": "secondary-03",
+      "hex": "#5a3ec8"
+    },
+    {
+      "name": "secondary-04",
+      "hex": "#9b82f3"
+    },
+    {
+      "name": "secondary-05",
+      "hex": "#efcef3"
+    }
+  ],
+  "tertiary": [
+    {
+      "name": "tertiary-01",
+      "hex": "#252e6a"
+    },
+    {
+      "name": "tertiary-02",
+      "hex": "#602797"
+    },
+    {
+      "name": "tertiary-03",
+      "hex": "#9320a2"
+    },
+    {
+      "name": "tertiary-04",
+      "hex": "#009bef"
+    },
+    {
+      "name": "tertiary-05",
+      "hex": "#f7aac3"
+    }
+  ]
+}

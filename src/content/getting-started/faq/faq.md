@@ -14,8 +14,11 @@
 
 [Where do I go if I've read everything and still have an issue/question?](#q7)
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5e491e9114db744e10d5aff76c02f6eb5081ffc3
 ## Answers
 
 #### <a name="q1">Who works on the Carbon Design System?</a>
@@ -50,6 +53,7 @@ If you are still have questions or can't find the answer you are looking for fee
 
 **General Inquiries**
 
+<<<<<<< HEAD
 Email: carbon@us.ibm.com
 
 Twitter: [@_carbondesign](https://twitter.com/_carbondesign)
@@ -58,8 +62,20 @@ Twitter: [@_carbondesign](https://twitter.com/_carbondesign)
 
 For design questions: #carbon-design-system
 
+=======
+Email: carbon@us.ibm.com </br>
+Twitter: <a href="https://twitter.com/_carbondesign" target="_blank">@_carbondesign</a>
+
+**Slack Channels (IBM internal only)**
+
+For design questions: #carbon-design-system </br>
+>>>>>>> 5e491e9114db744e10d5aff76c02f6eb5081ffc3
 For developer questions: #carbon-components, #carbon-react
 
 **Github Repos**
 
+<<<<<<< HEAD
 Open an issue in one of our [Github repos](https://github.com/carbon-design-system). Please choose the appropriate repo for your request.
+=======
+Open an issue in one of our <a href="https://github.com/carbon-design-system">Github repos</a>. Please choose the appropriate repo for your request.
+>>>>>>> 5e491e9114db744e10d5aff76c02f6eb5081ffc3

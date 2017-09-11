@@ -2,22 +2,22 @@
 
 | COLOR            | SCSS                   | HEX                 |
 |------------------|------------------------|---------------------|
-| Total            | $ui-03                 | #F0F3F6             |
-| Used             | $primary-04            | #00A68F             |
+| Total            | $ui-03                 | #f0f3f6             |
+| Used             | $primary-04            | #00a68f             |
 
 
 
 ## Typography
 Please note the total number should be left aligned with the used number.
 
-| PROPERTY            | FONT-SIZE        | FONT-WEIGHT  |
+| PROPERTY            | FONT-SIZE (PX/REM)       | FONT-WEIGHT  |
 |---------------------|------------------|--------------|
-| Small gauge: used   | 16px / 1rem      | Roman / 400  |
-| Small gauge: total  | 12px / 0.75rem   | Roman / 400  |
-| Medium gauge: used  | 24px / 1.5rem    | Light / 300  |
-| Medium gauge: total | 14px / 0.875rem  | Roman / 400  |
-| Large gauge: used   | 30px / 1.5rem    | Light / 300  |
-| Large gauge: total  | 14px / 0.875rem  | Roman / 400  |
+| Small gauge: used   | 16 / 1     | Roman / 400  |
+| Small gauge: total  | 12 / 0.75   | Roman / 400  |
+| Medium gauge: used  | 24 / 1.5    | Light / 300  |
+| Medium gauge: total | 14 / 0.875  | Roman / 400  |
+| Large gauge: used   | 30 / 1.5    | Light / 300  |
+| Large gauge: total  | 14 / 0.875  | Roman / 400  |
 
 
 ## Structure

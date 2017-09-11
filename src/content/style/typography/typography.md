@@ -2,11 +2,11 @@
 
 ## Typeface
 
-IBM uses a custom version of Helvetica Neue for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content.
+IBM uses Plex for both its Marketing and Product brands. It is a strong but neutral typeface that lends personality to the page without overpowering the content.
 
 ```scss
 @mixin helvetica {
-  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+  font-family: 'IBM Plex', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
 }
 ```
 
@@ -30,7 +30,7 @@ Font weight is another typographic style that can add emphasis and differentiate
 |--------------|------------|
 | Font-weight: 300 / Light <br> _Should only be used at sizes greater than or equal to 18px / 1.125rem_  | Light 300  |
 | Font-weight: 400 / Normal | Normal 400 |
-| Font-weight: 700 / Bold   | Bold 700   |
+| Font-weight: 600 / Semi-bold   | Semi-bold 600   |
 
 ## Headers
 

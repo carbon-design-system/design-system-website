@@ -21,6 +21,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // [... document.querySelectorAll('pre')].forEach(pre => {
+    //   Prism.highlightElement(pre);
+    // });
     this.checkWidth();
     this.addBxClasses();
     Prism.highlightAll();
