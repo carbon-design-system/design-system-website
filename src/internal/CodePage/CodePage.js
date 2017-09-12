@@ -82,7 +82,7 @@ class CodePage extends Component {
   render() {
     const component = this.props.component;
     let componentInfo;
-    if (component === 'card' || component === 'detail-page-header' || component === 'inline-left-nav' || component === 'module') {
+    if (component === 'card' || component === 'detail-page-header' || component === 'interior-left-nav' || component === 'module') {
       componentInfo = require(`../../data/add-ons/${component}.js`); // eslint-disable-line
     } else {
       componentInfo = require(`../../data/components/${component}.js`); // eslint-disable-line

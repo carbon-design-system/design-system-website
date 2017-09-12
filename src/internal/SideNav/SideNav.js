@@ -218,7 +218,9 @@ class SideNav extends Component {
         'sub-nav__item-link': true,
         'sub-nav__item-link--sub': true
       });
-      if (!(ENV === 'internal') && subNavItem === 'service-providers') {
+      const isServiceProviders = (!(ENV === 'internal') && subNavItem === 'service-providers');
+      const isBluemixBrand = (!(ENV === 'internal') && subNavItem === 'bluemix-brand');
+      if (isServiceProviders || isBluemixBrand) {
         return '';
       }
       const tabIndex = this.props.isOpen ? 0 : -1;
@@ -256,7 +258,9 @@ class SideNav extends Component {
           'sub-nav__item': true,
           selected: isCurrentPage, // eslint-disable-line
         });
-        if (!(ENV === 'internal') && subNavItem === 'service-providers') {
+        const isServiceProviders = (!(ENV === 'internal') && subNavItem === 'service-providers');
+        const isBluemixBrand = (!(ENV === 'internal') && subNavItem === 'bluemix-brand');
+        if (isServiceProviders || isBluemixBrand) {
           return '';
         }
         const tabIndex = this.props.isOpen ? 0 : -1;
