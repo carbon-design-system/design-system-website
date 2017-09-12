@@ -35,7 +35,6 @@
       "accordion": "Accordion",
       "breadcrumb": "Breadcrumb",
       "button": "Button",
-      "card": "Card",
       "checkbox": "Checkbox",
       "code-snippet": "Code Snippet",
       "content-switcher": "Content Switcher",
@@ -49,16 +48,13 @@
         }
       },
       "date-picker": "Date Picker",
-      "detail-page-header": "Detail Page Header",
       "dropdown": "Dropdown",
       "file-uploader": "File Uploader",
       "form": "Form",
-      "interior-left-nav": "Interior Left Nav",
       "link": "Link",
       "list": "List",
       "loading": "Loading",
       "modal": "Modal",
-      "module": "Module",
       "notification": "Notification",
       "number-input": "Number Input",
       "overflow-menu": "Overflow Menu",
@@ -77,6 +73,16 @@
       "tooltip": "Tooltip"
     }
   },
+  "add-ons": {
+    "title": "Add-On's",
+    "subnav": {
+      "overview": "Overview",
+      "card": "Card",
+      "detail-page-header": "Detail Page Header",
+      "interior-left-nav": "Interior Left Nav",
+      "module": "Module"
+  }
+},
   "component-status": {
     "title": "Component Status"
   },

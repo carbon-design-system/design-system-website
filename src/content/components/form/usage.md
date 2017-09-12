@@ -48,3 +48,9 @@ The validation label below the field should be as informative as possible when d
 
 ![form validation](images/form-usage-3.gif)
 _Form validation_
+
+### Optional vs. required fields
+All fields in a form are assumed required, with optional fields being tagged as so.
+
+![optional fields in a form](images/form-usage-5.png)
+_Denote optional fields within a Form_

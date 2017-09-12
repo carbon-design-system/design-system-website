@@ -4,7 +4,7 @@ The Slider in its basic form should be accompanied by a label and a number input
 ---
 ***
 > 
-![basic slider example](images/slider-usage-2.png)
+![basic slider example](images/slider-usage-1.png)
 
 _Slider used to change volume_
 
@@ -20,7 +20,7 @@ Users can choose a numerical value by:
 * `Shift` + ↑ ↓ ← → changes the value by 10 step size increments. (_Example: Typing `Shift + →` changes the value from 60 to 70, increasing the inputted value by 10 units._)
 
 
-![slider interaction](images/slider-usage-4.gif)
+![slider interaction](images/slider-usage-2.gif)
 
 _Example of a Slider interaction_
 
