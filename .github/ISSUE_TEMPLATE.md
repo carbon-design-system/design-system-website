@@ -9,18 +9,18 @@
 Describe in detail the issue you're having. Is this a feature request (new component, new icon), a bug, or a general issue?
 
 
-> Is this issue related to a specific component? 
+> Is this issue related to a specific component?
 
 
 > What did you expect to happen? What happened instead? What would you like to see changed?
 
 
 
-> What browser are you working in? 
+> What browser are you working in?
 
 
 
-> What version of the Carbon Design System are you using? 
+> What version of the Carbon Design System are you using?
 
 
 ## Steps to reproduce the issue
