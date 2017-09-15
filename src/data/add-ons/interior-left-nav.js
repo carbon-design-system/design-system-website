@@ -1,5 +1,5 @@
 /* eslint-disable */
  module.exports = {
-  "desc": "<span>Interior left navigation</span> organizes the content structure and provides context to support user orientation. This pattern accommodates the breadth of content and tasks users expect to see.",
+  "desc": "<span>Interior Left Navigation</span> provides in-context navigation, and is often seen a few levels deep into product, such as a service dashboard page. The nav can be expanded or collapsed based on user preference. ",
   "__content": "\n"
 }
