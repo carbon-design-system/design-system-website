@@ -1,5 +1,5 @@
 /* eslint-disable */
  module.exports = {
-  "desc": "<span>Modules</span> provide an at-a-glance overview of a user's content.",
+  "desc": "<span>Modules</span> are often found on service dashboard pages to present an overview of the user's data, such as usage statistics, connected apps, and activity feeds.",
   "__content": "\n"
 }
