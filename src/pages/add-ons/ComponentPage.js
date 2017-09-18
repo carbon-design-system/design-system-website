@@ -30,7 +30,7 @@ class ComponentPage extends Component {
       currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() +
       currentComponent.replace(/-/g, ' ').substring(1);
     const codePageContent = <CodePage component={currentComponent} />;
-    return <Page label="component" title={componentTitle} content={codePageContent} />;
+    return <Page label="Add-ons" title={componentTitle} content={codePageContent} />;
   }
 }
 
