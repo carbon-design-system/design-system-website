@@ -45,8 +45,13 @@
           "overview": "Overview",
           "circle-gauge": "Circle Gauge",
           "line-graph": "Line Graph",
+<<<<<<< HEAD
           "pie-chart": "Pie Chart",
           "scatter-plot": "Scatter Plot"
+=======
+          "scatterplot": "Scatterplot",
+          "pie-chart": "Pie Chart"
+>>>>>>> 75ad7fe... data vis content
         }
       },
       "date-picker": "Date Picker",
