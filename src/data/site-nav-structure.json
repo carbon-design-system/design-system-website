@@ -44,7 +44,13 @@
         "subnav": {
           "overview": "Overview",
           "circle-gauge": "Circle Gauge",
+<<<<<<< HEAD
           "line-graph": "Line Graph"
+=======
+          "line-graph": "Line Graph",
+          "pie-chart": "Pie Chart",
+          "scatter-plot": "Scatter Plot"
+>>>>>>> 12c5ec3... updated content for circle gauge, added in scatterplot and pie chart style and usage tab content and images
         }
       },
       "date-picker": "Date Picker",

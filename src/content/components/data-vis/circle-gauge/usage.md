@@ -1,6 +1,6 @@
 ## General guidelines
 
-Gauge graphs show individual values that make up a whole data set so users can compare the values to each other and see how each value compares to the whole. A common way to express the part-to-whole relationship is to use percentages, with the whole equaling 100% and each of its parts equaling smaller percentages corresponding to its value relative to the whole.
+Gauge graphs show the part-to-whole relationship of one value compared to its total. The gauge moves clockwise or counterclockwise depending on its content. When a value is expressing the amount used out of a total, the gauge will start empty and fill-in clockwise. In contrast, if a value is showing the amount remaining out of a total, the gauge will start full then empty counterclockwise.
 
 
 ![Circle Gauge example](images/usage-circle-gauge.png)
