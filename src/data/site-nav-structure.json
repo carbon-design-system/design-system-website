@@ -45,7 +45,9 @@
         "subnav": {
           "overview": "Overview",
           "circle-gauge": "Circle Gauge",
-          "line-graph": "Line Graph"
+          "line-graph": "Line Graph",
+          "scatterplot": "Scatterplot",
+          "pie-chart": "Pie Chart"
         }
       },
       "date-picker": "Date Picker",
