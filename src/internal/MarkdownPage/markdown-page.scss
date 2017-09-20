@@ -11,7 +11,7 @@
     width: 100%;
   }
 
-  [data-page="components-usage-loading"] & blockquote {
+  [data-page='components-usage-loading'] & blockquote {
     margin: 1rem 0 2rem;
 
     & > p {
@@ -26,7 +26,7 @@
 
   > p:not(:empty) {
     max-width: 38rem;
-    line-height: 1.75;
+    line-height: 1.5;
     padding: 0 0 1rem;
 
     + h2,
@@ -48,18 +48,18 @@
   }
 
   h2 {
-
     & + table {
       margin-top: 0;
     }
   }
 
   > p:not(:empty):first-child {
-     margin-bottom: 4rem;
+    margin-bottom: 4rem;
 
     strong {
       font-size: 1.125rem;
       line-height: 1.5;
+      font-weight: 700;
       word-wrap: break-word;
       letter-spacing: 0;
     }
@@ -70,6 +70,7 @@
     padding: 4rem 0 1rem;
     font-weight: 600;
     font-size: 1rem;
+    line-height: 1.25;
 
     & + table {
       margin-top: 0;
@@ -106,11 +107,14 @@
 
   p code,
   li code {
-    font-size: .875rem;
-    padding: .25rem;
+    font-size: 0.875rem;
+    padding: 0.25rem;
     background-color: $field-01;
     color: $color__navy-gray-6;
-    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+      'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+      'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+      'Courier New', Courier, monospace;
     -webkit-font-smoothing: auto;
   }
 
@@ -118,10 +122,10 @@
     margin: 0 0 1rem;
     width: 100%;
     max-width: 38rem;
-    border: 2px solid #F5F7FA;
+    border: 2px solid #f5f7fa;
 
     code {
-      font-size: .875rem;
+      font-size: 0.875rem;
       // white-space: pre-wrap;
       word-break: break-all;
       line-height: 1.5;
@@ -152,12 +156,12 @@
     }
 
     thead {
-
       th {
         font-size: rem(12px);
         text-transform: uppercase;
         font-weight: 600;
         text-align: left;
+        line-height: 1.125;
         letter-spacing: 1px;
         padding: 1rem 3rem 1rem 0;
         border-bottom: 2px solid $color__blue-40;
@@ -166,13 +170,13 @@
     }
 
     tbody {
-
       tr {
         border-bottom: 1px solid $color__gray-1;
 
         td {
           font-size: rem(14px);
           padding: 1rem 3rem 1rem 0;
+          line-height: 1.125;
 
           strong {
             letter-spacing: 0;
@@ -198,7 +202,7 @@
 
     li {
       font-weight: 400;
-      padding-left: .25rem;
+      padding-left: 0.25rem;
     }
 
     & + h3 {
@@ -225,7 +229,6 @@
 
     img:first-child:nth-last-child(2),
     img:first-child:nth-last-child(2) ~ img {
-
       @include breakpoint('900px') {
         width: 50%;
       }
@@ -261,7 +264,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-color: rgba($color__blue-30, .8);
+      background-color: rgba($color__blue-30, 0.8);
       color: $color__white;
       font-size: rem(12px);
       font-style: normal;
@@ -293,7 +296,7 @@
   blockquote p img {
     width: 3.2rem;
     float: left;
-    margin: 0 2rem .75rem 0;
+    margin: 0 2rem 0.75rem 0;
   }
 
   blockquote + p strong {
@@ -374,11 +377,11 @@
       display: flex;
       align-items: center;
       padding-bottom: 0 !important;
-      font-size: .875rem;
+      font-size: 0.875rem;
 
       img {
         width: auto !important;
-        padding-right: .5rem;
+        padding-right: 0.5rem;
       }
 
       & + p {
@@ -416,7 +419,7 @@
       strong {
         position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         z-index: 2;
         color: $color__white;
         letter-spacing: 0;

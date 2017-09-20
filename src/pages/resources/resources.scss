@@ -46,7 +46,7 @@
 
     div a {
       display: block;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     & + .page__divider-heading {
@@ -118,10 +118,10 @@
   }
 }
 
-
-main[data-page="resources-undefined"] {
+main[data-page='resources-undefined'] {
   .page__divider-heading {
-    letter-spacing: 2.29px !important;
+    letter-spacing: 2px;
+    font-weight: 600;
     max-width: 100% !important;
     font-size: 1rem !important;
     color: $brand-01 !important;
