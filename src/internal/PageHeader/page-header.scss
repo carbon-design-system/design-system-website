@@ -14,7 +14,7 @@
   }
 
   &__label {
-    @include font-size('14');
+    font-size: 1.125rem;
     color: $color__navy-gray-6;
     text-transform: uppercase;
     font-weight: 300;
@@ -23,18 +23,19 @@
     white-space: nowrap;
 
     @include breakpoint('500px') {
-      @include font-size('16');
       margin-bottom: 1rem;
       margin-top: 3rem;
     }
   }
 
   &__title {
-    font-size: rem(32px);
+    font-size: 4.125rem;
     color: $color__blue-90;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 600;
     margin: -1.15rem 0 0 -3px;
+    line-height: 1.25;
+    letter-spacing: 0;
     padding: 0;
     transition: $transition--base $bx--standard-easing;
 
