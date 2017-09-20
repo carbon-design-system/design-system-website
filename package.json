@@ -70,7 +70,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
-    "carbon-components": "7.22.0",
+    "carbon-components": "7.22.2",
     "carbon-components-react": "^3.8.15",
     "carbon-icons": "^6.0.6",
     "classnames": "^2.2.5",
@@ -92,19 +92,16 @@
     "dev": "npm run front-matter && node scripts/start.js",
     "build-external": "ENV=external node scripts/build.js",
     "build-internal": "ENV=internal node scripts/build.js",
-    "build": "echo 'ERROR: Please specify environment by running either build-external or build-internal. This will set the correct environment variable for the build.'",
+    "build":
+      "echo 'ERROR: Please specify environment by running either build-external or build-internal. This will set the correct environment variable for the build.'",
     "test": "node scripts/test.js --env=jsdom",
     "front-matter": "node scripts/frontmatter.js",
     "start": "NODE_ENV=production node index.js",
     "server": "concurrently \"npm run dev\" \"babel-watch index.js\""
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "setupFiles": ["<rootDir>/config/polyfills.js"],
     "testPathIgnorePatterns": [
       "<rootDir>[/\\\\](build|docs|node_modules)[/\\\\]"
     ],
@@ -115,9 +112,7 @@
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
-    "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
-    ],
+    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
