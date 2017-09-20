@@ -20,7 +20,7 @@
 Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of designers and front-end developers that are dedicated to developing and supporting the system. There are also countless other designers and developers in the IBM Cloud ecosystem who also contribute back to [carbon-components](https://github.com/carbon-design-system/carbon-components#contributors) and [carbon-react](https://github.com/carbon-design-system/carbon-components-react#contributors).
 
 #### <a name="q2">How can I contribute and/or propose new components/ideas?</a>
-We have guidelines for contributing back to [Carbon Components](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) and the [Carbon Design Kit](https://github.com/carbon-design-system/carbon-design-kit/blob/master/CONTRIBUTING.md). We appreciate you helping out and contributing back.
+We have [guidelines](carbondesignsystem.com/guidelines/contributing) for contributing back to the Carbon Design System. Code specific guidelines live in the [Carbon Components](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) repo. We appreciate you helping out and contributing back.
 
 #### <a name="q3">Which browsers are supported?</a>
 Carbon components is supported in the following browsers:

@@ -19,24 +19,24 @@ Specifc styling on the Data Table component can be toggled on/off based on user 
 
 If zebra striping is turned off, you must have Row dividers.
 
-![Data table: row styling](images/data-tables-usage-10.png)
+![Data table: row styling](images/data-table-style-1.png)
 _Data Table with various row styling_
 
 **Background colors**
 
 Data Tables are built to be accessible against two background colors:
-![Data table: background colors](images/data-tables-usage-12.png)
+![Data table: background colors](images/data-table-style-2.png)
 
 _Data Table on ui-01 vs ui-02_
 
 ## Typography
-Column labels should be in all caps. All other table text should be sentenced case.
+Column headers should be in title case. All other table text should be sentenced case.
 
-| PROPERTY      | FONT-SIZE     | FONT-WEIGHT  |
+| PROPERTY      | FONT-SIZE (PX/REM)     | FONT-WEIGHT  |
 |---------------|------------------|--------------|
-| Title         | 18px / 1.125rem | Semibold / 600  |
-| Header        | 12px / 0.75rem   | Semibold / 600   |
-| Text          | 14px / 0.875rem  | Normal / 400 |
+| Title         | 18 / 1.125 | Semibold / 600  |
+| Header        | 14 / 0.875   | Semibold / 600   |
+| Text          | 14 / 0.875  | Normal / 400 |
 
 ## Layer
 
@@ -63,7 +63,7 @@ Compact and Tall are designer and developer preferences. Tall row heights are on
 | Tall     |  64     |
 
 
-![Data table: row styling](images/data-tables-usage-11.png)
+![Data table: row styling](images/data-table-style-3.png)
 _Data Table: varying row sizes_
 
 
@@ -94,10 +94,10 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 
 <div data-insert-component="ImageGrid">
   <div>
-![Spacing for a basic Data Table](images/data-table-style-3.png)
+![Spacing for a basic Data Table](images/data-table-style-5.png)
 </div>
 <div>
-![Spacing for an enhanced Data Table](images/data-table-style-4.png)
+![Spacing for an enhanced Data Table](images/data-table-style-6.png)
 </div>
 </div>
 
@@ -115,6 +115,6 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 ---
 ***
 > 
-![Spacing for toolabr icons](images/data-table-style-6.png)
+![Spacing for toolabr icons](images/data-table-style-7.png)
 
 _Structure and spacing measurements for toolbar icons | px / rem_
