@@ -44,10 +44,10 @@
         "title": "Data Vis",
         "subnav": {
           "overview": "Overview",
-          "circle-gauge": "Circle Gauge",
+          "gauge": "Gauge",
           "line-graph": "Line Graph",
-          "scatterplot": "Scatterplot",
-          "pie-chart": "Pie Chart"
+          "pie-chart": "Pie Chart",
+          "scatter-plot": "Scatter Plot"
         }
       },
       "date-picker": "Date Picker",
