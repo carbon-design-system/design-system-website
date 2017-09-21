@@ -14,3 +14,14 @@ main[data-page|=data-vis] {
     height: 5rem;
   }
 }
+
+main[data-page='data-vis-usage-pie-chart'] {
+  .gif {
+    border: none;
+    background: $ui-02;
+  }
+
+  .gif > img {
+    max-width: 300px;
+  }
+}
