@@ -8,9 +8,9 @@ _Example of a Gauge_
 
 The gauge starts at 12 o'clock and moves clockwise or counterclockwise depending on its content. When a value is expressing the amount used out of a total, the gauge will start empty and fill in clockwise. In contrast, if a value is showing the amount remaining out of a total, the gauge will start full then empty counterclockwise.
 
-![Example of a Gauge](images/usage-gauge-1.gif)
-_Examples of a Gauge clockwise motion_
+![Examples of a Gauge with clockwise motion](images/usage-gauge-1.gif)
+_Examples of a Gauge with clockwise motion_
 
 
-![Example of a Gauge](images/usage-gauge-2.gif)
-_Examples of a Gauge counterclockwise motion_
+![Example of a Gauge with counterclockwise motion](images/usage-gauge-2.gif)
+_Example of a Gauge with counterclockwise motion_
