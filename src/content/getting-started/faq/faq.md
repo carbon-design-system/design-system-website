@@ -44,7 +44,7 @@ If you have a pressing bug or change it is best to make PR for the issue yoursel
 
 #### <a name="q7">Where do I go if I've read everything and still have an issue/question?</a>
 
-If you are still have questions or can't find the answer you are looking for feel free to reach out in one of the following ways:
+If you are still have questions or can't find the answer you are looking for feel free to reach out in one of the following ways: 
 
 **General Inquiries**
 
