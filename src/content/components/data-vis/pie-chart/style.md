@@ -7,18 +7,15 @@ Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style)
 | Data Value	                    | $text-01 | #152935 |
 | Data Variable	                  | $text-02 | #5A6872 |
 
-![Pie Chart hover example](images/style-pie-chart.png)
+![Pie Chart hover example](images/style-pie-chart-1.png)
 _Example of a Pie Chart section, hovered_
 
 ## Typography
 
 | PROPERTY                       | FONT-SIZE (PX/REM) | FONT-WEIGHT   |
 |--------------------------------|--------------------|---------------|
-| Data Value	                   | 58/3.625           | Light / 300   |
-| Data Variable	                 | 16/1               | Normal / 400  |
-
-| Data Value	                   | 26/1.625           | Light / 300   |
-| Data Variable	                 | 12/0.75            | Normal / 400  |
+| Data Value	                   | 29/1.8125          | Light / 300   |
+| Data Variable	                 | 14/0.875           | Normal / 400  |
 
 ## Structure
 
