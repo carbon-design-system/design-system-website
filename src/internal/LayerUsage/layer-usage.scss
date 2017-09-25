@@ -44,12 +44,12 @@
     p {
       font-size: rem(14px);
       color: $color__navy-gray-6;
-      padding-bottom: .25rem !important;
+      padding-bottom: 0.25rem !important;
       line-height: 1.25 !important;
     }
 
     p:first-child {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 }
