@@ -16,7 +16,6 @@
     transition: $transition--base ease;
     border-bottom: 1px solid $color__gray-1;
 
-
     @include breakpoint('bp--sm--major') {
       height: rem(640px);
       padding: 4rem 10%;
