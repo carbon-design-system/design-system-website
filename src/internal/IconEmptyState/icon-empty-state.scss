@@ -20,7 +20,7 @@
   h4 {
     @include font-smoothing;
     font-size: rem(23px);
-    font-weight: 700;
+    font-weight: 600;
     color: $ui-05;
     margin: 2rem 0 1.75rem 0;
   }
@@ -47,7 +47,6 @@
 }
 
 .icon-empty-state__shapes {
-
   svg {
     width: rem(55px);
     margin: 0 1rem;
@@ -76,7 +75,14 @@
 }
 
 @keyframes dancing {
-  0%, 100% { transform: scale(1.0) rotate(0deg) }
-  25% { transform: rotate(-3deg) translateY(-5px) }
-  75% { transform: rotate(3deg) }
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg) translateY(-5px);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
 }

@@ -23,7 +23,7 @@ ul.color-contrast__keys {
       padding-bottom: 0;
       font-size: rem(14px);
       margin-left: 1rem;
-      font-weight: 700;
+      font-weight: 600;
 
       span {
         font-weight: 400;
@@ -83,10 +83,10 @@ ul.color-contrast__examples--type-colors {
       margin: 0;
       line-height: 1;
       font-size: rem(14px);
-      font-weight: 700;
+      font-weight: 600;
 
       &:nth-child(2) {
-        margin-top: .25rem;
+        margin-top: 0.25rem;
         font-weight: 400;
         color: $color__navy-gray-6;
       }
@@ -132,12 +132,12 @@ ul.color-contrast__examples--bg-colors {
 
     img {
       width: 100%;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     > p {
       font-size: rem(14px);
-      font-weight: 700;
+      font-weight: 600;
       padding: 0;
       margin: 0;
       line-height: 1;
@@ -145,7 +145,7 @@ ul.color-contrast__examples--bg-colors {
       &:last-of-type {
         font-weight: 400;
         color: $color__navy-gray-6;
-        margin-top: .25rem;
+        margin-top: 0.25rem;
       }
     }
   }

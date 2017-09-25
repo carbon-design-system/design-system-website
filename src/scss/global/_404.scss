@@ -28,22 +28,22 @@
       width: 8vw;
     }
 
-     @include breakpoint('1020px') {
-        span {
-          font-size: 5.5rem;
-        }
+    @include breakpoint('1020px') {
+      span {
+        font-size: 5.5rem;
+      }
 
-        svg {
-          height: 5.5rem;
-          width: 5.5rem;
-        }
-     }
+      svg {
+        height: 5.5rem;
+        width: 5.5rem;
+      }
+    }
   }
 
   .overview__letter {
     position: relative;
     display: inline-block;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 
   .fourohfour-large {
@@ -66,8 +66,8 @@
     span {
       @include font-smoothing;
       display: inline-block;
-      margin: .5rem;
-      font-weight: 700;
+      margin: 0.5rem;
+      font-weight: 600;
       font-size: 12vw;
     }
 
@@ -100,7 +100,7 @@
     p {
       text-align: center;
       padding: 1rem 2rem;
-      font-weight: 700;
+      font-weight: 600;
       font-size: rem(20px);
 
       @include breakpoint('1020px') {

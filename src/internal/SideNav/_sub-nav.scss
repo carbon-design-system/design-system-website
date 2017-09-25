@@ -3,7 +3,7 @@
   padding-left: 0;
   overflow: hidden;
   max-height: 0;
-  transition: .3s;
+  transition: 0.3s;
 
   .main-nav-item__open & {
     max-height: 100rem;
@@ -13,13 +13,13 @@
     @include font-size('16');
     text-transform: capitalize;
     margin-left: 0;
-    padding: .875rem .875rem .875rem 2rem;
+    padding: 0.875rem 0.875rem 0.875rem 2rem;
     color: $color__blue-90;
     border-left: 4px solid transparent;
 
     @include breakpoint('620px') {
       @include font-size('14');
-      padding: .5rem .5rem .5rem 2rem;
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
     }
 
     &:hover,
@@ -32,7 +32,7 @@
     }
 
     &:first-child {
-      margin-top: .25rem;
+      margin-top: 0.25rem;
     }
 
     &-link {
@@ -48,7 +48,7 @@
 
       &:focus {
         outline: 0;
-        font-weight: 700;
+        font-weight: 600;
       }
     }
 
@@ -57,7 +57,7 @@
       color: $color__blue-51;
 
       .sub-nav__item-link {
-        font-weight: 700;
+        font-weight: 600;
       }
     }
   }
@@ -68,10 +68,10 @@
   padding-left: 0;
   overflow: hidden;
   max-height: 0;
-  transition: .3s;
+  transition: 0.3s;
 
   .main-nav-item__open > & {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     max-height: 80rem;
   }
 

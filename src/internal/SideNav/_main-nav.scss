@@ -5,7 +5,7 @@
   width: 100%;
 
   .main-nav-item {
-    padding: .225rem 0;
+    padding: 0.225rem 0;
 
     &:hover,
     &:focus {
@@ -25,7 +25,7 @@
       color: $color__blue-90;
       font-weight: 600;
       text-decoration: none;
-      padding: .875rem rem(20px);
+      padding: 0.875rem rem(20px);
       margin: 0;
       line-height: 1.5;
       border-left: 4px solid transparent;
@@ -33,7 +33,7 @@
 
       @include breakpoint('620px') {
         @include font-size('14');
-        padding: .2825rem rem(20px);
+        padding: 0.2825rem rem(20px);
       }
     }
 
@@ -41,20 +41,18 @@
       height: rem(8px);
       width: rem(8px);
       fill: $color__navy-gray-7;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &__open {
-
       & > .main-nav-item__heading .main-nav-item__arrow {
         transform: rotate(-180deg);
       }
     }
 
     &__active {
-
       .main-nav-item__heading {
-        font-weight: 700;
+        font-weight: 600;
         color: $color__blue-51;
         border-left: 4px solid $color__blue-51;
       }
@@ -62,7 +60,6 @@
 
     &:hover,
     &:focus {
-
       .main-nav-item__heading {
         color: $color__blue-51;
       }
@@ -81,13 +78,13 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 0;
-      padding: .3rem 1rem .2rem 2rem;
+      padding: 0.3rem 1rem 0.2rem 2rem;
       cursor: pointer;
     }
 
     .sub-nav__inner-sub-nav .sub-nav__item {
       margin-top: 0;
-      padding: .5rem 1rem .5rem 3rem;
+      padding: 0.5rem 1rem 0.5rem 3rem;
       cursor: pointer;
     }
 

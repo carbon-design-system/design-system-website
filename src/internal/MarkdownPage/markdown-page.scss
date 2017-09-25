@@ -59,7 +59,7 @@
     strong {
       font-size: 1.125rem;
       line-height: 1.5;
-      font-weight: 700;
+      font-weight: 600;
       word-wrap: break-word;
       letter-spacing: 0;
     }
@@ -111,10 +111,7 @@
     padding: 0.25rem;
     background-color: $field-01;
     color: $color__navy-gray-6;
-    font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
-      'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
-      'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
-      'Courier New', Courier, monospace;
+    font-family: 'IBM Plex Mono', Courier, monospace;
     -webkit-font-smoothing: auto;
   }
 
@@ -126,7 +123,6 @@
 
     code {
       font-size: 0.875rem;
-      // white-space: pre-wrap;
       word-break: break-all;
       line-height: 1.5;
     }
@@ -365,7 +361,7 @@
 
       &:nth-child(3) {
         td:nth-child(2) {
-          font-weight: 700;
+          font-weight: 600;
         }
       }
     }
