@@ -8,22 +8,18 @@ class OverviewPage extends Component {
     const accordionExample = require('./images/Accordion.svg');
     const breadcrumbExample = require('./images/Breadcrumb.svg');
     const buttonExample = require('./images/Button.svg');
-    const cardExample = require('./images/Card.svg');
     const checkboxExample = require('./images/Checkbox.svg');
     const codeSnippetExample = require('./images/Code Snippet.svg');
     const contentSwitcherExample = require('./images/Content Switcher.svg');
     const dataTableExample = require('./images/Data Table.svg');
     const datePickerExample = require('./images/Date Picker.svg');
-    const detailPageHeaderExample = require('./images/Detail Page Header.svg');
     const dropdownExample = require('./images/Dropdown.svg');
     const fileUploaderExample = require('./images/File Uploader.svg');
     const formExample = require('./images/Form.svg');
-    const interiorLeftNavExample = require('./images/Interior Left Nav.svg');
     const linkExample = require('./images/Link.svg');
     const listExample = require('./images/List.svg');
     const loadingExample = require('./images/Loading.svg');
     const modalExample = require('./images/Modal.svg');
-    const moduleExample = require('./images/Module.svg');
     const notificationExample = require('./images/Notification.svg');
     const numberInputExample = require('./images/Number Input.svg');
     const overflowMenuExample = require('./images/Overflow Menu.svg');
@@ -57,11 +53,6 @@ class OverviewPage extends Component {
         link: '/components/button',
       },
       {
-        name: 'Card',
-        img: require('./images/Card.svg'),
-        link: '/components/card',
-      },
-      {
         name: 'Checkbox',
         img: require('./images/Checkbox.svg'),
         link: '/components/checkbox',
@@ -92,11 +83,6 @@ class OverviewPage extends Component {
         link: '/components/date-picker',
       },
       {
-        name: 'Detail Page Header',
-        img: require('./images/Detail Page Header.svg'),
-        link: '/components/detail-page-header',
-      },
-      {
         name: 'Dropdown',
         img: require('./images/Dropdown.svg'),
         link: '/components/dropdown',
@@ -110,11 +96,6 @@ class OverviewPage extends Component {
         name: 'Form',
         img: require('./images/Form.svg'),
         link: '/components/form',
-      },
-      {
-        name: 'Interior Left Nav',
-        img: require('./images/Interior Left Nav.svg'),
-        link: '/components/interior-left-nav',
       },
       {
         name: 'Link',
@@ -135,11 +116,6 @@ class OverviewPage extends Component {
         name: 'Modal',
         img: require('./images/Modal.svg'),
         link: '/components/modal',
-      },
-      {
-        name: 'Module',
-        img: require('./images/Module.svg'),
-        link: '/components/module',
       },
       {
         name: 'Notification',

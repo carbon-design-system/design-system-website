@@ -14,7 +14,7 @@
 
   &--active {
     margin: 0 0 1rem;
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     transition: opacity 500ms $bx--standard-easing, transform 0s;
     overflow: initial;
     opacity: 1;
@@ -39,9 +39,9 @@
 
     h4 {
       @include font-size('12');
-      font-weight: 700;
+      font-weight: 600;
       width: 100%;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px solid $text-03;
       text-transform: uppercase;
       color: $text-03;
@@ -58,7 +58,7 @@
 
     &.top-result {
       border-bottom: none;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
     }
 
     &.is-hidden {
@@ -68,7 +68,7 @@
     .result__component-name {
       @include font-size('16');
       text-transform: capitalize;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     a span {
@@ -106,7 +106,7 @@
 
   .no-result__text {
     @include font-size('12');
-    font-weight: 700;
+    font-weight: 600;
     margin-top: rem(8px);
     margin-bottom: rem(16px);
     text-transform: uppercase;

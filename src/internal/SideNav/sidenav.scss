@@ -48,7 +48,7 @@
     color: $color__blue-90;
     font-size: rem(16px);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
     margin-top: 2rem;
     white-space: nowrap;
@@ -56,7 +56,7 @@
     margin-bottom: rem(16px);
 
     span {
-      font-weight: 300;
+      font-weight: 400;
     }
 
     &:hover {
@@ -72,7 +72,8 @@
 
   &__bottom-container {
     transform: translateY(0);
-    transition: opacity 600ms $bx--standard-easing, transform 400ms $bx--standard-easing;
+    transition: opacity 600ms $bx--standard-easing,
+      transform 400ms $bx--standard-easing;
     background: white;
     opacity: 1;
 
@@ -89,7 +90,7 @@
   }
 
   .bx--search-input {
-    padding: 0 .75rem;
+    padding: 0 0.75rem;
     height: 100%;
   }
 
@@ -102,7 +103,7 @@
     width: 100%;
     font-size: rem(11px);
     padding: 0 rem(20px);
-    margin-top: .25rem;
+    margin-top: 0.25rem;
     margin-bottom: rem(8px);
     text-decoration: none;
     color: $color__navy-gray-6;
@@ -141,8 +142,8 @@
   }
 
   &__text {
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: $color__blue-90;
-    margin: .25rem 0;
+    margin: 0.25rem 0;
   }
 }

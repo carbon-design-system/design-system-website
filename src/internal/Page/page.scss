@@ -1,4 +1,6 @@
-td {position: relative;}
+td {
+  position: relative;
+}
 .color-block {
   top: 25px;
   transform: translateY(-50%);
@@ -30,7 +32,7 @@ td {position: relative;}
     margin-top: 2rem;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-size: 1rem;
   }
 
@@ -52,7 +54,7 @@ td {position: relative;}
     word-wrap: break-word;
     font-size: 1.125rem;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 1rem;
     letter-spacing: 0;
 
@@ -62,9 +64,11 @@ td {position: relative;}
   }
 
   & > *:not(.component-example):not(.component-variation),
-  & > {
+  & >  {
     .page__divider-heading {
-      font-size: rem(12px);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
       width: 100%;
       padding-bottom: 1rem;
       border-bottom: 2px solid $color__blue-40;
@@ -75,7 +79,10 @@ td {position: relative;}
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 4.125rem;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0px;
 
       &#helvetica-neue-light {
         font-weight: 300;
@@ -89,20 +96,20 @@ td {position: relative;}
       color: $color__blue-90;
       margin-top: 6rem;
       font-weight: 600;
-      font-size: rem(26px);
+      font-size: 1.625rem;
+      letter-spacing: 0.5px;
       padding: 1rem 0 3rem;
-
 
       &:focus {
         outline: none;
       }
 
       .title-anchor {
-        transition: .2s cubic-bezier(0.5, 0, 0.1, 1);
-        opacity: .25;
+        transition: 0.2s cubic-bezier(0.5, 0, 0.1, 1);
+        opacity: 0.25;
         line-height: 0;
         order: 2;
-        margin-left: .25rem;
+        margin-left: 0.25rem;
         padding: 3px;
 
         &:hover {
@@ -117,7 +124,6 @@ td {position: relative;}
           }
         }
 
-
         &:focus {
           opacity: 1;
           outline: 1px solid $brand-01;
@@ -127,7 +133,7 @@ td {position: relative;}
       &:before {
         content: '';
         width: 5rem;
-        height: .3rem;
+        height: 0.3rem;
         display: block;
         background-color: $color__blue-40;
         position: absolute;
@@ -151,9 +157,8 @@ td {position: relative;}
     h3 {
       color: $color__blue-51;
       padding: 4rem 0 1rem;
-      font-size: 1.125rem;
+      font-size: 1.25rem;
       font-weight: 600;
-      letter-spacing: 0;
 
       & + h4 {
         padding-top: 0;

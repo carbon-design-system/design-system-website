@@ -84,9 +84,11 @@
   margin-bottom: 1rem;
 
   h5 {
-    @include letter-spacing;
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+    font-size: 1rem;
     color: $text-01;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: rem(16px);
     margin-bottom: rem(5px);
   }
@@ -140,7 +142,7 @@
   border: 2px solid $text-01;
   background-color: transparent;
   min-width: rem(112px);
-  margin: .2rem 0;
+  margin: 0.2rem 0;
   color: $text-01;
 
   &:hover,
