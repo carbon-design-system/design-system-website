@@ -1,9 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="uppercase-A" viewBox="0 0 26 26">
-  <defs>
-    <style>
-      .cls-1{fill:#152934;}
-    </style>
-  </defs>
-  <path id="A" d="M14.48 6.07l4.81 12.85h-2.94l-1-2.86h-4.78l-1 2.86H6.72l4.86-12.85h2.9zm.16 7.93L13 9.24 11.31 14h3.33z" class="cls-1"/>
-  <path id="circle" d="M13 2A11 11 0 1 1 2 13 11 11 0 0 1 13 2m0-2a13 13 0 1 0 13 13A13 13 0 0 0 13 0z" class="cls-1"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>color_Light-UI Copy 28</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V7---Feb-2017" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="color_Light-UI-Copy-28" transform="translate(-565.000000, -3212.000000)">
+            <g id="Nav"></g>
+            <g id="Color-contrast" transform="translate(401.000000, 3042.000000)">
+                <g id="Table" transform="translate(0.000000, 169.000000)">
+                    <g id="Group-13-Copy-2" transform="translate(1.000000, 0.000000)">
+                        <text id="A" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#152935">
+                            <tspan x="170" y="20">A</tspan>
+                        </text>
+                        <circle id="Oval-8" stroke="#152935" stroke-width="2" cx="176" cy="14" r="12"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
