@@ -1,11 +1,7 @@
-**_Add-ons_ are components that are specifically built for IBM Cloud products and experiences.**
-
-
-## Carbon ecosystem
-Carbon supports two main libraries, [Vanilla.js](https://github.com/carbon-design-system/carbon-components) and [React](https://github.com/carbon-design-system/carbon-components-react). There is also an unofficial Angular library for Carbon Components that is managed by an external team.
+**_Add-ons_ are components built specifically for IBM Cloud products and experiences. Carbon supports two main libraries, [Vanilla.js](https://github.com/carbon-design-system/carbon-components) and [React](https://github.com/carbon-design-system/carbon-components-react). There is also an unofficial [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that is managed by an external team.**
 
 ## Contributing to Add-ons
-Below is the list of items that you need to pass in order for your contribution to be accepted.
+Below are the items that you need to pass in order for your contribution to be accepted.
 
 
 |                  |                        | Core library   | Add-ons |
