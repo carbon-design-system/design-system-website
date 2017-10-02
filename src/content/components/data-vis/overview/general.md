@@ -25,9 +25,9 @@ Grid lines are points of reference aligned to data increments that divide the ar
 The position where a quantitative and categorical value meet is portrayed as either a point, bar, or line.
 
 ### Data increments
-Keep the distance between tick marks on the x and y-axis consistently spaced. This provides a predictable reference and limits the likelihood of distorting data. The larger the data range, the more tick marks a graph should contain.
+Maintain even spacing between data increments to provide a predictable reference and limit the likelihood of distorting data. Keep in mind the larger the data range, the more data increments a graph should contain.
 
-Tick marks are not required for categorical values. However, for quantitative values, choose round numbers that fit the given data range and always include an additional tick mark that is one increment greater than the data set. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
+Categorical values should be labeled in logical increments, such as consecutive months. For quantitative values, choose round numbers that fit the given data range and always include an additional increment greater than the dataset. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
 
 ### Key
 A key explains what the plotted data in a graph represents. We recommend using up to six data sets (and no more) in a key because any more loses the comparative value of graphs. The key is generally located to the right of a graph. However, if the amount of items listed in the key exceeds that space or the span of the graph is limited, place the key below.  
@@ -49,7 +49,7 @@ Abbreviate labels if spacing is a concern. Follow these conventions across graph
 | Months                | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec  |
 | 12 hour time             | 9am, 12pm, 6pm |
 | Numbers               | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label "Cost in thousands" may have data increments 1K, 1.5K, 2K, etc.|
-| Currency              | Describe the full currency name in the axis label and currency symbols in the data increment. For instance, if an axis label uses Dollars the data increment may be $100, $200, $300, etc.
+| Currency              | For instance, if an axis label uses "Dollars", the data increment may be $100, $200, $300, etc.
 
 
 ## Accessibility
@@ -76,4 +76,11 @@ Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab
 
 #### _References_
 _"The Visual Display of Quantitative Information" by Edward Tufte_
+
+_"The Visual Display of Quantitative Information" by Edward Tufte_
+
+_"Show Me the Numbers: Designing Tables and Graphs to Enlighten" by Stephen Few_
+
+_"Interactive Data Visualization for the Web, 2nd Edition" by Scott Murray_
+
 _"Show Me the Numbers: Designing Tables and Graphs to Enlighten" by Stephen Few_

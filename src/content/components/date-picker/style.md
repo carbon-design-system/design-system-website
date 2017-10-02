@@ -20,7 +20,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 
 
 
-![Structure for Date Picker](images/date-picker-style-1.png)
+![Example of a Date Picker](images/date-picker-style-1.png)
 _Structure for Date Picker | px / rem_
 
 
@@ -100,26 +100,18 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | PROPERTY                     | PX  | REM   |
 |------------------------------|-----|-------|
 | Height                       | 40  | 2.5   |
-| Width: 12-hour clock         | 112 | 7     |
-| Width: 24-hour clock         | 80  | 5     |
+| Width                        | 80  | 5     |
 | Internal spacing             | 16  | 1     |
-| Spacing: time & period       | 10  | 0.625  |
 | Spacing: time picker & inline select | 16  | 1  |
 
 
 
 <div data-insert-component="ImageGrid">
   <div>
-    ![Structure for a 12-hour clock](images/time-picker-style-1.png)
+    ![Structure for a Time Picker](images/time-picker-style-1.png)
   </div>
   <div>
-    ![Structure for a 24-hour clock](images/time-picker-style-2.png)
-  </div>
-  <div>
-    ![Spacing for a 12-hour clock](images/time-picker-style-3.png)
-  </div>
-  <div>
-    ![Spacing for a 24-hour clock](images/time-picker-style-4.png)
+    ![Spacing for a Time Picker](images/time-picker-style-2.png)
   </div>
 </div>
-_Structure and spacing for 12-hour and 24-hour Time Pickers | px / rem_
+_Structure and spacing for a Time Picker | px / rem_

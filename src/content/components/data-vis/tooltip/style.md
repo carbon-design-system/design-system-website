@@ -35,7 +35,7 @@ Width varies based on content length.
 
 
 **
-![Example of a small Tooltip](images/tooltip-1.png)
+![Example of a small Tooltip](images/style-tooltip-1.png)
 **
 _Example of a small Tooltip_
 
@@ -51,7 +51,7 @@ Width varies based on content length.
 
 
 **
-![Example of a medium Tooltip](images/tooltip-2.png)
+![Example of a medium Tooltip](images/style-tooltip-2.png)
 **
 _Example of a medium Tooltip_
 
@@ -70,7 +70,7 @@ Width varies based on content length.
 
 
 **
-![Example of a large Tooltip](images/tooltip-3.png)
+![Example of a large Tooltip](images/style-tooltip-3.png)
 **
 _Example of a large Tooltip_
 
@@ -78,15 +78,15 @@ _Example of a large Tooltip_
 The below images show how a tooltip would respond to different amounts of data values. It also shows how the width of tooltip changes when a label is at its max-width.
 
 **
-![Example of a tooltip with 3 data values](images/tooltip-4.png)
-![Example of a tooltip with 4 data values](images/tooltip-5.png)
-![Example of a tooltip with 4 data values](images/tooltip-6.png)
-![Example of a tooltip with 5 data values](images/tooltip-3.png)
+![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
+![Example of a tooltip with 4 data values](images/style-tooltip-5.png)
+![Example of a tooltip with 4 data values](images/style-tooltip-6.png)
+![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
 **
 _Examples of tooltip responsiveness for different data value amounts_
 
 **
-![Example of max-width labels, one column](images/tooltip-7.png)
-![Example of max-width labels, two column](images/tooltip-8.png)
+![Example of max-width labels, one column](images/style-tooltip-7.png)
+![Example of max-width labels, two column](images/style-tooltip-8.png)
 **
 _Example of max-width labels, one column, and two-column_
