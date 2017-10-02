@@ -12,12 +12,12 @@ Below are the items that you need to pass in order for your contribution to be a
 |                  | Carbon custom focus states           |  ✅            |        |
 | Visual + UX      | Carbon themed          |  ✅            |          |
 |                  | Universal pattern <br>(fits for 2-3 use cases) | ✅          |     |
-|                  | Interaction states (hover, active, etc.)     | ✅             | ✅           |
+|                  | Interaction states (hover, active, focus, disabled)     | ✅             | ✅           |
 
 
 ## Carbon support
 
-The table below shows the level of support from the Carbon team from our Core library versus our Add-on repos.
+The table below shows the Carbon team's level of support for the Core library vs. the Add-ons repo. 
 
 |                  | Core library      | Add-ons   |
 |------------------|-------------------|-----------|
