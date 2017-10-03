@@ -26,7 +26,7 @@ Download the Sketch Design Kit from our GitHub [repo.](https://github.com/carbon
 Full instructions can be found on the Carbon website's [Getting Started](http://www.carbondesignsystem.com/getting-started/designers) section. 
 
 ## Contributing 
-
+See our full [contribution guidelines.](https://github.com/carbon-design-system/design-system-website/blob/master/CONTRIBUTING.md) 
 
 ## Feedback
 See something missing or have general feedback for the Carbon team? 
