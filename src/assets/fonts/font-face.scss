@@ -145,3 +145,45 @@ $font-path: '.' !default; // Default font directory, allow user override
   src: url('#{font-path}/IBMPlexMono-Bold.woff2') format('woff2'),
     url('#{font-path}/IBMPlexMono-Bold.woff') format('woff');
 }
+
+// PLEX STARTS HERE
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   font-style: "normal";
+//   font-weight: 300;
+//   src: url("#{font-path}/IBMPlexSans-Light.woff2") format("woff2"),
+//        url("/fonts/web/woff/IBMPlexSans-Light.woff") format("woff")
+// }
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   font-style: "normal";
+//   font-weight: 400;
+//   src: url("#{font-path}/IBMPlexSans-Regular.woff2") format("woff2"),
+//         url("#{font-path}/IBMPlexSans-Regular.woff") format("woff")
+// }
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   font-style: "italic";
+//   font-weight: 400;
+//   src: url("#{font-path}/IBMPlexSans-RegularItalic.woff2") format("woff2"),
+//         url("#{font-path}/IBMPlexSans-RegularItalic.woff") format("woff")
+// }
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   font-style: "normal";
+//   font-weight: 600;
+//   src: url("#{font-path}/IBMPlexSans-SemiBold.woff2") format("woff2"),
+//       url("#{font-path}/IBMPlexSans-SemiBold.woff") format("woff")
+// }
+
+// @font-face {
+//   font-family: "IBM Plex Sans";
+//   font-style: "normal";
+//   font-weight: 700;
+//   src: url("#{font-path}/IBMPlexSans-Bold.woff2") format("woff2"),
+//       url("#{font-path}/IBMPlexSans-Bold.woff") format("woff")
+// }

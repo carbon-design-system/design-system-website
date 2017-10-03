@@ -245,7 +245,7 @@ const routes = {
     {
       path: 'data-vis',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/data-vis/overview/usage'),
+        onEnter: (nextState, replace) => replace('/data-vis/overview/general'),
       },
       childRoutes: [
         {
@@ -255,7 +255,7 @@ const routes = {
               if (!(nextState.params.name === 'overview')) {
                 replace(`/data-vis/${nextState.params.name}/code`)
               } else {
-                replace(`/data-vis/overview/usage`)
+                replace(`/data-vis/overview/general`)
               }
             },
           },

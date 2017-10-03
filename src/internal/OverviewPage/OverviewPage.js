@@ -33,6 +33,7 @@ class OverviewPage extends Component {
     const tabsExample = require('./images/Tabs.svg');
     const tagExample = require('./images/Tag.svg');
     const textInputExample = require('./images/Text Input.svg');
+    const tileExample = require('./images/Tile.svg');
     const toggleExample = require('./images/Toggle - 2.svg');
     const tooltipExample = require('./images/Tooltip.svg');
 
@@ -186,6 +187,16 @@ class OverviewPage extends Component {
         name: 'Text Input',
         img: require('./images/Text Input.svg'),
         link: '/components/text-input'
+      },
+      {
+        name: 'Tile',
+        img: require('./images/Tile.svg'),
+        link: '/components/tile',
+      },
+      {
+        name: 'Text Input',
+        img: require('./images/Text Input.svg'),
+        link: '/components/text-input',
       },
       {
         name: 'Toggle',
