@@ -2,8 +2,6 @@
 
 Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style) for base graph style specifications.
 
-<<<<<<< HEAD
-=======
 | ATTRIBUTE                       | SCSS     | HEX     |
 |---------------------------------|----------|---------|
 | Data Value	                    | $text-01 | #152935 |
@@ -19,7 +17,6 @@ _Example of a Pie Chart section, hovered_
 | Data Value	                   | 29/1.8125          | Light / 300   |
 | Data Variable	                 | 14/0.875           | Normal / 400  |
 
->>>>>>> a509564... updated content and images for pie chart, for real this time
 ## Structure
 
 | PROPERTY                       | PX   | REM   |
