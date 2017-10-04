@@ -7,7 +7,7 @@ For data visualizations with touching colors (no white space between blocks of c
 The primary palette is always applied to the first data visualization of any given page. When there is only one data set, use the color `primary-04`.
 
 ![Example of primary-04 applied to one data set](images/colors-1.png)
-_Example of primary-04 applied to one data set_
+_Example of <code>primary-04</code> applied to one data set_
 
 ### Two or more variables
 When comparing multiple variables (items listed under a key) in one graph, start by using colors from the primary palette so that each variable has its own assigned color.
@@ -16,7 +16,7 @@ When comparing multiple variables (items listed under a key) in one graph, start
 _Example of primary theme applied to two+ data sets_
 
 ### Two or more graphs on a page
-If there are multiple graphs on a page, the secondary and/or tertiary color palettes may be used. In cases where your first graph only has one data set (using `primary-04` as its color) and your second graph requires multiple data sets, choose from the remaining primary theme/palette colors first. Once the primary palette colors have been exhausted, feel free to move on to another palette.
+If there are multiple graphs on a page, the secondary and/or tertiary color palettes may be used. In cases where your first graph only has one data set (using `primary-04` as its color) and your second graph requires multiple data sets, choose from the remaining primary palette colors first. Once the primary palette colors have been exhausted, feel free to move on to another palette.
 
 ![Example of two themes applied to two data visualizations](images/colors-3.png)
 _Example of two themes applied to two data visualizations_

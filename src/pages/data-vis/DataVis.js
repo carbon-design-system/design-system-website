@@ -65,7 +65,7 @@ class DataVis extends React.Component {
     const TertiaryColorCards = this.renderColorCards(ColorList['tertiary']);
     const colors = require('../../content/components/data-vis/overview/colors.md');
     if (name === 'overview') {
-      content = (
+    content = (
         <PageTabs tabs={tabs} currentPage={page}>
           <Tab href="/data-vis/overview/general" label="General">
              <MarkdownPage content={require('../../content/components/data-vis/overview/general.md')} />
@@ -74,17 +74,17 @@ class DataVis extends React.Component {
             <div className="page">
               <div className="page_md">
                 <h2>General guidelines</h2>
-                <p>There are three theme palettes for data visualizations: primary, secondary, and tertiary. Each palette has been carefully chosen to meet contrast standards for color blindness, with a majority of the colors meeting the Web Content Accessibility Guidelines (WCAG) color contrast requirements of 3.5:1. Data visualizations should always be shown on a white (#fff) background.</p>
-                <p><em>Disclaimer: Please note that the first four colors in the palette themes meet the WCAG 2.1 guidelines for accessibility. The last color of each palette does not. This was an intentional decision made in order meet the contrast requirements for color blindness.</em></p>
-                <h3 className="page__divider-heading">Primary theme</h3>
+                <p>There are three palettes for data visualizations: primary, secondary, and tertiary. Each palette has been carefully chosen to meet contrast standards for color blindness, with a majority of the colors meeting the Web Content Accessibility Guidelines (WCAG) color contrast requirements of 3.5:1. Data visualizations should always be shown on a white <code>#fff</code> background.</p>
+                <p><em>Disclaimer: Please note that the first four colors in the palette meet the WCAG 2.1 guidelines for accessibility. The last color of each palette does not. This was an intentional decision made in order meet the contrast requirements for color blindness.</em></p>
+                <h3 className="page__divider-heading">Primary palette</h3>
                 <div className="wrapped-list">
                   {PrimaryColorCards}
                 </div>
-                <h3 className="page__divider-heading">Secondary theme</h3>
+                <h3 className="page__divider-heading">Secondary palette</h3>
                 <div className="wrapped-list">
                   {SecondaryColorCards}
                 </div>
-                <h3 className="page__divider-heading">Tertiary theme</h3>
+                <h3 className="page__divider-heading">Tertiary palette</h3>
                 <div className="wrapped-list">
                   {TertiaryColorCards}
                 </div>
