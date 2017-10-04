@@ -3,7 +3,7 @@
 ### Color order
 For data visualizations with touching colors (no white space between blocks of color representing data), make sure to use the colors in the order they are shown from left to right (dark to light). For example, if you are comparing three sets of data, the colors `primary-01`, `primary-02`, and `primary-03` are used in that order, respectively.
 
-### One data set
+### One variable
 The primary palette is always applied to the first data visualization of any given page. When there is only one data set, use the color `primary-04`.
 
 ![Example of primary-04 applied to one data set](images/colors-1.png)
