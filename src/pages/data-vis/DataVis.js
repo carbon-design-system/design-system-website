@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Page from '../../internal/Page';
 import PageTabs from '../../internal/PageTabs';
 import MarkdownPage from '../../internal/MarkdownPage';
-import CodePage from '../../internal/CodePage';
 import ColorCard from '../../internal/ColorCard';
 import { Tabs, Tab } from 'carbon-components-react';
 import ReactGA from 'react-ga';
@@ -51,10 +50,10 @@ class DataVis extends React.Component {
     } = this.props;
     const name = params.name;
 
-    const tabs = ['usage', 'colors', 'style'];
+    const tabs = ['general', 'colors', 'style'];
     const title = params.name.charAt(0).toUpperCase() + params.name.substring(1).replace('-', ' ');
     let content;
-    let page = 'usage';
+    let page = 'general';
     if (params.page) {
       page = params.page;
     }
@@ -68,7 +67,7 @@ class DataVis extends React.Component {
     if (name === 'overview') {
       content = (
         <PageTabs tabs={tabs} currentPage={page}>
-          <Tab href="/data-vis/overview/usage" label="Usage">
+          <Tab href="/data-vis/overview/general" label="General">
              <MarkdownPage content={require('../../content/components/data-vis/overview/general.md')} />
           </Tab>
           <Tab href="/data-vis/overview/colors" label="Colors">

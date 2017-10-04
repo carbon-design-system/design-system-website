@@ -13,3 +13,7 @@ Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style)
 |----------------------|----|------|
 | Height & width			 | 8  |  0.5 |
 | Hover height & width | 20 | 1.25 |
+
+
+![Scatter Plot example](images/style-scatter-plot.png)
+_Example of a Scatter Plot_

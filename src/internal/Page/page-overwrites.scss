@@ -1,16 +1,42 @@
-main[data-page|=components] {
+main[data-page|='components'] {
   img:not(.ibm-eye) {
     background-color: $color__gray-3;
   }
 }
 
-main[data-page|=data-vis] {
+main[data-page|='data-vis'] {
   img:not(.ibm-eye) {
-    background-color: $color__gray-3;
+    background-color: white;
+    border: 1px solid $ui-04;
+  }
+
+  .gif {
+    width: 100%;
+    max-width: 38rem;
+    border: 1px solid $ui-04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gif > img {
+    border: none;
+    width: auto;
   }
 
   .color__example {
     width: 8.25rem;
     height: 5rem;
+  }
+}
+
+main[data-page='data-vis-usage-pie-chart'] {
+  .gif {
+    border: none;
+    background: $ui-02;
+  }
+
+  .gif > img {
+    max-width: 300px;
   }
 }
