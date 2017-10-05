@@ -112,18 +112,20 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="standard-curve" fill="none" fillRule="evenodd">
-            <path d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"></path>
+            <path d="M20,300 C60,240 114,30 300,20"></path>
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
-              d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"
-              strokeDasharray="465"
+              d="M20,300 C60,240 114,30 300,20"
+              strokeDasharray="1000"
             ></path>
           </g>
         </svg>
-      )
+      );
     } else if (motionType === 'ease-out') {
       curveSvg = (
         <svg
@@ -135,14 +137,16 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="out-curve" fill="none" fillRule="evenodd">
-            <path d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"></path>
+            <path d="M20,300 C20,300 114,30 300,20"></path>
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
-              d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"
-              strokeDasharray="456"
+              d="M20,300 C20,300 114,30 300,20"
+              strokeDasharray="1000"
             ></path>
           </g>
         </svg>
@@ -158,20 +162,39 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="in-curve" fill="none" fillRule="evenodd">
-            <path d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"></path>
+            <path d="M20,300 C60,300 300,30 300,20"></path>
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
-              d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"
-              strokeDasharray="429"
+              d="M20,300 C60,300 300,30 300,20"
+              strokeDasharray="1000"
             >
             </path>
           </g>
         </svg>
       );
     }
+
+    let boxUnderCurve;
+
+    if (motionType === 'standard') {
+      boxUnderCurve = (
+        <div className="motion-example__standard"></div>
+      );
+    } else if (motionType === 'ease-out') {
+      boxUnderCurve = (
+        <div className="motion-example__out"></div>
+      );
+    } else if (motionType === 'ease-in') {
+      boxUnderCurve = (
+        <div className="motion-example__in"></div>
+      );
+    }
+
 
     const overlayContent = (
       <div
@@ -205,14 +228,15 @@ class MotionExample extends Component {
         </button>
       </div>
     );
+
     const motionExampleContent = isSingleExample ? (
         <div className={containerClasses}>
           <div className="motion-example__easing-demo">
+            <div className="motion-example__track">
+              {boxUnderCurve}
+            </div>
             <div className={motionCurveClasses}>
               {curveSvg}
-            </div>
-            <div className="motion-example__track">
-              <div className=" motion-example__element"></div>
             </div>
           </div>
           {overlayContent}
@@ -233,5 +257,6 @@ class MotionExample extends Component {
     return motionExampleContent;
   }
 }
+
 
 export default MotionExample;
