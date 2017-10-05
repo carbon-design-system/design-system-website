@@ -1,61 +1,85 @@
 ## Principles
 
-Motion brings personality, tone, rhythm, and purpose to otherwise static objects. When used properly, UI motion should feel like a well choreographed dance, with all of the elements acting and reacting to one another in sync. Start with a clear objective, layering in movements that mimic reality and guide the user through an interface.
+Elements of every IBM product should behave with awareness and precision. Our content moves to clarify information hierarchy, inform intent, and give feedback in order to guide users through complex experiences.
 
-### Purposeful
+### Be progressive and thoughtful.
 
-Motion within an experience should be meaningful and intentional. It is used to establish hierarchy and draw the user’s attention to essential elements, giving them an understanding of an object’s role within the design. In order to convey this, the motion needs to be quick, direct, and precise.
+In the modern digital world, motion is a requirement. Treat motion as an integrated aspect of design, not an afterthought. Anticipate user expectations and needs, such as feedback for action, visual indicator of backend processing, and keep exploring ways to add value through motion.
 
-### Familiar
+### Be essential, be a pro for pro.
 
-Motion design should mirror movements we encounter in the physical world around us. Mimicking the expected behavior of objects from reality creates repetition and consistency, which enables users to anticipate what comes next. Providing motion feedback can help guide the user’s workflow, creating a clear path towards their end goal.
+Avoid motion that is decorative, obtrusive, or unnecessary. It distracts users from their tasks. We are professionals working with professionals; make the experience efficient, quick, and responsive. Every use of motion should have a purposed based on a user need or business requirement. If all of the problems are solvable without motion, consider not adding motion. A purpose could be:
 
-### Unobtrusive
-
-Motion should be used with discretion—a little bit goes a long way. When applied properly, motion goes unnoticed. If a motion feels like it is calling attention to itself, tone it down! Subtlety ensures that the user won’t be distracted and allows for a cohesive motion experience across components.
+- to perform a function (e.g. loading, processing, alert)
+- to provide feedback (e.g. hover states, dropdown opening, overflow menu)
+- to communicate spatial relationship of information (e.g. side-panel flying sliding  in and out, going from overview to detailed view, drilling deeper in a progressively disclosed data set)
 
 ## Guidelines
 
-### Duration
+<!-- ### Duration
 
-Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
+Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.-->
 
-<div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
+<!-- <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div> -->
 
-| TYPE                     | DURATION  |
-|--------------------------|-----------|
-| Buttons/small components | 100-200ms |
-| Alerts/table reorder     | 250-300ms |
-| Panels/modals            | 300-400ms |
-| Page transitions         | 500-700ms |
+<!-- | TYPE                     | DURATION  | -->
+
+<!-- | Buttons/small components | 100-200ms | -->
+<!-- | Alerts/table reorder     | 250-300ms | -->
+<!-- | Panels/modals            | 300-400ms | -->
+<!-- | Page transitions         | 500-700ms | -->
 
 ### Easing
 
-Strictly linear movement appears strange to the human eye. An animation should accelerate and decelerate smoothly throughout its duration to appear as natural as possible.
+IBM elements are responsive, efficient, and yet elegant — they do not speed up or slow down excessively, obeying the physics of a light-weight medium.
+
 
 <div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
-There are three specific easing curves: standard, ease-out, and ease-in.
+There are three specific easing curves: ease-in-out, ease-out, and ease-in.
 
 You can think of “in” and “out” as referring to the side of the curve where more time will be spent. So an ease-out will slow down into it's final position. More time is dedicated to the end of the curve or the "out".
 
-**Standard:** cubic-bezier(0.5, 0, 0.1, 1)
-The standard cubic-bezier is used for the majority of animations. Especially when extra context is needed or when an element is removed from the screen but easily accessible (i.e. slide out navigation panel). Acceleration and deceleration occur asymmetrically to feel natural. This means that more emphasis is placed on the end of the curve than at the beginning. In most cases, a user will need greater easing at the end of a movement to allow their eye to register the new state of the element.
+**Ease-in-out:** cubic-bezier(0.2, 0, 0.38, 0.9)
+
+Use ease-in-out (previously standard easing) when an element is already visible on stage when the motion starts, and is still visible on stage when the motion ends. For example, card expansion and list sorting. The element does not enter or exit stage completely, but becomes repositioned or transformed.
 
 <div data-insert-component="MotionExample" data-props="standard"></div>
 
-**Ease-out:** cubic-bezier(0, 0, 0.25, 1)
-The ease-out cubic-bezier is used for adding elements to the stage or changing on-screen states at a users' input.
-Ease-out is a much more dramatic curve because it is used for moving elements onto the stage. In which case, the object will slowly come to rest allowing the user to adjust to its arrival.
+One exception to use ease-in-out when an element is in the existing stage, is if the element leaves the stage only stays near it, ready for recall upon user action. A good example of this is a side panel. The panel would leave the stage, but slows down as it exists, implying it would quickly come to rest, not far off stage.
+
+**Ease-out:** cubic-bezier(0, 0, 0.38, 0.9)
+
+Use ease-out when adding elements to the stage (e.g. entrance of model, toaster), or changing states as a result of users' input for micro-interactions (e.g.  dropdown opening or toggle). The element would appear quickly and come to rest naturally in position.
 
 <div data-insert-component="MotionExample" data-props="ease-out"></div>
 
-**Ease-in:** cubic-bezier(0.25, 0, 1, 1)
-The ease-in cubic-bezier is used primarily for removing elements from the screen or stage.
-Ease-in does not need as much easing since it is primarily used for objects exiting the stage. Therefore, slow it slightly to allow the user to recognize that it is exiting before speeds out of view.
+**Ease-in:** cubic-bezier(0.2, 0, 1, 0.9)
+
+Use ease-in when removing elements from stage. Good examples are closing a model or deleting a card. The element would speed up as it exits, implying it is not coming back.
 
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
-### Properties
+### Duration
 
-The reality of the web is that <a href="https://csstriggers.com/" target=blank>some properties</a> are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.
+Along with easing, duration is one of the two main components in designing motion. Consider the following two concepts for duration.
+
+**Dynamic duration**
+
+The duration should change as the distance of the motion changes. For example,  the longer an element travels, the longer the motion should take. This will ensure that the elements look and feel consistent.
+
+**Speed scale**
+
+The relationship between the speed (duration) and the distance is called speed scale. Our speed scale is non-linear.  The speed increases slightly to maintain the consistency of the perceived motion. This implies that the same interface motion on small screen are going to take longer than when on a big screen, and this is necessary to make sure a meaningful behavior is not missed by the user.
+
+Carbon-components have built in support for many micro-interactions with this dynamic duration. When creating custom motion, use the <a href="">motion calculator</a> to find the duration for your motion.
+
+## Tools
+
+**<a href="">Motion Calculator</a>**
+
+Outputs dynamic duration based on the user-defined context.
+
+**<a href="">Keynote Animations</a>**
+
+Coming soon
