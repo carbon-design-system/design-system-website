@@ -112,13 +112,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="standard-curve" fill="none" fillRule="evenodd">
-            <path d="M0,320 C64,256 121.6,32 320,0"></path>
+            <path d="M20,300 C60,240 114,30 300,20"></path>
           </g>
-          <polyline fill="none" points="0 0 0 320 320 320"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
-              d="M0,320 C64,256 121.6,32 320,0"
+              d="M20,300 C60,240 114,30 300,20"
               strokeDasharray="1000"
             ></path>
           </g>
@@ -135,13 +137,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="out-curve" fill="none" fillRule="evenodd">
-            <path d="M0,320 C0,320 121.6,32 320,0"></path>
+            <path d="M20,300 C20,300 114,30 300,20"></path>
           </g>
-          <polyline fill="none" points="0 0 0 320 320 320"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
-              d="M0,320 C0,320 121.6,32 320,0"
+              d="M20,300 C20,300 114,30 300,20"
               strokeDasharray="1000"
             ></path>
           </g>
@@ -158,13 +162,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="in-curve" fill="none" fillRule="evenodd">
-            <path d="M0,320 C64,320 320,32 320,0"></path>
+            <path d="M20,300 C60,300 300,30 300,20"></path>
           </g>
-          <polyline fill="none" points="0 0 0 320 320 320"></polyline>
+          <polyline fill="none" points="20 20 20 300 300 300"></polyline>
+          <text x="140" y="320" fill="grey">time</text>
+          <text x="132" y="0" fill="grey" transform="rotate(90 0,0)">distance</text>
           <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
-              d="M0,320 C64,320 320,32 320,0"
+              d="M20,300 C60,300 300,30 300,20"
               strokeDasharray="1000"
             >
             </path>
@@ -226,11 +232,11 @@ class MotionExample extends Component {
     const motionExampleContent = isSingleExample ? (
         <div className={containerClasses}>
           <div className="motion-example__easing-demo">
-            <div className={motionCurveClasses}>
-              {curveSvg}
-            </div>
             <div className="motion-example__track">
               {boxUnderCurve}
+            </div>
+            <div className={motionCurveClasses}>
+              {curveSvg}
             </div>
           </div>
           {overlayContent}

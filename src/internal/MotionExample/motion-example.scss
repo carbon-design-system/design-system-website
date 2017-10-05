@@ -185,23 +185,31 @@ $w4: $s2 + $w;
 }
 
 .motion-example-easing--container {
-  width: rem(416px);
+  //width: rem(464px); //this should not be fixed size
 }
 
 .motion-example__easing-demo {
   position: relative;
+  flex-direction: row;
+  display: flex;
+  //justify-content: space-around;
   background: #f5f7fa;
 
   .motion-example__track {
-    padding-top: 1rem;
+    // width: 320px;
     width: 100%;
     margin: 0;
-    border-bottom: 0;
+    margin-right: 2rem;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // background-color: white;
   }
 
   .motion-example__standard {
-    height: rem(24px);
-    width: rem(24px);
+    height: rem(48px);
+    width: rem(48px);
     background: $color__blue-30;
     animation: easing-demo-element $demo-duration cubic-bezier(.2, 0.2, .38, 0.9);
     animation-iteration-count: infinite;
@@ -209,8 +217,8 @@ $w4: $s2 + $w;
   }
 
   .motion-example__out {
-    height: rem(24px);
-    width: rem(24px);
+    height: rem(48px);
+    width: rem(48px);
     background: $color__blue-30;
     animation: easing-demo-element $demo-duration cubic-bezier(0, 0, .38, .9);
     animation-iteration-count: infinite;
@@ -218,8 +226,8 @@ $w4: $s2 + $w;
   }
 
   .motion-example__in {
-    height: rem(24px);
-    width: rem(24px);
+    height: rem(48px);
+    width: rem(48px);
     background: $color__blue-30;
     animation: easing-demo-element $demo-duration cubic-bezier(.2, 0, 1, .9);
     animation-iteration-count: infinite;
@@ -244,29 +252,27 @@ $w4: $s2 + $w;
 
   svg > g:last-child > path {
     stroke: $color__blue-30;
-    stroke-width: 2;
+    stroke-width: 4;
     animation-iteration-count: infinite;
     animation-play-state: inherit;
   }
 }
-/// OMG THIS ONE ELEMENT IS ALL THE EASING EXAMPLES? ///
 
 @keyframes easing-demo-element {
-  0% { transform: translateX(0); }
+  0% { transform: translateY(272px); }
   #{$s}% {
-    transform: translateX(0);
+    transform: translateY(272px);
     //animation-timing-function: cubic-bezier(.2, 0.2, .38, 0.9);
   }
-  #{$w2}% { transform: translateX(296px); }
+  #{$w2}% { transform: translateY(0); }
   #{$s2}% {
-    transform: translateX(296px);
+    transform: translateY(0);
     //animation-timing-function: cubic-bezier(.2, 0.2, .38, 0.9);
   }
-  #{$w4}% { transform: translateX(0); }
-  100% { transform: translateX(0); }
+  #{$w4}% { transform: translateY(272px); }
+  100% { transform: translateY(272px); }
 }
 
-/// OMG THIS ONE ELEMENT IS ALL THE EASING EXAMPLES? ///
 
 @keyframes stroke-fill-standard {
   0% { stroke-dashoffset: 1000;}
