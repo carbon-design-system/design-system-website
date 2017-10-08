@@ -120,7 +120,7 @@ class MotionExample extends Component {
           <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
-              d="M20,300 C60,240 114,30 300,20"
+              d="M21,299 C60,240 114,30 300,20"
               strokeDasharray="1000"
             ></path>
           </g>
@@ -136,7 +136,7 @@ class MotionExample extends Component {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <g id="out-curve" fill="none" fillRule="evenodd">
+          <g id="out-curve" fill="none" fillRule="evenodd" >
             <path d="M20,300 C20,300 114,30 300,20"></path>
           </g>
           <polyline fill="none" points="20 20 20 300 300 300"></polyline>
@@ -145,7 +145,7 @@ class MotionExample extends Component {
           <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
-              d="M20,300 C20,300 114,30 300,20"
+              d="M21,299 C20,300 114,30 300,20"
               strokeDasharray="1000"
             ></path>
           </g>
@@ -170,7 +170,7 @@ class MotionExample extends Component {
           <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
-              d="M20,300 C60,300 300,30 300,20"
+              d="M21,299 C60,300 300,30 300,20"
               strokeDasharray="1000"
             >
             </path>
@@ -179,18 +179,37 @@ class MotionExample extends Component {
       );
     }
 
-    let boxUnderCurve;
+    let curveDemoBox;
 
     if (motionType === 'standard') {
-      boxUnderCurve = (
+
+      curveDemoBox = (
         <div className="motion-example__standard"></div>
       );
+
+      //// Recreating the curveDemoBox to allow for clipping mask ///
+      //
+      // curveDemoBox = (
+      //   <svg
+      //     width="320px"
+      //     height="320px"
+      //     viewBox="0 0 320 320"
+      //     version="1.1"
+      //     xmlns="http://www.w3.org/2000/svg"
+      //     xmlnsXlink="http://www.w3.org/1999/xlink"
+      //   >
+      //     <g fill="none" fillRule="evenodd">
+      //       <rect id="demoBox--standard" x="112" y="20" width="48" height="48" fill="black" stroke-width="0"/>
+      //     </g>
+      //   </svg>
+      // );
+
     } else if (motionType === 'ease-out') {
-      boxUnderCurve = (
+      curveDemoBox = (
         <div className="motion-example__out"></div>
       );
     } else if (motionType === 'ease-in') {
-      boxUnderCurve = (
+      curveDemoBox = (
         <div className="motion-example__in"></div>
       );
     }
@@ -217,7 +236,7 @@ class MotionExample extends Component {
               stroke="none"
               fillRule="evenodd"
               transform="translate(54.000000, 54.000000) rotate(-270.000000) translate(-54.000000, -54.000000) "
-              points="54 5 103 103 5 103"
+              points="54 15 103 103 5 103"
             >
             </polygon>
             <g className={pauseIconClasses} stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -233,7 +252,7 @@ class MotionExample extends Component {
         <div className={containerClasses}>
           <div className="motion-example__easing-demo">
             <div className="motion-example__track">
-              {boxUnderCurve}
+              {curveDemoBox}
             </div>
             <div className={motionCurveClasses}>
               {curveSvg}
