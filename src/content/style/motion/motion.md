@@ -10,9 +10,11 @@ In the modern digital world, motion is a requirement. Treat motion as an integra
 
 Avoid motion that is decorative, obtrusive, or unnecessary. It distracts users from their tasks. We are professionals working with professionals; make the experience efficient, quick, and responsive. Every use of motion should have a purposed based on a user need or business requirement. If all of the problems are solvable without motion, consider not adding motion. A purpose could be:
 
-- to perform a function (e.g. loading, processing, alert)
-- to provide feedback (e.g. hover states, dropdown opening, overflow menu)
-- to communicate spatial relationship of information (e.g. side-panel flying sliding  in and out, going from overview to detailed view, drilling deeper in a progressively disclosed data set)
+- a function (eg. a dropdown menu opening)
+- a solution to a problem (eg. progressive disclosure)
+- a message (eg. loading animation, interaction feedback, "Welcome to Cloud")
+- a meaning (eg. "this is important", "there is more")
+
 
 ## Guidelines
 
@@ -38,7 +40,7 @@ IBM elements are responsive, efficient, and yet elegant — they do not speed up
 
 There are three specific easing curves: `ease-in-out`, `ease-out`, and `ease-in`.
 
-You can think of “in” and “out” as referring to the side of the curve where more time will be spent. So an ease-out will slow down into it's final position, while an ease-in will start slowly and accelerate. Ease-in-out combines both, featuring a slow start and a slow finish.
+You can think of “in” and “out” as referring to the side of the curve where more time will be spent. So an `ease-out` curve will slow down into it's final position, while an `ease-in` curve will start slowly and accelerate. An `ease-in-out` curve combines both, featuring a slow start and a slow finish.
 
 **Ease-in-out:** `cubic-bezier(0.2, 0, 0.38, 0.9)`
 
@@ -66,10 +68,40 @@ Along with easing, duration is one of the two main elements in motion.
 
 The duration is never fixed - elements traveling over longer distances should take longer time. In our model, the relationship between duration and distance (duration scale) is non-linear.  The rate of increase of duration drops slightly as the distance of travel increases to maintain the consistency of the perceived motion.
 
-Carbon-components have built in support for many micro-interactions with this dynamic duration. When creating custom motion, use the <a href="https://ibm.github.io/motion/" target="_blank">motion calculator</a> to find the duration for your motion.
+Carbon-components have built in support for many micro-interactions with this dynamic duration. When creating custom motion, we recommend the following durations. <!-- use the <a href="https://ibm.github.io/motion/" target="_blank">motion calculator</a> to find the duration for your motion. -->
 
-## Tools
+Duration for move, or linear translations, is dependent on both distance and size of the element. For small elements around 64 x 64 px size:
+
+| Distance (px)| Duration (ms) |
+| ------------ |---------------|
+| > 240        | 102           |
+| 480          | 109           |
+| 720          | 123           |
+| 1024         | 139           |
+
+For large elements around 512 x 512 px size:
+
+| Distance (px)| Duration (ms) |
+| ------------ |---------------|
+| > 240        | 102           |
+| 480          | 109           |
+| 720          | 128           |
+| 1024         | 143           |
+
+
+Fade (opacity change) duration is dependent on size of the element. Larger element fades slower than smaller element. Below is a list of durations for 100% opacity change for elements of a range of sizes.
+
+| Fade (size)   | Duration (ms) |
+| ------------- |---------------|
+| 64 x 64       | 80            |
+| 256 x 256     | 82            |
+| 512 x 512     | 94            |
+| 980 x 980     | 109           |
+
+For more precise dynamic durations, we are in the process of developing a Motion Calculator for designers and developers interested in creating custom motions. Be sure to check in for updates!
+
+<!-- ## Tools
 
 **<a href="https://ibm.github.io/motion/" target="_blank">Motion Calculator</a>**
 
-Use this tool to generate accurate IBM motion for your design.
+Use this tool to generate accurate IBM motion for your design. -->
