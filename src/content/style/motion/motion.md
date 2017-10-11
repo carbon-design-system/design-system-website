@@ -19,22 +19,28 @@ Constantly ask the question: is motion needed here? Is this motion going to bett
 
 ### Duration
 
-Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
+Motion should fast enough to not attract attention, but slow enough to not feel sudden. When calculating the duration of your motion, consider the following factors:
+
+- larger magnitude of motion needs a longer duration
+- an important or unexpected change deserves a longer duration than expected changes
+- motion happening on a smaller screen should take longer than when happening on a large screen
 
 <!-- <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div> -->
 
 | TYPE                     | DURATION  |
 | -------------------------| ----------|
-| Buttons/small components | 60-100ms |
-| Alerts/table reorder     | 250-300ms |
-| Panels/modals            | 300-400ms |
-| Page transitions         | 500-700ms |
+| Buttons/small components | 60-100ms  |
+| Alerts/table reorder     | 100-140ms |
+| Panels/modals            | 110-200ms |
+| Page transitions         | 200-500ms |
 
 ### Easing
 
 Strictly linear movement appears strange and distracting to the human eye. IBM elements speed up and slow down smoothly and quickly, obeying the physics of a light-weight material.
 
 "Easing curves" are useful to describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero, velocity, giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each fitted for a different situations.
+
+<div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
 You can think of "in" and "out" as referring to the beginning and end of a motion. So an `ease-out` motion will slow down into its final position, while an `ease-in` motion will start slowly and accelerate. An `ease-in-out` motion combines both, featuring a slow start and a slow finish.
 
@@ -60,19 +66,77 @@ One exception to use `ease-in-out` is if the element leaves the view but stays n
 
 ## Motion Evaluation Checklist
 
-All those theory might be overwhelming. We created a checklist to help you evaluate your motion design:
 
-Is your motion **progressive**?
-What is lost if you do without this motion? Does motion meet user expectations and needs, provide feedback, and orientation?
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-1" class="bx--checkbox-label">
+    <input id="bx--checkbox-1" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **progressive**?</p>
+  </label>
+</div>
 
-Is your motion **responsive**?
-Durations for motion should generally not exceed 300ms. Micro-interactions should use `ease-out` on user input, with a static duration ranging from 60 - 100ms.
+- Can we do without this motion?
+- What user need does this piece of motion serve?
 
-Is your motion **meticulous**?
-Did you use the correct easing curve?
+</br>
 
-Is your motion **unobtrusive**?
-The best interface motion may go unnoticed, because motion must not distract the user from their tasks. If your motion is picked up by the average user, consider removing it, or minimizing it.
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-2" class="bx--checkbox-label">
+    <input id="bx--checkbox-2" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **responsive**?</p>
+  </label>
+</div>
+
+- Are there immediate visual feedback for important user actions?
+- Micro-interactions should use `ease-out` on user input, with a static duration ranging from 60 - 100ms.
+- If there are large, or full screen, transitions in your product, are there continuous elements to guide the user?
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-3" class="bx--checkbox-label">
+    <input id="bx--checkbox-3" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **meticulous**?</p>
+  </label>
+</div>
+
+- Did you use the correct easing curves?
+- Is each motion individually considered?
+- Remember larger elements and motions on smaller screens should take more time.
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="bx--checkbox-4" class="bx--checkbox" type="checkbox" value="red" name="checkbox">
+  <label for="bx--checkbox-4" class="bx--checkbox-label">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **unobtrusive**?</p>
+  </label>
+</div>
+
+- The best interface motion may go unnoticed, because motion must not distract the user from their tasks. If your motion frequently noticed by the average users, consider removing it, or minimizing it.
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper"></div> <!-- somehow this line is needed for proper spacing -->
 
 
 <!-- ## Tools
