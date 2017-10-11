@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
-import App from './pages/App';
+
+import App from './app/App';
 
 const handleRouteChange = () => {
   if (!(window.pathname === '/guidelines/content/glossary')) {
@@ -24,7 +25,7 @@ const routes = {
   onChange: handleRouteChange,
   indexRoute: {
     getComponent(location, cb) {
-      import('./pages/Overview').then(loadRoute(cb)).catch(errorLoading);
+      import('./app/pages/overview/Overview').then(loadRoute(cb)).catch(errorLoading);
     },
   },
   childRoutes: [
@@ -37,7 +38,7 @@ const routes = {
         {
           path: '/getting-started/:name',
           getComponent(location, cb) {
-            import('./pages/getting-started/GettingStarted')
+            import('./app/pages/getting-started/GettingStarted')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -60,7 +61,7 @@ const routes = {
             {
               path: '/guidelines/:name/:page',
               getComponent(location, cb) {
-                import('./pages/guidelines/Guidelines')
+                import('./app/pages/guidelines/Guidelines')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -70,7 +71,7 @@ const routes = {
         {
           path: '/guidelines/:name',
           getComponent(location, cb) {
-            import('./pages/guidelines/Guidelines')
+            import('./app/pages/guidelines/Guidelines')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -92,7 +93,7 @@ const routes = {
             {
               path: '/style/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./app/pages/style/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -109,7 +110,7 @@ const routes = {
             {
               path: '/style/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./app/pages/style/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -126,7 +127,7 @@ const routes = {
             {
               path: '/style/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./app/pages/style/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -142,7 +143,7 @@ const routes = {
             {
               path: '/style/:name/:page',
               getComponent(location, cb) {
-                import('./pages/style/Style')
+                import('./app/pages/style/Style')
                   .then(loadRoute(cb))
                   .catch(errorLoading);
               },
@@ -152,7 +153,7 @@ const routes = {
         {
           path: '/style/:name',
           getComponent(location, cb) {
-            import('./pages/style/Style')
+            import('./app/pages/style/Style')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -175,7 +176,7 @@ const routes = {
             },
           },
           getComponent(location, cb) {
-            import ('./pages/components/ComponentPage')
+            import ('./app/pages/components/ComponentPage')
               .then(loadRoute(cb))
               .catch(errorLoading)
           }
@@ -183,7 +184,7 @@ const routes = {
         {
           path: '/components/:name/:page',
           getComponent(location, cb) {
-            import('./pages/components/ComponentPage')
+            import('./app/pages/components/ComponentPage')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -206,7 +207,7 @@ const routes = {
             },
           },
           getComponent(location, cb) {
-            import ('./pages/add-ons/ComponentPage')
+            import ('./app/pages/add-ons/ComponentPage')
               .then(loadRoute(cb))
               .catch(errorLoading)
           }
@@ -214,7 +215,7 @@ const routes = {
         {
           path: '/add-ons/:name/:page',
           getComponent(location, cb) {
-            import('./pages/add-ons/ComponentPage')
+            import('./app/pages/add-ons/ComponentPage')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -224,19 +225,19 @@ const routes = {
     {
       path: 'resources',
       getComponent(location, cb) {
-        import('./pages/Resources').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/resources/Resources').then(loadRoute(cb)).catch(errorLoading);
       },
     },
     {
       path: 'themes',
       getComponent(location, cb) {
-        import('./pages/Themes').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/themes/Themes').then(loadRoute(cb)).catch(errorLoading);
       },
     },
     {
       path: 'component-status',
       getComponent(location, cb) {
-        import('./pages/ComponentStatus')
+        import('./app/pages/component-status/ComponentStatus')
           .then(loadRoute(cb))
           .catch(errorLoading);
       },
@@ -260,7 +261,7 @@ const routes = {
             },
           },
           getComponent(location, cb) {
-            import ('./pages/data-vis/DataVis')
+            import ('./app/pages/data-vis/DataVis')
               .then(loadRoute(cb))
               .catch(errorLoading)
           }
@@ -268,7 +269,7 @@ const routes = {
         {
           path: '/data-vis/:name/:page',
           getComponent(location, cb) {
-            import('./pages/data-vis/DataVis')
+            import('./app/pages/data-vis/DataVis')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -279,7 +280,7 @@ const routes = {
     {
       path: '*',
       getComponent(location, cb) {
-        import('./pages/404').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/404').then(loadRoute(cb)).catch(errorLoading);
       },
     },
   ],

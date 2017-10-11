@@ -1,0 +1,50 @@
+.page-header {
+  @include grid-padding;
+  height: rem(196px);
+  background-color: $color__gray-3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid $color__blue-40;
+  padding-bottom: 1rem;
+
+  @include breakpoint('768px') {
+    padding-bottom: 0;
+  }
+
+  &__label {
+    font-size: 1.125rem;
+    color: $color__navy-gray-6;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 4rem 0 1.25rem;
+    white-space: nowrap;
+
+    @include breakpoint('500px') {
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: rem(54px);
+    color: $color__blue-90;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: -1.15rem 0 0 -3px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    padding: 0;
+    transition: $transition--base $bx--standard-easing;
+
+    @include breakpoint('500px') {
+      font-size: rem(52px);
+    }
+
+    @include breakpoint('840px') {
+      font-size: rem(66px);
+    }
+  }
+}

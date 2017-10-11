@@ -88,6 +88,6 @@ _Borders are used here to show total dimensions; icons should not include a bord
 
 For full guidelines and tips on exporting SVGs, refer to the [Carbon iconography guidelines.](http://carbondesignsystem.com/style/iconography/contribution)
 
-Make sure your Service Icon meets Bluemix's Catalog Service Icon Guidelines. It is up to your business unit's design manager to approve all Service Icons. From there, you can submit your services SVG through the Service broker.
+**How do I submit my service icon?**
 
 Once you meet the above guidelines, your service icon is ready to be submitted via your service broker. Your engineering or development team should be able to update this file for your offering.

@@ -12,7 +12,7 @@ Good design should work for everyone. We need not to focus only on the average p
 
 ## Be consistent
 
-Consistency is not exact replication. Rather, it's a harmonious uniformity, instilling predictability and stability. A successful design should leave our users feeling like, “Yes, that makes sense.” Being consistent gives users to anticipate what will happen next. And when users encounter something that is expected, it creates a sense of comfort and trust. Usability is greatly improved when an experience acts and feels the same throughout.
+Consistency is not exact replication. Rather, it's a harmonious uniformity, instilling predictability and stability. A successful design should leave our users feeling like, “Yes, that makes sense.” Being consistent gives users the power to anticipate what will happen next. And when users encounter something that is expected, it creates a sense of comfort and trust. Usability is greatly improved when an experience acts and feels the same throughout.
 ![be consistent](images/overview-3.png)
 
 ## Be humanistic
