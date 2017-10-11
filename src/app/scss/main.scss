@@ -1,0 +1,72 @@
+//---------------------------------------------------------------
+// MAIN.SCSS
+//---------------------------------------------------------------
+
+//---------------------------------------------------------------
+// Vendor
+//---------------------------------------------------------------
+
+$css--font-face: true;
+$css--reset: true;
+$font-path: '/assets/fonts';
+
+@import 'node_modules/carbon-components/src/globals/scss/styles';
+
+//---------------------------------------------------------------
+// Global
+//---------------------------------------------------------------
+
+@import 'global/vars';
+@import 'global/mixins';
+@import 'global/layout';
+@import 'global/browser-fixes';
+@import 'global/404';
+
+//----------------------------------------------------------------
+// Internal components
+//----------------------------------------------------------------
+
+@import '../components/internal/Page/page.scss';
+@import '../components/internal/MarkdownPage/markdown-page.scss';
+@import '../components/internal/SideNav/sidenav.scss';
+@import '../components/internal/SideNavToggle/toggle-btn.scss';
+@import '../components/internal/ColorCard/colorcard.scss';
+@import '../components/internal/PageHeader/page-header.scss';
+@import '../components/internal/PageTabs/page-tabs.scss';
+@import '../components/internal/CodePage/code-page.scss';
+@import '../components/internal/ComponentExample/component-example.scss';
+@import '../components/internal/ComponentExample/component-overrides.scss';
+@import '../components/internal/IconCard/iconcard.scss';
+@import '../components/internal/CodeExample/code-example.scss';
+@import '../components/internal/LiveComponent/live-component.scss';
+@import '../components/internal/Page/page.scss';
+@import '../components/internal/GlossaryNav/glossary-nav.scss';
+@import '../components/internal/Page/page-overwrites.scss';
+@import '../components/internal/Page/page-overrides.scss';
+@import '../components/internal/IconEmptyState/icon-empty-state.scss';
+@import '../components/internal/OverviewPage/overview-page.scss';
+@import '../components/internal/PageFooter/page-footer.scss';
+@import '../components/internal/GlobalSearch/global-search.scss';
+
+//----------------------------------------------------------------
+// Custom components
+//----------------------------------------------------------------
+
+@import '../components/custom/LayerTypes/layer-types.scss';
+@import '../components/custom/MotionExample/motion-example.scss';
+@import '../components/custom/TypographyTable/typography-table.scss';
+@import '../components/custom/ImageGrid/image-grid.scss';
+@import '../components/custom/ColorContrast/color-contrast.scss';
+@import '../components/custom/GridExample/grid-example.scss';
+@import '../components/custom/LayerUsage/layer-usage.scss';
+@import '../components/custom/BrandColors/brand-colors.scss';
+@import '../components/custom/DosAndDonts/dos-and-donts.scss';
+
+//----------------------------------------------------------------
+// Pages
+//----------------------------------------------------------------
+
+@import '../pages/overview/overview.scss';
+@import '../pages/guidelines/guidelines.scss';
+@import '../pages/component-status/component-status.scss';
+@import '../pages/resources/resources.scss';
