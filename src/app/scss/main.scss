@@ -16,6 +16,7 @@ $font-path: '/assets/fonts';
 // Global
 //---------------------------------------------------------------
 
+@import 'global/typography';
 @import 'global/vars';
 @import 'global/mixins';
 @import 'global/layout';

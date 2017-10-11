@@ -2,9 +2,10 @@
 // GLOBAL LAYOUT
 // Includes styles for body, link, wrapper and container.
 //--------------------
+@import 'typography';
 
 body {
-  font-family: 'IBM Plex Sans';
+  @include plex-font-face;
   background-color: $color__white;
   color: $color__blue-90;
 
