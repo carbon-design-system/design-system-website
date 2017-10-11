@@ -51,3 +51,12 @@ If using a a data visualization in a modal, only use tiles that take up 50% or m
 ![Structure and spacing for the base graph](images/style-base-graph.png)
 **
 _Structure and spacing for the base graph | px / rem_
+
+### States
+
+When a graph is not yet populated with data or has been filtered down so much that there is no data to display, an empty graph state should be shown. The base graph should be set to 30% opacity and have a message prompting the user to reset filters or another call to action to help get the data up and running.   
+
+**
+![Example of a graph with no data matching the parameters](images/style-empty-graph.png)
+**
+_Example of a graph with no data matching the filter parameters_

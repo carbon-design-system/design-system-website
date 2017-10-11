@@ -58,7 +58,7 @@ you need to know about a few things to get started.
 ```css
 body {
   @include reset;
-  font-family: 'IBM Plex Sans';
+  font-family: 'ibm-plex-sans';
   color: $text-01;
   background-color: $ui-02;
   line-height: 1;

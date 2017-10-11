@@ -43,7 +43,7 @@
         "title": "Data Vis",
         "subnav": {
           "overview": "Overview",
-          "circle-gauge": "Circle Gauge",
+          "gauge": "Gauge",
           "line-graph": "Line Graph",
           "pie-chart": "Pie Chart",
           "scatter-plot": "Scatter Plot"

@@ -21,7 +21,7 @@ _Example of a Pie Chart section, hovered_
 
 | PROPERTY                       | PX   | REM   |
 |--------------------------------|------|-------|
-| Height & width			          | 192  | 12    |
+| Height & width			           | 192  | 12    |
 | Chart Thickness                | 30   | 1.875 |
 | Spacing: data representations  | 2    | -     |
 
