@@ -37,3 +37,9 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 > ![Structure and spacing measurements for toggle](images/toggle-style-2.png)
 
 _Structure and spacing measurements for Toggle | px / rem_
+
+## Motion
+
+| States              | Easing        | Duration |
+| -----------------   | --------------| ---------|
+| checked & unchecked | $bx--ease-out | 60ms     |

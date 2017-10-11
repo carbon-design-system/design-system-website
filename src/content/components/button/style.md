@@ -100,3 +100,9 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
   </div>
 </div>
 _Spacing measurements for various Button types | px / rem_
+
+## Motion
+
+| States                | Easing        | Duration |
+| --------------------- | --------------| ---------|
+| Hover, active & focus | $bx--ease-out | 100ms    |

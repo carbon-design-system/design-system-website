@@ -2,57 +2,45 @@
 
 Elements of every IBM product should behave with awareness and precision. Our content moves to clarify information hierarchy, inform intent, and give feedback in order to guide users through complex experiences.
 
-### Be progressive and thoughtful.
+### Responsive & Meticulous
 
-In the modern digital world, motion is a requirement. Treat motion as an integrated aspect of design, not an afterthought. Anticipate user expectations and needs, such as feedback for action, visual indicator of backend processing, and keep exploring ways to add value through motion.
+In general, IBM's motion is faster than our competitors. We embrace speed and efficiency, yet our attitude is attentive and unassuming. This is why we designed a new set of easing curves and shortened durations to reflect this principle. Keep in mind that in our products, our role is to be a respectful host to the professionals across many industries, and we do not keep them waiting.
 
-### Be essential, be a pro for pro.
+### Purposeful & Progressive
 
-Avoid motion that is decorative, obtrusive, or unnecessary. It distracts users from their tasks. We are professionals working with professionals; make the experience efficient, quick, and responsive. Every use of motion should have a purposed based on a user need or business requirement. If all of the problems are solvable without motion, consider not adding motion. A purpose could be:
+Constantly ask the question: is motion needed here? Is this motion going to better orient, guide, or empower our users to quickly complete their task? Here are some opportunities for purposeful and progressive motions in an interface:
 
-- a function (eg. a dropdown menu opening)
-- a solution to a problem (eg. progressive disclosure)
-- a message (eg. loading animation, interaction feedback, "Welcome to Cloud")
-- a meaning (eg. "this is important", "there is more")
-
+- a function, such as opening a drop-down menu
+- a solution to UX need, such as reducing cognitive load with progressive disclosure
+- a message, such as "I'm working on it!" by giving instant feedback
+- a guidance, such as revealing a call for action button last to draw users' attention
 
 ## Guidelines
 
-<!-- ### Duration
+### Duration
 
-Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.-->
+Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
 
 <!-- <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div> -->
 
-<!-- | TYPE                     | DURATION  | -->
-
-<!-- | Buttons/small components | 100-200ms | -->
-<!-- | Alerts/table reorder     | 250-300ms | -->
-<!-- | Panels/modals            | 300-400ms | -->
-<!-- | Page transitions         | 500-700ms | -->
+| TYPE                     | DURATION  |
+| -------------------------| ----------|
+| Buttons/small components | 60-100ms |
+| Alerts/table reorder     | 250-300ms |
+| Panels/modals            | 300-400ms |
+| Page transitions         | 500-700ms |
 
 ### Easing
 
-IBM elements are responsive, efficient, and yet elegant — they do not speed up or slow down excessively, obeying the physics of a light-weight medium.
+Strictly linear movement appears strange and distracting to the human eye. IBM elements speed up and slow down smoothly and quickly, obeying the physics of a light-weight material.
 
+"Easing curves" are useful to describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero, velocity, giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each fitted for a different situations.
 
-<div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
-
-There are three specific easing curves: `ease-in-out`, `ease-out`, and `ease-in`.
-
-You can think of “in” and “out” as referring to the side of the curve where more time will be spent. So an `ease-out` curve will slow down into it's final position, while an `ease-in` curve will start slowly and accelerate. An `ease-in-out` curve combines both, featuring a slow start and a slow finish.
-
-**Ease-in-out:** `cubic-bezier(0.2, 0, 0.38, 0.9)`
-
-Use ease-in-out (previously standard easing) when an element is already visible when the motion starts, and is still visible when the motion ends. For example, card expansion and list sorting. The element does not completely enter or exit the view (the screen, or browser window), but becomes repositioned or transformed.
-
-<div data-insert-component="MotionExample" data-props="standard"></div>
-
-One exception to use ease-in-out when an element is in the view, is if the element leaves the view but stays near it, ready for recall upon user action. A good example of this is a side panel. The panel would leave the view, but slows down as it exists, implying that it would come to rest just outside the view.
+You can think of "in" and "out" as referring to the beginning and end of a motion. So an `ease-out` motion will slow down into its final position, while an `ease-in` motion will start slowly and accelerate. An `ease-in-out` motion combines both, featuring a slow start and a slow finish.
 
 **Ease-out:** `cubic-bezier(0, 0, 0.38, 0.9)`
 
-Use ease-out when adding elements to the view (e.g. entrance of model, toaster), or changing states as a result of users' input for micro-interactions (e.g.  dropdown opening or toggle). The element would appear quickly and decelerates as it arrives final state.
+Use ease-out when adding elements to the view (example: entrance of model, toaster), or changing states as a result of users' input for micro-interactions (example:  dropdown opening or toggle). The element would appear energetically and decelerates as it arrives final state.
 
 <div data-insert-component="MotionExample" data-props="ease-out"></div>
 
@@ -62,43 +50,30 @@ Use ease-in when removing elements from the view. Good examples are closing a mo
 
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
-### Dynamic Duration
+**Ease-in-out:** `cubic-bezier(0.2, 0, 0.38, 0.9)`
 
-Along with easing, duration is one of the two main elements in motion.
+`ease-in-out` is used when an element is visible in the beginning, and is still visible at the end of the motion. Card expansion and list sorting are good examples – the element does not completely enter or exit the view (the screen, or browser window), but simply becomes repositioned or transformed.
 
-The duration is never fixed - elements traveling over longer distances should take longer time. In our model, the relationship between duration and distance (duration scale) is non-linear.  The rate of increase of duration drops slightly as the distance of travel increases to maintain the consistency of the perceived motion.
+<div data-insert-component="MotionExample" data-props="standard"></div>
 
-Carbon-components have built in support for many micro-interactions with this dynamic duration. When creating custom motion, we recommend the following durations. <!-- use the <a href="https://ibm.github.io/motion/" target="_blank">motion calculator</a> to find the duration for your motion. -->
+One exception to use `ease-in-out` is if the element leaves the view but stays near it, ready to reappear upon user action. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view.
 
-Duration for move, or linear translations, is dependent on both distance and size of the element. For small elements around 64 x 64 px size:
+## Motion Evaluation Checklist
 
-| Distance (px)| Duration (ms) |
-| ------------ |---------------|
-| > 240        | 102           |
-| 480          | 109           |
-| 720          | 123           |
-| 1024         | 139           |
+All those theory might be overwhelming. We created a checklist to help you evaluate your motion design:
 
-For large elements around 512 x 512 px size:
+Is your motion **progressive**?
+What is lost if you do without this motion? Does motion meet user expectations and needs, provide feedback, and orientation?
 
-| Distance (px)| Duration (ms) |
-| ------------ |---------------|
-| > 240        | 102           |
-| 480          | 109           |
-| 720          | 128           |
-| 1024         | 143           |
+Is your motion **responsive**?
+Durations for motion should generally not exceed 300ms. Micro-interactions should use `ease-out` on user input, with a static duration ranging from 60 - 100ms.
 
+Is your motion **meticulous**?
+Did you use the correct easing curve?
 
-Fade (opacity change) duration is dependent on size of the element. Larger element fades slower than smaller element. Below is a list of durations for 100% opacity change for elements of a range of sizes.
+Is your motion **unobtrusive**?
+The best interface motion may go unnoticed, because motion must not distract the user from their tasks. If your motion is picked up by the average user, consider removing it, or minimizing it.
 
-| Fade (size)   | Duration (ms) |
-| ------------- |---------------|
-| 64 x 64       | 80            |
-| 256 x 256     | 82            |
-| 512 x 512     | 94            |
-| 980 x 980     | 109           |
-
-For more precise dynamic durations, we are in the process of developing a Motion Calculator for designers and developers interested in creating custom motions. Be sure to check in for updates!
 
 <!-- ## Tools
 
