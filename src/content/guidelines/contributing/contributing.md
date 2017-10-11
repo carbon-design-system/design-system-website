@@ -1,6 +1,6 @@
 **_Welcome!_ The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.**
 
-If you're interested in contributing please follow the guidelines below. If you have any questions, reach out to us at carbon@us.ibm.com.
+The guidelines below are primarily for **design contributions**. You can also read our guidelines for [contributing code](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md). If you have any questions, reach out to us at carbon@us.ibm.com.
 <br> <br>
 
 ## Contribution model & process
