@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import ReactGA from 'react-ga';
-
-import Letter from '../../components/internal/Letters';
+import { Button, ClickableTile } from 'carbon-components-react';
 
 class Overview extends React.Component {
-
   componentDidMount() {
     document.title = 'Carbon Design System';
   }
@@ -18,148 +16,89 @@ class Overview extends React.Component {
   }
 
   render() {
-    const icon1 = require('../../../content/overview/images/icon-1.svg');
-    const icon2 = require('../../../content/overview/images/icon-2.svg');
-    const icon3 = require('../../../content/overview/images/icon-3.svg');
-
     return (
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
-        <h1 id="page-title" className="overview-page__title--aria" aria-label="Carbon Design System">Carbon Design System</h1>
-        <div className="overview-page__top-banner" aria-hidden="true">
-          <div className="overview-page__title">
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--letter">
-                <Letter letter="C" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="D" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="S" />
-              </span>
-            </div>
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--shape">
-                <Letter letter="A" active />
-              </span>
-              <span className="overview-page__title--shape">
-                <Letter letter="E" active />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="Y" />
-              </span>
-            </div>
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--letter">
-                <Letter letter="R" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="S" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="S" />
-              </span>
-            </div>
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--letter">
-                <Letter letter="B" />
-              </span>
-              <span className="overview-page__title--shape">
-                <Letter letter="I" active />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="T" />
-              </span>
-            </div>
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--shape">
-                <Letter letter="O" active />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="G" />
-              </span>
-              <span className="overview-page__title--shape">
-                <Letter letter="E" active purple />
-              </span>
-            </div>
-            <div className="overview-page__title--column">
-              <span className="overview-page__title--letter">
-                <Letter letter="N" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="N" />
-              </span>
-              <span className="overview-page__title--letter">
-                <Letter letter="M" />
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="overview-page__content">
-        <Letter />
-          <div className="overview-page__main-intro">
-            <div className="overview-page__main-intro--icon">
-              <img alt="Hexagon icon" src={icon1} />
-            </div>
-            <div className="overview-page__main-intro--content">
-              <p className="overview-page__main-intro--text">Carbon, in nature, allows for complex structures to be made from simpler compounds. The Carbon Design System is a series of individual styles and components, that when combined make beautiful, intuitive designs. These designs are systemic and logical, as they all follow the same universal principles.</p>
-              <Link
-                onClick={() => this.handleClick('Explore the system')}
-                tabIndex="0"
-                className="overview-page__main-intro--link bx--btn bx--btn--secondary"
-                to="/components/overview"
-              >
-                Explore the system
-              </Link>
-            </div>
-          </div>
-          <div className="overview-page__tiles">
-            <div className="overview-page__tile">
-              <div className="overview-page__tile--icon">
-                <img alt="Tile icon 1" src={icon2} />
+        <section className="overview-page__banner">
+          <h1 className="banner__logo"><span className="banner__logo--bold">Carbon</span> Design System</h1>
+          <Button kind="secondary" className="banner__cta-btn">Explore the system</Button>
+        </section>
+        <section className="overview-page__section">
+          <ul className="overview-page__list">
+            <li className="overview-page__list-item">
+              <div className="list-item__icon"></div>
+              <div className="list-item__info">
+                <Link to="/getting-started">Getting Started</Link>
+                <p>Onboarding for designers and developers who are using Carbon for the first time.</p>
               </div>
-              <div className="overview-page__tile--content">
-                <h2 className="overview-page__tile--heading">
-                  Carbon Design Kit
-                </h2>
-                <p className="overview-page__tile--text">
-                  The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
-                </p>
-                <a
-                  href="https://github.com/carbon-design-system/carbon-design-kit"
-                  className="overview-page__tile--link"
-                  target="_blank"
-                  onClick={() => this.handleClick('Design Kit')}
-                >
-                Get the Sketch kit
-                </a>
+            </li>
+            <li className="overview-page__list-item">
+              <div className="list-item__icon"></div>
+              <div className="list-item__info">
+                <Link to="/style">Style</Link>
+                <p>Guidance on usage and application for basic design elements.</p>
               </div>
-            </div>
-            <div className="overview-page__tile">
-              <div className="overview-page__tile--icon">
-                <img alt="Tile icon 2" src={icon3} />
+            </li>
+            <li className="overview-page__list-item">
+              <div className="list-item__icon"></div>
+              <div className="list-item__info">
+                <Link to="/components">Components</Link>
+                <p>A library of all Carbon components, compromised of code, usage and style guidelines.</p>
               </div>
-              <div className="overview-page__tile--content">
-                <h2 className="overview-page__tile--heading">
-                  Carbon Component Library
-                </h2>
-                <p
-                  className="overview-page__tile--text"
-                >
-                  The Component Library gives developers a collection of re-usable HTML and Sass partials for building their products.
-                </p>
-                <a
-                  href="https://github.com/carbon-design-system/carbon-components"
-                  className="overview-page__tile--link"
-                  target="_blank"
-                  onClick={() => this.handleClick('Developer Kit')}
-                >
-                Component GitHub repo
-                </a>
+            </li>
+            <li className="overview-page__list-item">
+              <div className="list-item__icon"></div>
+              <div className="list-item__info">
+                <Link to="/resources">Resources</Link>
+                <p>A helpful list of tools, links and downloads that will improve a Carbon user's workflow.</p>
               </div>
-            </div>
-          </div>
-        </div>
+            </li>
+          </ul>
+        </section>
+        <section className="overview-page__section overview-page__section--gray">
+          <ul className="overview-page__list">
+            <li>
+              <ClickableTile>
+                <div className="tile__icon"></div>
+                <div className="tile__info">
+                  <p>Carbon Design Kit</p>
+                  <p>A Sketch file containing core visual styles, components, and patterns a designers needs to use Carbon as a framework for building product experiences.</p>
+                </div>
+              </ClickableTile>
+            </li>
+            <li>
+              <ClickableTile>
+                <div className="tile__icon"></div>
+                <div className="tile__info">
+                  <p>Carbon Components</p>
+                  <p>Components are written in two languages, Vanilla.js and React. Storybook, a UI component development environment, houses the React components.</p>
+                </div>
+              </ClickableTile>
+            </li>
+            <li>
+              <ClickableTile>
+                <div className="tile__icon"></div>
+                <div className="tile__info">
+                  <p>Carbon CodePen</p>
+                  <p>CodePen, a social development playground for front-end designers and developers, houses demos of Carbon Components.</p>
+                </div>
+              </ClickableTile>
+            </li>
+            <li>
+              <ClickableTile>
+                <div className="tile__icon"></div>
+                <div className="tile__info">
+                  <p>Theming Sandbox</p>
+                  <p>This sandbox allows you to build a custom theme by changing a color variable's hex value and then exporing the theme sheet SCSS file.</p>
+                </div>
+              </ClickableTile>
+            </li>
+          </ul>
+        </section>
+        <section className="overview-page__section overview-page__section--contribute">
+          <h2>Wondering how to contribute to Carbon?</h2>
+          <p>We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.
+            If you're interested in contributing, check out our <Link to="/guidelines">guidelines</Link> to get started.</p>
+        </section>
       </main>
     );
   }
