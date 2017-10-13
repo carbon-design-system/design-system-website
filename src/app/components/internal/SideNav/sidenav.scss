@@ -122,18 +122,18 @@
 
   &__link {
     width: 100%;
-    border-color: $color__blue-51;
-    color: $color__blue-51;
+    border-color: $brand-01;
+    color: $brand-01;
     margin-bottom: 1rem;
     justify-content: space-between;
 
     .bx--btn--right-icon__icon {
-      fill: $color__blue-51;
+      fill: $brand-01;
     }
 
     &:hover,
     &:focus {
-      background-color: $color__blue-51;
+      background-color: $brand-01;
 
       .bx--btn--right-icon__icon {
         fill: $color__white;

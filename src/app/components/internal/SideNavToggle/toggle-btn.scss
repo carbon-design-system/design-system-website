@@ -4,7 +4,7 @@
   left: calc(200px - 2.3rem);
   width: 2.3rem;
   height: 2.3rem;
-  background-color: $color__blue-51;
+  background-color: $brand-01;
   border: 1px solid transparent;
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@
 
   &--closed {
     left: 0;
-  
+
     > div {
       .line:nth-child(2) {
         opacity: 1;

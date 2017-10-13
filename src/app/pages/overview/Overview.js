@@ -16,6 +16,12 @@ class Overview extends React.Component {
   }
 
   render() {
+    const sketchIcon = require('./images/sketch-icon.svg');
+    const githubIcon = require('./images/github-icon.svg');
+    const codepenIcon = require('./images/codepen-icon.svg');
+    const sandboxIcon = require('./images/sandbox-icon.svg');
+    const scatter = require('./images/scatter.svg');
+
     return (
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
         <section className="overview-page__banner">
@@ -39,7 +45,8 @@ class Overview extends React.Component {
               </div>
             </li>
             <li className="overview-page__list-item">
-              <div className="list-item__icon"></div>
+              <div className="list-item__icon">
+              </div>
               <div className="list-item__info">
                 <Link to="/components">Components</Link>
                 <p>A library of all Carbon components, compromised of code, usage and style guidelines.</p>
@@ -56,36 +63,44 @@ class Overview extends React.Component {
         </section>
         <section className="overview-page__section overview-page__section--gray">
           <ul className="overview-page__list">
-            <li>
-              <ClickableTile>
-                <div className="tile__icon"></div>
+            <li className="overview-page__list-item">
+              <ClickableTile className="overview-page__tile">
+                <div className="tile__icon">
+                  <img src={sketchIcon} alt="sketch icon" />
+                </div>
                 <div className="tile__info">
                   <p>Carbon Design Kit</p>
                   <p>A Sketch file containing core visual styles, components, and patterns a designers needs to use Carbon as a framework for building product experiences.</p>
                 </div>
               </ClickableTile>
             </li>
-            <li>
-              <ClickableTile>
-                <div className="tile__icon"></div>
+            <li className="overview-page__list-item">
+              <ClickableTile className="overview-page__tile">
+                <div className="tile__icon">
+                  <img src={githubIcon} alt="github icon" />
+                </div>
                 <div className="tile__info">
                   <p>Carbon Components</p>
                   <p>Components are written in two languages, Vanilla.js and React. Storybook, a UI component development environment, houses the React components.</p>
                 </div>
               </ClickableTile>
             </li>
-            <li>
-              <ClickableTile>
-                <div className="tile__icon"></div>
+            <li className="overview-page__list-item">
+              <ClickableTile className="overview-page__tile">
+                <div className="tile__icon">
+                  <img src={codepenIcon} alt="codepen icon" />
+                </div>
                 <div className="tile__info">
                   <p>Carbon CodePen</p>
                   <p>CodePen, a social development playground for front-end designers and developers, houses demos of Carbon Components.</p>
                 </div>
               </ClickableTile>
             </li>
-            <li>
-              <ClickableTile>
-                <div className="tile__icon"></div>
+            <li className="overview-page__list-item">
+              <ClickableTile className="overview-page__tile">
+                <div className="tile__icon">
+                  <img src={sandboxIcon} alt="sandbox icon" />
+                </div>
                 <div className="tile__info">
                   <p>Theming Sandbox</p>
                   <p>This sandbox allows you to build a custom theme by changing a color variable's hex value and then exporing the theme sheet SCSS file.</p>
@@ -95,9 +110,12 @@ class Overview extends React.Component {
           </ul>
         </section>
         <section className="overview-page__section overview-page__section--contribute">
-          <h2>Wondering how to contribute to Carbon?</h2>
-          <p>We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.
-            If you're interested in contributing, check out our <Link to="/guidelines">guidelines</Link> to get started.</p>
+          <img className="contribute__bg" src={scatter} alt="scatter" />
+          <div className="contribute__info">
+            <h2>Wondering how to contribute to Carbon?</h2>
+            <p>We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.
+              If you're interested in contributing, check out our <Link to="/guidelines">guidelines</Link> to get started.</p>
+          </div>
         </section>
       </main>
     );
