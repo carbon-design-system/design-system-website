@@ -55,7 +55,8 @@ _Structure and spacing measurements for Overflow Menu | px / rem_
 
 ## Motion
 
-| States        | Easing        | Duration |
+| Class         | Easing        | Duration |
 | ------------- | --------------| ---------|
-| Closed        | $bx--ease-in  | dynamic based on the size of menu |
-| Open          | $bx--ease-out | dynamic based on the size of menu |
+| .bx--overflow-menu-options         | $bx--ease-in  | dynamic based on the size of menu |
+| .bx--overflow-menu-options__option | $bx--ease-in  | dynamic based on the size of menu |
+| .bx--overflow-menu-options--open   | $bx--ease-out | dynamic based on the size of menu |

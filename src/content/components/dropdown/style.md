@@ -43,7 +43,10 @@ _Structure and spacing measurements for Dropdown | px / rem_
 
 ## Motion
 
-| Class               | Easing        | Duration |
-| -------------       | --------------| ---------|
-| -                   | $bx--ease-in  | dynamic based on the size of dropdown |
-| .bx--dropdown--open | $bx--ease-out | dynamic based on the size of dropdown |
+| CLASS          | EASING             | DURATION |
+| ------------------------ | ----------------| -----------|
+| .bx--dropdown            | $bx--ease-in   | dynamic based on the size of menu |
+| .bx--dropdown--open      | $bx--ease-out | dynamic based on the size of menu |
+| .bx--dropdown-list       | $bx--standard-easing | 144ms  |
+| .bx--dropdown-item       | $bx--standard-easing | 144ms  |
+| .bx--dropdown__arrow     | $bx--standard-easing | 150ms  |

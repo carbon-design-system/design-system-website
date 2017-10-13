@@ -40,6 +40,9 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 ## Motion
 
-| States              | Easing        | Duration |
+| Class (:state)      | Easing        | Duration |
 | -----------------   | --------------| ---------|
-| checked & unchecked | $bx--ease-out | 60ms     |
+| .bx--toggle         | $bx--ease-out | 60ms     |
+| .bx--toggle__label  | $bx--ease-out | 60ms     |
+| .bx--toggle__appearance | $bx--ease-out | 60ms |
+| .bx--toggle:checked | $bx--ease-out | 60ms     |

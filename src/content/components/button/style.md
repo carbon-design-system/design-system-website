@@ -103,6 +103,7 @@ _Spacing measurements for various Button types | px / rem_
 
 ## Motion
 
-| States                | Easing        | Duration |
+| CLASS (:STATES)       | Easing        | Duration |
 | --------------------- | --------------| ---------|
-| Hover, active & focus | $bx--ease-out | 100ms    |
+| .bx--btn:hover, :active, :focus       | $bx--ease-out | 100ms    |
+| .bx--btn__icon:hover, :active, :focus | $bx--ease-out | 100ms    |
