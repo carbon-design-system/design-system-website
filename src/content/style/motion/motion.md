@@ -1,6 +1,6 @@
 **_Motion_ brings your work to life. It guides you forward faster—from here to there, now to next, start to finish—towards progress. Purposeful, responsive, and precise motion creates productive interactions for the user.**
 
-## Characteristics
+## Character
 
 ### Energetic
 
@@ -29,7 +29,7 @@ Examples of opportunities for purposeful UI motion:
 
 ### Dynamic duration
 
-Motion should be fast enough to be seen, but slow enough to be felt. When calculating the duration of your motion, consider the following factors:
+Motion should be fast enough to be invisible, but slow enough to be felt. When calculating the duration of your motion, consider the following factors:
 
 - larger magnitude of motion needs a longer duration.
 - an important or unexpected change deserves a longer duration than expected changes
