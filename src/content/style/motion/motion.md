@@ -31,7 +31,7 @@ Examples of opportunities for purposeful UI motion:
 
 Motion should be fast enough to be invisible, but slow enough to be felt. When calculating the duration of your motion, consider the following factors:
 
-- larger magnitude of motion needs a longer duration.
+- larger magnitude of motion needs a longer duration
 - an important or unexpected change deserves a longer duration than expected changes
 - allow for larger distance or longer duration on mobile to make it more perceivable
 
