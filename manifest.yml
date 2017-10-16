@@ -1,8 +1,11 @@
 ---
 applications:
-- name: carbonized
-  random-route: true
+- name: design-system
   buildpack: nodejs_buildpack
   command: node index.js
   disk_quota: 256MB
   memory: 128MB
+  routes:
+  - route: www.carbondesignsystem.com
+  - route: carbondesignsystem.com
+  - route: design-system.mybluemix.net
