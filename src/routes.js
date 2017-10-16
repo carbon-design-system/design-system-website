@@ -235,6 +235,12 @@ const routes = {
       },
     },
     {
+      path: 'whats-new',
+      getComponent(location, cb) {
+        import('./app/pages/whats-new/whats-new').then(loadRoute(cb)).catch(errorLoading);
+      },
+    },
+    {
       path: 'component-status',
       getComponent(location, cb) {
         import('./app/pages/component-status/ComponentStatus')
