@@ -1,25 +1,9 @@
 .glossary-entry {
-  img.glossary-entry__main-heading {
-    width: 5rem;
+  .glossary-entry__main-heading {
     margin: 3.25rem 0 0.5rem;
-  }
-
-  &#W {
-    img {
-      width: rem(97.67px);
-    }
-  }
-
-  &#M {
-    img {
-      width: rem(81.67px);
-    }
-  }
-
-  &#O {
-    img {
-      width: rem(72.83px);
-    }
+    font-size: rem(112px);
+    -webkit-text-stroke: 3px #3C6DF0;
+    -webkit-text-fill-color: white;
   }
 
   h2 {
