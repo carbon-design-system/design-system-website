@@ -2,7 +2,11 @@
 // @include layer('raised');
 
 #maincontent {
-  padding-bottom: 14rem;
+  padding-bottom: 7rem;
+
+  @media all and (max-width: 600px) {
+    padding-bottom: 14rem;
+  }
 }
 
 .flex-container {

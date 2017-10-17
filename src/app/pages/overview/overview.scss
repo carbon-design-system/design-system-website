@@ -88,12 +88,14 @@
   }
 
   &--contribute {
-    height: 400px;
+    padding-top: 0;
+    height: 435px;
     position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     @media all and (max-width: 600px) {
       height: 600px;
-      padding-top: 4rem;
     }
   }
 }
