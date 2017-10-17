@@ -1,57 +1,9 @@
 .resources {
   &__top {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    max-width: 100%;
-    flex-direction: column;
-    margin-left: 0;
-
-    @include breakpoint('1267px') {
-      flex-direction: row;
-    }
-
-    div p {
-      padding-bottom: 1rem;
-      max-width: 100%;
-      min-height: 88px;
-
-      @include breakpoint('1267px') {
-        max-width: 30rem !important;
-      }
-    }
-
-    div {
-      flex: 1 1 auto;
-      margin-right: 2rem;
-      margin-bottom: 4rem;
-
-      @include breakpoint('bp--sm--major') {
-        flex-basis: 46%;
-      }
-    }
-
-    div img {
-      width: rem(80px);
-    }
-
-    div h2 {
-      padding-bottom: 2rem;
-      margin-top: 0;
-    }
-
-    h2:before {
-      display: none !important;
-    }
-
-    div a {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    & + .page__divider-heading {
-      max-width: 100% !important;
-    }
+    width: 100%;
   }
 
   &__bottom {
@@ -115,6 +67,42 @@
         }
       }
     }
+  }
+
+  &__tile {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: $text-01;
+    width: calc(50% - 1rem);
+    height: 190px;
+    padding: 2rem 1rem;
+    margin-right: 1rem;
+  }
+
+  &__tile-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin: 0 1.25rem 0 .25rem;
+  }
+
+  &__tile-icon img {
+    width: 100%;
+    margin: 0;
+  }
+
+  &__tile-info p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $text-01;
+    margin: 0 0 .75rem 0;
+    padding: 0;
+  }
+
+  &__tile-info p {
+    font-size: 16px;
   }
 }
 
