@@ -8,6 +8,9 @@
       "FAQ": "FAQ"
     }
   },
+  "whats-new": {
+  "title": "What's New"
+  },
   "guidelines": {
     "title": "Guidelines",
     "subnav": {
@@ -90,10 +93,10 @@
   "component-status": {
     "title": "Component Status"
   },
-  "resources": {
-    "title": "Resources"
-  },
   "themes": {
     "title": "Themes"
+  },
+  "resources": {
+    "title": "Resources"
   }
 }
