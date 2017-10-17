@@ -14,6 +14,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+
+  @media all and (max-width: 600px) {
+    height: 400px;
+  }
+}
+
+.overview-page__banner svg {
+  position: absolute;
+  top: -11rem;
+  left: 5%;
+  width: 100%;
+  z-index: 1;
+  min-width: 2500px;
+
+  g {
+    position: absolute;
+    transition: 600ms;
+    transform-style: preserve-3d;
+    transform-origin: center;
+  }
 }
 
 .banner__logo {
@@ -23,6 +46,12 @@
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+
+  @media all and (max-width: 600px) {
+    @include typescale('beta');
+  }
 
   &--bold {
     font-weight: 600;
@@ -33,6 +62,12 @@
   margin-top: 2rem;
   border-color: white;
   color: white;
+  position: relative;
+  z-index: 2;
+
+  @media all and (max-width: 600px) {
+    margin-top: 1rem;
+  }
 
   &:hover {
     background: white;
@@ -55,6 +90,11 @@
   &--contribute {
     height: 400px;
     position: relative;
+
+    @media all and (max-width: 600px) {
+      height: 600px;
+      padding-top: 4rem;
+    }
   }
 }
 
@@ -65,17 +105,45 @@
   flex-wrap: wrap;
   max-width: 1000px;
   padding-bottom: 4rem;
+
+  @media all and (max-width: 1260px) {
+    flex-direction: column;
+  }
+
+  .overview-page__section--gray & {
+    @media all and (max-width: 1300px) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 }
 
 .overview-page__list-item {
-  width: 50%;
+  width: calc(50% - 1rem);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 4rem;
+  margin-right: 1rem;
+
+  @media all and (max-width: 1300px) {
+    width: calc(50% - 2rem);
+    margin-right: 2rem;
+  }
+
+  @media all and (max-width: 1260px) {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .overview-page__section--gray & {
     margin-bottom: 1rem;
+
+    @media all and (max-width: 1300px) {
+      width: 100%;
+    }
   }
 }
 
@@ -86,6 +154,11 @@
   border-radius: 100%;
   margin-right: 1.5rem;
   flex-shrink: 0;
+
+  @media all and (max-width: 1260px) {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
 }
 
 .list-item__info {
@@ -93,6 +166,12 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 300px;
+
+  @media all and (max-width: 1260px) {
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+  }
 
   a {
     @include typescale('alpha');
@@ -124,6 +203,10 @@
   text-decoration: none;
 
   .overview-page__list-item:nth-child(2n+2) & {
+    margin-right: 0;
+  }
+
+  @media all and (max-width: 1300px) {
     margin-right: 0;
   }
 }
