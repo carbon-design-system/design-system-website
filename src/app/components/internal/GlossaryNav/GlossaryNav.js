@@ -7,15 +7,19 @@ class GlossaryNav extends Component {
     isReverseScroll: false,
     isFixed: false,
     activeLetter: window.location.hash.substring(1, 2).toUpperCase() || '',
-    letters: []
-  }
+    letters: [],
+  };
 
   componentDidMount() {
-    setTimeout(() => { this.getEntryPositions(); }, 100);
+    setTimeout(() => {
+      this.getEntryPositions();
+    }, 100);
     this.handleScroll();
 
     if (this.state.activeLetter) {
-      const activeLetter = document.querySelector(`#${this.state.activeLetter}`);
+      const activeLetter = document.querySelector(
+        `#${this.state.activeLetter}`
+      );
       window.scrollTo(0, activeLetter.offsetTop);
     }
 
@@ -26,17 +30,17 @@ class GlossaryNav extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
-  getActiveItem = (windowScroll) => {
+  getActiveItem = windowScroll => {
     let scrollLetter = this.state.activeLetter;
 
-    this.state.letters.forEach((letter) => {
+    this.state.letters.forEach(letter => {
       if (windowScroll <= letter.bottom && windowScroll >= letter.top) {
         scrollLetter = letter.id;
       }
     });
 
     return scrollLetter;
-  }
+  };
 
   getEntryPositions() {
     const letters = [];
@@ -53,21 +57,23 @@ class GlossaryNav extends Component {
     });
   }
 
-  updateActive = (evt) => {
+  updateActive = evt => {
     this.setState({
       activeLetter: evt.target.textContent,
-      isReverseScroll: true
+      isReverseScroll: true,
     });
-  }
+  };
 
   handleScroll = () => {
     const scrollPosition = this.updateScrollPosition();
-    const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
+    const windowScroll = this.state.isReverseScroll
+      ? window.scrollY
+      : window.scrollY + window.innerHeight;
     const scrolledItem = this.getActiveItem(windowScroll);
 
     if (scrolledItem !== this.state.activeLetter) {
       this.setState({
-        activeLetter: scrolledItem
+        activeLetter: scrolledItem,
       });
     }
     if (this.state.letters.length > 0) {
@@ -81,7 +87,7 @@ class GlossaryNav extends Component {
         });
       }
     }
-  }
+  };
 
   updateScrollPosition = () => {
     if (window.scrollY >= this.state.previousScroll) {
@@ -96,9 +102,9 @@ class GlossaryNav extends Component {
       });
     }
     return window.scrollY;
-  }
+  };
 
-  renderGlossaryNavItems = (letters) => {
+  renderGlossaryNavItems = letters => {
     const glossaryNavItems = [];
     letters.forEach(letter => {
       const isActiveItem = letter.id === this.state.activeLetter;
@@ -116,7 +122,7 @@ class GlossaryNav extends Component {
       );
     });
     return glossaryNavItems;
-  }
+  };
 
   render() {
     const letters = this.renderGlossaryNavItems(this.state.letters);
