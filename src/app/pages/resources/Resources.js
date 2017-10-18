@@ -99,7 +99,7 @@ class Resources extends React.Component {
               <a href="https://github.com/IBM/type" target="_blank">IBM Plex</a>
             </div>
           </div>
-          <h2 className="resources__heading">Articles</h2>
+          {/* <h2 className="resources__heading">Articles</h2>
           <div className="resources__bottom">
             <div>
               <h4>Carbon: Designing Inside Big Blue</h4>
@@ -111,7 +111,7 @@ class Resources extends React.Component {
               <p>Brief article description goes here.</p>
               <a href="https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627" target="_blank">Medium Article</a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );
