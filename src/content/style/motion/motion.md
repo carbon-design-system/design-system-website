@@ -8,7 +8,7 @@ Motion feels alive, presenting information with vigor and vibrancy. Each movemen
 
 ### Rhythmic
 
-Elements work together in a steady rhythm and pace. Careful choreography balances small and sweeping movements to orient and guide users in the flow.  
+Elements work together in a steady rhythm and pace. Careful choreography balances small and sweeping movements to orient and guide users in a flow.  
 
 ### Sensitive
 
@@ -18,22 +18,22 @@ Motion acts with awareness to create a two-way conversation. It anticipates need
 
 ### Provide value
 
-Before applying motion, always ask: is motion adding value? Will it orient, guide, or empower people to advance their work? Take time to articulate key moments in the interface where applying animation could enhance or augment the experience.
+Before applying motion, always ask: is this motion adding value? Will it orient, guide, or empower people to advance their work? Take time to articulate key moments in the interface where applying animation could enhance or augment the experience.
 
 Examples of opportunities for purposeful UI motion:
 
 - give feedback, such as hover states, active states
 - component behaviors, such as opening a drop-down menu
-- solutions to UX need, such as reducing cognitive load with progressive disclosure
-- provide guidance, such as revealing a call for action button last to draw users' attention
+- solutions to a UX need, such as reducing cognitive load with progressive disclosure
+- provide guidance, such as revealing a call to action button last to draw users' attention
 
 ### Dynamic duration
 
 Motion should be fast enough to be invisible, but slow enough to be felt. When calculating the duration of your motion, consider the following factors:
 
-- larger magnitude of motion needs a longer duration
-- an important or unexpected change deserves a longer duration than expected changes
-- allow for larger distance or longer duration on mobile to make it more perceivable
+- larger magnitude of motion needs a longer duration. For example, a dropdown with 10 options needs a slightly longer time to open than a dropdown with 2 options.
+- an important or unexpected change deserves a longer duration than expected changes. An error alert, or system message should take its time to enter, making sure to draw user's attention to it.
+- allow for larger distance or longer duration on mobile to make it more perceivable. A 2px position movement  might look sleek on a large screen, but hardly visible on mobile. This is due to the higher pixel density and that content on smaller screens have to battle the more dominating environmental distractions.
 
 <!-- <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div> -->
 
@@ -48,7 +48,7 @@ Motion should be fast enough to be invisible, but slow enough to be felt. When c
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.
 
-"Easing curves" describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero, velocity, giving an energetic, crisp feel to the behaviors of the elements. Three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each serve different purposes.
+"Easing curves" describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero velocity giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each serve different purposes.
 
 <div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
@@ -56,13 +56,13 @@ The beginning and end of a motion are called "in" and "out." An `ease-in` motion
 
 **Ease-out:** `cubic-bezier(0, 0, 0.38, 0.9)`
 
-Use ease-out when adding elements to the view (example: entrance of model, toaster), or changing states as a result of users' input for micro-interactions (example:  dropdown opening or toggle). An element should appear energetically and decelerate as it arrives at its final state.
+Use ease-out when adding elements to the view (e.g. entrance of model, toaster), or changing states as a result of users' input for micro-interactions (e.g. dropdown opening or toggle). An element should appear energetically and decelerate as it arrives at its final state.
 
 <div data-insert-component="MotionExample" data-props="ease-out"></div>
 
 **Ease-in:** `cubic-bezier(0.2, 0, 1, 0.9)`
 
-Use ease-in when removing elements from the view (examples: closing a model, toaster). The element should speed up as it exits, implying that it's not coming back.
+Use ease-in when removing elements from the view, such as closing a model, toaster. The element should speed up as it exits from view, implying that it's not coming back.
 
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
@@ -72,7 +72,7 @@ Use `ease-in-out` when an element is visible in the beginning, and is still visi
 
 <div data-insert-component="MotionExample" data-props="standard"></div>
 
-One exception to use `ease-in-out` is if the element leaves the view but stays near it, ready to reappear upon user action. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view.
+One exception to using `ease-in-out` is if the element leaves the view but stays near it, ready to reappear upon user action. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view.
 
 ## Motion Evaluation Checklist
 
@@ -90,7 +90,7 @@ One exception to use `ease-in-out` is if the element leaves the view but stays n
 </div>
 
 - Does it enhance the user experience?
-- What problem is motion solving?
+- What problem is your motion solving?
 
 </br>
 
