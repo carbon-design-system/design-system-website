@@ -3,6 +3,14 @@
   margin-bottom: 1rem;
   flex-wrap: wrap;
 
+  &-border {
+    display: inline-block;
+    width: 100%;
+    max-width: 60rem;
+    border: 1px solid #DFE3E6;
+    margin-bottom: 1rem;
+  }
+
   &.full-width .example {
     flex-basis: 100%;
     max-width: 100%;

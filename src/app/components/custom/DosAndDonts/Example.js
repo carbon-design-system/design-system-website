@@ -7,17 +7,29 @@ class Example extends Component {
     correct: PropTypes.bool,
     caption: PropTypes.string,
     text: PropTypes.string,
-  }
+  };
 
   render() {
-    const greenCheck = <Icon name="checkmark" description="checkmark" height="16px" width="16px" fill="#8CD211" />;
-    const redX = <Icon name="close" description="close" height="12px" width="12px" fill="#e71d32" />;
+    const greenCheck = (
+      <Icon
+        name="checkmark"
+        description="checkmark"
+        height="16px"
+        width="16px"
+        fill="#5AA700"
+      />
+    );
+    const redX = (
+      <Icon
+        name="close"
+        description="close"
+        height="12px"
+        width="12px"
+        fill="#E71D32"
+      />
+    );
 
     const icon = this.props.correct ? greenCheck : redX;
-    const fill = this.props.correct ? '#8CD211' : '#e71d32';
-    const divStyle = {
-      borderLeft: `10px solid ${fill}`,
-    };
 
     return (
       <div className="example">
@@ -25,7 +37,7 @@ class Example extends Component {
           {icon}
           {this.props.caption}
         </p>
-        <div className="example-text" style={divStyle}>
+        <div className="example-text">
           <p>"{this.props.text}"</p>
         </div>
       </div>
