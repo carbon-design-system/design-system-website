@@ -16,6 +16,7 @@ class DosAndDonts1 extends Component {
             text="The API will return a promise."
           />
         </div>
+        <span className="do-and-dont-border" />
         <div className="do-and-dont">
           <Example
             correct
