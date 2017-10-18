@@ -28,11 +28,7 @@
 
       h4 {
         white-space: nowrap;
-      }
-
-      .bx--btn {
-        margin-top: 1rem;
-        width: 100%;
+        padding-top: 1rem;
       }
 
       a {
@@ -52,10 +48,6 @@
         flex-basis: calc(50% - 3rem);
         max-width: 100%;
         margin-right: 3rem;
-
-        .bx--btn {
-          width: 15rem;
-        }
 
         a {
           margin-top: 0;
@@ -78,6 +70,22 @@
     height: 190px;
     padding: 2rem 1rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
+    min-width: 390px;
+    max-width: 630px;
+
+    &:hover {
+      color: $text-01;
+    }
+
+    @media all and (max-width: 1283px) {
+      width: 100%;
+    }
+
+    @media all and (max-width: 600px) {
+      min-width: 100%;
+      height: 220px;
+    }
   }
 
   &__tile-icon {
@@ -103,24 +111,5 @@
 
   &__tile-info p {
     font-size: 16px;
-  }
-}
-
-main[data-page='resources-undefined'] {
-  .page__divider-heading {
-    letter-spacing: 2px;
-    font-weight: 600;
-    max-width: 100% !important;
-    font-size: 1rem !important;
-    color: $brand-01 !important;
-    border-bottom: 2px solid $ui-03 !important;
-  }
-
-  .cheat-sheet {
-    margin-top: 0;
-
-    @include breakpoint('bp--sm--major') {
-      margin-top: 4rem;
-    }
   }
 }
