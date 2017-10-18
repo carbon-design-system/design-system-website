@@ -48,7 +48,7 @@ Motion should be fast enough to be invisible, but slow enough to be felt. When c
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.
 
-"Easing curves" describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero velocity giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each serve different purposes.
+"Easing curves" describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero, velocity, giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each serve different purposes.
 
 <div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
@@ -68,7 +68,7 @@ Use ease-in when removing elements from the view, such as closing a model, toast
 
 **Ease-in-out:** `cubic-bezier(0.2, 0, 0.38, 0.9)`
 
-Use `ease-in-out` when an element is visible in the beginning, and is still visible at the end of the motion. Tiles expanding and table rows sorting are good examples. The element does not completely enter or exit the view (the screen, or browser window), but simply becomes repositioned or transformed.
+Use `ease-in-out` when an element is visible in the beginning, and is still visible at the end of the motion. Tiles expanding and table rows sorting are good examples. The element does not completely enter or exit the view (the screen , or browser window), but simply becomes repositioned or transformed.
 
 <div data-insert-component="MotionExample" data-props="standard"></div>
 
