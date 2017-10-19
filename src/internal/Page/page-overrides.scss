@@ -98,3 +98,8 @@ main[data-page="getting-started-FAQ"] {
   }
 }
 
+main[data-page="components-code-pagination"] {
+  .bx--pagination {
+    min-width: 35rem;
+  }
+}
