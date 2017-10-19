@@ -5,7 +5,7 @@ variations:
   - Data Table (v2)
   data-table-v2-expandable:
   - Expandable Data Table (v2)
-  data-tabl-v2--pagination:
+  data-table-v2--pagination:
   - Data Table with Pagination (v2)
   data-table-v2--small:
   - Small Data Table (v2)

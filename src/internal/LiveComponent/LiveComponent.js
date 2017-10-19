@@ -70,9 +70,9 @@ class LiveComponent extends Component {
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
     } else if (
-      this.props.component === 'data-table' && variation === 'data-tabl-v2--pagination'
+      this.props.component === 'data-table' && variation === 'data-table-v2--pagination'
     ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-tabl-v2--pagination.html');
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
     } else if (
       this.props.component === 'data-table' && variation === 'data-table-v2--small'
     ) {
