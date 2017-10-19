@@ -10,7 +10,7 @@ variations:
   data-table-v2--small:
   - Small Data Table (v2)
   data-table:
-  - Data Table
+  - Data Table (v1)
   data-table--simple:
   - Simple Table
   toolbar:  

@@ -33,6 +33,7 @@ class LiveComponent extends Component {
         window.CarbonComponents.OverflowMenu.init();
         window.CarbonComponents.DataTable.init();
         window.CarbonComponents.Toolbar.init();
+        window.CarbonComponents.DataTableV2.init();
       } else {
         if (this.props.component === 'detail-page-header--with-tabs') {
           window.CarbonComponents.Tab.init();
@@ -60,6 +61,22 @@ class LiveComponent extends Component {
       this.props.component === 'detail-page-header--with-tabs'
     ) {
       htmlFile = require(`carbon-components/src/components/detail-page-header/${this.props.component}.html`);
+    } else if (
+      this.props.component === 'data-table' && variation === 'data-table-v2'
+    ) {
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
+    } else if (
+      this.props.component === 'data-table' && variation === 'data-table-v2-expandable'
+    ) {
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
+    } else if (
+      this.props.component === 'data-table' && variation === 'data-tabl-v2--pagination'
+    ) {
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-tabl-v2--pagination.html');
+    } else if (
+      this.props.component === 'data-table' && variation === 'data-table-v2--small'
+    ) {
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
     } else {
       htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`);
     }
