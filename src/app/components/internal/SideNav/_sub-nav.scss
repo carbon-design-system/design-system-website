@@ -10,21 +10,21 @@
   }
 
   .sub-nav__item {
-    @include font-size('16');
+    @include typescale('epsilon');
     text-transform: capitalize;
     margin-left: 0;
     padding: 0.875rem 0.875rem 0.875rem 2rem;
-    color: $color__blue-90;
+    color: $text-01;
     border-left: 4px solid transparent;
 
     @include breakpoint('620px') {
-      @include font-size('14');
+      @include typescale('zeta');
       padding: 0.5rem 0.5rem 0.5rem 2rem;
     }
 
     &:hover,
     &:focus {
-      color: $color__blue-51;
+      color: $brand-01;
     }
 
     &:focus {
@@ -43,7 +43,7 @@
 
       &:hover,
       &:focus {
-        color: $color__blue-51;
+        color: $brand-01;
       }
 
       &:focus {
@@ -53,8 +53,8 @@
     }
 
     &.selected {
-      border-left: 4px solid $color__blue-51;
-      color: $color__blue-51;
+      border-left: 4px solid $brand-01;
+      color: $brand-01;
 
       .sub-nav__item-link {
         font-weight: 600;
