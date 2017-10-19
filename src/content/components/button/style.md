@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE            | SCSS                   | HEX                    |
+| Attribute            | SCSS                   | HEX                    |
 |------------------|------------------------|------------------------|
 | Normal           | $brand-01              | #3d70b2                |
 | Primary:hover    | $brand-02              | #5596e6               |
@@ -45,13 +45,13 @@ _Primary, Secondary, and Ghost Button state examples_
 
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| PROPERTY  | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
+| Property  | Font-size (px/rem)     | Font-weight  |
 |-------------|------------------|--------------|
 | Button text | 14 / 0.875 | Bold / 700   |
 
 ## Structure
 
-| HEIGHT          | PX | REM |
+| Height          | PX | REM |
 |-----------------|----|-----|
 | Regular buttons | 40 | 2.5 |
 | Small buttons   | 32 | 2   |
@@ -70,7 +70,7 @@ _Stucture measurements for small and regular Primary Button | px / rem_
 
 A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
 
-| SPACING                 | PX | REM   |
+| Spacing                 | PX | REM   |
 |-------------------------|----|-------|
 | External: regular button| 16 | 1     |
 | Internal: regular button| 16 | 1     |

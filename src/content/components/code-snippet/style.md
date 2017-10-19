@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE                    | SCSS     | HEX     |
+| Attribute                    | SCSS     | HEX     |
 |--------------------------|----------|---------|
 | Code snippet: background | $field-01| #3d70b2 @ 10% |  
 | Code snippet: text       | $text-01 | #152935 |
@@ -10,13 +10,13 @@
 
 ## Typography
 
-| PROPERTY | FONT-FAMILY | FONT-SIZE (px/rem)  | FONT-WEIGHT  |
+| Property | FONT-FAMILY | Font-size (px/rem)  | Font-weight  |
 |----------|-------------|-------------|--------------|
 | Text     | Monospace   | 16 / 1 | Normal / 400 |
 
 ## Structure
 
-| PROPERTY          | PX  | REM   |
+| Property          | PX  | REM   |
 |-------------------|-----|-------|
 | Height: snippet   | 192 | 12    |
 | Height: terminal  | 56  | 3.5   |

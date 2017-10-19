@@ -19,7 +19,7 @@
 | Raised    | 2 | 	0 1px 2px 0 rgba(0,0,0,0.10);   |
 
 ## Structure
-| PROPERTY                    | PX | REM   |
+| Property                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height: minimum             | 64 | 4   |
 | Width                       | 128 | 8  |

@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE             | SCSS          | HEX      |
+| Attribute             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
 | Background        | $field-01     | #3d70b2 @ 10% |
 | Caret             | $brand-01     | #3d70b2   |
@@ -23,7 +23,7 @@ _Examples of default and new selection Select states_
 
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
 | Label    | 14 / 0.875 | Bold / 700   |
 | Label: inline select    | 14px / 0.875rem |  Normal / 400   |
@@ -32,7 +32,7 @@ Select text should be set in sentence case, with only the first word in a phrase
 
 ## Structure
 
-| PROPERTY                    | PX | REM   |
+| Property                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
 | Spacing: Label & field      | 10 | 0.625 |
@@ -60,7 +60,7 @@ _Examples of open, disabled, and help Select states_
 
 ### Small Select
 
-| PROPERTY                    | PX | REM   |
+| Property                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 24 | 1.5   |
 | Width                       | 56 | 3.5   |
@@ -82,7 +82,7 @@ _Examples of open and disabled Small Select states_
 
 ### Inline select
 
-| PROPERTY                    | PX | REM   |
+| Property                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 32 | 2     |
 | Internal spacing            | 10  | 0.625    |

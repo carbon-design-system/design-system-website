@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE                       | SCSS     | HEX       |
+| Attribute                       | SCSS     | HEX       |
 |-----------------------------|--------- |-----------|
 | Background                  | $ui-01   | #ffffff   |
 | Border                      | $ui-04   | #dfe3e6   |
@@ -18,7 +18,7 @@ _Example of a Data Table_
 
 Column labels should be in all caps. All other table text should be sentenced case.
 
-| PROPERTY      | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
+| Property      | Font-size (px/rem)     | Font-weight  |
 |---------------|------------------|--------------|
 | Title         | 23 / 1.4375 | Light / 300  |
 | Header        | 12 / 0.75   | Bold / 700   |
@@ -38,7 +38,7 @@ Tables are a configurable and customizable component. Designers can pick and cho
 
 The basic table style is the required base from which tables can be developed. Basic tables are composed of a header row followed by rows of data below. At a minimum, tables require three or more columns. Table row heights can be set to narrow or wide and be toggled between the two. Column widths can vary by content and only requires a minimum spacing between columns.
 
-| PROPERTY                | PX | REM  |
+| Property                | PX | REM  |
 |-------------------------|----|------|
 | Height: narrow          | 32 | 2    |
 | Height: wide            | 44 | 2.75 |
@@ -61,7 +61,7 @@ _Structure and spacing measurements for narrow and tall rows / Data Table | px /
 
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
-| SPACING            | PX   | REM   |
+| Spacing            | PX   | REM   |
 |--------------------|------|-------|
 | Title & table      | 16   | 1     |
 | Header & caret     |  8   | 0.5   |
@@ -82,7 +82,7 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 
 ### Toolbar
 
-| PROPERTY               | PX   | REM   |
+| Property               | PX   | REM   |
 |------------------------|------|-------|
 | Icon height            | 24   | 1.5   |
 | Spacing: icons         | 16   | 1     |

@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE      | SCSS      | HEX      |
+| Attribute      | SCSS      | HEX      |
 |----------  |----------|-----------|
 | Title      | $brand-01| #3d70b2   |
 | Slash      | $text-02 | #5a6872   |
@@ -11,7 +11,7 @@
 
 When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined.
 
-| PROPERTY | FONT-SIZE    | FONT-WEIGHT  |
+| Property | Font-size    | Font-weight  |
 |------------|-----------------|--------------|
 | Title      | 14 / 0.875 | Roman / 400  |
 | Dropdown text | 14 / 0.875 | Roman / 400  |
@@ -23,7 +23,7 @@ _Breadcrumb typography treatment example_
 
 The on-click dropdown should follow the [Overflow Menu](/components/overflow-menu) specs for sizing, padding, and interaction.
 
-| SPACING         | PX | REM |
+| Spacing         | PX | REM |
 |-----------------|----|-----|
 | Title & slash   | 16 | 1   |
 | Icon & dropdown | 8  | 0.5 |

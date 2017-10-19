@@ -104,6 +104,14 @@
     margin-top: 1rem;
   }
 
+  a.bx--btn--secondary {
+    border-color: $brand-01;
+
+    &:hover {
+      background: $brand-01;
+    }
+  }
+
   p code,
   li code {
     font-size: 0.875rem;
@@ -118,7 +126,7 @@
     margin: 0 0 1rem;
     width: 100%;
     max-width: 38rem;
-    border: 2px solid #f5f7fa;
+    border: 2px solid $ui-02;
 
     code {
       font-size: 0.875rem;
@@ -152,8 +160,7 @@
 
     thead {
       th {
-        font-size: rem(12px);
-        text-transform: capitalize;
+        @include typescale('zeta');
         font-weight: 600;
         text-align: left;
         line-height: 1.125;
@@ -165,10 +172,10 @@
 
     tbody {
       tr {
-        border-bottom: 1px solid $color__gray-1;
+        border-bottom: 1px solid $ui-04;
 
         td {
-          font-size: rem(14px);
+          @include typescale('zeta');
           padding: 1rem 3rem 1rem 0;
           line-height: 1.125;
 
@@ -187,7 +194,7 @@
 
   ul,
   ol {
-    @include font-size('16');
+    @include typescale('epsilon');
     @include font-smoothing;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
@@ -248,6 +255,10 @@
       margin: 0 !important;
     }
 
+    p {
+      margin-top: 1rem;
+    }
+
     &__overlay {
       position: absolute;
       top: 0;
@@ -258,8 +269,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background-color: rgba($color__blue-30, 0.8);
-      color: $color__white;
+      background-color: rgba($brand-01, 0.8);
+      color: $inverse-01;
       font-size: rem(12px);
       font-style: normal;
       cursor: pointer;
@@ -286,8 +297,8 @@
   }
 
   blockquote + p strong {
-    font-size: 1rem;
-    color: $color__blue-40;
+    @include typescale('epsilon');
+    color: $brand-01;
   }
 
   blockquote {

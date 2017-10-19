@@ -3,7 +3,7 @@ Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style)
 ## Structure
 The height of a bar varies based off of the value for that data increment.
 
-| PROPERTY             | PX | REM |
+| Property             | PX | REM |
 |----------------------|----|-----|
 | Bar width   			   | 16 |  1  |
 
@@ -11,7 +11,7 @@ The height of a bar varies based off of the value for that data increment.
 _Spacing examples for a Bar Graph | px / rem_
 
 
-| SPACING                   | PX | REM  |
+| Spacing                   | PX | REM  |
 |---------------------------|----|------|
 | 2 data sets               | 8  | .5   |
 | 3 data sets               | 4  | .25  |

@@ -12,7 +12,6 @@ import DosAndDonts4 from '../../custom/DosAndDonts/DosAndDonts4';
 import LayerTypes from '../../custom/LayerTypes';
 import LayerUsage from '../../custom/LayerUsage';
 import TypographyTable from '../../custom/TypographyTable';
-import BrandColors from '../../custom/BrandColors';
 import MotionExample from '../../custom/MotionExample';
 import MarkdownPage from '../MarkdownPage';
 import Video from '../../custom/Video';
@@ -106,7 +105,6 @@ class Page extends Component {
       LayerUsage,
       TypographyTable,
       MotionExample,
-      BrandColors,
       DosAndDonts1,
       DosAndDonts2,
       DosAndDonts3,

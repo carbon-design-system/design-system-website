@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE          | SCSS        | HEX     |
+| Attribute          | SCSS        | HEX     |
 |----------------|-------------|---------|
 | Icon           | $ui-05      | #8c9ba5 |
 | Background     | $ui-01      | #ffffff |
@@ -24,7 +24,7 @@ _Text and warning hover examples for Overflow Menu_
 
 Overflow Menu text should be set in set in sentence case with the first letter of each word capitalized.
 
-| PROPERTY | FONT-SIZE (px/rem)    | FONT-WEIGHT |
+| Property | Font-size (px/rem)    | Font-weight |
 |------------|-----------------|--------------|
 | Label      | 14 / 0.875 | Normal / 400 |
 
@@ -38,7 +38,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 
 The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [iconography](/style/iconography/library) library.
 
-| PROPERTY             | PX                      | REM   |
+| Property             | PX                      | REM   |
 |----------------------|-------------------------|-------|
 | Width                | 180                     | 11.25 |
 | Height               | Varies based on content |       |

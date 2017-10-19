@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE                       | SCSS      |  HEX    |
+| Attribute                       | SCSS      |  HEX    |
 |-----------------------------|-----------|---------|
 | Tab label: selected          | $brand-01 | #3d70b2 |
 | Tab border-bottom: selected | $brand-01 | #3d70b2 |
@@ -11,13 +11,13 @@
 
 Tab label should be set in sentence case, and should not exceed three words.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
 | Tab label | 14 / 0.875 | Bold / 700   |
 
 ## Structure
 
-| PROPERTY          | PX | REM |
+| Property          | PX | REM |
 |-------------------|----|-----|
 | Tab border-bottom | 2  | -   |
 | Spacing: tabs     | 48 | 3   |

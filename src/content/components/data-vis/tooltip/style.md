@@ -10,7 +10,7 @@ Note that the color value of top bar of the ___ tooltip and the side color bars 
 | Data increment label  | $text-02  | #5A6872  |
 
 ## Typography
-| PROPERTY         | FONT-SIZE (PX/REM) |  FONT-WEIGHT |
+| Property         | Font-size (PX/REM) |  Font-weight |
 |------------------|--------------------|--------------|
 | Quantitative data value label | 16/1  | Bold / 700   |
 | Additional data value label (qualitative) | 12/0.75   | Roman / 400   |

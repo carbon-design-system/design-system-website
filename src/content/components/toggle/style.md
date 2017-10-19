@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE                 | SCSS     | HEX      |
+| Attribute                 | SCSS     | HEX      |
 |-----------------------|----------|----------|
 | Inactive: fill        | $ui-01   | #ffffff  |
 | Inactive: border      | $ui-05   | #8c9ba5  |
@@ -18,13 +18,13 @@ _Examples of inactive, inactive hover, and active states for a Toggle_
 
 Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| PROPERTY | FONT-SIZE (px/rem)    | FONT-WEIGHT |
+| Property | Font-size (px/rem)    | Font-weight |
 |----------|-----------------|--------------|
 | Label    | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
-| PROPERTY          | PX | REM   |
+| Property          | PX | REM   |
 |-------------------|----|-------|
 | Height & width    | 24 | 1.5   |
 | Circle border     | 2  | 0.125 |

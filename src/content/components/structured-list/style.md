@@ -1,5 +1,5 @@
 ## Color
-| ATTRIBUTE    | SCSS          | HEX      |
+| Attribute    | SCSS          | HEX      |
 |----------|---------------|----------|
 | Text     | $text-01      | #152934  |
 | Table header: border-bottom | $brand-01 | #3d70b2 |
@@ -11,7 +11,7 @@
 ## Typography
 Structured List headers should be set in all caps, while all other text is set in sentence case. All typography is left aligned. **Line height** for Structured Lists should be set at 18px / 1.25rem.
 
-| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
+| Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
 | Header   | 12 / 0.75 | Bold / 700   |
 | Text: 1st column | 14 / 0.75 | Bold / 700   |
@@ -21,7 +21,7 @@ Structured List headers should be set in all caps, while all other text is set i
 Structured Lists by default are not accompanied by a border, but one may be added for stylistic purposes, and should be set at 1px.  
 
 
-| PROPERTY             | PX | REM  |
+| Property             | PX | REM  |
 |----------------------|----|------|
 | Width                | varies based on content and layout |   |
 | Spacing: content-right| 16 | 1    |

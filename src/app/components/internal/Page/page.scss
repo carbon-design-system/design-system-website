@@ -27,7 +27,7 @@ td {
     margin: 4rem 12.5% 0;
   }
 
-  a {
+  a:not(.bx--tile) {
     color: $brand-01;
   }
 
@@ -70,9 +70,8 @@ td {
   & > *:not(.component-example):not(.component-variation),
   & >  {
     .page__divider-heading {
-      font-size: 0.75rem;
+      @include typescale('zeta');
       font-weight: 600;
-      letter-spacing: 2px;
       width: 100%;
       padding-bottom: 1rem;
       border-bottom: 2px solid $brand-01;

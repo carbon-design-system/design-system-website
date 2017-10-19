@@ -2,7 +2,7 @@
 
 All steps that have already been completed are indicated by an outlined circle with a checkmark. The current step the user is on is indicated by a filled circle. Steps the user has not encountered yet, or future steps, are indicated by an outlined circle.
 
-| ATTRIBUTE                       | SCSS      | HEX     |
+| Attribute                       | SCSS      | HEX     |
 |---------------------------------|---------  |---------|
 | Label: current & completed      | $brand-01 | #3d70b2 |
 | Label: future step              | $text-02  | #5a6872 |
@@ -22,7 +22,7 @@ _Examples of current, completed, and future steps for Progress Indicator_
 
 Labels should be one to two words only, with a limit of 16 characters total per label. All labels should be set in sentence case.
 
-| PROPERTY                 | FONT-SIZE (px/rem)    | FONT-WEIGHT  |
+| Property                 | Font-size (px/rem)    | Font-weight  |
 |--------------------------|-----------------|--------------|
 | Current & completed step| 14 / 0.875 | Bold / 700   |
 | Future steps | 14 / 0.875 | Normal / 400 |
@@ -31,7 +31,7 @@ Labels should be one to two words only, with a limit of 16 characters total per 
 
 The checkmark icon can be found in the [iconography](/style/iconography/library) library.
 
-| PROPERTY                 | PX  | REM   |
+| Property                 | PX  | REM   |
 |--------------------------|-----|-------|
 | Circle                   | 24  | 1.5   |
 | Line weight              | 2   | -     |

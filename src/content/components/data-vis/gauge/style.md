@@ -10,7 +10,7 @@
 ## Typography
 Please note the total number should be left aligned with the used number.
 
-| PROPERTY            | FONT-SIZE (PX/REM)       | FONT-WEIGHT  |
+| Property            | Font-size (PX/REM)       | Font-weight  |
 |---------------------|------------------|--------------|
 | Small gauge: used   | 16 / 1     | Roman / 400  |
 | Small gauge: total  | 12 / 0.75   | Roman / 400  |
@@ -21,7 +21,7 @@ Please note the total number should be left aligned with the used number.
 
 
 ## Structure
-| PROPERTY              | PX  | REM |
+| Property              | PX  | REM |
 |-----------------------|-----|-----|
 | Small gauge           | 80  | 5   |
 | Medium gauge          | 120 | 7.5 |
