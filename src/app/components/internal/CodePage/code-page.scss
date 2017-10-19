@@ -34,10 +34,6 @@ main[data-page|=components-code]{
     margin-top: 1rem;
   }
 
-  table {
-    max-width: 45rem;
-  }
-
   table tr td:nth-child(2):not(:last-child) {
     white-space: nowrap;
   }

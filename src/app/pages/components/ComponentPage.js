@@ -38,7 +38,7 @@ class ComponentPage extends Component {
   render() {
     const { params } = this.props;
 
-    const currentComponent = params.name;
+    let currentComponent = params.name;
     if (currentComponent === 'overview') {
       return <OverviewPage />;
     }
