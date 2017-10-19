@@ -81,7 +81,11 @@ class CodePage extends Component {
   renderJavascriptContent = component => {
     let javascriptSection;
     try {
-      javascriptSection = require(`carbon-components/src/components/${component}/README.md`);
+      if (component === 'data-table') {
+        javascriptSection = require('carbon-components/src/components/data-table-v2/README.md');
+      } else {
+        javascriptSection = require(`carbon-components/src/components/${component}/README.md`);
+      }
     } catch (e) {
       javascriptSection = '';
     }
