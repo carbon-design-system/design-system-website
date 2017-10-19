@@ -15,8 +15,7 @@
     margin: 1rem 0 2rem;
 
     & > p {
-      font-style: italic;
-      color: $color__navy-gray-6;
+      color: $text-02;
     }
   }
 
@@ -82,12 +81,12 @@
   }
 
   p em {
-    font-size: rem(14px);
-    color: $color__navy-gray-6;
+    @include typescale('zeta');
+    color: $text-01;
   }
 
   > em {
-    color: $color__navy-gray-6;
+    color: $text-01;
   }
 
   p strong em {
@@ -110,7 +109,7 @@
     font-size: 0.875rem;
     padding: 0.25rem;
     background-color: $field-01;
-    color: $color__navy-gray-6;
+    color: $text-02;
     font-family: 'IBM Plex Mono', Courier, monospace;
     -webkit-font-smoothing: auto;
   }
@@ -153,12 +152,13 @@
 
     thead {
       th {
-        font-size: rem(14px);
+        font-size: rem(12px);
+        text-transform: capitalize;
         font-weight: 600;
         text-align: left;
         line-height: 1.125;
         padding: 1rem 3rem 1rem 0;
-        border-bottom: 2px solid $color__blue-40;
+        border-bottom: 2px solid $brand-01;
         white-space: nowrap;
       }
     }

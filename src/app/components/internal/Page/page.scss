@@ -34,7 +34,7 @@ td {
   .page__sub-heading {
     color: $brand-01;
     margin-top: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 0.2rem;
     font-size: 1rem;
@@ -45,7 +45,7 @@ td {
     width: 100%;
     padding-bottom: 1rem;
     border-bottom: 2px solid $brand-01;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: $text-01;
     margin-bottom: 3rem;
     max-width: rem(660px);
@@ -76,7 +76,7 @@ td {
       width: 100%;
       padding-bottom: 1rem;
       border-bottom: 2px solid $brand-01;
-      text-transform: uppercase;
+      text-transform: capitalize;
       color: $text-01;
       margin-bottom: 3rem;
       max-width: rem(660px);
