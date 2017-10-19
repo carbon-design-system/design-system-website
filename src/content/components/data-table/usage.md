@@ -1,65 +1,52 @@
-## Format
+## Basic Data Table
+The Data Table component is designed in a way for additional functionality to be added on to fit your team's needs.
 
-### Header row
+The basic Data Table is shipped with a base style, which includes:
 
-Use meaningful text to label the table data and provide clarity to the content below.
+* Borders
+* No zebra striping, row dividers instead.
+* No Pagination, Search, Table toolbar, or multi-select
 
-### Number of columns
+![basic data table](images/data-table-usage-1.png)
 
-For large sets of data, it is preferable to use rows instead of columns in order to guide the eye across the page. It is quicker and easier to scan down a single row rather than scan across multiple columns of related data.
+_Basic Data Table_
 
-### Zebra stripes
 
-Alternate colors on rows to increase readability. This also helps to guide the user through data in a table.
-
-## Interactions
-
-### Search
-
-Search functionality within a table follows [Small search](/components/search) conventions.
-
-### Sorting
-
-Improve table usability by making data sortable. Clickable headers enable users to sort table data up or down. The specific attribute being sorted is accompanied by a caret icon.
-
-![sorting in a data table](images/data-tables-usage-1.png)
-
-### Batch actions
-
-Batch actions are functions that may be performed on multiple items within a table. Use an [Overflow Menu](/components/overflow-menu) to present batch actions to the user. The Overflow Menu appears when the user clicks on the icon. If there is only one batch action available for the table data, that action should be styled as a [Small Button](/components/button) and live outside of the Overflow menu.
-
-![batch actions in overflow menu](images/data-tables-usage-2.png)
-_Batch actions in Overflow Menu_
-
-![batch action as small button](images/data-tables-usage-3.png)
-_One batch action as Small Button_
-
-### Inline actions
-
-Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [Overflow Menu](/components/overflow-menu) that contains actions related specifically to that table row.
-
-![inline table actions](images/data-tables-usage-4.png)
-
-### Expandable rows
-
-Expandable rows show minimal information at a high-level and a more detailed view nested within that row.
-
-![exapandable table row](images/data-tables-usage-5.png)
-
-## Additional content
-
-Depending on the type of data within a table, any of the options below may be used to load additional content. It is important to note that only one of these solutions should be implemented.
+## Additonal functionality
+The following can be added to the Data Table to increase its functionality.
 
 ### Pagination
+Pagination divides table data into separate pages. Pagination is accompanied by an option that enables the user to change the number of items per page. See the [Pagination](/components/Pagination) component for further guidelines.
 
-Pagination divides table data into separate pages. Pagination is accompanied by an option that enables the user to change the number of items per page. See the [Pagination](/components/pagination) component for further guidelines.
+![data table with pagination](images/data-table-usage-2.png)
 
-### Lazy load
+_Data Table with various Pagination methods_
 
-Lazy loading loads additional content as users scroll in their viewport.
 
-### Empty state
+### Search
+Search returns results based on matches. It is used to locate and display a set of results. Search functionality within a table follows [Small search](/components/search) conventions. Search should be open by default, and live below the table title.
 
-Inform the user in the case where there is no data to be displayed.
+![data table with search](images/data-table-usage-3.png)
+_Search on Data Tables_
 
-![table empty state](images/data-tables-usage-6.png)
+### Sorting
+Improve table usability by making data sortable. Clickable headers enable users to sort table data up or down. The specific attribute being sorted is accompanied by a caret icon. The caret will only appear on the column headers once that particular column is being sorted. You can see a demo of this on Carbon's [Codepen.](https://codepen.io/tjegan/pen/PjjyVN)
+
+
+### Table toolbar
+The table toolbar is reserved for global table actions such as table settings, complex filter, export, or editing table data. Additional options can be added if you have an icon to support that function. Icons should be 16x16 px (glyphs). We recommend using no more than 5 icons within the table toolbar.
+
+![Table toolbar](images/data-table-usage-6.png)
+_Table toolbar: Table settings_
+
+### Multi-select / Batch action
+Batch actions are functions that may be performed on multiple items within a table. Once the user selects more than one row from the table, the **batch action bar** appears at the top of the table, presenting the user with actions they can take. To exit or escape "batch action mode," the user can cancel out or deselect the items.  
+
+![Batch action mode](images/data-table-usage-7.png)
+_Batch action mode on Data Tables_
+
+### Inline actions
+Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [Overflow menu](/components/overflow-menu) that contains actions related specifically to that table row.
+
+![Inline action on Data Table](images/data-table-usage-8.png)
+_Inline actions on Data Tables_
