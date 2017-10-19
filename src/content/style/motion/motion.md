@@ -56,13 +56,13 @@ The beginning and end of a motion are called "in" and "out." An `ease-in` motion
 
 **Ease-out:** `cubic-bezier(0, 0, 0.38, 0.9)`
 
-Use ease-out when adding elements to the view (e.g. entrance of model, toaster), or changing states as a result of users' input for micro-interactions (e.g. dropdown opening or toggle). An element should appear energetically and decelerate as it arrives at its final state.
+Use `ease-out` when adding elements to the view, such as entrance of model and toaster, or changing states as a result of users' input for micro-interactions, such as dropdown opening or toggle. An element should appear energetically and decelerate as it arrives at its final state.
 
 <div data-insert-component="MotionExample" data-props="ease-out"></div>
 
 **Ease-in:** `cubic-bezier(0.2, 0, 1, 0.9)`
 
-Use ease-in when removing elements from the view, such as closing a model, toaster. The element should speed up as it exits from view, implying that it's not coming back.
+Use `ease-in` when removing elements from the view, such as closing a model, toaster. The element should speed up as it exits from view, implying that it's not coming back.
 
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
