@@ -66,7 +66,7 @@
   }
 
   h4 {
-    color: $color__blue-90;
+    color: $text-01;
     padding: 4rem 0 1rem;
     font-weight: 600;
     font-size: 1rem;
@@ -92,7 +92,7 @@
 
   p strong em {
     font-size: 1.125rem;
-    color: $color__blue-40;
+    color: $brand-01;
     font-style: normal;
   }
 
@@ -277,14 +277,6 @@
         opacity: 1;
       }
     }
-
-    // &:hover,
-    // &:focus {
-
-    //   .image-overlay__overlay {
-    //     opacity: 1;
-    //   }
-    // }
   }
 
   blockquote p img {
