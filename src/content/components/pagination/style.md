@@ -6,6 +6,9 @@
 | Text           | $text-02| #5a6872     |
 | Border         | $ui-04  | #dfe3e6     |
 | Chevron        | $ui-05  | #8c9ba5     |
+| Chevron: disabled | $ui-05 @ 50%  | #8c9ba5 |
+| Chevron: hover  | $brand-01  | #3d70b2    |
+| Caret          | $brand-01  | #3d70b2    |
 
 ## Typography
 
@@ -17,17 +20,15 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 ## Structure
 
-The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 10px by 5px.
+The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
 
 | Property                           | PX        | REM   |
 |------------------------------------|-----------|-------|
-| Height                             | 40        | 2.5   |
+| Height                             | 40      | 2.5   |
 | Width                              | Varies based on content and layout | |
 | Border                             | 1         | -     |
-| Spacing: left & right              | 16        | 1     |
-| Spacing: small select & items text | 10        | 0.625  |
-| Spacing: page text & chevron       | 16        | 1     |
-| Spacing: chevron & page number     | 30        | 1.875 |
+| Internal spacing: left             | 24        | 1.5   |
+| Spacing between elements           | 16        | 1     |
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 _Structure and spacing measurements for Pagination | px / rem_
