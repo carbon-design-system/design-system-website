@@ -48,6 +48,8 @@ class CodePage extends Component {
       htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
     } else if (parent === 'date-picker' && variation === 'time-picker') {
       htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
+    } else if (parent === 'data-table' && variation === 'data-table-v2') {
+      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html')
     } else {
       htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
     }
