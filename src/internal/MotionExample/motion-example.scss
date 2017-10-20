@@ -12,7 +12,7 @@
   &__element {
     height: 48px;
     width: 48px;
-    background: $color__blue-30;
+    background: $color__blue-50;
   }
 
   &__track {
@@ -23,7 +23,7 @@
   &__overlay {
     height: 100%;
     width: 100%;
-    background: hsla(255, 0%, 0%, .4);
+    background: hsla(255, 0%, 0%, .8);
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
+    transition: opacity 175ms cubic-bezier(.2, .2, .38, 0.9);
 
     &--hover,
     &:focus {
@@ -49,8 +49,8 @@
     svg {
       pointer-events: none;
       fill: $color__white;
-      height: rem(48px);
-      width: rem(48px);
+      height: rem(64px);
+      width: rem(64px);
 
       g rect {
         fill: $color__white;
@@ -118,46 +118,48 @@ $s2: $w2 + $s * 2;
 $r4: $s2 + $r;
 $w4: $s2 + $w;
 
-@keyframes right {
-  0% { transform: translateX(0); }
-  #{$s}% { transform: translateX(0); }
-  #{$r2}% { transform: translateX(576px); }
-  #{$s2}% { transform: translateX(576px); }
-  #{$r4}% { transform: translateX(0); }
-  100% { transform: translateX(0); }
-}
+// @keyframes right {
+//   0% { transform: translateX(0); }
+//   #{$s}% { transform: translateX(0); }
+//   #{$r2}% { transform: translateX(576px); }
+//   #{$s2}% { transform: translateX(576px); }
+//   #{$r4}% { transform: translateX(0); }
+//   100% { transform: translateX(0); }
+// }
+//
+// @keyframes wrong {
+//   0% { transform: translateX(0); }
+//   #{$s}% { transform: translateX(0); }
+//   #{$w2}% { transform: translateX(576px); }
+//   #{$s2}% { transform: translateX(576px); }
+//   #{$w4}% { transform: translateX(0); }
+//   100% { transform: translateX(0); }
+// }
 
-@keyframes wrong {
-  0% { transform: translateX(0); }
-  #{$s}% { transform: translateX(0); }
-  #{$w2}% { transform: translateX(576px); }
-  #{$s2}% { transform: translateX(576px); }
-  #{$w4}% { transform: translateX(0); }
-  100% { transform: translateX(0); }
-}
+// Removed duration example
 
-.duration--correct {
-  animation: right $demo-duration linear;
-  animation-iteration-count: infinite;
-  animation-play-state: inherit;
-}
-
-.duration--incorrect {
-  animation: wrong $demo-duration linear;
-  animation-iteration-count: infinite;
-  animation-play-state: inherit;
-}
+// .duration--correct {
+//   animation: right $demo-duration linear;
+//   animation-iteration-count: infinite;
+//   animation-play-state: inherit;
+// }
+//
+// .duration--incorrect {
+//   animation: wrong $demo-duration linear;
+//   animation-iteration-count: infinite;
+//   animation-play-state: inherit;
+// }
 
 @keyframes easing {
   0% { transform: translateX(0); }
   #{$s}% {
     transform: translateX(0);
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+    animation-timing-function: cubic-bezier(.2, .2, .38, 0.9);
   }
   #{$w2}% { transform: translateX(576px); }
   #{$s2}% {
     transform: translateX(576px);
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+    animation-timing-function: cubic-bezier(.2, .2, .38, 0.9);
   }
   #{$w4}% { transform: translateX(0); }
   100% { transform: translateX(0); }
@@ -185,28 +187,57 @@ $w4: $s2 + $w;
 }
 
 .motion-example-easing--container {
-  width: rem(416px);
+  //width: rem(464px); //this should not be fixed size
 }
+
+
 
 .motion-example__easing-demo {
   position: relative;
+  flex-direction: row;
+  display: flex;
+  //justify-content: space-around;
   background: #f5f7fa;
 
   .motion-example__track {
-    padding: 1rem;
+    // width: 320px;
     width: 100%;
     margin: 0;
-    border-bottom: 0;
+    margin-right: 2rem;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // background-color: white;
   }
 
-  .motion-example__element {
-    height: rem(24px);
-    width: rem(24px);
-    background: $color__blue-30;
-    animation: easing-demo-element $demo-duration linear;
+  .motion-example__standard {
+    height: rem(48px);
+    width: rem(48px);
+    background: $color__blue-50;
+    animation: easing-demo-element $demo-duration cubic-bezier(.2, 0.2, .38, 0.9);
     animation-iteration-count: infinite;
     animation-play-state: inherit;
   }
+
+  .motion-example__out {
+    height: rem(48px);
+    width: rem(48px);
+    background: $color__blue-50;
+    animation: easing-demo-element $demo-duration cubic-bezier(0, 0, .38, .9);
+    animation-iteration-count: infinite;
+    animation-play-state: inherit;
+  }
+
+  .motion-example__in {
+    height: rem(48px);
+    width: rem(48px);
+    background: $color__blue-50;
+    animation: easing-demo-element $demo-duration cubic-bezier(.2, 0, 1, .9);
+    animation-iteration-count: infinite;
+    animation-play-state: inherit;
+  }
+
 }
 
 .motion-example__curve {
@@ -221,87 +252,90 @@ $w4: $s2 + $w;
   svg > g:first-child > path {
     stroke: $color__navy-gray-7;
     stroke-width: 1;
+    stroke-linecap: round;
   }
 
   svg > g:last-child > path {
     stroke: $color__blue-30;
-    stroke-width: 6;
+    stroke-width: 4;
+    stroke-linecap: round;
     animation-iteration-count: infinite;
     animation-play-state: inherit;
   }
 }
 
+
+
 @keyframes easing-demo-element {
-  0% { transform: translateX(0); }
+  0% { transform: translateY(252px); }
   #{$s}% {
-    transform: translateX(0);
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+    transform: translateY(252px);
+    //animation-timing-function: cubic-bezier(.2, 0.2, .38, 0.9);
   }
-  #{$w2}% { transform: translateX(264px); }
+  #{$w2}% { transform: translateY(20px); }
   #{$s2}% {
-    transform: translateX(264px);
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
+    transform: translateY(20px);
+    //animation-timing-function: cubic-bezier(.2, 0.2, .38, 0.9);
   }
-  #{$w4}% { transform: translateX(0); }
-  100% { transform: translateX(0); }
+  #{$w4}% { transform: translateY(252px); }
+  100% { transform: translateY(252px); }
 }
 
-@keyframes stroke-fill-standard {
-  0% { stroke-dashoffset: -460;}
-  #{$s}% {
-    stroke-dashoffset: -460;
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
-   }
-  #{$w2}% { stroke-dashoffset: 0;}
-  #{$s2}% {
-    stroke-dashoffset: 0;
-    animation-timing-function: cubic-bezier(.5, 0, .1, 1);
-  }
-  #{$w4}% { stroke-dashoffset: -460;}
-  100% { stroke-dashoffset: -460;}
-}
 
-@keyframes stroke-fill-out {
-  0% { stroke-dashoffset: -456;}
-  #{$s}% {
-    stroke-dashoffset: -456;
-    animation-timing-function: cubic-bezier(0, 0, .25, 1);
-   }
-  #{$w2}% { stroke-dashoffset: 0;}
-  #{$s2}% {
-    stroke-dashoffset: 0;
-    animation-timing-function: cubic-bezier(0, 0, .25, 1);
+@keyframes stroke-fill {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 1;
   }
-  #{$w4}% { stroke-dashoffset: -456;}
-  100% { stroke-dashoffset: -456;}
-}
-
-@keyframes stroke-fill-in {
-  0% { stroke-dashoffset: -429;}
   #{$s}% {
-    stroke-dashoffset: -429;
-    animation-timing-function: cubic-bezier(.25, 0, 1, 1);
+    stroke-dashoffset: 1000;
+    opacity: 1;
    }
-  #{$w2}% { stroke-dashoffset: 0;}
-  #{$s2}% {
-    stroke-dashoffset: 0;
-    animation-timing-function: cubic-bezier(.25, 0, 1, 1);
+  #{$w2}% {
+    stroke-dashoffset: 500;
+    opacity: 1;
   }
-  #{$w4}% { stroke-dashoffset: -429;}
-  100% { stroke-dashoffset: -429;}
+  #{$w2+5}% {
+    stroke-dashoffset: 500;
+    opacity: 0;
+  }
+  #{$w2+6}% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  #{$s2}% {
+    stroke-dashoffset: 1000;
+    opacity: 1;
+  }
+  #{$w4}% {
+    stroke-dashoffset: 500;
+    opacity: 1;
+  }
+  #{$w4+5}% {
+    stroke-dashoffset: 500;
+    opacity: 0;
+  }
+  #{$w4+6}% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+    opacity: 1;
+  }
 }
 
 .standard {
-  animation: stroke-fill-standard $demo-duration linear;
+  animation: stroke-fill $demo-duration linear;
   animation-delay: -$demo-duration + .01;
 }
 
 .ease-out {
-  animation: stroke-fill-out $demo-duration linear;
+  animation: stroke-fill $demo-duration linear;
   animation-delay: -$demo-duration + .01;
 }
 
 .ease-in {
-  animation: stroke-fill-in $demo-duration linear;
+  animation: stroke-fill $demo-duration linear;
   animation-delay: -$demo-duration + .01;
 }

@@ -52,3 +52,11 @@ The height of an Overflow Menu is determined by the amount of content in the men
 ![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)
 
 _Structure and spacing measurements for Overflow Menu | px / rem_
+
+## Motion
+
+| Class         | Easing        | Duration |
+| ------------- | --------------| ---------|
+| .bx--overflow-menu-options         | $bx--ease-in  | dynamic based on the size of menu |
+| .bx--overflow-menu-options__option | $bx--ease-in  | dynamic based on the size of menu |
+| .bx--overflow-menu-options--open   | $bx--ease-out | dynamic based on the size of menu |

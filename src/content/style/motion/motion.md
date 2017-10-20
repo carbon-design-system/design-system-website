@@ -1,61 +1,156 @@
-## Principles
+**_Motion_ brings your work to life. It guides you forward faster—from here to there, now to next, start to finish—towards progress. Purposeful, responsive, and precise motion creates productive interactions for the user.**
 
-Motion brings personality, tone, rhythm, and purpose to otherwise static objects. When used properly, UI motion should feel like a well choreographed dance, with all of the elements acting and reacting to one another in sync. Start with a clear objective, layering in movements that mimic reality and guide the user through an interface.
+## Character
 
-### Purposeful
+### Energetic
 
-Motion within an experience should be meaningful and intentional. It is used to establish hierarchy and draw the user’s attention to essential elements, giving them an understanding of an object’s role within the design. In order to convey this, the motion needs to be quick, direct, and precise.
+Motion feels alive, presenting information with vigor and vibrancy. Each movement expresses enthusiasm as it brings users closer to their goals.  
 
-### Familiar
+### Rhythmic
 
-Motion design should mirror movements we encounter in the physical world around us. Mimicking the expected behavior of objects from reality creates repetition and consistency, which enables users to anticipate what comes next. Providing motion feedback can help guide the user’s workflow, creating a clear path towards their end goal.
+Elements work together in a steady rhythm and pace. Careful choreography balances small and sweeping movements to orient and guide users in a flow.  
 
-### Unobtrusive
+### Sensitive
 
-Motion should be used with discretion—a little bit goes a long way. When applied properly, motion goes unnoticed. If a motion feels like it is calling attention to itself, tone it down! Subtlety ensures that the user won’t be distracted and allows for a cohesive motion experience across components.
+Motion acts with awareness to create a two-way conversation. It anticipates needs and provides subtle signals, helping users respond to changing conditions.
 
 ## Guidelines
 
-### Duration
+### Provide value
 
-Movement should be slow enough that the user can recognize what's happening, but fast enough that they are never waiting. The magnitude of change in an animation and its importance combine to determine its duration. Most animations in our component library last between 100 and 300 milliseconds.
+Before applying motion, always ask: is this motion adding value? Will it orient, guide, or empower people to advance their work? Take time to articulate key moments in the interface where applying animation could enhance or augment the experience.
 
-<div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
+Examples of opportunities for purposeful UI motion:
+
+- give feedback, such as hover states, active states
+- component behaviors, such as opening a drop-down menu
+- solutions to a UX need, such as reducing cognitive load with progressive disclosure
+- provide guidance, such as revealing a call to action button last to draw users' attention
+
+### Dynamic duration
+
+Motion should be fast enough to be invisible, but slow enough to be felt. When calculating the duration of your motion, consider the following factors:
+
+- larger magnitude of motion needs a longer duration. For example, a dropdown with 10 options needs a slightly longer time to open than a dropdown with 2 options.
+- an important or unexpected change deserves a longer duration than expected changes. An error alert, or system message should take its time to enter, making sure to draw user's attention to it.
+- allow for larger distance or longer duration on mobile to make it more perceivable. A 2px position movement  might look sleek on a large screen, but hardly visible on mobile. This is due to the higher pixel density and that content on smaller screens have to battle the more dominating environmental distractions.
+
+<!-- <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div> -->
 
 | TYPE                     | DURATION  |
-|--------------------------|-----------|
-| Buttons/small components | 100-200ms |
-| Alerts/table reorder     | 250-300ms |
-| Panels/modals            | 300-400ms |
-| Page transitions         | 500-700ms |
+| -------------------------| ----------|
+| Buttons/small components | 60-100ms  |
+| Alerts/table reorder     | 100-140ms |
+| Panels/modals            | 110-200ms |
+| Page transitions         | 200-500ms |
 
-### Easing
+### Precise easing
 
-Strictly linear movement appears strange to the human eye. An animation should accelerate and decelerate smoothly throughout its duration to appear as natural as possible.
+Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.
+
+"Easing curves" describe the precise amount of accelerations in motion. Our easing curves start with a small, but non-zero velocity giving an energetic, crisp feel to the behaviors of the elements. There are three easing curves, `ease-in`, `ease-out`, and `ease-in-out`, each serve different purposes.
 
 <div data-insert-component="MotionExample" data-props="easing,Easing,No-Easing"></div>
 
-There are three specific easing curves: standard, ease-out, and ease-in.
+The beginning and end of a motion are called "in" and "out." An `ease-in` motion will start slowly and accelerate while an `ease-out` motion slows down to its final position. An `ease-in-out` motion combines both, featuring a slow start and a slow finish.
 
-You can think of “in” and “out” as referring to the side of the curve where more time will be spent. So an ease-out will slow down into it's final position. More time is dedicated to the end of the curve or the "out".
+**Ease-out:** `cubic-bezier(0, 0, 0.38, 0.9)`
 
-**Standard:** cubic-bezier(0.5, 0, 0.1, 1)
-The standard cubic-bezier is used for the majority of animations. Especially when extra context is needed or when an element is removed from the screen but easily accessible (i.e. slide out navigation panel). Acceleration and deceleration occur asymmetrically to feel natural. This means that more emphasis is placed on the end of the curve than at the beginning. In most cases, a user will need greater easing at the end of a movement to allow their eye to register the new state of the element.
-
-<div data-insert-component="MotionExample" data-props="standard"></div>
-
-**Ease-out:** cubic-bezier(0, 0, 0.25, 1)
-The ease-out cubic-bezier is used for adding elements to the stage or changing on-screen states at a users' input.
-Ease-out is a much more dramatic curve because it is used for moving elements onto the stage. In which case, the object will slowly come to rest allowing the user to adjust to its arrival.
+Use `ease-out` when adding elements to the view, such as entrance of model and toaster, or changing states as a result of users' input for micro-interactions, such as dropdown opening or toggle. An element should appear energetically and decelerate as it arrives at its final state.
 
 <div data-insert-component="MotionExample" data-props="ease-out"></div>
 
-**Ease-in:** cubic-bezier(0.25, 0, 1, 1)
-The ease-in cubic-bezier is used primarily for removing elements from the screen or stage.
-Ease-in does not need as much easing since it is primarily used for objects exiting the stage. Therefore, slow it slightly to allow the user to recognize that it is exiting before speeds out of view.
+**Ease-in:** `cubic-bezier(0.2, 0, 1, 0.9)`
+
+Use `ease-in` when removing elements from the view, such as closing a model, toaster. The element should speed up as it exits from view, implying that it's not coming back.
 
 <div data-insert-component="MotionExample" data-props="ease-in"></div>
 
-### Properties
+**Ease-in-out:** `cubic-bezier(0.2, 0, 0.38, 0.9)`
 
-The reality of the web is that <a href="https://csstriggers.com/" target=blank>some properties</a> are better to animate than others since some properties trigger more work for the browser than others. With a few exceptions, animations should be created by making changes to the transform and opacity properties.
+Use `ease-in-out` when an element is visible in the beginning, and is still visible at the end of the motion. Tiles expanding and table rows sorting are good examples. The element does not completely enter or exit the view (the screen or browser window), but simply becomes repositioned or transformed.
+
+<div data-insert-component="MotionExample" data-props="standard"></div>
+
+One exception to using `ease-in-out` is if the element leaves the view but stays near it, ready to reappear upon user action. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view.
+
+## Motion Evaluation Checklist
+
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-1" class="bx--checkbox-label">
+    <input id="bx--checkbox-1" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **purposeful**?</p>
+  </label>
+</div>
+
+- Does it enhance the user experience?
+- What problem is your motion solving?
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-2" class="bx--checkbox-label">
+    <input id="bx--checkbox-2" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **responsive**?</p>
+  </label>
+</div>
+
+- Do important user actions receive immediate feedback that's seen and felt?
+- Do my micro-interactions use `ease-out` on user input?
+- Do my micro-interactions fall within a static duration ranging from 60 - 100ms?
+- If there are large, or full screen, transitions in your product, are some elements continuous to guide the user?
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <label for="bx--checkbox-3" class="bx--checkbox-label">
+    <input id="bx--checkbox-3" class="bx--checkbox" type="checkbox" value="yellow" name="checkbox">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **meticulous**?</p>
+  </label>
+</div>
+
+- Did you use the appropriate easing curves?
+- Is each motion individually considered and choreographed across elements?
+- Are larger elements and motions on smaller screens taking more time than on larger screens?
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper">
+  <input id="bx--checkbox-4" class="bx--checkbox" type="checkbox" value="red" name="checkbox">
+  <label for="bx--checkbox-4" class="bx--checkbox-label">
+    <span class="bx--checkbox-appearance">
+      <svg class="bx--checkbox-checkmark" width="12" height="9" viewBox="0 0 12 9" fill-rule="evenodd">
+        <path d="M4.1 6.1L1.4 3.4 0 4.9 4.1 9l7.6-7.6L10.3 0z"></path>
+      </svg>
+    </span>
+    <p>Is your motion **unobtrusive**?</p>
+  </label>
+</div>
+
+- The best interface motion may go unnoticed, because motion must not distract the user from their tasks. Is your motion frequently noticed by the average users? If so consider removing it, or minimizing it.
+
+</br>
+
+<div class="bx--form-item bx--checkbox-wrapper"></div> <!-- somehow this line is needed for proper spacing -->
+
+
+<!-- ## Tools
+
+**<a href="https://ibm.github.io/motion/" target="_blank">Motion Calculator</a>**
+Use this tool to generate accurate IBM motion for your design. -->

@@ -39,3 +39,14 @@ Dropdowns have two states, open and closed. An open and closed Dropdown should b
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 _Structure and spacing measurements for Dropdown | px / rem_
+
+
+## Motion
+
+| CLASS          | EASING             | DURATION |
+| ------------------------ | ----------------| -----------|
+| .bx--dropdown            | $bx--ease-in   | dynamic based on the size of menu |
+| .bx--dropdown--open      | $bx--ease-out | dynamic based on the size of menu |
+| .bx--dropdown-list       | $bx--standard-easing | 144ms  |
+| .bx--dropdown-item       | $bx--standard-easing | 144ms  |
+| .bx--dropdown__arrow     | $bx--standard-easing | 150ms  |
