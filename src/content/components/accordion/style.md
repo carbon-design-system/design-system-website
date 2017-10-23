@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE          | SCSS       | HEX        |
+| Attribute         | Scss       | Hex        |
 |----------------|------------|------------|
 | Label          | $text-01   |  #152935   |
 | Body           | $text-01   |  #152935   |
@@ -12,7 +12,7 @@
 
 All Accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
 
-| PROPERTY   | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
+| Property   | Font-size (px/rem)     | Font-weight  |
 |------------|-----------------|--------------|
 | Label      | 16 / 1     | Normal / 400 |
 | Body       | 14 / 0.875 | Normal / 400 |
@@ -21,7 +21,7 @@ All Accordion labels are set in sentence case and should not exceed three words.
 
 There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon can be found on the [iconography](/style/iconography/library) library page.
 
-| HEIGHT       | PX | REM   |
+| Height       | PX | Rem   |
 |--------------|----|-------|
 | Row          | 40 | 2.5   |
 | Chevron      | 10 | 0.635 |
@@ -31,7 +31,7 @@ There is no limit to the height of an open row, however, the padding specs below
 
 Avoid having any text within 16px / 1rem of the Accordion's sides. Additionally, include padding between labels, body copy, and separation lines to provide breathing room between elements.
 
-| SPACING              | PX | REM |
+| Spacing              | PX | Rem |
 |----------------------|----|-----|
 | Chevron & label      | 16 | 1   |
 | Content & right edge | 8  | 0.5 |
