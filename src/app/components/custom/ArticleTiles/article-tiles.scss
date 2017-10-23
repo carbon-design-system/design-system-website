@@ -1,0 +1,28 @@
+.faq__tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+.faq__tile {
+  // width: 50%;
+  flex-basis: calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1rem 0;
+  padding: 0;
+}
+
+.faq__tile img {
+  width: 100%;
+  margin: 0;
+}
+
+.faq__tile-info {
+  padding: 1rem;
+
+  p {
+    font-weight: 300;
+    font-size: rem(20px);
+  }
+}

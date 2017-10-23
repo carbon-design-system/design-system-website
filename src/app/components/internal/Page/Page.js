@@ -17,6 +17,8 @@ import MotionExample from '../../custom/MotionExample';
 import MarkdownPage from '../MarkdownPage';
 import Video from '../../custom/Video';
 import TypeStylesTable from '../../custom/TypeStylesTable';
+import FeaturedTiles from '../../custom/FeaturedTiles';
+import ArticleTiles from '../../custom/ArticleTiles';
 
 class Page extends Component {
   static propTypes = {
@@ -111,6 +113,8 @@ class Page extends Component {
       DosAndDonts4,
       Video,
       TypeStylesTable,
+      FeaturedTiles,
+      ArticleTiles,
     };
 
     const insertComponent = [
@@ -148,12 +152,7 @@ class Page extends Component {
         );
       } else if (comp === 'Video') {
         const videoProp = component.dataset.props;
-        ReactDOM.render(
-          <NewComponent
-            videoLink={videoProp}
-          />,
-          component
-        );
+        ReactDOM.render(<NewComponent videoLink={videoProp} />, component);
       } else {
         ReactDOM.render(<NewComponent />, component);
       }
