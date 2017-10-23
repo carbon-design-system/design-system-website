@@ -19,9 +19,9 @@ TERM | DEFINITION
 **Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes.
 
 
-## Carbon theme
+## IBM Cloud theme
 
-The Carbon Design System has a default theme which is based off of the IBM Bluemix UI and IBM Design Language. When `carbon-components` is downloaded and installed, they are preset to use the default theme.
+The Carbon Design System has a default theme which is based off of the IBM Cloud UI and IBM Design Language. When `carbon-components` is downloaded and installed, they are preset to use the default theme.
 
 The default theme acts as a starting point; from there designers and developers only need to define how their own components and styles deviate from the default. A theme can change all of the values or as little as only one. Those different values are then packaged into a new theme which when called will override the values of the default.
 

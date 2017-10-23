@@ -37,14 +37,6 @@ VARIABLE | ROLE/S | VALUE
 **support-02** | Success | #5aa700
 **support-03** | Warning | #efc100
 **support-04** | Information | #5aaafa
-**nav-01** | Super global header background | #0f212e
-**nav-02** | Global header background | #152934
-**nav-03** | Header id - services | #ba8ff7
-**nav-04** | Left nav id - services | #734098
-**nav-05** | Header id - application | #00b4a0
-**nav-06** | Left nav id - application | #008571
-**nav-07** | Header id - infrastructure | #5aaafa
-**nav-08** | Left nav id - infrastructure | #3d70b2
 
 ## Color contrast | WCAG AA standards
 
