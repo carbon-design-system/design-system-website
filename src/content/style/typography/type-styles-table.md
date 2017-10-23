@@ -16,7 +16,7 @@
 
 |Other styles   |Spec                |
 |---------------|--------------------|
+|p - 16        |**p** <br /> font-size: 16px (1rem) <br /> font-weight: Regular (400) <br /> line-height: 24px (1.5) <br /> p|
 |Caption - 12  |**Caption** <br /> font-size: 12px (0.75rem) <br /> font-weight: Regular (400) <br /> line-height: 18px (1.5) <br /> <span>.bx--type-caption</span>|
 |Legal - 11    |**Legal** <br /> font-size: 11px (0.6875rem) <br /> font-weight: Regular (400) <br /> line-height: 17px (1.5) <br /> <span>.bx--type-legal</span>|
-|p - 16        |**p** <br /> font-size: 16px (1rem) <br /> font-weight: Regular (400) <br /> line-height: 24px (1.5) <br /> p|
 
