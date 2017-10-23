@@ -151,6 +151,22 @@ const routes = {
           ],
         },
         {
+          path: '/style/typography',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/style/typography/overview'),
+          },
+          childRoutes: [
+            {
+              path: '/style/:name/:page',
+              getComponent(location, cb) {
+                import('./app/pages/style/Style')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/style/:name',
           getComponent(location, cb) {
             import('./app/pages/style/Style')

@@ -8,6 +8,7 @@ import Colors from './Colors';
 import Iconography from './Iconography';
 import Layer from './Layer';
 import Grid from './Grid';
+import Typography from './Typography';
 
 class Style extends React.Component {
   static propTypes = {
@@ -30,6 +31,8 @@ class Style extends React.Component {
       content = <Iconography currentPage={paramsPage} />;
     } else if (paramsName === 'grid') {
       content = <Grid currentPage={paramsPage} />;
+    } else if (paramsName === 'typography') {
+      content = <Typography currentPage={paramsPage} />;
     } else {
       content = (
         <MarkdownPage content={require(`../../../content/style/${paramsName}/${paramsName}.md`)} />

@@ -16,6 +16,7 @@ import BrandColors from '../../custom/BrandColors';
 import MotionExample from '../../custom/MotionExample';
 import MarkdownPage from '../MarkdownPage';
 import Video from '../../custom/Video';
+import TypeStylesTable from '../../custom/TypeStylesTable';
 
 class Page extends Component {
   static propTypes = {
@@ -109,6 +110,7 @@ class Page extends Component {
       DosAndDonts3,
       DosAndDonts4,
       Video,
+      TypeStylesTable,
     };
 
     const insertComponent = [
