@@ -17,7 +17,7 @@ class FeaturedTiles extends Component {
             <img src={articleOne} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <p>Smashing Magazine's “Design Systems” book</p>
+            <h5>Smashing Magazine's “Design Systems” book</h5>
           </div>
         </ClickableTile>
 
@@ -29,7 +29,7 @@ class FeaturedTiles extends Component {
             <img src={articleTwo} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <p>Winter 2017 HOW In-House Design Award Winner</p>
+            <h5>Winter 2017 HOW In-House Design Award Winner</h5>
           </div>
         </ClickableTile>
 
@@ -41,7 +41,7 @@ class FeaturedTiles extends Component {
             <img src={articleThree} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <p>The Path to Design System Maturity</p>
+            <h5>The Path to Design System Maturity</h5>
           </div>
         </ClickableTile>
       </div>

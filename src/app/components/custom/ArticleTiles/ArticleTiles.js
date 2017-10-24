@@ -10,13 +10,13 @@ class ArticleTiles extends Component {
       <div className="faq__tiles">
         <ClickableTile
           className="faq__tile"
-          href="https://www.smashingmagazine.com/design-systems-book/"
+          href="https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627"
         >
           <div className="faq__tile-icon">
             <img src={articleFour} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <p>Introducing: Carbon Themes</p>
+            <h5>Introducing: Carbon Themes</h5>
 
             <div className="faq__tile-caption">
               <p>Bethany Sonefeld</p>
@@ -27,13 +27,13 @@ class ArticleTiles extends Component {
 
         <ClickableTile
           className="faq__tile"
-          href="http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/"
+          href="https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42"
         >
           <div className="faq__tile-icon">
             <img src={articleFive} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <p>Winter 2017 HOW In-House Design Award Winner</p>
+            <h5>Carbon: Designing inside Big Blue</h5>
 
             <div className="faq__tile-caption">
               <p>Bethany Sonefeld</p>
