@@ -2,10 +2,9 @@
   margin: 3rem 0 6rem;
 
   &__name {
-    @include font-smoothing;
     position: relative;
-    color: $color__blue-90;
-    font-weight: 600;
+    color: $text-01;
+    font-weight: 300;
     padding: 1rem 0 1.5rem;
 
     &:before {
@@ -13,7 +12,7 @@
       width: rem(80px);
       height: rem(5px);
       display: block;
-      background-color: $color__blue-40;
+      background-color: $brand-01;
       position: absolute;
       top: -.5rem;
       left: 0;
@@ -33,10 +32,6 @@
 main[data-page|=components-code]{
   h3 + h4 {
     margin-top: 1rem;
-  }
-
-  table {
-    max-width: 45rem;
   }
 
   table tr td:nth-child(2):not(:last-child) {
@@ -61,7 +56,7 @@ main[data-page='components-code-button'] {
     table tr td:nth-child(3) {
       white-space: nowrap;
     }
-    
+
     table tr td:nth-child(2) {
       min-width: 15rem;
       white-space: pre-wrap;

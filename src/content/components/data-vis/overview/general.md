@@ -43,7 +43,7 @@ Empty states appear when no data is available, which may be due to a number of r
 Abbreviate labels if spacing is a concern. Follow these conventions across graphs:
 
 ***
-| ATTRIBUTE             | ABBREVIATIONS  |
+| Attribute             | ABBREVIATIONS  |
 |-----------------------|--------------- |
 | Days of the week      | Sun, Mon, Tues, Wed, Thu, Fri, Sat |
 | Months                | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec  |

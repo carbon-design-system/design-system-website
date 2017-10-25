@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE             | SCSS          | HEX           |
+| Attribute             | SCSS          | HEX           |
 |-------------------|---------------|---------------|
 | Background        | $field-01     | #3d70b2 @ 10% |
 | Text: label       | $text-01      | #152935       |
@@ -17,14 +17,14 @@ _Examples of default and user-input states for Text Input_
 
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less.
 
-| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT  |
+| Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
 | Label    | 14 / 0.875 | Bold / 700   |
 | Text     | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
-| PROPERTY                    | PX | REM   |
+| Property                    | PX | REM   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
 | Spacing: Label & select box | 10 | 0.625 |

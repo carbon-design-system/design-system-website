@@ -1,5 +1,5 @@
 ## Color
-| ATTRIBUTE                | SCSS      | HEX      |
+| Attribute                | SCSS      | HEX      |
 |-----------------------|---------  |----------|
 | Handle: fill          | $brand-01 | #3d70b2  |
 | Line: selected        | $brand-01 | #3d70b2  |
@@ -11,7 +11,7 @@
 ## Typography
 Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| PROPERTY 			   | FONT-SIZE (px/rem)       | FONT-WEIGHT  |
+| Property 			   | Font-size (px/rem)       | Font-weight  |
 |----------------------|-----------------|--------------|
 | Label                | 14 / 0.875 | Bold / 700   |
 | Range values  | 14 / 0.875 | Normal / 400 |
@@ -19,7 +19,7 @@ Slider labels should be set in sentence case, with only the first word in a phra
 ## Structure
 The width of a Slider varies based on page content and layout.
 
-| PROPERTY          | PX | REM   |
+| Property          | PX | REM   |
 |-------------------|----|-------|
 | Handle            | 24 | 1.5   |
 | Slider line height| 4  | 0.25  |

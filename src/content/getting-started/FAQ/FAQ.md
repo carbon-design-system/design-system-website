@@ -1,4 +1,3 @@
-
 ### What is the Carbon Design System?
 Carbon is the design system for IBM Cloud products. It is a series of individual styles, components, and guidelines used for creating unified UI.
 

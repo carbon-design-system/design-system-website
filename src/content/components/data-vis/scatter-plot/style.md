@@ -9,7 +9,7 @@ Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style)
 
 
 ## Structure
-| PROPERTY             | PX | REM  |
+| Property             | PX | REM  |
 |----------------------|----|------|
 | Height & width			 | 8  |  0.5 |
 | Hover height & width | 20 | 1.25 |

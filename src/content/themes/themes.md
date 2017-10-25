@@ -11,7 +11,7 @@ Developers and designers can use Carbon Themes to modify existing components to 
 
 ### Theme terms
 
-TERM | DEFINITION
+Term | Definition
 -----|-----------
 **Theme** | The set of unique values assigned to the universal variables
 **Value** | A theme's unique styles (ie hex code, line weight etc) assigned to a universal variable
@@ -82,7 +82,7 @@ The following examples demonstrates the relationship between the different themi
 
 ![Default theme applied](images/theme-1.png)
 
-| KEY | VARIABLE            | ROLE               | VALUE                 | THEME   |
+| Key | Variable            | Role               | Value                 | Theme   |
 |-----|---------------------|--------------------|-----------------------|---------|
 | 1   | $text-01            | Primary text       | #152935               | Default |
 | 2   | $text-03            | Hint text          | #5a6872               | Default |
@@ -92,8 +92,6 @@ The following examples demonstrates the relationship between the different themi
 | 6   | $field-01           | Field background   | #152935 @ 10%         | Default |
 
 
-
-
 ### Custom theme applied
 
 Here is the same component but with a different theme applied. Notice how only the values and theme items changed. The variables and role are the same for both.
@@ -101,7 +99,7 @@ Here is the same component but with a different theme applied. Notice how only t
 ![Custom theme applied](images/theme-2.png)
 
 
-| KEY | VARIABLE            | ROLE               | VALUE            | THEME  |
+| Key | Variable            | Role               | Value            | Theme  |
 |-----|---------------------|--------------------|------------------|--------|
 | 1   | $text-01            | Primary text       | #272727          | Watson |
 | 2   | $text-03            | Hint text          | #777677          | Watson |

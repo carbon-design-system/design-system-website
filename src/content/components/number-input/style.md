@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE                | SCSS      | HEX           |
+| Attribute                | SCSS      | HEX           |
 |----------------------|-----------|---------------|
 | Background           | $field-01 | #3d70b2 @ 10% |
 | Text: label & number | $text-01  | #152935       |
@@ -10,7 +10,7 @@
 
 Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| PROPERTY  | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property  | Font-size (px/rem)      | Font-weight  |
 |------------|-----------------|--------------|
 | Label       | 14 / 0.875 | Bold / 700   |
 | Text        | 14 / 0.875 | Normal / 400   |
@@ -19,7 +19,7 @@ Number Input labels should use sentence case, with only the first word in a phra
 
 The height of a Number Input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/style/iconography/library) library.
 
-| PROPERTY         | PX | REM |
+| Property         | PX | REM |
 |------------------|----|-----|
 | Height           | 40 | 2.5 |
 | Internal spacing | 16 | 1   |

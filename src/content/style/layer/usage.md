@@ -1,6 +1,6 @@
 ## Component usage
 
-LAYER | COMPONENTS
+Layer | Components
 ------|-----------
 **Base** | Detail page header without tabs
 **Flat** | Interior left nav, Detail page header with tabs, Tables
@@ -20,7 +20,7 @@ To use in code, just include the layer mixin like so with the appropriate layer 
 @include layer('raised');
 ```
 
-LAYER | MIXIN VALUE
+Layer | Mixin value
 ------|-----------
 **Base** | @include layer('raised')
 **Flat** | @include layer('flat')

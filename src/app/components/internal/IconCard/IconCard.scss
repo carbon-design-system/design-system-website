@@ -84,9 +84,9 @@
   margin-bottom: 1rem;
 
   h5 {
+    @include typescale('epsilon');
     letter-spacing: 0.5px;
     line-height: 1.25;
-    font-size: 1rem;
     color: $text-01;
     font-weight: 600;
     margin-top: rem(16px);
@@ -94,7 +94,7 @@
   }
 
   span {
-    @include font-size('12');
+    @include typescale('omega');
     color: $text-03;
   }
 }
@@ -109,7 +109,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: $brand-02;
+  background-color: $brand-01;
   transition: $transition--base;
   opacity: 0;
 
@@ -119,7 +119,7 @@
 }
 
 .icon__card {
-  background: $color__navy-gray-9;
+  background: $ui-03;
   height: 10rem;
   text-align: center;
   position: relative;
@@ -138,17 +138,18 @@
   }
 }
 
-.icon-button {
-  border: 2px solid $text-01;
+.icon-button,
+a.icon-button {
+  border: 2px solid $inverse-01;
   background-color: transparent;
   min-width: rem(112px);
   margin: 0.2rem 0;
-  color: $text-01;
+  color: $inverse-01 !important;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: $text-01;
-    color: $inverse-01;
+    background-color: $inverse-01;
+    color: $brand-01 !important;
   }
 }

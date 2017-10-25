@@ -18,7 +18,7 @@ _Tag color examples_
 
 Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property | Font-size (px/rem)      | Font-weight  |
 |----------|----------------|--------------|
 | Text     | 12 / 0.75 | Normal / 400 |
 
@@ -26,7 +26,7 @@ Tag text should be set in sentence case, and should only have one word. However,
 
 All tags have the same height. However, the width of tags varies based on the amount of content. All four corners of a tag are rounded with a 15px radius.
 
-| PROPERTY          | PX | REM   |
+| Property          | PX | REM   |
 |-------------------|----|-------|
 | Height            | 20 | 1.25  |
 | Radius            | 15 | 0.938 |

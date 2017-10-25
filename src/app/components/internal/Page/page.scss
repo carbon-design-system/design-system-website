@@ -27,10 +27,14 @@ td {
     margin: 4rem 12.5% 0;
   }
 
+  a:not(.bx--tile) {
+    color: $brand-01;
+  }
+
   .page__sub-heading {
-    color: $color__blue-30;
+    color: $brand-01;
     margin-top: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600;
     letter-spacing: 0.2rem;
     font-size: 1rem;
@@ -40,9 +44,9 @@ td {
     font-size: rem(12px);
     width: 100%;
     padding-bottom: 1rem;
-    border-bottom: 2px solid $color__blue-40;
-    text-transform: uppercase;
-    color: $color__blue-90;
+    border-bottom: 2px solid $brand-01;
+    text-transform: capitalize;
+    color: $text-01;
     margin-bottom: 3rem;
     max-width: rem(660px);
   }
@@ -50,7 +54,7 @@ td {
   .page__desc {
     @include font-smoothing;
     max-width: 38rem;
-    color: $color__blue-90;
+    color: $text-01;
     word-wrap: break-word;
     font-size: 1.125rem;
     line-height: 1.5;
@@ -59,28 +63,27 @@ td {
     letter-spacing: 0;
 
     span {
-      color: $color__blue-40;
+      color: $brand-01;
     }
   }
 
   & > *:not(.component-example):not(.component-variation),
   & >  {
     .page__divider-heading {
-      font-size: 0.75rem;
+      @include typescale('zeta');
       font-weight: 600;
-      letter-spacing: 2px;
       width: 100%;
       padding-bottom: 1rem;
-      border-bottom: 2px solid $color__blue-40;
-      text-transform: uppercase;
-      color: $color__blue-90;
+      border-bottom: 2px solid $brand-01;
+      text-transform: capitalize;
+      color: $text-01;
       margin-bottom: 3rem;
       max-width: rem(660px);
     }
 
     h1 {
-      font-size: 4.125rem;
-      font-weight: 600;
+      @include typescale('mega');
+      font-weight: 300;
       line-height: 1.25;
       letter-spacing: 0px;
 
@@ -90,13 +93,13 @@ td {
     }
 
     h2 {
+      @include typescale('beta');
       position: relative;
       display: flex;
       align-items: center;
-      color: $color__blue-90;
+      color: $text-01;
       margin-top: 6rem;
-      font-weight: 600;
-      font-size: 1.625rem;
+      font-weight: 400;
       letter-spacing: 0.5px;
       padding: 1rem 0 3rem;
 
@@ -135,7 +138,7 @@ td {
         width: 5rem;
         height: 0.3rem;
         display: block;
-        background-color: $color__blue-40;
+        background-color: $brand-01;
         position: absolute;
         top: -.5rem;
         left: 0;
@@ -155,9 +158,9 @@ td {
     }
 
     h3 {
-      color: $color__blue-51;
+      @include typescale('delta');
+      color: $brand-01;
       padding: 4rem 0 1rem;
-      font-size: 1.25rem;
       font-weight: 600;
 
       & + h4 {

@@ -119,7 +119,7 @@ Visit carbon-icons and browse the svg folder for any icons you want to use. (Rem
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
 
 ---
-| filename | description | supported versions|
+| Filename | Description | Supported versions|
 |-----|--------|---------------|
 |carbon-icons.svg| Contains current icons (consolidated subset of legacy icons used in IBM Bluemix) | `3.x` and newer|
 |carbon-icons.json| JSON file created from carbon-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer|

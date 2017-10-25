@@ -68,7 +68,7 @@
   }
 
   .page-footer__text {
-    @include font-size('12');
+    @include typescale('omega');
     color: $text-02;
   }
 
