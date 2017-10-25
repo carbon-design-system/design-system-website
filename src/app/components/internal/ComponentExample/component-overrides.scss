@@ -85,6 +85,10 @@
     width: 100%;
   }
 
+  .bx--tooltip__trigger:hover {
+    color: inherit;
+  }
+
   & > .interior-left-nav .bx--interior-left-nav {
     position: initial;
     min-height: rem(400px);

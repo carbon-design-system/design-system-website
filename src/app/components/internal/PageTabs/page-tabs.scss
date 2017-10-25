@@ -55,5 +55,9 @@
         border-bottom: 3px solid $brand-01 !important;
       }
     }
+
+    .bx--tabs__nav-item--selected {
+      border-bottom: 2px solid $brand-01;
+    }
   }
 }

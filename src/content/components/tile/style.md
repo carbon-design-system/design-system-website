@@ -14,7 +14,7 @@
 
 ## Layer
 
-| Layer | Elevation     | Box-Shadow  |
+| Layer | Elevation     | Box-shadow  |
 |----------|-----------------|--------------|
 | Raised    | 2 | 	0 1px 2px 0 rgba(0,0,0,0.10);   |
 

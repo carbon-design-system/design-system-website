@@ -27,7 +27,7 @@ Tooltip labels and text should be set in sentence case.
 
 ## Layer
 
-| Layer      | Elevation     | Box-Shadow      |
+| Layer      | Elevation     | Box-shadow      |
 |------------|----------|----------|
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 

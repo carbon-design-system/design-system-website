@@ -65,6 +65,11 @@
 
   .page-footer__link {
     font-weight: 400;
+    color: $brand-01;
+
+    &:hover {
+      color: #648fff;
+    }
   }
 
   .page-footer__text {

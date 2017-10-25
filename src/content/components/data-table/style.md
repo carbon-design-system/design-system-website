@@ -41,7 +41,7 @@ Column headers should be in title case. All other table text should be sentenced
 
 ## Layer
 
-| Layer    | Elevation | Box-Shadow  |
+| Layer    | Elevation | Box-shadow  |
 |----------|---------- |-------------|
 | Flat     | 1         | none        |
 
