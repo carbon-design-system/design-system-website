@@ -46,10 +46,9 @@ For developer questions: #carbon-components, #carbon-react
 Open an issue in one of our <a href="https://github.com/carbon-design-system">Github repos</a>. Please choose the appropriate repo for your request.
 
 ## Featured
-* Smashing Magazine's [“Design Systems”](https://www.smashingmagazine.com/design-systems-book/) by Alla Kholmatova
-* [Winter 2017 HOW In-House Design Award Winner](http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/)
-* [The Path to Design System Maturity](https://medium.com/ux-power-tools/the-path-to-design-system-maturity-d403daba692a), Christian Beck
+
+<div data-insert-component="FeaturedTiles"></div>
 
 ## Articles
-* [Carbon: Designing inside Big Blue](https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42), Bethany Sonefeld
-* [Introducing: Carbon Themes ](https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627), Bethany Sonefeld
+
+<div data-insert-component="ArticleTiles"></div>
