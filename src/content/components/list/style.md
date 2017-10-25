@@ -10,7 +10,7 @@ Level 1 and 2 of any list type should be set in bold and sentence case, with onl
 
 | Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
-| Level 1  | 14 / 0.875 | Bold / 700   |
+| Level 1  | 14 / 0.875 | Semi-Bold / 600   |
 | Level 2  | 14 / 0.875 | Normal / 400 |
 
 ## Structure
@@ -19,7 +19,7 @@ There are two types of Lists, ordered and unordered.
 Level 1 ordered list points are marked numerically while Level 2 points are marked with a dash.
 Level 1 unordered list points are bulleted while Level 2 points are marked with a dash.
 
-| Property             | PX | REM  |
+| Property             | px | rem  |
 |----------------------|----|------|
 | External spacing     | 16 | 1    |
 

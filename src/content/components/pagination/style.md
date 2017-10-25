@@ -22,7 +22,7 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
 
-| Property                           | PX        | REM   |
+| Property                           | px        | rem   |
 |------------------------------------|-----------|-------|
 | Height                             | 40      | 2.5   |
 | Width                              | Varies based on content and layout | |

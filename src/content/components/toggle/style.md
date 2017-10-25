@@ -24,7 +24,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 
 ## Structure
 
-| Property          | PX | REM   |
+| Property          | px | rem   |
 |-------------------|----|-------|
 | Height & width    | 24 | 1.5   |
 | Circle border     | 2  | 0.125 |

@@ -24,12 +24,12 @@ Checkbox headings and labels should be sentence case, with only the first word i
 
 | Property   | Font-size (px/rem)     | Font-weight  |
 |------------|-----------------|--------------|
-| Heading    | 14 / 0.875 | Bold / 700   |
+| Heading    | 14 / 0.875 | Semi-Bold / 600  |
 | Label      | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
-| Property             | PX | REM  |
+| Property             | px | rem  |
 |----------------------|----|------|
 | Height & width       | 18 | 2.75 |
 | Outline              | 2  | -    |

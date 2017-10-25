@@ -1,6 +1,6 @@
 ## Color
 
-| COLOR            | SCSS                   | HEX                 |
+| Color            | SCSS                   | HEX                 |
 |------------------|------------------------|---------------------|
 | Total            | $ui-03                 | #f0f3f6             |
 | Used             | $primary-04            | #00a68f             |
@@ -10,7 +10,7 @@
 ## Typography
 Please note the total number should be left aligned with the used number.
 
-| Property            | Font-size (PX/REM)       | Font-weight  |
+| Property            | Font-size (px/rem)       | Font-weight  |
 |---------------------|------------------|--------------|
 | Small gauge: used   | 16 / 1     | Roman / 400  |
 | Small gauge: total  | 12 / 0.75   | Roman / 400  |
@@ -21,7 +21,7 @@ Please note the total number should be left aligned with the used number.
 
 
 ## Structure
-| Property              | PX  | REM |
+| Property              | px  | rem |
 |-----------------------|-----|-----|
 | Small gauge           | 80  | 5   |
 | Medium gauge          | 120 | 7.5 |

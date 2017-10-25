@@ -60,7 +60,7 @@ In devices with a screen width less than 768px, the margins are 3% on the left, 
 ### Breakpoints
 
 ---
-| SIZE       | COLUMNS |  GUTTERS            | OUTER MARGINS     |
+| Size       | Columns |  Gutters            | Outer margins     |
 |------------|---------|---------------------|-------------------|
 | XS (576px) | 12      | 5px + 5px = 10px    | 3% left, 3% right |
 | S (768px)  | 12      | 10px + 10px = 20px  | 5% left, 5% right |

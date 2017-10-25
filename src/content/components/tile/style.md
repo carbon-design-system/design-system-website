@@ -14,12 +14,12 @@
 
 ## Layer
 
-| LAYER | ELEVATION     | BOX-SHADOW  |
+| Layer | Elevation     | Box-Shadow  |
 |----------|-----------------|--------------|
 | Raised    | 2 | 	0 1px 2px 0 rgba(0,0,0,0.10);   |
 
 ## Structure
-| Property                    | PX | REM   |
+| Property                    | px | rem   |
 |-----------------------------|----|-------|
 | Height: minimum             | 64 | 4   |
 | Width                       | 128 | 8  |

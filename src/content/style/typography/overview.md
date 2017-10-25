@@ -2,7 +2,7 @@
 
 ## Typeface: IBM Plex
 
-Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the <a href="https://github.com/ibm/type" target="blank">IBM Github repo</a>.
+Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the <a href="https://github.com/ibm/type" target="blank">IBM GitHub repo</a>.
 
 To use IBM Plex with Carbon components, simply toggle the scss variable `$css--plex` to true and components will automatically update.
 
@@ -36,7 +36,7 @@ X₂=X₁+{INT[(n-2)/4]+1}x2
 X : step n type size     X₁ : step n-1 type size
 ```
 
-The gap between two steps is always based on increments of 2. It is a non-linear arithmetic progression, providing a smaller interval for smaller type and a larger interval for larger type, allowing for a wide range of scales. It provides sensible value and works well in a product environments.
+The gap between two steps is always based on increments of two. It is a non-linear arithmetic progression, providing a smaller interval for smaller type and a larger interval for larger type, allowing for a wide range of scales. It provides sensible value and works well in a product environments.
 
 ## Typographic treatments
 
@@ -58,14 +58,14 @@ IBM Plex family provides a wide range of weights. However, only SemiBold, Regula
 
 We recommend using two sizes for body copy. The first is UI specific. To maximize screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
 
-|Body copy         |PX   |REM     |
+|Body copy         | px   | rem     |
 |------------------|-----|--------|
 |Standard UI       |14px |0.875rem|
 |Prolonged reading |16px |1rem    |
 
 ### Line-height
 
-Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based on the size of the font itself. Ideal line-heights for standard copy have a ratio of 1:1.5 (typesize : line-height). For example, a type at 1em/16px would have a line-height of 1.5rem/24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1:1.25.
+Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based on the size of the font itself. Ideal line-heights for standard copy have a ratio of 1:1.5 (typesize : line-height). For example, a type at 16px/1rem would have a line-height of 1.5rem/24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1:1.25.
 
 |Line-height       |Ratio  |
 |------------------|-------|

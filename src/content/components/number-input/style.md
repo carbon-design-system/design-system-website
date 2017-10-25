@@ -12,14 +12,14 @@ Number Input labels should use sentence case, with only the first word in a phra
 
 | Property  | Font-size (px/rem)      | Font-weight  |
 |------------|-----------------|--------------|
-| Label       | 14 / 0.875 | Bold / 700   |
+| Label       | 14 / 0.875 | Semi-Bold / 600   |
 | Text        | 14 / 0.875 | Normal / 400   |
 
 ## Structure
 
 The height of a Number Input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/style/iconography/library) library.
 
-| Property         | PX | REM |
+| Property         | px | rem |
 |------------------|----|-----|
 | Height           | 40 | 2.5 |
 | Internal spacing | 16 | 1   |

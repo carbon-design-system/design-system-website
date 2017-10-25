@@ -10,13 +10,13 @@
 
 ## Typography
 
-| Property | FONT-FAMILY | Font-size (px/rem)  | Font-weight  |
+| Property | Font-family | Font-size (px/rem)  | Font-weight  |
 |----------|-------------|-------------|--------------|
 | Text     | Monospace   | 16 / 1 | Normal / 400 |
 
 ## Structure
 
-| Property          | PX  | REM   |
+| Property          | px  | rem  |
 |-------------------|-----|-------|
 | Height: snippet   | 192 | 12    |
 | Height: terminal  | 56  | 3.5   |
