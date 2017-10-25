@@ -19,13 +19,13 @@ Link text should be set in set in sentence case with the first letter of each wo
 
 | Property  | Font-size (px/rem)   | Font-weight |
 |------------|-----------------|--------------|
-| Text       | 14 / 0.875 | Bold / 700   |
+| Text       | 14 / 0.875 | Semi-Bold / 600   |
 
 ## Structure
 
 Links can be grouped horizontally or vertically and must be underlined.
 
-| Property             | PX | REM  |
+| Property             | px | rem  |
 |----------------------|----|------|
 | Line height          | 24 | 1.5  |
 | Horizontal spacing   | 16 | 1    |

@@ -1,4 +1,4 @@
-## General Guidelines
+## General guidelines
 
 Gauge graphs show the part-to-whole relationship of one value compared to its total.
 

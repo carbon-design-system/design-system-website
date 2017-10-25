@@ -3,7 +3,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 
 
 
-| COLOR                    | SCSS       | HEX       |
+| Color                    | SCSS       | HEX       |
 |--------------------------|------------|-----------|
 | Label                    | $text-01   | #152934   |
 | Text: placeholder        | $text-02   | #5a6872   |
@@ -30,15 +30,15 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 
 | Property         | Font-size       | Font-weight  |
 |------------------|-----------------|--------------|
-| Label            | 14 / 0.875      | Bold / 700   |
+| Label            | 14 / 0.875      | Semi-Bold / 600   |
 | Text: user input  | 14 / 0.875      | Roman / 400  |
-| Text: month & year | 12 / 0.75     | Bold / 700   |
-| Text: day of the week | 12 / 0.75  | Bold / 700   |
+| Text: month & year | 12 / 0.75     | Semi-Bold / 600  |
+| Text: day of the week | 12 / 0.75  | Semi-Bold / 600   |
 | Text: day        | 12 / 0.75       | Roman / 400  |
 
 
 ## Layer
-| COMPONENT                     | LAYER    |
+| Component                     | Layer    |
 |-------------------------------|----------|
 | Calendar widget               | Overlay  |
 
@@ -47,7 +47,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 
 ### Simple & Single Date Pickers
 
-| Property                     | PX  | REM    |
+| Property                     | px  | rem    |
 |------------------------------|-----|--------|
 | Height                       | 40  | 2.5    |
 | Width: Simple Date Picker (mm/yyyy) | 91 | 5.7   |
@@ -76,7 +76,7 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 
 ### Range Date Picker
 
-| Property                     | PX  | REM    |
+| Property                     | px  | rem    |
 |------------------------------|-----|--------|
 | Height                       | 230 | 14.375 |
 | Width                        | 280 | 17.5   |
@@ -97,7 +97,7 @@ _Spacing for Date Picker | px / rem_
 ### Time Picker
 There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-hour Time Picker is accompanied by a time period (am/pm) input, while the 24-hour clock is not.
 
-| Property                     | PX  | REM   |
+| Property                     | px  | rem   |
 |------------------------------|-----|-------|
 | Height                       | 40  | 2.5   |
 | Width                        | 80  | 5     |

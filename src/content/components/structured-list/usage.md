@@ -20,7 +20,3 @@ Structured lists can be single-select if a user is choosing between a set of opt
 * By default, one option should be selected.
 * If you need to select multiple items, use a [Data Table.](/components/data-table)
 * When the user selects an item from the list, the selected row will appear with the `checkmark--glyph` icon.
-
-
-![Single-select List - selected row](images/structured-list-usage-1.gif)
-_Structured List with selection_

@@ -10,13 +10,13 @@ An effective visualization provides enough context to show the graph's purpose, 
 _Example of base graph with terminology labels_
 
 ### Title
-A title describes what the graph is about and is set in title case capitalization. It may state the type of quantitative and categorical relationship the data presents, for example "2017 Account Cost by Month."
+A title describes what the graph is about and is set in title case capitalization. It may state the type of quantitative and categorical relationship the data presents, for example “2017 Account Cost by Month.”
 
 ### X & Y Axes
 Typical graphs have two axes, the x-axis that runs horizontally and the y-axis that runs vertically. Together, the axes outline the area where visual information is displayed.
 
 ### Axis label
-An axis label describes the quantitative or categorical value of an axis. For a quantitative label, make sure to include the unit, either in the label name or in parentheses after it. In this case, "Cost in Dollars" is the y-axis label title and "Time" is the x-axis label title.
+An axis label describes the quantitative or categorical value of an axis. For a quantitative label, make sure to include the unit, either in the label name or in parentheses after it. In this case, “Cost in Dollars” is the y-axis label title and “Time” is the x-axis label title.
 
 ### Grid lines
 Grid lines are points of reference aligned to data increments that divide the area of a graph into smaller regions, enhancing the ability to notice subtle differences that makes comparing data easier. Grid lines are not required on a graph and can be toggled on as a filter option.
@@ -43,13 +43,13 @@ Empty states appear when no data is available, which may be due to a number of r
 Abbreviate labels if spacing is a concern. Follow these conventions across graphs:
 
 ***
-| Attribute             | ABBREVIATIONS  |
+| Attribute             | Abbreviations  |
 |-----------------------|--------------- |
 | Days of the week      | Sun, Mon, Tues, Wed, Thu, Fri, Sat |
 | Months                | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec  |
 | 12 hour time             | 9am, 12pm, 6pm |
-| Numbers               | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label "Cost in thousands" may have data increments 1K, 1.5K, 2K, etc.|
-| Currency              | For instance, if an axis label uses "Dollars", the data increment may be $100, $200, $300, etc.
+| Numbers               | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label “Cost in thousands” may have data increments 1K, 1.5K, 2K, etc.|
+| Currency              | For instance, if an axis label uses “Dollars”, the data increment may be $100, $200, $300, etc.
 
 
 ## Accessibility
@@ -62,7 +62,7 @@ Every data visualization is accompanied by an alternative data table view.
 Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab for more information about colors and how to apply them to your use case.
 
 3.
-**Use inline SVG:** SVG 2.0 is currently in a draft state. In the meantime we can make the most of SVG 1.0 by utilizing the "title" and "desc" attributes in combination with ARIA roles and attributes. Below is an example section of code using this techinique. To see a full example go to [Describler](http://describler.com/#intro) and select "aria-bar-chart.svg" from the dropdown on the left. Make sure to turn on your sound so you can hear the chart read to you!
+**Use inline SVG:** SVG 2.0 is currently in a draft state. In the meantime we can make the most of SVG 1.0 by utilizing the “title” and “desc” attributes in combination with ARIA roles and attributes. Below is an example section of code using this technique. To see a full example go to [Describler](http://describler.com/#intro) and select “aria-bar-chart.svg” from the dropdown on the left. Make sure to turn on your sound so you can hear the chart read to you!
 
 ```html
 <g id="ChartRoot" role="chart" aria-charttype="bar">
@@ -75,12 +75,12 @@ Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab
 ```
 
 #### _References_
-_"The Visual Display of Quantitative Information" by Edward Tufte_
+_“The Visual Display of Quantitative Information” by Edward Tufte_
 
-_"The Visual Display of Quantitative Information" by Edward Tufte_
+_“The Visual Display of Quantitative Information” by Edward Tufte_
 
-_"Show Me the Numbers: Designing Tables and Graphs to Enlighten" by Stephen Few_
+_“Show Me the Numbers: Designing Tables and Graphs to Enlighten” by Stephen Few_
 
-_"Interactive Data Visualization for the Web, 2nd Edition" by Scott Murray_
+_“Interactive Data Visualization for the Web, 2nd Edition” by Scott Murray_
 
-_"Show Me the Numbers: Designing Tables and Graphs to Enlighten" by Stephen Few_
+_“Show Me the Numbers: Designing Tables and Graphs to Enlighten” by Stephen Few_

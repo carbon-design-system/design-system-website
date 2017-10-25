@@ -13,13 +13,13 @@ Slider labels should be set in sentence case, with only the first word in a phra
 
 | Property 			   | Font-size (px/rem)       | Font-weight  |
 |----------------------|-----------------|--------------|
-| Label                | 14 / 0.875 | Bold / 700   |
+| Label                | 14 / 0.875 | Semi-Bold / 600   |
 | Range values  | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 The width of a Slider varies based on page content and layout.
 
-| Property          | PX | REM   |
+| Property          | px | rem   |
 |-------------------|----|-------|
 | Handle            | 24 | 1.5   |
 | Slider line height| 4  | 0.25  |

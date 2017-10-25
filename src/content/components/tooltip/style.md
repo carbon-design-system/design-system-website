@@ -21,19 +21,19 @@ Tooltip labels and text should be set in sentence case.
 
 | Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
-| Header   | 16 / 1     | Bold / 700   |
-| Label    | 14 / 0.875 | Bold / 700   |
+| Header   | 16 / 1     | Semi-Bold / 600   |
+| Label    | 14 / 0.875 | Semi-Bold / 600   |
 | Text     | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 
-| LAYER      | ELEVATION     | BOX-SHADOW      |
+| Layer      | Elevation     | Box-Shadow      |
 |------------|----------|----------|
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
 ## Structure
 
-| Property                | PX  | REM   |
+| Property                | px  | rem   |
 |-------------------------|-----|-------|
 | Tooltip: width          | 240 | 15    |
 | Tooltip: height         | Varies based on content | - |

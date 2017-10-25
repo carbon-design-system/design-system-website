@@ -14,7 +14,7 @@ You can find the source file for the icon library within the <a href="https://gi
 UI icons come in two sizes: 24px and 16px.
 While most icons occupy a square artboard, some icons may occupy a rectangular artboard where the width or height of the icons is either 24px or 16px. In most cases, you can use icons at their original sizes.
 
-| NAME     | PX |
+| Name     | px |
 |----------|----|
 | Standard | 24 |
 | Glyph    | 16 |
@@ -46,7 +46,7 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 | Secondary action       | $ui-05    | #8c9ba5 |
 | Secondary action:hover | $brand-01 | #3d70b2 |
 
-**Exception:** There is an exception to both the Blue and Neutral color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
+**Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
 ### Weight
 

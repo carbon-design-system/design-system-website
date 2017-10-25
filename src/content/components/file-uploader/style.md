@@ -15,7 +15,7 @@ The File Uploader label and instruction text should be set in sentence case, wit
 
 | Property         | Font-size (px/rem)     | Font-weight  |
 |------------------|-----------------|--------------|
-| Label            | 14 / 0.875 | Bold / 700   |
+| Label            | 14 / 0.875 | Semi-Bold / 600   |
 | Instruction text | 14 / 0.875 | Normal / 400 |
 | File name        | 12 / 0.75  | Normal / 400 |
 
@@ -23,7 +23,7 @@ The File Uploader label and instruction text should be set in sentence case, wit
 
 The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button](/components/button) guidelines for styling and usage of the “Add files” button.
 
-| Property               | PX | REM   |
+| Property               | px | rem   |
 |------------------------|----|-------|
 | Height                 | 30 | 1.875 |
 | Icon: remove           | 16 | 1     |

@@ -3,12 +3,11 @@ If you would like to add an UI icon to our library, please submit a pull request
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
-1. Fork the GitHub repo.
-2. Clone it to your local system.
-3. Add icons in the proper folder (you may add your own) within the `svg/` folder.
-4. In your terminal run `npm install.`
-5. Run `npm run build` to rebuild the `sprite.svg.`
-6. Submit a pull request and rejoice!
+1. Correctly export icon
+2. Name icon to Carbon specifications
+3. Prep SVG XML code
+4. Submit icon to [carbon-icons](https://github.com/carbon-design-system/carbon-icons) repo
+5. Test SVGs
 
 
 ## Exporting SVGs
@@ -51,6 +50,9 @@ If you would like to add an UI icon to our library, please submit a pull request
 10. Click `Save`.
 11. The `SVG Options` dialog will then open.
 12. Make sure the preferences are the same as in the image below.
+
+
+![export an icon from illustrator](images/icon-contribution-3.png)
 
 <div data-insert-component="Video" data-props="icon-illustrator.mp4"></div>
 

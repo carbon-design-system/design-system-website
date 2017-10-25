@@ -8,7 +8,7 @@
 
 ## Structure
 
-| Property             | PX | REM  |
+| Property             | px | rem  |
 |----------------------|----|------|
 | Large spinner        | 84 | 5.25 |
 | Small spinner        | 16 | 1    |

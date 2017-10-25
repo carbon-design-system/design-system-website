@@ -19,12 +19,12 @@ All Dropdown text should be set in sentence case with the first letter of each w
 
 | Property  | Font-size (px/rem)      | Font-weight  |
 |-------------|-----------------|--------------|
-| Label       | 14 / 0.875 | Bold / 700   |
+| Label       | 14 / 0.875 | Semi-Bold / 600  |
 | Option text | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 
-| LAYER      | ELEVATION     | BOX-SHADOW      |
+| Layer      | Elevation     | Box-shadow      |
 |------------|----------|----------|
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
@@ -32,7 +32,7 @@ All Dropdown text should be set in sentence case with the first letter of each w
 
 Dropdowns have two states, open and closed. An open and closed Dropdown should be the same width and appropriately fit the design, layout, and content. The height of a closed Dropdown stays consistent while the height of an open Dropdown will vary based on the amount of options it has. Please note the various color differences for closed and open Dropdowns.
 
-| Property         | PX | REM |
+| Property         | px | rem |
 |------------------|----|-----|
 | Height           | 40 | 2.5 |
 | Internal spacing | 16 | 1   |

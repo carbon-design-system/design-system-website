@@ -14,7 +14,7 @@
 
 
 ### Style options
-Specifc styling on the Data Table component can be toggled on/off based on user or team preference.
+Specific styling on the Data Table component can be toggled on/off based on user or team preference.
 
 **Row dividers, Zebra striping, & table border**
 
@@ -41,7 +41,7 @@ Column headers should be in title case. All other table text should be sentenced
 
 ## Layer
 
-| LAYER    | ELEVATION | BOX-SHADOW  |
+| Layer    | Elevation | Box-Shadow  |
 |----------|---------- |-------------|
 | Flat     | 1         | none        |
 
@@ -56,7 +56,7 @@ Short and Default are offered as **user preferences** that can be accessed from 
 Compact and Tall are designer and developer preferences. Tall row heights are only recommended if your data is expected to have 2 lines of content in a single row.
 
 
-| SIZE     |   ROW HEIGHT (PX)  |
+| Size     |   Row Height (px)  |
 | ---------|  ----------------  |
 | Compact  |  24     |
 | Short    |  32     |
@@ -73,7 +73,7 @@ The basic table style is the required base from which tables can be developed. B
 
 Column widths can vary by content and only requires a minimum spacing between columns.
 
-| Property                | PX | REM  |
+| Property                | px | rem  |
 |-------------------------|----|------|
 | Height: header          | 48 | 3    |
 | Width                   | Varies based on content and layout | |
@@ -84,7 +84,7 @@ Column widths can vary by content and only requires a minimum spacing between co
 ### Data table
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
-| Spacing            | PX   | REM   |
+| Spacing            | px   | rem   |
 |--------------------|------|-------|
 | Title & table      | 16   | 1     |
 | Header & caret     |  8   | 0.5   |
@@ -107,7 +107,7 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 
 ### Toolbar
 
-| Property               | PX   | REM   |
+| Property               | px   | rem   |
 |------------------------|------|-------|
 | Icon height            | 16   | 1   |
 | Spacing: icons         | 24   | 1.5 |
