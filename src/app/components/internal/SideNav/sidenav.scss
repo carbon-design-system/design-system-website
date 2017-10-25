@@ -36,6 +36,10 @@
   &__closed {
     transform: translateX(-100%);
     overflow: inherit;
+
+    .side-nav__top-container {
+      background: transparent;
+    }
   }
 
   &__closed--final {

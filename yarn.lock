@@ -1433,9 +1433,9 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-components-react@^3.12.7:
-  version "3.12.7"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-3.12.7.tgz#e4d3eb0430f8a04493f78cef71967fd0a751a9ef"
+carbon-components-react@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-3.14.0.tgz#bd7a0e8eebf82bef3d69eafe6ebcb8ab4a41a625"
   dependencies:
     classnames "2.2.5"
     flatpickr "3.0.7"

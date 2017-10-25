@@ -12,8 +12,13 @@
   transition: left $transition--base ease;
   z-index: 8000;
 
+  &:focus {
+    outline: none;
+    border: 1px solid $brand-01, 0px solid $brand-01, 1px solid $brand-01, 1px solid $brand-01;
+  }
+
   @include breakpoint('620px') {
-    left: calc(200px - 2.1rem);
+    left: calc(200px - 2rem);
     width: 2rem;
     height: 2rem;
   }
