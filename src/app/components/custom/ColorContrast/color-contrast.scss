@@ -51,12 +51,11 @@ ul.color-contrast__examples {
   }
 
   li h4 {
-    text-transform: uppercase;
-    font-size: rem(12px);
+    @include typescale('zeta');
+    text-transform: capitalize;
     padding-bottom: 1rem;
-    border-bottom: 2px solid $color__blue-40;
-    color: $color__navy-gray-2;
-    letter-spacing: 1px;
+    border-bottom: 2px solid $brand-01;
+    color: $text-01;
   }
 }
 

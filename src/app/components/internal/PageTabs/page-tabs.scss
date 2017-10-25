@@ -16,8 +16,8 @@
 
     &-text,
     svg {
-      color: $color__blue-90;
-      fill: $color__blue-51;
+      color: $text-01;
+      fill: $brand-01;
     }
   }
 
@@ -42,17 +42,17 @@
       .bx--tabs__nav-link {
         font-size: 1rem;
         padding: .75rem 0 1rem;
-        color: $color__blue-90;
+        color: $text-01;
       }
 
       &:hover {
         .bx--tabs__nav-link {
-          color: $color__blue-51;
+          color: $brand-01;
         }
       }
 
       &.bx--tabs--selected {
-        border-bottom: 3px solid $color__blue-40 !important;
+        border-bottom: 3px solid $brand-01 !important;
       }
     }
   }

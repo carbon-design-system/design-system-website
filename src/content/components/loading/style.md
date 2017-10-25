@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE              | SCSS          | HEX      |
+| Attribute              | SCSS          | HEX      |
 |--------------------|---------------|----------|
 | Large spinner      | $nav-05       | #00b4a0  |
 | Small spinner      | $ui-05        | #8c9ba5  |
@@ -8,7 +8,7 @@
 
 ## Structure
 
-| PROPERTY             | PX | REM  |
+| Property             | PX | REM  |
 |----------------------|----|------|
 | Large spinner        | 84 | 5.25 |
 | Small spinner        | 16 | 1    |

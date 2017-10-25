@@ -47,7 +47,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 
 ### Simple & Single Date Pickers
 
-| PROPERTY                     | PX  | REM    |
+| Property                     | PX  | REM    |
 |------------------------------|-----|--------|
 | Height                       | 40  | 2.5    |
 | Width: Simple Date Picker (mm/yyyy) | 91 | 5.7   |
@@ -76,7 +76,7 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 
 ### Range Date Picker
 
-| PROPERTY                     | PX  | REM    |
+| Property                     | PX  | REM    |
 |------------------------------|-----|--------|
 | Height                       | 230 | 14.375 |
 | Width                        | 280 | 17.5   |
@@ -97,7 +97,7 @@ _Spacing for Date Picker | px / rem_
 ### Time Picker
 There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-hour Time Picker is accompanied by a time period (am/pm) input, while the 24-hour clock is not.
 
-| PROPERTY                     | PX  | REM   |
+| Property                     | PX  | REM   |
 |------------------------------|-----|-------|
 | Height                       | 40  | 2.5   |
 | Width                        | 80  | 5     |

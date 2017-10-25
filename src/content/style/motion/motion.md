@@ -22,7 +22,7 @@ Movement should be slow enough that the user can recognize what's happening, but
 
 <div data-insert-component="MotionExample" data-props="duration,300ms,600ms"></div>
 
-| TYPE                     | DURATION  |
+| Type                     | Duration  |
 |--------------------------|-----------|
 | Buttons/small components | 100-200ms |
 | Alerts/table reorder     | 250-300ms |

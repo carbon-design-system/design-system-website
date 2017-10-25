@@ -34,10 +34,9 @@
   }
 
   .example-caption {
+    @include typescale('zeta');
     @include font-smoothing;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    font-size: rem(14px);
     display: flex;
     align-items: center;
     padding: 1rem 0;
@@ -51,7 +50,6 @@
       padding: 1rem;
       font-size: 1.25rem;
       font-weight: 300;
-      font-style: italic;
     }
   }
 }

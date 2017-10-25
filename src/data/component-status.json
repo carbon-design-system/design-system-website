@@ -37,7 +37,7 @@
     },
     {
       "item": "Data Table",
-      "added": "6.11.0",
+      "added": "7.26.0",
       "tag": "updated",
       "status": 0
     },
@@ -150,7 +150,6 @@
     {
       "item": "Tile",
       "added": "7.22.0",
-      "tag": "new",
       "status": 0
     },
     {

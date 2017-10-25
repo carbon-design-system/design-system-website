@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE      | SCSS     | HEX       |
+| Attribute      | SCSS     | HEX       |
 |------------|--------- |-----------|
 | Background | $ui-01   | #ffffff   |
 | Border-top | $brand-01| #3d70b2   |
@@ -14,7 +14,7 @@
 
 Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman.
 
-| PROPERTY | FONT-SIZE (px/rem)     | FONT-WEIGHT |
+| Property | Font-size (px/rem)     | Font-weight |
 |----------|-----------------|--------------|
 | Label    | 12 / 0.75  | Bold / 700   |
 | Title    | 26 / 1.625 | Normal / 400 |
@@ -28,7 +28,7 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 ## Structure
 
-| PROPERTY                  | PX | REM     |
+| Property                  | PX | REM     |
 |---------------------------|----|---------|
 | Top border                | 5  | 0.313    |
 | X icon                    | 12 | 0.75   |

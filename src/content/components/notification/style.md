@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE         | SCSS        | HEX     |
+| Attribute         | SCSS        | HEX     |
 |---------------|-------------|---------|
 | Background: Toast    | $ui-01      | #ffffff |
 | Error         | $support-01 | #e71d32 |
@@ -15,7 +15,7 @@
 
 Notification titles should not exceed more than three words. Notification text should be set in sentence case with only the first word capitalized.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
 | Title    | 14 / 0.875 | Bold / 700   |
 | Text     | 14 / 0.875 | Normal / 400 |
@@ -24,7 +24,7 @@ Notification titles should not exceed more than three words. Notification text s
 
 ### Toast Notification
 
-| PROPERTY           | PX  | REM    |
+| Property           | PX  | REM    |
 |--------------------|-----|--------|
 | Height             | varies based on content  | 5      |
 | Width              | 270 | 16.875 |
@@ -39,7 +39,7 @@ _Structure and spacing measurements for a Toast Notification | px / rem_
 
 The width of an Inline Notification will vary based on content.
 
-| PROPERTY          | PX | REM  |
+| Property          | PX | REM  |
 |-------------------|----|------|
 | Height: one-line  | 40 | 2.5  |
 | Height: two lines | 56 | 3.5  |

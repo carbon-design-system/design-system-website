@@ -10,7 +10,7 @@
 ## Typography
 Note that all axis labels should be set in uppercase.  
 
-| PROPERTY    | FONT-SIZE (PX/REM) |  FONT-WEIGHT |
+| Property    | Font-size (PX/REM) |  Font-weight |
 |-------------|--------------------|--------------|
 | Graph title | 20 / 1.25      	  | Light / 300  |
 | Axis labels | 10 / 0.625         | Bold / 700   |
@@ -33,7 +33,7 @@ If using a a data visualization in a modal, only use tiles that take up 50% or m
 | L (992-1200px)		  | 50-100%               |   
 | XL (1200-1600+px)	  | 50-100%               |        
 
-| SPACING                 			 | PX | REM   |
+| Spacing                 			 | PX | REM   |
 |---------------------------------|----|-------|
 | Title & grid line					 | 24 | 1.5   |
 | Base grid line & data increment | 16 | 1     |

@@ -8,7 +8,7 @@ A universal variable can also have multiple associated roles when the color is c
 
 ### Color terms
 
-TERM | DEFINITION
+Term | Definition
 -----|-----------
 **Value** | A unique color (hex code) assigned to a universal variable
 **Role** | The systematic usage/s of a color value
@@ -18,7 +18,7 @@ TERM | DEFINITION
 
 ## Color roles
 
-VARIABLE | ROLE/S | VALUE
+Variable | Role(s) | Value
 ---------|--------|------
 **brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2
 **brand-02** | Supporting brand <br /> brand-01 hover | #5596e6

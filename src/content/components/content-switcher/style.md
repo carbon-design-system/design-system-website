@@ -1,6 +1,6 @@
 ## Color
 
-| ATTRIBUTE              | SCSS | HEX |
+| Attribute              | SCSS | HEX |
 |--------------------|------|------|
 | Active: fill       | $brand-01   | #3d70b2  |
 | Active: text       | $inverse-01 | #ffffff  |
@@ -12,7 +12,7 @@
 
 Content Switcher text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. The text should not exceed three words.
 
-| PROPERTY   | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property   | Font-size (px/rem)      | Font-weight  |
 |------------|-----------------|--------------|
 | Text       | 14 / 0.875 | Normal / 400 |
 
@@ -20,7 +20,7 @@ Content Switcher text should be set in sentence case, with only the first word i
 
 Content Switchers must have at least two options for the user to choose from. Each container that makes up the Content Switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2rem on both sides of the text.
 
-| PROPERTY         | PX | REM |
+| Property         | PX | REM |
 |------------------|----|-----|
 | Height           | 40 | 2.5 |
 | Border           | 1  | -   |

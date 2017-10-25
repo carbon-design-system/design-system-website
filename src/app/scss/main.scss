@@ -8,6 +8,7 @@
 
 $css--font-face: true;
 $css--reset: true;
+$css--plex: true;
 $font-path: '/assets/fonts';
 
 @import 'node_modules/carbon-components/src/globals/scss/styles';
@@ -22,6 +23,7 @@ $font-path: '/assets/fonts';
 @import 'global/layout';
 @import 'global/browser-fixes';
 @import 'global/404';
+@import 'global/colors';
 
 //----------------------------------------------------------------
 // Internal components
@@ -60,7 +62,6 @@ $font-path: '/assets/fonts';
 @import '../components/custom/ColorContrast/color-contrast.scss';
 @import '../components/custom/GridExample/grid-example.scss';
 @import '../components/custom/LayerUsage/layer-usage.scss';
-@import '../components/custom/BrandColors/brand-colors.scss';
 @import '../components/custom/DosAndDonts/dos-and-donts.scss';
 @import '../components/custom/TypeStylesTable/type-styles-table.scss';
 @import '../components/custom/ArticleTiles/article-tiles.scss';
