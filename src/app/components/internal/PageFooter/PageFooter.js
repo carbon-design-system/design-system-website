@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Packages from '../../../../../package.json';
 import classNames from 'classnames';
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 class PageFooter extends Component {
   static propTypes = {
     isExpanded: PropTypes.bool,
   };
+
+  state = {
+    copied: false
+  }
 
   getLastUpdate = () => {
     const lastUpdatedDate = new Date('10/19/2017'); // UPDATE BEFORE CF PUSH
@@ -32,6 +37,17 @@ class PageFooter extends Component {
     )}`;
     return formattedDate;
   };
+
+  handleClick = () => {
+    this.setState({
+      copied: true
+    });
+    setTimeout(() => {
+      this.setState({
+        copied: false
+      });
+    }, 2000);
+  }
 
   render() {
     const dribbble = (
@@ -100,6 +116,11 @@ class PageFooter extends Component {
       'page-footer': true,
       'page-footer--expanded': !isExpanded,
     });
+    const footerLinkClasses = classNames({
+      'page-footer__link': true,
+      'page-footer__link--with-tooltip': true,
+      'show-tooltip': this.state.copied
+    });
 
     return (
       <footer className={footerClasses}>
@@ -137,7 +158,7 @@ class PageFooter extends Component {
             </li>
             <li>
               <a
-                href="https://medium.com/carbon-design-system"
+                href="https://medium.com/@_carbondesign"
                 className="social-media__link"
                 rel="noopener"
                 target="_blank"
@@ -170,16 +191,13 @@ class PageFooter extends Component {
             </li>
           </ul>
           <p className="page-footer__text">
-            Have questions?{' '}
-            <a
-              href="mailto:carbon@us.ibm.com"
-              className="page-footer__link"
-              rel="noopener"
-              target="_blank"
-              alt="Email Carbon"
+            Have questions?
+            <CopyToClipboard
+              text="carbon@us.ibm.com"
+              onCopy={this.toggleCopied}
             >
-              Email us
-            </a>{' '}
+              <button tabIndex="0" className={footerLinkClasses} onClick={() => this.handleClick()}>Email us</button>
+            </CopyToClipboard>
             or open an{' '}
             <a
               href="https://github.com/carbon-design-system/carbon-components/issues/new"

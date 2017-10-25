@@ -18,7 +18,7 @@ class ColorContrast extends Component {
           <li>
             <img alt="large text icon" src={largeTextImage} />
             <p>
-              Large Text (3:1): <span>at least 24px / 19px bold</span>
+              Large Text (3:1): <span>at least 24px / 19px semi-bold</span>
             </p>
           </li>
         </ul>

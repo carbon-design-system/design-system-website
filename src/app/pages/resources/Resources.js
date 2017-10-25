@@ -42,7 +42,7 @@ class Resources extends React.Component {
               </div>
               <div className="resources__tile-info">
                 <p>Carbon CodePen</p>
-                <p>CodePen, a social development playground for front-end designers and developers, houses demos of Carbon Components.</p>
+                <p>CodePen, a social development playground for front-end developers and designers, houses demos of Carbon Components.</p>
               </div>
             </ClickableTile>
             <ClickableTile target="_blank" className="resources__tile" href="http://themes.carbondesignsystem.com">

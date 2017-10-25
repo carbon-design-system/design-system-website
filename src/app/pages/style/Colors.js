@@ -45,7 +45,7 @@ class Colors extends React.Component {
             <div className="wrapped-list">
               {ColorCards}
             </div>
-            <h3 className="page__divider-heading">Supporting Colors</h3>
+            <h3 className="page__divider-heading">Support Colors</h3>
             <div className="wrapped-list">
               {SupportColorCards}
             </div>

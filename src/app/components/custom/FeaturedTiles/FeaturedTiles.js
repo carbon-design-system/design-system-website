@@ -18,7 +18,7 @@ class FeaturedTiles extends Component {
             <img src={articleOne} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <h5>Smashing Magazine's “Design Systems” book</h5>
+            <h5>Smashing Magazine's “Design Systems” Book</h5>
           </div>
         </ClickableTile>
 
