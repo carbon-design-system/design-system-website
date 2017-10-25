@@ -1,4 +1,3 @@
-
 ### What is the Carbon Design System?
 Carbon is the design system for IBM Cloud products. It is a series of individual styles, components, and guidelines used for creating unified UI.
 
@@ -8,23 +7,7 @@ Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of
 ### How can I contribute and/or propose new components/ideas?
 We have guidelines for contributing back to [Carbon Components](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) and the [Carbon Design Kit](http://carbondesignsystem.com/guidelines/contributing). We appreciate you helping out and contributing back.
 
-[What language are the components written in?](#q4)
-
-[I see a bug, how do I report it?](#q5)
-
-[Why hasn't my bug been fixed yet?](#q6)
-
-[Where do I go if I've read everything and still have an issue/question?](#q7)
-
-## Answers
-
-#### <a name="q1">Who works on the Carbon Design System?</a>
-Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of designers and front-end developers that are dedicated to developing and supporting the system. There are also countless other designers and developers in the IBM Cloud ecosystem who also contribute back to [carbon-components](https://github.com/carbon-design-system/carbon-components#contributors) and [carbon-react](https://github.com/carbon-design-system/carbon-components-react#contributors).
-
-#### <a name="q2">How can I contribute and/or propose new components/ideas?</a>
-We have [guidelines](carbondesignsystem.com/guidelines/contributing) for contributing back to the Carbon Design System. Code specific guidelines live in the [Carbon Components](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) repo. We appreciate you helping out and contributing back.
-
-#### <a name="q3">Which browsers are supported?</a>
+### Which browsers are supported?
 Carbon components is supported in the following browsers:
 
 - IE11

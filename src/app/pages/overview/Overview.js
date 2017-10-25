@@ -11,9 +11,11 @@ class Overview extends React.Component {
   componentDidMount() {
     document.title = 'Carbon Design System';
     window.addEventListener('resize', () => {
-      this.setState({
-        windowWidth: window.innerWidth
-      });
+      if (!window.location.pathname.length > 0) {
+        this.setState({
+          windowWidth: window.innerWidth
+        });
+      }
     });
   }
 
