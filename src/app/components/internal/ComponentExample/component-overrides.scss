@@ -112,6 +112,10 @@
     }
   }
 
+  & .notification > div {
+    max-width: 700px;
+  }
+
   & .detail-page-header .bx--detail-page-header.bx--detail-page-header--with-tabs {
     position: absolute;
     left: 2rem;
