@@ -1,6 +1,8 @@
 .page_md {
-  h1,
-  h2,
+  > p + #contribution-model-process {
+    margin-top: 2rem;
+  }
+
   h3 {
     @include font-smoothing;
   }
@@ -76,13 +78,18 @@
     }
   }
 
+  h3 + h4 {
+    margin-top: 2rem;
+  }
+
   p strong {
     -webkit-font-smoothing: auto;
   }
 
   p em {
     @include typescale('zeta');
-    color: $text-01;
+    color: $text-02;
+    font-style: normal;
   }
 
   > em {
@@ -163,7 +170,7 @@
         @include typescale('zeta');
         font-weight: 600;
         text-align: left;
-        line-height: 1.125;
+        line-height: 1.25;
         padding: 1rem 3rem 1rem 0;
         border-bottom: 2px solid $brand-01;
         white-space: nowrap;
@@ -177,7 +184,7 @@
         td {
           @include typescale('zeta');
           padding: 1rem 3rem 1rem 0;
-          line-height: 1.125;
+          line-height: 1.25;
 
           strong {
             letter-spacing: 0;
@@ -387,7 +394,6 @@
         align-items: center;
         padding: 1rem !important;
         font-size: 1.25rem;
-        font-style: italic;
         font-weight: 300;
       }
 
@@ -401,7 +407,6 @@
         align-items: center;
         padding: 1rem !important;
         font-size: 1.25rem;
-        font-style: italic;
         font-weight: 300;
       }
     }
@@ -436,7 +441,6 @@
   }
 
   blockquote + hr + p {
-    font-style: italic;
     margin-top: 1rem;
     color: $color__navy-gray-6;
   }

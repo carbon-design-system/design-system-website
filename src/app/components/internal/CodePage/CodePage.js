@@ -110,7 +110,12 @@ class CodePage extends Component {
     if (componentInfo.variations) {
       componentContent = Object.keys(componentInfo.variations).map(variation => this.renderVariation(component, variation, componentInfo.variations[variation]));
     } else {
-      const htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
+      let htmlFile;
+      if (component === 'header') {
+        htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
+      } else {
+        htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
+      }
       componentContent = <ComponentExample component={component} htmlFile={htmlFile} />;
     }
     let javascriptContent;

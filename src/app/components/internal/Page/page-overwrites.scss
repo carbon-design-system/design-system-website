@@ -4,6 +4,12 @@ main[data-page|='components'] {
   }
 }
 
+main[data-page='components-usage-list'] {
+  img:not(.ibm-eye) {
+    border: 1px solid $ui-04;
+  }
+}
+
 main[data-page|='data-vis'] {
   img:not(.ibm-eye) {
     background-color: white;

@@ -49,7 +49,7 @@
   &__logo {
     width: 100%;
     display: inline-block;
-    color: $color__blue-90;
+    color: $text-01;
     font-size: rem(16px);
     text-decoration: none;
     font-weight: 600;
@@ -64,7 +64,7 @@
     }
 
     &:hover {
-      color: $color__blue-51;
+      color: $brand-01;
     }
   }
 
@@ -110,18 +110,22 @@
     margin-top: 0.25rem;
     margin-bottom: rem(8px);
     text-decoration: none;
-    color: $color__navy-gray-6;
+    color: $text-02;
     font-weight: 400;
 
     &:hover {
       text-decoration: underline;
-      color: $color__blue-51;
+      color: $brand-01;
     }
   }
 
   &__links {
     padding: 0 rem(20px);
     width: 100%;
+
+    .bx--btn--secondary .bx--btn__icon {
+      fill: $brand-01;
+    }
   }
 
   &__link {
@@ -131,7 +135,7 @@
     margin-bottom: 1rem;
     justify-content: space-between;
 
-    .bx--btn--right-icon__icon {
+    .bx--btn__icon {
       fill: $brand-01;
     }
 
@@ -139,7 +143,7 @@
     &:focus {
       background-color: $brand-01;
 
-      .bx--btn--right-icon__icon {
+      .bx--btn__icon {
         fill: $color__white;
       }
     }
@@ -147,7 +151,7 @@
 
   &__text {
     font-size: 0.875rem;
-    color: $color__blue-90;
+    color: $text-01;
     margin: 0.25rem 0;
   }
 }

@@ -34,6 +34,11 @@
 
   .icon-empty-state__btn {
     margin-top: 2rem;
+    border-color: $brand-01;
+
+    &:hover {
+      background: $brand-01;
+    }
 
     &:hover svg,
     &:focus svg {
@@ -41,7 +46,7 @@
     }
 
     svg {
-      fill: $color__blue-51;
+      fill: $brand-01;
     }
   }
 }

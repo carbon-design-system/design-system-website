@@ -18,7 +18,7 @@ class Resources extends React.Component {
         <div className="page_md">
           <h2 className="resources__heading">Tools</h2>
           <div className="resources__top">
-            <ClickableTile className="resources__tile" href="https://github.com/carbon-design-system/carbon-design-kit">
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/carbon-design-system/carbon-design-kit">
               <div className="resources__tile-icon">
                 <img src={designKitImage} alt="Design kit" />
               </div>
@@ -27,7 +27,7 @@ class Resources extends React.Component {
                 <p>A Sketch file containing core visual styles, components, and patterns a designer needs to use Carbon as a framework for building product experiences.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="https://github.com/carbon-design-system/carbon-components">
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/carbon-design-system/carbon-components">
               <div className="resources__tile-icon">
                 <img src={githubImage} alt="Components repo" />
               </div>
@@ -36,16 +36,16 @@ class Resources extends React.Component {
                 <p>The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="http://www.codepen.io/team/carbon">
+            <ClickableTile target="_blank" className="resources__tile" href="http://www.codepen.io/team/carbon">
               <div className="resources__tile-icon">
                 <img src={codepenImage} alt="Codepen for Carbon" />
               </div>
               <div className="resources__tile-info">
                 <p>Carbon CodePen</p>
-                <p>CodePen, a social development playground for front-end designers and developers, houses demos of Carbon Components.</p>
+                <p>CodePen, a social development playground for front-end developers and designers, houses demos of Carbon Components.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="http://themes.carbondesignsystem.com">
+            <ClickableTile target="_blank" className="resources__tile" href="http://themes.carbondesignsystem.com">
               <div className="resources__tile-icon">
                 <img src={themingImage} alt="Carbon Theming Sandbox" />
               </div>
@@ -54,7 +54,7 @@ class Resources extends React.Component {
                 <p>The sandbox allows you to build a custom theme by changing a color variable’s hex value and then exporting the theme sheet SCSS file.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="https://marijohannessen.github.io/color-contrast-checker/">
+            <ClickableTile target="_blank" className="resources__tile" href="https://marijohannessen.github.io/color-contrast-checker/">
               <div className="resources__tile-icon">
                 <img src={colorContrastImage} alt="Color Contrast Checker" />
               </div>
@@ -63,7 +63,7 @@ class Resources extends React.Component {
                 <p>This color contrast checker allows you to easily calculate the color contrast ratio between two colors, ensuring that it passes WCAG 2.0 Level AA requirements.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="https://github.com/carbon-design-system/carbon-boilerplate">
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/carbon-design-system/carbon-boilerplate">
               <div className="resources__tile-icon">
                 <img src={githubImage} alt="carbon boilerplate icon" />
               </div>
@@ -72,7 +72,7 @@ class Resources extends React.Component {
                 <p>A simple boilerplate for rapid UI prototyping with Carbon components.</p>
               </div>
             </ClickableTile>
-            <ClickableTile className="resources__tile" href="http://react.carbondesignsystem.com/">
+            <ClickableTile target="_blank" className="resources__tile" href="http://react.carbondesignsystem.com/">
               <div className="resources__tile-icon">
                 <img src={reactImage} alt="React icon" />
               </div>

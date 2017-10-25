@@ -10,6 +10,7 @@ class FeaturedTiles extends Component {
     return (
       <div className="faq__tiles">
         <ClickableTile
+          target="_blank"
           className="faq__tile"
           href="https://www.smashingmagazine.com/design-systems-book/"
         >
@@ -17,11 +18,12 @@ class FeaturedTiles extends Component {
             <img src={articleOne} alt="Smashing Magazine article" />
           </div>
           <div className="faq__tile-info">
-            <h5>Smashing Magazine's “Design Systems” book</h5>
+            <h5>Smashing Magazine's “Design Systems” Book</h5>
           </div>
         </ClickableTile>
 
         <ClickableTile
+          target="_blank"
           className="faq__tile"
           href="http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/"
         >
@@ -34,6 +36,7 @@ class FeaturedTiles extends Component {
         </ClickableTile>
 
         <ClickableTile
+          target="_blank"
           className="faq__tile"
           href="https://medium.com/ux-power-tools/the-path-to-design-system-maturity-d403daba692a"
         >

@@ -6,15 +6,27 @@
   height: 2.3rem;
   background-color: white;
   border: 1px solid transparent;
+  border-right: 2px solid $color__gray-3;
   margin: 0;
   padding: 0;
   cursor: pointer;
   transition: left $transition--base ease;
   z-index: 8000;
+  border-radius: 0;
+  transition: 300ms ease;
 
   &:focus {
     outline: none;
     border: 1px solid $brand-01, 0px solid $brand-01, 1px solid $brand-01, 1px solid $brand-01;
+  }
+
+  &:hover {
+    background: $brand-01;
+    border-right: none;
+
+    .line {
+      background: white;
+    }
   }
 
   @include breakpoint('620px') {
@@ -60,6 +72,7 @@
 
   &--closed {
     left: 0;
+    border-right: 0;
 
     > div {
       .line:nth-child(2) {

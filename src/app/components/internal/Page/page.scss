@@ -27,8 +27,17 @@ td {
     margin: 4rem 12.5% 0;
   }
 
-  a:not(.bx--tile) {
+  &:not(.code-page) a:not(.bx--tile):not(.image-overlay__overlay) {
     color: $brand-01;
+    transition: 200ms ease;
+
+    &:hover {
+      color: #648fff;
+    }
+
+    &.bx--btn--secondary:hover {
+      color: white;
+    }
   }
 
   .page__sub-heading {
@@ -36,7 +45,6 @@ td {
     margin-top: 2rem;
     text-transform: capitalize;
     font-weight: 600;
-    letter-spacing: 0.2rem;
     font-size: 1rem;
   }
 
@@ -65,6 +73,10 @@ td {
     span {
       color: $brand-01;
     }
+  }
+
+  button {
+    border-radius: 0;
   }
 
   & > *:not(.component-example):not(.component-variation),
@@ -99,8 +111,7 @@ td {
       align-items: center;
       color: $text-01;
       margin-top: 6rem;
-      font-weight: 400;
-      letter-spacing: 0.5px;
+      font-weight: 300;
       padding: 1rem 0 3rem;
 
       &:focus {
@@ -162,6 +173,7 @@ td {
       color: $brand-01;
       padding: 4rem 0 1rem;
       font-weight: 600;
+      letter-spacing: 0;
 
       & + h4 {
         padding-top: 0;

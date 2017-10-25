@@ -12,6 +12,15 @@
   transform: translateY(-100%);
   z-index: 500;
 
+  .bx--link,
+  a {
+    color: $brand-01;
+
+    &:hover {
+      color: #648fff;
+    }
+  }
+
   &--active {
     margin: 0 0 1rem;
     padding-top: 0.5rem;
@@ -43,10 +52,8 @@
       width: 100%;
       padding-bottom: 0.5rem;
       border-bottom: 1px solid $text-03;
-      text-transform: uppercase;
       color: $text-03;
       max-width: rem(660px);
-      letter-spacing: 1px;
     }
   }
 
@@ -80,7 +87,6 @@
     @include typescale('zeta');
     max-width: 100%;
     overflow: hidden;
-    font-style: italic;
     font-weight: 400;
     max-height: rem(48px);
     color: $text-03;
