@@ -19,7 +19,7 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 ---
 ***
 > 
-![notification icons](images/Notification-usage-1.png)
+![notification icons](images/notification-usage-1.png)
 
 ## Placement
 
@@ -33,4 +33,4 @@ Toast Notifications slide in and out a page from the top-right corner. Actionabl
 
 Inline Notifications appear near its related item. In [Forms](/components/form), we recommend placing the Inline Notification at the bottom of the Form, right before the submission buttons. Depending on the context of the page, Inline Notifications can appear above the content as well.
 
-![inline notification](images/Notification-usage-3.png)
+![inline notification](images/notification-usage-3.png)

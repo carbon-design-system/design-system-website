@@ -64,7 +64,40 @@
   }
 
   .page-footer__link {
+    @include typescale('omega');
     font-weight: 400;
+    color: $brand-01;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-family: 'ibm-plex-sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    &--with-tooltip {
+      position: relative;
+    }
+
+    &--with-tooltip.show-tooltip:after {
+      display: block;
+    }
+
+    &--with-tooltip:after {
+      @include layer('overlay');
+      content: 'E-mail address copied to clipboard!';
+      position: absolute;
+      top: -3.2rem;
+      left: -3rem;
+      background: white;
+      width: 150px;
+      padding: .5rem;
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: #648fff;
+      outline: none;
+    }
   }
 
   .page-footer__text {

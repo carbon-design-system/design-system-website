@@ -17,7 +17,7 @@ class MarkdownPage extends Component {
       <div className="page">
         <div
           className="page_md"
-          dangerouslySetInnerHTML={{ __html: md.renderInline(content) }}
+          dangerouslySetInnerHTML={{ __html: md.render(content) }}
         />
       </div>
     );

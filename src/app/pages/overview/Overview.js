@@ -238,7 +238,7 @@ class Overview extends React.Component {
         <section className="overview-page__section overview-page__section--gray">
           <ul className="overview-page__list">
             <li className="overview-page__list-item">
-              <ClickableTile href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile">
+              <ClickableTile target="_blank" href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile">
                 <div className="tile__icon">
                   <img src={sketchIcon} alt="sketch icon" />
                 </div>
@@ -249,7 +249,7 @@ class Overview extends React.Component {
               </ClickableTile>
             </li>
             <li className="overview-page__list-item">
-              <ClickableTile href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile">
+              <ClickableTile target="_blank" href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile">
                 <div className="tile__icon">
                   <img src={githubIcon} alt="github icon" />
                 </div>
@@ -260,7 +260,7 @@ class Overview extends React.Component {
               </ClickableTile>
             </li>
             <li className="overview-page__list-item">
-              <ClickableTile href="http://www.codepen.io/team/carbon" className="overview-page__tile">
+              <ClickableTile target="_blank" href="http://www.codepen.io/team/carbon" className="overview-page__tile">
                 <div className="tile__icon">
                   <img src={codepenIcon} alt="codepen icon" />
                 </div>
@@ -271,7 +271,7 @@ class Overview extends React.Component {
               </ClickableTile>
             </li>
             <li className="overview-page__list-item">
-              <ClickableTile href="http://themes.carbondesignsystem.com/" className="overview-page__tile">
+              <ClickableTile target="_blank" href="http://themes.carbondesignsystem.com/" className="overview-page__tile">
                 <div className="tile__icon">
                   <img src={sandboxIcon} alt="sandbox icon" />
                 </div>
@@ -287,7 +287,7 @@ class Overview extends React.Component {
           <div className="contribute__info">
             <h2>Wondering how to contribute to Carbon?</h2>
             <p>We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.
-              If you're interested in contributing, check out our <Link to="/guidelines">guidelines</Link> to get started.</p>
+              If you're interested in contributing, check out our <Link to="/guidelines/contributing">guidelines</Link> to get started.</p>
           </div>
         </section>
       </main>

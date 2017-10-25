@@ -80,13 +80,12 @@ The same rules apply to all the following variables:
 ```scss
 // In styles.scss:
 // These are the default settings.
-
-$css--font-face: false !default; // _css--font-face.scss
-$css--helpers: true !default;    // _css--helpers.scss
-$css--body: true !default;       // _css--body.scss
-$css--use-layer: true !default;  // _layer.scss
-$css--reset: true !default;      // _css--reset.scss
-$css--typography: true !default; // _css--typography.scss
+$css--font-face: false !default;
+$css--helpers: true !default;
+$css--body: true !default;
+$css--use-layer: true !default;
+$css--reset: true !default;
+$css--typography: true !default;
 ```
 
 These flags are set for you by default when you `@import` the `styles.scss` file.
@@ -206,16 +205,14 @@ The easiest way to manually initialize/release components is defining a "wrappin
 class BXLoading extends HTMLElement {
   // Called when this custom element gets into render tree
   connectedCallback() {
-    // `this` here is `<bx-loading>` element
+    // "this" here is "<bx-loading>" element
     this.innerHTML = '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
     this.loading = CarbonComponents.Loading.create(this.querySelector('[data-loading]'));
   }
-
   // Called when this custom element gets out of render tree
   disconnectedCallback() {
     this.loading.release();
   }
 }
-
 customElements.define('bx-loading', BXLoading);
 ```

@@ -17,7 +17,7 @@ Note that the color value of top bar of the ___ tooltip and the side color bars 
 | Data increment label  | 14/0.875      | Bold / 700   |
 
 ## Layer
-| LAYER      | ELEVATION  | BOX-SHADOW                       |
+| Layer      | Elevation  | Box-shadow                       |
 |------------|------------|----------------------------------|
 | Overlay    | 8          | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 

@@ -9,6 +9,7 @@ class ArticleTiles extends Component {
     return (
       <div className="faq__tiles">
         <ClickableTile
+          target="_blank"
           className="faq__tile"
           href="https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627"
         >
@@ -26,6 +27,7 @@ class ArticleTiles extends Component {
         </ClickableTile>
 
         <ClickableTile
+          target="_blank"
           className="faq__tile"
           href="https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42"
         >

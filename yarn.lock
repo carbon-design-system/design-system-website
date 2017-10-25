@@ -1433,6 +1433,14 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
+carbon-addons-bluemix@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/carbon-addons-bluemix/-/carbon-addons-bluemix-0.1.0.tgz#6d6bfa5d3a27c04557174b3ef7ca2ab316400379"
+  dependencies:
+    carbon-components "^7.0.0"
+    carbon-icons "^6.0.4"
+    lodash.debounce "^4.0.8"
+
 carbon-components-react@^3.8.15:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-3.14.0.tgz#bd7a0e8eebf82bef3d69eafe6ebcb8ab4a41a625"
@@ -1444,9 +1452,9 @@ carbon-components-react@^3.8.15:
     warning "3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@7.26.2:
-  version "7.26.2"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.26.2.tgz#cc15b2717b9ba70be31000546f9819a6dc034eb9"
+carbon-components@7.26.5, carbon-components@^7.0.0:
+  version "7.26.5"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-7.26.5.tgz#eb356b4341aa45c08e3ad12fff0267284cc46ef3"
   dependencies:
     carbon-icons "^6.0.4"
     flatpickr "2.6.3"

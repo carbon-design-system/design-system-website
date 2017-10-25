@@ -63,9 +63,10 @@ class App extends Component {
   }
 
   addBxClasses = () => {
-    const overlayImages = [... document.querySelectorAll('p em img')];
+    const overlayImages = [... document.querySelectorAll('p em > img')];
     const ibmEye = require('../assets/images/ibm-eye.png'); // eslint-disable-line
     overlayImages.forEach(image => {
+      console.log(image);
       if (!image.parentElement.classList.contains('image-overlay')) {
         const overlay = document.createElement('a');
         overlay.setAttribute('target', '__blank');

@@ -20,13 +20,21 @@ Specific styling on the Data Table component can be toggled on/off based on user
 
 If zebra striping is turned off, you must have Row dividers.
 
-![Data table: row styling](images/data-table-style-1.png)
+---
+***
+> ![Data table: row styling](images/data-table-style-1.png)
+
 _Data Table with various row styling_
+
+<br />
 
 **Background colors**
 
-Data Tables are built to be accessible against two background colors:
-![Data table: background colors](images/data-table-style-2.png)
+Data Tables are built to be accessible against two `$ui-01` and `$ui-02`:
+
+---
+***
+> ![Data table: background colors](images/data-table-style-2.png)
 
 _Data Table on ui-01 vs ui-02_
 
@@ -41,7 +49,7 @@ Column headers should be in title case. All other table text should be sentenced
 
 ## Layer
 
-| Layer    | Elevation | Box-Shadow  |
+| Layer    | Elevation | Box-shadow  |
 |----------|---------- |-------------|
 | Flat     | 1         | none        |
 
