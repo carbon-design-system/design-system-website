@@ -9,7 +9,7 @@ Form headings and labels should be set in set in sentence case with the first le
 | Property | Font-size (px/rem)     | Font-weight  |
 |------------|-----------------|--------------|
 | Heading    | 32 / 2     | Light / 300  |
-| Label      | 14 / 0.875 | Bold / 700   |
+| Label      | 14 / 0.875 | Semi-Bold / 600   |
 | Input text | 14 / 0.875 | Normal / 400 |
 
 ## Structure
@@ -20,7 +20,7 @@ Forms can be one column or two. The width of each column varies based on the con
 
 All icons can be found on the [iconography](/style/iconography/library) library page.
 
-| SPACE BETWEEN        | PX | REM  |
+| SPACE BETWEEN        | px | rem  |
 |----------------------|----|------|
 | Text inputs          | 24 | 1.5  |
 | Non-input components | 32 | 2    |

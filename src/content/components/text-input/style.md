@@ -19,12 +19,12 @@ Text Input labels and placeholder text should be set in sentence case, with only
 
 | Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
-| Label    | 14 / 0.875 | Bold / 700   |
+| Label    | 14 / 0.875 | Semi-Bold / 600   |
 | Text     | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
-| Property                    | PX | REM   |
+| Property                    | px | rem   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
 | Spacing: Label & select box | 10 | 0.625 |

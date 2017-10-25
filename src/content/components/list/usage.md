@@ -20,4 +20,4 @@ Use List items that are grammatically parallel. For example, do not mix passive 
 ---
 ***
 > 
-![list example](images/lists-usage-1.png)
+![list example](images/list-usage-1.png)

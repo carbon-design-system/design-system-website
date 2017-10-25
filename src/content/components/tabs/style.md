@@ -13,11 +13,11 @@ Tab label should be set in sentence case, and should not exceed three words.
 
 | Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
-| Tab label | 14 / 0.875 | Bold / 700   |
+| Tab label | 14 / 0.875 | Semi-Bold / 600   |
 
 ## Structure
 
-| Property          | PX | REM |
+| Property          | px | rem |
 |-------------------|----|-----|
 | Tab border-bottom | 2  | -   |
 | Spacing: tabs     | 48 | 3   |

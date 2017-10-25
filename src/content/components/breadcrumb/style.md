@@ -23,7 +23,7 @@ _Breadcrumb typography treatment example_
 
 The on-click dropdown should follow the [Overflow Menu](/components/overflow-menu) specs for sizing, padding, and interaction.
 
-| Spacing         | PX | REM |
+| Spacing         | px | rem |
 |-----------------|----|-----|
 | Title & slash   | 16 | 1   |
 | Icon & dropdown | 8  | 0.5 |

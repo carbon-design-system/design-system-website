@@ -13,7 +13,7 @@ Structured List headers should be set in all caps, while all other text is set i
 
 | Property | Font-size (px/rem)     | Font-weight  |
 |----------|-----------------|--------------|
-| Header   | 12 / 0.75 | Bold / 700   |
+| Header   | 12 / 0.75 | Semi-Bold / 600   |
 | Text: 1st column | 14 / 0.75 | Bold / 700   |
 | Text     | 14 / 0.875 | Normal / 400   |
 
@@ -21,7 +21,7 @@ Structured List headers should be set in all caps, while all other text is set i
 Structured Lists by default are not accompanied by a border, but one may be added for stylistic purposes, and should be set at 1px.  
 
 
-| Property             | PX | REM  |
+| Property             | px | rem  |
 |----------------------|----|------|
 | Width                | varies based on content and layout |   |
 | Spacing: content-right| 16 | 1    |

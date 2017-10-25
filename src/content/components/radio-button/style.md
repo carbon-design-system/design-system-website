@@ -11,12 +11,12 @@ Radio Button labels and headings should be set in sentence case, with only the f
 
 | Property | Font-size (px/rem)   | Font-weight  |
 |----------|-----------------|--------------|
-| Heading  | 14 / 0.875 | Bold / 700   |
+| Heading  | 14 / 0.875 | Semi-Bold / 600   |
 | Label    | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
-| Property                     | PX | REM   |
+| Property                     | px | rem  |
 |------------------------------|----|-------|
 | Button height & width        | 18 | 1.125 |
 | Selected dot: height & width | 8  | 0.5   |

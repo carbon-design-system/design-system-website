@@ -24,14 +24,14 @@ Labels should be one to two words only, with a limit of 16 characters total per 
 
 | Property                 | Font-size (px/rem)    | Font-weight  |
 |--------------------------|-----------------|--------------|
-| Current & completed step| 14 / 0.875 | Bold / 700   |
+| Current & completed step| 14 / 0.875 | Semi-Bold / 600   |
 | Future steps | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
 The checkmark icon can be found in the [iconography](/style/iconography/library) library.
 
-| Property                 | PX  | REM   |
+| Property                 | px  | rem   |
 |--------------------------|-----|-------|
 | Circle                   | 24  | 1.5   |
 | Line weight              | 2   | -     |

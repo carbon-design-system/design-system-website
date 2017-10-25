@@ -18,13 +18,13 @@ Search text should be set in sentence case, with only the first letter of the fi
 | Property        | Font-size (px/rem)     | Font-weight       |
 |------------------|-----------------|---------------------|
 | Placeholder text | 14 / 0.875 | Normal italic / 400 |
-| Text             | 14 / 0.875 | Bold / 700          |
+| Text             | 14 / 0.875 | Semi-Bold / 600          |
 
 ## Structure
 
 The width of the Search field should appropriately fit the design and layout of content. Larger Search fields can include a filter button and a list/card view button.
 
-| Property             | PX | REM   |
+| Property             | px | rem   |
 |----------------------|----|-------|
 | Height: regular      | 44 | 2.75  |
 | Height: small        | 32 | 2     |

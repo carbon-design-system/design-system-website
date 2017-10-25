@@ -1,4 +1,4 @@
-| REM       | PX    | ACTUAL SIZE                  |
+| rem       | px    | Actual size                  |
 |-----------|-------|------------------------------|
 | 0.75rem   | 12 px | Good design is good business |
 | 0.875rem  | 14 px | Good design is good business |

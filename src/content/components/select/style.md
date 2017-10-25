@@ -25,14 +25,14 @@ Select text should be set in sentence case, with only the first word in a phrase
 
 | Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
-| Label    | 14 / 0.875 | Bold / 700   |
-| Label: inline select    | 14px / 0.875rem |  Normal / 400   |
+| Label    | 14 / 0.875 | Semi-Bold / 600   |
+| Label: inline select    | 14 / 0.875 |  Normal / 400   |
 | Text     | 14 / 0.875 | Normal / 400 |
-| Text: inline select     | 14 / 0.875rem | Bold / 700 |
+| Text: inline select     | 14 / 0.875 | Semi-Bold / 600 |
 
 ## Structure
 
-| Property                    | PX | REM   |
+| Property                    | px | rem   |
 |-----------------------------|----|-------|
 | Height                      | 40 | 2.5   |
 | Spacing: Label & field      | 10 | 0.625 |
@@ -60,7 +60,7 @@ _Examples of open, disabled, and help Select states_
 
 ### Small Select
 
-| Property                    | PX | REM   |
+| Property                    | px | rem   |
 |-----------------------------|----|-------|
 | Height                      | 24 | 1.5   |
 | Width                       | 56 | 3.5   |
@@ -82,7 +82,7 @@ _Examples of open and disabled Small Select states_
 
 ### Inline select
 
-| Property                    | PX | REM   |
+| Property                    | px | rem   |
 |-----------------------------|----|-------|
 | Height                      | 32 | 2     |
 | Internal spacing            | 10  | 0.625    |

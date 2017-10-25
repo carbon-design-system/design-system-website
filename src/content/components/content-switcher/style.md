@@ -20,7 +20,7 @@ Content Switcher text should be set in sentence case, with only the first word i
 
 Content Switchers must have at least two options for the user to choose from. Each container that makes up the Content Switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2rem on both sides of the text.
 
-| Property         | PX | REM |
+| Property         | px | rem |
 |------------------|----|-----|
 | Height           | 40 | 2.5 |
 | Border           | 1  | -   |

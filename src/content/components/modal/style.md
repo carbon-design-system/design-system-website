@@ -16,19 +16,19 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 | Property | Font-size (px/rem)     | Font-weight |
 |----------|-----------------|--------------|
-| Label    | 12 / 0.75  | Bold / 700   |
+| Label    | 12 / 0.75  | Semi-Bold / 600   |
 | Title    | 26 / 1.625 | Normal / 400 |
 | Text     | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 
-| LAYER      | ELEVATION     | BOX-SHADOW      |
+| Layer      | Elevation     | Box-shadow      |
 |------------|----------|----------|
 | Pop-out    | 24       | `0 12px 24px 0 rgba(0,0,0,0.10);`  |
 
 ## Structure
 
-| Property                  | PX | REM     |
+| Property                  | px | rem     |
 |---------------------------|----|---------|
 | Top border                | 5  | 0.313    |
 | X icon                    | 12 | 0.75   |

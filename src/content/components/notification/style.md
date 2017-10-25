@@ -17,14 +17,14 @@ Notification titles should not exceed more than three words. Notification text s
 
 | Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
-| Title    | 14 / 0.875 | Bold / 700   |
+| Title    | 14 / 0.875 | Semi-Bold / 600   |
 | Text     | 14 / 0.875 | Normal / 400 |
 
 ## Structure
 
 ### Toast Notification
 
-| Property           | PX  | REM    |
+| Property           | px  | rem    |
 |--------------------|-----|--------|
 | Height             | varies based on content  | 5      |
 | Width              | 270 | 16.875 |
@@ -39,7 +39,7 @@ _Structure and spacing measurements for a Toast Notification | px / rem_
 
 The width of an Inline Notification will vary based on content.
 
-| Property          | PX | REM  |
+| Property          | px | rem  |
 |-------------------|----|------|
 | Height: one-line  | 40 | 2.5  |
 | Height: two lines | 56 | 3.5  |

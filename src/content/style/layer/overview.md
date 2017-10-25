@@ -5,7 +5,7 @@
 
 <div data-insert-component="LayerTypes"></div>
 
-LAYER NAME | ELEVATION | BOX-SHADOW
+Layer name | Elevation | Box-shadow
 -------------------|--------------|-----------------
 **Base** | 0 | none
 **Flat** | 1 | none

@@ -30,7 +30,3 @@ _Example of a Slider interaction_
 * Range values are used to describe the range in numbers.
 * Do not use for ranges that are extremely large _(ex. 1-1000)_.
 * Do not use for ranges that are too small _(ex. 1-3)_.
-
-
-![slider example](images/slider-usage-1.png)
-_Slider used to choose storage size of a Container_

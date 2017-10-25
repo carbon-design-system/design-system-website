@@ -12,14 +12,14 @@ _Example of a Pie Chart section, hovered_
 
 ## Typography
 
-| Property                       | Font-size (PX/REM) | Font-weight   |
+| Property                       | Font-size (px/rem) | Font-weight   |
 |--------------------------------|--------------------|---------------|
 | Data Value	                   | 29/1.8125          | Light / 300   |
 | Data Variable	                 | 14/0.875           | Normal / 400  |
 
 ## Structure
 
-| Property                       | PX   | REM   |
+| Property                       | px   | rem   |
 |--------------------------------|------|-------|
 | Height & width			           | 192  | 12    |
 | Chart Thickness                | 30   | 1.875 |
