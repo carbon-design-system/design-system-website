@@ -11,7 +11,7 @@ class Overview extends React.Component {
   componentDidMount() {
     document.title = 'Carbon Design System';
     window.addEventListener('resize', () => {
-      if (!window.location.pathname.length > 0) {
+      if (window.location.pathname.length === 1) {
         this.setState({
           windowWidth: window.innerWidth
         });
@@ -87,7 +87,7 @@ class Overview extends React.Component {
             yVal = -35;
           }
         }
-        currentIcon.style.transform = `translateX(${xVal}px) translateY(${yVal}px) rotateX(${xVal * 1.15}deg) rotateY(${yVal * 1.15}deg)`;
+        // currentIcon.style.transform = `translateX(${-xVal}px) translateY(${-yVal}px)`;
       }
     });
   }
@@ -103,7 +103,7 @@ class Overview extends React.Component {
     const styleIll = require('./images/style.png');
     const scatter = require('./images/scatter.svg');
     const shapes = require('./images/shapes.png');
-    const svgViewBox = (this.state.windowWidth < 701) ? '0 0 4000 823' : '0 0 2500 823';
+    const svgViewBox = (this.state.windowWidth < 903) ? '0 0 4000 823' : '0 0 2500 823';
 
     return (
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
