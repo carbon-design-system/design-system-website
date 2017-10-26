@@ -48,8 +48,23 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loader:
-          'style-loader!css-loader?importLoaders=1!postcss-loader!sass-loader',
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 2
+            },
+          },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader',
+            options: {
+              includePaths: [
+                path.resolve(__dirname, '../node_modules')
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.md$/,
