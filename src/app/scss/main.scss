@@ -11,8 +11,8 @@ $css--reset: true;
 $css--plex: true;
 $font-path: '/assets/fonts';
 
-@import 'node_modules/carbon-components/src/globals/scss/styles';
 @import 'node_modules/carbon-addons-bluemix/src/globals/scss/styles';
+@import 'node_modules/carbon-components/src/globals/scss/styles';
 
 //---------------------------------------------------------------
 // Global

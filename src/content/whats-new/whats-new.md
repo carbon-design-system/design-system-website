@@ -19,8 +19,6 @@ V8 marks the beginning of a full ecosystem behind Carbon. Carbon Components beco
 
 * Reflecting the new ecosystem of Carbon, the V8 Design Kit now separates components from Add-ons.
 * Product specific templates have been removed and replaced with a variety of templates showcasing best practices in using Carbon Components.
-* The Carbon Design Kit now supports [Sketch 47 Libraries](https://www.sketchapp.com/docs/libraries/)!
-
 
 ***
 <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank">Download the V8 Kit</a>

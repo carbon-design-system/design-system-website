@@ -77,6 +77,10 @@ class LiveComponent extends Component {
       this.props.component === 'data-table' && variation === 'data-table-v2--small'
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+    } else if (
+      this.props.component === 'header'
+    ) {
+      htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
     } else {
       htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`);
     }
@@ -120,10 +124,17 @@ class LiveComponent extends Component {
     const { component } = this.props;
     let componentTitle;
     let variationContent;
-    let backLink = component === 'detail-page-header--no-tabs' ||
-      component === 'detail-page-header--with-tabs'
-      ? '/components/detail-page-header/code'
-      : `/components/${component}/code`;
+    let backLink;
+
+    if (component === 'header' || component === 'card' || component === 'interior-left-nav' || component === 'module' || component === 'order-summary') {
+      backLink = `/add-ons/${component}/code`;
+    } else if (component === 'detail-page-header--no-tabs' || component === 'detail-page-header--with-tabs') {
+      backLink = '/add-ons/detail-page-header/code';
+    } else {
+      backLink = `/components/${component}/code`;
+    }
+
+    let content;
     if (
       component === 'detail-page-header--no-tabs' ||
       component === 'detail-page-header--with-tabs'
@@ -131,7 +142,11 @@ class LiveComponent extends Component {
       variationContent = this.renderVariation(component);
       componentTitle = 'Detail page header';
     } else {
-      const content = require(`../../../../data/components/${component}.js`); // eslint-disable-line
+      if (component === 'header') {
+        content = require('../../../../data/add-ons/header.js');
+      } else {
+        content = require(`../../../../data/components/${component}.js`); // eslint-disable-line
+      }
       const variations = content.variations;
       variationContent = content.variations
         ? Object.keys(variations).map(variation =>

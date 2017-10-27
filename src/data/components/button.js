@@ -10,6 +10,9 @@
     ],
     "ghost-button": [
       "Ghost button"
+    ],
+    "danger-button": [
+      "Danger button"
     ]
   },
   "__content": "\n"
