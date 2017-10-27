@@ -193,7 +193,7 @@ class Overview extends React.Component {
             </g> */}
           </svg>
           <h1 className="banner__logo"><span className="banner__logo--bold">Carbon</span> Design System</h1>
-          <Button kind="secondary" className="banner__cta-btn">Explore the system</Button>
+          <Link to="/components/overview" className="bx--btn bx--btn--secondary banner__cta-btn">Explore the system</Link>
         </section>
         <section className="overview-page__section">
           <ul className="overview-page__list">
