@@ -5,6 +5,13 @@
   max-height: 0;
   transition: 0.3s;
 
+  .sub-nav-item__arrow {
+    height: rem(8px);
+    width: rem(8px);
+    fill: $color__navy-gray-7;
+    transition: 0.3s;
+  }
+
   .main-nav-item__open & {
     max-height: 100rem;
   }

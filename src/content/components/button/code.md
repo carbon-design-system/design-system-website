@@ -7,4 +7,6 @@ variations:
   - Secondary button
   ghost-button:
   - Ghost button
+  danger-button:
+  - Danger button
 ---

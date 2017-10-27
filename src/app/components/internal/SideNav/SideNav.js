@@ -183,7 +183,7 @@ class SideNav extends Component {
       <p className="sub-nav__item">
         {parent.title}
         <Icon
-          className="main-nav-item__arrow"
+          className="sub-nav-item__arrow"
           name="caret--down"
           aria-hidden="true"
           description="Menu arrow icon"
