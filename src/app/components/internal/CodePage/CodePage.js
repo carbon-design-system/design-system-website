@@ -6,7 +6,8 @@ import ComponentExample from '../ComponentExample/ComponentExample';
 
 class CodePage extends Component {
   static propTypes = {
-    component: PropTypes.string
+    component: PropTypes.string,
+    hideViewFullRender: PropTypes.bool,
   };
 
   componentDidMount() {
@@ -116,7 +117,7 @@ class CodePage extends Component {
       } else {
         htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
       }
-      componentContent = <ComponentExample component={component} htmlFile={htmlFile} />;
+      componentContent = <ComponentExample hideViewFullRender={this.props.hideViewFullRender} component={component} htmlFile={htmlFile} />;
     }
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {

@@ -11,6 +11,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 require('babel-polyfill');
+const path = require('path');
 
 function ensureSlash(path, needsSlash) {
   const hasSlash = path.endsWith('/');
@@ -50,10 +51,22 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader!postcss-loader!sass-loader',
-        }),
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            },
+          },
+          { loader: 'postcss-loader' },
+          { loader: 'sass-loader',
+            options: {
+              includePaths: [
+                path.resolve(__dirname, '../node_modules')
+              ],
+            },
+          },
+        ],
       },
       {
         test: /\.md$/,

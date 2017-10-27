@@ -181,26 +181,6 @@ class OverviewPage extends Component {
       {
         name: 'Tile',
         img: require('./images/Tile.svg'),
-        link: '/components/tile'
-      },
-      {
-        name: 'Text Input',
-        img: require('./images/Text Input.svg'),
-        link: '/components/text-input'
-      },
-      {
-        name: 'Tile',
-        img: require('./images/Tile.svg'),
-        link: '/components/tile',
-      },
-      {
-        name: 'Text Input',
-        img: require('./images/Text Input.svg'),
-        link: '/components/text-input',
-      },
-      {
-        name: 'Tile',
-        img: require('./images/Tile.svg'),
         link: '/components/tile',
       },
       {

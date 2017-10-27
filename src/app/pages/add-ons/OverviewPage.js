@@ -9,7 +9,7 @@ import Page from '../../components/internal/Page';
 class OverviewPage extends Component {
   render() {
     const contentFile = require('../../../content/add-ons/overview.md');
-    return <Page label="Component" title="Overview" content={contentFile} />;
+    return <Page label="Add-ons" title="Overview" content={contentFile} />;
   }
 }
 
