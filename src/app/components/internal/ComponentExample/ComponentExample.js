@@ -10,6 +10,7 @@ class ComponentExample extends Component {
     htmlFile: PropTypes.string,
     component: PropTypes.string,
     variation: PropTypes.string,
+    hideViewFullRender: PropTypes.bool,
   };
 
   render() {
@@ -29,6 +30,15 @@ class ComponentExample extends Component {
       ? `/components/${variation}/live`
       : `/components/${component}/live`;
 
+    const viewFullRender = this.props.hideViewFullRender ?
+    '' :
+    (<Link
+      className="component-example__view-full-render"
+      to={componentLink}
+    >
+      View full render
+    </Link>);
+
     return (
       <div className={lightUIclassnames}>
         <div className="svg--sprite" aria-hidden="true" />
@@ -36,12 +46,7 @@ class ComponentExample extends Component {
           <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />
           </div>
-          <Link
-            className="component-example__view-full-render"
-            to={componentLink}
-          >
-            View full render
-          </Link>
+          {viewFullRender}
         </div>
         <CodeExample htmlFile={htmlFile} />
       </div>
