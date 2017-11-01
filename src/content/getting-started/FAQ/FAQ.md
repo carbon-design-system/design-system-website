@@ -27,6 +27,12 @@ Please open an issue in the appropriate [GitHub repo](https://github.com/carbon-
 ### Why hasn't my bug been fixed yet?
 If you have a pressing bug or change it is best to make PR for the issue yourself. Our team works in sprints and will try to address your bug as soon as possible, usually by the following sprint. Issues that are out of scope will be closed until it becomes a higher priority.
 
+### I haven't updated to the latest version of Carbon yet, but I still need the old documentation. Is there a place I can find it?
+
+Every version of Carbon that is still supported is hosted at its own domain. You can find the old **[V6](http://v6.carbondesignsystem.com/)** and **[V7](http://v7.carbondesignsystem.com/)** sites here.
+
+
+
 ### Where do I go if I've read everything and still have an issue/question?
 If you still have questions or can't find the answer you are looking for feel free to reach out in one of the following ways:
 
