@@ -193,9 +193,33 @@
           &:first-child {
             font-weight: 600;
             white-space: nowrap;
+
+            @media all and (max-width: 550px) {
+              white-space: normal;
+            }
           }
         }
       }
+    }
+  }
+
+  main[data-page="style-overview-typography"] & hr + hr + table tbody tr {
+    @media all and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  main[data-page="style-overview-typography"] & hr + hr + table tbody tr td {
+    @media all and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  main[data-page="style-overview-typography"] & hr + hr + table tbody tr td:nth-child(2) {
+    @media all and (max-width: 600px) {
+      text-align: left;
+      font-size: 3rem;
     }
   }
 

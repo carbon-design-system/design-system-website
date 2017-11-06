@@ -27,7 +27,7 @@
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
-  transition: 500ms $bx--standard-easing;
+  transition: $transition--base $bx--standard-easing;
 
   @include breakpoint('bp--sm--major') {
     box-shadow: none;
@@ -96,6 +96,7 @@
   .bx--search-input {
     padding: 0 0.75rem;
     height: 100%;
+    border-radius: 0;
   }
 
   .bx--search--sm .bx--search-close {

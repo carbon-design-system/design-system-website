@@ -12,6 +12,10 @@
   @include breakpoint('768px') {
     padding-bottom: 0;
   }
+
+  @media all and (max-width: 550px) {
+    height: rem(250px);
+  }
 }
 
 .page-header__label {

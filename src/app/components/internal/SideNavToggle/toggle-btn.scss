@@ -10,10 +10,9 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  transition: left $transition--base ease;
   z-index: 8000;
   border-radius: 0;
-  transition: 300ms ease;
+  transition: $transition--base $bx--standard-easing;
 
   &:focus {
     outline: none;
