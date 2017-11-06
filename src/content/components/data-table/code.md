@@ -1,18 +1,14 @@
 ---
-desc: <span>Data Tables</span> present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.
+desc: <span>Data Tables</span> present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable. The older data table documentation can be found <a href="http://v7.carbondesignsystem.com/components/data-table/code" target="_blank">here</a>.
 variations:
   data-table-v2:
-  - Data Table (v2)
+  - Data Table
   data-table-v2-expandable:
-  - Expandable Data Table (v2)
+  - Expandable Data Table
   data-table-v2--pagination:
-  - Data Table with Pagination (v2)
+  - Data Table with Pagination
   data-table-v2--small:
-  - Small Data Table (v2)
-  data-table:
-  - Data Table (v1)
-  data-table--simple:
-  - Simple Table
+  - Small Data Table
   toolbar:  
   - Toolbar
 ---
