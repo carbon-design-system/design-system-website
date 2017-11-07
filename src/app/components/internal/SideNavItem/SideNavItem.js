@@ -16,30 +16,30 @@ class SideNavItem extends Component {
   };
 
   handleClick = evt => {
-    const targetIsSubItem = evt.target.classList.contains('sub-nav__item') || evt.target.classList.contains('sub-nav__item-link') || evt.target.classList.contains('sub-nav__item__arrow');
+    const targetIsSubItem = evt.target.classList.contains('sub-nav__item') || evt.target.classList.contains('sub-nav__item-link') || evt.target.classList.contains('sub-nav-item__arrow');
     const hasSubMenu = !(evt.currentTarget.querySelector('ul') === null);
     const targetIsInnerSubNav = evt.currentTarget.classList.contains('main-nav-item--sub');
     const targetIsInnerSubNavItem = evt.target.classList.contains('sub-nav__item-link--sub');
     const targetIsInnerSubNavItemContainer = evt.target.classList.contains('sub-nav__item--sub');
-    // const shouldNotClose = evt.currentTarget.classList.contains('main-nav-item') && (evt.currentTarget;
-    console.log('TARGET', evt.target);
-    console.log('CURRENT TARGET', evt.currentTarget);
+    const targetIsArrow = evt.target.nodeName === 'path';
     if ((!targetIsSubItem && hasSubMenu) || (targetIsInnerSubNav && !targetIsInnerSubNavItem && !targetIsInnerSubNavItemContainer)) {
-      const open = !this.state.open;
-      this.setState({ open });
-      const subMenu = evt.currentTarget.querySelector('ul');
-      if (!this.state.open) {
-        let height = 0;
-        [...subMenu.children].forEach(child => {
-          height += child.offsetHeight;
-        });
-        subMenu.style.maxHeight = `${height + 400}px`;
-      } else {
-        const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-        if (!evt.currentTarget.classList.contains('main-nav-item__open') && isIE11) {
-          subMenu.style.maxHeight = 0;
-        } else if (!isIE11) {
-          subMenu.style.maxHeight = 0;
+      if (!targetIsArrow) {
+        const open = !this.state.open;
+        this.setState({ open });
+        const subMenu = evt.currentTarget.querySelector('ul');
+        if (!this.state.open) {
+          let height = 0;
+          [...subMenu.children].forEach(child => {
+            height += child.offsetHeight;
+          });
+          subMenu.style.maxHeight = `${height + 400}px`;
+        } else {
+          const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+          if (!evt.currentTarget.classList.contains('main-nav-item__open') && isIE11) {
+            subMenu.style.maxHeight = 0;
+          } else if (!isIE11) {
+            subMenu.style.maxHeight = 0;
+          }
         }
       }
     }

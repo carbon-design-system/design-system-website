@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import ReactGA from 'react-ga';
-import { Button, ClickableTile } from 'carbon-components-react';
+import { ClickableTile } from 'carbon-components-react';
 
 class Overview extends React.Component {
   state = {
@@ -10,13 +10,15 @@ class Overview extends React.Component {
 
   componentDidMount() {
     document.title = 'Carbon Design System';
-    window.addEventListener('resize', () => {
-      if (window.location.pathname.length === 1) {
-        this.setState({
-          windowWidth: window.innerWidth
-        });
-      }
-    });
+    if (window.pathname === '/') {
+      window.addEventListener('resize', () => {
+        if (window.location.pathname.length === 1) {
+          this.setState({
+            windowWidth: window.innerWidth
+          });
+        }
+      });
+    }
   }
 
   handleClick = (cat) => {
