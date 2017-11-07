@@ -20,6 +20,12 @@
   flex-direction: column;
   margin: 0 1rem 2rem 0;
   padding: 0;
+
+  @media all and (max-width: 600px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .faq__tile img {

@@ -75,6 +75,8 @@
 
     &--with-tooltip {
       position: relative;
+      padding-right: 4px;
+      padding-left: 5px;
     }
 
     &--with-tooltip.show-tooltip:after {
