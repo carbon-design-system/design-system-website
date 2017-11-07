@@ -223,6 +223,12 @@
     }
   }
 
+  main[data-page="add-ons-overview"] & {
+    @media all and (max-width: 600px) {
+      overflow: scroll;
+    }
+  }
+
   ul,
   ol {
     @include typescale('epsilon');
