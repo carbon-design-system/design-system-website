@@ -14,7 +14,7 @@ class PageFooter extends Component {
   }
 
   getLastUpdate = () => {
-    const lastUpdatedDate = new Date('10/27/2017'); // UPDATE BEFORE CF PUSH
+    const lastUpdatedDate = new Date('11/10/2017'); // UPDATE BEFORE CF PUSH
     const months = [
       'January',
       'February',
