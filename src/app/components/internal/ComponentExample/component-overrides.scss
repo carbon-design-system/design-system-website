@@ -23,12 +23,6 @@
     top: 206px;
   }
 
-  & .bx--detail-page-header--with-tabs {
-    .bx--tabs__nav-link {
-      padding-bottom: 14px;
-    }
-  }
-
   & > .inline-notification .bx--inline-notification {
     display: inline-flex;
     margin-right: 10rem;
@@ -57,6 +51,7 @@
 
     @include breakpoint('768px') {
       display: flex;
+      margin-top: 8px;
     }
   }
 
