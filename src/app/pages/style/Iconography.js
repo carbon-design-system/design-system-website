@@ -46,8 +46,9 @@ class Iconography extends React.Component {
     icons.filter(icon => icon.tags.join('').includes(tag));
 
   handleSearch = (icons, searchValue) => {
-    const namedIcons = this.filterIconsByName(icons, searchValue);
-    const taggedIcons = this.filterIconsByTag(icons, searchValue);
+    const searchVal = searchValue.toLowerCase();
+    const namedIcons = this.filterIconsByName(icons, searchVal);
+    const taggedIcons = this.filterIconsByTag(icons, searchVal);
     const searchResults = namedIcons
       .concat(taggedIcons)
       .filter((icon, index, self) => index === self.indexOf(icon));

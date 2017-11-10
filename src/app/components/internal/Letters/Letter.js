@@ -61,9 +61,9 @@ class Letter extends Component {
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
       >
-        <span className="letter">
+        {/* <span className="letter">
           {html}
-        </span>
+        </span> */}
         {this.getLetterSVG(this.props.letter)}
       </div>
     );
