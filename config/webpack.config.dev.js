@@ -14,7 +14,6 @@ const path = require('path');
 const publicPath = '/';
 const publicUrl = '';
 const env = getClientEnvironment(publicUrl);
-require('babel-polyfill');
 
 const query = {
   bypassOnDebug: true,
@@ -28,22 +27,23 @@ const query = {
 
 module.exports = {
   devtool: 'eval',
-  entry: [
-    require.resolve('react-dev-utils/webpackHotDevClient'),
-    'babel-polyfill',
-    paths.appIndexJs,
-  ],
+  entry: {
+    main: [require.resolve('react-dev-utils/webpackHotDevClient'), paths.appIndexJs],
+    'carbon-components': paths.carbonComponentsIndexJs,
+  },
   output: {
     path: paths.appBuild,
     pathinfo: true,
-    filename: 'static/js/bundle.js',
+    filename: 'static/js/[name].js',
     publicPath: publicPath,
+    library: ['CDS', '[name]'],
+    libraryTarget: 'var',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: [paths.appSrc, paths.bluemixComponents],
+        include: [paths.appSrc],
         loader: 'babel-loader',
       },
       {
@@ -113,6 +113,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
+      chunksSortMode: function (lhs, rhs) {
+        return lhs.names[0].localeCompare(rhs.names[0]);
+      }
     }),
     new webpack.DefinePlugin(env),
     new webpack.HotModuleReplacementPlugin(),
@@ -124,10 +127,6 @@ module.exports = {
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
       { from: 'src/assets/googleb9799b851dc5160a.html', to: '/' },
-      {
-        from: 'node_modules/carbon-components/scripts/carbon-components.min.js',
-        to: 'js/',
-      },
     ]),
   ],
 };

@@ -25,21 +25,21 @@ class LiveComponent extends Component {
     } else if (currentComponent === 'Card') {
       currentComponent = 'OverflowMenu';
     }
-    if (window.CarbonComponents[currentComponent]) {
+    if (window.CDS['carbon-components'][currentComponent]) {
       if (currentComponent === 'Tab') {
-        window.CarbonComponents.Tab.init();
-        window.CarbonComponents.ContentSwitcher.init();
+        window.CDS['carbon-components'].Tab.init();
+        window.CDS['carbon-components'].ContentSwitcher.init();
       } else if (currentComponent === 'DataTable') {
-        window.CarbonComponents.OverflowMenu.init();
-        window.CarbonComponents.DataTable.init();
-        window.CarbonComponents.Toolbar.init();
-        window.CarbonComponents.DataTableV2.init();
+        window.CDS['carbon-components'].OverflowMenu.init();
+        window.CDS['carbon-components'].DataTable.init();
+        window.CDS['carbon-components'].Toolbar.init();
+        window.CDS['carbon-components'].DataTableV2.init();
       } else {
         if (this.props.component === 'detail-page-header--with-tabs') {
-          window.CarbonComponents.Tab.init();
-          window.CarbonComponents.OverflowMenu.init();
+          window.CDS['carbon-components'].Tab.init();
+          window.CDS['carbon-components'].OverflowMenu.init();
         }
-        window.CarbonComponents[currentComponent].init();
+        window.CDS['carbon-components'][currentComponent].init();
       }
     }
   }

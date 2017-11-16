@@ -36,13 +36,13 @@ module.exports = {
   appHtml: resolveApp('public/index.hbs'),
   appIndexJs: resolveApp('src/index.js'),
   assets: resolveApp('src/assets'),
+  carbonComponentsIndexJs: resolveApp('src/carbon-components.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   ownNodeModules: resolveApp('node_modules'),
-  bluemixComponents: resolveApp('node_modules/carbon-components'),
-  bluemixReactComponents: resolveApp('node_modules/carbon-components-react'),
+  bluemixReactComponents: resolveApp('node_modules/@console/bluemix-components-react'),
   nodePaths: nodePaths
 };

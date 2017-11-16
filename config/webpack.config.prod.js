@@ -10,7 +10,6 @@ const getClientEnvironment = require('./env');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
-require('babel-polyfill');
 const path = require('path');
 
 function ensureSlash(path, needsSlash) {
@@ -35,18 +34,23 @@ if (env['process.env'].NODE_ENV !== '"production"') {
 }
 
 module.exports = {
-  entry: ['babel-polyfill', paths.appIndexJs],
+  entry: {
+    main: paths.appIndexJs,
+    'carbon-components': paths.carbonComponentsIndexJs,
+  },
   output: {
     filename: 'static/js/[name].[chunkhash].js',
     chunkFilename: 'static/js/[name].[chunkhash].chunk.js',
     path: paths.appBuild,
     publicPath: publicPath,
+    library: ['CDS', '[name]'],
+    libraryTarget: 'var',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        include: [paths.appSrc, paths.bluemixComponents],
+        include: [paths.appSrc],
         loader: 'babel-loader',
       },
       {
@@ -125,6 +129,9 @@ module.exports = {
         minifyCSS: true,
         minifyURLs: true,
       },
+      chunksSortMode: function (lhs, rhs) {
+        return lhs.names[0].localeCompare(rhs.names[0]);
+      }
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -157,10 +164,6 @@ module.exports = {
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
       { from: 'src/assets/googleb9799b851dc5160a.html', to: '' },
-      {
-        from: 'node_modules/carbon-components/scripts/carbon-components.min.js',
-        to: 'js/',
-      },
     ]),
   ],
 };
