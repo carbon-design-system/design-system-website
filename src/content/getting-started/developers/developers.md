@@ -216,3 +216,17 @@ class BXLoading extends HTMLElement {
 }
 customElements.define('bx-loading', BXLoading);
 ```
+
+### Polyfills for older browsers
+
+carbon-components requires some polyfills for older browsers, in addition to carbon-components.js (or carbon-components.min.js).
+The latest list of polyfills is maintained in https://github.com/carbon-design-system/carbon-components/blob/master/demo/polyfills/index.js.
+You can easily find the polyfills in NPM, etc. The current list is below:
+
+* [`Array.from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
+* [`Math.sign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign)
+* [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+* [`CustomEvent`](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent)
+* [`Element#closest()`](https://developer.mozilla.org/es/docs/Web/API/Element/closest)
+* [`Element#matches()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches)
+* [2nd arg of `Element.classList.toggle()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList#Methods)
