@@ -10,7 +10,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | Text: selected date      | $ui-01     | #ffffff   |
 | Text: user input         | $text-01   | #152934   |
 | Text: Highlighted date range text  | $text-01   | #5596e6   |
-| Background: Text Input   | $field-01  | #3d70b2 @ 10%|
+| Background: text input   | $field-01  | #3d70b2 @ 10%|
 | Background: calendar widget | $ui-01     | #ffffff   |
 | Background: selected date| $brand-01  | #3d70b2   |
 | Background: highlighted date range       | $brand-02  | #5596e6   |
@@ -28,9 +28,9 @@ _Structure for Date Picker | px / rem_
 ## Typography
 Labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| Property         | Font-size       | Font-weight  |
-|------------------|-----------------|--------------|
-| Label            | 14 / 0.875      | Semi-Bold / 600   |
+| Property         | Font-size       | Font-weight  | Type style |
+|------------------|-----------------|--------------|----|
+| Label            | 14 / 0.875      | Semi-Bold / 600   | Zeta | 
 | Text: user input  | 14 / 0.875      | Roman / 400  |
 | Text: month & year | 12 / 0.75     | Semi-Bold / 600  |
 | Text: day of the week | 12 / 0.75  | Semi-Bold / 600   |

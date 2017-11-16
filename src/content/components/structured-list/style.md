@@ -11,11 +11,10 @@
 ## Typography
 Structured List headers should be set in all caps, while all other text is set in sentence case. All typography is left aligned. **Line height** for Structured Lists should be set at 18px / 1.25rem.
 
-| Property | Font-size (px/rem)     | Font-weight  |
-|----------|-----------------|--------------|
-| Header   | 12 / 0.75 | Semi-Bold / 600   |
-| Text: 1st column | 14 / 0.75 | Bold / 700   |
-| Text     | 14 / 0.875 | Normal / 400   |
+| Property | Font-size (px/rem)     | Font-weight  | Type style |
+|----------|-----------------|--------------|-- |
+| Column header   | 12 / 0.75 | Semi-Bold / 600   | Omega |
+| Text     | 14 / 0.875 | Normal / 400   | - |
 
 ## Structure
 Structured Lists by default are not accompanied by a border, but one may be added for stylistic purposes, and should be set at 1px.  

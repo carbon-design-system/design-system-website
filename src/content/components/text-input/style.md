@@ -17,10 +17,10 @@ _Examples of default and user-input states for Text Input_
 
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less.
 
-| Property | Font-size (px/rem)     | Font-weight  |
-|----------|-----------------|--------------|
-| Label    | 14 / 0.875 | Semi-Bold / 600   |
-| Text     | 14 / 0.875 | Normal / 400 |
+| Property | Font-size (px/rem)     | Font-weight  | Type style |
+|----------|-----------------|--------------|---|
+| Label    | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Text     | 14 / 0.875 | Normal / 400 |- |
 
 ## Structure
 

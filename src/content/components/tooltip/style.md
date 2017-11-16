@@ -19,11 +19,11 @@ _Example of closed and open states for a Tooltip_
 
 Tooltip labels and text should be set in sentence case.
 
-| Property | Font-size (px/rem)     | Font-weight  |
-|----------|-----------------|--------------|
-| Header   | 16 / 1     | Semi-Bold / 600   |
-| Label    | 14 / 0.875 | Semi-Bold / 600   |
-| Text     | 14 / 0.875 | Normal / 400 |
+| Property | Font-size (px/rem)     | Font-weight  | Type style |
+|----------|-----------------|--------------|---|
+| Label   | 16 / 1     | Semi-Bold / 600   | Epsilon  |
+| Subtitle    | 14 / 0.875 | Semi-Bold / 600   | Zeta  |
+| Text     | 14 / 0.875 | Normal / 400 | - |
 
 ## Layer
 

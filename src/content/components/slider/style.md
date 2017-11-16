@@ -11,10 +11,10 @@
 ## Typography
 Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| Property 			   | Font-size (px/rem)       | Font-weight  |
-|----------------------|-----------------|--------------|
-| Label                | 14 / 0.875 | Semi-Bold / 600   |
-| Range values  | 14 / 0.875 | Normal / 400 |
+| Property 			   | Font-size (px/rem)       | Font-weight  | Type style |
+|----------------------|-----------------|--------------|--|
+| Label                | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Range values  | 14 / 0.875 | Normal / 400 | -  | 
 
 ## Structure
 The width of a Slider varies based on page content and layout.

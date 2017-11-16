@@ -9,10 +9,10 @@
 
 Radio Button labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Property | Font-size (px/rem)   | Font-weight  |
-|----------|-----------------|--------------|
-| Heading  | 14 / 0.875 | Semi-Bold / 600   |
-| Label    | 14 / 0.875 | Normal / 400 |
+| Property | Font-size (px/rem)   | Font-weight  | Type style |
+|----------|-----------------|--------------|--|
+| Heading  | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Label    | 14 / 0.875 | Normal / 400 | - |
 
 ## Structure
 

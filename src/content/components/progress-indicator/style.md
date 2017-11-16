@@ -22,10 +22,10 @@ _Examples of current, completed, and future steps for Progress Indicator_
 
 Labels should be one to two words only, with a limit of 16 characters total per label. All labels should be set in sentence case.
 
-| Property                 | Font-size (px/rem)    | Font-weight  |
-|--------------------------|-----------------|--------------|
-| Current & completed step| 14 / 0.875 | Semi-Bold / 600   |
-| Future steps | 14 / 0.875 | Normal / 400 |
+| Property                 | Font-size (px/rem)    | Font-weight  | Type style |
+|--------------------------|-----------------|--------------|--|
+| Current & completed step| 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Future steps | 14 / 0.875 | Normal / 400 | - |
 
 ## Structure
 

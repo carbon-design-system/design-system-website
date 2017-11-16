@@ -23,12 +23,12 @@ _Examples of default and new selection Select states_
 
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
-| Property | Font-size (px/rem)      | Font-weight  |
-|----------|-----------------|--------------|
-| Label    | 14 / 0.875 | Semi-Bold / 600   |
-| Label: inline select    | 14 / 0.875 |  Normal / 400   |
-| Text     | 14 / 0.875 | Normal / 400 |
-| Text: inline select     | 14 / 0.875 | Semi-Bold / 600 |
+| Property | Font-size (px/rem)      | Font-weight  | Type style |
+|----------|-----------------|--------------|---|
+| Label    | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Label: inline select    | 14 / 0.875 |  Normal / 400   | - |
+| Text     | 14 / 0.875 | Normal / 400 | - |
+| Text: inline select     | 14 / 0.875 | Semi-Bold / 600 | Zeta |
 
 ## Structure
 

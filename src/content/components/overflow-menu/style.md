@@ -26,7 +26,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 
 | Property | Font-size (px/rem)    | Font-weight |
 |------------|-----------------|--------------|
-| Label      | 14 / 0.875 | Normal / 400 |
+| Text      | 14 / 0.875 | Normal / 400 |
 
 ## Layer
 

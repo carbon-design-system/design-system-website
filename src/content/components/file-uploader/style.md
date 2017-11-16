@@ -13,11 +13,11 @@
 
 The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
-| Property         | Font-size (px/rem)     | Font-weight  |
-|------------------|-----------------|--------------|
-| Label            | 14 / 0.875 | Semi-Bold / 600   |
-| Instruction text | 14 / 0.875 | Normal / 400 |
-| File name        | 12 / 0.75  | Normal / 400 |
+| Property         | Font-size (px/rem)     | Font-weight  | Type style |
+|------------------|-----------------|--------------|---|
+| Label            | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Instruction text | 14 / 0.875 | Normal / 400 | -    |
+| File name        | 12 / 0.75  | Normal / 400 | -    |
 
 ## Structure
 
