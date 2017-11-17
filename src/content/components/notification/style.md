@@ -15,10 +15,10 @@
 
 Notification titles should not exceed more than three words. Notification text should be set in sentence case with only the first word capitalized.
 
-| Property | Font-size (px/rem)      | Font-weight  |
-|----------|-----------------|--------------|
-| Title    | 14 / 0.875 | Semi-Bold / 600   |
-| Text     | 14 / 0.875 | Normal / 400 |
+| Property | Font-size (px/rem)      | Font-weight  | Type style |
+|----------|-----------------|--------------|----|
+| Title    | 14 / 0.875 | Semi-Bold / 600   | Zeta
+| Text     | 14 / 0.875 | Normal / 400 | - |
 
 ## Structure
 

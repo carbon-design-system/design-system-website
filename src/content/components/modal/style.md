@@ -14,11 +14,11 @@
 
 Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman.
 
-| Property | Font-size (px/rem)     | Font-weight |
-|----------|-----------------|--------------|
-| Label    | 12 / 0.75  | Semi-Bold / 600   |
-| Title    | 26 / 1.625 | Normal / 400 |
-| Text     | 14 / 0.875 | Normal / 400 |
+| Property | Font-size (px/rem)     | Font-weight | Type style |
+|----------|-----------------|--------------|---|
+| Optional label    | 12 / 0.75  | Semi-Bold / 600   | Zeta |
+| Heading    | 26 / 1.625 | Normal / 400 | Beta |
+| Text     | 14 / 0.875 | Normal / 400 |- |
 
 ## Layer
 

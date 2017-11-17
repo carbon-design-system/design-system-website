@@ -10,10 +10,10 @@
 
 Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Property  | Font-size (px/rem)      | Font-weight  |
-|------------|-----------------|--------------|
-| Label       | 14 / 0.875 | Semi-Bold / 600   |
-| Text        | 14 / 0.875 | Normal / 400   |
+| Property  | Font-size (px/rem)      | Font-weight  | Type style |
+|------------|-----------------|--------------|----|
+| Label       | 14 / 0.875 | Semi-Bold / 600   | Zeta |
+| Text        | 14 / 0.875 | Normal / 400   | - |
 
 ## Structure
 
