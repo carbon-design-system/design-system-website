@@ -29,6 +29,30 @@
   z-index: 7000;
   transition: 500ms $bx--standard-easing;
 
+  @media (min-width: 400px) {
+    top: 121px;
+  }
+
+  @media (min-width: 412px) {
+    top: 100px;
+  }
+
+  @media (min-width: 719px) {
+    top: 79px;
+  }
+
+  @media (min-width: 1193px) {
+    top: 58px;
+  }
+
+  @media (min-width: 1309px) {
+    top: 58px;
+  }
+
+  @media (min-width: 1400px) {
+    top: 40px;
+  }
+
   @include breakpoint('bp--sm--major') {
     box-shadow: none;
   }
@@ -62,6 +86,7 @@
     &:hover {
       color: $color__blue-51;
     }
+
   }
 
   &__top-container {

@@ -1,6 +1,5 @@
 .side-nav__toggle-btn {
   position: fixed;
-  top: 0;
   left: calc(200px - 2.3rem);
   width: 2.3rem;
   height: 2.3rem;
@@ -11,6 +10,31 @@
   cursor: pointer;
   transition: left $transition--base ease;
   z-index: 8000;
+  border-radius: 0;
+
+  @media (min-width: 400px) {
+    top: 121px;
+  }
+
+  @media (min-width: 412px) {
+    top: 100px;
+  }
+
+  @media (min-width: 719px) {
+    top: 79px;
+  }
+
+  @media (min-width: 1193px) {
+    top: 58px;
+  }
+
+  @media (min-width: 1309px) {
+    top: 58px;
+  }
+
+  @media (min-width: 1400px) {
+    top: 40px;
+  }
 
   @include breakpoint('620px') {
     left: calc(200px - 2.1rem);
@@ -55,7 +79,7 @@
 
   &--closed {
     left: 0;
-  
+
     > div {
       .line:nth-child(2) {
         opacity: 1;

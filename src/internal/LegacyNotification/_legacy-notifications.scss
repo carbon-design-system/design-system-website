@@ -1,0 +1,47 @@
+
+@media (min-width: 400px) {
+
+  .bx--legacy-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 40px;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    background: $support-03;
+    z-index: 10;
+    align-items: center;
+
+    a {
+      color: $text-01;
+    }
+
+    .bx--notification-inline__text{
+      vertical-align: middle;
+      display: inline-flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @media (min-width: 1309px) {
+        flex-direction: row;
+      }
+
+    }
+
+
+    .bx--notification-inline__title {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .bx--notification-inline__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+  }
+}
