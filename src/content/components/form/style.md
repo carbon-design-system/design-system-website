@@ -4,7 +4,7 @@ For color specs, refer to specific components.
 
 ## Typography
 
-Form headings and labels should be set in set in sentence case with the first letter of each word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
+Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
 
 | Property | Font-size (px/rem)     | Font-weight  | Type style |
 |------------|-----------------|--------------|---|
