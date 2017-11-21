@@ -3,6 +3,32 @@
 
 #maincontent {
   padding-bottom: 14rem;
+  padding-top:121px;
+
+  @media (min-width: 436px) {
+    padding-top:100px;
+  }
+
+  @media (min-width: 610px) {
+    padding-top:100px;
+  }
+
+  @media (min-width: 719px) {
+    padding-top:79px;
+  }
+
+  @media (min-width: 1193px) {
+    padding-top:58px;
+  }
+
+  @media (min-width: 1309px) {
+    padding-top:58px;
+  }
+
+  @media (min-width: 1400px) {
+    padding-top: 40px;
+  }
+
 }
 
 .flex-container {

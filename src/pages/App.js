@@ -152,6 +152,14 @@ class App extends Component {
 
     return (
       <div className="wrapper" onLoad={this.initCustomComponents}>
+        <div className='bx--legacy-notification' role='alert'>
+            <div className='bx--notification-inline__details'>
+              <div className='bx--notification-inline__text'>
+                <p className='bx--notification-inline__title'>Announcement: &nbsp;</p>
+                <p className='bx--notification-inline__subtitle'>Carbon Design System is now on Version 8.0, therefore this site and documentation is outdated. Please visit the new <a href="http://www.carbondesignsystem.com">Carbon Design System</a> to get the most up to date designs and code!</p>
+              </div>
+            </div>
+          </div>
         {toggleBtnContent}
         {sideNavContent}
         <div className={classNames}>
