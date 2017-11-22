@@ -22,7 +22,7 @@ _Text and warning hover examples for Overflow Menu_
 
 ## Typography
 
-Overflow Menu text should be set in set in sentence case with the first letter of each word capitalized.
+Overflow Menu text should be set in set in sentence case with the first letter of the first word capitalized.
 
 | Property | Font-size (px/rem)    | Font-weight |
 |------------|-----------------|--------------|
