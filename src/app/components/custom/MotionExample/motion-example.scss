@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
+    // transition: opacity 175ms cubic-bezier(.5, 0, .1, 1);
 
     &--hover,
     &:focus {
@@ -298,9 +298,11 @@ $w4: $s2 + $w;
 .ease-out {
   animation: stroke-fill-out $demo-duration linear;
   animation-delay: -$demo-duration + .01;
+  animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
 }
 
 .ease-in {
   animation: stroke-fill-in $demo-duration linear;
   animation-delay: -$demo-duration + .01;
+  animation-timing-function: cubic-bezier(0.25, 0, 1, 1);
 }
