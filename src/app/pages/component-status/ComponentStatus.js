@@ -9,13 +9,7 @@ import Page from '../../components/internal/Page';
 import Packages from '../../../../package.json';
 
 class ComponentStatus extends React.Component {
-  renderItems = (
-    currentItem,
-    readyIcon,
-    underReviewIcon,
-    deprecatedIcon,
-    notApplicableIcon
-  ) => {
+  renderItems = (currentItem, readyIcon, underReviewIcon, deprecatedIcon, notApplicableIcon) => {
     let status;
     let tag;
     if (currentItem.status === 0) {
@@ -31,13 +25,13 @@ class ComponentStatus extends React.Component {
       tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
     }
     if (currentItem.tag && currentItem.tag === 'updated') {
-      tag = (
-        <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>
-      );
+      tag = <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>;
     }
     return (
       <tr key={currentItem.item}>
-        <td>{currentItem.item} {tag}</td>
+        <td>
+          {currentItem.item} {tag}
+        </td>
         <td>{currentItem.added}</td>
         <td>{status}</td>
       </tr>
@@ -47,35 +41,17 @@ class ComponentStatus extends React.Component {
   render() {
     const readyIcon = (
       <div className="component-status__icon ready">
-        <Icon
-          fill="#8CD211"
-          width="16"
-          height="16"
-          name="checkmark--glyph"
-          description="ready status"
-        />
+        <Icon fill="#8CD211" width="16" height="16" name="checkmark--glyph" description="ready status" />
       </div>
     );
     const underReviewIcon = (
       <div className="component-status__icon under-review">
-        <Icon
-          fill="#EFC100"
-          width="16"
-          height="16"
-          name="warning--glyph"
-          description="ready status"
-        />
+        <Icon fill="#EFC100" width="16" height="16" name="warning--glyph" description="ready status" />
       </div>
     );
     const deprecatedIcon = (
       <div className="component-status__icon deprecated">
-        <Icon
-          fill="#E71D32"
-          width="16"
-          height="16"
-          name="error--glyph"
-          description="ready status"
-        />
+        <Icon fill="#E71D32" width="16" height="16" name="error--glyph" description="ready status" />
       </div>
     );
     const notApplicableIcon = (
@@ -83,9 +59,7 @@ class ComponentStatus extends React.Component {
         <span>-</span>
       </div>
     );
-    const currentVersion = `Current version: ${Packages.dependencies[
-      'carbon-components'
-    ]} (October 27, 2017)`;
+    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']} (December 04, 2017)`;
     const componentStatus = require('../../../data/component-status.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
@@ -119,13 +93,7 @@ class ComponentStatus extends React.Component {
           </thead>
           <tbody>
             {Object.keys(componentStatus.items).map(item => {
-              return this.renderItems(
-                componentStatus.items[item],
-                readyIcon,
-                underReviewIcon,
-                deprecatedIcon,
-                notApplicableIcon
-              );
+              return this.renderItems(componentStatus.items[item], readyIcon, underReviewIcon, deprecatedIcon, notApplicableIcon);
             })}
           </tbody>
         </table>
@@ -149,27 +117,19 @@ class ComponentStatus extends React.Component {
                 <td>{underReviewIcon}</td>
                 <td>Under review</td>
                 <td>
-                  Indicates that a component’s design, code, or usage is being
-                  re-examined. This means in the near future either changes are
-                  coming to the component or it will be deprecated for a new
-                  version.
+                  Indicates that a component’s design, code, or usage is being re-examined. This means in the near future either changes are coming to the component or it will be
+                  deprecated for a new version.
                 </td>
               </tr>
               <tr>
                 <td>{deprecatedIcon}</td>
                 <td>Deprecated</td>
-                <td>
-                  Deprecated components have either been completely replaced by
-                  new components or are no longer being supported in the
-                  component library.
-                </td>
+                <td>Deprecated components have either been completely replaced by new components or are no longer being supported in the component library.</td>
               </tr>
               <tr>
                 <td>{notApplicableIcon}</td>
                 <td>Not applicable</td>
-                <td>
-                  Component was not available in this version of the library.
-                </td>
+                <td>Component was not available in this version of the library.</td>
               </tr>
               <tr>
                 <td>
@@ -183,10 +143,7 @@ class ComponentStatus extends React.Component {
                   <span className="bx--tag bx--tag--third-party">Updated</span>
                 </td>
                 <td />
-                <td>
-                  Applied only to existing components after they have been under
-                  review, tweaked, and re-released to the design system site.
-                </td>
+                <td>Applied only to existing components after they have been under review, tweaked, and re-released to the design system site.</td>
               </tr>
             </tbody>
           </table>
