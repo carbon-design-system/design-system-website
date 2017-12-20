@@ -75,12 +75,9 @@ Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab
 ```
 
 #### _References_
-_“The Visual Display of Quantitative Information” by Edward Tufte_
 
 _“The Visual Display of Quantitative Information” by Edward Tufte_
 
 _“Show Me the Numbers: Designing Tables and Graphs to Enlighten” by Stephen Few_
 
 _“Interactive Data Visualization for the Web, 2nd Edition” by Scott Murray_
-
-_“Show Me the Numbers: Designing Tables and Graphs to Enlighten” by Stephen Few_
