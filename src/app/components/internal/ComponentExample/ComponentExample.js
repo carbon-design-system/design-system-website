@@ -11,33 +11,30 @@ class ComponentExample extends Component {
     component: PropTypes.string,
     variation: PropTypes.string,
     hideViewFullRender: PropTypes.bool,
+    codepenSlug: PropTypes.string
   };
 
   render() {
-    const { htmlFile, component, variation } = this.props;
-
+    const { htmlFile, component, codepenSlug } = this.props;
     const classNames = classnames({
       'component-example__live--rendered': true,
-      [`${component}`]: true,
+      [`${component}`]: true
     });
 
     const lightUIclassnames = classnames({
       'component-example': true,
-      'bx--global-light-ui': component === 'tabs',
+      'bx--global-light-ui': component === 'tabs'
     });
 
-    const componentLink = component === 'detail-page-header'
-      ? `/components/${variation}/live`
-      : `/components/${component}/live`;
+    const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
 
-    const viewFullRender = this.props.hideViewFullRender ?
-    '' :
-    (<Link
-      className="component-example__view-full-render"
-      to={componentLink}
-    >
-      View full render
-    </Link>);
+    const viewFullRender = this.props.hideViewFullRender ? (
+      ''
+    ) : (
+      <Link className="component-example__view-full-render" to={componentLink}>
+        View full render
+      </Link>
+    );
 
     return (
       <div className={lightUIclassnames}>

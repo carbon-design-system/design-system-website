@@ -7,7 +7,7 @@ import ComponentExample from '../ComponentExample/ComponentExample';
 class CodePage extends Component {
   static propTypes = {
     component: PropTypes.string,
-    hideViewFullRender: PropTypes.bool,
+    hideViewFullRender: PropTypes.bool
   };
 
   componentDidMount() {
@@ -41,7 +41,17 @@ class CodePage extends Component {
     }
   }
 
-  renderVariation = (parent, variation, title) => {
+  renderVariation = (parent, variation, title, codepenSlug) => {
+    let currentCodepenSlug = '';
+    if (typeof codepenSlug === 'string') {
+      currentCodepenSlug = codepenSlug;
+    } else {
+      Object.keys(codepenSlug).map(slug => {
+        if (variation === slug) {
+          currentCodepenSlug = codepenSlug[slug][0];
+        }
+      });
+    }
     let htmlFile;
     if (parent === 'text-input' && variation === 'text-area') {
       htmlFile = require('carbon-components/src/components/text-area/text-area.html');
@@ -69,7 +79,7 @@ class CodePage extends Component {
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>
-        <ComponentExample variation={variation} component={parent} htmlFile={htmlFile} />
+        <ComponentExample codepenSlug={currentCodepenSlug} variation={variation} component={parent} htmlFile={htmlFile} />
       </div>
     );
   };
@@ -108,8 +118,9 @@ class CodePage extends Component {
       html: true
     });
     let componentContent;
+    let codepenSlug = componentInfo.codepen;
     if (componentInfo.variations) {
-      componentContent = Object.keys(componentInfo.variations).map(variation => this.renderVariation(component, variation, componentInfo.variations[variation]));
+      componentContent = Object.keys(componentInfo.variations).map(variation => this.renderVariation(component, variation, componentInfo.variations[variation], codepenSlug));
     } else {
       let htmlFile;
       if (component === 'header') {
@@ -117,7 +128,7 @@ class CodePage extends Component {
       } else {
         htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
       }
-      componentContent = <ComponentExample hideViewFullRender={this.props.hideViewFullRender} component={component} htmlFile={htmlFile} />;
+      componentContent = <ComponentExample hideViewFullRender={this.props.hideViewFullRender} component={component} htmlFile={htmlFile} codepenSlug={codepenSlug} />;
     }
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {

@@ -18,5 +18,13 @@
       "Toolbar"
     ]
   },
+  "codepen": {
+    "data-table-v2": [
+      "test-2"
+    ],
+    "data-table-v2-expandable": [
+      "test-3"
+    ]
+  },
   "__content": "\n"
 }
