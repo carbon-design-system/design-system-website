@@ -9,4 +9,13 @@ variations:
   - Ghost button
   danger-button:
   - Danger button
+codepen:
+  primary-button:
+  - QMaZmK
+  secondary-button:
+  - WdwJKG
+  ghost-button:
+  - ppyVOw
+  danger-button:
+  - EoKLeR
 ---

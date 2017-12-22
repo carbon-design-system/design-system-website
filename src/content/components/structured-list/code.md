@@ -5,4 +5,9 @@ variations:
   - Structured List
   structured-list--selection:
   - Structured List with selection
+codepen:
+  structured-list:
+  - BJKxZa
+  structured-list--selection:
+  - qpZYmK
 ---

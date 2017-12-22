@@ -5,4 +5,9 @@ variations:
   - Loading
   loading--small:
   - Small Loading
+codepen:
+  large-loading:
+  - XzebrR
+  small-loading:
+  - Xzebbg
 ---
