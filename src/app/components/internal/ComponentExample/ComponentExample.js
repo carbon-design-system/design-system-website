@@ -31,7 +31,7 @@ class ComponentExample extends Component {
     const viewFullRender = this.props.hideViewFullRender ? (
       ''
     ) : (
-      <Link className="component-example__view-full-render" to={componentLink}>
+      <Link className="component-example__view-full-render" target="_blank" to={componentLink}>
         View full render
       </Link>
     );

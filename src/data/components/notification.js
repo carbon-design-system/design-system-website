@@ -9,5 +9,13 @@
       "Toast notification"
     ]
   },
+  "codepen": {
+    "inline-notification": [
+      "EbwjVb"
+    ],
+    "toast-notification": [
+      "mqBJeo"
+    ]
+  },
   "__content": "\n"
 }

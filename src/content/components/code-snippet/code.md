@@ -6,8 +6,8 @@ variations:
   code-snippet--terminal:
   - Terminal
 codepen:
-code-snippet--code:
-- YYqeGX
-code-snippet--terminal:
-- mprzKy
+  code-snippet--code:
+  - YYqeGX
+  code-snippet--terminal:
+  - mprzKy
 ---

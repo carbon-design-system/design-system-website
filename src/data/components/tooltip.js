@@ -9,5 +9,13 @@
       "Simple tooltip"
     ]
   },
+  "codepen": {
+    "tooltip": [
+      "pdeLom"
+    ],
+    "tooltip--simple": [
+      "vpGjRw"
+    ]
+  },
   "__content": "\n"
 }

@@ -15,6 +15,19 @@
       "Danger button"
     ]
   },
-  "codepen": "test1",
+  "codepen": {
+    "primary-button": [
+      "QMaZmK"
+    ],
+    "secondary-button": [
+      "WdwJKG"
+    ],
+    "ghost-button": [
+      "ppyVOw"
+    ],
+    "danger-button": [
+      "EoKLeR"
+    ]
+  },
   "__content": "\n"
 }

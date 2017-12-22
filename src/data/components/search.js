@@ -9,5 +9,13 @@
       "Search with options"
     ]
   },
+  "codepen": {
+    "search-small": [
+      "rYGVmG"
+    ],
+    "search-large": [
+      "ooGXVR"
+    ]
+  },
   "__content": "\n"
 }

@@ -9,5 +9,13 @@
       "Terminal"
     ]
   },
+  "codepen": {
+    "code-snippet--code": [
+      "YYqeGX"
+    ],
+    "code-snippet--terminal": [
+      "mprzKy"
+    ]
+  },
   "__content": "\n"
 }

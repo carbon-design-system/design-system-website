@@ -20,10 +20,19 @@
   },
   "codepen": {
     "data-table-v2": [
-      "test-2"
+      "MOEagV"
     ],
     "data-table-v2-expandable": [
-      "test-3"
+      "gXGabM"
+    ],
+    "data-table-v2--pagination": [
+      "pdWjva"
+    ],
+    "data-table-v2--small": [
+      "aVLvzX"
+    ],
+    "toolbar": [
+      "yPzYNK"
     ]
   },
   "__content": "\n"

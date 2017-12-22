@@ -31,7 +31,8 @@
     right: 0;
     bottom: 0;
     color: $color__navy-gray-6;
-    font-size: .75rem;
-    padding: .5rem 1rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    z-index: 9999;
   }
 }
