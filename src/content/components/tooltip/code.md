@@ -5,4 +5,9 @@ variations:
   - Tooltip
   tooltip--simple:
   - Simple tooltip
+codepen:
+  tooltip:
+  - pdeLom
+  tooltip-simple:
+  - vpGjRw
 ---

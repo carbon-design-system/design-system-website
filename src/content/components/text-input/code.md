@@ -5,4 +5,9 @@ variations:
     - Text Input
   text-area:
     - Text Area
+codepen:
+  text-input:
+  - YEZLyd
+  text-area:
+  - yPMjeg
 ---

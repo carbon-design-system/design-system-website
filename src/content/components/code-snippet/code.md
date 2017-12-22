@@ -5,4 +5,9 @@ variations:
   - Code Snippet
   code-snippet--terminal:
   - Terminal
+codepen:
+code-snippet--code:
+- YYqeGX
+code-snippet--terminal:
+- mprzKy
 ---

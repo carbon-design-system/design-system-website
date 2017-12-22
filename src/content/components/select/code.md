@@ -5,4 +5,9 @@ variations:
   - Select
   inline-select:
   - Inline Select
+codepan:
+  select:
+  - QOqbPg
+  inline-select:
+  - YErXbK
 ---

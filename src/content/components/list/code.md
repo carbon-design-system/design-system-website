@@ -5,4 +5,9 @@ variations:
   - Ordered list
   list--unordered:
   - Unordered list
+codepen:
+  ordered-list:
+  - MOEWEP
+  unordered-list:
+  - JOrjOj
 ---

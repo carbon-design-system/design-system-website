@@ -5,4 +5,9 @@ variations:
   - Small search
   search-large:
   - Search with options
+codepen:
+  search-small:
+  - rYGVmG
+  search-large:
+  - ooGXVR
 ---

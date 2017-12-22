@@ -5,4 +5,9 @@ variations:
   - Passive Modal
   modal:
   - Transactional Modal
+codepen:
+  passive-modal:
+  - KyXpKV
+  transactional-modal:
+  - dZVoPj
 ---

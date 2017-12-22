@@ -9,4 +9,13 @@ variations:
     - Selectable Tile
   expandable-tile:
     - Expandable Tile
+codepen:
+  tile:
+  - vWxRxR
+  clickable-tile:
+  - ooZqaq
+  selectable-tile:
+  - NwpYJW
+  expandable-tile:
+  - NwpMqG
 ---

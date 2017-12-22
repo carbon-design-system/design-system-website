@@ -5,4 +5,9 @@ variations:
   - Pagination (v2)
   pagination:
   - Pagination (v1)
+codepen:
+  pagination-v2:
+  - MOEwbp
+  pagination:
+  - bapMwN
 ---

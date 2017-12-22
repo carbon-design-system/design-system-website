@@ -5,4 +5,9 @@ variations:
   - Inline notification
   toast-notification:
   - Toast notification
+codepen:
+  inline-notification:
+  - EbwjVb
+  toast-notification:
+  - mqBJeo
 ---
