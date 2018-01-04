@@ -5,7 +5,7 @@ We encourage service teams to utilize the Carbon Design System for visual styles
 In order to onboard your service into IBM Cloud, there are **3 stages** your service must go through before launching to GA. Design approval is required prior to an Experimental, Beta, or GA launch.
 
 ## IBM Cloud branding
-The most up-to-date IBM Cloud [branding assets](https://w3-connections.ibm.com/blogs/b70a0294-cb7c-4e5e-bcdc-ad49103b4464/entry/Major_Update_to_the_IBM_Cloud_Brand_Guidelines1?lang=en_us) can be found for internal use on your service teams. 
+The most up-to-date IBM Cloud [branding assets](https://w3-connections.ibm.com/blogs/b70a0294-cb7c-4e5e-bcdc-ad49103b4464/entry/Major_Update_to_the_IBM_Cloud_Brand_Guidelines1?lang=en_us) can be found for internal use on your service teams.
 
 ## Experimental
 
