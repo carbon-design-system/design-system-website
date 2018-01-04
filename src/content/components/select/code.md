@@ -5,7 +5,7 @@ variations:
   - Select
   inline-select:
   - Inline Select
-codepan:
+codepen:
   select:
   - QOqbPg
   inline-select:

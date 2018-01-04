@@ -10,10 +10,10 @@
     ]
   },
   "codepen": {
-    "ordered-list": [
+    "list--ordered": [
       "MOEWEP"
     ],
-    "unordered-list": [
+    "list--unordered": [
       "JOrjOj"
     ]
   },

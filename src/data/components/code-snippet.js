@@ -9,12 +9,13 @@
       "Terminal"
     ]
   },
-  "codepen": null,
-  "code-snippet--code": [
-    "YYqeGX"
-  ],
-  "code-snippet--terminal": [
-    "mprzKy"
-  ],
+  "codepen": {
+    "code-snippet--code": [
+      "YYqeGX"
+    ],
+    "code-snippet--terminal": [
+      "mprzKy"
+    ]
+  },
   "__content": "\n"
 }

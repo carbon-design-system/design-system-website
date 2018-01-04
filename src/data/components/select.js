@@ -9,7 +9,7 @@
       "Inline Select"
     ]
   },
-  "codepan": {
+  "codepen": {
     "select": [
       "QOqbPg"
     ],

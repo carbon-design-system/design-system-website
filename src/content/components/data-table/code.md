@@ -16,10 +16,10 @@ codepen:
   - MOEagV
   data-table-v2-expandable:
   - gXGabM
-  data-table-v2-pagination:
+  data-table-v2--pagination:
   - pdWjva
-  data-table-v2-small:
+  data-table-v2--small:
   - aVLvzX
-  data-table-v2-toolbar:
+  toolbar:
   - yPzYNK
 ---

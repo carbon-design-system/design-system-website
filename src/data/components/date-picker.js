@@ -16,13 +16,13 @@
     ]
   },
   "codepen": {
-    "simple-date-picker": [
+    "date-picker--simple": [
       "POJoNb"
     ],
-    "single-date-picker": [
+    "date-picker--single": [
       "VrMweY"
     ],
-    "range-date-picker": [
+    "date-picker--range": [
       "aVLbNx"
     ],
     "time-picker": [

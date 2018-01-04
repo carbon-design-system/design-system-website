@@ -13,7 +13,7 @@
     "tooltip": [
       "pdeLom"
     ],
-    "tooltip-simple": [
+    "tooltip--simple": [
       "vpGjRw"
     ]
   },

@@ -10,10 +10,10 @@
     ]
   },
   "codepen": {
-    "passive-modal": [
+    "modal--nofooter": [
       "KyXpKV"
     ],
-    "transactional-modal": [
+    "modal": [
       "dZVoPj"
     ]
   },

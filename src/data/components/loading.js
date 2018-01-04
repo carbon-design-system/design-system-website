@@ -10,10 +10,10 @@
     ]
   },
   "codepen": {
-    "large-loading": [
+    "loading": [
       "XzebrR"
     ],
-    "small-loading": [
+    "loading--small": [
       "Xzebbg"
     ]
   },
