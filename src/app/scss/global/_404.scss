@@ -1,9 +1,16 @@
+.container--expanded .fourohfour-container {
+  @include breakpoint('1020px') {
+    padding-left: 0px;
+  }
+}
+
 .fourohfour-container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,103 +19,39 @@
 
   @include breakpoint('1020px') {
     padding-left: 200px;
-
-    .overview__letter {
-      margin: 1rem;
-    }
-  }
-
-  .fourohfour-error {
-    span {
-      font-size: 8vw;
-    }
-
-    svg {
-      height: 8vw;
-      width: 8vw;
-    }
-
-    @include breakpoint('1020px') {
-      span {
-        font-size: 5.5rem;
-      }
-
-      svg {
-        height: 5.5rem;
-        width: 5.5rem;
-      }
-    }
-  }
-
-  .overview__letter {
-    position: relative;
-    display: inline-block;
-    margin: 0.5rem;
   }
 
   .fourohfour-large {
     display: flex;
     align-items: center;
-
-    svg {
-      height: 12vw;
-      width: 12vw;
-      circle {
-        fill: $brand-02;
-      }
-    }
-
-    .letter {
-      margin: 0;
-      font-size: 12vw;
-    }
-
-    span {
-      @include font-smoothing;
-      display: inline-block;
-      margin: 0.5rem;
-      font-weight: 600;
-      font-size: 12vw;
-    }
-
-    @include breakpoint('1020px') {
-      svg {
-        height: 12rem;
-        width: 12rem;
-      }
-
-      span {
-        font-size: 13rem;
-        margin: 1rem;
-      }
-
-      .letter {
-        font-size: 13rem;
-      }
-
-      .overview__letter {
-        margin: 1rem;
-      }
-    }
+    margin-top: rem(-112px);
   }
 
   .fourohfour-caption {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 2rem;
 
     p {
       text-align: center;
-      padding: 1rem 2rem;
-      font-weight: 600;
-      font-size: rem(20px);
+      font-weight: 300;
+      font-size: rem(28px);
+      margin-bottom: 1rem;
 
       @include breakpoint('1020px') {
         padding: 1rem 0;
       }
     }
 
+    a {
+      font-weight: 400;
+      color: #3869f4;
+      font-size: rem(14px);
+    }
+
     span {
+      font-weight: 400;
       font-size: rem(14px);
     }
   }

@@ -1,21 +1,14 @@
 /* eslint-disable */
- module.exports = {
-  "desc": "<span>Loading</span> spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.",
-  "variations": {
-    "loading": [
-      "Loading"
-    ],
-    "loading--small": [
-      "Small Loading"
-    ]
+module.exports = {
+  desc:
+    '<span>Loading</span> spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.',
+  variations: {
+    loading: ['Loading'],
+    'loading--small': ['Small Loading'],
   },
-  "codepen": {
-    "loading": [
-      "XzebrR"
-    ],
-    "loading--small": [
-      "Xzebbg"
-    ]
+  codepen: {
+    loading: ['XzebrR'],
+    'loading--small': ['Xzebbg'],
   },
-  "__content": "\n"
-}
+  __content: '\n',
+};
