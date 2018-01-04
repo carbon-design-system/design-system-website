@@ -38,10 +38,6 @@
       font-weight: 300;
       font-size: rem(28px);
       margin-bottom: 1rem;
-
-      @include breakpoint('1020px') {
-        padding: 1rem 0;
-      }
     }
 
     a {
