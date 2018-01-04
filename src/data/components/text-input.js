@@ -9,5 +9,13 @@
       "Text Area"
     ]
   },
+  "codepen": {
+    "text-input": [
+      "YEZLyd"
+    ],
+    "text-area": [
+      "yPMjeg"
+    ]
+  },
   "__content": "\n"
 }

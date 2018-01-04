@@ -9,5 +9,13 @@
       "Inline Select"
     ]
   },
+  "codepan": {
+    "select": [
+      "QOqbPg"
+    ],
+    "inline-select": [
+      "YErXbK"
+    ]
+  },
   "__content": "\n"
 }

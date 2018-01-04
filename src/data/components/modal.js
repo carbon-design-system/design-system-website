@@ -9,5 +9,13 @@
       "Transactional Modal"
     ]
   },
+  "codepen": {
+    "passive-modal": [
+      "KyXpKV"
+    ],
+    "transactional-modal": [
+      "dZVoPj"
+    ]
+  },
   "__content": "\n"
 }
