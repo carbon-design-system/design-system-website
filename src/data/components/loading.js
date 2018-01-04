@@ -9,5 +9,13 @@
       "Small Loading"
     ]
   },
+  "codepen": {
+    "loading": [
+      "XzebrR"
+    ],
+    "loading--small": [
+      "Xzebbg"
+    ]
+  },
   "__content": "\n"
 }

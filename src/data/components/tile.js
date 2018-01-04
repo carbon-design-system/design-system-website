@@ -15,5 +15,19 @@
       "Expandable Tile"
     ]
   },
+  "codepen": {
+    "tile": [
+      "vWxRxR"
+    ],
+    "clickable-tile": [
+      "ooZqaq"
+    ],
+    "selectable-tile": [
+      "NwpYJW"
+    ],
+    "expandable-tile": [
+      "NwpMqG"
+    ]
+  },
   "__content": "\n"
 }

@@ -15,5 +15,19 @@
       "Time picker"
     ]
   },
+  "codepen": {
+    "date-picker--simple": [
+      "POJoNb"
+    ],
+    "date-picker--single": [
+      "VrMweY"
+    ],
+    "date-picker--range": [
+      "aVLbNx"
+    ],
+    "time-picker": [
+      "GOMKap"
+    ]
+  },
   "__content": "\n"
 }

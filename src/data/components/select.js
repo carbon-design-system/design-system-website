@@ -9,5 +9,13 @@
       "Inline Select"
     ]
   },
+  "codepen": {
+    "select": [
+      "QOqbPg"
+    ],
+    "inline-select": [
+      "YErXbK"
+    ]
+  },
   "__content": "\n"
 }

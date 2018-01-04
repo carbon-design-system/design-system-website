@@ -6,8 +6,8 @@ variations:
   modal:
   - Transactional Modal
 codepen:
-  passive-modal:
+  modal--nofooter:
   - KyXpKV
-  transactional-modal:
+  modal:
   - dZVoPj
 ---

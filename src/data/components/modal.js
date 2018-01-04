@@ -9,5 +9,13 @@
       "Transactional Modal"
     ]
   },
+  "codepen": {
+    "modal--nofooter": [
+      "KyXpKV"
+    ],
+    "modal": [
+      "dZVoPj"
+    ]
+  },
   "__content": "\n"
 }
