@@ -1,22 +1,26 @@
 import React from 'react';
 
-import Letter from '../components/internal/Letters';
+const jackalope = require('../../assets/images/jackalope.svg');
 
 class FourOhFour extends React.Component {
-
   render() {
     return (
       <main id="maincontent">
         <div className="fourohfour-container">
           <div className="fourohfour-large">
-            <span>4</span>
-            <Letter letter="O" active className="fourohfour-letter" />
-            <span>4</span>
+            <img alt="404 jackalope" src={jackalope} />
           </div>
 
           <div className="fourohfour-caption">
-            <p>Oops! We couldn’t find the page you were looking for.</p>
-            <span>Try finding it in the left navigation.</span>
+            <p className="fourohfour-title">
+              Congratulations! You found the illusive jackalope!
+            </p>
+            <p className="fourohfour-sub">
+              Unfortunately, we couldn't find the page you were looking for.
+              Here are some helpful links instead:{' '}
+              <a href="/components">Components</a>,{' '}
+              <a href="/resources">Resources</a>
+            </p>
           </div>
         </div>
       </main>
