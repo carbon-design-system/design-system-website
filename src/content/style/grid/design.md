@@ -8,7 +8,7 @@
 
 A left or right side panel lives outside the bounds of the grid, including the grid margins. When a side panel appears it pushes the grid away from the outer edge of the browser window condensing the grid and content area.
 
-For example, when using an [Interior Left Nav](http://carbondesignsystem.com/components/interior-left-nav/code), the grid starts after the 200px of the navigation on the left side of the viewport. Normal grid rules still apply within the content area.
+For example, when using an [Interior Left Nav](http://carbondesignsystem.com/add-ons/interior-left-nav/code), the grid starts after the 200px of the navigation on the left side of the viewport. Normal grid rules still apply within the content area.
 
 **Grid area with interior left navigation: page width minus 200px from left edge.**
 _
@@ -60,18 +60,21 @@ In devices with a screen width less than 768px, the margins are 3% on the left, 
 ### Breakpoints
 
 ---
-| Size       | Columns |  Gutters            | Outer margins     |
-|------------|---------|---------------------|-------------------|
-| XS (576px) | 12      | 5px + 5px = 10px    | 3% left, 3% right |
-| S (768px)  | 12      | 10px + 10px = 20px  | 5% left, 5% right |
-| M (992px)  | 12      | 10px + 10px = 20px  | 5% left, 5% right |
-| L (1200px) | 12      | 10px + 10px = 20px  | 5% left, 5% right |
-| XL (1600px)| 12      | 10px + 10px = 20px  | 5% left, 5% right |
+
+| Size        | Columns | Gutters            | Outer margins     |
+| ----------- | ------- | ------------------ | ----------------- |
+| XS (576px)  | 12      | 5px + 5px = 10px   | 3% left, 3% right |
+| S (768px)   | 12      | 10px + 10px = 20px | 5% left, 5% right |
+| M (992px)   | 12      | 10px + 10px = 20px | 5% left, 5% right |
+| L (1200px)  | 12      | 10px + 10px = 20px | 5% left, 5% right |
+| XL (1600px) | 12      | 10px + 10px = 20px | 5% left, 5% right |
 
 ## Large scale grid
+
 Carbon allows for two types of large scale grids. The type of grid used should be based on content type and density. The large scale grid should be consistent within individual sections of the product. For example, all Configuration pages within Bluemix should have either a max width or grow exponentially. The choice of this grid belongs to the teams that own each section/template.
 
 ### Option 1: Exponential grid (default)
+
 The width of the grid and content area grows exponentially and the margin always remain at 5%. The width of each column continuiously grows and gutters remain at 20px.
 
 _
@@ -80,6 +83,7 @@ _
 _@2560px - 12 Columns exponetial grid / 20px Gutters / 5% Margins_
 
 ### Option 2: Max width
+
 The max width is 1600px, with the margins growing exponentially past that point. Content and columns are centered on page and the margins grow equally on left and right of content.
 
 If a side panel exists with a max width layout, then the panel should stick to the edges of the viewport with the exponential margin between the grid columns and the panel. This is not an ideal usecase.
