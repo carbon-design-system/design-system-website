@@ -1,14 +1,21 @@
 /* eslint-disable */
-module.exports = {
-  desc:
-    '<span>Code snippets</span> are small blocks of reusable code that can be inserted in a code file.',
-  variations: {
-    'code-snippet--code': ['Code Snippet'],
-    'code-snippet--terminal': ['Terminal'],
+ module.exports = {
+  "desc": "<span>Code snippets</span> are small blocks of reusable code that can be inserted in a code file.",
+  "variations": {
+    "code-snippet--code": [
+      "Code Snippet"
+    ],
+    "code-snippet--terminal": [
+      "Terminal"
+    ]
   },
-  codepen: {
-    'code-snippet--code': ['YYqeGX'],
-    'code-snippet--terminal': ['mprzKy'],
+  "codepen": {
+    "code-snippet--code": [
+      "YYqeGX"
+    ],
+    "code-snippet--terminal": [
+      "mprzKy"
+    ]
   },
-  __content: '\n',
-};
+  "__content": "\n"
+}

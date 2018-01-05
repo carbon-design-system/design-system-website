@@ -12,13 +12,15 @@ class FourOhFour extends React.Component {
           </div>
 
           <div className="fourohfour-caption">
-            <p>Congratulations! You found the illusive jackalope!</p>
-            <span>
+            <p className="fourohfour-title">
+              Congratulations! You found the illusive jackalope!
+            </p>
+            <p className="fourohfour-sub">
               Unfortunately, we couldn't find the page you were looking for.
               Here are some helpful links instead:{' '}
               <a href="/components">Components</a>,{' '}
               <a href="/resources">Resources</a>
-            </span>
+            </p>
           </div>
         </div>
       </main>
