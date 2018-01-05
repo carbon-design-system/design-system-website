@@ -53,7 +53,6 @@
 
 .icon-empty-state__shapes {
   svg {
-    width: rem(55px);
     margin: 0 1rem;
     animation: dancing 2000ms infinite forwards linear 250ms;
 
@@ -63,12 +62,7 @@
     }
 
     @include breakpoint('453px') {
-      width: rem(65px);
       margin: 0 1.5rem 0 1rem;
-
-      &:first-child {
-        width: rem(70px);
-      }
 
       &:first-child,
       &:last-child {
