@@ -125,7 +125,7 @@
     padding: 0.25rem;
     background-color: $field-01;
     color: $text-02;
-    font-family: 'IBM Plex Mono', Courier, monospace;
+    font-family: 'ibm-plex-mono', Courier, monospace;
     -webkit-font-smoothing: auto;
   }
 
@@ -203,27 +203,34 @@
     }
   }
 
-  main[data-page="style-overview-typography"] & hr + hr + table tbody tr {
+  main[data-page='style-overview-typography'] & hr + hr + table tbody tr {
     @media all and (max-width: 600px) {
       display: flex;
       flex-direction: column;
     }
   }
 
-  main[data-page="style-overview-typography"] & hr + hr + table tbody tr td {
+  main[data-page='style-overview-typography'] & hr + hr + table tbody tr td {
     @media all and (max-width: 600px) {
       width: 100%;
     }
   }
 
-  main[data-page="style-overview-typography"] & hr + hr + table tbody tr td:nth-child(2) {
+  main[data-page='style-overview-typography']
+    &
+    hr
+    + hr
+    + table
+    tbody
+    tr
+    td:nth-child(2) {
     @media all and (max-width: 600px) {
       text-align: left;
       font-size: 3rem;
     }
   }
 
-  main[data-page="add-ons-overview"] & {
+  main[data-page='add-ons-overview'] & {
     @media all and (max-width: 600px) {
       overflow: scroll;
     }
