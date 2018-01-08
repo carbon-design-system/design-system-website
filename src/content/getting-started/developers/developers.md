@@ -39,7 +39,7 @@ Use unpkg for easy access to our built static files. This is great for prototypi
 | ES5 | https://unpkg.com/carbon-components/scripts/carbon-components.min.js |
 | UMD | https://unpkg.com/carbon-components/umd/index.js                     |
 
-See all files from `carbon-components` available on unpkg CDN [here](https://unpkg.com/carbon-components/). 
+See all files from `carbon-components` available on [unpkg CDN](https://unpkg.com/carbon-components/). 
 
 ## SCSS
 
