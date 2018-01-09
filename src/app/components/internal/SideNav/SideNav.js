@@ -325,7 +325,7 @@ class SideNav extends Component {
           <div className="bx--search bx--search--sm" role="search">
             <input
               type="text"
-              role="search"
+              aria-label="Search"
               onInput={this.filterResults}
               className="bx--search-input"
               placeholder="Search"
