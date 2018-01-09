@@ -67,7 +67,7 @@ body {
 
 **Icons**: A lot of components depend on SVG icons from [carbon-icons](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
 
-**Global SCSS variables**: These variables are used to configure which parts of the SCSS gets compiled where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
+**Global SCSS variables**: These variables are used to configure which parts of the SCSS get compiled, where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
 
 For example:
 
@@ -89,11 +89,11 @@ $css--typography: true !default;
 ```
 
 These flags are set for you by default when you `@import` the `styles.scss` file.
-You can override these default settings by redeclarining the variables.
+You can override these default settings by redeclaring the variables.
 
 #### Importing SCSS files
 
-To add a component style to your build, simply import the component directly
+To add a component style to your build, simply import the component directly.
 
 ```js
 @import 'node_modules/carbon-components/scss/components/card/card';
@@ -109,7 +109,7 @@ Carbon Components are built to be included individually and not clobber global s
 
 ### Using a module bundler: recommended
 
-Using a module bundler will bring in only the component code your application needs, created an optimized build for production. Carbon Components ships with a `umd` build for each component, as well as an `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
+Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a `umd` build for each component, as well as a `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
 
 #### Initialize all instances of a component using a module bundler
 
@@ -163,7 +163,7 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-#### Initialize specific component
+#### Initialize a specific component
 
 ```html
 <html>
@@ -197,9 +197,9 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 ### Wrapping a component with JavaScript framework of your choice
 
 Many JavaScript frameworks have a mechanism to automatically create/destroy DOM elements, for example, upon change in array.
-Carbon Components defined in DOM elements that are created after `DOMContentLoaded` event, like ones such JavaScript frameworks create upon change in array, need to be initialized (and released) manually.
+Carbon Components defined in DOM elements that are created after the `DOMContentLoaded` event, like ones such JavaScript frameworks create upon change in array, need to be initialized (and released) manually.
 
-The easiest way to manually initialize/release components is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example with Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
+The easiest way to manually initialize/release components is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
 
 ```javascript
 class BXLoading extends HTMLElement {
