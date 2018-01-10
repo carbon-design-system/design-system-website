@@ -9,5 +9,13 @@
       "Unordered list"
     ]
   },
+  "codepen": {
+    "ordered-list": [
+      "MOEWEP"
+    ],
+    "unordered-list": [
+      "JOrjOj"
+    ]
+  },
   "__content": "\n"
 }

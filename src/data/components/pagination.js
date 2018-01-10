@@ -9,5 +9,13 @@
       "Pagination (v1)"
     ]
   },
+  "codepen": {
+    "pagination-v2": [
+      "MOEwbp"
+    ],
+    "pagination": [
+      "bapMwN"
+    ]
+  },
   "__content": "\n"
 }

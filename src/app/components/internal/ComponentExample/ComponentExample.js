@@ -36,7 +36,7 @@ class ComponentExample extends Component {
       className="component-example__view-full-render"
       to={componentLink}
     >
-      View full render
+      View on CodePen
     </Link>);
 
     return (
