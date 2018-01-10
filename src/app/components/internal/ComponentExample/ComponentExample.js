@@ -32,7 +32,7 @@ class ComponentExample extends Component {
       ''
     ) : (
       <Link className="component-example__view-full-render" target="_blank" to={componentLink}>
-        View full render
+        View on CodePen
       </Link>
     );
 
