@@ -7,13 +7,16 @@ import ComponentExample from '../ComponentExample/ComponentExample';
 class CodePage extends Component {
   static propTypes = {
     component: PropTypes.string,
-    hideViewFullRender: PropTypes.bool
+    hideViewFullRender: PropTypes.bool,
   };
 
   componentDidMount() {
     let currentComponent = this.props.component;
-    currentComponent = currentComponent.replace(/-([a-z])/g, g => g[1].toUpperCase());
-    currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
+    currentComponent = currentComponent.replace(/-([a-z])/g, g =>
+      g[1].toUpperCase()
+    );
+    currentComponent =
+      currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
     if (currentComponent === 'Tabs') {
       currentComponent = 'Tab';
     } else if (currentComponent === 'Card') {
@@ -61,11 +64,20 @@ class CodePage extends Component {
       htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
     } else if (parent === 'data-table' && variation === 'data-table-v2') {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
-    } else if (parent === 'data-table' && variation === 'data-table-v2-expandable') {
+    } else if (
+      parent === 'data-table' &&
+      variation === 'data-table-v2-expandable'
+    ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
-    } else if (parent === 'data-table' && variation === 'data-table-v2--pagination') {
+    } else if (
+      parent === 'data-table' &&
+      variation === 'data-table-v2--pagination'
+    ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
-    } else if (parent === 'data-table' && variation === 'data-table-v2--small') {
+    } else if (
+      parent === 'data-table' &&
+      variation === 'data-table-v2--small'
+    ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
     } else {
       htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
@@ -79,7 +91,12 @@ class CodePage extends Component {
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>
-        <ComponentExample codepenSlug={currentCodepenSlug} variation={variation} component={parent} htmlFile={htmlFile} />
+        <ComponentExample
+          codepenSlug={currentCodepenSlug}
+          variation={variation}
+          component={parent}
+          htmlFile={htmlFile}
+        />
       </div>
     );
   };
@@ -107,7 +124,7 @@ class CodePage extends Component {
       component === 'interior-left-nav' ||
       component === 'module' ||
       component === 'order-summary' ||
-      component === 'header'
+      component === 'cloud-header'
     ) {
       componentInfo = require(`../../../../data/add-ons/${component}.js`); // eslint-disable-line
     } else {
@@ -115,20 +132,34 @@ class CodePage extends Component {
     }
     const description = componentInfo.desc;
     const md = new Markdown({
-      html: true
+      html: true,
     });
     let componentContent;
     let codepenSlug = componentInfo.codepen;
     if (componentInfo.variations) {
-      componentContent = Object.keys(componentInfo.variations).map(variation => this.renderVariation(component, variation, componentInfo.variations[variation], codepenSlug));
+      componentContent = Object.keys(componentInfo.variations).map(variation =>
+        this.renderVariation(
+          component,
+          variation,
+          componentInfo.variations[variation],
+          codepenSlug
+        )
+      );
     } else {
       let htmlFile;
-      if (component === 'header') {
+      if (component === 'cloud-header') {
         htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
       } else {
         htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
       }
-      componentContent = <ComponentExample hideViewFullRender={this.props.hideViewFullRender} component={component} htmlFile={htmlFile} codepenSlug={codepenSlug} />;
+      componentContent = (
+        <ComponentExample
+          hideViewFullRender={this.props.hideViewFullRender}
+          component={component}
+          htmlFile={htmlFile}
+          codepenSlug={codepenSlug}
+        />
+      );
     }
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {
@@ -136,7 +167,7 @@ class CodePage extends Component {
         <div
           className="page_md"
           dangerouslySetInnerHTML={{
-            __html: md.render(this.renderJavascriptContent(component))
+            __html: md.render(this.renderJavascriptContent(component)),
           }}
         />
       );
@@ -146,7 +177,10 @@ class CodePage extends Component {
 
     return (
       <div className="page code-page test">
-        <p className="page__desc" dangerouslySetInnerHTML={{ __html: description }} />
+        <p
+          className="page__desc"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         {componentContent}
         {javascriptContent}
       </div>

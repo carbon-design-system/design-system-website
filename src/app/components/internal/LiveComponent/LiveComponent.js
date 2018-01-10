@@ -10,11 +10,11 @@ class LiveComponent extends Component {
   };
 
   componentDidMount() {
-    let currentComponent = this.props.component ===
-      'detail-page-header--no-tabs' ||
+    let currentComponent =
+      this.props.component === 'detail-page-header--no-tabs' ||
       this.props.component === 'detail-page-header--with-tabs'
-      ? 'detail-page-header'
-      : this.props.component;
+        ? 'detail-page-header'
+        : this.props.component;
     currentComponent = currentComponent.replace(/-([a-z])/g, g =>
       g[1].toUpperCase()
     );
@@ -53,36 +53,43 @@ class LiveComponent extends Component {
     if (this.props.component === 'text-input' && variation === 'text-area') {
       htmlFile = require('carbon-components/src/components/text-area/text-area.html');
     } else if (
-      this.props.component === 'data-table' && variation === 'toolbar'
+      this.props.component === 'data-table' &&
+      variation === 'toolbar'
     ) {
       htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
     } else if (
       this.props.component === 'detail-page-header--no-tabs' ||
       this.props.component === 'detail-page-header--with-tabs'
     ) {
-      htmlFile = require(`carbon-components/src/components/detail-page-header/${this.props.component}.html`);
+      htmlFile = require(`carbon-components/src/components/detail-page-header/${
+        this.props.component
+      }.html`);
     } else if (
-      this.props.component === 'data-table' && variation === 'data-table-v2'
+      this.props.component === 'data-table' &&
+      variation === 'data-table-v2'
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
     } else if (
-      this.props.component === 'data-table' && variation === 'data-table-v2-expandable'
+      this.props.component === 'data-table' &&
+      variation === 'data-table-v2-expandable'
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
     } else if (
-      this.props.component === 'data-table' && variation === 'data-table-v2--pagination'
+      this.props.component === 'data-table' &&
+      variation === 'data-table-v2--pagination'
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
     } else if (
-      this.props.component === 'data-table' && variation === 'data-table-v2--small'
+      this.props.component === 'data-table' &&
+      variation === 'data-table-v2--small'
     ) {
       htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
-    } else if (
-      this.props.component === 'header'
-    ) {
+    } else if (this.props.component === 'header') {
       htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
     } else {
-      htmlFile = require(`carbon-components/src/components/${this.props.component}/${variation}.html`);
+      htmlFile = require(`carbon-components/src/components/${
+        this.props.component
+      }/${variation}.html`);
     }
 
     if (variation.includes('card')) {
@@ -91,24 +98,25 @@ class LiveComponent extends Component {
       htmlFile = htmlFile.replace(oldPath, newPath);
     }
 
-    let headerContent = this.props.component ===
-      'detail-page-header--no-tabs' ||
+    let headerContent =
+      this.props.component === 'detail-page-header--no-tabs' ||
+      this.props.component === 'detail-page-header--with-tabs' ? (
+        <div className="live-component-header" />
+      ) : (
+        ''
+      );
+    const variationLink =
+      this.props.component === 'detail-page-header--no-tabs' ||
       this.props.component === 'detail-page-header--with-tabs'
-      ? <div className="live-component-header" />
-      : '';
-    const variationLink = this.props.component ===
-      'detail-page-header--no-tabs' ||
-      this.props.component === 'detail-page-header--with-tabs'
-      ? 'detail-page-header'
-      : `${this.props.component}`;
+        ? 'detail-page-header'
+        : `${this.props.component}`;
     return (
       <div key={variation} className="live-component__variation">
         <div className="svg--sprite" />
         <a
           href={`http://www.github.com/carbon-design-system/carbon-components/tree/master/src/components/${variationLink}`}
           target="_blank"
-          className="live-component__title"
-        >
+          className="live-component__title">
           {variation}.html
         </a>
         {headerContent}
@@ -126,9 +134,18 @@ class LiveComponent extends Component {
     let variationContent;
     let backLink;
 
-    if (component === 'header' || component === 'card' || component === 'interior-left-nav' || component === 'module' || component === 'order-summary') {
+    if (
+      component === 'header' ||
+      component === 'card' ||
+      component === 'interior-left-nav' ||
+      component === 'module' ||
+      component === 'order-summary'
+    ) {
       backLink = `/add-ons/${component}/code`;
-    } else if (component === 'detail-page-header--no-tabs' || component === 'detail-page-header--with-tabs') {
+    } else if (
+      component === 'detail-page-header--no-tabs' ||
+      component === 'detail-page-header--with-tabs'
+    ) {
       backLink = '/add-ons/detail-page-header/code';
     } else {
       backLink = `/components/${component}/code`;
@@ -142,8 +159,8 @@ class LiveComponent extends Component {
       variationContent = this.renderVariation(component);
       componentTitle = 'Detail page header';
     } else {
-      if (component === 'header') {
-        content = require('../../../../data/add-ons/header.js');
+      if (component === 'cloud-header') {
+        content = require('../../../../data/add-ons/cloud-header.js');
       } else {
         content = require(`../../../../data/components/${component}.js`); // eslint-disable-line
       }

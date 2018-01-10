@@ -14,7 +14,7 @@
       display: block;
       background-color: $brand-01;
       position: absolute;
-      top: -.5rem;
+      top: -0.5rem;
       left: 0;
     }
   }
@@ -29,7 +29,7 @@
   }
 }
 
-main[data-page|=components-code]{
+main[data-page|='components-code'] {
   h3 + h4 {
     margin-top: 1rem;
   }
@@ -62,4 +62,8 @@ main[data-page='components-code-button'] {
       white-space: pre-wrap;
     }
   }
+}
+
+main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
+  width: 100%;
 }

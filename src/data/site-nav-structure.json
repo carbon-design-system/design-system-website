@@ -9,7 +9,7 @@
     }
   },
   "whats-new": {
-  "title": "What's New"
+    "title": "What's New"
   },
   "guidelines": {
     "title": "Guidelines",
@@ -83,12 +83,13 @@
     "subnav": {
       "overview": "Overview",
       "card": "Card",
+      "cloud-header": "Cloud Header",
       "detail-page-header": "Detail Page Header",
       "interior-left-nav": "Interior Left Nav",
       "module": "Module",
       "order-summary": "Order Summary"
-  }
-},
+    }
+  },
   "component-status": {
     "title": "Component Status"
   },
