@@ -36,15 +36,32 @@ const routes = {
       },
       childRoutes: [
         {
-          path: '/getting-started/:name',
-          getComponent(location, cb) {
-            import('./app/pages/getting-started/GettingStarted')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
+          path: '/getting-started/service-providers',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/getting-started/service-providers/general'),
           },
-        },
-      ],
-    },
+          childRoutes: [
+            {
+              path: '/getting-started/:name/:page',
+              getComponent(location, cb) {
+                import('./app/pages/getting-started/GettingStarted')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+                },
+              },
+            ],
+          },
+          {
+            path: '/getting-started/:name',
+            getComponent(location, cb) {
+              import('./app/pages/getting-started/GettingStarted')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+            },
+          },
+        ],
+      },
     {
       path: 'guidelines',
       indexRoute: {
