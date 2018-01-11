@@ -41,7 +41,7 @@ Your service UI (e.g. Configuration, Dashboard) should follow [WCAG AA](https://
 <!--* Does your design consider [color usage](http://carbondesignsystem.com/style/colors/usage) and pass the [color contrast ratio](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)? -->
 
 ### Service icon
-Review the [service icon guidelines](#) for information on the design, production, approval, and submission of service icons.
+Review the [service icon guidelines](/getting-started/service-providers/service-icon) for information on the design, production, approval, and submission of service icons.
 
 ### IBM Cloud UI
 #### IBM Cloud Platform
