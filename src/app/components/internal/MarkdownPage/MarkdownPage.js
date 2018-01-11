@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Markdown from 'markdown-it';
+import MarkdownTaskLists from 'markdown-it-task-lists';
 
 class MarkdownPage extends Component {
   static propTypes = {
@@ -12,7 +13,8 @@ class MarkdownPage extends Component {
     const md = new Markdown({
       html: true
     });
-
+    md.use(MarkdownTaskLists, { enabled: true });
+    // console.log(md.render(content));
     return (
       <div className="page">
         <div

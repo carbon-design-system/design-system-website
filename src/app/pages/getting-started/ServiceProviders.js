@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Tab } from 'carbon-components-react';
-import Markdown from 'markdown-it';
 
 import MarkdownPage from '../../components/internal/MarkdownPage';
 import PageTabs from '../../components/internal/PageTabs';
@@ -17,7 +16,6 @@ class ServiceProviders extends React.Component {
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
     }
-
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
         <Tab href="/getting-started/service-providers/general" label="General">
