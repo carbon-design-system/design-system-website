@@ -19,7 +19,6 @@ Your design team has complete control over your icon's design. We recommend that
 - Use lines or strokes less than 1 pixel (px)
 - Add internal padding
 
-
 ### Color
 If you have multiple services, you should either use the same icon with a different color for each service or use the same color scheme for each distinct icon. The examples here show how a row of services from the same provider could look in the catalog. Refer to the [IBM Design Language](https://www.ibm.com/design/language/resources/color-library) color palette for color inspiration and accessibility guidelines.
 
@@ -29,9 +28,6 @@ If you have multiple services, you should either use the same icon with a differ
 ### Size
 
 Only one SVG is required of your service icon for production purposes. It should be submitted at the dimensions of `32 x 32` px.
-
-**Note**: RMC currently asks for 4 icon service sizes. Disregard the sizes and enter the same URL for the 32 x 32 px icon in all 4 form fields.
-
 
 ## Production guidelines
 ### Icon requirements
@@ -104,7 +100,6 @@ Once your icon is exported as an SVG you'll need to optimize and clean up the XM
 Run SVG XML code through [SVGOMG](https://jakearchibald.github.io/svgomg/).
 Inspect the code and make sure that your XML doesn't include the following:
 
-- `<style>` tags (is this ok actually ok for service icons?)
 - `<g>` tags
 - `class` attribtues
 - `stroke` attributes
@@ -117,15 +112,12 @@ Inspect the code and make sure that your XML doesn't include the following:
 3. One of the Carbon team reviewers will review the icon within 3 days of the request, so please plan and allow time to process your approval. If changes are needed, the icon must be resubmitted for approval.
 4. Once the icon has been approved, it can be added to your service broker. Only one icon at 32 x 32 px is needed.
 
-**Note**: RMC currently asks for 4 icon service sizes. Disregard the sizes and enter the same URL for the 32 x 32 px icon for all 4 form fields.
 
 ## FAQ
 
 **What icon sizes do I need to submit?**
 
 Only one SVG is required for your service icon. It should be submitted at the dimensions of 32 x 32 px.
-
-RMC currently asks for 4 icon service sizes. Disregard the sizes and enter the same URL for the 32 x 32 px icon for all 4 form fields.
 
 **What are you looking for during the approval process?**
 
