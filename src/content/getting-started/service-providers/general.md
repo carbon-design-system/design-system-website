@@ -43,8 +43,6 @@ Your service UI (e.g. Configuration, Dashboard) should follow [WCAG AA](https://
 ### Service icon
 Review the [service icon guidelines](#) for information on the design, production, approval, and submission of service icons.
 
-**Note:** RMC currently asks for 4 icon service sizes, however, only one `32 x 32` pixel icon is required. Disregard the sizes and enter the same URL for the `32 x 32` pixel icon in all four form fields.
-
 ### IBM Cloud UI
 #### IBM Cloud Platform
 Learn about the IBM Cloud Platform, including how the console works, plugin requirements for microservices, and more [here](https://console.stage1.bluemix.net/docs/developing/console-sdk/global-console.html#bluemix-global-console-overview). Every service should be navigable within the platform and does not launch out to a separate browser tab or window.
