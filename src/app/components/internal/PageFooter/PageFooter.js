@@ -14,7 +14,7 @@ class PageFooter extends Component {
   };
 
   getLastUpdate = () => {
-    const lastUpdatedDate = new Date('01/08/2018'); // UPDATE BEFORE CF PUSH
+    const lastUpdatedDate = new Date('01/11/2018'); // UPDATE BEFORE CF PUSH
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     const formattedDate = `${months[lastUpdatedDate.getMonth()]} ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString([], {
       hour: '2-digit',
