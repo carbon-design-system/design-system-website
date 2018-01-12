@@ -110,8 +110,8 @@ class Overview extends React.Component {
     return (
       <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
         <section className="overview-page__banner" onMouseMove={this.moveLetters}>
-          <img className="banner__shapes" src={shapes} alt="shapes left" />
-          <img className="banner__shapes" src={shapes} alt="shapes right" />
+          <img className="banner__shapes" src={shapes} alt="" />
+          <img className="banner__shapes" src={shapes} alt="" />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox}>
             <g fill="none" strokeWidth="2">
               <path d="M97.3 306.07c27.19 14.46 52 10.25 75.64-7.49l-17.81-30c-11.21 10.32-25.91 15.93-41.84 7.46-18.91-10.05-24.33-30.08-11.31-54.57l13.26-24.94c13-24.5 32.66-31.2 51.57-21.14 15.93 8.47 19.17 21.33 16.13 36.28l35.88-.38c2.43-30.7-8.83-51.54-36-66-39.93-21.23-81-5.95-109 46.61S57.37 284.84 97.3 306.07z" stroke="#0B21A8" opacity=".3" />
@@ -201,7 +201,7 @@ class Overview extends React.Component {
           <ul className="overview-page__list">
             <li className="overview-page__list-item">
               <Link to="/getting-started" className="list-item__icon">
-                <img src={gettingStartedIll} alt="Getting started" />
+                <img src={gettingStartedIll} alt="" />
               </Link>
               <div className="list-item__info">
                 <Link to="/getting-started">Getting Started</Link>
@@ -210,7 +210,7 @@ class Overview extends React.Component {
             </li>
             <li className="overview-page__list-item">
               <Link to="/style" className="list-item__icon">
-                <img src={styleIll} alt="Style" />
+                <img src={styleIll} alt="" />
               </Link>
               <div className="list-item__info">
                 <Link to="/style">Style</Link>
@@ -219,7 +219,7 @@ class Overview extends React.Component {
             </li>
             <li className="overview-page__list-item">
               <Link to="/components" className="list-item__icon">
-                <img src={componentsIll} alt="Components" />
+                <img src={componentsIll} alt="" />
               </Link>
               <div className="list-item__info">
                 <Link to="/components">Components</Link>
@@ -228,7 +228,7 @@ class Overview extends React.Component {
             </li>
             <li className="overview-page__list-item">
               <Link to="/resources" className="list-item__icon">
-                <img src={resourcesIll} alt="Resources" />
+                <img src={resourcesIll} alt="" />
               </Link>
               <div className="list-item__info">
                 <Link to="/resources">Resources</Link>
@@ -242,7 +242,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile target="_blank" href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile">
                 <div className="tile__icon">
-                  <img src={sketchIcon} alt="sketch icon" />
+                  <img src={sketchIcon} alt="" />
                 </div>
                 <div className="tile__info">
                   <p>Carbon Design Kit</p>
@@ -253,7 +253,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile target="_blank" href="https://github.com/carbon-design-system/carbon-components" className="overview-page__tile">
                 <div className="tile__icon">
-                  <img src={githubIcon} alt="github icon" />
+                  <img src={githubIcon} alt="" />
                 </div>
                 <div className="tile__info">
                   <p>Carbon Components</p>
@@ -264,7 +264,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile target="_blank" href="http://www.codepen.io/team/carbon" className="overview-page__tile">
                 <div className="tile__icon">
-                  <img src={codepenIcon} alt="codepen icon" />
+                  <img src={codepenIcon} alt="" />
                 </div>
                 <div className="tile__info">
                   <p>Carbon CodePen</p>
@@ -275,7 +275,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile target="_blank" href="http://themes.carbondesignsystem.com/" className="overview-page__tile">
                 <div className="tile__icon">
-                  <img src={sandboxIcon} alt="sandbox icon" />
+                  <img src={sandboxIcon} alt="" />
                 </div>
                 <div className="tile__info">
                   <p>Theming Sandbox</p>
