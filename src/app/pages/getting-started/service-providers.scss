@@ -1,0 +1,14 @@
+main[data-page="getting-started-design-approval-service-providers"] {
+  .bx--checkbox-wrapper {
+    max-width: 38rem;
+  }
+
+  .bx--checkbox-label {
+    top: -5px;
+    line-height: 1.75;
+  }
+
+  .bx--checkbox-label::before {
+    top: 3px;
+  }
+}
