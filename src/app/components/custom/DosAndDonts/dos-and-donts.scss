@@ -7,7 +7,7 @@
     display: inline-block;
     width: 100%;
     max-width: 60rem;
-    border: 1px solid #DFE3E6;
+    border: 1px solid #dfe3e6;
     margin-bottom: 1rem;
   }
 
@@ -51,5 +51,9 @@
       font-size: 1.25rem;
       font-weight: 300;
     }
+  }
+
+  .example-img {
+    margin: 0;
   }
 }
