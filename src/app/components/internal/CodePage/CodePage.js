@@ -46,14 +46,16 @@ class CodePage extends Component {
 
   renderVariation = (parent, variation, title, codepenSlug) => {
     let currentCodepenSlug = '';
-    if (typeof codepenSlug === 'string') {
-      currentCodepenSlug = codepenSlug;
-    } else {
-      Object.keys(codepenSlug).map(slug => {
-        if (variation === slug) {
-          currentCodepenSlug = codepenSlug[slug][0];
-        }
-      });
+    if (!(codepenSlug === undefined)) {
+      if (typeof codepenSlug === 'string') {
+        currentCodepenSlug = codepenSlug;
+      } else {
+        Object.keys(codepenSlug).map(slug => {
+          if (variation === slug) {
+            currentCodepenSlug = codepenSlug[slug][0];
+          }
+        });
+      }
     }
     let htmlFile;
     if (parent === 'text-input' && variation === 'text-area') {
