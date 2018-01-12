@@ -32,32 +32,40 @@ Only one SVG is required of your service icon for production purposes. It should
 ## Production guidelines
 ### Icon requirements
 
-1. SVG is sized at 32 x 32 pixels.
-![Icon requirement 1 correct example](images/service-icon-1.png)
-![Icon requirement 1 incorrect example](images/service-icon-2.png)
-- All vectors should be squarely on the pixel grid (completing requirements 3-6 will help with this but if you need further help check out the FAQ section at the bottom of this page).
-![Icon requirement 2 correct example](images/service-icon-3.png)
-![Icon requirement 2 incorrect example](images/service-icon-4.png)
-- There should be no decimals in the x or y coordinates.
-![Icon requirement 3 correct example](images/service-icon-5.png)
-![Icon requirement 3 incorrect example](images/service-icon-6.png)
-- The width and height of the icon should be full pixels (no fractions of pixels).
-![Icon requirement 4 correct example](images/service-icon-7.png)
-![Icon requirement 4 incorrect example](images/service-icon-8.png)
-- All strokes and lines are at least 1px, (i.e. 0.75px is not an acceptable stroke thickness).
-![Icon requirement 5 correct example](images/service-icon-9.png)
-![Icon requirement 5 incorrect example](images/service-icon-10.png)
-- All strokes and lines are whole pixels (no decimals).
-![Icon requirement 6 correct example](images/service-icon-11.png)
-![Icon requirement 6 incorrect example](images/service-icon-12.png)
-- All stokes are expanded or converted to outlines.
-![Icon requirement 7 correct example](images/service-icon-13.png)
-![Icon requirement 7 incorrect example](images/service-icon-14.png)
-- All possible layers are merged so there are as few paths as possible.
-![Icon requirement 8 correct example](images/service-icon-15.png)
-![Icon requirement 8 incorrect example](images/service-icon-16.png)
-- All layers are ungrouped.
-- All layers are and artboards are properly named (these names will also be exported and carried over into the code).
+<p>1. SVG is sized at 32 x 32 pixels.</p>
+
+<div data-insert-component="DosAndDonts5"></div>
+
+<p>2. All vectors should be squarely on the pixel grid (completing requirements 3-6 will help with this but if you need further help check out the FAQ section at the bottom of this page).</p>
+
+<div data-insert-component="DosAndDonts6"></div>
+
+<p>3. There should be no decimals in the x or y coordinates.</p>
+
+<div data-insert-component="DosAndDonts7"></div>
+
+<p>4. The width and height of the icon should be full pixels (no fractions of pixels).</p>
+
+<div data-insert-component="DosAndDonts8"></div>
+
+<p>5. All strokes and lines are at least 1px, (i.e. 0.75px is not an acceptable stroke thickness).</p>
+
+<div data-insert-component="DosAndDonts9"></div>
+
+<p>6. All strokes and lines are whole pixels (no decimals).</p>
+
+<div data-insert-component="DosAndDonts10"></div>
+
+<p>7. All stokes are expanded or converted to outlines.</p>
+
+<div data-insert-component="DosAndDonts11"></div>
+
+<p>8. All possible layers are merged so there are as few paths as possible.</p>
+
+<div data-insert-component="DosAndDonts12"></div>
+
+<p>9. All layers are ungrouped.</p>
+<p>10. All layers are and artboards are properly named (these names will also be exported and carried over into the code).</p>
 
 #### Pro tips
 

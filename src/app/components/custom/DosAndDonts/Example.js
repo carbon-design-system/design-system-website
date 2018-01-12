@@ -7,27 +7,12 @@ class Example extends Component {
     correct: PropTypes.bool,
     caption: PropTypes.string,
     text: PropTypes.string,
+    img: PropTypes.string
   };
 
   render() {
-    const greenCheck = (
-      <Icon
-        name="checkmark"
-        description="checkmark"
-        height="16px"
-        width="16px"
-        fill="#5AA700"
-      />
-    );
-    const redX = (
-      <Icon
-        name="close"
-        description="close"
-        height="12px"
-        width="12px"
-        fill="#E71D32"
-      />
-    );
+    const greenCheck = <Icon name="checkmark" description="checkmark" height="16px" width="16px" fill="#5AA700" />;
+    const redX = <Icon name="close" description="close" height="12px" width="12px" fill="#E71D32" />;
 
     const icon = this.props.correct ? greenCheck : redX;
 
@@ -37,9 +22,12 @@ class Example extends Component {
           {icon}
           {this.props.caption}
         </p>
-        <div className="example-text">
-          <p>"{this.props.text}"</p>
-        </div>
+        {this.props.text && (
+          <div className="example-text">
+            <p>"{this.props.text}"</p>
+          </div>
+        )}
+        {this.props.img && <img className="example-img" alt="" src={this.props.img} />}
       </div>
     );
   }
