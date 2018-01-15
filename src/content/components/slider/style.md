@@ -14,7 +14,7 @@ Slider labels should be set in sentence case, with only the first word in a phra
 | Property 			   | Font-size (px/rem)       | Font-weight  | Type style |
 |----------------------|-----------------|--------------|--|
 | Label                | 14 / 0.875 | Semi-Bold / 600   | Zeta |
-| Range values  | 14 / 0.875 | Normal / 400 | -  | 
+| Range values  | 14 / 0.875 | Normal / 400 | -  |
 
 ## Structure
 The width of a Slider varies based on page content and layout.
@@ -26,6 +26,8 @@ The width of a Slider varies based on page content and layout.
 | Spacing: Label & slider | 16 | 1   |
 | Spacing: slider & range values | 16 | 1  |
 | Spacing: range value & text input | 16 | 1  |
+| Min-width    | 200 | 12.5 |
+ | Max-width  | 640 |  40 |
 
 
 ![Structure and spacing measurements for Slider](images/slider-style-1.png)
