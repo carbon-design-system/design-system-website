@@ -98,13 +98,13 @@ const routes = {
     {
       path: 'style',
       indexRoute: {
-        onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+        onEnter: (nextState, replace) => replace('/style/color/swatches'),
       },
       childRoutes: [
         {
-          path: '/style/colors',
+          path: '/style/color',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/style/colors/swatches'),
+            onEnter: (nextState, replace) => replace('/style/color/swatches'),
           },
           childRoutes: [
             {

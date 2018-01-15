@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Page from '../../components/internal/Page';
 import MarkdownPage from '../../components/internal/MarkdownPage';
 
-import Colors from './Colors';
+import Color from './Color';
 import Iconography from './Iconography';
 import Layer from './Layer';
 import Grid from './Grid';
@@ -23,8 +23,8 @@ class Style extends React.Component {
     const paramsPage = params.page;
     const title = paramsName.charAt(0).toUpperCase() + paramsName.substring(1);
     let content;
-    if (paramsName === 'colors') {
-      content = <Colors currentPage={paramsPage} />;
+    if (paramsName === 'color') {
+      content = <Color currentPage={paramsPage} />;
     } else if (paramsName === 'layer') {
       content = <Layer currentPage={paramsPage} />;
     } else if (paramsName === 'iconography') {
