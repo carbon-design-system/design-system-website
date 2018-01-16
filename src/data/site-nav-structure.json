@@ -23,7 +23,7 @@
   "style": {
     "title": "Style",
     "subnav": {
-      "colors": "Colors",
+      "color": "Color",
       "grid": "Grid",
       "iconography": "Iconography",
       "layer": "Layer",
