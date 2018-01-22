@@ -98,6 +98,7 @@ class CodePage extends Component {
           variation={variation}
           component={parent}
           htmlFile={htmlFile}
+          hideViewFullRender={this.props.hideViewFullRender}
         />
       </div>
     );
