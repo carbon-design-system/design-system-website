@@ -117,9 +117,9 @@ Inspect the code and make sure that your XML doesn't include the following:
 
 1. Ensure your icon meets all of the above icon requirements and is pixel perfect.
 2. Once your icon is ready, host one svg at 32x32px on your service endpoint. 
-3. Submit the icon for review by opening an issue on the [service icons repo](https://github.ibm.com/Bluemix/service-icons) and link the icon url from the end point in the issue. Then add the label "review needed" to the issue.
+3. Submit the icon for review by opening an issue on the [service icons repo](https://github.ibm.com/Bluemix/service-icons) and link the icon url from the end point in the issue. Then add the label “review needed” to the issue.
 4. One of the Carbon team members will review the icon within 3 days of the request, so please plan and allow time to process your approval. If changes are requested, the svg url must be resubmitted for approval. 
-5. The issue will be label as "approved" once the process is complete.
+5. The issue will be label as “approved” once the process is complete.
 
 ## FAQ
 
