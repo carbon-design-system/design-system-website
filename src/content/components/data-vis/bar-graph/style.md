@@ -1,22 +1,6 @@
 Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style) for base graph style specifications.
 
 ## Structure
-The height of a bar varies based off of the value for that data increment.
+The height of a bar varies based on the value for that data increment. The width of a bar is calculated based on the width of the graph and the number of bars. In other words, the more bars there are in a graph the thinner the bars will be and vice versa.
 
-| Property             | px | rem |
-|----------------------|----|-----|
-| Bar width   			   | 16 |  1  |
-
-![](images/style-base-graph-1.png)
-_Spacing examples for a Bar Graph | px / rem_
-
-
-| Spacing                   | px | rem  |
-|---------------------------|----|------|
-| 2 data sets               | 8  | .5   |
-| 3 data sets               | 4  | .25  |
-| 4 data sets               | 2  | .125 |
-| 5+ data sets              | 2  | .125 |
-
-![](images/style-base-graph-2.png)
-_Spacing examples for a Bar Graph | px / rem_
+A grouped bar graph follows the same width and height rules for a single bar graph data set. Spacing between groups of bar graphs is larger than bars within a group. Maintain a minimum of 2px between bars within a group to meet color contrast standards.

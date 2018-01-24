@@ -46,6 +46,7 @@
         "title": "Data Vis",
         "subnav": {
           "overview": "Overview",
+          "bar-graph": "Bar Graph",
           "gauge": "Gauge",
           "line-graph": "Line Graph",
           "pie-chart": "Pie Chart",
