@@ -22,6 +22,7 @@ class MarkdownPage extends Component {
           dangerouslySetInnerHTML={{ __html: md.render(content) }}
         />
       </div>
+
     );
   }
 }
