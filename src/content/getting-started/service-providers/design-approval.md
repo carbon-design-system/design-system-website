@@ -1,5 +1,3 @@
-## Design approval
-
 ### Baseline requirements
 Services must meet the following baseline requirements in order to qualify for Experimental approval and beyond. See the [General tab](/getting-started/service-providers/general) for details on each capability:
 
@@ -57,7 +55,7 @@ Services must meet the following baseline requirements in order to qualify for E
 ### Beta
 <div class="bx--form-item bx--checkbox-wrapper">
   <input id="bx--checkbox-13" class="bx--checkbox" type="checkbox" value="fip" name="checkbox">
-  <label style="display: block;" for="bx--checkbox-13" class="bx--checkbox-label">Complete five user tests while your service is in Beta. Refer to these <a href="https://ibm.ent.box.com/notes/136934943258" target="_blank">user testing guidelines</a> to help you choose and conduct tests.</label>
+  <label style="display: block;" for="bx--checkbox-13" class="bx--checkbox-label">Complete five user tests while your service is in Beta. Refer to these <a href="https://ibm.ent.box.com/notes/220208728866?s=9zaeshrkbe3u0xxsuj65kojx8ey0qw81" target="_blank">user testing guidelines</a> to help you choose and conduct tests.</label>
 </div>
 <div class="bx--form-item bx--checkbox-wrapper">
   <input id="bx--checkbox-14" class="bx--checkbox" type="checkbox" value="fip" name="checkbox">
