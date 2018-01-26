@@ -5,7 +5,7 @@
     "list--ordered": [
       "Ordered list"
     ],
-    "list--unordered": [
+    "list": [
       "Unordered list"
     ]
   },
@@ -13,7 +13,7 @@
     "list--ordered": [
       "MOEWEP"
     ],
-    "list--unordered": [
+    "list": [
       "JOrjOj"
     ]
   },
