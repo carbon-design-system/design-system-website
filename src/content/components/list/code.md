@@ -3,11 +3,11 @@ desc: <span>Lists</span> consist of related content grouped together and organiz
 variations:
   list--ordered:
   - Ordered list
-  list--unordered:
+  list:
   - Unordered list
 codepen:
   list--ordered:
   - MOEWEP
-  list--unordered:
+  list:
   - JOrjOj
 ---

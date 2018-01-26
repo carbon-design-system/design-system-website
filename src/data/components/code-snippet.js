@@ -2,7 +2,7 @@
  module.exports = {
   "desc": "<span>Code snippets</span> are small blocks of reusable code that can be inserted in a code file.",
   "variations": {
-    "code-snippet--code": [
+    "code-snippet": [
       "Code Snippet"
     ],
     "code-snippet--terminal": [
@@ -10,7 +10,7 @@
     ]
   },
   "codepen": {
-    "code-snippet--code": [
+    "code-snippet": [
       "YYqeGX"
     ],
     "code-snippet--terminal": [
