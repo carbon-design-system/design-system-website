@@ -7,7 +7,7 @@
 | Label              | $text-01        | #152935   |
 | Drawer: hover      | $brand-01       | #3d70b2   |
 | Option text: hover | $inverse-01     | #ffffff   |
-| Label: filter      | $text-03        | #5a6872   |
+| Placeholder text: filter      | $text-03        | #5a6872   |
 | User input text    | $text-01        | #152935   |
 
 
@@ -19,11 +19,11 @@ All Dropdown text should be set in sentence case, with only the first word in a 
 
 | Property  | Font-size (px/rem)      | Font-weight  |
 |-------------|-----------------|--------------|
-| Label       | 14 / 0.875 | Bold / 700   |
+| Label       | 14 / 0.875 | Semi-bold / 700   |
 | Option text | 14 / 0.875 | Normal / 400 |
 | Label: filter | 14 / 0.875 | Normal / 400   |
 | Placeholder text: filter | 14 / 0.875 | Normal / 400   |
-| User input text | 14 / 0.875 | Bold / 700   |
+| User input text | 14 / 0.875 | Semi-bold / 700   |
 
 
 ## Layer
@@ -50,7 +50,7 @@ _Structure and spacing measurements for Dropdown | px / rem_
 | Height                             | 40 | 2.5   |
 | Internal spacing                   | 16 | 1     |
 | Row height                         | 40 | 2.5   |
-| Spacing: checkbox & checkbox label | 8  | 0.5   |
+| Spacing: checkbox & label | 8  | 0.5   |
 | Spacing: badge & label             | 8  | 0.5   |
 | Spacing: label & caret             |16≤ | 1≤    |
 | Badge height                       | 18 | 1.125 |
@@ -73,7 +73,7 @@ _Hover and focus zstates for a Multi-Select Dropdown_-->
 | Internal spacing                   | 10 | 0.625 |
 | Spacing: label & dropdown menu     | 10 | 0.625 |
 | Row height                         | 40 | 2.5   |
-| Spacing: checkbox & checkbox label | 8  | 0.5   |
+| Spacing: checkbox & label | 8  | 0.5   |
 | Spacing: badge & label             | 10 | 0.625 |
 | Spacing: label & caret             | 8≤ | 0.5≤  |
 | Badge height                       | 18 | 1.125 |
