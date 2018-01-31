@@ -4,9 +4,11 @@
 |-----------------------|----------|----------|
 | Inactive: fill        | $ui-01   | #ffffff  |
 | Inactive: border      | $ui-05   | #8c9ba5  |
-| Inactive: hover       | $ui-03   | #f0f3f6  |
+| Inactive :hover       | $ui-03   | #f0f3f6  |
+| Small toggle: inactive | $ui-05 | #8c9ba5 |
 | Active: fill          | $brand-01| #3d70b2  |
 | Label                 | $text-01 | #152935  |
+| Small toggle: checkmark | $brand-01 | #3d70b2
 
 ---
 ***
@@ -37,3 +39,23 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 > ![Structure and spacing measurements for toggle](images/toggle-style-2.png)
 
 _Structure and spacing measurements for Toggle | px / rem_
+
+
+
+
+### Small toggle
+| Property          | px | rem   |
+|-------------------|----|-------|
+| Height            | 16 | 1     |
+| Width             | 32 | 2     |
+| Width & height: circle | 10 | 0.625 |
+| Width & height: checkmark | 6 | 0.375   |
+| Spacing: external | 16 | 1     |
+
+
+
+---
+***
+> ![Structure and spacing measurements for small toggle](images/toggle-style-3.png)
+
+_Structure and spacing measurements for Small Toggle | px / rem_
