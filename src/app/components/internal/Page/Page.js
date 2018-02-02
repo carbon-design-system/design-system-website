@@ -199,7 +199,6 @@ class Page extends Component {
       <main
         role="main"
         id="maincontent"
-        aria-labelledby="page-title"
         tabIndex="-1"
         data-page={this.addPageClass()}
         onKeyDown={this.handleKeyDown}
