@@ -4,11 +4,11 @@
 |-----------------------|----------|----------|
 | Inactive: fill        | $ui-01   | #ffffff  |
 | Inactive: border      | $ui-05   | #8c9ba5  |
-| Inactive :hover       | $ui-03   | #f0f3f6  |
+| Inactive: hover       | $ui-03   | #f0f3f6  |
 | Small toggle: inactive | $ui-05 | #8c9ba5 |
 | Active: fill          | $brand-01| #3d70b2  |
 | Label                 | $text-01 | #152935  |
-| Small toggle: checkmark | $brand-01 | #3d70b2
+| Small toggle: checkmark | $brand-01 | #3d70b2 |
 
 ---
 ***
@@ -49,7 +49,6 @@ _Structure and spacing measurements for Toggle | px / rem_
 | Height            | 16 | 1     |
 | Width             | 32 | 2     |
 | Width & height: circle | 10 | 0.625 |
-| Width & height: checkmark | 6 | 0.375   |
 | Spacing: external | 16 | 1     |
 
 
