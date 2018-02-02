@@ -5,5 +5,9 @@ variations:
     - Toggle
   toggle--small:
     - Small toggle
-codepen: ooZqxw
+codepen:
+  toggle:
+  - ooZqxw
+  toggle--small:
+  - pagwYV
 ---

@@ -9,6 +9,13 @@
       "Small toggle"
     ]
   },
-  "codepen": "ooZqxw",
+  "codepen": {
+    "toggle": [
+      "ooZqxw"
+    ],
+    "toggle--small": [
+      "pagwYV"
+    ]
+  },
   "__content": "\n"
 }
