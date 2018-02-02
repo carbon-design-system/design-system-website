@@ -19,11 +19,11 @@ All Dropdown text should be set in sentence case, with only the first word in a 
 
 | Property  | Font-size (px/rem)      | Font-weight  |
 |-------------|-----------------|--------------|
-| Label       | 14 / 0.875 | Semi-bold / 700   |
+| Label       | 14 / 0.875 | Semi-bold / 600   |
 | Option text | 14 / 0.875 | Normal / 400 |
 | Label: filter | 14 / 0.875 | Normal / 400   |
 | Placeholder text: filter | 14 / 0.875 | Normal / 400   |
-| User input text | 14 / 0.875 | Semi-bold / 700   |
+| User input text | 14 / 0.875 | Semi-bold / 600   |
 
 
 ## Layer
