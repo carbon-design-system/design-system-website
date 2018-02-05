@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Markdown from 'markdown-it';
 
 import ComponentExample from '../ComponentExample/ComponentExample';
+import ComponentReactExample from '../ComponentReactExample/ComponentReactExample';
 
 class CodePage extends Component {
   static propTypes = {
@@ -96,38 +97,46 @@ class CodePage extends Component {
       }
     }
     let htmlFile;
-    if (parent === 'text-input' && variation === 'text-area') {
-      htmlFile = require('carbon-components/src/components/text-area/text-area.html');
-    } else if (parent === 'data-table' && variation === 'toolbar') {
-      htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
-    } else if (parent === 'date-picker' && variation === 'time-picker') {
-      htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
-    } else if (parent === 'data-table' && variation === 'data-table-v2') {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
-    } else if (
-      parent === 'data-table' &&
-      variation === 'data-table-v2-expandable'
-    ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
-    } else if (
-      parent === 'data-table' &&
-      variation === 'data-table-v2--pagination'
-    ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
-    } else if (
-      parent === 'data-table' &&
-      variation === 'data-table-v2--small'
-    ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+    if (parent === 'dropdown') {
+      if (variation === 'dropdown') {
+        htmlFile = require('carbon-components/src/components/dropdown/dropdown.html');
+      } else {
+        return this.renderReactComponent(parent, variation, title);
+      }
     } else {
-      htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
+      if (parent === 'text-input' && variation === 'text-area') {
+        htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+      } else if (parent === 'data-table' && variation === 'toolbar') {
+        htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+      } else if (parent === 'date-picker' && variation === 'time-picker') {
+        htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
+      } else if (parent === 'data-table' && variation === 'data-table-v2') {
+        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2-expandable'
+      ) {
+        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2--pagination'
+      ) {
+        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2--small'
+      ) {
+        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+      } else {
+        htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
+      }
+      if (parent === 'card') {
+        const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
+        const newPath = require('../../../../assets/images/placeholder.svg');
+        htmlFile = htmlFile.replace(oldPath, newPath);
+      }
     }
 
-    if (parent === 'card') {
-      const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
-      const newPath = require('../../../../assets/images/placeholder.svg');
-      htmlFile = htmlFile.replace(oldPath, newPath);
-    }
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>
@@ -141,6 +150,17 @@ class CodePage extends Component {
       </div>
     );
   };
+
+
+  renderReactComponent = (parent, variation, title) => {
+    return (
+      <div key={variation} className="component-variation">
+        <h2 className="component-variation__name">{title}</h2>
+        <p>This component is currently only available in <a href="https://github.com/carbon-design-system/carbon-components-react" target="_blank">our React library</a>.</p>
+        <ComponentReactExample component={parent} variation={variation} />
+      </div>
+    );
+  }
 
   renderJavascriptContent = component => {
     let javascriptSection;
