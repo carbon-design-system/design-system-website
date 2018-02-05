@@ -141,7 +141,7 @@
 .icon-button,
 a.icon-button {
   border: 2px solid $inverse-01;
-  background-color: transparent;
+  background-color: $brand-01;
   min-width: rem(112px);
   margin: 0.2rem 0;
   color: $inverse-01 !important;

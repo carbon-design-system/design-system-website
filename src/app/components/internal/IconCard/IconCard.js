@@ -60,6 +60,7 @@ class IconCard extends Component {
               width={width}
               viewBox={viewBox}
               tabIndex={-1}
+              alt={name}
             />}
           <div
             ref={iconActions => {
