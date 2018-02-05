@@ -107,38 +107,26 @@ Carbon Components are built to be included individually and not clobber global s
 
 ## Javascript
 
+Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
+
+1. Getting component class reference
+2. Instantiating component class on DOM nodes
+
+### 1. Getting component JavaScript class reference
+
 ### Using a module bundler: recommended
 
-Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a `umd` build for each component, as well as a `js:next` build for use with webpack 2 or rollup. After you've installed the components through `npm`, there are a few ways to initialize the component.
+We recommend using ECMAScript module along with your module bundle toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component,  for use with webpack or rollup.
 
-#### Initialize all instances of a component using a module bundler
+After you've installed the components through `npm`, you can grab a component JavaScript class reference by something like this:
 
 ```js
 import { Modal } from 'carbon-components'
-Modal.init();
 ```
 
-#### Initialize a specific instance
+### Using pre-built bundle
 
-```js
-import { Modal } from 'carbon-components';
-const myModal = document.querySelector('[data-modal]'); // element node of the modal itself
-Modal.init(myModal);
-```
-
-#### Reference a previously initialized component using a module bundler
-
-```js
-import { Modal } from 'carbon-components';
-const myModal = document.querySelector('[data-modal]');
-const myModalInstance = Modal.components.get(myModal);
-```
-
-### Using the compiled carbon-components file directly
-
-Users can also opt to use the pre-compiled `carbon-components.js` file directly. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using. By default, including the javascript file will automatically instantiate any component on the page as well as create a global objected called `CarbonComponents`.
-
-#### Initialize all instances of a component using the compiled file directly
+Users can also opt to use the pre-built `carbon-components.js` file directly, like below. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using.
 
 ```html
 <html>
@@ -149,57 +137,56 @@ Users can also opt to use the pre-compiled `carbon-components.js` file directly.
 </html>
 ```
 
-#### Don't initialize components by default
+Once you load `carbon-components.js` via `<script>` tag, you can grab a component JavaScript class reference by something like this:
 
-```html
-<html>
-  <body>
-    <!-- Put HTML snippets of components here... -->
-    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
-    <script>
-      CarbonComponents.settings.disableAutoInit = true;
-    </script>
-  </body>
-</html>
+```js
+var Modal = CarbonComponents.Modal;
 ```
 
-#### Initialize a specific component
+**Note**: By default, pre-built bundle automatically instantiates all components on the page when `DOMContentLoaded` event on the page fires. In case you don't want that behavior, you can set `CarbonComponents.settings.disableAutoInit = true` right after `carbon-components.js` is loaded.
+
+**Caveat**: Don't use pre-built `carbon-components.js` if you are importing components via ECMAScript module syntax. Doing so will cause Carbon code loaded twice, often competing each other.
+
+### 2. Instantiating component class on DOM nodes
+
+Once you have a component JavaScript class reference, you can instantiate it on a DOM node with the `.create()` API.
+
+For example, if you have the following HTML for modal:
 
 ```html
-<html>
-  <body>
-    <!-- Put a HTML snippet from http://www.carbondesignsystem.com/components/modal/code here -->
-    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
-    <script>
-      CarbonComponents.settings.disableAutoInit = true;
-      var modal = document.querySelector('[data-modal]');
-      CarbonComponents.Modal.init(modal);
-    </script>
-  </body>
-</html>
+<div data-modal id="modal-nofooter" class="bx--modal" tabindex="-1">
+  <div class="bx--modal-container">
+    ...
+  </div>
+</div>
 ```
 
-#### Reference a previously initialized component using the compiled file directly
+You can create and get the instance by:
 
-```html
-<html>
-  <body>
-    <!-- Put a HTML snippet from http://www.carbondesignsystem.com/components/modal/code here -->
-    <script src="node_modules/carbon-components/scripts/carbon-components.min.js"></script>
-    <script>
-      var modal = document.querySelector('[data-modal]');
-      var myModalRef = CarbonComponents.Modal.components.get(modal);
-    </script>
-  </body>
-</html>
+```js
+const modalElement = document.getElementById('modal-nofooter');
+const modalInstance = Modal.create(modalElement);
 ```
 
-### Wrapping a component with JavaScript framework of your choice
+**Note**: The DOM element to instantiate components on typically has a `data-componentname` attribute, e.g. `data-modal` for modal.
+
+Instantiating a component basically does two things:
+
+* Hooks several event handlers on some DOM elements inside (in above example, ones in `modalElement`, e.g. close button)
+* Allows you to access public methods (found in [our components page](../../components/overview)) via the instance reference (`modalInstance.show()`, etc. in above example)
+
+#### Higher-level component instantiation API
+
+While `.create()` API gives you the full control of component instantiation, there is a higher-level API for instantiating components, which is, `.init(rootElement)`. It instantiates all components with `data-componentname` attribute (e.g. `data-modal` for modal) inside the given `rootElement`. If `rootElement` is omitted, `document` is used.
+
+#### Wrapping a component with JavaScript framework of your choice
 
 Many JavaScript frameworks have a mechanism to automatically create/destroy DOM elements, for example, upon change in array.
-Carbon Components defined in DOM elements that are created after the `DOMContentLoaded` event, like ones such JavaScript frameworks create upon change in array, need to be initialized (and released) manually.
+This often makes it unclear when the DOM element to instantiate Carbon component on is available, which often depends on the JavaScript framework you use.
 
-The easiest way to manually initialize/release components is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
+Also when DOM elements that Carbon components have been instantiated on are being destroyed, the Carbon component instances should be released so that e.g. there are no zombie event handlers.
+
+The easiest way to hook on the creation/destroy of DOM elements is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
 
 ```javascript
 class BXLoading extends HTMLElement {
