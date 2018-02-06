@@ -86,7 +86,7 @@ class MotionExample extends Component {
     const correctInfo = correctText ?
       (
         <p className="motion-example__correct-text">
-          <Icon name="checkmark" description="correct example" />
+          <Icon alt="correct" name="checkmark" description="correct example" />
           {correctText}
         </p>
       ) : '';
@@ -94,7 +94,7 @@ class MotionExample extends Component {
     const incorrectInfo = incorrectText ?
       (
         <p className="motion-example__incorrect-text">
-          <Icon name="close" description="incorrect example" />
+          <Icon alt="incorrect" name="close" description="incorrect example" />
           {incorrectText}
         </p>
       ) : '';

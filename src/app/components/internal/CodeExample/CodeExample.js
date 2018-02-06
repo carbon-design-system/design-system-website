@@ -81,13 +81,13 @@ class CodeExample extends Component {
         >
           <button data-copy-btn className="bx--snippet-button code-example__copy-btn" onClick={() => this.handleClick()}>
             Copy
-            <Icon className="code-example__copy-btn--icon bx--snippet__icon" name="copy" description="Copy code icon" />
+            <Icon alt="copy button" className="code-example__copy-btn--icon bx--snippet__icon" name="copy" description="Copy code icon" />
             <div className={copyBtnClass} data-feedback="Copied!" />
           </button>
         </CopyToClipboard>
         <button className={expandBtnClass} onClick={this.expandCode}>
           <span>{expandCodeBtnText}</span>
-          <Icon className={expandBtnIconClass} name="chevron--down" description="Expand code icon" />
+          <Icon alt="expand code" className={expandBtnIconClass} name="chevron--down" description="Expand code icon" />
         </button>
       </div>
     );

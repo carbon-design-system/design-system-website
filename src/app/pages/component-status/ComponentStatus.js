@@ -41,17 +41,17 @@ class ComponentStatus extends React.Component {
   render() {
     const readyIcon = (
       <div className="component-status__icon ready">
-        <Icon fill="#8CD211" width="16" height="16" name="checkmark--glyph" description="ready status" />
+        <Icon alt="ready status" fill="#8CD211" width="16" height="16" name="checkmark--glyph" description="ready status" />
       </div>
     );
     const underReviewIcon = (
       <div className="component-status__icon under-review">
-        <Icon fill="#EFC100" width="16" height="16" name="warning--glyph" description="ready status" />
+        <Icon alt="under review" fill="#EFC100" width="16" height="16" name="warning--glyph" description="ready status" />
       </div>
     );
     const deprecatedIcon = (
       <div className="component-status__icon deprecated">
-        <Icon fill="#E71D32" width="16" height="16" name="error--glyph" description="ready status" />
+        <Icon alt="deprecated" fill="#E71D32" width="16" height="16" name="error--glyph" description="ready status" />
       </div>
     );
     const notApplicableIcon = (
