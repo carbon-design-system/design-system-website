@@ -13,19 +13,24 @@ class Glossary extends Component {
 
   renderGlossaryEntry = (glossary, glossaryEntry) => {
     const entry = glossary[glossaryEntry];
+    let counter = 0;
     return (
       <div id={glossaryEntry} key={glossaryEntry} className="glossary-entry">
         <p className="glossary-entry__main-heading">{glossaryEntry}</p>
         {Object.keys(entry).map(list => {
           const listItems = Object.keys(entry[list]).map(word => {
+            counter++;
             const currentWord = entry[list][word];
-            const wordId = word.toLowerCase().replace(' ', '-');
+            let wordId = word.toLowerCase().replace(' ', '-');
             const desc = currentWord.desc
               ? md.renderInline(currentWord.desc)
               : '';
             const subtext = currentWord.subtext
               ? md.renderInline(currentWord.subtext)
               : '';
+            if (wordId === 'docs') {
+              wordId = `${wordId}${counter}`;
+            }
             return (
               <div id={wordId} key={word} className="glossary-entry__word">
                 <h4 className="glossary-entry__word-heading">{word}</h4>

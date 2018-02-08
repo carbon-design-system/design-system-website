@@ -5,13 +5,13 @@
     "tile": [
       "Tile"
     ],
-    "clickable-tile": [
+    "tile--clickable": [
       "Clickable Tile"
     ],
-    "selectable-tile": [
+    "tile--selectable": [
       "Selectable Tile"
     ],
-    "expandable-tile": [
+    "tile--expandable": [
       "Expandable Tile"
     ]
   },
@@ -19,13 +19,13 @@
     "tile": [
       "vWxRxR"
     ],
-    "clickable-tile": [
+    "tile--clickable": [
       "ooZqaq"
     ],
-    "selectable-tile": [
+    "tile--selectable": [
       "NwpYJW"
     ],
-    "expandable-tile": [
+    "tile--expandable": [
       "NwpMqG"
     ]
   },

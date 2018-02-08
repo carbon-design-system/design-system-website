@@ -19,6 +19,7 @@ Your design team has complete control over your icon's design. We recommend that
 - Use lines or strokes less than 1 pixel (px)
 - Add internal padding
 
+
 ### Color
 If you have multiple services, you should either use the same icon with a different color for each service or use the same color scheme for each distinct icon. The examples here show how a row of services from the same provider could look in the catalog. Refer to the [IBM Design Language](https://www.ibm.com/design/language/resources/color-library) color palette for color inspiration and accessibility guidelines.
 
@@ -116,10 +117,10 @@ Inspect the code and make sure that your XML doesn't include the following:
 ## Icon approval & submission
 
 1. Ensure your icon meets all of the above icon requirements and is pixel perfect.
-2. Submit your icons for review by opening an issue on the [service icons repo](https://github.ibm.com/Bluemix/service-icons) and labeling the issue as "review needed".
-3. One of the Carbon team reviewers will review the icon within 3 days of the request, so please plan and allow time to process your approval. If changes are needed, the icon must be resubmitted for approval.
-4. Once the icon has been approved, it can be added to your service broker. Only one icon at 32 x 32 px is needed.
-
+2. Once your icon is ready, host one svg at 32x32px on your service endpoint.
+3. Submit the icon for review by opening an issue on the [service icons repo](https://github.ibm.com/Bluemix/service-icons) and link the icon url from the end point in the issue. Then add the label “review needed” to the issue.
+4. One of the Carbon team members will review the icon within 3 days of the request, so please plan and allow time to process your approval. If changes are requested, the svg url must be resubmitted for approval.
+5. The issue will be label as “approved” once the process is complete.
 
 ## FAQ
 

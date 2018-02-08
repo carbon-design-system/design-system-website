@@ -32,7 +32,7 @@ class PageTabs extends Component {
     const currentTab = tabs.indexOf(currentPage);
 
     return (
-      <Tabs className="page-tabs" selected={currentTab} onClick={this.updateTab}>
+      <Tabs aria-label="navigation" className="page-tabs" selected={currentTab} onClick={this.updateTab}>
         {children}
       </Tabs>
     );

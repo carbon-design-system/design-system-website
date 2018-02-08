@@ -108,8 +108,8 @@ class Overview extends React.Component {
     const svgViewBox = (this.state.windowWidth < 903) ? '0 0 4000 823' : '0 0 2500 823';
 
     return (
-      <main id="maincontent" role="main" aria-labelledby="page-title" className="overview-page" tabIndex="-1">
-        <section className="overview-page__banner" onMouseMove={this.moveLetters}>
+      <main id="maincontent" role="main" className="overview-page" tabIndex="-1">
+        <section className="overview-page__banner" aria-label="overview page banner" onMouseMove={this.moveLetters}>
           <img className="banner__shapes" src={shapes} alt="" />
           <img className="banner__shapes" src={shapes} alt="" />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox}>
@@ -197,10 +197,10 @@ class Overview extends React.Component {
           <h1 className="banner__logo"><span className="banner__logo--bold">Carbon</span> Design System</h1>
           <Link to="/components/overview" className="bx--btn bx--btn--secondary banner__cta-btn">Explore the system</Link>
         </section>
-        <section className="overview-page__section">
+        <section aria-label="overview page section 1" className="overview-page__section">
           <ul className="overview-page__list">
             <li className="overview-page__list-item">
-              <Link to="/getting-started" className="list-item__icon">
+              <Link to="/getting-started" aria-label="Getting started" className="list-item__icon">
                 <img src={gettingStartedIll} alt="" />
               </Link>
               <div className="list-item__info">
@@ -209,7 +209,7 @@ class Overview extends React.Component {
               </div>
             </li>
             <li className="overview-page__list-item">
-              <Link to="/style" className="list-item__icon">
+              <Link to="/style" aria-label="Style" className="list-item__icon">
                 <img src={styleIll} alt="" />
               </Link>
               <div className="list-item__info">
@@ -218,7 +218,7 @@ class Overview extends React.Component {
               </div>
             </li>
             <li className="overview-page__list-item">
-              <Link to="/components" className="list-item__icon">
+              <Link to="/components" aria-label="Components" className="list-item__icon">
                 <img src={componentsIll} alt="" />
               </Link>
               <div className="list-item__info">
@@ -227,7 +227,7 @@ class Overview extends React.Component {
               </div>
             </li>
             <li className="overview-page__list-item">
-              <Link to="/resources" className="list-item__icon">
+              <Link to="/resources" aria-label="Resources" className="list-item__icon">
                 <img src={resourcesIll} alt="" />
               </Link>
               <div className="list-item__info">
@@ -237,7 +237,7 @@ class Overview extends React.Component {
             </li>
           </ul>
         </section>
-        <section className="overview-page__section overview-page__section--gray">
+        <section aria-label="overview page section 2" className="overview-page__section overview-page__section--gray">
           <ul className="overview-page__list">
             <li className="overview-page__list-item">
               <ClickableTile target="_blank" href="https://github.com/carbon-design-system/carbon-design-kit" className="overview-page__tile">
@@ -285,7 +285,7 @@ class Overview extends React.Component {
             </li>
           </ul>
         </section>
-        <section className="overview-page__section overview-page__section--contribute" style={{ backgroundImage: `url(${scatter})` }}>
+        <section aria-label="overview page section 3" className="overview-page__section overview-page__section--contribute" style={{ backgroundImage: `url(${scatter})` }}>
           <div className="contribute__info">
             <h2>Wondering how to contribute to Carbon?</h2>
             <p>We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.

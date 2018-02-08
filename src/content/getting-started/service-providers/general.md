@@ -14,16 +14,12 @@ Services must adopt these foundational capabilities to actively participate in t
 * [GhoST (Global Search and Tagging System)](https://console.stage1.bluemix.net/docs/developing/GhoST/onboard.html#getting-started): Add resource types so they are visible in the IBM Cloud filesystem to better enable platform-wide search. Follow [these instructions](https://ibm.ent.box.com/s/qopacahpyg34z2urevv74mter742yfse) to onboard a new resource type. For more help, contact someone via Slack at [#global-search-tagging](https://ibm-cloudplatform.slack.com/messages/C11F8KA1Z/details/).
 * [Global Catalog](https://console.stage1.bluemix.net/docs/developing/resource-catalog/index.html#global_catalog_overview): Record and manage your cloud offering across geographies.
 * [Documentation](https://console.stage1.bluemix.net/docs/developing/writing/index.html#get-started): Compose content for each phase of your offering and continually update as your service pushes new changes.
-* [Carbon Design System](http://carbondesignsystem.com/): Use Carbon as a resource for code, visual, and UX guidance when developing components and creating your service icon.
+* [Carbon Design System](http://design-system.stage1.mybluemix.net/): Use Carbon as a resource for [code](https://github.com/carbon-design-system/carbon-components), [visual](https://github.com/carbon-design-system/carbon-design-kit), and UX guidance when developing components and creating your service icon.
 
 
 ## Onboarding requirements
 
 Onboard your service to IBM Cloud by fulfilling the following requirements. Design approval is required for each phase of the process including Experimental, Beta, GA, and post GA iterations.
-
-<!--### Index resources
-* Add resource types to GhoST so they are visible in the IBM Cloud filesystem. Indexing should include performance stats (such as request volume, response time, and error rate), period billing to-date, and linked support issues.
-* Follow [these instructions](https://ibm.ent.box.com/s/qopacahpyg34z2urevv74mter742yfse) to onboard a new resource type. For more help, contact someone via Slack at [#global-search-tagging](https://ibm-cloudplatform.slack.com/messages/C11F8KA1Z/details/).-->
 
 ### Enable NPS
 * NPS (Net Promoter Score) is a management tool that measures customer relationships. To enable in-product NPS data collection for your service, follow [these instructions](https://pages.github.ibm.com/Bluemix/platform-analytics/data/nps/).
@@ -36,12 +32,10 @@ Onboard your service to IBM Cloud by fulfilling the following requirements. Desi
 Your service UI (e.g. Configuration, Dashboard) should follow [WCAG AA](https://www.w3.org/WAI/WCAG20/quickref/) gudielines. All Carbon components are designed to meet accessibility standards. However, if components are customized the designs must:
 
 * Pass [color contrast ratios](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) and meet [color usage](http://carbondesignsystem.com/style/colors/usage) guidelines, which include type color combinations and [data visualization](http://carbondesignsystem.com/data-vis/overview/colors) best practices. If necessary, use a [color contrast checker](https://marijohannessen.github.io/color-contrast-checker/) to verify your design.
-* Follow common [accessibility patterns](http://carbondesignsystem.com/guidelines/accessibility), such as keyboard tabbing, focus states, and nagivation order.
-
-<!--* Does your design consider [color usage](http://carbondesignsystem.com/style/colors/usage) and pass the [color contrast ratio](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)? -->
+* Follow common [accessibility patterns](http://carbondesignsystem.com/guidelines/accessibility), such as keyboard tabbing, focus states, and nagivation order. 
 
 ### Service icon
-Review the [service icon guidelines](/getting-started/service-providers/service-icon) for information on the design, production, approval, and submission of service icons.
+Review the [service icon guidelines](#) for information on the design, production, approval, and submission of service icons.
 
 ### IBM Cloud UI
 #### IBM Cloud Platform
@@ -56,7 +50,6 @@ A configuration page describes a service to potential customers. It may include 
 Service Dashboards display information and details of an existing instance. Using Carbon components, create a dashboard that works for your service.
 
 ![Service dashboard](images/sp-dashboard-1.png)
-![Service dashboard2](images/sp-dashboard-2.png)
 
 #### Common Header
 IBM Cloud and its products share a global header with composable variations. See the [Add-ons](carbondesignsystem.com/add-ons/header/code) library to learn more about its behavior and consume the component.

@@ -1,6 +1,21 @@
 /* eslint-disable */
  module.exports = {
   "desc": "<span>Toggle</span> is a control that is used to quickly switch between two possible states.",
-  "codepen": "ooZqxw",
+  "variations": {
+    "toggle": [
+      "Toggle"
+    ],
+    "toggle--small": [
+      "Small toggle"
+    ]
+  },
+  "codepen": {
+    "toggle": [
+      "ooZqxw"
+    ],
+    "toggle--small": [
+      "pagwYV"
+    ]
+  },
   "__content": "\n"
 }

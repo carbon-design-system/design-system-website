@@ -160,6 +160,7 @@ class SideNav extends Component {
             name="caret--down"
             aria-hidden="true"
             description="Menu arrow icon"
+            alt="Menu arrow icon"
           />
         </p>
         <ul
@@ -187,6 +188,7 @@ class SideNav extends Component {
           name="caret--down"
           aria-hidden="true"
           description="Menu arrow icon"
+          alt="Menu arrow icon"
         />
       </p>
       <ul

@@ -7,7 +7,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import CodePage from '../../components/internal/CodePage';
-import LiveComponent from '../../components/internal/LiveComponent';
 import Page from '../../components/internal/Page';
 
 import OverviewPage from './OverviewPage';
@@ -20,14 +19,9 @@ class ComponentPage extends Component {
   render() {
     const { params } = this.props;
     const currentComponent = params.name;
-    const currentPage = params.page;
 
     if (currentComponent === 'overview') {
       return <OverviewPage />;
-    }
-
-    if (currentPage === 'live') {
-      return <LiveComponent component={currentComponent} />;
     }
 
     const componentTitle =

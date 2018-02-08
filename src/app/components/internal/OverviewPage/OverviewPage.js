@@ -202,11 +202,12 @@ class OverviewPage extends Component {
     let key = 0;
     const componentTemplate = componentData.map(component => {
       key++;
+      const altText = `${component.name} image`;
       return (
         <li key={key} className="component-item">
           <div className="flex-item">
             <Link to={component.link}>
-              <img src={component.img} />
+              <img src={component.img} alt={altText} />
               <p className="component-name">{component.name}</p>
             </Link>
           </div>
