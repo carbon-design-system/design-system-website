@@ -46,3 +46,10 @@ main[data-page='data-vis-usage-pie-chart'] {
     max-width: 300px;
   }
 }
+
+main[data-page|='whats-new'] {
+  img:not(.ibm-eye) {
+    background-color: white;
+    border: 1px solid $ui-04;
+  }
+}
