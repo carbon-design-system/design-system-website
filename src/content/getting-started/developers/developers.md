@@ -109,14 +109,14 @@ Carbon Components are built to be included individually and not clobber global s
 
 Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
 
-1. Getting component class reference
-2. Instantiating component class on DOM nodes
+1. [Getting component class reference](#1-getting-component-javascript-class-reference)
+2. [Instantiating component class on DOM nodes](#2-instantiating-component-class-on-dom-nodes)
 
 ### 1. Getting component JavaScript class reference
 
-### Using a module bundler: recommended
+#### Using a module bundler: recommended
 
-We recommend using ECMAScript module along with your module bundle toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component,  for use with webpack or rollup.
+We recommend using ECMAScript module along with your module bundler toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component,  for use with webpack or rollup.
 
 After you've installed the components through `npm`, you can grab a component JavaScript class reference by something like this:
 
@@ -124,7 +124,7 @@ After you've installed the components through `npm`, you can grab a component Ja
 import { Modal } from 'carbon-components'
 ```
 
-### Using pre-built bundle
+#### Using pre-built bundle
 
 Users can also opt to use the pre-built `carbon-components.js` file directly, like below. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using.
 
@@ -149,7 +149,7 @@ var Modal = CarbonComponents.Modal;
 
 ### 2. Instantiating component class on DOM nodes
 
-Once you have a component JavaScript class reference, you can instantiate it on a DOM node with the `.create()` API.
+Once you have a [component JavaScript class reference](#1-getting-component-javascript-class-reference), you can instantiate it on a DOM node with the `.create()` API.
 
 For example, if you have the following HTML for modal:
 
@@ -173,15 +173,19 @@ const modalInstance = Modal.create(modalElement);
 Instantiating a component basically does two things:
 
 * Hooks several event handlers on some DOM elements inside (in above example, ones in `modalElement`, e.g. close button)
-* Allows you to access public methods (found in [our components page](../../components/overview)) via the instance reference (`modalInstance.show()`, etc. in above example)
+* Allows you to access public methods (found in [our components page](../../components/overview), e.g. [here](http://localhost:3000/components/modal/code#public-methods) for modal) via the instance reference (`modalInstance.show()`, etc. in above example)
 
 #### Higher-level component instantiation API
 
 While `.create()` API gives you the full control of component instantiation, there is a higher-level API for instantiating components, which is, `.init(rootElement)`. It instantiates all components with `data-componentname` attribute (e.g. `data-modal` for modal) inside the given `rootElement`. If `rootElement` is omitted, `document` is used.
 
+**Note**: `.init()` API does *not* take care of DOM elements that hasn't been available at the time it's called.
+If the JavaScript framework you are using creates DOM elements dynamically,
+follow the instructions in [the next section](#wrapping-a-component-with-javascript-framework-of-your-choice) instead of using `.init()`.
+
 #### Wrapping a component with JavaScript framework of your choice
 
-Many JavaScript frameworks have a mechanism to automatically create/destroy DOM elements, for example, upon change in array.
+Many JavaScript frameworks have a mechanism to dynamically create/destroy DOM elements, for example, upon change in array.
 This often makes it unclear when the DOM element to instantiate Carbon component on is available, which often depends on the JavaScript framework you use.
 
 Also when DOM elements that Carbon components have been instantiated on are being destroyed, the Carbon component instances should be released so that e.g. there are no zombie event handlers.

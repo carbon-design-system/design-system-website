@@ -1,3 +1,4 @@
+import window from 'window-or-global';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
@@ -39,6 +40,17 @@ class Page extends Component {
     this.addCustomComponent();
     this.colorHex();
     document.title = `Carbon Design System | ${this.props.title}`;
+    requestAnimationFrame(() => {
+      const { hash } = window.location || {};
+      if (hash) {
+        const id = hash.substr(1);
+        const doc = window.document;
+        const target = doc.querySelector(`[name=${id}]`) || doc.getElementById(id);
+        if (target) {
+          target.scrollIntoView();
+        }
+      }
+    });
   }
 
   componentDidUpdate() {
