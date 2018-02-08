@@ -119,6 +119,16 @@
   }
 }
 
+main[data-page|=data-vis-style-tooltip] [data-insert-component="ImageGrid"] {
+  .image-grid {
+    border: 1px solid $ui-04;
+
+    img {
+      border: none !important;
+    }
+  }
+}
+
 main[data-page|=components-style] [data-insert-component="ImageGrid"] {
   .image-grid {
     align-items: center;

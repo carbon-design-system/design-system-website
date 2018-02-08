@@ -1,3 +1,5 @@
+## General Guidelines
+
 There are three different types of Tooltips: Small, Medium, and Large. Tooltips appear above or below a data representation depending on the use case. The quantitative value on the Tooltip corresponds to the numerical value that the data representation is depicting. Choose the type of Tooltip that is the best fit for your data set based on the descriptions below.
 
 #### Small Tooltip

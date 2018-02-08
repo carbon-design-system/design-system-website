@@ -1,16 +1,16 @@
 ## Color
 Note that the color value of top bar of the Small and Medium Tooltips and the side color bars on Large Tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis Overview page](/data-vis/overview/colors) for base graph style specifications.
 
-| COLOR            | SCSS                   | HEX        |
+| Color            | SCSS                   | HEX        |
 |------------------|------------------------|------------|
-| Background       | $ui-01                 | #FFFFFF    |
-| Border           | $ui-04                 | #DFE3E6    |
+| Background       | $ui-01                 | #ffffff    |
+| Border           | $ui-04                 | #dfe3e6    |
 | Quantitative data value label | $text-01  | #152934    |
-| Additional data value label (qualitative) | $text-02  | #5A6872   |
-| Data increment label  | $text-02  | #5A6872  |
+| Additional data value label (qualitative) | $text-02  | #5a6872   |
+| Data increment label  | $text-02  | #5a6872  |
 
 ## Typography
-| Property         | Font-size (PX/REM) |  Font-weight |
+| Property         | Font-size (px/rem) |  Font-weight |
 |------------------|--------------------|--------------|
 | Quantitative data value label | 16/1  | Bold / 700   |
 | Additional data value label (qualitative) | 12/0.75   | Roman / 400   |
@@ -28,21 +28,22 @@ There are three different tooltips types. Refer to the [usage tab](/data-vis/too
 ### Small Tooltip
 Width varies based on content length.
 
-| SIZE                | PX    |  REM   |
+| Size                | px    |  rem   |
 |---------------------|-------|--------|
 | Height				      |  26   | 1.625  |
 | Padding: Internal   |  10   | 0.625  |
 
-
-**
+---
+***
+> 
 ![Example of a Small Tooltip](images/style-tooltip-1.png)
-**
+
 _Example of a Small Tooltip_
 
 ### Medium Tooltip
 Width varies based on content length.
 
-| SIZE                | PX    |  REM   |
+| Size                | px    |  rem   |
 |---------------------|-------|--------|
 | Height				  |  42   | 2.625  |
 | Padding: internal   |  10   | 0.625  |  
@@ -50,15 +51,17 @@ Width varies based on content length.
 | Maximum label width |  120  | 7.5    |  
 
 
-**
+---
+***
+> 
 ![Example of a Medium Tooltip](images/style-tooltip-2.png)
-**
+
 _Example of a Medium Tooltip_
 
 ### Large Tooltip
 Width varies based on content length.
 
-| SIZE                | PX    |  REM   |
+| Size                | px    |  rem   |
 |---------------------|-------|--------|
 | Height				      | 188   | 11.75  |
 | Padding: internal   |  16   | 1      |  
@@ -69,9 +72,11 @@ Width varies based on content length.
 | Maximum label width |  120  | 7.5    |  
 
 
-**
+---
+***
+> 
 ![Example of a Large Tooltip](images/style-tooltip-3.png)
-**
+
 _Example of a Large Tooltip_
 
 ## Tooltip responsiveness
@@ -92,7 +97,6 @@ The below images show how a Tooltip would respond to different amounts of data v
     ![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
   </div>
 </div>
-
 
 _Examples of Tooltip responsiveness for different data value amounts_
 
