@@ -38,7 +38,6 @@
     {
       "item": "Data Table",
       "added": "7.26.0",
-      "tag": "updated",
       "status": 0
     },
     {
@@ -49,7 +48,8 @@
     {
       "item": "Dropdown",
       "added": "2.0.0",
-      "status": 1
+      "tag": "updated",
+      "status": 0
     },
     {
       "item": "File Uploader",
@@ -94,7 +94,6 @@
     {
       "item": "Pagination",
       "added": "7.0.0",
-      "tag": "updated",
       "status": 0
     },
     {
@@ -155,6 +154,7 @@
     {
       "item": "Toggle",
       "added": "4.0.0",
+      "tag": "updated",
       "status": 0
     },
     {

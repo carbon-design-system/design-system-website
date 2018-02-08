@@ -58,6 +58,22 @@ main[data-page|=components-style] {
   }
 }
 
+main[data-page|=data-vis-style-tooltip] {
+  hr + hr + blockquote p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-bottom: .5rem;
+    border: 1px solid #dfe3e6;
+
+    img {
+      border: none !important;
+    }
+  }  
+}
+
 main[data-page="guidelines-general-content"] {
   strong {
     color: $brand-01 !important;

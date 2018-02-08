@@ -89,7 +89,7 @@
   p em {
     @include typescale('zeta');
     color: $text-02;
-    font-style: normal;
+    // font-style: normal;
   }
 
   > em {
