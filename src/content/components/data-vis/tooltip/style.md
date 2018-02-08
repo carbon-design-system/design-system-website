@@ -1,5 +1,5 @@
 ## Color
-Note that the color value of top bar of the ___ tooltip and the side color bars on multi-data value tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis overview page](/data-vis/overview/colors) for base graph style specifications.
+Note that the color value of top bar of the Small and Medium Tooltips and the side color bars on Large Tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis Overview page](/data-vis/overview/colors) for base graph style specifications.
 
 | COLOR            | SCSS                   | HEX        |
 |------------------|------------------------|------------|
@@ -30,14 +30,14 @@ Width varies based on content length.
 
 | SIZE                | PX    |  REM   |
 |---------------------|-------|--------|
-| Height				  |  26   | 1.625  |
+| Height				      |  26   | 1.625  |
 | Padding: Internal   |  10   | 0.625  |
 
 
 **
-![Example of a small Tooltip](images/style-tooltip-1.png)
+![Example of a Small Tooltip](images/style-tooltip-1.png)
 **
-_Example of a small Tooltip_
+_Example of a Small Tooltip_
 
 ### Medium Tooltip
 Width varies based on content length.
@@ -51,42 +51,58 @@ Width varies based on content length.
 
 
 **
-![Example of a medium Tooltip](images/style-tooltip-2.png)
+![Example of a Medium Tooltip](images/style-tooltip-2.png)
 **
-_Example of a medium Tooltip_
+_Example of a Medium Tooltip_
 
 ### Large Tooltip
 Width varies based on content length.
 
 | SIZE                | PX    |  REM   |
 |---------------------|-------|--------|
-| Height				  | 188   | 11.75  |
+| Height				      | 188   | 11.75  |
 | Padding: internal   |  16   | 1      |  
 | Padding: data sets (vertically) |  20    | 1.25  |
 | Padding: data sets (horizontally)  |  16   | 1   |
 | Padding: color bar & data labels   |  10   | 0.625 |
-| Color bar      | 4     | -      |
+| Color bar           | 4     | -      |
 | Maximum label width |  120  | 7.5    |  
 
 
 **
-![Example of a large Tooltip](images/style-tooltip-3.png)
+![Example of a Large Tooltip](images/style-tooltip-3.png)
 **
-_Example of a large Tooltip_
+_Example of a Large Tooltip_
 
 ## Tooltip responsiveness
-The below images show how a tooltip would respond to different amounts of data values. It also shows how the width of tooltip changes when a label is at its max-width.
+The below images show how a Tooltip would respond to different amounts of data values. It also shows how the width of Tooltip changes when a label is at its max-width.
 
-**
-![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
-![Example of a tooltip with 4 data values](images/style-tooltip-5.png)
-![Example of a tooltip with 4 data values](images/style-tooltip-6.png)
-![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
-**
-_Examples of tooltip responsiveness for different data value amounts_
 
-**
-![Example of max-width labels, one column](images/style-tooltip-7.png)
-![Example of max-width labels, two column](images/style-tooltip-8.png)
-**
-_Example of max-width labels, one column, and two-column_
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
+  </div>
+  <div>
+    ![Example of a tooltip with 4 data values](images/style-tooltip-5.png)
+  </div>
+  <div>
+    ![Example of a tooltip with 4 data values](images/style-tooltip-6.png)
+  </div>
+  <div>
+    ![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
+  </div>
+</div>
+
+
+_Examples of Tooltip responsiveness for different data value amounts_
+
+<div data-insert-component="ImageGrid">
+  <div>
+    ![Example of max-width labels, one column](images/style-tooltip-7.png)
+  </div>
+  <div>
+    ![Example of max-width labels, one column](images/style-tooltip-8.png)
+  </div>
+</div>
+
+_Example of max-width labels, one column, and two-column Tooltips_

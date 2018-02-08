@@ -50,7 +50,8 @@
           "gauge": "Gauge",
           "line-graph": "Line Graph",
           "pie-chart": "Pie Chart",
-          "scatter-plot": "Scatter Plot"
+          "scatter-plot": "Scatter Plot",
+          "tooltip": "Tooltip"
         }
       },
       "date-picker": "Date Picker",
