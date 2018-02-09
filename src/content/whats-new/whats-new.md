@@ -31,7 +31,7 @@ Read more about the usage of [Bar Graph](http://carbondesignsystem.com/data-vis/
 ### Data Vis: Tooltip
 We have created several Data Visualization Tooltip variations to show the value for a specific data point or increment range. Tooltips appear on hover above or below a data representation, depending on the use case.
 
-Read more about the usage of [Data Vis Tooltips](/components/data-vis/tooltip/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/rJWymp) to view the live demo.
+Read more about the usage of [Data Vis Tooltips](/data-vis/tooltip/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/rJWymp) to view the live demo.
 
 ![small tooltip in a bar graph](images/usage-small-tooltip.png)
 
