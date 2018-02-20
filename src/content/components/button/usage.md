@@ -12,7 +12,8 @@ Buttons are used primarily on action items. Some examples include **Add**, **Sav
 | Disabled button  | Use when the user cannot proceed until an input is collected.                                                                                                                                                                                                                                                                                                                            |
 | Set of Buttons   | When an action required by the user has more than one option, always use a a negative action button (secondary) paired with a positive action button (primary) in that order. Negative action buttons will be on the left. Positive action buttons should be on the right. When these two types of buttons are paired in the correct order, they will automatically space themselves apart. |
 | Small Button     | Use when there is not enough vertical space for a regular sized button.                                                                                                                                                                                                                                                                                                                  |   
-| Ghost Button     | When an action does not require primary dominance on the page.  |        
+| Ghost Button     | When an action does not require primary dominance on the page.  |    
+| Danger Button     | When an action has harmful intentions to the users data (delete, remove, etc).   |       
 
 ## Labels
 
@@ -34,3 +35,9 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 
 ![button with glyph](images/button-usage-1.png)
 _Glyph usage in Buttons_
+
+## Danger button usage
+Danger buttons have a different visual style to inform users of potential dangerous actions they are about to take. If using the Danger button as a standalone, we recommend styling it as a **Secondary button**. If using a Danger button within a set, the Danger button would be styled as a **Primary button.** 
+
+![danger button set in modal](images/button-usage-2.png)
+_Danger button set_

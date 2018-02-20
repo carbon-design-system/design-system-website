@@ -7,7 +7,7 @@
 | Text           | $text-01    | #152935 |
 | Icon: hover    | $brand-01   | #3d70b2 |
 | Text: hover    | $inverse-01 | #ffffff |
-| Warning: hover | $support-01 | #e71d32 |
+| Warning: hover | $support-01 | #e0182d |
 | Line           | $ui-04      | #dfe3e6 |
 
 <div data-insert-component="ImageGrid">

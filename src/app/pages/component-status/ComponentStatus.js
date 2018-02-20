@@ -51,7 +51,7 @@ class ComponentStatus extends React.Component {
     );
     const deprecatedIcon = (
       <div className="component-status__icon deprecated">
-        <Icon alt="deprecated" fill="#E71D32" width="16" height="16" name="error--glyph" description="ready status" />
+        <Icon alt="deprecated" fill="#e0182d" width="16" height="16" name="error--glyph" description="ready status" />
       </div>
     );
     const notApplicableIcon = (
