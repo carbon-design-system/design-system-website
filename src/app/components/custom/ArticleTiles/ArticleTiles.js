@@ -51,7 +51,7 @@ class ArticleTiles extends Component {
           href="https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42"
         >
           <div className="faq__tile-icon">
-            <img src={articleFive} alt="Designing inside Big blue" />
+            <img src={articleFive} alt="Designing inside Big Blue" />
           </div>
           <div className="faq__tile-info">
             <h5>Carbon: Designing inside Big Blue</h5>

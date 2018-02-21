@@ -30,7 +30,7 @@ class FeaturedTiles extends Component {
           href="http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/"
         >
           <div className="faq__tile-icon">
-            <img src={articleTwo} alt="HOW in house design award" />
+            <img src={articleTwo} alt="HOW In House Design Award" />
           </div>
           <div className="faq__tile-info">
             <h5>Winter 2017 HOW In-House Design Award Winner</h5>
@@ -43,7 +43,7 @@ class FeaturedTiles extends Component {
           href="https://medium.com/ux-power-tools/the-path-to-design-system-maturity-d403daba692a"
         >
           <div className="faq__tile-icon">
-            <img src={articleThree} alt="Path to design system maturity" />
+            <img src={articleThree} alt="Path to Design System Maturity" />
           </div>
           <div className="faq__tile-info">
             <h5>The Path to Design System Maturity</h5>
