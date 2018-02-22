@@ -75,3 +75,9 @@ svg {
 .bx--tabs__nav-item {
   transition: background-color 250ms;
 }
+
+body hr.divider {
+  display: block;
+  margin: 3rem 0;
+  max-width:38rem;
+}

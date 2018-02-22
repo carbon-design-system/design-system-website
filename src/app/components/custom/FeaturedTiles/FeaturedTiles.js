@@ -6,6 +6,8 @@ class FeaturedTiles extends Component {
     const articleOne = require('../../../../content/getting-started/FAQ/images/article-1.png');
     const articleTwo = require('../../../../content/getting-started/FAQ/images/article-2.png');
     const articleThree = require('../../../../content/getting-started/FAQ/images/article-3.png');
+    const articleFour = require('../../../../content/getting-started/FAQ/images/article-4a.png');
+    const articleFive = require('../../../../content/getting-started/FAQ/images/article-5a.png');
 
     return (
       <div className="faq__tiles">
@@ -28,7 +30,7 @@ class FeaturedTiles extends Component {
           href="http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/"
         >
           <div className="faq__tile-icon">
-            <img src={articleTwo} alt="Smashing Magazine article" />
+            <img src={articleTwo} alt="HOW In House Design Award" />
           </div>
           <div className="faq__tile-info">
             <h5>Winter 2017 HOW In-House Design Award Winner</h5>
@@ -41,13 +43,39 @@ class FeaturedTiles extends Component {
           href="https://medium.com/ux-power-tools/the-path-to-design-system-maturity-d403daba692a"
         >
           <div className="faq__tile-icon">
-            <img src={articleThree} alt="Smashing Magazine article" />
+            <img src={articleThree} alt="Path to Design System Maturity" />
           </div>
           <div className="faq__tile-info">
             <h5>The Path to Design System Maturity</h5>
           </div>
         </ClickableTile>
-      </div>
+
+      <ClickableTile
+        target="_blank"
+        className="faq__tile"
+        href="https://responsivewebdesign.com/podcast/ibm-carbon/"
+      >
+        <div className="faq__tile-icon">
+          <img src={articleFour} alt="Responsive Web Design Podcast" />
+        </div>
+        <div className="faq__tile-info">
+          <h5>Responsive Web Design Podcast</h5>
+        </div>
+      </ClickableTile>
+
+      <ClickableTile
+        target="_blank"
+        className="faq__tile"
+        href="https://www.youtube.com/watch?v=eSvq5MieOdw&t=144s"
+      >
+        <div className="faq__tile-icon">
+          <img src={articleFive} alt="Virtual Design Summit" />
+        </div>
+        <div className="faq__tile-info">
+          <h5>UX Pin Virtual Design Summit</h5>
+        </div>
+      </ClickableTile>
+    </div>
     );
   }
 }
