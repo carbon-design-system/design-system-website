@@ -3,7 +3,7 @@
 | Attribute         | SCSS        | HEX     |
 |---------------|-------------|---------|
 | Background: Toast    | $ui-01      | #ffffff |
-| Error         | $support-01 | #e71d32 |
+| Error         | $support-01 | #e0182d |
 | Success       | $support-02 | #5aa700 |
 | Warning       | $support-03 | #efc100 |
 | Informational | $support-04 | #5aaafa |

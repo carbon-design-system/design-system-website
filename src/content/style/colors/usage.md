@@ -33,7 +33,7 @@ Variable | Role(s) | Value
 **text-03** | Hint text | #5a6872
 **inverse-01** | Inverse text color <br /> Inverse icon color | #ffffff
 **field-01** | Field background | rgba(60,112,178,0.10)
-**support-01** | Error | #e71d32
+**support-01** | Error | #e0182d
 **support-02** | Success | #5aa700
 **support-03** | Warning | #efc100
 **support-04** | Information | #5aaafa

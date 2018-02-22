@@ -59,7 +59,7 @@ $text-01: #152934;
 $text-02: #5a6872;
 $text-03: #5a6872;
 $field-01: #ebf0f7;
-$support-01: #e71d32;
+$support-01: #e0182d;
 $support-02: #5aa700;
 $support-03: #efc100;
 $support-04: #5aaafa;

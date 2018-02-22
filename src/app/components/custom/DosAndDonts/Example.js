@@ -12,7 +12,7 @@ class Example extends Component {
 
   render() {
     const greenCheck = <Icon name="checkmark" description="checkmark" height="16px" width="16px" fill="#5AA700" />;
-    const redX = <Icon name="close" description="close" height="12px" width="12px" fill="#E71D32" />;
+    const redX = <Icon name="close" description="close" height="12px" width="12px" fill="#e0182d" />;
 
     const icon = this.props.correct ? greenCheck : redX;
 
