@@ -279,7 +279,7 @@ class Overview extends React.Component {
                 </div>
                 <div className="tile__info">
                   <p>Theming Sandbox</p>
-                  <p>This sandbox allows you to build a custom theme by changing a color variable's hex value and then exporing the theme sheet SCSS file.</p>
+                  <p>This sandbox allows you to build a custom theme by changing a color variable's hex value and then exporting the theme sheet SCSS file.</p>
                 </div>
               </ClickableTile>
             </li>
