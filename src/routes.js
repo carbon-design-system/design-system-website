@@ -86,6 +86,23 @@ const routes = {
           ],
         },
         {
+          path: '/guidelines/accessibility',
+          indexRoute: {
+            onEnter: (nextState, replace) =>
+              replace('/guidelines/accessibility/color'),
+          },
+          childRoutes: [
+            {
+              path: '/guidelines/:name/:page',
+              getComponent(location, cb) {
+                import('./app/pages/guidelines/Guidelines')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/guidelines/:name',
           getComponent(location, cb) {
             import('./app/pages/guidelines/Guidelines')
