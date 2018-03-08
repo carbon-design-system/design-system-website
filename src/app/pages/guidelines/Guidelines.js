@@ -6,6 +6,7 @@ import MarkdownPage from '../../components/internal/MarkdownPage';
 import FourOhFour from '../404';
 
 import Content from './Content';
+import Accessibility from './Accessibility';
 
 class Guidelines extends React.Component {
   static propTypes = {
@@ -21,9 +22,14 @@ class Guidelines extends React.Component {
     if (params.name === 'bluemix-brand' && !(processENV === 'internal')) {
       return <FourOhFour />;
     }
-    const content = (params.name === 'content') ?
-    (<Content currentPage={params.page} />) :
-    (<MarkdownPage content={require(`../../../content/guidelines/${params.name}/${params.name}.md`)} />);
+    let content;
+    if (params.name === 'content') {
+      content = <Content currentPage={params.page} />;
+    } else if (params.name === 'accessibility') {
+      content = <Accessibility currentPage={params.page} />;
+    } else {
+      content = <MarkdownPage content={require(`../../../content/guidelines/${params.name}/${params.name}.md`)} />;
+    }
     return (
       <Page label="Guidelines" title={title} content={content} />
     );
