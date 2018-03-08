@@ -73,6 +73,7 @@ The Layout Scale is used for arranging components and other UI parts into a full
 | **$layout-xl**  | 6     | 96   |![layout-xl example](images/spacing-17.svg)|
 | **$layout-2xl** | 10    | 160  |![layout-2xl example](images/spacing-18.svg)|
 
+
 ![Example of Layout tokens applied](images/spacing-2.png)
 _Example of Layout tokens applied_
 
