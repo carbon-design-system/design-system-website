@@ -1,3 +1,18 @@
+**March 9, 2018**
+
+## Style
+
+### Systematic spacing
+
+We have tokenized our spacing and now offer two systemized scales. The Spacing Scale defines space within a component while the Layout Scale is used to help position elements on a page. Check out the new [Spacing](style/spacing) section to learn more about these scales and read the rest of the spacing guidelines.
+
+## Design Kit
+
+### Sketch Libraries
+
+We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://www.youtube.com/watch?v=Tm-s0Hcbwck&list=PL4BR_VlGD31aVhe1ScKk9UOhbi8YOL0dF) over on our YouTube channel. It goes over how to download the Carbon Sketch Kit, import a Sketch Library, as well as how to get and accept library updates/notifications. It also gives a brief overview of how the Library is organized and how to use the overrides panel and library symbols.
+
+
 **February 23, 2018**
 
 ## Design Kit
