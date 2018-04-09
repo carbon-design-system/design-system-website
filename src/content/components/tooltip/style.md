@@ -6,7 +6,7 @@
 | Icon: hover        | $brand-02 | #5596e6   |
 | Text               | $text-01  | #152935   |
 | Tooltip background | $ui-01    | #ffffff   |
-| Tooltip border     | $ui-04    | #dfe3e6   |
+| Tooltip border     | $ui-04    | #8897a2   |
 
 ---
 ***

@@ -7,7 +7,7 @@
 | Label              | $text-01        | #152935   |
 | Drawer: hover      | $brand-01       | #3d70b2   |
 | Option text: hover | $inverse-01     | #ffffff   |
-| Placeholder text: filter      | $text-03        | #5a6872   |
+| Placeholder text: filter      | $text-03        | #cdd1d4   |
 | User input text    | $text-01        | #152935   |
 
 

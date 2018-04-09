@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #f4f7fb;">
     <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Detail Page Header</title>
     <desc>Created with Sketch.</desc>
@@ -17,10 +17,10 @@
             <g id="Group-8" transform="translate(17.000000, 60.500000)">
                 <g id="header-background">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#F5F7FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#f4f7fb" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
                 <path d="M78.5309322,31.5419195 C79.6722857,31.5419195 80.5975356,30.6166696 80.5975356,29.475316 C80.5975356,28.3339624 79.6722857,27.4087125 78.5309322,27.4087125 C77.3895786,27.4087125 76.4643287,28.3339624 76.4643287,29.475316 C76.4643287,30.6166696 77.3895786,31.5419195 78.5309322,31.5419195 Z" id="Oval-319" fill="#8CD211"></path>
-                <g id="overflow-menu" transform="translate(201.215332, 16.858141)" fill="#8C9BA5">
+                <g id="overflow-menu" transform="translate(201.215332, 16.858141)" fill="#cdd1d4">
                     <circle id="Oval" cx="0.964414956" cy="0.964414956" r="1"></circle>
                     <circle id="Oval" cx="0.964414956" cy="4.82207478" r="1"></circle>
                     <circle id="Oval" cx="0.964414956" cy="8.67973461" r="1"></circle>
@@ -38,13 +38,13 @@
                 </mask>
                 <use id="Rectangle-5" fill-opacity="0.1" fill="#152935" xlink:href="#path-3"></use>
             </g>
-            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#cdd1d4">
                 <tspan x="53.519043" y="74.3966773">/</tspan>
             </text>
-            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#cdd1d4">
                 <tspan x="82.2412109" y="74.3966773">/</tspan>
             </text>
-            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#5A6872">
+            <text id="/" font-family="HelvNeueRomanforIBM, HelvNeue Roman for IBM" font-size="6" font-weight="normal" fill="#cdd1d4">
                 <tspan x="111.023566" y="74.3966773">/</tspan>
             </text>
         </g>

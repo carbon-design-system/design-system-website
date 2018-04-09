@@ -3,7 +3,7 @@
 | Attribute             | SCSS        | HEX         |
 |-------------------|-------------|-------------|
 | Checked: fill     | $brand-01  | #3d70b2     |
-| Unchecked: border | $ui-05     | #8c9ba5     |
+| Unchecked: border | $ui-05     | #5a6872     |
 | Unchecked: fill   | $ui-01     | #ffffff     |
 | Icon: checkmark   | $inverse-01 | #ffffff     |
 | Text              | $text-01    | #152935     |

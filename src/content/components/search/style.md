@@ -2,10 +2,10 @@
 
 | Attribute             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
-| Background        | $field-01     | #3d70b2 @ 10% |
+| Background        | $field-01     | #f4f7fb |
 | Text: user input  | $text-01      | #152935  |
-| Text: placeholder | $text-03      | #5a6872  |
-| Icon              | $ui-05        | #8c9ba5  |
+| Text: placeholder | $text-03      | #cdd1d4  |
+| Icon              | $ui-05        | #5a6872  |
 
 ![Normal, hover, and input search states](images/search-style-1.png)
 

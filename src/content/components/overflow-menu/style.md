@@ -2,13 +2,13 @@
 
 | Attribute          | SCSS        | HEX     |
 |----------------|-------------|---------|
-| Icon           | $ui-05      | #8c9ba5 |
+| Icon           | $ui-05      | #5a6872 |
 | Background     | $ui-01      | #ffffff |
 | Text           | $text-01    | #152935 |
 | Icon: hover    | $brand-01   | #3d70b2 |
 | Text: hover    | $inverse-01 | #ffffff |
 | Warning: hover | $support-01 | #e0182d |
-| Line           | $ui-04      | #dfe3e6 |
+| Line           | $ui-04      | #8897a2 |
 
 <div data-insert-component="ImageGrid">
   <div>

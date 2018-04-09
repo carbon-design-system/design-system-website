@@ -4,7 +4,7 @@ Note that the color value of top bar of the Small and Medium Tooltips and the si
 | Color            | SCSS                   | HEX        |
 |------------------|------------------------|------------|
 | Background       | $ui-01                 | #ffffff    |
-| Border           | $ui-04                 | #dfe3e6    |
+| Border           | $ui-04                 | #8897a2    |
 | Quantitative data value label | $text-01  | #152934    |
 | Additional data value label (qualitative) | $text-02  | #5a6872   |
 | Data increment label  | $text-02  | #5a6872  |
@@ -35,7 +35,7 @@ Width varies based on content length.
 
 ---
 ***
-> 
+>
 ![Example of a Small Tooltip](images/style-tooltip-1.png)
 
 _Example of a Small Tooltip_
@@ -53,7 +53,7 @@ Width varies based on content length.
 
 ---
 ***
-> 
+>
 ![Example of a Medium Tooltip](images/style-tooltip-2.png)
 
 _Example of a Medium Tooltip_
@@ -74,7 +74,7 @@ Width varies based on content length.
 
 ---
 ***
-> 
+>
 ![Example of a Large Tooltip](images/style-tooltip-3.png)
 
 _Example of a Large Tooltip_

@@ -3,7 +3,7 @@
 |-----------------------|---------  |----------|
 | Handle: fill          | $brand-01 | #3d70b2  |
 | Line: selected        | $brand-01 | #3d70b2  |
-| Line: unselected      | $ui-05    | #8c9ba5  |
+| Line: unselected      | $ui-05    | #5a6872  |
 | Label                 | $text-01  | #152934  |
 | Range values   | $text-02  | #5a6872  |
 

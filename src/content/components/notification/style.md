@@ -9,7 +9,7 @@
 | Informational | $support-04 | #5aaafa |
 | Title         | $text-01    | #152935 |
 | Text          | $text-02    | #5a6872 |
-| X icon        | $ui-05      | #8c9ba5 |
+| X icon        | $ui-05      | #5a6872 |
 
 ## Typography
 

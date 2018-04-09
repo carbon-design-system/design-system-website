@@ -51,13 +51,13 @@ $brand-02: #5596e6;
 $brand-03: #41d6c3;
 $inverse-01: #ffffff;
 $ui-01: #ffffff;
-$ui-02: #f5f7fa;
-$ui-03: #f0f3f6;
-$ui-04: #dfe3e6;
-$ui-05: #8c9ba5;
+$ui-02: #f4f7fb;
+$ui-03: #dfe3e6;
+$ui-04: #8897a2;
+$ui-05: #5a6872;
 $text-01: #152934;
 $text-02: #5a6872;
-$text-03: #5a6872;
+$text-03: #cdd1d4;
 $field-01: #ebf0f7;
 $support-01: #e0182d;
 $support-02: #5aa700;
@@ -85,10 +85,10 @@ The following examples demonstrates the relationship between the different themi
 | Key | Variable            | Role               | Value                 | Theme   |
 |-----|---------------------|--------------------|-----------------------|---------|
 | 1   | $text-01            | Primary text       | #152935               | Default |
-| 2   | $text-03            | Hint text          | #5a6872               | Default |
+| 2   | $text-03            | Hint text          | #cdd1d4               | Default |
 | 3   | $input-border       | Input border       | 1px solid transparent | Default |
 | 4   | $brand-01           | Primary icon       | #3d70b2              | Default |
-| 5   | $ui-02              | Default background | #f5f7fa               | Default |
+| 5   | $ui-02              | Default background | #f4f7fb               | Default |
 | 6   | $field-01           | Field background   | #152935 @ 10%         | Default |
 
 

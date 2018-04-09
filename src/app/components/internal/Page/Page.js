@@ -97,19 +97,19 @@ class Page extends Component {
         colorBlock.style.left = '10rem';
       }
 
-      if (color.textContent === '#3d70b2 @ 10%') {
+      if (color.textContent === '#f4f7fb') {
         colorBlock.style.backgroundColor = '#E5EAF7';
-        colorBlock.style.border = '1px solid #8c9ba5';
+        colorBlock.style.border = '1px solid #cdd1d4';
       } else {
         colorBlock.style.backgroundColor = color.textContent;
       }
 
       if (
         color.textContent === '#ffffff' ||
-        color.textContent === '#f5f7fa' ||
-        color.textContent === '#f0f3f6'
+        color.textContent === '#f4f7fb' ||
+        color.textContent === '#dfe3e6'
       ) {
-        colorBlock.style.border = '1px solid #8c9ba5';
+        colorBlock.style.border = '1px solid #cdd1d4';
       }
 
       color.appendChild(colorBlock);

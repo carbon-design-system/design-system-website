@@ -10,16 +10,16 @@
             <g id="Color-contrast" transform="translate(401.000000, 3042.000000)">
                 <g id="Table" transform="translate(0.000000, 271.000000)">
                     <g id="Group-8" transform="translate(315.000000, 62.000000)">
-                        <rect id="Rectangle-96" fill="#F5F7FA" x="0" y="0" width="100" height="208"></rect>
+                        <rect id="Rectangle-96" fill="#f4f7fb" x="0" y="0" width="100" height="208"></rect>
                         <g id="Group-3" transform="translate(20.000000, 115.000000)">
-                            <text id="a" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#5A6872">
+                            <text id="a" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#cdd1d4">
                                 <tspan x="7" y="17">a</tspan>
                             </text>
-                            <circle id="Oval-8" stroke="#5A6872" stroke-width="2" cx="12.1201172" cy="12.1201172" r="12.1201172"></circle>
-                            <text id="A" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#5A6872">
+                            <circle id="Oval-8" stroke="#cdd1d4" stroke-width="2" cx="12.1201172" cy="12.1201172" r="12.1201172"></circle>
+                            <text id="A" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="18" font-weight="500" fill="#cdd1d4">
                                 <tspan x="40" y="18">A</tspan>
                             </text>
-                            <circle id="Oval-8" stroke="#5A6872" stroke-width="2" cx="46.1201172" cy="12.1201172" r="12.1201172"></circle>
+                            <circle id="Oval-8" stroke="#cdd1d4" stroke-width="2" cx="46.1201172" cy="12.1201172" r="12.1201172"></circle>
                         </g>
                         <g id="Group-13-Copy-2" transform="translate(20.000000, 161.000000)">
                             <text id="a" font-family="IBMPlexSans, IBM Plex Sans" font-size="18" font-weight="normal" fill="#152935">
