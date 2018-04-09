@@ -3,7 +3,7 @@ The Carbon Design System is a series of individual styles and components, that w
 
 The Carbon Design System is comprised of:
 
-* The [Carbon website](www.carbondesignsystem.com), containing documenation on our code base, UX patterns, and style specs.
+* The [Carbon website](https://carbondesignsystem.com), containing documenation on our code base, UX patterns, and style specs.
 * The [Carbon Design Kit](https://github.com/carbon-design-system/carbon-design-kit), a versioned Sketch file containing our entire component library, templates, and additional visual patterns. 
 * The Carbon Component Library ([React](https://github.com/carbon-design-system/carbon-components-react) and [Vanilla.js](https://github.com/carbon-design-system/carbon-components)) is a collection of re-usable HTML and Sass partials for building products and experiences.
 
