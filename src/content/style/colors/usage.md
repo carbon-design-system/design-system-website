@@ -24,13 +24,13 @@ Variable | Role(s) | Value
 **brand-02** | Supporting brand <br /> brand-01 hover | #5596e6
 **brand-03** | Secondary brand <br /> Loading| #00b4a0
 **ui-01** | Primary background <br /> Layer 1 background | #ffffff
-**ui-02** | Default background <br /> Layer 0 background <br /> Secondary background | #f5f7fa
-**ui-03** | Tertiary background | #f0f3f6
-**ui-04** | Subtle border | #dfe3e6
-**ui-05** | Emphasis border <br /> Secondary icons | #8c9ba5
+**ui-02** | Default background <br /> Layer 0 background <br /> Secondary background | #f4f7fb
+**ui-03** | Tertiary background | #dfe3e6
+**ui-04** | Subtle border | #8897a2
+**ui-05** | Emphasis border <br /> Secondary icons | #5a6872
 **text-01** | Primary text <br /> Body copy | #152935
 **text-02** | Secondary text <br /> Subtle text | #5a6872
-**text-03** | Hint text | #5a6872
+**text-03** | Hint text | #cdd1d4
 **inverse-01** | Inverse text color <br /> Inverse icon color | #ffffff
 **field-01** | Field background | rgba(60,112,178,0.10)
 **support-01** | Error | #e0182d

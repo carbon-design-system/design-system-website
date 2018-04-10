@@ -2,11 +2,11 @@
 | COLOR             | SCSS          | HEX           |
 |-------------------|---------------|---------------|
 | Background        | $ui-01     | #ffffff |
-| Border      | $ui-03      | #f0f3f6      |
-| Border: hover       | $ui-04      | #dfe3e6       |
+| Border      | $ui-03      | #dfe3e6      |
+| Border: hover       | $ui-04      | #8897a2       |
 | Border: focus, selected       | $brand-01      | #3d70b2       |
 | Chevron: collapsed  | $brand-01     | #3d70b2      |
-| Chevron: expanded| $ui-05      | #8c9ba5       |
+| Chevron: expanded| $ui-05      | #5a6872       |
 | Checkmark| $inverse-01      | #ffffff       |
 
 

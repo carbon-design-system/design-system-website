@@ -19,19 +19,19 @@
     },
     {
       "name": "ui-02",
-      "hex": "#f5f7fa"
+      "hex": "#f4f7fb"
     },
     {
       "name": "ui-03",
-      "hex": "#f0f3f6"
-    },
-    {
-      "name": "ui-04",
       "hex": "#dfe3e6"
     },
     {
+      "name": "ui-04",
+      "hex": "#8897a2"
+    },
+    {
       "name": "ui-05",
-      "hex": "#8c9ba5"
+      "hex": "#5a6872"
     },
     {
       "name": "text-01",
@@ -43,7 +43,7 @@
     },
     {
       "name": "text-03",
-      "hex": "#5a6872"
+      "hex": "#cdd1d4"
     },
     {
       "white": true,
@@ -53,7 +53,7 @@
     {
       "white": true,
       "name": "field-01",
-      "hex": "rgba(60, 112, 178, .1)"
+      "hex": "#f4f7fb"
     }
   ],
   "support-colors": [

@@ -3,11 +3,11 @@
 | Attribute              | SCSS            | HEX     |
 |--------------------|-----------------|---------|
 | Text: label        | $text-01        | #152934 |
-| Text: instructions | $text-02        | #5a6872 |
+| Text: instructions | $text-02        | #5a6872|
 | Text: file name    | $text-01        | #152935 |
 | Background: file   | $brand-01 @ 25% | #3d70b2 |
 | Icon: remove       | $inverse-01     | #152934 |
-| Icon: loading      | $ui-05          | #8c9ba5 |
+| Icon: loading      | $ui-05          | #5a6872 |
 
 ## Typography
 

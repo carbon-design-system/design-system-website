@@ -7,9 +7,9 @@ All steps that have already been completed are indicated by an outlined circle w
 | Label: current & completed      | $brand-01 | #3d70b2 |
 | Label: future step              | $text-02  | #5a6872 |
 | Line: current & completed       | $brand-01 | #3d70b2 |
-| Line: future step               | $ui-05    | #8c9ba5 |
+| Line: future step               | $ui-05    | #5a6872 |
 | Icon: current & completed       | $brand-01 | #3d70b2 |
-| Icon: future step               | $ui-05    | #8c9ba5 |
+| Icon: future step               | $ui-05    | #5a6872 |
 
 ---
 ***

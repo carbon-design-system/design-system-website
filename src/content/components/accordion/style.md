@@ -4,9 +4,9 @@
 |----------------|------------|------------|
 | Label          | $text-01   |  #152935   |
 | Body           | $text-01   |  #152935   |
-| Chevron        | $ui-05     |  #8c9ba5   |
+| Chevron        | $ui-05     |  #5a6872   |
 | Chevron:hover  | $brand-01  |  #3d70b2   |
-| Divider line   | $ui-04     |  #dfe3e6   |
+| Divider line   | $ui-04     |  #8897a2   |
 
 ## Typography
 

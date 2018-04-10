@@ -28,7 +28,7 @@ pre[class*='language-'] {
   -ms-hyphens: none;
   hyphens: none;
   background: #fff;
-  color: #5a6872;
+  color: #cdd1d4;
 }
 
 pre[class*='language-']::-moz-selection,
@@ -67,11 +67,11 @@ pre[class*='language-'] {
 }
 
 .token.punctuation {
-  color: #5a6872;
+  color: #cdd1d4;
 }
 
 .token.operator {
-  color: #5a6872;
+  color: #cdd1d4;
 }
 
 .token.boolean,

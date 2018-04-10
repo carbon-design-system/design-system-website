@@ -3,7 +3,7 @@
 | Attribute      | SCSS      | HEX      |
 |----------  |----------|-----------|
 | Title      | $brand-01| #3d70b2   |
-| Slash      | $text-02 | #5a6872   |
+| Slash      | $text-02 | #5a6872  |
 | Dropdown text  | $text-01  | #152934   |
 | Dropdown text: hover  | $inverse-01| #3d70b2   |
 

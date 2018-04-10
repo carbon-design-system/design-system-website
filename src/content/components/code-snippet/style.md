@@ -2,10 +2,10 @@
 
 | Attribute                    | SCSS     | HEX     |
 |--------------------------|----------|---------|
-| Code snippet: background | $field-01| #3d70b2 @ 10% |  
+| Code snippet: background | $field-01| #f4f7fb |  
 | Code snippet: text       | $text-01 | #152935 |
 | Terminal: background     | $nav-01  | #0f212e |
-| Terminal: text           | $ui-02   | #f5f7fa |
+| Terminal: text           | $ui-02   | #f4f7fb |
 | Icon: copy               | $brand-01| #3d70b2 |
 
 ## Typography

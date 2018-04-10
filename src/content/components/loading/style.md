@@ -3,7 +3,7 @@
 | Attribute              | SCSS          | HEX      |
 |--------------------|---------------|----------|
 | Large spinner      | $nav-05       | #00b4a0  |
-| Small spinner      | $ui-05        | #8c9ba5  |
+| Small spinner      | $ui-05        | #5a6872 |
 | Overlay            | $ui-01 @ 60%  | #ffffff  |
 
 ## Structure

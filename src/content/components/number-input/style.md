@@ -2,7 +2,7 @@
 
 | Attribute                | SCSS      | HEX           |
 |----------------------|-----------|---------------|
-| Background           | $field-01 | #3d70b2 @ 10% |
+| Background           | $field-01 | #f4f7fb |
 | Text: label & number | $text-01  | #152935       |
 | Caret                | $brand-01 | #3d70b2       |
 

@@ -5,7 +5,7 @@ Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style)
 | Attribute                       | SCSS     | HEX     |
 |---------------------------------|----------|---------|
 | Data Value	                    | $text-01 | #152935 |
-| Data Variable	                  | $text-02 | #5A6872 |
+| Data Variable	                  | $text-02 | #5a6872 |
 
 ![Pie Chart hover example](images/style-pie-chart-1.png)
 _Example of a Pie Chart section, hovered_

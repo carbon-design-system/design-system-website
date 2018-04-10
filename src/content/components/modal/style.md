@@ -5,10 +5,10 @@
 | Background | $ui-01   | #ffffff   |
 | Border-top | $brand-01| #3d70b2   |
 | Text       | $text-01 | #152935   |
-| Title      | $text-02 | #5a6872   |
-| X icon     | $ui-05   | #8c9ba5   |
-| Footer     | $ui-03   | #f0f3f6   |
-| Page overlay  | $ui-03  | #f0f3f6 @ 50% opacity  |
+| Title      | $text-02 | #5a6872  |
+| X icon     | $ui-05   | #5a6872   |
+| Footer     | $ui-03   | #dfe3e6   |
+| Page overlay  | $ui-03  | #dfe3e6 @ 50% opacity  |
 
 ## Typography
 

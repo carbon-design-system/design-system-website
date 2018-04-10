@@ -44,7 +44,7 @@ class ColorContrast extends Component {
                 <div />
                 <div>
                   <p>text-02</p>
-                  <p>#5a6872</p>
+                  <p>#cdd1d4</p>
                 </div>
               </li>
               <li className="blue-90">
@@ -67,12 +67,12 @@ class ColorContrast extends Component {
               <li className="ui-02">
                 <img src={ui2} alt="ui-02" />
                 <p>ui-02</p>
-                <p>#f5f7fa</p>
+                <p>#f4f7fb</p>
               </li>
               <li className="ui-03">
                 <img src={ui3} alt="ui-03" />
                 <p>ui-03</p>
-                <p>#f0f3f6</p>
+                <p>#dfe3e6</p>
               </li>
             </ul>
           </li>

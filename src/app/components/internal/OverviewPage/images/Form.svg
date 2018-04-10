@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #f4f7fb;">
     <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Form</title>
     <desc>Created with Sketch.</desc>
@@ -17,12 +17,12 @@
                 <path d="M6.03983193,10.6378199 C8.54549489,10.6378199 10.5796639,8.59385764 10.5796639,6.06890993 C10.5796639,3.54396223 8.54549489,1.5 6.03983193,1.5 C3.53416898,1.5 1.5,3.54396223 1.5,6.06890993 C1.5,8.59385764 3.53416898,10.6378199 6.03983193,10.6378199 Z M6.03983193,12.1378199 C2.70412487,12.1378199 0,9.42067634 0,6.06890993 C0,2.71714353 2.70412487,0 6.03983193,0 C9.375539,0 12.0796639,2.71714353 12.0796639,6.06890993 C12.0796639,9.42067634 9.375539,12.1378199 6.03983193,12.1378199 Z" id="Oval-1-Copy" fill-rule="nonzero"></path>
                 <ellipse id="Oval-3" cx="6.03983193" cy="6.06890993" rx="2.68436975" ry="2.6972933"></ellipse>
             </g>
-            <g id="Radio-Button---Unselected-Option" transform="translate(86.721176, 75.837896)" fill-rule="nonzero" fill="#8C9BA5">
+            <g id="Radio-Button---Unselected-Option" transform="translate(86.721176, 75.837896)" fill-rule="nonzero" fill="#cdd1d4">
                 <path d="M6.03983193,10.6378199 C8.54549489,10.6378199 10.5796639,8.59385764 10.5796639,6.06890993 C10.5796639,3.54396223 8.54549489,1.5 6.03983193,1.5 C3.53416898,1.5 1.5,3.54396223 1.5,6.06890993 C1.5,8.59385764 3.53416898,10.6378199 6.03983193,10.6378199 Z M6.03983193,12.1378199 C2.70412487,12.1378199 0,9.42067634 0,6.06890993 C0,2.71714353 2.70412487,0 6.03983193,0 C9.375539,0 12.0796639,2.71714353 12.0796639,6.06890993 C12.0796639,9.42067634 9.375539,12.1378199 6.03983193,12.1378199 Z" id="Oval-1"></path>
             </g>
-            <rect id="Rectangle" fill="#DFE3E6" x="86.7211765" y="60.3675105" width="60.1626109" height="6.87572696"></rect>
-            <rect id="Rectangle" fill="#DFE3E6" x="104.16958" y="79.0277616" width="67.1092437" height="4.04593996"></rect>
-            <rect id="Rectangle" fill="#DFE3E6" x="104.16958" y="95.0297702" width="67.1092437" height="4.04593996"></rect>
+            <rect id="Rectangle" fill="#8897a2" x="86.7211765" y="60.3675105" width="60.1626109" height="6.87572696"></rect>
+            <rect id="Rectangle" fill="#8897a2" x="104.16958" y="79.0277616" width="67.1092437" height="4.04593996"></rect>
+            <rect id="Rectangle" fill="#8897a2" x="104.16958" y="95.0297702" width="67.1092437" height="4.04593996"></rect>
             <rect id="Rectangle-9" fill="#3D70B2" x="143.269595" y="138.454713" width="28.0092285" height="12.9273362"></rect>
             <path d="M111.951254,150.38205 L137.960483,150.38205 L137.960483,139.454713 L111.951254,139.454713 L111.951254,150.38205 Z M110.951254,138.454713 L138.960483,138.454713 L138.960483,151.38205 L110.951254,151.38205 L110.951254,138.454713 Z" id="Rectangle-9" fill="#3D70B2" fill-rule="nonzero"></path>
         </g>

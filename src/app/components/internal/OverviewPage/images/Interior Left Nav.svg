@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F5F7FA;">
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #f4f7fb;">
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
     <title>Interior Left Nav </title>
     <desc>Created with Sketch.</desc>
@@ -16,7 +16,7 @@
             <g id="Group" transform="translate(34.818444, 21.308594)">
                 <g id="Rectangle-17">
                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                    <use fill="#F5F7FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="#f4f7fb" fill-rule="evenodd" xlink:href="#path-1"></use>
                 </g>
                 <rect id="Rectangle-13" fill="#FFFFFF" x="0.261924635" y="8.94674753" width="48.7024845" height="112.709541"></rect>
                 <rect id="Rectangle-14" fill="#EBF0F7" x="0.261924635" y="109.225226" width="48.7024845" height="12.4310623"></rect>

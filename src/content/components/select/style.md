@@ -2,13 +2,13 @@
 
 | Attribute             | SCSS          | HEX      |
 |-------------------|---------------|-----------|
-| Background        | $field-01     | #3d70b2 @ 10% |
+| Background        | $field-01     | #f4f7fb |
 | Caret             | $brand-01     | #3d70b2   |
 | Label             | $text-01      | #152935   |
-| Label: inline select  | $text-03      | #5a6872   |
+| Label: inline select  | $text-03      | #cdd1d4   |
 | Text              | $text-01      | #152935   |
 | Text: inline select | $brand-01     | #3d70b2   |
-| Text: placeholder | $text-03      | #5a6872   |
+| Text: placeholder | $text-03      | #cdd1d4   |
 
 
 

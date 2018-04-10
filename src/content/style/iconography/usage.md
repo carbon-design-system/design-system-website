@@ -43,7 +43,7 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 |------------------------|-----------|---------|
 | Primary action         | $brand-01 | #3d70b2 |
 | Primary action:hover   | $brand-02 | #5596e6 |
-| Secondary action       | $ui-05    | #8c9ba5 |
+| Secondary action       | $ui-05    | #5a6872 |
 | Secondary action:hover | $brand-01 | #3d70b2 |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.

@@ -2,7 +2,7 @@
 
 | Attribute               | SCSS      | HEX       |
 |---------------------|-----------|-----------|
-| Non-selected border | $ui-05    | #8c9ba5   |
+| Non-selected border | $ui-05    | #5a6872   |
 | Selected            | $brand-01 | #3d70b2   |
 
 ## Typography
