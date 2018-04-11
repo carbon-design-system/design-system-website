@@ -68,6 +68,11 @@ A 'Load more' Button may be used to extend a list where there are a large number
 ![Example of a 'Load More' Button inside of a Filter Dropdown.](images/load-more.png)
 _Example of 'Load more' Button in context._
 
+**
+![Example of a 'Load More' Button inside of an enabled Filter Dropdown.](images/load-more-1.png)
+![Example of a 'Load More' Button inside of a Filter Dropdown on hover.](images/load-more-2.png)
+**
+_Example of 'Load more' Button in context._
 
 <!--## Progress Loader
 
