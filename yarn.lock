@@ -1439,21 +1439,23 @@ carbon-addons-bluemix@^0.3.0:
   dependencies:
     lodash.debounce "^4.0.8"
 
-carbon-components-react@^5.17.4:
-  version "5.17.4"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-5.17.4.tgz#b388f6fed11feef787997f510046d39d3ef5ac4e"
+carbon-components-react@^5.41.6:
+  version "5.41.6"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-5.41.6.tgz#15a6a6778863e376099b3ca14192474d85ed1082"
   dependencies:
     classnames "2.2.5"
     downshift "^1.23.2"
-    flatpickr "4.2.4"
+    flatpickr "4.4.1"
+    invariant "^2.2.3"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
+    lodash.omit "^4.5.0"
     warning "3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@8.16.8:
-  version "8.16.8"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-8.16.8.tgz#fa5b6ca4a1bea9e53b4c5b5e59afc9096dd676f2"
+carbon-components@8.18.5:
+  version "8.18.5"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-8.18.5.tgz#1e9d8ea0eb23de2f95213fce9a9df35b064159cc"
   dependencies:
     carbon-icons "^6.0.4"
     flatpickr "2.6.3"
@@ -2991,9 +2993,9 @@ flatpickr@2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-2.6.3.tgz#457357532deb135f3da64b425bf4435737961564"
 
-flatpickr@4.2.4:
-  version "4.2.4"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.2.4.tgz#abd6dedd0fa41e2118acb96a22f49819ba2d0157"
+flatpickr@4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.4.1.tgz#894255e33c2bed93f48171f8eb5980a79b76ab1d"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -3849,6 +3851,12 @@ interpret@^1.0.0:
 invariant@^2.2.1, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
+  dependencies:
+    loose-envify "^1.0.0"
+
+invariant@^2.2.3:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
     loose-envify "^1.0.0"
 
@@ -4748,6 +4756,10 @@ lodash.memoize@^4.1.2:
 lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
+
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
 
 lodash.pickby@^4.0.0:
   version "4.6.0"

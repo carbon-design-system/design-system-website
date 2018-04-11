@@ -94,9 +94,13 @@
   }
 
   .bx--search-input {
-    padding: 0 0.75rem;
+    padding: 0 2rem;
     height: 100%;
     border-radius: 0;
+  }
+
+  .bx--search-magnifier {
+    left: 1.75rem;
   }
 
   .bx--search--sm .bx--search-close {
