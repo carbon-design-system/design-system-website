@@ -46,8 +46,6 @@ The validation should appear when the user has clicked away from the text field.
 
 The validation label below the field should be as informative as possible when describing the issue with the users data. For example, if password limitations require 16 characters, but the user inputs a password with only six characters, the text should read something like, _"Password must be at least 16 characters."_
 
-![form validation](images/form-usage-3.gif)
-_Form validation_
 
 ### Optional vs. required fields
 All fields in a form are assumed required, with optional fields being tagged as so.
