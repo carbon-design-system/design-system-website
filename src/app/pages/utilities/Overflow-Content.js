@@ -9,7 +9,7 @@ class Themes extends React.Component {
   }
 
   render() {
-    const contentFile = require('../../../content/themes/themes.md');
+    const contentFile = require('../../../content/utilities/overflow-content/overflow-content.md');
     return (
       <Page label="" title="Themes" content={contentFile} />
     );

@@ -29,6 +29,7 @@
       "layer": "Layer",
       "motion": "Motion",
       "spacing": "Spacing",
+        "themes": "Themes",
       "typography": "Typography"
     }
   },
@@ -81,6 +82,16 @@
       "tooltip": "Tooltip"
     }
   },
+
+  "utilities":{
+    "title": "Utilities",
+    "subnav": {
+    "disabled-states": "Disabled States",
+    "loading": "Loading",
+    "overflow-content": "Overflow Content"
+    }
+  },
+
   "add-ons": {
     "title": "Add-Ons",
     "subnav": {
@@ -95,9 +106,6 @@
   },
   "component-status": {
     "title": "Component Status"
-  },
-  "themes": {
-    "title": "Themes"
   },
   "resources": {
     "title": "Resources"

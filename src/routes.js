@@ -273,6 +273,27 @@ const routes = {
       ],
     },
     {
+      path: 'utilities',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/utilities/disabled-states'),
+      },
+      getComponent(location, cb) {
+        import ('./app/pages/utilities/Utilities')
+          .then(loadRoute(cb))
+          .catch(errorLoading)
+      },
+      childRoutes: [
+          {
+            path: '/utilities/:name',
+            getComponent(location, cb) {
+              import('./app/pages/utilities/Utilities')
+                .then(loadRoute(cb))
+                .catch(errorLoading);
+            },
+          },
+        ],
+    },
+    {
       path: 'resources',
       getComponent(location, cb) {
         import('./app/pages/resources/Resources').then(loadRoute(cb)).catch(errorLoading);
@@ -281,7 +302,7 @@ const routes = {
     {
       path: 'themes',
       getComponent(location, cb) {
-        import('./app/pages/themes/Themes').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/style/Themes').then(loadRoute(cb)).catch(errorLoading);
       },
     },
     {
@@ -332,7 +353,6 @@ const routes = {
         },
       ],
     },
-
     {
       path: '*',
       getComponent(location, cb) {
@@ -340,6 +360,6 @@ const routes = {
       },
     },
   ],
-};
+}
 
 export default routes;
