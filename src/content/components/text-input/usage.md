@@ -24,8 +24,10 @@ Placeholder text provides hints or examples of what to enter. Placeholder text s
 
 ---
 ***
-> 
+> 
 ![Placeholder text](images/text-input-usage-1.png)
+
+_Placeholder text_
 
 ### Default values
 
@@ -37,6 +39,7 @@ Real time validation helps to streamline the process and keep data clean when th
 
 ---
 ***
-> 
+> 
 ![validation on text field](images/text-input-usage-2.png)
+
 _Text Input validation_
