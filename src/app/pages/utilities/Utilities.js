@@ -15,7 +15,7 @@ class Utilities extends React.Component {
       <MarkdownPage content={require(`../../../content/utilities/${params.name}/${params.name}.md`)} />
     );
     return (
-      <Page label="" title="Utilities" content={content} />
+      <Page label="Utilities" title="" content={content} />
     );
   }
 }

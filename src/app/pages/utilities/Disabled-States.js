@@ -9,9 +9,9 @@ class Themes extends React.Component {
   }
 
   render() {
-    const contentFile = require('../../../content/utilities/overflow-content/overflow-content.md');
+    const contentFile = require('../../../content/utilities/disabled-states/disabled-states.md');
     return (
-      <Page label="Utilities" title="Overflow Content" content={contentFile} />
+      <Page label="utilities" title="Disabled States" content={contentFile} />
     );
   }
 }

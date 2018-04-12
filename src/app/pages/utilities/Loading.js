@@ -11,7 +11,7 @@ class Themes extends React.Component {
   render() {
     const contentFile = require('../../../content/utilities/loading/loading.md');
     return (
-      <Page label="" title="Themes" content={contentFile} />
+      <Page label="Utilities" title="Loading" content={contentFile} />
     );
   }
 }
