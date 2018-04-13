@@ -1,3 +1,4 @@
+
 A disabled state is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies or pre-requisites. Disabled states completely remove the interactive function of a component.
 
 ## Disabled variations
@@ -12,25 +13,27 @@ A disabled state is applied to a component when the user is not allowed to inter
 ## Default disabled
 A default disabled state is used when a component is temporarily disabled due to dependencies (when one piece of software relies on another one) or pre-requisites. This scenario is a temporary state change that is most commonly triggered by a user's action or inaction. Once the dependencies have been resolved and/or the pre-requisites have been fulfilled the default disabled component returns to its enabled state. In a temporarily disabled scenario the component should never fully disappear from the user's view.
 
-*{overflow menu example -- edit routes not allowed while app is re-staging}*
+![Default disabled example on the right](images/disabled-1.png)
 
 ### Style
-Default disabled states are most commonly styled by a decrease in opacity. Refer to each individual component for the accurate disabled state.
+Default disabled states are most commonly styled by a decrease in opacity with no hover state change and `not-allowed` cursor applied. Refer to each individual component for the accurate disabled state.
 
 | Attribute | Default disabled style |
 |-----------|----------------|
 | Component | 50% opacity
 | Text | 25% opacity |
-| Icons | 50% opacity
+| Icons | 50% opacity |
+| Hover | None |
+| Cursor | `not-allowed` |
 
-*image example of enables and disabled components*
+![Default disabled style examples](images/disabled-2.png)
 
 
 ### Additional warning
 An [Inline Warning Notification](http://carbondesignsystem.com/components/notification/code) can be shown in cases where a temporarily disabled item effects multiple items or the primary action of the flow. The Notification should describe how the user can enable or re-enable the disabled component.
 
 
-![image](https://media.github.ibm.com/user/380/files/1c39d21c-3290-11e8-8b98-c5670c48b729)
+![Additional warning with default disabled example](images/disabled-3.png)
 
 
 ## Hidden
@@ -39,7 +42,7 @@ The hidden disabled variation is used when something or someone does not have pe
 
 For example, when a user is the organization owner they are allowed to add members to the organization. Any users that are not an organization owner would not be shown the “Add member” button on a team directory page. Once the user is made an organization owner **then and only then** will the button be visible.
 
-*{overflow menu example -- only managers have the ability to edit routes}*
+![Example of hidden disabled content on the right](images/disabled-4.png)
 
 
 ## Read-only
@@ -47,8 +50,3 @@ In scenarios where the content of a disabled component or element is still relev
 
 ### Style
 The visual style of the read-only states vary by component but should never contain any interactive indicators such as `$brand-01` color usage, hover states, or text embellishments (ie. underlines).
-
-*example image here*
-
-*Need to break this image up for examples*
-![image](https://media.github.ibm.com/user/380/files/ae43fca6-328f-11e8-830f-f0e12cdde3ef)
