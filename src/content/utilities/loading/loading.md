@@ -3,7 +3,7 @@ Loading is applied when additional information takes an extended amount of time 
 
 ## Skeleton States
 
-Skeleton States are simplified versions of Carbon Components used on an initial page load to indicate to the user that the information on the page has not entirely loaded in yet. They should only appear for 1-5 seconds, disappearing once the actual content loads in.
+Skeleton States are simplified versions of Carbon Components used on an initial page load to indicate to the user that the information on the page has not entirely loaded in yet. They should only appear for 1-3 seconds, disappearing once the actual content loads in.
 
 A Carbon Skeleton State is shown as a stripped down, bare bones version of a component as well as a `field-01` rectangular block for text. Motion is used in a Skeleton State to convey that the page is not stuck loading but rather that data is still being pulled in.
 
