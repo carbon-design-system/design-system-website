@@ -133,6 +133,7 @@ class Iconography extends React.Component {
                 placeHolderText="Search icon library"
                 aria-label="Icon library search"
                 value={this.state.searchValue}
+                labelText="Icon library search"
               />
             </div>
             {this.state.searchValue.length > 0 ? searchResults : initialIcons}
