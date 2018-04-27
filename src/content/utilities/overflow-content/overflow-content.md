@@ -12,7 +12,7 @@ _Example of a browser tooltip being used for truncation._
 
 _Example of end-line truncation for a paragraph._
 
-
+### Usage
 Good use cases for truncation include:
 
 - Breadcrumbs
@@ -24,15 +24,16 @@ Good use cases for truncation include:
 
 Truncation should **not** be used on page headers, titles, labels, error messages, validation messages, Notifications, menu items, or Tabs.
 
-There are three types of truncation: front-line, midline, and end-line. *(Use examples above in the the example images below)*
+### Variations
+There are three types of truncation: front-line, midline, and end-line.
 
-| Type of truncation   | Definition  | Not Truncated  |  Truncated |   
+| Type  | Purpose  | Default  |  Truncated |   
 |---|---|---|---|
-| **Front-line**  | Used at the beginning of a text string to indicate the text is continued from a previous location.  | `123456789`  |  `...56789` |
-| **Midline**  | Used when several text strings have different begginings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipses.    | `123400005678` `987600004321`  | 	`1234...5678` `9876...4321`  |   
+| **Front-line**  | Used at the beginning of a text string to indicate the text is continued from a previous location.  | `123456789`  |  ...56789 |
+| **Midline**  | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipses.    | `123400005678` `987600004321`  | 	`1234...5678` `9876...4321`  |   
 | **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.    | `123456789`  | `12345...`  |   
 
-An ellipse (…) on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip. See [Breadcrumb](link) or [Pagination](link) for additional examples of this.  
+An ellipse `...` on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip. See [Breadcrumb](link) or [Pagination](link) for additional examples of this.  
 
 ![Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu.](images/Ellipse.png)
 

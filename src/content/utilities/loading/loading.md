@@ -59,17 +59,11 @@ The Small Loading component is used when a single component is processing and ap
 ![Example of Small Loader in the context of a Detail Page Header.](images/small-loading-1.gif)
 _Example of Small Loader in context._
 
-### 'Load more' Button
+## 'Load more' Button
 
 A 'Load more' Button may be used to extend a list where there are a large number of options (25 or more) that the user can choose from. It can also be used in cases where the list of options is populated via a database. Using 'Load more' allows the data to load in progressive batches.
 
 ![Example of a 'Load More' Button inside of a Filter Dropdown.](images/load-more.png)
-_Example of 'Load more' Button in context._
-
-**
-![Example of a 'Load More' Button inside of an enabled Filter Dropdown.](images/load-more-1.png)
-![Example of a 'Load More' Button inside of a Filter Dropdown on hover.](images/load-more-2.png)
-**
 _Example of 'Load more' Button in context._
 
 <!--## Progress Loader
