@@ -223,7 +223,7 @@ class Overview extends React.Component {
               </Link>
               <div className="list-item__info">
                 <Link to="/components">Components</Link>
-                <p>A library of all Carbon components, compromised of code, usage and style guidelines.</p>
+                <p>A library of all Carbon components, comprised of code, usage and style guidelines.</p>
               </div>
             </li>
             <li className="overview-page__list-item">
