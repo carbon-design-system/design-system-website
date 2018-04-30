@@ -7,7 +7,9 @@ Skeleton States are simplified versions of Carbon Components used on an initial 
 
 A Carbon Skeleton State is shown as a stripped down, bare bones version of a component as well as a `field-01` rectangular block for text. Motion is used in a Skeleton State to convey that the page is not stuck loading but rather that data is still being pulled in.
 
-*Image example of a component loading from skeleton state to full component > Table might be a good example of this*
+![Example of a text Skeleton State in use on a Data Table](images/data-table-skeleton-state.gif)
+_Example of a text Skeleton State in a Data Table._
+
 
 
 ### Usage
@@ -33,7 +35,55 @@ _Example of a dashboard using Skeleton States to demonstrate progressive loading
 
 ### Code
 
-<!--Need Alison to write this documentation-->
+The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom javascript to implement this based on your enviornment.
+
+```
+/* Loading */
+<button class="bx--btn bx--btn--primary bx--skeleton"></button>
+
+/* Loaded */
+<button class="bx--btn bx--btn--primary">Button loaded</button>
+```
+
+If you are using our [React library](http://react.carbondesignsystem.com/) there are seperate skeleton state components available to display while data is loading.
+
+```
+const DataComponent = ({ loading, data }) => {
+  if (loading) {
+    return <CarbonComponent.skeleton />
+  }
+  return <CarbonComponent field1={data.field1} />
+}
+```
+
+** need to add checkmark carbon icon instead of emojii :) **
+
+| Component          | Vanilla | React |
+|--------------------|---------|-------|
+| Skeleton Text      | ✅| ✅|
+| Button             | ✅| ✅|
+| Label              | ✅| ✅|
+| Textarea           |  | ✅|
+| Text input         |  | ✅|
+| Number Input       | ✅| ✅|
+| Date Picker        |  | ✅|
+| Search             |  | ✅|
+| Radio Button       |  | ✅|
+| Checkbox           |  | ✅|
+| Data Table         |  | ✅|
+| Breadcrumb         | ✅| ✅|
+| Accordion          |  | ✅|
+| Code Snippet       |  | ✅|
+| Dropdown           | ✅| ✅|
+| Progress Indicator | ✅| ✅|
+| Toggle             | ✅| ✅|
+| Small Toggle       | ✅| ✅|
+| Slider             | ✅| ✅|
+| Tag                | ✅| ✅|
+| Tabs               | ✅| ✅|
+| Pagination         |   | ✅|
+| Icon               | ✅| ✅|
+| Structured List    |   | ✅|
 
 
 ## Loading component
