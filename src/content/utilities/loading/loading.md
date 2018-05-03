@@ -35,7 +35,7 @@ _Example of a dashboard using Skeleton States to demonstrate progressive loading
 
 ### Code
 
-The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom javascript to implement this based on your enviornment.
+The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom javascript to implement this based on your environment.
 
 ```
 
@@ -47,7 +47,7 @@ The skeleton state for _most_ components can be displayed simply by adding a mod
 
 ```
 
-If you are using our [React library](http://react.carbondesignsystem.com/) there are seperate skeleton state components available to display while data is loading.
+If you are using our [React library](http://react.carbondesignsystem.com/) there are separate skeleton state components available to display while data is loading. View an [example](https://codesandbox.io/s/wq264y43k8) of this for React.
 
 ```
 const DataComponent = ({ loading, data }) => {
@@ -58,34 +58,32 @@ const DataComponent = ({ loading, data }) => {
 }
 ```
 
-** need to add checkmark carbon icon instead of emojii :) **
-
 | Component          | Vanilla | React |
 |--------------------|---------|-------|
-| Skeleton Text      | ✅| ✅|
-| Button             | ✅| ✅|
-| Label              | ✅| ✅|
-| Textarea           |  | ✅|
-| Text input         |  | ✅|
-| Number Input       | ✅| ✅|
-| Date Picker        |  | ✅|
-| Search             |  | ✅|
-| Radio Button       |  | ✅|
-| Checkbox           |  | ✅|
-| Data Table         |  | ✅|
-| Breadcrumb         | ✅| ✅|
 | Accordion          |  | ✅|
+| Breadcrumb         | ✅| ✅|
+| Button             | ✅| ✅|
+| Checkbox           |  | ✅|
 | Code Snippet       |  | ✅|
+| Data Table         |  | ✅|
+| Date Picker        |  | ✅|
 | Dropdown           | ✅| ✅|
-| Progress Indicator | ✅| ✅|
-| Toggle             | ✅| ✅|
-| Small Toggle       | ✅| ✅|
-| Slider             | ✅| ✅|
-| Tag                | ✅| ✅|
-| Tabs               | ✅| ✅|
-| Pagination         |   | ✅|
 | Icon               | ✅| ✅|
+| Label              | ✅| ✅|
+| Number Input       | ✅| ✅|
+| Pagination         |   | ✅|
+| Progress Indicator | ✅| ✅|
+| Radio Button       |  | ✅|
+| Search             |  | ✅|
+| Skeleton Text      | ✅| ✅|
+| Slider             | ✅| ✅|
+| Small Toggle       | ✅| ✅|
 | Structured List    |   | ✅|
+| Tabs               | ✅| ✅|
+| Tag                | ✅| ✅|
+| Text Area           |  | ✅|
+| Text Input         |  | ✅|
+| Toggle             | ✅| ✅|
 
 
 ## Loading component
