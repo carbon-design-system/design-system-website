@@ -186,7 +186,13 @@
           padding: 1rem 3rem 1rem 0;
           line-height: 1.25;
 
-          strong {
+          img[src$="checkmark--glyph.svg"] {
+              width: 16px;
+              height: 16px;
+              margin: 0;
+            }
+
+              strong {
             letter-spacing: 0;
           }
 

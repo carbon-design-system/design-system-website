@@ -53,30 +53,31 @@ const DataComponent = ({ loading, data }) => {
 
 | Component          | Vanilla | React |
 |--------------------|---------|-------|
-| Accordion          |  | ✅|
-| Breadcrumb         | ✅| ✅|
-| Button             | ✅| ✅|
-| Checkbox           |  | ✅|
-| Code Snippet       |  | ✅|
-| Data Table         |  | ✅|
-| Date Picker        |  | ✅|
-| Dropdown           | ✅| ✅|
-| Icon               | ✅| ✅|
-| Label              | ✅| ✅|
-| Number Input       | ✅| ✅|
-| Pagination         |   | ✅|
-| Progress Indicator | ✅| ✅|
-| Radio Button       |  | ✅|
-| Search             |  | ✅|
-| Skeleton Text      | ✅| ✅|
-| Slider             | ✅| ✅|
-| Small Toggle       | ✅| ✅|
-| Structured List    |   | ✅|
-| Tabs               | ✅| ✅|
-| Tag                | ✅| ✅|
-| Text Area           |  | ✅|
-| Text Input         |  | ✅|
-| Toggle             | ✅| ✅|
+| Accordion          |  | ![available](images/checkmark--glyph.svg)|
+| Breadcrumb         | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Button             | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Checkbox           |  | ![available](images/checkmark--glyph.svg)|
+| Code Snippet       |  | ![available](images/checkmark--glyph.svg)|
+| Data Table         |  | ![available](images/checkmark--glyph.svg)|
+| Date Picker        |  | ![available](images/checkmark--glyph.svg)|
+| Dropdown           | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Icon               | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Label              | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Number Input       | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Pagination         |   | ![available](images/checkmark--glyph.svg)|
+| Progress Indicator | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Radio Button       |  | ![available](images/checkmark--glyph.svg)|
+| Search             |  | ![available](images/checkmark--glyph.svg)|
+| Skeleton Text      | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Slider             | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Small Toggle       | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Structured List    |   | ![available](images/checkmark--glyph.svg)|
+| Tabs               | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Tag                | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+| Text Area           |  | ![available](images/checkmark--glyph.svg)|
+| Text Input         |  | ![available](images/checkmark--glyph.svg)|
+| Toggle             | ![available](images/checkmark--glyph.svg)| ![available](images/checkmark--glyph.svg)|
+
 
 
 ## Loading component
