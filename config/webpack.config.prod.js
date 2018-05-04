@@ -164,6 +164,7 @@ module.exports = {
       { from: 'src/assets/fonts', to: 'assets/fonts/' },
       { from: 'src/assets/images', to: 'images/' },
       { from: 'src/assets/googleb9799b851dc5160a.html', to: '' },
+      { from: 'src/assets/icons', to: 'assets/icons/' },
     ]),
   ],
 };

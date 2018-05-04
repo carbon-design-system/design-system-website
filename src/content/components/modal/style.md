@@ -7,7 +7,7 @@
 | Text       | $text-01 | #152935   |
 | Title      | $text-02 | #5a6872  |
 | X icon     | $ui-05   | #5a6872   |
-| Footer     | $ui-03   | #dfe3e6   |
+| Footer     | $ui-02   | #f4f7fb   |
 | Page overlay  | $ui-03  | #dfe3e6 @ 50% opacity  |
 
 ## Typography
@@ -16,9 +16,9 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 | Property | Font-size (px/rem)     | Font-weight | Type style |
 |----------|-----------------|--------------|---|
-| Optional label    | 12 / 0.75  | Semi-Bold / 600   | Zeta |
-| Heading    | 26 / 1.625 | Normal / 400 | Beta |
-| Text     | 14 / 0.875 | Normal / 400 |- |
+| Optional label    | 14 / 0.875  | Semi-Bold / 600   | Zeta |
+| Heading    | 28 / 1.75 | Light / 300 | Beta |
+| Text     | 16 / 1 | Normal / 400 |- |
 
 ## Layer
 

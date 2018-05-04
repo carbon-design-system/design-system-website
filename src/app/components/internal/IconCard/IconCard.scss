@@ -145,6 +145,12 @@ a.icon-button {
   min-width: rem(112px);
   margin: 0.2rem 0;
   color: $inverse-01 !important;
+  height: 2.5rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:active,

@@ -37,19 +37,12 @@ _Example of a dashboard using Skeleton States to demonstrate progressive loading
 
 The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom javascript to implement this based on your environment.
 
-```
-
-/* Loading */
+```html
 <button class="bx--btn bx--btn--primary bx--skeleton"></button>
-
-/* Loaded */
 <button class="bx--btn bx--btn--primary">Button loaded</button>
-
 ```
-
 If you are using our [React library](http://react.carbondesignsystem.com/) there are separate skeleton state components available to display while data is loading. View an [example](https://codesandbox.io/s/wq264y43k8) of this for React.
-
-```
+```javascript
 const DataComponent = ({ loading, data }) => {
   if (loading) {
     return <CarbonComponent.skeleton />
