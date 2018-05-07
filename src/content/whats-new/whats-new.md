@@ -1,3 +1,18 @@
+**May 11, 2018**
+
+## Utilities
+
+There is a new section in the left navigation called Utilities which gives guidance on common pattern handlings.
+Unlike our other sections, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
+
+- [Disabled States](utilities/disabled-states)
+- [Filtering](utilities/filtering)
+- [Loading](utilities/loading)
+- [Overflow Content](utilities/overflow-content)
+
+<hr class="divider">
+
+
 **March 9, 2018**
 
 ## Style
