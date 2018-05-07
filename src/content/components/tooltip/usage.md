@@ -1,36 +1,24 @@
+### Icon Tooltip
+An Icon Tooltip is used to clarify the action or name of an interactive icon button. The Tooltip content should only contain one to two words. Icon Tooltips appear on `hover` and `focus`.
 
-## Usage
-| Type               | Purpose                                        |
-|--------------------|------------------------------------------------|
-| Definition Tooltip | Describes the meaning of a term or icon button. It appears on hover and is limited to read-only text.                                                                                                                                                                                                       |
-| Interactive Tooltip|  Provides additional information relevant to the context on `click.` It supports more flexible elements including Buttons and Links.                                                                                                                                                                                                                              |
+![example of an icon tooltip](images/icon-tooltip-usage-2.png)
+
+_Definition tooltip used to define a Form label._
 
 
 
 ### Definition Tooltip
-The primary purpose of a Definition Tooltip is to provide additional help or context to an item. Their primary use case is for defining terms, such as within a Form where the label needs an additional definition. They can also be used to define an icon button. We recommend Definition Tooltips contain read-only text that is kept to a minimum. These Tooltips appear on `hover`. If you need to include other components within a Tooltip, refer to the Interactive Tooltip below.
+The primary purpose of a Definition Tooltip is to provide additional help or define an item or term. Therefore, they should contain read-only text that is kept to a minimum. The use of interactive elements, such as Buttons or Links, is discouraged. Definition Tooltips appear on `hover` and `focus`.
 
----
-***
-> 
 ![example of an interactive tooltip](images/tooltip-usage-2.png)
 
-_Definition Tooltip used to define a Form label_
+_Definition tooltip used to define a Form label._
 
----
-***
-> 
-![example of an interactive tooltip](images/tooltip-usage-4.png)
-
-_Definition Tooltip used to define an icon_
 
 
 ### Interactive Tooltip
-Interactive Tooltips can contain text and other interactive elements such as a Button or a Link. They should only appear on mouse `click`, due to the fact that there are multiple click targets within the Tooltip.  
+Interactive Tooltips can contain text and other interactive elements such as a Button or a Link. They appear on mouse `click` and are persistent until intentionally dismissed by clicking outside of the tooltip.
 
----
-***
-> 
 ![example of an interactive tooltip](images/tooltip-usage-3.png)
 
-_Example of an Interactive Tooltip_
+_Example of an Interactive tooltip._
