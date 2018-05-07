@@ -37,7 +37,7 @@ class Overview extends React.Component {
   moveLetters = (e) => {
     const icons = e.currentTarget.querySelectorAll('g');
     const a = this.interpolate(0, 35);
-    icons.forEach(icon => {
+    [...icons].forEach(icon => {
       const currentIcon = icon;
       const iconObj = icon.getBoundingClientRect();
 
