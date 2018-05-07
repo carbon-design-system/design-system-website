@@ -2,8 +2,8 @@
 
 ## Utilities
 
-There is a new section in the left navigation called Utilities which gives guidance on common pattern handlings.
-Unlike our other sections, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
+There is a new section called Utilities which gives guidance on common pattern handlings.
+Unlike the component section, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
 
 - [Disabled States](utilities/disabled-states)
 - [Filtering](utilities/filtering)
