@@ -3,10 +3,12 @@
 | Attribute              | SCSS      | HEX       |
 |--------------------|-----------|-----------|
 | Icon               | $brand-01 | #3d70b2   |
-| Icon: hover        | $brand-02 | #5596e6   |
-| Text               | $text-01  | #152935   |
-| Tooltip background | $ui-01    | #ffffff   |
-| Tooltip border     | $ui-04    | #8897a2   |
+| Label               | $text-01  | #152935   |
+| Background: Definition Tooltip  | $inverse-02 | #272d33 |
+| Background: Interactive Tooltip  | $ui-01    | #ffffff   |
+| Text: Definition Tooltip  | $inverse-01 | #ffffff   |
+| Text: Interactive Tooltip | $text-01  | #152935   |
+| Tooltip border     | $ui-03    | #dfe3e6   |
 
 ---
 ***
@@ -21,9 +23,8 @@ Tooltip labels and text should be set in sentence case.
 
 | Property | Font-size (px/rem)     | Font-weight  | Type style |
 |----------|-----------------|--------------|---|
-| Label   | 16 / 1     | Semi-Bold / 600   | Epsilon  |
-| Subtitle    | 14 / 0.875 | Semi-Bold / 600   | Zeta  |
-| Text     | 14 / 0.875 | Normal / 400 | - |
+| Label   | 14 / 0.875    | Semi-Bold / 600   | Zeta |
+| Text     | 12 / 0.75 | Normal / 400 | Caption |
 
 ## Layer
 
@@ -35,19 +36,28 @@ Tooltip labels and text should be set in sentence case.
 
 | Property                | px  | rem   |
 |-------------------------|-----|-------|
-| Tooltip: width          | 240 | 15    |
-| Tooltip: height         | Varies based on content | - |
+| Height: Tooltip  | Varies based on content  | -    |
+| Width: Definition Tooltip  | 170 | 0.625 |
 | Icon: width & height    | 16  | 1     |
 | Spacing: label & icon   | 10  | 0.625 |
 | Spacing: icon & Tooltip | 10  | 0.625 |
-| Spacing: internal       | 24  | 1.5   |
+| Spacing: Definition Tooltip internal       | 8  | 0.5   |
+| Spacing: Interactive Tooltip internal       | 16  | 1   |
+
 
 ---
 ***
 >  
-![Structure and spacing measurements for a tooltip](images/tooltip-style-2.png)
+![Structure and spacing measurements for a definition tooltip](images/tooltip-style-4.png)
 
-_Structure and spacing measurements for a Tooltip | px / rem_
+_Structure and spacing measurements for a Definition Tooltip | px / rem_
+
+---
+***
+>  
+![Structure and spacing measurements for an Interactive tooltip](images/tooltip-style-2.png)
+
+_Structure and spacing measurements for an Interactive Tooltip | px / rem_
 
 ### Placement
 
