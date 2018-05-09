@@ -1,4 +1,4 @@
-Loading is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the Loading component are two interactions that communicate to users that data is currently loading and the screen is not frozen.
+**_Loading_ is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the Loading component are two interactions that communicate to users that data is currently loading and the screen is not frozen.**
 
 
 ## Skeleton States

@@ -11,11 +11,13 @@ class Utilities extends React.Component {
 
   render() {
     const { params } = this.props;
+    const title = params.name.charAt(0).toUpperCase() + params.name.substring(1).replace('-', ' ');
+
     const content = (
       <MarkdownPage content={require(`../../../content/utilities/${params.name}/${params.name}.md`)} />
     );
     return (
-      <Page label="Utilities" title="" content={content} />
+      <Page label="Utilities" title={title} content={content} />
     );
   }
 }
