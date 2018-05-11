@@ -54,8 +54,14 @@ main[data-page|='whats-new'] {
   }
 }
 
-main[data-page='style-spacing'] {
+main[data-page='style-spacing'],
+main[data-page='utilities-disabled-states'],
+main[data-page='utilities-filtering'] {
   img {
     background-color: $ui-02;
   }
+}
+
+img[src='/images/small-loading-1.gif'] {
+  border: 1px solid $ui-03;
 }

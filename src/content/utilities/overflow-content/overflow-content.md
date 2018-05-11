@@ -1,4 +1,4 @@
-Overflow content is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ Buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
+**_Overflow content_ is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ Buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.**
 
 
 ## Truncation
@@ -8,6 +8,9 @@ Truncation is typically used for static text or Links. Truncated items are repre
 
 _Example of a browser tooltip being used for truncation._
 
+---
+***
+> 
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 
 _Example of end-line truncation for a paragraph._
