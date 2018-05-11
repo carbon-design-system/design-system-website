@@ -11,7 +11,6 @@ A Carbon Skeleton State is shown as a stripped down, bare bones version of a com
 _Example of a text Skeleton State in a Data Table._
 
 
-
 ### Usage
 Skeleton States are not meant to represent every component on a page but rather to illustrate the overall architecture of the page while it's loading. Typically components that should have Skeleton States are container-based components (Tiles, Structured List, etc.), data-based components (Data Tables, Cards, etc.), and data-based text. Action components (Button, Input Fields, Checkboxes, Toggle, etc.) do not need to have a Skeleton State in most use cases as they are not pulling in data and do not need additional time to load in.  
 

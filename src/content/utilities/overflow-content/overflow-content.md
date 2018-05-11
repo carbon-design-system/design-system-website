@@ -29,7 +29,7 @@ There are three types of truncation: front-line, midline, and end-line.
 
 | Type  | Purpose  | Default  |  Truncated |   
 |---|---|---|---|
-| **Front-line**  | Used at the beginning of a text string to indicate the text is continued from a previous location.  | `123456789`  |  ...56789 |
+| **Frontline**  | Used at the beginning of a text string to indicate the text is continued from a previous location.  | `123456789`  |  ...56789 |
 | **Midline**  | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipses.    | `123400005678` `987600004321`  | 	`1234...5678` `9876...4321`  |   
 | **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.    | `123456789`  | `12345...`  |   
 
@@ -39,6 +39,51 @@ An ellipse `...` on its own may also represent condensed content. This type of t
 
 _Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu._
 
+### Code
+
+To use front and end-line truncation enter the appropriate class below and add `title` to populate the Browser Tooltip that appears when truncated text is hovered. The `width` of the container (or the text element itself) also needs to be configured in order to calculate where the truncation will start.
+
+| Type  | Class  |
+|---|---|
+| **Frontline**  | `.bx--text-truncate--front`  |
+| **End-line**  | `.bx--text-truncate--end`  |
+
+**Example Usage**
+
+```html
+<div class="container">
+  <span title="123456789" class="bx--front-line">123456789</span>
+</div>
+```
+
+```css
+.container {
+  width: 65px;
+}
+```
+
+```css
+.bx--front-line {
+  width: 100%;
+  display: inline-block;
+  direction: rtl;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+```
+
+**Result**
+![screen shot 2018-05-09 at 1 22 51 pm](https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b)
+
+
+**Midline truncation**
+
+Midline truncation does not have its own class as it requires JavaScript. We have created an example in CodePen to show how it is implemented.  
+
+<!-- CodePen example goes here -->
+
+
 ### 'Show more' Buttons
 The ‘Show more’ Button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ Button gives a user the ability to see the content in more digestible chunks as opposed to all at once. A ‘Show more’ Button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](link) section for additional details.
 
@@ -46,9 +91,3 @@ The ‘Show more’ Button is used when there is a significant amount of overflo
 ![Example of a Code Snippet utilizing the 'Show more' Button.](images/show-more.gif)
 
 _Example of the 'Show more' Button in context._
-
-
-
-<!--## Code??
-
-This is where we would discuss class used for truncation and show more buttons?-->
