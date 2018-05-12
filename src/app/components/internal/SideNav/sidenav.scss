@@ -66,6 +66,12 @@
     &:hover {
       color: $brand-01;
     }
+
+    &:focus {
+      outline: 0;
+      text-decoration: underline;
+      color: $brand-01;
+    }
   }
 
   &__top-container {
