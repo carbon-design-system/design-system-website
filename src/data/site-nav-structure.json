@@ -86,6 +86,7 @@
   "utilities":{
     "title": "Utilities",
     "subnav": {
+    "common-actions": "Common Actions",
     "disabled-states": "Disabled States",
     "filtering": "Filtering",
     "loading": "Loading",
