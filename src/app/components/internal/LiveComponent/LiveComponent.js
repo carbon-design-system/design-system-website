@@ -51,43 +51,43 @@ class LiveComponent extends Component {
     });
     let htmlFile;
     if (this.props.component === 'text-input' && variation === 'text-area') {
-      htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+      htmlFile = require('carbon-components/html/text-area/text-area.html');
     } else if (
       this.props.component === 'data-table' &&
       variation === 'toolbar'
     ) {
-      htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+      htmlFile = require('carbon-components/html/toolbar/toolbar.html');
     } else if (
       this.props.component === 'detail-page-header--no-tabs' ||
       this.props.component === 'detail-page-header--with-tabs'
     ) {
-      htmlFile = require(`carbon-components/src/components/detail-page-header/${
+      htmlFile = require(`carbon-components/html/detail-page-header/${
         this.props.component
       }.html`);
     } else if (
       this.props.component === 'data-table' &&
       variation === 'data-table-v2'
     ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
+      htmlFile = require('carbon-components/html/data-table-v2/data-table-v2.html');
     } else if (
       this.props.component === 'data-table' &&
       variation === 'data-table-v2-expandable'
     ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
+      htmlFile = require('carbon-components/html/data-table-v2/data-table-v2-expandable.html');
     } else if (
       this.props.component === 'data-table' &&
       variation === 'data-table-v2--pagination'
     ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
+      htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--pagination.html');
     } else if (
       this.props.component === 'data-table' &&
       variation === 'data-table-v2--small'
     ) {
-      htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+      htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
     } else if (this.props.component === 'header') {
-      htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
+      htmlFile = require('carbon-addons-bluemix/html/cloud-header/cloud-header.html');
     } else {
-      htmlFile = require(`carbon-components/src/components/${
+      htmlFile = require(`carbon-components/html/${
         this.props.component
       }/${variation}.html`);
     }
