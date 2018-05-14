@@ -135,78 +135,88 @@ class SideNav extends Component {
       const isCurrentPath = currentPath[1] === navItem;
       return (
         <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
-          <Link
-            aria-label={navItemObj.title}
-            tabIndex="0"
-            className="main-nav-item__heading"
-            to={`/${navItem}`}
-          >
-            {navItemObj.title}
-          </Link>
+          {
+            ({ open: isItemOpen }) => (
+              <Link
+                aria-label={navItemObj.title}
+                tabIndex={this.props.isOpen && isItemOpen ? 0 : -1}
+                className="main-nav-item__heading"
+                to={`/${navItem}`}
+              >
+                {navItemObj.title}
+              </Link>
+            )
+          }
         </SideNavItem>
       );
     });
 
   renderSubNav = (subnav, parentItem) => {
-    const subNavItems = this.renderSubNavItems(subnav, parentItem);
     const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const isCurrentPath = currentPath[1] === parentItem;
     return (
       <SideNavItem key={parentItem} isCurrentPath={isCurrentPath}>
-        <p className="main-nav-item__heading">
-          {SiteNavStructure[parentItem].title}
-          <Icon
-            className="main-nav-item__arrow"
-            name="caret--down"
-            aria-hidden="true"
-            description="Menu arrow icon"
-            alt="Menu arrow icon"
-          />
-        </p>
-        <ul
-          role="menu"
-          aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
-          aria-hidden="true"
-          className="main-nav__sub-nav"
-        >
-          {subNavItems}
-        </ul>
+        {
+          ({ open: isItemOpen }) => [(
+            <p className="main-nav-item__heading">
+              {SiteNavStructure[parentItem].title}
+              <Icon
+                className="main-nav-item__arrow"
+                name="caret--down"
+                aria-hidden="true"
+                description="Menu arrow icon"
+                alt="Menu arrow icon"
+              />
+            </p>
+          ), (
+            <ul
+              role="menu"
+              aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
+              aria-hidden="true"
+              className="main-nav__sub-nav"
+            >
+              {this.renderSubNavItems(subnav, parentItem, isItemOpen)}
+            </ul>
+          )]
+        }
       </SideNavItem>
     );
   };
 
-  renderInnerSubNav = (parent, parentKey) => {
-    const innerSubNavItems = this.renderInnerSubNavItems(
-      parent.subnav,
-      parentKey
-    );
+  renderInnerSubNav = (parent, parentKey, isOpen) => {
+    const { subnav } = parent;
     const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const isCurrentPath = currentPath[1] === parentKey;
     return (
       <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
-        <p className="sub-nav__item">
-          {parent.title}
-          <Icon
-            className="sub-nav-item__arrow"
-            name="caret--down"
-            aria-hidden="true"
-            description="Menu arrow icon"
-            alt="Menu arrow icon"
-          />
-        </p>
-        <ul
-          role="menu"
-          aria-label={`${parent.title} sub menu`}
-          aria-hidden="true"
-          className="sub-nav__inner-sub-nav"
-        >
-          {innerSubNavItems}
-        </ul>
+        {
+          ({ open: isItemOpen, onKeyDown }) => [(
+            <p className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
+              {parent.title}
+              <Icon
+                className="sub-nav-item__arrow"
+                name="caret--down"
+                aria-hidden="true"
+                description="Menu arrow icon"
+                alt="Menu arrow icon"
+              />
+            </p>
+          ), (
+            <ul
+              role="menu"
+              aria-label={`${parent.title} sub menu`}
+              aria-hidden="true"
+              className="sub-nav__inner-sub-nav"
+            >
+              {this.renderInnerSubNavItems(subnav, parentKey, isItemOpen)}
+            </ul>
+          )]
+        }
       </SideNavItem>
     );
   };
 
-  renderInnerSubNavItems = (subnav, parentItem) => {
+  renderInnerSubNavItems = (subnav, parentItem, isItemOpen) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
@@ -228,7 +238,7 @@ class SideNav extends Component {
       if (isServiceProviders || isUserFlow) {
         return "";
       }
-      const tabIndex = this.props.isOpen ? 0 : -1;
+      const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
       return (
         <li
           role="menuitem"
@@ -249,12 +259,12 @@ class SideNav extends Component {
     });
   };
 
-  renderSubNavItems = (subnav, parentItem) => {
+  renderSubNavItems = (subnav, parentItem, isItemOpen) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
       if (typeof subnav[subNavItem] === "object") {
-        return this.renderInnerSubNav(subnav[subNavItem], subNavItem);
+        return this.renderInnerSubNav(subnav[subNavItem], subNavItem, isItemOpen);
       } else {
         const link = `/${parentItem}/${subNavItem}`;
         const isCurrentPage =
@@ -269,7 +279,7 @@ class SideNav extends Component {
         if (isServiceProviders || isUserFlow) {
           return "";
         }
-        const tabIndex = this.props.isOpen ? 0 : -1;
+        const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
         return (
           <li
             role="menuitem"
