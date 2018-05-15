@@ -56,7 +56,8 @@ main[data-page|='whats-new'] {
 
 main[data-page='style-spacing'],
 main[data-page='utilities-disabled-states'],
-main[data-page='utilities-filtering'] {
+main[data-page='utilities-filtering'],
+main[data-page='utilities-common-actions'] {
   img {
     background-color: $ui-02;
   }

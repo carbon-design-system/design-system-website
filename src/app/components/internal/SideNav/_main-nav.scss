@@ -12,10 +12,6 @@
       color: $text-01;
     }
 
-    &:focus {
-      outline: 0;
-    }
-
     a:focus {
       outline: 0;
       text-decoration: underline;
@@ -24,7 +20,7 @@
     }
 
     &__heading {
-      @include typescale('epsilon');
+      @include typescale("epsilon");
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -38,8 +34,8 @@
       border-left: 4px solid transparent;
       transition: 200ms ease;
 
-      @include breakpoint('620px') {
-        @include typescale('zeta');
+      @include breakpoint("620px") {
+        @include typescale("zeta");
         padding: 0.2825rem rem(20px);
       }
     }
@@ -73,6 +69,10 @@
     }
 
     &:focus {
+      outline: 0;
+    }
+
+    &:focus .main-nav-item__heading {
       outline: 0;
       text-decoration: underline;
     }

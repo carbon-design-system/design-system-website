@@ -77,15 +77,16 @@ To use front and end-line truncation enter the appropriate class below and add `
 ```
 
 **Result**
-![screen shot 2018-05-09 at 1 22 51 pm](https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b)
+
+<img src="https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b" alt="Result" style="width: 20%; margin-top: 0" />
 
 
-**Midline truncation**
+#### Midline truncation
 
 Midline truncation does not have its own class as it requires JavaScript. We have created an example in CodePen to show how it is implemented.  
 
-<!-- CodePen example goes here -->
-
+<iframe height='300' scrolling='no' title='Middle Truncation' src='//codepen.io/team/carbon/embed/KRoBQe/?height=300&theme-id=30962&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/team/carbon/pen/KRoBQe/'>Middle Truncation</a> by Carbon Design System (<a href='https://codepen.io/carbon'>@carbon</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ### 'Show more' Buttons
 The ‘Show more’ Button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ Button gives a user the ability to see the content in more digestible chunks as opposed to all at once. A ‘Show more’ Button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](link) section for additional details.
