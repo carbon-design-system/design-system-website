@@ -1,4 +1,4 @@
-Filtering is the action by which a user adds or removes data items from a shown data set by turning on and off certain predefined criteria.
+**_Filtering_ is the action by which a user adds or removes data items from a shown data set by turning on and off certain predefined criteria.**
 
 ## Selecting filters
 
@@ -65,10 +65,16 @@ Filters within each category should start either as all unselected or all select
 ### Filter applied
 If the filter(s) can be hidden in either a drawer, dropdown, or menu, then there should be an indicator visible on the closed filter state that informs the user that filters have been applied. At a minimum the indicator should include the number of filters applied and have the option to clear filters without re-opening the filter container.
 
+---
+***
+> 
 ![Hidden filters not applied](images/filter-5.png)
 
 _Filters not applied_
 
+---
+***
+> 
 ![Hidden filters applied](images/filter-6.png)
 
 _Filters applied_

@@ -120,13 +120,18 @@
   }
 
   p code,
-  li code {
+  li code,
+  td code {
     font-size: 0.875rem;
     padding: 0.25rem;
     background-color: $field-01;
     color: $text-02;
     font-family: 'ibm-plex-mono', Courier, monospace;
     -webkit-font-smoothing: auto;
+  }
+
+  td code {
+    line-height: 2;
   }
 
   pre {
@@ -139,6 +144,7 @@
       font-size: 0.875rem;
       word-break: break-all;
       line-height: 1.5;
+      color: $text-02;
     }
 
     & + h4 {

@@ -1,5 +1,4 @@
-
-A disabled state is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies or pre-requisites. Disabled states completely remove the interactive function of a component.
+**_A disabled state_ is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies or pre-requisites. Disabled states completely remove the interactive function of a component.**
 
 ## Disabled variations
 

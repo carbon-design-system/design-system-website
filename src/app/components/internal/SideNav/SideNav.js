@@ -1,68 +1,68 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Link, browserHistory } from 'react-router';
-import classnames from 'classnames';
-import ReactGA from 'react-ga';
-import { Icon, Button } from 'carbon-components-react';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Link, browserHistory } from "react-router";
+import classnames from "classnames";
+import ReactGA from "react-ga";
+import { Icon, Button } from "carbon-components-react";
 
-import SiteContent from '../../../../data/sitecontent.js';
-import SiteNavStructure from '../../../../data/site-nav-structure.json';
-import SideNavItem from '../SideNavItem/SideNavItem';
-import GlobalSearch from '../GlobalSearch/GlobalSearch';
+import SiteContent from "../../../../data/sitecontent.js";
+import SiteNavStructure from "../../../../data/site-nav-structure.json";
+import SideNavItem from "../SideNavItem/SideNavItem";
+import GlobalSearch from "../GlobalSearch/GlobalSearch";
 
 class SideNav extends Component {
   static propTypes = {
     isOpen: PropTypes.bool,
     isFinal: PropTypes.bool,
     onToggleBtnClick: PropTypes.func,
-    onClick: PropTypes.func,
+    onClick: PropTypes.func
   };
 
   state = {
     results: [],
     relatedResults: [],
-    currentQuery: '',
-    val: '',
-    activeSearch: false,
+    currentQuery: "",
+    val: "",
+    activeSearch: false
   };
 
   handleSkip = evt => {
     if (evt.which === 13) {
       document.activeElement.blur();
-      document.querySelector('#maincontent').focus();
+      document.querySelector("#maincontent").focus();
     }
   };
 
   handleClick = (evt, cat) => {
-    if (cat === 'Left Nav') {
+    if (cat === "Left Nav") {
       ReactGA.event({
         category: cat,
-        action: 'click',
-        label: evt.target.innerText,
+        action: "click",
+        label: evt.target.innerText
       });
     } else {
       ReactGA.event({
         category: cat,
-        action: 'click',
+        action: "click"
       });
     }
   };
 
   clearInput = () => {
-    this.searchInput.value = '';
+    this.searchInput.value = "";
     this.setState({
-      val: '',
-      activeSearch: false,
+      val: "",
+      activeSearch: false
     });
   };
 
   crawlSiteContent = query => {
     const newResults = [];
     const newRelatedResults = [];
-    let prevChild = '';
+    let prevChild = "";
     Object.keys(SiteContent).map(o => {
       const currentObj = SiteContent[o];
-      const childName = currentObj.child.replace(/[-]/g, ' ');
+      const childName = currentObj.child.replace(/[-]/g, " ");
       if (
         (childName.includes(query) ||
           childName.includes(query.toLowerCase())) &&
@@ -71,13 +71,13 @@ class SideNav extends Component {
         newResults.push(currentObj);
         this.setState({
           results: newResults,
-          currentQuery: query,
+          currentQuery: query
         });
         prevChild = currentObj.child;
       } else {
         if (!(query.length <= 1)) {
           this.setState({
-            results: newResults,
+            results: newResults
           });
         }
       }
@@ -85,18 +85,18 @@ class SideNav extends Component {
         currentObj.content.includes(query) ||
         currentObj.content.includes(query.toLowerCase()) ||
         currentObj.content.includes(
-          query.charAt(0).toUpperCase() + query.substring(1),
+          query.charAt(0).toUpperCase() + query.substring(1)
         )
       ) {
         newRelatedResults.push(currentObj);
         this.setState({
           relatedResults: newRelatedResults,
-          currentQuery: query,
+          currentQuery: query
         });
       } else {
         if (!(query.length <= 1)) {
           this.setState({
-            relatedResults: newRelatedResults,
+            relatedResults: newRelatedResults
           });
         }
       }
@@ -107,18 +107,18 @@ class SideNav extends Component {
   filterResults = e => {
     const val = e.target.value;
     this.setState({
-      val,
+      val
     });
     if (val.length >= 1) {
       this.setState({
-        activeSearch: true,
+        activeSearch: true
       });
       this.crawlSiteContent(val);
     } else {
       this.setState({
         results: [],
         relatedResults: [],
-        activeSearch: false,
+        activeSearch: false
       });
     }
   };
@@ -131,100 +131,114 @@ class SideNav extends Component {
       }
       const currentPath = browserHistory
         .getCurrentLocation()
-        .pathname.split('/');
+        .pathname.split("/");
       const isCurrentPath = currentPath[1] === navItem;
       return (
         <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
-          <Link
-            aria-label={navItemObj.title}
-            tabIndex="0"
-            className="main-nav-item__heading"
-            to={`/${navItem}`}
-          >
-            {navItemObj.title}
-          </Link>
+          {
+            ({ open: isItemOpen }) => (
+              <Link
+                aria-label={navItemObj.title}
+                tabIndex={this.props.isOpen && isItemOpen ? 0 : -1}
+                className="main-nav-item__heading"
+                to={`/${navItem}`}
+              >
+                {navItemObj.title}
+              </Link>
+            )
+          }
         </SideNavItem>
       );
     });
 
   renderSubNav = (subnav, parentItem) => {
-    const subNavItems = this.renderSubNavItems(subnav, parentItem);
-    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+    const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const isCurrentPath = currentPath[1] === parentItem;
     return (
       <SideNavItem key={parentItem} isCurrentPath={isCurrentPath}>
-        <p className="main-nav-item__heading">
-          {SiteNavStructure[parentItem].title}
-          <Icon
-            className="main-nav-item__arrow"
-            name="caret--down"
-            aria-hidden="true"
-            description="Menu arrow icon"
-            alt="Menu arrow icon"
-          />
-        </p>
-        <ul
-          role="menu"
-          aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
-          aria-hidden="true"
-          className="main-nav__sub-nav"
-        >
-          {subNavItems}
-        </ul>
+        {
+          ({ open: isItemOpen }) => [(
+            <p className="main-nav-item__heading">
+              {SiteNavStructure[parentItem].title}
+              <Icon
+                className="main-nav-item__arrow"
+                name="caret--down"
+                aria-hidden="true"
+                description="Menu arrow icon"
+                alt="Menu arrow icon"
+              />
+            </p>
+          ), (
+            <ul
+              role="menu"
+              aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
+              aria-hidden="true"
+              className="main-nav__sub-nav"
+            >
+              {this.renderSubNavItems(subnav, parentItem, isItemOpen)}
+            </ul>
+          )]
+        }
       </SideNavItem>
     );
   };
 
-  renderInnerSubNav = (parent, parentKey) => {
-    const innerSubNavItems = this.renderInnerSubNavItems(parent.subnav, parentKey);
-    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+  renderInnerSubNav = (parent, parentKey, isOpen) => {
+    const { subnav } = parent;
+    const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const isCurrentPath = currentPath[1] === parentKey;
     return (
-    <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
-      <p className="sub-nav__item">
-        {parent.title}
-        <Icon
-          className="sub-nav-item__arrow"
-          name="caret--down"
-          aria-hidden="true"
-          description="Menu arrow icon"
-          alt="Menu arrow icon"
-        />
-      </p>
-      <ul
-        role="menu"
-        aria-label={`${parent.title} sub menu`}
-        aria-hidden="true"
-        className="sub-nav__inner-sub-nav"
-      >
-        {innerSubNavItems}
-      </ul>
-    </SideNavItem>
+      <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
+        {
+          ({ open: isItemOpen, onKeyDown }) => [(
+            <p className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
+              {parent.title}
+              <Icon
+                className="sub-nav-item__arrow"
+                name="caret--down"
+                aria-hidden="true"
+                description="Menu arrow icon"
+                alt="Menu arrow icon"
+              />
+            </p>
+          ), (
+            <ul
+              role="menu"
+              aria-label={`${parent.title} sub menu`}
+              aria-hidden="true"
+              className="sub-nav__inner-sub-nav"
+            >
+              {this.renderInnerSubNavItems(subnav, parentKey, isItemOpen)}
+            </ul>
+          )]
+        }
+      </SideNavItem>
     );
-  }
+  };
 
-  renderInnerSubNavItems = (subnav, parentItem) => {
-    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+  renderInnerSubNavItems = (subnav, parentItem, isItemOpen) => {
+    const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
       const link = `/${parentItem}/${subNavItem}`;
       const isCurrentPage =
         parentItem === currentPath[1] && subNavItem === currentPath[2];
       const classNames = classnames({
-        'sub-nav__item': true,
-        'sub-nav__item--sub': true,
-        selected: isCurrentPage, // eslint-disable-line
+        "sub-nav__item": true,
+        "sub-nav__item--sub": true,
+        selected: isCurrentPage // eslint-disable-line
       });
       const subClassNames = classnames({
-        'sub-nav__item-link': true,
-        'sub-nav__item-link--sub': true
+        "sub-nav__item-link": true,
+        "sub-nav__item-link--sub": true
       });
-      const isServiceProviders = (!(ENV === 'internal') && subNavItem === 'service-providers');
-      const isBluemixBrand = (!(ENV === 'internal') && subNavItem === 'bluemix-brand');
-      if (isServiceProviders || isBluemixBrand) {
-        return '';
+      const isServiceProviders =
+        !(ENV === "internal") && subNavItem === "service-providers";
+      const isUserFlow = !(ENV === "internal") && subNavItem === "user-flow";
+      if (isServiceProviders || isUserFlow) {
+        return "";
       }
-      const tabIndex = this.props.isOpen ? 0 : -1;
+      const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
       return (
         <li
           role="menuitem"
@@ -245,26 +259,27 @@ class SideNav extends Component {
     });
   };
 
-  renderSubNavItems = (subnav, parentItem) => {
-    const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
+  renderSubNavItems = (subnav, parentItem, isItemOpen) => {
+    const currentPath = browserHistory.getCurrentLocation().pathname.split("/");
     const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
-      if (typeof subnav[subNavItem] === 'object') {
-        return this.renderInnerSubNav(subnav[subNavItem], subNavItem);
+      if (typeof subnav[subNavItem] === "object") {
+        return this.renderInnerSubNav(subnav[subNavItem], subNavItem, isItemOpen);
       } else {
         const link = `/${parentItem}/${subNavItem}`;
         const isCurrentPage =
           parentItem === currentPath[1] && subNavItem === currentPath[2];
         const classNames = classnames({
-          'sub-nav__item': true,
-          selected: isCurrentPage, // eslint-disable-line
+          "sub-nav__item": true,
+          selected: isCurrentPage // eslint-disable-line
         });
-        const isServiceProviders = (!(ENV === 'internal') && subNavItem === 'service-providers');
-        const isBluemixBrand = (!(ENV === 'internal') && subNavItem === 'bluemix-brand');
-        if (isServiceProviders || isBluemixBrand) {
-          return '';
+        const isServiceProviders =
+          !(ENV === "internal") && subNavItem === "service-providers";
+        const isUserFlow = !(ENV === "internal") && subNavItem === "user-flow";
+        if (isServiceProviders || isUserFlow) {
+          return "";
         }
-        const tabIndex = this.props.isOpen ? 0 : -1;
+        const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
         return (
           <li
             role="menuitem"
@@ -291,18 +306,18 @@ class SideNav extends Component {
 
     const navItems = this.renderSiteItems(SiteNavStructure);
     const classNames = classnames({
-      'side-nav': true,
-      'side-nav__closed': !isOpen,
-      'side-nav__closed--final': isFinal && !isOpen,
+      "side-nav": true,
+      "side-nav__closed": !isOpen,
+      "side-nav__closed--final": isFinal && !isOpen
     });
 
     const searchClasses = classnames({
-      'bx--search-close': true,
-      'bx--search-close--hidden': this.state.val.length < 1,
+      "bx--search-close": true,
+      "bx--search-close--hidden": this.state.val.length < 1
     });
     const bottomClasses = classnames({
-      'side-nav__bottom-container': true,
-      'side-nav__bottom-container--hidden': this.state.val.length > 0,
+      "side-nav__bottom-container": true,
+      "side-nav__bottom-container--hidden": this.state.val.length > 0
     });
     return (
       <nav
@@ -325,9 +340,15 @@ class SideNav extends Component {
             Carbon <span>Design System</span>
           </Link>
           <div className="bx--search bx--search--sm" role="search">
-            <svg className="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16" fillRule="evenodd">
-              <path d="M6 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0-2C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM16 13.8L13.8 16l-3.6-3.6 2.2-2.2z"></path>
-              <path d="M16 13.8L13.8 16l-3.6-3.6 2.2-2.2z"></path>
+            <svg
+              className="bx--search-magnifier"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fillRule="evenodd"
+            >
+              <path d="M6 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0-2C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
+              <path d="M16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
             </svg>
             <input
               type="text"
@@ -363,7 +384,7 @@ class SideNav extends Component {
             role="menu"
             aria-label="Page main menu"
             className="side-nav__main-nav"
-            onClick={e => this.handleClick(e, 'Left Nav')}
+            onClick={e => this.handleClick(e, "Left Nav")}
           >
             {navItems}
           </ul>
@@ -376,7 +397,7 @@ class SideNav extends Component {
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Design Kit')}
+              onClick={e => this.handleClick(e, "Design Kit")}
             >
               Design Kit
             </Button>
@@ -388,7 +409,7 @@ class SideNav extends Component {
               target="_blank"
               role="button"
               iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Developer Kit')}
+              onClick={e => this.handleClick(e, "Developer Kit")}
             >
               GitHub Repo
             </Button>
