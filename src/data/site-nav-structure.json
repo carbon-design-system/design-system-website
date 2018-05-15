@@ -86,10 +86,11 @@
   "utilities": {
     "title": "Utilities",
     "subnav": {
-      "disabled-states": "Disabled States",
-      "filtering": "Filtering",
-      "loading": "Loading",
-      "overflow-content": "Overflow Content"
+    "common-actions": "Common Actions",
+    "disabled-states": "Disabled States",
+    "filtering": "Filtering",
+    "loading": "Loading",
+    "overflow-content": "Overflow Content"
     }
   },
 
