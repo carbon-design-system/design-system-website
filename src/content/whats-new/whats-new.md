@@ -1,14 +1,19 @@
-**May 11, 2018**
+**May 16, 2018**
 
 ## Utilities
 
 There is a new section called Utilities which gives guidance on common pattern handlings.
 Unlike the component section, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
 
+- [Common Actions](utilities/common-actions)
 - [Disabled States](utilities/disabled-states)
 - [Filtering](utilities/filtering)
 - [Loading](utilities/loading)
 - [Overflow Content](utilities/overflow-content)
+
+## Themes
+
+The [Themes page](style/themes) has been moved to the Style section.
 
 <hr class="divider">
 

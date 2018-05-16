@@ -1,4 +1,4 @@
-Common actions are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.
+**_Common actions_ are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.**
 
 ## Regressive actions
 
