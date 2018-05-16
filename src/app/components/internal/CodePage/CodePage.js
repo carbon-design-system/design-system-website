@@ -98,39 +98,37 @@ class CodePage extends Component {
     }
     let htmlFile;
     if (parent === 'dropdown') {
-      if (variation === 'dropdown') {
-        htmlFile = require('carbon-components/src/components/dropdown/dropdown.html');
-      } else if (variation === 'dropdown--inline') {
-        htmlFile = require('carbon-components/src/components/dropdown/dropdown--inline.html');
+      if (/^dropdown/.test(variation)) {
+        htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       } else {
         return this.renderReactComponent(parent, variation, title);
       }
     } else {
       if (parent === 'text-input' && variation === 'text-area') {
-        htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+        htmlFile = require('carbon-components/html/text-area/text-area.html');
       } else if (parent === 'data-table' && variation === 'toolbar') {
-        htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+        htmlFile = require('carbon-components/html/toolbar/toolbar.html');
       } else if (parent === 'date-picker' && variation === 'time-picker') {
-        htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
+        htmlFile = require('carbon-components/html/time-picker/time-picker.html');
       } else if (parent === 'data-table' && variation === 'data-table-v2') {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2.html');
       } else if (
         parent === 'data-table' &&
-        variation === 'data-table-v2-expandable'
+        variation === 'data-table-v2--expandable'
       ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--expandable.html');
       } else if (
         parent === 'data-table' &&
         variation === 'data-table-v2--pagination'
       ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--pagination.html');
       } else if (
         parent === 'data-table' &&
         variation === 'data-table-v2--small'
       ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
       } else {
-        htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
+        htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       }
       if (parent === 'card') {
         const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
@@ -213,7 +211,7 @@ class CodePage extends Component {
       if (component === 'cloud-header') {
         htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
       } else {
-        htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
+        htmlFile = require(`carbon-components/html/${component}/${component}.html`); // eslint-disable-line
       }
       componentContent = (
         <ComponentExample
