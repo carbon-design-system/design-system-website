@@ -10,7 +10,7 @@ _Example of a browser tooltip being used for truncation._
 
 ---
 ***
->
+> 
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 
 _Example of end-line truncation for a paragraph._
