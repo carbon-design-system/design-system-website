@@ -8,7 +8,7 @@ import PageTabs from '../../components/internal/PageTabs';
 class ServiceProviders extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string,
-  }
+  };
 
   render() {
     const tabs = ['general', 'service-icon', 'design-approval'];
@@ -18,14 +18,14 @@ class ServiceProviders extends React.Component {
     }
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/getting-started/service-providers/general" label="General">
-          <MarkdownPage content={require('../../../content/getting-started/service-providers/general.md')} />
+        <Tab href="/your-product-on-ibm-cloud/service-providers/general" label="General">
+          <MarkdownPage content={require('../../../content/your-product-on-ibm-cloud/service-providers/general.md')} />
         </Tab>
-        <Tab href="/getting-started/service-providers/service-icon" label="Service Icon">
-          <MarkdownPage content={require('../../../content/getting-started/service-providers/service-icon.md')} />
+        <Tab href="/your-product-on-ibm-cloud/service-providers/service-icon" label="Service Icon">
+          <MarkdownPage content={require('../../../content/your-product-on-ibm-cloud/service-providers/service-icon.md')} />
         </Tab>
-        <Tab href="/getting-started/service-providers/design-approval" label="Design Approval">
-          <MarkdownPage content={require('../../../content/getting-started/service-providers/design-approval.md')} />
+        <Tab href="/your-product-on-ibm-cloud/service-providers/design-approval" label="Design Approval">
+          <MarkdownPage content={require('../../../content/your-product-on-ibm-cloud/service-providers/design-approval.md')} />
         </Tab>
       </PageTabs>
     );
