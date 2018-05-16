@@ -3,6 +3,8 @@ desc: <span>Dropdowns</span> present a list of options that can be used to filte
 variations:
  dropdown:
  - Dropdown
+ dropdown--inline:
+ - Inline Dropdown
  MultiSelect:
  - Multi-select Dropdown
  MultiSelect.Inline:
