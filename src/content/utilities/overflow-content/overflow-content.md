@@ -10,7 +10,7 @@ _Example of a browser tooltip being used for truncation._
 
 ---
 ***
-> 
+>
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 
 _Example of end-line truncation for a paragraph._
@@ -79,6 +79,7 @@ To use front and end-line truncation enter the appropriate class below and add `
 **Result**
 
 <img src="https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b" alt="Result" style="width: 20%; margin-top: 0" />
+
 
 #### Midline truncation
 
