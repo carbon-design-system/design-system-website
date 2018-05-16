@@ -100,6 +100,8 @@ class CodePage extends Component {
     if (parent === 'dropdown') {
       if (variation === 'dropdown') {
         htmlFile = require('carbon-components/src/components/dropdown/dropdown.html');
+      } else if (variation === 'dropdown--inline') {
+        htmlFile = require('carbon-components/src/components/dropdown/dropdown--inline.html');
       } else {
         return this.renderReactComponent(parent, variation, title);
       }

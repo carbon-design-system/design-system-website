@@ -39,7 +39,7 @@ class Colors extends React.Component {
 
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
-        <Tab href="/style/colors/swatches" label="Swatches">
+        <Tab href="/style/color/swatches" label="Swatches">
           <div className="page">
             <h2>Carbon default theme</h2>
             <div className="wrapped-list">
@@ -51,9 +51,9 @@ class Colors extends React.Component {
             </div>
           </div>
         </Tab>
-        <Tab href="/style/colors/usage" label="Usage">
+        <Tab href="/style/color/usage" label="Usage">
           <MarkdownPage
-            content={require('../../../content/style/colors/usage.md')}
+            content={require('../../../content/style/color/usage.md')}
           />
         </Tab>
       </PageTabs>

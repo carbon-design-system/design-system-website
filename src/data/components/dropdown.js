@@ -5,6 +5,9 @@
     "dropdown": [
       "Dropdown"
     ],
+    "dropdown--inline": [
+      "Inline Dropdown"
+    ],
     "MultiSelect": [
       "Multi-select Dropdown"
     ],
