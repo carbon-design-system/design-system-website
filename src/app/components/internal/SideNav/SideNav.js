@@ -121,7 +121,7 @@ class SideNav extends Component {
     Object.keys(navItems).map(navItem => {
       const navItemObj = navItems[navItem];
       const { ENV } = process.env;
-      const isInternal = ENV !== 'internal' && navItem === 'your-product-on-IBM-cloud';
+      const isInternal = ENV !== 'internal' && navItem === 'your-product-on-ibm-cloud';
       if (isInternal) {
         return '';
       }
