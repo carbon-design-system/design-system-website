@@ -4,7 +4,6 @@
     "subnav": {
       "designers": "Designers",
       "developers": "Developers",
-      "service-providers": "Service Providers",
       "FAQ": "FAQ"
     }
   },
@@ -16,8 +15,14 @@
     "subnav": {
       "accessibility": "Accessibility",
       "content": "Content",
-      "contributing": "Contributing",
-      "user-flow": "User Flow"
+      "contributing": "Contributing"
+    }
+  },
+  "your-product-on-ibm-cloud": {
+    "title": "Your Product on IBM Cloud",
+    "subnav": {
+      "user-flow": "User Flow",
+      "service-providers": "Service Providers"
     }
   },
   "style": {
@@ -86,11 +91,11 @@
   "utilities": {
     "title": "Utilities",
     "subnav": {
-    "common-actions": "Common Actions",
-    "disabled-states": "Disabled States",
-    "filtering": "Filtering",
-    "loading": "Loading",
-    "overflow-content": "Overflow Content"
+      "common-actions": "Common Actions",
+      "disabled-states": "Disabled States",
+      "filtering": "Filtering",
+      "loading": "Loading",
+      "overflow-content": "Overflow Content"
     }
   },
 
