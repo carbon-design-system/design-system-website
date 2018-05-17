@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
-
+import { Redirect } from 'react-router';
 import App from './app/App';
 
 const handleRouteChange = () => {
@@ -40,18 +40,26 @@ const routes = {
         {
           path: '/getting-started/service-providers',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/getting-started/service-providers/general'),
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers'),
           },
-          childRoutes: [
-            {
-              path: '/getting-started/:name/:page',
-              getComponent(location, cb) {
-                import('./app/pages/getting-started/GettingStarted')
-                  .then(loadRoute(cb))
-                  .catch(errorLoading);
-              },
-            },
-          ],
+        },
+        {
+          path: '/getting-started/service-providers/general',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/general'),
+          },
+        },
+        {
+          path: '/getting-started/service-providers/service-icon',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/service-icon'),
+          },
+        },
+        {
+          path: '/getting-started/service-providers/design-approval',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/design-approval'),
+          },
         },
         {
           path: '/getting-started/:name',
