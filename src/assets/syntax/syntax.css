@@ -28,7 +28,7 @@ pre[class*='language-'] {
   -ms-hyphens: none;
   hyphens: none;
   background: #fff;
-  color: #cdd1d4;
+  color: #152934;
 }
 
 pre[class*='language-']::-moz-selection,
@@ -36,7 +36,7 @@ pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
   text-shadow: none;
-  background: #dfe2f1;
+  background: rgba(85, 150, 230 , .1);
 }
 
 pre[class*='language-']::selection,
@@ -44,7 +44,7 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
   text-shadow: none;
-  background: #dfe2f1;
+  background: rgba(85, 150, 230 , .1);
 }
 
 /* Code blocks */
@@ -67,11 +67,11 @@ pre[class*='language-'] {
 }
 
 .token.punctuation {
-  color: #cdd1d4;
+  color: #687985;
 }
 
 .token.operator {
-  color: #cdd1d4;
+  color: #687985;
 }
 
 .token.boolean,
@@ -80,30 +80,30 @@ pre[class*='language-'] {
 }
 
 .token.property {
-  color: #c08b30;
+  color: #97702d;
 }
 
 .token.tag {
-  color: #5b8121;
+  color: #687985;
 }
 
 .token.string {
-  color: #22a2c9;
+  color: #2D74DA;
 }
 
 .token.selector {
-  color: #6679cc;
+  color: #5A3EC8;
 }
 
 .token.attr-name {
-  color: #c22dd5;
+  color: #2D74DA;
 }
 
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #22a2c9;
+  color: #2D74DA;
 }
 
 .token.attr-value,
@@ -111,18 +111,18 @@ pre[class*='language-'] {
 .token.control,
 .token.directive,
 .token.unit {
-  color: #006456;
+  color: #5b8121;
 }
 
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #22a2c9;
+  color: #006456;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #3d8fd1;
+  color: #831B4C;
 }
 
 .token.deleted {
@@ -130,7 +130,7 @@ pre[class*='language-'] {
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #202746;
+  border-bottom: 1px dotted #c22dd5;
   text-decoration: none;
 }
 
@@ -160,11 +160,11 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #dfe2f1;
+  border-right-color: #687985;
 }
 
 .line-numbers-rows > span:before {
-  color: #979db4;
+  color: #687985;
 }
 
 /* overrides color-values for the Line Highlight plugin
