@@ -3,7 +3,7 @@ desc: <span>Data Tables</span> present raw data sets and lend meaning to the dat
 variations:
   data-table-v2:
   - Data Table
-  data-table-v2-expandable:
+  data-table-v2--expandable:
   - Expandable Data Table
   data-table-v2--pagination:
   - Data Table with Pagination
@@ -14,7 +14,7 @@ variations:
 codepen:
   data-table-v2:
   - MOEagV
-  data-table-v2-expandable:
+  data-table-v2--expandable:
   - gXGabM
   data-table-v2--pagination:
   - pdWjva
