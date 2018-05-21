@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Route, IndexRoute, IndexRedirect } from 'react-router';
-
+import { Redirect } from 'react-router';
 import App from './app/App';
 
 const handleRouteChange = () => {
@@ -25,7 +25,9 @@ const routes = {
   onChange: handleRouteChange,
   indexRoute: {
     getComponent(location, cb) {
-      import('./app/pages/overview/Overview').then(loadRoute(cb)).catch(errorLoading);
+      import('./app/pages/overview/Overview')
+        .then(loadRoute(cb))
+        .catch(errorLoading);
     },
   },
   childRoutes: [
@@ -38,30 +40,37 @@ const routes = {
         {
           path: '/getting-started/service-providers',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/getting-started/service-providers/general'),
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers'),
           },
-          childRoutes: [
-            {
-              path: '/getting-started/:name/:page',
-              getComponent(location, cb) {
-                import('./app/pages/getting-started/GettingStarted')
-                  .then(loadRoute(cb))
-                  .catch(errorLoading);
-                },
-              },
-            ],
+        },
+        {
+          path: '/getting-started/service-providers/general',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/general'),
           },
-          {
-            path: '/getting-started/:name',
-            getComponent(location, cb) {
-              import('./app/pages/getting-started/GettingStarted')
-                .then(loadRoute(cb))
-                .catch(errorLoading);
-            },
+        },
+        {
+          path: '/getting-started/service-providers/service-icon',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/service-icon'),
           },
-        ],
-      },
+        },
+        {
+          path: '/getting-started/service-providers/design-approval',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/design-approval'),
+          },
+        },
+        {
+          path: '/getting-started/:name',
+          getComponent(location, cb) {
+            import('./app/pages/getting-started/GettingStarted')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
     {
       path: 'guidelines',
       indexRoute: {
@@ -71,8 +80,7 @@ const routes = {
         {
           path: '/guidelines/content',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/guidelines/content/general'),
+            onEnter: (nextState, replace) => replace('/guidelines/content/general'),
           },
           childRoutes: [
             {
@@ -88,8 +96,7 @@ const routes = {
         {
           path: '/guidelines/accessibility',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/guidelines/accessibility/color'),
+            onEnter: (nextState, replace) => replace('/guidelines/accessibility/color'),
           },
           childRoutes: [
             {
@@ -106,6 +113,38 @@ const routes = {
           path: '/guidelines/:name',
           getComponent(location, cb) {
             import('./app/pages/guidelines/Guidelines')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
+    },
+    {
+      path: 'your-product-on-ibm-cloud',
+      indexRoute: {
+        onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/user-flow'),
+      },
+      childRoutes: [
+        {
+          path: '/your-product-on-ibm-cloud/service-providers',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/your-product-on-ibm-cloud/service-providers/general'),
+          },
+          childRoutes: [
+            {
+              path: '/your-product-on-ibm-cloud/:name/:page',
+              getComponent(location, cb) {
+                import('./app/pages/your-product-on-ibm-cloud/YourProductOnIBMCloud')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
+          path: '/your-product-on-ibm-cloud/:name',
+          getComponent(location, cb) {
+            import('./app/pages/your-product-on-ibm-cloud/YourProductOnIBMCloud')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },
@@ -137,8 +176,7 @@ const routes = {
         {
           path: '/style/iconography',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/style/iconography/library'),
+            onEnter: (nextState, replace) => replace('/style/iconography/library'),
           },
           childRoutes: [
             {
@@ -154,8 +192,7 @@ const routes = {
         {
           path: '/style/grid',
           indexRoute: {
-            onEnter: (nextState, replace) =>
-              replace('/style/grid/design'),
+            onEnter: (nextState, replace) => replace('/style/grid/design'),
           },
           childRoutes: [
             {
@@ -221,15 +258,15 @@ const routes = {
           indexRoute: {
             onEnter: (nextState, replace) => {
               if (!(nextState.params.name === 'overview')) {
-                replace(`/components/${nextState.params.name}/code`)
+                replace(`/components/${nextState.params.name}/code`);
               }
             },
           },
           getComponent(location, cb) {
-            import ('./app/pages/components/ComponentPage')
+            import('./app/pages/components/ComponentPage')
               .then(loadRoute(cb))
-              .catch(errorLoading)
-          }
+              .catch(errorLoading);
+          },
         },
         {
           path: '/components/:name/:page',
@@ -252,15 +289,15 @@ const routes = {
           indexRoute: {
             onEnter: (nextState, replace) => {
               if (!(nextState.params.name === 'overview')) {
-                replace(`/add-ons/${nextState.params.name}/code`)
+                replace(`/add-ons/${nextState.params.name}/code`);
               }
             },
           },
           getComponent(location, cb) {
-            import ('./app/pages/add-ons/ComponentPage')
+            import('./app/pages/add-ons/ComponentPage')
               .then(loadRoute(cb))
-              .catch(errorLoading)
-          }
+              .catch(errorLoading);
+          },
         },
         {
           path: '/add-ons/:name/:page',
@@ -278,37 +315,43 @@ const routes = {
         onEnter: (nextState, replace) => replace('/utilities/disabled-states'),
       },
       getComponent(location, cb) {
-        import ('./app/pages/utilities/Utilities')
+        import('./app/pages/utilities/Utilities')
           .then(loadRoute(cb))
-          .catch(errorLoading)
+          .catch(errorLoading);
       },
       childRoutes: [
-          {
-            path: '/utilities/:name',
-            getComponent(location, cb) {
-              import('./app/pages/utilities/Utilities')
-                .then(loadRoute(cb))
-                .catch(errorLoading);
-            },
+        {
+          path: '/utilities/:name',
+          getComponent(location, cb) {
+            import('./app/pages/utilities/Utilities')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
           },
-        ],
+        },
+      ],
     },
     {
       path: 'resources',
       getComponent(location, cb) {
-        import('./app/pages/resources/Resources').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/resources/Resources')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
       },
     },
     {
       path: 'themes',
       getComponent(location, cb) {
-        import('./app/pages/style/Themes').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/style/Themes')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
       },
     },
     {
       path: 'whats-new',
       getComponent(location, cb) {
-        import('./app/pages/whats-new/whats-new').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/whats-new/whats-new')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
       },
     },
     {
@@ -331,17 +374,17 @@ const routes = {
           indexRoute: {
             onEnter: (nextState, replace) => {
               if (!(nextState.params.name === 'overview')) {
-                replace(`/data-vis/${nextState.params.name}/code`)
+                replace(`/data-vis/${nextState.params.name}/code`);
               } else {
-                replace(`/data-vis/overview/general`)
+                replace(`/data-vis/overview/general`);
               }
             },
           },
           getComponent(location, cb) {
-            import ('./app/pages/data-vis/DataVis')
+            import('./app/pages/data-vis/DataVis')
               .then(loadRoute(cb))
-              .catch(errorLoading)
-          }
+              .catch(errorLoading);
+          },
         },
         {
           path: '/data-vis/:name/:page',
@@ -356,10 +399,12 @@ const routes = {
     {
       path: '*',
       getComponent(location, cb) {
-        import('./app/pages/404').then(loadRoute(cb)).catch(errorLoading);
+        import('./app/pages/404')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
       },
     },
   ],
-}
+};
 
 export default routes;

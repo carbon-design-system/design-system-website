@@ -5,6 +5,9 @@
     "text-input": [
       "Text Input"
     ],
+    "text-input--light": [
+      "Light"
+    ],
     "text-area": [
       "Text Area"
     ]
@@ -17,5 +20,6 @@
       "yPMjeg"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }
