@@ -67,3 +67,19 @@ main[data-page='components-code-button'] {
 main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
   width: 100%;
 }
+
+.code-page__react-version {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+
+  svg {
+    margin-right: 0.25rem;
+    width: 55px;
+    height: 45px;
+  }
+
+  p {
+    margin-bottom: 4px;
+  }
+}
