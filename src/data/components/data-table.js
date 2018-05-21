@@ -5,7 +5,7 @@
     "data-table-v2": [
       "Data Table"
     ],
-    "data-table-v2-expandable": [
+    "data-table-v2--expandable": [
       "Expandable Data Table"
     ],
     "data-table-v2--pagination": [
@@ -22,7 +22,7 @@
     "data-table-v2": [
       "MOEagV"
     ],
-    "data-table-v2-expandable": [
+    "data-table-v2--expandable": [
       "gXGabM"
     ],
     "data-table-v2--pagination": [
@@ -35,5 +35,6 @@
       "yPzYNK"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }

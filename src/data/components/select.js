@@ -5,17 +5,27 @@
     "select": [
       "Select"
     ],
-    "inline-select": [
+    "select--inline": [
       "Inline Select"
+    ],
+    "select--invalid": [
+      "Invalid"
+    ],
+    "select--light": [
+      "Light"
+    ],
+    "select--light-invalid": [
+      "Light invalid"
     ]
   },
   "codepen": {
     "select": [
       "QOqbPg"
     ],
-    "inline-select": [
+    "select--inline": [
       "YErXbK"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }
