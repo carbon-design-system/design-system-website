@@ -2,5 +2,14 @@
  module.exports = {
   "desc": "<span>Forms</span> are used for submitting data.",
   "codepen": "pdWorZ",
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {},
+  "variations": {
+    "form": [
+      "Form"
+    ],
+    "form--light": [
+      "Light"
+    ]
+  }
 }
