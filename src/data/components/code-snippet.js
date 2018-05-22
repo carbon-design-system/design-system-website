@@ -5,21 +5,15 @@
     "code-snippet": [
       "Code Snippet"
     ],
-    "code-snippet--multi": [
+    "code-snippet--terminal": [
       "Terminal"
-    ],
-    "code-snippet--inline": [
-      "Inline"
-    ],
-    "code-snippet--inline-light": [
-      "Inline Light"
     ]
   },
   "codepen": {
     "code-snippet": [
       "YYqeGX"
     ],
-    "code-snippet--multi": [
+    "code-snippet--terminal": [
       "mprzKy"
     ]
   },

@@ -4,8 +4,11 @@ variations:
  dropdown:
  - Dropdown
  dropdown--light:
+ - Dropdown (Light)
  dropdown--up:
+ - Dropdown (Up)
  dropdown--up-light:
+ - Dropdown (Up & Light)
  MultiSelect:
  - Multi-select Dropdown
  MultiSelect.Inline:

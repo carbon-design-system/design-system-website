@@ -68,18 +68,35 @@ main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
   width: 100%;
 }
 
+.code-page__docs {
+  padding-top: 4rem;
+}
+
+.code-page__docs > h2 + div > h3:first-child,
+.code-page__docs > h2 + div > h4:first-child {
+  padding-top: 0 !important;
+}
+
 .code-page__react-version {
   display: flex;
   align-items: center;
-  margin-top: 8px;
+  margin-top: -4rem;
 
   svg {
-    margin-right: 0.25rem;
-    width: 55px;
-    height: 45px;
+    margin-right: 0.35rem;
+    width: 32px;
+    height: 32px;
   }
 
   p {
     margin-bottom: 4px;
+  }
+
+  a {
+    margin-left: 2px;
+  }
+
+  & + .page_md h3 {
+    padding-top: 3rem;
   }
 }
