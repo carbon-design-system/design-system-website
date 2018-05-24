@@ -9,10 +9,8 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 */
 code[class*='language-'],
 pre[class*='language-'] {
-  font-family: 'ibm-plex-mono', Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
-    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
-    'Courier New', Courier, monospace;
+  font-family: 'ibm-plex-mono', Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+    'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', 'Courier New', Courier, monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -36,7 +34,7 @@ pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
   text-shadow: none;
-  background: rgba(85, 150, 230 , .1);
+  background: rgba(85, 150, 230, 0.1);
 }
 
 pre[class*='language-']::selection,
@@ -44,7 +42,7 @@ pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
   text-shadow: none;
-  background: rgba(85, 150, 230 , .1);
+  background: rgba(85, 150, 230, 0.1);
 }
 
 /* Code blocks */
@@ -88,22 +86,22 @@ pre[class*='language-'] {
 }
 
 .token.string {
-  color: #2D74DA;
+  color: #2d74da;
 }
 
 .token.selector {
-  color: #5A3EC8;
+  color: #5a3ec8;
 }
 
 .token.attr-name {
-  color: #2D74DA;
+  color: #2d74da;
 }
 
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #2D74DA;
+  color: #2d74da;
 }
 
 .token.attr-value,
@@ -122,7 +120,7 @@ pre[class*='language-'] {
 
 .token.placeholder,
 .token.variable {
-  color: #831B4C;
+  color: #831b4c;
 }
 
 .token.deleted {
@@ -160,7 +158,7 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #687985;
+  border-right-color: #dfe3e6;
 }
 
 .line-numbers-rows > span:before {
@@ -172,14 +170,6 @@ pre > code.highlight {
  */
 .line-highlight {
   background: rgba(107, 115, 148, 0.2);
-  background: -webkit-linear-gradient(
-    left,
-    rgba(107, 115, 148, 0.2) 70%,
-    rgba(107, 115, 148, 0)
-  );
-  background: linear-gradient(
-    to right,
-    rgba(107, 115, 148, 0.2) 70%,
-    rgba(107, 115, 148, 0)
-  );
+  background: -webkit-linear-gradient(left, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
+  background: linear-gradient(to right, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
 }

@@ -18,12 +18,12 @@ import './scss/main.scss';
 class App extends Component {
   static propTypes = {
     children: PropTypes.node,
-  }
+  };
 
   state = {
     isOpen: true,
-    isFinal: false
-  }
+    isFinal: false,
+  };
 
   componentDidMount() {
     this.checkWidth();
@@ -47,7 +47,7 @@ class App extends Component {
       });
       setTimeout(() => {
         this.setState({
-          isFinal: true
+          isFinal: true,
         });
       }, 300);
     } else {
@@ -56,14 +56,14 @@ class App extends Component {
       });
       setTimeout(() => {
         this.setState({
-          isOpen: true
+          isOpen: true,
         });
       }, 5);
     }
-  }
+  };
 
   addBxClasses = () => {
-    const overlayImages = [... document.querySelectorAll('p em > img')];
+    const overlayImages = [...document.querySelectorAll('p em > img')];
     const ibmEye = require('../assets/images/ibm-eye.png'); // eslint-disable-line
     overlayImages.forEach(image => {
       if (!image.parentElement.classList.contains('image-overlay')) {
@@ -79,9 +79,9 @@ class App extends Component {
         image.parentElement.appendChild(overlay);
       }
     });
-  }
+  };
 
-  handleClose = (evt) => {
+  handleClose = evt => {
     let isTarget = false;
     if (document.querySelector('.side-nav')) {
       isTarget = document.querySelector('.side-nav').contains(evt.target);
@@ -89,10 +89,10 @@ class App extends Component {
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
     if (!isTarget && isSmallerScreen) {
       this.setState({
-        isOpen: false
+        isOpen: false,
       });
     }
-  }
+  };
 
   checkWidth = () => {
     const width = window.innerWidth;
@@ -103,20 +103,20 @@ class App extends Component {
     }
     const debouncedResize = debounce(this.handleResize, 1000);
     window.addEventListener('resize', debouncedResize);
-    document.addEventListener('click', (evt) => {
+    document.addEventListener('click', evt => {
       this.handleClose(evt);
     });
-    document.addEventListener('touchstart', (evt) => {
+    document.addEventListener('touchstart', evt => {
       this.handleClose(evt);
     });
-    document.addEventListener('keydown', (evt) => {
+    document.addEventListener('keydown', evt => {
       if (evt.which === 27 && this.state.isOpen) {
         this.setState({
-          isOpen: false
+          isOpen: false,
         });
       }
     });
-  }
+  };
 
   handleResize = () => {
     if (window.innerWidth < 1024) {
@@ -125,32 +125,21 @@ class App extends Component {
       });
     } else {
       this.setState({
-        isOpen: true
+        isOpen: true,
       });
     }
-  }
+  };
 
   render() {
     const classNames = classnames({
-      'container': true, // eslint-disable-line
+      container: true, // eslint-disable-line
       'container--expanded': !this.state.isOpen,
     });
 
     const currentLocation = window.location.pathname.split('/')[3];
-    const sideNavContent = currentLocation === 'live' ?
-    (
-      ''
-    ) :
-    (
-      <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />
-    );
-    const toggleBtnContent = currentLocation === 'live' ?
-    (
-      ''
-    ) :
-    (
-      <SideNavToggle onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
-    );
+    const sideNavContent = currentLocation === 'live' ? '' : <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />;
+    const toggleBtnContent =
+      currentLocation === 'live' ? '' : <SideNavToggle onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />;
 
     return (
       <div className="wrapper" onLoad={this.initCustomComponents}>

@@ -9,7 +9,7 @@
       "Secondary button"
     ],
     "button--tertiary": [
-      "Tertiary Buttons"
+      "Tertiary button"
     ],
     "button--ghost": [
       "Ghost button"
@@ -18,19 +18,19 @@
       "Danger button"
     ],
     "button--primary--small": [
-      "Primary Buttons (Small)"
+      "Small primary button"
     ],
     "button--secondary--small": [
-      "Secondary Buttons (Small)"
+      "Small secondary button"
     ],
     "button--tertiary--small": [
-      "Tertiary Buttons (Small)"
+      "Small tertiary button"
     ],
     "button--ghost--small": [
-      "Ghost Buttons (Small)"
+      "Small ghost button"
     ],
     "button--danger--small": [
-      "Danger Buttons (Small)"
+      "Small danger button"
     ]
   },
   "codepen": {
@@ -40,11 +40,29 @@
     "button--secondary": [
       "WdwJKG"
     ],
+    "button--tertiary": [
+      "WJqbvX"
+    ],
     "button--ghost": [
       "ppyVOw"
     ],
     "button--danger": [
       "EoKLeR"
+    ],
+    "button--primary--small": [
+      "zjVxoX"
+    ],
+    "button--secondary--small": [
+      "MGMYoZ"
+    ],
+    "button--tertiary--small": [
+      "JvQoyo"
+    ],
+    "button--ghost--small": [
+      "vjqEey"
+    ],
+    "button--danger--small": [
+      "xjobPx"
     ]
   },
   "__content": "\n",

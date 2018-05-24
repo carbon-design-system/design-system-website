@@ -14,9 +14,13 @@
     position: relative;
     padding: 2rem 2rem 2.5rem;
     margin: 1.5rem 0 0;
-    background-color: $color__gray-3;
-    color: $color__blue-90;
-    border: 1px solid $color__gray-1;
+    background-color: $ui-02;
+    color: $text-01;
+    border: 1px solid $ui-03;
+
+    &--light {
+      background-color: $ui-01;
+    }
 
     &--rendered {
       display: flex;
@@ -31,9 +35,69 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    color: $color__navy-gray-6;
+    color: $text-02;
     font-size: 0.75rem;
     padding: 0.5rem 1rem;
     z-index: 9999;
+  }
+}
+
+.component-toolbar {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-left: 1px solid $ui-03;
+  border-right: 1px solid $ui-03;
+}
+
+.component-toolbar__current {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid $ui-03;
+
+  p {
+    @include typescale('zeta');
+    color: $text-02;
+    font-weight: 600;
+    padding: 0 1rem;
+  }
+}
+
+.component-toolbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 2;
+
+  a {
+    @include typescale('zeta');
+    padding-left: 1rem;
+  }
+}
+
+.component-toolbar__switcher {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid $ui-03;
+  height: 100%;
+  padding-left: 1rem;
+
+  .bx--form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .bx--radio-button__label {
+    color: $text-02;
+  }
+
+  .bx--radio-button-group {
+    margin-top: 0;
+  }
+
+  .radioButtonWrapper:last-child {
+    padding-left: 1rem;
+    border-left: 1px solid $ui-03;
   }
 }
