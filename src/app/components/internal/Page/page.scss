@@ -28,12 +28,7 @@ td {
   }
 
   &:not(.code-page) a:not(.bx--tile):not(.image-overlay__overlay) {
-    color: $brand-01;
     transition: 200ms ease;
-
-    &:hover {
-      color: #648fff;
-    }
 
     &.bx--btn--secondary:hover {
       color: white;
@@ -80,7 +75,7 @@ td {
   }
 
   & > *:not(.component-example):not(.component-variation),
-  & >  {
+  & > {
     .page__divider-heading {
       @include typescale('zeta');
       font-weight: 600;
@@ -151,7 +146,7 @@ td {
         display: block;
         background-color: $brand-01;
         position: absolute;
-        top: -.5rem;
+        top: -0.5rem;
         left: 0;
       }
 

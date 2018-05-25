@@ -21,10 +21,10 @@ $font-path: '/assets/fonts';
 @import 'global/typography';
 @import 'global/vars';
 @import 'global/mixins';
+@import 'global/colors';
 @import 'global/layout';
 @import 'global/browser-fixes';
 @import 'global/404';
-@import 'global/colors';
 
 //----------------------------------------------------------------
 // Internal components
