@@ -3,13 +3,11 @@ desc: <span>Code snippets</span> are small blocks of reusable code that can be i
 variations:
   code-snippet:
   - Code Snippet
-  code-snippet--multi:
+  code-snippet--terminal:
   - Terminal
-  code-snippet--inline:
-  code-snippet--inline-light:
 codepen:
   code-snippet:
   - YYqeGX
-  code-snippet--multi:
+  code-snippet--terminal:
   - mprzKy
 ---
