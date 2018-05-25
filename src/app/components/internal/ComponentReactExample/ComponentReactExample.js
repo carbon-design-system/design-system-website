@@ -83,7 +83,7 @@ class ComponentReactExample extends Component {
     return (
       <div>
         <div className="svg--sprite" aria-hidden="true" />
-        <div className="component-example__live">
+        <div className="component-example__live component-example__live--light">
           <div className={classNames}>
             <div ref={comp => (this.comp = comp)} id="comp" />
           </div>

@@ -93,7 +93,10 @@ class ComponentExample extends Component {
       component === 'date-picker' ||
       component === 'dropdown' ||
       component === 'form' ||
-      component === 'number-input'
+      component === 'number-input' ||
+      component === 'select' ||
+      component === 'search' ||
+      component === 'list-box'
     ) {
       hasLightVersion = true;
     }
