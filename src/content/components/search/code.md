@@ -3,10 +3,8 @@ desc: <span>Search</span> enables users to specify a word or a phrase to find pa
 variations:
   search--small:
   - Small search
-  search--small-light:
   search--large:
-  - Search with options
-  search--large-light:
+  - Large search
 codepen:
   search--small:
   - rYGVmG
