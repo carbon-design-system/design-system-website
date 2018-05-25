@@ -9,7 +9,7 @@
       "Number Input"
     ],
     "number-input--light": [
-      "Light"
+      "Number Input (Light)"
     ]
   }
 }

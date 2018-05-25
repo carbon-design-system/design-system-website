@@ -12,7 +12,7 @@
       "Inline"
     ],
     "code-snippet--inline-light": [
-      "Inline Light"
+      "Inline (Light)"
     ]
   },
   "codepen": {

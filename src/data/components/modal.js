@@ -9,7 +9,7 @@
       "Transactional Modal"
     ],
     "modal--danger": [
-      "Danger"
+      "Danger Modal"
     ]
   },
   "codepen": {

@@ -9,7 +9,7 @@
       "Form"
     ],
     "form--light": [
-      "Light"
+      "Form (Light)"
     ]
   }
 }

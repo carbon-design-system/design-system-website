@@ -6,13 +6,13 @@
       "Small search"
     ],
     "search--small-light": [
-      "Small Light"
+      "Small search (Light)"
     ],
     "search--large": [
       "Search with options"
     ],
     "search--large-light": [
-      "Normal Light"
+      "Normal search (Light)"
     ]
   },
   "codepen": {

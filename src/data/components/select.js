@@ -9,13 +9,13 @@
       "Inline Select"
     ],
     "select--invalid": [
-      "Invalid"
+      "Select (Invalid)"
     ],
     "select--light": [
-      "Light"
+      "Select (Light)"
     ],
     "select--light-invalid": [
-      "Light invalid"
+      "Select (Light/Invalid)"
     ]
   },
   "codepen": {
