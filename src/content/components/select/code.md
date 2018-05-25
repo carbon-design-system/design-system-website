@@ -5,9 +5,8 @@ variations:
   - Select
   select--inline:
   - Inline Select
-  select--invalid:
   select--light:
-  select--light-invalid:
+  - Light Select
 codepen:
   select:
   - QOqbPg

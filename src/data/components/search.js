@@ -5,14 +5,8 @@
     "search--small": [
       "Small search"
     ],
-    "search--small-light": [
-      "Small Light"
-    ],
     "search--large": [
-      "Search with options"
-    ],
-    "search--large-light": [
-      "Normal Light"
+      "Large search"
     ]
   },
   "codepen": {

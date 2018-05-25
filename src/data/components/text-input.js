@@ -6,7 +6,7 @@
       "Text Input"
     ],
     "text-input--light": [
-      "Light"
+      "Text Input (Light)"
     ],
     "text-area": [
       "Text Area"
