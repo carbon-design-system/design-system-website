@@ -5,9 +5,13 @@ variations:
   - Passive Modal
   modal:
   - Transactional Modal
+  modal--danger:
+  - Danger Modal
 codepen:
   modal--nofooter:
   - KyXpKV
   modal:
   - dZVoPj
+  modal--danger:
+  - erwbeb
 ---

@@ -3,11 +3,13 @@ desc: <span>Select</span> is a type of input that is used in forms, where a user
 variations:
   select:
   - Select
-  inline-select:
+  select--inline:
   - Inline Select
+  select--light:
+  - Light Select
 codepen:
   select:
   - QOqbPg
-  inline-select:
+  select--inline:
   - YErXbK
 ---

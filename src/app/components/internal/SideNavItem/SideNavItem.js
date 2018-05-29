@@ -8,21 +8,27 @@ class SideNavItem extends Component {
     children: PropTypes.func,
     isCurrentPath: PropTypes.bool,
     isActiveItem: PropTypes.bool,
-    type: PropTypes.string
+    type: PropTypes.string,
   };
 
   state = {
-    open: this.props.isCurrentPath
+    open: this.props.isCurrentPath,
   };
 
   handleClick = evt => {
-    const targetIsSubItem = evt.target.classList.contains('sub-nav__item') || evt.target.classList.contains('sub-nav__item-link') || evt.target.classList.contains('sub-nav-item__arrow');
+    const targetIsSubItem =
+      evt.target.classList.contains('sub-nav__item') ||
+      evt.target.classList.contains('sub-nav__item-link') ||
+      evt.target.classList.contains('sub-nav-item__arrow');
     const hasSubMenu = !(evt.currentTarget.querySelector('ul') === null);
     const targetIsInnerSubNav = evt.currentTarget.classList.contains('main-nav-item--sub');
     const targetIsInnerSubNavItem = evt.target.classList.contains('sub-nav__item-link--sub');
     const targetIsInnerSubNavItemContainer = evt.target.classList.contains('sub-nav__item--sub');
     const targetIsArrow = evt.target.nodeName === 'path';
-    if ((!targetIsSubItem && hasSubMenu) || (targetIsInnerSubNav && !targetIsInnerSubNavItem && !targetIsInnerSubNavItemContainer)) {
+    if (
+      (!targetIsSubItem && hasSubMenu) ||
+      (targetIsInnerSubNav && !targetIsInnerSubNavItem && !targetIsInnerSubNavItemContainer)
+    ) {
       if (!targetIsArrow) {
         const open = !this.state.open;
         this.setState({ open });
@@ -46,7 +52,8 @@ class SideNavItem extends Component {
   };
 
   handleKeyDown = evt => {
-    if (evt.which === 13 && evt.target === evt.currentTarget) { // Does not handle bubbled up events
+    if (evt.which === 13 && evt.target === evt.currentTarget) {
+      // Does not handle bubbled up events
       const open = !this.state.open;
       this.setState({ open });
       const subMenu = this.elem.querySelector('ul');
@@ -89,7 +96,14 @@ class SideNavItem extends Component {
     const tabIndex = children.length && !isSub ? 0 : undefined;
 
     return (
-      <li role="menuitem" tabIndex={tabIndex} className={classNames} onClick={this.handleClick} onKeyDown={this.handleKeyDown} ref={this.handleRef}>
+      <li
+        role="menuitem"
+        tabIndex={tabIndex}
+        className={classNames}
+        onClick={this.handleClick}
+        onKeyDown={this.handleKeyDown}
+        ref={this.handleRef}
+      >
         {children({ open, onKeyDown: this.handleKeyDown })}
       </li>
     );

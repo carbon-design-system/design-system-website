@@ -1,21 +1,45 @@
 ---
 desc: <span>Buttons</span> express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
 variations:
-  primary-button:
+  button--primary:
   - Primary button
-  secondary-button:
+  button--secondary:
   - Secondary button
-  ghost-button:
+  button--tertiary:
+  - Tertiary button
+  button--ghost:
   - Ghost button
-  danger-button:
+  button--danger:
   - Danger button
+  button--primary--small:
+  - Small primary button
+  button--secondary--small:
+  - Small secondary button
+  button--tertiary--small:
+  - Small tertiary button
+  button--ghost--small:
+  - Small ghost button
+  button--danger--small:
+  - Small danger button
 codepen:
-  primary-button:
+  button--primary:
   - QMaZmK
-  secondary-button:
+  button--secondary:
   - WdwJKG
-  ghost-button:
+  button--tertiary:
+  - WJqbvX
+  button--ghost:
   - ppyVOw
-  danger-button:
+  button--danger:
   - EoKLeR
+  button--primary--small:
+  - zjVxoX
+  button--secondary--small:
+  - MGMYoZ
+  button--tertiary--small:
+  - JvQoyo
+  button--ghost--small:
+  - vjqEey
+  button--danger--small:
+  - xjobPx
 ---

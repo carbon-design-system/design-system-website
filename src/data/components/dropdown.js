@@ -5,8 +5,14 @@
     "dropdown": [
       "Dropdown"
     ],
-    "dropdown--inline": [
-      "Inline Dropdown"
+    "dropdown--light": [
+      "Dropdown (Light)"
+    ],
+    "dropdown--up": [
+      "Dropdown (Up)"
+    ],
+    "dropdown--up-light": [
+      "Dropdown (Up & Light)"
     ],
     "MultiSelect": [
       "Multi-select Dropdown"
@@ -19,5 +25,6 @@
     ]
   },
   "codepen": "eeGYvQ",
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }

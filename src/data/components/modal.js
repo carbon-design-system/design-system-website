@@ -7,6 +7,9 @@
     ],
     "modal": [
       "Transactional Modal"
+    ],
+    "modal--danger": [
+      "Danger Modal"
     ]
   },
   "codepen": {
@@ -15,7 +18,11 @@
     ],
     "modal": [
       "dZVoPj"
+    ],
+    "modal--danger": [
+      "erwbeb"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }
