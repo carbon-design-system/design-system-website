@@ -13,14 +13,14 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | Label: error             | $support-01 | #e0182d |
 | Text: user input         | $text-01   | #152934   |
 | Text: placeholder        | $text-02   | #5a6872   |
-| Text: selected date      | $inverse-01    | #ffffff   |
-| Text: highlighted range  | $text-01   | #5596e6   |
+| Text: selected date      | $text-01    | #152934   |
+| Text: highlighted range  | $text-01   | #152934   |
 | Text: error message      | $support-01        | #e0182d   |
 | Background: calendar widget | $ui-01     | #ffffff   |
-| Background: selected date | $brand-01  | #3d70b2   |
-| Background: highlighted range | $brand-02  | #5596e6   |
+| Background: highlighted range | $ui-02  | #f4f7fb   |
 | Icon                     | $brand-01  | #3d70b2   |
-| Border: current date     | $brand-01  | #3d70b2   |
+| Dot: current date     | $brand-01  | #3d70b2   |
+| Border: selected date | $brand-01  | #3d70b2   |
 | Border bottom: enabled | $ui-05 | #5a6872 |
 | Border bottom: focused | $brand-01 | #3d70b2 |
 | Border bottom: error | $support-01 | #e0182d |
