@@ -6,22 +6,40 @@ variations:
   button--secondary:
   - Secondary button
   button--tertiary:
+  - Tertiary button
   button--ghost:
   - Ghost button
   button--danger:
   - Danger button
   button--primary--small:
+  - Small primary button
   button--secondary--small:
+  - Small secondary button
   button--tertiary--small:
+  - Small tertiary button
   button--ghost--small:
+  - Small ghost button
   button--danger--small:
+  - Small danger button
 codepen:
   button--primary:
   - QMaZmK
   button--secondary:
   - WdwJKG
+  button--tertiary:
+  - WJqbvX
   button--ghost:
   - ppyVOw
   button--danger:
   - EoKLeR
+  button--primary--small:
+  - zjVxoX
+  button--secondary--small:
+  - MGMYoZ
+  button--tertiary--small:
+  - JvQoyo
+  button--ghost--small:
+  - vjqEey
+  button--danger--small:
+  - xjobPx
 ---

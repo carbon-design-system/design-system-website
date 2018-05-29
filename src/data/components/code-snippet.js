@@ -5,7 +5,7 @@
     "code-snippet": [
       "Code Snippet"
     ],
-    "code-snippet--multi": [
+    "code-snippet--terminal": [
       "Terminal"
     ],
     "code-snippet--inline": [
@@ -19,7 +19,7 @@
     "code-snippet": [
       "YYqeGX"
     ],
-    "code-snippet--multi": [
+    "code-snippet--terminal": [
       "mprzKy"
     ]
   },

@@ -59,12 +59,11 @@ body {
 }
 
 a {
-  @include font-smoothing;
-  color: $color__blue-51;
+  color: $brand-01;
   font-weight: 600;
 
   &:hover {
-    color: $color__blue-40;
+    color: $hover-primary;
   }
 }
 
@@ -79,5 +78,5 @@ svg {
 body hr.divider {
   display: block;
   margin: 3rem 0;
-  max-width:38rem;
+  max-width: 38rem;
 }
