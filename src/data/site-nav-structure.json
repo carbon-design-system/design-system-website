@@ -4,7 +4,9 @@
     "subnav": {
       "designers": "Designers",
       "developers": "Developers",
-      "FAQ": "FAQ"
+      "FAQ": "FAQ",
+      "add-ons": "Add-ons",
+      "contributing": "Contributing"
     }
   },
   "whats-new": {
@@ -14,8 +16,7 @@
     "title": "Guidelines",
     "subnav": {
       "accessibility": "Accessibility",
-      "content": "Content",
-      "contributing": "Contributing"
+      "content": "Content"
     }
   },
   "your-product-on-ibm-cloud": {
@@ -49,18 +50,6 @@
       "code-snippet": "Code Snippet",
       "content-switcher": "Content Switcher",
       "data-table": "Data Table",
-      "data-vis": {
-        "title": "Data Vis",
-        "subnav": {
-          "overview": "Overview",
-          "bar-graph": "Bar Graph",
-          "gauge": "Gauge",
-          "line-graph": "Line Graph",
-          "pie-chart": "Pie Chart",
-          "scatter-plot": "Scatter Plot",
-          "tooltip": "Tooltip"
-        }
-      },
       "date-picker": "Date Picker",
       "dropdown": "Dropdown",
       "file-uploader": "File Uploader",
@@ -87,7 +76,18 @@
       "tooltip": "Tooltip"
     }
   },
-
+  "data-vis": {
+    "title": "Data Visualization",
+    "subnav": {
+      "overview": "Overview",
+      "bar-graph": "Bar Graph",
+      "gauge": "Gauge",
+      "line-graph": "Line Graph",
+      "pie-chart": "Pie Chart",
+      "scatter-plot": "Scatter Plot",
+      "tooltip": "Tooltip"
+    }
+  },
   "utilities": {
     "title": "Utilities",
     "subnav": {
@@ -96,19 +96,6 @@
       "filtering": "Filtering",
       "loading": "Loading",
       "overflow-content": "Overflow Content"
-    }
-  },
-
-  "add-ons": {
-    "title": "Add-Ons",
-    "subnav": {
-      "overview": "Overview",
-      "card": "Card",
-      "cloud-header": "Cloud Header",
-      "detail-page-header": "Detail Page Header",
-      "interior-left-nav": "Interior Left Nav",
-      "module": "Module",
-      "order-summary": "Order Summary"
     }
   },
   "component-status": {
