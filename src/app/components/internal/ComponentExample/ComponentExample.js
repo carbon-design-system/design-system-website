@@ -31,7 +31,8 @@ class ComponentExample extends Component {
       currentComponent = currentVariation;
     }
     if (value === 'field-02') {
-      if (currentVariation.includes('--')) {
+      if (currentVariation.includes('--') || currentVariation === 'code-snippet--inline') {
+        console.log(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
       } else {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}--light.html`);
@@ -96,7 +97,8 @@ class ComponentExample extends Component {
       component === 'number-input' ||
       component === 'select' ||
       component === 'search' ||
-      component === 'list-box'
+      component === 'list-box' ||
+      (component === 'code-snippet' && variation === 'code-snippet--inline')
     ) {
       hasLightVersion = true;
     }
