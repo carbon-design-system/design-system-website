@@ -17,11 +17,9 @@ Text inputs come in two different colors. The default input color is `$field-01`
 | Text: help | $text-02 | #5a6872 |
 | Text: error message   | $support-01        | #e0182d   |
 
----
-***
-> ![Default and user input states for Text Input in both field colors](images/text-input-style-1.png)
+![Default and user input states for Text Input in both field colors](images/text-input-style-1.png)
 
-_Examples of default and user-input states for Text Input on both $field-01 (left) and $field-02 (right)_
+_Examples of default and user-input states for Text Input in both $field-02 (left) and $field-01 (right)_
 
 ## Typography
 

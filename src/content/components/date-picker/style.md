@@ -26,7 +26,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | Border bottom: error | $support-01 | #e0182d |
 
 ![Example of a Date Picker](images/date-picker-style-1.png)
-_Structure for Date Picker | px / rem_
+_Date Picker example using both $field-02 (top) and $field-01 (bottom)_
 
 
 
@@ -130,4 +130,4 @@ _Structure and spacing for a Time Picker | px / rem_
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state a `.not-allowed` cursor hover and appears at 50% opacity.
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.

@@ -10,9 +10,8 @@ Small selects are commonly used in [Data Tables](/components/data-table). When u
 ---
 ***
 > 
-![example of Small select in Data Table](images/select-usage-3.png)
-
-_Example of Small select in Data Table_
+![example of Small Select in Data Table](images/select-usage-3.png)
+_Example of Small Select in Data Table_
 
 ### Inline select
 Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page, since stylistically they are borderless.
@@ -20,9 +19,8 @@ Inline select is useful when you have multiple `select` fields within a form. In
 ---
 ***
 > 
-![example of inline select](images/select-usage-4.png)
-
-_Example of Inline select_
+![example of Snline Select](images/select-usage-4.png)
+_Example of Inline Select_
 
 <br>
 

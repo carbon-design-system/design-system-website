@@ -9,9 +9,13 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Text: user input  | $text-01      | #152935  |
 | Text: placeholder | $text-03      | #cdd1d4  |
 | Icon              | $ui-05        | #5a6872  |
+| Border: focus    | $brand-01     | #3d70b2 |
+
+
+![Example of Search using $field-01 and $field-02](images/search-style-4.png)
+_Example of Search using $field-02 (top) and $field-01 (bottom)_
 
 ![Normal, hover, and input search states](images/search-style-1.png)
-
 _Examples of normal, hover, and input Search states_
 
 ## Typography

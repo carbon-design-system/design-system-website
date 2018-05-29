@@ -7,7 +7,6 @@
 **Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table).
 
 ![Search on a table](images/search-usage-1.png)
-
 _Small Search to filter table data_
 
 ### Search fields
@@ -19,6 +18,7 @@ Set users' context for the search with helpful placeholder text within the searc
 Filtering can be used as a way to further narrow down content based on the user's search query.
 
 ![Filtering on search](images/search-usage-3.png)
+_Example of filter with Search_
 
 ### Search results
 

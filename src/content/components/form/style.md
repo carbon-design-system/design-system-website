@@ -2,6 +2,9 @@
 
 Form inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds. For full color specs, refer to each specific component.
 
+![Example of form fields in the two colors](images/form-style-3.png)
+_Example of light fields with $field-02 (left) and the default version with $field-01 (right)_
+
 ## Typography
 
 Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
@@ -48,4 +51,4 @@ _Structure and spacing measurements for a single column Form | px / rem_
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
