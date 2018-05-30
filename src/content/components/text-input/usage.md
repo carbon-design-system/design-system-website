@@ -25,9 +25,17 @@ Placeholder text provides hints or examples of what to enter. Placeholder text  
 ---
 ***
 > 
-![Placeholder text](images/text-input-usage-1.png)
+![Placeholder text example](images/text-input-usage-1.png)
+_Placeholder text example_
 
-_Placeholder text_
+### Help text
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
+
+---
+***
+> 
+![Help text example](images/text-input-usage-3.png)
+_Help text example_
 
 ### Help text
 Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
@@ -43,6 +51,5 @@ Real time validation helps to streamline the process and keep data clean when th
 ---
 ***
 > 
-![validation on text field](images/text-input-usage-2.png)
-
-_Text Input validation_
+![Validation on text field example](images/text-input-usage-2.png)
+_Error example_

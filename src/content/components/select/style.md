@@ -16,12 +16,8 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Text: placeholder | $text-03      | #cdd1d4   |
 | Text: error message      | $support-01        | #e0182d   |
 
----
-***
-> 
 ![Default and new selection state examples for Select](images/select-style-1.png)
-
-_Examples of default and new selection Select states_
+_Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
 
 ## Typography
 
@@ -50,6 +46,15 @@ Select text should be set in sentence case, with only the first word in a phrase
 ![Structure and spacing measurements for Select](images/select-style-2.png)
 _Structure and spacing measurements for Select | px / rem_
 
+### States
+
+**Open:** Select menu styles are determined by browser. Each browser has a unique style. Shown in the example images is the Chrome select style.
+
+**Help text:** Help text appears below the label when the input is active. Help text remains visible while the input is focused and disappears after focus away.
+
+**Error:** Error messages appear below the input field and are always present while invalid.
+
+**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
 ---
 ***

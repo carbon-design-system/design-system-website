@@ -16,6 +16,9 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Border bottom: focused | $brand-01 | #3d70b2 |
 | Border bottom: error | $support-01 | #e0182d |
 
+![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
+_Number Input example in $field-02 (left) and $field-01 (right)_
+
 ## Typography
 
 Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
@@ -53,4 +56,5 @@ _Structure and spacing measurements for a Number Input | px / rem_
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
+
