@@ -13,6 +13,7 @@ _Small Search to filter table data_
 
 Set users' context for the search with helpful placeholder text within the search field (Search Docs), that pertains to the page or section the search box is in. Search in the global header should just say Search.
 
+<<<<<<< HEAD
 ### Filtering
 
 Filtering can be used as a way to further narrow down content based on the user's search query.
@@ -20,6 +21,8 @@ Filtering can be used as a way to further narrow down content based on the user'
 ![Filtering on search](images/search-usage-3.png)
 _Example of filter with Search_
 
+=======
+>>>>>>> f20969d9... updated all style and usage images
 ### Search results
 
 * Clearly show which results are being displayed with labels or headers (i.e. Results for X).
