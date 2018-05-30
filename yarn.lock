@@ -1731,8 +1731,9 @@ carbon-addons-bluemix@^0.3.0:
   dependencies:
     lodash.debounce "^4.0.8"
 
-"carbon-components-react@file:../carbon-components-react":
-  version "5.5.1"
+carbon-components-react@5.52.0:
+  version "5.52.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-5.52.0.tgz#1301cbb3233ee6eb4e5d35a839e89416c6285248"
   dependencies:
     classnames "2.2.5"
     downshift "^1.31.14"
@@ -1741,7 +1742,7 @@ carbon-addons-bluemix@^0.3.0:
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
     lodash.omit "^4.5.0"
-    warning "3.0.0"
+    warning "^3.0.0"
     window-or-global "^1.0.1"
 
 "carbon-components@file:../carbon-components":
@@ -9266,7 +9267,7 @@ ware@^1.2.0:
   dependencies:
     wrap-fn "^0.1.0"
 
-warning@3.0.0, warning@^3.0.0:
+warning@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
   dependencies:
