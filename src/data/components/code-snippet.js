@@ -7,12 +7,6 @@
     ],
     "code-snippet--terminal": [
       "Terminal"
-    ],
-    "code-snippet--inline": [
-      "Inline"
-    ],
-    "code-snippet--inline-light": [
-      "Inline (Light)"
     ]
   },
   "codepen": {
