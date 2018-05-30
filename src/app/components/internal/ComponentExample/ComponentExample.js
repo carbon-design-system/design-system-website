@@ -130,6 +130,7 @@ class ComponentExample extends Component {
       component === 'select' ||
       component === 'search' ||
       component === 'list-box' ||
+      component === 'slider' ||
       (component === 'code-snippet' && variation === 'code-snippet--inline')
     ) {
       hasLightVersion = true;
