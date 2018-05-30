@@ -1725,12 +1725,6 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-addons-bluemix@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/carbon-addons-bluemix/-/carbon-addons-bluemix-0.3.0.tgz#64677f53a694b0a380c06fd4eab88005140ab759"
-  dependencies:
-    lodash.debounce "^4.0.8"
-
 "carbon-components-react@file:../carbon-components-react":
   version "5.5.1"
   dependencies:
