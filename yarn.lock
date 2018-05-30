@@ -1736,7 +1736,7 @@ carbon-addons-bluemix@^0.3.0:
   dependencies:
     classnames "2.2.5"
     downshift "^1.31.14"
-    flatpickr "4.4.1"
+    flatpickr "4.5.0"
     invariant "^2.2.3"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
@@ -3693,9 +3693,9 @@ flatpickr@2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-2.6.3.tgz#457357532deb135f3da64b425bf4435737961564"
 
-flatpickr@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.4.1.tgz#894255e33c2bed93f48171f8eb5980a79b76ab1d"
+flatpickr@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.0.tgz#f72c7164a1c24e3ad419e3b2209d1a2d3604724a"
 
 flatten@^1.0.2:
   version "1.0.2"
