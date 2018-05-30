@@ -122,12 +122,17 @@
   p code,
   li code,
   td code {
-    font-size: 0.875rem;
-    padding: 0.25rem;
+    @include reset;
+    font-family: $font-family-mono;
+    position: relative;
+    display: inline;
+    padding: rem(1px) $spacing-xs;
+    background: transparent;
+    font-size: inherit;
+    border: 1px solid transparent;
+    border-radius: 4px;
     background-color: $field-01;
-    color: $text-02;
-    font-family: 'ibm-plex-mono', Courier, monospace;
-    -webkit-font-smoothing: auto;
+    font-size: 85%;
   }
 
   td code {
@@ -192,13 +197,13 @@
           padding: 1rem 3rem 1rem 0;
           line-height: 1.25;
 
-          img[src$="checkmark--glyph.svg"] {
-              width: 16px;
-              height: 16px;
-              margin: 0;
-            }
+          img[src$='checkmark--glyph.svg'] {
+            width: 16px;
+            height: 16px;
+            margin: 0;
+          }
 
-              strong {
+          strong {
             letter-spacing: 0;
           }
 
@@ -228,14 +233,7 @@
     }
   }
 
-  main[data-page='style-overview-typography']
-    &
-    hr
-    + hr
-    + table
-    tbody
-    tr
-    td:nth-child(2) {
+  main[data-page='style-overview-typography'] & hr + hr + table tbody tr td:nth-child(2) {
     @media all and (max-width: 600px) {
       text-align: left;
       font-size: 3rem;
@@ -533,7 +531,7 @@
     line-height: 1;
   }
   tr td:last-child {
-    padding: 1rem 3rem .95rem 0;
+    padding: 1rem 3rem 0.95rem 0;
   }
   tr td:last-child img {
     margin: 0;
@@ -572,7 +570,7 @@
     line-height: 1;
   }
   tr td:last-child {
-    padding: 1rem 3rem .95rem 0;
+    padding: 1rem 3rem 0.95rem 0;
   }
   tr td:last-child img {
     margin: 0;

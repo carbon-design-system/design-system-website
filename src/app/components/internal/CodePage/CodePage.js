@@ -196,12 +196,8 @@ class CodePage extends Component {
         this.renderVariation(component, variation, componentInfo.variations, componentInfo.variations[variation], codepenSlug)
       );
     } else {
-      let htmlFile;
-      if (component === 'cloud-header') {
-        htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
-      } else {
-        htmlFile = require(`carbon-components/html/${component}/${component}.html`); // eslint-disable-line
-      }
+      let htmlFile = require(`carbon-components/html/${component}/${component}.html`);
+
       componentContent = (
         <ComponentExample
           hideViewFullRender={this.props.hideViewFullRender}
