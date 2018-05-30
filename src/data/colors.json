@@ -51,9 +51,17 @@
       "hex": "#ffffff"
     },
     {
-      "white": true,
+      "name": "inverse-02",
+      "hex": "#272d33"
+    },
+    {
       "name": "field-01",
       "hex": "#f4f7fb"
+    },
+    {
+      "white": true,
+      "name": "field-02",
+      "hex": "#ffffff"
     }
   ],
   "support-colors": [
