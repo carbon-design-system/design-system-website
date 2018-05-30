@@ -3,11 +3,15 @@ desc: <span>Tooltips</span> provide additional information upon hover or focus. 
 variations:
   tooltip:
   - Tooltip
-  tooltip--simple:
-  - Simple tooltip
+  tooltip--icon:
+  - Icon Tooltip
+  tooltip--definition:
+  - Definition Tooltip
 codepen:
   tooltip:
   - pdeLom
-  tooltip--simple:
+  tooltip--icon:
   - vpGjRw
+  tooltip--definition:
+  - pdeLom
 ---

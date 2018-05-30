@@ -27,6 +27,7 @@ import Video from '../../custom/Video';
 import TypeStylesTable from '../../custom/TypeStylesTable';
 import FeaturedTiles from '../../custom/FeaturedTiles';
 import ArticleTiles from '../../custom/ArticleTiles';
+import UIColorContrast from '../../custom/UIColorContrast';
 
 class Page extends Component {
   static propTypes = {
@@ -71,9 +72,7 @@ class Page extends Component {
 
   addPageClass = () => {
     const path = window.location.pathname.split('/');
-    const dataAttr = path.length > 3
-      ? `${path[1]}-${path[3]}-${path[2]}`
-      : `${path[1]}-${path[2]}`;
+    const dataAttr = path.length > 3 ? `${path[1]}-${path[3]}-${path[2]}` : `${path[1]}-${path[2]}`;
     return dataAttr;
   };
 
@@ -104,11 +103,7 @@ class Page extends Component {
         colorBlock.style.backgroundColor = color.textContent;
       }
 
-      if (
-        color.textContent === '#ffffff' ||
-        color.textContent === '#f4f7fb' ||
-        color.textContent === '#dfe3e6'
-      ) {
+      if (color.textContent === '#ffffff' || color.textContent === '#f4f7fb' || color.textContent === '#dfe3e6') {
         colorBlock.style.border = '1px solid #cdd1d4';
       }
 
@@ -141,11 +136,10 @@ class Page extends Component {
       TypeStylesTable,
       FeaturedTiles,
       ArticleTiles,
+      UIColorContrast,
     };
 
-    const insertComponent = [
-      ...document.querySelectorAll('[data-insert-component]'),
-    ];
+    const insertComponent = [...document.querySelectorAll('[data-insert-component]')];
     insertComponent.forEach(component => {
       const comp = component.dataset.insertComponent;
       const NewComponent = customComponents[comp];
@@ -159,23 +153,11 @@ class Page extends Component {
         const compChildren = component.innerHTML;
         component.classList.add('custom-component-parent');
         if (!component.querySelector('.image-grid')) {
-          ReactDOM.render(
-            <NewComponent darkBg={needsDarkBg}>
-              {compChildren}
-            </NewComponent>,
-            component
-          );
+          ReactDOM.render(<NewComponent darkBg={needsDarkBg}>{compChildren}</NewComponent>, component);
         }
       } else if (comp === 'MotionExample') {
         const props = component.dataset.props.split(',');
-        ReactDOM.render(
-          <NewComponent
-            motionType={props[0]}
-            correctText={props[1]}
-            incorrectText={props[2]}
-          />,
-          component
-        );
+        ReactDOM.render(<NewComponent motionType={props[0]} correctText={props[1]} incorrectText={props[2]} />, component);
       } else if (comp === 'Video') {
         const videoProp = component.dataset.props;
         ReactDOM.render(<NewComponent videoLink={videoProp} />, component);
@@ -192,9 +174,7 @@ class Page extends Component {
       linkButtons.forEach(sibling => {
         if (sibling.nextElementSibling.tagName === 'P') {
           if (sibling.nextElementSibling.querySelector('a')) {
-            sibling.nextElementSibling
-              .querySelector('a')
-              .classList.add('bx--btn', 'bx--btn--secondary');
+            sibling.nextElementSibling.querySelector('a').classList.add('bx--btn', 'bx--btn--secondary');
           }
         }
       });
@@ -204,17 +184,9 @@ class Page extends Component {
   render() {
     const { content, label, title } = this.props;
     const contentType = typeof content;
-    const pageContent = contentType === 'object' || title === ''
-      ? content
-      : <MarkdownPage content={content} />;
+    const pageContent = contentType === 'object' || title === '' ? content : <MarkdownPage content={content} />;
     return (
-      <main
-        role="main"
-        id="maincontent"
-        tabIndex="-1"
-        data-page={this.addPageClass()}
-        onKeyDown={this.handleKeyDown}
-      >
+      <main role="main" id="maincontent" tabIndex="-1" data-page={this.addPageClass()} onKeyDown={this.handleKeyDown}>
         <PageHeader label={label} title={title} />
         {pageContent}
       </main>

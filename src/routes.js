@@ -62,6 +62,14 @@ const routes = {
           },
         },
         {
+          path: '/getting-started/add-ons',
+          getComponent(location, cb) {
+            import('./app/pages/add-ons/OverviewPage')
+              .then(loadRoute(cb))
+              .catch(errorLoading);
+          },
+        },
+        {
           path: '/getting-started/:name',
           getComponent(location, cb) {
             import('./app/pages/getting-started/GettingStarted')
@@ -272,37 +280,6 @@ const routes = {
           path: '/components/:name/:page',
           getComponent(location, cb) {
             import('./app/pages/components/ComponentPage')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-      ],
-    },
-    {
-      path: 'add-ons',
-      indexRoute: {
-        onEnter: (nextState, replace) => replace('/add-ons/overview'),
-      },
-      childRoutes: [
-        {
-          path: '/add-ons/:name',
-          indexRoute: {
-            onEnter: (nextState, replace) => {
-              if (!(nextState.params.name === 'overview')) {
-                replace(`/add-ons/${nextState.params.name}/code`);
-              }
-            },
-          },
-          getComponent(location, cb) {
-            import('./app/pages/add-ons/ComponentPage')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-        {
-          path: '/add-ons/:name/:page',
-          getComponent(location, cb) {
-            import('./app/pages/add-ons/ComponentPage')
               .then(loadRoute(cb))
               .catch(errorLoading);
           },

@@ -20,6 +20,39 @@ class ComponentExample extends Component {
     currentHTMLfile: this.props.htmlFile,
   };
 
+  componentDidUpdate = () => {
+    let currentComponent = this.props.component;
+    currentComponent = currentComponent.replace(/-([a-z])/g, g => g[1].toUpperCase());
+    currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
+    if (currentComponent === 'Tabs') {
+      currentComponent = 'Tab';
+    } else if (currentComponent === 'Card') {
+      currentComponent = 'OverflowMenu';
+    } else if (currentComponent === 'CodeSnippet') {
+      currentComponent = 'CopyButton';
+    } else if (currentComponent === 'OrderSummary') {
+      currentComponent = 'Dropdown';
+    }
+    if (window.CDS['carbon-components'][currentComponent]) {
+      if (currentComponent === 'Tab') {
+        window.CDS['carbon-components'].Tab.init();
+        window.CDS['carbon-components'].ContentSwitcher.init();
+      } else if (currentComponent === 'DataTable') {
+        window.CDS['carbon-components'].OverflowMenu.init();
+        window.CDS['carbon-components'].DataTable.init();
+        window.CDS['carbon-components'].Toolbar.init();
+        window.CDS['carbon-components'].DataTableV2.init();
+      } else if (currentComponent === 'DatePicker') {
+        window.CDS['carbon-components'].DatePicker.init();
+      } else if (currentComponent === 'DetailPageHeader') {
+        window.CDS['carbon-components'].OverflowMenu.init();
+        window.CDS['carbon-components'].Tab.init();
+      } else {
+        window.CDS['carbon-components'][currentComponent].init();
+      }
+    }
+  };
+
   onSwitchFieldColors = value => {
     this.setState({
       currentFieldColor: value,
@@ -31,7 +64,7 @@ class ComponentExample extends Component {
       currentComponent = currentVariation;
     }
     if (value === 'field-02') {
-      if (currentVariation.includes('--')) {
+      if (currentVariation.includes('--') || currentVariation === 'code-snippet--inline') {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
       } else {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}--light.html`);
@@ -96,7 +129,9 @@ class ComponentExample extends Component {
       component === 'number-input' ||
       component === 'select' ||
       component === 'search' ||
-      component === 'list-box'
+      component === 'list-box' ||
+      component === 'slider' ||
+      (component === 'code-snippet' && variation === 'code-snippet--inline')
     ) {
       hasLightVersion = true;
     }

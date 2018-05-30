@@ -24,6 +24,10 @@
   }
 }
 
+.hover-card p:last-child {
+  font-size: 12px;
+}
+
 .color__example {
   display: flex;
   align-items: center;
@@ -60,6 +64,42 @@
 
   input {
     display: none;
+  }
+
+  &.hover-primary {
+    background-color: darken(#3d70b2, 10%);
+
+    button {
+      color: white;
+    }
+  }
+
+  &.hover-primary-text {
+    background-color: darken(#3d70b2, 15%);
+
+    button {
+      color: white;
+    }
+  }
+
+  &.hover-danger {
+    background-color: darken($support-01, 10%);
+
+    button {
+      color: white;
+    }
+  }
+
+  &.hover-secondary {
+    background-color: #3d70b2;
+
+    button {
+      color: white;
+    }
+  }
+
+  &.hover-row {
+    background-color: rgba($brand-02, 0.1);
   }
 }
 
