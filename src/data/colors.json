@@ -51,9 +51,39 @@
       "hex": "#ffffff"
     },
     {
-      "white": true,
+      "name": "inverse-02",
+      "hex": "#272d33"
+    },
+    {
       "name": "field-01",
       "hex": "#f4f7fb"
+    },
+    {
+      "white": true,
+      "name": "field-02",
+      "hex": "#ffffff"
+    }
+  ],
+  "hover-colors": [
+    {
+      "name": "hover-primary",
+      "hex": "darken($brand-01, 10%)"
+    },
+    {
+      "name": "hover-primary-text",
+      "hex": "darken($brand-01, 15%)"
+    },
+    {
+      "name": "hover-danger",
+      "hex": "darken($support-01, 10%)"
+    },
+    {
+      "name": "hover-secondary",
+      "hex": "$brand-01"
+    },
+    {
+      "name": "hover-row",
+      "hex": "rgba($brand-02, 0.1)"
     }
   ],
   "support-colors": [

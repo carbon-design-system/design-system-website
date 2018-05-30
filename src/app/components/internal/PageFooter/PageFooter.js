@@ -6,30 +6,45 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 
 class PageFooter extends Component {
   static propTypes = {
-    isExpanded: PropTypes.bool
+    isExpanded: PropTypes.bool,
   };
 
   state = {
-    copied: false
+    copied: false,
   };
 
   getLastUpdate = () => {
-    const lastUpdatedDate = new Date('05/16/2018'); // UPDATE BEFORE CF PUSH
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    const formattedDate = `${months[lastUpdatedDate.getMonth()]} ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString([], {
+    const lastUpdatedDate = new Date('06/01/2018'); // UPDATE BEFORE CF PUSH
+    const months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+    const formattedDate = `${
+      months[lastUpdatedDate.getMonth()]
+    } ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString([], {
       hour: '2-digit',
-      minute: '2-digit'
+      minute: '2-digit',
     })}`;
     return formattedDate;
   };
 
   handleClick = () => {
     this.setState({
-      copied: true
+      copied: true,
     });
     setTimeout(() => {
       this.setState({
-        copied: false
+        copied: false,
       });
     }, 2000);
   };
@@ -79,12 +94,12 @@ class PageFooter extends Component {
     const lastUpdated = this.getLastUpdate();
     const footerClasses = classNames({
       'page-footer': true,
-      'page-footer--expanded': !isExpanded
+      'page-footer--expanded': !isExpanded,
     });
     const footerLinkClasses = classNames({
       'page-footer__link': true,
       'page-footer__link--with-tooltip': true,
-      'show-tooltip': this.state.copied
+      'show-tooltip': this.state.copied,
     });
 
     return (
@@ -110,22 +125,46 @@ class PageFooter extends Component {
         <div className="page-footer__content">
           <ul className="page-footer__social-media">
             <li>
-              <a href="https://dribbble.com/_carbondesign" className="social-media__link" rel="noopener" target="_blank" alt="Dribble account for Carbon">
+              <a
+                href="https://dribbble.com/_carbondesign"
+                className="social-media__link"
+                rel="noopener"
+                target="_blank"
+                alt="Dribble account for Carbon"
+              >
                 {dribbble}
               </a>
             </li>
             <li>
-              <a href="https://medium.com/@_carbondesign" className="social-media__link" rel="noopener" target="_blank" alt="Medium account for Carbon">
+              <a
+                href="https://medium.com/@_carbondesign"
+                className="social-media__link"
+                rel="noopener"
+                target="_blank"
+                alt="Medium account for Carbon"
+              >
                 {medium}
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/_carbondesign" className="social-media__link" rel="noopener" target="_blank" alt="Twitter account for Carbon">
+              <a
+                href="https://twitter.com/_carbondesign"
+                className="social-media__link"
+                rel="noopener"
+                target="_blank"
+                alt="Twitter account for Carbon"
+              >
                 {twitter}
               </a>
             </li>
             <li>
-              <a href="https://github.com/carbon-design-system" className="social-media__link" rel="noopener" target="_blank" alt="GitHub account for Carbon">
+              <a
+                href="https://github.com/carbon-design-system"
+                className="social-media__link"
+                rel="noopener"
+                target="_blank"
+                alt="GitHub account for Carbon"
+              >
                 {github}
               </a>
             </li>
@@ -138,7 +177,13 @@ class PageFooter extends Component {
               </button>
             </CopyToClipboard>
             or open an{' '}
-            <a href="https://github.com/carbon-design-system/carbon-components/issues/new" className="page-footer__link" rel="noopener" target="_blank" alt="Open a GitHub issue">
+            <a
+              href="https://github.com/carbon-design-system/carbon-components/issues/new"
+              className="page-footer__link"
+              rel="noopener"
+              target="_blank"
+              alt="Open a GitHub issue"
+            >
               issue
             </a>{' '}
             in GitHub.

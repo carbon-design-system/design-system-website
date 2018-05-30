@@ -9,8 +9,8 @@ class ColorCard extends Component {
   static propTypes = {
     hex: PropTypes.string,
     white: PropTypes.bool,
-    name: PropTypes.string
-  }
+    name: PropTypes.string,
+  };
 
   state = {
     value: this.props.hex,
@@ -26,44 +26,44 @@ class ColorCard extends Component {
         displayCopied: false,
       });
     }, 2500);
-  }
+  };
 
   handleClick = () => {
     ReactGA.event({
       category: 'Copy Color',
-      action: 'click'
+      action: 'click',
     });
-  }
+  };
 
-  colorContrast = (ColorHEX) => {
+  colorContrast = ColorHEX => {
     if (ColorHEX.charAt(0) === '#') {
       const ConvertedHEX = color(ColorHEX);
-      return (ConvertedHEX.luminosity() > 0.44) ? 'dark-text' : 'light-text';
+      return ConvertedHEX.luminosity() > 0.44 ? 'dark-text' : 'light-text';
     }
     return 'dark-text';
-  }
+  };
 
   render() {
     const textClass = this.colorContrast(this.props.hex);
-    const {
-      hex,
-      white,
-      name,
-    } = this.props;
+    const { hex, white, name } = this.props;
 
     const classNames = classnames({
-      'color': true,
+      color: true,
       'color--border': white,
+      'hover-card': hex.includes('$'),
+    });
+
+    const exampleClassNames = classnames(name, {
+      color__example: true,
     });
 
     return (
       <div tabIndex="0" className={classNames}>
-        <div tabIndex="0" className="color__example" style={{ backgroundColor: hex }} >
-          <CopyToClipboard
-            text={this.state.value}
-            onCopy={this.toggleCopied}
-          >
-            <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>{this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}</button>
+        <div tabIndex="0" className={exampleClassNames} style={{ backgroundColor: hex }}>
+          <CopyToClipboard text={this.state.value} onCopy={this.toggleCopied}>
+            <button tabIndex="0" className={textClass} onClick={() => this.handleClick()}>
+              {this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}
+            </button>
           </CopyToClipboard>
         </div>
         <p>{name}</p>
