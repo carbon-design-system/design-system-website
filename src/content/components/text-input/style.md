@@ -17,17 +17,15 @@ Text inputs come in two different colors. The default input color is `$field-01`
 | Text: help | $text-02 | #5a6872 |
 | Text: error message   | $support-01        | #e0182d   |
 
----
-***
-> ![Default and user input states for Text Input](images/text-input-style-1.png)
+![Default and user input states for Text Input in both field colors](images/text-input-style-1.png)
 
-_Examples of default and user-input states for Text Input_
+_Examples of default and user-input states for Text Input in both $field-02 (left) and $field-01 (right)_
 
 ## Typography
 
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less.
 
-| Property | Font-size (px/rem)     | Font-weight  | Type style |
+| Property | Font-size    | Font-weight  | Type style |
 |----------|-----------------|--------------|---|
 | Label    | 14 / 0.875 | Semi-Bold / 600   | Zeta |
 | Text: input     | 14 / 0.875 | Normal / 400 |- |
@@ -58,7 +56,7 @@ _Structure and spacing measurements for Text Input | px / rem_
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
 
 ---
 ***

@@ -21,18 +21,20 @@ Term | Definition
 Variable | Role(s) | Value
 ---------|--------|------
 **brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2
-**brand-02** | Supporting brand <br /> brand-01 hover | #5596e6
-**brand-03** | Secondary brand <br /> Loading| #00b4a0
+**brand-02** | Supporting brand | #5596e6
+**brand-03** | Tertiary brand <br /> Loading| #00b4a0
 **ui-01** | Primary background <br /> Layer 1 background | #ffffff
-**ui-02** | Default background <br /> Layer 0 background <br /> Secondary background | #f4f7fb
-**ui-03** | Tertiary background | #dfe3e6
-**ui-04** | Subtle border | #8897a2
-**ui-05** | Emphasis border <br /> Secondary icons | #5a6872
+**ui-02** | Default page background <br /> Layer 0 background <br /> Secondary background | #f4f7fb
+**ui-03** | Subtle border | #dfe3e6
+**ui-04** | 3:1 color contrast <br /> Emphasis border | #8897a2
+**ui-05** | 4.5:1 color contrast <br /> High contrast border <br /> Secondary icons | #5a6872
 **text-01** | Primary text <br /> Body copy | #152935
-**text-02** | Secondary text <br /> Subtle text | #5a6872
-**text-03** | Hint text | #cdd1d4
+**text-02** | Secondary text <br /> Subtle text <br /> Help text | #5a6872
+**text-03** | Placeholder text | #cdd1d4
 **inverse-01** | Inverse text color <br /> Inverse icon color | #ffffff
-**field-01** | Field background | rgba(60,112,178,0.10)
+**inverse-02** | Inverse background color | #272d33
+**field-01** | Field color on $ui-01 background | #f4f7fb
+**field-02** | Field color on $ui-02 background | #ffffff
 **support-01** | Error | #e0182d
 **support-02** | Success | #5aa700
 **support-03** | Warning | #efc100
@@ -40,9 +42,19 @@ Variable | Role(s) | Value
 
 ## Color contrast | WCAG AA standards
 
+### Type colors
+
 All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
 
 <div data-insert-component="ColorContrast"></div>
+
+### UI colors
+
+Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons. In the table below are approved Carbon color combinations.
+
+### Additional color accessibility
+
+Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](http://carbondesignsystem.com/guidelines/accessibility/color) of the Carbon website.
 
 ## Resources
 

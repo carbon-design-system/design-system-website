@@ -19,8 +19,8 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Border bottom: focused | $brand-01 | #3d70b2 |
 | Border bottom: error | $support-01 | #e0182d |
 
-![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
-_Normal, active, open, and disabled states for Dropdown_
+![Dropdown example with $field-01 and $field-02](images/dropdown-style-9.png)
+_Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 
 ## Typography
 All Dropdown text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Dropdown options should not exceed three words.
@@ -53,6 +53,15 @@ Dropdowns have two states, open and closed. An open and closed Dropdown should b
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 _Structure and spacing measurements for Dropdown | px / rem_
+
+### States
+
+**Error:** Error messages appear below the input field and are always present while invalid.
+
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
+
+![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
+_Normal, active, open, and disabled states for Dropdown_
 
 ## Multi-Select Dropdown
 

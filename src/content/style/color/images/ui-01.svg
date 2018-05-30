@@ -14,18 +14,18 @@
                     <rect id="Rectangle-path" stroke="#E0E5E7" x="0.5" y="0.5" width="99" height="207"></rect>
                 </g>
                 <g id="Group-3" transform="translate(20.000000, 114.000000)">
-                    <g id="a" transform="translate(7.000000, 0.000000)" font-size="18" font-family="IBMPlexSans, IBM Plex Sans" fill="#cdd1d4" font-weight="normal">
+                    <g id="a" transform="translate(7.000000, 0.000000)" font-size="18" font-family="IBMPlexSans, IBM Plex Sans" fill="#5A6872" font-weight="normal">
                         <text>
                             <tspan x="0" y="18">a</tspan>
                         </text>
                     </g>
-                    <circle id="Oval-8" stroke="#cdd1d4" stroke-width="2" cx="12.1201172" cy="13.1201172" r="12.1201172"></circle>
-                    <g id="A" transform="translate(41.000000, 1.000000)" font-size="18" font-family="IBMPlexSans-Text, IBM Plex Sans" fill="#cdd1d4" font-weight="500">
+                    <circle id="Oval-8" stroke="#5A6872" stroke-width="2" cx="12.1201172" cy="13.1201172" r="12.1201172"></circle>
+                    <g id="A" transform="translate(41.000000, 1.000000)" font-size="18" font-family="IBMPlexSans-Text, IBM Plex Sans" fill="#5A6872" font-weight="500">
                         <text>
                             <tspan x="0" y="18">A</tspan>
                         </text>
                     </g>
-                    <circle id="Oval-8" stroke="#cdd1d4" stroke-width="2" cx="47.1201172" cy="13.1201172" r="12.1201172"></circle>
+                    <circle id="Oval-8" stroke="#5A6872" stroke-width="2" cx="47.1201172" cy="13.1201172" r="12.1201172"></circle>
                 </g>
                 <g id="Group-13-Copy-2" transform="translate(20.000000, 161.000000)">
                     <g id="a" transform="translate(7.000000, 0.000000)" font-size="18" font-family="IBMPlexSans, IBM Plex Sans" fill="#152935" font-weight="normal">
