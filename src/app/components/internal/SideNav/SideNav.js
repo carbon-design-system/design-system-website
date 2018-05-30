@@ -119,6 +119,7 @@ class SideNav extends Component {
 
   renderSiteItems = navItems =>
     Object.keys(navItems).map(navItem => {
+      const counter = Math.floor(Math.random() * 100) + 1;
       const navItemObj = navItems[navItem];
       const { ENV } = process.env;
       const isInternal = ENV !== 'internal' && navItem === 'your-product-on-ibm-cloud';
@@ -131,7 +132,7 @@ class SideNav extends Component {
       const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
       const isCurrentPath = currentPath[1] === navItem;
       return (
-        <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
+        <SideNavItem key={`navItem-${counter}`} isActiveItem={isCurrentPath}>
           {({ open: isItemOpen }) => (
             <Link
               aria-label={navItemObj.title}
@@ -149,10 +150,11 @@ class SideNav extends Component {
   renderSubNav = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentItem;
+    let counter = Math.floor(Math.random() * 100) + 1;
     return (
-      <SideNavItem key={parentItem} isCurrentPath={isCurrentPath}>
+      <SideNavItem key={`${parentItem}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen }) => [
-          <p className="main-nav-item__heading">
+          <p key={`${parentItem}${counter}`} className="main-nav-item__heading">
             {SiteNavStructure[parentItem].title}
             <Icon
               className="main-nav-item__arrow"
@@ -167,6 +169,7 @@ class SideNav extends Component {
             aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
             aria-hidden="true"
             className="main-nav__sub-nav"
+            key={`${parentItem}${++counter}`}
           >
             {this.renderSubNavItems(subnav, parentItem, isItemOpen)}
           </ul>,
@@ -179,10 +182,11 @@ class SideNav extends Component {
     const { subnav } = parent;
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentKey;
+    let counter = Math.floor(Math.random() * 100) + 1;
     return (
-      <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
+      <SideNavItem type="sub" key={`${parentKey}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen, onKeyDown }) => [
-          <p className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
+          <p key={`${parentKey}${counter}`} className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
             {parent.title}
             <Icon
               className="sub-nav-item__arrow"
@@ -192,7 +196,13 @@ class SideNav extends Component {
               alt="Menu arrow icon"
             />
           </p>,
-          <ul role="menu" aria-label={`${parent.title} sub menu`} aria-hidden="true" className="sub-nav__inner-sub-nav">
+          <ul
+            key={`${parentKey}${++counter}`}
+            role="menu"
+            aria-label={`${parent.title} sub menu`}
+            aria-hidden="true"
+            className="sub-nav__inner-sub-nav"
+          >
             {this.renderInnerSubNavItems(subnav, parentKey, isItemOpen)}
           </ul>,
         ]}

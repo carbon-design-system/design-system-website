@@ -37,6 +37,9 @@ Help text is pertinent information that assists the user in completing a field. 
 ![Help text example](images/text-input-usage-3.png)
 _Help text example_
 
+### Help text
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
+
 ### Default values
 
 Where possible, add programmatic assistance. Detect and pre-fill inputs to reduce errors and save time. When the software can't determine the value that belongs in an input, use type-ahead to make suggestions. Use sentence-case for default values, detected values, and auto-completion text.

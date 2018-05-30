@@ -18,6 +18,9 @@
     ],
     "modal": [
       "dZVoPj"
+    ],
+    "modal--danger": [
+      "erwbeb"
     ]
   },
   "__content": "\n",

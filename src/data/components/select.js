@@ -8,14 +8,8 @@
     "select--inline": [
       "Inline Select"
     ],
-    "select--invalid": [
-      "Select (Invalid)"
-    ],
     "select--light": [
-      "Select (Light)"
-    ],
-    "select--light-invalid": [
-      "Select (Light/Invalid)"
+      "Light Select"
     ]
   },
   "codepen": {

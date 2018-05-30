@@ -9,10 +9,10 @@
       "Dropdown (Light)"
     ],
     "dropdown--up": [
-      "Up"
+      "Dropdown (Up)"
     ],
     "dropdown--up-light": [
-      "Up (Light)"
+      "Dropdown (Up & Light)"
     ],
     "MultiSelect": [
       "Multi-select Dropdown"

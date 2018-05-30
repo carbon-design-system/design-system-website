@@ -128,3 +128,9 @@ _Spacing for Multi-select Dropdown with Filtering | px / rem_
 
 ![Interation states for Multi-select Dropdown with Filtering](images/dropdown-style-8.png)
 _Interaction states for Multi-select Dropdown with Filtering | px / rem_
+
+### States
+
+**Error:** Error messages appear below the input field and are always present while invalid.
+
+**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.

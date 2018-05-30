@@ -99,3 +99,13 @@ _Examples of open and disabled Small Select states_
 ![Structure and spacing measurements for Inline Select](images/select-style-6.png)
 
 _Structure and spacing measurements for Inline Select (on hover) | px / rem_
+
+### States
+
+**Open:** Style determined by browser
+
+**Help text:** Help text appears below the label when the input is active. Help text remains visible while the input is focused and disappears after focus away.
+
+**Error:** Error messages appear below the input field and are always present while invalid.
+
+**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
