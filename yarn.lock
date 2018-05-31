@@ -1725,8 +1725,9 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-"carbon-components-react@file:../carbon-components-react":
-  version "5.5.1"
+carbon-components-react@^5.50.0:
+  version "5.52.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-5.52.0.tgz#1301cbb3233ee6eb4e5d35a839e89416c6285248"
   dependencies:
     classnames "2.2.5"
     downshift "^1.31.14"
@@ -1738,17 +1739,22 @@ capture-stack-trace@^1.0.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-"carbon-components@file:../carbon-components":
-  version "7.2.1"
+carbon-components@^8.20.0:
+  version "8.23.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-8.23.0.tgz#928a6b600d705b1a9a746de4739074f5599aa271"
   dependencies:
     carbon-icons "^6.0.4"
     flatpickr "2.6.3"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
 
-carbon-icons@^6.0.4, carbon-icons@^6.0.6:
+carbon-icons@^6.0.4:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-6.2.0.tgz#84f568a64b1465c52183eb26de736893b3d8abdb"
+
+carbon-icons@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-7.0.4.tgz#ebf76e08369944e8f0514776a41e9923f8aa58bc"
 
 cardinal@^1.0.0:
   version "1.0.0"
