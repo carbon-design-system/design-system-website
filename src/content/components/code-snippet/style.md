@@ -10,7 +10,7 @@
 | Inline code: background on ui-01     | $field-02  | #F4F7FB |
 | Inline code: text           | $text-02   | #5A6872 |
 | Inline code:hover (background on ui-02 ) | $ui-02   | #D0DCED |
-| Inline code:hover (background on ui-01 ) | $brand-02 @10%  | #5596e6|
+| Inline code:hover (background on ui-01 ) | $hover-row  | #5596e6 at 10% opacity|
 | Icon: copy               | $brand-01| #3d70b2 |
 
 ## Typography

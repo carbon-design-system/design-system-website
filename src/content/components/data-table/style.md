@@ -6,7 +6,7 @@
 | Background: gray            | $ui-02   | #f4f7fb  |
 | Table header                | $ui-02   |  #f4f7fb  |
 | Table border                | $ui-04   |  #8897a2  |
-| Row: hover                  | $brand-02 @10% | #5596e6   |
+| Row:hover                   | $hover-row | #5596e6 at 10% opacity   |
 | Zebra stripe                | $ui-02   | #f4f7fb   |
 | Expanded: border-left       | $brand-01| #3d70b2   |
 | Text                        | $text-01 | #152935   |

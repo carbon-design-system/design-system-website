@@ -6,7 +6,7 @@
 | Active: text       | $inverse-01 | #ffffff  |
 | Inactive: border   | $brand-01   | #3d70b2  |
 | Inactive: text     | $brand-01   | #3d70b2  |
-| :hover             | $brand-02   | #5596e6  |
+| :hover             | $hover-primary   | #30588c  |
 
 ## Typography
 

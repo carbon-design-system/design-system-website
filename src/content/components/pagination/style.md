@@ -7,7 +7,7 @@
 | Border         | $ui-04  | #8897a2     |
 | Chevron        | $ui-05  | #5a6872     |
 | Chevron: disabled | $ui-05 @ 50%  | #5a6872 |
-| Chevron: hover  | $brand-01  | #3d70b2    |
+| Chevron:hover  | $hover-secondary  | #3d70b2    |
 | Caret          | $brand-01  | #3d70b2    |
 
 ## Typography

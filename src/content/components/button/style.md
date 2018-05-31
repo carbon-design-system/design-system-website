@@ -3,9 +3,9 @@
 | Attribute            | SCSS                   | HEX                    |
 |------------------|------------------------|------------------------|
 | Normal           | $brand-01              | #3d70b2                |
-| Danger           | $support-01              | #e0182d                |
-| Primary:hover    | $brand-02              | #5596e6               |
-| Secondary:hover  | $brand-01              | #3d70b2                |
+| Danger           | $support-01            | #e0182d                |
+| Primary:hover    | $hover-primary         | #30588c               |
+| Secondary:hover  | $hover-secondary       | #3d70b2                |
 | Disabled         | $brand-01              | #3d70b2 at 50% opacity |
 
 

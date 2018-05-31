@@ -4,7 +4,6 @@
 |-----------------------|----------|----------|
 | Inactive: fill        | $ui-01   | #ffffff  |
 | Inactive: border      | $ui-05   | #5a6872  |
-| Inactive: hover       | $ui-03   | #dfe3e6  |
 | Small toggle: inactive | $ui-05 | #5a6872 |
 | Active: fill          | $brand-01| #3d70b2  |
 | Label                 | $text-01 | #152935  |

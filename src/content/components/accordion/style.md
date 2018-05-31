@@ -5,7 +5,7 @@
 | Label          | $text-01   |  #152935   |
 | Body           | $text-01   |  #152935   |
 | Chevron        | $ui-05     |  #5a6872   |
-| Chevron:hover  | $brand-01  |  #3d70b2   |
+| Chevron:hover  | $hover-secondary  |  #3d70b2   |
 | Divider line   | $ui-04     |  #8897a2   |
 
 ## Typography

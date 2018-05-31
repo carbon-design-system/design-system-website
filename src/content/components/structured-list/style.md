@@ -4,7 +4,7 @@
 | Text     | $text-01      | #152934  |
 | Table header: border-bottom | $brand-01 | #3d70b2 |
 | Optional border | $ui-04 | #8897a2    |
-| Selection list row:hover  | $brand-02 @ 10% | #5596e6    |
+| Selection list row:hover  | $hover-row | #5596e6 at 10% opacity    |
 | Checkmark icon | $brand-02  | #5596e6    |
 
 
