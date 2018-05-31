@@ -3,7 +3,7 @@
 | Attribute    | SCSS          | HEX           |
 |----------|---------------|---------------|
 | Normal   | $brand-01     | #3d70b2       |
-| Hover    | $brand-02     | #5596e6       |
+| :hover   | $hover-primary-text    | #294c86       |
 | Disabled | $brand-01     | #3d70b2 @ 50% |
 
 ---
