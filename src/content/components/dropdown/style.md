@@ -70,11 +70,11 @@ _Normal, active, open, and disabled states for Dropdown_
 | Height                             | 40 | 2.5   |
 | Internal spacing                   | 16 | 1     |
 | Row height                         | 40 | 2.5   |
-| Spacing: checkbox & label | 8  | 0.5   |
-| Spacing: badge & label             | 8  | 0.5   |
+| Spacing: checkbox & label          | 4  | 0.25  |
+| Spacing: badge & label             | 10 | 0.625 |
 | Spacing: label & caret             |16≤ | 1≤    |
 | Badge height                       | 18 | 1.125 |
-| Badge width                        | Varies based on value |  |
+| Badge width                        | Varies based on value | - |
 
 
 ![Structure and spacing for a Multi-Select Dropdown](images/dropdown-style-3.png)
@@ -90,14 +90,14 @@ _Hover and focus zstates for a Multi-Select Dropdown_-->
 | Property                           | px | rem   |
 |------------------------------------|----|-------|
 | Height                             | 32 | 2     |
-| Internal spacing                   | 8 | 0.5 |
-| Spacing: label & dropdown menu     | 8 | 0.5 |
+| Internal spacing                   | 8  | 0.5 |
+| Spacing: label & dropdown menu     | 8  | 0.5 |
 | Row height                         | 40 | 2.5   |
-| Spacing: checkbox & label | 8  | 0.5   |
+| Spacing: checkbox & label          | 4  | 0.25  |
 | Spacing: badge & label             | 10 | 0.625 |
 | Spacing: label & caret             | 8≤ | 0.5≤  |
 | Badge height                       | 18 | 1.125 |
-| Badge width                       | Varies based on value |  |
+| Badge width                        | Varies based on value | - |
 
 
 ![Structure and spacing for Inline Dropdown](images/dropdown-style-5.png)
@@ -128,9 +128,3 @@ _Spacing for Multi-select Dropdown with Filtering | px / rem_
 
 ![Interation states for Multi-select Dropdown with Filtering](images/dropdown-style-8.png)
 _Interaction states for Multi-select Dropdown with Filtering | px / rem_
-
-### States
-
-**Error:** Error messages appear below the input field and are always present while invalid.
-
-**Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
