@@ -9,9 +9,9 @@ variations:
   - Multi Code Snippet
 codepen:
   code-snippet:
-  - YYqeGX
+  - mKJBoE
   code-snippet--inline:
-  - mprzKy
+  - pKJWMK
   code-snippet--multi:
-  - YYqeGX
+  - ZRGXdq
 ---
