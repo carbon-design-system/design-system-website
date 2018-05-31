@@ -20,25 +20,30 @@ A universal variable can also have multiple associated roles when the color is c
 
 | Variable       | Role(s)                                                                                                            | Value   |
 | -------------- | ------------------------------------------------------------------------------------------------------------------ | ------- |
-| **brand-01**   | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2 |
-| **brand-02**   | Supporting brand                                                                                                   | #5596e6 |
-| **brand-03**   | Tertiary brand <br /> Loading                                                                                      | #00b4a0 |
-| **ui-01**      | Primary background <br /> Layer 1 background                                                                       | #ffffff |
-| **ui-02**      | Default page background <br /> Layer 0 background <br /> Secondary background                                      | #f4f7fb |
-| **ui-03**      | Subtle border                                                                                                      | #dfe3e6 |
-| **ui-04**      | 3:1 color contrast <br /> Emphasis border                                                                          | #8897a2 |
-| **ui-05**      | 4.5:1 color contrast <br /> High contrast border <br /> Secondary icons                                            | #5a6872 |
-| **text-01**    | Primary text <br /> Body copy                                                                                      | #152935 |
-| **text-02**    | Secondary text <br /> Subtle text <br /> Help text                                                                 | #5a6872 |
-| **text-03**    | Placeholder text                                                                                                   | #cdd1d4 |
-| **inverse-01** | Inverse text color <br /> Inverse icon color                                                                       | #ffffff |
-| **inverse-02** | Inverse background color                                                                                           | #272d33 |
-| **field-01**   | Field color on $ui-01 background                                                                                   | #f4f7fb |
-| **field-02**   | Field color on $ui-02 background                                                                                   | #ffffff |
-| **support-01** | Error                                                                                                              | #e0182d |
-| **support-02** | Success                                                                                                            | #5aa700 |
-| **support-03** | Warning                                                                                                            | #efc100 |
-| **support-04** | Information                                                                                                        | #5aaafa |
+| **$brand-01**   | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2 |
+| **$brand-02**   | Supporting brand                                                                                                   | #5596e6 |
+| **$brand-03**   | Tertiary brand <br /> Loading                                                                                      | #00b4a0 |
+| **$ui-01**      | Primary background <br /> Layer 1 background                                                                       | #ffffff |
+| **$ui-02**      | Default page background <br /> Layer 0 background <br /> Secondary background                                      | #f4f7fb |
+| **$ui-03**      | Subtle border                                                                                                      | #dfe3e6 |
+| **$ui-04**      | 3:1 color contrast <br /> Emphasis border                                                                          | #8897a2 |
+| **$ui-05**      | 4.5:1 color contrast <br /> High contrast border <br /> Secondary icons                                            | #5a6872 |
+| **$text-01**    | Primary text <br /> Body copy                                                                                      | #152935 |
+| **$text-02**    | Secondary text <br /> Subtle text <br /> Help text                                                                 | #5a6872 |
+| **$text-03**    | Placeholder text                                                                                                   | #cdd1d4 |
+| **$inverse-01** | Inverse text color <br /> Inverse icon color                                                                       | #ffffff |
+| **$inverse-02** | Inverse background color                                                                                           | #272d33 |
+| **$field-01**   | Field color on $ui-01 background                                                                                   | #f4f7fb |
+| **$field-02**   | Field color on $ui-02 background                                                                                   | #ffffff |
+| **$hover-primary** | $brand-01 element hover                                                                       | `darken($brand-01, 10%)` |
+| **$hover-primary-text** | $brand-01 text hover                                                                     | `darken($brand-01, 15%)` |
+| **$hover-danger** | Danger hover                                                                                 | `darken($support-01, 10%)` |
+| **$hover-secondary** | $ui-05 element hover                                                                                        | $brand-01|
+| **$hover-row** | Row hover                                                                                           | `rgba($brand-02, 0.1)` |
+| **$support-01** | Error                                                                                                              | #e0182d |
+| **$support-02** | Success                                                                                                            | #5aa700 |
+| **$support-03** | Warning                                                                                                            | #efc100 |
+| **$support-04** | Information                                                                                                        | #5aaafa |
 
 ## Color contrast | WCAG AA standards
 
