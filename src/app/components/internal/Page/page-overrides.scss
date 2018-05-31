@@ -46,7 +46,9 @@ main[data-page="guidelines-bluemix-brand"] {
   }
 }
 
-main[data-page|=components-style] {
+main[data-page|=components-style],
+main[data-page|=components-usage],
+main[data-page|=style-usage-iconography],  {
   hr + hr + blockquote p {
     width: 100%;
     display: flex;
@@ -66,12 +68,12 @@ main[data-page|=data-vis-style-tooltip] {
     justify-content: center;
     padding: 1rem 0;
     margin-bottom: .5rem;
-    border: 1px solid #8897a2;
+    border: 1px solid $ui-03;
 
     img {
       border: none !important;
     }
-  }  
+  }
 }
 
 main[data-page="guidelines-general-content"] {

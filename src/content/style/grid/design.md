@@ -8,7 +8,7 @@
 
 A left or right side panel lives outside the bounds of the grid, including the grid margins. When a side panel appears it pushes the grid away from the outer edge of the browser window condensing the grid and content area.
 
-For example, when using an [Interior Left Nav](http://carbondesignsystem.com/add-ons/interior-left-nav/code), the grid starts after the 200px of the navigation on the left side of the viewport. Normal grid rules still apply within the content area.
+For example, when using a persistent left navigation panel, the grid starts after the 200px of the navigation on the left side of the viewport. Normal grid rules still apply within the content area.
 
 **Grid area with interior left navigation: page width minus 200px from left edge.**
 _

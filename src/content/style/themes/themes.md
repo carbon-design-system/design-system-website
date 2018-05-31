@@ -1,23 +1,21 @@
 **_Carbon Themes_ are used to customize components to fit the specific needs of a brand or product.**
 
-
 ## Introduction to theming
 
 Developers and designers can use Carbon Themes to modify existing components to fit their own specific visual styles and needs. Rather than changing each individual component's css or building modified components from scratch, components can now be easily customized by changing a set of universal variables that seamlessly propagate across all of the components.
 
-***
-<a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a>
+---
 
+<a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a>
 
 ### Theme terms
 
-Term | Definition
------|-----------
-**Theme** | The set of unique values assigned to the universal variables
-**Value** | A theme's unique styles (ie hex code, line weight etc) assigned to a universal variable
-**Role** | The systematic usage/s of a value. Roles cannot be changed between themes.
-**Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes.
-
+| Term         | Definition                                                                                                     |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Theme**    | The set of unique values assigned to the universal variables                                                   |
+| **Value**    | A theme's unique styles (ie hex code, line weight etc) assigned to a universal variable                        |
+| **Role**     | The systematic usage/s of a value. Roles cannot be changed between themes.                                     |
+| **Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes. |
 
 ## IBM Cloud theme
 
@@ -25,23 +23,21 @@ The Carbon Design System has a default theme which is based off of the IBM Cloud
 
 The default theme acts as a starting point; from there designers and developers only need to define how their own components and styles deviate from the default. A theme can change all of the values or as little as only one. Those different values are then packaged into a new theme which when called will override the values of the default.
 
+---
 
-***
 [Carbon Themes repo](https://github.com/carbon-design-system/carbon-themes)
 
-
 ## Variables
+
 By using variables developers only need to make a change in one place to see a system wide change. They are used across multiple components and make it easy for components to be systematically updated while keeping global patterns and styles consistent.
 
 All variables come pre-baked into the Carbon component source code. Variables are denoted by the prefix `$` (eg. `$brand-01`).
 
 There are two categories of variables: **color** and **global.**
 
-
 ### Color
 
-Each theme is assigned 25 universal color variables, which are determined by [common roles and usage](http://www.carbondesignsystem.com/style/colors/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
-
+Each theme is assigned 25 universal color variables, which are determined by [common roles and usage](/style/color/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
 
 ```scss
 //// Carbon
@@ -66,6 +62,7 @@ $support-04: #5aaafa;
 ```
 
 ### Global
+
 The second category is global variables. These control more general styling of components, such as layer usage or border width.
 
 ```scss
@@ -76,21 +73,21 @@ $input-label-weight: 700;
 ```
 
 ## Theming applied
+
 The following examples demonstrates the relationship between the different theming elements. Each element has a variable, a role, and a value determined by its theme.
 
 ### Default theme applied
 
 ![Default theme applied](images/theme-1.png)
 
-| Key | Variable            | Role               | Value                 | Theme   |
-|-----|---------------------|--------------------|-----------------------|---------|
-| 1   | $text-01            | Primary text       | #152935               | Default |
-| 2   | $text-03            | Hint text          | #cdd1d4               | Default |
-| 3   | $input-border       | Input border       | 1px solid transparent | Default |
-| 4   | $brand-01           | Primary icon       | #3d70b2              | Default |
-| 5   | $ui-02              | Default background | #f4f7fb               | Default |
-| 6   | $field-01           | Field background   | #152935 @ 10%         | Default |
-
+| Key | Variable      | Role               | Value                 | Theme   |
+| --- | ------------- | ------------------ | --------------------- | ------- |
+| 1   | $text-01      | Primary text       | #152935               | Default |
+| 2   | $text-03      | Hint text          | #cdd1d4               | Default |
+| 3   | $input-border | Input border       | 1px solid transparent | Default |
+| 4   | $brand-01     | Primary icon       | #3d70b2               | Default |
+| 5   | $ui-02        | Default background | #f4f7fb               | Default |
+| 6   | $field-01     | Field background   | #152935 @ 10%         | Default |
 
 ### Custom theme applied
 
@@ -98,12 +95,11 @@ Here is the same component but with a different theme applied. Notice how only t
 
 ![Custom theme applied](images/theme-2.png)
 
-
-| Key | Variable            | Role               | Value            | Theme  |
-|-----|---------------------|--------------------|------------------|--------|
-| 1   | $text-01            | Primary text       | #272727          | Watson |
-| 2   | $text-03            | Hint text          | #777677          | Watson |
-| 3   | $input-border       | Input border       | 1px solid $ui-04 | Watson |
-| 4   | $brand-01           | Primary icon       | #047cc0          | Watson |
-| 5   | $ui-02              | Default background | #f6f6f6          | Watson |
-| 6   | $field-01           | Field background   | #ffffff          | Watson |
+| Key | Variable      | Role               | Value            | Theme  |
+| --- | ------------- | ------------------ | ---------------- | ------ |
+| 1   | $text-01      | Primary text       | #272727          | Watson |
+| 2   | $text-03      | Hint text          | #777677          | Watson |
+| 3   | $input-border | Input border       | 1px solid $ui-04 | Watson |
+| 4   | $brand-01     | Primary icon       | #047cc0          | Watson |
+| 5   | $ui-02        | Default background | #f6f6f6          | Watson |
+| 6   | $field-01     | Field background   | #ffffff          | Watson |

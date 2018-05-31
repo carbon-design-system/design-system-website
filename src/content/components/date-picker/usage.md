@@ -33,7 +33,9 @@ For Date Pickers, use placeholder text so users input the date in the correct fo
 ### Calendar widget
 It is recommended to use the Date Picker with a calendar widget when the user is browsing between a range of dates. We can aid the user in making the proper choices by providing a visual reference of dates for them to choose from. The calendar widget appears once the user has interacted with the date input field (typically on `:focus`).
 
-
+---
+***
+> 
 ![Selecting a dates from the Range Date Picker](images/date-picker-usage-4.gif)
 
 _Selecting dates from the Range Date Picker_

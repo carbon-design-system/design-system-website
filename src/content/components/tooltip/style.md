@@ -8,8 +8,11 @@
 | Definition & Icon text    | $ui-01  | #ffffff   |
 | Definition & Icon background | $inverse-02   | #272d33   |
 
-
+---
+***
+> 
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
+
 _Example of closed and open states for a Tooltip_
 
 ## Typography
@@ -43,17 +46,33 @@ Tooltip labels and text should be set in sentence case.
 | Definition: internal spacing | 8  | 0.5   |
 | Icon: internal spacing | 4  | 0.25   |
 
+---
+***
+> 
 ![Structure and spacing measurements for an Interactive Tooltip](images/tooltip-style-2.png)
+
 _Structure and spacing measurements for an Interactive Tooltip | px / rem_
 
+---
+***
+> 
 ![Structure and spacing measurements for a Definition Tooltip](images/tooltip-style-3.png)
+
 _Structure and spacing measurements for a Definition Tooltip | px / rem_
 
+---
+***
+> 
 ![Structure and spacing measurements for an Icon Tooltip](images/tooltip-style-4.png)
+
 _Structure and spacing measurements for an Icon Tooltip | px / rem_
 
 ### Placement
 Tooltips should be placed below the Tooltip icon unless it is within the height of the Tooltip box plus 16px / 1rem of the bottom of the page. In that instance, the Tooltip should appear above the icon or defined word. On mobile, Tooltips can only appear below the Tooltip icon.
 
+---
+***
+> 
 ![Placement examples for a Tooltip](images/tooltip-style-5.png)
+
 _Placement examples for a Tooltip_
