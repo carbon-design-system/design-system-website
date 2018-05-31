@@ -82,6 +82,12 @@ main[data-page="guidelines-general-content"] {
   }
 }
 
+main[data-page="guidelines-general-content"] {
+  strong {
+    color: $brand-01 !important;
+  }
+}
+
 main[data-page="getting-started-FAQ"] {
   .page_md h4 > a {
     color: black;
