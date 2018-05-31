@@ -70,6 +70,11 @@ main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
 
 .code-page__docs {
   padding-top: 4rem;
+  max-width: 45rem;
+}
+
+.code-page__docs pre {
+  margin-top: 1rem;
 }
 
 .code-page__docs > h2 + div > h3:first-child,

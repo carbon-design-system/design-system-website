@@ -119,7 +119,7 @@ class SideNav extends Component {
 
   renderSiteItems = navItems =>
     Object.keys(navItems).map(navItem => {
-      const counter = Math.floor(Math.random() * 100) + 1;
+      const counter = Math.floor(Math.random() * 500) + 1;
       const navItemObj = navItems[navItem];
       const { ENV } = process.env;
       const isInternal = ENV !== 'internal' && navItem === 'your-product-on-ibm-cloud';
@@ -150,7 +150,7 @@ class SideNav extends Component {
   renderSubNav = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentItem;
-    let counter = Math.floor(Math.random() * 100) + 1;
+    let counter = Math.floor(Math.random() * 500) + 1;
     return (
       <SideNavItem key={`${parentItem}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen }) => [
@@ -182,7 +182,7 @@ class SideNav extends Component {
     const { subnav } = parent;
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentKey;
-    let counter = Math.floor(Math.random() * 100) + 1;
+    let counter = Math.floor(Math.random() * 500) + 1;
     return (
       <SideNavItem type="sub" key={`${parentKey}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen, onKeyDown }) => [
@@ -301,9 +301,11 @@ class SideNav extends Component {
             Carbon <span>Design System</span>
           </Link>
           <div className="bx--search bx--search--sm" role="search">
-            <svg className="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16" fillRule="evenodd">
-              <path d="M6 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0-2C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
-              <path d="M16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
+            <svg className="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16">
+              <path
+                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm4.936-1.27l4.563 4.557-.707.708-4.563-4.558a6.5 6.5 0 1 1 .707-.707z"
+                fillRule="nonzero"
+              />
             </svg>
             <input
               type="text"

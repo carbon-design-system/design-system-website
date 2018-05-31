@@ -19,5 +19,5 @@ Use List items that are grammatically parallel. For example, do not mix passive 
 
 ---
 ***
-> 
+> 
 ![list example](images/list-usage-1.png)
