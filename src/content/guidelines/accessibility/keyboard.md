@@ -1,6 +1,7 @@
 **Carbon is committed to following and complying with best practices when it comes to accessibility. Each component and element was built following the Web Content Accessibility Guidelines (WCAG) and met the AA standard. Our patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.**
 
 ## Keyboard accessibility
+
 Keyboard accessibility is important for users who rely on or prefer using a keyboard. Encourage accessibility by providing keyboard functionality to all available content. Common keyboard interactions include using the `Tab` key to select different interactive elements on a page and using the `Enter` key or the Spacebar to activate an in-focus element.
 
 ### Focus indicators
@@ -28,6 +29,6 @@ Provide a “Skip to content” option when there is lengthy navigation so a use
 </body>
 ```
 
-
 ## Color accessibility
-Please refer to our [usage](http://carbondesignsystem.com/style/colors/usage) section on the Colors page to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards. 
+
+Please refer to our [usage](/style/colors/usage) section on the Colors page to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.

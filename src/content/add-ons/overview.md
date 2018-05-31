@@ -6,10 +6,10 @@ The table below shows the Carbon team's level of support for the Core library vs
 
 |                           | Core library | Add-ons |
 | ------------------------- | ------------ | ------- |
-| General design questions  | ✅           | ✅      |
-| Design feedback & support | ✅           |         |
-| Troubleshooting           | ✅           | ✅      |
-| Bug fixes                 | ✅           |         |
+| General design questions  | ![available](images/checkmark--glyph.svg)          | ![available](images/checkmark--glyph.svg)      |
+| Design feedback & support | ![available](images/checkmark--glyph.svg)           |         |
+| Troubleshooting           | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)     |
+| Bug fixes                 | ![available](images/checkmark--glyph.svg)           |         |
 
 ## Contributing to Add-ons
 
@@ -17,12 +17,12 @@ Add-ons are generally easier to contribute to because they are not fully managed
 
 |               |                                                     | Core library | Add-ons |
 | ------------- | --------------------------------------------------- | ------------ | ------- |
-| Accessibility | WCAG AA                                             | ✅           | ✅      |
-|               | Keyboard tabbing                                    | ✅           | ✅      |
-|               | Carbon custom focus states                          | ✅           |         |
-| Visual + UX   | Carbon themed                                       | ✅           |         |
-|               | Universal pattern <br>(fits for 2-3 use cases)      | ✅           |         |
-|               | Interaction states (hover, active, focus, disabled) | ✅           | ✅      |
+| Accessibility | WCAG AA                                             | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
+|               | Keyboard tabbing                                    | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
+|               | Carbon custom focus states                          | ![available](images/checkmark--glyph.svg)           |         |
+| Visual + UX   | Carbon themed                                       | ![available](images/checkmark--glyph.svg)           |         |
+|               | Universal pattern <br>(fits for 2-3 use cases)      | ![available](images/checkmark--glyph.svg)           |         |
+|               | Interaction states (hover, active, focus, disabled) | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)     |
 
 ## Add-on repos
 

@@ -52,8 +52,6 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 
 
----
-***
-> ![Structure and spacing measurements for small toggle](images/toggle-style-3.png)
+![Structure and spacing measurements for small toggle](images/toggle-style-3.png)
 
 _Structure and spacing measurements for Small Toggle | px / rem_

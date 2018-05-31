@@ -35,7 +35,7 @@ Width varies based on content length.
 
 ---
 ***
->
+> 
 ![Example of a Small Tooltip](images/style-tooltip-1.png)
 
 _Example of a Small Tooltip_
@@ -53,7 +53,7 @@ Width varies based on content length.
 
 ---
 ***
->
+> 
 ![Example of a Medium Tooltip](images/style-tooltip-2.png)
 
 _Example of a Medium Tooltip_
@@ -74,7 +74,7 @@ Width varies based on content length.
 
 ---
 ***
->
+> 
 ![Example of a Large Tooltip](images/style-tooltip-3.png)
 
 _Example of a Large Tooltip_

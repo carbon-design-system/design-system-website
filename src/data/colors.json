@@ -67,23 +67,23 @@
   "hover-colors": [
     {
       "name": "hover-primary",
-      "hex": "darken($brand-01, 10%)"
+      "hex": "#30588c"
     },
     {
       "name": "hover-primary-text",
-      "hex": "darken($brand-01, 15%)"
+      "hex": "#294c86"
     },
     {
       "name": "hover-danger",
-      "hex": "darken($support-01, 10%)"
+      "hex": "#bd1427"
     },
     {
       "name": "hover-secondary",
-      "hex": "$brand-01"
+      "hex": "#3d70b2"
     },
     {
       "name": "hover-row",
-      "hex": "rgba($brand-02, 0.1)"
+      "hex": "rgba(#5596e6, 0.1)"
     }
   ],
   "support-colors": [

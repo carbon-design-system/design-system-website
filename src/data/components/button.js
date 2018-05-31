@@ -17,6 +17,9 @@
     "button--danger": [
       "Danger button"
     ],
+    "button--danger--primary": [
+      "Primary danger button"
+    ],
     "button--primary--small": [
       "Small primary button"
     ],
@@ -28,6 +31,9 @@
     ],
     "button--ghost--small": [
       "Small ghost button"
+    ],
+    "button--danger--primary--small": [
+      "Small primary danger button"
     ],
     "button--danger--small": [
       "Small danger button"

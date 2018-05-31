@@ -4,22 +4,16 @@ main[data-page|='components'] {
   }
 }
 
-main[data-page='components-usage-list'] {
-  img:not(.ibm-eye) {
-    border: 1px solid $ui-04;
-  }
-}
-
 main[data-page|='data-vis'] {
   img:not(.ibm-eye) {
     background-color: white;
-    border: 1px solid $ui-04;
+    border: 1px solid $ui-03;
   }
 
   .gif {
     width: 100%;
     max-width: 38rem;
-    border: 1px solid $ui-04;
+    border: 1px solid $ui-03;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +44,7 @@ main[data-page='data-vis-usage-pie-chart'] {
 main[data-page|='whats-new'] {
   img:not(.ibm-eye) {
     background-color: white;
-    border: 1px solid $ui-04;
+    border: 1px solid $ui-03;
   }
 }
 
@@ -63,6 +57,16 @@ main[data-page='utilities-common-actions'] {
   }
 }
 
-img[src='/images/small-loading-1.gif'] {
+img[src='/images/small-loading-1.gif'],
+img[src='/images/data-table-style-2.png'],
+img[src='/images/data-table-style-1.png'],
+img[src='/images/date-picker-style-1.png'],
+img[src='/images/dropdown-style-9.png'],
+img[src='/images/form-style-3.png'],
+img[src='/images/number-input-style-2.png'],
+img[src='/images/search-style-4.png'],
+img[src='/images/select-style-1.png'],
+img[src='/images/tab-usage-1.png'],
+img[src='/images/text-input-style-1.png'] {
   border: 1px solid $ui-03;
 }
