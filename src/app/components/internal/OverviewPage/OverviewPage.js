@@ -34,7 +34,7 @@ class OverviewPage extends Component {
     const tagExample = require('./images/Tag.svg');
     const textInputExample = require('./images/Text Input.svg');
     const tileExample = require('./images/Tile.svg');
-    const toggleExample = require('./images/Toggle - 2.svg');
+    const toggleExample = require('./images/Toggle.svg');
     const tooltipExample = require('./images/Tooltip.svg');
 
     const componentData = [
@@ -72,11 +72,6 @@ class OverviewPage extends Component {
         name: 'Data Table',
         img: require('./images/Data Table.svg'),
         link: '/components/data-table'
-      },
-      {
-        name: 'Data Vis',
-        img: require('./images/data-vis.svg'),
-        link: '/data-vis/overview'
       },
       {
         name: 'Date Picker',

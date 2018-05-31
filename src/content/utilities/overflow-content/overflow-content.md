@@ -4,13 +4,13 @@
 ## Truncation
 Truncation is typically used for static text or Links. Truncated items are represented by an ellipse `...` and should represent three or more truncated characters in a text string. There must be at least four characters of non-ellipsed content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipses is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.    
 
-![Example of a browser tooltip being used for truncation.](images/Browser-Tooltip.png)
+![Example of a browser tooltip being used for truncation.](images/Browser Tooltip.png)
 
 _Example of a browser tooltip being used for truncation._
 
 ---
 ***
-> 
+>
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 
 _Example of end-line truncation for a paragraph._

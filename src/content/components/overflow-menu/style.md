@@ -5,9 +5,9 @@
 | Icon           | $ui-05      | #5a6872 |
 | Background     | $ui-01      | #ffffff |
 | Text           | $text-01    | #152935 |
-| Icon: hover    | $brand-01   | #3d70b2 |
-| Text: hover    | $inverse-01 | #ffffff |
-| Warning: hover | $support-01 | #e0182d |
+| Icon:hover    | $hover-secondary   | #3d70b2 |
+| Row:hover    | $hover-row | #5596e6 at 10% opacity |
+| Warning:hover | $hover-danger | #bd1427 |
 | Line           | $ui-04      | #8897a2 |
 
 <div data-insert-component="ImageGrid">

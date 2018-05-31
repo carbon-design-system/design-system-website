@@ -13,7 +13,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Text: user input    | $text-01        | #152935   |
 | Text: placeholder        | $text-03        | #cdd1d4   |
 | Text: error message      | $support-01        | #e0182d   |
-| Option: hover      | $ui-02       | #f4f7fb   |
+| Row:hover      | $hover-row       | #5596e6 at 10% opacity   |
 | Caret              | $brand-01       | #3d70b2   |
 | Border bottom: enabled | $ui-05 | #5a6872 |
 | Border bottom: focused | $brand-01 | #3d70b2 |
