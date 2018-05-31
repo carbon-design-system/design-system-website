@@ -45,7 +45,7 @@ class ComponentReactExample extends Component {
     if (this.props.variation === 'MultiSelect.Filterable') {
       NewComponent = reactComponent.MultiSelect.Filterable;
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} placeholder="Filter" />,
+        <NewComponent items={items} itemToString={item => (item ? item.text : '')} onChange={() => {}} placeholder="Filter" />,
         this.comp
       );
     } else if (this.props.variation === 'MultiSelect') {
@@ -85,7 +85,7 @@ class ComponentReactExample extends Component {
         <div className="svg--sprite" aria-hidden="true" />
         <div className="component-example__live component-example__live--light">
           <div className={classNames}>
-            <div ref={comp => (this.comp = comp)} id="comp" />
+            <div ref={comp => (this.comp = comp)} />
           </div>
           <Link className="component-example__view-full-render" target="_blank" to={componentLink}>
             View on React Storybook
