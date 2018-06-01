@@ -48,7 +48,7 @@ class IconCard extends Component {
 
   render() {
     const { name, height, width, viewBox, svgString, loading } = this.props;
-    const downloadUrl = `../../assets/icons/${name}.svg`;
+    const downloadUrl = `../../assets/icons/${name.replace('icon--', '')}.svg`;
     return (
       <div className="icon">
         <div tabIndex={0} className="icon__card">
