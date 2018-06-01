@@ -8,6 +8,23 @@ import IconCard from '../../components/internal/IconCard';
 import IconEmptyState from '../../components/internal/IconEmptyState';
 import MarkdownPage from '../../components/internal/MarkdownPage';
 
+function printAttributes(attrs) {
+  return Object.keys(attrs).map(key => `${key}="${attrs[key]}"`).join(' ');
+}
+
+function toSVG(icon) {
+  const { svgData, width, height, viewBox } = icon;
+  const svg = children =>
+    `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
+  const paths = svgData.paths.map(path => `<path d="${path.d}"></path>`).join('');
+
+  if (!svgData.g) {
+    return svg(paths);
+  }
+
+  return svg(`<g ${printAttributes(svgData.g)}>${paths}</g>`);
+}
+
 export default class Iconography extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string
@@ -107,7 +124,7 @@ export default class Iconography extends React.Component {
         viewBox={icon.viewBox}
         width={icon.width.toString()}
         height={icon.height.toString()}
-        svgString={icon.svgData.paths.join('')}
+        svgString={toSVG(icon)}
       />);
   }
 }
