@@ -36,6 +36,8 @@ codepen:
   - ppyVOw
   button--danger:
   - EoKLeR
+  button--danger--primary:
+  - bKVgOK
   button--primary--small:
   - zjVxoX
   button--secondary--small:
@@ -44,6 +46,8 @@ codepen:
   - JvQoyo
   button--ghost--small:
   - vjqEey
+  button--danger--primary--small:
+  - KedaJb
   button--danger--small:
   - xjobPx
 ---
