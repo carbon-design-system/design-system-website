@@ -1808,7 +1808,7 @@ capture-stack-trace@^1.0.0:
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
     lodash.omit "^4.5.0"
-    warning "3.0.0"
+    warning "^3.0.0"
     window-or-global "^1.0.1"
 
 "carbon-components@file:../carbon-components":
@@ -9758,7 +9758,7 @@ ware@^1.2.0:
   dependencies:
     wrap-fn "^0.1.0"
 
-warning@3.0.0, warning@^3.0.0:
+warning@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
   dependencies:
