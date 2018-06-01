@@ -55,6 +55,9 @@
     "button--danger": [
       "EoKLeR"
     ],
+    "button--danger--primary": [
+      "bKVgOK"
+    ],
     "button--primary--small": [
       "zjVxoX"
     ],
@@ -66,6 +69,9 @@
     ],
     "button--ghost--small": [
       "vjqEey"
+    ],
+    "button--danger--primary--small": [
+      "KedaJb"
     ],
     "button--danger--small": [
       "xjobPx"
