@@ -4,26 +4,24 @@
 
 You can find the source file for the icon library within the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon Design Kit.</a>
 
-- <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>Carbon icons GitHub repo</a>
-- <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
+* <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>Carbon icons GitHub repo</a>
+* <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
 
 ## Visual usage
 
 ### Sizing
 
-UI icons come in two sizes: 24px and 16px.
-While most icons occupy a square artboard, some icons may occupy a rectangular artboard where the width or height of the icons is either 24px or 16px. In most cases, you can use icons at their original sizes.
+UI icons are `16px`.
 
-| Name     | px |
-|----------|----|
-| Standard | 24 |
-| Glyph    | 16 |
+While most icons occupy a square artboard, some icons may occupy a rectangular artboard where only the width or height of the icons is 16px. Icons should only be used at their original sizes.
 
 ### Background
 
 All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
 
 ---
+***
+> 
 ![icon usage](images/icon-usage-1.png)
 
 ### Padding
@@ -33,18 +31,20 @@ When **creating icons,** do not add internal padding with Sketch or Illustrator.
 When **using icons,** all touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
 
 ---
+***
+> 
 ![icon padding](images/icon-usage-2.png)
 
 ### Color
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
 
-|                        | SCSS      | HEX     |
-|------------------------|-----------|---------|
-| Primary action         | $brand-01 | #3d70b2 |
-| Primary action:hover   | $brand-02 | #5596e6 |
-| Secondary action       | $ui-05    | #5a6872 |
-| Secondary action:hover | $brand-01 | #3d70b2 |
+|                        | SCSS             | HEX     |
+| ---------------------- | ---------------- | ------- |
+| Primary action         | $brand-01        | #3d70b2 |
+| Primary action:hover   | $hover-primary   | #30588C |
+| Secondary action       | $ui-05           | #5a6872 |
+| Secondary action:hover | $hover-secondary | #3d70b2 |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
@@ -67,15 +67,15 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 **Requirements:**
 
-- Install `carbon-icons`
+* Install `carbon-icons`
 
 Full installation details in <a href="https://github.com/carbon-design-system/carbon-icons">Carbon icons GitHub repo.</a>
 
 ### Using SVG sprite from static assets (recommended)
 
-Use the SVG sprite (__carbon-icons.svg__) by serving it as a static asset.
+Use the SVG sprite (**carbon-icons.svg**) by serving it as a static asset.
 Then reference the SVG icon you want to display using a path to the SVG sprite file.
-To use SVG sprite files, they __must__ be distributed through a web server and while using `svgxuse`.
+To use SVG sprite files, they **must** be distributed through a web server and while using `svgxuse`.
 
 ```html
 <!-- From static assets  -->
@@ -86,7 +86,7 @@ To use SVG sprite files, they __must__ be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="http://carbondesignsystem.com/style/iconography" target=blank>iconography library</a> page for a full list of icon names.
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/style/iconography" target=blank>iconography library</a> page for a full list of icon names.
 
 ### CSS
 
@@ -119,14 +119,15 @@ Visit carbon-icons and browse the svg folder for any icons you want to use. (Rem
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
 
 ---
-| Filename | Description | Supported versions|
-|-----|--------|---------------|
-|carbon-icons.svg| Contains current icons (consolidated subset of legacy icons used in IBM Bluemix) | `3.x` and newer|
-|carbon-icons.json| JSON file created from carbon-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer|
-|carbon-icons.js| JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` and newer|
-|sprite.svg| SVG sprite contains legacy icons | `1.x`, `2.x` and `3.x`|
-|icons.json| legacy JSON file created from sprite.svg | `1.x`, `2.x` and `3.x`|
-|legacy-icons.js| JS module created from sprite.svg | `3.x` only|
+
+| Filename          | Description                                                                                                        | Supported versions     |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                                   | `3.x` and newer        |
+| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer        |
+| carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#)            | `3.x` and newer        |
+| sprite.svg        | SVG sprite contains legacy icons                                                                                   | `1.x`, `2.x` and `3.x` |
+| icons.json        | legacy JSON file created from sprite.svg                                                                           | `1.x`, `2.x` and `3.x` |
+| legacy-icons.js   | JS module created from sprite.svg                                                                                  | `3.x` only             |
 
 ### Accessibility
 
@@ -146,10 +147,11 @@ Make sure that you do not duplicate this `id`.
 ```html
 <svg aria-labelledby="add">
   <title id="add">Add a new service</title>
-  <use xlink:href="/carbon-icons/dist/icon--add--glyph"></use>
+  <use xlink:href="/carbon-icons/dist/icon--add"></use>
 </svg>
 ```
 
 For more details on accessibility, see the following resources:
-- "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
-- "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)
+
+* "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
+* "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)

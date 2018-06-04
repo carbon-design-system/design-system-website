@@ -59,7 +59,7 @@ class ComponentStatus extends React.Component {
         <span>-</span>
       </div>
     );
-    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']} (May 16th, 2018)`;
+    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']} (June 4th, 2018)`;
     const componentStatus = require('../../../data/component-status.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
@@ -117,14 +117,17 @@ class ComponentStatus extends React.Component {
                 <td>{underReviewIcon}</td>
                 <td>Under review</td>
                 <td>
-                  Indicates that a component’s design, code, or usage is being re-examined. This means in the near future either changes are coming to the component or it will be
-                  deprecated for a new version.
+                  Indicates that a component’s design, code, or usage is being re-examined. This means in the near future either
+                  changes are coming to the component or it will be deprecated for a new version.
                 </td>
               </tr>
               <tr>
                 <td>{deprecatedIcon}</td>
                 <td>Deprecated</td>
-                <td>Deprecated components have either been completely replaced by new components or are no longer being supported in the component library.</td>
+                <td>
+                  Deprecated components have either been completely replaced by new components or are no longer being supported in
+                  the component library.
+                </td>
               </tr>
               <tr>
                 <td>{notApplicableIcon}</td>
@@ -143,7 +146,10 @@ class ComponentStatus extends React.Component {
                   <span className="bx--tag bx--tag--third-party">Updated</span>
                 </td>
                 <td />
-                <td>Applied only to existing components after they have been under review, tweaked, and re-released to the design system site.</td>
+                <td>
+                  Applied only to existing components after they have been under review, tweaked, and re-released to the design
+                  system site.
+                </td>
               </tr>
             </tbody>
           </table>

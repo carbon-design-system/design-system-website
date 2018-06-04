@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import {
-  MultiSelect,
-} from 'carbon-components-react';
+import { MultiSelect } from 'carbon-components-react';
 
 const items = [
   {
@@ -32,7 +30,7 @@ class ComponentReactExample extends Component {
     component: PropTypes.string,
     variation: PropTypes.string,
     hideViewFullRender: PropTypes.bool,
-    codepenSlug: PropTypes.string
+    codepenSlug: PropTypes.string,
   };
 
   componentDidMount() {
@@ -47,30 +45,31 @@ class ComponentReactExample extends Component {
     if (this.props.variation === 'MultiSelect.Filterable') {
       NewComponent = reactComponent.MultiSelect.Filterable;
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} placeholder="Filter" />, this.comp
+        <NewComponent items={items} itemToString={item => (item ? item.text : '')} onChange={() => {}} placeholder="Filter" />,
+        this.comp
       );
     } else if (this.props.variation === 'MultiSelect') {
       NewComponent = reactComponent[this.props.variation];
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" />, this.comp
+        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" />,
+        this.comp
       );
     } else if (this.props.variation === 'MultiSelect.Inline') {
       NewComponent = reactComponent.MultiSelect;
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" type="inline" />, this.comp
+        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" type="inline" />,
+        this.comp
       );
     } else {
-      ReactDOM.render(
-        <NewComponent />, this.comp
-      );
+      ReactDOM.render(<NewComponent />, this.comp);
     }
-  }
+  };
 
   render() {
     const { component, variation } = this.props;
     const classNames = classnames({
       'component-example__live--rendered': true,
-      [`${component}`]: true
+      [`${component}`]: true,
     });
     let selectedKind = '';
     let selectedStory = '';
@@ -84,9 +83,9 @@ class ComponentReactExample extends Component {
     return (
       <div>
         <div className="svg--sprite" aria-hidden="true" />
-        <div className="component-example__live">
+        <div className="component-example__live component-example__live--light">
           <div className={classNames}>
-            <div ref={(comp) => this.comp = comp} id="comp"></div>
+            <div ref={comp => (this.comp = comp)} />
           </div>
           <Link className="component-example__view-full-render" target="_blank" to={componentLink}>
             View on React Storybook

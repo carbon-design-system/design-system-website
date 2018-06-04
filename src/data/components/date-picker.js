@@ -5,11 +5,20 @@
     "date-picker": [
       "Simple date picker"
     ],
+    "date-picker--light": [
+      "Simple date picker (Light)"
+    ],
     "date-picker--single": [
       "Single date picker"
     ],
+    "date-picker--single-light": [
+      "Single date picker (Light)"
+    ],
     "date-picker--range": [
       "Range date picker"
+    ],
+    "date-picker--range-light": [
+      "Range date picker (Light)"
     ],
     "time-picker": [
       "Time picker"
@@ -29,5 +38,6 @@
       "GOMKap"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }

@@ -69,11 +69,6 @@ class ColorContrast extends Component {
                 <p>ui-02</p>
                 <p>#f4f7fb</p>
               </li>
-              <li className="ui-03">
-                <img src={ui3} alt="ui-03" />
-                <p>ui-03</p>
-                <p>#dfe3e6</p>
-              </li>
             </ul>
           </li>
         </ul>

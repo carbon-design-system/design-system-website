@@ -5,7 +5,7 @@
 | Tab label: selected          | $brand-01 | #3d70b2 |
 | Tab border-bottom: selected | $brand-01 | #3d70b2 |
 | Tab label                    | $text-01  | #152935 |
-| Tab label: hover             | $brand-01 | #3d70b2 |
+| Tab:hover                    | $hover-primary-text | #294c86 |
 
 ## Typography
 

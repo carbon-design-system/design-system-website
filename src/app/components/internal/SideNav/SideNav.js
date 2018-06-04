@@ -119,6 +119,7 @@ class SideNav extends Component {
 
   renderSiteItems = navItems =>
     Object.keys(navItems).map(navItem => {
+      const counter = Math.floor(Math.random() * 500) + 1;
       const navItemObj = navItems[navItem];
       const { ENV } = process.env;
       const isInternal = ENV !== 'internal' && navItem === 'your-product-on-ibm-cloud';
@@ -131,7 +132,7 @@ class SideNav extends Component {
       const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
       const isCurrentPath = currentPath[1] === navItem;
       return (
-        <SideNavItem key={navItem} isActiveItem={isCurrentPath}>
+        <SideNavItem key={`navItem-${counter}`} isActiveItem={isCurrentPath}>
           {({ open: isItemOpen }) => (
             <Link
               aria-label={navItemObj.title}
@@ -149,10 +150,11 @@ class SideNav extends Component {
   renderSubNav = (subnav, parentItem) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentItem;
+    let counter = Math.floor(Math.random() * 500) + 1;
     return (
-      <SideNavItem key={parentItem} isCurrentPath={isCurrentPath}>
+      <SideNavItem key={`${parentItem}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen }) => [
-          <p className="main-nav-item__heading">
+          <p key={`${parentItem}${counter}`} className="main-nav-item__heading">
             {SiteNavStructure[parentItem].title}
             <Icon
               className="main-nav-item__arrow"
@@ -167,6 +169,7 @@ class SideNav extends Component {
             aria-label={`${SiteNavStructure[parentItem].title} sub menu`}
             aria-hidden="true"
             className="main-nav__sub-nav"
+            key={`${parentItem}${++counter}`}
           >
             {this.renderSubNavItems(subnav, parentItem, isItemOpen)}
           </ul>,
@@ -179,10 +182,11 @@ class SideNav extends Component {
     const { subnav } = parent;
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
     const isCurrentPath = currentPath[1] === parentKey;
+    let counter = Math.floor(Math.random() * 500) + 1;
     return (
-      <SideNavItem type="sub" key={parentKey} isCurrentPath={isCurrentPath}>
+      <SideNavItem type="sub" key={`${parentKey}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen, onKeyDown }) => [
-          <p className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
+          <p key={`${parentKey}${counter}`} className="sub-nav__item" onKeyDown={onKeyDown} tabIndex={isOpen ? 0 : undefined}>
             {parent.title}
             <Icon
               className="sub-nav-item__arrow"
@@ -192,7 +196,13 @@ class SideNav extends Component {
               alt="Menu arrow icon"
             />
           </p>,
-          <ul role="menu" aria-label={`${parent.title} sub menu`} aria-hidden="true" className="sub-nav__inner-sub-nav">
+          <ul
+            key={`${parentKey}${++counter}`}
+            role="menu"
+            aria-label={`${parent.title} sub menu`}
+            aria-hidden="true"
+            className="sub-nav__inner-sub-nav"
+          >
             {this.renderInnerSubNavItems(subnav, parentKey, isItemOpen)}
           </ul>,
         ]}
@@ -291,9 +301,11 @@ class SideNav extends Component {
             Carbon <span>Design System</span>
           </Link>
           <div className="bx--search bx--search--sm" role="search">
-            <svg className="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16" fillRule="evenodd">
-              <path d="M6 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0-2C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
-              <path d="M16 13.8L13.8 16l-3.6-3.6 2.2-2.2z" />
+            <svg className="bx--search-magnifier" width="16" height="16" viewBox="0 0 16 16">
+              <path
+                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm4.936-1.27l4.563 4.557-.707.708-4.563-4.558a6.5 6.5 0 1 1 .707-.707z"
+                fillRule="nonzero"
+              />
             </svg>
             <input
               type="text"

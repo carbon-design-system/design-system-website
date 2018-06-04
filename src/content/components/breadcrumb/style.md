@@ -4,9 +4,9 @@
 |----------  |----------|-----------|
 | Title      | $brand-01| #3d70b2   |
 | Slash      | $text-02 | #5a6872  |
-| Dropdown text  | $text-01  | #152934   |
-| Dropdown hover | $brand-02 | #5596e6 @ 10% |
-| Dropdown text: hover  | $inverse-01| #3d70b2   |
+| Overflow text  | $text-01  | #152934   |
+| Row:hover | $hover-row | #5596e6 at 10% opacity |
+| Breadcrumb:hover  | $hover-primary-text | #294c86   |
 
 ## Typography
 

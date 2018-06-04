@@ -1,10 +1,11 @@
 ## Effective form design
 
-All forms are comprised of 5 elements:
+All forms are comprised of 6 elements:
 
 * **Labels:** Inform users what the corresponding input fields mean.
 * **Input fields:** Enable users to provide information. Information can be entered through a variety of different input fields ranging from text fields, checkboxes, and many other types.
-* **Placeholder text:** Provides assistance on how to fill out a field.
+* **Help text:** Provides assistance on how to fill out a field. Help text is optional.
+* **Placeholder text:** Hints at what goes into a field. Placeholder text is optional.
 * **Actions:** Allow users to submit a form.
 * **Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
 
@@ -29,6 +30,29 @@ Be as concise as possible when designing forms. Think about each field and what 
 * Is this a piece of information that is valuable to us?
 * Is this a piece of information that is so valuable that it's worth preventing the user from continuing if they choose not to provide it?
 
+### Labels
+
+Effective form labeling helps users understand what information to enter into a Text Input. Using a placeholder text as a label is often applied as a space-saving method. However, this is not recommended because it hides context and presents accessibility issues.
+
+**Accessibility best practices for labels:**
+
+* Labels must be visible when an input gets focus.
+* Labels must be announced to the screen reader on focus.
+* Ensure the helper text that appears under an input is read when an assistive technology user stops at an input using ARIA.
+* Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized).
+
+### Default values
+
+Where possible, add programmatic assistance. Detect and pre-fill inputs to reduce errors and save time. When the software can't determine the value that belongs in an input, use type-ahead to make suggestions. Use sentence-case for default values, detected values, and auto-completion text.
+
+### Help text
+
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
+
+### Placeholder text
+
+Placeholder text provides hints or examples of what to enter. Placeholder text  disappears after the user begins entering data into the Input and should not contain crucial information. Use sentence-style capitalization, and in most cases, write the text as a direct statement without punctuation.
+
 ## Validation and errors
 
 ### Error messaging
@@ -45,6 +69,9 @@ We recommend validating the users data before form submission. Use visual cues t
 The validation should appear when the user has clicked away from the text field. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
 
 The validation label below the field should be as informative as possible when describing the issue with the users data. For example, if password limitations require 16 characters, but the user inputs a password with only six characters, the text should read something like, _"Password must be at least 16 characters."_
+
+![Validation error sequencing on a form](images/form-usage-3.gif)
+_Validation error sequencing_
 
 
 ### Optional vs. required fields

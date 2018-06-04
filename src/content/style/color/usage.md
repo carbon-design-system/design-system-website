@@ -8,45 +8,64 @@ A universal variable can also have multiple associated roles when the color is c
 
 ### Color terms
 
-Term | Definition
------|-----------
-**Value** | A unique color (hex code) assigned to a universal variable
-**Role** | The systematic usage/s of a color value
-**Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes. Within a theme variables are assigned appropriate values.
-**Theme** | The set of unique color values assigned to the universal palette
-**Palette** | The complete set of universal variables. The palette is the naming conventions of colors used in the UI. Each theme will use the same palette of variables.
+| Term         | Definition                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Value**    | A unique color (hex code) assigned to a universal variable                                                                                                               |
+| **Role**     | The systematic usage/s of a color value                                                                                                                                  |
+| **Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes. Within a theme variables are assigned appropriate values. |
+| **Theme**    | The set of unique color values assigned to the universal palette                                                                                                         |
+| **Palette**  | The complete set of universal variables. The palette is the naming conventions of colors used in the UI. Each theme will use the same palette of variables.              |
 
 ## Color roles
 
-Variable | Role(s) | Value
----------|--------|------
-**brand-01** | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2
-**brand-02** | Supporting brand <br /> brand-01 hover | #5596e6
-**brand-03** | Secondary brand <br /> Loading| #00b4a0
-**ui-01** | Primary background <br /> Layer 1 background | #ffffff
-**ui-02** | Default background <br /> Layer 0 background <br /> Secondary background | #f4f7fb
-**ui-03** | Tertiary background | #dfe3e6
-**ui-04** | Subtle border | #8897a2
-**ui-05** | Emphasis border <br /> Secondary icons | #5a6872
-**text-01** | Primary text <br /> Body copy | #152935
-**text-02** | Secondary text <br /> Subtle text | #5a6872
-**text-03** | Hint text | #cdd1d4
-**inverse-01** | Inverse text color <br /> Inverse icon color | #ffffff
-**field-01** | Field background | rgba(60,112,178,0.10)
-**support-01** | Error | #e0182d
-**support-02** | Success | #5aa700
-**support-03** | Warning | #efc100
-**support-04** | Information | #5aaafa
+| Variable       | Role(s)                                                                                                            | Value   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ | ------- |
+| **$brand-01**   | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | #3d70b2 |
+| **$brand-02**   | Supporting brand                                                                                                   | #5596e6 |
+| **$brand-03**   | Tertiary brand <br /> Loading                                                                                      | #00b4a0 |
+| **$ui-01**      | Primary background <br /> Layer 1 background                                                                       | #ffffff |
+| **$ui-02**      | Default page background <br /> Layer 0 background <br /> Secondary background                                      | #f4f7fb |
+| **$ui-03**      | Subtle border                                                                                                      | #dfe3e6 |
+| **$ui-04**      | 3:1 color contrast <br /> Emphasis border                                                                          | #8897a2 |
+| **$ui-05**      | 4.5:1 color contrast <br /> High contrast border <br /> Secondary icons                                            | #5a6872 |
+| **$text-01**    | Primary text <br /> Body copy                                                                                      | #152935 |
+| **$text-02**    | Secondary text <br /> Subtle text <br /> Help text                                                                 | #5a6872 |
+| **$text-03**    | Placeholder text                                                                                                   | #cdd1d4 |
+| **$inverse-01** | Inverse text color <br /> Inverse icon color                                                                       | #ffffff |
+| **$inverse-02** | Inverse background color                                                                                           | #272d33 |
+| **$field-01**   | Field color on $ui-01 background                                                                                   | #f4f7fb |
+| **$field-02**   | Field color on $ui-02 background                                                                                   | #ffffff |
+| **$hover-primary** | $brand-01 element hover                                                                       | `darken($brand-01, 10%)` |
+| **$hover-primary-text** | $brand-01 text hover                                                                     | `darken($brand-01, 15%)` |
+| **$hover-danger** | Danger hover                                                                                 | `darken($support-01, 10%)` |
+| **$hover-secondary** | $ui-05 element hover                                                                                        | $brand-01|
+| **$hover-row** | Row hover                                                                                           | `rgba($brand-02, 0.1)` |
+| **$support-01** | Error                                                                                                              | #e0182d |
+| **$support-02** | Success                                                                                                            | #5aa700 |
+| **$support-03** | Warning                                                                                                            | #efc100 |
+| **$support-04** | Information                                                                                                        | #5aaafa |
 
 ## Color contrast | WCAG AA standards
+
+### Type colors
 
 All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
 
 <div data-insert-component="ColorContrast"></div>
 
+### UI colors
+
+Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons. In the table below are approved Carbon color combinations.
+
+<div data-insert-component="UIColorContrast"></div>
+
+### Additional color accessibility
+
+Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](http://carbondesignsystem.com/guidelines/accessibility/color) of the Carbon website.
+
 ## Resources
 
-- <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>IBM accessible color guide</a>
-- <a href="http://w3-03.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
-- <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
-- <a href="https://www.ibm.com/design/language/resources/color-library" target=blank>IBM Design Language colors</a>
+* <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>IBM accessible color guide</a>
+* <a href="http://w3-03.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
+* <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
+* <a href="https://www.ibm.com/design/language/resources/color-library" target=blank>IBM Design Language colors</a>

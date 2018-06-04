@@ -13,11 +13,8 @@ class CodePage extends Component {
 
   componentDidMount() {
     let currentComponent = this.props.component;
-    currentComponent = currentComponent.replace(/-([a-z])/g, g =>
-      g[1].toUpperCase()
-    );
-    currentComponent =
-      currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
+    currentComponent = currentComponent.replace(/-([a-z])/g, g => g[1].toUpperCase());
+    currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
     if (currentComponent === 'Tabs') {
       currentComponent = 'Tab';
     } else if (currentComponent === 'Card') {
@@ -49,11 +46,8 @@ class CodePage extends Component {
 
   componentDidUpdate() {
     let currentComponent = this.props.component;
-    currentComponent = currentComponent.replace(/-([a-z])/g, g =>
-      g[1].toUpperCase()
-    );
-    currentComponent =
-      currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
+    currentComponent = currentComponent.replace(/-([a-z])/g, g => g[1].toUpperCase());
+    currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
     if (currentComponent === 'Tabs') {
       currentComponent = 'Tab';
     } else if (currentComponent === 'Card') {
@@ -83,7 +77,7 @@ class CodePage extends Component {
     }
   }
 
-  renderVariation = (parent, variation, title, codepenSlug) => {
+  renderVariation = (parent, variation, variations, title, codepenSlug) => {
     let currentCodepenSlug = '';
     if (!(codepenSlug === undefined)) {
       if (typeof codepenSlug === 'string') {
@@ -98,45 +92,38 @@ class CodePage extends Component {
     }
     let htmlFile;
     if (parent === 'dropdown') {
-      if (variation === 'dropdown') {
-        htmlFile = require('carbon-components/src/components/dropdown/dropdown.html');
-      } else if (variation === 'dropdown--inline') {
-        htmlFile = require('carbon-components/src/components/dropdown/dropdown--inline.html');
+      if (/^dropdown/.test(variation)) {
+        htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       } else {
         return this.renderReactComponent(parent, variation, title);
       }
     } else {
       if (parent === 'text-input' && variation === 'text-area') {
-        htmlFile = require('carbon-components/src/components/text-area/text-area.html');
+        htmlFile = require('carbon-components/html/text-area/text-area.html');
       } else if (parent === 'data-table' && variation === 'toolbar') {
-        htmlFile = require('carbon-components/src/components/toolbar/toolbar.html');
+        htmlFile = require('carbon-components/html/toolbar/toolbar.html');
       } else if (parent === 'date-picker' && variation === 'time-picker') {
-        htmlFile = require('carbon-components/src/components/time-picker/time-picker.html');
+        htmlFile = require('carbon-components/html/time-picker/time-picker.html');
       } else if (parent === 'data-table' && variation === 'data-table-v2') {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2.html');
-      } else if (
-        parent === 'data-table' &&
-        variation === 'data-table-v2-expandable'
-      ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2-expandable.html');
-      } else if (
-        parent === 'data-table' &&
-        variation === 'data-table-v2--pagination'
-      ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--pagination.html');
-      } else if (
-        parent === 'data-table' &&
-        variation === 'data-table-v2--small'
-      ) {
-        htmlFile = require('carbon-components/src/components/data-table-v2/data-table-v2--small.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2.html');
+      } else if (parent === 'data-table' && variation === 'data-table-v2--expandable') {
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--expandable.html');
+      } else if (parent === 'data-table' && variation === 'data-table-v2--pagination') {
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--pagination.html');
+      } else if (parent === 'data-table' && variation === 'data-table-v2--small') {
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
       } else {
-        htmlFile = require(`carbon-components/src/components/${parent}/${variation}.html`);
+        htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       }
       if (parent === 'card') {
         const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
         const newPath = require('../../../../assets/images/placeholder.svg');
         htmlFile = htmlFile.replace(oldPath, newPath);
       }
+    }
+
+    if (variation.includes('light') || variation.includes('legacy')) {
+      return '';
     }
 
     return (
@@ -147,22 +134,27 @@ class CodePage extends Component {
           variation={variation}
           component={parent}
           htmlFile={htmlFile}
+          variations={variations}
           hideViewFullRender={this.props.hideViewFullRender}
         />
       </div>
     );
   };
 
-
   renderReactComponent = (parent, variation, title) => {
     return (
       <div key={variation} className="component-variation">
         <h2 className="component-variation__name">{title}</h2>
-        <p>This component is currently only available in <a href="https://github.com/carbon-design-system/carbon-components-react" target="_blank">our React library</a>.</p>
+        <p>
+          This component is currently only available in{' '}
+          <a href="https://github.com/carbon-design-system/carbon-components-react" target="_blank">
+            our React library
+          </a>.
+        </p>
         <ComponentReactExample component={parent} variation={variation} />
       </div>
     );
-  }
+  };
 
   renderJavascriptContent = component => {
     let javascriptSection;
@@ -201,20 +193,11 @@ class CodePage extends Component {
     let codepenSlug = componentInfo.codepen;
     if (componentInfo.variations) {
       componentContent = Object.keys(componentInfo.variations).map(variation =>
-        this.renderVariation(
-          component,
-          variation,
-          componentInfo.variations[variation],
-          codepenSlug
-        )
+        this.renderVariation(component, variation, componentInfo.variations, componentInfo.variations[variation], codepenSlug)
       );
     } else {
-      let htmlFile;
-      if (component === 'cloud-header') {
-        htmlFile = require('carbon-addons-bluemix/src/components/cloud-header/cloud-header.html');
-      } else {
-        htmlFile = require(`carbon-components/src/components/${component}/${component}.html`); // eslint-disable-line
-      }
+      let htmlFile = require(`carbon-components/html/${component}/${component}.html`);
+
       componentContent = (
         <ComponentExample
           hideViewFullRender={this.props.hideViewFullRender}
@@ -227,12 +210,14 @@ class CodePage extends Component {
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {
       javascriptContent = (
-        <div
-          className="page_md"
-          dangerouslySetInnerHTML={{
-            __html: md.render(this.renderJavascriptContent(component)),
-          }}
-        />
+        <div className="page_md code-page__docs">
+          <h2>Documentation</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: md.render(this.renderJavascriptContent(component)),
+            }}
+          />
+        </div>
       );
     } else {
       javascriptContent = '';
@@ -240,10 +225,7 @@ class CodePage extends Component {
 
     return (
       <div className="page code-page test">
-        <p
-          className="page__desc"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
+        <p className="page__desc" dangerouslySetInnerHTML={{ __html: description }} />
         {componentContent}
         {javascriptContent}
       </div>

@@ -5,17 +5,24 @@
     "tooltip": [
       "Tooltip"
     ],
-    "tooltip--simple": [
-      "Simple tooltip"
+    "tooltip--icon": [
+      "Icon Tooltip"
+    ],
+    "tooltip--definition": [
+      "Definition Tooltip"
     ]
   },
   "codepen": {
     "tooltip": [
       "pdeLom"
     ],
-    "tooltip--simple": [
-      "vpGjRw"
+    "tooltip--icon": [
+      "yENPBq"
+    ],
+    "tooltip--definition": [
+      "ERjbYz"
     ]
   },
-  "__content": "\n"
+  "__content": "\n",
+  "metadata": {}
 }

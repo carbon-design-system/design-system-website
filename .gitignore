@@ -8,6 +8,10 @@ coverage
 build
 dist
 scripts
+!scripts/build.js
+!scripts/frontmatter.js
+!scripts/start.js
+!scripts/templates.js
 
 # misc
 .DS_Store

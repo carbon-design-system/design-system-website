@@ -3,6 +3,7 @@ desc: <span>Text inputs</span> enable the user to interact with and input data. 
 variations:
   text-input:
     - Text Input
+  text-input--light:
   text-area:
     - Text Area
 codepen:

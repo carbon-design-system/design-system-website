@@ -114,6 +114,24 @@ ul.color-contrast__examples--type-colors {
         background-color: $color__blue-90;
       }
     }
+
+    &.ui-05 {
+      div:first-child {
+        background-color: #5a6872;
+      }
+    }
+
+    &.ui-04 {
+      div:first-child {
+        background-color: #8897a2;
+      }
+    }
+
+    &.ui-03 {
+      div:first-child {
+        background-color: #dfe3e6;
+      }
+    }
   }
 }
 

@@ -23,17 +23,13 @@
     {
       "item": "Code Snippet",
       "added": "7.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
       "item": "Content Switcher",
       "added": "4.0.0",
       "status": 0
-    },
-    {
-      "item": "Copy Button",
-      "added": "6.11.0",
-      "status": 2
     },
     {
       "item": "Data Table",
@@ -43,6 +39,7 @@
     {
       "item": "Date Picker",
       "added": "7.10.1",
+      "tag": "updated",
       "status": 0
     },
     {
@@ -59,6 +56,7 @@
     {
       "item": "Form",
       "added": "2.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
@@ -89,6 +87,7 @@
     {
       "item": "Number Input",
       "added": "6.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
@@ -114,11 +113,13 @@
     {
       "item": "Search",
       "added": "2.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
       "item": "Select",
       "added": "4.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
@@ -144,6 +145,7 @@
     {
       "item": "Text Input",
       "added": "2.0.0",
+      "tag": "updated",
       "status": 0
     },
     {
@@ -159,6 +161,7 @@
     {
       "item": "Tooltip",
       "added": "2.0.0",
+      "tag": "updated",
       "status": 0
     }
   ]

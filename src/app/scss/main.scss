@@ -11,7 +11,6 @@ $css--reset: true;
 $css--plex: true;
 $font-path: '/assets/fonts';
 
-@import 'node_modules/carbon-addons-bluemix/src/globals/scss/styles';
 @import 'node_modules/carbon-components/src/globals/scss/styles';
 
 //---------------------------------------------------------------
@@ -21,10 +20,10 @@ $font-path: '/assets/fonts';
 @import 'global/typography';
 @import 'global/vars';
 @import 'global/mixins';
+@import 'global/colors';
 @import 'global/layout';
 @import 'global/browser-fixes';
 @import 'global/404';
-@import 'global/colors';
 
 //----------------------------------------------------------------
 // Internal components
@@ -42,7 +41,6 @@ $font-path: '/assets/fonts';
 @import '../components/internal/ComponentExample/component-overrides.scss';
 @import '../components/internal/IconCard/iconcard.scss';
 @import '../components/internal/CodeExample/code-example.scss';
-@import '../components/internal/LiveComponent/live-component.scss';
 @import '../components/internal/Page/page.scss';
 @import '../components/internal/GlossaryNav/glossary-nav.scss';
 @import '../components/internal/Page/page-overwrites.scss';

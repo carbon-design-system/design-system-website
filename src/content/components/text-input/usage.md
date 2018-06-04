@@ -20,14 +20,25 @@ Effective form labeling helps users understand what information to enter into a 
 
 ### Placeholder text
 
-Placeholder text provides hints or examples of what to enter. Placeholder text should disappear after the user has entered data into the Text Input. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
+Placeholder text provides hints or examples of what to enter. Placeholder text  disappears after the user begins entering data into the Input and should not contain crucial information. Use sentence-style capitalization, and in most cases, write the text as a direct statement without punctuation.
 
 ---
 ***
 > 
-![Placeholder text](images/text-input-usage-1.png)
+![Placeholder text example](images/text-input-usage-1.png)
+_Placeholder text example_
 
-_Placeholder text_
+### Help text
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
+
+---
+***
+> 
+![Help text example](images/text-input-usage-3.png)
+_Help text example_
+
+### Help text
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
 
 ### Default values
 
@@ -40,6 +51,5 @@ Real time validation helps to streamline the process and keep data clean when th
 ---
 ***
 > 
-![validation on text field](images/text-input-usage-2.png)
-
-_Text Input validation_
+![Validation on text field example](images/text-input-usage-2.png)
+_Error example_

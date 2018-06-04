@@ -10,7 +10,6 @@ import ReactGA from 'react-ga';
 import { Tabs, Tab } from 'carbon-components-react';
 
 import CodePage from '../../components/internal/CodePage';
-import LiveComponent from '../../components/internal/LiveComponent';
 import OverviewPage from '../../components/internal/OverviewPage';
 import Page from '../../components/internal/Page';
 import MarkdownPage from '../../components/internal/MarkdownPage';
@@ -42,14 +41,11 @@ class ComponentPage extends Component {
     if (currentComponent === 'overview') {
       return <OverviewPage />;
     }
-
-    if (params.page === 'live') {
-      return <LiveComponent component={currentComponent} />;
-    }
-
     const componentTitle =
-      currentComponent.replace(/-/g, ' ').charAt(0).toUpperCase() +
-      currentComponent.replace(/-/g, ' ').substring(1);
+      currentComponent
+        .replace(/-/g, ' ')
+        .charAt(0)
+        .toUpperCase() + currentComponent.replace(/-/g, ' ').substring(1);
     const usage = require(`../../../content/components/${currentComponent}/usage.md`);
     const style = require(`../../../content/components/${currentComponent}/style.md`);
 
@@ -60,34 +56,16 @@ class ComponentPage extends Component {
     } catch (err) {
       hasCodePage = false;
     }
-    const codePageContent = hasCodePage
-      ? <CodePage component={currentComponent} />
-      : '';
+    const codePageContent = hasCodePage ? <CodePage component={currentComponent} /> : '';
     const content = (
-      <Tabs
-        key={params.name}
-        className="bx--global-light-ui page-tabs"
-        selected={this.getCurrentTab()}
-      >
-        <Tab
-          href={`/components/${currentComponent}/code`}
-          label="Code"
-          onClick={this.updateTab}
-        >
+      <Tabs key={params.name} className="bx--global-light-ui page-tabs" selected={this.getCurrentTab()}>
+        <Tab href={`/components/${currentComponent}/code`} label="Code" onClick={this.updateTab}>
           {codePageContent}
         </Tab>
-        <Tab
-          href={`/components/${currentComponent}/usage`}
-          label="Usage"
-          onClick={this.updateTab}
-        >
+        <Tab href={`/components/${currentComponent}/usage`} label="Usage" onClick={this.updateTab}>
           <MarkdownPage content={usage} />
         </Tab>
-        <Tab
-          href={`/components/${currentComponent}/style`}
-          label="Style"
-          onClick={this.updateTab}
-        >
+        <Tab href={`/components/${currentComponent}/style`} label="Style" onClick={this.updateTab}>
           <MarkdownPage content={style} />
         </Tab>
       </Tabs>
