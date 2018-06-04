@@ -54,7 +54,6 @@ class ComponentExample extends Component {
   };
 
   onSwitchFieldColors = value => {
-    console.log('here');
     this.setState({
       currentFieldColor: value,
     });
