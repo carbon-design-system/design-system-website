@@ -1,6 +1,5 @@
 **June 1, 2018: V9 Release**
 
-
 ## Website
 - Add-ons section has been removed. There is an [Add-ons](getting-started/add-ons) page that now lives under the Getting Started section
 - The [Contributing](/getting-started/contributing) page has been moved from the Guidelines to the Getting Started section
@@ -53,7 +52,6 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
     - $hover-secondary – #3d70b2
     - $hover-danger – #bd1427
 
-
 ## Icons
 - Check out the [Iconography](/style/iconography/library) page to see the new icon style
 - All Icons are now `16x16px` (24x24px is no longer being supported). 
@@ -64,7 +62,6 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
 - Components on the Component page are now split up into five different artboards: Controls, Inputs, Content, Navigation, Informative, and Data Tables
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
-
 
 <hr class="divider">
 

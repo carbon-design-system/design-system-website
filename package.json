@@ -75,8 +75,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-polyfill": "^6.23.0",
-    "carbon-components": "file:../carbon-components",
-    "carbon-components-react": "file:../carbon-components-react",
+    "carbon-components": "9.0.0",
+    "carbon-components-react": "9.0.0",
     "carbon-icons": "^7.0.5",
     "classnames": "^2.2.5",
     "color": "^1.0.3",
