@@ -171,7 +171,6 @@ class ComponentExample extends Component {
           {hasLightVersion && (
             <div className="component-toolbar__switcher">
               <RadioButtonGroup
-                ref={switcher => (this.switcher = switcher)}
                 defaultSelected={this.state.currentFieldColor}
                 name={`radio-button-group-${counter}`}
                 legend="Field selector"
