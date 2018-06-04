@@ -105,3 +105,11 @@ main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
     padding-top: 3rem;
   }
 }
+
+.code-page .bx--form-item {
+  margin-bottom: 1.5rem;
+}
+
+.number-input div .bx--form-item:last-child .bx--number {
+  width: 300px;
+}
