@@ -30,4 +30,5 @@ The large Loading spinner should appear centered over a page or content that it 
 _
 ![Large spinner in context example](images/loading-style-4.png)
 _
+
 _Example of a large loading spinner in product context_
