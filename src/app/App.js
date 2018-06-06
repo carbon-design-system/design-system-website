@@ -151,9 +151,9 @@ class App extends Component {
               <div className="bx--notification-inline__text">
                 <p className="bx--notification-inline__title">Announcement: &nbsp;</p>
                 <p className="bx--notification-inline__subtitle">
-                  Carbon Design System is now on Version 9.0, therefore this site and documentation is outdated. Please visit the
-                  new <a href="http://www.carbondesignsystem.com">Carbon Design System</a> to get the most up to date designs and
-                  code!
+                  &nbsp;Carbon Design System is now on Version 9.0, therefore this site and documentation is outdated. Please
+                  visit the new <a href="http://www.carbondesignsystem.com">Carbon Design System</a> to get the most up to date
+                  designs and code!
                 </p>
               </div>
             </div>
