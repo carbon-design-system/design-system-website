@@ -154,7 +154,7 @@ class SideNav extends Component {
     return (
       <SideNavItem key={`${parentItem}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen }) => [
-          <p key={`${parentItem}${counter}`} className="main-nav-item__heading">
+          <p key={`${parentItem}${counter}`} className="main-nav-item__heading main-nav-item__list">
             {SiteNavStructure[parentItem].title}
             <Icon
               className="main-nav-item__arrow"
@@ -212,7 +212,6 @@ class SideNav extends Component {
 
   renderInnerSubNavItems = (subnav, parentItem, isItemOpen) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
-    const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
       const link = `/${parentItem}/${subNavItem}`;
       const isCurrentPage = parentItem === currentPath[1] && subNavItem === currentPath[2];
@@ -225,12 +224,6 @@ class SideNav extends Component {
         'sub-nav__item-link': true,
         'sub-nav__item-link--sub': true,
       });
-      // const isServiceProviders =
-      //   !(ENV === "internal") && subNavItem === "service-providers";
-      // const isUserFlow = !(ENV === "internal") && subNavItem === "user-flow";
-      // if (isServiceProviders || isUserFlow) {
-      //   return "";
-      // }
       const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
       return (
         <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
@@ -244,32 +237,24 @@ class SideNav extends Component {
 
   renderSubNavItems = (subnav, parentItem, isItemOpen) => {
     const currentPath = browserHistory.getCurrentLocation().pathname.split('/');
-    const { ENV } = process.env;
     return Object.keys(subnav).map(subNavItem => {
       if (typeof subnav[subNavItem] === 'object') {
         return this.renderInnerSubNav(subnav[subNavItem], subNavItem, isItemOpen);
-      } else {
-        const link = `/${parentItem}/${subNavItem}`;
-        const isCurrentPage = parentItem === currentPath[1] && subNavItem === currentPath[2];
-        const classNames = classnames({
-          'sub-nav__item': true,
-          selected: isCurrentPage, // eslint-disable-line
-        });
-        // const isServiceProviders =
-        //   !(ENV === "internal") && subNavItem === "service-providers";
-        // const isUserFlow = !(ENV === "internal") && subNavItem === "user-flow";
-        // if (isServiceProviders || isUserFlow) {
-        //   return "";
-        // }
-        const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
-        return (
-          <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
-            <Link className="sub-nav__item-link" aria-label={subnav[subNavItem]} to={link} tabIndex={tabIndex}>
-              {subnav[subNavItem]}
-            </Link>
-          </li>
-        );
       }
+      const link = `/${parentItem}/${subNavItem}`;
+      const isCurrentPage = parentItem === currentPath[1] && subNavItem === currentPath[2];
+      const classNames = classnames({
+        'sub-nav__item': true,
+        selected: isCurrentPage, // eslint-disable-line
+      });
+      const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
+      return (
+        <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
+          <Link className="sub-nav__item-link" aria-label={subnav[subNavItem]} to={link} tabIndex={tabIndex}>
+            {subnav[subNavItem]}
+          </Link>
+        </li>
+      );
     });
   };
 

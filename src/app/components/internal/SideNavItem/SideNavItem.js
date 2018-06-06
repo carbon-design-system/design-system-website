@@ -38,13 +38,13 @@ class SideNavItem extends Component {
           [...subMenu.children].forEach(child => {
             height += child.offsetHeight;
           });
-          subMenu.style.maxHeight = `${height + 400}px`;
+          subMenu.attributeStyleMap.set('max-height', `${height + 400}px`);
         } else {
           const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
           if (!evt.currentTarget.classList.contains('main-nav-item__open') && isIE11) {
-            subMenu.style.maxHeight = 0;
+            subMenu.attributeStyleMap.set('max-height', 0);
           } else if (!isIE11) {
-            subMenu.style.maxHeight = 0;
+            subMenu.attributeStyleMap.set('max-height', 0);
           }
         }
       }
@@ -62,13 +62,13 @@ class SideNavItem extends Component {
         [...subMenu.children].forEach(child => {
           height += child.offsetHeight;
         });
-        subMenu.style.maxHeight = `${height}px`;
+        subMenu.attributeStyleMap.set('max-height', `${height}px`);
       } else {
         const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
         if (!this.elem.classList.contains('main-nav-item__open') && isIE11) {
-          subMenu.style.maxHeight = 0;
+          subMenu.attributeStyleMap.set('max-height', 0);
         } else if (!isIE11) {
-          subMenu.style.maxHeight = 0;
+          subMenu.attributeStyleMap.set('max-height', 0);
         }
       }
     }
