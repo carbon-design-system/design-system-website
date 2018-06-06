@@ -105,15 +105,14 @@ class PageFooter extends Component {
     return (
       <footer className={footerClasses}>
         <div className="page-footer__content">
-          <p className="page-footer__text page-footer__version-link" id="page-footer__version-label">
+          <p className="page-footer__text page-footer__version-link">
             Component version{' '}
             <a
               className="page-footer__link"
               href="https://github.com/carbon-design-system/carbon-components/releases"
               rel="noopener"
               target="_blank"
-              aria-labelledby="page-footer__version-label page-footer__version-number"
-              id="page-footer__version-number"
+              alt="Carbon Components GitHub repo"
             >
               {version}
             </a>
@@ -131,7 +130,7 @@ class PageFooter extends Component {
                 className="social-media__link"
                 rel="noopener"
                 target="_blank"
-                aria-label="Dribble account for Carbon"
+                alt="Dribble account for Carbon"
               >
                 {dribbble}
               </a>
@@ -142,7 +141,7 @@ class PageFooter extends Component {
                 className="social-media__link"
                 rel="noopener"
                 target="_blank"
-                aria-label="Medium account for Carbon"
+                alt="Medium account for Carbon"
               >
                 {medium}
               </a>
@@ -153,7 +152,7 @@ class PageFooter extends Component {
                 className="social-media__link"
                 rel="noopener"
                 target="_blank"
-                aria-label="Twitter account for Carbon"
+                alt="Twitter account for Carbon"
               >
                 {twitter}
               </a>
@@ -164,7 +163,7 @@ class PageFooter extends Component {
                 className="social-media__link"
                 rel="noopener"
                 target="_blank"
-                aria-label="GitHub account for Carbon"
+                alt="GitHub account for Carbon"
               >
                 {github}
               </a>
@@ -183,7 +182,7 @@ class PageFooter extends Component {
               className="page-footer__link"
               rel="noopener"
               target="_blank"
-              aria-label="Open a GitHub issue"
+              alt="Open a GitHub issue"
             >
               issue
             </a>{' '}
