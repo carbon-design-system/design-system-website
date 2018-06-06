@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 
   @include breakpoint('bp--md--major') {
     margin-left: $width--side-nav;
@@ -82,16 +83,20 @@ body hr.divider {
   max-width: 38rem;
 }
 
+.container--expanded .bx--legacy-notification {
+  padding-left: 3rem;
+}
+
 .bx--legacy-notification {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   min-height: 40px;
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   background: $support-03;
   z-index: 10;
