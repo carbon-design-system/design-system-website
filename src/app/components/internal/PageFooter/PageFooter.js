@@ -91,6 +91,7 @@ class PageFooter extends Component {
 
     const { isExpanded } = this.props;
     const version = Packages.dependencies['carbon-components'];
+    const reactVersion = Packages.dependencies['carbon-components-react'];
     const lastUpdated = this.getLastUpdate();
     const footerClasses = classNames({
       'page-footer': true,
@@ -106,7 +107,7 @@ class PageFooter extends Component {
       <footer className={footerClasses}>
         <div className="page-footer__content">
           <p className="page-footer__text page-footer__version-link" id="page-footer__version-label">
-            Component version{' '}
+            Vanilla Components version{' '}
             <a
               className="page-footer__link"
               href="https://github.com/carbon-design-system/carbon-components/releases"
@@ -116,6 +117,19 @@ class PageFooter extends Component {
               id="page-footer__version-number"
             >
               {version}
+            </a>
+          </p>
+          <p className="page-footer__text page-footer__version-link" id="page-footer__react-version-label">
+            React Components version{' '}
+            <a
+              className="page-footer__link"
+              href="https://github.com/carbon-design-system/carbon-components-react/releases"
+              rel="noopener"
+              target="_blank"
+              aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
+              id="page-footer__react-version-number"
+            >
+              {reactVersion}
             </a>
           </p>
           <p className="page-footer__text">
