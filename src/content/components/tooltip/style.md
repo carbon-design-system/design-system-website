@@ -1,5 +1,5 @@
 ## Color
-| COLOR              | SCSS      | HEX       |
+| Color              | SCSS      | HEX       |
 |--------------------|-----------|-----------|
 | Icon               | $brand-01 | #3d70b2   |
 | Interactive text    | $text-01  | #152935   |
@@ -10,7 +10,7 @@
 
 ---
 ***
-> 
+> 
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
 
 _Example of closed and open states for a Tooltip_
@@ -18,20 +18,20 @@ _Example of closed and open states for a Tooltip_
 ## Typography
 Tooltip labels and text should be set in sentence case.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
+| Property | Font-size (px/rem)      | Font-weight  |
 |----------|-----------------|--------------|
 | Label    | 16 / 1 | Semi-Bold / 600   |
 | Interactive text     | 14 / 0.875 | Normal / 400 |
 | Definition & Icon text     | 12 / 0.75 | Normal / 400 |
 
 ## Layer
-| LAYER      | ELEVATION     | BOX-SHADOW      |
+| Layer      | Elevation     | Box-shadow      |
 |------------|----------|----------|
 | Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
 
 
 ## Structure
-| PROPERTY                | PX  | REM   |
+| Property                | px  | rem   |
 |-------------------------|-----|-------|
 | Tooltip: height         | Varies based on content | |
 | Interactive: width      | 240 | 15    |
@@ -48,21 +48,21 @@ Tooltip labels and text should be set in sentence case.
 
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for an Interactive Tooltip](images/tooltip-style-2.png)
 
 _Structure and spacing measurements for an Interactive Tooltip | px / rem_
 
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for a Definition Tooltip](images/tooltip-style-3.png)
 
 _Structure and spacing measurements for a Definition Tooltip | px / rem_
 
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for an Icon Tooltip](images/tooltip-style-4.png)
 
 _Structure and spacing measurements for an Icon Tooltip | px / rem_
@@ -72,7 +72,7 @@ Tooltips should be placed below the Tooltip icon unless it is within the height 
 
 ---
 ***
-> 
+> 
 ![Placement examples for a Tooltip](images/tooltip-style-5.png)
 
 _Placement examples for a Tooltip_
