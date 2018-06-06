@@ -3,13 +3,13 @@
 | Attribute                    | SCSS     | HEX     |
 |--------------------------|----------|---------|
 | Code & terminal snippet: background | $ui-01   | #ffffff |
-| Code & terminal snippet: border     | $ui-03   | #DFE3E6 |  
+| Code & terminal snippet: border     | $ui-03   | #dfe3e6 |  
 | Code & terminal snippet: text       | $ui-01   | #152934 |
 | Icon: copy               | $brand-01| #3d70b2 |
 | Inline code: background on ui-02     | $field-01  | #ffffff |
-| Inline code: background on ui-01     | $field-02  | #F4F7FB |
+| Inline code: background on ui-01     | $field-02  | #f4f7fb |
 | Inline code: text           | $text-02   | #5A6872 |
-| Inline code:hover (background on ui-02 ) | $ui-02   | #D0DCED |
+| Inline code:hover (background on ui-02 ) | $ui-02   | #d0dced |
 | Inline code:hover (background on ui-01 ) | $hover-row  | #5596e6 at 10% opacity|
 | Icon: copy               | $brand-01| #3d70b2 |
 
