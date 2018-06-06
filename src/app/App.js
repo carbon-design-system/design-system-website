@@ -40,7 +40,8 @@ class App extends Component {
     Prism.highlightAll();
   }
 
-  onToggleBtnClick = () => {
+  onToggleBtnClick = evt => {
+    console.log(evt.target);
     if (this.state.isOpen) {
       this.setState({
         isOpen: false,
@@ -49,7 +50,7 @@ class App extends Component {
         this.setState({
           isFinal: true,
         });
-      }, 300);
+      }, 5);
     } else {
       this.setState({
         isFinal: false,
@@ -83,10 +84,8 @@ class App extends Component {
 
   handleClose = evt => {
     let isTarget = false;
-    if (document.querySelector('.side-nav')) {
-      console.log(evt.target);
-      isTarget = document.querySelector('.side-nav__main-nav').contains(evt.target);
-      console.log(isTarget);
+    if (evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+      isTarget = true;
     }
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
     if (!isTarget && isSmallerScreen) {

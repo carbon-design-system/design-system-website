@@ -154,7 +154,7 @@ class SideNav extends Component {
     return (
       <SideNavItem key={`${parentItem}${counter}`} isCurrentPath={isCurrentPath}>
         {({ open: isItemOpen }) => [
-          <p key={`${parentItem}${counter}`} className="main-nav-item__heading">
+          <p key={`${parentItem}${counter}`} className="main-nav-item__heading main-nav-item__list">
             {SiteNavStructure[parentItem].title}
             <Icon
               className="main-nav-item__arrow"

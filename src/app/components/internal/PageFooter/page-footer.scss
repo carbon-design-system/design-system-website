@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
 
   @include breakpoint('bp--md--major') {
     margin-left: $width--side-nav;
@@ -91,7 +92,7 @@
       left: -3rem;
       background: white;
       width: 150px;
-      padding: .5rem;
+      padding: 0.5rem;
       display: none;
     }
 
