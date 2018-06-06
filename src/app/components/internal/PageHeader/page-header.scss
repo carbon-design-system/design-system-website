@@ -36,7 +36,7 @@
   @include typescale('mega');
   color: $text-01;
   font-weight: 300;
-  margin: -1.15rem 0 0 -3px;
+  margin: 4.5rem 0 0 -3px;
   line-height: 1.25;
   letter-spacing: 0;
   padding: 0;
@@ -44,6 +44,14 @@
 
   @include breakpoint('500px') {
     font-size: rem(52px);
+  }
+
+  @include breakpoint('550px') {
+    margin-top: 1.5rem;
+  }
+
+  @include breakpoint('670px') {
+    margin-top: -1.15rem;
   }
 
   @include breakpoint('840px') {

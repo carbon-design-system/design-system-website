@@ -3,7 +3,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   margin-left: 0;
   transition: $transition--base ease;
   overflow-x: hidden;
@@ -11,11 +11,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  @include breakpoint('bp--md--major') {
-    margin-left: $width--side-nav;
-    width: calc(100% - 200px);
-  }
 
   @include breakpoint('680px') {
     padding: 1.5rem 5%;
@@ -91,7 +86,7 @@
       left: -3rem;
       background: white;
       width: 150px;
-      padding: .5rem;
+      padding: 0.5rem;
       display: none;
     }
 
