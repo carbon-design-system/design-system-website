@@ -40,8 +40,7 @@ class App extends Component {
     Prism.highlightAll();
   }
 
-  onToggleBtnClick = evt => {
-    console.log(evt.target);
+  onToggleBtnClick = () => {
     if (this.state.isOpen) {
       this.setState({
         isOpen: false,
