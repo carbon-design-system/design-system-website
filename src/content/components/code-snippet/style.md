@@ -1,50 +1,79 @@
 ## Color
 
-| Attribute                    | SCSS     | HEX     |
-|--------------------------|----------|---------|
-| Code & terminal snippet: background | $ui-01   | #ffffff |
-| Code & terminal snippet: border     | $ui-03   | #DFE3E6 |  
-| Code & terminal snippet: text       | $ui-01   | #152934 |
-| Icon: copy               | $brand-01| #3d70b2 |
-| Inline code: background on ui-02     | $field-01  | #ffffff |
-| Inline code: background on ui-01     | $field-02  | #F4F7FB |
+| Class                 | Property        |SCSS       | HEX     |
+|-----------------------|-----------------|-----------|---------|
+| `bx--snippet--single` | background      | $ui-01    | #ffffff |
+| `bx--snippet--single` | border          | $ui-03    | #DFE3E6 |  
+| Code & terminal snippet: text           | $ui-01    | #152934 |
+| 'bx--snippet__icon'   | color           | $brand-01 | #3d70b2 |
+| `bx--snippet--inline` | background-color | $field-01| #ffffff |
+| `bx--snippet--inline` background on ui-01 | background-color    | $field-02  | #F4F7FB |
+| `bx--snippet--inline:hover` (background on ui-02 ) | background-color | $ui-02   | #D0DCED |
+| `bx--snippet--inline:hover` (background on ui-01 ) | background-color | $hover-row  | #5596e6 at 10% opacity|
+
 | Inline code: text           | $text-02   | #5A6872 |
-| Inline code:hover (background on ui-02 ) | $ui-02   | #D0DCED |
-| Inline code:hover (background on ui-01 ) | $hover-row  | #5596e6 at 10% opacity|
-| Icon: copy               | $brand-01| #3d70b2 |
+
 
 ## Typography
 
-| Property | Font-family | Font-size (px/rem)  | Font-weight  |
-|----------|-------------|-------------|--------------|
-| Code Snippet     | Monospace   | 85% of body copy size | Normal / 400 |
-| Terminal Snippet       | Monospace   | 85% of body copy size | Normal / 400 |
-| Inline Code      | Monospace   | 85% of body copy size | Normal / 400 |
+| Property | Font-family | Font-size (px/rem) | Font-weight  |
+|----------|-------------|--------------------|--------------|
+| `bx--snippet code`| Monospace | 85% of body copy size |Normal / 400 |
+| `bx--snippet code`| Monospace | 85% of body copy size | Normal / 400 |
+| `bx--snippet--inline code`  | Monospace   | 85% of body copy size | Normal / 400 |
 
 ## Structure
 
-| Property          | px  | rem  |
-|-------------------|-----|-------|
-| Code Snippet height: enabled   | 288 | 18    |
-| Code Snippet height: expanded   | Varies based on amount of content |     |
-| Terminal height   | 56  | 3.5   |
-| Width             | 600 | 37.5    |
-| Spacing: left-side internal | 24  | 1     |
-| Spacing: external | 16  | 1     |
-| Icon: height & width      | 16  | 1   |
-| Spacing: icon & tooltip | 4 | 0.5|
-| Spacing: tooltip internal | 16 | 1 |
-| Inline Snippet height | 22 | 1.375 |
-| Inline Snippet width | Varies based on content |  |
-| Inline Snippet: border radius | 4 | - |
-| Inline Snippet: internal spacing | 4 | .250 |
 
+### Code Snippet
 
+| Class                 | Property          | px  | rem  |
+|-----------------------|-------------------|-----|------|
+| `bx--snippet--single` | height            | 56  | 3.5  |
+| `bx--snippet--single` | width (100%)      | 600 | 37.5 |
+| `bx--snippet--single` | padding-right (2.5) | 24  | 1.5     |
+| `bx--snippet--single` | padding-left      | 16  | 1     |
+
+<!-- Not done with spacing but with positioning
+|| Spacing: icon & tooltip | 4 | 0.5| -->
 
 ![](images/code-snippet-style-1.png)
-_Structure and spacing measurements for Terminal Snippet | px / rem_
-![](images/code-snippet-style-2.png)
 _Structure and spacing measurements for Code Snippet | px / rem_
+
+
+### Multi-line Code Snippet
+
+| Class               | Property          | px  | rem  |
+|---------------------|-------------------|-----|-------|
+| `bx--snippet--multi`| min-height        | 288 | 18    |
+| `bx--snippet--multi .bx--snippet-container`| max-height   | Varies based on amount of content |     |
+| `bx--snippet--multi`| width             | 600 | 37.5    |
+| `bx--snippet--multi`| padding-top, padding-bottom | 16  | 1     |
+| `bx--snippet--multi`| padding-right     | 48  | 3       |
+
+
+|| Icon: height & width      | 16  | 1   |
+|| Spacing: icon & tooltip | 4 | 0.5|
+
+|| Spacing: external | 16  | 1     |
+
+![](images/code-snippet-style-2.png)
+_Structure and spacing measurements for Multi-line Snippet | px / rem_
+
+
+
+### Inline Code Snippet
+
+| Classes        | Property          | px  | rem  |
+|----------------|-------------------|-----|-------|
+|| height             | 22 | 1.375 |
+|| width | Varies based on content |  |
+|`bx--snippet--inline`| border-radius | 4 | - |
+|`bx--snippet--inline code`| padding-right, padding-left | 8 | 0.5 |
+
+
+
+
 
 ---
 ***
