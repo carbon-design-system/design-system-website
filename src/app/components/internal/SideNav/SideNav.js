@@ -294,7 +294,7 @@ class SideNav extends Component {
     return (
       <nav role="navigation" aria-label="Page Navigation" aria-expanded={isOpen} className={classNames}>
         <div className="side-nav__top-container">
-          <a id="skip-to-content" tabIndex="0" role="button" className="skip-to-content" onKeyDown={this.handleSkip}>
+          <a id="skip-to-content" href="#maincontent" className="skip-to-content" onKeyDown={this.handleSkip}>
             Skip to main content
           </a>
           <Link to="/" className="side-nav__logo">
