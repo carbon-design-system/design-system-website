@@ -3,9 +3,9 @@
     margin-top: 2rem;
   }
 
-  h3 {
-    @include font-smoothing;
-  }
+  // h3 {
+  //   @include font-smoothing;
+  // }
 
   video {
     margin: 1rem 0;
@@ -249,7 +249,7 @@
   ul,
   ol {
     @include typescale('epsilon');
-    @include font-smoothing;
+    // @include font-smoothing;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1.75;
@@ -269,8 +269,13 @@
     list-style-type: disc;
   }
 
+  #getting-started + ol {
+    margin-bottom: 2rem;
+  }
+
   ol li {
     list-style-type: decimal;
+    margin: .75rem 0;
   }
 
   .image-set {

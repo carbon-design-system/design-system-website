@@ -22,7 +22,7 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/polyfills.js) is required.
 
-If you just want to try out `carbon-components-react`, you can also use [Codesandbox](https://codesandbox.io).
+If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
 
 <a target="_blank" href="https://codesandbox.io/s/x2mjypo6pp">
   <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
@@ -38,9 +38,9 @@ We recommend the use of [React Storybook](https://github.com/storybooks/react-st
 
 1.  Start the server:
 
-    ```
-    $ yarn storybook
-    ```
+```sh
+$ yarn storybook
+```
 
 2.  Open browser to `http://localhost:9000/`.
 

@@ -55,7 +55,7 @@ td {
   }
 
   .page__desc {
-    @include font-smoothing;
+    // @include font-smoothing;
     max-width: 38rem;
     color: $text-01;
     word-wrap: break-word;
