@@ -13,7 +13,7 @@
 }
 
 .side-nav {
-  @include font-smoothing;
+  // @include font-smoothing;
   @include layer('temporary-nav');
   display: flex;
   flex-direction: column;
