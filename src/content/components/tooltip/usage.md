@@ -8,7 +8,7 @@ An Icon Tooltip is used to clarify the action or name of an interactive icon but
 > 
 ![example of an icon tooltip](images/tooltip-usage-1.png)
 
-_Definition tooltip used to define a Form label._
+_Icon Tooltip used to clarify the action or name of an interactive icon button._
 
 
 ### Definition Tooltip
@@ -17,7 +17,7 @@ The primary purpose of a Definition Tooltip is to provide additional help or def
 ---
 ***
 > 
-![example of an interactive tooltip](images/tooltip-usage-2.png)
+![example of a definition tooltip](images/tooltip-usage-2.png)
 
 _Definition tooltip used to define a Form label._
 
