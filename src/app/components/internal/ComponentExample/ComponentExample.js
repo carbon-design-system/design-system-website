@@ -6,6 +6,15 @@ import CodeExample from '../CodeExample/CodeExample';
 
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 
+const componentNamesMap = {
+  Card: ['OverflowMenu'],
+  CodeSnippet: ['CodeSnippet', 'CopyButton'],
+  DataTable: ['DataTable', 'DataTableV2', 'OverflowMenu', 'Toolbar'],
+  DetailPageHeader: ['OverflowMenu', 'Tab'],
+  OrderSummary: ['Dropdown'],
+  Tabs: ['Tab', 'ContentSwitcher'],
+};
+
 class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
@@ -21,36 +30,7 @@ class ComponentExample extends Component {
   };
 
   componentDidUpdate = () => {
-    let currentComponent = this.props.component;
-    currentComponent = currentComponent.replace(/-([a-z])/g, g => g[1].toUpperCase());
-    currentComponent = currentComponent.charAt(0).toUpperCase() + currentComponent.substring(1);
-    if (currentComponent === 'Tabs') {
-      currentComponent = 'Tab';
-    } else if (currentComponent === 'Card') {
-      currentComponent = 'OverflowMenu';
-    } else if (currentComponent === 'CodeSnippet') {
-      currentComponent = 'CopyButton';
-    } else if (currentComponent === 'OrderSummary') {
-      currentComponent = 'Dropdown';
-    }
-    if (window.CDS['carbon-components'][currentComponent]) {
-      if (currentComponent === 'Tab') {
-        window.CDS['carbon-components'].Tab.init();
-        window.CDS['carbon-components'].ContentSwitcher.init();
-      } else if (currentComponent === 'DataTable') {
-        window.CDS['carbon-components'].OverflowMenu.init();
-        window.CDS['carbon-components'].DataTable.init();
-        window.CDS['carbon-components'].Toolbar.init();
-        window.CDS['carbon-components'].DataTableV2.init();
-      } else if (currentComponent === 'DatePicker') {
-        window.CDS['carbon-components'].DatePicker.init();
-      } else if (currentComponent === 'DetailPageHeader') {
-        window.CDS['carbon-components'].OverflowMenu.init();
-        window.CDS['carbon-components'].Tab.init();
-      } else {
-        window.CDS['carbon-components'][currentComponent].init();
-      }
-    }
+    this._releaseAndInstantiateComponents();
   };
 
   onSwitchFieldColors = value => {
@@ -76,6 +56,36 @@ class ComponentExample extends Component {
       currentHTMLfile: newHTML,
     });
   };
+
+  _ref = null;
+
+  _instances = [];
+
+  _liveDemoRef = ref => {
+    this._ref = ref;
+    this._releaseAndInstantiateComponents();
+  };
+
+  _releaseAndInstantiateComponents() {
+    const instances = this._instances;
+    for (let instance = instances.pop(); instance; instance = instances.pop()) {
+      instance.release();
+    }
+    const ref = this._ref;
+    if (ref) {
+      const componentsList = window.CDS['carbon-components'];
+      const currentComponent = this.props.component
+        .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
+        .replace(/^([a-z])/, (match, token) => token.toUpperCase());
+      (componentNamesMap[currentComponent] || [currentComponent]).forEach((name) => {
+        const TheComponent = componentsList[name];
+        if (TheComponent) {
+          const selectorInit = TheComponent.options.selectorInit;
+          instances.push(...[...ref.querySelectorAll(selectorInit)].map(elem => TheComponent.create(elem)));
+        }
+      });
+    }
+  }
 
   render() {
     const { component, codepenSlug, variation } = this.props;
@@ -151,7 +161,7 @@ class ComponentExample extends Component {
         <div className="svg--sprite" aria-hidden="true" />
         <div className={liveBackgroundClasses}>
           <div className={classNames}>
-            <div dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
           </div>
         </div>
         <div className="component-toolbar">
