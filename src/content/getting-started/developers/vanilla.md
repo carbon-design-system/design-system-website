@@ -63,9 +63,11 @@ If you're starting a new project without a boilerplate,
 you need to know about a few things to get started.
 
 #### Autoprefixer
+
 Make sure your build process uses [autoprefixer](https://github.com/postcss/autoprefixer) to ensure vendor prefixes are automatically added to your output CSS.
 
 #### Default body styles
+
 CSS is automatically applied to `<body>` element, which comes from [\_css--body.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
 
 ```css
@@ -79,9 +81,11 @@ body {
 ```
 
 #### Icons
+
 A lot of components depend on SVG icons from [carbon-icons](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
 
 #### Global SCSS variables
+
 These variables are used to configure which parts of the SCSS get compiled, where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
 
 For example:
@@ -189,7 +193,7 @@ const modalInstance = Modal.create(modalElement);
 Instantiating a component basically does two things:
 
 - Hooks several event handlers on some DOM elements inside (in above example, ones in `modalElement`, e.g. close button)
-- Allows you to access public methods (found in [our components page](../../components/overview), e.g. [here](http://localhost:3000/components/modal/code#public-methods) for modal) via the instance reference (`modalInstance.show()`, etc. in above example)
+- Allows you to access public methods (found in [our components page](../../components/overview), e.g. [here](/components/modal/code#public-methods) for modal) via the instance reference (`modalInstance.show()`, etc. in above example)
 
 #### Higher-level component instantiation API
 
