@@ -18,9 +18,9 @@ Content Switchers have two states: selected and non-selected. Selected states ar
 
 Content Switcher text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. The text should not exceed three words.
 
-| Class                        | Font-size (px/rem)| Font-weight  |
-|------------------------------|-------------------|--------------|
-| `.bx--content-switcher-btn`  | 14 / 0.875        | Normal / 400 |
+| Class                        | Font-size (px/rem)| Font-weight  | Type style |
+|------------------------------|-------------------|--------------|------------|
+| `.bx--content-switcher-btn`  | 14 / 0.875        | Normal / 400 | -          |
 
 ## Structure
 

@@ -24,7 +24,7 @@ Link text should be set in set in sentence case with the first letter of each wo
 
 | Property    | Font-size (px/rem) | Font-weight    | Text styles |
 |-------------|--------------------|----------------|-------------|
-| `.bx--link` | 14 / 0.875         | Semi-Bold / 600| -           |
+| `.bx--link` | 14 / 0.875         | Semi-Bold / 600| Zeta        |
 
 ## Structure
 

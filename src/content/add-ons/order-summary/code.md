@@ -1,3 +1,0 @@
----
-desc: <span>Order summary</span> .... 
----

@@ -1,16 +1,18 @@
 ## Color
-| COLOR              | SCSS      | HEX       |
-|--------------------|-----------|-----------|
-| Icon               | $brand-01 | #3d70b2   |
-| Interactive text    | $text-01  | #152935   |
-| Interactive background | $ui-01    | #ffffff   |
-| Interactive border     | $ui-03    | #dfe3e6   |
-| Definition & Icon text    | $ui-01  | #ffffff   |
-| Definition & Icon background | $inverse-02   | #272d33   |
+| Class                      | Property         | SCSS      | HEX       |
+|----------------------------|------------------|-----------|-----------|
+|`.bx--tooltip__trigger path`| fill             | $brand-01 | #3d70b2   |
+|`.bx--tooltip__label`       | color            | $text-01  | #152935   |
+| `.bx--tooltip`             | background-color | $ui-01    | #ffffff   |
+|`.bx--tooltip`              | border           | $ui-03    | #dfe3e6   |
+|`.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | color    | $ui-01  | #ffffff   |
+|`.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` </br> `.bx--tooltip--definition__bottom`</br> `.bx--tooltip--definition__top` | background-color | $inverse-02   | #272d33   |
+
+|| Interactive text    | $text-01  | #152935   |
 
 ---
 ***
-> 
+> 
 ![Closed and open states for a Tooltip](images/tooltip-style-1.png)
 
 _Example of closed and open states for a Tooltip_
@@ -18,51 +20,71 @@ _Example of closed and open states for a Tooltip_
 ## Typography
 Tooltip labels and text should be set in sentence case.
 
-| PROPERTY | FONT-SIZE (px/rem)      | FONT-WEIGHT  |
-|----------|-----------------|--------------|
-| Label    | 16 / 1 | Semi-Bold / 600   |
-| Interactive text     | 14 / 0.875 | Normal / 400 |
-| Definition & Icon text     | 12 / 0.75 | Normal / 400 |
+| Property                                                                 | Font-size (px/rem)| Font-weight    | Type styles|
+|--------------------------------------------------------------------------|-------------------|----------------|------------|
+| `.bx--tooltip__label`                                                    | 16 / 1            | Semi-Bold / 600| Epsilon    |
+| `.bx--tooltip p`                                                         | 14 / 0.875        | Normal / 400   | -          |
+| `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` | 12 / 0.75         | Normal / 400   | Caption    |
 
 ## Layer
-| LAYER      | ELEVATION     | BOX-SHADOW      |
-|------------|----------|----------|
-| Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
+| Class      | Layer    | Elevation| Box-shadow                     |
+|------------|----------|----------|--------------------------------|
+| `.bx--tooltip` </br> `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before ` </br> `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top`     | Overlay  | 8        | 0 4px 8px 0 rgba(0,0,0,0.10);  |
 
 
 ## Structure
-| PROPERTY                | PX  | REM   |
-|-------------------------|-----|-------|
-| Tooltip: height         | Varies based on content | |
-| Interactive: width      | 240 | 15    |
-| Definition: width       | 176 | 11    |
-| Icon: width             | Varies based on content | |
-| Tooltip icon: width & height | 16  | 1     |
-| Spacing: label & icon   | 8  | 0.5 |
-| Spacing: icon & Interactive aTooltip | 8  | 0.5 |
-| Spacing: dotted line & Definition Tooltip | 4  | 0.25 |
-| Spacing: icon & Icon Tooltip | 2  | 0.125 |
-| Interactive: internal spacing | 16  | 1   |
-| Definition: internal spacing | 8  | 0.5   |
-| Icon: internal spacing | 4  | 0.25   |
+
+All Tooltip types have a varying height based on the amount of content they contain.
+
+
+### Interactive Tooltip
+
+| Class                      |   Property    | px    | rem   |
+|----------------------------|---------------|-------|-------|
+| `.bx--tooltip`             | max-width     | 240   | 15    |
+| `.bx--tooltip__trigger svg`| height, width | 16    | 1     |
+| `.bx--tooltip__trigger`    | margin-left   | 8     | 0.5   |
+| `.bx--tooltip`             | padding       | 16    | 1     |
+| `.bx--tooltip`             | margin-top    | 4     | 0.25  |
+
+
 
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for an Interactive Tooltip](images/tooltip-style-2.png)
 
 _Structure and spacing measurements for an Interactive Tooltip | px / rem_
 
+
+### Definition Tooltip
+
+| Class                                                                    | Property     | px  | rem  |
+|--------------------------------------------------------------------------|--------------|-----|------|
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | max-width    | 176 | 11   |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | margin-top   | 12  | 0.75 |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | padding      | 8   | 0.5  |
+| `.bx--tooltip--definition .bx--tooltip__trigger`                         | border-bottom| 2   | -    |
+
+
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for a Definition Tooltip](images/tooltip-style-3.png)
 
 _Structure and spacing measurements for a Definition Tooltip | px / rem_
 
+### Icon Tooltip
+
+| Class                                                                      |   Property | px  | rem  |
+|----------------------------------------------------------------------------|------------|-----|------|
+| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width  | 176 | 11   |
+| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding    | 4   | 0.25 |
+| Spacing: icon & Icon Tooltip | 2  | 0.125 |
+
 ---
 ***
-> 
+> 
 ![Structure and spacing measurements for an Icon Tooltip](images/tooltip-style-4.png)
 
 _Structure and spacing measurements for an Icon Tooltip | px / rem_
@@ -72,7 +94,7 @@ Tooltips should be placed below the Tooltip icon unless it is within the height 
 
 ---
 ***
-> 
+> 
 ![Placement examples for a Tooltip](images/tooltip-style-5.png)
 
 _Placement examples for a Tooltip_

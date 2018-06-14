@@ -406,9 +406,9 @@ class Overview extends React.Component {
                   <img src={sketchIcon} alt="" />
                 </div>
                 <div className="tile__info">
-                  <p>Carbon Design Kit</p>
+                  <p aria-label="Carbon Design Kit on Github">Carbon Design Kit</p>
                   <p>
-                    A Sketch file containing core visual styles, components, and patterns a designers needs to use Carbon as a
+                    A Sketch file containing core visual styles, components, and patterns a designer needs to use Carbon as a
                     framework for building product experiences.
                   </p>
                 </div>
@@ -424,9 +424,9 @@ class Overview extends React.Component {
                   <img src={githubIcon} alt="" />
                 </div>
                 <div className="tile__info">
-                  <p>Carbon Components</p>
+                  <p aria-label="Carbon Components on Github">Carbon Components</p>
                   <p>
-                    Components are written in two languages, Vanilla.js and React. Storybook, a UI component development
+                    Components are written in two languages: Vanilla.js and React. Storybook, a UI component development
                     environment, houses the React components.
                   </p>
                 </div>
@@ -471,7 +471,7 @@ class Overview extends React.Component {
             <h2>Wondering how to contribute to Carbon?</h2>
             <p>
               We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. If you're
-              interested in contributing, check out our <Link to="/getting-started/contributing">guidelines</Link> to get started.
+              interested in contributing, check out our <Link to="/getting-started/contributing">contributing guidelines</Link> to get started.
             </p>
           </div>
         </section>

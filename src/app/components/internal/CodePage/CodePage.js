@@ -115,11 +115,6 @@ class CodePage extends Component {
       } else {
         htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       }
-      if (parent === 'card') {
-        const oldPath = '/globals/assets/images/placeholder-icon-32x32.svg';
-        const newPath = require('../../../../assets/images/placeholder.svg');
-        htmlFile = htmlFile.replace(oldPath, newPath);
-      }
     }
 
     if (variation.includes('light') || variation.includes('legacy')) {
@@ -172,19 +167,7 @@ class CodePage extends Component {
 
   render() {
     const component = this.props.component;
-    let componentInfo;
-    if (
-      component === 'card' ||
-      component === 'detail-page-header' ||
-      component === 'interior-left-nav' ||
-      component === 'module' ||
-      component === 'order-summary' ||
-      component === 'cloud-header'
-    ) {
-      componentInfo = require(`../../../../data/add-ons/${component}.js`); // eslint-disable-line
-    } else {
-      componentInfo = require(`../../../../data/components/${component}.js`); // eslint-disable-line
-    }
+    let componentInfo = require(`../../../../data/components/${component}.js`); // eslint-disable-line
     const description = componentInfo.desc;
     const md = new Markdown({
       html: true,

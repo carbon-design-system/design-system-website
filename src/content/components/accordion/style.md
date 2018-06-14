@@ -1,19 +1,19 @@
 ## Color
 
-| Class                         | SCSS             | HEX        |
-|-------------------------------|------------------|------------|
-| `.bx--accordion__title`       | $text-01         |  #152935   |
-| `.bx--accordion__content`     | $text-01         |  #152935   |
-| `.bx--accordion__arrow`       | $ui-05           |  #5a6872   |
-| `.bx--accordion__arrow:hover` | $hover-secondary |  #3d70b2   |
-| `.bx--accordion__item`        | $ui-04           |  #8897a2   |
+| Class                         | Property   | SCSS             | HEX        |
+|-------------------------------|------------|------------------|------------|
+| `.bx--accordion__title`       | color      | $text-01         |  #152935   |
+| `.bx--accordion__content`     | color      | $text-01         |  #152935   |
+| `.bx--accordion__arrow`       | fill       | $ui-05           |  #5a6872   |
+| `.bx--accordion__arrow:hover` | fill       | $hover-secondary |  #3d70b2   |
+| `.bx--accordion__item`        | border-top | $ui-04           |  #8897a2   |
 
 ## Typography
 
 All Accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
 
-| Class                   | Font-size (px/rem) | Font-weight  | Text styles |
-|-------------------------|--------------------|--------------|-------------|
+| Class                    | Font-size (px/rem) | Font-weight  | Text styles |
+|--------------------------|--------------------|--------------|-------------|
 | `.bx--accordion__title`  | 16 / 1             | Normal / 400 | p           |
 | `.bx--accordion__content`| 14 / 0.875         | Normal / 400 | -           |
 
@@ -23,7 +23,7 @@ There is no limit to the height of an open row, however, the padding specs below
 
 ### Height
 
-| Class                   |  Property   | px  | rem  |
+| Class                    | Property   | px  | rem  |
 |--------------------------|------------|-----|------|
 |`.bx--accordion__heading` | height     | 40  | 2.5  |
 |`.bx--accordion__arrow`   | width      | 10  | 0.635|
@@ -37,7 +37,7 @@ Avoid having any text within 16px / 1rem of the Accordion's sides. Additionally,
 |-------------------------------|---------------|----|-----|
 |`.bx--accordion__title`        | margin-left   | 16 | 1   |
 |`.bx--accordion__content`      | padding-right | 16 | 1   |
-|`.bx--accordion__content`      | padding-top   |16  | 1   |
+|`.bx--accordion__content`      | padding-top   | 16 | 1   |
 |`.bx--accordion__item--active` | padding-bottom| 24 | 1.5 |
 
 ![Structure and spacing measurements for Accordion](images/accordion-style-1.png)

@@ -4,27 +4,25 @@
 
 If a `min date` is set on the calendar, then any text appearing before that date will be `#152934 @ 50%`, otherwise all text should be `#152934` (unless the number is selected or highlighted). Please refer to [Select](/components/select), for inline select styling.
 
-## Defaults
 
-|Class                                                    | Property         | SCSS       | HEX     |
-|---------------------------------------------------------|------------------|------------|---------|
-|`.bx--date-picker__input`                                | background       | $field-01  | #f4f7fb |
-|`.bx--date-picker__input.bx--text-input--light`          | background       | $field-02  | #ffffff |
-|`.bx--date-picker__input`                                | border-bottom    | $ui-05     | #5a6872 |
-|`.bx--label`                                             | color            | $text-01   | #152934 |
-|``                                                       | color:placeholder| $text-02   | #5a6872 |
-|`.bx--date-picker__input`                                | color            | $text-01   | #152934 |
-|`.bx--date-picker__calendar, .flatpickr-calendar.open`   | background       | $ui-01     | #ffffff |
-|`.bx--date-picker__day.selected, .flatpickr-day.selected`| border           | $text-01   | #152934 |
-|`.bx--date-picker__day.inRange, .flatpickr-day.inRange`  | background       | $ui-02     | #f4f7fb |
-|`.bx--date-picker__icon`                                 | fill             | $brand-01  | #3d70b2 |
-|`.bx--date-picker__day.today::after, .flatpickr-day.today::after`| background:     | $brand-01  | #3d70b2   |
-|| Border: selected date | $brand-01  | #3d70b2   |
+| Class                                           | Property         | SCSS       | HEX     |
+|-------------------------------------------------|------------------|------------|---------|
+|`.bx--date-picker__input`                        | background-color | $field-01  | #f4f7fb |
+|`.bx--date-picker__input.bx--text-input--light`  | background-color | $field-02  | #ffffff |
+|`.bx--date-picker__input`                        | border-bottom    | $ui-05     | #5a6872 |
+|`.bx--label`                                     | color            | $text-01   | #152934 |
+|`.bx--date-picker__input::placeholder`           | color            | $text-02   | #5a6872 |
+|`.bx--date-picker__input`                        | color            | $text-01   | #152934 |
+|`.bx--date-picker__calendar,`                    | background-color | $ui-01     | #ffffff |
+|`.bx--date-picker__day.selected`                 | border           | $text-01   | #152934 |
+|`.bx--date-picker__day.inRange`                  | background-color | $ui-02     | #f4f7fb |
+|`.bx--date-picker__icon`                         | fill             | $brand-01  | #3d70b2 |
+|`.bx--date-picker__day.today::after`             | background-color | $brand-01  | #3d70b2 |
+|`.bx--date-picker__day.selected`                 | border           | $brand-01  | #3d70b2 |
+|`.bx--date-picker__day.inRange                `  | background-color | $text-01   | #152934 |
 
-
-|`.bx--date-picker__day.inRange, .flatpickr-day.inRange`  | background-color | $text-01   | #152934 |
-
-
+![Example of a Date Picker](images/date-picker-style-1.png)
+_Date Picker example using both $field-02 (top) and $field-01 (bottom)_
 
 ### States
 
@@ -34,10 +32,15 @@ If a `min date` is set on the calendar, then any text appearing before that date
 |`.bx--date-picker__input[data-invalid]`     | box-shadow   | $support-01   | #e0182d   |
 |`.bx--form-requirement`                     | color        | $support-01   | #e0182d   |
 |`.bx--date-picker__input:focus ~ .bx--label`| color        | $brand-01     | #3d70b2   |
-|`.bx--date-picker__input[data-invalid]:focus + .bx--label`| $support-01   | #e0182d   |
+|`.bx--date-picker__input[data-invalid]:focus + .bx--label` | $support-01   | #e0182d   |
 
-![Example of a Date Picker](images/date-picker-style-1.png)
-_Date Picker example using both $field-02 (top) and $field-01 (bottom)_
+
+**Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
+
+**Error:** Error messages appear below the input field and are always present while invalid.
+
+**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
+
 
 
 
@@ -49,30 +52,31 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--label`                               | 14 / 0.875      | Semi-Bold / 600 | Zeta       |
 | `.bx--time-picker__input-field` placeholder| 14 / 0.875      | Semi-Bold / 600 | Zeta       |
 | `.bx--time-picker__input-field` active     | 14 / 0.875      | Semi-Bold / 600 | Zeta       |
-| `.bx--form-requirement`                    | 12 / 0.75       | Normal / 400    | -          |
+| `.bx--form-requirement`                    | 12 / 0.75       | Normal / 400    | Caption    |
 
 
 ## Layer
-| Class                                                   | Property    | Layer, Elevation | Box-shadow                      |
-|---------------------------------------------------------|-------------|------------------|---------------------------------|
-| `.bx--date-picker__calendar, .flatpickr-calendar.open`  | box-shadow  | Pop-out,  24     | 0 12px 24px 0 rgba(0, 0, 0, 0.1)|
+| Class                         | Property    | Layer, Elevation | Box-shadow                      |
+|-------------------------------|-------------|------------------|---------------------------------|
+| `.bx--date-picker__calendar`  | box-shadow  | Pop-out,  24     | 0 12px 24px 0 rgba(0, 0, 0, 0.1)|
 
 
 ## Structure
 
 ### Simple & Single Date Pickers
 
-| Class                    | Property                     | px  | rem    |
-|--------------------------|------------------------------|-----|--------|
-|`.bx--date-picker__input` | height                       | 40  | 2.5    |
-|`.bx--date-picker.bx--date-picker--simple.bx--date-picker--short .bx--date-picker__input`| width | 91 | 5.7   |
-|`.bx--date-picker.bx--date-picker--simple .bx--date-picker__input`| width | 114 | 7.125  |
-|`.bx--date-picker.bx--date-picker--single .bx--date-picker__input`| width    | 144 | 9      |
-|`bx--date-picker__icon`   | height & width                | 16  | 1      |
-|| Internal spacing             | 16  | 1      |
-|| Spacing: icon & input text   | 8  | 0.5|
-|| Border bottom: enabled | 1 | 0.0625rem |
-|| Border bottom: focused | 2 | 0.125 |
+| Class                                                                                   | Property                                 | px  | rem    |
+|-----------------------------------------------------------------------------------------|------------------------------------------|-----|--------|
+|`.bx--date-picker__input`                                                                | height                                   | 40  | 2.5    |
+|`.bx--date-picker.bx--date-picker--simple.bx--date-picker--short .bx--date-picker__input`| width                                    | 91  | 5.7    |
+|`.bx--date-picker.bx--date-picker--simple .bx--date-picker__input`                       | width                                    | 114 | 7.125  |
+|`.bx--date-picker.bx--date-picker--single .bx--date-picker__input`                       | width                                    | 144 | 9      |
+|`bx--date-picker__icon`                                                                  | height & width                           | 16  | 1      |
+|`.bx--date-picker__calendar`                                                             | padding-top, padding-right, padding-left | 16  | 1      |
+|`.bx--date-picker__calendar`                                                             | padding-bottom                           | 4   | 0.25   |
+|`.bx--date-picker__input`                                                                | box-shadow                               | 1   | -      |
+|`.bx--date-picker__input:focus`                                                          | box-shadow                               | 2   | 0.125  |
+|`.bx--date-picker__icon + .bx--date-picker__input`                                       | padding-left                             | 48  | 3      |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -100,9 +104,9 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 |`.bx--date-picker__icon`| height & width                | 16  | 1      |
 |`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right | 8   | 0.5    |
 |`.bx--date-picker__input` | padding-right, padding-left  | 16  | 1      |
-|`.bx--date-picker__weekdays, .flatpickr-weekdays, .flatpickr-weekdaycontainer`| margin-bottom| 4  | .25   |
+|`.bx--date-picker__weekdays`| margin-bottom| 4  | .25   |
 || Spacing: days of week & days | 20  | 1.25   |
-|`.bx--date-picker__day.today::after, .flatpickr-day.today::after`| height & width          | 3   | -      |
+|`.bx--date-picker__day.today::after`| height & width          | 3   | -      |
 
 
 ![Structure for Date Picker](images/date-picker-style-2.png)
@@ -132,11 +136,3 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
   </div>
 </div>
 _Structure and spacing for a Time Picker | px / rem_
-
-### States
-
-**Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
-
-**Error:** Error messages appear below the input field and are always present while invalid.
-
-**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.

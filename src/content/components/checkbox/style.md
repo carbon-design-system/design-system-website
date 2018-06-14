@@ -29,15 +29,12 @@ Checkbox headings and labels should be sentence case, with only the first word i
 
 ## Structure
 
-|Class                        | Property             | px | rem  |
-|-----------------------------|----------------------|----|------|
-|`.bx--checkbox-label::before`| height & width       | 18 | 2.75 |
-|`.bx--checkbox-label::before`| border               | 2  | -    |
-|`.bx--checkbox-label`        | padding-left         | 8  | 0.5  |
-|| External spacing     | 16 | 1    |
-|| Spacing: checkboxes  | 16 | 1    |
-<!-- Note: in code the label has more padding due to placement > do we writing design padding or code padding? -->
-
+|Class                                 | Property             | px | rem  |
+|--------------------------------------|----------------------|----|------|
+|`.bx--checkbox-label::before`         | height & width       | 18 | 2.75 |
+|`.bx--checkbox-label::before`         | border               | 2  | -    |
+|`.bx--checkbox-label`                 | padding-left         | 8  | 0.5  |
+|`.bx--form-item.bx--checkbox-wrapper` | margin-bottom        | 16 | 1    |
 
 ---
 ***

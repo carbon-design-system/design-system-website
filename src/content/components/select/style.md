@@ -60,6 +60,8 @@ Select text should be set in sentence case, with only the first word in a phrase
 
 ## Structure
 
+### Select
+
 | Class                   | Property      | px | rem   |
 |-------------------------|---------------|----|-------|
 |`.bx--select-input`      | height        | 40 | 2.5   |

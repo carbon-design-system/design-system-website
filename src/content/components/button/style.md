@@ -1,17 +1,16 @@
 ## Color
 
-| Class                       | SCSS                   | HEX                    |
-|-----------------------------|------------------------|-----------------------|
-| `.bx--btn--primary` </br> `.bx--btn--secondary` | $brand-01  | #3d70b2               |
-| `.bx--btn--primary:hover`     | $hover-primary        | #30588c               |
-| `.bx--btn--primary:disabled`  | $brand-01             | #3d70b2 at 50% opacity|
-| `.bx--btn--secondary:hover`   | $hover-secondary      | #3d70b2               |
-| `.bx--btn--tertiary`          | $ui-05                | #5a6872               |
-| `.bx--btn--tertiary:hover`    | $ui-05                | #5a6872               |
-| `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` |$support-01                   | #e0182d               |
-| `.bx--btn--danger--primary:hover` | $hover-danger     | #bd1427               
-| `.bx--btn--danger--secondary:hover` | $support-01     | #e0182d               |
-
+| Class                                                          | Property                 | SCSS                  | HEX                   |
+|----------------------------------------------------------------|--------------------------|-----------------------|-----------------------|
+| `.bx--btn--primary` </br> `.bx--btn--secondary`                | background-color, border | $brand-01             | #3d70b2               |
+| `.bx--btn--primary:hover`                                      | background-color         | $hover-primary        | #30588c               |
+| `.bx--btn--primary:disabled`                                   | opacity                  | $brand-01             | #3d70b2 at 50% opacity|
+| `.bx--btn--secondary:hover`                                    | background-color         | $hover-secondary      | #3d70b2               |
+| `.bx--btn--tertiary`                                           | background-color         | $ui-05                | #5a6872               |
+| `.bx--btn--tertiary:hover`                                     | background-color         | $ui-05                | #5a6872               |
+| `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01           | #e0182d               |
+| `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger         | #bd1427               |   
+| `.bx--btn--danger--secondary:hover`                            | border                   | $support-01           | #e0182d               |
 
 
 <div data-insert-component="ImageGrid">
@@ -76,14 +75,22 @@ _Stucture measurements for small and regular Primary Button | px / rem_
 
 A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
 
-| Class                           | Property | px | rem  |
-|---------------------------------|----------|----|------|
-| `.bx--btn`                       | padding-left, padding-right | 16 | 1     |
-| `.bx--btn--sm`                   | padding-left, padding-right |16 | 1     |
-| `.bx--btn.bx--btn__icon`       | margin-left | 8 | 0.5     |
-| `.bx--btn--ghost.bx--btn__icon`| margin-left | 8 | 0.5     |
-| External: button          | 10 | 0.625 |
-| Button pairings           | 16 | 1     |
+| Class                          | Property                    | px | rem  |
+|--------------------------------|-----------------------------|----|------|
+| `.bx--btn`                     | padding-left, padding-right | 16 | 1    |
+| `.bx--btn--sm`                 | padding-left, padding-right | 16 | 1    |
+| `.bx--btn.bx--btn__icon`       | margin-left                 | 8  | 0.5  |
+| `.bx--btn--ghost.bx--btn__icon`| margin-left                 | 8  | 0.5  |
+
+
+### Recommended
+
+The following specs are not built into any of the Button components but are recommended by design as the proper amount of space to distance Buttons should be from one another.
+
+| Class                           | Property                  | px | rem  |
+|---------------------------------|---------------------------|----|------|
+| External: button                | margin                    | 10 | 0.625|
+| Button pairings                 | margin-left, margin-right | 8  | 0.5  |
 
 <div data-insert-component="ImageGrid">
   <div>

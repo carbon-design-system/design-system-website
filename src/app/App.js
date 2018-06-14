@@ -49,7 +49,7 @@ class App extends Component {
         this.setState({
           isFinal: true,
         });
-      }, 300);
+      }, 5);
     } else {
       this.setState({
         isFinal: false,
@@ -83,8 +83,8 @@ class App extends Component {
 
   handleClose = evt => {
     let isTarget = false;
-    if (document.querySelector('.side-nav')) {
-      isTarget = document.querySelector('.side-nav').contains(evt.target);
+    if (evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+      isTarget = true;
     }
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
     if (!isTarget && isSmallerScreen) {
@@ -101,14 +101,12 @@ class App extends Component {
         isOpen: false,
       });
     }
-    const debouncedResize = debounce(this.handleResize, 1000);
-    window.addEventListener('resize', debouncedResize);
     document.addEventListener('click', evt => {
       this.handleClose(evt);
     });
-    document.addEventListener('touchstart', evt => {
-      this.handleClose(evt);
-    });
+    // document.addEventListener('touchstart', evt => {
+    //   this.handleClose(evt);
+    // });
     document.addEventListener('keydown', evt => {
       if (evt.which === 27 && this.state.isOpen) {
         this.setState({
@@ -118,17 +116,17 @@ class App extends Component {
     });
   };
 
-  handleResize = () => {
-    if (window.innerWidth < 1024) {
-      this.setState({
-        isOpen: false,
-      });
-    } else {
-      this.setState({
-        isOpen: true,
-      });
-    }
-  };
+  // handleResize = () => {
+  //   if (window.innerWidth < 1024) {
+  //     this.setState({
+  //       isOpen: false,
+  //     });
+  //   } else {
+  //     this.setState({
+  //       isOpen: true,
+  //     });
+  //   }
+  // };
 
   render() {
     const classNames = classnames({

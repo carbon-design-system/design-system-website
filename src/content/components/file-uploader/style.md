@@ -17,7 +17,7 @@ The File Uploader label and instruction text should be set in sentence case, wit
 |------------------------|--------------------|-----------------|------------|
 |`.bx--label`            | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
 |`.bx--label-description`| 14 / 0.875         | Normal / 400    | -          |
-|`.bx--file-filename`    | 12 / 0.75          | Normal / 400    | -          |
+|`.bx--file-filename`    | 12 / 0.75          | Normal / 400    | Caption    |
 
 ## Structure
 

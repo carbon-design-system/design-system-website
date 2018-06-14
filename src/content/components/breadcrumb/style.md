@@ -1,21 +1,22 @@
 ## Color
 
-| Class                         | SCSS     | HEX       |
-|-------------------------------|----------|-----------|
-| `.bx--link`                   | $brand-01| #3d70b2   |
-| `.bx--breadcrumb-item::after` | $text-02 | #5a6872   |
+| Class                         | Property         | SCSS                | HEX       |
+|-------------------------------|------------------|---------------------|-----------|
+| `.bx--link`                   | color            | $brand-01           | #3d70b2   |
+| `.bx--link:hover`             | color            | $hover-primary-text | #294c86   |
+| `.bx--breadcrumb-item::after` | color            | $text-02            | #5a6872   |
 | Overflow text  | $text-01  | #152934   |
-| Row:hover | $hover-row | #5596e6 at 10% opacity |
-| `.bx--link:hover`             | $hover-primary-text | #294c86   |
+| Row:hover                     | background-color | $hover-row | #5596e6 at 10% opacity |
+
 
 ## Typography
 
 When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined.
 
-| Class         | Font-size    | Font-weight  |
-|---------------|--------------|--------------|
-| `.bx--link`    | 14 / 0.875   | Roman / 400  |
-| Dropdown text | 14 / 0.875 | Roman / 400  |
+| Class         | Font-size (px/rem) | Font-weight  |
+|---------------|--------------------|--------------|
+| `.bx--link`   | 14 / 0.875         | Roman / 400  |
+| Dropdown text | 14 / 0.875         | Roman / 400  |
 
 ![Breadcrumb typography treatment example](images/breadcrumb-style-1.png)
 _Breadcrumb typography treatment example_
