@@ -1,13 +1,14 @@
 ## Color
+| Class                                                                        | Property         | SCSS            | HEX     |
+|------------------------------------------------------------------------------|------------------|-----------------|---------|
+|`.bx--overflow-menu__icon`                                                    | fill             | $ui-05          | #5a6872 |
+|`.bx--overflow-menu-options`                                                  | background-color | $ui-01          | #ffffff |
+|`.bx--overflow-menu-options__option:hover`                                    | background-color | $hover-row      | #5596e6 at 10% opacity |
+| `.bx--overflow-menu-options__option--danger .bx--overflow-menu-options__btn:hover`| background-color| $hover-danger| #bd1427|
+| `.bx--overflow-menu-options__option--danger`                                 | border-top       | $ui-04          | #8897a2 |
 
-| Attribute          | SCSS        | HEX     |
-|----------------|-------------|---------|
-| Icon           | $ui-05      | #5a6872 |
-| Background     | $ui-01      | #ffffff |
+
 | Text           | $text-01    | #152935 |
-| Icon:hover    | $hover-secondary   | #3d70b2 |
-| Row:hover    | $hover-row | #5596e6 at 10% opacity |
-| Warning:hover | $hover-danger | #bd1427 |
 | Line           | $ui-04      | #8897a2 |
 
 <div data-insert-component="ImageGrid">
@@ -24,28 +25,32 @@ _Text and warning hover examples for Overflow Menu_
 
 Overflow Menu text should be set in set in sentence case with the first letter of the first word capitalized.
 
-| Property | Font-size (px/rem)    | Font-weight |
-|------------|-----------------|--------------|
-| Text      | 14 / 0.875 | Normal / 400 |
+| Property                         | Font-size (px/rem)| Font-weight  |
+|----------------------------------|-------------------|--------------|
+| `.bx--overflow-menu-options__btn`| 14 / 0.875        | Normal / 400 |
+
 
 ## Layer
 
-| Layer      | Elevation     | Box-shadow      |
-|------------|----------|----------|
-| Overlay    | 8        | `0 4px 8px 0 rgba(0,0,0,0.10);`  |
+| Class                        | Property    | Layer, Elevation | Box-shadow                      |
+|------------------------------|-------------|------------------|---------------------------------|
+| `.bx--overflow-menu-options` | box-shadow  | Overlay, 8       | 0 4px 8px 0 rgba(0, 0, 0, 0.1)  |
 
 ## Structure
 
 The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [iconography](/style/iconography/library) library.
 
-| Property             | px                      | rem   |
-|----------------------|-------------------------|-------|
-| Width                | 180                     | 11.25 |
-| Height               | Varies based on content |       |
-| Divider line         | 1                       | -     |
-| Internal spacing     | 16                      | 1     |
-| Spacing: icon & menu | 8                       | 0.5   |
+| Class                                       | Property                    | px    | rem   |
+|---------------------------------------------|-----------------------------|-------|-------|
+| `.bx--overflow-menu-options__option--danger`| border-top                  | 1     | -     |
+| `.bx--overflow-menu-options__btn`           | padding-top, padding-bottom | 8     | 0.5   |
+| `.bx--overflow-menu-options__btn`           | padding-right, padding-left | 16    | 1     |
+| `.bx--overflow-menu__icon`                  | padding                     | 16    | 1     |
 
+
+
+| Width    (100%)             | 180                     | 11.25 |
+| Height  (100%)             | Varies based on content |       |
 ---
 ***
 > 

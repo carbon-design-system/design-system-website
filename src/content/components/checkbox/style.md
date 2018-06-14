@@ -1,12 +1,12 @@
 ## Color
 
-| Attribute                      | SCSS        | HEX         |
+| Class                          | SCSS        | HEX         |
 |--------------------------------|-------------|-------------|
-|`bx--checkbox-label[data-contained-checkbox-state='true']::before`                  | $brand-01   | #3d70b2     |
-| `bx--checkbox-label::before`   | $ui-05      | #5a6872     |
-| `bx--checkbox-label::before`   | $ui-01      | #ffffff     |
-| `bx--checkbox-label::after`    | $inverse-01 | #ffffff     |
-| `bx--checkbox-label`           | $text-01    | #152935     |
+|`.bx--checkbox-label[data-contained-checkbox-state='true']::before`  | $brand-01   | #3d70b2     |
+|`.bx--checkbox-label::before`   | $ui-05      | #5a6872     |
+|`.bx--checkbox-label::before`   | $ui-01      | #ffffff     |
+|`.bx--checkbox-label::after`    | $inverse-01 | #ffffff     |
+|`.bx--checkbox-label`           | $text-01    | #152935     |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -22,18 +22,18 @@ _Disabled and normal Checkbox states_
 
 Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words.
 
-| Property             | Font-size (px/rem)| Font-weight   | Type style |
+| Class                | Font-size (px/rem)| Font-weight   | Type style |
 |----------------------|-------------------|---------------|------------|
-| `bx--label`          | 14 / 0.875        | SemiBold / 600| Zeta       |
-| `bx--checkbox-label` | 14 / 0.875        | Normal / 400  |  -         |
+| `.bx--label`         | 14 / 0.875        | SemiBold / 600| Zeta       |
+| `.bx--checkbox-label`| 14 / 0.875        | Normal / 400  |  -         |
 
 ## Structure
 
-|State                       | Property             | px | rem  |
-|----------------------------|----------------------|----|------|
-|`bx--checkbox-label::before`| height & width       | 18 | 2.75 |
-|`bx--checkbox-label::before`| border               | 2  | -    |
-|`bx--checkbox-label`        | padding-left         | 8  | 0.5  |
+|Class                        | Property             | px | rem  |
+|-----------------------------|----------------------|----|------|
+|`.bx--checkbox-label::before`| height & width       | 18 | 2.75 |
+|`.bx--checkbox-label::before`| border               | 2  | -    |
+|`.bx--checkbox-label`        | padding-left         | 8  | 0.5  |
 || External spacing     | 16 | 1    |
 || Spacing: checkboxes  | 16 | 1    |
 <!-- Note: in code the label has more padding due to placement > do we writing design padding or code padding? -->

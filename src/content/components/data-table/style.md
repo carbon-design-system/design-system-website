@@ -37,18 +37,11 @@ _Data Table on ui-01 vs ui-02_
 ## Typography
 Column headers should be in title case. All other table text should be sentenced case.
 
-| Property      | Font-size (px/rem)     | Font-weight  |
-|---------------|------------------|--------------|
-| Title         | 18 / 1.125 | Semibold / 600  |
-| Header        | 14 / 0.875   | Semibold / 600   |
-| Text          | 14 / 0.875  | Normal / 400 |
-
-## Layer
-
-| Layer    | Elevation | Box-shadow  |
-|----------|---------- |-------------|
-| Flat     | 1         | none        |
-
+| Class                      | Font-size (px/rem)| Font-weight    |
+|----------------------------|-------------------|----------------|
+| `bx--data-table-v2-header` | 18 / 1.125        | Semibold / 600 |
+| `bx--table-header-label`   | 14 / 0.875        | Semibold / 600 |
+| Text                       | 14 / 0.875  | Normal / 400 |
 
 
 ## Structure
@@ -60,12 +53,12 @@ Short and Default are offered as **user preferences** that can be accessed from 
 Compact and Tall are designer and developer preferences. Tall row heights are only recommended if your data is expected to have 2 lines of content in a single row.
 
 
-| Size     |   Row Height (px)  |
-| ---------|  ----------------  |
-| Compact  |  24     |
-| Short    |  32     |
-| Default  |  48     |
-| Tall     |  64     |
+|Class                        | Size     | Row Height (px/rem) |
+|-----------------------------|----------| --------------------|
+|`.bx--data-table-v2--compact`| Compact  |  24 / 1.5           |
+|`.bx--data-table-v2--short`  | Short    |  32 / 2             |
+|`.bx--data-table-v2 tr`      | Default  |  48 / 3             |
+|`.bx--data-table-v2--tall`   | Tall     |  64 / 4             |
 
 
 ![Data table: row styling](images/data-table-style-3.png)
@@ -88,14 +81,14 @@ Column widths can vary by content and only requires a minimum spacing between co
 ### Data table
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
-| Spacing            | px   | rem   |
-|--------------------|------|-------|
-| Title & table      | 16   | 1     |
-| Header & caret     |  8   | 0.5   |
-| Basic internal     | 24   | 1.5   |
-| Enhanced internal  | 16   | 1     |
-| Internal elements  | 16   | 1     |
-| Between columns    | ≥ 24 | 1.5   |
+|| Spacing            | px   | rem   |
+||--------------------|------|-------|
+||`.bx--data-table-v2-header`     | 16   | 1     |
+|| Header & caret     |  8   | 0.5   |
+|| Basic internal     | 24   | 1.5   |
+|| Enhanced internal  | 16   | 1     |
+|| Internal elements  | 16   | 1     |
+|| Between columns    | ≥ 24 | 1.5   |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -116,6 +109,8 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 | Icon height            | 16   | 1   |
 | Spacing: icons         | 24   | 1.5 |
 | Spacing: icons & table | 16   | 1   |
+
+<!-- Note: broken down by individual icons -->
 
 ---
 ***

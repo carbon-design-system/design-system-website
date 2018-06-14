@@ -346,35 +346,44 @@ class SideNav extends Component {
             {navItems}
           </ul>
           <div className="side-nav__links">
-            <Button
-              href="https://github.com/carbon-design-system/carbon-design-kit"
-              className="side-nav__link bx--btn"
-              kind="secondary"
-              icon="arrow--right"
-              target="_blank"
-              role="button"
-              iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Design Kit')}
-            >
-              Design Kit
-            </Button>
-            <Button
-              href="https://github.com/carbon-design-system/carbon-components"
-              className="side-nav__link bx--btn"
-              kind="secondary"
-              icon="arrow--right"
-              target="_blank"
-              role="button"
-              iconDescription="sidenav link icon"
-              onClick={e => this.handleClick(e, 'Developer Kit')}
-            >
-              GitHub Repo
-            </Button>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-}
+            <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank" className="side-nav__link bx--link"
+            >Design Kit!</a>
+            <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank" className="side-nav__link bx--link"
+            >Vanilla Repo!</a>
+            <a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank" className="side-nav__link bx--link"
+            >React Repo!</a>
 
-export default SideNav;
+            </div>
+          </div>
+        </nav>
+      );
+    }
+  }
+
+  export default SideNav;
+
+
+            // <Button
+            //   href="https://github.com/carbon-design-system/carbon-design-kit"
+            //   className="side-nav__link bx--btn"
+            //   kind="secondary"
+            //   icon="arrow--right"
+            //   target="_blank"
+            //   role="button"
+            //   iconDescription="sidenav link icon"
+            //   onClick={e => this.handleClick(e, 'Design Kit')}
+            // >
+            //   Design Kit
+            // </Button>
+            // <Button
+            //   href="https://github.com/carbon-design-system/carbon-components"
+            //   className="side-nav__link bx--btn"
+            //   kind="secondary"
+            //   icon="arrow--right"
+            //   target="_blank"
+            //   role="button"
+            //   iconDescription="sidenav link icon"
+            //   onClick={e => this.handleClick(e, 'Developer Kit')}
+            // >
+            //   GitHub Repo
+            // </Button>

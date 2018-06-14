@@ -1,12 +1,12 @@
 ## Color
 
-| Class | Property              | SCSS | HEX |
-|--------------------|------|------|
-| `.bx--content-switcher-btn .bx--content-switcher--selected` | background-color       | $brand-01   | #3d70b2  |
-|`.bx--content-switcher-btn .bx--content-switcher--selected` | color     | $inverse-01 | #ffffff  |
-| `.bx--content-switcher-btn` | border | $brand-01   | #3d70b2  |
-| `.bx--content-switcher-btn` | color     | $brand-01   | #3d70b2  |
-| `.bx--content-switcher-btn .bx--content-switcher--selected:hover`| background & border color           | $hover-primary   | #30588c  |
+| Class                                                          | Property                  | SCSS           | HEX      |
+|----------------------------------------------------------------|---------------------------|----------------|----------|
+|`.bx--content-switcher-btn.bx--content-switcher--selected`      | background-color          | $brand-01      | #3d70b2  |
+|`.bx--content-switcher-btn.bx--content-switcher--selected`      | color                     | $inverse-01    | #ffffff  |
+|`.bx--content-switcher-btn`                                     | border                    | $brand-01      | #3d70b2  |
+|`.bx--content-switcher-btn`                                     | color                     | $brand-01      | #3d70b2  |
+|`.bx--content-switcher-btn.bx--content-switcher--selected:hover`| background & border color | $hover-primary | #30588c  |
 
 
 ### States
@@ -18,19 +18,19 @@ Content Switchers have two states: selected and non-selected. Selected states ar
 
 Content Switcher text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. The text should not exceed three words.
 
-| Property   | Font-size (px/rem)      | Font-weight  |
-|------------|-----------------|--------------|
-| Text       | 14 / 0.875 | Normal / 400 |
+| Class                        | Font-size (px/rem)| Font-weight  |
+|------------------------------|-------------------|--------------|
+| `.bx--content-switcher-btn`  | 14 / 0.875        | Normal / 400 |
 
 ## Structure
 
 Content Switchers must have at least two options for the user to choose from. Each container that makes up the Content Switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2rem on both sides of the text.
 
-| Property         | px | rem |
-|------------------|----|-----|
-| Height           | 40 | 2.5 |
-| Border           | 1  | -   |
-| Internal spacing | 32 | 2   |
+|Class                                                                              | Property                          | px | rem |
+|-----------------------------------------------------------------------------------|-----------------------------------|----|-----|
+|                                                                                   |height                             | 40 | 2.5 |
+|`.bx--content-switcher-btn:not(:first-of-type)` </br> `.bx--content-switcher-btn`  |border, border-left, border-right  | 1  | -   |
+|`.bx--content-switcher-btn`                                                        |padding-left, padding-right        | 32 | 2   |
 
 ---
 ***

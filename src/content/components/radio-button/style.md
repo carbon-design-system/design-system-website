@@ -1,28 +1,28 @@
 ## Color
 
-| Attribute               | SCSS      | HEX       |
-|---------------------|-----------|-----------|
-| Non-selected border | $ui-05    | #5a6872   |
-| Selected            | $brand-01 | #3d70b2   |
+| Class                                                                               | Property         | SCSS       | HEX       |
+|-------------------------------------------------------------------------------------|------------------|------------|-----------|
+| `.bx--radio-button__appearance`                                                     | border           |  $ui-05    | #5a6872   |
+| `.bx--radio-button__appearance`                                                     | background-color |  $ui-01    | #ffffff   |
+| `.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance`| border           |  $brand-01 | #3d70b2   |
 
 ## Typography
 
 Radio Button labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Property | Font-size (px/rem)   | Font-weight  | Type style |
-|----------|-----------------|--------------|--|
-| Heading  | 14 / 0.875 | Semi-Bold / 600   | Zeta |
-| Label    | 14 / 0.875 | Normal / 400 | - |
+| Class                     | Font-size (px/rem)| Font-weight    | Type style |
+|---------------------------|-------------------|----------------|------------|
+|`.bx--label`               | 14 / 0.875        | Semi-Bold / 600| Zeta       |
+|`.bx--radio-button__label` | 14 / 0.875        | Normal / 400   | -          |
 
 ## Structure
 
-| Property                     | px | rem  |
-|------------------------------|----|-------|
-| Button height & width        | 18 | 1.125 |
-| Selected dot: height & width | 8  | 0.5   |
-| External spacing             | 16 | 1     |
-| Spacing: between options     | 16 | 1     |
-| Spacing: label & button      | 8  | 0.5   |
+| Class                                                                                     | Property                     | px | rem   |
+|-------------------------------------------------------------------------------------------|------------------------------|----|-------|
+|`.bx--radio-button__appearance`                                                            | height, width                | 18 | 1.125 |
+|`.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance:before`| height, width                | 8  | 0.5   |
+|`.bx--radio-button__label`                                                                 | margin-right                 | 16 | 1     |
+|`.bx--radio-button__appearance`                                                            | margin-right                 | 8  | 0.5   |
 
 ---
 ***
@@ -30,3 +30,12 @@ Radio Button labels and headings should be set in sentence case, with only the f
 ![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
 
 _Structure and spacing measurements for Radio Button | px | rem_
+
+### Recommended
+
+The following specs are not built into the Radio Button component but are recommended by design as the proper amount of space around a grouping of or in between stacked Radio Buttons.
+
+| Class                                                                                     | Property      | px | rem   |
+|-------------------------------------------------------------------------------------------|---------------|----|-------|
+| `.bx--radio-button-group`                                                                 | margin        | 16 | 1     |
+| `.bx--radio-button__label`                                                                | margin-bottom | 16 | 1     |

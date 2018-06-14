@@ -1,11 +1,17 @@
 ## Color
 
-| Attribute          | SCSS    | HEX         |
-|----------------|---------|-------------|
-| Background     | $ui-01  | #ffffff     |
-| Text           | $text-02| #5a6872     |
-| Border         | $ui-04  | #8897a2     |
-| Chevron        | $ui-05  | #5a6872     |
+| Class                                                                        | Property         | SCSS            | HEX     |
+|------------------------------------------------------------------------------|------------------|-----------------|---------|
+| `.bx--pagination`                                                            | background-color | $ui-01          | #ffffff |
+| `.bx--pagination`                                                            | border           | $ui-04          | #8897a2 |
+| `.bx--pagination__text`                                                      | color            | $text-02        | #5a6872 |
+| `.bx--pagination__button-icon`                                               | fill             | $ui-05          | #5a6872 |
+
+
+### States
+
+| Class                                                                        | Property         | SCSS            | HEX     |
+|------------------------------------------------------------------------------|------------------|-----------------|---------|
 | Chevron: disabled | $ui-05 @ 50%  | #5a6872 |
 | Chevron:hover  | $hover-secondary  | #3d70b2    |
 | Caret          | $brand-01  | #3d70b2    |
@@ -14,21 +20,25 @@
 
 Pagination text should be set in set in sentence case with the first letter of each word capitalized.
 
-| Property       | Font-size (px/rem)     | Font-weight |
-|------------------|-----------------|--------------|
-| Secondary text   | 12 / 0.75  | Normal / 400 |
+| Class                 | Font-size (px/rem)| Font-weight  | Text styles         |
+|-----------------------|-------------------|--------------|---------------------|
+|`.bx--pagination__text`| 12 / 0.75         | Normal / 400 | Caption             |
 
 ## Structure
 
 The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
 
-| Property                           | px        | rem   |
-|------------------------------------|-----------|-------|
-| Height                             | 40      | 2.5   |
-| Width                              | Varies based on content and layout | |
-| Border                             | 1         | -     |
-| Internal spacing: left             | 24        | 1.5   |
-| Spacing between elements           | 16        | 1     |
+| Class                              | Property                    | px  | rem   |
+|------------------------------------|-----------------------------|-----|-------|
+| `.bx--pagination--inline`          | Height                      | 42  | 2.625 |
+|`.bx--pagination`                   | border                      | 1   | -     |
+|`.bx--pagination`                   | padding-left, padding-right | 16  | 1     |
+|`.bx--pagination`                   | padding-top, padding-bottom | 8   | 0.5   |
+
+
+|| Spacing between elements          | 16        | 1     |
+|| Height (not directly defined)            | 40      | 2.5   |
+|| Width   (100%)                           | Varies based on content and layout | |
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 _Structure and spacing measurements for Pagination | px / rem_

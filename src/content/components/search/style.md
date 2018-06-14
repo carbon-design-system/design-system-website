@@ -2,14 +2,16 @@
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Attribute             | SCSS          | HEX      |
-|-------------------|---------------|-----------|
-| Background: default | $field-01     | #f4f7fb |
-| Background: light   | $field-02     | #ffffff |
-| Text: user input  | $text-01      | #152935  |
-| Text: placeholder | $text-03      | #cdd1d4  |
-| Icon              | $ui-05        | #5a6872  |
-| Border: focus    | $brand-01     | #3d70b2 |
+|| Property             | SCSS          | HEX      |
+|-----|-------------------|---------------|-----------|-----------|
+| `bx--search bx--search--sm` </br> `bx--search-input`| Background: default | $field-01     | #f4f7fb |
+|`bx--search bx--search--sm bx--search--light`| Background: light   | $field-02     | #ffffff |
+|| Text: user input  | $text-01      | #152935  |
+|| Icon              | $ui-05        | #5a6872  |
+
+### States
+|| Text: placeholder | $text-03      | #cdd1d4  |
+|| Border: focus    | $brand-01     | #3d70b2 |
 
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
@@ -24,8 +26,8 @@ Search text should be set in sentence case, with only the first letter of the fi
 
 | Property        | Font-size    | Font-weight       |  Type style |
 |------------------|-----------------|---------------------|
+| `.bx--search-input`  | 14 / 0.875 | Semi-Bold / 600          | Zeta |
 | Placeholder text | 14 / 0.875 | Normal italic / 400 | - |
-| Text             | 14 / 0.875 | Semi-Bold / 600          | Zeta
 
 ## Structure
 
