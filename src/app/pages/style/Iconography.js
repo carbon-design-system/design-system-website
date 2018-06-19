@@ -8,24 +8,6 @@ import IconCard from '../../components/internal/IconCard';
 import IconEmptyState from '../../components/internal/IconEmptyState';
 import MarkdownPage from '../../components/internal/MarkdownPage';
 
-function printAttributes(attrs) {
-  return Object.keys(attrs)
-    .map(key => `${key}="${attrs[key]}"`)
-    .join(' ');
-}
-
-function toSVG(icon) {
-  const { svgData, width, height, viewBox } = icon;
-  const svg = children => `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
-  const paths = svgData.paths.map(path => `<path d="${path.d}"></path>`).join('');
-
-  if (!svgData.g) {
-    return svg(paths);
-  }
-
-  return svg(`<g ${printAttributes(svgData.g)}>${paths}</g>`);
-}
-
 export default class Iconography extends React.Component {
   static propTypes = {
     currentPage: PropTypes.string,
@@ -69,7 +51,18 @@ export default class Iconography extends React.Component {
     const initialIcons = (
       <div style={{ marginTop: '70px' }}>
         <h2>UI icons</h2>
-        <div className="icon-container">{this.renderIconCards(icons)}</div>
+        <div className="icon-container">{this.renderIconCards(iconsToShow)}</div>
+      </div>
+    );
+
+    const serviceIcons = (
+      <div style={{ marginTop: '70px' }}>
+        <h2>Service icons</h2>
+        <div className="icon-container">
+          {this.renderIconCards(
+            icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1)
+          )}
+        </div>
       </div>
     );
 
@@ -97,7 +90,14 @@ export default class Iconography extends React.Component {
                 labelText="Icon library search"
               />
             </div>
-            {this.state.searchValue.length > 0 ? searchResults : initialIcons}
+            {this.state.searchValue.length > 0
+              ? searchResults
+                : (
+                  <React.Fragment>
+                    {initialIcons}
+                    {serviceIcons}
+                  </React.Fragment>
+                )}
           </div>
         </Tab>
         <Tab href="/style/iconography/usage" label="Usage">
@@ -126,4 +126,100 @@ export default class Iconography extends React.Component {
       }
     });
   }
+}
+
+const serviceIconNames = [
+  'icon--api',
+  'icon--app-services',
+  'icon--applications',
+  'icon--block-chain',
+  'icon--cf-apps',
+  'icon--console',
+  'icon--containers',
+  'icon--crash',
+  'icon--dashboard',
+  'icon--devices',
+  'icon--devops',
+  'icon--finance',
+  'icon--financial',
+  'icon--functions',
+  'icon--hpa',
+  'icon--hpa--stress',
+  'icon--spa—stress',
+  'icon--infrastructure',
+  'icon--integration',
+  'icon--not',
+  'icon--menu',
+  'icon--mobile',
+  'icon--network',
+  'icon--open-whisk',
+  'icon--pa',
+  'icon--pa-stress',
+  'icon--portfolio',
+  'icon--predictive',
+  'icon--schematics',
+  'icon--security',
+  'icon--services',
+  'icon--storage',
+  'icon--watson',
+  'icon--whisk',
+  'icon--iot',
+  'icon--pa--stress',
+];
+
+const deprecatedIcons = [
+  'icon--start',
+  'icon--upload',
+  'icon--warning',
+  'icon--stop',
+  'icon--play',
+  'icon-—pause',
+  'icon--info',
+  'icon--help',
+  'icon--folder',
+  'icon--favorite',
+  'icon--error',
+  'icon--dollars',
+  'icon--data',
+  'icon--header--notification',
+  'icon--header--notifciation',
+  'icon--header--ticket',
+  'icon--header--docs',
+  'icon--header--contact',
+  'icon--pause',
+  'icon--start--outline',
+  'icon--apis',
+  'icon--cloud-foundry',
+  'icon--apps',
+];
+
+const iconsToShow = icons.filter(icon => {
+  if (icon.name.includes('glyph')) {
+    return false;
+  }
+  if (deprecatedIcons.indexOf(icon.name) !== -1) {
+    return false;
+  }
+  if (serviceIconNames.indexOf(icon.name) !== -1) {
+    return false;
+  }
+  return true;
+});
+
+function printAttributes(attrs) {
+  return Object.keys(attrs)
+    .map(key => `${key}="${attrs[key]}"`)
+    .join(' ');
+}
+
+function toSVG(icon) {
+  const { svgData, width, height, viewBox } = icon;
+  const svg = children => `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
+  const paths = svgData.paths.map(path => `<path d="${path.d}"></path>`).join('');
+
+  if (!svgData.g) {
+    return svg(paths);
+  }
+
+  return svg(`<g ${printAttributes(svgData.g)}>${paths}</g>`);
 }
