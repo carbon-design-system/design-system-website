@@ -77,7 +77,7 @@
     "babel-polyfill": "^6.23.0",
     "carbon-components": "9.0.2",
     "carbon-components-react": "6.0.0",
-    "carbon-icons": "^7.0.6",
+    "carbon-icons": "7.0.7",
     "classnames": "^2.2.5",
     "color": "^1.0.3",
     "compression": "^1.6.2",
