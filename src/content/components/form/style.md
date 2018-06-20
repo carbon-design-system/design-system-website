@@ -45,7 +45,7 @@ All icons can be found on the [iconography](/style/iconography/library) library 
 |----------------------|----|------|
 | Inputs               | 24 | 1.5  |
 | Non-input components | 32 | 2    |
-| Columns              | 20 | 1.25 |
+| Grid gutter          | 20 | 1.25 |
 
 
 

@@ -1,11 +1,11 @@
 ## Color
-| Class                                                                        | Property         | SCSS            | HEX     |
-|------------------------------------------------------------------------------|------------------|-----------------|---------|
-|`.bx--overflow-menu__icon`                                                    | fill             | $ui-05          | #5a6872 |
-|`.bx--overflow-menu-options`                                                  | background-color | $ui-01          | #ffffff |
-|`.bx--overflow-menu-options__option:hover`                                    | background-color | $hover-row      | #5596e6 at 10% opacity |
-| `.bx--overflow-menu-options__option--danger .bx--overflow-menu-options__btn:hover`| background-color| $hover-danger| #bd1427|
-| `.bx--overflow-menu-options__option--danger`                                 | border-top       | $ui-04          | #8897a2 |
+| Class                                                                            | Property         | SCSS            | HEX     |
+|----------------------------------------------------------------------------------|------------------|-----------------|---------|
+|`.bx--overflow-menu__icon`                                                        | fill             | $ui-05          | #5a6872 |
+|`.bx--overflow-menu-options`                                                      | background-color | $ui-01          | #ffffff |
+|`.bx--overflow-menu-options__option:hover`                                        | background-color | $hover-row      | #5596e6 at 10% opacity |
+|`.bx--overflow-menu-options__option--danger .bx--overflow-menu-options__btn:hover`| background-color | $hover-danger   | #bd1427 |
+|`.bx--overflow-menu-options__option--danger`                                      | border-top       | $ui-04          | #8897a2 |
 
 
 | Text           | $text-01    | #152935 |

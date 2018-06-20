@@ -4,9 +4,9 @@
 |------------------------------------------------------------------------|--------------------------|----------|----------|
 |`.bx--toggle__appearance:after`                                         | background-color         | $ui-01   | #ffffff  |
 |`.bx--toggle__appearance:after`                                         | border                   | $ui-05   | #5a6872  |
-|`.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before`| border                   | $ui-05 | #5a6872|
+|`.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before`| border                   | $ui-05   | #5a6872  |
 |`.bx--toggle:checked + .bx--toggle__label .bx--toggle__appearance:after`| background-color, border | $brand-01| #3d70b2  |
-|`.bx--toggle--small:checked + .bx--toggle__label .bx--toggle__check`    | fill                     | $brand-01 | #3d70b2 |
+|`.bx--toggle__check`                                                    | fill                     | $brand-01 | #3d70b2 |
 
 || Label                   | $text-01 | #152935  |
 
@@ -50,12 +50,13 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 
 ### Small toggle
-| Property          | px | rem   |
-|-------------------|----|-------|
-| Height            | 16 | 1     |
-| Width             | 32 | 2     |
+| Class               | Property          | px | rem   |
+|---------------------|----|-------|
+| `.bx--toggle--small`| height            | 16 | 1     |
+| `.bx--toggle--small`| width            | 32 | 2     |
 | Width & height: circle | 10 | 0.625 |
 | Spacing: external | 16 | 1     |
+
 
 
 

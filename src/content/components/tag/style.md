@@ -14,7 +14,7 @@ All tags have the same height. However, the width of tags varies based on the am
 |----------|-----------------------------|----|-------|
 |`.bx--tag`| height                      | 20 | 1.25  |
 |`.bx--tag`| radius                      | 15 | 0.9375|
-|`.bx--tag`| margin                      | 3  | 0.1875|
+|`.bx--tag`| margin                      | 2  | -     |
 |`.bx--tag`| padding-left, padding-right | 10 | 0.625 |
 
 ---

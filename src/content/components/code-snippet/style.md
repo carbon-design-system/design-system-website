@@ -3,16 +3,18 @@
 | Class                                               | Property        |SCSS       | HEX     |
 |-----------------------------------------------------|-----------------|-----------|---------|
 | `.bx--snippet--single`                              | background      | $ui-01    | #ffffff |
-| `.bx--snippet--single`                              | border          | $ui-03    | #DFE3E6 |  
+| `.bx--snippet--single`                              | border          | $ui-03    | #dfe3e6 |  
 | `.bx--snippet__icon`                                | color           | $brand-01 | #3d70b2 |
 | `.bx--snippet--inline`                              | background-color| $field-01 | #ffffff |
+| `.bx--snippet--inline`                              | color           | $text-02  | #5a6872 |
 | `.bx--snippet--inline:hover`                        | background-color| $hover-row| #5596e6 at 10% opacity|
-| `.bx--snippet--inline.bx--snippet--light`           | background-color| $field-02 | #F4F7FB |
-| `.bx--snippet--inline.bx--snippet--light:hover`     | background-color| $ui-02    | #D0DCED |
+| `.bx--snippet--inline.bx--snippet--light`           | background-color| $field-02 | #f4f7fB |
+| `.bx--snippet--inline.bx--snippet--light:hover`     | background-color| $ui-02    | #d0dced |
 
 
-| Inline code: text           | $text-02   | #5A6872 |
-| Code & terminal snippet: text                       | $ui-01          | #152934   |
+
+### Syntax colors
+
 
 
 ## Typography
@@ -52,7 +54,7 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 | `.bx--snippet--multi`                      | width                       | 600 | 37.5  |
 | `.bx--snippet--multi`                      | padding-top, padding-bottom | 16  | 1     |
 | `.bx--snippet--multi`                      | padding-right               | 48  | 3     |
-| `bx--snippet__icon`                        | height, width               | 16  | 1     |
+| `.bx--snippet__icon`                        | height, width               | 16  | 1     |
 
 
 ![](images/code-snippet-style-2.png)

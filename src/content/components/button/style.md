@@ -83,15 +83,6 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn--ghost.bx--btn__icon`| margin-left                 | 8  | 0.5  |
 
 
-### Recommended
-
-The following specs are not built into any of the Button components but are recommended by design as the proper amount of space to distance Buttons should be from one another.
-
-| Class                           | Property                  | px | rem  |
-|---------------------------------|---------------------------|----|------|
-| External: button                | margin                    | 10 | 0.625|
-| Button pairings                 | margin-left, margin-right | 8  | 0.5  |
-
 <div data-insert-component="ImageGrid">
   <div>
     ![Spacing for Primary Button](images/button-style-9.png)
@@ -113,3 +104,12 @@ The following specs are not built into any of the Button components but are reco
   </div>
 </div>
 _Spacing measurements for various Button types | px / rem_
+
+### Recommended
+
+The following specs are not built into any of the Button components but are recommended by design as the proper amount of space to distance Buttons should be from one another.
+
+| Class                           | Property                  | px | rem  |
+|---------------------------------|---------------------------|----|------|
+| External: button                | margin                    | 10 | 0.625|
+| Button pairings                 | margin-left, margin-right | 8  | 0.5  |

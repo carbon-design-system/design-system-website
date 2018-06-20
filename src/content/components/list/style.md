@@ -1,8 +1,8 @@
 ## Color
 
-| Attribute    | SCSS          | HEX      |
-|----------|---------------|----------|
-| Text     | $text-01      | #152934  |
+| Attribute         | Property  | SCSS     | HEX      |
+|-------------------|-----------|----------|----------|
+| `.bx--list__item` | color     | $text-01 | #152934  |
 
 ## Typography
 

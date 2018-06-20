@@ -97,16 +97,17 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 
 ### Range Date Picker
 
-| Class      | Property                     | px  | rem    |
-|-------------------------|------------------------------|-----|--------|
-|`.bx--date-picker__input`| Height                       | 230 | 14.375 |
-|`.bx--date-picker--range .bx--date-picker__input`| Width                        | 280 | 17.5   |
-|`.bx--date-picker__icon`| height & width                | 16  | 1      |
-|`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right | 8   | 0.5    |
-|`.bx--date-picker__input` | padding-right, padding-left  | 16  | 1      |
-|`.bx--date-picker__weekdays`| margin-bottom| 4  | .25   |
+| Class                                                            | Property                     | px  | rem    |
+|------------------------------------------------------------------|------------------------------|-----|--------|
+|`.bx--date-picker__input`                                         | height                       | 230 | 14.375 |
+|`.bx--date-picker--range .bx--date-picker__input`                 | width                        | 280 | 17.5   |
+|`.bx--date-picker__icon`                                          | height, width                | 16  | 1      |
+|`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right                 | 8   | 0.5    |
+|`.bx--date-picker__input`                                         | padding-right, padding-left  | 16  | 1      |
+|`.bx--date-picker__weekdays`                                      | margin-bottom                | 4   | .25    |
+|`.bx--date-picker__day.today::after`                              | height & width               | 3   | -      |
+
 || Spacing: days of week & days | 20  | 1.25   |
-|`.bx--date-picker__day.today::after`| height & width          | 3   | -      |
 
 
 ![Structure for Date Picker](images/date-picker-style-2.png)

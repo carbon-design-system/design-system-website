@@ -9,7 +9,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |`.bx--select--inline.bx--select-input` | background   | transparent   | -       |
 |`.bx--label`                           | color        | $text-01      | #152934 |
 |`.bx--label`                           | color        | $text-01      | #152934 |
-|`bx--select__arrow`                    | fill         | $brand-01     | #3d70b2 |
+|`.bx--select__arrow`                   | fill         | $brand-01     | #3d70b2 |
 |`.bx--select-input`                    | color        | $text-01      | #152935 |
 |`.bx--select--inline.bx--select-input` | color        | $brand-01     | #3d70b2 |
 
@@ -78,7 +78,7 @@ _Structure and spacing measurements for Select | px / rem_
 
 The following specs are not built into the Select component but are recommended by design as the proper amount of space to distance Select from another form element or component.
 
-| Class   | Property                   | px | rem  |
+| Class       | Property                   | px | rem  |
 |-------------|----------------------------|----|------|
 |`.bx--select`| margin-top, margin-bottom  | 16 | 21   |
 |`.bx--select`| margin-left, margin-right  | 8  | 0.5  |

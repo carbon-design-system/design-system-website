@@ -2,14 +2,14 @@
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                | Property  | SCSS      | HEX       |
-|----------------------|-----------|-----------|-----------|
-| `.bx--number`  | $field-01     | #f4f7fb |
-| `.bx--number--light`   | $field-02     | #ffffff |
-| Label: enabled           | $text-01   | #152934   |
-| Text: number | $text-01  | #152935       |
-| Caret                | $brand-01 | #3d70b2       |
-| Border bottom: enabled | $ui-05 | #5a6872 |
+| Class                             | Property         | SCSS      | HEX       |
+|-----------------------------------|------------------|-----------|-----------|
+| `.bx--number`                     | background-color | $field-01 | #f4f7fb   |
+| `.bx--number--light`              | background-color | $field-02 | #ffffff   |
+| `.bx--label`                      | color            | $text-01  | #152934   |
+| `.bx--number input[type='number']`| color            | $text-01  | #152935   |
+| `.bx--number__controls svg `      | fill             | $brand-01 | #3d70b2   |
+| `.bx--number input[type='number']`| box-shadow       | $ui-05    | #5a6872   |
 
 
 ![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
@@ -26,11 +26,13 @@ _Number Input example in $field-02 (left) and $field-01 (right)_
 
 **Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
 
-| Border bottom: focused | $brand-01 | #3d70b2 |
-| Border bottom: error | $support-01 | #e0182d |
-| Label: focused           | $brand-01  | #3d70b2   |
-| Label: error             | $support-01 | #e0182d |
-| Text: error message      | $support-01        | #e0182d   |
+| Class                                   | Property         | SCSS       | HEX       |
+|-----------------------------------------|------------------|------------|-----------|
+| `.bx--number input[type='number']:focus`| box-shadow       | $brand-01  | #3d70b2   |
+| Border bottom: error              | box-shadow       | $support-01| #e0182d   |
+| Label: focused                    | color            | $brand-01  | #3d70b2   |
+| Label: error                      | color            | $support-01| #e0182d   |
+| Text: error message               | color            | $support-01| #e0182d   |
 
 
 
@@ -42,7 +44,7 @@ Number Input labels should use sentence case, with only the first word in a phra
 |------------------------------------------------------------|--------------------|-----------------|------------|
 | `.bx--label`                                               | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
 | `.bx--number input[type='number']`                         | 14 / 0.875         | Normal / 400    | -          |
-| `.bx--number input[type='number'] ~ .bx--form-requirement` | 12 / 0.75          | Normal / 400    | -          |
+| `.bx--number input[type='number'] ~ .bx--form-requirement` | 12 / 0.75          | Normal / 400    | Caption    |
 
 ## Structure
 
