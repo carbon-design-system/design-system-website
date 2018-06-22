@@ -24,6 +24,8 @@ class ComponentExample extends Component {
     codepenSlug: PropTypes.string,
   };
 
+  static _initHandles = new WeakMap();
+
   state = {
     currentFieldColor: 'field-01',
     currentHTMLfile: this.props.htmlFile,
@@ -80,8 +82,15 @@ class ComponentExample extends Component {
       (componentNamesMap[currentComponent] || [currentComponent]).forEach((name) => {
         const TheComponent = componentsList[name];
         if (TheComponent) {
-          const selectorInit = TheComponent.options.selectorInit;
-          instances.push(...[...ref.querySelectorAll(selectorInit)].map(elem => TheComponent.create(elem)));
+          if (TheComponent.prototype.createdByLauncher) {
+            const initHandles = this.constructor._initHandles;
+            if (!initHandles.has(TheComponent)) {
+              initHandles.set(TheComponent, TheComponent.init());
+            }
+          } else {
+            const selectorInit = TheComponent.options.selectorInit;
+            instances.push(...[...ref.querySelectorAll(selectorInit)].map(elem => TheComponent.create(elem)));
+          }
         }
       });
     }
