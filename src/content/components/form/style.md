@@ -26,7 +26,7 @@ Form headings and labels should be set in sentence case with the first letter of
 | `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600| Zeta       |
 | `.bx--text-input`                         | 14 / 0.875        | Normal / 400   | -          |
 | `.bx--text-input::placeholder`            | 14 / 0.875        | Normal / 400   | -          |
-| `.bx--text-input ~ .bx--form-requirement` | 12 / 0.75         | Normal / 400   | -          |
+| `.bx--form-requirement` | 12 / 0.75         | Normal / 400   | -          |
 | `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400   | -          |
 
 

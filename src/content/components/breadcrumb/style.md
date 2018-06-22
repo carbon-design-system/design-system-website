@@ -11,9 +11,9 @@
 
 When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined.
 
-| Class         | Font-size (px/rem) | Font-weight  |
-|---------------|--------------------|--------------|
-| `.bx--link`   | 14 / 0.875         | Roman / 400  |
+| Class         | Font-size (px/rem) | Font-weight  | Type styles |
+|---------------|--------------------|--------------|-------------|
+| `.bx--link`   | 14 / 0.875         | Roman / 400  | -           |
 
 ![Breadcrumb typography treatment example](images/breadcrumb-style-1.png)
 _Breadcrumb typography treatment example_
@@ -46,7 +46,7 @@ Truncated breadcrumbs are not currently built into the Breadcrumb component.The 
 |---------------|--------------------|--------------|
 | Dropdown text | 14 / 0.875         | Roman / 400  |
 
-### Structure 
-| Class                        | Property   | px | rem|
+### Structure
+| Attribute                    | Property   | px | rem|
 |------------------------------|------------|----|----|
-| Icon & dropdown | 8  | 0.5 |
+| Icon & dropdown              | 8  | 0.5 |

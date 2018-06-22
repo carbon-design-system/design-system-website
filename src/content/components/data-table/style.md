@@ -1,16 +1,16 @@
 ## Color
 
-| Attribute                       | SCSS     | HEX       |
-|-----------------------------|--------- |-----------|
-| Background: light           | $ui-01   | #ffffff   |
-| Background: gray            | $ui-02   | #f4f7fb  |
-| Table header                | $ui-02   |  #f4f7fb  |
-| Table border                | $ui-04   |  #8897a2  |
-| Row:hover                   | $hover-row | #5596e6 at 10% opacity   |
-| Zebra stripe                | $ui-02   | #f4f7fb   |
-| Expanded: border-left       | $brand-01| #3d70b2   |
-| Text                        | $text-01 | #152935   |
-| Chevron, caret, overflow menu icon             | $ui-05   | #5a6872   |
+| Class                                                                                         | Property         | SCSS      | HEX       |
+|-----------------------------------------------------------------------------------------------|------------------|-----------|-----------|
+| `.bx--data-table-v2 tbody`                                                                    | background-color | $ui-01    | #ffffff   |
+| `.bx--data-table-v2--zebra tbody tr:nth-child(even)`                                          | background-color | $ui-02    | #f4f7fb   |
+| `.bx--data-table-v2 thead`                                                                    | background-color | $ui-02    |  #f4f7fb  |
+| `.bx--data-table-v2 th:first-of-type` </br> `.bx--data-table-v2 th:last-of-type` </br> `.bx--data-table-v2 th`   | border-top, border-right, border-left|  $ui-04   |  #8897a2  |
+| `.bx--data-table-v2 tr:hover td`                                                              | background-color | $hover-row | #5596e6 at 10% opacity   |
+| `.bx--data-table-v2 tr:hover td`                                                              | border           | $brand-01  | #3d70b2   |
+| `tr.bx--expandable-row-v2 > td:first-of-type:before`                                          | background-color | $brand-01  | #3d70b2   |
+| Text                                                                                          | color            | $text-01   | #152935   |
+| `.bx--table-sort-v2__icon` </br> `.bx--table-expand-v2__svg` </br> `.bx--overflow-menu__icon` | fill             | ui-05      | #5a6872   |
 
 
 ### Style options
@@ -70,25 +70,24 @@ The basic table style is the required base from which tables can be developed. B
 
 Column widths can vary by content and only requires a minimum spacing between columns.
 
-| Property                | px | rem  |
-|-------------------------|----|------|
-| Height: header          | 48 | 3    |
-| Width                   | Varies based on content and layout | |
-| Chevron                 | 12   | 0.75  |
-| Checkbox                | 18   | 1.125 |
+| Class                      | Property      | px   | rem  |
+|----------------------------|---------------|------|------|
+| `.bx--data-table-v2 tr`    | height        | 48   | 3    |
+| `.bx--table-expand-v2__svg`| height        | 16   | 1    |
+| `.bx--checkbox-appearance` | height, width | 18   | 1.125|
 
 
 ### Data table
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
-|| Spacing            | px   | rem   |
-||--------------------|------|-------|
-||`.bx--data-table-v2-header`     | 16   | 1     |
-|| Header & caret     |  8   | 0.5   |
-|| Basic internal     | 24   | 1.5   |
+| Class                                                                            | Property                     | px   | rem   |
+|----------------------------------------------------------------------------------|------------------------------|------|-------|
+|`.bx--data-table-v2-header`                                                       | margin-bottom                | 16   | 1     |
+|`.bx--table-sort-v2__icon`                                                        | padding                      |  2   | -     |
+|`.bx--data-table-v2 td:first-of-type` </br>  `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right  | 24   | 1.5   |
 || Enhanced internal  | 16   | 1     |
 || Internal elements  | 16   | 1     |
-|| Between columns    | ≥ 24 | 1.5   |
+
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -99,16 +98,22 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 </div>
 </div>
 
-
 _Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
+
+### Recommended
+
+| Attribute               | px   | rem   |
+|-------------------------|------|-------|
+| Spacing between columns | ≥ 24 | 1.5   |
+
 
 ### Toolbar
 
-| Property               | px   | rem   |
-|------------------------|------|-------|
-| Icon height            | 16   | 1   |
-| Spacing: icons         | 24   | 1.5 |
-| Spacing: icons & table | 16   | 1   |
+| Class                  | Property   | px    | rem   |
+|------------------------|------------|-------|-------|
+| `.bx--toolbar-action_icon` | height     | 16        | 1   |
+| `.bx--toolbar > div`   | margin-left, margin-right | 4   | 0.25 |
+| `.bx--toolbar` | margin-top, margin-bottom | 16   | 1   |
 
 <!-- Note: broken down by individual icons -->
 

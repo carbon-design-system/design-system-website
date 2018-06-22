@@ -50,9 +50,9 @@ _Primary, Secondary, and Ghost Button state examples_
 
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Class          | Font-size (px/rem) | Font-weight     |
-|----------------|--------------------|-----------------|
-|`.bx--btn`      | 14 / 0.875         | Semi-Bold / 600 |
+| Class          | Font-size (px/rem) | Font-weight     | Type styles |
+|----------------|--------------------|-----------------|-------------|
+|`.bx--btn`      | 14 / 0.875         | Semi-Bold / 600 | Zeta        |
 
 ## Structure
 
@@ -75,12 +75,12 @@ _Stucture measurements for small and regular Primary Button | px / rem_
 
 A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
 
-| Class                          | Property                    | px | rem  |
-|--------------------------------|-----------------------------|----|------|
-| `.bx--btn`                     | padding-left, padding-right | 16 | 1    |
-| `.bx--btn--sm`                 | padding-left, padding-right | 16 | 1    |
-| `.bx--btn.bx--btn__icon`       | margin-left                 | 8  | 0.5  |
-| `.bx--btn--ghost.bx--btn__icon`| margin-left                 | 8  | 0.5  |
+| Class                          | Property                     | px | rem  |
+|--------------------------------|------------------------------|----|------|
+| `.bx--btn`                     | padding-left, padding-right  | 16 | 1    |
+| `.bx--btn--sm`                 | padding-left, padding-right  | 16 | 1    |
+| `.bx--btn .bx--btn__icon`       | margin-left                 | 8  | 0.5  |
+| `.bx--btn--ghost .bx--btn__icon`| margin-left                 | 8  | 0.5  |
 
 
 <div data-insert-component="ImageGrid">
@@ -109,7 +109,7 @@ _Spacing measurements for various Button types | px / rem_
 
 The following specs are not built into any of the Button components but are recommended by design as the proper amount of space to distance Buttons should be from one another.
 
-| Class                           | Property                  | px | rem  |
+| Attribute                       | Property                  | px | rem  |
 |---------------------------------|---------------------------|----|------|
 | External: button                | margin                    | 10 | 0.625|
 | Button pairings                 | margin-left, margin-right | 8  | 0.5  |

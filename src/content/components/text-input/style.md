@@ -60,7 +60,6 @@ Text Input labels and placeholder text should be set in sentence case, with only
 ![Structure and spacing measurements for Text Input](images/text-input-style-2.png)
 _Structure and spacing measurements for Text Input | px / rem_
 
-|| Groupings: horizontal       | 16 | 1     |
 
 ---
 ***

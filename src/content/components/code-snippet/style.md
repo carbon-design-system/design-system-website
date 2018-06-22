@@ -8,8 +8,8 @@
 | `.bx--snippet--inline`                              | background-color| $field-01 | #ffffff |
 | `.bx--snippet--inline`                              | color           | $text-02  | #5a6872 |
 | `.bx--snippet--inline:hover`                        | background-color| $hover-row| #5596e6 at 10% opacity|
-| `.bx--snippet--inline.bx--snippet--light`           | background-color| $field-02 | #f4f7fB |
-| `.bx--snippet--inline.bx--snippet--light:hover`     | background-color| $ui-02    | #d0dced |
+| `.bx--snippet--light`           | background-color| $field-02 | #f4f7fB |
+| `.bx--snippet--light:hover`     | background-color| $ui-02    | #d0dced |
 
 
 
@@ -50,11 +50,11 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 | Class                                      | Property                    | px  | rem   |
 |--------------------------------------------|-----------------------------|-----|-------|
 | `.bx--snippet--multi`                      | min-height                  | 288 | 18    |
-| `.bx--snippet--multi.bx--snippet-container`| max-height                  | Varies based on amount of content | s|
+| `.bx--snippet--multi .bx--snippet-container`| max-height                 | Varies based on amount of content | |
 | `.bx--snippet--multi`                      | width                       | 600 | 37.5  |
 | `.bx--snippet--multi`                      | padding-top, padding-bottom | 16  | 1     |
 | `.bx--snippet--multi`                      | padding-right               | 48  | 3     |
-| `.bx--snippet__icon`                        | height, width               | 16  | 1     |
+| `.bx--snippet__icon`                       | height, width               | 16  | 1     |
 
 
 ![](images/code-snippet-style-2.png)
@@ -75,6 +75,6 @@ _Structure and spacing measurements for Copy icon | px / rem_
 |---------------------------|-----------------------------|-----|------|
 |`.bx--snippet--inline`     | width                       | Varies based on content |  |
 |`.bx--snippet--inline`     | border-radius               | 4   | - |
-|`.bx--snippet--inline.code`| padding-right, padding-left | 8   | 0.5 |
+|`.bx--snippet--inline code`| padding-right, padding-left | 8   | 0.5 |
 
 <!-- || height             | 22 | 1.375 | (not expliciily defined) -->

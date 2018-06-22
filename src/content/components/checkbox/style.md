@@ -2,7 +2,7 @@
 
 | Class                          | SCSS        | HEX         |
 |--------------------------------|-------------|-------------|
-|`.bx--checkbox-label[data-contained-checkbox-state='true']::before`  | $brand-01   | #3d70b2     |
+|`.bx--checkbox:checked`         | $brand-01   | #3d70b2     |
 |`.bx--checkbox-label::before`   | $ui-05      | #5a6872     |
 |`.bx--checkbox-label::before`   | $ui-01      | #ffffff     |
 |`.bx--checkbox-label::after`    | $inverse-01 | #ffffff     |

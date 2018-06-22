@@ -36,8 +36,7 @@ Avoid having any text within 16px / 1rem of the Accordion's sides. Additionally,
 | Class                         | Property      | px | rem |
 |-------------------------------|---------------|----|-----|
 |`.bx--accordion__title`        | margin-left   | 16 | 1   |
-|`.bx--accordion__content`      | padding-right | 16 | 1   |
-|`.bx--accordion__content`      | padding-top   | 16 | 1   |
+|`.bx--accordion__content`      | padding-right, padding-top | 16 | 1   |
 |`.bx--accordion__item--active` | padding-bottom| 24 | 1.5 |
 
 ![Structure and spacing measurements for Accordion](images/accordion-style-1.png)

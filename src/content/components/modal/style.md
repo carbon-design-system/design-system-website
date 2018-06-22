@@ -38,9 +38,9 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | `.bx--modal-container`                   | padding-left, padding-right  | 48 | 3      |
 | `.bx--modal-container`                   | padding-top                  | 40 | 2.5    |
 | `.bx--modal-container`                   | padding-top                  | 40 | 2.5    |
-| `.bx--modal-header__label bx--type-delta`| margin-bottom                | 8  | 0.5    |
+| `.bx--modal-header__label .bx--type-delta`| margin-bottom                | 8  | 0.5    |
 | `.bx--modal-header`                      | margin-bottom                | 24 | 1.5    |
-| .`bx--modal-content`                     | margin-bottom                | 48 | 3      |
+| `.bx--modal-content`                     | margin-bottom                | 48 | 3      |
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
 _Structure and spacing measurements for a Passive Modal | px / rem_
