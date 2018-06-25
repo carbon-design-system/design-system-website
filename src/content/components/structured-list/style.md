@@ -23,14 +23,15 @@ Structured List headers should be set in all caps, while all other text is set i
 Structured Lists by default are not accompanied by a border, but one may be added for stylistic purposes, and should be set at 1px.  
 
 
-| Property             | px | rem  |
-|-----------------------|----|------|
-| `.bx--structured-list | min-width | 500 |   |
-| Spacing: content-right| 16 | 1    |
-| Spacing: checkmark    | 12 | 0.75 |
-| Row spacing: tall     | 16 | 1    |
-| Row spacing: narrow   | 10 | 0.625|
-| Checkmark glyph       | 16 | 1   |
+| Property                                                   | Property  |                  px | rem  |
+|------------------------------------------------------------|-----------------------------|------|------|
+| `.bx--structured-list                                      | min-width                   | 500 | 31.25  |
+| `.bx--structured-list-td` </br> `.bx--structured-list-th`  | padding-top, padding-bottom | 16 | 1 |
+| `.bx--structured-list-td` </br> `.bx--structured-list-th`  | padding-right               | 32 | 2 |
+| `[data-structured-list] .bx--structured-list-td`           | 16 | 1 |
+| Row spacing: tall                                          | 16 | 1    |
+| Row spacing: narrow                                        | 10 | 0.625|
+| `bx--structured-list-svg`                                  | height, width    | 16 | 1   |
 
 
 ![Spacing and measurements for Structured List](images/structured-list-style-1.png)

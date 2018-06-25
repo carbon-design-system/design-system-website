@@ -25,7 +25,7 @@ _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 
 | Class                                       | Property        | SCSS       | HEX       |
 |---------------------------------------------|-----------------|------------|-----------|
-| `.bx--form-requirement` | color           | $support-01| #e0182d   |
+| `.bx--form-requirement`                     | color           | $support-01| #e0182d   |
 | `.bx--dropdown--open:focus`                 | box-shadow      | $brand-01  | #3d70b2   |
 | `.bx--select-input[data-invalid]`           | box-shadow      | $support-01| #e0182d   |
 
@@ -99,7 +99,7 @@ _Hover and focus zstates for a Multi-Select Dropdown_-->
 | `.bx--list-box__menu-item`          | padding-right, padding-left| 8  | 0.5   |
 | `.bx--list-box__menu-item`          | height                     | 40 | 2.5   |
 | `.bx--checkbox-label`               | padding-left               | 4  | 0.25  |     
-|`.bx--list-box__menu-icon`           | padding-left                           | 8  | 0.75   |
+| `.bx--list-box__menu-icon`          | padding-left, padding-right| 8  | 0.5   |
 | `.bx--checkbox-label::before`       | height                     | 18 | 1.125 |
 
 
@@ -122,12 +122,12 @@ _Hover and focus states for Inline Dropdown_
 ## Filtering
 Filtering can be used with Dropdown and Multi-select Dropdown but not Inline Dropdown.
 
-| Class                      | Property                           | px | rem   |
-|----------------------------|----|-------|-------|
-|`.bx--list-box__selection svg`| height         | 10  | 0.625 |
-| `.bx--list-box__menu-icon` | padding-left, padding-right        | 16 | 1     |
-| `.bx--list-box__selection` | padding-left, padding-right     | 16 | 1     |
-| `.bx--list-box__selection` | height     | 40 | 2.5    |
+| Class                        | Property                    | px | rem   |
+|------------------------------|-----------------------------|----|-------|
+|`.bx--list-box__selection svg`| height                      | 10 | 0.625 |
+|`.bx--list-box__menu-icon`    | padding-left, padding-right | 16 | 1     |
+|`.bx--list-box__selection`    | padding-left, padding-right | 16 | 1     |
+|`.bx--list-box__selection`    | height                      | 40 | 2.5   |
 
 
 ![Spacing for Multi-select Dropdown with Filtering](images/dropdown-style-7.png)

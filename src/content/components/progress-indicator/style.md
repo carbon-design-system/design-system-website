@@ -8,8 +8,8 @@ All steps that have already been completed are indicated by an outlined circle w
 |`.bx--progress-step--incomplete circle`             | fill              | $text-02  | #5a6872 |
 |`.bx--progress-step--current .bx--progress-line`    | background-color  | $brand-01 | #3d70b2 |
 |`.bx--progress-step--incomplete .bx--progress-line` | background-color  | $ui-05    | #5a6872 |
-|`.bx--progress-step--complete .bx--progress-label` | color             | $brand-01 | #3d70b2 |
-|`.bx--progress-step--incomplete .bx--progress-label`                               | color             | $ui-05    | #5a6872 |
+|`.bx--progress-step--complete .bx--progress-label`  | color             | $brand-01 | #3d70b2 |
+|`.bx--progress-step--incomplete .bx--progress-label`| color             | $ui-05    | #5a6872 |
 
 ---
 ***
@@ -22,10 +22,10 @@ _Examples of current, completed, and future steps for Progress Indicator_
 
 Labels should be one to two words only, with a limit of 16 characters total per label. All labels should be set in sentence case.
 
-| Class                 | Font-size (px/rem) | Font-weight  | Type style |
-|--------------------------|--------------------|--------------|--|
-| `.bx--progress-step--complete.bx--progress-label`| 14 / 0.875 | Semi-Bold / 600   | Zeta |
-| `.bx--progress-step--incomplete.bx--progress-label` | 14 / 0.875 | Normal / 400 | - |
+| Class                                               | Font-size (px/rem) | Font-weight     | Type style |
+|-----------------------------------------------------|--------------------|-----------------|------------|
+| `.bx--progress-step--complete.bx--progress-label`   | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
+| `.bx--progress-step--incomplete.bx--progress-label` | 14 / 0.875         | Normal / 400    | -          |
 
 ## Structure
 

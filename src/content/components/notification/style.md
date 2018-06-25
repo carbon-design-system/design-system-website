@@ -36,7 +36,8 @@ Notification titles should not exceed more than three words. Notification text s
 
 | Property                           | Property                                 | px                       | rem    |
 |------------------------------------|------------------------------------------|--------------------------|--------|
-|                                    | height                                   | varies based on content  | 5      |
+| `.bx--inline-notification`         | min-height                               | 40                       | 2.5    |
+| `.bx--inline-notification`         | max-height                               | 56                       | 3.5    |
 | `.bx--toast-notification`          | width                                    | 270                      | 16.875 |
 | `.bx--toast-notification`          | margin-right                             | 16                       | 1      |
 | `.bx--toast-notification`          | margin-bottom                            | 8                        | 0.5    |

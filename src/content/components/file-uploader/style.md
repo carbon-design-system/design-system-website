@@ -1,7 +1,7 @@
 ## Color
 
-| Class                        | Property   |SCSS       | HEX     |
-|------------------------------|------------|-----------|---------|
+| Class                        | Property   |SCSS        | HEX     |
+|------------------------------|------------|------------|---------|
 | `.bx--label`                 | color      | $text-01   | #152934 |
 | `.bx--label-description`     | color      | $text-02   | #5a6872 |
 | `.bx--file-filename`         | color      | $text-01   | #152934 |

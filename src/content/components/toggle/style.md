@@ -6,9 +6,8 @@
 |`.bx--toggle__appearance:after`                                         | border                   | $ui-05   | #5a6872  |
 |`.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before`| border                   | $ui-05   | #5a6872  |
 |`.bx--toggle:checked + .bx--toggle__label .bx--toggle__appearance:after`| background-color, border | $brand-01| #3d70b2  |
-|`.bx--toggle__check`                                                    | fill                     | $brand-01 | #3d70b2 |
-
-|| Label                   | $text-01 | #152935  |
+|`.bx--toggle__check`                                                    | fill                     | $brand-01| #3d70b2  |
+|`.bx--toggle__label`                                                    | color                    | $text-01 | #152935  |
 
 ---
 ***
@@ -31,6 +30,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 
 | Class                           | Property                  | px | rem   |
 |---------------------------------|---------------------------|----|-------|
+| `.bx--toggle__appearance`       | width                     | 48 | 3     |
 | `.bx--toggle__appearance:after` | height, width             | 24 | 1.5   |
 | `.bx--toggle__appearance:after` | border                    | 2  | 0.125 |
 | `.bx--toggle__label`            | margin-top, margin-bottom | 16 | 1     |
@@ -38,7 +38,6 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 | `.bx--toggle__text--right`      | margin-left               | 8  | 0.5   |
 
 
-| Slider line width      | 24 | 1.5   |
 
 ---
 ***
@@ -50,12 +49,14 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 
 ### Small toggle
-| Class               | Property          | px | rem   |
-|---------------------|----|-------|
-| `.bx--toggle--small`| height            | 16 | 1     |
-| `.bx--toggle--small`| width            | 32 | 2     |
-| Width & height: circle | 10 | 0.625 |
-| Spacing: external | 16 | 1     |
+
+| Class                                                                   | Property                  | px | rem   |
+|-------------------------------------------------------------------------|---------------------------|----|-------|
+| `.bx--toggle--small`                                                    | height                    | 16 | 1     |
+| `.bx--toggle--small`                                                    | width                     | 32 | 2     |
+| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:after` | height, width             | 10 | 0.625 |
+| `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 | 1     |
+
 
 
 

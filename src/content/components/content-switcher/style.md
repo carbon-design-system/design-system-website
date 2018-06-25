@@ -26,9 +26,9 @@ Content Switcher text should be set in sentence case, with only the first word i
 
 Content Switchers must have at least two options for the user to choose from. Each container that makes up the Content Switcher is equal in size. The width of a container is determined by the length of the longest container option text plus the 32 px / 2rem on both sides of the text.
 
-|Class                                                                              | Property                          | px | rem |
+| Class                                                                             | Property                          | px | rem |
 |-----------------------------------------------------------------------------------|-----------------------------------|----|-----|
-|                                                                                   |height                             | 40 | 2.5 |
+|`.bx--content-switcher`                                                            |height                             | 40 | 2.5 |
 |`.bx--content-switcher-btn:not(:first-of-type)` </br> `.bx--content-switcher-btn`  |border, border-left, border-right  | 1  | -   |
 |`.bx--content-switcher-btn`                                                        |padding-left, padding-right        | 32 | 2   |
 

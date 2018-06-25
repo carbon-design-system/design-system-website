@@ -27,12 +27,14 @@ _Examples of default and new selection Select states in $field-02 (right) and $f
 
 **Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
-| Class           | Attribute             | SCSS          | HEX      |
-|-----------------|-------|---------------|-----------|
-|| color    | $brand-01     | #3d70b2   |
-|| Label: error      | $support-01   | #e0182d |
-|| Text: placeholder | $text-03      | #cdd1d4   |
-|| Text: error message      | $support-01        | #e0182d   |
+| Class                                              | Property      | SCSS          | HEX       |
+|----------------------------------------------------|---------------|---------------|-----------|
+|`.bx--select-input:focus`                           | border-bottom | $brand-01     | #3d70b2   |
+|`.bx--select-input:focus ~ .bx--label`              | color         | $brand-01     | #3d70b2   |
+|`.bx--select-input[data-invalid]:focus ~ .bx--label`| color         | $support-01   | #e0182d   |
+|`.bx--select-input::placeholder`                    | color         | $text-03      | #cdd1d4   |
+|`.bx--form-requirement`                             | color         | $support-01   | #e0182d   |
+|`.bx--select-input[data-invalid]`                   | border-bottom | $support-01   | #e0182d   |
 
 ---
 ***
@@ -53,10 +55,10 @@ Select text should be set in sentence case, with only the first word in a phrase
 | Class                                | Font-size (px/rem) | Font-weight     | Type style |
 |--------------------------------------|--------------------|-----------------|------------|
 |`.bx--label`                          | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
-|`.bx--select--inline .bx--label`      | 14 / 0.875         |  Normal / 400   | -          |
+|`.bx--select--inline .bx--label`      | 14 / 0.875         | Normal / 400    | -          |
 |`.bx--select-input`                   | 14 / 0.875         | Normal / 400    | -          |
 |`.bx--select--inline.bx--select-input`| 14 / 0.875         | Semi-Bold / 600 | Zeta       |
-|  Text: error message                 | 12 / 0.75          | Normal / 400    | -          |
+|`.bx--form-requirement`               | 12 / 0.75          | Normal / 400    | -          |
 
 ## Structure
 

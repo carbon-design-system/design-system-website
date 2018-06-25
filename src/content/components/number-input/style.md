@@ -26,13 +26,13 @@ _Number Input example in $field-02 (left) and $field-01 (right)_
 
 **Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
 
-| Class                                   | Property         | SCSS       | HEX       |
-|-----------------------------------------|------------------|------------|-----------|
-| `.bx--number input[type='number']:focus`| box-shadow       | $brand-01  | #3d70b2   |
-| Border bottom: error              | box-shadow       | $support-01| #e0182d   |
-| Label: focused                    | color            | $brand-01  | #3d70b2   |
-| Label: error                      | color            | $support-01| #e0182d   |
-| Text: error message               | color            | $support-01| #e0182d   |
+| Class                                                               | Property         | SCSS       | HEX       |
+|---------------------------------------------------------------------|------------------|------------|-----------|
+| `.bx--number input[type='number']:focus`                            | box-shadow       | $brand-01  | #3d70b2   |
+| `.bx--number input[type='number']:focus ~ .bx--label`               | color            | $brand-01  | #3d70b2   |
+| `.bx--number[data-invalid] input[type='number']`                    | box-shadow       | $support-01| #e0182d   |
+| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color            | $support-01| #e0182d   |
+| `.bx--form-requirement`                                             | color            | $support-01| #e0182d   |
 
 
 

@@ -8,14 +8,6 @@
 | `.bx--pagination__button-icon`                                               | fill             | $ui-05          | #5a6872 |
 
 
-### States
-
-| Class                                                                        | Property         | SCSS            | HEX     |
-|------------------------------------------------------------------------------|------------------|-----------------|---------|
-| Chevron: disabled | $ui-05 @ 50%  | #5a6872 |
-| Chevron:hover  | $hover-secondary  | #3d70b2    |
-| Caret          | $brand-01  | #3d70b2    |
-
 ## Typography
 
 Pagination text should be set in set in sentence case with the first letter of each word capitalized.
@@ -30,15 +22,15 @@ The Pagination bar is most commonly used in [Data Tables](/components/data-table
 
 | Class                              | Property                    | px  | rem   |
 |------------------------------------|-----------------------------|-----|-------|
-| `.bx--pagination--inline`          | Height                      | 42  | 2.625 |
+|`.bx--pagination--inline`           | height                      | 42  | 2.625 |
 |`.bx--pagination`                   | border                      | 1   | -     |
 |`.bx--pagination`                   | padding-left, padding-right | 16  | 1     |
 |`.bx--pagination`                   | padding-top, padding-bottom | 8   | 0.5   |
+| `main[data-page="components-code-pagination"] .bx--pagination`  | min-width |  560 | 35 |
+| `.bx--pagination--inline .bx--pagination__button--backward` | margin-left |16 | 1 |
 
-
-|| Spacing between elements          | 16        | 1     |
 || Height (not directly defined)            | 40      | 2.5   |
-|| Width   (100%)                           | Varies based on content and layout | |
+
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 _Structure and spacing measurements for Pagination | px / rem_

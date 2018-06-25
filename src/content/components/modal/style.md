@@ -21,13 +21,13 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 |-----------------------------|-------------------|-----------------|------------|
 |`.bx--modal-header__label`   | 14 / 0.875        | Semi-Bold / 600 | Zeta       |
 |`.bx--modal-header__heading` | 28 / 1.75         | Light / 300     | Beta       |
-| Text                        | 16 / 1            | Normal / 400    | -          |
+|`.bx--modal-content`         | 16 / 1            | Normal / 400    | -          |
 
 ## Layer
 
 | Class                 |Layer      | Elevation  | Box-shadow                         |
 |-----------------------|-----------|------------|------------------------------------|
-|`.bx--modal-container` | Pop-out   | 24         | 0 12px 24px 0 rgba(0,0,0,0.10);  |
+|`.bx--modal-container` | Pop-out   | 24         | 0 12px 24px 0 rgba(0,0,0,0.10);    |
 
 ## Structure
 

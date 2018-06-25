@@ -1,10 +1,10 @@
 ## Color
 
-| Class                                | Property    | SCSS     | HEX      |
-|--------------------------------------|-------------|----------|----------|
-|`.bx--loading__svg`                   | stroke      | $nav-05  | #00b4a0  |
-|`.bx--loading--small.bx--loading__svg`| stroke      | $ui-05   | #5a6872  |
-|`.bx--loading-overlay`| background-color            | $ui-01 @ 60%  | #ffffff  |
+| Class                                | Property         | SCSS         | HEX      |
+|--------------------------------------|------------------|--------------|----------|
+|`.bx--loading__svg`                   | stroke           | $nav-05      | #00b4a0  |
+|`.bx--loading--small.bx--loading__svg`| stroke           | $ui-05       | #5a6872  |
+|`.bx--loading-overlay`                | background-color | $ui-01 @ 60% | #ffffff  |
 
 ## Structure
 

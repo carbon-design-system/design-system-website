@@ -71,7 +71,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 |`.bx--date-picker--short .bx--date-picker__input`                                        | width                                    | 91  | 5.7    |
 |`.bx--date-picker--simple .bx--date-picker__input`                                       | width                                    | 114 | 7.125  |
 |`.bx--date-picker--single .bx--date-picker__input`                                       | width                                    | 144 | 9      |
-|`bx--date-picker__icon`                                                                  | height & width                           | 16  | 1      |
+|`.bx--date-picker__icon`                                                                 | height & width                           | 16  | 1      |
 |`.bx--date-picker__calendar`                                                             | padding-top, padding-right, padding-left | 16  | 1      |
 |`.bx--date-picker__calendar`                                                             | padding-bottom                           | 4   | 0.25   |
 |`.bx--date-picker__input`                                                                | box-shadow                               | 1   | -      |

@@ -3,12 +3,13 @@
 |----------------------------|------------------|-----------|-----------|
 |`.bx--tooltip__trigger path`| fill             | $brand-01 | #3d70b2   |
 |`.bx--tooltip__label`       | color            | $text-01  | #152935   |
-| `.bx--tooltip`             | background-color | $ui-01    | #ffffff   |
+|`.bx--tooltip`              | background-color | $ui-01    | #ffffff   |
+|`.bx--tooltip`              | color            | $text-01  | #152935   |
 |`.bx--tooltip`              | border           | $ui-03    | #dfe3e6   |
 |`.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | color    | $ui-01  | #ffffff   |
 |`.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` </br> `.bx--tooltip--definition__bottom`</br> `.bx--tooltip--definition__top` | background-color | $inverse-02   | #272d33   |
 
-|| Interactive text    | $text-01  | #152935   |
+
 
 ---
 ***
@@ -80,7 +81,6 @@ _Structure and spacing measurements for a Definition Tooltip | px / rem_
 |----------------------------------------------------------------------------|------------|-----|------|
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width  | 176 | 11   |
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding    | 4   | 0.25 |
-| Spacing: icon & Icon Tooltip | 2  | 0.125 |
 
 ---
 ***

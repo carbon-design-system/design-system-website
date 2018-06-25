@@ -8,13 +8,13 @@
 | `.bx--snippet--inline`                              | background-color| $field-01 | #ffffff |
 | `.bx--snippet--inline`                              | color           | $text-02  | #5a6872 |
 | `.bx--snippet--inline:hover`                        | background-color| $hover-row| #5596e6 at 10% opacity|
-| `.bx--snippet--light`           | background-color| $field-02 | #f4f7fB |
-| `.bx--snippet--light:hover`     | background-color| $ui-02    | #d0dced |
+| `.bx--snippet--light`                               | background-color| $field-02 | #f4f7fB |
+| `.bx--snippet--light:hover`                         | background-color| $ui-02    | #d0dced |
 
 
 
 ### Syntax colors
-
+Carbon has defined a set of accessible syntax colors. View an incontext [example](https://codepen.io/team/carbon/full/eKMBLw/) on CodePen.
 
 
 ## Typography
@@ -47,14 +47,14 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 
 ### Multi-line Code Snippet
 
-| Class                                      | Property                    | px  | rem   |
-|--------------------------------------------|-----------------------------|-----|-------|
-| `.bx--snippet--multi`                      | min-height                  | 288 | 18    |
-| `.bx--snippet--multi .bx--snippet-container`| max-height                 | Varies based on amount of content | |
-| `.bx--snippet--multi`                      | width                       | 600 | 37.5  |
-| `.bx--snippet--multi`                      | padding-top, padding-bottom | 16  | 1     |
-| `.bx--snippet--multi`                      | padding-right               | 48  | 3     |
-| `.bx--snippet__icon`                       | height, width               | 16  | 1     |
+| Class                                       | Property                    | px  | rem   |
+|---------------------------------------------|-----------------------------|-----|-------|
+| `.bx--snippet--multi`                       | min-height                  | 288 | 18    |
+| `.bx--snippet--multi .bx--snippet-container`| max-height                  | Varies based on amount of content | |
+| `.bx--snippet--multi`                       | width                       | 600 | 37.5  |
+| `.bx--snippet--multi`                       | padding-top, padding-bottom | 16  | 1     |
+| `.bx--snippet--multi`                       | padding-right               | 48  | 3     |
+| `.bx--snippet__icon`                        | height, width               | 16  | 1     |
 
 
 ![](images/code-snippet-style-2.png)
