@@ -8,11 +8,11 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | Class                                           | Property         | SCSS       | HEX     |
 |-------------------------------------------------|------------------|------------|---------|
 |`.bx--date-picker__input`                        | background-color | $field-01  | #f4f7fb |
-|`.bx--date-picker__input.bx--text-input--light`  | background-color | $field-02  | #ffffff |
 |`.bx--date-picker__input`                        | border-bottom    | $ui-05     | #5a6872 |
-|`.bx--label`                                     | color            | $text-01   | #152934 |
-|`.bx--date-picker__input::placeholder`           | color            | $text-02   | #5a6872 |
 |`.bx--date-picker__input`                        | color            | $text-01   | #152934 |
+|`.bx--date-picker__input::placeholder`           | color            | $text-02   | #5a6872 |
+|`.bx--date-picker__input.bx--text-input--light`  | background-color | $field-02  | #ffffff |
+|`.bx--label`                                     | color            | $text-01   | #152934 |
 |`.bx--date-picker__calendar`                     | background-color | $ui-01     | #ffffff |
 |`.bx--date-picker__day.selected`                 | border           | $text-01   | #152934 |
 |`.bx--date-picker__day.inRange`                  | background-color | $ui-02     | #f4f7fb |
@@ -50,33 +50,33 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 |Class                                       | Font-size       | Font-weight     | Type style |
 |--------------------------------------------|-----------------|-----------------|------------|
 | `.bx--label`                               | 14 / 0.875      | Semi-Bold / 600 | Zeta       |
-| `.bx--time-picker__input-field` placeholder| 14 / 0.875      | Semi-Bold / 600 | Zeta       |
+| `.bx--time-picker__input-field:placeholder`| 14 / 0.875      | Semi-Bold / 600 | Zeta       |
 | `.bx--time-picker__input-field` active     | 14 / 0.875      | Semi-Bold / 600 | Zeta       |
 | `.bx--form-requirement`                    | 12 / 0.75       | Normal / 400    | Caption    |
 
 
 ## Layer
-| Class                         | Property    | Layer, Elevation | Box-shadow                      |
-|-------------------------------|-------------|------------------|---------------------------------|
-| `.bx--date-picker__calendar`  | box-shadow  | Pop-out,  24     | 0 12px 24px 0 rgba(0, 0, 0, 0.1)|
+| Class                         | Layer, Elevation  | Box-shadow                      |
+|-------------------------------|-------------------|---------------------------------|
+| `.bx--date-picker__calendar`  | Pop-out,  24      | 0 12px 24px 0 rgba(0, 0, 0, 0.1)|
 
 
 ## Structure
 
 ### Simple & Single Date Pickers
 
-| Class                                                                                   | Property                                 | px  | rem    |
-|-----------------------------------------------------------------------------------------|------------------------------------------|-----|--------|
-|`.bx--date-picker__input`                                                                | height                                   | 40  | 2.5    |
-|`.bx--date-picker--short .bx--date-picker__input`                                        | width                                    | 91  | 5.7    |
-|`.bx--date-picker--simple .bx--date-picker__input`                                       | width                                    | 114 | 7.125  |
-|`.bx--date-picker--single .bx--date-picker__input`                                       | width                                    | 144 | 9      |
-|`.bx--date-picker__icon`                                                                 | height & width                           | 16  | 1      |
-|`.bx--date-picker__calendar`                                                             | padding-top, padding-right, padding-left | 16  | 1      |
-|`.bx--date-picker__calendar`                                                             | padding-bottom                           | 4   | 0.25   |
-|`.bx--date-picker__input`                                                                | box-shadow                               | 1   | -      |
-|`.bx--date-picker__input:focus`                                                          | box-shadow                               | 2   | 0.125  |
-|`.bx--date-picker__icon + .bx--date-picker__input`                                       | padding-left                             | 48  | 3      |
+| Class                                                         | Property                                 | px / rem    | Spacing token|
+|---------------------------------------------------------------|------------------------------------------|-------------|--------------|
+|`.bx--date-picker__input`                                      | height                                   | 40 / 2.5    | - |
+|`.bx--date-picker--short .bx--date-picker__input`              | width                                    | 91 / 5.7    | - |
+|`.bx--date-picker--simple .bx--date-picker__input`             | width                                    | 114 / 7.125 | - |
+|`.bx--date-picker--single .bx--date-picker__input`             | width                                    | 144 / 9     | - |
+|`.bx--date-picker__icon`                                       | height & width                           | 16 / 1      | - |
+|`.bx--date-picker__calendar`                                   | padding-top, padding-right, padding-left | 16 / 1      | $spacing-md  |
+|`.bx--date-picker__calendar`                                   | padding-bottom                           | 4  / 0.25   | $spacing-2xs |
+|`.bx--date-picker__input`                                      | box-shadow                               | 1px         | - |
+|`.bx--date-picker__input:focus`                                | box-shadow                               | 2 / 0.125   | - |
+|`.bx--date-picker__icon + .bx--date-picker__input`             | padding-left                             | 48 / 3      | $spacing-3xl |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -97,15 +97,16 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 
 ### Range Date Picker
 
-| Class                                                            | Property                     | px  | rem    |
-|------------------------------------------------------------------|------------------------------|-----|--------|
-|`.bx--date-picker__input`                                         | height                       | 230 | 14.375 |
-|`.bx--date-picker--range .bx--date-picker__input`                 | width                        | 280 | 17.5   |
-|`.bx--date-picker__icon`                                          | height, width                | 16  | 1      |
-|`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right                 | 8   | 0.5    |
-|`.bx--date-picker__input`                                         | padding-right, padding-left  | 16  | 1      |
-|`.bx--date-picker__weekdays`                                      | margin-bottom                | 4   | .25    |
-|`.bx--date-picker__day.today::after`                              | height & width               | 3   | -      |
+| Class                                                            | Property                     | px / rem    | Spacing token |
+|------------------------------------------------------------------|------------------------------|-------------|---------------|
+|`.bx--date-picker__input`                                         | height                       | 230 / 14.375| - |
+|`.bx--date-picker--range .bx--date-picker__input`                 | width                        | 280 / 17.5  | - |
+|`.bx--date-picker__icon`                                          | height, width                | 16  / 1     | - |
+|`.bx--date-picker__day.today::after`                              | height & width               | 3 / -       | - |
+|`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right                 | 8 / 0.5     | $spacing-xs   |
+|`.bx--date-picker__input`                                         | padding-right, padding-left  | 16 / 1      | $spacing-md   |
+|`.bx--date-picker__weekdays`                                      | margin-bottom                | 4 / .25     | $spacing-2xs  |
+
 
 
 ![Structure for Date Picker](images/date-picker-style-2.png)
@@ -117,12 +118,12 @@ _Spacing for Date Picker | px / rem_
 ### Time Picker
 There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-hour Time Picker is accompanied by a time period (am/pm) input, while the 24-hour clock is not.
 
-|Class                           | Property                     | px  | rem |
-|--------------------------------|------------------------------|-----|-----|
-|`.bx--time-picker__input-field` | height                       | 40  | 2.5 |
-|`.bx--time-picker__input-field` | width                        | 80  | 5   |
-|`.bx--time-picker__input-field` | padding-right, padding-left  | 16  | 1   |
-|`.bx--select-input`             | padding-left                 | 16  | 1   |
+|Class                           | Property                     | px / rem | Spacing token |
+|--------------------------------|------------------------------|----------|---------------|
+|`.bx--time-picker__input-field` | height                       | 40 / 2.5 | - |
+|`.bx--time-picker__input-field` | width                        | 80 / 5   | - |
+|`.bx--time-picker__input-field` | padding-right, padding-left  | 16 / 1   | $spacing-md   |
+|`.bx--select-input`             | padding-left                 | 16 / 1   | $spacing-md   |
 
 
 

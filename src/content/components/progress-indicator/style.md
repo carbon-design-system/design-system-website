@@ -31,22 +31,22 @@ Labels should be one to two words only, with a limit of 16 characters total per 
 
 The checkmark icon can be found in the [iconography](/style/iconography/library) library.
 
-| Class                   | Property         | px  | rem   |
-|-------------------------|------------------|-----|-------|
-|`.bx--progress-step svg` | height, width    | 24  | 1.5   |
-|`.bx--progress-line`     | height, border   | 1   | -     |
-|`.bx--progress-step`     | min-width        | 112 | 7     |
-|`.bx--progress-step svg` | margin-bottom    | 8   | 0.5   |
-|`.bx--progress-label`    | width            | 75% | 3     |
+| Class                   | Property         | px / rem   | Spacing token |
+|-------------------------|------------------|------------|---------------|
+|`.bx--progress-step svg` | height, width    | 24 / 1.5   | - |
+|`.bx--progress-line`     | height, border   | 1px        | - |
+|`.bx--progress-step`     | min-width        | 112 / 7    | - |
+|`.bx--progress-step svg` | margin-bottom    | 8 / 0.5    | $spacing-xs   |
+|`.bx--progress-label`    | width            | 75%        | - |
 
 
 ### Recommended
 
 The following specs are not built into the Progress Indicator component but are recommended by design as the proper amount between Progress Indicator elements.
 
-| Class                   | Property         | px  | rem   |
-|-------------------------|------------------|-----|-------|
-| `.bx--progress`         | margin           | 16  | 1     |
+| Class                   | Property         | px / rem   | Spacing token | 
+|-------------------------|------------------|------------|---------------|
+| `.bx--progress`         | margin           | 16 / 1     | $spacing-md   |
 
 
 ![Structure and spacing for Progress Indicator](images/progress-indicator-style-2.png)

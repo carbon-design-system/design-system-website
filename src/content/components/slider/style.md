@@ -20,17 +20,24 @@ Slider labels should be set in sentence case, with only the first word in a phra
 ## Structure
 The width of a Slider varies based on page content and layout.
 
-| Class                                  | Property                  | px  | rem   |
-|----------------------------------------|---------------------------|-----|-------|
-| `.bx--slider__thumb`                   | height, width             | 24  | 1.5   |
-| `.bx--slider__track`                   | height                    | 4   | 0.25  |
-| `.bx--label`                           | margin-bottom             | 8   | 0.5   |
-| `.bx--slider`                          | margin-left, margin-right | 16  | 1     |
-| `.bx--slider__range-label:last-of-type`| margin-right              | 16  | 1     |
-| `.bx--slider-container`                | min-width                 | 200 | 12.5  |
-| `.bx--slider-container`                | max-width                 | 640 | 40    |
+| Class                                  | Property                  | px / rem   | Spacing token |
+|----------------------------------------|---------------------------|------------|---------------|
+| `.bx--slider__thumb`                   | height, width             | 24 / 1.5   | - |
+| `.bx--slider__track`                   | height                    | 4 / 0.25   | - |
+| `.bx--label`                           | margin-bottom             | 8 / 0.5    | $spacing-xs   |
+| `.bx--slider`                          | margin-left, margin-right | 16 / 1     | $spacing-md   |
+| `.bx--slider__range-label:last-of-type`| margin-right              | 16 / 1     | $spacing-md   |
 
 
 ![Structure and spacing measurements for Slider](images/slider-style-1.png)
 
 _Structure and spacing measurements for Slider | px / rem_
+
+
+### Recommended
+The following specs are not built into the Slider component but are recommended by design as the proper sizing for the slider tracking line.
+
+| Class                                  | Property                  | px / rem   | Spacing token |
+|----------------------------------------|---------------------------|------------|---------------|
+| `.bx--slider-track`                    | min-width                 | 200 / 12.5 | - |
+| `.bx--slider-track`                    | max-width                 | 640 / 40   | - |

@@ -13,16 +13,16 @@
 
 ## Layer
 
-| Class     | Layer     | Elevation | Box-shadow                    |
-|-----------|-----------|-----------|-------------------------------|
-|`.bx--tile`| Raised    | 2         | 0 1px 2px 0 rgba(0,0,0,0.10); |
+| Class     | Layer, Elevation | Box-shadow                    |
+|-----------|------------------|-------------------------------|
+|`.bx--tile`| Raised,  2       | 0 1px 2px 0 rgba(0,0,0,0.10); |
 
 ## Structure
-| Class     | Property   | px | rem|
-|-----------|------------|----|----|
-|`.bx--tile`| min-height | 64 | 4  |
-|`.bx--tile`| min-width  | 128| 8  |
-|`.bx--tile`| padding    | 16 | 1  |
+| Class     | Property   | px / rem | Spacing token |
+|-----------|------------|----------|---------------|
+|`.bx--tile`| min-height | 64 / 4   | - |
+|`.bx--tile`| min-width  | 128 / 8  | - |
+|`.bx--tile`| padding    | 16 / 1   | $spacing-md   |
 
 
 ![Structure and spacing measurements for Tile](images/tile-style-3.png)
@@ -33,11 +33,11 @@ _Structure and spacing measurements for Tile | px / rem_
 
 
 ### Proportions for grid
-|  | XL 1600-1200 | L 1200-992 | M 992-768  | S 768-576 | XS 576-0 |
-|-----------|----|-------|---|---|---|
-| 100%           |  ✅ | ✅  | ✅  | ✅ | ✅ |
-| 1/2            |   ✅ | ✅  | ✅  | ✅ | ✅ |
-| 2/3            |   ✅ | ✅  | ✅  | ✅ |  |
-| 1/3            |   ✅ | ✅  | ✅  | ✅ |  |
-| 1/4            |   ✅ | ✅  | ✅  | ✅ |  |
-| 1/6            |   ✅ | ✅  |   | |  |
+|                | XL 1600-1200 | L 1200-992 | M 992-768  | S 768-576 | XS 576-0 |
+|----------------|--------------|------------|------------|-----------|----------|
+| 100%           |  ✅          | ✅          | ✅         | ✅         | ✅       |
+| 1/2            |  ✅          | ✅          | ✅         | ✅         | ✅       |
+| 2/3            |  ✅          | ✅          | ✅         | ✅         |          |
+| 1/3            |  ✅          | ✅          | ✅         | ✅         |          |
+| 1/4            |  ✅          | ✅          | ✅         | ✅         |          |
+| 1/6            |  ✅          | ✅          |            |           |          |

@@ -22,7 +22,7 @@ _Normal, hover disabled Link states_
 
 Link text should be set in set in sentence case with the first letter of each word capitalized. Links should not exceed three words.
 
-| Property    | Font-size (px/rem) | Font-weight    | Text styles |
+| Property    | Font-size (px/rem) | Font-weight    | Text style  |
 |-------------|--------------------|----------------|-------------|
 | `.bx--link` | 14 / 0.875         | Semi-Bold / 600| Zeta        |
 
@@ -32,10 +32,10 @@ Link text should be set in set in sentence case with the first letter of each wo
 
 Links can be grouped horizontally or vertically and must be underlined. The following specs are not built into the Link component but are recommended by design as the proper distance between grouped Links.
 
-| Class     | Property      | px | rem  |
-|-----------|---------------|----|------|
-|`.bx--link`| line-height   | 24 | 1.5  |
-|`.bx--link`| padding-right | 16 | 1    |
+| Class     | Property      | px / rem  | Spacing token |
+|-----------|---------------|-----------|---------------|
+|`.bx--link`| line-height   | 24 / 1.5  | - |
+|`.bx--link`| padding-right | 16 / 1    | $spacing-md   |
 
 ---
 ***

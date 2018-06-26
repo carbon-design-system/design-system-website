@@ -20,16 +20,16 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
 
-| Class                              | Property                    | px  | rem   |
-|------------------------------------|-----------------------------|-----|-------|
-|`.bx--pagination--inline`           | height                      | 42  | 2.625 |
-|`.bx--pagination`                   | border                      | 1   | -     |
-|`.bx--pagination`                   | padding-left, padding-right | 16  | 1     |
-|`.bx--pagination`                   | padding-top, padding-bottom | 8   | 0.5   |
-| `main[data-page="components-code-pagination"] .bx--pagination`  | min-width |  560 | 35 |
-| `.bx--pagination--inline .bx--pagination__button--backward` | margin-left |16 | 1 |
+| Class                                                      | Property                    | px / rem   | Spacing token |
+|------------------------------------------------------------|-----------------------------|------------|---------------|
+|`.bx--pagination`                                           | border                      | 1px        | - |
+|`.bx--pagination`                                           | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--pagination`                                           | padding-top, padding-bottom | 8 / 0.5    | $spacing-xs   |
+|`.bx--pagination--inline`                                   | height                      | 42 / 2.625 | - |
+|`.bx--pagination--inline .bx--pagination__button--backward` | margin-left                 | 16 / 1     | $spacing-md   |
 
-|| Height (not directly defined)            | 40      | 2.5   |
+
+<!-- || Height (not directly defined)            | 40      | 2.5   | -->
 
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)

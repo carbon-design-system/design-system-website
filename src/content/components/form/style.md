@@ -26,7 +26,7 @@ Form headings and labels should be set in sentence case with the first letter of
 | `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600| Zeta       |
 | `.bx--text-input`                         | 14 / 0.875        | Normal / 400   | -          |
 | `.bx--text-input::placeholder`            | 14 / 0.875        | Normal / 400   | -          |
-| `.bx--form-requirement` | 12 / 0.75         | Normal / 400   | -          |
+| `.bx--form-requirement`                   | 12 / 0.75         | Normal / 400   | -          |
 | `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400   | -          |
 
 
@@ -41,11 +41,11 @@ All icons can be found on the [iconography](/style/iconography/library) library 
 
 ### Recommended
 
-| Space between        | px | rem  |
-|----------------------|----|------|
-| Inputs               | 24 | 1.5  |
-| Non-input components | 32 | 2    |
-| Grid gutter          | 20 | 1.25 |
+| Space between        | px / rem  | Spacing token |
+|----------------------|-----------|---------------|
+| Inputs               | 24 / 1.5  | $spacing-lg   |
+| Non-input components | 32 / 2    | $spacing-xl   |
+| Grid gutter          | 20 / 1.25 | -             |
 
 
 

@@ -6,10 +6,10 @@ Text inputs come in two different colors. The default input color is `$field-01`
 |-------------------------------|----------------------|---------------|---------|
 |`.bx--label`                   | color                | $text-01      | #152935 |
 |`.bx--text-input`              | background-color     | $field-01     | #f4f7fb |
-|`.bx--text-input--light`       | background-color     | $field-02     | #ffffff |
 |`.bx--text-input`              | box-shadow           | $ui-05        | #5a6872 |
 |`.bx--text-input`              | color                | $text-01      | #152935 |
 |`.bx--text-input::placeholder` | color                | $text-03      | #cdd1d4 |
+|`.bx--text-input--light`       | background-color     | $field-02     | #ffffff |
 |`.bx--form__helper-text`       | color                | $text-02      | #5a6872 |
 
 
@@ -24,8 +24,8 @@ _Examples of default and user-input states for Text Input in both $field-02 (lef
 |`.bx--text-input:focus`                                             | box-shadow | $brand-01  | #3d70b2 |
 |`.bx--text-input[data-invalid], .bx--text-input[data-invalid]:focus`| box-shadow | $support-01| #e0182d |
 |`.bx--text-input:focus ~ .bx--label`                                | color      | $brand-01  | #3d70b2 |
-|`.bx--select-input ~ .bx--form-requirement`                         | color      | $support-01| #e0182d |
-|`.bx--text-input ~ .bx--form-requirement`                           | color      | $support-01| #e0182d |
+|`.bx--form-requirement`                                             | color      | $support-01| #e0182d |
+|`.bx--form-requirement`                                             | color      | $support-01| #e0182d |
 
 **Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
 
@@ -44,18 +44,18 @@ Text Input labels and placeholder text should be set in sentence case, with only
 | `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600 | Zeta       |
 | `.bx--text-input`                         | 14 / 0.875        | Normal / 400    | -          |
 | `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400    | -          |
-| `.bx--text-input ~ .bx--form-requirement` | 12 / 0.75         | Normal / 400    | -          |
+| `.bx--form-requirement` | 12 / 0.75         | Normal / 400    | -          |
 
 ## Structure
 
-| Class                 | Property                    | px | rem |
-|-----------------------|-----------------------------|----|-----|
-|`.bx--text-input`      | height                      | 40 | 2.5 |
-|`.bx--label`           | Spacing: Label & hint text  | 8  | 0.5 |
-|`.bx--text-input`      | padding-left, padding-right | 16 | 1   |
-|`.bx--form-item`       | margin-bottom               | 24 | 1.5 |
-|`.bx--text-input`      | box-shadow                  | 1  | -   |
-|`.bx--text-input:focus`| box-shadow                  | 2  | -   |
+| Class                 | Property                    | px / rem | Spacing token |
+|-----------------------|-----------------------------|----------|---------------|
+|`.bx--text-input`      | height                      | 40 / 2.5 | - |
+|`.bx--label`           | margin-bottom               | 8 / 0.5  | $spacing-xs   |
+|`.bx--text-input`      | padding-left, padding-right | 16 / 1   | $spacing-md   |
+|`.bx--form-item`       | margin-bottom               | 24 / 1.5 | $spacing-lg   |
+|`.bx--text-input`      | box-shadow                  | 1px      | - |
+|`.bx--text-input:focus`| box-shadow                  | 2px      | - |
 
 ![Structure and spacing measurements for Text Input](images/text-input-style-2.png)
 _Structure and spacing measurements for Text Input | px / rem_

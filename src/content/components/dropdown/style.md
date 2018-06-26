@@ -29,6 +29,9 @@ _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 | `.bx--dropdown--open:focus`                 | box-shadow      | $brand-01  | #3d70b2   |
 | `.bx--select-input[data-invalid]`           | box-shadow      | $support-01| #e0182d   |
 
+**Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.s
+
+**Help text:** Help text appears below the label when the input is active. Help text remains visible while the input is focused and disappears after focus away.
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
@@ -46,7 +49,7 @@ All Dropdown text should be set in sentence case, with only the first word in a 
 
 
 ## Layer
-| Class                                                  | Elevation, Layer | Box-shadow                     |
+| Class                                                  | Layer, Elevation | Box-shadow                     |
 |--------------------------------------------------------|------------------|--------------------------------|
 | `.bx--dropdown--open:focus` </br> `.bx--dropdown-list` | Overlay, 8       | `0 4px 8px 0 rgba(0,0,0,0.10);`|
 
@@ -54,14 +57,14 @@ All Dropdown text should be set in sentence case, with only the first word in a 
 ## Structure
 Dropdowns have two states, open and closed. An open and closed Dropdown should be the same width and appropriately fit the design, layout, and content. The height of a closed Dropdown stays consistent while the height of an open Dropdown will vary based on the amount of options it has. Please note the various color differences for closed and open Dropdowns.
 
-| Class                | Property                    | px | rem    |
-|----------------------|-----------------------------|----|--------|
-| `.bx--dropdown`      | height                      | 40 | 2.5    |
-| `.bx--dropdown-text` | padding-left                | 16 | 1      |
-| `.bx--dropdown-text` | padding-right               | 40 | 2.5    |
-| `.bx--dropdown-text` | padding-top, padding-bottom | 13 | 0.8125 |
-| `.bx--dropdown`      | box-shadow                  | 1  | -      |
-| `.bx--dropdown:focus`| box-shadow                  | 2  | -      |
+| Class                | Property                    | px / rem    | Spacing tokens |
+|----------------------|-----------------------------|-------------|----------------|
+| `.bx--dropdown`      | height                      | 40 / 2.5    | - |
+| `.bx--dropdown-text` | padding-left                | 16 / 1      | $spacing-md    |
+| `.bx--dropdown-text` | padding-right               | 40 / 2.5    | $spacing-2xl   |
+| `.bx--dropdown-text` | padding-top, padding-bottom | 13 / 0.8125 | - |
+| `.bx--dropdown`      | box-shadow                  | 1px         | - |
+| `.bx--dropdown:focus`| box-shadow                  | 2px         | - |
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 _Structure and spacing measurements for Dropdown | px / rem_
@@ -72,14 +75,14 @@ _Normal, active, open, and disabled states for Dropdown_
 
 ## Multi-Select Dropdown
 
-| Class                           | Property                    | px | rem   |
-|---------------------------------|-----------------------------|----|-------|
-|`.bx--list-box__field`           | padding-left, padding-right | 16 | 1     |
-|`.bx--list-box__menu-item`       | height                      | 40 | 2.5   |
-|`.bx--checkbox-label`            | padding-left                | 4  | 0.25  |
-|`.bx--list-box__menu-icon`       | padding-left, padding-right | 16 | 1     |
-|`.bx--list-box__selection--multi`| height                      | 18 | 1.125 |
-|`.bx--list-box__selection--multi`| margin-right                | 10 | 0.625 |
+| Class                           | Property                    | px / rem   | Spacing tokens|
+|---------------------------------|-----------------------------|------------|---------------|
+|`.bx--list-box__menu-item`       | height                      | 40 / 2.5   | - |
+|`.bx--list-box__field`           | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--checkbox-label`            | padding-left                | 4  / 0.25  | $spacing-2xs  |
+|`.bx--list-box__menu-icon`       | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--list-box__selection--multi`| height                      | 18 / 1.125 | - |
+|`.bx--list-box__selection--multi`| margin-right                | 10 / 0.625 | - |
 
 
 
@@ -93,14 +96,14 @@ _Hover and focus zstates for a Multi-Select Dropdown_-->
 
 ## Inline Dropdown
 
-| Class                               | Property                   | px | rem   |
-|-------------------------------------|----------------------------|----|-------|
-| `.bx--list-box.bx--list-box--inline`| height                     | 32 | 2     |
-| `.bx--list-box__menu-item`          | padding-right, padding-left| 8  | 0.5   |
-| `.bx--list-box__menu-item`          | height                     | 40 | 2.5   |
-| `.bx--checkbox-label`               | padding-left               | 4  | 0.25  |     
-| `.bx--list-box__menu-icon`          | padding-left, padding-right| 8  | 0.5   |
-| `.bx--checkbox-label::before`       | height                     | 18 | 1.125 |
+| Class                               | Property                   | px / rem   | Spacing token |
+|-------------------------------------|----------------------------|------------|---------------|
+| `.bx--list-box.bx--list-box--inline`| height                     | 32 / 2     | - |
+| `.bx--list-box__menu-item`          | padding-right, padding-left| 8  / 0.5   | $spacing-xs   |
+| `.bx--list-box__menu-item`          | height                     | 40 / 2.5   | - |
+| `.bx--checkbox-label`               | padding-left               | 4 / 0.25   | $spacing-2xs  |    
+| `.bx--list-box__menu-icon`          | padding-left, padding-right| 8 / 0.5    | $spacing-xs   |
+| `.bx--checkbox-label::before`       | height                     | 18 / 1.125 | - |
 
 
 
@@ -122,12 +125,12 @@ _Hover and focus states for Inline Dropdown_
 ## Filtering
 Filtering can be used with Dropdown and Multi-select Dropdown but not Inline Dropdown.
 
-| Class                        | Property                    | px | rem   |
-|------------------------------|-----------------------------|----|-------|
-|`.bx--list-box__selection svg`| height                      | 10 | 0.625 |
-|`.bx--list-box__menu-icon`    | padding-left, padding-right | 16 | 1     |
-|`.bx--list-box__selection`    | padding-left, padding-right | 16 | 1     |
-|`.bx--list-box__selection`    | height                      | 40 | 2.5   |
+| Class                        | Property                    | px / rem   | Spacing token |
+|------------------------------|-----------------------------|------------|---------------|
+|`.bx--list-box__selection svg`| height                      | 10 / 0.625 | - |
+|`.bx--list-box__menu-icon`    | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--list-box__selection`    | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--list-box__selection`    | height                      | 40 / 2.5   | - |
 
 
 ![Spacing for Multi-select Dropdown with Filtering](images/dropdown-style-7.png)

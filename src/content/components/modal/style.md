@@ -1,6 +1,6 @@
 ## Color
 
-| Class                      | Property   | SCSS     | HEX     |
+| Class                      | Property         | SCSS     | HEX     |
 |----------------------------|------------------|----------|---------|
 |`.bx--modal-container`      | background-color | $ui-01   | #ffffff |
 |`.bx--modal-container`      | border-top       | $brand-01| #3d70b2 |
@@ -25,22 +25,21 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 ## Layer
 
-| Class                 |Layer      | Elevation  | Box-shadow                         |
-|-----------------------|-----------|------------|------------------------------------|
-|`.bx--modal-container` | Pop-out   | 24         | 0 12px 24px 0 rgba(0,0,0,0.10);    |
+| Class                 | Layer, Elevation | Box-shadow                      |
+|-----------------------|------------------|---------------------------------|
+|`.bx--modal-container` | Pop-out , 24     | 0 12px 24px 0 rgba(0,0,0,0.10); |
 
 ## Structure
 
-| Class                                    | Property                     | px | rem    |
-|------------------------------------------|------------------------------|----|--------|
-| `.bx--modal-container`                   | border-top                   | 5  | 0.313  |
-| `.bx--modal-close__icon`                 | height, width                | 10 | 0.625  |
-| `.bx--modal-container`                   | padding-left, padding-right  | 48 | 3      |
-| `.bx--modal-container`                   | padding-top                  | 40 | 2.5    |
-| `.bx--modal-container`                   | padding-top                  | 40 | 2.5    |
-| `.bx--modal-header__label .bx--type-delta`| margin-bottom                | 8  | 0.5    |
-| `.bx--modal-header`                      | margin-bottom                | 24 | 1.5    |
-| `.bx--modal-content`                     | margin-bottom                | 48 | 3      |
+| Class                                     | Property                     | px / rem    | Spacing token |
+|-------------------------------------------|------------------------------|-------------|---------------|
+| `.bx--modal-container`                    | border-top                   | 5 / 0.313   | - |
+| `.bx--modal-close__icon`                  | height, width                | 10 / 0.625  | - |
+| `.bx--modal-container`                    | padding-left, padding-right  | 48 / 3      | $spacing-3xl  |
+| `.bx--modal-container`                    | padding-top                  | 40 / 2.5    | $spacing-2xl  |
+| `.bx--modal-header__label .bx--type-delta`| margin-bottom                | 8  / 0.5    | $spacing-xs   |
+| `.bx--modal-header`                       | margin-bottom                | 24 / 1.5    | $spacing-lg   |
+| `.bx--modal-content`                      | margin-bottom                | 48 / 3      | $spacing-3xl  |
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
 _Structure and spacing measurements for a Passive Modal | px / rem_

@@ -8,8 +8,9 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--number--light`              | background-color | $field-02 | #ffffff   |
 | `.bx--label`                      | color            | $text-01  | #152934   |
 | `.bx--number input[type='number']`| color            | $text-01  | #152935   |
-| `.bx--number__controls svg `      | fill             | $brand-01 | #3d70b2   |
 | `.bx--number input[type='number']`| box-shadow       | $ui-05    | #5a6872   |
+| `.bx--number__controls svg `      | fill             | $brand-01 | #3d70b2   |
+
 
 
 ![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
@@ -17,6 +18,14 @@ _Number Input example in $field-02 (left) and $field-01 (right)_
 
 
 ### States
+
+| Class                                                               | Property         | SCSS       | HEX       |
+|---------------------------------------------------------------------|------------------|------------|-----------|
+| `.bx--number input[type='number']:focus`                            | box-shadow       | $brand-01  | #3d70b2   |
+| `.bx--number input[type='number']:focus ~ .bx--label`               | color            | $brand-01  | #3d70b2   |
+| `.bx--number[data-invalid] input[type='number']`                    | box-shadow       | $support-01| #e0182d   |
+| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color            | $support-01| #e0182d   |
+| `.bx--form-requirement`                                             | color            | $support-01| #e0182d   |
 
 **Active:** Number input should have a default number to start. The input should never be empty.
 
@@ -26,13 +35,6 @@ _Number Input example in $field-02 (left) and $field-01 (right)_
 
 **Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
 
-| Class                                                               | Property         | SCSS       | HEX       |
-|---------------------------------------------------------------------|------------------|------------|-----------|
-| `.bx--number input[type='number']:focus`                            | box-shadow       | $brand-01  | #3d70b2   |
-| `.bx--number input[type='number']:focus ~ .bx--label`               | color            | $brand-01  | #3d70b2   |
-| `.bx--number[data-invalid] input[type='number']`                    | box-shadow       | $support-01| #e0182d   |
-| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color            | $support-01| #e0182d   |
-| `.bx--form-requirement`                                             | color            | $support-01| #e0182d   |
 
 
 
@@ -44,19 +46,19 @@ Number Input labels should use sentence case, with only the first word in a phra
 |------------------------------------------------------------|--------------------|-----------------|------------|
 | `.bx--label`                                               | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
 | `.bx--number input[type='number']`                         | 14 / 0.875         | Normal / 400    | -          |
-| `.bx--number input[type='number'] ~ .bx--form-requirement` | 12 / 0.75          | Normal / 400    | Caption    |
+| `.bx--form-requirement`                                    | 12 / 0.75          | Normal / 400    | Caption    |
 
 ## Structure
 
 The height of a Number Input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/style/iconography/library) library.
 
-| Class                                  | Property      | px | rem    |
-|----------------------------------------|---------------|----|--------|
-|`.bx--number input[type='number']`      | height        | 40 | 2.5    |
-|`.bx--number input[type='number']`      | padding-left  | 16 | 1      |
-|`.bx--number input[type='number']`      | padding-right | 32 | 2      |
-|`.bx--number input[type='number']`      | box-shadow    | 1  | 0.0625 |
-|`.bx--number input[type='number']:focus`| box-shadow    | 2  | 0.125  |
+| Class                                  | Property      | px / rem    | Spacing token |
+|----------------------------------------|---------------|-------------|---------------|
+|`.bx--number input[type='number']`      | height        | 40 / 2.5    | - |
+|`.bx--number input[type='number']`      | padding-left  | 16 / 1      | $spacing-md   |
+|`.bx--number input[type='number']`      | padding-right | 32 / 2      | $spacing-xl   |
+|`.bx--number input[type='number']`      | box-shadow    | 1 / 0.0625  | - |
+|`.bx--number input[type='number']:focus`| box-shadow    | 2 / 0.125   | - |
 
 
 ---

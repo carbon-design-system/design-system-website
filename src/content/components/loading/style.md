@@ -8,10 +8,10 @@
 
 ## Structure
 
-| Class                | Property      | px | rem  |
-|----------------------|---------------|----|------|
-|`.bx--loading`        | height, width | 84 | 5.25 |
-|`.bx--loading--small` | height, width | 16 | 1    |
+| Class                | Property      | px / rem  | Spacing token |
+|----------------------|---------------|-----------|---------------|
+|`.bx--loading`        | height, width | 84 / 5.25 | - |
+|`.bx--loading--small` | height, width | 16 / 1    | - |
 
 <div data-insert-component="ImageGrid">
   <div>

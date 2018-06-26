@@ -25,26 +25,26 @@ Notification titles should not exceed more than three words. Notification text s
 
 ## Layer
 
-| Class                     | Property    | Layer, Elevation | Box-shadow                      |
-|---------------------------|-------------|------------------|---------------------------------|
-| `.bx--toast-notification` | box-shadow  | Overlay, 8       | 0 4px 8px 0 rgba(0, 0, 0, 0.1)  |
+| Class                       | Layer, Elevation       | Box-shadow                      |
+|-----------------------------|------------------------|---------------------------------|
+| `.bx--toast-notification`   | Overlay, 8             | 0 4px 8px 0 rgba(0, 0, 0, 0.1)  |
 
 
 ## Structure
 
 ### Toast Notification
 
-| Property                           | Property                                 | px                       | rem    |
-|------------------------------------|------------------------------------------|--------------------------|--------|
-| `.bx--inline-notification`         | min-height                               | 40                       | 2.5    |
-| `.bx--inline-notification`         | max-height                               | 56                       | 3.5    |
-| `.bx--toast-notification`          | width                                    | 270                      | 16.875 |
-| `.bx--toast-notification`          | margin-right                             | 16                       | 1      |
-| `.bx--toast-notification`          | margin-bottom                            | 8                        | 0.5    |
-| `.bx--toast-notification`          | padding-top, padding-right, padding-left | 16                       | 1      |
-| `.bx--toast-notification`          | padding-bottom                           | 8                        | 0.5    |
-| `.bx--toast-notification__title`   | padding-bottom                           | 2                        | 0.125  |
-| `.bx--toast-notification__subtitle`| margin-bottom                            | 16                       | 1      |
+| Property                           | Property                                 | px / rem    | Spacing token |
+|------------------------------------|------------------------------------------|-------------|---------------|
+| `.bx--inline-notification`         | min-height                               | 40 / 2.5    | - |
+| `.bx--inline-notification`         | max-height                               | 56 / 3.5    | - |
+| `.bx--toast-notification`          | width                                    | 270 / 16.875| - |
+| `.bx--toast-notification`          | margin-right                             | 16 / 1      | $spacing-md   |
+| `.bx--toast-notification`          | margin-bottom                            | 8 / 0.5     | $spacing-xs   |
+| `.bx--toast-notification`          | padding-top, padding-right, padding-left | 16 / 1      | $spacing-md   |
+| `.bx--toast-notification`          | padding-bottom                           | 8 / 0.5     | $spacing-xs   |
+| `.bx--toast-notification__title`   | padding-bottom                           | 2 / 0.125   | $spacing-2xs  |
+| `.bx--toast-notification__subtitle`| margin-bottom                            | 16 / 1      | $spacing-md   |
 
 ![Structure and spacing for a toast notification](images/notification-style-1.png)
 _Structure and spacing measurements for a Toast Notification | px / rem_
@@ -53,16 +53,16 @@ _Structure and spacing measurements for a Toast Notification | px / rem_
 
 The width of an Inline Notification will vary based on content.
 
-| Property                           | Property                                 | px  | rem    |
-|------------------------------------|------------------------------------------|-----|--------|
-| `.bx--inline-notification`         | min-height                               | 40  | 2.5    |
-| `.bx--inline-notification__close-icon`  | height, width                       | 10  | 0.625  |   
-| `.bx--inline-notification--info` </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>     `.bx--inline-notification--warning`  | border                                   | 1   | -      |  
-| `.bx--inline-notification--info`  </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>  `.bx--inline-notification--warning`  | border-left                              | 6   | -      |   
-| `.bx--inline-notification__text-wrapper`  | margin-left, margin-right         | 10  | 0.625  |  
-| `.bx--inline-notification`  | margin-top, margin-bottom                       | 10  | 0.625  |  
-| `.bx--inline-notification`  | padding-top, padding-bottom                     | 12  | 0.75   |  
-| `.bx--inline-notification`  | padding-left, padding-bottom                    | 16  | 1     |  
+| Property                           | Property                                 | px / rem   | Spacing token |
+|------------------------------------|------------------------------------------|------------|---------------|
+| `.bx--inline-notification`         | min-height                               | 40 / 2.5   | - |
+| `.bx--inline-notification__close-icon`  | height, width                       | 10 / 0.625 | - |
+| `.bx--inline-notification--info` </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>     `.bx--inline-notification--warning`  | border                                   | 1px     | - |
+| `.bx--inline-notification--info`  </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>  `.bx--inline-notification--warning`  | border-left                              | 6px      | - |  
+| `.bx--inline-notification__text-wrapper`  | margin-left, margin-right         | 10 / 0.625  | - |
+| `.bx--inline-notification`  | margin-top, margin-bottom                       | 10 / 0.625  | - |  
+| `.bx--inline-notification`  | padding-top, padding-bottom                     | 12 / 0.75   | $spacing-sm  |
+| `.bx--inline-notification`  | padding-left, padding-bottom                    | 16 / 1      | $spacing-md  |
 
 
 

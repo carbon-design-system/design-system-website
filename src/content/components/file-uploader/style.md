@@ -23,11 +23,11 @@ The File Uploader label and instruction text should be set in sentence case, wit
 
 The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button](/components/button) guidelines for styling and usage of the “Add files” button.
 
-| Class                | Property           | px  | rem   |
-|----------------------|--------------------|-----|-------|
-| `.bx--file-filename` | height             | 30  | 1.875 |
-| `.bx--file-close`    | height, width      | 16  | 1     |
-| `.bx--file-container`| margin-top         | 24  | 1.5   |
+| Class                | Property           | px / rem   | Spacing token |
+|----------------------|--------------------|------------|---------------|
+| `.bx--file-filename` | height             | 30 / 1.875 | - |
+| `.bx--file-close`    | height, width      | 16 / 1     | - |
+| `.bx--file-container`| margin-top         | 24 / 1.5   | $spacing-lg   |
 
 ---
 ***
@@ -40,6 +40,6 @@ _Structure and spacing measurements for File Uploader | px / rem_
 
 The following specs are not built into the File Uploader component but are recommended by design as the proper amount between File Uploader elements.
 
-| Class                  | Property                  | px  | rem   |
-|------------------------|---------------------------|-----|-------|
-| `.bx--file-close`      | margin-left, margin-right | 16  | 1     |
+| Class                  | Property                  | px / rem  | Spacing token |
+|------------------------|---------------------------|-----------|---------------|
+| `.bx--file-close`      | margin-left, margin-right | 16 / 1    | $spacing-md   |

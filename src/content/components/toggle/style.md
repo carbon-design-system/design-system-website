@@ -28,14 +28,14 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 
 ### Toggle
 
-| Class                           | Property                  | px | rem   |
-|---------------------------------|---------------------------|----|-------|
-| `.bx--toggle__appearance`       | width                     | 48 | 3     |
-| `.bx--toggle__appearance:after` | height, width             | 24 | 1.5   |
-| `.bx--toggle__appearance:after` | border                    | 2  | 0.125 |
-| `.bx--toggle__label`            | margin-top, margin-bottom | 16 | 1     |
-| `.bx--toggle__text--left`       | margin-right              | 8  | 0.5   |
-| `.bx--toggle__text--right`      | margin-left               | 8  | 0.5   |
+| Class                           | Property                  | px / rem   | Spacing token |
+|---------------------------------|---------------------------|------------|---------------|
+| `.bx--toggle__appearance`       | width                     | 48 / 3     | - |
+| `.bx--toggle__appearance:after` | height, width             | 24 / 1.5   | - |
+| `.bx--toggle__appearance:after` | border                    | 2 / 0.125  | - |
+| `.bx--toggle__label`            | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
+| `.bx--toggle__text--left`       | margin-right              | 8 / 0.5    | $spacing-xs   |
+| `.bx--toggle__text--right`      | margin-left               | 8 / 0.5    | $spacing-xs   |
 
 
 
@@ -50,12 +50,12 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 ### Small toggle
 
-| Class                                                                   | Property                  | px | rem   |
-|-------------------------------------------------------------------------|---------------------------|----|-------|
-| `.bx--toggle--small`                                                    | height                    | 16 | 1     |
-| `.bx--toggle--small`                                                    | width                     | 32 | 2     |
-| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:after` | height, width             | 10 | 0.625 |
-| `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 | 1     |
+| Class                                                                   | Property                  | px / rem   | Spacing token |
+|-------------------------------------------------------------------------|---------------------------|------------|---------------|
+| `.bx--toggle--small`                                                    | height                    | 16 / 1     | - |
+| `.bx--toggle--small`                                                    | width                     | 32 / 2     | - |
+| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:after` | height, width             | 10 / 0.625 | - |
+| `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
 
 
 

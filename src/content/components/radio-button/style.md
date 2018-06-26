@@ -17,12 +17,12 @@ Radio Button labels and headings should be set in sentence case, with only the f
 
 ## Structure
 
-| Class                                                                                     | Property                     | px | rem   |
-|-------------------------------------------------------------------------------------------|------------------------------|----|-------|
-|`.bx--radio-button__appearance`                                                            | height, width                | 18 | 1.125 |
-|`.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance:before`| height, width                | 8  | 0.5   |
-|`.bx--radio-button__label`                                                                 | margin-right                 | 16 | 1     |
-|`.bx--radio-button__appearance`                                                            | margin-right                 | 8  | 0.5   |
+| Class                                                                                     | Property         | px / rem   | Spacing token |
+|-------------------------------------------------------------------------------------------|------------------|------------|---------------|
+|`.bx--radio-button__appearance`                                                            | height, width    | 18 / 1.125 | - |
+|`.bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance:before`| height, width    | 8  / 0.5   | - |
+|`.bx--radio-button__label`                                                                 | margin-right     | 16 / 1     | $spacing-md   |
+|`.bx--radio-button__appearance`                                                            | margin-right     | 8  / 0.5   | $spacing-xs   |
 
 ---
 ***
@@ -35,7 +35,7 @@ _Structure and spacing measurements for Radio Button | px | rem_
 
 The following specs are not built into the Radio Button component but are recommended by design as the proper amount of space around a grouping of or in between stacked Radio Buttons.
 
-| Class                                                                                     | Property      | px | rem   |
-|-------------------------------------------------------------------------------------------|---------------|----|-------|
-| `.bx--radio-button-group`                                                                 | margin        | 16 | 1     |
-| `.bx--radio-button__label`                                                                | margin-bottom | 16 | 1     |
+| Class                            | Property      | px / rem | Spacing token |
+|----------------------------------|---------------|----------|---------------|
+| `.bx--radio-button-group`        | margin        | 16 / 1   | $spacing-md   |
+| `.bx--radio-button__label`       | margin-bottom | 16 / 1   | $spacing-md   |

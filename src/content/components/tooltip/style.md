@@ -27,10 +27,11 @@ Tooltip labels and text should be set in sentence case.
 | `.bx--tooltip p`                                                         | 14 / 0.875        | Normal / 400   | -          |
 | `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` | 12 / 0.75         | Normal / 400   | Caption    |
 
+
 ## Layer
-| Class      | Layer    | Elevation| Box-shadow                     |
-|------------|----------|----------|--------------------------------|
-| `.bx--tooltip` </br> `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before ` </br> `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top`     | Overlay  | 8        | 0 4px 8px 0 rgba(0,0,0,0.10);  |
+| Class      | Layer, Elevation   | Box-shadow                     |
+|------------|--------------------|--------------------------------|
+| `.bx--tooltip` </br> `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before ` </br> `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top`     | Overlay, 8        | 0 4px 8px 0 rgba(0,0,0,0.10);  |
 
 
 ## Structure
@@ -40,13 +41,13 @@ All Tooltip types have a varying height based on the amount of content they cont
 
 ### Interactive Tooltip
 
-| Class                      |   Property    | px    | rem   |
-|----------------------------|---------------|-------|-------|
-| `.bx--tooltip`             | max-width     | 240   | 15    |
-| `.bx--tooltip__trigger svg`| height, width | 16    | 1     |
-| `.bx--tooltip__trigger`    | margin-left   | 8     | 0.5   |
-| `.bx--tooltip`             | padding       | 16    | 1     |
-| `.bx--tooltip`             | margin-top    | 4     | 0.25  |
+| Class                      |   Property    | px / rem   | Spacing token |
+|----------------------------|---------------|------------|---------------|
+| `.bx--tooltip`             | max-width     | 240 / 15   | - |
+| `.bx--tooltip__trigger svg`| height, width | 16 /  1    | - |
+| `.bx--tooltip__trigger`    | margin-left   | 8 / 0.5    | $spacing-xs   |
+| `.bx--tooltip`             | padding       | 16 / 1     | $spacing-md   |
+| `.bx--tooltip`             | margin-top    | 4 / 0.25   | $spacing-2xs  |
 
 
 
@@ -60,12 +61,12 @@ _Structure and spacing measurements for an Interactive Tooltip | px / rem_
 
 ### Definition Tooltip
 
-| Class                                                                    | Property     | px  | rem  |
-|--------------------------------------------------------------------------|--------------|-----|------|
-| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | max-width    | 176 | 11   |
-| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | margin-top   | 12  | 0.75 |
-| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | padding      | 8   | 0.5  |
-| `.bx--tooltip--definition .bx--tooltip__trigger`                         | border-bottom| 2   | -    |
+| Class                                                                    | Property     | px / rem  | Spacing token |
+|--------------------------------------------------------------------------|--------------|-----------|---------------|
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | max-width    | 176 / 11  | - |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | margin-top   | 12 / 0.75 | $spacing-sm   |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | padding      | 8 / 0.5   | $spacing-xs   |
+| `.bx--tooltip--definition .bx--tooltip__trigger`                         | border-bottom| 2px       | - |
 
 
 ---
@@ -77,10 +78,10 @@ _Structure and spacing measurements for a Definition Tooltip | px / rem_
 
 ### Icon Tooltip
 
-| Class                                                                      |   Property | px  | rem  |
-|----------------------------------------------------------------------------|------------|-----|------|
-| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width  | 176 | 11   |
-| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding    | 4   | 0.25 |
+| Class                                                                      | Property   | px / rem  | Spacing token |
+|----------------------------------------------------------------------------|------------|-----------|---------------|
+| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width  | 176 / 11  | - |
+| `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding    | 4 / 0.25  | $spacing-2xs  |
 
 ---
 ***
