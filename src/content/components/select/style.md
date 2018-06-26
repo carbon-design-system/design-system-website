@@ -48,7 +48,6 @@ _Examples of open, disabled, and help Select states_
 
 
 
-
 ## Typography
 
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
@@ -71,8 +70,8 @@ Select text should be set in sentence case, with only the first word in a phrase
 |`.bx--label`             | margin-bottom | 8 / 0.5   | $spacing-xs   |
 |`.bx--select-input`      | padding-right | 2.5 / 40  | $spacing-2xl  |
 |`.bx--select-input`      | padding-left  | 16 / 1    | $spacing-md   |
-|`.bx--select-input`      | box-shadow    | 1 / 0.0625| - |
-|`.bx--select-input:focus`| box-shadow    | 2 / 0.125 | - |
+|`.bx--select-input`      | box-shadow    | 1px       | - |
+|`.bx--select-input:focus`| box-shadow    | 2px       | - |
 
 ![Structure and spacing measurements for Select](images/select-style-2.png)
 _Structure and spacing measurements for Select | px / rem_
@@ -95,7 +94,6 @@ The following specs are not built into the Select component but are recommended 
 | Class             | Property                    | px / rem   | Spacing token |
 |-------------------|-----------------------------|------------|---------------|
 |`.bx--select-input`| height                      | 24 / 1.5   | - |
-|`.bx--select-input`| width                       | 100%       | - |
 |`.bx--select-input`| padding-left, padding-right | 8 / 0.5    | $spacing-xs   |
 
 <div data-insert-component="ImageGrid">
@@ -110,6 +108,13 @@ _Structure and spacing measurements for Small Select | px / rem_
 
 _Examples of open and disabled Small Select states_
 
+### Recommended
+
+The following specs are not built into the Small Select component but are recommended by design as the proper width for a Small Select.
+
+| Class             | Property                   | px / rem  | Spacing token |
+|-------------------|----------------------------|-----------|---------------|
+|`.bx--select-input`| width                      | 56 / 3.5  | - |
 
 
 ### Inline select
