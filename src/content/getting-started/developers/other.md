@@ -9,7 +9,7 @@ This often makes it unclear when the DOM element to instantiate a Carbon compone
 
 Also when DOM elements that Carbon components have been instantiated on are being destroyed, the Carbon component instances should be released so that e.g. there are no zombie event handlers.
 
-The easiest way to hook on the creation/destroy of DOM elements is by defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
+The easiest way to hook on the creation/destruction of DOM elements is by defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
 
 ```javascript
 class BXLoading extends HTMLElement {
