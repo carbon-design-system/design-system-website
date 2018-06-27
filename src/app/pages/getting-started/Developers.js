@@ -11,7 +11,7 @@ class Developers extends React.Component {
   };
 
   render() {
-    const tabs = ['vanilla', 'react'];
+    const tabs = ['vanilla', 'react','other'];
     let currentPage = tabs[0];
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
@@ -24,6 +24,9 @@ class Developers extends React.Component {
         </Tab>
         <Tab href="/getting-started/developers/react" label="React">
           <MarkdownPage content={require('../../../content/getting-started/developers/react.md')} />
+        </Tab>
+        <Tab href="/getting-started/developers/other" label="Other">
+          <MarkdownPage content={require('../../../content/getting-started/developers/other.md')} />
         </Tab>
       </PageTabs>
     );
