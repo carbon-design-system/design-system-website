@@ -36,7 +36,8 @@ If you have a pressing bug or change it is best to make PR for the issue yoursel
 
 ### I haven't updated to the latest version of Carbon yet, but I still need the old documentation. Is there a place I can find it?
 
-Every version of Carbon that is still supported is hosted at its own domain. You can find the old **[V6](http://v6.carbondesignsystem.com/)** and **[V7](http://v7.carbondesignsystem.com/)** sites here.
+Every version of Carbon that is still supported is hosted at its own domain. You can find the old sites version here:
+**[V6](http://v6.carbondesignsystem.com/)**, **[V7](http://v7.carbondesignsystem.com/)**, and **[V8](http://v8.carbondesignsystem.com/)**.
 
 ### Where do I go if I've read everything and still have an issue/question?
 
