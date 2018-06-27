@@ -92,6 +92,7 @@
     "title": "Utilities",
     "subnav": {
       "common-actions": "Common Actions",
+      "cursors": "Cursors",
       "disabled-states": "Disabled States",
       "filtering": "Filtering",
       "loading": "Loading",
