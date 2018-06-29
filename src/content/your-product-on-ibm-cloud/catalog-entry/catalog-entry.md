@@ -7,27 +7,29 @@
     - Catalog Principles
     - Catalog Governance
 
-2.  **[Summary Card](#summary card)**
+2.  **[Summary Card](#summary-card)**
 
     - Title
     - Short Description
     - Icon
     - Tags
 
-3.  **[Offering Detail Page](#offering detail page)**
+3.  **[Offering Detail Page](#offering-detail-page)**
+
     - Metadata
     - Configuration
     - Overview
     - Features
     - Supporting Media
     - Pricing Guidance
-4.  **[Search & Categorization](#Search & Categorization)**
+
+4.  **[Search & Categorization](#search-and-categorization)**
 
     - Categorization
     - Filtering
     - Search tags
 
-5.  **[Usage & Analytics](#usage & analytics)**
+5.  **[Usage & Analytics](#usage-analytics)**
 
 ## Overview
 
