@@ -1,4 +1,4 @@
-## Contents
+## Content
 
 1.  **[Overview](#overview)**
 
@@ -61,33 +61,6 @@ To ensure that offerings meet the criteria outlined in these guidelines, the cat
 
 See [Catalog Governance](https://ibm.ent.box.com/notes/290560698464) document (WIP)
 
-## Search and Categorization
-
-Users will encounter your offering through a variety of funnels, including web search and both authenticated and unauthenticated visits to the Catalog. In the Catalog, they can use a combination of searching, browsing, and filtering tools to identify what they're looking for and start using it. It's important to configure your offering to show up in the right place so users discover it when it is relevant to them.
-
-### Categorization
-
-The catalog team will work with individual offering teams to determine which category their offerings belong in.
-
-### Filtering
-
-Tag your service with the appropriate required metadata, so users can narrow down their options and easily find your offering.
-
-- **Author:** Use the IBM tag If your service has been created by an IBM team or acquisition. Use the Third-Party tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The community tag is only used for community buildpacks.
-- **Compliance:** Use the EU-Supported tag if your service meets the [criteria for EU-Supported Cloud](https://ibm.box.com/s/kdqtyq7rplwkpk31her53i14vg1lnt17).
-- **Plans:** Our IBM teams will work with you to determine if your service is a good candidate for our "Lite" plan.
-- **Release:** Only use the experimental or beta tag if your offering is going through the process of creating a new offering in the catalog.
-
-### Search tags (optional)
-
-Search tags allow you to add specific keywords to your offering so it will appear in Catalog search results.
-Do:
-Include keywords that you think your users will search for that pertain to your offering.
-Include alternate or previous names for your offering
-Include common misspellings
-Don't:
-Add words that are only slightly related to or not at all related to your offering
-
 ## Summary Card
 
 The summary card appears on the main Catalog page and contains a title, short description, icon, and metadata labels/tags. The summary card gives your users a quick overview of your offering and allows them to evaluate whether it meets their needs.
@@ -96,45 +69,45 @@ The summary card appears on the main Catalog page and contains a title, short de
 
 ### Title
 
-| **Do**                                                                        |
-| :---------------------------------------------------------------------------- |
-| Use a title that is logical and descriptive of your offering                  |
-| Use title case (unless it goes against overriding brand guidelines, like box) |
-| 2-3 words or 45 characters                                                    |
-| Maximum of two lines                                                          |
+**Do**
 
-| **Don't**                                                                                                                |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| Use the words "IBM" or "IBM Cloud," as it is assumed by using the IBM tag.                                               |
-| Include unnecessary words or details — this information belongs in the short description or on the offering detail page. |
-| Use punctuation like dashes, colons or slashes.                                                                          |
+- Use a title that is logical and descriptive of your offering
+- Use title case (unless it goes against overriding brand guidelines, like box)
+- 2-3 words or 45 characters
+- Maximum of two lines|
 
-| **Examples**                                                                     |
-| :------------------------------------------------------------------------------- |
-| Bare Metal Server (17 characters)                                                |
-| Internet of Things Platform (27 characters)                                      |
-| Watson Natural Language Understanding Basic (43 characters, approaching the max) |
+**Don't**
+
+- Use the words "IBM" or "IBM Cloud," as it is assumed by using the IBM tag.
+- Include unnecessary words or details — this information belongs in the short description or on the offering detail page.
+- Use punctuation like dashes, colons or slashes.|
+
+**Examples**
+
+- Bare Metal Server (17 characters)
+- Internet of Things Platform (27 characters)
+- Watson Natural Language Understanding Basic (43 characters, approaching the max)
 
 ### Short description
 
-| **Do**                                                        |
-| :------------------------------------------------------------ |
-| Focus on what the user will be able to do with your offering  |
-| Start with a verb                                             |
-| Write one concise sentence, about 10 words is recommended.    |
-| Maximum of three lines for 120 characters (about 17-20 words) |
+**Do**
 
-| **Don't**                                                                                                               |
-| :---------------------------------------------------------------------------------------------------------------------- |
-| Write more than 120 characters, as the short description doesn't appear anywhere else in the UI and will never be read. |
-| Repeat the name of the offering, as it will always be shown in combination with the title.                              |
-| Begin the sentence with "the service is...", as it is implied.                                                          |
+- Focus on what the user will be able to do with your offering
+- Start with a verb
+- Write one concise sentence, about 10 words is recommended.
+- Maximum of three lines for 120 characters (about 17-20 words)|
 
-| **Examples**                                                                                                                                               |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "Deploy secure, highly available apps in a native Kubernetes experience." (70 characters)                                                                  |
-| "Use deep learning algorithms to analyze images that can give you insights into your visual content." (99 characters)                                      |
-| "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment and more." (114 characters, approaching the max) |
+**Don't**
+
+- Write more than 120 characters, as the short description doesn't appear anywhere else in the UI and will never be read.
+- Repeat the name of the offering, as it will always be shown in combination with the title.
+- Begin the sentence with "the service is...", as it is implied.
+
+**Examples**
+
+- "Deploy secure, highly available apps in a native Kubernetes experience." (70 characters)
+- "Use deep learning algorithms to analyze images that can give you insights into your visual content." (99 characters)
+- "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment and more." (114 characters, approaching the max)
 
 ### Icon
 
@@ -189,42 +162,42 @@ Remember to follow the best practice of reducing cognitive load. This includes c
 
 Called "long description" in global catalog
 
-| **Do**                                                                                     |
-| :----------------------------------------------------------------------------------------- |
-| Explain your offering in more detail to your users, expanding upon your short description. |
-| Use about 2-4 sentences; about 60-65 words is recommended.                                 |
-| Write a maximum of 480 characters                                                          |
-| Write in complete sentences.                                                               |
-| Use facts and common use-cases.                                                            |
+**Do**
 
-| **Don't**                                                    |
-| :----------------------------------------------------------- |
-| Write less than 100 characters or more than 480 characters.  |
-| Write content that's overly persuasive or marketing-focused. |
+- Explain your offering in more detail to your users, expanding upon your short description.
+- Use about 2-4 sentences; about 60-65 words is recommended.
+- Write a maximum of 480 characters.
+- Write in complete sentences.
+- Use facts and common use-cases.
 
-| **Examples**                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| "Cloudant NoSQL DB provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models." (226 characters)                                                                                                                                                                                                                            |
-| "Create a cluster of compute hosts and deploy highly available containers. A Kubernetes cluster lets you securely manage the resources that you need to quickly deploy, update, and scale applications." (190 characters)                                                                                                                                                                                                                                                        |
-| "Add a natural language interface to your application to automate interactions with your end users. Common applications include virtual agents and chat bots that can integrate and communicate on any channel or device. Train Watson Assistant service through an easy-to-use web application, designed so you can quickly build natural conversation flows between your apps and users, and deploy scalable, cost effective solutions." (424 characters, approaching the max) |
+**Don't**
+
+- Write less than 100 characters or more than 480 characters.
+- Write content that's overly persuasive or marketing-focused.
+
+**Examples**
+
+- "Cloudant NoSQL DB provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB, and accessible through a simple to use HTTP interface for mobile and web application models." (226 characters)
+- "Create a cluster of compute hosts and deploy highly available containers. A Kubernetes cluster lets you securely manage the resources that you need to quickly deploy, update, and scale applications." (190 characters)
+- "Add a natural language interface to your application to automate interactions with your end users. Common applications include virtual agents and chat bots that can integrate and communicate on any channel or device. Train Watson Assistant service through an easy-to-use web application, designed so you can quickly build natural conversation flows between your apps and users, and deploy scalable, cost effective solutions." (424 characters, approaching the max)
 
 ### Features (optional)
 
 Called "bullets" in global catalog.
 
-| **Do**                                                                                                      |
-| :---------------------------------------------------------------------------------------------------------- |
-| Add a bulleted list of specific aspects of your product that are especially valuable to users.              |
-| Choose the most important features to highlight that might help users answer the question "Why [offering]?" |
-| Write 2-4 short feature highlight titles and supporting text for each                                       |
-| Write a feature title of no more than 3-5 words, max 100 characters.                                        |
-| Write 3-4 lines of supporting text for each bullet, max 420 characters.                                     |
+**Do**
 
-| **Don't**                                                                                                                         |
-| :-------------------------------------------------------------------------------------------------------------------------------- |
-| List features that are a given, such as "easy to use" or "fast UI"                                                                |
-| Write more than 520 characters (combined title and description) per feature                                                       |
-| Write an odd number of features unless one is significantly longer than the other two (features may be shown in a 2-column grid). |
+- Add a bulleted list of specific aspects of your product that are especially valuable to users.
+- Choose the most important features to highlight that might help users answer the question "Why [offering]?
+- Write 2-4 short feature highlight titles and supporting text for each.
+- Write a feature title of no more than 3-5 words, max 100 characters.
+- Write 3-4 lines of supporting text for each bullet, max 420 characters.
+
+**Don't**
+
+- List features that are a given, such as "easy to use" or "fast UI".
+- Write more than 520 characters (combined title and description) per feature.
+- Write an odd number of features unless one is significantly longer than the other two (features may be shown in a 2-column grid).
 
 **Example 1**
 
@@ -251,41 +224,68 @@ User Management (15 characters)
 
 ### Supporting Media (optional)
 
-| **Do**                                                                                                                            |
-| :-------------------------------------------------------------------------------------------------------------------------------- |
-| Only submit supporting media if it will bring your users value and clarity                                                        |
-| Upload 2-6 images/videos that are useful and relevant                                                                             |
-| Submit media of the correct size and proportions: the minimum size is 750x450 pixels and we recommend a 16:9 or 4:3 aspect ratio. |
+**Do**
 
-| **Don't**                                                                          |
-| :--------------------------------------------------------------------------------- |
-| Show supporting media of a different or out-of-date UI                             |
-| Include marketing videos that aren't specific to using your offering in IBM Cloud. |
+- Only submit supporting media if it will bring your users value and clarity.
+- Upload 2-6 images/videos that are useful and relevant.
+- Submit media of the correct size and proportions: the minimum size is 750x450 pixels and we recommend a 16:9 or 4:3 aspect ratio.
 
-| **Examples**                                                                                                                                                                                                                                         |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tutorial video showing someone setting up or working with our offering. Do not include videos with more marketing-type overview information; this does not perform well with users and that content should be in the Overview and Features sections. |
-| Architecture diagram                                                                                                                                                                                                                                 |
-| Image of an application built using your offering, such as a chatbot or mobile application.                                                                                                                                                          |
-| Images of actual code that pertains to your offering                                                                                                                                                                                                 |
-| Screenshots of your offering in use IF this will help users understand how they might use it.                                                                                                                                                        |
+**Don't**
+
+- Show supporting media of a different or out-of-date UI.
+- Include marketing videos that aren't specific to using your offering in IBM Cloud.|
+
+**Examples**
+
+- Tutorial video showing someone setting up or working with our offering. Do not include videos with more marketing-type overview information; this does not perform well with users and that content should be in the Overview and Features sections.
+- Architecture diagram.
+- Image of an application built using your offering, such as a chatbot or mobile application.
+- Images of actual code that pertains to your offering.
+- Screenshots of your offering in use IF this will help users understand how they might use it.
 
 ### Pricing Guidance
 
-| **Do**                                                                                  |
-| :-------------------------------------------------------------------------------------- |
-| Offer multiple plan options with expected titles like "lite," "standard" and "premium". |
-| Use as few charge units/features as necessary to communicate pricing                    |
+**Do**
 
-| **Don't**                                                                                                     |
-| :------------------------------------------------------------------------------------------------------------ |
-| Use sentence format for features/charge units.                                                                |
-| Write more details per plan than needed -- if the features are easily understood, there is no need to expand. |
+- Offer multiple plan options with expected titles like "lite," "standard" and "premium".
+- Use as few charge units/features as necessary to communicate pricing.
+
+**Don't**
+
+- Use sentence format for features/charge units.
+- Write more details per plan than needed -- if the features are easily understood, there is no need to expand.
 
 | **Examples**                      |
 | :-------------------------------- |
 | ![](images/pricing-example-1.png) |
 | ![](images/pricing-example-2.png) |
+
+## Search and Categorization
+
+Users will encounter your offering through a variety of funnels, including web search and both authenticated and unauthenticated visits to the Catalog. In the Catalog, they can use a combination of searching, browsing, and filtering tools to identify what they're looking for and start using it. It's important to configure your offering to show up in the right place so users discover it when it is relevant to them.
+
+### Categorization
+
+The catalog team will work with individual offering teams to determine which category their offerings belong in.
+
+### Filtering
+
+Tag your service with the appropriate required metadata, so users can narrow down their options and easily find your offering.
+
+- **Author:** Use the IBM tag If your service has been created by an IBM team or acquisition. Use the Third-Party tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The community tag is only used for community buildpacks.
+- **Compliance:** Use the EU-Supported tag if your service meets the [criteria for EU-Supported Cloud](https://ibm.box.com/s/kdqtyq7rplwkpk31her53i14vg1lnt17).
+- **Plans:** Our IBM teams will work with you to determine if your service is a good candidate for our "Lite" plan.
+- **Release:** Only use the experimental or beta tag if your offering is going through the process of creating a new offering in the catalog.
+
+### Search tags (optional)
+
+Search tags allow you to add specific keywords to your offering so it will appear in Catalog search results.
+Do:
+Include keywords that you think your users will search for that pertain to your offering.
+Include alternate or previous names for your offering
+Include common misspellings
+Don't:
+Add words that are only slightly related to or not at all related to your offering
 
 ## Usage & Analytics
 
