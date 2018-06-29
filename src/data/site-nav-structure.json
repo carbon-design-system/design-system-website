@@ -22,6 +22,7 @@
   "your-product-on-ibm-cloud": {
     "title": "Your Product on IBM Cloud",
     "subnav": {
+      "catalog-entry": "Catalog Entry",
       "user-flow": "User Flow",
       "service-providers": "Service Providers"
     }
