@@ -24,7 +24,8 @@
     "subnav": {
       "catalog-entry": "Catalog Entry",
       "user-flow": "User Flow",
-      "service-providers": "Service Providers"
+      "service-providers": "Service Providers",
+      "principles": "Principles"
     }
   },
   "style": {
