@@ -125,6 +125,12 @@ Importing a component this way will bring in any dependencies that component has
 
 Carbon Components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker. You can specify your own prefix by changing the SCSS variable `$prefix`.
 
+### HTML
+
+If you follow links to a component in [our components page](../../components/overview), you can find the HTML snippet for the component. You can copy the HTML snippet with the copy icon there. Paste it to where you want to put the component in your application.
+
+Though many components work without any JavaScript, some components require JavaScript code to support user interaction. Next section describes how to use the JavaScript code. Full list of components that require JavaScript code can be found at [here](https://github.com/carbon-design-system/carbon-components/blob/d60e9e1/src/globals/js/components.js).
+
 ### Javascript
 
 Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
