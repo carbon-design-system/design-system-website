@@ -15,4 +15,4 @@ For a more comprehensive list of cursors checkout [mozilla](https://developer.mo
 
 ### Browser Tooltip
 
-A browser tooltip appears when a user hovers over an item for an extended period of time. To enact a browser tooltip use the `title` attribute.  An example use case of a browser tooltip is for text truncation. 
+A browser tooltip appears when a user hovers over an item for an extended period of time.  To enact a browser tooltip use the `title` attribute.  A use case for Browser Tooltips are to show the entire string of a piece of truncated text. 
