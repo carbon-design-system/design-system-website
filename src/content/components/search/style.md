@@ -21,10 +21,10 @@ _Examples of normal, hover, and input Search states_
 
 Search text should be set in sentence case, with only the first letter of the first word capitalized.
 
-| Property                        | Font-size       | Font-weight         |  Type style |
-|---------------------------------|-----------------|---------------------|-------------|
-| `.bx--search-input`             | 14 / 0.875      | Semi-Bold / 600     | Zeta        |
-| `.bx--search-input:placeholder` | 14 / 0.875      | Normal / 400        | -           |
+| Property                        | Font-size       | Font-weight         |  Type style      |
+|---------------------------------|-----------------|---------------------|------------------|
+| `.bx--search-input`             | 14 / 0.875      | Semi-Bold / 600     | `.bx--type-zeta` |
+| `.bx--search-input:placeholder` | 14 / 0.875      | Normal / 400        | -                |
 
 ## Structure
 

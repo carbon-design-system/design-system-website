@@ -14,7 +14,7 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 | Class                 | Font-size (px/rem)| Font-weight  | Text styles         |
 |-----------------------|-------------------|--------------|---------------------|
-|`.bx--pagination__text`| 12 / 0.75         | Normal / 400 | Caption             |
+|`.bx--pagination__text`| 12 / 0.75         | Normal / 400 | `.bx--type-caption` |
 
 ## Structure
 
@@ -22,14 +22,15 @@ The Pagination bar is most commonly used in [Data Tables](/components/data-table
 
 | Class                                                      | Property                    | px / rem   | Spacing token |
 |------------------------------------------------------------|-----------------------------|------------|---------------|
+|`.bx--pagination`                                           | height                      | 40 / 2.5   | - |
 |`.bx--pagination`                                           | border                      | 1px        | - |
 |`.bx--pagination`                                           | padding-left, padding-right | 16 / 1     | $spacing-md   |
 |`.bx--pagination`                                           | padding-top, padding-bottom | 8 / 0.5    | $spacing-xs   |
-|`.bx--pagination--inline`                                   | height                      | 42 / 2.625 | - |
-|`.bx--pagination--inline .bx--pagination__button--backward` | margin-left                 | 16 / 1     | $spacing-md   |
+|`.bx--pagination--inline`                                   | height                      | 40 / 2.5   | - |
+|`.bx--pagination--inline .bx--pagination__button--backward` | margin-left, margin-right   | 16 / 1     | $spacing-md   |
+|`.bx--pagination--inline .bx--pagination__button--backward` | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--pagination .bx--select-input`                         | padding-right               | 20 / 1.25  | - |
 
-
-<!-- || Height (not directly defined)            | 40      | 2.5   | -->
 
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)

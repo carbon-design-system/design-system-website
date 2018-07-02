@@ -2,17 +2,18 @@
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                                                      | Property        | SCSS      | HEX       |
-|------------------------------------------------------------|-----------------|-----------|-----------|
-| `.bx--dropdown`                                            | background-color| $field-01 | #f4f7fb   |
-| `.bx--dropdown`                                            | box-shadow      | $ui-05    | #5a6872   |
-| `.bx--dropdown--light`                                     | background-color| $field-02 | #ffffff   |
-| `.bx--dropdown-list`                                       | background-color| $ui-01    | #ffffff   |
-| `.bx--dropdown-text`                                       | color           | $text-01  | #152935   |
-| `.bx--dropdown-text::placeholder`                          | color           | $text-03  | #cdd1d4   |
-| `.bx--dropdown-link:hover` </br> `.bx--dropdown-link:focus`| background-color| $hover-row| #5596e6 at 10% opacity   |
-| `.bx--dropdown__arrow`                                     | fill            | $brand-01 | #3d70b2   |
-| `.bx--list-box__selection--multi`                          | box-shadow      | $brand-01 | #3d70b2   |
+| Class                                                              | Property        | SCSS      | HEX       |
+|--------------------------------------------------------------------|-----------------|-----------|-----------|
+| `.bx--dropdown`                                                    | background-color| $field-01 | #f4f7fb   |
+| `.bx--dropdown` </br> `bx--multi-select bx--combo-box bx--list-box`| box-shadow      | $ui-05    | #5a6872   |
+| `.bx--dropdown--light`                                             | background-color| $field-02 | #ffffff   |
+| `.bx--dropdown-list`                                               | background-color| $ui-01    | #ffffff   |
+| `.bx--dropdown-text`                                               | color           | $text-01  | #152935   |
+| `.bx--dropdown-text::placeholder`                                  | color           | $text-03  | #cdd1d4   |
+| `.bx--dropdown-link:hover` </br> `.bx--dropdown-link:focus`        | background-color| $hover-row| #5596e6 at 10% opacity   |
+| `.bx--dropdown__arrow`                                             | fill            | $brand-01 | #3d70b2   |
+| `.bx--list-box__selection--multi`                                  | background-color| $brand-01 | #3d70b2   |
+
 
 
 
@@ -23,11 +24,11 @@ _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 
 ### States
 
-| Class                                       | Property        | SCSS       | HEX       |
-|---------------------------------------------|-----------------|------------|-----------|
-| `.bx--form-requirement`                     | color           | $support-01| #e0182d   |
-| `.bx--dropdown--open:focus`                 | box-shadow      | $brand-01  | #3d70b2   |
-| `.bx--select-input[data-invalid]`           | box-shadow      | $support-01| #e0182d   |
+| Class                                                         | Property        | SCSS       | HEX       |
+|---------------------------------------------------------------|-----------------|------------|-----------|
+| `.bx--form-requirement`                                       | color           | $support-01| #e0182d   |
+| `.bx--dropdown--open:focus` </br> `.bx--list-box__field:focus`| box-shadow      | $brand-01  | #3d70b2   |
+| `.bx--select-input[data-invalid]`                             | box-shadow      | $support-01| #e0182d   |
 
 **Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.s
 
@@ -42,10 +43,10 @@ All Dropdown text should be set in sentence case, with only the first word in a 
 
 | Class                   | Font-size  | Font-weight       | Type style |
 |-------------------------|------------|-------------------|------------|
-| `.bx--dropdown-text`    | 14 / 0.875 | Semi-bold / 600   | Zeta       |
-| `.bx--dropdown-link`    | 14 / 0.875 | Normal / 400      | -          |
-| `.bx--list-box__label`  | 14 / 0.875 | Semi-bold / 600   | Zeta       |
-| `.bx--form-requirement` | 12 / 0.75  | Normal / 400      | -          |
+| `.bx--dropdown-text`    | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta` |
+| `.bx--dropdown-link`    | 14 / 0.875 | Normal / 400      | - |
+| `.bx--list-box__label`  | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta` |
+| `.bx--form-requirement` | 12 / 0.75  | Normal / 400      | - |
 
 
 ## Layer
@@ -90,7 +91,7 @@ _Normal, active, open, and disabled states for Dropdown_
 _Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
 
 <!--![Hover and focus states for a Multi-Select Dropdown](images/dropdown-style-4.png)
-_Hover and focus zstates for a Multi-Select Dropdown_-->
+_Hover and focus states for a Multi-Select Dropdown_-->
 
 
 
@@ -99,10 +100,11 @@ _Hover and focus zstates for a Multi-Select Dropdown_-->
 | Class                               | Property                   | px / rem   | Spacing token |
 |-------------------------------------|----------------------------|------------|---------------|
 | `.bx--list-box.bx--list-box--inline`| height                     | 32 / 2     | - |
-| `.bx--list-box__menu-item`          | padding-right, padding-left| 8  / 0.5   | $spacing-xs   |
 | `.bx--list-box__menu-item`          | height                     | 40 / 2.5   | - |
+| `.bx--list-box__menu-item`          | padding-right, padding-left| 16  / 1    | $spacing-md   |
 | `.bx--checkbox-label`               | padding-left               | 4 / 0.25   | $spacing-2xs  |    
-| `.bx--list-box__menu-icon`          | padding-left, padding-right| 8 / 0.5    | $spacing-xs   |
+| `.bx--list-box__menu-icon`          | padding-right              | 12 / 0.75  | $spacing-sm   |
+| `.bx--list-box__menu-icon`          | padding-right              | 10 / 0.625 | - |
 | `.bx--checkbox-label::before`       | height                     | 18 / 1.125 | - |
 
 
@@ -125,12 +127,14 @@ _Hover and focus states for Inline Dropdown_
 ## Filtering
 Filtering can be used with Dropdown and Multi-select Dropdown but not Inline Dropdown.
 
-| Class                        | Property                    | px / rem   | Spacing token |
-|------------------------------|-----------------------------|------------|---------------|
-|`.bx--list-box__selection svg`| height                      | 10 / 0.625 | - |
-|`.bx--list-box__menu-icon`    | padding-left, padding-right | 16 / 1     | $spacing-md   |
-|`.bx--list-box__selection`    | padding-left, padding-right | 16 / 1     | $spacing-md   |
-|`.bx--list-box__selection`    | height                      | 40 / 2.5   | - |
+| Class                            | Property                    | px / rem   | Spacing token |
+|----------------------------------|-----------------------------|------------|---------------|
+|`.bx--list-box__selection`        | height                      | 40 / 2.5   | - |
+|`.bx--list-box__selection svg`    | height                      | 10 / 0.625 | - |
+|`.bx--list-box__menu-icon`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--list-box__selection`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
+|`.bx--list-box__selection--multi` | height                      | 18 / 1.125 | - |
+
 
 
 ![Spacing for Multi-select Dropdown with Filtering](images/dropdown-style-7.png)

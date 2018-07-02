@@ -22,10 +22,10 @@ _Disabled and normal Checkbox states_
 
 Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words.
 
-| Class                | Font-size (px/rem)| Font-weight   | Type style |
-|----------------------|-------------------|---------------|------------|
-| `.bx--label`         | 14 / 0.875        | SemiBold / 600| Zeta       |
-| `.bx--checkbox-label`| 14 / 0.875        | Normal / 400  |  -         |
+| Class                | Font-size (px/rem)| Font-weight   | Type style       |
+|----------------------|-------------------|---------------|------------------|
+| `.bx--label`         | 14 / 0.875        | SemiBold / 600| `.bx--type-zeta` |
+| `.bx--checkbox-label`| 14 / 0.875        | Normal / 400  |  -               |
 
 ## Structure
 

@@ -17,11 +17,11 @@
 
 Modal labels are optional and should be set in all caps when used. Modal titles should be set in sentence case and should not exceed three words. Important directions or information in the Modal text can be bold, otherwise it should be in roman.
 
-| Class                       | Font-size (px/rem)| Font-weight     | Type style |
-|-----------------------------|-------------------|-----------------|------------|
-|`.bx--modal-header__label`   | 14 / 0.875        | Semi-Bold / 600 | Zeta       |
-|`.bx--modal-header__heading` | 28 / 1.75         | Light / 300     | Beta       |
-|`.bx--modal-content`         | 16 / 1            | Normal / 400    | -          |
+| Class                       | Font-size (px/rem)| Font-weight     | Type style       |
+|-----------------------------|-------------------|-----------------|------------------|
+|`.bx--modal-header__label`   | 14 / 0.875        | Semi-Bold / 600 | `.bx--type-zeta` |
+|`.bx--modal-header__heading` | 28 / 1.75         | Light / 300     | `.bx--type-beta` |
+|`.bx--modal-content`         | 16 / 1            | Normal / 400    | p                |
 
 ## Layer
 
@@ -33,13 +33,16 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 | Class                                     | Property                     | px / rem    | Spacing token |
 |-------------------------------------------|------------------------------|-------------|---------------|
-| `.bx--modal-container`                    | border-top                   | 5 / 0.313   | - |
+| `.bx--modal-container`                    | border-top                   | 4 / 0.25    | - |
 | `.bx--modal-close__icon`                  | height, width                | 10 / 0.625  | - |
 | `.bx--modal-container`                    | padding-left, padding-right  | 48 / 3      | $spacing-3xl  |
 | `.bx--modal-container`                    | padding-top                  | 40 / 2.5    | $spacing-2xl  |
 | `.bx--modal-header__label .bx--type-delta`| margin-bottom                | 8  / 0.5    | $spacing-xs   |
 | `.bx--modal-header`                       | margin-bottom                | 24 / 1.5    | $spacing-lg   |
 | `.bx--modal-content`                      | margin-bottom                | 48 / 3      | $spacing-3xl  |
+| `.bx--modal-footer`                       | padding-top, padding-bottom  | 32 / 2      | $spacing-xl   |
+| `.bx--modal-footer`                       | padding-left, padding-right  | 48 / 3      | $spacing-3xl  |
+| `.bx--btn--secondary + .bx--btn--primary,`| margin-left                  | 16 / 1      | $spacing-md   |
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
 _Structure and spacing measurements for a Passive Modal | px / rem_

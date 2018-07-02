@@ -52,13 +52,13 @@ _Examples of open, disabled, and help Select states_
 
 Select text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Select text should be three words or less.
 
-| Class                                | Font-size (px/rem) | Font-weight     | Type style |
-|--------------------------------------|--------------------|-----------------|------------|
-|`.bx--label`                          | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
-|`.bx--select--inline .bx--label`      | 14 / 0.875         | Normal / 400    | -          |
-|`.bx--select-input`                   | 14 / 0.875         | Normal / 400    | -          |
-|`.bx--select--inline.bx--select-input`| 14 / 0.875         | Semi-Bold / 600 | Zeta       |
-|`.bx--form-requirement`               | 12 / 0.75          | Normal / 400    | -          |
+| Class                                | Font-size (px/rem) | Font-weight     | Type style         |
+|--------------------------------------|--------------------|-----------------|--------------------|
+|`.bx--label`                          | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta`   |
+|`.bx--select--inline .bx--label`      | 14 / 0.875         | Normal / 400    | -                  |
+|`.bx--select-input`                   | 14 / 0.875         | Normal / 400    | -                  |
+|`.bx--select--inline.bx--select-input`| 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta`   |
+|`.bx--form-requirement`               | 12 / 0.75          | Normal / 400    | `.bx--type-caption`|
 
 ## Structure
 

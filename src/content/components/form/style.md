@@ -20,14 +20,14 @@ _Example of light fields with $field-02 (left) and the default version with $fie
 
 Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
 
-| Property                                  | Font-size (px/rem)| Font-weight    | Type style |
-|-------------------------------------------|-------------------|----------------|------------|
-| Heading                                   | 28 / 1.75         | Light / 300    | Beta       |
-| `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600| Zeta       |
-| `.bx--text-input`                         | 14 / 0.875        | Normal / 400   | -          |
-| `.bx--text-input::placeholder`            | 14 / 0.875        | Normal / 400   | -          |
-| `.bx--form-requirement`                   | 12 / 0.75         | Normal / 400   | -          |
-| `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400   | -          |
+| Property                                  | Font-size (px/rem)| Font-weight    | Type style         |
+|-------------------------------------------|-------------------|----------------|--------------------|
+| Heading                                   | 28 / 1.75         | Light / 300    | `.bx--type-beta`   |
+| `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600| `.bx--type-zeta`   |
+| `.bx--text-input`                         | 14 / 0.875        | Normal / 400   | -                  |
+| `.bx--text-input::placeholder`            | 14 / 0.875        | Normal / 400   | -                  |
+| `.bx--form-requirement`                   | 12 / 0.75         | Normal / 40    | `.bx--type-caption`|
+| `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400   | `.bx--type-caption`|
 
 
 ## Structure
@@ -41,11 +41,11 @@ All icons can be found on the [iconography](/style/iconography/library) library 
 
 ### Recommended
 
-| Space between        | px / rem  | Spacing token |
-|----------------------|-----------|---------------|
-| Inputs               | 24 / 1.5  | $spacing-lg   |
-| Non-input components | 32 / 2    | $spacing-xl   |
-| Grid gutter          | 20 / 1.25 | -             |
+| Space between        | Property      | px / rem  | Spacing token |
+|----------------------|---------------|-----------|---------------|
+| Inputs               | margin-bottom | 24 / 1.5  | $spacing-lg   |
+| Non-input components | margin-bottom | 32 / 2    | $spacing-xl   |
+| Grid gutter          | -             | 20 / 1.25 | -             |
 
 
 

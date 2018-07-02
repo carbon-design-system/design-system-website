@@ -42,11 +42,11 @@ _Number Input example in $field-02 (left) and $field-01 (right)_
 
 Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Class                                                      | Font-size (px/rem) | Font-weight     | Type style |
-|------------------------------------------------------------|--------------------|-----------------|------------|
-| `.bx--label`                                               | 14 / 0.875         | Semi-Bold / 600 | Zeta       |
-| `.bx--number input[type='number']`                         | 14 / 0.875         | Normal / 400    | -          |
-| `.bx--form-requirement`                                    | 12 / 0.75          | Normal / 400    | Caption    |
+| Class                                                      | Font-size (px/rem) | Font-weight     | Type style         |
+|------------------------------------------------------------|--------------------|-----------------|--------------------|
+| `.bx--label`                                               | 14 / 0.875         | Semi-Bold / 600 |`.bx--type-zeta`    |  
+| `.bx--number input[type='number']`                         | 14 / 0.875         | Normal / 400    | -                  |
+| `.bx--form-requirement`                                    | 12 / 0.75          | Normal / 400    |`.bx--type-caption` |
 
 ## Structure
 
@@ -57,8 +57,8 @@ The height of a Number Input is always the same. The width however, varies based
 |`.bx--number input[type='number']`      | height        | 40 / 2.5    | - |
 |`.bx--number input[type='number']`      | padding-left  | 16 / 1      | $spacing-md   |
 |`.bx--number input[type='number']`      | padding-right | 32 / 2      | $spacing-xl   |
-|`.bx--number input[type='number']`      | box-shadow    | 1 / 0.0625  | - |
-|`.bx--number input[type='number']:focus`| box-shadow    | 2 / 0.125   | - |
+|`.bx--number input[type='number']`      | box-shadow    | 1px         | - |
+|`.bx--number input[type='number']:focus`| box-shadow    | 2px         | - |
 
 
 ---

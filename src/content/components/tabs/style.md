@@ -11,9 +11,9 @@
 
 Tab label should be set in sentence case, and should not exceed three words.
 
-| Class      | Font-size (px/rem)| Font-weight     | Type style |
-|------------|-------------------|-----------------|------------|
-| `.bx--tabs`| 14 / 0.875        | Semi-Bold / 600 | Zeta       |
+| Class      | Font-size (px/rem)| Font-weight     | Type style       |
+|------------|-------------------|-----------------|------------------|
+| `.bx--tabs`| 14 / 0.875        | Semi-Bold / 600 | `.bx--type-zeta` |
 
 ## Structure
 

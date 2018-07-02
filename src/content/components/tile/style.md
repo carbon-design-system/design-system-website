@@ -22,7 +22,7 @@
 |-----------|------------|----------|---------------|
 |`.bx--tile`| min-height | 64 / 4   | - |
 |`.bx--tile`| min-width  | 128 / 8  | - |
-|`.bx--tile`| padding    | 16 / 1   | $spacing-md   |
+|`.bx--tile`| padding    | 16 / 1 (minimum)   | $spacing-md   |
 
 
 ![Structure and spacing measurements for Tile](images/tile-style-3.png)

@@ -39,12 +39,12 @@ _Examples of default and user-input states for Text Input in both $field-02 (lef
 
 Text Input labels and placeholder text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Text Input labels should be three words or less.
 
-| Class                                     | Font-size (px/rem)| Font-weight     | Type style |
-|-------------------------------------------|-------------------|-----------------|------------|
-| `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600 | Zeta       |
-| `.bx--text-input`                         | 14 / 0.875        | Normal / 400    | -          |
-| `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400    | -          |
-| `.bx--form-requirement` | 12 / 0.75         | Normal / 400    | -          |
+| Class                                     | Font-size (px/rem)| Font-weight     | Type style          |
+|-------------------------------------------|-------------------|-----------------|---------------------|
+| `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600 | `.bx--type-zeta`    |
+| `.bx--text-input`                         | 14 / 0.875        | Normal / 400    | -                   |
+| `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400    | `.bx--type-caption` |
+| `.bx--form-requirement`                   | 12 / 0.75         | Normal / 400    | `.bx--type-caption` |
 
 ## Structure
 
@@ -53,7 +53,6 @@ Text Input labels and placeholder text should be set in sentence case, with only
 |`.bx--text-input`      | height                      | 40 / 2.5 | - |
 |`.bx--label`           | margin-bottom               | 8 / 0.5  | $spacing-xs   |
 |`.bx--text-input`      | padding-left, padding-right | 16 / 1   | $spacing-md   |
-|`.bx--form-item`       | margin-bottom               | 24 / 1.5 | $spacing-lg   |
 |`.bx--text-input`      | box-shadow                  | 1px      | - |
 |`.bx--text-input:focus`| box-shadow                  | 2px      | - |
 

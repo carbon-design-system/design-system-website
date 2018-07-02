@@ -13,10 +13,10 @@
 ## Typography
 Structured List headers should be set in all caps, while all other text is set in sentence case. All typography is left aligned. **Line height** for Structured Lists should be set at 18px / 1.25rem.
 
-| Property                  | Font-size (px/rem) | Font-weight     | Type style |
-|---------------------------|--------------------|-----------------|------------|
-| `.bx--structured-list-th` | 12 / 0.75          | Semi-Bold / 600 | Omega      |
-| `.bx--structured-list`    | 14 / 0.875         | Normal / 400    | -          |
+| Property                  | Font-size (px/rem) | Font-weight     | Type style        |
+|---------------------------|--------------------|-----------------|-------------------|
+| `.bx--structured-list-th` | 12 / 0.75          | Semi-Bold / 600 | `.bx--type-omega` |
+| `.bx--structured-list`    | 14 / 0.875         | Normal / 400    | -                 |
 
 ## Structure
 Structured Lists by default are not accompanied by a border, but one may be added for stylistic purposes, and should be set at 1px.  
@@ -27,8 +27,8 @@ Structured Lists by default are not accompanied by a border, but one may be adde
 | `.bx--structured-list`                                     | min-width                   | 500 / 31.25| - |
 | `.bx--structured-list-td` </br> `.bx--structured-list-th`  | padding-top, padding-bottom | 16 / 1     | $spacing-md   |
 | `.bx--structured-list-td` </br> `.bx--structured-list-th`  | padding-right               | 32 / 2     | $spacing-xl   |
-| `[data-structured-list] .bx--structured-list-td`           | padding                     | 16 / 1     | $spacing-md   |
-| `.bx-structured-list-condensed`                            | padding                     | 10 / 0.625 | - |
+| `[data-structured-list] .bx--structured-list-td`           | padding-left, padding-right | 16 / 1     | $spacing-md   |
+| `.bx-structured-list-condensed`                            | padding-top, padding-bottom | 10 / 0.625 | - |
 | `.bx--structured-list-svg`                                 | height, width               | 16 / 1     | - |
 
 

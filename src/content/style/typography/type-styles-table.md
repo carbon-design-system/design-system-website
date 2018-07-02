@@ -1,7 +1,7 @@
 
 |Display sizes  |Spec                |
 |---------------|--------------------|
-|Giga - 76     |**Giga** <br /> font-size: 76px / 4.75rem <br /> font-weight: light / 300 <br /> line-height: 1.25 (95px) <br /> ``.bx--type-giga`` |
+|Giga - 76     |**Giga** <br /> font-size: 76px / 4.75rem <br /> font-weight: light / 300 <br /> line-height: 1.25 (95px) <br /> <span>.bx--type-giga</span> |
 |Mega - 54     |**Mega** <br /> font-size: 54px / 3.375rem <br /> font-weight: light / 300 <br /> line-height: 1.25 (68px) <br /> <span>.bx--type-mega</span>|
 
 |Basic headers  |Spec                |
@@ -19,4 +19,3 @@
 |p - 16        |**p** <br /> font-size: 16px (1rem) <br /> font-weight: Regular (400) <br /> line-height: 1.5 (24px) <br /> p|
 |Caption - 12  |**Caption** <br /> font-size: 12px (0.75rem) <br /> font-weight: Regular (400) <br /> line-height: 1.5 (18px) <br /> <span>.bx--type-caption</span>|
 |Legal - 11    |**Legal** <br /> font-size: 11px (0.6875rem) <br /> font-weight: Regular (400) <br /> line-height: 1.5 (17px) <br /> <span>.bx--type-legal</span>|
-

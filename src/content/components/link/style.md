@@ -22,9 +22,9 @@ _Normal, hover disabled Link states_
 
 Link text should be set in set in sentence case with the first letter of each word capitalized. Links should not exceed three words.
 
-| Property    | Font-size (px/rem) | Font-weight    | Text style  |
-|-------------|--------------------|----------------|-------------|
-| `.bx--link` | 14 / 0.875         | Semi-Bold / 600| Zeta        |
+| Property    | Font-size (px/rem) | Font-weight    | Text style       |
+|-------------|--------------------|----------------|------------------|
+| `.bx--link` | 14 / 0.875         | Semi-Bold / 600| `.bx--type-zeta` |
 
 ## Structure
 

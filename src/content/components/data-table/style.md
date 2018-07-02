@@ -37,11 +37,11 @@ _Data Table on ui-01 vs ui-02_
 ## Typography
 Column headers should be in title case. All other table text should be sentenced case.
 
-| Class                      | Font-size (px/rem)| Font-weight    | Type style |
-|----------------------------|-------------------|----------------|------------|
-| `bx--data-table-v2-header` | 18 / 1.125        | Semibold / 600 | Delta      |
-| `bx--table-header-label`   | 14 / 0.875        | Semibold / 600 | Zeta       |
-| Text                       | 14 / 0.875        | Normal / 400   | -          |
+| Class                      | Font-size (px/rem)| Font-weight    | Type style       |
+|----------------------------|-------------------|----------------|------------------|
+| `bx--data-table-v2-header` | 18 / 1.125        | Semibold / 600 | `.bx--type-delta`|
+| `bx--table-header-label`   | 14 / 0.875        | Semibold / 600 | `.bx--type-zeta` |
+| `.bx--data-table-v2 td`    | 14 / 0.875        | Normal / 400   | `.bx--type-zeta` |
 
 
 ## Structure
@@ -80,31 +80,27 @@ Column widths can vary by content and only requires a minimum spacing between co
 ### Data table
 After the simple table structure, tables can be enhanced by adding any of the following: selectable rows, expanding rows, nested tables, row menus, table batch actions, overall table menu, and/or table filter.
 
-| Class                                                                            | Property                     | px   | rem   | Spacing token |
-|----------------------------------------------------------------------------------|------------------------------|------|-------|---------------|
-|`.bx--data-table-v2-header`                                                       | margin-bottom                | 16   | 1     | $spacing-md   |
-|`.bx--table-sort-v2__icon`                                                        | padding                      |  2   | -     | -             |
-|`.bx--data-table-v2 td:first-of-type` </br>  `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right  | 24   | 1.5   | $spacing-lg   |
-|| Enhanced internal  | 16   | 1     |
-|| Internal elements  | 16   | 1     |
+| Class                                                                            | Property                     | px / rem   | Spacing token |
+|----------------------------------------------------------------------------------|------------------------------|------------|---------------|
+|`.bx--data-table-v2-header`                                                       | margin-bottom                | 16 / 1     | $spacing-md   |
+|`.bx--table-sort-v2__icon`                                                        | padding                      | 2 / 0.125  | $spacing-3xs  |
+|`.bx--data-table-v2 td:first-of-type` </br>  `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right  | 24  / 1.5  | $spacing-lg   |
 
 
 <div data-insert-component="ImageGrid">
   <div>
-![Spacing for a basic Data Table](images/data-table-style-5.png)
-</div>
-<div>
-![Spacing for an enhanced Data Table](images/data-table-style-6.png)
+![Spacing for a basic Data Table](images/data-table-style-6.png)
 </div>
 </div>
+
 
 _Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
 
 ### Recommended
 
-| Attribute               | Property  |  px/rem    | Spacing token |
+| Spacing between         | Property  |  px/rem    | Spacing token |
 |-------------------------|-----------|------------|---------------|
-| Spacing between columns | padding   | ≥ 24 / 1.5 | $spacing-lg   |
+| Columns                 | padding   | ≥ 24 / 1.5 | $spacing-lg   |
 
 
 ### Toolbar

@@ -37,16 +37,20 @@ Truncated breadcrumbs are not currently built into the Breadcrumb component.The 
 
 | Class                                     | Property         | SCSS                | HEX       |
 |-------------------------------------------|------------------|---------------------|-----------|
-| Overflow text                             | color            | $text-01            | #152934   |
-| .bx--overflow-menu-options__option:hover` | background-color | $hover-row          | #5596e6 at 10% opacity |
+| `.bx--overflow-menu-options__btn`         | color            | $text-01            | #152934   |
+| `.bx--overflow-menu-options__option:hover`| background-color | $hover-row          | #5596e6 at 10% opacity |
 
 ### Typography
 
-| Class         | Font-size (px/rem) | Font-weight  |
-|---------------|--------------------|--------------|
-| Dropdown text | 14 / 0.875         | Roman / 400  |
+| Class                             | Font-size (px/rem) | Font-weight  | Font style |
+|-----------------------------------|--------------------|--------------|------------|
+| `.bx--overflow-menu-options__btn` | 14 / 0.875         | Roman / 400  | -          |
 
 ### Structure
-| Attribute                    | Property   | px | rem|
-|------------------------------|------------|----|----|
-| Icon & dropdown              | 8  | 0.5 |
+
+| Class                        | Property      | px / rem | Spacing token |  
+|------------------------------|---------------|----------|---------------|
+| `.bx--overflow-menu-options` | margin-top    | 8 / 0.5  | $spacing-xs   |
+
+![Truncated breadcrumb dropdown example](images/breadcrumb-style-3.png)
+_Recommended structure and spacing measurements for Breadcrumb | px / rem_

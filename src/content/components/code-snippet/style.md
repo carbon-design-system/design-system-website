@@ -33,7 +33,7 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 |------------------------|--------------------|------------|---------------|
 | `.bx--snippet--single` | height             | 56  / 3.5  | -             |
 | `.bx--snippet--single` | width (100%)       | 600 / 37.5 | -             |
-| `.bx--snippet--single` | padding-right (2.5)| 24  / 1.5  | $spacing-lg   |
+| `.bx--snippet--single` | padding-right      | 40  / 2.5  | $spacing-2xl  |
 | `.bx--snippet--single` | padding-left       | 16  / 1    | $spacing-md   |
 
 <!-- Not done with spacing but with positioning
@@ -53,19 +53,13 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 | `.bx--snippet--multi`                       | width                       | 600 / 37.5 | -             |
 | `.bx--snippet--multi`                       | padding-top, padding-bottom | 16  / 1    | $spacing-md   |
 | `.bx--snippet--multi`                       | padding-right               | 48  / 3    | $spacing-3xl  |
+| `.bx--snippet--multi`                       | padding-left                | 24  / 1.5  | $spacing-lg   |
 | `.bx--snippet__icon`                        | height, width               | 16  / 1    | -             |
 
 
 ![](images/code-snippet-style-2.png)
 _Structure and spacing measurements for Multi-line Snippet | px / rem_
 
-
----
-***
-> 
-![](images/code-snippet-style-3.png)
-
-_Structure and spacing measurements for Copy icon | px / rem_
 
 
 ### Inline Code Snippet
@@ -76,4 +70,9 @@ _Structure and spacing measurements for Copy icon | px / rem_
 |`.bx--snippet--inline`     | border-radius               | 4                       | - |
 |`.bx--snippet--inline code`| padding-right, padding-left | 8 / 0.5                 | $spacing-xs   |
 
-<!-- || height             | 22 | 1.375 | (not expliciily defined) -->
+---
+***
+> 
+![](images/code-snippet-style-3.png)
+
+_Structure and spacing measurements for Inline Code Snippet | px / rem_

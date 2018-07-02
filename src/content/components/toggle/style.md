@@ -19,23 +19,23 @@ _Examples of inactive, inactive hover, and active states for a Toggle_
 
 Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| Class                                                      | Font-size (px/rem)| Font-weight  | Text style |
-|------------------------------------------------------------|-------------------|--------------|------------|
-| `.bx--label`                                               | 14 / 0.875        | Normal / 600 | Zeta       |
-| `.bx--toggle__text--left` </br> `.bx--toggle__text--right` | 14 / 0.875        | Normal / 400 | -          |
+| Class                                                      | Font-size (px/rem)| Font-weight  | Text style       |
+|------------------------------------------------------------|-------------------|--------------|------------------|
+| `.bx--label`                                               | 14 / 0.875        | Normal / 600 | `.bx--type-zeta` |
+| `.bx--toggle__text--left` </br> `.bx--toggle__text--right` | 14 / 0.875        | Normal / 400 | -                |
 
 ## Structure
 
 ### Toggle
 
-| Class                           | Property                  | px / rem   | Spacing token |
-|---------------------------------|---------------------------|------------|---------------|
-| `.bx--toggle__appearance`       | width                     | 48 / 3     | - |
-| `.bx--toggle__appearance:after` | height, width             | 24 / 1.5   | - |
-| `.bx--toggle__appearance:after` | border                    | 2 / 0.125  | - |
-| `.bx--toggle__label`            | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
-| `.bx--toggle__text--left`       | margin-right              | 8 / 0.5    | $spacing-xs   |
-| `.bx--toggle__text--right`      | margin-left               | 8 / 0.5    | $spacing-xs   |
+| Class                                                     | Property                  | px / rem   | Spacing token |
+|-----------------------------------------------------------|---------------------------|------------|---------------|
+| `.bx--toggle__appearance`                                 | width                     | 48 / 3     | - |
+| `.bx--toggle__appearance:after`                           | height, width             | 24 / 1.5   | - |
+| `.bx--toggle__appearance:after`                           | border                    | 2 / 0.125  | - |
+| `.bx--toggle__label`                                      | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
+| `.bx--toggle__text--left` </br> `.bx--toggle__text--right`| margin-right, margin-left | 8 / 0.5    | $spacing-xs   |
+
 
 
 

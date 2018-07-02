@@ -64,8 +64,8 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn--sm`                  | height                       | 32 / 2   | $spacing-xl   |
 | `.bx--btn`                      | padding-left, padding-right  | 16 / 1   | $spacing-md   |
 | `.bx--btn--sm`                  | padding-left, padding-right  | 16 / 1   | $spacing-md   |
-| `.bx--btn .bx--btn__icon`       | margin-left                  | 8  / 0.5 | $spacing-xs   |
-| `.bx--btn--ghost .bx--btn__icon`| margin-left                  | 8  / 0.5 | $spacing-xs   |
+| `.bx--btn .bx--btn__icon`       | margin-left, margin-right    | 8  / 0.5 | $spacing-xs   |
+| `.bx--btn--ghost .bx--btn__icon`| margin-left, margin-right    | 8  / 0.5 | $spacing-xs   |
 
 
 

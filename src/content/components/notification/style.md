@@ -17,10 +17,10 @@
 
 Notification titles should not exceed more than three words. Notification text should be set in sentence case with only the first word capitalized.
 
-| Class                                                                        | Font-size (px/rem) | Font-weight    | Type style |
-|------------------------------------------------------------------------------|--------------------|----------------|------------|
-|`.bx--toast-notification__title` </br> `.bx--inline-notification__title`      | 14 / 0.875         | Semi-Bold / 600| Zeta       |
-|`.bx--toast-notification__subtitle` </br> `.bx--inline-notification__subtitle`| 14 / 0.875         | Normal / 400   | -          |
+| Class                                                                        | Font-size (px/rem) | Font-weight    | Type style       |
+|------------------------------------------------------------------------------|--------------------|----------------|------------------|
+|`.bx--toast-notification__title` </br> `.bx--inline-notification__title`      | 14 / 0.875         | Semi-Bold / 600| `.bx--type-zeta` |
+|`.bx--toast-notification__subtitle` </br> `.bx--inline-notification__subtitle`| 14 / 0.875         | Normal / 400   | -                |
 
 
 ## Layer
@@ -53,16 +53,16 @@ _Structure and spacing measurements for a Toast Notification | px / rem_
 
 The width of an Inline Notification will vary based on content.
 
-| Property                           | Property                                 | px / rem   | Spacing token |
-|------------------------------------|------------------------------------------|------------|---------------|
-| `.bx--inline-notification`         | min-height                               | 40 / 2.5   | - |
-| `.bx--inline-notification__close-icon`  | height, width                       | 10 / 0.625 | - |
-| `.bx--inline-notification--info` </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>     `.bx--inline-notification--warning`  | border                                   | 1px     | - |
-| `.bx--inline-notification--info`  </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>  `.bx--inline-notification--warning`  | border-left                              | 6px      | - |  
-| `.bx--inline-notification__text-wrapper`  | margin-left, margin-right         | 10 / 0.625  | - |
-| `.bx--inline-notification`  | margin-top, margin-bottom                       | 10 / 0.625  | - |  
-| `.bx--inline-notification`  | padding-top, padding-bottom                     | 12 / 0.75   | $spacing-sm  |
-| `.bx--inline-notification`  | padding-left, padding-bottom                    | 16 / 1      | $spacing-md  |
+| Property                                  | Property                                 | px / rem   | Spacing token |
+|-------------------------------------------|------------------------------------------|------------|---------------|
+| `.bx--inline-notification`                | min-height                               | 40 / 2.5   | - |
+| `.bx--inline-notification__close-icon` vv | height, width                            | 10 / 0.625 | - |
+| `.bx--inline-notification--info` </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br>  `.bx--inline-notification--warning` | border                                      | 1px     | - |
+| `.bx--inline-notification--info` </br> `.bx--inline-notification--error` </br> `.bx--inline-notification--success` </br> `.bx--inline-notification--warning`  | border-left                                 | 6px      | - |  
+| `.bx--inline-notification__text-wrapper`  | margin-left, margin-right                | 16 / 1     | $spacing-md  |
+| `.bx--inline-notification`                | margin-top, margin-bottom                | 16 / 1     | $spacing-md  |
+| `.bx--inline-notification`                | padding-top, padding-bottom              | 12 / 0.75  | $spacing-sm  |
+| `.bx--inline-notification`                | padding-left, padding-left               | 16 / 1     | $spacing-md  |
 
 
 

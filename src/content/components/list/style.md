@@ -8,10 +8,10 @@
 
 Level 1 and 2 of any list type should be set in bold and sentence case, with only the first word in a phrase and any proper noun capitalized. **Line height** for lists should be set at 24px / 1.5rem.
 
-| Class                                 | Font-size (px/rem)| Font-weight    | Text style  |
-|---------------------------------------|-------------------|----------------|-------------|
-|`.bx--list__item`                      | 14 / 0.875        | Semi-Bold / 600| Zeta        |
-|`.bx--list--nested > .bx--list__item`  | 14 / 0.875        | Normal / 400   | -           |
+| Class                                 | Font-size (px/rem)| Font-weight    | Text style       |
+|---------------------------------------|-------------------|----------------|------------------|
+|`.bx--list__item`                      | 14 / 0.875        | Semi-Bold / 600| `.bx--type-zeta` |
+|`.bx--list--nested > .bx--list__item`  | 14 / 0.875        | Normal / 400   | -                |
 
 ## Structure
 
@@ -22,6 +22,7 @@ Level 1 unordered list points are bulleted while Level 2 points are marked with 
 | Class                                             | Property             | px / rem  | Spacing token |
 |---------------------------------------------------|----------------------|-----------|---------------|
 | `.bx--list--unordered` </br> `.bx--list--ordered` | padding              | 16 / 1    | $spacing-md   |
+| `.bx--list--ordered`                              | line-height          | 24/1.5    | -             |
 
 <div data-insert-component="ImageGrid">
   <div>

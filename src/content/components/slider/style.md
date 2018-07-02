@@ -12,10 +12,10 @@
 ## Typography
 Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| Class 			               | Font-size (px/rem) | Font-weight    | Type style |
-|----------------------------|--------------------|----------------|------------|
-| `.bx--label`               | 14 / 0.875         | Semi-Bold / 600| Zeta       |
-| `.bx--slider__range-label` | 14 / 0.875         | Normal / 400   | -          |
+| Class 			               | Font-size (px/rem) | Font-weight    | Type style       |
+|----------------------------|--------------------|----------------|------------------|
+| `.bx--label`               | 14 / 0.875         | Semi-Bold / 600| `.bx--type-zeta` |
+| `.bx--slider__range-label` | 14 / 0.875         | Normal / 400   | -                |
 
 ## Structure
 The width of a Slider varies based on page content and layout.

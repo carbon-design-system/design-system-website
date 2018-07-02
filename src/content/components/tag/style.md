@@ -2,9 +2,9 @@
 
 Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.
 
-| Property   | Font-size (px/rem)| Font-weight  | Type style |
-|------------|-------------------|--------------|------------|
-| `.bx--tag` | 12 / 0.75         | Normal / 400 | Caption    |
+| Property   | Font-size (px/rem)| Font-weight  | Type style          |
+|------------|-------------------|--------------|---------------------|
+| `.bx--tag` | 12 / 0.75         | Normal / 400 | `.bx--type-caption` |
 
 ## Structure
 
@@ -14,7 +14,7 @@ All tags have the same height. However, the width of tags varies based on the am
 |----------|-----------------------------|------------|---------------|
 |`.bx--tag`| height                      | 20 / 1.25  | - |
 |`.bx--tag`| radius                      | 15px       | - |
-|`.bx--tag`| margin                      | 2px        | - |
+|`.bx--tag`| margin                      | 3px        | - |
 |`.bx--tag`| padding-left, padding-right | 10 / 0.625 | - |
 
 ---

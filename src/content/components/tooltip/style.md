@@ -21,11 +21,11 @@ _Example of closed and open states for a Tooltip_
 ## Typography
 Tooltip labels and text should be set in sentence case.
 
-| Property                                                                 | Font-size (px/rem)| Font-weight    | Type styles|
-|--------------------------------------------------------------------------|-------------------|----------------|------------|
-| `.bx--tooltip__label`                                                    | 16 / 1            | Semi-Bold / 600| Epsilon    |
-| `.bx--tooltip p`                                                         | 14 / 0.875        | Normal / 400   | -          |
-| `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` | 12 / 0.75         | Normal / 400   | Caption    |
+| Property                                                                 | Font-size (px/rem)| Font-weight    | Type styles         |
+|--------------------------------------------------------------------------|-------------------|----------------|---------------------|
+| `.bx--tooltip__label`                                                    | 16 / 1            | Semi-Bold / 600| `.bx--type-epsilon` |
+| `.bx--tooltip p`                                                         | 14 / 0.875        | Normal / 400   | -                   |
+| `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top:before` | 12 / 0.75         | Normal / 400   | `.bx--type-caption` |
 
 
 ## Layer
@@ -47,7 +47,7 @@ All Tooltip types have a varying height based on the amount of content they cont
 | `.bx--tooltip__trigger svg`| height, width | 16 /  1    | - |
 | `.bx--tooltip__trigger`    | margin-left   | 8 / 0.5    | $spacing-xs   |
 | `.bx--tooltip`             | padding       | 16 / 1     | $spacing-md   |
-| `.bx--tooltip`             | margin-top    | 4 / 0.25   | $spacing-2xs  |
+| `.bx--tooltip`             | margin-top    | 8 / 0.5    | $spacing-2xs  |
 
 
 
