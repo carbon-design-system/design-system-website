@@ -1,5 +1,5 @@
 import window from 'window-or-global';
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
@@ -26,6 +26,9 @@ window.addEventListener('load', () => {
 });
 
 ReactDOM.render(
-  <Router history={browserHistory} onUpdate={logPageView} routes={routes} />,
+  <Fragment>
+    <Router history={browserHistory} onUpdate={logPageView} routes={routes} />
+    <input type="text" className="bx--visually-hidden" />
+  </Fragment>,
   document.getElementById('root'),
 );
