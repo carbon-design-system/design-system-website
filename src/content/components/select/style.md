@@ -78,7 +78,7 @@ _Structure and spacing measurements for Select | px / rem_
 
 ### Recommended
 
-The following specs are not built into the Select component but are recommended by design as the proper amount of space to distance Select from another form element or component.
+The following specs are not built into the Select component but are recommended by design as the proper amount of space between a Select and other form elements/components.
 
 | Class       | Property                   | px / rem  | Spacing token |
 |-------------|----------------------------|-----------|---------------|

@@ -31,7 +31,7 @@ The on-click dropdown should follow the [Overflow Menu](/components/overflow-men
 _Structure and spacing measurements for Breadcrumb | px / rem_
 
 ## Recommended
-Truncated breadcrumbs are not currently built into the Breadcrumb component.The following colors from the [Overflow Menu](/overflow/style) are recommended for the overflow Breadcrumb list.
+Truncated breadcrumbs are not currently built into the Breadcrumb component. The following colors from the [Overflow Menu](/overflow/style) are recommended for the overflow Breadcrumb list.
 
 ### Color
 

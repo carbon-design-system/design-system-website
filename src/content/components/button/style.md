@@ -78,7 +78,7 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
     ![Structure for a small Primary Button](images/button-style-8.png)
   </div>
 </div>
-_Stucture measurements for small and regular Primary Button | px / rem_
+_Structure measurements for small and regular Primary Button | px / rem_
 
 
 <div data-insert-component="ImageGrid">
@@ -105,7 +105,7 @@ _Spacing measurements for various Button types | px / rem_
 
 ### Recommended
 
-The following specs are not built into any of the Button components but are recommended by design as the proper amount of space to distance Buttons should be from one another.
+The following specs are not built into any of the Button components but are recommended by design as the proper distance between Buttons.
 
 | Attribute                       | Property                  | px / rem  | Spacing token |
 |---------------------------------|---------------------------|-----------|---------------|
