@@ -29,7 +29,7 @@ Content Switchers must have at least two options for the user to choose from. Ea
 | Class                                                                             | Property                                 | px / rem | Spacing token |
 |-----------------------------------------------------------------------------------|------------------------------------------|----------|---------------|
 |`.bx--content-switcher`                                                            | height                                   | 40 / 2.5 | -             |
-|`.bx--content-switcher-btn:not(:first-of-type)` </br> `.bx--content-switcher-btn`  | border, border-left, </br> border-right  | 1  / -   | -             |
+|`.bx--content-switcher-btn:not(:first-of-type)` </br> `.bx--content-switcher-btn`  | border, border-left, </br> border-right  | 1px      | -             |
 |`.bx--content-switcher-btn`                                                        | padding-left, padding-right              | 32 / 2   | $spacing-xl   |
 
 ---

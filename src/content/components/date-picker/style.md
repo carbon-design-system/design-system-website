@@ -74,7 +74,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 |`.bx--date-picker__icon`                                       | height & width                           | 16 / 1      | - |
 |`.bx--date-picker__calendar`                                   | padding-right, padding-left              | 16 / 1      | $spacing-md  |
 |`.bx--date-picker__input`                                      | box-shadow                               | 1px         | - |
-|`.bx--date-picker__input:focus`                                | box-shadow                               | 2 / 0.125   | - |
+|`.bx--date-picker__input:focus`                                | box-shadow                               | 2px  | - |
 |`.bx--date-picker__icon + .bx--date-picker__input`             | padding-left                             | 48 / 3      | $spacing-3xl |
 
 <div data-insert-component="ImageGrid">
@@ -101,7 +101,7 @@ _Structure and spacing for Simple & Single Date Pickers | px / rem_
 |`.bx--date-picker__input`                                         | height                                       | 230 / 14.375| - |
 |`.bx--date-picker--range .bx--date-picker__input`                 | width                                        | 280 / 17.5  | - |
 |`.bx--date-picker__icon`                                          | height, width                                | 16  / 1     | - |
-|`.bx--date-picker__day.today::after`                              | height & width                               | 3 / -       | - |
+|`.bx--date-picker__day.today::after`                              | height & width                               | 3px       | - |
 |`.bx--date-picker--range > .bx--date-picker-container:first-child`| margin-right                                 | 8 / 0.5     | $spacing-xs   |
 |`.bx--date-picker__input`                                         | padding-right, padding-left, padding-top     | 16 / 1      | $spacing-md   |
 |`.bx--date-picker__input`                                         | padding-bottom                               | 4 / .25     | $spacing-2xs  |

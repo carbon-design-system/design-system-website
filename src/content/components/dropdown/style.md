@@ -41,12 +41,12 @@ _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 ## Typography
 All Dropdown text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized. Dropdown options should not exceed three words.
 
-| Class                   | Font-size  | Font-weight       | Type style |
-|-------------------------|------------|-------------------|------------|
-| `.bx--dropdown-text`    | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta` |
+| Class                   | Font-size  | Font-weight       | Type style          |
+|-------------------------|------------|-------------------|---------------------|
+| `.bx--dropdown-text`    | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta`    |
 | `.bx--dropdown-link`    | 14 / 0.875 | Normal / 400      | - |
-| `.bx--list-box__label`  | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta` |
-| `.bx--form-requirement` | 12 / 0.75  | Normal / 400      | - |
+| `.bx--list-box__label`  | 14 / 0.875 | Semi-bold / 600   | `.bx--type-zeta`    |
+| `.bx--form-requirement` | 12 / 0.75  | Normal / 400      | `.bx--type-caption` |
 
 
 ## Layer

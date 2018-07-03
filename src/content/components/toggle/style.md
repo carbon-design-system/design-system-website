@@ -32,7 +32,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 |-----------------------------------------------------------|---------------------------|------------|---------------|
 | `.bx--toggle__appearance`                                 | width                     | 48 / 3     | - |
 | `.bx--toggle__appearance:after`                           | height, width             | 24 / 1.5   | - |
-| `.bx--toggle__appearance:after`                           | border                    | 2 / 0.125  | - |
+| `.bx--toggle__appearance:after`                           | border                    | 2px        | - |
 | `.bx--toggle__label`                                      | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
 | `.bx--toggle__text--left` </br> `.bx--toggle__text--right`| margin-right, margin-left | 8 / 0.5    | $spacing-xs   |
 

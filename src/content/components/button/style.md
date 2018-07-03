@@ -50,9 +50,9 @@ _Primary, Secondary, and Ghost Button state examples_
 
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Class          | Font-size (px/rem) | Font-weight     | Type style  |
-|----------------|--------------------|-----------------|-------------|
-|`.bx--btn`      | 14 / 0.875         | Semi-Bold / 600 | Zeta        |
+| Class          | Font-size (px/rem) | Font-weight     | Type style       |
+|----------------|--------------------|-----------------|------------------|
+|`.bx--btn`      | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta` |
 
 ## Structure
 

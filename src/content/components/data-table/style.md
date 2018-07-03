@@ -41,7 +41,7 @@ Column headers should be in title case. All other table text should be sentenced
 |----------------------------|-------------------|----------------|------------------|
 | `bx--data-table-v2-header` | 18 / 1.125        | Semibold / 600 | `.bx--type-delta`|
 | `bx--table-header-label`   | 14 / 0.875        | Semibold / 600 | `.bx--type-zeta` |
-| `.bx--data-table-v2 td`    | 14 / 0.875        | Normal / 400   | `.bx--type-zeta` |
+| `.bx--data-table-v2 td`    | 14 / 0.875        | Normal / 400   | - |
 
 
 ## Structure
