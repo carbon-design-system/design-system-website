@@ -53,7 +53,7 @@ The Catalog is the place users go to discover, evaluate, and create. User testin
 - **Know your user:** none of the following best practices can be met if you do not know your user. Knowing where they come from, their pain points, and their needs allows you to decide how to best help them find and learn about your offering. It is the service provider's responsibility to
 - **The right amount of information:** Too much information or a "wall of text" makes it less likely users will read the information at all. Less information allows users to skim and evaluate more quickly.
 - **Relevant information:** Only include information that helps users understand what your offering does and how they can use it. Ask yourself "Will this content help my user make a decision?"
-- **Reduce cognitive load:** Asking your users to read information and make choices contributes to their cognitive load; too much load prevents users from making a decision. Whenever possible, simplify content and processes, for example: pre-fill configuration fields or inputs.
+- **Reduce cognitive load:** Asking your users to read information and make choices contributes to their cognitive load; too much load prevents users from making a decision. Whenever possible, simplify content and processes, for example: pre-fill configuration fields or inputs. Added something here.
 
 ### Catalog governance
 
