@@ -1,10 +1,10 @@
 ## Color
 
-| Class                                                                                         | Property         | SCSS      | HEX       |
-|-----------------------------------------------------------------------------------------------|------------------|-----------|-----------|
-| `.bx--data-table-v2 tbody`                                                                    | background-color | $ui-01    | #ffffff   |
-| `.bx--data-table-v2--zebra tbody tr:nth-child(even)`                                          | background-color | $ui-02    | #f4f7fb   |
-| `.bx--data-table-v2 thead`                                                                    | background-color | $ui-02    |  #f4f7fb  |
+| Class                                                                                         | Property         | SCSS       | HEX       |
+|-----------------------------------------------------------------------------------------------|------------------|------------|-----------|
+| `.bx--data-table-v2 tbody`                                                                    | background-color | $ui-01     | #ffffff   |
+| `.bx--data-table-v2--zebra tbody tr:nth-child(even)`                                          | background-color | $ui-02     | #f4f7fb   |
+| `.bx--data-table-v2 thead`                                                                    | background-color | $ui-02     | #f4f7fb   |
 | `.bx--data-table-v2 tr:hover td`                                                              | background-color | $hover-row | #5596e6 at 10% opacity   |
 | `tr.bx--expandable-row-v2 > td:first-of-type:before`                                          | background-color | $brand-01  | #3d70b2   |
 | `.bx--data-table-v2 th:first-of-type` </br> `.bx--data-table-v2 th:last-of-type` </br> `.bx--data-table-v2 th`   | border-top, border-right, border-left|  $ui-04   |  #8897a2  |

@@ -9,8 +9,8 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |`.bx--select-input::placeholder`       | color        | $text-03      | #cdd1d4 |
 |`.bx--select--light.bx--select-input`  | background   | $field-02     | #ffffff |
 |`.bx--select--inline.bx--select-input` | background   | transparent   | -       |
-|`.bx--label`                           | color        | $text-01      | #152934 |
-|`.bx--label`                           | color        | $text-01      | #152934 |
+|`.bx--label`                           | color        | $text-01      | #152935 |
+|`.bx--label`                           | color        | $text-01      | #152935 |
 |`.bx--select__arrow`                   | fill         | $brand-01     | #3d70b2 |
 |`.bx--select--inline.bx--select-input` | color        | $brand-01     | #3d70b2 |
 

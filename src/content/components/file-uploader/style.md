@@ -2,11 +2,11 @@
 
 | Class                        | Property   |SCSS        | HEX     |
 |------------------------------|------------|------------|---------|
-| `.bx--label`                 | color      | $text-01   | #152934 |
+| `.bx--label`                 | color      | $text-01   | #152935 |
 | `.bx--label-description`     | color      | $text-02   | #5a6872 |
-| `.bx--file-filename`         | color      | $text-01   | #152934 |
+| `.bx--file-filename`         | color      | $text-01   | #152935 |
 | `.bx--file__selected-file`   | background | $ui-01     | #ffffff |
-| `.bx--file-close`            | fill       | $inverse-01| #152934 |
+| `.bx--file-close`            | fill       | $inverse-01| #152935 |
 
 
 ## Typography

@@ -6,7 +6,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |-----------------------------------|------------------|-----------|-----------|
 | `.bx--number`                     | background-color | $field-01 | #f4f7fb   |
 | `.bx--number--light`              | background-color | $field-02 | #ffffff   |
-| `.bx--label`                      | color            | $text-01  | #152934   |
+| `.bx--label`                      | color            | $text-01  | #152935   |
 | `.bx--number input[type='number']`| color            | $text-01  | #152935   |
 | `.bx--number input[type='number']`| box-shadow       | $ui-05    | #5a6872   |
 | `.bx--number__controls svg `      | fill             | $brand-01 | #3d70b2   |

@@ -9,17 +9,17 @@ If a `min date` is set on the calendar, then any text appearing before that date
 |-------------------------------------------------|------------------|------------|---------|
 |`.bx--date-picker__input`                        | background-color | $field-01  | #f4f7fb |
 |`.bx--date-picker__input`                        | border-bottom    | $ui-05     | #5a6872 |
-|`.bx--date-picker__input`                        | color            | $text-01   | #152934 |
+|`.bx--date-picker__input`                        | color            | $text-01   | #152935 |
 |`.bx--date-picker__input::placeholder`           | color            | $text-02   | #5a6872 |
 |`.bx--date-picker__input.bx--text-input--light`  | background-color | $field-02  | #ffffff |
-|`.bx--label`                                     | color            | $text-01   | #152934 |
+|`.bx--label`                                     | color            | $text-01   | #152935 |
 |`.bx--date-picker__calendar`                     | background-color | $ui-01     | #ffffff |
 |`.bx--date-picker__day.selected`                 | border           | $text-01   | #152934 |
 |`.bx--date-picker__day.inRange`                  | background-color | $ui-02     | #f4f7fb |
 |`.bx--date-picker__icon`                         | fill             | $brand-01  | #3d70b2 |
 |`.bx--date-picker__day.today::after`             | background-color | $brand-01  | #3d70b2 |
 |`.bx--date-picker__day.selected`                 | border           | $brand-01  | #3d70b2 |
-|`.bx--date-picker__day.inRange                `  | background-color | $text-01   | #152934 |
+|`.bx--date-picker__day.inRange                `  | background-color | $text-01   | #152935 |
 
 ![Example of a Date Picker](images/date-picker-style-1.png)
 _Date Picker example using both $field-02 (top) and $field-01 (bottom)_
