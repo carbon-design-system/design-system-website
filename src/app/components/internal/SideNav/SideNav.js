@@ -375,29 +375,3 @@ class SideNav extends Component {
   }
 
   export default SideNav;
-
-
-            // <Button
-            //   href="https://github.com/carbon-design-system/carbon-design-kit"
-            //   className="side-nav__link bx--btn"
-            //   kind="secondary"
-            //   icon="arrow--right"
-            //   target="_blank"
-            //   role="button"
-            //   iconDescription="sidenav link icon"
-            //   onClick={e => this.handleClick(e, 'Design Kit')}
-            // >
-            //   Design Kit
-            // </Button>
-            // <Button
-            //   href="https://github.com/carbon-design-system/carbon-components"
-            //   className="side-nav__link bx--btn"
-            //   kind="secondary"
-            //   icon="arrow--right"
-            //   target="_blank"
-            //   role="button"
-            //   iconDescription="sidenav link icon"
-            //   onClick={e => this.handleClick(e, 'Developer Kit')}
-            // >
-            //   GitHub Repo
-            // </Button>
