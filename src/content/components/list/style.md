@@ -2,7 +2,7 @@
 
 | Attribute    | SCSS          | HEX      |
 |----------|---------------|----------|
-| Text     | $text-01      | #152934  |
+| Text     | $text-01      | #152935  |
 
 ## Typography
 

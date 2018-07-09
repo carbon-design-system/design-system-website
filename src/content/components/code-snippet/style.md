@@ -4,7 +4,7 @@
 |--------------------------|----------|---------|
 | Code & terminal snippet: background | $ui-01   | #ffffff |
 | Code & terminal snippet: border     | $ui-03   | #dfe3e6 |  
-| Code & terminal snippet: text       | $ui-01   | #152934 |
+| Code & terminal snippet: text       | $ui-01   | #152935 |
 | Icon: copy               | $brand-01| #3d70b2 |
 | Inline code: background on ui-02     | $field-01  | #ffffff |
 | Inline code: background on ui-01     | $field-02  | #f4f7fb |

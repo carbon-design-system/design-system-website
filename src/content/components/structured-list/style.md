@@ -1,7 +1,7 @@
 ## Color
 | Attribute    | SCSS          | HEX      |
 |----------|---------------|----------|
-| Text     | $text-01      | #152934  |
+| Text     | $text-01      | #152935  |
 | Table header: border-bottom | $brand-01 | #3d70b2 |
 | Optional border | $ui-04 | #8897a2    |
 | Selection list row:hover  | $hover-row | #5596e6 at 10% opacity    |

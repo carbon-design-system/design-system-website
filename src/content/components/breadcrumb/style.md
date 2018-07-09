@@ -4,7 +4,7 @@
 |----------  |----------|-----------|
 | Title      | $brand-01| #3d70b2   |
 | Slash      | $text-02 | #5a6872  |
-| Overflow text  | $text-01  | #152934   |
+| Overflow text  | $text-01  | #152935   |
 | Row:hover | $hover-row | #5596e6 at 10% opacity |
 | Breadcrumb:hover  | $hover-primary-text | #294c86   |
 
