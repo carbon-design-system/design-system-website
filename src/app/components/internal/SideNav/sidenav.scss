@@ -145,18 +145,14 @@
     color: $brand-01;
     margin-bottom: 1rem;
     justify-content: space-between;
+    display: block;
 
-    .bx--btn__icon {
-      fill: $brand-01;
-    }
 
     &:hover,
     &:focus {
-      background-color: $brand-01;
+      color: $hover-primary;
 
-      .bx--btn__icon {
-        fill: $color__white;
-      }
+
     }
   }
 

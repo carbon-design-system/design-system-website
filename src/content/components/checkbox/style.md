@@ -1,12 +1,12 @@
 ## Color
 
-| Attribute             | SCSS        | HEX         |
-|-------------------|-------------|-------------|
-| Checked: fill     | $brand-01  | #3d70b2     |
-| Unchecked: border | $ui-05     | #5a6872     |
-| Unchecked: fill   | $ui-01     | #ffffff     |
-| Icon: checkmark   | $inverse-01 | #ffffff     |
-| Text              | $text-01    | #152935     |
+| Class                          | SCSS        | HEX         |
+|--------------------------------|-------------|-------------|
+|`.bx--checkbox:checked`         | $brand-01   | #3d70b2     |
+|`.bx--checkbox-label::before`   | $ui-05      | #5a6872     |
+|`.bx--checkbox-label::before`   | $ui-01      | #ffffff     |
+|`.bx--checkbox-label::after`    | $inverse-01 | #ffffff     |
+|`.bx--checkbox-label`           | $text-01    | #152935     |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -22,20 +22,19 @@ _Disabled and normal Checkbox states_
 
 Checkbox headings and labels should be sentence case, with only the first word in a phrase and any proper nouns capitalized. Checkbox headings and labels should not exceed three words.
 
-| Property   | Font-size (px/rem)     | Font-weight  | Type style |
-|------------|-----------------|--------------|-----|
-| Heading    | 14 / 0.875 | Semi-Bold / 600  | Zeta  |
-| Label      | 14 / 0.875 | Normal / 400 |    - |
+| Class                | Font-size (px/rem)| Font-weight   | Type style       |
+|----------------------|-------------------|---------------|------------------|
+| `.bx--label`         | 14 / 0.875        | SemiBold / 600| `.bx--type-zeta` |
+| `.bx--checkbox-label`| 14 / 0.875        | Normal / 400  |  -               |
 
 ## Structure
 
-| Property             | px | rem  |
-|----------------------|----|------|
-| Height & width       | 18 | 2.75 |
-| Outline              | 2  | -    |
-| Spacing: checkboxes  | 16 | 1    |
-| Spacing: checkbox & label | 8  | 0.5  |
-| External spacing     | 16 | 1    |
+| Class                                | Property             | px / rem  | Spacing token |
+|--------------------------------------|----------------------|-----------|---------------|
+|`.bx--checkbox-label::before`         | height & width       | 18 / 2.75 | -             |
+|`.bx--checkbox-label::before`         | border               | 2  / -    | -             |
+|`.bx--checkbox-label`                 | padding-left         | 8  / 0.5  | $spacing-xs   |
+|`.bx--form-item.bx--checkbox-wrapper` | margin-bottom        | 16 / 1    | $spacing-md   |
 
 ---
 ***
