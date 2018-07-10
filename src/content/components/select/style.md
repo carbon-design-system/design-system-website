@@ -14,8 +14,6 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |`.bx--select__arrow`                   | fill         | $brand-01     | #3d70b2 |
 |`.bx--select--inline.bx--select-input` | color        | $brand-01     | #3d70b2 |
 
-
-
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
 

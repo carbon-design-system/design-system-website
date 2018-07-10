@@ -4,6 +4,7 @@
 |-------------------|-----------|----------|----------|
 | `.bx--list__item` | color     | $text-01 | #152935  |
 
+
 ## Typography
 
 Level 1 and 2 of any list type should be set in bold and sentence case, with only the first word in a phrase and any proper noun capitalized. **Line height** for lists should be set at 24px / 1.5rem.

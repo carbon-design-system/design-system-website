@@ -140,7 +140,7 @@ class App extends Component {
       currentLocation === 'live' ? '' : <SideNavToggle onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />;
 
     return (
-      <div className="wrapper" onLoad={this.initCustomComponents}>
+      <div data-floating-menu-container className="wrapper" onLoad={this.initCustomComponents}>
         {toggleBtnContent}
         {sideNavContent}
         <div className={classNames}>

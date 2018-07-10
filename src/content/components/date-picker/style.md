@@ -2,8 +2,7 @@
 
  Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-If a `min date` is set on the calendar, then any text appearing before that date will be `#152934 @ 50%`, otherwise all text should be `#152934` (unless the number is selected or highlighted). Please refer to [Select](/components/select), for inline select styling.
-
+If a `min date` is set on the calendar, then any text appearing before that date will be `#152935 @ 50%`, otherwise all text should be `#152935` (unless the number is selected or highlighted). Please refer to [Select](/components/select), for inline select styling.
 
 | Class                                           | Property         | SCSS       | HEX     |
 |-------------------------------------------------|------------------|------------|---------|
@@ -14,7 +13,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 |`.bx--date-picker__input.bx--text-input--light`  | background-color | $field-02  | #ffffff |
 |`.bx--label`                                     | color            | $text-01   | #152935 |
 |`.bx--date-picker__calendar`                     | background-color | $ui-01     | #ffffff |
-|`.bx--date-picker__day.selected`                 | border           | $text-01   | #152934 |
+|`.bx--date-picker__day.selected`                 | border           | $text-01   | #152935 |
 |`.bx--date-picker__day.inRange`                  | background-color | $ui-02     | #f4f7fb |
 |`.bx--date-picker__icon`                         | fill             | $brand-01  | #3d70b2 |
 |`.bx--date-picker__day.today::after`             | background-color | $brand-01  | #3d70b2 |

@@ -5,7 +5,7 @@ Note that the color value of top bar of the Small and Medium Tooltips and the si
 |------------------|------------------------|------------|
 | Background       | $ui-01                 | #ffffff    |
 | Border           | $ui-04                 | #8897a2    |
-| Quantitative data value label | $text-01  | #152934    |
+| Quantitative data value label | $text-01  | #152935    |
 | Additional data value label (qualitative) | $text-02  | #5a6872   |
 | Data increment label  | $text-02  | #5a6872  |
 

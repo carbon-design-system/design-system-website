@@ -8,7 +8,6 @@
 | `.bx--label`               | color            | $text-01  | #152935  |
 | `.bx--slider__range-label` | color            | $text-02  | #5a6872  |
 
-
 ## Typography
 Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 

@@ -63,9 +63,11 @@ If you're starting a new project without a boilerplate,
 you need to know about a few things to get started.
 
 #### Autoprefixer
+
 Make sure your build process uses [autoprefixer](https://github.com/postcss/autoprefixer) to ensure vendor prefixes are automatically added to your output CSS.
 
 #### Default body styles
+
 CSS is automatically applied to `<body>` element, which comes from [\_css--body.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
 
 ```css
@@ -79,9 +81,11 @@ body {
 ```
 
 #### Icons
+
 A lot of components depend on SVG icons from [carbon-icons](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
 
 #### Global SCSS variables
+
 These variables are used to configure which parts of the SCSS get compiled, where each variable controls a SCSS file of the same name. All variables are set to `true` by default, except for `_css--font-face.scss`
 
 For example:
@@ -120,6 +124,12 @@ Importing a component this way will bring in any dependencies that component has
 #### Namespacing
 
 Carbon Components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker. You can specify your own prefix by changing the SCSS variable `$prefix`.
+
+### HTML
+
+If you follow links to a component in [our components page](../../components/overview), you can find the HTML snippet for the component. You can copy the HTML snippet with the copy icon there. Paste it to where you want to put the component in your application.
+
+Though many components work without any JavaScript, some components require JavaScript code to support user interaction. Next section describes how to use the JavaScript code. Full list of components that require JavaScript code can be found at [here](https://github.com/carbon-design-system/carbon-components/blob/d60e9e1/src/globals/js/components.js).
 
 ### Javascript
 
@@ -189,7 +199,7 @@ const modalInstance = Modal.create(modalElement);
 Instantiating a component basically does two things:
 
 - Hooks several event handlers on some DOM elements inside (in above example, ones in `modalElement`, e.g. close button)
-- Allows you to access public methods (found in [our components page](../../components/overview), e.g. [here](http://localhost:3000/components/modal/code#public-methods) for modal) via the instance reference (`modalInstance.show()`, etc. in above example)
+- Allows you to access public methods (found in [our components page](../../components/overview), e.g. [here](/components/modal/code#public-methods) for modal) via the instance reference (`modalInstance.show()`, etc. in above example)
 
 #### Higher-level component instantiation API
 
@@ -202,11 +212,11 @@ follow the instructions in [the next section](#wrapping-a-component-with-javascr
 #### Wrapping a component with JavaScript framework of your choice
 
 Many JavaScript frameworks have a mechanism to dynamically create/destroy DOM elements, for example, upon change in array.
-This often makes it unclear when the DOM element to instantiate Carbon component on is available, which often depends on the JavaScript framework you use.
+This often makes it unclear when the DOM element to instantiate a Carbon component is available, which often depends on the JavaScript framework you use.
 
 Also when DOM elements that Carbon components have been instantiated on are being destroyed, the Carbon component instances should be released so that e.g. there are no zombie event handlers.
 
-The easiest way to hook on the creation/destroy of DOM elements is defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
+The easiest way to hook on the creation/destruction of DOM elements is by defining a "wrapping component", with the JavaScript framework of your choice. Here's an example using Web Components' [Custom Elements v1 spec](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements), but the notion of components, along with the lifecycle callbacks, are commonly found in many other JavaScript frameworks.
 
 ```javascript
 class BXLoading extends HTMLElement {

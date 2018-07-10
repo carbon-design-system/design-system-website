@@ -15,7 +15,6 @@
 ### Syntax colors
 Carbon has defined a set of accessible syntax colors. View an incontext [example](https://codepen.io/team/carbon/full/eKMBLw/) on CodePen.
 
-
 ## Typography
 
 | Class                      | Font-size (px/rem)     | Font-weight  | Font-family |

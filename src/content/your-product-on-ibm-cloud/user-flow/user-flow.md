@@ -34,7 +34,7 @@ is also listed in the IBM Cloud Catalog. Users can discover and enter a product
 in one of two primary ways:
 
 1.  Direct entry by URL (from an internet search, Product marketing page,
-    Solution page, or other link)
+    Solution page, or other link)
 
 2.  Discovery in Cloud Catalog (or an embedded Catalog component)
 
@@ -48,9 +48,9 @@ The expected URL paths for your product are:
 |                | Future Path                       | Legacy Path                        |
 | -------------- | --------------------------------- | ---------------------------------- |
 | Product UI     | cloud.ibm.com/{product}           | console.bluemix.net/{product}      |
-| Marketing Page | ibm.com/cloud/{product}           |                                    |
+| Marketing Page | ibm.com/cloud/{product}           | -                                  |
 | Docs           | ibm.com/cloud/{product}/docs      | console.bluemix.net/docs/{product} |
-| API Endpoint   | api.ibm.com/cloud/{product} [TBD] |                                    |
+| API Endpoint   | api.ibm.com/cloud/{product} [TBD] | -                                  |
 
 ## Product Marketing Page
 
@@ -59,15 +59,15 @@ promotions, etc. They come to your Product Marketing Page to understand how the
 product can help them. You supply all the metadata for this page. Answer the
 user's questions, including:
 
-* What job does this Product do for me?
+- What job does this Product do for me?
 
-* What are its differentiating features?
+- What are its differentiating features?
 
-* Why should I use this product over a competing one?
+- Why should I use this product over a competing one?
 
-* What does it cost? What is it likely to cost for my level of usage?
+- What does it cost? What is it likely to cost for my level of usage?
 
-* If I decide to use it, what will I be doing?
+- If I decide to use it, what will I be doing?
 
 Be clear about the job the product will do for the user. Content should focus on
 technical accuracy and avoid unexplained buzzwords.
@@ -91,6 +91,8 @@ When a user lands on your Product UI for the first time, show a Welcome screen.
 Briefly state what job the Product will do for them. Tell the user the first 3
 things they will achieve with it.
 
+![](images/product-UI-flow-1.png)
+
 Do not act like a Product Marketing Page. Link out to the Product Marketing Page
 for details of features and pricing. Only summarize key points here.
 
@@ -110,7 +112,7 @@ your product will do for them, and be able to achieve three basic milestones:
 
 1.  Create a Resource
 
-2.  Modify the Resource in a meaningful way, and confirm the impact of that
+2.  Modify the Resource in a meaningful way, and confirm the impact of that
     change
 
 3.  Connect the Resource to another Resource in another Product to achieve some
@@ -174,7 +176,7 @@ they actually work as intended.
 ## Connecting
 
 IBM Cloud is designed to enable teams to collaborate around data. Your product
-should connect to at least one or two other products to either get or put data.
+should connect to at least one or two other products to either get or put data.
 
 (Future) Leverage our embeddable Connect widget within your user flows to enable
 the user to quickly select a Resource within another product, then either get
@@ -188,7 +190,7 @@ Employ the Connect flow as follows:
 
 3.  The target product provides a custom workflow action.
 
-(Future) To make your product's Resources a target for other products to
+(Future) To make your product's Resources a target for other products to
 consume, implement the Connect workflow action (step 3 in the flow above). When
 your product registers with the Cloud Resource Controller, its Connect
 capabilities will be registered for use by other products.
@@ -201,6 +203,8 @@ created and worked on previously, and to provide a lookup system for making
 Connections between Resources. It is not meant to give a fine-grained view of
 every detail of a Resource. To see granular data, the user must open the
 Resource in its Product UI.
+
+![](images/Resource-Groups-1.png)
 
 Expose Resources using a coarse-grained granularity that is sufficient enough
 to:
@@ -221,7 +225,7 @@ Likewise, a product that is managing a complicated Machine Learning Model with
 many nodes and parameters should only expose one resource corresponding to the
 Model, not many resources corresponding to each of the individual nodes. A
 product managing a complex build pipeline for developers could expose just one
-resource for the entire pipeline.
+resource for the entire pipeline.
 
 A Database product could expose each Database as a resource, but not the tables
 or rows.

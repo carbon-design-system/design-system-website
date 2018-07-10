@@ -14,9 +14,6 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--dropdown__arrow`                                             | fill            | $brand-01 | #3d70b2   |
 | `.bx--list-box__selection--multi`                                  | background-color| $brand-01 | #3d70b2   |
 
-
-
-
 ![Dropdown example with $field-01 and $field-02](images/dropdown-style-9.png)
 _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 

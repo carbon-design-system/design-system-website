@@ -11,8 +11,6 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--number input[type='number']`| box-shadow       | $ui-05    | #5a6872   |
 | `.bx--number__controls svg `      | fill             | $brand-01 | #3d70b2   |
 
-
-
 ![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
 _Number Input example in $field-02 (left) and $field-01 (right)_
 

@@ -275,7 +275,7 @@
 
   ol li {
     list-style-type: decimal;
-    margin: .75rem 0;
+    margin: 0.75rem 0;
   }
 
   .image-set {
@@ -600,5 +600,11 @@
   }
   tr:nth-child(7) td:last-child img {
     width: 160px;
+  }
+}
+
+main[data-page='your-product-on-ibm-cloud-catalog-entry'] {
+  .page_md table tbody tr td:first-child {
+    white-space: pre-wrap;
   }
 }
