@@ -82,8 +82,7 @@
 
   &__bottom-container {
     transform: translateY(0);
-    transition: opacity 600ms $bx--standard-easing,
-      transform 400ms $bx--standard-easing;
+    transition: opacity 600ms $bx--standard-easing, transform 400ms $bx--standard-easing;
     background: white;
     opacity: 1;
 
@@ -145,14 +144,10 @@
     color: $brand-01;
     margin-bottom: 1rem;
     justify-content: space-between;
-    display: block;
-
 
     &:hover,
     &:focus {
       color: $hover-primary;
-
-
     }
   }
 
