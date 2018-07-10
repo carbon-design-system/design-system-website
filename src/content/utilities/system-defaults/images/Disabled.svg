@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Disabled Cursor</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.50020259,6.85722519 C3.96983824,7.78335476 3.66666667,8.85627262 3.66666667,10 C3.66666667,13.4978034 6.50219658,16.3333333 10,16.3333333 C11.1437274,16.3333333 12.2166452,16.0301617 13.1427748,15.4997974 L4.50020259,6.85722519 Z M6.85722519,4.50020259 L15.4997974,13.1427748 C16.0301617,12.2166452 16.3333333,11.1437274 16.3333333,10 C16.3333333,6.50219658 13.4978034,3.66666667 10,3.66666667 C8.85627262,3.66666667 7.78335476,3.96983824 6.85722519,4.50020259 Z M10,19.6666667 C4.66124742,19.6666667 0.333333333,15.3387526 0.333333333,10 C0.333333333,4.66124742 4.66124742,0.333333333 10,0.333333333 C15.3387526,0.333333333 19.6666667,4.66124742 19.6666667,10 C19.6666667,15.3387526 15.3387526,19.6666667 10,19.6666667 Z" id="path-1"></path>
+        <filter x="-18.1%" y="-12.9%" width="136.2%" height="136.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="1.6230169 1.43753705 8.0409437 14.2733907 14.4588705 1.43753705 8.0409437 3.03317051"></polygon>
+        <filter x="-42.8%" y="-50.6%" width="185.7%" height="185.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="-1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="-1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Disabled-Cursor" transform="translate(-5.023438, -2.952257)">
+            <g id="Disbaled-Icon" transform="translate(11.000000, 17.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="Cursor" transform="translate(11.096875, 11.055931) rotate(150.000000) translate(-11.096875, -11.055931) translate(3.096875, 3.055931)">
+                <g id="path-2-link" fill="#000000">
+                    <polygon id="path-2" points="0.69046276 0.69046276 8.0409437 2.51794906 15.3914247 0.69046276 8.0409437 15.3914247"></polygon>
+                </g>
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use stroke="#FFFFFF" stroke-width="1" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
