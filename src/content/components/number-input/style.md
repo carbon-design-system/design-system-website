@@ -6,7 +6,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |----------------------|-----------|---------------|
 | Background: default | $field-01     | #f4f7fb |
 | Background: light | $field-02     | #ffffff |
-| Label: enabled           | $text-01   | #152934   |
+| Label: enabled           | $text-01   | #152935   |
 | Label: focused           | $brand-01  | #3d70b2   |
 | Label: error             | $support-01 | #e0182d |
 | Text: number | $text-01  | #152935       |

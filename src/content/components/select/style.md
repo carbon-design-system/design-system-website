@@ -6,10 +6,10 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 |-------------------|---------------|-----------|
 | Background: default | $field-01     | #f4f7fb |
 | Background: light | $field-02     | #ffffff |
-| Label: enabled    | $text-01      | #152934   |
+| Label: enabled    | $text-01      | #152935   |
 | Label: focused    | $brand-01     | #3d70b2   |
 | Label: error      | $support-01   | #e0182d |
-| Label: inline select  | $text-01      | #152934  |
+| Label: inline select  | $text-01      | #152935  |
 | Caret             | $brand-01     | #3d70b2   |
 | Text: input       | $text-01      | #152935   |
 | Text: inline select | $brand-01     | #3d70b2   |

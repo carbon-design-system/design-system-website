@@ -2,19 +2,19 @@
 
  Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-If a `min date` is set on the calendar, then any text appearing before that date will be `#152934 @ 50%`, otherwise all text should be `#152934` (unless the number is selected or highlighted). Please refer to [Select](/components/select), for inline select styling.
+If a `min date` is set on the calendar, then any text appearing before that date will be `#152935 @ 50%`, otherwise all text should be `#152935` (unless the number is selected or highlighted). Please refer to [Select](/components/select), for inline select styling.
 
 | Color                    | SCSS       | HEX       |
 |--------------------------|------------|-----------|
 | Background: input default | $field-01     | #f4f7fb |
 | Background: input light  | $field-02     | #ffffff |
-| Label: enabled           | $text-01   | #152934   |
+| Label: enabled           | $text-01   | #152935   |
 | Label: focused           | $brand-01  | #3d70b2   |
 | Label: error             | $support-01 | #e0182d |
-| Text: user input         | $text-01   | #152934   |
+| Text: user input         | $text-01   | #152935   |
 | Text: placeholder        | $text-02   | #5a6872   |
-| Text: selected date      | $text-01    | #152934   |
-| Text: highlighted range  | $text-01   | #152934   |
+| Text: selected date      | $text-01    | #152935   |
+| Text: highlighted range  | $text-01   | #152935   |
 | Text: error message      | $support-01        | #e0182d   |
 | Background: calendar widget | $ui-01     | #ffffff   |
 | Background: highlighted range | $ui-02  | #f4f7fb   |
