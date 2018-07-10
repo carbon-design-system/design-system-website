@@ -1,15 +1,8 @@
-
 ## Cursors
 
 Cursors are used to indicate to the user the action they can take. Below is a chart of common cursors that are built into the Carbon components. Hover over a row to see each particular cursor in action.
 
-| Cursor property  | Example | Usage |
-|------------------|---------|-------|
-| `default`        | ![Example of a Default cursor](images/Default.svg)| The cursor a system automatically defaults to. Can be white or black depending on the operating system. |
-| `not-allowed`    | ![Example of a not-allowed cursor](images/Disabled.svg) | Used to indicate that an item is disabled and no action can be taken on the component.|
-| `pointer`        | ![Example of a hover cursor](images/Hover.svg) | Used to indicate a link or clickable object. |
-| `text`           | ![Example of a text cursor](images/Text.svg) | Used to indicate that a user can type into a designated area, or that the text can be highlighted. |
-
+<div data-insert-component="CursorTable"></div>
 
 For a more comprehensive list of cursors checkout [mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor).
 
