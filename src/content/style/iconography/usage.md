@@ -2,9 +2,9 @@
 
 ## Resources
 
-You can find the source file for the icon library within the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon Design Kit.</a>
+You can find the source file for the icon library within the <a href="https://github.com/ibm/carbon-design-kit" target=blank>Carbon Design Kit.</a>
 
-* <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>Carbon icons GitHub repo</a>
+* <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo</a>
 * <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
 
 ## Visual usage
@@ -69,7 +69,7 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 * Install `carbon-icons`
 
-Full installation details in <a href="https://github.com/carbon-design-system/carbon-icons">Carbon icons GitHub repo.</a>
+Full installation details in <a href="https://github.com/ibm/carbon-icons">Carbon icons GitHub repo.</a>
 
 ### Using SVG sprite from static assets (recommended)
 

@@ -59,11 +59,11 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
 
 - Check out the [Iconography](/style/iconography/library) page to see the new icon style
 - All Icons are now `16x16px` (24x24px is no longer being supported).
-- The `--glyph` modifier has been deprecated. Most of the glyph variations were replaced with a `--solid modifier`. Check out the [icon migration docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/migration-guides/migration-v7.md) to see the status of all the icons.
+- The `--glyph` modifier has been deprecated. Most of the glyph variations were replaced with a `--solid modifier`. Check out the [icon migration docs](https://github.com/ibm/carbon-icons/blob/master/docs/migration-guides/migration-v7.md) to see the status of all the icons.
 
 ## Design Kit
 
-- Download the latest version of the [Carbon Design Kit & Library](https://github.com/carbon-design-system/carbon-design-kit)
+- Download the latest version of the [Carbon Design Kit & Library](https://github.com/ibm/carbon-design-kit)
 - Components on the Component page are now split up into five different artboards: Controls, Inputs, Content, Navigation, Informative, and Data Tables
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
@@ -111,7 +111,7 @@ We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://ww
 
 ### Sketch Libraries
 
-The Carbon Design Kit now includes Sketch Libraries, a better way to share and version symbols across Sketch files. Check out our [Sketch Libraries wiki](https://github.com/carbon-design-system/carbon-design-kit/wiki/Sketch-Libraries-Overview) to get a quick tutorial on libraries.
+The Carbon Design Kit now includes Sketch Libraries, a better way to share and version symbols across Sketch files. Check out our [Sketch Libraries wiki](https://github.com/ibm/carbon-design-kit/wiki/Sketch-Libraries-Overview) to get a quick tutorial on libraries.
 
 ![sketch libraries in the carbon design kit](images/sketch-libraries.png)
 _Sketch Libraries in the Carbon Design Kit_
@@ -123,19 +123,19 @@ With the latest release of the Design Kit, we've included the [Sketch Palettes](
 ![Sketch Palettes plugin](images/sketch-palettes.png)
 _Sketch Palettes plugin_
 
-There's also a variety of other [plugins](https://github.com/carbon-design-system/carbon-design-kit/wiki/Suggested-Sketch-Plugins) we recommend to help improve your workflow using Sketch.
+There's also a variety of other [plugins](https://github.com/ibm/carbon-design-kit/wiki/Suggested-Sketch-Plugins) we recommend to help improve your workflow using Sketch.
 
 Download the latest Kit today!
 
 ---
 
-<a href="https://github.com/carbon-design-system/carbon-design-kit" target="_blank">Carbon Design Kit</a>
+<a href="https://github.com/ibm/carbon-design-kit" target="_blank">Carbon Design Kit</a>
 
 ## Carbon Sessions
 
 Interested in getting some 1:1 time with the Carbon team? Carbon Sessions is a chance for anyone using the Carbon Design System to ask questions and get feedback. Sessions happen very Wednesday morning (Central Standard Time). Time slots are around 10 minutes, but feel free to book more than one if you need additional time.
 
-Sign up for a [Carbon Sessions time slot](https://github.com/carbon-design-system/design-system-website/wiki/Carbon-Sessions) if you're interested in chatting further!
+Sign up for a [Carbon Sessions time slot](https://github.com/ibm/design-system-website/wiki/Carbon-Sessions) if you're interested in chatting further!
 
 <hr class="divider">
 

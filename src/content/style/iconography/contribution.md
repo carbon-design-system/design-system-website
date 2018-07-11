@@ -1,12 +1,12 @@
 ## Adding icons
-If you would like to add an UI icon to our library, please submit a pull request in the Carbon Design Kit <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>GitHub repo.</a>
+If you would like to add an UI icon to our library, please submit a pull request in the Carbon Design Kit <a href="https://github.com/ibm/carbon-design-kit" target=blank>GitHub repo.</a>
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
 1. Correctly export icon
 2. Name icon to Carbon specifications
 3. Prep SVG XML code
-4. Submit icon to [carbon-icons](https://github.com/carbon-design-system/carbon-icons) repo
+4. Submit icon to [carbon-icons](https://github.com/ibm/carbon-icons) repo
 5. Test SVGs
 
 
@@ -82,9 +82,9 @@ Inspect the code and make sure that your XML doesn't include the following:
 
 ### Submitting new SVGs
 
-1. Fork the <a href="https://github.com/carbon-design-system/carbon-icons" target=blank>carbon-icons</a> repo.
+1. Fork the <a href="https://github.com/ibm/carbon-icons" target=blank>carbon-icons</a> repo.
 2. Close the fork.
-3. Add new SVG file(s) to <a href="https://github.com/carbon-design-system/carbon-icons/tree/master/svg" target=blank>svg</a> folder. SVG subfolders are deprecated as of version `3.0.0`.
+3. Add new SVG file(s) to <a href="https://github.com/ibm/carbon-icons/tree/master/svg" target=blank>svg</a> folder. SVG subfolders are deprecated as of version `3.0.0`.
 4. Submit a pull request
 5. Do not commit built files (files created from `npm run build` script).
 

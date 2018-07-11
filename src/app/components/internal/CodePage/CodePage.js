@@ -76,7 +76,7 @@ class CodePage extends Component {
         <h2 className="component-variation__name">{title}</h2>
         <p>
           This component is currently only available in{' '}
-          <a href="https://github.com/carbon-design-system/carbon-components-react" target="_blank">
+          <a href="https://github.com/ibm/carbon-components-react" target="_blank">
             our React library
           </a>.
         </p>

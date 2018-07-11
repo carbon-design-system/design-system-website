@@ -14,7 +14,7 @@ Services must adopt these foundational capabilities to actively participate in t
 * [GhoST (Global Search and Tagging System)](https://console.stage1.bluemix.net/docs/developing/GhoST/onboard.html#getting-started): Add resource types so they are visible in the IBM Cloud filesystem to better enable platform-wide search. Follow [these instructions](https://ibm.ent.box.com/s/qopacahpyg34z2urevv74mter742yfse) to onboard a new resource type. For more help, contact someone via Slack at [#global-search-tagging](https://ibm-cloudplatform.slack.com/messages/C11F8KA1Z/details/).
 * [Global Catalog](https://console.stage1.bluemix.net/docs/developing/resource-catalog/index.html#global_catalog_overview): Record and manage your cloud offering across geographies.
 * [Documentation](https://console.stage1.bluemix.net/docs/developing/writing/index.html#get-started): Compose content for each phase of your offering and continually update as your service pushes new changes.
-* [Carbon Design System](http://design-system.stage1.mybluemix.net/): Use Carbon as a resource for [code](https://github.com/carbon-design-system/carbon-components), [visual](https://github.com/carbon-design-system/carbon-design-kit), and UX guidance when developing components and creating your service icon.
+* [Carbon Design System](http://design-system.stage1.mybluemix.net/): Use Carbon as a resource for [code](https://github.com/ibm/carbon-components), [visual](https://github.com/ibm/carbon-design-kit), and UX guidance when developing components and creating your service icon.
 
 
 ## Onboarding requirements
@@ -25,7 +25,7 @@ Onboard your service to IBM Cloud by fulfilling the following requirements. Desi
 * NPS (Net Promoter Score) is a management tool that measures customer relationships. To enable in-product NPS data collection for your service, follow [these instructions](https://pages.github.ibm.com/Bluemix/platform-analytics/data/nps/).
 
 ### Use Carbon
-* Leverage the Carbon Design System for visual and user experience guidance. By utilizing the [Carbon Component Library](https://github.com/carbon-design-system/carbon-components), your development team can easily implement ready-made components to create comprehensive UI.
+* Leverage the Carbon Design System for visual and user experience guidance. By utilizing the [Carbon Component Library](https://github.com/ibm/carbon-components), your development team can easily implement ready-made components to create comprehensive UI.
 * If you are new to Carbon, get started as a [designer](http://carbondesignsystem.com/getting-started/designers) or [developer](http://carbondesignsystem.com/getting-started/developers), and check the [FAQ's](http://carbondesignsystem.com/getting-started/FAQ) to learn more.
 
 ### Confirm accessibility

@@ -1,4 +1,4 @@
-**_Add-ons_ are components built specifically for IBM Cloud products and experiences. Carbon supports two main libraries, [Vanilla.js](https://github.com/carbon-design-system/carbon-components) and [React](https://github.com/carbon-design-system/carbon-components-react). There is also an unofficial [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that is managed by an external team.**
+**_Add-ons_ are components built specifically for IBM Cloud products and experiences. Carbon supports two main libraries, [Vanilla.js](https://github.com/ibm/carbon-components) and [React](https://github.com/ibm/carbon-components-react). There is also an unofficial [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that is managed by an external team.**
 
 ## Carbon support
 
@@ -13,7 +13,7 @@ The table below shows the Carbon team's level of support for the Core library vs
 
 ## Contributing to Add-ons
 
-Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/getting-started/contributing) and [code](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) to learn more.
+Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/getting-started/contributing) and [code](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md) to learn more.
 
 |               |                                                     | Core library | Add-ons |
 | ------------- | --------------------------------------------------- | ------------ | ------- |

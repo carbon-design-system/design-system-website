@@ -4,7 +4,7 @@
 
 ### 1. Download the Kit
 
-Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.
+Go to the <a href="https://github.com/ibm/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.
 
 ![Download the Carbon Design Kit](images/designers-2.png)
 
@@ -26,4 +26,4 @@ The Design Kit contains core visual styles, components, color swatches, iconogra
 
 ## Releases
 
-The Carbon Design System team often makes improvements to the Design Kit. We track all release updates in our <a href="https://github.com/carbon-design-system/carbon-design-kit/releases" target=blank>change log</a>, so check back frequently!
+The Carbon Design System team often makes improvements to the Design Kit. We track all release updates in our <a href="https://github.com/ibm/carbon-design-kit/releases" target=blank>change log</a>, so check back frequently!
