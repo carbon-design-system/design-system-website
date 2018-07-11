@@ -28,6 +28,7 @@ import TypeStylesTable from '../../custom/TypeStylesTable';
 import FeaturedTiles from '../../custom/FeaturedTiles';
 import ArticleTiles from '../../custom/ArticleTiles';
 import UIColorContrast from '../../custom/UIColorContrast';
+import CursorTable from '../../custom/CursorTable';
 
 class Page extends Component {
   static propTypes = {
@@ -137,6 +138,7 @@ class Page extends Component {
       FeaturedTiles,
       ArticleTiles,
       UIColorContrast,
+      CursorTable,
     };
 
     const insertComponent = [...document.querySelectorAll('[data-insert-component]')];

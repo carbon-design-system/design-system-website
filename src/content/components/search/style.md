@@ -2,14 +2,13 @@
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Attribute             | SCSS          | HEX      |
-|-------------------|---------------|-----------|
-| Background: default | $field-01     | #f4f7fb |
-| Background: light   | $field-02     | #ffffff |
-| Text: user input  | $text-01      | #152935  |
-| Text: placeholder | $text-03      | #cdd1d4  |
-| Icon              | $ui-05        | #5a6872  |
-| Border: focus    | $brand-01     | #3d70b2 |
+| Class                                                | Property         | SCSS          | HEX     |
+|------------------------------------------------------|------------------|---------------|---------|
+| `.bx--search-input`                                  | background-color | $field-01     | #f4f7fb |
+| `.bx--search--light`                                 | background-color | $field-02     | #ffffff |
+| `.bx--search-input`                                  | color            | $text-01      | #152935 |
+| `.bx--search-input::placeholder`                     | color            |  $text-03     | #cdd1d4 |
+| `.bx--search-magnifier`                              | fill             | $ui-05        | #5a6872 |
 
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
@@ -22,23 +21,22 @@ _Examples of normal, hover, and input Search states_
 
 Search text should be set in sentence case, with only the first letter of the first word capitalized.
 
-| Property        | Font-size    | Font-weight       |  Type style |
-|------------------|-----------------|---------------------|
-| Placeholder text | 14 / 0.875 | Normal italic / 400 | - |
-| Text             | 14 / 0.875 | Semi-Bold / 600          | Zeta
+| Property                        | Font-size       | Font-weight         |  Type style      |
+|---------------------------------|-----------------|---------------------|------------------|
+| `.bx--search-input`             | 14 / 0.875      | Semi-Bold / 600     | `.bx--type-zeta` |
+| `.bx--search-input:placeholder` | 14 / 0.875      | Normal / 400        | -                |
 
 ## Structure
 
 The width of the Search field should appropriately fit the design and layout of content. Larger Search fields can include a filter button and a list/card view button.
 
-| Property             | px | rem   |
-|----------------------|----|-------|
-| Height: regular      | 44 | 2.75  |
-| Height: small        | 32 | 2     |
-| Icon: search         | 20 | 1.25  |
-| Icon: small search   | 16 | 1     |
-| Spacing: search icon | 8  | 0.5 |
-| Spacing: small search icon | 12 | 0.75  |
+| Class                                             | Property                    | px / rem  | Spacing token |
+|---------------------------------------------------|-----------------------------|-----------|---------------|
+| `.bx--search--lg .bx--search-input`               | height                      | 40 / 2.5  | - |
+| `.bx--search--sm .bx--search-input`               | height                      | 32 / 2    | - |
+| `.bx--search-magnifier` </br> `.bx--search-close` | height, width               | 16 / 1    | - |
+| `.bx--search-input`                               | padding-left, padding-right | 40 / 2.5  | $spacing-2xl  |
+
 
 ![Structure and spacing measurements for regular search](images/search-style-2.png)
 _Structure and spacing measurements for Regular Search | px | rem_

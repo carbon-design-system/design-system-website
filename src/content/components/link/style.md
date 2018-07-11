@@ -1,10 +1,15 @@
 ## Color
 
-| Attribute    | SCSS          | HEX           |
-|----------|---------------|---------------|
-| Normal   | $brand-01     | #3d70b2       |
-| :hover   | $hover-primary-text    | #294c86       |
-| Disabled | $brand-01     | #3d70b2 @ 50% |
+| Class     | Property | SCSS    | HEX           |
+|-----------|----------|---------|---------------|
+|`.bx--link`| color    |$brand-01| #3d70b2       |
+
+### States
+
+| Class                            | Property | SCSS                | HEX           |
+|----------------------------------|----------|---------------------|---------------|
+| `.bx--link:hover`                | color    | $hover-primary-text | #294c86       |
+| `.bx--link[aria-disabled='true']`| color    | $brand-01           | #3d70b2 @ 50% |
 
 ---
 ***
@@ -17,18 +22,20 @@ _Normal, hover disabled Link states_
 
 Link text should be set in set in sentence case with the first letter of each word capitalized. Links should not exceed three words.
 
-| Property  | Font-size (px/rem)   | Font-weight |
-|------------|-----------------|--------------|
-| Text       | 14 / 0.875 | Semi-Bold / 600   |
+| Property    | Font-size (px/rem) | Font-weight    | Text style       |
+|-------------|--------------------|----------------|------------------|
+| `.bx--link` | 14 / 0.875         | Semi-Bold / 600| `.bx--type-zeta` |
 
 ## Structure
 
-Links can be grouped horizontally or vertically and must be underlined.
+### Recommended
 
-| Property             | px | rem  |
-|----------------------|----|------|
-| Line height          | 24 | 1.5  |
-| Horizontal spacing   | 16 | 1    |
+Links can be grouped horizontally or vertically and must be underlined. The following specs are not built into the Link component but are recommended by design as the proper distance between grouped Links.
+
+| Class     | Property      | px / rem  | Spacing token |
+|-----------|---------------|-----------|---------------|
+|`.bx--link`| line-height   | 24 / 1.5  | - |
+|`.bx--link`| padding-right | 16 / 1    | $spacing-md   |
 
 ---
 ***

@@ -1,13 +1,13 @@
 ## Color
 
-| Attribute                 | SCSS     | HEX      |
-|-----------------------|----------|----------|
-| Inactive: fill        | $ui-01   | #ffffff  |
-| Inactive: border      | $ui-05   | #5a6872  |
-| Small toggle: inactive | $ui-05 | #5a6872 |
-| Active: fill          | $brand-01| #3d70b2  |
-| Label                 | $text-01 | #152935  |
-| Small toggle: checkmark | $brand-01 | #3d70b2 |
+| Class                                                                  | Property                 | SCSS     | HEX      |
+|------------------------------------------------------------------------|--------------------------|----------|----------|
+|`.bx--toggle__appearance:after`                                         | background-color         | $ui-01   | #ffffff  |
+|`.bx--toggle__appearance:after`                                         | border                   | $ui-05   | #5a6872  |
+|`.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before`| border                   | $ui-05   | #5a6872  |
+|`.bx--toggle:checked + .bx--toggle__label .bx--toggle__appearance:after`| background-color, border | $brand-01| #3d70b2  |
+|`.bx--toggle__check`                                                    | fill                     | $brand-01| #3d70b2  |
+|`.bx--toggle__label`                                                    | color                    | $text-01 | #152935  |
 
 ---
 ***
@@ -19,19 +19,25 @@ _Examples of inactive, inactive hover, and active states for a Toggle_
 
 Toggle labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
-| Property | Font-size (px/rem)    | Font-weight |
-|----------|-----------------|--------------|
-| Label    | 14 / 0.875 | Normal / 400 |
+| Class                                                      | Font-size (px/rem)| Font-weight  | Text style       |
+|------------------------------------------------------------|-------------------|--------------|------------------|
+| `.bx--label`                                               | 14 / 0.875        | Normal / 600 | `.bx--type-zeta` |
+| `.bx--toggle__text--left` </br> `.bx--toggle__text--right` | 14 / 0.875        | Normal / 400 | -                |
 
 ## Structure
 
-| Property          | px | rem   |
-|-------------------|----|-------|
-| Height & width    | 24 | 1.5   |
-| Circle border     | 2  | 0.125 |
-| Slider line width      | 24 | 1.5   |
-| Spacing: external | 16 | 1     |
-| Spacing: internal | 8  | 0.5   |
+### Toggle
+
+| Class                                                     | Property                  | px / rem   | Spacing token |
+|-----------------------------------------------------------|---------------------------|------------|---------------|
+| `.bx--toggle__appearance`                                 | width                     | 48 / 3     | - |
+| `.bx--toggle__appearance:after`                           | height, width             | 24 / 1.5   | - |
+| `.bx--toggle__appearance:after`                           | border                    | 2px        | - |
+| `.bx--toggle__label`                                      | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
+| `.bx--toggle__text--left` </br> `.bx--toggle__text--right`| margin-right, margin-left | 8 / 0.5    | $spacing-xs   |
+
+
+
 
 ---
 ***
@@ -43,12 +49,15 @@ _Structure and spacing measurements for Toggle | px / rem_
 
 
 ### Small toggle
-| Property          | px | rem   |
-|-------------------|----|-------|
-| Height            | 16 | 1     |
-| Width             | 32 | 2     |
-| Width & height: circle | 10 | 0.625 |
-| Spacing: external | 16 | 1     |
+
+| Class                                                                   | Property                  | px / rem   | Spacing token |
+|-------------------------------------------------------------------------|---------------------------|------------|---------------|
+| `.bx--toggle--small`                                                    | height                    | 16 / 1     | - |
+| `.bx--toggle--small`                                                    | width                     | 32 / 2     | - |
+| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:after` | height, width             | 10 / 0.625 | - |
+| `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
+
+
 
 
 

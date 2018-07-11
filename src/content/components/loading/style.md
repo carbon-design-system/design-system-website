@@ -1,17 +1,17 @@
 ## Color
 
-| Attribute              | SCSS          | HEX      |
-|--------------------|---------------|----------|
-| Large spinner      | $nav-05       | #00b4a0  |
-| Small spinner      | $ui-05        | #5a6872 |
-| Overlay            | $ui-01 @ 60%  | #ffffff  |
+| Class                                | Property         | SCSS         | HEX      |
+|--------------------------------------|------------------|--------------|----------|
+|`.bx--loading__svg`                   | stroke           | $nav-05      | #00b4a0  |
+|`.bx--loading--small.bx--loading__svg`| stroke           | $ui-05       | #5a6872  |
+|`.bx--loading-overlay`                | background-color | $ui-01 @ 60% | #ffffff  |
 
 ## Structure
 
-| Property             | px | rem  |
-|----------------------|----|------|
-| Large spinner        | 84 | 5.25 |
-| Small spinner        | 16 | 1    |
+| Class                | Property      | px / rem  | Spacing token |
+|----------------------|---------------|-----------|---------------|
+|`.bx--loading`        | height, width | 84 / 5.25 | - |
+|`.bx--loading--small` | height, width | 16 / 1    | - |
 
 <div data-insert-component="ImageGrid">
   <div>
@@ -21,6 +21,7 @@
     ![Small spinner structure measurements](images/loading-style-2.png)
   </div>
 </div>
+
 _Structure measurements for small and large loading spinner | px / rem_
 
 ### Placement
