@@ -18,7 +18,7 @@ class Resources extends React.Component {
         <div className="page_md">
           <h2 className="resources__heading">Tools</h2>
           <div className="resources__top">
-            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/carbon-design-system/carbon-design-kit">
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-design-kit">
               <div className="resources__tile-icon">
                 <img src={designKitImage} alt="Design kit" />
               </div>
@@ -27,7 +27,7 @@ class Resources extends React.Component {
                 <p>A Sketch file containing core visual styles, components, and patterns a designer needs to use Carbon as a framework for building product experiences.</p>
               </div>
             </ClickableTile>
-            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/carbon-design-system/carbon-components">
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-components">
               <div className="resources__tile-icon">
                 <img src={githubImage} alt="Components repo" />
               </div>

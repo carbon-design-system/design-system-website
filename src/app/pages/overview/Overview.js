@@ -399,7 +399,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile
                 target="_blank"
-                href="https://github.com/carbon-design-system/carbon-design-kit"
+                href="https://github.com/ibm/carbon-design-kit"
                 className="overview-page__tile"
               >
                 <div className="tile__icon">
@@ -417,7 +417,7 @@ class Overview extends React.Component {
             <li className="overview-page__list-item">
               <ClickableTile
                 target="_blank"
-                href="https://github.com/carbon-design-system/carbon-components"
+                href="https://github.com/ibm/carbon-components"
                 className="overview-page__tile"
               >
                 <div className="tile__icon">

@@ -33,4 +33,4 @@ customElements.define('bx-loading', BXLoading);
 
 ## Troubleshooting
 
-If you experience any issues while getting set up with Carbon Components, please head over to the [Carbon Components GitHub repo](https://github.com/carbon-design-system/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/carbon-design-system/carbon-components/issues) if your issue does not already exist.
+If you experience any issues while getting set up with Carbon Components, please head over to the [Carbon Components GitHub repo](https://github.com/ibm/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/ibm/carbon-components/issues) if your issue does not already exist.

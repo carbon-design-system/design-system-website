@@ -1,12 +1,12 @@
 ## Carbon Design Kit
 
 The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
-![https://github.com/carbon-design-system/carbon-design-kit](Carbon Design Kit)
+![https://github.com/ibm/carbon-design-kit](Carbon Design Kit)
 
 ## Carbon Component Library
 
 The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.
-![https://github.com/carbon-design-system/carbon-components](Carbon Component Library)
+![https://github.com/ibm/carbon-components](Carbon Component Library)
 
 ### Additional Links
 
@@ -18,7 +18,7 @@ A simple boilerplate for rapid UI prototyping with Carbon Components.
 #### Craft Library
 
 Craft is a Sketch plugin made by Invision that has an easy to access library of sketch-ready Carbon components and design assets.
-![https://github.com/carbon-design-system/carbon-design-kit/wiki/Carbon-Craft-Library](Set-up Instructions)
+![https://github.com/ibm/carbon-design-kit/wiki/Carbon-Craft-Library](Set-up Instructions)
 
 #### Color Accessibility
 
@@ -42,4 +42,4 @@ Download Powerpoint
 #### Bluemix logo
 
 This comprehensive file contains the various versions of the Bluemix logo.
-![https://github.com/carbon-design-system/carbon-design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true](Download logo assets)
+![https://github.com/ibm/carbon-design-kit/blob/master/Bluemix_Logo-Assets.zip?raw=true](Download logo assets)

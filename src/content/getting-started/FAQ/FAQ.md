@@ -4,11 +4,11 @@ Carbon is the design system for IBM Cloud products. It is a series of individual
 
 ### Who works on the Carbon Design System?
 
-Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of designers and front-end developers that are dedicated to developing and supporting the system. Our core team sits in the IBM Design Studio in Austin, Texas. There are also countless other designers and developers who also contribute back to [carbon-components](https://github.com/carbon-design-system/carbon-components#contributors) and [carbon-react](https://github.com/carbon-design-system/carbon-components-react#contributors).
+Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of designers and front-end developers that are dedicated to developing and supporting the system. Our core team sits in the IBM Design Studio in Austin, Texas. There are also countless other designers and developers who also contribute back to [carbon-components](https://github.com/ibm/carbon-components#contributors) and [carbon-react](https://github.com/ibm/carbon-components-react#contributors).
 
 ### How can I contribute and/or propose new components/ideas?
 
-We have guidelines for contributing back to [Carbon Components](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md) and the [Carbon Design assets](/getting-started/contributing). We appreciate you helping out and contributing back.
+We have guidelines for contributing back to [Carbon Components](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md) and the [Carbon Design assets](/getting-started/contributing). We appreciate you helping out and contributing back.
 
 ### Which browsers are supported?
 

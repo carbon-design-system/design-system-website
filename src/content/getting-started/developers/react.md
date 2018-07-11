@@ -16,11 +16,11 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 ### Getting Started
 
-1.  These components require the use of [Webpack](http://webpack.github.io/docs/tutorials/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
+1.  These components require the use of [Webpack](http://webpack.github.io/docs/tutorials/getting-started/) in your project. See our [webpack.config.js](https://github.com/ibm/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
 
 2.  Components do not import any of the styles themselves, use the scss or css from `carbon-components` to bring in styling. You can also use the `unpkg` cdn to bring in the styles wholesale - `unpkg.com/carbon-components/css/carbon-components.css` aliases the latest css file.
 
-3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/polyfills.js) is required.
+3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/ibm/carbon-components-react/blob/master/.storybook/polyfills.js) is required.
 
 If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
 
@@ -30,7 +30,7 @@ If you just want to try out `carbon-components-react`, you can also use [CodeSan
 
 ## Development
 
-Please refer to the [Contribution Guidelines](https://github.com/carbon-design-system/carbon-components-react/blob/master/.github/CONTRIBUTING.md) before starting any work.
+Please refer to the [Contribution Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md) before starting any work.
 
 ### Using the server
 
@@ -54,4 +54,4 @@ View available React Components [here](http://react.carbondesignsystem.com). Usa
 
 ## Troubleshooting
 
-If you experience any issues while getting set up with Carbon Components React, please head over to the [GitHub repo](https://github.com/carbon-design-system/carbon-components-react) for more guidelines and support. Please [create an issue](https://github.com/carbon-design-system/carbon-components-react/issues) if your issue does not already exist.
+If you experience any issues while getting set up with Carbon Components React, please head over to the [GitHub repo](https://github.com/ibm/carbon-components-react) for more guidelines and support. Please [create an issue](https://github.com/ibm/carbon-components-react/issues) if your issue does not already exist.
