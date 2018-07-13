@@ -68,7 +68,7 @@ Make sure your build process uses [autoprefixer](https://github.com/postcss/auto
 
 #### Default body styles
 
-CSS is automatically applied to `<body>` element, which comes from [\_css--body.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
+CSS is automatically applied to `<body>` element, which comes from [\_css--body.scss](https://github.com/ibm/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
 
 ```css
 body {
@@ -82,7 +82,7 @@ body {
 
 #### Icons
 
-A lot of components depend on SVG icons from [carbon-icons](https://github.com/carbon-design-system/carbon-icons). Read the [docs](https://github.com/carbon-design-system/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
+A lot of components depend on SVG icons from [carbon-icons](https://github.com/ibm/carbon-icons). Read the [docs](https://github.com/ibm/carbon-icons/blob/master/docs/usage.md) for details on how to use them.
 
 #### Global SCSS variables
 
@@ -90,7 +90,7 @@ These variables are used to configure which parts of the SCSS get compiled, wher
 
 For example:
 
-- When you set `$css--reset: true`, then the contents of [\_css--reset.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--reset.scss) will be part of your output CSS.
+- When you set `$css--reset: true`, then the contents of [\_css--reset.scss](https://github.com/ibm/carbon-components/blob/master/src/globals/scss/_css--reset.scss) will be part of your output CSS.
 - When you set `$css--reset: false`, then nothing gets included from that SCSS file.
 - When the variable is not declared at all, then nothing gets included from that SCSS file.
 
@@ -129,7 +129,7 @@ Carbon Components are built to be included individually and not clobber global s
 
 If you follow links to a component in [our components page](../../components/overview), you can find the HTML snippet for the component. You can copy the HTML snippet with the copy icon there. Paste it to where you want to put the component in your application.
 
-Though many components work without any JavaScript, some components require JavaScript code to support user interaction. Next section describes how to use the JavaScript code. Full list of components that require JavaScript code can be found at [here](https://github.com/carbon-design-system/carbon-components/blob/d60e9e1/src/globals/js/components.js).
+Though many components work without any JavaScript, some components require JavaScript code to support user interaction. Next section describes how to use the JavaScript code. Full list of components that require JavaScript code can be found at [here](https://github.com/ibm/carbon-components/blob/d60e9e1/src/globals/js/components.js).
 
 ### Javascript
 
@@ -237,7 +237,7 @@ customElements.define('bx-loading', BXLoading);
 ### Polyfills for older browsers
 
 carbon-components requires some polyfills for older browsers, in addition to carbon-components.js (or carbon-components.min.js).
-The latest list of polyfills is maintained in [carbon-components/blog/master/demo/polyfills/index.js](https://github.com/carbon-design-system/carbon-components/blob/master/demo/polyfills/index.js).
+The latest list of polyfills is maintained in [carbon-components/blog/master/demo/polyfills/index.js](https://github.com/ibm/carbon-components/blob/master/demo/polyfills/index.js).
 You can easily find the polyfills in NPM, etc. The current list is below:
 
 - [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)
@@ -250,4 +250,4 @@ You can easily find the polyfills in NPM, etc. The current list is below:
 
 ## Troubleshooting
 
-If you experience any issues while getting set up with Carbon Components, please head over to the [GitHub repo](https://github.com/carbon-design-system/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/carbon-design-system/carbon-components/issues) if your issue does not already exist.
+If you experience any issues while getting set up with Carbon Components, please head over to the [GitHub repo](https://github.com/ibm/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/ibm/carbon-components/issues) if your issue does not already exist.

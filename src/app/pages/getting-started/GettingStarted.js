@@ -5,7 +5,8 @@ import Page from '../../components/internal/Page';
 import MarkdownPage from '../../components/internal/MarkdownPage';
 
 import Developers from './Developers';
-
+import Contributing from './Contributing';
+ 
 class GettingStarted extends React.Component {
   static propTypes = {
     params: PropTypes.object,
@@ -17,6 +18,8 @@ class GettingStarted extends React.Component {
     let content;
     if (params.name === 'developers') {
       content = <Developers currentPage={params.page} />;
+    } else if (params.name === 'contributing') {
+      content = <Contributing currentPage={params.page} />;
     } else {
       content = <MarkdownPage content={require(`../../../content/getting-started/${params.name}/${params.name}.md`)} />;
     }

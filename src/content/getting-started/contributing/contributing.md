@@ -1,6 +1,6 @@
 **_Welcome!_ The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users.**
 
-The guidelines below are primarily for **design contributions**. You can also read our guidelines for [contributing code](https://github.com/carbon-design-system/carbon-components/blob/master/docs/contributing.md). If you have any questions, reach out to us at carbon@us.ibm.com.
+The guidelines below are primarily for **design contributions**. You can also read our guidelines for [contributing code](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md). If you have any questions, reach out to us at carbon@us.ibm.com.
 <br> <br>
 
 ## Contribution model & process
@@ -11,9 +11,9 @@ The easiest way for us to get an understanding of your needs is to open an issue
 
 **Not sure where to open an issue?**
 
-The [carbon-design-kit repo](https://github.com/carbon-design-system/carbon-design-kit) is for Sketch bugs, as well as feedback on the Design Kit and component design.
+The [carbon-design-kit repo](https://github.com/ibm/carbon-design-kit) is for Sketch bugs, as well as feedback on the Design Kit and component design.
 
-The [design-system-website repo](https://github.com/carbon-design-system/design-system-website) is for Carbon website specific feedback or bugs.
+The [design-system-website repo](https://github.com/ibm/design-system-website) is for Carbon website specific feedback or bugs.
 
 **Not sure how to submit an issue?**
 

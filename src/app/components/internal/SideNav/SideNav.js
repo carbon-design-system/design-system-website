@@ -332,7 +332,7 @@ class SideNav extends Component {
             </ul>
             <div className="side-nav__links">
               <Button
-                href="https://github.com/carbon-design-system/carbon-design-kit"
+                href="https://github.com/ibm/carbon-design-kit"
                 className="side-nav__link bx--btn"
                 kind="secondary"
                 icon="arrow--right"
@@ -344,7 +344,7 @@ class SideNav extends Component {
                 Design Kit
               </Button>
               <Button
-                href="https://github.com/carbon-design-system/carbon-components"
+                href="https://github.com/ibm/carbon-components"
                 className="side-nav__link bx--btn"
                 kind="secondary"
                 icon="arrow--right"
@@ -356,7 +356,7 @@ class SideNav extends Component {
                 Vanilla Repo
               </Button>
               <Button
-                href="https://github.com/carbon-design-system/carbon-components-react"
+                href="https://github.com/ibm/carbon-components-react"
                 className="side-nav__link bx--btn"
                 kind="secondary"
                 icon="arrow--right"

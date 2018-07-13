@@ -14,7 +14,7 @@ class PageFooter extends Component {
   };
 
   getLastUpdate = () => {
-    const lastUpdatedDate = new Date('06/04/2018'); // UPDATE BEFORE CF PUSH
+    const lastUpdatedDate = new Date('07/13/2018'); // UPDATE BEFORE CF PUSH
     const months = [
       'January',
       'February',
@@ -110,7 +110,7 @@ class PageFooter extends Component {
             Vanilla Components version{' '}
             <a
               className="page-footer__link"
-              href="https://github.com/carbon-design-system/carbon-components/releases"
+              href="https://github.com/ibm/carbon-components/releases"
               rel="noopener"
               target="_blank"
               aria-labelledby="page-footer__version-label page-footer__version-number"
@@ -123,7 +123,7 @@ class PageFooter extends Component {
             React Components version{' '}
             <a
               className="page-footer__link"
-              href="https://github.com/carbon-design-system/carbon-components-react/releases"
+              href="https://github.com/ibm/carbon-components-react/releases"
               rel="noopener"
               target="_blank"
               aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
@@ -193,7 +193,7 @@ class PageFooter extends Component {
             </CopyToClipboard>
             or open an{' '}
             <a
-              href="https://github.com/carbon-design-system/carbon-components/issues/new"
+              href="https://github.com/ibm/carbon-components/issues/new"
               className="page-footer__link"
               rel="noopener"
               target="_blank"

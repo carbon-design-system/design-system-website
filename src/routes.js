@@ -86,6 +86,22 @@ const routes = {
           ],
         },
         {
+          path: '/getting-started/contributing',
+          indexRoute: {
+            onEnter: (nextState, replace) => replace('/getting-started/contributing/designers'),
+          },
+          childRoutes: [
+            {
+              path: '/getting-started/:name/:page',
+              getComponent(location, cb) {
+                import('./app/pages/getting-started/GettingStarted')
+                  .then(loadRoute(cb))
+                  .catch(errorLoading);
+              },
+            },
+          ],
+        },
+        {
           path: '/getting-started/:name',
           getComponent(location, cb) {
             import('./app/pages/getting-started/GettingStarted')

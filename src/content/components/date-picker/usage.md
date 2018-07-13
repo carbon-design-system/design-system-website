@@ -26,7 +26,7 @@ _Types of Date Pickers_
 Both Date and Time Pickers are accompanied by labels, and follow the same accessibility guidelines for all [Forms](/components/form).
 
 ### Format
-For Date Pickers, use placeholder text so users input the date in the correct format. It can be formatted in a variety of ways. See the Date Picker code [documentation](https://github.com/carbon-design-system/carbon-components/tree/master/src/components/date-picker) for more info.
+For Date Pickers, use placeholder text so users input the date in the correct format. It can be formatted in a variety of ways. See the Date Picker code [documentation](https://github.com/ibm/carbon-components/tree/master/src/components/date-picker) for more info.
 
 
 ## Interaction

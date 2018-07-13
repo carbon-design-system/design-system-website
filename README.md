@@ -4,8 +4,8 @@ The Carbon Design System is a series of individual styles and components, that w
 The Carbon Design System is comprised of:
 
 * The [Carbon website](http://carbondesignsystem.com), containing documenation on our code base, UX patterns, and style specs.
-* The [Carbon Design Kit](https://github.com/carbon-design-system/carbon-design-kit), a versioned Sketch file containing our entire component library, templates, and additional visual patterns. 
-* The Carbon Component Library ([React](https://github.com/carbon-design-system/carbon-components-react) and [Vanilla.js](https://github.com/carbon-design-system/carbon-components)) is a collection of re-usable HTML and Sass partials for building products and experiences.
+* The [Carbon Design Kit](https://github.com/ibm/carbon-design-kit), a versioned Sketch file containing our entire component library, templates, and additional visual patterns. 
+* The Carbon Component Library ([React](https://github.com/ibm/carbon-components-react) and [Vanilla.js](https://github.com/ibm/carbon-components)) is a collection of re-usable HTML and Sass partials for building products and experiences.
 
 
 ## Accessibility
@@ -22,7 +22,7 @@ Full instructions can be found on the Carbon website's [Getting Started](http://
 
 **Carbon Design Kit**
 
-Download the Sketch Design Kit from our GitHub [repo.](https://github.com/carbon-design-system/carbon-design-kit)
+Download the Sketch Design Kit from our GitHub [repo.](https://github.com/ibm/carbon-design-kit)
 Full instructions can be found on the Carbon website's [Getting Started](http://www.carbondesignsystem.com/getting-started/designers) section. 
 
 ## Contributing 
@@ -33,7 +33,7 @@ See something missing or have general feedback for the Carbon team?
 
 Open an issue in the following repos:
 
-* [carbon-components repo](https://github.com/carbon-design-system/carbon-components): Feature requests, component bugs, or development related questions. 
-* [carbon-design-kit repo](https://github.com/carbon-design-system/carbon-design-kit): Sketch bugs, feedback on the Design Kit, or design related feedback on the components. 
-* [design-system-website repo](https://github.com/carbon-design-system/design-system-website): For Carbon website specific feedback or bugs. 
+* [carbon-components repo](https://github.com/ibm/carbon-components): Feature requests, component bugs, or development related questions. 
+* [carbon-design-kit repo](https://github.com/ibm/carbon-design-kit): Sketch bugs, feedback on the Design Kit, or design related feedback on the components. 
+* [design-system-website repo](https://github.com/ibm/design-system-website): For Carbon website specific feedback or bugs. 
 * If you're not comfortable opening an issue, feel free to email us at carbon@us.ibm.com!
