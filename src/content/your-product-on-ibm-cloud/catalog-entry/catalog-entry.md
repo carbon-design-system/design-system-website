@@ -1,4 +1,4 @@
-The IBM Cloud Catalog ("Catalog") is the place developers, data scientists, IT admins, and other IBM Cloud users go to discover, evaluate, and create offerings. The following guidelines will help you create or update an offering listing to ensure that it meets IBM Cloud quality standards and meets your users' needs. 
+**The IBM Cloud Catalog ("Catalog") is the place developers, data scientists, IT admins, and other IBM Cloud users go to discover, evaluate, and create offerings. The following guidelines will help you create or update an offering listing to ensure that it meets IBM Cloud quality standards and meets your users' needs.**
 
 The Catalog consists of several pages and content types:
  
@@ -6,16 +6,17 @@ The Catalog consists of several pages and content types:
 
 * An offering detail page, which contains metadata, text and media that describe your offering and configuration fields or page(s), depending on the complexity of your offering's configuration.
 
+<br /><br />
 ## Contents
-1. **[Editorial Guidance] (#Editorial-Guidance)**
+1. **[Editorial Guidance](#editorial-guidance)**
 
-2. **[Summary Card] (#summary-card)**
+2. **[Summary Card](#summary-card)**
 
-3. **[Offering Detail Page] (#offering-detail-page)**
+3. **[Offering Detail Page](#offering-detail-page)**
 
-4. **[Search & Categorization] (#Search-&-Categorization)**
+4. **[Search & Categorization](#search-and-categorization)**
 
-5. **[Usage & Analytics] (#usage-&-analytics)**
+5. **[Usage & Analytics](#usage-analytics)**
 
 
 
@@ -242,7 +243,7 @@ Users will encounter your offering through a variety of funnels, including web s
 ### Categorization
 The catalog team will work with individual offering teams to determine which category their offerings belong in.
 
-###Filtering 
+### Filtering 
 Tag your service with the appropriate required metadata, so users can narrow down their options and easily find your offering.
  
 * **Author:** Use the *IBM* tag If your service has been created by an IBM team or acquisition. Use the *hird-Party* tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The *community* tag is only used for community buildpacks.
