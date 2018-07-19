@@ -84,7 +84,7 @@ The summary card appears on the main Catalog page and contains a title, short de
 * "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment, and more." (114 characters, approaching the max)
 
 ### Icon
-Review the [service icon guidelines] (http://design-system.stage1.mybluemix.net/your-product-on-ibm-cloud/service-providers/general#) for information on the design, production, approval, and submission of service icons.
+Review the [service icon guidelines] (http://design-system.stage1.mybluemix.net/your-product-on-ibm-cloud/service-providers/service-icon) for information on the design, production, approval, and submission of service icons.
 
 ### Tags
 Some tags are visible on the summary cards. See Filtering in the Search & Categorization section below for guidelines pertaining to tags.
