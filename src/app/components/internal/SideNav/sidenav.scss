@@ -132,10 +132,6 @@
   &__links {
     padding: 0 rem(20px);
     width: 100%;
-
-    .bx--btn--secondary .bx--btn__icon {
-      fill: $brand-01;
-    }
   }
 
   &__link {
@@ -145,9 +141,25 @@
     margin-bottom: 1rem;
     justify-content: space-between;
 
+    .bx--btn__icon {
+      fill: $brand-01;
+    }
+
     &:hover,
     &:focus {
-      color: $hover-primary;
+      color: $ui-01;
+
+      .bx--btn__icon {
+        fill: $ui-01;
+      }
+    }
+
+    &:active {
+      color: $brand-01;
+
+      .bx--btn__icon {
+        fill: $brand-01;
+      }
     }
   }
 
