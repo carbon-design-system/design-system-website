@@ -6,23 +6,22 @@ The Catalog consists of several pages and content types:
 
 * An offering detail page, which contains metadata, text and media that describe your offering and configuration fields or page(s), depending on the complexity of your offering's configuration.
 
-<br /><br />
 ## Contents
-1. **[Editorial Guidance](#editorial-guidance)**
+1. **[Editorial Guidance](#Editorial-Guidance)**
 
 2. **[Summary Card](#summary-card)**
 
 3. **[Offering Detail Page](#offering-detail-page)**
 
-4. **[Search & Categorization](#search-and-categorization)**
+4. **[Search & Categorization](#Search-&-Categorization)**
 
-5. **[Usage & Analytics](#usage-analytics)**
+5. **[Usage & Analytics](#usage-&-analytics)**
 
 
 
 ## Editorial Guidance
 ### Voice & Tone 
-Reference the [Voice & Tone guidelines] (http://design-system.stage1.mybluemix.net/guidelines/content/general) when writing content for the Catalog or anywhere in the IBM Cloud.
+Reference the [Voice & Tone guidelines](http://design-system.stage1.mybluemix.net/guidelines/content/general) when writing content for the Catalog or anywhere in the IBM Cloud.
 ### Catalog Principles
 The Catalog is the place users go to discover, evaluate, and create. User testing studies and data have shown that users are more likely to be interested in or purchase an offering if the following best practices are met:
 
@@ -34,7 +33,7 @@ The Catalog is the place users go to discover, evaluate, and create. User testin
 ### Catalog governance
 To ensure that offerings meet the criteria outlined in these guidelines, the catalog team will be responsible for reviewing any proposed changes to an offering's catalog entry.
 
-See [Catalog Governance] (https://ibm.ent.box.com/notes/290560698464) document (WIP)
+See [Catalog Governance](https://ibm.ent.box.com/notes/290560698464) document (WIP)
 
 
 ## Summary Card
@@ -49,7 +48,7 @@ The summary card appears on the main Catalog page and contains a title, short de
 * Use a title that is logical and descriptive of your offering
 * Use title case (unless it goes against overriding brand guidelines, like box)
 * 2-3 words or 45 characters
-* Maximum of two lines|
+* Maximum of two lines
 
 **Don't**
 
@@ -84,7 +83,7 @@ The summary card appears on the main Catalog page and contains a title, short de
 * "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment, and more." (114 characters, approaching the max)
 
 ### Icon
-Review the [service icon guidelines] (http://design-system.stage1.mybluemix.net/your-product-on-ibm-cloud/service-providers/service-icon) for information on the design, production, approval, and submission of service icons.
+Review the [service icon guidelines](http://design-system.stage1.mybluemix.net/your-product-on-ibm-cloud/service-providers/general#) for information on the design, production, approval, and submission of service icons.
 
 ### Tags
 Some tags are visible on the summary cards. See Filtering in the Search & Categorization section below for guidelines pertaining to tags.
@@ -132,8 +131,8 @@ Remember to follow the best practice of reducing cognitive load. This includes c
 **Complex configuration (new page):**
 
 * This page has more space for additional configuration fields. Use headings (especially on longer configurations) to delineate logical sections. For example, a Starter Kit has an "App Details" and a "Service Details" section. This page also includes a cost/order summary on the right side.
-* This configuration option may have multiple steps. Use the [Carbon progress indicator component] (http://design-system.stage1.mybluemix.net/components/progress-indicator/code) and your best judgement when implementing steps. 
-* Your offering team is responsible for building complex configuration pages using Carbon components as needed, including [order summary] (http://v8.carbondesignsystem.com/add-ons/order-summary/code) and [forms] (http://www.carbondesignsystem.com/components/form/code). Please follow the above grid.
+* This configuration option may have multiple steps. Use the [Carbon progress indicator component](http://design-system.stage1.mybluemix.net/components/progress-indicator/code) and your best judgement when implementing steps. 
+* Your offering team is responsible for building complex configuration pages using Carbon components as needed, including [order summary](http://v8.carbondesignsystem.com/add-ons/order-summary/code) and [forms](http://www.carbondesignsystem.com/components/form/code). Please follow the above grid.
 
 ### Overview 
 Called "long description" in global catalog
@@ -243,11 +242,11 @@ Users will encounter your offering through a variety of funnels, including web s
 ### Categorization
 The catalog team will work with individual offering teams to determine which category their offerings belong in.
 
-### Filtering 
+###Filtering 
 Tag your service with the appropriate required metadata, so users can narrow down their options and easily find your offering.
  
-* **Author:** Use the *IBM* tag If your service has been created by an IBM team or acquisition. Use the *hird-Party* tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The *community* tag is only used for community buildpacks.
-* **Compliance:** Use the *EU-Supported* tag if your service meets the [criteria for EU-Supported Cloud] (https://ibm.box.com/s/kdqtyq7rplwkpk31her53i14vg1lnt17).
+* **Author:** Use the *IBM* tag if your service has been created by an IBM team or acquisition. Use the *third-Party* tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The *community* tag is only used for community buildpacks.
+* **Compliance:** Use the *EU-Supported* tag if your service meets the [criteria for EU-Supported Cloud](https://ibm.box.com/s/kdqtyq7rplwkpk31her53i14vg1lnt17).
 * **Plans:** Our IBM teams will work with you to determine if your service is a good candidate for our "Lite" plan. 
 * **Release:** Only use the experimental or beta tag if your offering is going through the process of creating a new offering in the catalog.
 
@@ -262,8 +261,8 @@ Search tags allow you to add specific keywords to your offering so it will appea
 
 **Don't:**
 
-* Add words that are only slightly related to or not at all related to your offering
+* Add words that are only slightly related to or not at all related to your offering 
 
 ## Usage & Analytics
-Your offering is automatically instrumented in Amplitude. For a list of what is instrumented and best practices, see the [Platform Analytics Documentation] (https://pages.github.ibm.com/Bluemix/platform-analytics/).
+Your offering is automatically instrumented in Amplitude. For a list of what is instrumented and best practices, see the [Platform Analytics Documentation](https://pages.github.ibm.com/Bluemix/platform-analytics/).
 
