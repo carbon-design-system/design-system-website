@@ -48,9 +48,40 @@ So an application layout that had two blocks of content that were each full widt
 </div>
 ```
 
-
 #### bx--col-{breakpoint}-auto
 
 Instead of requiring a certain number of columns for an element to take up, you can also specify the auto class in lieu of a column number. This will tell the column to take as much room as the width of that column's content requires.
 
 **Important:** All `bx--col` elements must be the direct child of a `bx--row` element.
+
+#### bx--offset
+
+Layouts often define spaces that span one or more columns. Those spaces mostly needs to stay aligned with the grid. To achieve this, there are the classes `bx--col-{breakpoint}-{columnNumber}`. They work similarly to the
+`bx--col` classes by defining a left margin of the equivalent size to the styled element.
+
+Usage example
+```html
+<div class="bx--grid">
+  <div class="bx--row">
+    <div class="bx--offset-xs-2 bx--col-xs-10">
+      This content starts on the third column
+    </div>
+  </div>
+</div>
+```
+
+This is equivalent to the markup
+```html
+<div class="bx--grid">
+  <div class="bx--row">
+    <div class="bx--col-xs-2">
+      <!-- Div for spacing only -->
+    </div>
+    <div class="bx--col-xs-10">
+      This content starts on the third column
+    </div>
+  </div>
+</div>
+```
+
+The `bx--offset` functionality must be used together with `bx--col` classes and is subject to the same constraints.

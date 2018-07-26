@@ -1,4 +1,41 @@
-**_Add-ons_ are components built specifically for IBM Cloud products and experiences. Carbon supports two main libraries, [Vanilla.js](https://github.com/ibm/carbon-components) and [React](https://github.com/ibm/carbon-components-react). There is also an unofficial [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that is managed by an external team.**
+**_Add-on repositories_, or repos, are components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.**
+
+## Do you need an add-on repo?
+
+Please answer yes or no to the following list of questions:
+- Is your team using Carbon components?
+- Does your team have the need to add custom components in addition to Carbon's core components?
+- Will these components only be needed by your team?
+- Do you need these custom components to match Carbon's visual style?
+
+If you've answered "yes" to all the questions above, then you definitely qualify for an add-on repo! Jump to the next section to learn about the required steps to create an add-on repo.
+
+If you answered "no" to any of the questions above but still feel like you need an add-on repo, please reach out to the a member of the Carbon team to discuss  additional options. It might be that your component need is something that can be shared across the core Carbon organization. In this case, we can talk about how you can contribute this component back to the core Carbon repo.
+
+## Creating an Add-on repo
+
+There are a number of growing add-on repos that can be found under the [Carbon org](https://github.com/carbon-design-system). If you'd like to create an add-on repo we have created a [vanilla boilerplate](https://github.com/carbon-design-system/carbon-boilerplate) and a [react boilerplate](https://github.com/carbon-design-system/carbon-addons-boilerplate-react) that you can clone to get started. For further assistance please reach out to a member of the carbon design team. 
+
+### Private vs Public
+
+Carbon Design System is an open-source project and we do encourage teams using Carbon Design System to stay open-source as well. However, if your product has privacy constraints, we can discuss options for creating an add-on repo under our Github Enterprise account.
+
+## Contributing to Add-ons
+
+Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/getting-started/contributing/designers) and [development](/getting-started/contributing/developers) to learn more.
+
+|               |                                                     | Core library | Add-ons |
+| ------------- | --------------------------------------------------- | ------------ | ------- |
+| Accessibility | WCAG AA                                             | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
+|               | Keyboard tabbing                                    | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
+|               | Carbon custom focus states                          | ![available](images/checkmark--glyph.svg)           |         |
+| Visual + UX   | Carbon themed                                       | ![available](images/checkmark--glyph.svg)           |         |
+|               | Universal pattern <br>(fits for 2-3 use cases)      | ![available](images/checkmark--glyph.svg)           |         |
+|               | Interaction states (hover, active, focus, disabled) | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)     |
+
+## Who owns  an add-on repo?
+
+Once an add-on repo has been created, the team or product that requested it is in charge of maintaining and keeping it up to date. This involves carrying over specific changes from the core Carbon repo, as well as making sure it is using the latest major version of Carbon Components. 
 
 ## Carbon support
 
@@ -10,26 +47,3 @@ The table below shows the Carbon team's level of support for the Core library vs
 | Design feedback & support | ![available](images/checkmark--glyph.svg)           |         |
 | Troubleshooting           | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)     |
 | Bug fixes                 | ![available](images/checkmark--glyph.svg)           |         |
-
-## Contributing to Add-ons
-
-Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/getting-started/contributing) and [code](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md) to learn more.
-
-|               |                                                     | Core library | Add-ons |
-| ------------- | --------------------------------------------------- | ------------ | ------- |
-| Accessibility | WCAG AA                                             | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
-|               | Keyboard tabbing                                    | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)      |
-|               | Carbon custom focus states                          | ![available](images/checkmark--glyph.svg)           |         |
-| Visual + UX   | Carbon themed                                       | ![available](images/checkmark--glyph.svg)           |         |
-|               | Universal pattern <br>(fits for 2-3 use cases)      | ![available](images/checkmark--glyph.svg)           |         |
-|               | Interaction states (hover, active, focus, disabled) | ![available](images/checkmark--glyph.svg)           | ![available](images/checkmark--glyph.svg)     |
-
-## Add-on repos
-
-There are a number of growing add-on repos that can be found under the [Carbon org](https://github.com/carbon-design-system). If you'd like to create an add-on repo, contact a member of the Carbon team.
-
-<!--
-* [carbon-add-ons-bluemix](https://github.com/carbon-design-system/carbon-addons-bluemix): For Vanilla.js Add-on components shipped specifically for IBM Bluemix/IBM Cloud Platform.
-* [carbon-add-ons-bluemix-react](https://github.com/carbon-design-system/carbon-addons-bluemix-react): For React Add-on components shipped specifically for IBM Bluemix.
-* [carbon-add-ons-cloud](https://github.com/carbon-design-system/carbon-addons-cloud)
-* [carbon-add-ons-gridpanel-react](https://github.com/carbon-design-system/carbon-addons-gridpanel-react) -->

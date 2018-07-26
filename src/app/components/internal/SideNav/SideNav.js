@@ -341,7 +341,7 @@ class SideNav extends Component {
                 iconDescription="sidenav link icon"
                 onClick={e => this.handleClick(e, 'Design Kit')}
               >
-                Design Kit
+                Design kit
               </Button>
               <Button
                 href="https://github.com/ibm/carbon-components"
@@ -353,7 +353,7 @@ class SideNav extends Component {
                 iconDescription="sidenav link icon"
                 onClick={e => this.handleClick(e, 'Developer Kit')}
               >
-                Vanilla Repo
+                Vanilla repo
               </Button>
               <Button
                 href="https://github.com/ibm/carbon-components-react"
@@ -365,7 +365,7 @@ class SideNav extends Component {
                 iconDescription="sidenav link icon"
                 onClick={e => this.handleClick(e, 'React Developer Kit')}
               >
-                React Repo
+                React repo
               </Button>
             </div>
           </div>

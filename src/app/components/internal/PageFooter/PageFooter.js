@@ -14,7 +14,7 @@ class PageFooter extends Component {
   };
 
   getLastUpdate = () => {
-    const lastUpdatedDate = new Date('07/13/2018'); // UPDATE BEFORE CF PUSH
+    const lastUpdatedDate = new Date('07/25/2018'); // UPDATE BEFORE CF PUSH
     const months = [
       'January',
       'February',
@@ -103,7 +103,7 @@ class PageFooter extends Component {
       'show-tooltip': this.state.copied,
     });
 
-    return (
+    return ( 
       <footer className={footerClasses}>
         <div className="page-footer__content">
           <p className="page-footer__text page-footer__version-link" id="page-footer__version-label">
