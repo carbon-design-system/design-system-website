@@ -98,7 +98,6 @@ E:
    'Common Actions':
       Edit:
         desc: Allows data or values to be changed.
-        subtext: Use instead of Modify unless you are modifying a table.
       Empty trash:
         desc: Permanently deletes all files or objects that have been placed into a trash container.
         subtext: See [Move to trash](#move-to-trash).
