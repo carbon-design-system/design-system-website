@@ -1,4 +1,4 @@
-**The _Carbon Components React Library_ provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
+**The _[Carbon Components React Library](http://react.carbondesignsystem.com)_ provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
 
 ## Install
 
@@ -50,7 +50,7 @@ $ yarn storybook
 
 ### List of Available Components
 
-View available React Components [here](http://react.carbondesignsystem.com). Usage information is available when you click the blue **?** icon in the top right corner of the selected component.
+View available [React Components](http://react.carbondesignsystem.com). Usage information is available when you click the blue **?** icon in the top right corner of the selected component.
 
 ## Troubleshooting
 
