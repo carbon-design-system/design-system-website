@@ -8,28 +8,6 @@ Keyboard accessibility is important for users who rely on or prefer using a keyb
 
 The `tab` key navigates through various interactive elements on a page. A default visual indicator is provided by the web browser in use. The display is an outlined border around the focused element. When an element is in focus, it can be further activated using the keyboard.
 
-### Navigation order
-
-The order in which interactive elements receive focus is logical and predictable. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer.
-
-Use natively-accessible elements in navigation to activate links, buttons, and form controls with a keyboard. Reinforce semantic HTML to convey intent and meaning instead of simply defining the look and feel of an element. Enhance with ARIA (Accessible Rich Internet Application) labels when necessary. For additional customization, use `tabindex=“0”` to ensure a navigable element receives a focus indicator.
-
-Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
-
-<a href="http://webaim.org/techniques/skipnav/" target=blank>WebAIM</a> recommends the following to enable a “Skip to content” link.
-
-```html
-<body>
-    <a href="#maincontent">Skip to main content</a>
-    ...
-    <main id="maincontent>
-        <h1>Heading</h1>
-        <p>This is the first paragraph</p>
-    </main>
-</body>
-```
-
-
 ## Visual accessibility
 
 Web and software experiences should be accessible for everyone, regardless of a person's abilities or impairments. Visual impairments can range in severity, from low vision, to color blindness, to complete blindness. The Carbon team has done extensive research and testing to ensure each component was designed with accessibility as our top priority.

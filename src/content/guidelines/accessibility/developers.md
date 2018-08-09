@@ -2,9 +2,29 @@
 
 ## HTML best practices
 
+**Structuring code and navigation**
+
+Think of code hierarchy when structuring your content so that screen readers and keyboard-only users can access interactive elements in a logical and predictable order via tabbing. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer.
+
+Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
+
+<a href="http://webaim.org/techniques/skipnav/" target=blank>WebAIM</a> recommends the following to enable a “Skip to content” link.
+
+```html
+<body>
+    <a href="#maincontent">Skip to main content</a>
+    ...
+    <main id="maincontent>
+        <h1>Heading</h1>
+        <p>This is the first paragraph</p>
+    </main>
+</body>
+```
+<br/>
+
 **Use semantic HTML**
 
-Use Native HTML elements as much as you can and use the correct elements for their correct purpose. Replace bad code wherever you see it. Built-in HTML elements have native accessibility for keyboards. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile and good for SEO.
+Use native HTML elements as much as you can to implement accessibility, and use the correct elements for their correct purpose. Replace bad code wherever you see it. Built-in HTML elements have native accessibility for keyboards. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile and good for SEO. For additional customization, use `tabindex=“0”` to ensure a navigable element receives a focus indicator.
 
 ```html
 <button>Play Video</button>
@@ -115,9 +135,11 @@ Use SVG's instead of font icon libraries as those are not accessible.
 ```
 <br/>
 
-**Utilize WAI-ARIA roles and landmark roles**
+**Utilize ARIA (Accessible Rich Internet Application) roles and landmark roles**
 
-Aria roles help assistive technology users orient themselves to a page and navigate when they can't visually see the layout or providing further context about different functionalities. Landmark roles identify regions in a page, and act much like native HTML tags would when it comes to semantics. Signpost roles describe other information about a given element's functionality on a page. These are especially helpful when building complex UI's or with providing additional semantics to native HTML elements.
+Aria roles convey the intent or meaning of an element to assistive technology. This helps users navigate when they can't see the layout and provides further context about different functionalities.
+
+Landmark roles identify regions in a page, and act much like native HTML tags would when it comes to semantics. Signpost roles describe other information about a given element's functionality on a page. These are especially helpful when building complex, custom interfaces or to reinforce semantics in native HTML elements.
 
 ```html
 <!-- signpost roles -->
@@ -134,7 +156,7 @@ role='button'
 
 <div role='main'></div>
 ```
-<br/>
+
 
 ## CSS best practices
 
@@ -167,7 +189,6 @@ When hiding content from a screen reader, consider source order. Use visibility:
   display: none;
 }
 ```
-<br/>
 
 ## JS best practices
 
