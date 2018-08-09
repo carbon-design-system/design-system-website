@@ -53,9 +53,9 @@ Consider visually impaired people when labeling elements. Make sure there is tex
 ```html
 <!-- Do this  -->
 <a>Read more about pricing</a>
-
+```
+```html
 <!--  Not this  -->
-
 <a>Click here</a>
 ```
 
@@ -95,11 +95,10 @@ Every image that is not decorative must include `alt` text with a meaningful des
 ```html
 <!-- Example 1 -->
 <img src='puppy.jpg' title='Sleeping Puppy' alt='A sleeping puppy'/>
-
+```
+```html
 <!-- Example 2 -->
-
 <img src='puppy2.jpg' aria-labelledby='imagelabel'/>
-
 <p id='imagelabel'>This is a picture of a cute puppy in cup</p>
 ```
 
@@ -132,21 +131,20 @@ Aria roles convey the intent or meaning of an element to assistive technology. T
 Landmark roles identify regions in a page, and act much like native HTML tags would when it comes to semantics. Signpost roles describe other information about a given element's functionality on a page. These are especially helpful when building complex, custom interfaces or to reinforce semantics in native HTML elements.
 
 ```html
-<!-- signpost roles -->
-role='banner'
-role='tabgroup'
-role='tab'
-role='combobox'
-role='slider'
-role='button'
-
 <!-- landmark roles -->
-
-<div role='navigation'></div>
-
-<div role='main'></div>
+<nav role='navigation'></nav>
+<main role='main'></main>
 ```
-
+```html
+<!-- signpost roles -->
+<div role='banner'>This is a banner.</div>
+<div role='tabgroup'>
+  <div role='tab'></div>
+</div>
+<div role='combobox'></div>
+<div role='slider'></div>
+<button role='button'></button>
+```
 
 ## CSS best practices
 
@@ -188,14 +186,14 @@ Don't rely too much on JavaScript to generate HTML and CSS. Follow the "Unobtrus
 Double up mouse specific events with other events for keyboard only users.
 
 ```javascript
-const foo = document.querySelect('.foo-class');
+const foo = document.querySelector('.foo-class');
 
 foo.onmouseover = someFunction();
-foo.onmouseout = anotherFunction();
 
-//keyboard accessible event listeners
+foo.onmouseout = anotherFunction();
 
 foo.onfocus = someFunction();
 
 foo.onblur = anotherFunction();
+
 ```
