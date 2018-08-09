@@ -7,28 +7,39 @@
 **Use appropriate kerning and leading to separate text enough to be easily read**
 
 Kerning and leading that is too tight or too spaced out makes information difficult to read.
+<br/>
+<br/>
 
 **Avoid words in all capital letters and avoid excessive use of italic fonts**
 
 Words in all capital letters and italic fonts are generally harder to read. They also pose an extra challenge to those with dyslexia.
+<br/>
+<br/>
 
 ## Text contrast
 
 **For large text, the minimum contrast ratio must be 3:1. For anything smaller or lighter than large text, the minimum contrast ratio is 4.5:1**
 
 Large text = either 18pt regular weight or 14pt bold weight and above.
+<br/>
+<br/>
 
 **For anything smaller or lighter than large text, the minimum contrast ratio must be 4.5:1**
+<br/>
+<br/>
 
 **Watch out for text against non-static backgrounds**
 
 There are times that text is rendered on a gradient background. You need to make sure the text color contrast meets standards for the entire gradient. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
+
 
 ## Iconography
 
 **Glyphs should be at least 24 x 24 pixels and icons should be at least 32 x 32 pixels large**
 
 Icons should be large enough to easily see. This helps people with moderately low vision or color blindness more easily see icons in the user interface.
+<br/>
+<br/>
 
 **Clickable/touch-target areas should be at least 44 x 44 pixels**
 
