@@ -66,6 +66,6 @@ Other color accessibility concerns include color blindness and low vision users.
 ## Resources
 
 * <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>IBM accessible color guide</a>
-* <a href="http://w3-03.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
+* <a href="https://w3.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
 * <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
 * <a href="https://www.ibm.com/design/language/resources/color-library" target=blank>IBM Design Language colors</a>

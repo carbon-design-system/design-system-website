@@ -56,7 +56,7 @@ To get an understanding of the various low vision disabilities, we recommend usi
 
 ## Resources
 - [WCAG 2.1 guidelines](https://www.w3.org/TR/WCAG21/)
-- [IBM accessibility quick guidance](http://w3-03.ibm.com/able/devtest/quick/) - (Internal only)
+- [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
 
 ## Tools
