@@ -120,8 +120,8 @@ Use SVG's instead of font icon libraries as those are not accessible.
 
 ```html
 <svg width="80" height="10">
-  <line className='line' x1="200" y1="0" x2="0" y2="0" />
-</svg>='subtitles' src='subtitles_english.vtt' srclang='en'/>
+  <line class='line' x1="200" y1="0" x2="0" y2="0" />
+</svg>
 ```
 
 ### Utilize ARIA (Accessible Rich Internet Application) roles and landmark roles
