@@ -3,15 +3,12 @@
   "desc": "<span>Inline Loading</span> spinners are used when performing actions. They help notify user's that their action is being processed.",
   "variations": {
     "inline-loading": [
-      "InlineLoading"
+      "Inline Loading"
     ]
   },
   "codepen": {
-    "loading": [
-      "XzebrR"
-    ],
-    "loading--small": [
-      "Xzebbg"
+    "inline-loading": [
+      "oMpMYK"
     ]
   },
   "__content": "\n",
