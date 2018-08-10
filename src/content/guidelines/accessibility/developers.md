@@ -14,7 +14,7 @@ Provide a “Skip to content” option when there is lengthy navigation so a use
 <body>
     <a href="#maincontent">Skip to main content</a>
     ...
-    <main id="maincontent>
+    <main id="maincontent">
         <h1>Heading</h1>
         <p>This is the first paragraph</p>
     </main>
