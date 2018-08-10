@@ -25,7 +25,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 ### What designers should think about
 - Designers should be concerned with the **readability** and **visual clarity** of content.
 - Consider how relative proximity of information changes when a page is magnified.
-- Ensure you're following keyboard guidelines to ensure the page is read to the user in a logical order.
+- Ensure you're following [keyboard guidelines](https://www.nngroup.com/articles/keyboard-accessibility/) to ensure the page is read to the user in a logical order.
 - Consider the experience of a low vision user trying to use a product without adaptive technologies.
 - To get an understanding of the various low vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites.
 - Use Carbon components. **Carbon components meet WCAG - AA contrast standards across our entire system.** You can read more and view the entire guidelines for [WCAG 2.1](https://www.w3.org/TR/WCAG21/) on their website.
