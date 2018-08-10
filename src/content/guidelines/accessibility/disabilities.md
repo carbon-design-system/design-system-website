@@ -54,7 +54,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 
 ### What designers should think about
 - Designers should be laser-focused on keyboard interaction, making sure all interactions are keyboard accessible and efficient.
-- Learn how to navigate using a keyboard here: _____LINK____ and spend one day navigating the web, email, and digital products using only keyboard.
+- Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend one day navigating the web, email, and digital products using only keyboard.
 
 ### How does this apply to everyone?
 - Many "super users" prefer to navigate using keyboards because it is quicker. Good Keyboard Navigation helps everyone be more productive.
