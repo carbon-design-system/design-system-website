@@ -11,7 +11,7 @@ class Accessibility extends React.Component {
   }
 
   render() {
-    const tabs = ['overview', 'designers', 'developers'];
+    const tabs = ['overview', 'disabilities', 'designers', 'developers'];
     let currentPage = tabs[0];
     if (this.props.currentPage) {
       currentPage = this.props.currentPage;
@@ -20,7 +20,10 @@ class Accessibility extends React.Component {
     return (
       <PageTabs tabs={tabs} currentPage={currentPage}>
         <Tab href="/guidelines/accessibility/overview" label="Overview">
-          <MarkdownPage content={require('../../../content/guidelines/accessibility/color.md')} />
+          <MarkdownPage content={require('../../../content/guidelines/accessibility/overview.md')} />
+        </Tab>
+        <Tab href="/guidelines/accessibility/disabilities" label="Disabilities">
+          <MarkdownPage content={require('../../../content/guidelines/accessibility/disabilities.md')} />
         </Tab>
         <Tab href="/guidelines/accessibility/designers" label="Designers">
           <MarkdownPage content={require('../../../content/guidelines/accessibility/designers.md')} />
