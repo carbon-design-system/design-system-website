@@ -2,7 +2,7 @@
 <div id='blind'></div>
 ## Blind Users
 
-### How they experience and interface
+### How they experience an interface
 - Uses a **screen reader** and **keyboard** to experience interfaces
 - Relies on spoken or Braille output
 - Does not use a pointer or mouse for input
@@ -16,7 +16,7 @@
 
 Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
 
-### How they experience and interface
+### How they experience an interface
 - May use **screen readers**, **screen magnifiers** and **high contrast modes** to experience interfaces
 - High contrast users may rely on a **monochrome display**
 - Low vision users may be using a **screen reader** to preview your website or experience
@@ -36,8 +36,8 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 <div id='deaf'></div>
 ## Deaf and Hard of Hearing
 
-### How they experience and interface
-- Users who are deaf or hard of hearing rely on captioning and other alternative representations of audio.
+### How they experience an interface
+- Users who are deaf or hard of hearing rely on **captioning** and other **alternative representations of audio**.
 
 ### What designers should think about
 - Designers should find alternatives to conveying information exclusively with sound.
@@ -50,10 +50,10 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 ## Physical Disabilities
 
 ### How they experience an interface
-- Users with physical disabilities may rely on keyboards, track balls, voice recognition and other assistive technologies to interact with an interface.
+- Users with physical disabilities may rely on **keyboards**, **track balls**, **voice recognition** and other assistive technologies to interact with an interface.
 
 ### What designers should think about
-- Designers should be laser-focused on keyboard interaction, making sure all interactions are keyboard accessible and efficient.
+- Designers should be laser-focused on **keyboard interaction**, making sure all interactions are keyboard accessible and efficient.
 - Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend one day navigating the web, email, and digital products using only keyboard.
 
 ### How does this apply to everyone?
@@ -65,10 +65,10 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 Colorblindness affects 8% of all men and 0.4% of women.
 
 ### How they experience an interface
-- Color blind users will not be able to differentiate between some colors on an interface.
+- Color blind users **will not be able to differentiate between some colors** on an interface.
 
 ### What designers should think about
-- Run your design through a color blind simulator. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
+- Run your design through a **color blind simulator**. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 - To view best practices for using color in Data Visualization, view the [Data Vis](/data-vis/overview/colors) color page.
 
 <div id='cognitive'></div>
@@ -82,12 +82,12 @@ Users with cognitive disabilities offer a broad spectrum of concerns for design.
 - Visual comprehension
 
 ### How they experience an interface
-- May have limited working memory and need information to remain visible so they can access it when needed.
+- May have **limited working memory** and need information to remain visible so they can access it when needed.
 - May experience seizures when exposed to flashing content.
 
 ### What designers should think about
 - Designers should understand the danger of **flashing content, complex language, non-stopping animations** and **fundamental cognitive usability heuristics.**
 - Design in as linear a fashion as possible and focus on design heuristics that have to do with **cognitive load and memory.**
 
-### How does this affect everyone
+### How does this affect everyone?
 - Following guidelines for cognitive disabilities helps everyone. Busy environments can tax your cognitive load. Aging adults may also experience a decline in cognitive abilities. Placing a low cognitive load on users reduces mistakes and improves effectiveness, regardless of their abilities.
