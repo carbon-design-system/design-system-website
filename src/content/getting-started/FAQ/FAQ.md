@@ -8,7 +8,7 @@ Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of
 
 ### How can I contribute and/or propose new components/ideas?
 
-We have contributing guidelines for [Developerss](/getting-started/contributing/developers) and [Designers](/getting-started/contributing/designers). We appreciate you helping out and contributing back.
+We have contributing guidelines for [Developers](/getting-started/contributing/developers) and [Designers](/getting-started/contributing/designers). We appreciate you helping out and contributing back.
 
 ### Which browsers are supported?
 
