@@ -10,7 +10,7 @@ Kerning and leading that is too tight or too spaced out makes information diffic
 
 <div data-insert-component="DosAndDonts13"></div>
 
-### Do use appropriate capitalization
+### Do use appropriate capitalization and font styles
 
 Avoid words in all capital letters and avoid excessive use of italic fonts. Words in all capital letters and italic fonts are generally harder to read. They also pose an extra challenge to those with dyslexia.
 
@@ -18,13 +18,13 @@ Avoid words in all capital letters and avoid excessive use of italic fonts. Word
 
 ## Text contrast
 
-### Do use appropriate text ratio for large text
+### Do use the minimum contrast ratio for large text
 
 For large text, the minimum contrast ratio must be 3:1. For anything smaller or lighter than large text, the minimum contrast ratio is 4.5:1. Large text = either 18pt regular weight or 14pt bold weight and above.
 
 <div data-insert-component="DosAndDonts15"></div>
 
-### Do use appropriate text ratio for small or light text
+### Do use the minimum contrast ratio for small or light text
 
 For anything smaller or lighter than large text, the minimum contrast ratio must be 4.5:1.
 
