@@ -1,7 +1,5 @@
 **Carbon is committed to following and complying with best practices when it comes to accessibility. Each component and element was built following the Web Content Accessibility Guidelines (WCAG) and met the AA standard. Our patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.**
 
-**Web Content Accessibility Guidelines (WCAG) contain recommendations for making the web accessible to users with disabilities, including color blindness or low vision. Carbon is committed to following and complying with best practices when it comes to accessibility. Each component and element was built following WCAG and met the AA standard. Our patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.**
-
 ## Keyboard accessibility
 
 Keyboard accessibility is important for users who rely on or prefer using a keyboard. Encourage accessibility by providing keyboard functionality to all available content. Common keyboard interactions include using the `Tab` key to select different interactive elements on a page and using the `Enter` key or the Spacebar to activate an in-focus element.
