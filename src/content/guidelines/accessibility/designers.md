@@ -48,6 +48,12 @@ Clickable/touch-target areas should be at least 44 x 44 pixels.
 
 <div data-insert-component="DosAndDonts18"></div>
 
+### Do make sure icons with thin lines meet color contrast ratio
+
+For images and icons, thinner lines of 2px or less need at least 4.5:1 color contrast ratio. If an image or graphic is needed to understand the content or functionality of the webpage then it should be perceivable by people with low vision or other impairments. Low contrast graphics are more difficult to perceive, and may be completely missed by people with a visual impairment.
+
+<div data-insert-component="DosAndDonts22"></div>
+
 ## Link contrast
 
 ### Do make sure links stand out

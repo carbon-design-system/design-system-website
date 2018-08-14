@@ -27,6 +27,7 @@ import DosAndDonts18 from '../../custom/DosAndDonts/DosAndDonts18';
 import DosAndDonts19 from '../../custom/DosAndDonts/DosAndDonts19';
 import DosAndDonts20 from '../../custom/DosAndDonts/DosAndDonts20';
 import DosAndDonts21 from '../../custom/DosAndDonts/DosAndDonts21';
+import DosAndDonts22 from '../../custom/DosAndDonts/DosAndDonts22';
 import LayerTypes from '../../custom/LayerTypes';
 import LayerUsage from '../../custom/LayerUsage';
 import TypographyTable from '../../custom/TypographyTable';
@@ -151,6 +152,7 @@ class Page extends Component {
       DosAndDonts19,
       DosAndDonts20,
       DosAndDonts21,
+      DosAndDonts22,
       Video,
       TypeStylesTable,
       FeaturedTiles,
