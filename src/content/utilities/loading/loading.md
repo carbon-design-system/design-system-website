@@ -31,6 +31,10 @@ When utilizing Skeleton States, the order in which components, data, and content
 _Example of a dashboard using Skeleton States to demonstrate progressive loading_
 
 
+### Alternative
+
+In the rare cases where skeleton components are not applicable we recommend loading progressively with no component at all. Users tend to not acknowledge load times until they are presented with a loading pattern. If the page is only populated with static data and loads within 5 seconds then progressively load the structure without any loading components at all.
+
 
 ### Code
 
@@ -79,28 +83,21 @@ const DataComponent = ({ loading, data }) => {
 
 
 
-## Loading component
+## Inline Loading component
 
-A Loading component is a rotating shape indicating the application is processing and informs users that the system has reacted to an action taken.
+An Inline Loading component is a rotating shape indicating the application is processing and informs users that the system has reacted to an action taken. When the request action succeeds the Inline Loading component provides feedback directly inline.
 
 Use cases include:
 
 - When data processing takes more than a few seconds but no longer than one minute to load in
 - User inputted data is being saved or submitted
+- When the action is triggered by a button within a table.
+
+For example when a user renames an item the Inline Loading component indicates that the item is being renamed and the system is processing the request.
 
 
-### Large Loader
-
-The Large Loading component should be used when the entire page is processing, for example when data is being submitted or saved by the user.
-
-![Example of a Large Loader in the context of a form page where data is being submitted.](images/Large-Loader.png)
-_Example of a Large Loader in context._
-
-### Small Loader
-The Small Loading component is used when a single component is processing and appears inline to the relative component. For example, when a user tries to restart a stopped application, a Small Loading component indicates the system is processing the restart request.
-
-![Example of Small Loader in the context of a Detail Page Header.](images/small-loading-1.gif)
-_Example of Small Loader in context._
+![Example of Inline Loader in the context of a Detail Page Header.](images/small-loading-1.gif)
+_Example of Inline Loader in context._
 
 ## 'Load more' Button
 
