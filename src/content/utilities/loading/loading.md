@@ -33,7 +33,7 @@ _Example of a dashboard using Skeleton States to demonstrate progressive loading
 
 ### Alternative
 
-In the rare cases where skeleton components are not applicable for your use case we recommend loading progressively with no component at all. Users tend to not acknowledge load times until they are presented with a loading pattern. If your page is only populated with static data and loads within 5 seconds then try progressively loading the structure without any loading components at all.
+In the rare cases where skeleton components are not applicable we recommend loading progressively with no component at all. Users tend to not acknowledge load times until they are presented with a loading pattern. If the page is only populated with static data and loads within 5 seconds then progressively load the structure without any loading components at all.
 
 
 ### Code
@@ -85,7 +85,7 @@ const DataComponent = ({ loading, data }) => {
 
 ## Inline Loading component
 
-A Inline Loading component is a rotating shape indicating the application is processing and informs users that the system has reacted to an action taken. When the request action succeeds the Inline Loading Component provides feedback directly inline.
+An Inline Loading component is a rotating shape indicating the application is processing and informs users that the system has reacted to an action taken. When the request action succeeds the Inline Loading component provides feedback directly inline.
 
 Use cases include:
 
