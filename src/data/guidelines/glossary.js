@@ -138,8 +138,7 @@
   "E": {
     "Common Actions": {
       "Edit": {
-        "desc": "Allows data or values to be changed.",
-        "subtext": "Use instead of Modify unless you are modifying a table."
+        "desc": "Allows data or values to be changed."
       },
       "Empty trash": {
         "desc": "Permanently deletes all files or objects that have been placed into a trash container.",
