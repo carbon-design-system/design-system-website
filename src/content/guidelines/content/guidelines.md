@@ -9,7 +9,7 @@ For specific capitalization rules for different element or component types, see 
 
 ### Sentence style
 
-Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers, headings for groups of toggles, and product names. Sentence style capitalizes only the first word of each sentence and proper nouns
+Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers and product names. Sentence style capitalizes only the first word of each sentence and proper nouns
 (such as names).
 
 **Examples:**
