@@ -43,7 +43,7 @@ class CodePage extends Component {
       } else if (parent === 'data-table' && variation === 'data-table-v2--expandable') {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--expandable.html');
       } else if (parent === 'data-table' && variation === 'data-table-v2--pagination') {
-        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--pagination.html');
+        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--with-pager.html');
       } else if (parent === 'data-table' && variation === 'data-table-v2--small') {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
       } else {
