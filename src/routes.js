@@ -62,14 +62,6 @@ const routes = {
           },
         },
         {
-          path: '/getting-started/add-ons',
-          getComponent(location, cb) {
-            import('./app/pages/add-ons/OverviewPage')
-              .then(loadRoute(cb))
-              .catch(errorLoading);
-          },
-        },
-        {
           path: '/getting-started/developers',
           indexRoute: {
             onEnter: (nextState, replace) => replace('/getting-started/developers/vanilla'),
