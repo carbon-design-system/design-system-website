@@ -18,6 +18,16 @@ import DosAndDonts9 from '../../custom/DosAndDonts/DosAndDonts9';
 import DosAndDonts10 from '../../custom/DosAndDonts/DosAndDonts10';
 import DosAndDonts11 from '../../custom/DosAndDonts/DosAndDonts11';
 import DosAndDonts12 from '../../custom/DosAndDonts/DosAndDonts12';
+import DosAndDonts13 from '../../custom/DosAndDonts/DosAndDonts13';
+import DosAndDonts14 from '../../custom/DosAndDonts/DosAndDonts14';
+import DosAndDonts15 from '../../custom/DosAndDonts/DosAndDonts15';
+import DosAndDonts16 from '../../custom/DosAndDonts/DosAndDonts16';
+import DosAndDonts17 from '../../custom/DosAndDonts/DosAndDonts17';
+import DosAndDonts18 from '../../custom/DosAndDonts/DosAndDonts18';
+import DosAndDonts19 from '../../custom/DosAndDonts/DosAndDonts19';
+import DosAndDonts20 from '../../custom/DosAndDonts/DosAndDonts20';
+import DosAndDonts21 from '../../custom/DosAndDonts/DosAndDonts21';
+import DosAndDonts22 from '../../custom/DosAndDonts/DosAndDonts22';
 import LayerTypes from '../../custom/LayerTypes';
 import LayerUsage from '../../custom/LayerUsage';
 import TypographyTable from '../../custom/TypographyTable';
@@ -133,6 +143,16 @@ class Page extends Component {
       DosAndDonts10,
       DosAndDonts11,
       DosAndDonts12,
+      DosAndDonts13,
+      DosAndDonts14,
+      DosAndDonts15,
+      DosAndDonts16,
+      DosAndDonts17,
+      DosAndDonts18,
+      DosAndDonts19,
+      DosAndDonts20,
+      DosAndDonts21,
+      DosAndDonts22,
       Video,
       TypeStylesTable,
       FeaturedTiles,

@@ -128,7 +128,7 @@ const routes = {
         {
           path: '/guidelines/accessibility',
           indexRoute: {
-            onEnter: (nextState, replace) => replace('/guidelines/accessibility/color'),
+            onEnter: (nextState, replace) => replace('/guidelines/accessibility/overview'),
           },
           childRoutes: [
             {
