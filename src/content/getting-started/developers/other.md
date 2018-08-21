@@ -1,4 +1,4 @@
-**The Carbon team currently supports vanilla js, React and Angular. Developers wanting to use another frameworkyar can can follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.**
+**The Carbon team currently supports vanilla js, React and Angular. Developers wanting to use another framework can can follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.**
 
 ## Development
 
