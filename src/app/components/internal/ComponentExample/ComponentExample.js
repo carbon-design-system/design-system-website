@@ -138,7 +138,24 @@ class ComponentExample extends Component {
       componentNameLink = 'Progress%20Indicator';
     }
     let hasReactVersion = true;
+    let hasAngularVersion = false;
     let hasLightVersion = false;
+
+    if (
+      component === 'accordion' ||
+      component === 'dropdown' ||
+      component === 'content-switcher' ||
+      component === 'tooltip' ||
+      component === 'checkbox' ||
+      component === 'radio-button' ||
+      component === 'label' ||
+      component === 'toggle' ||
+      component === 'modal' ||
+      component === 'tabs'
+
+    ) {
+      hasAngularVersion = true;
+    }
 
     if (
       component === 'text-input' ||
@@ -164,6 +181,29 @@ class ComponentExample extends Component {
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
     const counter = Math.floor(Math.random() * 100) + 1;
+    const reactLink = `http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
+    
+    
+
+    if (
+      component === 'checkbox' ||
+      component === 'label'
+    ) {
+      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=${componentNameLink}`;
+    } 
+    else if (
+      component === 'toggle'
+    ) {
+      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=switch`;
+    } 
+    else if (
+      component === 'radio-button'
+    ) {
+      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=radio`;
+    } 
+    else {
+      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=${componentNameLink}`;
+    }
 
     return (
       <div className={lightUIclassnames}>
@@ -179,8 +219,13 @@ class ComponentExample extends Component {
           </div>
           <div className="component-toolbar__links">
             {hasReactVersion && (
-              <a href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank">
+              <a href={reactLink} target="_blank">
                 React
+              </a>
+            )}
+            {hasAngularVersion && (
+              <a href={angularLink} target="_blank">
+                Angular
               </a>
             )}
             <a target="_blank" href={componentLink}>
