@@ -367,6 +367,18 @@ class SideNav extends Component {
               >
                 React repo
               </Button>
+              <Button
+                href="https://github.com/ibm/carbon-components-angular"
+                className="side-nav__link bx--btn"
+                kind="secondary"
+                icon="arrow--right"
+                target="_blank"
+                role="button"
+                iconDescription="sidenav link icon"
+                onClick={e => this.handleClick(e, 'Angular Developer Kit')}
+              >
+                Angular repo
+              </Button>
             </div>
           </div>
         </nav>

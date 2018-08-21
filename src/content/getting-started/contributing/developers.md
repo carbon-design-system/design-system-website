@@ -18,3 +18,7 @@
 * [Coding Standards](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#coding-standards)
 * [Commit Message Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidlines)
 * [Testing](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#testing)
+
+## Carbon Component Angular
+
+[Contributing Guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing)
