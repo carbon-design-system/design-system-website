@@ -1,27 +1,27 @@
-**Web and software experiences should be accessible for everyone, regardless of a person's abilities or impairments. It's not just the law, it's the right thing to do. Read on to learn what you can do to make IBM products accessible to all.**
+**IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help you ensure that your product or web experience meets or exceeds the standards for accessibility.**
 
 
 
 ## Carbon and Accessibility
 
-Carbon is committed to following and complying with best practices when it comes to accessibility. The Carbon team has done extensive research and testing to make sure our components follow the Web Content Accessibility Guidelines (WCAG) and meet AA standards. Our patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.
+Carbon is committed to following and complying with best practices when it comes to accessibility. The Carbon team has done extensive research and testing to make sure our components follow the Web Content Accessibility Guidelines (WCAG) and meet AA standards. Our patterns are **perceivable**, **operable**, and **understandable to users**, even when using a screen reader or other assistive technology.
 
-However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role specific, Carbon accessibility guidelines to help you make products that anyone can use.
+However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
 
 ## What does it mean for a product to be accessible?
 
 Accessible products:
 
-- Give everyone the same benefits regardless of disabilities a user may have
-- Can adapt to any user in any context.
+- Give every user the same benefits, regardless of disabilities
+- Can adapt to any user in any context
 
-Disabilities are a mismatch between one's ability and one's environment. They can be:
+Disabilities can be thought of as a mismatch between one's ability and one's environment. They can be:
 
 |               |                 |
 |-------------  | ----------------|  
 | Situational   |     A person with typical vision might struggle to view their screen in a bright environment. Or, a person sitting in a library may be unable to watch a video with the audio turned on. |
 | Temporary     |     A person with a broken wrist may not be able to type but will regain the ability when healed.      |
-| Long Lasting  |     This is what people typically think of when they hear "disability" and includes the categories listed below.   |
+| Long-Lasting  |     This is what people typically think of when they hear "disability."    |
 
 Accessible design is not exclusively for a fixed subset of users. When we design for people with disabilities, _we are designing for everyone in every situation._
 
