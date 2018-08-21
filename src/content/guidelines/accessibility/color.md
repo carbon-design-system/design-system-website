@@ -1,7 +1,7 @@
 **IBM is committed to serving all users, regardless of visual ability.**
 
 ## Introduction
-Visual impairments can inculde low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
+Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
 
 ## Color contrast
 **Carbon meets WCAG AA standards across the entire system, including color contrast ratios.**
@@ -10,6 +10,10 @@ AA requirements state that:
 
 * Text and images of text must have a contrast ratio of at least **4.5:1**. An exception is large text (at least 24px regular / 19px semi-bold) which must have a contrast ratio of **3:1.**
 * UI components: Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
+
+**Watch out for text against non-static backgrounds**
+There are times that text is rendered on a gradient background. You need to make sure that the text color contrast meets standards for the entire gradient. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
+
 
 [WCAG 2.1 Contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum)
 
@@ -26,7 +30,7 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 | Monochromacy | All colors |  
 
 ### Designing for color blindness
-When designing with color, it's always good to run your pages or comps through a color-blind simulator to ensure that all functions are still clear and usable by the color-blind user. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
+Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it's always good to use a color-blind simulator to ensure compliance. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
 
 
 ![rainbow palette](images/color-accessibility-1.png)
