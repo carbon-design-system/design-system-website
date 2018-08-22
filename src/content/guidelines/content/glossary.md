@@ -29,7 +29,7 @@ B:
       desc: (noun) a significantly successful product or service in the marketplace.
       subtext: "Context: Develop software for a cause or your company’s next bestseller."
     bet:
-      desc: (verb) to feel sure about something.
+      desc: (verb) to feel sure about something. 
       subtext: "Context: We bet you have built some sweet apps by now."
     big savings:
       desc: (phrase) a significant amount of money saved.
