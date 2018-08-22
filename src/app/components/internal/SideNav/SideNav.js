@@ -344,40 +344,15 @@ class SideNav extends Component {
                 Design kit
               </Button>
               <Button
-                href="https://github.com/ibm/carbon-components"
+                href="/resources#github"
                 className="side-nav__link bx--btn"
                 kind="secondary"
                 icon="arrow--right"
-                target="_blank"
                 role="button"
                 iconDescription="sidenav link icon"
-                onClick={e => this.handleClick(e, 'Developer Kit')}
+                onClick={e => this.handleClick(e, 'Github Repos')}
               >
-                Vanilla repo
-              </Button>
-              <Button
-                href="https://github.com/ibm/carbon-components-react"
-                className="side-nav__link bx--btn"
-                kind="secondary"
-                icon="arrow--right"
-                target="_blank"
-                role="button"
-                iconDescription="sidenav link icon"
-                onClick={e => this.handleClick(e, 'React Developer Kit')}
-              >
-                React repo
-              </Button>
-              <Button
-                href="https://github.com/ibm/carbon-components-angular"
-                className="side-nav__link bx--btn"
-                kind="secondary"
-                icon="arrow--right"
-                target="_blank"
-                role="button"
-                iconDescription="sidenav link icon"
-                onClick={e => this.handleClick(e, 'Angular Developer Kit')}
-              >
-                Angular repo
+                GitHub repos
               </Button>
             </div>
           </div>

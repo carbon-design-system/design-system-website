@@ -17,7 +17,7 @@ class Resources extends React.Component {
     const resourcesContent = (
       <div className="page">
         <div className="page_md">
-          <h2 className="resources__heading">Tools</h2>
+          <h2 className="resources__heading" id="github">Github Repos</h2>
           <div className="resources__top">
             <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-design-kit">
               <div className="resources__tile-icon">
@@ -55,6 +55,9 @@ class Resources extends React.Component {
                 <p>The Component Library gives developers a collection of re-usable Angular components they can use for building websites and user interfaces.</p>
               </div>
             </ClickableTile>
+          </div>
+          <h2 className="resources__heading">Tools</h2>
+          <div className="resources__top">
             <ClickableTile target="_blank" className="resources__tile" href="http://www.codepen.io/team/carbon">
               <div className="resources__tile-icon">
                 <img src={codepenImage} alt="Codepen for Carbon" />
