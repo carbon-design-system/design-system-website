@@ -26,16 +26,6 @@ class ComponentExample extends Component {
       'bx--global-light-ui': component === 'tabs'
     });
 
-    const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
-
-    const viewFullRender = this.props.hideViewFullRender ? (
-      ''
-    ) : (
-      <Link className="component-example__view-full-render" target="_blank" to={componentLink}>
-        View on CodePen
-      </Link>
-    );
-
     return (
       <div className={lightUIclassnames}>
         <div className="svg--sprite" aria-hidden="true" />
@@ -43,7 +33,6 @@ class ComponentExample extends Component {
           <div className={classNames}>
             <div dangerouslySetInnerHTML={{ __html: htmlFile }} />
           </div>
-          {viewFullRender}
         </div>
         <CodeExample htmlFile={htmlFile} />
       </div>
