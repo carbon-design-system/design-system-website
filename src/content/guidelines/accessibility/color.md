@@ -40,7 +40,7 @@ _Non-color blind user vs. color-blind user_
 ## Low vision
 Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
 
-| Type | Color deficiency |
+| Type | Visual deficiency |
 |------| ----------------|
 | Low acuity | Also known as **blurred vision.** Can make text difficult to read, since it would appear fuzzy. |
 | Low-contrast sensitivity | The ability to determine fine detail and distinguish one object from another.     |
