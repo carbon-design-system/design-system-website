@@ -1,5 +1,5 @@
 
-**The _[Carbon Components Angular Library](https://ibm.github.io/carbon-components-angular/)_ provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
+**The _[Carbon Components Angular Library](http://angular.carbondesignsystem.com/)_ provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.**
 
 ## Install
 

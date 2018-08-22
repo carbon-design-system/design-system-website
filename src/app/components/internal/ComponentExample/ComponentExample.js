@@ -189,20 +189,20 @@ class ComponentExample extends Component {
       component === 'checkbox' ||
       component === 'label'
     ) {
-      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=${componentNameLink}`;
+      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=${componentNameLink}`;
     } 
     else if (
       component === 'toggle'
     ) {
-      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=switch`;
+      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=switch`;
     } 
     else if (
       component === 'radio-button'
     ) {
-      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=Forms&selectedStory=radio`;
+      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=radio`;
     } 
     else {
-      var angularLink = `https://ibm.github.io/carbon-components-angular/?selectedKind=${componentNameLink}`;
+      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
     }
 
     return (
