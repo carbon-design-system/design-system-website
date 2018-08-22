@@ -34,7 +34,7 @@ Every contribution must meet the same standards as Carbon assets before it may b
 * Have you considered [keyboard tabbing](/guidelines/accessibility) and focus states?
 
 
-#### Visual style and UX patterns
+#### Visual style and UX patterns .  
 
 * Is your design consistent with the default visual style established for the core Carbon library?
 * Do your interaction patterns (hover, focus, motion) match Carbon styles?
