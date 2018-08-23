@@ -12,6 +12,9 @@ class ComponentStatus extends React.Component {
   renderItems = (currentItem, readyIcon, underReviewIcon, deprecatedIcon, notApplicableIcon) => {
     let status;
     let tag;
+    let vanilla;
+    let react;
+    let angular;
     if (currentItem.status === 0) {
       status = readyIcon;
     } else if (currentItem.status === 1) {
@@ -27,13 +30,45 @@ class ComponentStatus extends React.Component {
     if (currentItem.tag && currentItem.tag === 'updated') {
       tag = <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>;
     }
+    if (currentItem.vanilla === 0) {
+      vanilla = readyIcon;
+    } else if (currentItem.status === 1) {
+      vanilla = underReviewIcon;
+    } else if (currentItem.status === 2) {
+      vanilla = deprecatedIcon;
+    } else {
+      vanilla = notApplicableIcon;
+    }
+
+    if (currentItem.react === 0) {
+      react = readyIcon;
+    } else if (currentItem.status === 1) {
+      react = underReviewIcon;
+    } else if (currentItem.status === 2) {
+      react = deprecatedIcon;
+    } else {
+      react = notApplicableIcon;
+    }
+
+    if (currentItem.angular === 0) {
+      angular = readyIcon;
+    } else if (currentItem.status === 1) {
+      angular = underReviewIcon;
+    } else if (currentItem.status === 2) {
+      angular = deprecatedIcon;
+    } else {
+      angular = notApplicableIcon;
+    }
     return (
       <tr key={currentItem.item}>
         <td>
           {currentItem.item} {tag}
         </td>
         <td>{currentItem.added}</td>
-        <td>{status}</td>
+        
+        <td>{vanilla}</td>
+        <td>{react}</td>
+        <td>{angular}</td>
       </tr>
     );
   };
@@ -88,7 +123,10 @@ class ComponentStatus extends React.Component {
             <tr>
               <th>Component</th>
               <th>Added</th>
-              <th>Status</th>
+              
+              <th>Vanilla</th>
+              <th>React</th>
+              <th>Angular</th>
             </tr>
           </thead>
           <tbody>
