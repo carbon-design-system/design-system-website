@@ -151,7 +151,8 @@ class ComponentExample extends Component {
       component === 'label' ||
       component === 'toggle' ||
       component === 'modal' ||
-      component === 'tabs'
+      component === 'tabs' ||
+      component === 'notification'
 
     ) {
       hasAngularVersion = true;
@@ -191,6 +192,11 @@ class ComponentExample extends Component {
     ) {
       var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=${componentNameLink}`;
     } 
+    else if (
+      component === 'notification' 
+    ) {
+      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Banner`;
+    }
     else if (
       component === 'toggle'
     ) {
