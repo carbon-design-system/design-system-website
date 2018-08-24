@@ -194,7 +194,7 @@ class ComponentExample extends Component {
           angularComponentNameLink =  `Forms&selectedStory=switch`;
             break;
         case "notification":
-          angularComponentNameLink = `Forms&selectedStory=switch`;
+          angularComponentNameLink = `Forms&selectedStory=banner`;
             break;
         case "radio-button":
           angularComponentNameLink = `Forms&selectedStory=radio`;
