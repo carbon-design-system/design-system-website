@@ -425,10 +425,37 @@ class Overview extends React.Component {
                 </div>
                 <div className="tile__info">
                   <p aria-label="Carbon Components on Github">Carbon Components</p>
-                  <p>
-                    Components are written in two languages: Vanilla.js and React. Storybook, a UI component development
-                    environment, houses the React components.
-                  </p>
+                  <p>The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.</p>
+                </div>
+              </ClickableTile>
+            </li>
+            <li className="overview-page__list-item">
+              <ClickableTile
+                target="_blank"
+                href="https://github.com/ibm/carbon-components-react"
+                className="overview-page__tile"
+              >
+                <div className="tile__icon">
+                  <img src={githubIcon} alt="" />
+                </div>
+                <div className="tile__info">
+                  <p aria-label="Carbon Components on Github">Carbon Components React</p>
+                  <p>The Component Library gives developers a collection of re-usable React components they can use for building websites and user interfaces.</p>
+                </div>
+              </ClickableTile>
+            </li>
+            <li className="overview-page__list-item">
+              <ClickableTile
+                target="_blank"
+                href="https://github.com/ibm/carbon-components-angular"
+                className="overview-page__tile"
+              >
+                <div className="tile__icon">
+                  <img src={githubIcon} alt="" />
+                </div>
+                <div className="tile__info">
+                  <p aria-label="Carbon Components on Github">Carbon Components Angular</p>
+                  <p>The Component Library gives developers a collection of re-usable Angular components they can use for building websites and user interfaces.</p>
                 </div>
               </ClickableTile>
             </li>

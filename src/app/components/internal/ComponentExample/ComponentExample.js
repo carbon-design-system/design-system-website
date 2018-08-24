@@ -138,7 +138,26 @@ class ComponentExample extends Component {
       componentNameLink = 'Progress%20Indicator';
     }
     let hasReactVersion = true;
+    let hasAngularVersion = false;
     let hasLightVersion = false;
+
+    if (
+      component === 'accordion' ||
+      component === 'notification' || //named banner in angular library
+      component === 'button' ||
+      component === 'checkbox' ||
+      component === 'content-switcher' ||
+      component === 'tooltip' ||
+      component === 'dropdown' ||
+      component === 'text-input' ||
+      component === 'modal' ||
+      component === 'radio-button' ||
+      component === 'select' ||
+      component === 'toggle' || //named switch in angular library
+      component === 'tabs'
+    ) {
+      hasAngularVersion = true;
+    }
 
     if (
       component === 'text-input' ||
@@ -164,6 +183,29 @@ class ComponentExample extends Component {
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
     const counter = Math.floor(Math.random() * 100) + 1;
+    const reactLink = `http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
+  
+    let angularComponentName;
+    switch(component) {
+        case "content-switcher":
+          angularComponentName = 'Content%20Switcher';
+          break;
+        case "toggle":
+          angularComponentName =  'Switch';
+            break;
+        case "notification":
+          angularComponentName = 'Banner';
+            break;
+        case "button":
+            angularComponentName = 'Button';
+              break;
+        case "radio-button":
+          angularComponentName = 'Radio';
+              break;
+        default:
+          angularComponentName = `${componentNameLink}`;
+    }
+    const angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${angularComponentName}`
 
     return (
       <div className={lightUIclassnames}>
@@ -179,8 +221,13 @@ class ComponentExample extends Component {
           </div>
           <div className="component-toolbar__links">
             {hasReactVersion && (
-              <a href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank">
+              <a href={reactLink} target="_blank">
                 React
+              </a>
+            )}
+            {hasAngularVersion && (
+              <a href={angularLink} target="_blank">
+                Angular
               </a>
             )}
             <a target="_blank" href={componentLink}>

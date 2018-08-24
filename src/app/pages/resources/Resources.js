@@ -11,12 +11,13 @@ class Resources extends React.Component {
     const themingImage = require('../../../content/resources/images/sandbox-icon.svg');
     const colorContrastImage = require('../../../content/resources/images/color-contrast-icon.svg');
     const reactImage = require('../../../content/resources/images/react-icon.svg');
+    const angularImage = require('../../../content/resources/images/angular-icon.png');
 
 
     const resourcesContent = (
       <div className="page">
         <div className="page_md">
-          <h2 className="resources__heading">Tools</h2>
+          <h2 className="resources__heading" id="github">Github Repos</h2>
           <div className="resources__top">
             <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-design-kit">
               <div className="resources__tile-icon">
@@ -29,13 +30,34 @@ class Resources extends React.Component {
             </ClickableTile>
             <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-components">
               <div className="resources__tile-icon">
-                <img src={githubImage} alt="Components repo" />
+                <img src={githubImage} alt="Carbon Components" />
               </div>
               <div className="resources__tile-info">
-                <p>Carbon Component Library</p>
+                <p>Carbon Components Library</p>
                 <p>The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces.</p>
               </div>
             </ClickableTile>
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-components-react">
+              <div className="resources__tile-icon">
+                <img src={githubImage} alt="Carbon Components React" />
+              </div>
+              <div className="resources__tile-info">
+                <p>Carbon Components React Library</p>
+                <p>The Component Library gives developers a collection of re-usable React components they can use for building websites and user interfaces.</p>
+              </div>
+            </ClickableTile>
+            <ClickableTile target="_blank" className="resources__tile" href="https://github.com/ibm/carbon-components-angular">
+              <div className="resources__tile-icon">
+                <img src={githubImage} alt="Carbon Components Angular" />
+              </div>
+              <div className="resources__tile-info">
+                <p>Carbon Components Angular Library</p>
+                <p>The Component Library gives developers a collection of re-usable Angular components they can use for building websites and user interfaces.</p>
+              </div>
+            </ClickableTile>
+          </div>
+          <h2 className="resources__heading">Tools</h2>
+          <div className="resources__top">
             <ClickableTile target="_blank" className="resources__tile" href="http://www.codepen.io/team/carbon">
               <div className="resources__tile-icon">
                 <img src={codepenImage} alt="Codepen for Carbon" />
@@ -79,6 +101,15 @@ class Resources extends React.Component {
               <div className="resources__tile-info">
                 <p>React Storybook</p>
                 <p>Carbon Components, built in React.</p>
+              </div>
+            </ClickableTile>
+            <ClickableTile target="_blank" className="resources__tile" href="http://angular.carbondesignsystem.com/">
+              <div className="resources__tile-icon">
+                <img src={angularImage} alt="React icon" />
+              </div>
+              <div className="resources__tile-info">
+                <p>Angular Storybook</p>
+                <p>Carbon Components, built in Anuglar.</p>
               </div>
             </ClickableTile>
           </div>
