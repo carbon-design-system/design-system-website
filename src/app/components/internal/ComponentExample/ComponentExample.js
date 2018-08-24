@@ -143,17 +143,18 @@ class ComponentExample extends Component {
 
     if (
       component === 'accordion' ||
-      component === 'dropdown' ||
+      component === 'notification' || //named banner in angular library
+      component === 'button' ||
+      component === 'checkbox' ||
       component === 'content-switcher' ||
       component === 'tooltip' ||
-      component === 'checkbox' ||
-      component === 'radio-button' ||
-      component === 'label' ||
-      component === 'toggle' ||
+      component === 'dropdown' ||
+      component === 'text-input' ||
       component === 'modal' ||
-      component === 'tabs' ||
-      component === 'notification'
-
+      component === 'radio-button' ||
+      component === 'select' ||
+      component === 'toggle' || //named switch in angular library
+      component === 'tabs'
     ) {
       hasAngularVersion = true;
     }
@@ -184,25 +185,27 @@ class ComponentExample extends Component {
     const counter = Math.floor(Math.random() * 100) + 1;
     const reactLink = `http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
   
-    let angularComponentNameLink;
+    let angularComponentName;
     switch(component) {
-        case "checkbox":
-        case "label":
-          angularComponentNameLink = `Forms&selectedStory=${componentNameLink}`;
-            break;
+        case "content-switcher":
+          angularComponentName = 'Content%20Switcher';
+          break;
         case "toggle":
-          angularComponentNameLink =  `Forms&selectedStory=switch`;
+          angularComponentName =  'Switch';
             break;
         case "notification":
-          angularComponentNameLink = `Forms&selectedStory=banner`;
+          angularComponentName = 'Banner';
             break;
+        case "button":
+            angularComponentName = 'Button';
+              break;
         case "radio-button":
-          angularComponentNameLink = `Forms&selectedStory=radio`;
+          angularComponentName = 'Radio';
               break;
         default:
-          angularComponentNameLink = `${componentNameLink}`;
+          angularComponentName = `${componentNameLink}`;
     }
-    const angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${angularComponentNameLink}`
+    const angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${angularComponentName}`
 
     return (
       <div className={lightUIclassnames}>
