@@ -183,33 +183,26 @@ class ComponentExample extends Component {
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
     const counter = Math.floor(Math.random() * 100) + 1;
     const reactLink = `http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
-    
-    
-
-    if (
-      component === 'checkbox' ||
-      component === 'label'
-    ) {
-      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=${componentNameLink}`;
-    } 
-    else if (
-      component === 'notification' 
-    ) {
-      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Banner`;
+  
+    let angularComponentNameLink;
+    switch(component) {
+        case "checkbox":
+        case "label":
+          angularComponentNameLink = `Forms&selectedStory=${componentNameLink}`;
+            break;
+        case "toggle":
+          angularComponentNameLink =  `Forms&selectedStory=switch`;
+            break;
+        case "notification":
+          angularComponentNameLink = `Forms&selectedStory=switch`;
+            break;
+        case "radio-button":
+          angularComponentNameLink = `Forms&selectedStory=radio`;
+              break;
+        default:
+          angularComponentNameLink = `${componentNameLink}`;
     }
-    else if (
-      component === 'toggle'
-    ) {
-      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=switch`;
-    } 
-    else if (
-      component === 'radio-button'
-    ) {
-      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=Forms&selectedStory=radio`;
-    } 
-    else {
-      var angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`;
-    }
+    const angularLink = `http://angular.carbondesignsystem.com/?selectedKind=${angularComponentNameLink}`
 
     return (
       <div className={lightUIclassnames}>
