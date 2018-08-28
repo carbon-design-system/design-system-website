@@ -1,4 +1,4 @@
-**Developers have the power to make products work with assistive technology. We’re working hard to get accessibility integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!**
+**Developers have the power to make products work with assistive technology. Accessibility is already integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!**
 
 ## HTML best practices
 
@@ -12,12 +12,12 @@ Provide a “Skip to content” option when there is lengthy navigation so a use
 
 ```html
 <body>
-    <a href="#maincontent">Skip to main content</a>
-    ...
-    <main id="maincontent">
-        <h1>Heading</h1>
-        <p>This is the first paragraph</p>
-    </main>
+  <a href="#maincontent">Skip to main content</a>
+  ...
+  <main id="maincontent">
+    <h1>Heading</h1>
+    <p>This is the first paragraph</p>
+  </main>
 </body>
 ```
 
@@ -65,22 +65,26 @@ Always specify table headers with `<th />` elements, and make sure they stand ou
 
 ```html
 <table summary='Names and Ages of My Coworkers'>
-<caption>Names and Ages of My Coworkers</caption>
-  <tr>
-    <th scope="col">Firstname</th>
-    <th scope="col">Lastname</th>
-    <th scope="col">Age</th>
-  </tr>
-  <tr>
-    <td>Jane</td>
-    <td>Smith</td>
-    <td>22</td>
-  </tr>
-  <tr>
-    <td>Tom</td>
-    <td>West</td>
-    <td>47</td>
-  </tr>
+  <caption>Names and Ages of My Coworkers</caption>
+  <thead>
+    <tr>
+      <th scope="col">Firstname</th>
+      <th scope="col">Lastname</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jane</td>
+      <td>Smith</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Tom</td>
+      <td>West</td>
+      <td>47</td>
+    </tr>
+  </tbody>
 </table>
 ```
 
@@ -111,7 +115,7 @@ Provide closed-captioning with videos or transcriptions of audio files.
   <source src='example.mp4' type='video/mp4'/>
   <source src='example.webm' type='video/webm'/>
   <track kind='subtitles' src='subtitles_english.vtt' srclang='en'/>
- </video>
+</video>
 ```
 
 ### Avoid font icon libraries
