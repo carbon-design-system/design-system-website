@@ -158,7 +158,7 @@ You can style a page feature to fit your design but don't change it to the point
 
 ### Style focus indicators
 
-Add styling to tabable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating.
+Add styling to tabbable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating.
 
 
 ### Hiding elements
