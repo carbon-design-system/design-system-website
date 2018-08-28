@@ -158,26 +158,13 @@ You can style a page feature to fit your design but don't change it to the point
 
 ### Style focus indicators
 
-Add styling to `tab`able elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating.
+Add styling to tabable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating.
 
-```css
-.class:hover, .class:focus {
-  outline: 1px;
-  solid: #408fef;
-}
-
-/* box shadow or border are also popular */
-```
 
 ### Hiding elements
 
-When hiding content from a screen reader, consider source order. Use visibility: hidden, along with display: none in your CSS.
+When hiding content from a screen reader, consider source order. Use `visibility: hidden`, along with `display: none` in your CSS.
 
-```css
-.class {
-  display: none;
-}
-```
 
 ## JS best practices
 
