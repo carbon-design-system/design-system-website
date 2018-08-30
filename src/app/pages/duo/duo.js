@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FourOhFour from '../404';
 
 import Page from '../../components/internal/Page';
 
@@ -10,9 +11,14 @@ class Themes extends React.Component {
 
   render() {
     const contentFile = require('../../../content/duo/duo.md');
-    return (
-      <Page label="" title="Duo" content={contentFile} />
-    );
+    const processENV = process.env.ENV;
+    if (processENV === 'external') {
+      return <FourOhFour />;
+    } else {
+      return (
+        <Page label="" title="Duo" content={contentFile} />
+      );
+    }
   }
 }
 
