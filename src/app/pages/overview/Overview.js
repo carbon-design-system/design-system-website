@@ -354,6 +354,12 @@ class Overview extends React.Component {
             Explore the system
           </Link>
         </section>
+        <section aria-label="overview page section new" className="overview-page__section overview-page__section--about">
+          <div className="about__info">
+            <h2>Carbon is IBM’s open-source design system for products.</h2>
+            <p>Carbon was built on the Duo foundation as a resource for designers and front-end developers, and includes a comprehensive collection of UI components and documentation, code for multiple UI frameworks, human interface guidelines, and tooling. Carbon is managed by a core team of designers, developers, and writers based in the Austin studio.</p>
+          </div>
+        </section>
         <section aria-label="overview page section 1" className="overview-page__section">
           <ul className="overview-page__list">
             <li className="overview-page__list-item">

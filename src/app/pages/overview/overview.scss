@@ -173,6 +173,11 @@
       background-size: 0;
     }
   }
+
+  &--about {
+    position: relative;
+    background-color: $ui-02;
+  }
 }
 
 .overview-page__list {
@@ -351,14 +356,21 @@
   z-index: 2;
 }
 
-.overview-page__section--contribute h2 {
+.about__info {
+  padding-bottom: 6rem;
+}
+
+.overview-page__section--contribute h2,
+.overview-page__section--about h2 {
   @include typescale('alpha');
   color: $bright-blue;
   font-weight: 300;
   margin-bottom: 2rem;
+  max-width: 645px;
 }
 
-.overview-page__section--contribute p {
+.overview-page__section--contribute p,
+.overview-page__section--about p {
   @include font-smoothing;
   @include typescale('gamma');
   max-width: 645px;
@@ -366,7 +378,8 @@
   color: $text-02;
 }
 
-.overview-page__section--contribute p a {
+.overview-page__section--contribute p a,
+.overview-page__section--about p a {
   font-weight: 300;
   color: $bright-blue;
   text-decoration: none;
