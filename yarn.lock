@@ -6,6 +6,10 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@allmarkedup/fang/-/fang-1.0.0.tgz#20aa2ea365c57b0a28e6b563613270f5630d6883"
 
+"@carbon/colors@^0.0.1-alpha.0":
+  version "0.0.1-alpha.0"
+  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-alpha.0.tgz#8c53ef65f864106a63cfc412d8ff083a8a04905f"
+
 "@frctl/fractal@^1.0.0", "@frctl/fractal@^1.1.0", "@frctl/fractal@^1.1.0-alpha.0":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.1.7.tgz#7f2e0874ef88b0f611a8d594965e3510f8c9ada3"
@@ -67,6 +71,12 @@
     "@frctl/fractal" "^1.1.0-alpha.0"
     js-beautify "^1.6.2"
     lodash "^4.12.0"
+
+"@storybook/addon-options@^3.4.10":
+  version "3.4.10"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-options/-/addon-options-3.4.10.tgz#0b6ed3e22b7541a86a7c507ff80356d33784eda9"
+  dependencies:
+    babel-runtime "^6.26.0"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -1791,10 +1801,11 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-components-react@6.21.1:
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.21.1.tgz#40fd6d4ca73ba6c10a7c27475982614ee7c83934"
+carbon-components-react@6.26.2:
+  version "6.26.2"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.26.2.tgz#ef61992c5085db0e49299dcebe898ee7879719a2"
   dependencies:
+    "@storybook/addon-options" "^3.4.10"
     classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.5.1"
@@ -1805,10 +1816,11 @@ carbon-components-react@6.21.1:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@9.7.2:
-  version "9.7.2"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.7.2.tgz#94495921e47f7bd0cfd6b8c5969c4f0cacc3c9cd"
+carbon-components@9.10.0:
+  version "9.10.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.10.0.tgz#60721640a16d05b91bb32791599cb63175467d18"
   dependencies:
+    "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"
     flatpickr "2.6.3"
     lodash.debounce "^4.0.8"

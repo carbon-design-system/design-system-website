@@ -61,6 +61,11 @@ module.exports = {
               includePaths: [
                 path.resolve(__dirname, '../node_modules')
               ],
+              importer: (url, prev, done) => {
+                done({
+                  file: !/import-once(\.scss)?$/.test(url) ? url : path.resolve(__dirname, '../src/app/scss/global/import-once'),
+                });
+              },
             },
           },
         ],
