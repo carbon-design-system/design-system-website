@@ -4,7 +4,7 @@
 
 ## Carbon and Accessibility
 
-Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the Web Content Accessibility Guidelines (WCAG) and meet AA standards. Carbon's patterns are **perceivable**, **operable**, and **understandable to users**, even when using a screen reader or other assistive technology.
+Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the [IBM Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) which is based on WCAG AA, Section 508, and European standards. Carbon's patterns are **perceivable**, **operable**, and **understandable to users**, even when using a screen reader or other assistive technology.
 
 However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
 
@@ -12,7 +12,7 @@ However, _how you use Carbon_ also affects the accessibility of a product. Read 
 
 Accessible products:
 
-- Give every user the same benefits, regardless of disabilities
+- Give every user the same benefits, regardless of ability
 - Can adapt to any user in any context
 
 Disabilities can be thought of as a mismatch between one's ability and one's environment. They can be:
@@ -62,6 +62,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 
 #### How this applies to everyone
 - Users without disabilities sometimes need to view screens in poor lighting conditions. For example, imagine using a screen outside on a bright day. A higher-contrast design will make the screen more usable for everyone.
+- Vision worsens gradually starting around age 40 and good contrast helps this very large demographic use your interface.
 
 
 <div id='color'></div>
@@ -137,6 +138,7 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 - Web Accessibility Initiative (WAI) contributors create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG) which is the global accessibility standard.
 
 ## Resources
+- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - (Internal only) IBM's specific ruleset for creating accessible web applications.
 - [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
 

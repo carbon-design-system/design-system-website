@@ -4,7 +4,7 @@
 Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
 
 ## Color contrast
-**Carbon meets WCAG AA standards across the entire system, including color contrast ratios.**
+**Carbon meets IBM Web Checklist (WCAG AA) standards across the entire system, including color contrast ratios.**
 
 AA requirements state that:
 
@@ -12,8 +12,9 @@ AA requirements state that:
 * UI components: Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
 
 **Watch out for text against non-static backgrounds**
-There are times that text is rendered on a gradient background. You need to make sure that the text color contrast meets standards for the entire gradient. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
+There are times that text is rendered on a gradient background or image. You need to make sure that the text color always meets contrast standards. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
 
+[IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)(Internal)
 
 [WCAG 2.1 Contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum)
 
@@ -58,6 +59,7 @@ To get an understanding of the various low-vision disabilities, we recommend usi
 
 
 ## Resources
+- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - (Internal only) IBM's specific ruleset for creating accessible web applications.
 - [WCAG 2.1 guidelines](https://www.w3.org/TR/WCAG21/)
 - [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
