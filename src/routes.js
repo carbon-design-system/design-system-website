@@ -356,14 +356,6 @@ const routes = {
       },
     },
     {
-      path: 'duo',
-      getComponent(location, cb) {
-        import('./app/pages/duo/duo')
-          .then(loadRoute(cb))
-          .catch(errorLoading);
-      },
-    },
-    {
       path: 'component-status',
       getComponent(location, cb) {
         import('./app/pages/component-status/ComponentStatus')

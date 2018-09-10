@@ -225,6 +225,7 @@ class SideNav extends Component {
         'sub-nav__item-link--sub': true,
       });
       const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
+
       return (
         <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
           <Link className={subClassNames} aria-label={subnav[subNavItem]} to={link} tabIndex={tabIndex}>
@@ -248,13 +249,20 @@ class SideNav extends Component {
         selected: isCurrentPage, // eslint-disable-line
       });
       const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
-      return (
-        <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
-          <Link className="sub-nav__item-link" aria-label={subnav[subNavItem]} to={link} tabIndex={tabIndex}>
-            {subnav[subNavItem]}
-          </Link>
-        </li>
-      );
+
+      const { ENV } = process.env;
+      const isInternal = ENV !== 'internal' && subnav[subNavItem] === 'duo';
+      if (isInternal) {
+        return '';
+      } else {
+        return (
+          <li role="menuitem" key={subNavItem} className={classNames} tabIndex="-1">
+            <Link className="sub-nav__item-link" aria-label={subnav[subNavItem]} to={link} tabIndex={tabIndex}>
+              {subnav[subNavItem]}
+            </Link>
+          </li>
+        );
+      }
     });
   };
 
