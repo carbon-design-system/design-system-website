@@ -11,7 +11,7 @@ class Shell extends React.Component {
   render() {
     const contentFile = require('../../../content/ui-shell/ui-shell.md');
     return (
-      <Page label="" title="What's New" content={contentFile} />
+      <Page label="" title="UI Shell" content={contentFile} />
     );
   }
 }
