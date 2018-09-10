@@ -356,6 +356,14 @@ const routes = {
       },
     },
     {
+      path: 'ui-shell',
+      getComponent(location, cb) {
+        import('./app/pages/ui-shell/ui-shell')
+          .then(loadRoute(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
       path: 'component-status',
       getComponent(location, cb) {
         import('./app/pages/component-status/ComponentStatus')
