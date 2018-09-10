@@ -70,24 +70,6 @@ In a Flexible Side-nav, each L2 link and L2 category list has its own correspond
 A fixed Side-nav contains only L2 Links and L2 Category lists, no icons, and cannot be collapsed. 
 
 ![Header](images/Side-nav-panels-1.png)
- 
-
-<!--The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
-
-#### L1 title bar (optional)
-
-The L1 element contains the name of the product. It should link to the product's landing page or main console. This element can also include an optional selector element, to enable context-switching.
- 
-#### L2 nav items
-
-L2 nav items can be either a Category or a Link. When clicked, L2 Categories reveal or hide a group of L3 Links. L2 Category items cannot contain links.
-
-#### L3 Links
-A Category must contain at least 3 L3 Links.
-
-<mark>Side nav with L1, L2, L3 annotations. 
-
--->
 
 
 ## Panel Styles
@@ -119,3 +101,20 @@ The UI Shell will be themeable and can be either light or dark. *More informatio
 -Is there a specific width for floating panels?
 </mark>
   
+
+  <!--The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
+
+#### L1 title bar (optional)
+
+The L1 element contains the name of the product. It should link to the product's landing page or main console. This element can also include an optional selector element, to enable context-switching.
+ 
+#### L2 nav items
+
+L2 nav items can be either a Category or a Link. When clicked, L2 Categories reveal or hide a group of L3 Links. L2 Category items cannot contain links.
+
+#### L3 Links
+A Category must contain at least 3 L3 Links.
+
+<mark>Side nav with L1, L2, L3 annotations. 
+
+-->
