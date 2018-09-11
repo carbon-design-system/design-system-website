@@ -18,7 +18,6 @@
 
   .sub-nav__item {
     @include typescale('epsilon');
-    text-transform: capitalize;
     margin-left: 0;
     padding: 0.875rem 0.875rem 0.875rem 2rem;
     color: $text-01;
