@@ -4,22 +4,7 @@
 
 ### Structuring code and navigation
 
-Think of code hierarchy when structuring your content so that screen readers and keyboard-only users can access interactive elements in a logical and predictable order via tabbing. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer.
-
-Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
-
-<a href="http://webaim.org/techniques/skipnav/" target=blank>WebAIM</a> recommends the following to enable a “Skip to content” link.
-
-```html
-<body>
-  <a href="#maincontent">Skip to main content</a>
-  ...
-  <main id="maincontent">
-    <h1>Heading</h1>
-    <p>This is the first paragraph</p>
-  </main>
-</body>
-```
+Think of code hierarchy when structuring your content so that screen readers and keyboard-only users can access interactive elements in a logical and predictable order via tabbing. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer. The objective is to give keyboard users an intentional experience that is comparable to the experience of mouse users.
 
 ### Use semantic HTML
 
