@@ -251,8 +251,8 @@ class SideNav extends Component {
       const tabIndex = this.props.isOpen && isItemOpen ? 0 : -1;
 
       const { ENV } = process.env;
-      const isInternal = ENV !== 'internal' && subnav[subNavItem] === 'Duo';
-
+      const isInternal = ENV !== 'internal' && subnav[subNavItem] === 'Carbon and Duo';
+      console.log(process.env.ENV);
       if (isInternal) {
         return '';
       } else {
