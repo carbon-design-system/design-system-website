@@ -1,5 +1,5 @@
 ## Keyboard accessibility
-Keyboard accessibility is required and is helpful for users who rely on or prefer using a keyboard. Encourage accessibility by providing keyboard functionality to all interactive content. Common keyboard interactions include using the `Tab` key to select different interactive elements on a page and using the `Enter` key or the `Spacebar` to activate an in-focus element.
+Keyboard accessibility is required and is helpful for users who rely on or prefer using a keyboard. Make sure to provide keyboard functionality to all interactive content. Common keyboard interactions include using the `Tab` key to select different interactive elements on a page and using the `Enter` key or the `Spacebar` to activate an in-focus element.
 
 [IBM Checkpoint 2.1.1 Keyboard](https://www.ibm.com/able/guidelines/ci162/keyboard.html)
 
@@ -19,6 +19,3 @@ Use natively-accessible elements in navigation to activate links, buttons, and f
 Communicate to screen reader users the different areas of the screen and what they do with landmarks and by using appropriate HTML5 labels. Screen reader users can then quickly jump to any area they want.
 
 [IBM Checkpoint 1.3.1 Info and Relationships](https://www.ibm.com/able/guidelines/ci162/info_and_relationships.html)
-
-## Color accessibility
-Please refer to our [usage](/style/colors/usage) section on the Colors page to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.

@@ -14,9 +14,11 @@ AA requirements state that:
 **Watch out for text against non-static backgrounds**
 There are times that text is rendered on a gradient background or image. You need to make sure that the text color always meets contrast standards. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
 
-[IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)(Internal)
+[IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)
 
-[WCAG 2.1 Contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+
+Please refer to our [usage section on the Colors page](/style/colors/usage) to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.
+
 
 To view best practices for using color in Data Visualization, view the [Data Vis color](/data-vis/overview/colors) page.
 
@@ -31,7 +33,7 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 | Monochromacy | All colors |  
 
 ### Designing for color blindness
-Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it's always good to use a color-blind simulator to ensure compliance. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
+Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it my help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
 
 
 ![rainbow palette](images/color-accessibility-1.png)
@@ -50,7 +52,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 
 _[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
 
-![blurred vision and tunnel vision on Google.com](images/color-accessibility-2.png)
+![blurred vision and tunnel vision example on Google website](images/color-accessibility-2.png)
 
 _Low-vision disabilities_
 
