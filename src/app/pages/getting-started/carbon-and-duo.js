@@ -10,13 +10,13 @@ class Duo extends React.Component {
   }
 
   render() {
-    const contentFile = require('../../../content/getting-started/duo/duo.md');
+    const contentFile = require('../../../content/getting-started/carbon-and-duo/carbon-and-duo.md');
     const { ENV } = process.env;
     if (ENV !== 'internal') {
       return <FourOhFour />;
     } else {
       return (
-        <Page label="" title="Duo" content={contentFile} />
+        <Page label="" title="Carbon and Duo" content={contentFile} />
       );
     }
   }
