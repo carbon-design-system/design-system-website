@@ -2,7 +2,7 @@
 // GLOBAL LAYOUT
 // Includes styles for body, link, wrapper and container.
 //--------------------
-@import 'typography';
+@import 'carbon-components/scss/globals/scss/css--plex-core';
 @include plex-font-face;
 
 body {
