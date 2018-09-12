@@ -33,7 +33,7 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 | Monochromacy | All colors |  
 
 ### Designing for color blindness
-Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it my help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
+Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it might help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
 
 
 ![rainbow palette](images/color-accessibility-1.png)

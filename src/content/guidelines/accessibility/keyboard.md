@@ -4,7 +4,7 @@ Keyboard accessibility is required and is helpful for users who rely on or prefe
 [IBM Checkpoint 2.1.1 Keyboard](https://www.ibm.com/able/guidelines/ci162/keyboard.html)
 
 ### Focus indicators
-The `tab` key navigates through all interactive elements on a page in the order they are written. A default visual indicator is provided by the web browser in use. The display is an outlined border around the focused element. When an element is in focus, it can be further activated using the keyboard.
+The `tab` key navigates through all interactive elements on a page in the order they appear in the HTML document. A default visual indicator is provided by the web browser in use. The display is an outlined border around the focused element. When an element is in focus, it can be further activated using the keyboard.
 
 [IBM Checkpoint 2.4.7 Focus Visible](https://www.ibm.com/able/guidelines/ci162/focus_visible.html)
 
