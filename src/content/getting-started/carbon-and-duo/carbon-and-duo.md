@@ -1,4 +1,4 @@
-## The updated IBM Design Language
+## Carbon and the updated IBM Design Language
 
 The Carbon Design System is integrating the new IBM Design Ethos and Language. It represents a completely fresh approach to the design of all things at IBM.
 
