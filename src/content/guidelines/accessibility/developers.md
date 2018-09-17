@@ -4,26 +4,11 @@
 
 ### Structuring code and navigation
 
-Think of code hierarchy when structuring your content so that screen readers and keyboard-only users can access interactive elements in a logical and predictable order via tabbing. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer.
-
-Provide a “Skip to content” option when there is lengthy navigation so a user may access main content faster. This option is a link that is visually hidden by default and appears when it receives keyboard focus via the `tab` key.
-
-<a href="http://webaim.org/techniques/skipnav/" target=blank>WebAIM</a> recommends the following to enable a “Skip to content” link.
-
-```html
-<body>
-  <a href="#maincontent">Skip to main content</a>
-  ...
-  <main id="maincontent">
-    <h1>Heading</h1>
-    <p>This is the first paragraph</p>
-  </main>
-</body>
-```
+Think of code hierarchy when structuring your content so that screen readers and keyboard-only users can access interactive elements in a logical and predictable order via tabbing. Create the tab flow hierarchy by using the source code to arrange the keyboard navigation. Begin with the header, followed by the main navigation, then page navigation (from left to right, top to bottom), and end with the footer. The objective is to give keyboard users an intentional experience that is comparable to the experience of mouse users.
 
 ### Use semantic HTML
 
-Use native HTML elements as much as you can to implement accessibility, and use the correct elements for their correct purpose. Replace bad code wherever you see it. Built-in HTML elements have native accessibility for keyboards. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile and good for SEO. For additional customization, use `tabindex=“0”` to ensure a navigable element receives a focus indicator.
+Use native HTML elements as much as you can and use them for their correct purpose. These elements have built-in accessibility benefits. They inform screen readers what they are and do, and standard interactive elements, such as button, include keyboard functionality. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile and good for SEO.
 
 ```html
 <button>Play Video</button>
@@ -158,7 +143,7 @@ You can style a page feature to fit your design but don't change it to the point
 
 ### Style focus indicators
 
-Add styling to tabbable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating.
+Add styling to tabbable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating. Never suppress the focus indicator altogether.
 
 
 ### Hiding elements
