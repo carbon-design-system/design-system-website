@@ -1,4 +1,3 @@
 ---
-desc: <span>Accordion</span> enables users to expand and collapse sections of content.
-codepen: dZvdaN
+desc: <span>Accordion</span> enables users to expand and collapse sections of content.   
 ---
