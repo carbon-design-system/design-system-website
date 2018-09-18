@@ -1,6 +1,6 @@
 **IBM is committed to serving all users, regardless of visual ability.**
 
-## Introduction
+## Introduction - this is just a test
 Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
 
 ## Color contrast
