@@ -66,15 +66,3 @@ Basic visual design principles a product should follow:
 * Arrange the screen elements in a way that is sensible and logical and consistent with the user’s conceptual model.
 * Incorporate into the composition of the screen the elements of graphic design which contribute to the application’s attractiveness: white space, color, overlap, size and shape differences, pattern, contrast, balance, etc.
 
-
-
-##Accessibility
-**Intro ("...should...")** *In Progress*
-
-**Unique Concepts** *In Progress*
-
-**How to execute** *In Progress*
-
-**Benefit if followed** *In Progress*
-
-**Penalty if ignored:** *In Progress*
