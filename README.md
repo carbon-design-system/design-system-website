@@ -1,3 +1,6 @@
+**This repo has been archived, the new code can can be found at [https://github.com/carbon-design-system/carbon-website](https://github.com/carbon-design-system/carbon-website)**
+
+
 # Carbon Design System
 The Carbon Design System is a series of individual styles and components, that when combined make beautiful, intuitive designs. These designs are systemic and logical, as they all follow the same universal principles.
 
