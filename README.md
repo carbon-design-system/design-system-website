@@ -1,4 +1,4 @@
-**This repo has been archived, the new code can can be found at [https://github.com/carbon-design-system/carbon-website](https://github.com/carbon-design-system/carbon-website)**
+**This repo has been archived, the new repo can can be found at [https://github.com/carbon-design-system/carbon-website](https://github.com/carbon-design-system/carbon-website)**
 
 
 # Carbon Design System
