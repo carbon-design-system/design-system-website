@@ -16,7 +16,7 @@ class Duo extends React.Component {
       return <FourOhFour />;
     } else {
       return (
-        <Page label="" title="Carbon and Duo" content={contentFile} />
+        <Page label="" title="Carbon and the IBM Design Language" content={contentFile} />
       );
     }
   }
